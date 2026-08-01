@@ -26,6 +26,11 @@ const stories = [
   },
 ];
 
+const reports = [
+  { type: "DAILY / 2026.08.01", title: "AI投資への信頼は回復。ただし半導体の調整終了は未確認。", summary: "AmazonとMicrosoftの決算は、AIインフラ投資が収益につながる道筋を示しました。一方、7月の半導体セクターは大きく調整し、原油高と長期金利上昇も評価の重しです。", impact: "クラウド需要・長期契約・受注残を数字で示せる企業に選別的な追い風。日本では半導体装置、メモリー、光通信、電力・冷却関連の見通しが焦点です。", watch: "SOXの戻りの持続性、メモリー在庫・価格、中国勢の増産、米雇用統計、日米金利差。" },
+  { type: "WEEKLY / 2026.07.27–31", title: "大型テック決算で米株は反発、日銀と円相場が日本株の変数に。", summary: "ダウは週+1.0%、ナスダック総合は+1.6%。Amazonの好決算が支えとなった一方、AI投資の回収時期とインフレ懸念が半導体株の変動を大きくしました。日銀は政策金利を1%に据え置きました。", impact: "米国では決算内容による銘柄選別、日本では為替・金利に敏感な輸出、銀行、不動産などで見方が分かれる環境です。", watch: "米ISM、JOLTS、ADP、雇用統計。国内は賃金・雇用統計と主要企業の決算、ドル円と原油の動き。" },
+];
+
 export default function Home() {
   return (
     <main>
@@ -99,8 +104,19 @@ export default function Home() {
         <div className="weekly-copy"><p>日経平均、ダウ、ナスダック、SOXを軸に、決算・中銀・為替・コモディティの動きを毎週土曜にまとめます。</p><a className="button light" href="#about">週次レポートを読む <span>→</span></a></div>
       </section>
 
+      <section className="content-section archive" aria-labelledby="archive-heading">
+        <div className="section-heading"><div className="section-label">04 / REPORT ARCHIVE</div><p>日次と週次を、あとから読み返せる形で。</p></div>
+        <h2 id="archive-heading">最新のレポート</h2>
+        <div className="report-list">
+          {reports.map((report) => <article className="report" key={report.type}>
+            <p className="story-meta">{report.type}</p><h3>{report.title}</h3><p>{report.summary}</p>
+            <details><summary>レポートを読む <span>＋</span></summary><div className="report-detail"><div><b>市場への影響</b><p>{report.impact}</p></div><div><b>次の注目点</b><p>{report.watch}</p></div><p className="disclaimer">公開情報に基づく市場概況の整理であり、投資助言ではありません。</p></div></details>
+          </article>)}
+        </div>
+      </section>
+
       <section className="content-section about" id="about">
-        <div className="section-label">04 / EDITORIAL POLICY</div>
+        <div className="section-label">05 / EDITORIAL POLICY</div>
         <div><h2>公開情報を、<br />あとから確かめられる形で。</h2><p>一次情報・信頼できる報道・市場参加者の見方を区別し、出典と日付を残します。記事本文の転載や未確認情報の拡散は行いません。個別銘柄の売買推奨ではなく、市場環境を理解するためのリサーチノートです。</p></div>
       </section>
 
