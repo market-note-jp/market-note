@@ -39,8 +39,7 @@ export default function Home() {
           MARKET <span>NOTE</span>
         </a>
         <nav aria-label="主要ナビゲーション">
-          <a href="#daily">日次</a>
-          <a href="#weekly">週次</a>
+          <a href="#archive">記事一覧</a>
           <a href="#themes">テーマ</a>
           <a href="#about">このサイトについて</a>
         </nav>
@@ -54,7 +53,7 @@ export default function Home() {
           日本株と米国株を、決算・金利・為替・半導体から読み解く個人の市場ノート。<br />
           速報ではなく、公開情報をもとにした検証可能な整理を届けます。
         </p>
-        <a className="button" href="#daily">今日のブリーフィングを見る <span>→</span></a>
+        <a className="button" href="#archive">記事一覧を見る <span>→</span></a>
       </section>
 
       <section className="strip" aria-label="今朝のキーワード">
@@ -104,13 +103,13 @@ export default function Home() {
         <div className="weekly-copy"><p>日経平均、ダウ、ナスダック、SOXを軸に、決算・中銀・為替・コモディティの動きを毎週土曜にまとめます。</p><a className="button light" href="#about">週次レポートを読む <span>→</span></a></div>
       </section>
 
-      <section className="content-section archive" aria-labelledby="archive-heading">
+      <section className="content-section archive" id="archive" aria-labelledby="archive-heading">
         <div className="section-heading"><div className="section-label">04 / REPORT ARCHIVE</div><p>日次と週次を、あとから読み返せる形で。</p></div>
         <h2 id="archive-heading">最新のレポート</h2>
         <div className="report-list">
           {reports.map((report) => <article className="report" key={report.type}>
             <p className="story-meta">{report.type}</p><h3>{report.title}</h3><p>{report.summary}</p>
-            <details><summary>レポートを読む <span>＋</span></summary><div className="report-detail"><div><b>市場への影響</b><p>{report.impact}</p></div><div><b>次の注目点</b><p>{report.watch}</p></div><p className="disclaimer">公開情報に基づく市場概況の整理であり、投資助言ではありません。</p></div></details>
+            <details><summary>全文を読む <span>＋</span></summary><div className="report-detail"><div className="wide"><b>概要</b><p>{report.summary}</p></div><div><b>市場への影響</b><p>{report.impact}</p></div><div><b>次の注目点</b><p>{report.watch}</p></div><div className="wide"><b>背景と読み方</b><p>AI・半導体は、設備投資が売上・受注残・利益率に変換されるかが評価の分岐点です。日本株では米半導体株、日米金利差、円相場を併せて見ます。米国では原油と債券利回りが、インフレ見通しを通じて高PER株の評価を左右します。</p></div><div className="wide"><b>主要ソース</b><p><a href="https://apnews.com/article/wall-street-stocks-dow-nasdaq-37d8d182f02f0fcdcf9f7db67e6dfadd">AP</a>　<a href="https://www.boj.or.jp/en/">日本銀行</a>　<a href="https://www.newyorkfed.org/research/calendars/i-aug26.html">NY連銀</a></p></div><p className="disclaimer">公開情報に基づく市場概況の整理であり、投資助言ではありません。</p></div></details>
           </article>)}
         </div>
       </section>
