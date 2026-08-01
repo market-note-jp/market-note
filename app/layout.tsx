@@ -13,17 +13,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Market Note | 日米市場を、毎朝読む",
-  description: "日本株・米国株・半導体・マクロを、公開情報に基づいて読み解く市場アーカイブ。",
+  title: "Market Note | 日次・週次マーケットレポート",
+  description: "日本株・米国株・半導体・マクロを、公開情報と出典リンク付きで全文保存する市場レポートアーカイブ。",
   openGraph: {
-    title: "Market Note | 日米市場を、毎朝読む",
-    description: "日本株・米国株・半導体・マクロを、公開情報に基づいて読み解く市場アーカイブ。",
+    title: "Market Note | 日次・週次マーケットレポート",
+    description: "日本株・米国株・半導体・マクロを、公開情報と出典リンク付きで全文保存する市場レポートアーカイブ。",
     images: [{ url: "/og.png", width: 1800, height: 940, alt: "Market Note" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Market Note | 日米市場を、毎朝読む",
-    description: "日本株・米国株・半導体・マクロを、公開情報に基づいて読み解く市場アーカイブ。",
+    title: "Market Note | 日次・週次マーケットレポート",
+    description: "日本株・米国株・半導体・マクロを、公開情報と出典リンク付きで全文保存する市場レポートアーカイブ。",
     images: ["/og.png"],
   },
   icons: {
