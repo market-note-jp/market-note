@@ -88,10 +88,15 @@ footer span:first-child { color: var(--ink); font-weight: 700; letter-spacing: .
 .report-body { font-size: 15px; line-height: 2; }
 .report-body section { margin-bottom: 58px; }
 .report-body h2 { margin-bottom: 23px; padding-left: 14px; border-left: 3px solid var(--accent); font-size: 25px; font-weight: 600; line-height: 1.5; }
+.report-body h3 { margin: 30px 0 15px; color: var(--accent); font-size: 17px; font-weight: 700; line-height: 1.6; }
+.report-body h4 { margin: 24px 0 10px; font-size: 15px; font-weight: 700; }
 .report-body p { margin-bottom: 18px; }
 .report-body ul { margin: 0; padding-left: 1.4em; }
 .report-body li { margin-bottom: 14px; padding-left: .3em; }
 .report-body a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.report-body blockquote { margin: 25px 0; padding: 18px 24px; background: var(--accent-soft); border-left: 3px solid var(--accent); font-family: Georgia, "Yu Mincho", serif; font-size: 18px; line-height: 1.8; }
+.inline-sources { color: var(--muted); font-size: 12px; }
+.inline-sources a + a::before { content: " / "; color: var(--muted); text-decoration: none; }
 .table-wrap { overflow-x: auto; margin: 28px 0 20px; }
 .report-table { width: 100%; min-width: 720px; border-collapse: collapse; background: var(--card); font-size: 13px; line-height: 1.65; }
 .report-table th, .report-table td { padding: 15px 14px; border: 1px solid var(--line); text-align: left; vertical-align: top; }

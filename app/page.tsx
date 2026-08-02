@@ -2,6 +2,14 @@ import Link from "next/link";
 
 const articles = [
   {
+    kind: "日次レポート",
+    date: "2026-08-01 08:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月1日・週末版）",
+    excerpt:
+      "AmazonとMicrosoftの決算、半導体株の調整、Sony、日銀、円相場と原油をまとめたデイリーブリーフィング。",
+    href: "/articles/daily-2026-08-01",
+  },
+  {
     kind: "週次レポート",
     date: "2026-08-01 08:00",
     title: "週次マーケットニュースレポート（2026年7月27日〜31日）",
