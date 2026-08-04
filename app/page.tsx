@@ -3,6 +3,14 @@ import Link from "next/link";
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-08-04 08:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月4日）",
+    excerpt:
+      "原油安を受けた米株高、Palantir決算、日本株・円相場、米製造業、半導体株の選別を整理。",
+    href: "/articles/daily-2026-08-04",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-08-01 08:00",
     title: "デイリー・マーケットブリーフィング（2026年8月1日・週末版）",
     excerpt:
