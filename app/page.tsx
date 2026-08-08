@@ -93,9 +93,9 @@ export default function Home() {
 
       <section className="intro">
         <p className="kicker">MARKET REPORT ARCHIVE</p>
-        <h1>市場を、あとから読み返せる形に。</h1>
+        <h1>市場をあとから読み返せる形に。</h1>
         <p>
-          毎日・毎週のマーケットレポートを、公開情報と出典リンクを添えて全文保存する個人アーカイブです。
+          毎日・毎週のマーケットレポートを、公開情報と出典リンクを添えて全文保存。
         </p>
       </section>
 
@@ -138,7 +138,7 @@ export default function Home() {
         <p className="kicker">EDITORIAL POLICY</p>
         <h2>レポート本文を省略せず保存します。</h2>
         <p>
-          ChatGPTで作成された日次・週次レポートの章立て、表、箇条書き、出典リンク、注意書きを保ったまま記事として公開します。
+          日次・週次レポートの章立て、表、箇条書き、出典リンク、注意書きを保ったまま記事として公開します。
           噂や未確認情報を避け、断定を控えた市場概況として蓄積します。
         </p>
       </section>
