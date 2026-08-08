@@ -2,6 +2,16 @@ import Link from "next/link";
 
 const articles = [
   {
+    kind: "決算記事",
+    theme: "決算",
+    date: "2026-08-08 18:15",
+    dateTime: "2026-08-08T18:15:00+09:00",
+    title: "8月3日〜7日決算総まとめ　AI・データセンター関連に相次ぐ上方修正、好決算でも売られる銘柄も",
+    excerpt:
+      "AI・データセンター需要の広がりと、主要企業の上方修正、決算後の株価反応をテーマ別に整理。",
+    href: "/articles/earnings-2026-08-03-07",
+  },
+  {
     kind: "日次レポート",
     date: "2026-08-08 07:00",
     dateTime: "2026-08-08T07:00:00+09:00",
@@ -124,7 +134,7 @@ export default function Home() {
                   <p className="article-excerpt">{article.excerpt}</p>
                   <p className="article-meta">
                     <time dateTime={article.dateTime}>{article.date}</time>
-                    <span>テーマ：市場ニュース</span>
+                    <span>テーマ：{article.theme ?? "市場ニュース"}</span>
                   </p>
                 </div>
                 <span className="article-arrow" aria-hidden="true">→</span>
