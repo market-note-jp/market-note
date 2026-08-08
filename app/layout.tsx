@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
+const siteUrl = isGitHubPages
+  ? "https://kshota2004.github.io/market-note/"
+  : "https://market-note-jp.ktsht.chatgpt.site/";
+const faviconUrl = isGitHubPages ? "/market-note/favicon.svg" : "/favicon.svg";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -13,6 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Market Note | 日次・週次マーケットレポート",
   description: "日本株・米国株・半導体・マクロを、公開情報と出典リンク付きで全文保存する市場レポートアーカイブ。",
   openGraph: {
@@ -27,8 +34,8 @@ export const metadata: Metadata = {
     images: ["/og.png"],
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: faviconUrl,
+    shortcut: faviconUrl,
   },
 };
 
