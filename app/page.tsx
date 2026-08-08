@@ -3,7 +3,25 @@ import Link from "next/link";
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-08-08 07:00",
+    dateTime: "2026-08-08T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月8日・週末版）",
+    excerpt:
+      "米雇用の弱さと最高値更新、AMDのAI需要、ソフトバンクG決算、原油・インフレを整理。",
+    href: "/articles/daily-2026-08-08",
+  },
+  {
+    kind: "週次レポート",
+    date: "2026-08-08 08:00",
+    title: "週次マーケットニュースレポート（2026年8月3日〜7日）",
+    excerpt:
+      "原油安、米雇用統計、金利・円相場、テック・半導体株の反発をまとめた週次レポート。",
+    href: "/articles/weekly-2026-08-03",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-08-04 08:00",
+    dateTime: "2026-08-04T08:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月4日）",
     excerpt:
       "原油安を受けた米株高、Palantir決算、日本株・円相場、米製造業、半導体株の選別を整理。",
@@ -12,6 +30,7 @@ const articles = [
   {
     kind: "日次レポート",
     date: "2026-08-01 08:00",
+    dateTime: "2026-08-01T08:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月1日・週末版）",
     excerpt:
       "AmazonとMicrosoftの決算、半導体株の調整、Sony、日銀、円相場と原油をまとめたデイリーブリーフィング。",
@@ -20,6 +39,7 @@ const articles = [
   {
     kind: "週次レポート",
     date: "2026-08-01 08:00",
+    dateTime: "2026-08-01T08:00:00+09:00",
     title: "週次マーケットニュースレポート（2026年7月27日〜31日）",
     excerpt:
       "大型テック決算、日銀、原油・インフレ、AI・半導体株の調整をまとめた週次レポート。",
@@ -76,7 +96,7 @@ export default function Home() {
                   <h3>{article.title}</h3>
                   <p className="article-excerpt">{article.excerpt}</p>
                   <p className="article-meta">
-                    <time dateTime="2026-08-01T08:00:00+09:00">{article.date}</time>
+                    <time dateTime={article.dateTime}>{article.date}</time>
                     <span>テーマ：市場ニュース</span>
                   </p>
                 </div>
