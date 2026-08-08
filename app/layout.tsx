@@ -4,7 +4,7 @@ import "./globals.css";
 
 const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
 const siteUrl = isGitHubPages
-  ? "https://kshota2004.github.io/market-note/"
+  ? "https://market-note-jp.github.io/market-note/"
   : "https://market-note-jp.ktsht.chatgpt.site/";
 const faviconUrl = isGitHubPages ? "/market-note/favicon.svg" : "/favicon.svg";
 
