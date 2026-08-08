@@ -1,0 +1,1 @@
+Market Noteは毎日7:00 JSTの日次更新と毎週土曜日8:00 JSTの週次更新をクラウド実行し、mainへの反映後にGitHub Actionsで公開する。ローカルPCには依存しない。
