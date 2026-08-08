@@ -2,6 +2,15 @@ import Link from "next/link";
 
 const articles = [
   {
+    kind: "日次レポート",
+    date: "2026-08-09 07:00",
+    dateTime: "2026-08-09T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月9日・週末版）",
+    excerpt:
+      "弱い米雇用と最高値更新、米CPI、AI・半導体、日本企業決算、ホルムズ海峡と原油を整理。",
+    href: "/articles/daily-2026-08-09",
+  },
+  {
     kind: "決算記事",
     theme: "決算",
     date: "2026-08-08 18:15",
