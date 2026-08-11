@@ -3,6 +3,15 @@ import Link from "next/link";
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-08-12 07:00",
+    dateTime: "2026-08-12T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月12日）",
+    excerpt:
+      "米株続落、ホルムズ海峡と原油、米CPI、NVIDIAのAIインフラ金融、Sony・TSMCの大型JVを整理。",
+    href: "/articles/daily-2026-08-12",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-08-11 07:00",
     dateTime: "2026-08-11T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月11日）",
