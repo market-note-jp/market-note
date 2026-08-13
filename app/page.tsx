@@ -3,6 +3,24 @@ import Link from "next/link";
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-08-14 07:00",
+    dateTime: "2026-08-14T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月14日）",
+    excerpt:
+      "米PPI、米国株最高値、Applied Materials、日本株、原油とドル円を整理。",
+    href: "/articles/daily-2026-08-14",
+  },
+  {
+    kind: "日次レポート",
+    date: "2026-08-13 07:00",
+    dateTime: "2026-08-13T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月13日）",
+    excerpt:
+      "米CPI、米国株、Sony・TSMC、日本企業のAI活用、米PPIを整理。",
+    href: "/articles/daily-2026-08-13",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-08-12 07:00",
     dateTime: "2026-08-12T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月12日）",
