@@ -2,12 +2,20 @@ import Link from "next/link";
 
 const articles = [
   {
+    kind: "週次レポート",
+    date: "2026-08-15 08:00",
+    dateTime: "2026-08-15T08:00:00+09:00",
+    title: "週次マーケットニュースレポート（2026年8月10日〜14日）",
+    excerpt:
+      "米CPI・PPI、小売売上高、日銀利上げ観測、原油、AI・半導体株をまとめた週次レポート。",
+    href: "/articles/weekly-2026-08-10",
+  },
+  {
     kind: "日次レポート",
     date: "2026-08-14 07:00",
     dateTime: "2026-08-14T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月14日）",
-    excerpt:
-      "米PPI、米国株最高値、Applied Materials、日本株、原油とドル円を整理。",
+    excerpt: "米PPI、米国株最高値、Applied Materials、日本株、原油とドル円を整理。",
     href: "/articles/daily-2026-08-14",
   },
   {
@@ -15,8 +23,7 @@ const articles = [
     date: "2026-08-13 07:00",
     dateTime: "2026-08-13T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月13日）",
-    excerpt:
-      "米CPI、米国株、Sony・TSMC、日本企業のAI活用、米PPIを整理。",
+    excerpt: "米CPI、米国株、Sony・TSMC、日本企業のAI活用、米PPIを整理。",
     href: "/articles/daily-2026-08-13",
   },
   {
@@ -24,8 +31,7 @@ const articles = [
     date: "2026-08-12 07:00",
     dateTime: "2026-08-12T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月12日）",
-    excerpt:
-      "米株続落、ホルムズ海峡と原油、米CPI、NVIDIAのAIインフラ金融、Sony・TSMCの大型JVを整理。",
+    excerpt: "米株続落、ホルムズ海峡と原油、米CPI、NVIDIAのAIインフラ金融、Sony・TSMCの大型JVを整理。",
     href: "/articles/daily-2026-08-12",
   },
   {
@@ -33,8 +39,7 @@ const articles = [
     date: "2026-08-11 07:00",
     dateTime: "2026-08-11T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月11日）",
-    excerpt:
-      "米株小反落、ホルムズ海峡と原油急騰、ドル円、米CPI、AI・半導体決算を整理。",
+    excerpt: "米株小反落、ホルムズ海峡と原油急騰、ドル円、米CPI、AI・半導体決算を整理。",
     href: "/articles/daily-2026-08-11",
   },
   {
@@ -42,8 +47,7 @@ const articles = [
     date: "2026-08-10 07:00",
     dateTime: "2026-08-10T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月10日）",
-    excerpt:
-      "米株最高値と弱い雇用、米CPI、AI企業業績、キオクシア、ホルムズ海峡と原油を整理。",
+    excerpt: "米株最高値と弱い雇用、米CPI、AI企業業績、キオクシア、ホルムズ海峡と原油を整理。",
     href: "/articles/daily-2026-08-10",
   },
   {
@@ -51,8 +55,7 @@ const articles = [
     date: "2026-08-09 07:00",
     dateTime: "2026-08-09T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月9日・週末版）",
-    excerpt:
-      "弱い米雇用と最高値更新、米CPI、AI・半導体、日本企業決算、ホルムズ海峡と原油を整理。",
+    excerpt: "弱い米雇用と最高値更新、米CPI、AI・半導体、日本企業決算、ホルムズ海峡と原油を整理。",
     href: "/articles/daily-2026-08-09",
   },
   {
@@ -61,8 +64,7 @@ const articles = [
     date: "2026-08-08 18:15",
     dateTime: "2026-08-08T18:15:00+09:00",
     title: "8月3日〜7日決算総まとめ　AI・データセンター関連に相次ぐ上方修正、好決算でも売られる銘柄も",
-    excerpt:
-      "AI・データセンター需要の広がりと、主要企業の上方修正、決算後の株価反応をテーマ別に整理。",
+    excerpt: "AI・データセンター需要の広がりと、主要企業の上方修正、決算後の株価反応をテーマ別に整理。",
     href: "/articles/earnings-2026-08-03-07",
   },
   {
@@ -70,16 +72,15 @@ const articles = [
     date: "2026-08-08 07:00",
     dateTime: "2026-08-08T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月8日・週末版）",
-    excerpt:
-      "米雇用の弱さと最高値更新、AMDのAI需要、ソフトバンクG決算、原油・インフレを整理。",
+    excerpt: "米雇用の弱さと最高値更新、AMDのAI需要、ソフトバンクG決算、原油・インフレを整理。",
     href: "/articles/daily-2026-08-08",
   },
   {
     kind: "週次レポート",
     date: "2026-08-08 08:00",
+    dateTime: "2026-08-08T08:00:00+09:00",
     title: "週次マーケットニュースレポート（2026年8月3日〜7日）",
-    excerpt:
-      "原油安、米雇用統計、金利・円相場、テック・半導体株の反発をまとめた週次レポート。",
+    excerpt: "原油安、米雇用統計、金利・円相場、テック・半導体株の反発をまとめた週次レポート。",
     href: "/articles/weekly-2026-08-03",
   },
   {
@@ -87,8 +88,7 @@ const articles = [
     date: "2026-08-07 07:00",
     dateTime: "2026-08-07T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月7日）",
-    excerpt:
-      "原油高、米国株の小幅安、ソフトバンクG決算、日経平均、米雇用統計を整理。",
+    excerpt: "原油高、米国株の小幅安、ソフトバンクG決算、日経平均、米雇用統計を整理。",
     href: "/articles/daily-2026-08-07",
   },
   {
@@ -96,8 +96,7 @@ const articles = [
     date: "2026-08-06 07:00",
     dateTime: "2026-08-06T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月6日）",
-    excerpt:
-      "米国株の選別、NVIDIAとAMD、日経平均、ソフトバンクG決算予定、原油・雇用を整理。",
+    excerpt: "米国株の選別、NVIDIAとAMD、日経平均、ソフトバンクG決算予定、原油・雇用を整理。",
     href: "/articles/daily-2026-08-06",
   },
   {
@@ -105,8 +104,7 @@ const articles = [
     date: "2026-08-05 07:00",
     dateTime: "2026-08-05T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月5日）",
-    excerpt:
-      "米国株の最高値、AMDとPalantir、半導体、原油・金利、米求人を整理。",
+    excerpt: "米国株の最高値、AMDとPalantir、半導体、原油・金利、米求人を整理。",
     href: "/articles/daily-2026-08-05",
   },
   {
@@ -114,8 +112,7 @@ const articles = [
     date: "2026-08-04 08:00",
     dateTime: "2026-08-04T08:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月4日）",
-    excerpt:
-      "原油安を受けた米株高、Palantir決算、日本株・円相場、米製造業、半導体株の選別を整理。",
+    excerpt: "原油安を受けた米株高、Palantir決算、日本株・円相場、米製造業、半導体株の選別を整理。",
     href: "/articles/daily-2026-08-04",
   },
   {
@@ -123,8 +120,7 @@ const articles = [
     date: "2026-08-01 08:00",
     dateTime: "2026-08-01T08:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月1日・週末版）",
-    excerpt:
-      "AmazonとMicrosoftの決算、半導体株の調整、Sony、日銀、円相場と原油をまとめたデイリーブリーフィング。",
+    excerpt: "AmazonとMicrosoftの決算、半導体株の調整、Sony、日銀、円相場と原油をまとめたデイリーブリーフィング。",
     href: "/articles/daily-2026-08-01",
   },
   {
@@ -132,8 +128,7 @@ const articles = [
     date: "2026-08-01 08:00",
     dateTime: "2026-08-01T08:00:00+09:00",
     title: "週次マーケットニュースレポート（2026年7月27日〜31日）",
-    excerpt:
-      "大型テック決算、日銀、原油・インフレ、AI・半導体株の調整をまとめた週次レポート。",
+    excerpt: "大型テック決算、日銀、原油・インフレ、AI・半導体株の調整をまとめた週次レポート。",
     href: "/articles/weekly-2026-07-27",
   },
 ];
@@ -144,73 +139,27 @@ export default function Home() {
       <header className="site-header">
         <Link className="brand" href="/">
           <span className="brand-mark">M</span>
-          <span>
-            MARKET NOTE
-            <small>日本株・米国株のニュースレポート</small>
-          </span>
+          <span>MARKET NOTE<small>日本株・米国株のニュースレポート</small></span>
         </Link>
-        <nav aria-label="メインナビゲーション">
-          <a href="#articles">記事一覧</a>
-          <a href="#policy">このサイトについて</a>
-        </nav>
+        <nav aria-label="メインナビゲーション"><a href="#articles">記事一覧</a><a href="#policy">このサイトについて</a></nav>
       </header>
-
-      <section className="intro">
-        <p className="kicker">MARKET REPORT ARCHIVE</p>
-        <h1>市場をあとから読み返せる形に。</h1>
-        <p>
-          毎日・毎週のマーケットレポートを、公開情報と出典リンクを添えて全文保存。
-        </p>
-      </section>
-
+      <section className="intro"><p className="kicker">MARKET REPORT ARCHIVE</p><h1>市場をあとから読み返せる形に。</h1><p>毎日・毎週のマーケットレポートを、公開情報と出典リンクを添えて全文保存。</p></section>
       <section className="articles" id="articles" aria-labelledby="articles-title">
-        <div className="section-title-row">
-          <div>
-            <p className="kicker">ARTICLES</p>
-            <h2 id="articles-title">記事一覧</h2>
-          </div>
-          <p>{articles.length}件</p>
-        </div>
-
-        <div className="tabs" aria-label="記事の分類">
-          <span className="tab active">新着</span>
-          <span className="tab">月別</span>
-          <span className="tab">テーマ別</span>
-        </div>
-
+        <div className="section-title-row"><div><p className="kicker">ARTICLES</p><h2 id="articles-title">記事一覧</h2></div><p>{articles.length}件</p></div>
+        <div className="tabs" aria-label="記事の分類"><span className="tab active">新着</span><span className="tab">月別</span><span className="tab">テーマ別</span></div>
         <div className="article-list">
           {articles.map((article) => (
             <article className="article-row" key={article.href}>
               <Link href={article.href} aria-label={`${article.title}を読む`}>
-                <div className="article-copy">
-                  <p className="article-kind">{article.kind}</p>
-                  <h3>{article.title}</h3>
-                  <p className="article-excerpt">{article.excerpt}</p>
-                  <p className="article-meta">
-                    <time dateTime={article.dateTime}>{article.date}</time>
-                    <span>テーマ：{article.theme ?? "市場ニュース"}</span>
-                  </p>
-                </div>
+                <div className="article-copy"><p className="article-kind">{article.kind}</p><h3>{article.title}</h3><p className="article-excerpt">{article.excerpt}</p><p className="article-meta"><time dateTime={article.dateTime}>{article.date}</time><span>テーマ：{article.theme ?? "市場ニュース"}</span></p></div>
                 <span className="article-arrow" aria-hidden="true">→</span>
               </Link>
             </article>
           ))}
         </div>
       </section>
-
-      <section className="policy" id="policy">
-        <p className="kicker">EDITORIAL POLICY</p>
-        <h2>レポート本文を省略せず保存します。</h2>
-        <p>
-          日次・週次レポートの章立て、表、箇条書き、出典リンク、注意書きを保ったまま記事として公開します。
-          噂や未確認情報を避け、断定を控えた市場概況として蓄積します。
-        </p>
-      </section>
-
-      <footer>
-        <span>MARKET NOTE</span>
-        <span>Public market research archive / Not investment advice.</span>
-      </footer>
+      <section className="policy" id="policy"><p className="kicker">EDITORIAL POLICY</p><h2>レポート本文を省略せず保存します。</h2><p>日次・週次レポートの章立て、表、箇条書き、出典リンク、注意書きを保ったまま記事として公開します。噂や未確認情報を避け、断定を控えた市場概況として蓄積します。</p></section>
+      <footer><span>MARKET NOTE</span><span>Public market research archive / Not investment advice.</span></footer>
     </main>
   );
 }
