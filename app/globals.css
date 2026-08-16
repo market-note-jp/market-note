@@ -71,6 +71,15 @@ p, h1, h2, h3 { margin-top: 0; }
 .article-excerpt { margin-bottom: 15px; color: var(--muted); font-size: 13px; line-height: 1.8; }
 .article-meta { display: flex; gap: 22px; margin: 0; color: #949995; font-size: 12px; }
 .article-arrow { color: var(--accent); font-family: Georgia, serif; font-size: 28px; }
+.pagination { display: grid; justify-items: center; gap: 18px; padding: 34px 12px 0; background: var(--card); }
+.pagination-summary { margin: 0; color: var(--muted); font-size: 13px; }
+.pagination-summary strong { color: var(--ink); font-weight: 600; }
+.pagination-controls { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.page-button { min-width: 48px; height: 48px; padding: 0 12px; border: 1px solid var(--line); background: var(--card); color: var(--ink); font: inherit; font-size: 14px; cursor: pointer; transition: background .2s ease, border-color .2s ease, color .2s ease; }
+.page-button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); background: #fcfdfc; }
+.page-button.is-active { border-color: var(--accent); background: var(--accent); color: #fff; }
+.page-button-nav { min-width: 88px; }
+.page-button:disabled { color: #c5c9c6; background: #fafbf9; cursor: not-allowed; }
 
 .policy { padding: 72px 0; border-top: 1px solid var(--line); }
 .policy h2 { margin-bottom: 17px; font-family: Georgia, "Yu Mincho", serif; font-size: 32px; font-weight: 500; }
@@ -117,6 +126,10 @@ footer span:first-child { color: var(--ink); font-weight: 700; letter-spacing: .
   .article-row > a { padding: 28px 4px; }
   .article-meta { flex-direction: column; gap: 5px; }
   .article-arrow { display: none; }
+  .pagination { padding-top: 28px; }
+  .pagination-controls { gap: 6px; }
+  .page-button { min-width: 42px; height: 44px; }
+  .page-button-nav { min-width: 74px; }
   .policy { padding: 55px 0; }
   footer { flex-direction: column; padding: 20px; }
   .article-page { padding-top: 28px; }

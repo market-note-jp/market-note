@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ArticleArchive from "./article-archive";
 
 const articles = [
   {
@@ -147,16 +148,7 @@ export default function Home() {
       <section className="articles" id="articles" aria-labelledby="articles-title">
         <div className="section-title-row"><div><p className="kicker">ARTICLES</p><h2 id="articles-title">記事一覧</h2></div><p>{articles.length}件</p></div>
         <div className="tabs" aria-label="記事の分類"><span className="tab active">新着</span><span className="tab">月別</span><span className="tab">テーマ別</span></div>
-        <div className="article-list">
-          {articles.map((article) => (
-            <article className="article-row" key={article.href}>
-              <Link href={article.href} aria-label={`${article.title}を読む`}>
-                <div className="article-copy"><p className="article-kind">{article.kind}</p><h3>{article.title}</h3><p className="article-excerpt">{article.excerpt}</p><p className="article-meta"><time dateTime={article.dateTime}>{article.date}</time><span>テーマ：{article.theme ?? "市場ニュース"}</span></p></div>
-                <span className="article-arrow" aria-hidden="true">→</span>
-              </Link>
-            </article>
-          ))}
-        </div>
+        <ArticleArchive articles={articles} />
       </section>
       <section className="policy" id="policy"><p className="kicker">EDITORIAL POLICY</p><h2>レポート本文を省略せず保存します。</h2><p>日次・週次レポートの章立て、表、箇条書き、出典リンク、注意書きを保ったまま記事として公開します。噂や未確認情報を避け、断定を控えた市場概況として蓄積します。</p></section>
       <footer><span>MARKET NOTE</span><span>Public market research archive / Not investment advice.</span></footer>
