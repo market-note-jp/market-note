@@ -65,7 +65,12 @@ p, h1, h2, h3 { margin-top: 0; }
 .tab:hover { color: var(--accent); }
 .tab:focus-visible { position: relative; outline: 2px solid var(--accent); outline-offset: -3px; }
 .tab-count { margin-left: 7px; color: #9aa19c; font-size: 11px; }
+.period-filters { display: flex; justify-content: flex-end; gap: 10px; padding: 16px 12px; border-bottom: 1px solid var(--line); background: var(--card); }
+.period-filter { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 12px; }
+.period-filter select { min-width: 118px; height: 34px; padding: 0 28px 0 10px; border: 1px solid var(--line); border-radius: 0; background: var(--card); color: var(--ink); font: inherit; cursor: pointer; }
+.period-filter select:disabled { color: #b1b6b2; background: #fafbf9; cursor: not-allowed; }
 .article-list { background: var(--card); }
+.empty-articles { margin: 0; padding: 42px 12px; color: var(--muted); text-align: center; font-size: 14px; }
 .article-row { border-bottom: 1px solid var(--line); }
 .article-row > a { display: flex; align-items: center; justify-content: space-between; gap: 30px; padding: 36px 12px; transition: padding .2s ease, background .2s ease; }
 .article-row > a:hover { padding-left: 20px; padding-right: 20px; background: #fcfdfc; }
@@ -128,6 +133,9 @@ footer span:first-child { color: var(--ink); font-weight: 700; letter-spacing: .
   .tabs { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .tab { padding: 16px 4px; font-size: 13px; }
   .tab-count { display: block; margin: 3px 0 0; font-size: 10px; }
+  .period-filters { justify-content: flex-start; flex-wrap: wrap; padding: 14px 8px; }
+  .period-filter { flex: 1 1 140px; justify-content: space-between; }
+  .period-filter select { min-width: 0; width: 126px; }
   .article-row > a { padding: 28px 4px; }
   .article-meta { flex-direction: column; gap: 5px; }
   .article-arrow { display: none; }

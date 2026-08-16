@@ -33,10 +33,23 @@ type ArticleFilterId = ArticleFilter["id"];
 export default function ArticleArchive({ articles }: { articles: Article[] }) {
   const [currentPage, setCurrentPage] = useState(1);
   const [activeFilter, setActiveFilter] = useState<ArticleFilterId>("all");
+  const [selectedYear, setSelectedYear] = useState("");
+  const [selectedMonth, setSelectedMonth] = useState("");
   const selectedFilter = articleFilters.find((filter) => filter.id === activeFilter)!;
-  const filteredArticles = selectedFilter.kind
+  const typeFilteredArticles = selectedFilter.kind
     ? articles.filter((article) => article.kind === selectedFilter.kind)
     : articles;
+  const availableYears = Array.from(new Set(articles.map((article) => article.date.slice(0, 4))))
+    .sort((left, right) => Number(right) - Number(left));
+  const availableMonths = Array.from(new Set(
+    articles
+      .filter((article) => !selectedYear || article.date.startsWith(`${selectedYear}-`))
+      .map((article) => article.date.slice(5, 7)),
+  )).sort((left, right) => Number(right) - Number(left));
+  const filteredArticles = typeFilteredArticles.filter((article) => (
+    (!selectedYear || article.date.startsWith(`${selectedYear}-`))
+    && (!selectedMonth || article.date.slice(5, 7) === selectedMonth)
+  ));
   const pageCount = Math.ceil(filteredArticles.length / ARTICLES_PER_PAGE);
   const startIndex = (currentPage - 1) * ARTICLES_PER_PAGE;
   const pageArticles = filteredArticles.slice(startIndex, startIndex + ARTICLES_PER_PAGE);
@@ -57,6 +70,23 @@ export default function ArticleArchive({ articles }: { articles: Article[] }) {
       document.getElementById("articles")?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   };
+
+  const selectYear = (year: string) => {
+    setSelectedYear(year);
+    setSelectedMonth("");
+    setCurrentPage(1);
+  };
+
+  const selectMonth = (month: string) => {
+    setSelectedMonth(month);
+    setCurrentPage(1);
+  };
+
+  const activeFilterLabel = [
+    selectedFilter.label,
+    selectedYear && `${selectedYear}年`,
+    selectedMonth && `${Number(selectedMonth)}月`,
+  ].filter(Boolean).join("・");
 
   return (
     <>
@@ -81,7 +111,31 @@ export default function ArticleArchive({ articles }: { articles: Article[] }) {
         })}
       </nav>
 
+      <div className="period-filters" aria-label="記事の期間">
+        <label className="period-filter">
+          <span>年</span>
+          <select value={selectedYear} onChange={(event) => selectYear(event.target.value)}>
+            <option value="">すべての年</option>
+            {availableYears.map((year) => <option key={year} value={year}>{year}年</option>)}
+          </select>
+        </label>
+        <label className="period-filter">
+          <span>月</span>
+          <select
+            value={selectedMonth}
+            onChange={(event) => selectMonth(event.target.value)}
+            disabled={!selectedYear}
+          >
+            <option value="">すべての月</option>
+            {availableMonths.map((month) => <option key={month} value={month}>{Number(month)}月</option>)}
+          </select>
+        </label>
+      </div>
+
       <div className="article-list" aria-live="polite">
+        {pageArticles.length === 0 && (
+          <p className="empty-articles">選択した条件に当てはまる記事はありません。</p>
+        )}
         {pageArticles.map((article) => (
           <article className="article-row" key={article.href}>
             <Link href={article.href} aria-label={`${article.title}を読む`}>
@@ -102,7 +156,7 @@ export default function ArticleArchive({ articles }: { articles: Article[] }) {
 
       <nav className="pagination" aria-label="記事一覧のページ">
         <p className="pagination-summary">
-          <strong>{firstArticleNumber}–{lastArticleNumber}件</strong> / {selectedFilter.label} {filteredArticles.length}件
+          <strong>{firstArticleNumber}–{lastArticleNumber}件</strong> / {activeFilterLabel} {filteredArticles.length}件
         </p>
         {pageCount > 1 && (
           <div className="pagination-controls">
