@@ -15,13 +15,33 @@ type Article = {
 
 const ARTICLES_PER_PAGE = 10;
 
+type ArticleFilter = {
+  id: "all" | "daily" | "weekly" | "earnings";
+  label: string;
+  kind?: string;
+};
+
+const articleFilters: ArticleFilter[] = [
+  { id: "all", label: "すべて" },
+  { id: "daily", label: "日次", kind: "日次レポート" },
+  { id: "weekly", label: "週次", kind: "週次レポート" },
+  { id: "earnings", label: "決算", kind: "決算記事" },
+];
+
+type ArticleFilterId = ArticleFilter["id"];
+
 export default function ArticleArchive({ articles }: { articles: Article[] }) {
   const [currentPage, setCurrentPage] = useState(1);
-  const pageCount = Math.ceil(articles.length / ARTICLES_PER_PAGE);
+  const [activeFilter, setActiveFilter] = useState<ArticleFilterId>("all");
+  const selectedFilter = articleFilters.find((filter) => filter.id === activeFilter)!;
+  const filteredArticles = selectedFilter.kind
+    ? articles.filter((article) => article.kind === selectedFilter.kind)
+    : articles;
+  const pageCount = Math.ceil(filteredArticles.length / ARTICLES_PER_PAGE);
   const startIndex = (currentPage - 1) * ARTICLES_PER_PAGE;
-  const pageArticles = articles.slice(startIndex, startIndex + ARTICLES_PER_PAGE);
-  const firstArticleNumber = articles.length === 0 ? 0 : startIndex + 1;
-  const lastArticleNumber = Math.min(startIndex + ARTICLES_PER_PAGE, articles.length);
+  const pageArticles = filteredArticles.slice(startIndex, startIndex + ARTICLES_PER_PAGE);
+  const firstArticleNumber = filteredArticles.length === 0 ? 0 : startIndex + 1;
+  const lastArticleNumber = Math.min(startIndex + ARTICLES_PER_PAGE, filteredArticles.length);
 
   const goToPage = (page: number) => {
     setCurrentPage(page);
@@ -30,8 +50,37 @@ export default function ArticleArchive({ articles }: { articles: Article[] }) {
     });
   };
 
+  const selectFilter = (filter: ArticleFilterId) => {
+    setActiveFilter(filter);
+    setCurrentPage(1);
+    window.requestAnimationFrame(() => {
+      document.getElementById("articles")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  };
+
   return (
     <>
+      <nav className="tabs" aria-label="記事の種類">
+        {articleFilters.map((filter) => {
+          const isActive = filter.id === activeFilter;
+          const filterCount = filter.kind
+            ? articles.filter((article) => article.kind === filter.kind).length
+            : articles.length;
+
+          return (
+            <button
+              className={`tab${isActive ? " active" : ""}`}
+              type="button"
+              key={filter.id}
+              onClick={() => selectFilter(filter.id)}
+              aria-pressed={isActive}
+            >
+              {filter.label}<span className="tab-count">{filterCount}</span>
+            </button>
+          );
+        })}
+      </nav>
+
       <div className="article-list" aria-live="polite">
         {pageArticles.map((article) => (
           <article className="article-row" key={article.href}>
@@ -51,11 +100,11 @@ export default function ArticleArchive({ articles }: { articles: Article[] }) {
         ))}
       </div>
 
-      {pageCount > 1 && (
-        <nav className="pagination" aria-label="記事一覧のページ">
-          <p className="pagination-summary">
-            <strong>{firstArticleNumber}–{lastArticleNumber}件</strong> / {articles.length}件
-          </p>
+      <nav className="pagination" aria-label="記事一覧のページ">
+        <p className="pagination-summary">
+          <strong>{firstArticleNumber}–{lastArticleNumber}件</strong> / {selectedFilter.label} {filteredArticles.length}件
+        </p>
+        {pageCount > 1 && (
           <div className="pagination-controls">
             <button
               className="page-button page-button-nav"
@@ -86,8 +135,8 @@ export default function ArticleArchive({ articles }: { articles: Article[] }) {
               次へ →
             </button>
           </div>
-        </nav>
-      )}
+        )}
+      </nav>
     </>
   );
 }
