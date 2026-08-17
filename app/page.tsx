@@ -4,6 +4,14 @@ import ArticleArchive from "./article-archive";
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-08-18 07:00",
+    dateTime: "2026-08-18T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月18日）",
+    excerpt: "日本GDPと長期金利、米国株と半導体、原油、中国景気、AI投資を整理。",
+    href: "/articles/daily-2026-08-18",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-08-17 07:00",
     dateTime: "2026-08-17T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月17日）",
