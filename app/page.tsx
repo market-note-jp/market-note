@@ -4,6 +4,14 @@ import ArticleArchive from "./article-archive";
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-08-19 07:00",
+    dateTime: "2026-08-19T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月19日）",
+    excerpt: "米半導体株急落、日米長期金利、ホルムズ海峡と原油、米製造業、FOMC議事要旨を整理。",
+    href: "/articles/daily-2026-08-19",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-08-18 07:00",
     dateTime: "2026-08-18T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月18日）",
