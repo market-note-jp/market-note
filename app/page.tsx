@@ -4,6 +4,14 @@ import ArticleArchive from "./article-archive";
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-08-20 07:00",
+    dateTime: "2026-08-20T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月20日）",
+    excerpt: "米国株反発、FOMC議事要旨、米長期金利、MarvellとGoogleのカスタムAIチップ、ホルムズ海峡と原油を整理。",
+    href: "/articles/daily-2026-08-20",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-08-19 07:00",
     dateTime: "2026-08-19T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月19日）",
