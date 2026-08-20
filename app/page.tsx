@@ -4,6 +4,14 @@ import ArticleArchive from "./article-archive";
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-08-21 07:00",
+    dateTime: "2026-08-21T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月21日）",
+    excerpt: "米国株急落、米長期金利、日本の貿易統計とAI向け半導体輸出、全国CPI、AlibabaのAI投資、ホルムズ海峡と原油を整理。",
+    href: "/articles/daily-2026-08-21",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-08-20 07:00",
     dateTime: "2026-08-20T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月20日）",
