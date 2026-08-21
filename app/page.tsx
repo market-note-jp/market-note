@@ -3,6 +3,14 @@ import ArticleArchive from "./article-archive";
 
 const articles = [
   {
+    kind: "週次レポート",
+    date: "2026-08-22 08:00",
+    dateTime: "2026-08-22T08:00:00+09:00",
+    title: "週次マーケットニュースレポート（2026年8月17日〜21日）",
+    excerpt: "世界的な長期金利上昇、原油高、AI・半導体株の調整、日本GDP・CPIをまとめた週次レポート。",
+    href: "/articles/weekly-2026-08-17",
+  },
+  {
     kind: "日次レポート",
     date: "2026-08-22 07:00",
     dateTime: "2026-08-22T07:00:00+09:00",
@@ -71,8 +79,7 @@ const articles = [
     date: "2026-08-15 08:00",
     dateTime: "2026-08-15T08:00:00+09:00",
     title: "週次マーケットニュースレポート（2026年8月10日〜14日）",
-    excerpt:
-      "米CPI・PPI、小売売上高、日銀利上げ観測、原油、AI・半導体株をまとめた週次レポート。",
+    excerpt: "米CPI・PPI、小売売上高、日銀利上げ観測、原油、AI・半導体株をまとめた週次レポート。",
     href: "/articles/weekly-2026-08-10",
   },
   {
