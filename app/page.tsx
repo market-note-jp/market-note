@@ -4,6 +4,14 @@ import ArticleArchive from "./article-archive";
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-08-22 07:00",
+    dateTime: "2026-08-22T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月22日・週末版）",
+    excerpt: "米国株反発、日本7月CPI、NVIDIA決算前のAI・半導体、米長期金利、ホルムズ海峡と原油を整理。",
+    href: "/articles/daily-2026-08-22",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-08-21 07:00",
     dateTime: "2026-08-21T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月21日）",
