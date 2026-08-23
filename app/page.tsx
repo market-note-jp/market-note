@@ -3,6 +3,22 @@ import ArticleArchive from "./article-archive";
 
 const articles = [
   {
+    kind: "日次レポート",
+    date: "2026-08-24 07:00",
+    dateTime: "2026-08-24T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月24日）",
+    excerpt: "週明け日本株、NVIDIA決算、AIサーバー価格上昇報道、日本の長期金利・財政、原油・米PCEを整理。",
+    href: "/articles/daily-2026-08-24",
+  },
+  {
+    kind: "日次レポート",
+    date: "2026-08-23 07:00",
+    dateTime: "2026-08-23T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月23日・週末版）",
+    excerpt: "NVIDIA決算前のAI・半導体、AIサーバー価格上昇報道、米国株と長期金利、日本株、原油を整理。",
+    href: "/articles/daily-2026-08-23",
+  },
+  {
     kind: "企業レポート",
     theme: "企業分析",
     date: "2026-08-23",
