@@ -198,6 +198,20 @@ export default function MarketCalendar({ events }: { events: MarketCalendarEvent
                     <time dateTime={`${event.date}T00:00:00+09:00`}>{event.date} {event.time}</time>
                     {event.sourceTime && <span>現地基準：{event.sourceTime}</span>}
                   </p>
+                  {event.forecast && (
+                    <div className="event-forecast">
+                      <div className="event-forecast-heading">
+                        <span>市場予想</span>
+                        <a href={event.forecast.sourceUrl} target="_blank" rel="noreferrer">
+                          {event.forecast.sourceName}
+                        </a>
+                      </div>
+                      <ul>
+                        {event.forecast.values.map((value) => <li key={value}>{value}</li>)}
+                      </ul>
+                      <p>確認日：{event.forecast.reviewedAt}</p>
+                    </div>
+                  )}
                   <a className="source-link" href={event.sourceUrl} target="_blank" rel="noreferrer">
                     {event.sourceName}
                   </a>

@@ -2,6 +2,13 @@ export type CalendarEventCategory = "決算" | "経済指標" | "金融政策";
 export type CalendarEventRegion = "日本" | "米国";
 export type CalendarEventImportance = "高" | "中";
 
+export type MarketCalendarForecast = {
+  reviewedAt: string;
+  values: string[];
+  sourceName: string;
+  sourceUrl: string;
+};
+
 export type MarketCalendarEvent = {
   id: string;
   date: string;
@@ -14,6 +21,7 @@ export type MarketCalendarEvent = {
   sourceName: string;
   sourceUrl: string;
   sourceTime?: string;
+  forecast?: MarketCalendarForecast;
 };
 
 export const marketCalendarReviewedAt = "2026-08-23";
@@ -31,6 +39,17 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     sourceName: "BEA Release Schedule",
     sourceUrl: "https://www.bea.gov/news/schedule",
     sourceTime: "8月26日 8:30 ET",
+    forecast: {
+      reviewedAt: "2026-08-23",
+      values: [
+        "個人所得 前月比 +0.2%",
+        "個人消費支出 前月比 +0.1%",
+        "PCE価格指数 前月比 +0.1% / 前年比 +3.6%",
+        "コアPCE 前月比 +0.2% / 前年比 +3.3%",
+      ],
+      sourceName: "MarketWatch U.S. Economic Calendar",
+      sourceUrl: "https://www.marketwatch.com/economy-politics/calendar",
+    },
   },
   {
     id: "bea-gdp-second-2026-q2",
@@ -44,6 +63,12 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     sourceName: "BEA Release Schedule",
     sourceUrl: "https://www.bea.gov/news/schedule/full",
     sourceTime: "8月26日 8:30 ET",
+    forecast: {
+      reviewedAt: "2026-08-23",
+      values: ["実質GDP 2次推計 年率 +1.5%"],
+      sourceName: "MarketWatch U.S. Economic Calendar",
+      sourceUrl: "https://www.marketwatch.com/economy-politics/calendar",
+    },
   },
   {
     id: "nvidia-fy27-q2",
@@ -57,6 +82,12 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     sourceName: "NVIDIA Investor Relations",
     sourceUrl: "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx",
     sourceTime: "8月26日 14:00 PT",
+    forecast: {
+      reviewedAt: "2026-08-23",
+      values: ["売上高 919億ドル", "調整後EPS 2.08ドル"],
+      sourceName: "Investing.com",
+      sourceUrl: "https://in.investing.com/news/stock-market-news/nvidia-fiscal-q2-2027-earnings-outlook-what-to-watch-on-august-26-93CH-5567845",
+    },
   },
   {
     id: "salesforce-fy27-q2",
@@ -70,6 +101,12 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     sourceName: "Salesforce Investor Relations",
     sourceUrl: "https://investor.salesforce.com/news/news-details/2026/Salesforce-Announces-Date-of-Second-Quarter-Fiscal-2027-Earnings-Release-and-Webcast/default.aspx",
     sourceTime: "8月26日 米国市場引け後",
+    forecast: {
+      reviewedAt: "2026-08-23",
+      values: ["売上高 113.3億ドル", "調整後EPS 3.28ドル"],
+      sourceName: "Investopedia / Visible Alpha",
+      sourceUrl: "https://www.investopedia.com/here-is-how-much-salesforce-stock-is-expected-to-move-after-earnings-crm-q2-fy2027-12064121",
+    },
   },
   {
     id: "tokyo-cpi-2026-08",
@@ -83,6 +120,12 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     sourceName: "総務省統計局 消費者物価指数",
     sourceUrl: "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html",
     sourceTime: "8月28日 8:30 JST",
+    forecast: {
+      reviewedAt: "2026-08-23",
+      values: ["東京都区部CPI 前年比 +1.9〜2.0%", "コアCPI 前年比 +1.9%"],
+      sourceName: "Newsquawk Week in Focus",
+      sourceUrl: "https://www.newsquawk.com/content/research_sheets/production/original/000/041/993/Week_in_Focus__24-28th_August_2026__1_.pdf",
+    },
   },
   {
     id: "dell-fy27-q2",
@@ -96,6 +139,12 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     sourceName: "Dell Technologies Investor Relations",
     sourceUrl: "https://delltechnologies.gcs-web.com/",
     sourceTime: "9月1日 15:30 CDT",
+    forecast: {
+      reviewedAt: "2026-08-23",
+      values: ["EPS 4.89ドル"],
+      sourceName: "WSJ / FactSet",
+      sourceUrl: "https://www.wsj.com/market-data/quotes/DELL/research-ratings",
+    },
   },
   {
     id: "bls-employment-2026-08",
