@@ -16,7 +16,7 @@ type Article = {
 const ARTICLES_PER_PAGE = 10;
 
 type ArticleFilter = {
-  id: "all" | "daily" | "weekly" | "earnings";
+  id: "all" | "daily" | "weekly" | "earnings" | "corporate";
   label: string;
   kind?: string;
 };
@@ -26,6 +26,7 @@ const articleFilters: ArticleFilter[] = [
   { id: "daily", label: "日次", kind: "日次レポート" },
   { id: "weekly", label: "週次", kind: "週次レポート" },
   { id: "earnings", label: "決算", kind: "決算記事" },
+  { id: "corporate", label: "企業", kind: "企業レポート" },
 ];
 
 type ArticleFilterId = ArticleFilter["id"];

@@ -3,6 +3,15 @@ import ArticleArchive from "./article-archive";
 
 const articles = [
   {
+    kind: "企業レポート",
+    theme: "企業分析",
+    date: "2026-08-23",
+    dateTime: "2026-08-23",
+    title: "サンリオ（8136）企業レポート",
+    excerpt: "事業構造、11年間の業績推移、地域別利益、資本効率、成長要因、リスクと最新四半期を整理。",
+    href: "/articles/corporate-sanrio-2026-08-23",
+  },
+  {
     kind: "週次レポート",
     date: "2026-08-22 08:00",
     dateTime: "2026-08-22T08:00:00+09:00",
@@ -215,12 +224,12 @@ export default function Home() {
         </Link>
         <nav aria-label="メインナビゲーション"><a href="#articles">記事一覧</a><Link href="/calendar">市場カレンダー</Link><a href="#policy">このサイトについて</a></nav>
       </header>
-      <section className="intro"><p className="kicker">MARKET REPORT ARCHIVE</p><h1>市場をあとから読み返せる形に。</h1><p>毎日・毎週のマーケットレポートを、公開情報と出典リンクを添えて全文保存。</p><Link className="intro-link" href="/calendar">決算・指標予定を見る</Link></section>
+      <section className="intro"><p className="kicker">MARKET REPORT ARCHIVE</p><h1>市場をあとから読み返せる形に。</h1><p>日次・週次の市場動向と企業分析を、公開情報と出典リンクを添えて全文保存。</p><Link className="intro-link" href="/calendar">決算・指標予定を見る</Link></section>
       <section className="articles" id="articles" aria-labelledby="articles-title">
         <div className="section-title-row"><div><p className="kicker">ARTICLES</p><h2 id="articles-title">記事一覧</h2></div><p>{articles.length}件</p></div>
         <ArticleArchive articles={articles} />
       </section>
-      <section className="policy" id="policy"><p className="kicker">EDITORIAL POLICY</p><h2>レポート本文を省略せず保存します。</h2><p>日次・週次レポートの章立て、表、箇条書き、出典リンク、注意書きを保ったまま記事として公開します。噂や未確認情報を避け、断定を控えた市場概況として蓄積します。</p></section>
+      <section className="policy" id="policy"><p className="kicker">EDITORIAL POLICY</p><h2>レポート本文を省略せず保存します。</h2><p>日次・週次・決算・企業レポートの章立て、表、箇条書き、出典リンク、注意書きを保ったまま記事として公開します。噂や未確認情報を避け、断定を控えた市場・企業情報として蓄積します。</p></section>
       <footer><span>MARKET NOTE</span><span>Public market research archive / Not investment advice.</span></footer>
     </main>
   );
