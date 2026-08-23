@@ -213,9 +213,9 @@ export default function Home() {
           <span className="brand-mark">M</span>
           <span>MARKET NOTE<small>日本株・米国株のニュースレポート</small></span>
         </Link>
-        <nav aria-label="メインナビゲーション"><a href="#articles">記事一覧</a><a href="#policy">このサイトについて</a></nav>
+        <nav aria-label="メインナビゲーション"><a href="#articles">記事一覧</a><Link href="/calendar">市場カレンダー</Link><a href="#policy">このサイトについて</a></nav>
       </header>
-      <section className="intro"><p className="kicker">MARKET REPORT ARCHIVE</p><h1>市場をあとから読み返せる形に。</h1><p>毎日・毎週のマーケットレポートを、公開情報と出典リンクを添えて全文保存。</p></section>
+      <section className="intro"><p className="kicker">MARKET REPORT ARCHIVE</p><h1>市場をあとから読み返せる形に。</h1><p>毎日・毎週のマーケットレポートを、公開情報と出典リンクを添えて全文保存。</p><Link className="intro-link" href="/calendar">決算・指標予定を見る</Link></section>
       <section className="articles" id="articles" aria-labelledby="articles-title">
         <div className="section-title-row"><div><p className="kicker">ARTICLES</p><h2 id="articles-title">記事一覧</h2></div><p>{articles.length}件</p></div>
         <ArticleArchive articles={articles} />

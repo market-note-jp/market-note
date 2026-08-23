@@ -49,11 +49,14 @@ p, h1, h2, h3 { margin-top: 0; }
 
 .intro,
 .articles,
+.calendar-section,
 .policy { width: min(920px, calc(100% - 48px)); margin: 0 auto; }
 .intro { padding: 88px 0 68px; }
 .kicker { margin-bottom: 13px; color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: .16em; }
 .intro h1 { max-width: 720px; margin-bottom: 20px; font-family: Georgia, "Yu Mincho", serif; font-size: clamp(40px, 6.5vw, 72px); font-weight: 500; line-height: 1.18; letter-spacing: -.04em; }
-.intro > p:last-child { max-width: 650px; margin-bottom: 0; color: var(--muted); font-size: 15px; line-height: 1.9; }
+.intro > p:not(.kicker) { max-width: 650px; margin-bottom: 0; color: var(--muted); font-size: 15px; line-height: 1.9; }
+.intro-link { display: inline-flex; align-items: center; min-height: 44px; margin-top: 28px; padding: 0 18px; border: 1px solid var(--accent); background: var(--accent); color: #fff; font-size: 13px; font-weight: 700; }
+.intro-link:hover { background: #155342; border-color: #155342; }
 
 .articles { padding-bottom: 100px; }
 .section-title-row { display: flex; align-items: end; justify-content: space-between; margin-bottom: 28px; }
@@ -88,6 +91,51 @@ p, h1, h2, h3 { margin-top: 0; }
 .page-button.is-active { border-color: var(--accent); background: var(--accent); color: #fff; }
 .page-button-nav { min-width: 88px; }
 .page-button:disabled { color: #c5c9c6; background: #fafbf9; cursor: not-allowed; }
+
+.calendar-intro { padding-bottom: 52px; }
+.calendar-review-note { margin-top: 18px !important; color: #949995 !important; font-size: 12px !important; }
+.calendar-section { padding-bottom: 96px; }
+.calendar-tool { background: var(--card); border-top: 1px solid var(--line); }
+.calendar-controls { display: grid; grid-template-columns: 1fr 150px 150px; gap: 12px; padding: 16px 12px; border-bottom: 1px solid var(--line); }
+.calendar-control-group { display: grid; gap: 8px; color: var(--muted); font-size: 12px; }
+.calendar-segmented { display: flex; flex-wrap: wrap; gap: 8px; }
+.calendar-segmented button,
+.clear-date-button { min-height: 38px; padding: 0 12px; border: 1px solid var(--line); background: var(--card); color: var(--ink); font: inherit; font-size: 13px; cursor: pointer; }
+.calendar-segmented button.is-selected,
+.clear-date-button:hover { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+.calendar-select { display: grid; gap: 8px; color: var(--muted); font-size: 12px; }
+.calendar-select select { height: 38px; padding: 0 28px 0 10px; border: 1px solid var(--line); border-radius: 0; background: var(--card); color: var(--ink); font: inherit; cursor: pointer; }
+.calendar-layout { display: grid; grid-template-columns: minmax(300px, 360px) 1fr; min-height: 620px; }
+.month-panel { padding: 28px 22px 34px; border-right: 1px solid var(--line); }
+.month-heading { margin-bottom: 22px; }
+.month-heading h2,
+.event-panel-heading h2 { margin-bottom: 0; font-size: 24px; font-weight: 600; }
+.calendar-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
+.calendar-weekdays { margin-bottom: 8px; color: var(--muted); font-size: 11px; text-align: center; }
+.calendar-day { min-width: 0; aspect-ratio: 1; padding: 7px 4px; border: 1px solid transparent; background: #fafbf9; color: #a4aaa6; font: inherit; font-size: 13px; }
+.calendar-day.has-events { background: var(--card); color: var(--ink); border-color: var(--line); cursor: pointer; }
+.calendar-day.has-events:hover,
+.calendar-day.is-active { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+.calendar-day.is-empty { background: transparent; }
+.day-dots { display: flex; justify-content: center; gap: 3px; min-height: 6px; margin-top: 6px; }
+.dot { width: 5px; height: 5px; border-radius: 50%; background: var(--accent); }
+.dot-決算 { background: #8f5f22; }
+.dot-金融政策 { background: #3c5878; }
+.event-panel { padding: 28px 22px 34px; }
+.event-panel-heading { display: flex; align-items: start; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+.event-list { display: grid; gap: 0; border-top: 1px solid var(--line); }
+.event-row { display: grid; grid-template-columns: 58px 1fr; gap: 18px; padding: 24px 0; border-bottom: 1px solid var(--line); }
+.event-date { display: grid; align-content: start; justify-items: center; gap: 2px; color: var(--accent); }
+.event-date strong { font-family: Georgia, serif; font-size: 30px; font-weight: 500; line-height: 1; }
+.event-date span { color: var(--muted); font-size: 11px; }
+.event-kinds { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; margin-bottom: 10px; color: #949995; font-size: 11px; }
+.calendar-badge { display: inline-flex; align-items: center; min-height: 24px; padding: 0 8px; background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+.calendar-badge-決算 { background: #f4ecdf; color: #8f5f22; }
+.calendar-badge-金融政策 { background: #e9eef4; color: #3c5878; }
+.event-copy h3 { margin-bottom: 9px; font-family: Georgia, "Yu Mincho", serif; font-size: 22px; font-weight: 500; line-height: 1.45; }
+.event-copy > p { margin-bottom: 12px; color: var(--muted); font-size: 13px; line-height: 1.75; }
+.event-meta { display: flex; flex-wrap: wrap; gap: 12px; color: #949995 !important; font-size: 12px !important; }
+.source-link { color: var(--accent); font-size: 12px; text-decoration: underline; text-underline-offset: 3px; }
 
 .policy { padding: 72px 0; border-top: 1px solid var(--line); }
 .policy h2 { margin-bottom: 17px; font-family: Georgia, "Yu Mincho", serif; font-size: 32px; font-weight: 500; }
@@ -125,10 +173,10 @@ footer span:first-child { color: var(--ink); font-weight: 700; letter-spacing: .
 .disclaimer { padding: 22px 24px; background: var(--accent-soft); border-left: 3px solid var(--accent); font-size: 13px; line-height: 1.8; }
 
 @media (max-width: 680px) {
-  .site-header { align-items: flex-start; padding: 16px 20px; }
-  .site-header nav { gap: 13px; padding-top: 10px; font-size: 11px; }
+  .site-header { align-items: flex-start; gap: 16px; padding: 16px 20px; }
+  .site-header nav { flex-wrap: wrap; justify-content: flex-end; gap: 10px 13px; padding-top: 10px; font-size: 11px; }
   .brand small { display: none; }
-  .intro, .articles, .policy, .article-page { width: min(100% - 32px, 920px); }
+  .intro, .articles, .calendar-section, .policy, .article-page { width: min(100% - 32px, 920px); }
   .intro { padding: 60px 0 50px; }
   .tabs { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .tab { padding: 16px 4px; font-size: 13px; }
@@ -143,6 +191,14 @@ footer span:first-child { color: var(--ink); font-weight: 700; letter-spacing: .
   .pagination-controls { gap: 6px; }
   .page-button { min-width: 42px; height: 44px; }
   .page-button-nav { min-width: 74px; }
+  .calendar-controls { grid-template-columns: 1fr; padding: 14px 8px; }
+  .calendar-layout { grid-template-columns: 1fr; min-height: 0; }
+  .month-panel { border-right: 0; border-bottom: 1px solid var(--line); padding: 24px 16px 28px; }
+  .event-panel { padding: 24px 16px 28px; }
+  .calendar-day { min-height: 40px; }
+  .event-row { grid-template-columns: 44px 1fr; gap: 12px; }
+  .event-date strong { font-size: 25px; }
+  .event-copy h3 { font-size: 20px; }
   .policy { padding: 55px 0; }
   footer { flex-direction: column; padding: 20px; }
   .article-page { padding-top: 28px; }
