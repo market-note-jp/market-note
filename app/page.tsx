@@ -4,6 +4,14 @@ import ArticleArchive from "./article-archive";
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-08-25 07:00",
+    dateTime: "2026-08-25T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月25日）",
+    excerpt: "米テック・半導体株安、日経平均、NVIDIA決算、AIデータセンター規制、原油・米PCEを整理。",
+    href: "/articles/daily-2026-08-25",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-08-24 07:00",
     dateTime: "2026-08-24T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月24日）",
