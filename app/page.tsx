@@ -4,6 +4,30 @@ import ArticleArchive from "./article-archive";
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-08-28 07:00",
+    dateTime: "2026-08-28T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月28日）",
+    excerpt: "NVIDIA決算後のAI・半導体株高、米PCE、FRB、ホルムズ海峡と原油、日本のエネルギー政策を整理。",
+    href: "/articles/daily-2026-08-28",
+  },
+  {
+    kind: "日次レポート",
+    date: "2026-08-27 07:00",
+    dateTime: "2026-08-27T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月27日）",
+    excerpt: "NVIDIA決算、AWSの追加GPU、米PCE・GDP、ホルムズ海峡、日本のエネルギー政策を整理。",
+    href: "/articles/daily-2026-08-27",
+  },
+  {
+    kind: "日次レポート",
+    date: "2026-08-26 07:00",
+    dateTime: "2026-08-26T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月26日）",
+    excerpt: "米テック株反発、日経平均、NVIDIA決算前、米長期金利、原油、米PCE・GDPを整理。",
+    href: "/articles/daily-2026-08-26",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-08-25 07:00",
     dateTime: "2026-08-25T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月25日）",
