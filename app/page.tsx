@@ -3,6 +3,14 @@ import ArticleArchive from "./article-archive";
 
 const articles = [
   {
+    kind: "週次レポート",
+    date: "2026-08-29 08:00",
+    dateTime: "2026-08-29T08:00:00+09:00",
+    title: "週次マーケットニュースレポート（2026年8月24日〜28日）",
+    excerpt: "NVIDIA決算、Jackson Hole、米PCE、日銀利上げ観測、円・原油をまとめた週次レポート。",
+    href: "/articles/weekly-2026-08-24",
+  },
+  {
     kind: "日次レポート",
     date: "2026-08-28 07:00",
     dateTime: "2026-08-28T07:00:00+09:00",
