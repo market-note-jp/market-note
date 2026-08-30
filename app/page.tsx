@@ -4,6 +4,15 @@ import ArticleArchive from "./article-archive";
 const articles = [
   {
     kind: "企業レポート",
+    theme: "企業分析",
+    date: "2026-08-30",
+    dateTime: "2026-08-30",
+    title: "兼松（8020）企業レポート",
+    excerpt: "事業構造、セグメント収益、過去10年間の業績、資本効率、成長要因、リスクと最新四半期を整理。",
+    href: "/articles/corporate-kanematsu-2026-08-30",
+  },
+  {
+    kind: "企業レポート",
     theme: "世界シェア",
     date: "2026-08-30",
     dateTime: "2026-08-30",
