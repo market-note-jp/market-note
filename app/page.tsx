@@ -3,6 +3,15 @@ import ArticleArchive from "./article-archive";
 
 const articles = [
   {
+    kind: "企業レポート",
+    theme: "世界シェア",
+    date: "2026-08-30",
+    dateTime: "2026-08-30",
+    title: "味の素はなぜ半導体材料で世界シェア95％超なのか",
+    excerpt: "半導体材料ABFの用途、儲けの仕組み、競争力、業界地図、最新業績とリスクを整理。",
+    href: "/articles/corporate-ajinomoto-abf-2026-08-30",
+  },
+  {
     kind: "週次レポート",
     date: "2026-08-29 08:00",
     dateTime: "2026-08-29T08:00:00+09:00",
