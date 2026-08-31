@@ -3,6 +3,38 @@ import ArticleArchive from "./article-archive";
 
 const articles = [
   {
+    kind: "日次レポート",
+    date: "2026-09-01 07:00",
+    dateTime: "2026-09-01T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月1日）",
+    excerpt: "米国株、原油、NVIDIA・MediaTek、円・日銀、AIと金融安定を整理。",
+    href: "/articles/daily-2026-09-01",
+  },
+  {
+    kind: "日次レポート",
+    date: "2026-08-31 07:00",
+    dateTime: "2026-08-31T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月31日）",
+    excerpt: "円・日銀、米金融政策、原油・SPR、AI半導体、日本のAI投資を整理。",
+    href: "/articles/daily-2026-08-31",
+  },
+  {
+    kind: "日次レポート",
+    date: "2026-08-30 07:00",
+    dateTime: "2026-08-30T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月30日・週末版）",
+    excerpt: "米国株、NVIDIA、AI投資、米PCE、キオクシア、原油を整理。",
+    href: "/articles/daily-2026-08-30",
+  },
+  {
+    kind: "日次レポート",
+    date: "2026-08-29 07:00",
+    dateTime: "2026-08-29T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年8月29日・週末版）",
+    excerpt: "米国株、FRB、NVIDIA、米PCE、キオクシア・Sandisk、原油を整理。",
+    href: "/articles/daily-2026-08-29",
+  },
+  {
     kind: "企業レポート",
     theme: "企業分析",
     date: "2026-08-30",
