@@ -4,6 +4,14 @@ import ArticleArchive from "./article-archive";
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-09-02 07:00",
+    dateTime: "2026-09-02T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月2日）",
+    excerpt: "米国株、日米長期金利、原油・ホルムズ海峡、AI規制、東京データセンター投資を整理。",
+    href: "/articles/daily-2026-09-02",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-09-01 07:00",
     dateTime: "2026-09-01T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年9月1日）",
