@@ -4,6 +4,14 @@ import ArticleArchive from "./article-archive";
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-09-03 07:00",
+    dateTime: "2026-09-03T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月3日）",
+    excerpt: "米国株、Broadcom決算、日銀と円相場、米雇用、ホルムズ海峡と原油を整理。",
+    href: "/articles/daily-2026-09-03",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-09-02 07:00",
     dateTime: "2026-09-02T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年9月2日）",
