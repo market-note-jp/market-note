@@ -4,6 +4,14 @@ import ArticleArchive from "./article-archive";
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-09-04 07:00",
+    dateTime: "2026-09-04T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月4日）",
+    excerpt: "米国株、FRB、NVIDIA・Hugging Face、円・日銀、原油、米雇用統計を整理。",
+    href: "/articles/daily-2026-09-04",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-09-03 07:00",
     dateTime: "2026-09-03T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年9月3日）",
