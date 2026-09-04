@@ -3,6 +3,14 @@ import ArticleArchive from "./article-archive";
 
 const articles = [
   {
+    kind: "週次レポート",
+    date: "2026-09-05 08:00",
+    dateTime: "2026-09-05T08:00:00+09:00",
+    title: "週次マーケットニュースレポート（2026年8月31日〜9月4日）",
+    excerpt: "世界的な金利上昇、米雇用統計、原油高、日銀利上げ観測、AI・半導体株をまとめた週次レポート。",
+    href: "/articles/weekly-2026-08-31",
+  },
+  {
     kind: "日次レポート",
     date: "2026-09-05 07:00",
     dateTime: "2026-09-05T07:00:00+09:00",
@@ -170,7 +178,7 @@ const articles = [
     date: "2026-08-21 07:00",
     dateTime: "2026-08-21T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年8月21日）",
-    excerpt: "米国株急落、米長期金利、日本の貿易統計とAI向け半導体輸出、全国CPI、AlibabaのAI投資、ホルムズ海峡と原油を整理。",
+    excerpt: "米国株急落、日本の貿易統計とAI向け半導体輸出、全国CPI、AlibabaのAI投資、ホルムズ海峡と原油を整理。",
     href: "/articles/daily-2026-08-21",
   },
   {
