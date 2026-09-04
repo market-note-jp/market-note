@@ -4,6 +4,14 @@ import ArticleArchive from "./article-archive";
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-09-05 07:00",
+    dateTime: "2026-09-05T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月5日・週末版）",
+    excerpt: "米雇用統計、米国株・半導体、米中AI安全協議、日本の財政・AI半導体投資、原油・ホルムズ海峡を整理。",
+    href: "/articles/daily-2026-09-05",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-09-04 07:00",
     dateTime: "2026-09-04T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年9月4日）",
