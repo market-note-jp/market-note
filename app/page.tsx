@@ -6,6 +6,22 @@ import { marketCalendarEvents, marketCalendarReviewedAt } from "./market-calenda
 
 const articles = [
   {
+    kind: "日次レポート",
+    date: "2026-09-07 07:00",
+    dateTime: "2026-09-07T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月7日）",
+    excerpt: "OPEC+、ホルムズ海峡、中国金融支援、AI投資、日銀と日本株を整理。",
+    href: "/articles/daily-2026-09-07",
+  },
+  {
+    kind: "日次レポート",
+    date: "2026-09-06 07:00",
+    dateTime: "2026-09-06T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月6日・週末版）",
+    excerpt: "米雇用統計、FoxconnのAI需要、日本の個人消費、中国レアアース、米イラン緊張と原油を整理。",
+    href: "/articles/daily-2026-09-06",
+  },
+  {
     kind: "週次レポート",
     date: "2026-09-05 08:00",
     dateTime: "2026-09-05T08:00:00+09:00",
