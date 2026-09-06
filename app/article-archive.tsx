@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 
 type Article = {
   kind: string;
@@ -149,7 +150,7 @@ export default function ArticleArchive({ articles }: { articles: Article[] }) {
                   <span>テーマ：{article.theme ?? "市場ニュース"}</span>
                 </p>
               </div>
-              <span className="article-arrow" aria-hidden="true">→</span>
+              <ArrowUpRight className="article-arrow" size={21} aria-hidden="true" />
             </Link>
           </article>
         ))}
@@ -166,8 +167,10 @@ export default function ArticleArchive({ articles }: { articles: Article[] }) {
               type="button"
               onClick={() => goToPage(currentPage - 1)}
               disabled={currentPage === 1}
+              aria-label="前のページ"
+              title="前のページ"
             >
-              ← 前へ
+              <ChevronLeft size={18} aria-hidden="true" />
             </button>
             {Array.from({ length: pageCount }, (_, index) => index + 1).map((page) => (
               <button
@@ -186,8 +189,10 @@ export default function ArticleArchive({ articles }: { articles: Article[] }) {
               type="button"
               onClick={() => goToPage(currentPage + 1)}
               disabled={currentPage === pageCount}
+              aria-label="次のページ"
+              title="次のページ"
             >
-              次へ →
+              <ChevronRight size={18} aria-hidden="true" />
             </button>
           </div>
         )}

@@ -1,5 +1,8 @@
 import Link from "next/link";
 import ArticleArchive from "./article-archive";
+import Image from "next/image";
+import { ArrowDown, ArrowRight, ArrowUpRight, CalendarDays } from "lucide-react";
+import { marketCalendarEvents, marketCalendarReviewedAt } from "./market-calendar-data";
 
 const articles = [
   {
@@ -361,22 +364,71 @@ const articles = [
 ];
 
 export default function Home() {
+  const orderedArticles = [...articles].sort((a, b) => b.date.localeCompare(a.date));
+  const latest = orderedArticles[0];
+  const recent = orderedArticles.slice(1, 4);
+  const companies = orderedArticles.filter((article) => article.kind === "企業レポート");
+  const upcoming = [...marketCalendarEvents]
+    .filter((event) => event.date >= marketCalendarReviewedAt)
+    .sort((a, b) => `${a.date} ${a.time}`.localeCompare(`${b.date} ${b.time}`))
+    .slice(0, 5);
+  const assetPrefix = process.env.GITHUB_ACTIONS === "true" ? "/market-note" : "";
+
   return (
     <main className="site-shell">
-      <header className="site-header">
-        <Link className="brand" href="/">
-          <span className="brand-mark">M</span>
-          <span>MARKET NOTE<small>日本株・米国株のニュースレポート</small></span>
-        </Link>
-        <nav aria-label="メインナビゲーション"><a href="#articles">記事一覧</a><Link href="/calendar">市場カレンダー</Link><a href="#policy">このサイトについて</a></nav>
-      </header>
-      <section className="intro"><p className="kicker">MARKET REPORT ARCHIVE</p><h1>市場をあとから読み返せる形に。</h1><p>日次・週次の市場動向と企業分析を、公開情報と出典リンクを添えて全文保存。</p><Link className="intro-link" href="/calendar">決算・指標予定を見る</Link></section>
-      <section className="articles" id="articles" aria-labelledby="articles-title">
-        <div className="section-title-row"><div><p className="kicker">ARTICLES</p><h2 id="articles-title">記事一覧</h2></div><p>{articles.length}件</p></div>
-        <ArticleArchive articles={articles} />
+      <section className="market-hero" aria-labelledby="home-title">
+        <Image className="hero-photo" src={`${assetPrefix}/market-district-v1.webp`} alt="ガラス張りの高層ビルが並ぶビジネス街のイメージ" fill priority unoptimized sizes="100vw" />
+        <div className="hero-shade" />
+        <div className="hero-content">
+          <p className="hero-eyebrow">JAPAN & US / INDEPENDENT RESEARCH</p>
+          <h1 id="home-title">MARKET NOTE</h1>
+          <p className="hero-message">市場を読む。企業を知る。</p>
+          <a className="hero-link" href="#latest">最新レポート <ArrowDown size={18} aria-hidden="true" /></a>
+        </div>
+        <span className="hero-caption">都市のビジネス街 / AI生成イメージ</span>
       </section>
-      <section className="policy" id="policy"><p className="kicker">EDITORIAL POLICY</p><h2>レポート本文を省略せず保存します。</h2><p>日次・週次・決算・企業レポートの章立て、表、箇条書き、出典リンク、注意書きを保ったまま記事として公開します。噂や未確認情報を避け、断定を控えた市場・企業情報として蓄積します。</p></section>
-      <footer><span>MARKET NOTE</span><span>Public market research archive / Not investment advice.</span></footer>
+
+      <div className="edition-bar"><div className="content-width">
+        <span><span className="edition-label">LATEST UPDATE</span><time dateTime={latest.dateTime}>{latest.date}</time> JST</span>
+        <span>日本株 / 米国株 / 企業分析</span>
+      </div></div>
+
+      <section className="latest-section content-width" id="latest" aria-labelledby="latest-title">
+        <div className="section-title-row"><div><p className="kicker">LATEST INSIGHTS</p><h2 id="latest-title">最新レポート</h2></div><a className="text-link" href="#articles">一覧へ <ArrowRight size={18} aria-hidden="true" /></a></div>
+        <div className="news-calendar-layout">
+          <div className="latest-news">
+            <article className="lead-story"><Link href={latest.href}>
+              <div className="story-meta"><span className="article-kind">{latest.kind}</span><time dateTime={latest.dateTime}>{latest.date}</time></div>
+              <h3>{latest.title}</h3><p>{latest.excerpt}</p><span className="text-link">レポートを読む <ArrowUpRight size={19} aria-hidden="true" /></span>
+            </Link></article>
+            <div className="recent-stories">{recent.map((article) => <article key={article.href}><Link href={article.href}><time dateTime={article.dateTime}>{article.date.slice(5, 10).replace("-", ".")}</time><div><span className="article-kind">{article.kind}</span><h3>{article.title}</h3></div><ArrowUpRight size={17} aria-hidden="true" /></Link></article>)}</div>
+          </div>
+          <aside className="upcoming-panel" aria-labelledby="upcoming-title">
+            <div className="upcoming-heading"><CalendarDays size={22} aria-hidden="true" /><div><p className="kicker">UPCOMING</p><h3 id="upcoming-title">直近の予定</h3></div></div>
+            <p className="schedule-asof">{marketCalendarReviewedAt} 更新 / 時刻は日本時間</p>
+            <ol className="upcoming-list">{upcoming.map((event) => <li key={event.id}><a href={event.sourceUrl} target="_blank" rel="noreferrer">
+              <time dateTime={event.date}><strong>{Number(event.date.slice(5, 7))}/{Number(event.date.slice(8, 10))}</strong><span>{event.time}</span></time>
+              <div><span className={`event-type event-type-${event.category}`}>{event.category} / {event.region}</span><h4>{event.title}</h4></div>
+              <ArrowUpRight size={15} aria-hidden="true" />
+            </a></li>)}</ol>
+            <Link className="calendar-all-link" href="/calendar">市場カレンダー <ArrowRight size={18} aria-hidden="true" /></Link>
+          </aside>
+        </div>
+      </section>
+
+      <section className="companies-section" id="companies" aria-labelledby="companies-title"><div className="content-width">
+        <div className="section-title-row"><div><p className="kicker">CORPORATE RESEARCH</p><h2 id="companies-title">企業を知る</h2></div><p>事業・競争力・財務の視点から</p></div>
+        <div className="company-grid">{companies.map((article, index) => <article className="company-story" key={article.href}><Link href={article.href}>
+          <div className="company-topline"><span>{String(index + 1).padStart(2, "0")}</span><span>{article.theme}</span><ArrowUpRight size={21} aria-hidden="true" /></div>
+          <h3>{article.title}</h3><p>{article.excerpt}</p><time dateTime={article.dateTime}>{article.date}</time>
+        </Link></article>)}</div>
+      </div></section>
+
+      <section className="articles" id="articles" aria-labelledby="articles-title">
+        <div className="section-title-row"><div><p className="kicker">REPORT LIBRARY</p><h2 id="articles-title">すべてのレポート</h2></div><p>{articles.length}件</p></div>
+        <ArticleArchive articles={orderedArticles} />
+      </section>
+      <section className="policy" id="policy"><div><p className="kicker">OUR APPROACH</p><h2>情報の先にある、<br />事業を見つめる。</h2></div><div><p>Market Noteは、日本と米国の市場動向、企業の事業構造と財務を読み解くリサーチアーカイブです。</p><p>公表資料と出典を大切に、日々の変化と長期的な企業の姿を記録します。記事は公開日を付けて保存し、過去の情報も読み返せる形で残します。</p><span className="policy-label">PUBLIC SOURCES. LASTING PERSPECTIVES.</span></div></section>
     </main>
   );
 }

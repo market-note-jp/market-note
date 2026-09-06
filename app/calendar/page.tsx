@@ -5,29 +5,18 @@ import { marketCalendarEvents, marketCalendarReviewedAt } from "../market-calend
 
 export const metadata: Metadata = {
   title: "市場カレンダー | Market Note",
-  description: "決算、経済指標、金融政策イベントを確認できるMarket Noteの市場カレンダー。",
+  description: "決算、経済指標、金融政策、日米市場の休場日を確認できるMarket Noteの市場カレンダー。",
 };
 
 export default function CalendarPage() {
   return (
     <main className="site-shell">
-      <header className="site-header">
-        <Link className="brand" href="/">
-          <span className="brand-mark">M</span>
-          <span>MARKET NOTE<small>日本株・米国株のニュースレポート</small></span>
-        </Link>
-        <nav aria-label="メインナビゲーション">
-          <Link href="/">記事一覧</Link>
-          <Link href="/calendar">市場カレンダー</Link>
-          <Link href="/#policy">このサイトについて</Link>
-        </nav>
-      </header>
-
       <section className="intro calendar-intro">
+        <Link className="calendar-breadcrumb" href="/">ホーム /</Link>
         <p className="kicker">MARKET CALENDAR</p>
-        <h1>決算と指標を、先に見ておく。</h1>
-        <p>主要企業の決算、米日マクロ指標、金融政策イベントを、公式ソースへのリンク付きで整理します。</p>
-        <p className="calendar-review-note">最終確認日：{marketCalendarReviewedAt}。公表予定は変更される場合があります。</p>
+        <h1>市場カレンダー</h1>
+        <p>主要企業の決算、日米の経済指標・金融政策・休場日。</p>
+        <p className="calendar-review-note">予定更新日：{marketCalendarReviewedAt}。時刻は日本時間、休場日は現地市場の取引日基準。公表予定は変更される場合があります。</p>
       </section>
 
       <section className="calendar-section" aria-labelledby="calendar-title">
@@ -38,16 +27,9 @@ export default function CalendarPage() {
           </div>
           <p>{marketCalendarEvents.length}件</p>
         </div>
-        <MarketCalendar events={marketCalendarEvents} />
+        <MarketCalendar events={marketCalendarEvents} initialMonth={marketCalendarReviewedAt.slice(0, 7)} />
       </section>
 
-      <section className="policy">
-        <p className="kicker">EDITORIAL POLICY</p>
-        <h2>予定は判断材料の入口として扱います。</h2>
-        <p>このカレンダーは、公開予定の確認と記事作成のための整理です。特定の銘柄や指数の売買を推奨するものではありません。</p>
-      </section>
-
-      <footer><span>MARKET NOTE</span><span>Public market research archive / Not investment advice.</span></footer>
     </main>
   );
 }

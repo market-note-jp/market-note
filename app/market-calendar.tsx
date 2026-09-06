@@ -11,7 +11,7 @@ type MonthKey = `${number}-${string}`;
 type CategoryFilter = "すべて" | CalendarEventCategory;
 type RegionFilter = "すべて" | CalendarEventRegion;
 
-const categoryFilters: CategoryFilter[] = ["すべて", "経済指標", "決算", "金融政策"];
+const categoryFilters: CategoryFilter[] = ["すべて", "経済指標", "決算", "金融政策", "休場"];
 const regionFilters: RegionFilter[] = ["すべて", "日本", "米国"];
 const weekdays = ["月", "火", "水", "木", "金", "土", "日"];
 
@@ -29,8 +29,8 @@ function getMonthLabel(month: MonthKey) {
 }
 
 function getWeekday(date: string) {
-  const parsed = new Date(`${date}T00:00:00+09:00`);
-  return ["日", "月", "火", "水", "木", "金", "土"][parsed.getDay()];
+  const parsed = new Date(`${date}T00:00:00Z`);
+  return ["日", "月", "火", "水", "木", "金", "土"][parsed.getUTCDay()];
 }
 
 function getCalendarCells(month: MonthKey) {
@@ -57,12 +57,14 @@ function EventBadge({ event }: { event: MarketCalendarEvent }) {
   );
 }
 
-export default function MarketCalendar({ events }: { events: MarketCalendarEvent[] }) {
+export default function MarketCalendar({ events, initialMonth }: { events: MarketCalendarEvent[]; initialMonth?: string }) {
   const months = useMemo(
     () => Array.from(new Set(events.map((event) => toMonthKey(event.date)))).sort(),
     [events],
   );
-  const [selectedMonth, setSelectedMonth] = useState<MonthKey>(months[0]);
+  const [selectedMonth, setSelectedMonth] = useState<MonthKey>(
+    months.find((month) => month === initialMonth) ?? months[0],
+  );
   const [categoryFilter, setCategoryFilter] = useState<CategoryFilter>("すべて");
   const [regionFilter, setRegionFilter] = useState<RegionFilter>("すべて");
   const [selectedDate, setSelectedDate] = useState("");
@@ -195,7 +197,7 @@ export default function MarketCalendar({ events }: { events: MarketCalendarEvent
                   <h3>{event.title}</h3>
                   <p>{event.summary}</p>
                   <p className="event-meta">
-                    <time dateTime={`${event.date}T00:00:00+09:00`}>{event.date} {event.time}</time>
+                    <time dateTime={/^\d{2}:\d{2}$/.test(event.time) ? `${event.date}T${event.time}:00+09:00` : event.date}>{event.date} {event.time}</time>
                     {event.sourceTime && <span>現地基準：{event.sourceTime}</span>}
                   </p>
                   {event.forecast && (
