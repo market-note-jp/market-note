@@ -7,6 +7,14 @@ import { marketCalendarEvents, marketCalendarReviewedAt } from "./market-calenda
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-09-08 07:00",
+    dateTime: "2026-09-08T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月8日）",
+    excerpt: "日本のAI・半導体株高、円・日銀、外貨準備、WistronのAIサーバー投資、原油・米CPIを整理。",
+    href: "/articles/daily-2026-09-08",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-09-07 07:00",
     dateTime: "2026-09-07T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年9月7日）",
