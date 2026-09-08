@@ -7,6 +7,14 @@ import { marketCalendarEvents, marketCalendarReviewedAt } from "./market-calenda
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-09-09 07:00",
+    dateTime: "2026-09-09T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月9日）",
+    excerpt: "米国株とAI選別、Qualcomm・AmazonのAI半導体、日本GDP・実質賃金と日銀、円、原油を整理。",
+    href: "/articles/daily-2026-09-09",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-09-08 07:00",
     dateTime: "2026-09-08T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年9月8日）",
