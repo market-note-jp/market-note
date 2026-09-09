@@ -7,6 +7,14 @@ import { marketCalendarEvents, marketCalendarReviewedAt } from "./market-calenda
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-09-10 07:00",
+    dateTime: "2026-09-10T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月10日）",
+    excerpt: "原油100ドル突破、米国株、OpenAI・SamsungのAI半導体、日本の半導体需要、日銀・米インフレを整理。",
+    href: "/articles/daily-2026-09-10",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-09-09 07:00",
     dateTime: "2026-09-09T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年9月9日）",
