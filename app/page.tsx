@@ -7,6 +7,14 @@ import { marketCalendarEvents, marketCalendarReviewedAt } from "./market-calenda
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-09-11 07:00",
+    dateTime: "2026-09-11T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月11日）",
+    excerpt: "米PPIと金利上昇、原油107ドル台、OracleのAIクラウド、NVIDIA推論基盤、日銀利上げ観測を整理。",
+    href: "/articles/daily-2026-09-11",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-09-10 07:00",
     dateTime: "2026-09-10T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年9月10日）",
