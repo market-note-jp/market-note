@@ -7,6 +7,14 @@ import { marketCalendarEvents, marketCalendarReviewedAt } from "./market-calenda
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-09-12 07:00",
+    dateTime: "2026-09-12T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月12日）",
+    excerpt: "米CPIとFRB、米国株反発、日銀と企業物価、原油供給、キオクシアの米国ADS上場構想を整理。",
+    href: "/articles/daily-2026-09-12",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-09-11 07:00",
     dateTime: "2026-09-11T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年9月11日）",
