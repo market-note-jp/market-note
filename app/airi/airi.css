@@ -55,4 +55,20 @@
 .airi-definitions dd { margin-left: 0; color: var(--muted); }
 .airi-definitions a { color: var(--accent); text-decoration: underline; }
 .airi-definitions summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.airi-method-heading { margin: 36px 0 16px; font-size: 21px; line-height: 1.6; }
+#methodology h4 { margin: 18px 0 8px; font-size: 16px; }
+#methodology p { overflow-wrap: anywhere; }
+#methodology a { color: var(--accent); text-decoration: underline; text-underline-offset: 4px; }
+.airi-formula { padding: 24px; background: var(--accent-soft); border-left: 3px solid var(--accent); font-size: 18px; font-weight: 600; line-height: 1.9; overflow-wrap: anywhere; }
+.airi-formula-total { margin: 24px 0 18px; font-size: 22px; }
+.airi-worked-example { margin-top: 22px; padding: 24px; border: 1px solid var(--line); background: var(--surface); }
+.airi-worked-example p:last-child { margin-bottom: 0; }
+.airi-example-label { font-size: 14px; color: var(--muted); }
+.airi-example-equation { font-size: 24px; color: var(--accent); font-variant-numeric: tabular-nums; }
+.airi-table-caption { text-align: left; padding: 14px 12px; color: var(--muted); font-size: 14px; }
+.airi-definition-table td:nth-child(2) { min-width: 230px; }
+.airi-definition-table td:last-child { min-width: 270px; }
+.airi-limitations { padding-left: 24px; line-height: 1.9; }
+.airi-limitations li { margin-bottom: 12px; }
+.airi-method-links { display: flex; flex-wrap: wrap; gap: 16px 28px; padding-block: 12px; font-size: 14px; }
 @media(max-width:780px) { .airi-overview,.airi-method-grid { grid-template-columns: 1fr; gap: 24px; } .airi-axes { grid-template-columns: 1fr; } .airi-meta a { margin-left: 0; } .airi-heading { flex-direction: column; gap: 8px; } .airi-heading h1 span { margin-left: 10px; font-size: 20px; } }

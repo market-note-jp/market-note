@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import data from "../airi-data.json";
 import Freshness from "./freshness";
+import Methodology from "./methodology";
 import "./airi.css";
 
 export const metadata: Metadata = {
@@ -17,18 +18,6 @@ const snapshot = data as unknown as AiriData;
 const axisNames = ["過熱度", "脆弱性", "悪化兆候"];
 const explanations = ["価格や資金流入に、期待がどれほど織り込まれているか。", "投資負担・負債・金利・連動性から、ショックへの弱さを測る。", "利益予想・信用・株価の広がりに、悪化が表れているか。"];
 const units: Record<string,string> = {forward_pe:"倍",ma200_gap_pct:"%",flow_4w_pct:"%",capex_ocf_pct:"%",net_debt_ebitda:"倍",downside_correlation:"",real_yield_pct:"%",eps_downgrade_breadth_pct:"pt",hy_change_3m_bp:"bp",below_ma200_pct:"%"};
-const definitions:Record<string,string> = {
-  forward_pe:"8社の保有比率と翌12か月予想利益から算出するPER。",
-  ma200_gap_pct:"基準ポートフォリオの価格 ÷ 200営業日平均 − 1。",
-  flow_4w_pct:"AI株ETF・ARTYの4週純設定額 ÷ 4週前純資産。価格上昇による資産増は除外。",
-  capex_ocf_pct:"Microsoft・Amazon・Alphabet・Metaの直近12か月現金設備投資合計 ÷ 営業CF合計。AI以外の投資も含む。",
-  net_debt_ebitda:"8社の純有利子負債合計 ÷ 直近12か月EBITDA合計。",
-  downside_correlation:"直近126営業日のうち基準ポートフォリオ下落日における、全28組の株価リターン相関の平均。最低30下落日が必要。",
-  real_yield_pct:"米10年物インフレ連動国債利回り（DFII10）。",
-  eps_downgrade_breadth_pct:"3か月前比の翌12か月EPS予想について、下方修正銘柄数 − 上方修正銘柄数を8で割る。",
-  hy_change_3m_bp:"米ハイイールド債信用スプレッドの3暦月変化。公開データの利用条件を確認するまで掲載対象外。",
-  below_ma200_pct:"自社の200日移動平均を下回る銘柄数 ÷ 8。",
-};
 const fmt = (n:number|null) => n === null ? "—" : n.toFixed(1);
 
 export default function AiriPage() {
@@ -54,9 +43,6 @@ export default function AiriPage() {
       {plotted.length>=2 && <svg className="airi-chart" viewBox="0 0 800 220" role="img" aria-label="AIRI総合スコアの週次推移。正確な値は下の表を参照。"><text x="0" y="20">100</text><text x="0" y="200">0</text><line x1="40" x2="780" y1="20" y2="20"/><line x1="40" x2="780" y1="200" y2="200"/>{snapshot.history.map((r,i)=>{if(r.airi===null)return null;const x=40+i*740/Math.max(1,snapshot.history.length-1),y=200-r.airi*1.8,prev=snapshot.history[i-1];return <g key={r.as_of}>{prev?.airi!=null && <line className="airi-chart-line" x1={40+(i-1)*740/(snapshot.history.length-1)} y1={200-prev.airi*1.8} x2={x} y2={y}/>}<circle cx={x} cy={y} r="4"><title>{r.as_of}: {r.airi.toFixed(1)}</title></circle></g>})}</svg>}
       <div className="airi-table-wrap"><table><thead><tr><th>確認日</th><th>総合</th>{axisNames.map(n=><th key={n}>{n}</th>)}<th>確認済み項目</th></tr></thead><tbody>{[...snapshot.history].reverse().map(r=><tr key={r.as_of}><th scope="row">{r.as_of}</th><td>{fmt(r.airi)}</td>{axisNames.map(n=><td key={n}>{fmt(r.axes[n].score)}</td>)}<td>{r.observed_count}/10</td></tr>)}</tbody></table></div>
     </section>
-    <section className="airi-section" id="methodology"><h2>算出方法と限界</h2><div className="airi-method-grid"><div><h3>対象は米国AI関連8社</h3><p>NVIDIA、Broadcom、AMD、Microsoft、Amazon、Alphabet、Meta、Oracle。四半期初に等金額へ調整する米ドル建てポートフォリオを基準にします。ARTYは資金流入の代理です。</p><h3>過去の順位で0〜100点に</h3><p>各項目のスコア = 100 ×（過去値が現在値未満の件数 + 同値件数 × 0.5）÷ 有効履歴数。</p><p>評価月より前の60か月から、最低36件の月次履歴を参照。3軸はそれぞれ項目平均、総合は3軸の単純平均です。</p></div><div><h3>欠損があれば算出を見送る</h3><p>各軸75%以上、全体80%以上の項目が採点可能な場合のみ総合を表示。株価・金利・信用は10日、資金流入は14日、利益予想は45日、財務は200日を古さの上限とします。</p><h3>検証前の研究指標</h3><p>価格履歴は現在の分割調整済みデータから再構成しています。銘柄の事後選択や改訂の影響があり、予測精度の証明には使っていません。総合点が低くても安全を保証せず、長い過熱や要因の重複を見落とす可能性があります。</p></div></div>
-      <details className="airi-definitions"><summary>10項目の定義とデータ源</summary><dl>{snapshot.metrics.map(m=><div key={m.key}><dt>{m.label}</dt><dd>{definitions[m.key]}</dd></div>)}</dl><p>価格データ：{['NVDA','AVGO','AMD','MSFT','AMZN','GOOGL','META','ORCL'].map(t=><a key={t} href={`https://finance.yahoo.com/quote/${t}/history/`} target="_blank" rel="noreferrer">{t} </a>)}。実質金利：<a href="https://fred.stlouisfed.org/series/DFII10" target="_blank" rel="noreferrer">FRB / FRED</a>。予想EPS・ETF純流入・財務の同一定義の履歴は準備中です。</p></details>
-      <p className="airi-notice">実データのみを掲載しています。算出待ちの項目は今後の更新で補います。CRASH-12（12か月以内の35%下落確率）は未校正のため提供していません。</p>
-    </section>
+    <Methodology />
   </main>;
 }
