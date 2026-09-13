@@ -7,6 +7,22 @@ import { marketCalendarEvents, marketCalendarReviewedAt } from "./market-calenda
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-09-14 07:00",
+    dateTime: "2026-09-14T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月14日）",
+    excerpt: "サウジ供給障害、AnthropicのIPO観測とAI安全性、円・日銀、FOMCを整理。",
+    href: "/articles/daily-2026-09-14",
+  },
+  {
+    kind: "日次レポート",
+    date: "2026-09-13 07:00",
+    dateTime: "2026-09-13T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月13日・週末版）",
+    excerpt: "AI開発減速論、AnthropicのIPO、サウジ原油供給、円ポジション、FOMC・日銀を整理。",
+    href: "/articles/daily-2026-09-13",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-09-12 07:00",
     dateTime: "2026-09-12T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年9月12日）",
