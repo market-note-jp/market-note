@@ -1,0 +1,58 @@
+.airi-page { padding-block: 32px 72px; font-size: 16px; line-height: 1.8; }
+.airi-back { display: inline-block; margin-bottom: 28px; color: var(--muted); font-size: 14px; }
+.airi-heading { display: flex; justify-content: space-between; gap: 24px; align-items: start; }
+.airi-heading h1 { font-size: clamp(36px, 5vw, 56px); line-height: 1.25; margin-bottom: 16px; font-weight: 650; }
+.airi-heading h1 span { display: inline-block; margin-left: 16px; font-size: 24px; font-weight: 500; }
+.airi-heading p { color: var(--muted); }
+.airi-heading .kicker { color: var(--accent); font-size: 14px; }
+.airi-version { padding: 5px 12px; background: var(--accent-soft); color: var(--accent); font-size: 14px; white-space: nowrap; }
+.airi-meta { display: flex; flex-wrap: wrap; gap: 12px 28px; padding: 16px 0; border-block: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+.airi-meta a { margin-left: auto; color: var(--accent); }
+.airi-overview { display: grid; grid-template-columns: 1fr 2fr; gap: 40px; padding: 32px 0; }
+.airi-total { border-left: 4px solid var(--accent); padding-left: 24px; }
+.airi-total > p:first-child { margin-bottom: 4px; font-weight: 650; }
+.airi-number { font-size: 64px; font-weight: 650; color: var(--accent); line-height: 1.3; font-variant-numeric: tabular-nums; }
+.airi-number small,.airi-axis-score small { font-size: 16px; color: var(--muted); font-weight: 400; margin-left: 12px; }
+.airi-total > span { display: block; font-size: 14px; }
+.airi-overview-copy { padding-top: 4px; }
+.airi-overview h2 { font-size: 20px; margin-bottom: 12px; }
+.airi-small { font-size: 14px; color: var(--muted); margin: 12px 0 0; }
+.airi-axes { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; }
+.airi-axes article { padding: 24px; border: 1px solid var(--line); background: var(--surface); }
+.airi-axis-title { display: flex; align-items: center; gap: 14px; }
+.airi-axis-title > span { font-size: 14px; color: var(--accent); }
+.airi-axis-title h2 { font-size: 21px; margin: 0; }
+.airi-axis-score { font-size: 44px; font-weight: 600; line-height: 1.6; }
+.airi-pending { color: var(--muted); font-size: 14px; border-top: 1px dashed var(--line); padding-top: 10px; }
+.airi-axes meter { width: 100%; height: 14px; margin-bottom: 16px; }
+.airi-axes article > p:last-child { margin-bottom: 0; }
+.airi-section { margin-top: 48px; }
+.airi-section h2 { font-size: 25px; margin-bottom: 16px; }
+.airi-section-heading { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; align-items: baseline; }
+.airi-section-heading p { color: var(--muted); font-size: 14px; }
+.airi-table-wrap { overflow-x: auto; border-top: 2px solid var(--ink); }
+.airi-table-wrap table { width: 100%; border-collapse: collapse; font-size: 14px; text-align: left; }
+.airi-table-wrap td,.airi-table-wrap th { border-bottom: 1px solid var(--line); padding: 16px 12px; vertical-align: top; min-width: 80px; }
+.airi-table-wrap thead { background: var(--surface); }
+.airi-table-wrap td { font-variant-numeric: tabular-nums; }
+.airi-table-wrap th:first-child { min-width: 185px; font-weight: 550; }
+.airi-table-wrap td:last-child { min-width: 200px; }
+.airi-table-wrap td > a,.airi-table-wrap td > small { display: block; font-size: 14px; }
+.airi-table-wrap a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.airi-axis-label { display: block; color: var(--muted); font-size: 14px; font-weight: 400; }
+.airi-history-empty { padding: 24px; background: var(--surface); font-size: 14px; color: var(--muted); }
+.airi-chart { width: 100%; min-height: 180px; font-size: 14px; fill: var(--accent); }
+.airi-chart line { stroke: var(--line); }
+.airi-chart line.airi-chart-line { stroke: var(--accent); stroke-width: 3; }
+.airi-method-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.airi-method-grid h3 { margin-top: 20px; font-size: 18px; }
+.airi-method-grid p { color: var(--muted); }
+.airi-notice { background: #fbf5e9; border-left: 3px solid #9a6b17; padding: 18px 22px; margin-block: 22px; font-size: 14px; line-height: 1.8; }
+.airi-definitions { border-block: 1px solid var(--line); padding: 20px 0; margin-block: 20px; }
+.airi-definitions summary { cursor: pointer; font-weight: 600; }
+.airi-definitions dl > div { margin-block: 18px; }
+.airi-definitions dt { font-weight: 600; }
+.airi-definitions dd { margin-left: 0; color: var(--muted); }
+.airi-definitions a { color: var(--accent); text-decoration: underline; }
+.airi-definitions summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+@media(max-width:780px) { .airi-overview,.airi-method-grid { grid-template-columns: 1fr; gap: 24px; } .airi-axes { grid-template-columns: 1fr; } .airi-meta a { margin-left: 0; } .airi-heading { flex-direction: column; gap: 8px; } .airi-heading h1 span { margin-left: 10px; font-size: 20px; } }

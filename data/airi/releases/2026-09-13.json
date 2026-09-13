@@ -1,0 +1,179 @@
+{
+  "model_version": "0.1.0",
+  "universe_id": "AIRI-US8-equal-quarterly-v1",
+  "as_of": "2026-09-13",
+  "data_kind": "observed",
+  "input_sha256": "7193d98074f06bc77b4f359bf3146de513b6f152b25c6b3579718cf1f9ebeb36",
+  "airi": null,
+  "crash_probability": null,
+  "coverage": 0.3,
+  "axes": {
+    "過熱度": {
+      "coverage": 0.3333333333333333,
+      "score": null
+    },
+    "脆弱性": {
+      "coverage": 0.25,
+      "score": null
+    },
+    "悪化兆候": {
+      "coverage": 0.3333333333333333,
+      "score": null
+    }
+  },
+  "metrics": [
+    {
+      "key": "forward_pe",
+      "label": "予想PER",
+      "axis": "過熱度",
+      "value": null,
+      "score": null,
+      "history_n": 0,
+      "error": "数値なし／非有限値",
+      "source": "",
+      "observed_at": null,
+      "published_at": null
+    },
+    {
+      "key": "ma200_gap_pct",
+      "label": "200日線乖離率",
+      "axis": "過熱度",
+      "value": 14.257334509989917,
+      "score": 50.0,
+      "history_n": 50,
+      "error": null,
+      "source": "https://finance.yahoo.com/quote/NVDA/history/ (8銘柄の分割調整済み終値、出典詳細は方法論)",
+      "observed_at": "2026-09-11",
+      "published_at": "2026-09-11"
+    },
+    {
+      "key": "flow_4w_pct",
+      "label": "4週純流入／期首純資産",
+      "axis": "過熱度",
+      "value": null,
+      "score": null,
+      "history_n": 0,
+      "error": "数値なし／非有限値",
+      "source": "",
+      "observed_at": null,
+      "published_at": null
+    },
+    {
+      "key": "capex_ocf_pct",
+      "label": "設備投資／営業CF",
+      "axis": "脆弱性",
+      "value": null,
+      "score": null,
+      "history_n": 0,
+      "error": "数値なし／非有限値",
+      "source": "",
+      "observed_at": null,
+      "published_at": null
+    },
+    {
+      "key": "net_debt_ebitda",
+      "label": "純有利子負債／EBITDA",
+      "axis": "脆弱性",
+      "value": null,
+      "score": null,
+      "history_n": 0,
+      "error": "数値なし／非有限値",
+      "source": "",
+      "observed_at": null,
+      "published_at": null
+    },
+    {
+      "key": "downside_correlation",
+      "label": "下落日の銘柄間相関",
+      "axis": "脆弱性",
+      "value": 0.14031326841727707,
+      "score": 0.0,
+      "history_n": 50,
+      "error": null,
+      "source": "https://finance.yahoo.com/quote/NVDA/history/ (8銘柄の分割調整済み終値、出典詳細は方法論)",
+      "observed_at": "2026-09-11",
+      "published_at": "2026-09-11"
+    },
+    {
+      "key": "real_yield_pct",
+      "label": "米10年実質金利",
+      "axis": "脆弱性",
+      "value": 2.55,
+      "score": null,
+      "history_n": 0,
+      "error": "有効な月次履歴が36件未満",
+      "source": "https://fred.stlouisfed.org/series/DFII10",
+      "observed_at": "2026-09-10",
+      "published_at": "2026-09-11"
+    },
+    {
+      "key": "eps_downgrade_breadth_pct",
+      "label": "EPS下方修正超過率",
+      "axis": "悪化兆候",
+      "value": null,
+      "score": null,
+      "history_n": 0,
+      "error": "数値なし／非有限値",
+      "source": "",
+      "observed_at": null,
+      "published_at": null
+    },
+    {
+      "key": "hy_change_3m_bp",
+      "label": "HYスプレッド3か月変化",
+      "axis": "悪化兆候",
+      "value": null,
+      "score": null,
+      "history_n": 0,
+      "error": "数値なし／非有限値",
+      "source": "",
+      "observed_at": null,
+      "published_at": null
+    },
+    {
+      "key": "below_ma200_pct",
+      "label": "200日線下の銘柄比率",
+      "axis": "悪化兆候",
+      "value": 25.0,
+      "score": 58.0,
+      "history_n": 50,
+      "error": null,
+      "source": "https://finance.yahoo.com/quote/NVDA/history/ (8銘柄の分割調整済み終値、出典詳細は方法論)",
+      "observed_at": "2026-09-11",
+      "published_at": "2026-09-11"
+    }
+  ],
+  "interpretation": "過去60か月に対する相対スコア。暴落確率・売買シグナルではない。",
+  "checked_on": "2026-09-13",
+  "price_collection": {
+    "status": "success",
+    "observed_at": "2026-09-11"
+  },
+  "observed_count": 4,
+  "next_update_note": "毎週土曜の午前に確認・更新（日本時間）",
+  "reference_note": "株価の月次参照値は現時点の分割調整済み価格で再構成。予測精度の検証には使用していません。",
+  "change_note": "初回記録。前週差は次回以降、同じ有効項目がそろった場合に表示します。",
+  "previous_change": null,
+  "history": [
+    {
+      "as_of": "2026-09-13",
+      "airi": null,
+      "axes": {
+        "過熱度": {
+          "coverage": 0.3333333333333333,
+          "score": null
+        },
+        "脆弱性": {
+          "coverage": 0.25,
+          "score": null
+        },
+        "悪化兆候": {
+          "coverage": 0.3333333333333333,
+          "score": null
+        }
+      },
+      "coverage": 0.3,
+      "observed_count": 4
+    }
+  ]
+}
