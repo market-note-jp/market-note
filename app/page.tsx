@@ -7,6 +7,14 @@ import { marketCalendarEvents, marketCalendarReviewedAt } from "./market-calenda
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-09-15 07:00",
+    dateTime: "2026-09-15T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月15日）",
+    excerpt: "AI・半導体株急落、ASMLのEUV増産、キオクシア米上場検討、原油、FOMC・日銀を整理。",
+    href: "/articles/daily-2026-09-15",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-09-14 07:00",
     dateTime: "2026-09-14T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年9月14日）",
