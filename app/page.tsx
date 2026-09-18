@@ -7,6 +7,38 @@ import { marketCalendarEvents, marketCalendarReviewedAt } from "./market-calenda
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-09-19 07:00",
+    dateTime: "2026-09-19T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月19日・週末版）",
+    excerpt: "米国株と米長期金利、日銀1.25%利上げ、Solidigm・CXMTのメモリー投資、原油を整理。",
+    href: "/articles/daily-2026-09-19",
+  },
+  {
+    kind: "日次レポート",
+    date: "2026-09-18 07:00",
+    dateTime: "2026-09-18T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月18日）",
+    excerpt: "米国株反発、GlobalFoundries・Marvell、AppleのAIサーバー構想、原油、日銀会合を整理。",
+    href: "/articles/daily-2026-09-18",
+  },
+  {
+    kind: "日次レポート",
+    date: "2026-09-17 07:00",
+    dateTime: "2026-09-17T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月17日）",
+    excerpt: "FRB利上げ、米国株、SK Hynix・Intel、米小売売上高、日銀会合を整理。",
+    href: "/articles/daily-2026-09-17",
+  },
+  {
+    kind: "日次レポート",
+    date: "2026-09-16 07:00",
+    dateTime: "2026-09-16T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月16日）",
+    excerpt: "米国株と長期金利、サウジ原油供給、MediaTek 2nm、AI安全性、FOMC・日銀を整理。",
+    href: "/articles/daily-2026-09-16",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-09-15 07:00",
     dateTime: "2026-09-15T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年9月15日）",
