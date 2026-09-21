@@ -26,9 +26,13 @@ function articleRegistry(source) {
 }
 
 test("the redesign preserves every article record and exported article route", async () => {
-  const before = articleRegistry(execFileSync("git", ["show", "HEAD:app/page.tsx"], { cwd: fileURLToPath(root), encoding: "utf8" }));
-  const after = articleRegistry(await readFile(new URL("app/page.tsx", root), "utf8"));
-  assert.deepEqual(after, before);
+  const before = articleRegistry(execFileSync("git", ["show", "HEAD:app/page-legacy.tsx"], { cwd: fileURLToPath(root), encoding: "utf8" }));
+  const after = articleRegistry(await readFile(new URL("app/page-legacy.tsx", root), "utf8"));
+  assert.equal(after.length, before.length + 1);
+  for (const article of before) {
+    assert.deepEqual(after.find((candidate) => candidate.href === article.href), article);
+  }
+  assert.ok(after.some((article) => article.href === "/articles/corporate-fanuc-2026-09-22"));
   assert.equal(new Set(after.map((article) => article.href)).size, after.length);
   for (const article of after) await access(new URL(`out${article.href}/index.html`, root));
 });
@@ -42,11 +46,12 @@ test("the homepage exports the masthead, latest reports, company section and arc
   assert.ok(html.includes("直近の予定"));
   assert.ok(html.includes("NYSE休場"));
   assert.ok(html.includes("/market-note/market-district-v1.webp"));
-  assert.equal((html.match(/class="company-story"/g) ?? []).length, 3);
+  assert.equal((html.match(/class="company-story"/g) ?? []).length, 4);
+  assert.ok(html.includes("ファナック（6954）企業レポート"));
 });
 
 test("all primary routes have exactly one shared header and footer", async () => {
-  for (const route of ["", "calendar/", "articles/corporate-kanematsu-2026-08-30/", "articles/daily-2026-09-05/"]) {
+  for (const route of ["", "calendar/", "articles/corporate-kanematsu-2026-08-30/", "articles/corporate-fanuc-2026-09-22/", "articles/daily-2026-09-05/"]) {
     const html = await htmlAt(route);
     assert.equal((html.match(/class="site-header"/g) ?? []).length, 1, route);
     assert.equal((html.match(/class="site-footer"/g) ?? []).length, 1, route);
@@ -76,6 +81,13 @@ test("the calendar keeps the sourced schedules and report tables survive the red
   assert.ok(report.includes("<table"));
   assert.ok(report.includes("百万円"));
   assert.ok(report.includes("https://www.kanematsu.co.jp/"));
+  const fanuc = await htmlAt("articles/corporate-fanuc-2026-09-22/");
+  assert.ok(fanuc.includes("11年間の業績推移"));
+  assert.ok(fanuc.includes("単位：百万円"));
+  assert.ok(fanuc.includes("▲34.2％"));
+  assert.ok(fanuc.includes("fanuc_company_report_2026-09-22.pdf"));
+  await access(new URL("out/reports/fanuc_company_report_2026-09-22.pdf", root));
+  await access(new URL("out/reports/fanuc_calculation_notes_2026-09-22.md", root));
 });
 
 test("the masthead asset is an optimized local WebP", async () => {

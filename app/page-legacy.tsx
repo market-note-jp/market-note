@@ -6,6 +6,15 @@ import { marketCalendarEvents, marketCalendarReviewedAt } from "./market-calenda
 
 const articles = [
   {
+    kind: "企業レポート",
+    theme: "企業分析",
+    date: "2026-09-22",
+    dateTime: "2026-09-22",
+    title: "ファナック（6954）企業レポート",
+    excerpt: "FA・ロボットの競争力、11年間の業績、AI戦略、独自業績予測、PER・DCF評価とリスクを検証。",
+    href: "/articles/corporate-fanuc-2026-09-22",
+  },
+  {
     kind: "日次レポート",
     date: "2026-09-19 07:00",
     dateTime: "2026-09-19T07:00:00+09:00",

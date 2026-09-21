@@ -64,7 +64,7 @@ export default function WeeklyReportSeptember14() {
           <section>
             <h2>市場関係者の見方</h2>
             <ul className="viewpoints">
-              <li><strong>強気：</strong>Morgan StanleyのポートフォリオマネジャーDaniel Skellyは、短期的には原油・高金利・選挙を巡るボラティリティを認めつつ、企業ファンダメンタルズとAI導入の拡大を理由に長期見通しには前向きな姿勢を示しています。<a href="https://www.barrons.com/livecoverage/stock-market-news-today-091826/card/dow-suffers-worst-week-since-march-extending-september-skid-umFn7ypGhw0D2kTu4DsZ" target="_blank" rel="noreferrer">Barron's（9月18日）</a></li>
+              <li><strong>強気：</strong>Morgan StanleyのポートフォリオマネジャーDaniel Skellyは、短期的には原油・高金利・選挙を巡るボラティリティを認めつつ、企業ファンダメンタルズとAI導入の拡大を理由に長期見通しには前向きな姿勢を示しています。<a href="https://www.barrons.com/livecoverage/stock-market-news-today-091826/card/dow-suffers-worst-week-since-march-extending-september-skid-umFn7ypGhw0D2kTu4DsZ" target="_blank" rel="noreferrer">Barron&apos;s（9月18日）</a></li>
               <li><strong>中立・慎重：</strong>Horizon Investment ServicesのChuck Carlsonは、FRB会合や金利・原油を巡る大きな材料を消化した週末の市場について、投資家が積極的な方向感を取りにくい状態を指摘しました。NASDAQの強さは確認できる一方、市場の騰落銘柄数は弱く、指数だけで全面的なリスクオンとは判断しにくい状況です。<a href="https://www.reuters.com/business/nasdaq-futures-lead-wall-st-gains-oil-retreat-eases-inflation-worries-2026-09-18/" target="_blank" rel="noreferrer">Reuters（9月18日）</a></li>
               <li><strong>弱気・リスク警戒：</strong>Capital Economicsは、中東紛争が長期化すれば原油が2027年まで100ドル超で推移する可能性を警戒しています。高エネルギー価格が続けばインフレ再加速、追加利上げ、企業マージン圧迫という経路で株式市場への逆風が強まります。<a href="https://www.wsj.com/finance/commodities-futures/oil-falls-as-worries-over-middle-east-supply-disruptions-ease-36be861a" target="_blank" rel="noreferrer">Wall Street Journal（9月18日）</a></li>
             </ul>
