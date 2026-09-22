@@ -3,6 +3,12 @@ import LegacyPage from "./page-legacy";
 
 const latestDailyReports = [
   {
+    date: "2026-09-23 07:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月23日）",
+    excerpt: "Alibaba新AIチップ、Meta MuseとNASDAQ最高値、原油100ドル割れ、FRB、日銀1.25%後の市場を整理。",
+    href: "/articles/daily-2026-09-23",
+  },
+  {
     date: "2026-09-22 07:00",
     title: "デイリー・マーケットブリーフィング（2026年9月22日）",
     excerpt: "AMDの1兆ドル突破、米国株最高値、SoftBankのOpenAI投資債、TSMC先端パッケージ、円157円台を整理。",
