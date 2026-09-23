@@ -39,8 +39,22 @@ test("the homepage exports the masthead, latest reports, company section and arc
   assert.ok(html.includes("直近の予定"));
   assert.ok(html.includes("NYSE休場"));
   assert.ok(html.includes("/market-note/market-district-v1.webp"));
-  assert.equal((html.match(/class="company-story"/g) ?? []).length, 4);
+  assert.equal((html.match(/class="company-story"/g) ?? []).length, 5);
   assert.ok(html.includes("ファナック（6954）企業レポート"));
+});
+
+test("the reviewed Kioxia article preserves tables, sources, chart and supplement", async () => {
+  const html = await htmlAt("articles/kioxia-per-2026-09-23/");
+  assert.equal((html.match(/<table>/g) ?? []).length, 9);
+  assert.equal((html.match(/<details>/g) ?? []).length, 1);
+  for (let source = 1; source <= 11; source++) assert.ok(html.includes(`id="s${source}"`));
+  assert.ok(html.includes("実績と予想で変わる数字の読み方"));
+  assert.ok(html.includes("単位：百万円"));
+  assert.ok(html.includes("免責事項"));
+  assert.ok(!/確認稿|未公開|公開前に編集責任者/.test(html));
+  assert.ok(html.includes("/market-note/reports/kioxia-per-2026-09-23/per-definitions.png"));
+  await access(new URL("out/reports/kioxia-per-2026-09-23/per-definitions.png", root));
+  assert.ok((await htmlAt()).includes("/market-note/articles/kioxia-per-2026-09-23/"));
 });
 
 test("all primary routes have exactly one shared header and footer", async () => {

@@ -6,6 +6,15 @@ import { marketCalendarEvents, marketCalendarReviewedAt } from "./market-calenda
 
 const articles = [
   {
+    kind: "企業レポート",
+    theme: "企業分析",
+    date: "2026-09-23",
+    dateTime: "2026-09-23",
+    title: "キオクシアのPERは4.5倍？53倍？――実績と予想で変わる数字の読み方",
+    excerpt: "前通期実績・直近12カ月・市場予想を区別し、AI需要、長期契約、設備投資と現金収支から利益の持続性を検証。",
+    href: "/articles/kioxia-per-2026-09-23",
+  },
+  {
     kind: "日次レポート",
     date: "2026-09-23 07:00",
     dateTime: "2026-09-23T07:00:00+09:00",
