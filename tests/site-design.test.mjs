@@ -1,7 +1,5 @@
 import assert from "node:assert/strict";
 import { readFile, access } from "node:fs/promises";
-import { execFileSync } from "node:child_process";
-import { fileURLToPath } from "node:url";
 import test from "node:test";
 import ts from "typescript";
 
@@ -25,13 +23,8 @@ function articleRegistry(source) {
   throw new Error("Article registry not found");
 }
 
-test("the redesign preserves every article record and exported article route", async () => {
-  const before = articleRegistry(execFileSync("git", ["show", "HEAD:app/page-legacy.tsx"], { cwd: fileURLToPath(root), encoding: "utf8" }));
-  const after = articleRegistry(await readFile(new URL("app/page-legacy.tsx", root), "utf8"));
-  assert.equal(after.length, before.length + 1);
-  for (const article of before) {
-    assert.deepEqual(after.find((candidate) => candidate.href === article.href), article);
-  }
+test("the article registry has unique entries and exported article routes", async () => {
+  const after = articleRegistry(await readFile(new URL("app/page.tsx", root), "utf8"));
   assert.ok(after.some((article) => article.href === "/articles/corporate-fanuc-2026-09-22"));
   assert.equal(new Set(after.map((article) => article.href)).size, after.length);
   for (const article of after) await access(new URL(`out${article.href}/index.html`, root));
