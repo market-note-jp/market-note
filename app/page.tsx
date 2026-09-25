@@ -6,6 +6,22 @@ import { marketCalendarEvents, marketCalendarReviewedAt } from "./market-calenda
 
 const articles = [
   {
+    kind: "日次レポート",
+    date: "2026-09-25 07:00",
+    dateTime: "2026-09-25T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月25日）",
+    excerpt: "米国株、高金利とAI投資、SoftBankの大型調達、重要鉱物、日本の円・国債市場を整理。",
+    href: "/articles/daily-2026-09-25",
+  },
+  {
+    kind: "日次レポート",
+    date: "2026-09-24 07:00",
+    dateTime: "2026-09-24T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年9月24日）",
+    excerpt: "米長期金利、米国株、SoftBankのAI投資調達、イットリウム供給、原油を整理。",
+    href: "/articles/daily-2026-09-24",
+  },
+  {
     kind: "企業レポート",
     theme: "企業分析",
     date: "2026-09-23",
