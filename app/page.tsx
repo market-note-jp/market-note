@@ -7,6 +7,14 @@ import { marketCalendarEvents, marketCalendarReviewedAt } from "./market-calenda
 const articles = [
   {
     kind: "日次レポート",
+    date: "2026-10-02 23:30",
+    dateTime: "2026-10-02T23:30:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年10月2日）",
+    excerpt: "米雇用の急減速、Broadcom・AnthropicのAI計算資金、日銀短観、日本株、ニデックを整理。",
+    href: "/articles/daily-2026-10-02",
+  },
+  {
+    kind: "日次レポート",
     date: "2026-09-25 07:00",
     dateTime: "2026-09-25T07:00:00+09:00",
     title: "デイリー・マーケットブリーフィング（2026年9月25日）",
