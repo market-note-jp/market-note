@@ -1,0 +1,1 @@
+export default function Page(){return <main><h1>デイリー・マーケットブリーフィング（2026年10月3日）</h1></main>}
