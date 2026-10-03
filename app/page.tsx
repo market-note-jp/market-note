@@ -6,6 +6,14 @@ import { marketCalendarEvents, marketCalendarReviewedAt } from "./market-calenda
 
 const articles = [
   {
+    kind: "週次レポート",
+    date: "2026-10-03 14:17",
+    dateTime: "2026-10-03T14:17:00+09:00",
+    title: "週次マーケットニュースレポート（2026年9月28日〜10月2日）",
+    excerpt: "日経平均+2.93%、SOX+3.69%。米雇用、日銀短観、AI需要、金利・原油と翌週の焦点を出典付きで整理。",
+    href: "/articles/weekly-2026-09-28",
+  },
+  {
     kind: "日次レポート",
     date: "2026-10-03 07:00",
     dateTime: "2026-10-03T07:00:00+09:00",
