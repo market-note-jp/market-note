@@ -1,9 +1,12 @@
 import assert from "node:assert/strict";
+import { fileURLToPath } from "node:url";
+import { ESLint } from "eslint";
 import { readFile, readdir } from "node:fs/promises";
 import test from "node:test";
 import ts from "typescript";
 
 const root = new URL("../", import.meta.url);
+const cwd = fileURLToPath(root);
 const html = await readFile(new URL("out/index.html", root), "utf8");
 const source = await readFile(new URL("app/page.tsx", root), "utf8");
 const ast = ts.createSourceFile("page.tsx", source, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX);
@@ -38,3 +41,14 @@ test("recent daily reports appear in the existing archive and latest section", (
     assert.ok(archive.includes(`/market-note${report.href}`), `${report.href} must appear in the archive`);
   }
 });
+
+
+test("repository lint passes before publication", async () => {
+  const eslint = new ESLint({ cwd });
+  const results = await eslint.lintFiles(["."]);
+  const errors = results.reduce((sum, result) => sum + result.errorCount + result.fatalErrorCount, 0);
+  assert.equal(errors, 0, results.flatMap((result) => result.messages.map((message) => `${result.filePath}:${message.line ?? 0}:${message.column ?? 0} ${message.message}`)).join("\n"));
+});
+
+await import("./site-design.test.mjs");
+await import("./market-calendar.test.mjs");

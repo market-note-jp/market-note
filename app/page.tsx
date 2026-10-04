@@ -6,6 +6,14 @@ import { marketCalendarEvents, marketCalendarReviewedAt } from "./market-calenda
 
 const articles = [
   {
+    kind: "日次レポート",
+    date: "2026-10-05 07:00",
+    dateTime: "2026-10-05T07:00:00+09:00",
+    title: "デイリー・マーケットブリーフィング（2026年10月5日）",
+    excerpt: "米雇用、米株・長期金利、Broadcom・Anthropic、日銀短観、OPEC+とG7備蓄放出を整理。",
+    href: "/articles/daily-2026-10-05",
+  },
+  {
     kind: "週次レポート",
     date: "2026-10-03 14:17",
     dateTime: "2026-10-03T14:17:00+09:00",
