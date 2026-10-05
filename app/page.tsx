@@ -3,16 +3,9 @@ import ArticleArchive from "./article-archive";
 import Image from "next/image";
 import { ArrowDown, ArrowRight, ArrowUpRight, CalendarDays } from "lucide-react";
 import { marketCalendarEvents, marketCalendarReviewedAt } from "./market-calendar-data";
+import { getDailyArticleMetadata } from "../lib/article-content";
 
-const articles = [
-  {
-    kind: "日次レポート",
-    date: "2026-10-05 07:00",
-    dateTime: "2026-10-05T07:00:00+09:00",
-    title: "デイリー・マーケットブリーフィング（2026年10月5日）",
-    excerpt: "米雇用、米株・長期金利、Broadcom・Anthropic、日銀短観、OPEC+とG7備蓄放出を整理。",
-    href: "/articles/daily-2026-10-05",
-  },
+const legacyArticles = [
   {
     kind: "週次レポート",
     date: "2026-10-03 14:17",
@@ -574,6 +567,7 @@ const articles = [
 ];
 
 export default function Home() {
+  const articles = [...getDailyArticleMetadata(), ...legacyArticles];
   const orderedArticles = [...articles].sort((a, b) => b.date.localeCompare(a.date));
   const latest = orderedArticles[0];
   const recent = orderedArticles.slice(1, 4);

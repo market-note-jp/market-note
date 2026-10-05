@@ -1,30 +1,13 @@
 import assert from "node:assert/strict";
 import { readFile, access } from "node:fs/promises";
 import test from "node:test";
-import ts from "typescript";
+import { loadArticleRegistry } from "./article-registry.mjs";
 
 const root = new URL("../", import.meta.url);
 const htmlAt = (path = "") => readFile(new URL(`../out/${path}index.html`, import.meta.url), "utf8");
 
-function articleRegistry(source) {
-  const ast = ts.createSourceFile("page.tsx", source, ts.ScriptTarget.Latest, true, ts.ScriptKind.TSX);
-  for (const statement of ast.statements) {
-    if (!ts.isVariableStatement(statement)) continue;
-    const declaration = statement.declarationList.declarations.find((item) => item.name.getText(ast) === "articles");
-    if (!declaration?.initializer || !ts.isArrayLiteralExpression(declaration.initializer)) continue;
-    return declaration.initializer.elements.map((element) => {
-      assert.ok(ts.isObjectLiteralExpression(element));
-      return Object.fromEntries(element.properties.map((property) => {
-        assert.ok(ts.isPropertyAssignment(property) && ts.isStringLiteral(property.initializer));
-        return [property.name.getText(ast), property.initializer.text];
-      }));
-    });
-  }
-  throw new Error("Article registry not found");
-}
-
 test("the article registry has unique entries and exported article routes", async () => {
-  const after = articleRegistry(await readFile(new URL("app/page.tsx", root), "utf8"));
+  const after = await loadArticleRegistry();
   assert.ok(after.some((article) => article.href === "/articles/corporate-fanuc-2026-09-22"));
   assert.equal(new Set(after.map((article) => article.href)).size, after.length);
   for (const article of after) await access(new URL(`out${article.href}/index.html`, root));

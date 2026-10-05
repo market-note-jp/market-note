@@ -3,6 +3,8 @@ name: Publish Market Note
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -11,7 +13,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -30,21 +32,29 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Lint
+        run: npm run lint
+
       - name: Build static site
         run: npm run build:pages
+        env:
+          GITHUB_ACTIONS: "true"
 
-      - name: Verify homepage layout and report placement
-        run: node --test tests/homepage-layout.test.mjs
+      - name: Verify site
+        run: node --test tests/homepage-layout.test.mjs tests/site-design.test.mjs tests/market-calendar.test.mjs
 
       - name: Configure GitHub Pages
+        if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
 
       - name: Upload site
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: out
 
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
