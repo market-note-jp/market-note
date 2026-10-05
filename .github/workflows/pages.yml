@@ -41,7 +41,7 @@ jobs:
           GITHUB_ACTIONS: "true"
 
       - name: Verify site
-        run: node --test tests/homepage-layout.test.mjs tests/site-design.test.mjs tests/market-calendar.test.mjs
+        run: node --test tests/homepage-layout.test.mjs tests/site-design.test.mjs tests/market-calendar.test.mjs tests/publication-verification.test.mjs
 
       - name: Configure GitHub Pages
         if: github.event_name != 'pull_request'
