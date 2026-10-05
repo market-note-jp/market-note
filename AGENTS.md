@@ -10,3 +10,5 @@
 - The tests verify both legacy routes and content-driven daily reports. Do not weaken or delete these checks to make a publication pass.
 - Check that the public homepage starts with the photo below the header, the new report appears in the existing latest/archive sections, and the individual report URL works.
 - For daily automation, prefer one completed JSON write to `main` after reading the latest main. Never publish a placeholder, empty body, incomplete sources, or a second same-day file.
+- Read `CLOUD_AUTOMATION.md` for the publication completion contract. Saving a file on an article branch is only saved work; a PR build does not deploy. Complete the authorized main write/merge and verify the exact main SHA's successful Pages build/deploy before reporting publication.
+- Run `node --test tests/publication-verification.test.mjs` with the existing checks. After deployment, run `npm run verify:publication -- YYYY-MM-DD FULL_MAIN_COMMIT_SHA`. A nonzero result, including a stale homepage or failed network read, means publication is not yet verified. Never weaken this gate or bypass an access denial.
