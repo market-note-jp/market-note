@@ -1,13 +1,13 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年10月2日） | Market Note",
-  description: "2026年10月2日23時30分時点のAI・半導体、株式・金融市場、日本企業、マクロ政策を公開情報から整理。",
-};
+const editorial = editorialTitles["daily-2026-10-02"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportOctober2() {
-  return <main className="article-page"><Link className="back-link" href="/">← 記事一覧へ戻る</Link><article><header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年10月2日（金）</p></header><div className="report-body">
+  return <main id="main-content" className="article-page"><Link className="back-link" href="/">← 記事一覧へ戻る</Link><article><header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年10月2日（金）</p></header><div className="report-body">
     <section><h2>今日の結論</h2><p>基準日時は2026年10月2日23時30分（日本時間）。最大の材料は米9月雇用統計の急減速で、非農業部門雇用者数は前月比2.9万人増、失業率は4.2%となった。米10年債利回りは雇用統計後に低下し、株式には金利面の追い風となった一方、景気減速への警戒は残る。AIではAnthropicの巨額計算需要を支えるBroadcomの資金供給が報じられ、AI投資が「半導体需要」だけでなく「資金調達能力」に左右される局面が鮮明になった。日本では日銀短観で製造業景況感が改善する一方、東京株は前日の急騰後に反落。ニデックは監査意見不表明と格下げが信用面の重要材料となった。</p></section>
     <section><h2>市場スナップショット</h2><div className="table-wrap"><table><thead><tr><th>対象</th><th>直近状況</th><th>基準</th></tr></thead><tbody>
       <tr><td>米非農業部門雇用者数</td><td>+2.9万人</td><td>2026年9月、前月比</td></tr>

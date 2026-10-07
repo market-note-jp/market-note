@@ -20,7 +20,9 @@ test("the homepage exports the masthead, latest reports, company section and arc
   }
   assert.ok(html.includes("2026-09-05"));
   assert.ok(html.includes("直近の予定"));
-  assert.ok(html.includes("NYSE休場"));
+  // Static export must not advertise a fixed, expired September event as upcoming.
+  assert.ok(html.includes("現在の日付を確認しています"));
+  assert.ok(!html.includes("NYSE休場"));
   assert.ok(html.includes("/market-note/market-district-v1.webp"));
   assert.equal((html.match(/class="company-story"/g) ?? []).length, 5);
   assert.ok(html.includes("ファナック（6954）企業レポート"));
@@ -66,7 +68,9 @@ test("the calendar keeps the sourced schedules and report tables survive the red
   const calendar = await htmlAt("calendar/");
   assert.ok(calendar.includes("68"));
   assert.ok(calendar.includes("Oracle FY2027 Q1"));
-  assert.ok(calendar.includes('value="休場"'));
+  // Current month is selected from the visitor clock after hydration.
+  // Source completeness and all filters are separately rendered in market-calendar.test.mjs.
+  assert.ok(calendar.includes("現在の月を確認しています"));
   const report = await htmlAt("articles/corporate-kanematsu-2026-08-30/");
   assert.ok(report.includes("<table"));
   assert.ok(report.includes("百万円"));

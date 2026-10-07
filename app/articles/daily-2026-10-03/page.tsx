@@ -1,19 +1,19 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年10月3日） | Market Note",
-  description: "米9月雇用統計と10月2日の米国株終値、AI投資の資金調達、日本株、日銀短観を整理。",
-};
+const editorial = editorialTitles["daily-2026-10-03"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportOctober3() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
         <header className="report-header">
           <p className="report-label">DAILY MARKET BRIEFING</p>
-          <h1>デイリー・マーケットブリーフィング</h1>
+          <h1>{editorial.title}</h1>
           <p className="report-date">2026年10月3日（土）</p>
         </header>
         <div className="report-body">

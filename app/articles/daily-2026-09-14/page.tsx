@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月14日） | Market Note",
-  description: "2026年9月14日朝の市場材料を公開情報から整理。",
-};
+const editorial = editorialTitles["daily-2026-09-14"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember14() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月14日（月）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月14日（月）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>週明けの焦点は、中東の供給障害による原油上昇リスクと、今週相次ぐFOMC・日銀会合である。サウジの東西パイプライン停止は世界供給の最大4%に影響し得るため、原油・インフレ・金利の連鎖が株式市場の最大のマクロリスクとなる。一方AIではAnthropicの大型IPO観測とNVIDIAの投資検討が続き、資本市場からAIインフラへ巨額資金が流れ込む構図が維持されている。</p></section>
           <section><h2>市場スナップショット</h2><div className="table-wrap"><table><thead><tr><th>対象</th><th>確認値・状況</th><th>ポイント</th></tr></thead><tbody><tr><td>S&amp;P500</td><td>7,656.98（9月11日終値）</td><td>米国は週末休場</td></tr><tr><td>NASDAQ総合</td><td>9月11日 +0.96%</td><td>AI・テックの選別継続</td></tr><tr><td>ブレント原油</td><td>100ドル超</td><td>中東供給不安</td></tr><tr><td>円投機筋</td><td>10,796枚の買い越し</td><td>2月以来のネットロング</td></tr><tr><td>今週の中銀</td><td>FOMC 9/15〜16、日銀 9/17〜18</td><td>金利・為替の変動要因</td></tr></tbody></table></div></section>

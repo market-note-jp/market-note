@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月17日） | Market Note",
-  description: "2026年9月17日朝の市場材料を公開情報から整理。",
-};
+const editorial = editorialTitles["daily-2026-09-17"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember17() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月17日（木）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月17日（木）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>最大の材料はFRBの3年超ぶりの利上げだ。FOMCは政策金利を25bp引き上げ3.75〜4.00%とし、年内に少なくとももう1回の利上げを見込む参加者が18人中16人となった。米国株は発表後に振れ、ダウとS&amp;P500は下落。一方、AI半導体ではSK HynixとIntelが米国内メモリー生産を協議していると報じられ、HBM供給網の米国化が新たな焦点になった。日本では日銀が17〜18日の会合を開始し、18日に政策金利を1.25%へ引き上げるとの見方が強い。原油はサウジがオマーン経由の追加供給を提示したことで反落したが、中東供給リスク自体は消えていない。</p></section>
 

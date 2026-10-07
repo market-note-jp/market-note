@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月15日） | Market Note",
-  description: "2026年9月15日朝の市場材料を公開情報から整理。",
-};
+const editorial = editorialTitles["daily-2026-09-15"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember15() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月15日（火）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月15日（火）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>最大の焦点は、AI安全性を巡る開発減速論が半導体株の利益成長期待に直撃する一方、EUV露光装置の受注はなお極めて強いという「短期センチメント悪化と中期設備需要の強さ」のねじれである。米10年国債利回りは一時5%を超え、FOMCでは25bp利上げ観測が約9割まで上昇。原油もブレント105ドル台にとどまり、AI・半導体株は金利とエネルギーの二重の逆風を受ける。日本では日銀が今週の会合で追加利上げに動くとの観測が強く、円・銀行株・輸出株の相対パフォーマンスに注意が必要だ。</p></section>
           <section><h2>市場スナップショット</h2><div className="table-wrap"><table><thead><tr><th>対象</th><th>確認値・状況</th><th>ポイント</th></tr></thead><tbody><tr><td>S&amp;P500</td><td>7,619.94（-0.48%）</td><td>AI株安と金利上昇</td></tr><tr><td>NASDAQ総合</td><td>26,186.41（-0.56%）</td><td>半導体売りが重荷</td></tr><tr><td>SOX指数</td><td>-5.9%</td><td>AI開発減速論で急落</td></tr><tr><td>米10年国債</td><td>一時5%超</td><td>2023年以来の水準</td></tr><tr><td>ブレント原油</td><td>105.68ドル</td><td>中東供給不安が継続</td></tr></tbody></table></div></section>

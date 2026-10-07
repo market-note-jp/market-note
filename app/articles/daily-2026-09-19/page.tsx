@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月19日） | Market Note",
-  description: "2026年9月19日朝のAI・半導体、株式、原油、日本の金融政策・企業統治を公開情報から整理。",
-};
+const editorial = editorialTitles["daily-2026-09-19"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember19() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月19日（土）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月19日（土）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>週末の市場は、日米の金融引き締めとAI投資の持続性を同時に消化する局面に入った。9月18日の米国株はS&amp;P500とNASDAQが小幅上昇した一方、米10年国債利回りは5%を上回り、原油も100ドル超を維持した。日本銀行は政策金利を1.25%へ引き上げ、31年ぶりの高水準としたが、2人の反対票を受けて円はむしろ下落した。半導体ではSK Hynix傘下Solidigmの米国NAND工場検討と、中国CXMTのNAND参入計画が浮上し、AI時代のメモリー供給競争が一段と激しくなっている。</p></section>
           <section><h2>市場スナップショット</h2><div className="table-wrap"><table><thead><tr><th>対象</th><th>確認値・状況</th><th>ポイント</th></tr></thead><tbody><tr><td>ダウ</td><td>-0.18%</td><td>金利上昇が重石</td></tr><tr><td>S&amp;P500</td><td>+0.17%</td><td>小幅続伸</td></tr><tr><td>NASDAQ総合</td><td>+0.40%</td><td>テック株が相対優位</td></tr><tr><td>米10年国債利回り</td><td>5%超</td><td>高バリュエーション株の逆風</td></tr><tr><td>ブレント原油</td><td>104.87ドル</td><td>供給懸念緩和で反落も100ドル超</td></tr><tr><td>日銀政策金利</td><td>1.25%</td><td>31年ぶり高水準</td></tr></tbody></table></div></section>

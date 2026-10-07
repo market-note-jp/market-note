@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default function CalendarPage() {
   return (
-    <main className="site-shell">
+    <main className="site-shell" id="main-content">
       <section className="intro calendar-intro">
         <Link className="calendar-breadcrumb" href="/">ホーム /</Link>
         <p className="kicker">MARKET CALENDAR</p>
@@ -27,7 +27,7 @@ export default function CalendarPage() {
           </div>
           <p>{marketCalendarEvents.length}件</p>
         </div>
-        <MarketCalendar events={marketCalendarEvents} initialMonth={marketCalendarReviewedAt.slice(0, 7)} />
+        <MarketCalendar events={marketCalendarEvents} />
       </section>
 
     </main>

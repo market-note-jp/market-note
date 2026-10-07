@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月9日） | Market Note",
-  description: "米国株とAI選別、Qualcomm・AmazonのAI半導体提携、日本GDP・実質賃金と日銀、原油高、米中AI摩擦を整理した2026年9月9日のマーケットブリーフィング。",
-};
+const editorial = editorialTitles["daily-2026-09-09"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember9() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月9日（水）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月9日（水）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>9月9日朝の市場は、<strong>AI投資そのものへの期待は続く一方、恩恵を受ける企業とAIに代替される企業の選別が一段と鮮明になっている</strong>。9月8日の米国株はS&amp;P500が7,673.52（-0.58%）、NASDAQ総合が26,421.41（-0.32%）、ダウが52,786.07（-1.18%）で終了した。ソフトウェア株が売られる一方、Amazonとの大型AI半導体提携を発表したQualcommやIntelは上昇し、「AI相場＝テック全面高」ではなくなっている。</p><p>日本では、4〜6月期の実質GDPが前期比0.4%、年率1.4%へ上方修正され、7月の実質賃金も前年比2.4%増と2021年5月以来の高い伸びとなった。円は一時1ドル=152.89円まで上昇し、9月17〜18日の日銀会合で25bp利上げするとの市場予想が急速に強まっている。景気・賃金・円相場の3点が、日銀の追加利上げを後押しする構図だ。</p><p>一方、ブレント原油は97.92ドルまで上昇。中東の供給不安がインフレを再加速させれば、米FRBと日銀の双方で引き締め圧力が強まる。AI半導体の構造的成長と、金利・原油高というマクロ逆風が同時進行しているため、指数よりも業種・企業ごとの利益感応度を見る局面になっている。</p></section>
 

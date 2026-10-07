@@ -1,20 +1,20 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "週次マーケットニュースレポート（2026年8月3日〜7日） | Market Note",
-  description: "日本株・米国株・日経平均・ダウ平均・NASDAQ総合・SOX指数をまとめた週次マーケットニュースレポート。",
-};
+const editorial = editorialTitles["weekly-2026-08-03"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function WeeklyReportAugust3() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
 
       <article>
         <header className="report-header">
           <p className="report-label">WEEKLY MARKET REPORT</p>
-          <h1>週次マーケットニュースレポート（2026年8月3日〜7日）</h1>
+          <h1>{editorial.title}</h1>
           <p className="report-date">公開日：2026年8月8日</p>
         </header>
 

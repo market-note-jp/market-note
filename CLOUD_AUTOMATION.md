@@ -31,7 +31,7 @@ Never report states 1–4 as state 5. If work is blocked, retain the completed c
 ```sh
 npm run lint
 GITHUB_ACTIONS=true npm run build:pages
-node --test tests/homepage-layout.test.mjs tests/site-design.test.mjs tests/market-calendar.test.mjs tests/publication-verification.test.mjs
+node --test tests/homepage-layout.test.mjs tests/site-design.test.mjs tests/market-calendar.test.mjs tests/publication-verification.test.mjs tests/prototype-design.test.mjs tests/article-titles.test.mjs tests/redesign-publication.test.mjs
 npm run verify:publication -- YYYY-MM-DD FULL_MAIN_COMMIT_SHA
 ```
 
@@ -40,3 +40,17 @@ The verifier performs only public GET requests to this repository and its GitHub
 ## October 6, 2026 incident
 
 The completed daily article was saved to `daily-2026-10-06`, while `main` remained on the previous day's content-driven migration. No PR or main push existed, so the Pages workflow had no publication trigger. GitHub reported main as unprotected. These facts establish the missing promotion/deployment step; they do not establish why the external generation job stopped at its branch save. Changes here add a clear completion contract and a tested read-only verifier. The external job still needs to follow this procedure; its configuration and the next scheduled run must be checked separately before claiming recurrence is eliminated.
+
+## Daily and weekly title policy (approved 2026-10-07 JST)
+
+For each new report, choose a concise, unique title naming its actual subject before the date. Use the daily/weekly type as a small label. A subject such as a named company's semiconductor demand or the week's contrast between semiconductor shares, interest rates and employment is appropriate only when the article supports it. Avoid a generic report name plus date, keyword stuffing, unsupported cause-and-effect claims and promises about search ranking. There is no mandatory 32-character rule.
+
+Use one authoritative title for the H1, listing cards, search title, Open Graph and Twitter title; a `Market Note` suffix is permitted. Daily reports use JSON `title`, with an identical `headline` retained as a compatibility alias. Static weekly routes use their entry in `content/editorial-titles.json`. Both use `createArticleMetadata` for aligned title and description tags. Describe the same subject in one concise, factual `description`.
+
+Retitling is not republishing: retain the original slug, URL, publication date/time, source baseline dates and body. Retitle older archives only when explicitly authorized, preserving their subject, body, sources and publication dates.
+
+Before an authorized publication, build the Pages export and run `tests/article-titles.test.mjs` with the existing test suite. Check the rendered H1, listing cards, HTML title, Open Graph/Twitter titles and descriptions, as well as route/date/body preservation.
+
+The generation schedule and job are configured outside this repository. These local authoring instructions do not prove that the external daily/weekly job has adopted this policy. Verify that configuration separately before reporting it changed; no publication or automation change is authorized by these documentation edits alone.
+
+The strict read-only publication verifier now compares complete ordered article semantics across both old and redesigned containers, retaining the exact-main-SHA and successful build/deploy requirements. Run `tests/redesign-publication.test.mjs` against the built export: it includes missing/changed/reordered/hidden body and source regressions plus title, date and chart checks. Passing these local checks is not a live publication result.

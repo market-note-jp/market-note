@@ -1,7 +1,10 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
-export const metadata: Metadata = { title: "デイリー・マーケットブリーフィング（2026年9月25日） | Market Note", description: "2026年9月25日朝のAI・半導体、株式・金融市場、日本企業、マクロ政策を公開情報から整理。" };
-export default function DailyReportSeptember25(){return <main className="article-page"><Link className="back-link" href="/">← 記事一覧へ戻る</Link><article><header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月25日（金）</p></header><div className="report-body">
+const editorial = editorialTitles["daily-2026-09-25"];
+export const metadata: Metadata = createArticleMetadata(editorial);
+export default function DailyReportSeptember25(){return <main id="main-content" className="article-page"><Link className="back-link" href="/">← 記事一覧へ戻る</Link><article><header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月25日（金）</p></header><div className="report-body">
 <section><h2>今日の結論</h2><p>米国市場は「高金利」と「AI投資継続」が拮抗している。S&amp;P500はほぼ横ばい、NASDAQも小幅高にとどまった一方、SoftBank Groupの大型資金調達はAIインフラ投資がなお拡大局面にあることを示す。米長期金利は歴史的高水準で、原油とFRBの追加利上げ観測が株式の上値を抑える。日本では円相場と国債市場の不安定さが政策正常化後の重要テーマとなる。</p></section>
 <section><h2>市場スナップショット</h2><div className="table-wrap"><table><thead><tr><th>対象</th><th>直近状況</th><th>注目点</th></tr></thead><tbody><tr><td>S&amp;P500</td><td>9/24 -0.02%</td><td>高金利への耐性</td></tr><tr><td>NASDAQ</td><td>9/24 +0.01%</td><td>AI株の選別</td></tr><tr><td>ダウ</td><td>9/24 -0.31%</td><td>景気・金利</td></tr><tr><td>米長期金利</td><td>高水準</td><td>追加利上げ観測</td></tr></tbody></table></div></section>
 <section><h2>1．米国株はほぼ横ばい―AI期待と高金利が拮抗</h2><p>9月24日のS&amp;P500は0.02%安、NASDAQは0.01%高、ダウは0.31%安。MetaがAI関連材料で上昇する一方、Microsoftは下落した。</p><p className="inline-sources"><a href="https://www.reuters.com/business/wall-st-futures-fall-middle-east-uncertainties-ahead-trump-xi-talks-2026-09-24/" target="_blank" rel="noreferrer">Reuters（2026年9月24日）</a></p><h3>市場への影響</h3><p>AIテーマは継続しているが、指数全体を押し上げる力は金利上昇で相殺されている。</p><h3>次の注目点</h3><ul><li>AI大型株の相対強弱</li><li>米長期金利</li></ul></section>

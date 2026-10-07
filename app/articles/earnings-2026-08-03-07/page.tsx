@@ -1,21 +1,20 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "8月3日〜7日決算総まとめ | Market Note",
-  description:
-    "AI・データセンター関連を中心に、2026年8月3日から7日の日本企業決算をテーマ別にまとめた記事。",
-};
+const editorial = editorialTitles["earnings-2026-08-03-07"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function EarningsSummaryAugust3To7() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
 
       <article>
         <header className="report-header">
           <p className="report-label">EARNINGS REPORT</p>
-          <h1>8月3日〜7日決算総まとめ　AI・データセンター関連に相次ぐ上方修正、好決算でも売られる銘柄も</h1>
+          <h1>{editorial.title}</h1>
           <p className="report-date">公開日：2026年8月8日</p>
         </header>
 

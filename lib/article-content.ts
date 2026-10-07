@@ -1,5 +1,6 @@
 import { readFileSync, readdirSync } from "node:fs";
 import path from "node:path";
+import { resolveArticleTitle } from "./article-metadata";
 
 export type ArticleSummary = {
   kind: string;
@@ -56,9 +57,16 @@ export type DailyArticle = {
 const dailyContentDir = path.join(process.cwd(), "content", "daily");
 const dailyFilePattern = /^daily-\d{4}-\d{2}-\d{2}\.json$/;
 
+type DailyArticleInput = Omit<DailyArticle, "title" | "headline"> & { title?: string; headline?: string };
+
 function readDailyFile(fileName: string): DailyArticle {
   const filePath = path.join(dailyContentDir, fileName);
-  const parsed = JSON.parse(readFileSync(filePath, "utf8")) as DailyArticle;
+  return normalizeDailyArticle(JSON.parse(readFileSync(filePath, "utf8")) as DailyArticleInput, fileName);
+}
+
+export function normalizeDailyArticle(input: DailyArticleInput, fileName: string): DailyArticle {
+  const title = resolveArticleTitle(input);
+  const parsed: DailyArticle = { ...input, title, headline: title };
   const expectedSlug = fileName.replace(/\.json$/, "");
 
   if (parsed.slug !== expectedSlug) {
@@ -67,7 +75,7 @@ function readDailyFile(fileName: string): DailyArticle {
   if (parsed.kind !== "日次レポート") {
     throw new Error(`${fileName}: kind must be 日次レポート`);
   }
-  for (const key of ["date", "dateTime", "title", "headline", "excerpt", "description", "label", "displayDate"] as const) {
+  for (const key of ["date", "dateTime", "title", "excerpt", "description", "label", "displayDate"] as const) {
     if (!parsed[key]) throw new Error(`${fileName}: missing ${key}`);
   }
   if (!Array.isArray(parsed.sections) || parsed.sections.length === 0) {

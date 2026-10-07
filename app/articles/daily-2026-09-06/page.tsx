@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月6日） | Market Note",
-  description: "米雇用統計、FoxconnのAI需要、日本の個人消費、中国レアアース、米イラン緊張と原油を整理した2026年9月6日のマーケットブリーフィング。",
-};
+const editorial = editorialTitles["daily-2026-09-06"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember6() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月6日（日）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月6日（日）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>9月6日の焦点は、<strong>米雇用の強さで金利上昇圧力が残る一方、AIサーバー需要は実需面でなお強く、日本では消費の弱さと供給制約が同時進行していること</strong>だ。米8月雇用統計は非農業部門雇用者数が16.2万人増、失業率は4.1%で、9月FOMCでの追加利上げ観測を押し上げた。一方、FoxconnはAI関連需要を背景に第3四半期業績が市場予想を上回るとの見通しを示し、8月売上高は前年同月比51.98%増の過去最高となった。</p><p>日本では7月家計支出が前年比3.6%減と8カ月連続で落ち込み、日銀が利上げを検討する中で内需の弱さが改めて意識される。さらに中国産レアアースの対日供給では、テルビウムやイットリウムなどの輸出が大きく減少しており、半導体・自動車・高性能磁石の供給網リスクが続く。中東では米軍がイラン産原油を運ぶタンカー3隻を攻撃し、原油供給リスクは週末も低下していない。</p></section>
 

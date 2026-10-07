@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月8日） | Market Note",
-  description: "日本株のAI・半導体高、円高と日銀、外貨準備、WistronのAIサーバー投資、原油・インフレを整理した2026年9月8日のマーケットブリーフィング。",
-};
+const editorial = editorialTitles["daily-2026-09-08"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember8() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月8日（火）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月8日（火）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>9月8日朝の焦点は、<strong>米国株がLabor Dayで休場だった一方、東京市場ではAI・半導体株への資金集中が日経平均を2%超押し上げ、同時に円高と原油高が日本株のセクター間格差を広げていること</strong>だ。9月7日の日経平均は66,399.84円、前日比1,378.90円高（+2.12%）。一方、上昇105銘柄に対し下落120銘柄で、指数上昇ほど全面高ではなかった。</p><p>為替では円が一時1ドル=154.05円まで上昇し、2月以来の高値を付けた。9月17〜18日の日銀金融政策決定会合を前に利上げ観測が強く、日本の金利・為替・銀行株の連動性が高まっている。加えて、8月末の日本の外貨準備は1兆2,075億ドルへ前月末から795.75億ドル減少し、7〜8月の大規模な円買い介入の影響が数字に表れた。</p><p>AIインフラではNVIDIA向けサーバーを手掛ける台湾Wistronが約14.7億ドルを調達し、原材料購入や米テキサスのAIシステム生産拡大を支える。エネルギー面ではブレント原油が96ドル台まで上昇し、船舶燃料の需給逼迫も進んでいる。米8月CPIは9月11日8:30 ETに公表予定で、AI株の高バリュエーションと金利見通しを左右する次の大きなイベントとなる。</p></section>
 

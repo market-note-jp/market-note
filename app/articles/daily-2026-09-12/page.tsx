@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月12日） | Market Note",
-  description: "2026年9月12日の市場動向を公開情報から整理。",
-};
+const editorial = editorialTitles["daily-2026-09-12"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember12() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月12日（土）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月12日（土）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>米8月CPIは前月比0.4%、前年比3.4%上昇し、米国では次回FOMCの利上げ観測が強まった。一方、9月11日の米国株は原油反落と押し目買いを支えに反発した。日本では8月企業物価が前年比7.6%上昇し、日銀の9月会合で追加利上げ観測が強い。AI・半導体ではキオクシアの米国ADS上場構想が注目された。</p></section>
           <section><h2>市場スナップショット</h2><div className="table-wrap"><table><thead><tr><th>対象</th><th>確認値</th><th>ポイント</th></tr></thead><tbody><tr><td>S&amp;P500</td><td>7,656.98（+0.86%）</td><td>反発</td></tr><tr><td>NASDAQ総合</td><td>+0.96%</td><td>テック株反発</td></tr><tr><td>米8月CPI</td><td>前月比+0.4% / 前年比+3.4%</td><td>インフレ圧力</td></tr><tr><td>日本8月企業物価</td><td>前年比+7.6%</td><td>企業コスト上昇</td></tr><tr><td>ブレント原油</td><td>104.49ドル前後</td><td>高値から反落</td></tr></tbody></table></div></section>

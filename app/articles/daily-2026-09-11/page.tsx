@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月11日） | Market Note",
-  description: "米PPIと金利上昇、原油107ドル台、OracleのAIクラウド需要、NVIDIAの推論エコシステム、日銀利上げ観測を整理した2026年9月11日のマーケットブリーフィング。",
-};
+const editorial = editorialTitles["daily-2026-09-11"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember11() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月11日（金）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月11日（金）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>9月11日朝の市場で最も重要なのは、<strong>AI投資の成長が続く一方、原油急騰とインフレ再加速が米金利を押し上げ、株式の評価余地を狭めていること</strong>だ。9月10日の米国株はS&amp;P500が7,591.75（-0.58%）、NASDAQ総合が26,081.73（-0.65%）、ダウが52,064.10（-0.60%）で終了した。米8月PPIは前月比0.4%、前年比5.4%上昇し、エネルギー価格上昇を背景に生産者段階のインフレ圧力が再び強まった。</p><p>同時に、ブレント原油は前日比6.34%高の107.63ドル、WTIは6.69%高の102.48ドルまで上昇した。ホルムズ海峡や紅海の物流障害が長期化すれば、企業収益・物価・金融政策を同時に動かす変数になる。</p><p>AI分野ではOracleがAI向けクラウド需要を背景に四半期売上高を30%伸ばし、時間外で株価が上昇した。さらにd-MatrixがNVIDIAのNVLink Fusionを採用し、AI投資の重心が「学習用GPU」だけでなく「推論用アクセラレーターと接続技術」へ広がっている。一方、日本では日銀の増一行審議委員が基調的な物価上昇率が2%に近づいているとの認識を示し、必要なら利上げを迅速化する可能性に言及した。</p></section>
 

@@ -8,7 +8,7 @@ const article = { slug: `daily-${date}`, headline: "Test headline", displayDate:
 const href = `/market-note/articles/${article.slug}/`;
 const card = `<h3>${article.title}</h3><time dateTime="${article.dateTime}">${article.date}</time><p class="article-excerpt">${article.excerpt}</p>`;
 const homepage = `</header><main class="site-shell"><section class="market-hero"></section><section id="latest"><a href="${href}">${card}</a></section><section id="companies"></section><section id="articles"><a href="${href}">${card}</a></section><section id="policy"></section></main>`;
-const articleHtml = `<article><h1>${article.headline}</h1><p class="report-date">${date}</p><div class="report-body"><section><h2>Conclusion</h2><p>Verified &amp; sourced body</p><p class="inline-sources"><span><a href="https://example.com/report" target="_blank" rel="noreferrer">Source</a></span></p></section><section class="disclaimer"><h2>Notice</h2><p>Informational only</p></section></div></article>`;
+const articleHtml = `<article><h1>${article.title}</h1><p class="report-date">${date}</p><div class="report-body"><section><h2>Conclusion</h2><p>Verified &amp; sourced body</p><p class="inline-sources"><span><a href="https://example.com/report" target="_blank" rel="noreferrer">Source</a></span></p></section><section class="disclaimer"><h2>Notice</h2><p>Informational only</p></section></div></article>`;
 
 function mockFetch({ head = sha, conclusion = "success", deploy = "success", body = articleHtml, home = homepage, race = false } = {}) {
   let mainReads = 0;

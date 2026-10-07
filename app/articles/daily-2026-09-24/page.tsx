@@ -1,7 +1,10 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
-export const metadata: Metadata = { title: "デイリー・マーケットブリーフィング（2026年9月24日） | Market Note", description: "2026年9月24日朝のAI・半導体、株式・金融市場、日本企業、マクロ政策を公開情報から整理。" };
-export default function DailyReportSeptember24(){return <main className="article-page"><Link className="back-link" href="/">← 記事一覧へ戻る</Link><article><header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月24日（木）</p></header><div className="report-body">
+const editorial = editorialTitles["daily-2026-09-24"];
+export const metadata: Metadata = createArticleMetadata(editorial);
+export default function DailyReportSeptember24(){return <main id="main-content" className="article-page"><Link className="back-link" href="/">← 記事一覧へ戻る</Link><article><header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月24日（木）</p></header><div className="report-body">
 <section><h2>今日の結論</h2><p>焦点はAI成長期待と金利上昇の綱引き。米長期金利が20年超ぶりの高水準へ上昇する一方、AI投資は続く。SoftBank Groupの111億ドル調達はAI投資競争の継続を示し、米日によるイットリウム供給協議は半導体競争が素材・資源まで広がったことを示す。</p></section>
 <section><h2>1．米長期金利上昇―30年債利回りは20年超ぶり高水準</h2><p>原油上昇とFRBのタカ派姿勢を背景に米国債売りが続き、長期金利が一段と上昇した。</p><p className="inline-sources"><a href="https://www.reuters.com/business/us-30-year-bond-yield-rises-highest-since-2004-selloff-deepens-2026-09-24/" target="_blank" rel="noreferrer">Reuters（2026年9月24日）</a></p><h3>市場への影響</h3><p>高い割引率はAI・半導体など高バリュエーション株の逆風。</p><h3>次の注目点</h3><ul><li>米10年・30年債利回り</li><li>FRB当局者発言</li></ul></section>
 <section><h2>2．米国株はほぼ横ばい</h2><p>S&amp;P500は0.02%安、NASDAQは0.01%高、ダウは0.31%安。中東情勢、原油、金利上昇が重しとなった。</p><p className="inline-sources"><a href="https://www.reuters.com/business/wall-st-futures-fall-middle-east-uncertainties-ahead-trump-xi-talks-2026-09-24/" target="_blank" rel="noreferrer">Reuters（2026年9月24日）</a></p><h3>市場への影響</h3><p>指数高値圏でも銘柄選別が強まる。</p><h3>次の注目点</h3><ul><li>NASDAQ高値維持</li><li>大型テック</li></ul></section>

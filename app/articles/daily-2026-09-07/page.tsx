@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月7日） | Market Note",
-  description: "OPEC+、ホルムズ海峡、中国金融支援、AI投資、日銀と日本株を整理した2026年9月7日のマーケットブリーフィング。",
-};
+const editorial = editorialTitles["daily-2026-09-07"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember7() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月7日（月）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月7日（月）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>9月7日の焦点は、<strong>原油供給リスクが高止まりする中でもOPEC+が増産を急がず、中国は金融機関への大型資本注入で景気下支えを強め、AI投資は資金調達を伴いながら拡大を続けていること</strong>だ。OPEC+の主要7カ国は9月6日、10月の必要生産量を9月と同水準に据え置くことを決定した。中東では米国とイランの軍事的緊張が続き、ホルムズ海峡の通航と原油価格は引き続き最重要リスクとなる。</p><p>中国は国有銀行・保険会社への資本注入を合計約540億ドル規模で進める。信用供給と金融安定を支える狙いがあり、中国景気敏感株やアジア市場のリスク選好に影響しうる。AIではFoxconnの8月売上高が過去最高となったほか、ByteDanceが約296億ドルの大型融資を確保しており、AI競争が半導体購入だけでなくデータセンターと資金調達へ広がっている。日本では9月の日銀利上げ観測と弱い個人消費が併存し、週明けの銀行株・グロース株・円相場の反応が焦点となる。</p></section>
 

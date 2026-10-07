@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月16日） | Market Note",
-  description: "2026年9月16日朝の市場材料を公開情報から整理。",
-};
+const editorial = editorialTitles["daily-2026-09-16"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember16() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月16日（水）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月16日（水）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>市場の主役は「原油高・長期金利上昇・金融引き締め」の三重圧力だ。サウジの供給障害でブレント原油は108.75ドルまで上昇し、米10年国債利回りは5%近辺と2007年以来の高水準。米国株は続落し、特に高い割引率に弱いAI・グロース株には厳しい環境が続く。一方、AI・半導体の実需ではMediaTekがTSMCの2nmを使う新型SoCを発表し、AI安全性を巡ってOpenAIなど主要ラボが協調する動きも報じられた。日本では18日の日銀会合で25bp利上げ観測が強く、円・銀行株・輸出株の値動きが焦点となる。</p></section>
           <section><h2>市場スナップショット</h2><div className="table-wrap"><table><thead><tr><th>対象</th><th>確認値・状況</th><th>ポイント</th></tr></thead><tbody><tr><td>S&amp;P500</td><td>-0.45%</td><td>原油・金利上昇で続落</td></tr><tr><td>NASDAQ総合</td><td>-0.78%</td><td>グロース株に金利圧力</td></tr><tr><td>ダウ</td><td>-0.63%</td><td>リスク回避継続</td></tr><tr><td>米10年国債</td><td>約5%</td><td>2007年以来の高水準</td></tr><tr><td>ブレント原油</td><td>108.75ドル</td><td>サウジ供給障害で+2.9%</td></tr></tbody></table></div></section>

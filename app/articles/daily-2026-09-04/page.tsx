@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月4日） | Market Note",
-  description: "米国株、FRB、NVIDIA・Hugging Face、円・日銀、原油、米雇用統計を整理した2026年9月4日のマーケットブリーフィング。",
-};
+const editorial = editorialTitles["daily-2026-09-04"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember4() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月4日（金）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月4日（金）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>9月4日の焦点は、<strong>AI関連の企業材料が強い一方、株式市場の方向を決める主役が再び金融政策と雇用へ移っていること</strong>だ。9月3日の米国株は、FRBのChristopher Waller理事がインフレ鈍化を条件に9月会合で政策金利据え置きを支持する可能性を示したことで大幅反発した。S&amp;P500は1.06%高、NASDAQ総合は1.40%高となり、米10年債利回りも4.758%へ低下した。</p><p>AIではNVIDIAがHugging Faceを129.3億ドルで買収すると発表し、半導体企業からAI開発基盤全体へ影響力を広げる動きが鮮明になった。一方、日本では日銀の9月利上げ観測が強まり、円は155円台まで急伸した。原油はホルムズ海峡を巡る供給懸念から一時6週ぶり高値を付けており、今夜の米雇用統計と合わせて、金利・為替・原油の三方向から株価評価が揺さぶられる局面が続く。</p></section>
 

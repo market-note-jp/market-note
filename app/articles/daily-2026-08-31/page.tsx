@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年8月31日） | Market Note",
-  description: "円・日銀、米金融政策、原油・SPR、AI半導体、日本のAI投資を整理した2026年8月31日のマーケットブリーフィング。",
-};
+const editorial = editorialTitles["daily-2026-08-31"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportAugust31() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年8月31日（月）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年8月31日（月）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>31日の週明けは、<strong>円安と日銀の追加利上げ観測、米インフレ高止まり、中東の供給不安</strong>が日本株の外部環境を左右する。AIではNVIDIA好決算後の株価調整を経ても、日本のメモリー投資は拡大基調にある。</p><p>市場の焦点は「AI業績」だけではなく、金利・為替・原油というマクロ要因へ再び広がっている。</p></section>
           <section><h2>市場スナップショット</h2><div className="table-wrap"><table><thead><tr><th>対象</th><th>最新確認値・状況</th><th>読み方</th></tr></thead><tbody><tr><td>S&amp;P500（8月28日）</td><td>-0.25%</td><td>FRB警戒で反落</td></tr><tr><td>NASDAQ総合（8月28日）</td><td>-0.52%</td><td>テック株に利益確定</td></tr><tr><td>ブレント原油（8月28日）</td><td>89.31ドル</td><td>供給不安は残存</td></tr><tr><td>米コアPCE（7月）</td><td>前年比+3.3%</td><td>利上げリスクを残す</td></tr><tr><td>米SPR</td><td>約2.9億バレル（8月21日時点）</td><td>約44年ぶり低水準</td></tr></tbody></table></div><p className="inline-sources"><a href="https://www.reuters.com/business/sp-500-nasdaq-futures-slip-after-tech-rally-warshs-speech-awaited-2026-08-28/" target="_blank" rel="noreferrer">Reuters・米国株（2026年8月28日）</a> <a href="https://www.reuters.com/business/energy/trump-says-us-will-refill-strategic-petroleum-reserve-using-venezuelan-oil-2026-08-30/" target="_blank" rel="noreferrer">Reuters・SPR（2026年8月30日）</a></p></section>

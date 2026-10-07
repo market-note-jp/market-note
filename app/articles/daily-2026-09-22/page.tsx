@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月22日） | Market Note",
-  description: "2026年9月22日朝のAI・半導体、株式・金融市場、日本企業、マクロ政策を公開情報から整理。",
-};
+const editorial = editorialTitles["daily-2026-09-22"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember22() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月22日（火）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月22日（火）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>AI相場が再び主導権を握った。9月21日の米国市場ではAMDが時価総額1兆ドルを突破し、半導体指数が急伸、NASDAQは最高値を更新した。一方、原油と米長期金利の低下がグロース株の追い風となった。日本ではSoftBank GroupがOpenAI追加投資の資金として110億ドル規模の外債発行を開始し、AI投資を自己資本だけでなく資本市場で賄う局面が鮮明になった。円は日銀の1.25%利上げ後も157円台で弱く、為替介入警戒が継続。半導体の実需は台湾の先端パッケージ投資にも表れており、短期はAI株の再加速、中期は金利・資金調達コストと設備投資回収の両立が焦点となる。</p></section>
           <section><h2>市場スナップショット</h2><div className="table-wrap"><table><thead><tr><th>対象</th><th>直近確認値・状況</th><th>注目点</th></tr></thead><tbody><tr><td>S&amp;P500</td><td>9/21 +1.49%</td><td>AI主導の上昇持続性</td></tr><tr><td>NASDAQ総合</td><td>9/21 最高値、+約2%</td><td>半導体株の高値追い</td></tr><tr><td>PHLX半導体指数</td><td>9/21 +4.3%</td><td>AI設備投資の実需</td></tr><tr><td>WTI原油</td><td>95.43ドル、9/21 -4.86%</td><td>中東外交と供給不安</td></tr><tr><td>ドル円</td><td>9/21 157.48円前後</td><td>日本当局の介入警戒</td></tr></tbody></table></div></section>

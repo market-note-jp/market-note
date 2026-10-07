@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月3日） | Market Note",
-  description: "米国株、Broadcom決算、日銀と円相場、米雇用、ホルムズ海峡と原油を整理した2026年9月3日のマーケットブリーフィング。",
-};
+const editorial = editorialTitles["daily-2026-09-03"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember3() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月3日（木）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月3日（木）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>9月3日の焦点は、<strong>AI需要の強さが続く一方で、金利・原油・為替というマクロ要因が株価評価を大きく左右する相場になっていること</strong>だ。9月2日の米国株は3指数がそろって反発し、NVIDIAなど大型テックが買い戻された。ただし、引け後に決算を発表したBroadcomはAI半導体売上が急増した一方、次四半期の全社売上見通しが市場予想をわずかに下回り、時間外で3%超下落した。</p><p>日本では日銀の高田創審議委員が機動的な利上げの必要性を強調し、ドル円は158円台へ円高が進んだ。米国ではADP民間雇用が8月に3.8万人増と弱く、9月4日の雇用統計が金融政策の次の大きな材料になる。一方、ブレント原油は95.63ドルまで上昇しており、インフレ再加速リスクは消えていない。</p></section>
 

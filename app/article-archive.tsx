@@ -61,7 +61,7 @@ export default function ArticleArchive({ articles }: { articles: Article[] }) {
   const goToPage = (page: number) => {
     setCurrentPage(page);
     window.requestAnimationFrame(() => {
-      document.getElementById("articles")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      document.getElementById("articles")?.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
     });
   };
 
@@ -69,7 +69,7 @@ export default function ArticleArchive({ articles }: { articles: Article[] }) {
     setActiveFilter(filter);
     setCurrentPage(1);
     window.requestAnimationFrame(() => {
-      document.getElementById("articles")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      document.getElementById("articles")?.scrollIntoView({ behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" });
     });
   };
 

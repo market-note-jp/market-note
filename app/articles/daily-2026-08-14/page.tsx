@@ -1,21 +1,20 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年8月14日） | Market Note",
-  description:
-    "米PPI、米国株最高値、Applied Materials、日本株、原油とドル円を整理した2026年8月14日のマーケットブリーフィング。",
-};
+const editorial = editorialTitles["daily-2026-08-14"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportAugust14() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
 
       <article>
         <header className="report-header">
           <p className="report-label">DAILY MARKET BRIEFING</p>
-          <h1>デイリー・マーケットブリーフィング</h1>
+          <h1>{editorial.title}</h1>
           <p className="report-date">2026年8月14日（金）</p>
         </header>
 
