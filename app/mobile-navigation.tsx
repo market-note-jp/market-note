@@ -6,7 +6,8 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 
 const links = [
   ["/#articles", "レポート", "REPORTS"],
-  ["/#companies", "企業分析", "COMPANIES"],
+  ["/#companies", "企業レポート", "COMPANIES"],
+  ["/company-analysis", "財務分析", "KANALYZER"],
   ["/airi", "AIRI・AI株指標", "AI RESEARCH INDEX"],
   ["/calendar", "市場カレンダー", "CALENDAR"],
   ["/#policy", "Market Noteについて", "ABOUT US"],
