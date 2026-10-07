@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月10日） | Market Note",
-  description: "原油100ドル突破と米国株安、OpenAI・Samsungの次世代AI半導体、国内製造業の半導体需要、日銀利上げ観測、米インフレ指標を整理した2026年9月10日のマーケットブリーフィング。",
-};
+const editorial = editorialTitles["daily-2026-09-10"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember10() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月10日（木）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月10日（木）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>9月10日朝の市場で最も重要なのは、<strong>AI投資の構造的成長が続く一方、原油100ドル超と金利上昇が株式のバリュエーションを圧迫し始めていること</strong>だ。9月9日の米国株はS&amp;P500が7,636.46（-0.48%）、NASDAQ総合が26,253.34（-0.64%）、ダウが52,381.02（-0.77%）で終了。ブレント原油は101.21ドルまで上昇し、エネルギー株以外は概ね売られた。</p><p>AI・半導体では、OpenAIがSamsung Electronicsと次世代半導体の共同開発を進めていることを明らかにした。AI需要はGPUだけでなく、HBMなどの高性能メモリ、カスタムチップ、光接続、電力・冷却設備へ広がっている。日本でも大企業製造業の景況感が約5年ぶりの高水準となり、特に電子機器はAI・データセンター投資の恩恵を受けている。</p><p>一方、日本の10年国債利回りは先週3%に達し、市場は9月17〜18日の日銀会合で政策金利が1.25%へ引き上げられる可能性をほぼ織り込んでいる。原油高がインフレを押し上げる中、米国では9月10日に8月PPI、11日にCPIが公表される。今後は「AI成長率」だけでなく、原油・金利・為替を含めた利益率への影響を見る必要がある。</p></section>
 

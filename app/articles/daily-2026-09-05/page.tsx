@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月5日） | Market Note",
-  description: "米雇用統計、米国株・半導体、米中AI安全協議、日本の財政・AI半導体投資、原油・ホルムズ海峡を整理した2026年9月5日のマーケットブリーフィング。",
-};
+const editorial = editorialTitles["daily-2026-09-05"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember5() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月5日（土）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月5日（土）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>9月5日の焦点は、<strong>米雇用の想定以上の強さで金融政策が再びタカ派方向へ傾く一方、半導体株にはAI需要への期待が残っていること</strong>だ。米8月雇用統計では非農業部門雇用者数が16.2万人増と市場予想5.6万人増を大きく上回り、失業率は4.1%で横ばいだった。これを受けて9月FOMCで25bp利上げを見込む確率は約58〜65%へ上昇し、米10年債利回りも4.77%台へ上昇した。</p><p>米国株の主要3指数は小幅安だったが、SOX指数は3.4%高と逆行し、半導体セクターはAI需要を背景に相対的な強さを示した。AI政策では米中が9月中旬にAI安全対話を行う方向で調整しているとの報道が出た。日本では2027年度予算要求が143.1兆円に達し、AI・半導体・経済安全保障を含む戦略分野への要求が12.2兆円に膨らんだ。原油はブレント92.68ドルで、週間では7.6%上昇しており、金利・AI投資・エネルギー価格の三つが同時に市場評価を左右する局面が続く。</p></section>
 

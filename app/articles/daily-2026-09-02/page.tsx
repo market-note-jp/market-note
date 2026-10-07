@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月2日） | Market Note",
-  description: "米国株、日米長期金利、原油・ホルムズ海峡、AI規制、東京データセンター投資を整理した2026年9月2日のマーケットブリーフィング。",
-};
+const editorial = editorialTitles["daily-2026-09-02"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember2() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月2日（水）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月2日（水）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>9月2日の焦点は、<strong>原油高と世界的な長期金利上昇が株式市場、とりわけ高PERのAI・半導体株に同時に逆風となっていること</strong>だ。9月1日の米国株は3指数そろって3日続落し、S&amp;P500は0.7%安、NASDAQ総合は1.0%安となった。</p><p>日本では10年国債利回りが3%に達し、9月17〜18日の日銀会合で追加利上げを見込む動きが強まっている。中東ではホルムズ海峡周辺でタンカー攻撃が発生し、ブレント原油は94.65ドルまで上昇した。AI投資そのものは続いているが、金利・電力・規制・資金調達コストを含めて採算性を見極める局面に入っている。</p></section>
           <section><h2>市場スナップショット</h2><div className="table-wrap"><table><thead><tr><th>対象</th><th>確認できた値・変化</th><th>読み方</th></tr></thead><tbody><tr><td>S&amp;P500（9月1日）</td><td>7,631.47（-0.7%）</td><td>原油高・金利上昇で3日続落</td></tr><tr><td>NASDAQ総合（9月1日）</td><td>26,099.77（-1.0%）</td><td>大型テックが重し</td></tr><tr><td>ダウ平均（9月1日）</td><td>52,766.88（-0.8%）</td><td>幅広いリスク回避</td></tr><tr><td>米10年債利回り</td><td>約4.79%</td><td>高PER株の割引率上昇</td></tr><tr><td>日本10年国債利回り</td><td>3.0%</td><td>1996年以来の水準</td></tr><tr><td>ブレント原油（9月1日）</td><td>94.65ドル（+4.6%）</td><td>中東供給リスクを反映</td></tr></tbody></table></div><p className="inline-sources"><a href="https://apnews.com/article/61f03262bb5dfa1c414c4fb7be40772e" target="_blank" rel="noreferrer">AP・米国株（2026年9月1日）</a> <a href="https://www.reuters.com/world/asia-pacific/japans-benchmark-bond-yield-rises-3-first-time-30-years-2026-09-01/" target="_blank" rel="noreferrer">Reuters・日本国債（2026年9月1日）</a> <a href="https://www.reuters.com/business/energy/oil-prices-rise-latest-fighting-resurrects-middle-east-supply-disruption-risks-2026-09-01/" target="_blank" rel="noreferrer">Reuters・原油（2026年9月1日）</a></p></section>

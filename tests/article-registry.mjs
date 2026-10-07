@@ -16,7 +16,7 @@ function parseLegacyRegistry(source) {
     assert.ok(ts.isObjectLiteralExpression(element));
     return Object.fromEntries(element.properties.map((property) => {
       assert.ok(ts.isPropertyAssignment(property) && ts.isStringLiteral(property.initializer));
-      return [property.name.getText(ast), property.initializer.text];
+      return [ts.isStringLiteral(property.name) ? property.name.text : property.name.getText(ast), property.initializer.text];
     }));
   });
 }
@@ -51,7 +51,11 @@ export async function loadContentDrivenArticles() {
 
 export async function loadArticleRegistry() {
   const source = await readFile(new URL("../app/page.tsx", import.meta.url), "utf8");
-  const legacy = parseLegacyRegistry(source);
+  const editorialTitles = JSON.parse(await readFile(new URL("../content/editorial-titles.json", import.meta.url), "utf8"));
+  const legacy = parseLegacyRegistry(source).map(article => {
+    const editorial = editorialTitles[article.href.replace("/articles/", "")];
+    return editorial ? { ...article, title: editorial.title } : article;
+  });
   const contentDriven = await loadContentDrivenArticles();
   const articles = [...contentDriven, ...legacy];
 

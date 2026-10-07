@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年8月6日） | Market Note",
-  description: "米国株、NVIDIA・AMD、日経平均、ソフトバンクG決算予定、原油・雇用を整理した2026年8月6日のマーケットブリーフィング。",
-};
+const editorial = editorialTitles["daily-2026-08-06"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportAugust6() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年8月6日（木）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年8月6日（木）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>本稿は8月6日7時（日本時間）までに確認できた公開情報を整理したものだ。米国市場は5日、ダウ平均が最高値を更新する一方、S&amp;P500とNASDAQ総合は小幅安となり、AI関連株の中でも選別が進んだ。</p><p>東京市場では前日の日経平均が急伸した。AI・半導体への期待は残るが、個別企業の顧客・採算・資本支出が株価の差を生みやすい。国内では同日に予定されたソフトバンクグループの決算も、AI投資の資金配分を読む材料となる。</p></section>
           <section><h2>市場スナップショット</h2><div className="table-wrap"><table><thead><tr><th>対象</th><th>確認できた値</th><th>確認日</th></tr></thead><tbody><tr><td>S&amp;P500</td><td>7,723.55（-0.2%）</td><td>8月5日・米国終値</td></tr><tr><td>ダウ平均</td><td>54,349.12（+0.5%）</td><td>8月5日・米国終値</td></tr><tr><td>NASDAQ総合</td><td>26,363.44（-0.8%）</td><td>8月5日・米国終値</td></tr><tr><td>米10年債利回り</td><td>4.61%</td><td>8月5日</td></tr><tr><td>日経平均</td><td>66,300.44</td><td>8月5日・東京終値</td></tr></tbody></table></div><p className="inline-sources"><a href="https://apnews.com/article/stocks-markets-rates-oil-prices-53179dc1c0148c5afeb47379b8f5b5c5" target="_blank" rel="noreferrer">AP・米国市場（2026年8月5日）</a><a href="https://indexes.nikkei.co.jp/nkave/archives/data/" target="_blank" rel="noreferrer">日経平均プロフィル・ヒストリカルデータ（2026年8月5日終値）</a></p></section>

@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月1日） | Market Note",
-  description: "米国株、原油、NVIDIA・MediaTek、円・日銀、AIと金融安定を整理した2026年9月1日のマーケットブリーフィング。",
-};
+const editorial = editorialTitles["daily-2026-09-01"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember1() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月1日（火）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月1日（火）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>9月1日の焦点は、<strong>原油高と金利上昇が米国株を押し下げる一方、NVIDIAがMediaTekへ35億ドルを投資しAI半導体のエコシステム拡大を続けていること</strong>だ。</p><p>日本では米財務長官の発言を受けて日銀の9月利上げ観測が強まり、円・長期金利・銀行株・輸出株の反応が重要になる。AI投資は成長テーマであると同時に、金融安定と資本集中のリスクとしても監視対象になっている。</p></section>
           <section><h2>市場スナップショット</h2><div className="table-wrap"><table><thead><tr><th>対象</th><th>確認できた値・変化</th><th>読み方</th></tr></thead><tbody><tr><td>S&amp;P500（8月31日）</td><td>-0.36%</td><td>原油高・金利上昇で反落</td></tr><tr><td>NASDAQ総合（8月31日）</td><td>-0.16%</td><td>AI株の底堅さは残る</td></tr><tr><td>ダウ平均（8月31日）</td><td>-0.71%</td><td>幅広いリスク回避</td></tr><tr><td>ブレント原油（8月31日）</td><td>約90ドル台</td><td>中東緊張で再上昇</td></tr><tr><td>米10年債利回り（8月31日）</td><td>一時4.764%</td><td>インフレ・利上げ警戒</td></tr></tbody></table></div><p className="inline-sources"><a href="https://www.reuters.com/business/us-stock-index-futures-dip-middle-east-strikes-worsen-inflation-fears-2026-08-31/" target="_blank" rel="noreferrer">Reuters・米国株（2026年8月31日）</a> <a href="https://www.reuters.com/world/china/global-markets-global-markets-2026-08-31/" target="_blank" rel="noreferrer">Reuters・世界市場（2026年8月31日）</a></p></section>

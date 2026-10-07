@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月13日） | Market Note",
-  description: "2026年9月13日の市場動向を公開情報から整理。",
-};
+const editorial = editorialTitles["daily-2026-09-13"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember13() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月13日（日・週末版）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月13日（日・週末版）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>週末の市場材料は、AI安全性を巡る開発減速論と大型IPO期待、中東の供給障害による原油高リスク、そして日米の金融政策イベントに集約される。Anthropicは高度AIモデルの開発速度を落とすよう業界に呼びかける一方、IPO準備は進行している。エネルギー面ではサウジ東西パイプライン停止が世界供給の最大4%に影響し得るとの懸念が強まり、金融市場では円の投機筋ポジションが約7か月ぶりに買い越しへ転じた。</p></section>
           <section><h2>市場スナップショット</h2><div className="table-wrap"><table><thead><tr><th>対象</th><th>確認値・状況</th><th>ポイント</th></tr></thead><tbody><tr><td>S&amp;P500</td><td>7,656.98（9月11日終値、+0.86%）</td><td>週末前は反発</td></tr><tr><td>NASDAQ総合</td><td>9月11日 +0.96%</td><td>テック株反発</td></tr><tr><td>ブレント原油</td><td>100ドル超</td><td>中東供給不安が継続</td></tr><tr><td>円の投機筋ポジション</td><td>10,796枚の買い越し</td><td>2月以来のネットロング</td></tr><tr><td>次週主要会合</td><td>FOMC 9/15〜16、日銀 9/17〜18</td><td>日米金利差が焦点</td></tr></tbody></table></div></section>

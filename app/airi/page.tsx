@@ -23,7 +23,7 @@ const fmt = (n:number|null) => n === null ? "—" : n.toFixed(1);
 export default function AiriPage() {
   const scored=snapshot.metrics.filter(m=>m.score!==null).length;
   const plotted=snapshot.history.filter(r=>r.airi!==null);
-  return <main className="airi-page content-width">
+  return <main id="main-content" className="airi-page content-width">
     <Link className="airi-back" href="/">Market Note ホームへ</Link>
     <header className="airi-heading"><div><p className="kicker">AI RISK INDEX</p><h1>AIRI <span>AI株リスク指標</span></h1><p>期待の膨張、ショックへの弱さ、悪化の兆候を分けて追跡する。</p></div><span className="airi-version">研究版 v{snapshot.model_version}</span></header>
     <div className="airi-meta"><span>最終確認 <time dateTime={snapshot.checked_on}>{snapshot.checked_on}</time></span><span>毎週土曜の午前に更新・日本時間</span><a href="#methodology">算出方法を見る ↓</a></div>

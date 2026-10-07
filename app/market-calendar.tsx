@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useSyncExternalStore } from "react";
 import type {
   CalendarEventCategory,
   CalendarEventRegion,
@@ -57,14 +57,25 @@ function EventBadge({ event }: { event: MarketCalendarEvent }) {
   );
 }
 
+function currentJapanMonth(): MonthKey {
+  return new Intl.DateTimeFormat("sv-SE", { timeZone: "Asia/Tokyo", year: "numeric", month: "2-digit" }).format(new Date()) as MonthKey;
+}
+function subscribeToClock(refresh: () => void) {
+  const timer = window.setInterval(refresh, 60_000);
+  return () => window.clearInterval(timer);
+}
+
 export default function MarketCalendar({ events, initialMonth }: { events: MarketCalendarEvent[]; initialMonth?: string }) {
   const months = useMemo(
     () => Array.from(new Set(events.map((event) => toMonthKey(event.date)))).sort(),
     [events],
   );
-  const [selectedMonth, setSelectedMonth] = useState<MonthKey>(
-    months.find((month) => month === initialMonth) ?? months[0],
-  );
+  const currentMonth = useSyncExternalStore<MonthKey | "">(subscribeToClock, currentJapanMonth, () => "");
+  const [chosenMonth, setSelectedMonth] = useState<MonthKey | undefined>();
+  const selectedMonth = chosenMonth ?? (initialMonth
+    ? months.find(month => month === initialMonth) ?? months[0]
+    : currentMonth || months[0]);
+  const visibleMonths = [...new Set([...months, selectedMonth])].sort();
   const [categoryFilter, setCategoryFilter] = useState<CategoryFilter>("すべて");
   const [regionFilter, setRegionFilter] = useState<RegionFilter>("すべて");
   const [selectedDate, setSelectedDate] = useState("");
@@ -90,13 +101,14 @@ export default function MarketCalendar({ events, initialMonth }: { events: Marke
     setSelectedDate("");
   };
 
+  if (!initialMonth && !currentMonth) return <div className="calendar-tool calendar-loading" aria-live="polite">現在の月を確認しています。<noscript>カレンダーを操作するにはJavaScriptを有効にしてください。</noscript></div>;
   return (
     <div className="calendar-tool">
       <div className="calendar-controls" aria-label="予定の表示条件">
         <div className="calendar-control-group">
           <span>月</span>
           <div className="calendar-segmented">
-            {months.map((month) => (
+            {visibleMonths.map((month) => (
               <button
                 className={month === selectedMonth ? "is-selected" : ""}
                 type="button"

@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月23日） | Market Note",
-  description: "2026年9月23日朝のAI・半導体、株式・金融市場、日本企業、マクロ政策を公開情報から整理。",
-};
+const editorial = editorialTitles["daily-2026-09-23"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember23() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月23日（水）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月23日（水）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>AI相場は「設備投資期待」から「実際に使われ、収益化できるAI」へ評価軸が移りつつある。9月22日のNASDAQはAI楽観を背景に最高値を更新し、MetaのAIエージェントMuseへの期待が続いた。中国ではAlibabaが新AIチップZhenwu V900と5兆〜10兆パラメータ級モデル計画を公表し、米中AI競争はモデルだけでなく半導体・データセンターまで垂直統合の競争に入った。一方、サウジの東西パイプライン再開で原油は100ドル近辺まで低下し、インフレ懸念を一部緩和。ただしFRBは9月の利上げ後もインフレ警戒を崩しておらず、AI株の高バリュエーションと高金利の綱引きは続く。日本では日銀1.25%利上げ後も円が弱く、金融政策正常化が直ちに円高へつながらない状況が続いている。</p></section>
 

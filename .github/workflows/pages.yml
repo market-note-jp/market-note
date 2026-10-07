@@ -41,7 +41,21 @@ jobs:
           GITHUB_ACTIONS: "true"
 
       - name: Verify site
-        run: node --test tests/homepage-layout.test.mjs tests/site-design.test.mjs tests/market-calendar.test.mjs tests/publication-verification.test.mjs
+        run: node --test tests/homepage-layout.test.mjs tests/site-design.test.mjs tests/market-calendar.test.mjs tests/publication-verification.test.mjs tests/prototype-design.test.mjs tests/article-titles.test.mjs tests/redesign-publication.test.mjs tests/all-article-titles.test.mjs
+
+      - name: Install browser for responsive checks
+        run: npx playwright install --with-deps chromium
+
+      - name: Verify responsive pages and interactions
+        run: npm run test:browser
+
+      - name: Upload browser QA evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-qa-${{ github.sha }}-${{ github.run_attempt }}
+          path: artifacts/browser-qa
+          retention-days: 7
 
       - name: Configure GitHub Pages
         if: github.event_name != 'pull_request'

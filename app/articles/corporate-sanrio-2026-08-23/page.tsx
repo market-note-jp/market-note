@@ -1,24 +1,10 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "サンリオ（8136）企業レポート | Market Note",
-  description:
-    "サンリオの事業構造、11年間の業績、地域別利益、資本効率、成長要因、リスクと2027年3月期第1四半期を整理した企業レポート。",
-  openGraph: {
-    title: "サンリオ（8136）企業レポート | Market Note",
-    description:
-      "サンリオの事業構造、11年間の業績、地域別利益、資本効率、成長要因、リスクと2027年3月期第1四半期を整理した企業レポート。",
-    type: "article",
-    publishedTime: "2026-08-23T00:00:00+09:00",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "サンリオ（8136）企業レポート | Market Note",
-    description:
-      "事業構造、11年間の業績、地域別利益、資本効率、成長要因、リスクと最新四半期を整理。",
-  },
-};
+const editorial = editorialTitles["corporate-sanrio-2026-08-23"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 const sources = {
   overview: "https://corporate.sanrio.co.jp/corporate/overview/",
@@ -41,13 +27,13 @@ function SourceLink({ href, label }: { href: string; label: string }) {
 
 export default function SanrioCompanyReport() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
 
       <article>
         <header className="report-header">
           <p className="report-label">CORPORATE REPORT</p>
-          <h1>サンリオ（8136）企業レポート</h1>
+          <h1>{editorial.title}</h1>
           <p className="report-date">最終更新日：2026年8月23日</p>
         </header>
 

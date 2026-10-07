@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { pathToFileURL } from "node:url";
+import { verifyArticleSemantics } from "./article-semantics.mjs";
 
 const repository = "market-note-jp/market-note";
 const api = `https://api.github.com/repos/${repository}`;
@@ -8,40 +9,10 @@ const escapeHtml = (value) => value.replace(/[&<>"']/g, (character) => ({
   "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#x27;",
 })[character]);
 
-function expectedReportBody(article) {
-  const text = (value) => {
-    assert.ok(typeof value === "string" && value.trim(), "Empty article text");
-    return escapeHtml(value);
-  };
-  const paragraphs = (values = []) => values.map((value) => `<p>${text(value)}</p>`).join("");
-  assert.ok(Array.isArray(article.sections) && article.sections.length, "Article has no sections");
-  assert.ok(article.disclaimer?.paragraphs?.length, "Article has no disclaimer");
-  const sections = article.sections.map((section) => {
-    let html = `<section><h2>${text(section.heading)}</h2>${paragraphs(section.paragraphs)}`;
-    if (section.table) {
-      html += '<div class="table-wrap"><table><thead><tr>';
-      html += section.table.headers.map((value) => `<th>${text(value)}</th>`).join("");
-      html += "</tr></thead><tbody>";
-      html += section.table.rows.map((row) => `<tr>${row.map((value) => `<td>${text(value)}</td>`).join("")}</tr>`).join("");
-      html += "</tbody></table></div>";
-    }
-    if (section.sources?.length) {
-      html += '<p class="inline-sources">' + section.sources.map((source, index) => `<span>${index ? " ／ " : ""}<a href="${text(source.url)}" target="_blank" rel="noreferrer">${text(source.label)}</a></span>`).join("") + "</p>";
-    }
-    for (const subsection of section.subsections ?? []) {
-      html += `<div><h3>${text(subsection.heading)}</h3>${paragraphs(subsection.paragraphs)}`;
-      if (subsection.bullets?.length) html += `<ul>${subsection.bullets.map((value) => `<li>${text(value)}</li>`).join("")}</ul>`;
-      html += "</div>";
-    }
-    return html + "</section>";
-  }).join("");
-  return sections + `<section class="disclaimer"><h2>${text(article.disclaimer.heading)}</h2>${paragraphs(article.disclaimer.paragraphs)}</section>`;
-}
-
 export function verifyRenderedArticle(article, homepage, articleHtml, { requireHomepagePlacement = true } = {}) {
   const href = `/market-note/articles/${article.slug}`;
-  // Script/metadata strings are not visible content. Article body equality below
-  // also rejects injected scripts, hidden duplicate text, and reordered cells.
+  // Script/metadata strings are not visible homepage content. Semantic
+  // verification rejects hidden, extra, missing and reordered article content.
   const visibleHome = homepage.replace(/<(script|style|template)\b[^>]*>[\s\S]*?<\/\1>/gi, "").replace(/<!--[\s\S]*?-->/g, "");
   assert.match(visibleHome, /<\/header>\s*<main class="site-shell">\s*<section class="market-hero"/, "Homepage must begin with the photo below the header");
   if (requireHomepagePlacement) {
@@ -61,14 +32,8 @@ export function verifyRenderedArticle(article, homepage, articleHtml, { requireH
         assert.ok(card.includes(`<p>${escapeHtml(article.excerpt)}</p>`), "Stale lead-story excerpt");
       }
     }
-    }
-  const marker = '<div class="report-body">';
-  const bodyStart = articleHtml.indexOf(marker);
-  const bodyEnd = articleHtml.indexOf("</article>", bodyStart);
-  assert.ok(bodyStart >= 0 && bodyEnd > bodyStart, "Missing rendered report body");
-  assert.ok(articleHtml.slice(0, bodyStart).includes(`<h1>${escapeHtml(article.headline)}</h1>`), "Stale article headline");
-  assert.ok(articleHtml.slice(0, bodyStart).includes(`<p class="report-date">${escapeHtml(article.displayDate)}</p>`), "Stale article date");
-  assert.equal(articleHtml.slice(bodyStart + marker.length, bodyEnd), expectedReportBody(article) + "</div>", "Published report body differs from the commit's complete ordered content");
+  }
+  verifyArticleSemantics(article, articleHtml);
 }
 
 export async function verifyPublication({ date, sha, fetchImpl = fetch, requireHomepagePlacement = true }) {

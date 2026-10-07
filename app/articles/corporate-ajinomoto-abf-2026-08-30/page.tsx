@@ -1,24 +1,10 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "味の素はなぜ半導体材料で世界シェア95％超なのか | Market Note",
-  description:
-    "味の素の半導体材料ABFについて、世界シェア、用途、儲けの仕組み、競争力、業界地図、最新業績、成長余地とリスクを整理。",
-  openGraph: {
-    title: "味の素はなぜ半導体材料で世界シェア95％超なのか | Market Note",
-    description:
-      "味の素の半導体材料ABFについて、世界シェア、儲けの仕組み、競争力、業界地図と最新業績を整理。",
-    type: "article",
-    publishedTime: "2026-08-30T00:00:00+09:00",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "味の素はなぜ半導体材料で世界シェア95％超なのか | Market Note",
-    description:
-      "世界シェア95％超のABFについて、儲けの仕組み、競争力、業界構造と最新業績を整理。",
-  },
-};
+const editorial = editorialTitles["corporate-ajinomoto-abf-2026-08-30"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 const sources = {
   factBook:
@@ -39,13 +25,13 @@ function SourceLink({ href, label }: { href: string; label: string }) {
 
 export default function AjinomotoAbfReport() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
 
       <article>
         <header className="report-header">
           <p className="report-label">GLOBAL SHARE REPORT</p>
-          <h1>味の素はなぜ半導体材料で世界シェア95％超なのか</h1>
+          <h1>{editorial.title}</h1>
           <p className="report-date">世界で強い日本企業 第1回／2026年8月30日</p>
         </header>
 

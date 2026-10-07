@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年8月30日・週末版） | Market Note",
-  description: "米国株、NVIDIA、AI投資、米PCE、キオクシア、原油を整理した2026年8月30日の週末版マーケットブリーフィング。",
-};
+const editorial = editorialTitles["daily-2026-08-30"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportAugust30() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年8月30日（日）・週末版</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年8月30日（日）・週末版</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>30日は主要市場が休場のため、新しい終値ではなく、<strong>翌週に持ち越される「AI投資の質」「米インフレと金利」「日本の半導体設備投資」「原油・ホルムズ海峡」</strong>を整理する。</p><p>NVIDIAの業績は強いが、株価は決算後に反落した。AIテーマは需要の有無から、資金調達や投資回収まで含めた質の評価へ移っている。</p></section>
           <section><h2>市場スナップショット</h2><div className="table-wrap"><table><thead><tr><th>対象</th><th>最新確認値</th><th>読み方</th></tr></thead><tbody><tr><td>S&amp;P500（8月28日）</td><td>-0.25%</td><td>週末は反落</td></tr><tr><td>NASDAQ総合（8月28日）</td><td>-0.52%</td><td>金利警戒が重し</td></tr><tr><td>NVIDIA（8月28日）</td><td>-4.6%</td><td>好決算後の利益確定</td></tr><tr><td>ブレント原油（8月28日）</td><td>89.31ドル</td><td>週間5%超安</td></tr><tr><td>米コアPCE（7月）</td><td>前年比+3.3%</td><td>インフレ高止まり</td></tr></tbody></table></div><p className="inline-sources"><a href="https://www.reuters.com/business/sp-500-nasdaq-futures-slip-after-tech-rally-warshs-speech-awaited-2026-08-28/" target="_blank" rel="noreferrer">Reuters・米国株（2026年8月28日）</a> <a href="https://www.bea.gov/news/2026/personal-income-and-outlays-july-2026" target="_blank" rel="noreferrer">米BEA（2026年8月26日）</a></p></section>

@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 
-export const metadata: Metadata = {
-  title: "週次マーケットニュースレポート（2026年9月28日〜10月2日） | Market Note",
-  description: "日経平均+2.93%、ダウ-1.26%、NASDAQ総合+0.45%、SOX+3.69%。米雇用、日銀短観、AI需要、金利・原油と翌週の焦点を検証。",
-};
+const editorial = editorialTitles["weekly-2026-09-28"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 const sources = [
   ["日経指数公式：9月25日日次サマリー", "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20260925&idx=nk225"],
@@ -32,12 +32,12 @@ function Ref({ ids }: { ids: number[] }) {
 
 export default function WeeklyReportSeptember28() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
         <header className="report-header">
           <p className="report-label">WEEKLY MARKET REPORT</p>
-          <h1>週次マーケットニュースレポート（2026年9月28日〜10月2日）</h1>
+          <h1>{editorial.title}</h1>
           <p className="report-date">公開日：2026年10月3日／対象週：9月28日（月）〜10月2日（金）</p>
         </header>
         <div className="report-body">

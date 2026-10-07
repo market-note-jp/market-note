@@ -1,11 +1,29 @@
 import Link from "next/link";
 import ArticleArchive from "./article-archive";
 import Image from "next/image";
-import { ArrowDown, ArrowRight, ArrowUpRight, CalendarDays } from "lucide-react";
-import { marketCalendarEvents, marketCalendarReviewedAt } from "./market-calendar-data";
+import { ArrowDown, ArrowRight, ArrowUpRight } from "lucide-react";
+import UpcomingEvents from "./upcoming-events";
+import SectorGraphic from "./components/sector-graphic";
 import { getDailyArticleMetadata } from "../lib/article-content";
+import { withEditorialTitle } from "../lib/article-metadata";
 
 const legacyArticles = [
+  {
+    "kind": "週次レポート",
+    "date": "2026-09-12",
+    "dateTime": "2026-09-12",
+    "title": "原油急騰と利上げ観測、AI投資をどう読むか｜9月7日〜11日",
+    "excerpt": "日本株・米国株・日経平均・ダウ平均・NASDAQ総合・SOX指数をまとめた週次マーケットニュースレポート。",
+    "href": "/articles/weekly-2026-09-07"
+  },
+  {
+    "kind": "週次レポート",
+    "date": "2026-09-19",
+    "dateTime": "2026-09-19",
+    "title": "FRB・日銀の利上げと半導体株の底堅さ｜9月14日〜18日",
+    "excerpt": "日本株・米国株・日経平均・ダウ平均・NASDAQ総合・SOX指数をまとめた週次マーケットニュースレポート。",
+    "href": "/articles/weekly-2026-09-14"
+  },
   {
     kind: "週次レポート",
     date: "2026-10-03 14:17",
@@ -567,28 +585,26 @@ const legacyArticles = [
 ];
 
 export default function Home() {
-  const articles = [...getDailyArticleMetadata(), ...legacyArticles];
+  const articles = [...getDailyArticleMetadata(), ...legacyArticles.map(withEditorialTitle)];
   const orderedArticles = [...articles].sort((a, b) => b.date.localeCompare(a.date));
   const latest = orderedArticles[0];
   const recent = orderedArticles.slice(1, 4);
   const companies = orderedArticles.filter((article) => article.kind === "企業レポート");
-  const upcoming = [...marketCalendarEvents]
-    .filter((event) => event.date >= marketCalendarReviewedAt)
-    .sort((a, b) => `${a.date} ${a.time}`.localeCompare(`${b.date} ${b.time}`))
-    .slice(0, 5);
   const assetPrefix = process.env.GITHUB_ACTIONS === "true" ? "/market-note" : "";
 
   return (
     <main className="site-shell">
-      <section className="market-hero" aria-labelledby="home-title">
+      <section className="market-hero" aria-labelledby="home-title" id="main-content">
         <Image className="hero-photo" src={`${assetPrefix}/market-district-v1.webp`} alt="ガラス張りの高層ビルが並ぶビジネス街のイメージ" fill priority unoptimized sizes="100vw" />
         <div className="hero-shade" />
         <div className="hero-content">
-          <p className="hero-eyebrow">JAPAN & US / INDEPENDENT RESEARCH</p>
-          <h1 id="home-title">MARKET NOTE</h1>
-          <p className="hero-message">市場を読む。企業を知る。</p>
-          <a className="hero-link" href="#latest">最新レポート <ArrowDown size={18} aria-hidden="true" /></a>
+          <p className="hero-eyebrow"><span /> JAPAN & US · MARKET RESEARCH</p>
+          <h1 id="home-title">市場を読む。<br />企業を知る。</h1>
+          <p className="hero-message">日々の市場から、企業の本質へ。<br />公開情報と出典でたどる、リサーチアーカイブ。</p>
+          <div className="hero-actions"><Link className="hero-link" href={latest.href}>最新レポートを読む <ArrowUpRight size={20} aria-hidden="true" /></Link><a className="hero-secondary" href="#companies">企業分析へ <ArrowDown size={16} aria-hidden="true" /></a></div>
+          <div className="hero-bottom"><span>MARKET NOTE</span><span>INDEPENDENT PERSPECTIVES</span></div>
         </div>
+        <span className="hero-image-label">PERSPECTIVE / 01</span>
         <span className="hero-caption">都市のビジネス街 / AI生成イメージ</span>
       </section>
 
@@ -602,27 +618,19 @@ export default function Home() {
         <div className="news-calendar-layout">
           <div className="latest-news">
             <article className="lead-story"><Link href={latest.href}>
-              <div className="story-meta"><span className="article-kind">{latest.kind}</span><time dateTime={latest.dateTime}>{latest.date}</time></div>
-              <h3>{latest.title}</h3><p>{latest.excerpt}</p><span className="text-link">レポートを読む <ArrowUpRight size={19} aria-hidden="true" /></span>
+              <div className="story-meta"><span className="latest-tag">LATEST</span><span className="article-kind">{latest.kind}</span><time dateTime={latest.dateTime}>{latest.date}</time></div>
+              <div className="lead-story-content"><div className="lead-date" aria-hidden="true"><span>{latest.date.slice(0, 4)} / {latest.date.slice(5, 7)}</span><strong>{latest.date.slice(8, 10)}</strong><span>DAILY RESEARCH</span></div><div><h3>{latest.title}</h3><p>{latest.excerpt}</p></div></div><span className="text-link">レポートを読む <ArrowUpRight size={19} aria-hidden="true" /></span>
             </Link></article>
             <div className="recent-stories">{recent.map((article) => <article key={article.href}><Link href={article.href}><time dateTime={article.dateTime}>{article.date.slice(5, 10).replace("-", ".")}</time><div><span className="article-kind">{article.kind}</span><h3>{article.title}</h3></div><ArrowUpRight size={17} aria-hidden="true" /></Link></article>)}</div>
           </div>
-          <aside className="upcoming-panel" aria-labelledby="upcoming-title">
-            <div className="upcoming-heading"><CalendarDays size={22} aria-hidden="true" /><div><p className="kicker">UPCOMING</p><h3 id="upcoming-title">直近の予定</h3></div></div>
-            <p className="schedule-asof">{marketCalendarReviewedAt} 更新 / 時刻は日本時間</p>
-            <ol className="upcoming-list">{upcoming.map((event) => <li key={event.id}><a href={event.sourceUrl} target="_blank" rel="noreferrer">
-              <time dateTime={event.date}><strong>{Number(event.date.slice(5, 7))}/{Number(event.date.slice(8, 10))}</strong><span>{event.time}</span></time>
-              <div><span className={`event-type event-type-${event.category}`}>{event.category} / {event.region}</span><h4>{event.title}</h4></div>
-              <ArrowUpRight size={15} aria-hidden="true" />
-            </a></li>)}</ol>
-            <Link className="calendar-all-link" href="/calendar">市場カレンダー <ArrowRight size={18} aria-hidden="true" /></Link>
-          </aside>
+          <UpcomingEvents />
         </div>
       </section>
 
       <section className="companies-section" id="companies" aria-labelledby="companies-title"><div className="content-width">
         <div className="section-title-row"><div><p className="kicker">CORPORATE RESEARCH</p><h2 id="companies-title">企業を知る</h2></div><p>事業・競争力・財務の視点から</p></div>
         <div className="company-grid">{companies.map((article, index) => <article className="company-story" key={article.href}><Link href={article.href}>
+          <SectorGraphic variant={article.href.includes("kanematsu") ? 3 : article.href.includes("ajinomoto") ? 2 : index} />
           <div className="company-topline"><span>{String(index + 1).padStart(2, "0")}</span><span>{article.theme}</span><ArrowUpRight size={21} aria-hidden="true" /></div>
           <h3>{article.title}</h3><p>{article.excerpt}</p><time dateTime={article.dateTime}>{article.date}</time>
         </Link></article>)}</div>

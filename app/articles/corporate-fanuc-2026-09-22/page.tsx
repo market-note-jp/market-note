@@ -1,36 +1,22 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Download, FileSpreadsheet } from "lucide-react";
 import { reportHtml } from "./report-content";
 
-export const metadata: Metadata = {
-  title: "ファナック（6954）企業レポート | Market Note",
-  description:
-    "ファナックの事業構造、競争力、11年間の業績、受注、AI戦略、独自業績予測、PER・DCF評価とリスクを整理した企業レポート。",
-  openGraph: {
-    title: "ファナック（6954）企業レポート | Market Note",
-    description:
-      "FA・ロボット・ロボマシン・サービスの競争力から、独自業績予測と企業価値評価までを検証。",
-    type: "article",
-    publishedTime: "2026-09-22T00:00:00+09:00",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "ファナック（6954）企業レポート | Market Note",
-    description:
-      "11年間の業績、競合比較、AI戦略、独自業績予測、PER・DCF評価を公開資料から検証。",
-  },
-};
+const editorial = editorialTitles["corporate-fanuc-2026-09-22"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function FanucCompanyReport() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
 
       <article>
         <header className="report-header">
           <p className="report-label">CORPORATE REPORT</p>
-          <h1>ファナック（6954）企業レポート</h1>
+          <h1>{editorial.title}</h1>
           <p className="report-lead">回復する受注と、再評価に必要な利益成長</p>
           <p className="report-date">公開日：2026年9月22日</p>
           <div className="report-actions" aria-label="レポート資料">

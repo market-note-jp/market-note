@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月21日） | Market Note",
-  description: "2026年9月21日朝のAI・半導体、株式・金融市場、マクロ政策、地政学を公開情報から整理。",
-};
+const editorial = editorialTitles["daily-2026-09-21"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember21() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月21日（月）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月21日（月）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>週明けの焦点は、AI・半導体の供給競争と米中協議、そしてインフレ再加速リスクの三つ。中国CXMTが第5世代DRAMの量産入りを発表し、中国半導体の技術自立が一段進んだ。米中高官はAI・重要鉱物を含む協議を開始。米国ではFRB高官がインフレの広がりを警戒しており、5%を超えた米長期金利がAI株のバリュエーションを圧迫し続ける。一方、中東情勢の緊張で原油供給リスクも残り、日本では日銀の1.25%利上げ後の円・国債・銀行株の反応が週明けの重要確認点となる。</p></section>
           <section><h2>市場スナップショット</h2><div className="table-wrap"><table><thead><tr><th>対象</th><th>直近確認値・状況</th><th>週明けの焦点</th></tr></thead><tbody><tr><td>S&amp;P500</td><td>9/18 +0.17%</td><td>長期金利5%超への耐性</td></tr><tr><td>NASDAQ総合</td><td>9/18 +0.40%</td><td>AI・半導体の選別</td></tr><tr><td>米10年国債利回り</td><td>直近5%超</td><td>FRB追加利上げ観測</td></tr><tr><td>日銀政策金利</td><td>1.25%</td><td>円・国債・銀行株</td></tr><tr><td>中国LPR</td><td>1年3.00% / 5年3.50%</td><td>追加緩和余地</td></tr></tbody></table></div></section>

@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月20日） | Market Note",
-  description: "2026年9月20日のAI・半導体、金融市場、金融政策、地政学を公開情報から整理。",
-};
+const editorial = editorialTitles["daily-2026-09-20"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember20() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月20日（日）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月20日（日）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>週末は米国株の現物取引が休場のため、焦点は政策・地政学・AI半導体へ移った。中国CXMTは第5世代DRAMプラットフォームの量産入りを発表し、米中高官はAI・貿易・重要鉱物を議題に協議を開始。米金融政策ではカシュカリ・ミネアポリス連銀総裁がインフレの広がりを警戒した。中東ではフーシ派によるリヤド攻撃を受け湾岸株が下落し、原油供給リスクは引き続き世界の金利・株式市場の重要変数となる。</p></section>
           <section><h2>市場スナップショット</h2><div className="table-wrap"><table><thead><tr><th>対象</th><th>確認値・状況</th><th>ポイント</th></tr></thead><tbody><tr><td>米国株</td><td>週末休場</td><td>9月18日はS&amp;P500 +0.17%、NASDAQ +0.40%</td></tr><tr><td>米10年国債利回り</td><td>直近5%超</td><td>高PER株の重石</td></tr><tr><td>中国1年LPR</td><td>3.00%</td><td>16カ月連続据え置き</td></tr><tr><td>中国5年LPR</td><td>3.50%</td><td>16カ月連続据え置き</td></tr><tr><td>サウジ株</td><td>-0.3%</td><td>リヤド攻撃で地政学警戒</td></tr></tbody></table></div></section>

@@ -1,17 +1,17 @@
+import editorialTitles from "../../../content/editorial-titles.json";
+import { createArticleMetadata } from "../../../lib/article-metadata";
 import type { Metadata } from "next";
 import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: "デイリー・マーケットブリーフィング（2026年9月18日） | Market Note",
-  description: "2026年9月18日朝のAI・半導体、株式、原油、日本の金融政策を公開情報から整理。",
-};
+const editorial = editorialTitles["daily-2026-09-18"];
+export const metadata: Metadata = createArticleMetadata(editorial);
 
 export default function DailyReportSeptember18() {
   return (
-    <main className="article-page">
+    <main id="main-content" className="article-page">
       <Link className="back-link" href="/">← 記事一覧へ戻る</Link>
       <article>
-        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>デイリー・マーケットブリーフィング</h1><p className="report-date">2026年9月18日（金）</p></header>
+        <header className="report-header"><p className="report-label">DAILY MARKET BRIEFING</p><h1>{editorial.title}</h1><p className="report-date">2026年9月18日（金）</p></header>
         <div className="report-body">
           <section><h2>今日の結論</h2><p>米国市場は、FRB利上げ直後の警戒から一転してテクノロジー株主導で反発した。原油と米長期金利の低下がバリュエーションへの圧力を和らげ、AIインフラではGlobalFoundriesとMarvellがデータセンター向け光接続半導体の増産で合意した。一方、ブレント原油は104.82ドルと依然100ドルを上回り、中東の供給リスクは解消していない。日本では本日の日銀金融政策決定会合が最大の焦点だが、午前7時時点で声明は未公表であり、結果は推測せず公表待ちとする。</p></section>
           <section><h2>市場スナップショット</h2><div className="table-wrap"><table><thead><tr><th>対象</th><th>確認値・状況</th><th>ポイント</th></tr></thead><tbody><tr><td>ダウ</td><td>+0.62%</td><td>利上げ後の買い戻し</td></tr><tr><td>S&amp;P500</td><td>+1.14%</td><td>テック主導で反発</td></tr><tr><td>NASDAQ総合</td><td>+1.69%</td><td>主要3指数で最大の上昇</td></tr><tr><td>ブレント原油</td><td>104.82ドル</td><td>前日比0.95%安</td></tr><tr><td>日銀政策金利</td><td>午前7時時点で結果未公表</td><td>本日会合結果が最大材料</td></tr></tbody></table></div></section>
