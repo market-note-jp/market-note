@@ -31,7 +31,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Find latest daily report date
+      - name: Find latest daily report month
         id: latest
         shell: bash
         run: |
@@ -39,7 +39,21 @@ jobs:
           test -n "$latest_file"
           date="${latest_file#daily-}"
           date="${date%.json}"
+          month="${date:0:7}"
           echo "date=$date" >> "$GITHUB_OUTPUT"
+          echo "month=$month" >> "$GITHUB_OUTPUT"
 
-      - name: Verify exact deployed main SHA and live content
-        run: npm run verify:publication -- "${{ steps.latest.outputs.date }}" "${{ github.event.workflow_run.head_sha }}"
+      - name: Verify latest report and every content-driven report in the current month
+        shell: bash
+        run: |
+          set -euo pipefail
+          sha="${{ github.event.workflow_run.head_sha }}"
+          month="${{ steps.latest.outputs.month }}"
+          files=(content/daily/daily-"$month"-*.json)
+          test -e "${files[0]}"
+          for file in "${files[@]}"; do
+            name="$(basename "$file" .json)"
+            date="${name#daily-}"
+            echo "Verifying $date against $sha"
+            npm run verify:publication -- "$date" "$sha"
+          done
