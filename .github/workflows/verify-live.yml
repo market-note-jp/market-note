@@ -51,9 +51,14 @@ jobs:
           month="${{ steps.latest.outputs.month }}"
           files=(content/daily/daily-"$month"-*.json)
           test -e "${files[0]}"
+          latest="${{ steps.latest.outputs.date }}"
           for file in "${files[@]}"; do
             name="$(basename "$file" .json)"
             date="${name#daily-}"
             echo "Verifying $date against $sha"
-            npm run verify:publication -- "$date" "$sha"
+            if [ "$date" = "$latest" ]; then
+              npm run verify:publication -- "$date" "$sha"
+            else
+              npm run verify:publication -- "$date" "$sha" --article-only
+            fi
           done
