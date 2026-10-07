@@ -1,7 +1,7 @@
 export const ANALYSIS_ENDPOINT = process.env.NEXT_PUBLIC_KANALYZER_API_URL || "https://kanalyzer-analysis-api.onrender.com/api/v1/annual-reports/search";
 
 /** Static Pages calls the public analysis service directly; EDINET credentials stay on the server. */
-export async function requestAnalysis(payload, { fetchImpl = globalThis.fetch, timeoutMs = 180000 } = {}) {
+export async function requestAnalysis(payload, { fetchImpl = globalThis.fetch, timeoutMs = 600000 } = {}) {
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), timeoutMs);
   try {

@@ -742,7 +742,7 @@ export function AnalysisForm() {
 
       </fieldset>
       {error ? <div className="notice notice-error" role="alert">{error}</div> : null}
-      {loading ? <p className="analysis-loading" role="status">有価証券報告書を取得・分析しています。数分かかる場合があります。</p> : null}
+      {loading ? <p className="analysis-loading" role="status">有価証券報告書を取得・分析しています。初回は提出日の確認に時間がかかるため、最大10分待ちます。この画面を開いたままお待ちください。</p> : null}
       <button type="submit" className="button button-primary form-submit" disabled={loading}>
         <Search size={18} aria-hidden="true" /> {loading ? "検索しています..." : "企業を検索する"}
       </button>
