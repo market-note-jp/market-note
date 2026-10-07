@@ -19,6 +19,8 @@ export default function DailyReportAugust4() {
         </header>
 
         <div className="report-body">
+          <section className="notice" aria-label="訂正履歴"><h2>訂正（<time dateTime="2026-10-07">2026年10月7日</time>）</h2><p>Palantirの全社売上高の増加率を82％から93％へ訂正しました。対象は2026年4～6月期（Q2）の前年同期比実績です。82％は2026年通期の売上高成長率見通しであり、実績と混同していました。米国商業部門の149％増は変更していません。</p><p className="inline-sources"><a href="https://www.sec.gov/Archives/edgar/data/1321655/000132165526000039/a2026q2ex991pressrelease.htm" target="_blank" rel="noreferrer">Palantir・2026年Q2決算発表（SEC提出資料、8月3日）</a></p></section>
+
           <section>
             <h2>今日の結論</h2>
             <p>米国株は、原油価格の急落でインフレ懸念がいったん和らぎ、<strong>大型株から小型株まで買いが広がるリスク選好の相場</strong>となった。</p>
@@ -47,7 +49,7 @@ export default function DailyReportAugust4() {
 
           <section>
             <h2>2．Palantir決算――AIソフトウェアの収益化を確認</h2>
-            <p>Palantirの4～6月期は、米国商業部門の売上高が前年同期比149％増となり、全社売上高も82％増加した。会社は2026年の米国商業部門の売上見通しを従来より引き上げた。</p>
+            <p>Palantirの2026年4～6月期（Q2）は、米国商業部門の売上高が前年同期比149％増となり、全社売上高も前年同期比93％増加した。会社は2026年の米国商業部門の売上見通しを従来より引き上げた。</p>
             <p>クラウド大手の設備投資だけでなく、AIソフトウェアを導入する企業側で契約と売上が増えていることは、AI投資の裾野が広がっている可能性を示す。</p>
             <p className="inline-sources"><a href="https://www.stocktitan.net/news/PLTR/palantir-reports-q2-2026-u-s-comm-revenue-growth-of-149-y-y-and-c8762wptyyap.html" target="_blank" rel="noreferrer">Palantir決算発表（8月3日）</a></p>
 
