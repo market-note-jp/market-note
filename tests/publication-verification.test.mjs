@@ -28,6 +28,12 @@ test("publication requires matching main, successful build/deploy and visible ar
   assert.equal(result.status, "published");
   assert.equal(result.commit, sha);
 });
+test("historical publication can verify the exact article without requiring a latest card", async () => {
+  const olderHome = homepage.replaceAll(href, "/market-note/articles/newer-report/");
+  const result = await verifyPublication({ date, sha, fetchImpl: mockFetch({ home: olderHome }), requireHomepagePlacement: false });
+  assert.equal(result.status, "published");
+  assert.equal(result.commit, sha);
+});
 for (const [name, options] of [
   ["branch-only save", { head: "b".repeat(40) }],
   ["failed workflow", { conclusion: "failure" }],
