@@ -82,6 +82,15 @@ try {
   assert.equal(new URL(page.url()).hash, "#section-1");
   assert.equal(await page.locator(".report-body").evaluate(element => getComputedStyle(element).fontSize), "17px");
   assert.equal(await page.evaluate(() => getComputedStyle(document.documentElement).scrollBehavior), "auto");
+  await page.goto(base + routes.company, { waitUntil: "networkidle" });
+  const tableRegion = page.locator(".table-scroll").first();
+  assert.equal(await tableRegion.getAttribute("tabindex"), "0");
+  assert.equal(await tableRegion.getAttribute("role"), "region");
+  await tableRegion.focus();
+  await tableRegion.press("ArrowRight");
+  await page.waitForFunction(() => (document.activeElement?.scrollLeft ?? 0) > 0, null, { timeout: 2000 });
+  assert.ok(await tableRegion.evaluate(element => element.scrollLeft) > 0, "Wide report tables must scroll with keyboard arrows");
+  report.interactions.push("Legacy report table focus and keyboard horizontal scrolling");
   await page.clock.setFixedTime(new Date("2026-12-01T10:00:00Z"));
   await page.goto(base, { waitUntil: "networkidle" });
   assert.match(await page.locator(".schedule-empty").textContent(), /登録済みの今後の予定はありません/);
