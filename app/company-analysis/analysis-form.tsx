@@ -22,6 +22,7 @@ type SearchResponse = {
       historical?: DcfHistoryRow[];
       latest?: Record<string, number | string | null>;
       model?: DcfModel | null;
+      suitability?: { status?: string; message?: string };
     };
   } | null;
   message?: string;
@@ -263,9 +264,9 @@ function AnalysisDetails({ analysis }: { analysis: NonNullable<SearchResponse["a
   const enteredShares = manualShares.trim() ? numeric(Number(manualShares)) : null;
   const shares = manualShares.trim() ? (enteredShares !== null && enteredShares > 0 ? enteredShares : null) : numeric(priceIndicators.shares_outstanding) || numeric(latestRecord?.shares_for_valuation) || numeric(dcfLatest.shares_for_valuation);
   const price = currentSharePrice.trim() ? numeric(Number(currentSharePrice)) : null;
-  const eps = shares && numeric(latestRecord?.net_income) !== null ? numeric(latestRecord?.net_income)! / shares : numeric(priceIndicators.eps);
+  const eps = shares && numeric(latestRecord?.net_income) !== null ? numeric(latestRecord?.net_income)! / shares : manualShares.trim() ? null : numeric(priceIndicators.eps);
   const equity = numeric(latestRecord?.equity) ?? numeric(latestRecord?.net_assets);
-  const bps = shares && equity !== null ? equity / shares : numeric(priceIndicators.bps);
+  const bps = shares && equity !== null ? equity / shares : manualShares.trim() ? null : numeric(priceIndicators.bps);
   const per = price !== null && price > 0 && eps !== null && eps > 0 ? price / eps : null;
   const pbr = price !== null && price > 0 && bps !== null && bps > 0 ? price / bps : null;
 
@@ -290,6 +291,8 @@ function AnalysisDetails({ analysis }: { analysis: NonNullable<SearchResponse["a
         ))}
       </div>
       {records.some(record => numeric(record.revenue) === null) ? <p className="analysis-note" role="status">売上高を取得できていない年度があります。該当年度の成長率・利益率やDCFは算出できない場合があります。</p> : null}
+      <p className="analysis-note">上のFCFと年度別財務表のFCFは営業CF＋投資CFです。DCFで用いる事業キャッシュフローとは計算方法が異なります。</p>
+      {analysis.dcf?.suitability?.status === "requires_business_separation" ? <p className="analysis-note" role="status">金融事業を含む全社の指標です。ROICや自動分析コメントを通常の事業会社と比較する際は、事業と負債の範囲を確認してください。全社DCFの株価は保留しています。</p> : null}
 
       <section className="analysis-detail-section">
         <div className="analysis-subheading">
@@ -443,7 +446,7 @@ function AnalysisDetails({ analysis }: { analysis: NonNullable<SearchResponse["a
           <div className="analysis-subheading">
             <div>
               <h3>DCF分析</h3>
-            <p>過去実績をもとに、DCF前提・予測FCF・企業価値を確認できます。理論株価は仮定に基づく試算です。</p>
+            <p>過去実績をもとに、DCF前提・予測FCF・企業価値を確認できます。試算株価は仮定に基づく参考値です。</p>
             </div>
           </div>
           {dcfRows.length ? (
@@ -459,17 +462,18 @@ function AnalysisDetails({ analysis }: { analysis: NonNullable<SearchResponse["a
           ) : null}
           {Object.keys(dcfLatest).length || dcfModel?.valuation ? (
             <div className="dcf-latest-grid">
-              <div><span>理論株価</span><strong>{yen(numeric(dcfModel?.valuation?.theoretical_share_price))}</strong></div>
+              <div><span>DCF試算株価</span><strong>{yen(numeric(dcfModel?.valuation?.theoretical_share_price))}</strong></div>
               <div><span>企業価値</span><strong>{compactAmount(numeric(dcfModel?.valuation?.enterprise_value))}</strong></div>
               <div><span>株主価値</span><strong>{compactAmount(numeric(dcfModel?.valuation?.equity_value))}</strong></div>
               <div><span>予測FCF現在価値</span><strong>{compactAmount(numeric(dcfModel?.valuation?.forecast_fcf_pv_sum))}</strong></div>
               <div><span>TV現在価値</span><strong>{compactAmount(numeric(dcfModel?.valuation?.terminal_value_pv))}</strong></div>
-              <div><span>WACC</span><strong>{ratioFromDcf(numeric(dcfModel?.assumptions?.wacc))}</strong></div>
-              <div><span>永続成長率</span><strong>{ratioFromDcf(numeric(dcfModel?.assumptions?.perpetual_growth_rate))}</strong></div>
+              <div><span>仮定WACC</span><strong>{ratioFromDcf(numeric(dcfModel?.assumptions?.wacc))}</strong></div>
+              <div><span>仮定の永続成長率</span><strong>{ratioFromDcf(numeric(dcfModel?.assumptions?.perpetual_growth_rate))}</strong></div>
               <div><span>計算対象</span><strong>{dcfLatest.row_count_before_dedupe ? `${dcfLatest.row_count_after_dedupe || "-"} / ${dcfLatest.row_count_before_dedupe}件` : "-"}</strong></div>
             </div>
           ) : null}
           {dcfModel?.error ? <div className="notice notice-error">{dcfModel.error}</div> : null}
+          {!dcfModel?.error && analysis.dcf?.suitability?.message ? <p className="analysis-note" role="status">{analysis.dcf.suitability.message}</p> : null}
           {!dcfModel ? <p className="analysis-note" role="status">DCFの計算結果は取得できませんでした。売上高などの必須データや分析サービスの対応状況をご確認ください。</p> : null}
           {dcfHistory.length ? (
             <details className="analysis-details-toggle" open>

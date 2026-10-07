@@ -41,7 +41,7 @@ jobs:
           GITHUB_ACTIONS: "true"
 
       - name: Verify site
-        run: node --test tests/homepage-layout.test.mjs tests/site-design.test.mjs tests/market-calendar.test.mjs tests/publication-verification.test.mjs tests/prototype-design.test.mjs tests/article-titles.test.mjs tests/redesign-publication.test.mjs tests/all-article-titles.test.mjs tests/article-corrections.test.mjs
+        run: node --test tests/homepage-layout.test.mjs tests/site-design.test.mjs tests/market-calendar.test.mjs tests/publication-verification.test.mjs tests/prototype-design.test.mjs tests/article-titles.test.mjs tests/redesign-publication.test.mjs tests/all-article-titles.test.mjs tests/article-corrections.test.mjs tests/kanalyzer-client.test.mjs
 
       - name: Install browser for responsive checks
         run: npx playwright install --with-deps chromium
