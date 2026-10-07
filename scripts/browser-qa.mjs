@@ -29,7 +29,7 @@ try {
   const page = await context.newPage();
   await page.clock.install({ time: new Date("2026-10-07T11:00:00Z") });
   page.on("pageerror", error => report.errors.push(error.message));
-  const routes = { home: "", daily: "articles/daily-2026-10-07/", weekly: "articles/weekly-2026-09-28/", company: "articles/kioxia-per-2026-09-23/", calendar: "calendar/", airi: "airi/" };
+  const routes = { aug4: "articles/daily-2026-08-04/", sep5: "articles/daily-2026-09-05/", sep21: "articles/daily-2026-09-21/", sep24: "articles/daily-2026-09-24/", home: "", daily: "articles/daily-2026-10-07/", weekly: "articles/weekly-2026-09-28/", company: "articles/kioxia-per-2026-09-23/", calendar: "calendar/", airi: "airi/" };
   for (const width of [360, 390, 768, 1440]) {
     await page.setViewportSize({ width, height: 1000 });
     for (const [label, route] of Object.entries(routes)) {
