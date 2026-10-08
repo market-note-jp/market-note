@@ -716,9 +716,10 @@ export function AnalysisForm() {
         </label>
       </div>
 
-      <fieldset className="month-fieldset">
+      <fieldset className="month-fieldset" aria-describedby="submission-month-help submission-month-timing">
         <legend>検索する提出月</legend>
-        <p>通常は自動推定のままで検索できます。必要な場合は複数の月を選択できます。</p>
+        <p id="submission-month-help">通常は自動推定のままで検索できます。必要な場合は複数の月を選択できます。</p>
+        <p id="submission-month-timing">有価証券報告書は原則、決算日から3か月以内に提出されます。3月決算なら6月が目安です。見つからない場合は、提出延期や訂正報告書なども考慮して、7月など前後の月も確認してください。</p>
         <div className="month-options">
           {monthOptions.map((option) => (
             <label key={option} className="check-option compact">
