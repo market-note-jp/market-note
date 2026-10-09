@@ -9,6 +9,15 @@ import { withEditorialTitle } from "../lib/article-metadata";
 
 const legacyArticles = [
   {
+    kind: "週次レポート",
+    date: "2026-10-10 08:00",
+    dateTime: "2026-10-10T08:00:00+09:00",
+    title: "日本株は上昇、米半導体株は反落――原油・金利とAI投資｜10月5日〜9日",
+    excerpt: "日経平均+1.06%、ダウ+0.93%、NASDAQ総合+0.64%、SOX-4.30%。AI投資・原油・金利と翌週CPIを一次資料で整理。",
+    href: "/articles/weekly-2026-10-05",
+  },
+
+  {
     "kind": "週次レポート",
     "date": "2026-09-12",
     "dateTime": "2026-09-12",
