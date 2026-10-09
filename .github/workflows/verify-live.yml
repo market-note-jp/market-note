@@ -45,6 +45,8 @@ jobs:
 
       - name: Verify latest report and every content-driven report in the current month
         shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           sha="${{ github.event.workflow_run.head_sha }}"

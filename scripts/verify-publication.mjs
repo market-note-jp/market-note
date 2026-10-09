@@ -41,8 +41,13 @@ export async function verifyPublication({ date, sha, fetchImpl = fetch, requireH
   assert.match(sha ?? "", /^[0-9a-f]{40}$/, "Supply the full expected main commit SHA");
   const slug = `daily-${date}`;
   async function get(url, json = true) {
+    const headers = { Accept: json ? "application/vnd.github+json" : "text/html", "Cache-Control": "no-cache" };
+    // The workflow supplies its existing read-only GitHub token to avoid shared
+    // unauthenticated runner-IP limits. Never forward credentials to Pages.
+    const token = process.env.GITHUB_TOKEN;
+    if (token && url.startsWith("https://api.github.com/")) headers.Authorization = `Bearer ${token}`;
     const response = await fetchImpl(url, {
-      headers: { Accept: json ? "application/vnd.github+json" : "text/html", "Cache-Control": "no-cache" },
+      headers,
       signal: AbortSignal.timeout(30_000),
       redirect: "error",
     });
