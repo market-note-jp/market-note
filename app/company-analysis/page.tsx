@@ -4,7 +4,7 @@ import { AnalysisForm } from "./analysis-form";
 import "./analysis.css";
 
 const title = "企業の財務を分析する | Market Note";
-const description = "KAnalyzerのEDINET解析で、企業の業績推移・資本効率・キャッシュフロー・DCFを確認する。";
+const description = "KAnalyzerのEDINET解析で、企業の業績推移・資本効率・キャッシュフローを確認する。";
 export const metadata: Metadata = {
   title, description,
   openGraph: { title, description }, twitter: { title, description },
@@ -25,13 +25,11 @@ export default function CompanyAnalysisPage() {
     <section id="analysis-methodology" className="analysis-methodology" aria-labelledby="method-heading">
       <h2 id="method-heading">分析結果の見方</h2>
       <ul>
+        <li>業績・財務・キャッシュフローの通期実績を表示します。会社予想は含みません。原資料提出日はEDINETへの提出日で、決算発表日とは異なります。</li>
         <li>有価証券報告書の年度実績を使用します。最新の四半期決算や業績予想とは対象期間が異なります。取得書類の決算期・提出日も確認してください。</li>
-        <li>ROE・ROA・ROICやキャッシュフローは、取得できた項目から計算します。欠損は「−」で表示し、ROICの内訳・税率・投下資本は結果の表で確認できます。</li>
-        <li>株価を入力すると参考実績PER・PBRを試算できます。株式分割前後の株価と株式数を混在させないでください。</li>
-        <li>DCFは過去実績の平均と仮定WACC 8%・永続成長率1%による参考試算です。WACCと永続成長率は企業固有の推計ではありません。前提・予測FCF・感応度を合わせて確認してください。</li>
-        <li>DCFのFCFは営業利益×（1−税率）＋減価償却費−CAPEX−運転資本増加額です。運転資本は営業債権等＋棚卸資産−営業債務等で計算し、営業CF＋投資CFとは区別します。</li>
-        <li>金融事業の債権が検出された企業では全社DCFの株価表示を保留します。金融事業と非金融事業を分け、キャッシュフローと負債の評価範囲をそろえる必要があります。</li>
-        <li>XBRLの自動抽出では企業独自の項目や会計基準の違いを完全には扱えません。金融業など通常の事業会社と異なる財務構造では、ROIC・DCFの適用に注意が必要です。</li>
+        <li>ROICやキャッシュフローは、取得できた項目から計算します。欠損は「−」で表示し、ROICの内訳・税率・投下資本は結果の表で確認できます。</li>
+        <li>EPS・BPSは当該有価証券報告書の公表値を優先します。株価を入力すると参考実績PER・PBRを試算できます。株式分割前後の株価と株式数を混在させないでください。</li>
+        <li>XBRLの自動抽出では企業独自の項目や会計基準の違いを完全には扱えません。金融業など通常の事業会社と異なる財務構造では、ROICの適用に注意が必要です。</li>
       </ul>
       <p><a href="https://disclosure2.edinet-fsa.go.jp/" target="_blank" rel="noreferrer">EDINETで原資料を確認 ↗</a></p>
     </section>

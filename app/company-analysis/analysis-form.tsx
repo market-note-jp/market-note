@@ -10,20 +10,15 @@ type SearchResponse = {
   company?: { name?: string; edinetCode?: string; secCode?: string };
   documents?: Array<{ docId?: string; docDescription?: string; docTypeCode?: string; periodEnd?: string; submitDateTime?: string }>;
   analysis?: {
+    profile?: "financial-statements";
+    financialBusinessDetected?: boolean;
     latest?: { companyName?: string; edinetCode?: string; secCode?: string; periodEnd?: string; fiscalYear?: string };
     metrics?: Array<{ key?: string; label?: string; value?: string }>;
     anomalies?: Array<{ year?: string; title?: string; message?: string; severity?: string }>;
     comments?: string[];
     records?: AnalysisRecord[];
     priceIndicators?: PriceIndicators;
-    dcf?: {
-      summary?: DcfSummaryRow[];
-      assumptions?: Record<string, number | null>;
-      historical?: DcfHistoryRow[];
-      latest?: Record<string, number | string | null>;
-      model?: DcfModel | null;
-      suitability?: { status?: string; message?: string };
-    };
+
   } | null;
   message?: string;
   searchNote?: string;
@@ -84,17 +79,9 @@ type AnalysisRecord = {
   shares_for_valuation?: number | null;
 };
 
-type DcfSummaryRow = {
-  key?: string;
-  指標?: string;
-  平均?: number | null;
-  中央値?: number | null;
-  最小値?: number | null;
-  最大値?: number | null;
-  件数?: number | null;
-};
-
 type PriceIndicators = {
+  eps_source?: string;
+  bps_source?: string;
   current_share_price?: number | null;
   issued_shares?: number | null;
   treasury_shares?: number | null;
@@ -109,44 +96,56 @@ type PriceIndicators = {
   warnings?: string[];
 };
 
-type DcfHistoryRow = Record<string, string | number | null>;
-
-type DcfModel = {
-  error?: string;
-  assumptions?: Record<string, number | null>;
-  valuation?: Record<string, number | string | null>;
-  forecast?: Array<Record<string, number | string | null>>;
-  sensitivity?: Array<Record<string, number | string | null>>;
-};
-
-const amountColumns: Array<{ key: keyof AnalysisRecord; label: string }> = [
-  { key: "revenue", label: "売上高" },
-  { key: "operating_income", label: "営業利益" },
-  { key: "ordinary_income", label: "経常利益" },
-  { key: "pretax_income", label: "税引前利益" },
-  { key: "net_income", label: "当期純利益" },
-  { key: "total_assets", label: "総資産" },
-  { key: "equity", label: "自己資本" },
-  { key: "operating_cf", label: "営業CF" },
-  { key: "investing_cf", label: "投資CF" },
-  { key: "capex", label: "CAPEX" },
-  { key: "depreciation", label: "減価償却費" },
-  { key: "interest_bearing_debt", label: "有利子負債" },
-  { key: "cash_and_equivalents", label: "現金等" },
-  { key: "fcf", label: "FCF" },
+type FinancialColumn = { key: keyof AnalysisRecord; label: string; format: "amount" | "ratio" | "yen" | "sharesThousands" | "text" | "date" };
+const performanceColumns: FinancialColumn[] = [
+  { key: "revenue", label: "売上高", format: "amount" },
+  { key: "gross_profit", label: "売上総利益", format: "amount" },
+  { key: "gross_margin", label: "粗利率", format: "ratio" },
+  { key: "operating_income", label: "営業利益", format: "amount" },
+  { key: "operating_margin", label: "営業利益率", format: "ratio" },
+  { key: "ordinary_income", label: "経常利益", format: "amount" },
+  { key: "ordinary_margin", label: "経常利益率", format: "ratio" },
+  { key: "net_income", label: "純利益", format: "amount" },
+  { key: "accounting_standard", label: "会計方式", format: "text" },
+  { key: "source_updated_at", label: "原資料提出日", format: "date" },
+];
+const financialColumns: FinancialColumn[] = [
+  { key: "reported_eps", label: "EPS（公表値・円）", format: "yen" },
+  { key: "reported_bps", label: "BPS（公表値・円）", format: "yen" },
+  { key: "roa_period_end", label: "ROA（期末総資産）", format: "ratio" },
+  { key: "roe_period_end", label: "ROE（期末自己資本）", format: "ratio" },
+  { key: "total_assets", label: "総資産", format: "amount" },
+  { key: "equity_ratio", label: "自己資本比率", format: "ratio" },
+  { key: "capital_stock", label: "資本金", format: "amount" },
+  { key: "interest_bearing_debt", label: "有利子負債", format: "amount" },
+  { key: "depreciation", label: "減価償却費・償却費", format: "amount" },
+  { key: "issued_shares", label: "発行済株式総数（期末・千株）", format: "sharesThousands" },
+];
+const cashFlowColumns: FinancialColumn[] = [
+  { key: "fcf", label: "フリーCF", format: "amount" },
+  { key: "operating_cf", label: "営業CF", format: "amount" },
+  { key: "investing_cf", label: "投資CF", format: "amount" },
+  { key: "financing_cf", label: "財務CF", format: "amount" },
 ];
 
-const ratioColumns: Array<{ key: keyof AnalysisRecord; label: string }> = [
-  { key: "sales_growth_rate", label: "売上成長率" },
-  { key: "operating_margin", label: "営業利益率" },
-  { key: "net_margin", label: "純利益率" },
-  { key: "roe", label: "ROE" },
-  { key: "roa", label: "ROA" },
-  { key: "roic", label: "ROIC" },
-  { key: "equity_ratio", label: "自己資本比率" },
-  { key: "operating_cf_margin", label: "営業CFマージン" },
-  { key: "interest_bearing_debt_ratio", label: "有利子負債比率" },
-];
+function financialCell(record: AnalysisRecord, column: FinancialColumn) {
+  const value = record[column.key];
+  if (column.format === "text") return typeof value === "string" && value ? value : "-";
+  if (column.format === "date") return typeof value === "string" && value ? value.slice(0, 10) : "-";
+  const number = numeric(value);
+  if (column.format === "ratio") return percent(number);
+  if (column.format === "yen") return yen(number);
+  if (column.format === "sharesThousands") return number === null ? "-" : (number / 1000).toLocaleString("ja-JP", { maximumFractionDigits: 3 });
+  return compactAmount(number);
+}
+
+function financialTable(records: AnalysisRecord[], columns: FinancialColumn[], label: string) {
+  return <div className="analysis-table-wrap" tabIndex={0} role="region" aria-label={`${label}。左右にスクロールできます`}>
+    <table className="analysis-table"><thead><tr><th>決算期（実績）</th>{columns.map(column => <th key={column.key}>{column.label}{column.format === "amount" ? "（百万円）" : ""}</th>)}</tr></thead>
+      <tbody>{[...records].reverse().map(record => <tr key={`${label}-${periodLabel(record)}`}><td>{periodLabel(record)}</td>{columns.map(column => <td key={column.key}>{financialCell(record, column)}</td>)}</tr>)}</tbody>
+    </table>
+  </div>;
+}
 
 function toDateInput(date: Date) {
   return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
@@ -159,17 +158,12 @@ function compactAmount(value?: number | null) {
 
 function percent(value?: number | null) {
   if (!Number.isFinite(value ?? NaN)) return "-";
-  return `${Number(value).toFixed(1)}%`;
-}
-
-function ratioFromDcf(value?: number | null) {
-  if (!Number.isFinite(value ?? NaN)) return "-";
-  return `${(Number(value) * 100).toFixed(1)}%`;
+  return `${Number(value).toFixed(2)}%`;
 }
 
 function yen(value?: number | null) {
   if (!Number.isFinite(value ?? NaN)) return "-";
-  return `${Math.round(Number(value)).toLocaleString("ja-JP")}円`;
+  return `${Number(value).toLocaleString("ja-JP", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}円`;
 }
 
 function multiple(value?: number | null) {
@@ -241,32 +235,26 @@ function renderBarChart(
   );
 }
 
-function getDcfMetric(row: DcfSummaryRow, key: keyof DcfSummaryRow) {
-  const value = row[key];
-  return typeof value === "number" ? value : null;
-}
-
-function dcfSummaryValue(row: DcfSummaryRow, field: "平均" | "中央値") {
-  const value = getDcfMetric(row, field);
-  return /rate|ratio|margin|roic|wacc|growth/.test(row.key || "") ? ratioFromDcf(value) : compactAmount(value);
-}
-
 function AnalysisDetails({ analysis }: { analysis: NonNullable<SearchResponse["analysis"]> }) {
-  const records = sortedRecords(analysis.records || []);
-  const dcfRows = analysis.dcf?.summary || [];
-  const dcfLatest = analysis.dcf?.latest || {};
-  const dcfHistory = analysis.dcf?.historical || [];
-  const dcfModel = analysis.dcf?.model;
+  const records = sortedRecords((analysis.records || []).filter(record => record.record_type !== "forecast"));
   const [currentSharePrice, setCurrentSharePrice] = useState("");
   const [manualShares, setManualShares] = useState("");
   const latestRecord = records.at(-1);
   const priceIndicators = analysis.priceIndicators || {};
+  const issuedShares = numeric(priceIndicators.issued_shares) ?? numeric(latestRecord?.issued_shares);
+  const treasuryShares = numeric(priceIndicators.treasury_shares) ?? numeric(latestRecord?.treasury_shares);
   const enteredShares = manualShares.trim() ? numeric(Number(manualShares)) : null;
-  const shares = manualShares.trim() ? (enteredShares !== null && enteredShares > 0 ? enteredShares : null) : numeric(priceIndicators.shares_outstanding) || numeric(latestRecord?.shares_for_valuation) || numeric(dcfLatest.shares_for_valuation);
+  const shares = manualShares.trim() ? (enteredShares !== null && enteredShares > 0 ? enteredShares : null) : numeric(priceIndicators.shares_outstanding) || numeric(latestRecord?.shares_for_valuation);
   const price = currentSharePrice.trim() ? numeric(Number(currentSharePrice)) : null;
-  const eps = shares && numeric(latestRecord?.net_income) !== null ? numeric(latestRecord?.net_income)! / shares : manualShares.trim() ? null : numeric(priceIndicators.eps);
+  const reportedEps = numeric(latestRecord?.reported_eps);
+  const reportedBps = numeric(latestRecord?.reported_bps);
+  const estimatedEps = shares && numeric(latestRecord?.net_income) !== null ? numeric(latestRecord?.net_income)! / shares : null;
+  const eps = manualShares.trim() ? estimatedEps : reportedEps ?? numeric(priceIndicators.eps) ?? estimatedEps;
   const equity = numeric(latestRecord?.equity) ?? numeric(latestRecord?.net_assets);
-  const bps = shares && equity !== null ? equity / shares : manualShares.trim() ? null : numeric(priceIndicators.bps);
+  const estimatedBps = shares && equity !== null ? equity / shares : null;
+  const bps = manualShares.trim() ? estimatedBps : reportedBps ?? numeric(priceIndicators.bps) ?? estimatedBps;
+  const usesReportedEps = !manualShares.trim() && (reportedEps !== null || priceIndicators.eps_source === "公表値");
+  const usesReportedBps = !manualShares.trim() && (reportedBps !== null || priceIndicators.bps_source === "公表値");
   const per = price !== null && price > 0 && eps !== null && eps > 0 ? price / eps : null;
   const pbr = price !== null && price > 0 && bps !== null && bps > 0 ? price / bps : null;
 
@@ -290,9 +278,8 @@ function AnalysisDetails({ analysis }: { analysis: NonNullable<SearchResponse["a
           </div>
         ))}
       </div>
-      {records.some(record => numeric(record.revenue) === null) ? <p className="analysis-note" role="status">売上高を取得できていない年度があります。該当年度の成長率・利益率やDCFは算出できない場合があります。</p> : null}
-      <p className="analysis-note">上のFCFと年度別財務表のFCFは営業CF＋投資CFです。DCFで用いる事業キャッシュフローとは計算方法が異なります。</p>
-      {analysis.dcf?.suitability?.status === "requires_business_separation" ? <p className="analysis-note" role="status">金融事業を含む全社の指標です。ROICや自動分析コメントを通常の事業会社と比較する際は、事業と負債の範囲を確認してください。全社DCFの株価は保留しています。</p> : null}
+      <p className="analysis-note">通期実績を表示しています。金額は百万円、1株指標は円。取得できない項目は「-」で表示します。</p>
+      {analysis.financialBusinessDetected ? <p className="analysis-note" role="status">金融事業を含む全社の指標です。ROICを比較する際は事業と負債の範囲を確認してください。</p> : null}
 
       <section className="analysis-detail-section">
         <div className="analysis-subheading">
@@ -313,7 +300,7 @@ function AnalysisDetails({ analysis }: { analysis: NonNullable<SearchResponse["a
             />
           </label>
           <label>
-            <span>株式数を手入力する場合</span>
+            <span>自己株式を除く株式数を手入力（株）</span>
             <input
               type="number" min="1" step="1"
               inputMode="numeric"
@@ -323,15 +310,18 @@ function AnalysisDetails({ analysis }: { analysis: NonNullable<SearchResponse["a
             />
           </label>
         </div>
-        <div className="dcf-latest-grid price-grid">
+        <div className="analysis-value-grid price-grid">
+          <div><span>発行済株式総数（自己株式を含む）</span><strong>{shareCount(issuedShares)}</strong></div>
+          <div><span>自己株式数</span><strong>{shareCount(treasuryShares)}</strong></div>
           <div><span>自己株式を除く株式数</span><strong>{shareCount(shares)}</strong></div>
-          <div><span>参考EPS（期末株式数ベース）</span><strong>{yen(eps)}</strong></div>
-          <div><span>BPS</span><strong>{yen(bps)}</strong></div>
+          <div><span>{usesReportedEps ? "EPS（公表値）" : "参考EPS（期末株式数ベース）"}</span><strong>{yen(eps)}</strong></div>
+          <div><span>{usesReportedBps ? "BPS（公表値）" : "参考BPS（期末株式数ベース）"}</span><strong>{yen(bps)}</strong></div>
           <div><span>参考実績PER</span><strong>{multiple(per)}</strong></div>
           <div><span>PBR</span><strong>{multiple(pbr)}</strong></div>
           <div><span>株式数の取得元</span><strong>{enteredShares !== null && enteredShares > 0 ? "手入力" : priceIndicators.share_count_source || (shares ? "取得年度の株式数" : "-")}</strong></div>
         </div>
-        <p className="analysis-note">参考EPSは純利益を期末株式数で割った試算で、公表EPSの期中平均株式数とは異なります。株式分割があった場合は、株価と株式数の基準をそろえてください。</p>
+        {issuedShares !== null && treasuryShares === null ? <p className="analysis-note" role="status">発行済株式総数は取得できていますが、自己株式数を確定できません。公表EPS・BPSが取得できた場合は参考PER/PBRを計算できます。期末株式数から試算する場合は、自己株式を除く株式数を確認して入力してください。</p> : null}
+        <p className="analysis-note">EPS・BPSは公表値を優先します。株式数を手入力した場合は期末株式数で試算します。各年度の公表値は原資料の株式分割調整基準に従うため、現在株価との基準を確認してください。</p>
         {priceIndicators.warnings?.length ? (
           <ul className="compact-note-list">
             {priceIndicators.warnings.map((warning) => <li key={warning}>{warning}</li>)}
@@ -342,62 +332,21 @@ function AnalysisDetails({ analysis }: { analysis: NonNullable<SearchResponse["a
       {records.length ? (
         <>
           <section className="analysis-detail-section">
-            <div className="analysis-subheading">
-              <div>
-                <h3>年度別の財務指標</h3>
-                <p>取得した有価証券報告書から主要な財務データを年度別に整理しています。</p>
-              </div>
-            </div>
-            <div className="analysis-table-wrap" tabIndex={0} role="region" aria-label="財務データ表。左右にスクロールできます">
-              <table className="analysis-table">
-                <thead>
-                  <tr>
-                    <th>決算期</th>
-                    {amountColumns.map((column) => <th key={column.key}>{column.label}</th>)}
-                    {ratioColumns.map((column) => <th key={column.key}>{column.label}</th>)}
-                  </tr>
-                </thead>
-                <tbody>
-                  {records.map((record) => (
-                    <tr key={periodLabel(record)}>
-                      <td>{periodLabel(record)}</td>
-                      {amountColumns.map((column) => <td key={column.key}>{compactAmount(record[column.key] as number | null)}</td>)}
-                      {ratioColumns.map((column) => <td key={column.key}>{percent(record[column.key] as number | null)}</td>)}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+            <div className="analysis-subheading"><div><h3>業績</h3><p>売上・利益・利益率と会計方式。原資料提出日はEDINETへの提出日です。</p></div></div>
+            {financialTable(records, performanceColumns, "業績データ表")}
+            {renderBarChart(records, [{ key: "revenue", label: "売上高", className: "bar-blue" }, { key: "operating_income", label: "営業利益", className: "bar-green" }, { key: "net_income", label: "純利益", className: "bar-ink" }], "amount")}
           </section>
-
           <section className="analysis-detail-section">
-            <div className="analysis-subheading">
-              <div>
-                <h3>売上・営業利益・FCFの推移</h3>
-                <p>金額項目の推移を比較し、成長性とキャッシュ創出力を確認できます。</p>
-              </div>
-            </div>
-            {renderBarChart(records, [
-              { key: "revenue", label: "売上高", className: "bar-blue" },
-              { key: "operating_income", label: "営業利益", className: "bar-green" },
-              { key: "fcf", label: "FCF", className: "bar-ink" },
-            ], "amount")}
+            <div className="analysis-subheading"><div><h3>財務</h3><p>公表EPS・BPS、財務構成、発行済株式総数。資本金は提出会社の額です。</p></div></div>
+            {financialTable(records, financialColumns, "財務データ表")}
+            <p className="analysis-note">この表のROA・ROEは純利益÷期末総資産・期末自己資本です。上のROEカードと下の資本効率グラフは期首・期末平均を使用します。EPS・BPSは最新取得書類に再掲された公表値を優先し、再掲値がない年度は当該年度の原資料を使います。発行済株式総数は自己株式を含む期末実数で、EPS・BPSの株式分割調整後の基準と異なる場合があります。</p>
+            {renderBarChart(records, [{ key: "roe", label: "ROE（平均自己資本）", className: "bar-blue" }, { key: "roic", label: "ROIC", className: "bar-green" }, { key: "equity_ratio", label: "自己資本比率", className: "bar-warning" }], "ratio")}
           </section>
-
           <section className="analysis-detail-section">
-            <div className="analysis-subheading">
-              <div>
-                <h3>ROE / ROIC / 自己資本比率</h3>
-                <p>収益性と財務安全性のバランスを年度別に確認できます。</p>
-              </div>
-            </div>
-            {renderBarChart(records, [
-              { key: "roe", label: "ROE", className: "bar-blue" },
-              { key: "roic", label: "ROIC", className: "bar-green" },
-              { key: "equity_ratio", label: "自己資本比率", className: "bar-warning" },
-            ], "ratio")}
+            <div className="analysis-subheading"><div><h3>キャッシュフロー</h3><p>フリーCFは営業CF＋投資CFで計算します。</p></div></div>
+            {financialTable(records, cashFlowColumns, "キャッシュフローデータ表")}
+            {renderBarChart(records, [{ key: "operating_cf", label: "営業CF", className: "bar-blue" }, { key: "investing_cf", label: "投資CF", className: "bar-green" }, { key: "fcf", label: "フリーCF", className: "bar-ink" }], "amount")}
           </section>
-
           <section className="analysis-detail-section">
             <div className="analysis-subheading">
               <div>
@@ -441,151 +390,11 @@ function AnalysisDetails({ analysis }: { analysis: NonNullable<SearchResponse["a
         </>
       ) : null}
 
-      {dcfRows.length || Object.keys(dcfLatest).length || dcfHistory.length || dcfModel ? (
-        <section className="analysis-detail-section">
-          <div className="analysis-subheading">
-            <div>
-              <h3>DCF分析</h3>
-            <p>過去実績をもとに、DCF前提・予測FCF・企業価値を確認できます。試算株価は仮定に基づく参考値です。</p>
-            </div>
-          </div>
-          {dcfRows.length ? (
-            <div className="dcf-summary-grid">
-              {dcfRows.map((row) => (
-                <div key={row.key || row.指標}>
-                  <span>{row.指標 || row.key}</span>
-                  <strong>{dcfSummaryValue(row, "平均")}</strong>
-                  <small>中央値 {dcfSummaryValue(row, "中央値")}</small>
-                </div>
-              ))}
-            </div>
-          ) : null}
-          {Object.keys(dcfLatest).length || dcfModel?.valuation ? (
-            <div className="dcf-latest-grid">
-              <div><span>DCF試算株価</span><strong>{yen(numeric(dcfModel?.valuation?.theoretical_share_price))}</strong></div>
-              <div><span>企業価値</span><strong>{compactAmount(numeric(dcfModel?.valuation?.enterprise_value))}</strong></div>
-              <div><span>株主価値</span><strong>{compactAmount(numeric(dcfModel?.valuation?.equity_value))}</strong></div>
-              <div><span>予測FCF現在価値</span><strong>{compactAmount(numeric(dcfModel?.valuation?.forecast_fcf_pv_sum))}</strong></div>
-              <div><span>TV現在価値</span><strong>{compactAmount(numeric(dcfModel?.valuation?.terminal_value_pv))}</strong></div>
-              <div><span>仮定WACC</span><strong>{ratioFromDcf(numeric(dcfModel?.assumptions?.wacc))}</strong></div>
-              <div><span>仮定の永続成長率</span><strong>{ratioFromDcf(numeric(dcfModel?.assumptions?.perpetual_growth_rate))}</strong></div>
-              <div><span>計算対象</span><strong>{dcfLatest.row_count_before_dedupe ? `${dcfLatest.row_count_after_dedupe || "-"} / ${dcfLatest.row_count_before_dedupe}件` : "-"}</strong></div>
-            </div>
-          ) : null}
-          {dcfModel?.error ? <div className="notice notice-error">{dcfModel.error}</div> : null}
-          {!dcfModel?.error && analysis.dcf?.suitability?.message ? <p className="analysis-note" role="status">{analysis.dcf.suitability.message}</p> : null}
-          {!dcfModel ? <p className="analysis-note" role="status">DCFの計算結果は取得できませんでした。売上高などの必須データや分析サービスの対応状況をご確認ください。</p> : null}
-          {dcfHistory.length ? (
-            <details className="analysis-details-toggle" open>
-              <summary>DCF過去実績推移</summary>
-              <div className="analysis-table-wrap" tabIndex={0} role="region" aria-label="財務データ表。左右にスクロールできます">
-                <table className="analysis-table">
-                  <thead>
-                    <tr>
-                      <th>決算期</th>
-                      <th>売上成長率</th>
-                      <th>営業利益率</th>
-                      <th>実効税率</th>
-                      <th>NOPAT</th>
-                      <th>平均投下資本</th>
-                      <th>CAPEX</th>
-                      <th>設備投資率</th>
-                      <th>運転資本率</th>
-                      <th>DCF FCF</th>
-                      <th>FCFマージン</th>
-                      <th>ROIC</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {dcfHistory.map((row) => (
-                      <tr key={`dcf-history-${row.period_end || row.fiscal_year}`}>
-                        <td>{String(row.period_end || row.fiscal_year || "-")}</td>
-                        <td>{ratioFromDcf(numeric(row.sales_growth_rate))}</td>
-                        <td>{ratioFromDcf(numeric(row.operating_margin))}</td>
-                        <td>{ratioFromDcf(numeric(row.effective_tax_rate))}</td>
-                        <td>{compactAmount(numeric(row.dcf_nopat))}</td>
-                        <td>{compactAmount(numeric(row.dcf_average_invested_capital))}</td>
-                        <td>{compactAmount(numeric(row.capex_outflow))}</td>
-                        <td>{ratioFromDcf(numeric(row.capex_rate))}</td>
-                        <td>{ratioFromDcf(numeric(row.working_capital_ratio))}</td>
-                        <td>{compactAmount(numeric(row.dcf_fcf))}</td>
-                        <td>{ratioFromDcf(numeric(row.fcf_margin))}</td>
-                        <td>{ratioFromDcf(numeric(row.roic))}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </details>
-          ) : null}
-          {dcfModel?.forecast?.length ? (
-            <details className="analysis-details-toggle" open>
-              <summary>DCF予測テーブル</summary>
-              <div className="analysis-table-wrap" tabIndex={0} role="region" aria-label="財務データ表。左右にスクロールできます">
-                <table className="analysis-table">
-                  <thead>
-                    <tr>
-                      <th>年</th>
-                      <th>売上成長率</th>
-                      <th>営業利益率</th>
-                      <th>売上高</th>
-                      <th>営業利益</th>
-                      <th>NOPAT</th>
-                      <th>減価償却費</th>
-                      <th>CAPEX</th>
-                      <th>運転資本増減</th>
-                      <th>FCF</th>
-                      <th>割引係数</th>
-                      <th>割引後FCF</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {dcfModel.forecast.map((row) => (
-                      <tr key={`forecast-${row.year}`}>
-                        <td>{row.year ? `${row.year}年目` : "-"}</td>
-                        <td>{ratioFromDcf(numeric(row.sales_growth_rate))}</td>
-                        <td>{ratioFromDcf(numeric(row.operating_margin))}</td>
-                        <td>{compactAmount(numeric(row.revenue))}</td>
-                        <td>{compactAmount(numeric(row.operating_income))}</td>
-                        <td>{compactAmount(numeric(row.nopat))}</td>
-                        <td>{compactAmount(numeric(row.depreciation))}</td>
-                        <td>{compactAmount(numeric(row.capex))}</td>
-                        <td>{compactAmount(numeric(row.change_in_working_capital))}</td>
-                        <td>{compactAmount(numeric(row.fcf))}</td>
-                        <td>{numeric(row.discount_factor)?.toFixed(3) || "-"}</td>
-                        <td>{compactAmount(numeric(row.discounted_fcf))}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </details>
-          ) : null}
-          {dcfModel?.sensitivity?.length ? (
-            <details className="analysis-details-toggle">
-              <summary>感応度分析</summary>
-              <div className="analysis-table-wrap" tabIndex={0} role="region" aria-label="財務データ表。左右にスクロールできます">
-                <table className="analysis-table sensitivity-table">
-                  <thead>
-                    <tr>
-                      {Object.keys(dcfModel.sensitivity[0]).map((key) => <th key={key}>{key}</th>)}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {dcfModel.sensitivity.map((row, index) => (
-                      <tr key={`sensitivity-${index}`}>
-                        {Object.entries(row).map(([key, value]) => (
-                          <td key={key}>{key === "永続成長率" ? ratioFromDcf(numeric(value)) : yen(numeric(value))}</td>
-                        ))}
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </details>
-          ) : null}
-        </section>
-      ) : null}
+      {records.length ? <details className="document-details"><summary>原資料・取得基準を確認する</summary><ul className="compact-note-list">{[...records].reverse().map(record => <li key={`source-${periodLabel(record)}`}>
+        {periodLabel(record)}：{record.consolidation_scope || "連結区分未取得"}／{record.accounting_standard || "会計方式未取得"}／提出日 {String(record.source_updated_at || record.submit_date_time || "-").slice(0, 10)} {typeof record.source_url === "string" && /^https:\/\/disclosure2dl\.edinet-fsa\.go\.jp\//.test(record.source_url) ? <a href={record.source_url} target="_blank" rel="noreferrer">有価証券報告書</a> : null}
+        {typeof record.reported_eps_source_doc_id === "string" && /^[A-Z0-9]{8}$/.test(record.reported_eps_source_doc_id) ? <>／<a href={`https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/${record.reported_eps_source_doc_id}.pdf`} target="_blank" rel="noreferrer">EPS再掲元</a></> : null}
+        {typeof record.reported_bps_source_doc_id === "string" && /^[A-Z0-9]{8}$/.test(record.reported_bps_source_doc_id) ? <>／<a href={`https://disclosure2dl.edinet-fsa.go.jp/searchdocument/pdf/${record.reported_bps_source_doc_id}.pdf`} target="_blank" rel="noreferrer">BPS再掲元</a></> : null}
+      </li>)}</ul></details> : null}
 
       {analysis.comments?.length || analysis.anomalies?.length ? (
         <section className="analysis-detail-section two-panel-analysis">
@@ -620,12 +429,12 @@ export function AnalysisForm() {
   const defaultDates = useMemo(() => {
     const end = new Date();
     const start = new Date(end);
-    start.setFullYear(end.getFullYear() - 5);
+    start.setFullYear(end.getFullYear() - 3);
     return { start: toDateInput(start), end: toDateInput(end) };
   }, []);
   const [edinetCode, setEdinetCode] = useState("");
   const [companyKeyword, setCompanyKeyword] = useState("");
-  const [years, setYears] = useState("5");
+  const [years, setYears] = useState("3");
   const [includeAmendments, setIncludeAmendments] = useState(false);
   const [autoAnalyze, setAutoAnalyze] = useState(true);
   const [startDate, setStartDate] = useState(defaultDates.start);
@@ -740,6 +549,8 @@ export function AnalysisForm() {
           <span>検索後に自動で分析する</span>
         </label>
       </div>
+
+      <p className="analysis-note">業績・財務・キャッシュフローの通期実績とROICを取得します。標準は3年分で、1〜10年に変更できます。</p>
 
       </fieldset>
       {error ? <div className="notice notice-error" role="alert">{error}</div> : null}

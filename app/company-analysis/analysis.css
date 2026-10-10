@@ -67,22 +67,14 @@
 .kanalyzer .analysis-table th:first-child { background: #f8fafc; }
 .kanalyzer .analysis-table tbody tr:last-child td { border-bottom: 0; }
 .kanalyzer .compact-analysis-table { min-width: 1080px; }
-.kanalyzer .sensitivity-table { min-width: 720px; }
 .kanalyzer .price-input-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-bottom: 12px; }
 .kanalyzer .price-input-grid label > span { display: block; margin-bottom: 6px; color: var(--muted); font-size: 12px; font-weight: 700; }
-.kanalyzer .dcf-latest-grid.price-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.kanalyzer .analysis-value-grid.price-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .kanalyzer .price-grid strong { font-size: 15px; word-break: break-word; }
 .kanalyzer .compact-note-list { margin: 12px 0 0; padding-left: 18px; color: var(--muted); font-size: 12px; }
 .kanalyzer .compact-note-list li + li { margin-top: 4px; }
 .kanalyzer .analysis-details-toggle { margin-top: 14px; }
 .kanalyzer .analysis-details-toggle summary { cursor: pointer; margin-bottom: 10px; font-weight: 700; }
-.kanalyzer .dcf-summary-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
-.kanalyzer .dcf-summary-grid > div, .kanalyzer .dcf-latest-grid > div { padding: 14px; border: 1px solid var(--line); border-radius: 8px; background: white; }
-.kanalyzer .dcf-summary-grid span, .kanalyzer .dcf-summary-grid strong, .kanalyzer .dcf-summary-grid small, .kanalyzer .dcf-latest-grid span, .kanalyzer .dcf-latest-grid strong { display: block; }
-.kanalyzer .dcf-summary-grid span, .kanalyzer .dcf-latest-grid span { color: var(--muted); font-size: 12px; }
-.kanalyzer .dcf-summary-grid strong, .kanalyzer .dcf-latest-grid strong { margin-top: 5px; font-size: 18px; }
-.kanalyzer .dcf-summary-grid small { margin-top: 6px; color: var(--muted); font-size: 11px; }
-.kanalyzer .dcf-latest-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin-top: 10px; }
 .kanalyzer .two-panel-analysis { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .kanalyzer .two-panel-analysis .analysis-comments, .kanalyzer .two-panel-analysis .analysis-alerts { margin-top: 0; padding: 16px; border: 1px solid var(--line); border-radius: 8px; }
 .kanalyzer .analysis-alerts.quiet p { margin: 0; color: var(--muted); font-size: 13px; }
@@ -108,7 +100,6 @@
 .kanalyzer .analysis-bar-slot span { position: absolute; bottom: 50%; left: 0; width: 100%; min-height: 0; border-radius: 2px 2px 0 0; }
 .kanalyzer .analysis-bar-slot span[data-negative="true"] { top: 50%; bottom: auto; border-radius: 0 0 2px 2px; }
 @media (max-width: 900px) {
-  .kanalyzer .dcf-summary-grid, .kanalyzer .dcf-latest-grid, .kanalyzer .dcf-latest-grid.price-grid, .kanalyzer .two-panel-analysis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .kanalyzer .analysis-subheading { display: block; }
   .kanalyzer .document-row { grid-template-columns: 1fr; }
 }
@@ -116,8 +107,8 @@
   .kanalyzer { width: calc(100% - 28px); padding-top: 28px; }
   .kanalyzer .analysis-search-panel { padding: 20px 14px; }
   .kanalyzer .two-columns, .kanalyzer .three-columns, .kanalyzer .price-input-grid, .kanalyzer .two-panel-analysis { grid-template-columns: 1fr; }
-  .kanalyzer .analysis-metric-grid, .kanalyzer .dcf-summary-grid, .kanalyzer .dcf-latest-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .kanalyzer .analysis-metric-grid strong { font-size: 17px; }
+  .kanalyzer .analysis-metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .kanalyzer .price-grid > div:first-child { grid-column: 1 / -1; }
   .kanalyzer .form-checks { display: grid; }
   .kanalyzer .form-submit { width: 100%; }
@@ -125,3 +116,10 @@
   .kanalyzer .analysis-result-heading { display: block; }
   .kanalyzer .analysis-chart { padding: 10px; }
 }
+
+.kanalyzer .analysis-value-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 10px; }
+.kanalyzer .analysis-value-grid > div { padding: 14px; border: 1px solid var(--line); border-radius: 8px; background: white; }
+.kanalyzer .analysis-value-grid span, .kanalyzer .analysis-value-grid strong { display: block; }
+.kanalyzer .analysis-value-grid span { color: var(--muted); font-size: 12px; }
+.kanalyzer .analysis-detail-section .analysis-chart { margin-top: 14px; }
+@media (max-width: 720px) { .kanalyzer .analysis-value-grid, .kanalyzer .analysis-value-grid.price-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
