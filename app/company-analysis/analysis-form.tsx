@@ -257,6 +257,10 @@ function AnalysisDetails({ analysis }: { analysis: NonNullable<SearchResponse["a
   const usesReportedBps = !manualShares.trim() && (reportedBps !== null || priceIndicators.bps_source === "公表値");
   const per = price !== null && price > 0 && eps !== null && eps > 0 ? price / eps : null;
   const pbr = price !== null && price > 0 && bps !== null && bps > 0 ? price / bps : null;
+  const priceWarnings = (priceIndicators.warnings || []).filter((warning) =>
+    !(price !== null && price > 0 && warning.includes("現在株価が未入力")) &&
+    !(shares !== null && shares > 0 && warning.includes("自己株式を除く株式数は未確定"))
+  );
 
   if (!analysis.metrics?.length) return null;
 
@@ -318,13 +322,13 @@ function AnalysisDetails({ analysis }: { analysis: NonNullable<SearchResponse["a
           <div><span>{usesReportedBps ? "BPS（公表値）" : "参考BPS（期末株式数ベース）"}</span><strong>{yen(bps)}</strong></div>
           <div><span>参考実績PER</span><strong>{multiple(per)}</strong></div>
           <div><span>PBR</span><strong>{multiple(pbr)}</strong></div>
-          <div><span>株式数の取得元</span><strong>{enteredShares !== null && enteredShares > 0 ? "手入力" : priceIndicators.share_count_source || (shares ? "取得年度の株式数" : "-")}</strong></div>
+          <div><span>自己株式を除く株式数の取得元</span><strong>{enteredShares !== null && enteredShares > 0 ? "手入力" : priceIndicators.share_count_source || (shares ? "取得年度の株式数" : "-")}</strong></div>
         </div>
         {issuedShares !== null && treasuryShares === null ? <p className="analysis-note" role="status">発行済株式総数は取得できていますが、自己株式数を確定できません。公表EPS・BPSが取得できた場合は参考PER/PBRを計算できます。期末株式数から試算する場合は、自己株式を除く株式数を確認して入力してください。</p> : null}
         <p className="analysis-note">EPS・BPSは公表値を優先します。株式数を手入力した場合は期末株式数で試算します。各年度の公表値は原資料の株式分割調整基準に従うため、現在株価との基準を確認してください。</p>
-        {priceIndicators.warnings?.length ? (
+        {priceWarnings.length ? (
           <ul className="compact-note-list">
-            {priceIndicators.warnings.map((warning) => <li key={warning}>{warning}</li>)}
+            {priceWarnings.map((warning) => <li key={warning}>{warning}</li>)}
           </ul>
         ) : null}
       </section>
