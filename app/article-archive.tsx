@@ -54,7 +54,6 @@ export default function ArticleArchive({ articles }: { articles: Article[] }) {
   ));
   const pageCount = Math.ceil(filteredArticles.length / ARTICLES_PER_PAGE);
   const startIndex = (currentPage - 1) * ARTICLES_PER_PAGE;
-  const pageArticles = filteredArticles.slice(startIndex, startIndex + ARTICLES_PER_PAGE);
   const firstArticleNumber = filteredArticles.length === 0 ? 0 : startIndex + 1;
   const lastArticleNumber = Math.min(startIndex + ARTICLES_PER_PAGE, filteredArticles.length);
 
@@ -135,11 +134,15 @@ export default function ArticleArchive({ articles }: { articles: Article[] }) {
       </div>
 
       <div className="article-list" aria-live="polite">
-        {pageArticles.length === 0 && (
+        {filteredArticles.length === 0 && (
           <p className="empty-articles">選択した条件に当てはまる記事はありません。</p>
         )}
-        {pageArticles.map((article) => (
-          <article className="article-row" key={article.href}>
+        {filteredArticles.map((article, index) => (
+          <article
+            className="article-row"
+            key={article.href}
+            hidden={index < startIndex || index >= startIndex + ARTICLES_PER_PAGE}
+          >
             <Link href={article.href} aria-label={`${article.title}を読む`}>
               <div className="article-copy">
                 <p className="article-kind">{article.kind}</p>
