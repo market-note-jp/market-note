@@ -18,6 +18,28 @@ TICKERS = ('NVDA','AVGO','AMD','MSFT','AMZN','GOOGL','META','ORCL')
 PRICE_KEYS = ('ma200_gap_pct','downside_correlation','below_ma200_pct')
 SOURCE = 'https://finance.yahoo.com/quote/NVDA/history/ (8銘柄の分割調整済み終値、出典詳細は方法論)'
 
+def price_published_on(day):
+    """A US session's close is available on the following calendar day in Japan.
+
+    Keep the model's conservative date-only gate: this Japanese publication
+    date must be strictly before the Japanese as_of date. This also covers
+    daylight-saving time and early closes without inventing intraday precision.
+    """
+    return (dt.date.fromisoformat(day) + dt.timedelta(days=1)).isoformat()
+
+def normalize_price_publication_dates(data):
+    """Conservatively repair retained input dates, never immutable releases.
+
+    If collection fails, previously reconstructed month-end observations may
+    now be ineligible at their monthly cutoff. The model excludes those rows;
+    only a successful recollection can supply an earlier eligible session.
+    """
+    for snapshot in [data['current'], *data['history']]:
+        for key in PRICE_KEYS:
+            rec = snapshot.get('metrics', {}).get(key, {})
+            if rec.get('observed_at') and rec.get('published_at'):
+                rec['published_at'] = max(rec['published_at'], price_published_on(rec['observed_at']))
+
 def load_prices(ticker):
     url = f'https://query1.finance.yahoo.com/v8/finance/chart/{ticker}?range=5y&interval=1d'
     req = urllib.request.Request(url, headers={'User-Agent':'MarketNote-AIRI/0.1 research'})
@@ -36,7 +58,7 @@ def load_prices(ticker):
 def price_features(series, cutoff):
     # Only complete prior US trading sessions, common to every member.
     days = sorted(set.intersection(*(set(series[t]) for t in TICKERS)))
-    days = [day for day in days if day < cutoff.isoformat()]
+    days = [day for day in days if price_published_on(day) < cutoff.isoformat()]
     if len(days)<200:
         raise ValueError('200 daily prices required')
     prices = [[series[t][day] for t in TICKERS] for day in days]
@@ -73,7 +95,7 @@ def price_features(series, cutoff):
     return features
 
 def record(value, day):
-    return {'value':value,'observed_at':day,'published_at':day,'source':SOURCE,
+    return {'value':value,'observed_at':day,'published_at':price_published_on(day),'source':SOURCE,
             'reference_kind':'分割調整済み価格の事後再構成。公表当時の未改訂データではない'}
 
 def archive_monthly_observations(data, cutoff):
@@ -116,11 +138,11 @@ def collect(data, cutoff):
     for row in history.values():
         if not row['as_of'].endswith('-01'):
             raise ValueError('Reference snapshots must use the first of each month')
-    feature_days=[d for d,_ in features]
+    publication_days=[price_published_on(d) for d,_ in features]
     month=cutoff.year*12+cutoff.month-1
     for m in range(month-60,month):
         point=dt.date(m//12,m%12+1,1)
-        ix=bisect.bisect_left(feature_days,point.isoformat())-1
+        ix=bisect.bisect_left(publication_days,point.isoformat())-1
         if ix<0:
             continue
         day,vals=features[ix]
@@ -133,7 +155,8 @@ def collect(data, cutoff):
             'value':None,'observed_at':None,'published_at':None,'source':'',
             'reason':'下落日数または価格変動が不足'}
     data['history']=sorted(history.values(),key=lambda x:x['as_of'])
-    data['price_collection']={'status':'success','observed_at':latest_day}
+    data['price_collection']={'status':'success','observed_at':latest_day,
+                              'published_at':price_published_on(latest_day),'cutoff_timezone':'Asia/Tokyo'}
 
 def publish(data, checked_on):
     if data['data_kind']!='observed':
@@ -182,6 +205,7 @@ def main():
     cutoff=dt.date.fromisoformat(args.as_of)
     data=json.loads(INPUT.read_text(encoding='utf-8'))
     data['current']['as_of']=args.as_of
+    normalize_price_publication_dates(data)
     archive_monthly_observations(data,cutoff)
     if args.collect_prices:
         try:

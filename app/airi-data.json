@@ -1,9 +1,9 @@
 {
   "model_version": "0.1.0",
   "universe_id": "AIRI-US8-equal-quarterly-v1",
-  "as_of": "2026-09-26",
+  "as_of": "2026-10-11",
   "data_kind": "observed",
-  "input_sha256": "452d6fe2bafac4e807bdb0a52929d146824725374d6b257d5d1690d3b75c350c",
+  "input_sha256": "00e14914b3087cf7537862de334cf6a07c540568435f2dadd866c196c5d5609f",
   "airi": null,
   "crash_probability": null,
   "coverage": 0.3,
@@ -38,13 +38,13 @@
       "key": "ma200_gap_pct",
       "label": "200日線乖離率",
       "axis": "過熱度",
-      "value": 17.68616952293609,
-      "score": 60.0,
+      "value": 17.4520770729538,
+      "score": 58.0,
       "history_n": 50,
       "error": null,
       "source": "https://finance.yahoo.com/quote/NVDA/history/ (8銘柄の分割調整済み終値、出典詳細は方法論)",
-      "observed_at": "2026-09-24",
-      "published_at": "2026-09-24"
+      "observed_at": "2026-10-09",
+      "published_at": "2026-10-10"
     },
     {
       "key": "flow_4w_pct",
@@ -86,25 +86,25 @@
       "key": "downside_correlation",
       "label": "下落日の銘柄間相関",
       "axis": "脆弱性",
-      "value": 0.12714310709598828,
+      "value": 0.11093213190205119,
       "score": 0.0,
       "history_n": 50,
       "error": null,
       "source": "https://finance.yahoo.com/quote/NVDA/history/ (8銘柄の分割調整済み終値、出典詳細は方法論)",
-      "observed_at": "2026-09-24",
-      "published_at": "2026-09-24"
+      "observed_at": "2026-10-09",
+      "published_at": "2026-10-10"
     },
     {
       "key": "real_yield_pct",
       "label": "米10年実質金利",
       "axis": "脆弱性",
-      "value": 2.85,
+      "value": 2.87,
       "score": null,
       "history_n": 0,
       "error": "有効な月次履歴が36件未満",
-      "source": "https://fred.stlouisfed.org/data/DFII10 (2026-09-25 15:16 CDT更新; https://www.federalreserve.gov/releases/h15/ 2026-09-25公表でも照合)",
-      "observed_at": "2026-09-24",
-      "published_at": "2026-09-25"
+      "source": "https://fred.stlouisfed.org/series/DFII10 (2026-10-09 15:16 CDT＝2026-10-10 05:16 JST更新; https://www.federalreserve.gov/releases/h15/ 2026-10-09公表でも照合)",
+      "observed_at": "2026-10-08",
+      "published_at": "2026-10-10"
     },
     {
       "key": "eps_downgrade_breadth_pct",
@@ -135,19 +135,21 @@
       "label": "200日線下の銘柄比率",
       "axis": "悪化兆候",
       "value": 25.0,
-      "score": 58.0,
+      "score": 59.0,
       "history_n": 50,
       "error": null,
       "source": "https://finance.yahoo.com/quote/NVDA/history/ (8銘柄の分割調整済み終値、出典詳細は方法論)",
-      "observed_at": "2026-09-24",
-      "published_at": "2026-09-24"
+      "observed_at": "2026-10-09",
+      "published_at": "2026-10-10"
     }
   ],
   "interpretation": "過去60か月に対する相対スコア。暴落確率・売買シグナルではない。",
-  "checked_on": "2026-09-26",
+  "checked_on": "2026-10-11",
   "price_collection": {
     "status": "success",
-    "observed_at": "2026-09-24"
+    "observed_at": "2026-10-09",
+    "published_at": "2026-10-10",
+    "cutoff_timezone": "Asia/Tokyo"
   },
   "observed_count": 4,
   "next_update_note": "毎週土曜の午前に確認・更新（日本時間）",
@@ -197,6 +199,26 @@
     },
     {
       "as_of": "2026-09-26",
+      "airi": null,
+      "axes": {
+        "過熱度": {
+          "coverage": 0.3333333333333333,
+          "score": null
+        },
+        "脆弱性": {
+          "coverage": 0.25,
+          "score": null
+        },
+        "悪化兆候": {
+          "coverage": 0.3333333333333333,
+          "score": null
+        }
+      },
+      "coverage": 0.3,
+      "observed_count": 4
+    },
+    {
+      "as_of": "2026-10-11",
       "airi": null,
       "axes": {
         "過熱度": {
