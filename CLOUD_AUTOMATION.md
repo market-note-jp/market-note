@@ -1,6 +1,6 @@
 # Market Note cloud publication
 
-Market Note runs daily at 07:00 JST and weekly on Saturday at 08:00 JST in the cloud. The public destination is https://market-note-jp.github.io/market-note/. Publication does not depend on a local PC. The schedule and article-generation job are configured outside this repository; changing this document does not change that job's configuration.
+Market Note's daily editorial deadline is 07:00 JST Monday through Saturday. Sunday has no new daily report requirement; the latest due daily report is Saturday's. Japanese market holidays do not suspend this editorial cadence. The weekly deadline is Saturday at 08:00 JST. The public destination is https://market-note-jp.github.io/market-note/. Publication does not depend on a local PC. The schedule and article-generation job are configured outside this repository; changing this document does not change or prove that job's configuration.
 
 ## The publication boundary
 
@@ -32,10 +32,37 @@ Never report states 1–4 as state 5. If work is blocked, retain the completed c
 npm run lint
 GITHUB_ACTIONS=true npm run build:pages
 node --test tests/homepage-layout.test.mjs tests/site-design.test.mjs tests/market-calendar.test.mjs tests/publication-verification.test.mjs tests/prototype-design.test.mjs tests/article-titles.test.mjs tests/redesign-publication.test.mjs
+npm run test:freshness
 npm run verify:publication -- YYYY-MM-DD FULL_MAIN_COMMIT_SHA
+npm run verify:freshness
 ```
 
-The verifier performs only public GET requests to this repository and its GitHub Pages site. It does not push, merge, dispatch workflows, create tokens, or require additional credentials. It verifies deployment evidence and the rendered content; it does not replace editorial source checking. Exit code 0 and `status: published` are required for a successful result. Network errors, API rate limits, concurrent main changes, missing content, and unfinished deployments return a failure.
+`verify:publication` performs only public GET requests to this repository and its GitHub Pages site. It does not push, merge, dispatch workflows, create tokens, or require additional credentials. It verifies deployment evidence and the rendered content; it does not replace editorial source checking. Exit code 0 and `status: published` are required for a successful exact-article result. Network errors, API rate limits, concurrent main changes, missing content, and unfinished deployments return a failure.
+
+## Date-aware freshness check and authorized recovery
+
+`npm run verify:freshness` is a separate, read-only current-publication check. It captures the invocation time, computes the expected daily report date in `Asia/Tokyo`, reads that exact JSON on current main, and requires its successful exact-SHA deployment and complete visible homepage/article verification. It never chooses the newest existing JSON as a substitute for the expected date. A green deployment for October 12 cannot satisfy October 13 after 07:00 JST.
+
+- From 07:00 JST Monday–Saturday, that calendar day's report is due. Before 07:00, the previous publishing day's report is due.
+- Sunday at any time, and Monday before 07:00, require Saturday's report. A public holiday such as Monday October 12 still requires a Monday report from 07:00.
+- Successful output is `status: fresh-and-published`, with `referenceTime`, `expectedDate`, `dueAt`, current `commit`, and verified public URL. Failure exits nonzero.
+- `EXPECTED_REPORT_MISSING` means the exact due JSON is missing on an unchanged main. It identifies a content/generation gap, not a deployment failure. `EXPECTED_REPORT_INVALID` identifies a malformed or incomplete article. `PUBLICATION_UNVERIFIED` means the report is on main but deployment or live verification did not pass. `READ_FAILED` is an inconclusive network/API/access error, not evidence of missing content. `MAIN_CHANGED` requires a new-head read before retrying.
+- For deterministic diagnosis, `npm run verify:freshness -- --at 2026-10-13T07:00:00+09:00` selects the deadline using an explicit ISO instant. It still inspects the current repository and live site; it does not reconstruct what was public at that historical instant. Routine checks must omit `--at` so they use the current time.
+- The expected file must have matching identity, a nonempty body and valid explicit-zone update metadata. Its displayed date must agree with its JST timestamp and cannot predate its report date. A late recovery may retain a later actual update date; the checker must not encourage backdating it to satisfy a deadline.
+- Historical article validation remains `npm run verify:publication -- YYYY-MM-DD FULL_MAIN_COMMIT_SHA --article-only`. It intentionally does not assert present-day freshness. The existing monthly article checks retain this mode for older articles.
+
+The existing `Verify Live Market Note` workflow now runs the freshness command after a successful main-push deployment. Deterministic freshness tests run in the existing Publish workflow. Neither workflow has a clock-based schedule, and this change creates no scheduler or generator. When no push occurs, yesterday's completed green run does not turn red by itself. Existing authorized external checks must call the freshness command at their normal wake/check times to discover a missed publication. The callable check detects and classifies gaps; it does not write or publish articles.
+
+For already-authorized Market Note publication and recovery, continue from a detected gap through the missing steps instead of treating a missing file or a saved branch as the outcome:
+
+1. Preserve the failed check's expected date, reference time and exact error. For read/access errors, retry only through permitted routes; do not infer that an article is missing or bypass a denial.
+2. Re-read current main and the exact expected date path. Check known article branches for completed work. If the same-day file has appeared, inspect and verify it rather than overwriting it. Reuse a completed source-checked article when possible; if absent, prepare the complete five-topic report with verified sources and facts separated from analysis.
+3. State each market observation date and information cutoff. A late recovery uses the actual preparation/update timestamp and describes itself as a late/daytime update; never pretend it was published at 07:00 or incorporate information published after the stated cutoff.
+4. Before writing, re-read main and the date path again. Make only the intended daily JSON change and use a compare-and-swap/expected-head lease with a non-forced update. A rejected lease requires inspection and reconciliation of the new head. Never overwrite a concurrent same-day article or force-push to make the write succeed.
+5. Run the official checks, complete the authorized main write, wait for that exact commit's build and deploy, then run both exact-article verification and current freshness verification. Recheck current main before reporting completion. If the current editorial deadline changes while recovery is underway, inspect the new expected date rather than passing a stale reference time as a current check.
+6. Diagnose and repair in-scope failures and safely retry until the verified publication outcome is established. Additional credentials, broader permissions, new services or other actions outside the authorization still require the appropriate approval. Report a verified blocker truthfully, retain completed work, and resume the dependent step when it is resolved; never claim an unverified publication is complete.
+
+The October 13 incident exposed a separate blind spot from October 6: the post-deployment checker could validate the latest existing file while the next due report did not exist. This guard closes that date-selection gap when invoked. It does not establish why the external generation job failed to deliver the October 13 file, nor prove that its configuration has been repaired.
 
 ## October 6, 2026 incident
 

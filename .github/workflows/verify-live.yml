@@ -64,3 +64,8 @@ jobs:
               npm run verify:publication -- "$date" "$sha" --article-only
             fi
           done
+
+      - name: Verify the expected daily publication for the current JST deadline
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: npm run verify:freshness

@@ -14,6 +14,8 @@
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate",
     "verify:publication": "node scripts/verify-publication.mjs",
+    "verify:freshness": "node scripts/verify-freshness.mjs",
+    "test:freshness": "node --test tests/freshness-verification.test.mjs",
     "test:publication": "node --test tests/publication-verification.test.mjs",
     "test:browser": "node scripts/browser-qa.mjs"
   },

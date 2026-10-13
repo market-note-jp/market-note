@@ -12,6 +12,8 @@
 - For daily automation, prefer one completed JSON write to `main` after reading the latest main. Never publish a placeholder, empty body, incomplete sources, or a second same-day file.
 - Read `CLOUD_AUTOMATION.md` for the publication completion contract. Saving a file on an article branch is only saved work; a PR build does not deploy. Complete the authorized main write/merge and verify the exact main SHA's successful Pages build/deploy before reporting publication.
 - Run `node --test tests/publication-verification.test.mjs` with the existing checks. After deployment, run `npm run verify:publication -- YYYY-MM-DD FULL_MAIN_COMMIT_SHA`. A nonzero result, including a stale homepage or failed network read, means publication is not yet verified. Never weaken this gate or bypass an access denial.
+- For current daily completion, also run `npm run verify:freshness` and `npm run test:freshness`. The freshness check requires the exact due date at 07:00 JST Monday–Saturday, with Saturday required on Sunday and Monday before 07:00; market holidays do not skip an editorial report. Do not use the newest existing JSON or yesterday's green deployment as proof that today's due report exists. Historical `verify:publication --article-only` checks remain separate.
+- Follow the idempotent recovery procedure in `CLOUD_AUTOMATION.md` for already-authorized publication: re-read main and the same-day path, reuse concurrent completed work, source-check missing content, use actual late-update times and an expected-head non-forced write, then verify exact deployment and current freshness. The guard is read-only and adds no schedule; without an existing invocation it cannot detect a missed day or generate a report.
 
 ## Editorial titles for new daily and weekly reports
 
