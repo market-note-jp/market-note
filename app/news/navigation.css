@@ -1,0 +1,17 @@
+/* Keep the extra discovery link readable without changing the homepage layout. */
+.site-header .desktop-navigation { gap: 20px; font-size: 12px; }
+.site-footer nav { flex-wrap: wrap; }
+@media (min-width: 1081px) and (max-width: 1240px) {
+  .site-header-inner { min-height: 76px; width: calc(100% - 48px); }
+  .site-header .desktop-navigation { display: none; }
+  .mobile-navigation { display: block; }
+  .menu-toggle { display: flex; align-items: center; gap: 9px; min-height: 48px; min-width: 84px; border: 0; background: transparent; color: var(--accent); cursor: pointer; padding: 0 4px; }
+  .menu-toggle span { font-size: 9px; letter-spacing: .07em; }
+  .mobile-menu { position: fixed; inset: 76px 0 0; background: #f7f8f4; overflow-y: auto; padding: 35px 32px; }
+  .mobile-menu[hidden] { display: none; }
+  .site-header .mobile-menu nav { display: flex; flex-direction: column; gap: 0; align-items: stretch; overflow: visible; width: 100%; margin-top: 25px; }
+  .site-header .mobile-menu nav a { display: grid; grid-template-columns: 22px 1fr 22px; align-items: center; gap: 14px; min-height: 82px; padding: 18px 0; border-bottom: 1px solid var(--line); font-size: 18px; white-space: normal; }
+  .mobile-menu nav small { display: block; font-size: 8px; color: var(--muted); letter-spacing: .1em; margin-top: 8px; }
+  .menu-number { font-size: 10px; color: var(--muted); }
+  .mobile-menu-note { margin-top: 44px; font-size: 13px; color: var(--muted); }
+}

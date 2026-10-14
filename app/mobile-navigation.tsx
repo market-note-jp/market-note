@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 
 const links = [
+  ["/news", "ニュース探索", "NEWS DISCOVERY"],
   ["/#articles", "レポート", "REPORTS"],
   ["/#companies", "企業レポート", "COMPANIES"],
   ["/company-analysis", "財務分析", "KANALYZER"],
@@ -31,7 +32,7 @@ export default function MobileNavigation() {
         else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
       }
     }
-    const media = window.matchMedia("(min-width: 1081px)");
+    const media = window.matchMedia("(min-width: 1241px)");
     const resize = () => { if (media.matches) setOpen(false); };
     document.addEventListener("keydown", onKey);
     media.addEventListener("change", resize);

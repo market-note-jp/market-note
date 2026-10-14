@@ -1,0 +1,126 @@
+name: Ingest Market News
+
+on:
+  schedule:
+    # Four bounded polls daily: 02:17, 08:17, 14:17, 20:17 JST.
+    - cron: '17 5,11,17,23 * * *'
+  workflow_dispatch:
+  workflow_run:
+    workflows: [Publish Market Note]
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: read
+  actions: read
+  pages: write
+  id-token: write
+
+# Share the existing publisher's lock. A newer main push may cancel this run.
+concurrency:
+  group: pages-refs/heads/main
+  cancel-in-progress: false
+
+jobs:
+  ingest-and-build:
+    if: >-
+      github.event_name != 'workflow_run' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_branch == 'main' &&
+       (github.event.workflow_run.event == 'push' || github.event.workflow_run.event == 'workflow_dispatch'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    outputs:
+      main_sha: ${{ steps.head.outputs.sha }}
+      snapshot_hash: ${{ steps.snapshot.outputs.hash }}
+    steps:
+      - name: Check out current main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - name: Record main revision
+        id: head
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install existing dependencies
+        run: npm ci
+      - name: Lint
+        run: npm run lint
+      - name: Test ingestion and search with local fixtures
+        run: npm run test:news
+      - name: Restore prior public feed snapshot
+        run: python scripts/news-snapshot.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+      - name: Fetch only allowlisted official feeds
+        run: python scripts/ingest-news.py
+      - name: Record fetched snapshot digest
+        id: snapshot
+        run: echo "hash=$(sha256sum data/news/feed.json | cut -d ' ' -f 1)" >> "$GITHUB_OUTPUT"
+      - name: Retain bounded snapshot including failure states
+        uses: actions/upload-artifact@v4
+        with:
+          name: market-news-snapshot
+          path: data/news/feed.json
+          retention-days: 7
+          if-no-files-found: error
+      - name: Build static site with the fetched snapshot
+        run: npm run build:pages
+        env:
+          GITHUB_ACTIONS: 'true'
+      - name: Verify news export and existing publication invariants
+        run: node --test tests/homepage-layout.test.mjs tests/site-design.test.mjs tests/market-calendar.test.mjs tests/publication-verification.test.mjs tests/freshness-verification.test.mjs tests/prototype-design.test.mjs tests/article-titles.test.mjs tests/redesign-publication.test.mjs tests/all-article-titles.test.mjs tests/article-corrections.test.mjs tests/kanalyzer-client.test.mjs tests/news-export.test.mjs
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          name: news-pages-${{ github.run_attempt }}
+          path: out
+  deploy:
+    needs: ingest-and-build
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Reject a stale main build
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPECTED_SHA: ${{ needs.ingest-and-build.outputs.main_sha }}
+        run: |
+          current=$(gh api "repos/$GITHUB_REPOSITORY/branches/main" --jq .commit.sha)
+          test "$current" = "$EXPECTED_SHA"
+      - name: Deploy fetched news
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          artifact_name: news-pages-${{ github.run_attempt }}
+      - name: Verify the public news snapshot
+        env:
+          EXPECTED_HASH: ${{ needs.ingest-and-build.outputs.snapshot_hash }}
+          SITE_URL: ${{ steps.deployment.outputs.page_url }}
+        run: |
+          python - <<'PYVERIFY'
+          import json, os, time, urllib.request
+          url = os.environ['SITE_URL'].rstrip('/') + '/news-status.json?run=' + os.environ['GITHUB_RUN_ID']
+          for attempt in range(6):
+              try:
+                  with urllib.request.urlopen(url, timeout=20) as response:
+                      data = json.load(response)
+                  if data.get('snapshotHash') == os.environ['EXPECTED_HASH']:
+                      errors = [s['id'] for s in data['sources'] if s['status'] == 'error']
+                      print('Verified deployed snapshot:', data['generatedAt'], 'source errors:', errors)
+                      break
+              except Exception as error:
+                  print('Waiting for Pages visibility:', type(error).__name__)
+              time.sleep(10)
+          else:
+              raise SystemExit('Deployed news snapshot did not match the fetched snapshot')
+          PYVERIFY

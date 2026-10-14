@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useMemo, useState } from "react";
+import { FormEvent, useMemo, useState, useSyncExternalStore } from "react";
 import { CalendarDays, Check, Search } from "lucide-react";
 
 const monthOptions = ["自動推定", "すべての月", ...Array.from({ length: 12 }, (_, index) => `${index + 1}月`)];
@@ -429,6 +429,13 @@ function AnalysisDetails({ analysis }: { analysis: NonNullable<SearchResponse["a
   );
 }
 
+function subscribeCompanyQuery(callback: () => void) {
+  window.addEventListener("popstate", callback);
+  return () => window.removeEventListener("popstate", callback);
+}
+const companyQuerySnapshot = () => (new URLSearchParams(window.location.search).get("company") || "").slice(0, 200);
+const emptyCompanyQuery = () => "";
+
 export function AnalysisForm() {
   const defaultDates = useMemo(() => {
     const end = new Date();
@@ -437,7 +444,9 @@ export function AnalysisForm() {
     return { start: toDateInput(start), end: toDateInput(end) };
   }, []);
   const [edinetCode, setEdinetCode] = useState("");
-  const [companyKeyword, setCompanyKeyword] = useState("");
+  const prefilledCompany = useSyncExternalStore(subscribeCompanyQuery, companyQuerySnapshot, emptyCompanyQuery);
+  const [enteredCompany, setCompanyKeyword] = useState<string | null>(null);
+  const companyKeyword = enteredCompany ?? prefilledCompany;
   const [years, setYears] = useState("3");
   const [includeAmendments, setIncludeAmendments] = useState(false);
   const [autoAnalyze, setAutoAnalyze] = useState(true);

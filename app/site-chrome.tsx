@@ -1,6 +1,7 @@
 import Link from "next/link";
 import MobileNavigation from "./mobile-navigation";
 import { ArrowUpRight, CalendarDays } from "lucide-react";
+import "./news/navigation.css";
 
 export function SiteHeader() {
   return (
@@ -12,6 +13,7 @@ export function SiteHeader() {
           <span>MARKET NOTE<small>MARKET & CORPORATE RESEARCH</small></span>
         </Link>
         <nav className="desktop-navigation" aria-label="メインナビゲーション">
+          <Link href="/news">ニュース探索</Link>
           <Link href="/#articles">レポート</Link>
           <Link href="/#companies">企業レポート</Link>
           <Link href="/company-analysis">財務分析</Link>
@@ -31,6 +33,7 @@ export function SiteFooter() {
       <div className="site-footer-inner">
         <div><Link className="footer-brand" href="/">MARKET NOTE</Link><p>市場を読む。企業を知る。</p></div>
         <nav aria-label="フッターナビゲーション">
+          <Link href="/news">ニュース探索 <ArrowUpRight size={16} aria-hidden="true" /></Link>
           <Link href="/#articles">レポート一覧 <ArrowUpRight size={16} aria-hidden="true" /></Link>
           <Link href="/#companies">企業レポート <ArrowUpRight size={16} aria-hidden="true" /></Link>
           <Link href="/company-analysis">財務分析 <ArrowUpRight size={16} aria-hidden="true" /></Link>

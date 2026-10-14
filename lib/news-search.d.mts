@@ -1,0 +1,13 @@
+import type { Company, CompanyEvent, MediaArticle, SourceStatus } from './news-data';
+export type SearchFilters = { q: string; topic: string; source: string; type: string; from: string; to: string; sort: string; view: string; page: number };
+export const EMPTY_FILTERS: Readonly<SearchFilters>;
+export function normalizeSearch(value: unknown): string;
+export function isDate(value: string): boolean;
+export function publicationDay(article: Pick<MediaArticle, 'publishedAt' | 'datePrecision'>): string;
+export function formatNewsDate(value: string | null | undefined, precision?: string): string;
+export function readSearchFilters(search?: string): SearchFilters;
+export function writeSearchFilters(filters: Partial<SearchFilters>): string;
+export function dateFilterError(filters: Partial<SearchFilters>): string;
+export function filterNews(articles: MediaArticle[], companies?: Company[], filters?: Partial<SearchFilters>): MediaArticle[];
+export function verifiedEvents(events: CompanyEvent[], articles: MediaArticle[]): Array<CompanyEvent & { articles: MediaArticle[] }>;
+export function sourceHealth(source: SourceStatus, now?: number | null, toleranceHours?: number): {state: string; label: string};
