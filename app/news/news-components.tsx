@@ -19,7 +19,7 @@ export function NewsArticleCard({ article, companies, headingLevel = 3 }: { arti
     <Heading>{external ? <a href={article.url} target="_blank" rel="noopener noreferrer">{article.title}<ArrowUpRight size={17} aria-hidden="true" /><span className="news-sr-only">（新しいタブで原文を開く）</span></a> : <Link href={article.url}>{article.title}<ArrowUpRight size={17} aria-hidden="true" /></Link>}</Heading>
     {article.excerpt && <p className="news-excerpt">{article.excerpt}</p>}
     <CompanyPills codes={article.companyCodes} companies={companies} />
-    <div className="news-card-bottom"><span>公表：{article.publishedAt ? <time dateTime={article.publishedAt}>{formatNewsDate(article.publishedAt, article.datePrecision)}</time> : '公表日不明'}</span><span>{article.topics.slice(0, 3).join(' / ')}</span></div>
+    <div className="news-card-bottom"><span>{article.type === 'analysis' ? '公開' : '配信元記載日'}：{article.publishedAt ? <time dateTime={article.publishedAt}>{formatNewsDate(article.publishedAt, article.datePrecision)}</time> : '日付不明'}</span><span>{article.topics.slice(0, 3).join(' / ')}</span></div>
     {(article.linkNote || article.changeNotice || article.updatedAt) && <details className="news-article-notes"><summary>日時・リンクの補足</summary>{article.updatedAt && <p>配信元の更新：{formatNewsDate(article.updatedAt)}。公表日時とは区別しています。</p>}{article.changeNotice && <p>{article.changeNotice}</p>}{article.linkNote && <p>{article.linkNote}</p>}</details>}
   </article>;
 }

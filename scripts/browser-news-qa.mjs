@@ -126,7 +126,7 @@ try {
   const nextDay = new Date(Date.parse(`${knownDay}T00:00:00Z`) + 86400000).toISOString().slice(0, 10);
   await page.getByLabel('開始日', { exact: true }).fill(nextDay);
   await page.getByLabel('終了日', { exact: true }).fill(knownDay);
-  assert.match(await page.getByRole('alert').textContent(), /開始日は終了日以前/);
+  assert.match(await page.locator('.news-date-error').textContent(), /開始日は終了日以前/);
   await page.getByLabel('開始日', { exact: true }).fill(knownDay);
   assert.ok(await page.locator('.news-card-bottom time').count() > 0);
   assert.ok((await page.locator('.news-card-bottom time').allTextContents()).every(text => text.includes(knownDay.replaceAll('-', '.'))));
