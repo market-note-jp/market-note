@@ -121,7 +121,7 @@ class FeedTests(unittest.TestCase):
 
     def test_cache_eligibility(self):
         self.assertTrue(cache.eligible({'head_branch':'main','status':'completed','event':'schedule'}))
-        for change in [{'head_branch':'feature'},{'status':'in_progress'},{'event':'pull_request'}]:
+        for change in [{'head_branch':'feature'},{'status':'in_progress'},{'event':'pull_request'},{'conclusion':'skipped'},{'conclusion':'cancelled'}]:
             self.assertFalse(cache.eligible({'head_branch':'main','status':'completed','event':'schedule',**change}))
 
     def test_cache_rejects_external_url_and_fake_events(self):

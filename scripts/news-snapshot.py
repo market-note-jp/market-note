@@ -26,7 +26,7 @@ def api(path, binary=False, allow_missing=False):
 
 
 def eligible(run):
-    return run.get('head_branch') == 'main' and run.get('status') == 'completed' and run.get('event') in ('schedule', 'workflow_dispatch', 'workflow_run')
+    return run.get('head_branch') == 'main' and run.get('status') == 'completed' and run.get('conclusion') not in ('skipped', 'cancelled') and run.get('event') in ('schedule', 'workflow_dispatch', 'workflow_run')
 
 
 def validate_snapshot(data, registry):
