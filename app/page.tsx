@@ -10,6 +10,14 @@ import { withEditorialTitle } from "../lib/article-metadata";
 const legacyArticles = [
   {
     kind: "週次レポート",
+    date: "2026-10-17",
+    dateTime: "2026-10-17T08:00:00+09:00",
+    title: "AI半導体株が急落、好決算と資金調達不安のねじれ｜10月12日〜16日",
+    excerpt: "日経平均-5.37%、ダウ+0.67%、NASDAQ総合-4.48%、SOX-11.41%。AI信用不安とTSMC・ASMLの好決算、米物価と原油。",
+    href: "/articles/weekly-2026-10-12",
+  },
+  {
+    kind: "週次レポート",
     date: "2026-10-10 08:00",
     dateTime: "2026-10-10T08:00:00+09:00",
     title: "日本株は上昇、米半導体株は反落――原油・金利とAI投資｜10月5日〜9日",
