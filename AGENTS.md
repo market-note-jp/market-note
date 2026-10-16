@@ -1,5 +1,8 @@
 # Market Note updates
 
+- Apply `EVIDENCE_REVIEW.md` to material numeric comparisons in new daily/weekly/company reports. Plan the required evidence first, source-check every component and its period/unit/definition, and retrieve missing components before concluding. Omit only unresolved comparisons and dependent claims while publishing supported material.
+- Reports dated 2026-10-18 onward require `content/evidence/<slug>.json` in the same commit as the completed article. Review the whole final article, preserve source locators, and run `npm run check:evidence` plus `npm run test:evidence`. Both production build commands enforce the gate. Older archives retain their body/date/URL; opt-in reviews may cover selected comparisons.
+
 - New daily reports are content-driven. Create exactly one completed JSON file at `content/daily/daily-YYYY-MM-DD.json`. Do not add new daily reports to `app/page.tsx`.
 - The JSON filename and `slug` must match. Required top-level fields are `slug`, `kind` (`日次レポート`), `date`, `dateTime`, `title`, `headline`, `excerpt`, `description`, `label`, `displayDate`, non-empty `sections`, and a non-empty `disclaimer`. Use the latest JSON file as the structural template.
 - `lib/article-content.ts` discovers `content/daily/daily-*.json` automatically. `app/page.tsx` merges this content with the legacy registry, and `app/articles/[slug]/page.tsx` generates the individual daily page. A completed daily JSON file therefore supplies the article page, latest section, and archive without a second manual registration step.

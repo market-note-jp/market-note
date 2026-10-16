@@ -7,8 +7,8 @@
   },
   "scripts": {
     "dev": "vinext dev",
-    "build": "node scripts/build-news-index.mjs && vinext build",
-    "build:pages": "node scripts/build-news-index.mjs && next build",
+    "build": "node scripts/check-evidence.mjs && node scripts/build-news-index.mjs && vinext build",
+    "build:pages": "node scripts/check-evidence.mjs && node scripts/build-news-index.mjs && next build",
     "start": "vinext start",
     "test": "npm run build && node --test tests/rendered-html.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
@@ -20,7 +20,9 @@
     "test:browser": "node scripts/browser-qa.mjs",
     "test:news": "python -m unittest discover -s tests -p \"test_news_ingestion.py\" && node --test tests/news-search.test.mjs",
     "news:ingest": "python scripts/ingest-news.py",
-    "test:browser:news": "node scripts/browser-news-qa.mjs"
+    "test:browser:news": "node scripts/browser-news-qa.mjs",
+    "check:evidence": "node scripts/check-evidence.mjs",
+    "test:evidence": "node --test tests/evidence-review.test.mjs"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",

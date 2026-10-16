@@ -36,6 +36,9 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      - name: Verify comparison evidence and failure cases
+        run: npm run check:evidence && npm run test:evidence
+
       - name: Restore most recent permitted news snapshot
         run: python scripts/news-snapshot.py
         env:

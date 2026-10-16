@@ -28,7 +28,15 @@ Never report states 1–4 as state 5. If work is blocked, retain the completed c
 
 ## Checks
 
+New reports also follow `EVIDENCE_REVIEW.md`: collect the complete declared input
+set before making a numeric comparison, record the evidence review with the final
+article in one commit, and omit only unsupported comparisons and dependent claims.
+From report date 2026-10-18, a missing review or changed article digest fails the
+build. The existing exact-SHA deployment, freshness and live checks remain required.
+
 ```sh
+npm run check:evidence
+npm run test:evidence
 npm run lint
 GITHUB_ACTIONS=true npm run build:pages
 node --test tests/homepage-layout.test.mjs tests/site-design.test.mjs tests/market-calendar.test.mjs tests/publication-verification.test.mjs tests/prototype-design.test.mjs tests/article-titles.test.mjs tests/redesign-publication.test.mjs
