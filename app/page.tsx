@@ -9,6 +9,51 @@ import { withEditorialTitle } from "../lib/article-metadata";
 
 const legacyArticles = [
   {
+    "kind": "企業レポート",
+    "theme": "企業分析",
+    "date": "2026-10-17 21:56",
+    "dateTime": "2026-10-17T12:56:44.158Z",
+    "title": "任天堂の稼ぐ力を読む：ゲーム機の販売台数より、その後に何を買ってもらえるか",
+    "excerpt": "10年の業績と現金化を起点に、世代交代期の利益構造、関税還付、ソフト集計の注意点、資本配分と現在の株価を読み解く。",
+    "href": "/articles/corporate-nintendo-2026-10-17"
+  },
+  {
+    "kind": "企業レポート",
+    "theme": "企業分析",
+    "date": "2026-10-17 21:56",
+    "dateTime": "2026-10-17T12:56:44.158Z",
+    "title": "MonotaRO：調達の手間を利益に変える会社、その成長を現金で確かめる",
+    "excerpt": "間接資材の購買を効率化するMonotaROを、10年の業績、利益から現金への転換、大企業向けの利用浸透、物流投資の回収という観点で分析する。",
+    "href": "/articles/corporate-monotaro-2026-10-17"
+  },
+  {
+    "kind": "企業レポート",
+    "theme": "企業分析",
+    "date": "2026-10-17 21:56",
+    "dateTime": "2026-10-17T12:56:44.158Z",
+    "title": "Costco：会費だけでは説明できない、薄利と現金創出の強さ",
+    "excerpt": "低価格、会員継続、在庫回転が支え合う小売モデルを、10年の財務と最新開示から検証する。成長の持続性は高く評価できる一方、会費の増加、ガソリン価格、仕入先条件による押上げを分けて読む必要がある。",
+    "href": "/articles/corporate-costco-2026-10-17"
+  },
+  {
+    "kind": "テーマ解説",
+    "theme": "市場テーマ",
+    "date": "2026-10-17 21:56",
+    "dateTime": "2026-10-17T12:56:44.158Z",
+    "title": "MicrosoftのAI投資はいつフリーキャッシュフローの増加につながるか",
+    "excerpt": "Azureの成長とFCF減少を同じ期間で検証し、設備投資とリースの会計分類を区別して投資回収の確認条件を考える。",
+    "href": "/articles/theme-microsoft-ai-cashflow-2026-10-17"
+  },
+  {
+    "kind": "テーマ解説",
+    "theme": "市場テーマ",
+    "date": "2026-10-17 21:56",
+    "dateTime": "2026-10-17T12:56:44.158Z",
+    "title": "JPMorganの純金利収益13%増は利ざや改善の証拠か",
+    "excerpt": "2026年7〜9月決算の純金利収益を市場部門と残高要因に分解し、前年との比較と前四半期からの利回り改善を区別する。",
+    "href": "/articles/theme-jpmorgan-nii-margin-2026-10-17"
+  },
+  {
     kind: "週次レポート",
     date: "2026-10-10 08:00",
     dateTime: "2026-10-10T08:00:00+09:00",
@@ -597,8 +642,8 @@ export default function Home() {
   const articles = [...getDailyArticleMetadata(), ...legacyArticles.map(withEditorialTitle)];
   const orderedArticles = [...articles].sort((a, b) => b.date.localeCompare(a.date));
   const latest = orderedArticles[0];
-  const recent = orderedArticles.slice(1, 4);
-  const companies = orderedArticles.filter((article) => article.kind === "企業レポート");
+  const recent = orderedArticles.slice(1, 6);
+  const companies = orderedArticles.filter((article) => article.kind === "企業レポート").slice(0, 5);
   const assetPrefix = process.env.GITHUB_ACTIONS === "true" ? "/market-note" : "";
 
   return (
