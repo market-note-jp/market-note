@@ -8,6 +8,51 @@ import { getDailyArticleMetadata } from "../lib/article-content";
 import { withEditorialTitle } from "../lib/article-metadata";
 
 const legacyArticles = [
+{
+  "kind": "企業レポート",
+  "theme": "企業分析",
+  "date": "2026-10-18 21:57",
+  "dateTime": "2026-10-18T12:57:17.380Z",
+  "title": "オリックスの最高益をどう読むか：投資回収と運用収益の実力",
+  "excerpt": "オリックスの10年間の利益とROE、最新四半期、キオクシア関連評価益、資本回収と配当を整理。運用収益を伸ばす戦略の条件とリスクを検証する。",
+  "href": "/articles/corporate-orix-2026-10-18"
+},
+{
+  "kind": "企業レポート",
+  "theme": "企業分析",
+  "date": "2026-10-18 21:57",
+  "dateTime": "2026-10-18T12:57:17.380Z",
+  "title": "シマノ：自転車の在庫調整の先に、利益率は戻るのか",
+  "excerpt": "シマノの10年の業績と2026年中間決算を基に、自転車の在庫循環、釣具の回復、為替と利益率、設備投資後の現金と還元を検証する。",
+  "href": "/articles/corporate-shimano-2026-10-18"
+},
+{
+  "kind": "企業レポート",
+  "theme": "企業分析",
+  "date": "2026-10-18 21:57",
+  "dateTime": "2026-10-18T12:57:17.380Z",
+  "title": "Waste Management：ごみを運ぶ経路と処分場が生む利益、その現金をどこに使うか",
+  "excerpt": "10年の財務と最新決算から、収集経路・処分場の競争力、Stericycle統合、設備投資後の現金、負債とRNG投資回収を検証する。",
+  "href": "/articles/corporate-waste-management-2026-10-18"
+},
+{
+  "kind": "テーマ解説",
+  "theme": "市場テーマ",
+  "date": "2026-10-18 21:57",
+  "dateTime": "2026-10-18T12:57:17.380Z",
+  "title": "TSMCは増収なのに、なぜ利益率が下がるのか――新工場と先端技術の立ち上げを読む",
+  "excerpt": "TSMCの増収と前四半期比の利益率低下を、利益額・新技術の立ち上げ・設備投資後の現金に分けて検証する。",
+  "href": "/articles/theme-tsmc-growth-margin-2026-10-18"
+},
+{
+  "kind": "テーマ解説",
+  "theme": "市場テーマ",
+  "date": "2026-10-18 21:57",
+  "dateTime": "2026-10-18T12:57:17.380Z",
+  "title": "石油需要が減っているのに、なぜ原油高が続くのか",
+  "excerpt": "IEAとEIAの最新見通しから、需要以上の供給減、在庫の置き場所、軽油不足、輸送費を分けて読む。日本への影響と高値が緩む条件を整理する。",
+  "href": "/articles/theme-oil-demand-supply-2026-10-18"
+},
   {
     "kind": "企業レポート",
     "theme": "企業分析",
@@ -643,6 +688,10 @@ export default function Home() {
   const orderedArticles = [...articles].sort((a, b) => b.date.localeCompare(a.date));
   const latest = orderedArticles[0];
   const recent = orderedArticles.slice(1, 6);
+  const latestDaily = orderedArticles.find((article) => article.kind === "日次レポート");
+  if (latestDaily && latestDaily.href !== latest.href && !recent.some((article) => article.href === latestDaily.href)) {
+    recent.push(latestDaily);
+  }
   const companies = orderedArticles.filter((article) => article.kind === "企業レポート").slice(0, 5);
   const assetPrefix = process.env.GITHUB_ACTIONS === "true" ? "/market-note" : "";
 

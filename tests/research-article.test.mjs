@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {verifyResearchArticle} from '../scripts/verify-research-article.mjs';
-const slugs=['corporate-nintendo-2026-10-17','corporate-monotaro-2026-10-17','corporate-costco-2026-10-17','theme-microsoft-ai-cashflow-2026-10-17','theme-jpmorgan-nii-margin-2026-10-17'];
+const slugs=["corporate-orix-2026-10-18","corporate-shimano-2026-10-18","corporate-waste-management-2026-10-18","theme-tsmc-growth-margin-2026-10-18","theme-oil-demand-supply-2026-10-18",'corporate-nintendo-2026-10-17','corporate-monotaro-2026-10-17','corporate-costco-2026-10-17','theme-microsoft-ai-cashflow-2026-10-17','theme-jpmorgan-nii-margin-2026-10-17'];
 for(const slug of slugs){
  const article=JSON.parse(readFileSync(`app/articles/${slug}/article.json`));
  const html=readFileSync(`out/articles/${slug}/index.html`,'utf8');

@@ -1,0 +1,488 @@
+{
+  "version": 1,
+  "articleSlug": "theme-oil-demand-supply-2026-10-18",
+  "articleSha256": "00cb35218fa9e1b42b3be35e76338f7366ca181bdf2319ed13b175d16da6e90e",
+  "checkedAt": "2026-10-18T19:16:50+09:00",
+  "informationCutoff": "2026-10-18T19:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "草稿全文の重要数値と比較をレビュー。IEA/EIA公表本文、EIA日次現物表、予測比較PDF2ページを照合し、PDFはページ画像でも列見出しと数値を確認。現行schemaのbasisはactual/company-forecast/consensus/marketに限定されるため、IEA/EIAの機関予測をmarketに格納し、各definitionと本文で機関名・予測版・対象期間を明記。market実測や会社予想・市場コンセンサスとの同一視はしない。前年比・前月比・累計在庫差は公表された差分指標を引用し、未取得の元水準を逆算値で補わない。日本への物価影響や為替感応度は仕組みの説明のみで、数値予測を作らない。articleSha256は公開用最終article.json/page.tsxの統合後にarticleDigest(files)で計算するため空欄。現在の草稿をそのまま公開したとの表明ではない。 最終統合時に受領原稿のSHA256とMarkdown完全一致を確認。本文・数値・出典は変更せず、公開日時と既存ResearchArticleルートを設定し、その全JSON/TSXを正式articleDigestで計算した。",
+  "comparisons": [
+    {
+      "id": "iea-annual-balance",
+      "question": "需要減でも供給不足になるか。需要と供給の前年比減少幅はどちらが大きいか。",
+      "definition": "IEA同一号・同一2026暦年・世界石油系列の予測を比較。年平均の水準の差と公表済み前年比変化を区別する。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "demand-level",
+          "entity": "IEA・世界石油市場",
+          "metric": "世界石油需要・年平均",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万バレル/日",
+          "basis": "market",
+          "definition": "IEAの2026年年平均需要予測。原油投入量だけの系列ではない。機関予測であり実績や市場コンセンサスではない。"
+        },
+        {
+          "id": "supply-level",
+          "entity": "IEA・世界石油市場",
+          "metric": "世界石油供給・年平均",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万バレル/日",
+          "basis": "market",
+          "definition": "IEAの2026年年平均供給予測。報告書の世界石油供給の定義。機関予測であり実績や市場コンセンサスではない。"
+        },
+        {
+          "id": "demand-yoy",
+          "entity": "IEA・世界石油市場",
+          "metric": "世界石油需要の前年比変化",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万バレル/日",
+          "basis": "market",
+          "definition": "IEAが公表した2026年年平均需要の2025年対比変化量。公表済み前年比指標を引用し前年水準は逆算しない。機関予測。"
+        },
+        {
+          "id": "supply-yoy",
+          "entity": "IEA・世界石油市場",
+          "metric": "世界石油供給の前年比変化",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万バレル/日",
+          "basis": "market",
+          "definition": "IEAが公表した2026年年平均供給の2025年対比変化量。公表済み前年比指標を引用し前年水準は逆算しない。機関予測。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "demand-level",
+          "entity": "IEA・世界石油市場",
+          "metric": "世界石油需要・年平均",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万バレル/日",
+          "basis": "market",
+          "definition": "IEAの2026年年平均需要予測。原油投入量だけの系列ではない。機関予測であり実績や市場コンセンサスではない。",
+          "value": 102.4,
+          "source": {
+            "url": "https://www.iea.org/reports/oil-market-report-october-2026",
+            "publishedOn": "2026-10-14",
+            "locator": "Fragile rebound: annual drop in global demand of 2.6 mb/d, to 102.4 mb/d",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "supply-level",
+          "entity": "IEA・世界石油市場",
+          "metric": "世界石油供給・年平均",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万バレル/日",
+          "basis": "market",
+          "definition": "IEAの2026年年平均供給予測。報告書の世界石油供給の定義。機関予測であり実績や市場コンセンサスではない。",
+          "value": 100.7,
+          "source": {
+            "url": "https://www.iea.org/reports/oil-market-report-october-2026",
+            "publishedOn": "2026-10-14",
+            "locator": "Highlights, second bullet: average annual decline of 5.8 mb/d, to 100.7 mb/d",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "demand-yoy",
+          "entity": "IEA・世界石油市場",
+          "metric": "世界石油需要の前年比変化",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万バレル/日",
+          "basis": "market",
+          "definition": "IEAが公表した2026年年平均需要の2025年対比変化量。公表済み前年比指標を引用し前年水準は逆算しない。機関予測。",
+          "value": -2.6,
+          "source": {
+            "url": "https://www.iea.org/reports/oil-market-report-october-2026",
+            "publishedOn": "2026-10-14",
+            "locator": "Highlights, first bullet; Fragile rebound, annual demand paragraph",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "supply-yoy",
+          "entity": "IEA・世界石油市場",
+          "metric": "世界石油供給の前年比変化",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万バレル/日",
+          "basis": "market",
+          "definition": "IEAが公表した2026年年平均供給の2025年対比変化量。公表済み前年比指標を引用し前年水準は逆算しない。機関予測。",
+          "value": -5.8,
+          "source": {
+            "url": "https://www.iea.org/reports/oil-market-report-october-2026",
+            "publishedOn": "2026-10-14",
+            "locator": "Highlights, second bullet",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "需要から供給を引くと、年平均では日量170万バレルの供給不足となる。",
+      "calculations": [
+        {
+          "id": "annual-demand-minus-supply",
+          "operation": "difference",
+          "inputs": [
+            "demand-level",
+            "supply-level"
+          ],
+          "definition": "IEA2026年年平均需要予測−同年平均供給予測。百万バレル/日。",
+          "precision": 1,
+          "value": 1.7
+        }
+      ]
+    },
+    {
+      "id": "iea-inventory-location",
+      "question": "全体の在庫減が小さいことは、現場で使える在庫が十分であることを意味するか。",
+      "definition": "月次の総在庫変化を陸上・洋上に分解し、2月末対9月末の累計差と区別する。basis actualは既往月のIEA推計を表し確定統計を意味しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "observed-total-sep-change",
+          "entity": "IEA・世界観測石油在庫",
+          "metric": "世界観測石油在庫の9月変化",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万バレル",
+          "basis": "actual",
+          "definition": "2026年9月の世界観測在庫増減。IEAの月次推計であり将来予測ではない。マイナスは取り崩し。"
+        },
+        {
+          "id": "land-sep-change",
+          "entity": "IEA・世界観測石油在庫",
+          "metric": "陸上石油在庫の9月変化",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万バレル",
+          "basis": "actual",
+          "definition": "2026年9月の陸上在庫増減。IEAの月次推計。世界全体の在庫と範囲を区別。"
+        },
+        {
+          "id": "water-sep-change",
+          "entity": "IEA・世界観測石油在庫",
+          "metric": "洋上石油の9月変化",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万バレル",
+          "basis": "actual",
+          "definition": "2026年9月のoil on water増減。IEAの月次推計。洋上の石油を全て遅延や陸上で即利用可能な在庫と解釈しない。"
+        },
+        {
+          "id": "observed-total-feb-sep-change",
+          "entity": "IEA・世界観測石油在庫",
+          "metric": "2月末対9月末の世界観測石油在庫変化",
+          "periodStart": "2026-02-28",
+          "periodEnd": "2026-09-30",
+          "unit": "百万バレル",
+          "basis": "actual",
+          "definition": "2026年2月末と同年9月末の観測在庫差。IEAが公表した累計変化量。月次増減や日量とは異なる。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "observed-total-sep-change",
+          "entity": "IEA・世界観測石油在庫",
+          "metric": "世界観測石油在庫の9月変化",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万バレル",
+          "basis": "actual",
+          "definition": "2026年9月の世界観測在庫増減。IEAの月次推計であり将来予測ではない。マイナスは取り崩し。",
+          "value": -10,
+          "source": {
+            "url": "https://www.iea.org/reports/oil-market-report-october-2026",
+            "publishedOn": "2026-10-14",
+            "locator": "Highlights, fifth bullet; Fragile rebound, final paragraph",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "land-sep-change",
+          "entity": "IEA・世界観測石油在庫",
+          "metric": "陸上石油在庫の9月変化",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万バレル",
+          "basis": "actual",
+          "definition": "2026年9月の陸上在庫増減。IEAの月次推計。世界全体の在庫と範囲を区別。",
+          "value": -113,
+          "source": {
+            "url": "https://www.iea.org/reports/oil-market-report-october-2026",
+            "publishedOn": "2026-10-14",
+            "locator": "Fragile rebound: further 113 mb decline in on-land inventories",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "water-sep-change",
+          "entity": "IEA・世界観測石油在庫",
+          "metric": "洋上石油の9月変化",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万バレル",
+          "basis": "actual",
+          "definition": "2026年9月のoil on water増減。IEAの月次推計。洋上の石油を全て遅延や陸上で即利用可能な在庫と解釈しない。",
+          "value": 103,
+          "source": {
+            "url": "https://www.iea.org/reports/oil-market-report-october-2026",
+            "publishedOn": "2026-10-14",
+            "locator": "Fragile rebound: 103 mb surge in oil on water",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "observed-total-feb-sep-change",
+          "entity": "IEA・世界観測石油在庫",
+          "metric": "2月末対9月末の世界観測石油在庫変化",
+          "periodStart": "2026-02-28",
+          "periodEnd": "2026-09-30",
+          "unit": "百万バレル",
+          "basis": "actual",
+          "definition": "2026年2月末と同年9月末の観測在庫差。IEAが公表した累計変化量。月次増減や日量とは異なる。",
+          "value": -509,
+          "source": {
+            "url": "https://www.iea.org/reports/oil-market-report-october-2026",
+            "publishedOn": "2026-10-14",
+            "locator": "Highlights, fifth bullet: Global stocks were 509 mb lower than at end-February; Fragile rebound, final paragraph",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "IEAによると、9月の世界観測在庫は1,000万バレル減った。内訳は、陸上在庫が1億1,300万バレル減り、洋上の石油が1億300万バレル増えたというものだ。9月末の世界観測在庫は、2月末より5億900万バレル少ない。",
+      "calculations": [
+        {
+          "id": "land-plus-water-change",
+          "operation": "sum",
+          "inputs": [
+            "land-sep-change",
+            "water-sep-change"
+          ],
+          "definition": "9月陸上在庫増減＋9月洋上石油増減。百万バレル。公表された世界全体の減少と一致することを確認。",
+          "precision": 0,
+          "value": -10
+        }
+      ]
+    },
+    {
+      "id": "eia-spot-observation",
+      "question": "本稿で引用する原油価格は何の、いつの観測値か。",
+      "definition": "価格種別・単位・観測日・公表日を固定。最新金曜の先物終値やIEAの別指標・別時点と接続しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "brent-20261014",
+          "entity": "EIA・Europe Brent Spot Price FOB",
+          "metric": "Brent現物の日次価格",
+          "periodStart": "2026-10-14",
+          "periodEnd": "2026-10-14",
+          "unit": "米ドル/バレル",
+          "basis": "market",
+          "definition": "EIA公表のEurope Brent Spot Price FOB。10月15日更新の日次表で取得できる最終観測日。取引所先物の終値ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "brent-20261014",
+          "entity": "EIA・Europe Brent Spot Price FOB",
+          "metric": "Brent現物の日次価格",
+          "periodStart": "2026-10-14",
+          "periodEnd": "2026-10-14",
+          "unit": "米ドル/バレル",
+          "basis": "market",
+          "definition": "EIA公表のEurope Brent Spot Price FOB。10月15日更新の日次表で取得できる最終観測日。取引所先物の終値ではない。",
+          "value": 126.55,
+          "source": {
+            "url": "https://www.eia.gov/dnav/pet/hist/RBRTED.htm",
+            "publishedOn": "2026-10-15",
+            "locator": "Europe Brent Spot Price FOB; Week Of 2026 Oct-12 to Oct-16; Wed column (Oct 14); footer Release Date 10/15/2026",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "米エネルギー情報局（EIA）の10月15日公表の日次表で確認できる最新値は、10月14日の欧州Brent現物価格、1バレル126.55ドルだ。",
+      "calculations": []
+    },
+    {
+      "id": "eia-forecast-revision",
+      "question": "EIAの予測はどれだけ修正され、どの対象期間の正常化を想定しているか。",
+      "definition": "同一対象四半期について予測版の変更を比較する。翌2027年の年平均は別期間として明示し、観測価格とは区別。概数105・14・84は表の数値を整数に四捨五入。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "q4-current",
+          "entity": "EIA・STEO",
+          "metric": "Brent現物平均価格予測",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/バレル",
+          "basis": "market",
+          "definition": "EIA2026年10月6日版における2026年第4四半期のBrent現物平均価格予測。10月1日までの入力情報に基づく機関予測。"
+        },
+        {
+          "id": "q4-previous",
+          "entity": "EIA・STEO",
+          "metric": "Brent現物平均価格予測",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/バレル",
+          "basis": "market",
+          "definition": "EIA2026年9月9日版における2026年第4四半期のBrent現物平均価格予測を、10月6日比較表のPrevious行から取得。実績ではない。"
+        },
+        {
+          "id": "year2027-current",
+          "entity": "EIA・STEO",
+          "metric": "Brent現物平均価格予測",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "米ドル/バレル",
+          "basis": "market",
+          "definition": "EIA2026年10月6日版の2027年暦年平均Brent現物価格予測。2026年第4四半期の値とは対象期間が異なる。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "q4-current",
+          "entity": "EIA・STEO",
+          "metric": "Brent現物平均価格予測",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/バレル",
+          "basis": "market",
+          "definition": "EIA2026年10月6日版における2026年第4四半期のBrent現物平均価格予測。10月1日までの入力情報に基づく機関予測。",
+          "value": 104.69,
+          "source": {
+            "url": "https://www.eia.gov/outlooks/steo/pdf/compare.pdf",
+            "publishedOn": "2026-10-06",
+            "locator": "STEO Current/Previous Forecast Comparisons: Energy Prices; Brent spot average; Current; 2026 Q4",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "q4-previous",
+          "entity": "EIA・STEO",
+          "metric": "Brent現物平均価格予測",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/バレル",
+          "basis": "market",
+          "definition": "EIA2026年9月9日版における2026年第4四半期のBrent現物平均価格予測を、10月6日比較表のPrevious行から取得。実績ではない。",
+          "value": 90.66,
+          "source": {
+            "url": "https://www.eia.gov/outlooks/steo/pdf/compare.pdf",
+            "publishedOn": "2026-10-06",
+            "locator": "STEO Current/Previous Forecast Comparisons: Energy Prices; Brent spot average; Previous; 2026 Q4",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "year2027-current",
+          "entity": "EIA・STEO",
+          "metric": "Brent現物平均価格予測",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "米ドル/バレル",
+          "basis": "market",
+          "definition": "EIA2026年10月6日版の2027年暦年平均Brent現物価格予測。2026年第4四半期の値とは対象期間が異なる。",
+          "value": 83.74,
+          "source": {
+            "url": "https://www.eia.gov/outlooks/steo/pdf/compare.pdf",
+            "publishedOn": "2026-10-06",
+            "locator": "STEO Current/Previous Forecast Comparisons: Energy Prices; Brent spot average; Current; Year 2027",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "claim": "EIAの10月6日版は、Brent現物の2026年10〜12月平均を約105ドルと予測した。前月版から約14ドルの上方修正である。比較表では104.69ドルと90.66ドルで、差は14.03ドルとなる。一方、2027年の年平均予測は83.74ドル、概数で84ドルだ。",
+      "calculations": [
+        {
+          "id": "q4-forecast-upward-revision",
+          "operation": "difference",
+          "inputs": [
+            "q4-current",
+            "q4-previous"
+          ],
+          "definition": "同一2026年第4四半期の10月版予測−9月版予測。米ドル/バレル。",
+          "precision": 2,
+          "value": 14.03
+        }
+      ]
+    },
+    {
+      "id": "iea-supply-recovery",
+      "question": "供給が悪化する一方という見方への反対材料はあるか。",
+      "definition": "既往9月の供給推計と公表済み前月比変化を引用。basis actualは公表時点の推計であり確定値や将来予測ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "supply-sep-level",
+          "entity": "IEA・世界石油市場",
+          "metric": "世界石油供給9月平均",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万バレル/日",
+          "basis": "actual",
+          "definition": "IEAによる2026年9月の世界石油供給推計。年平均予測ではない。"
+        },
+        {
+          "id": "supply-sep-mom",
+          "entity": "IEA・世界石油市場",
+          "metric": "世界石油供給の9月前月比変化",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万バレル/日",
+          "basis": "actual",
+          "definition": "IEAが公表した2026年9月の8月対比供給増加量。前年同月比ではない。前年値・前月値を独立した観測値として逆算しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "supply-sep-level",
+          "entity": "IEA・世界石油市場",
+          "metric": "世界石油供給9月平均",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万バレル/日",
+          "basis": "actual",
+          "definition": "IEAによる2026年9月の世界石油供給推計。年平均予測ではない。",
+          "value": 102.3,
+          "source": {
+            "url": "https://www.iea.org/reports/oil-market-report-october-2026",
+            "publishedOn": "2026-10-14",
+            "locator": "Highlights, second bullet: increased by 2.5 mb/d m-o-m to 102.3 mb/d in September",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "supply-sep-mom",
+          "entity": "IEA・世界石油市場",
+          "metric": "世界石油供給の9月前月比変化",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万バレル/日",
+          "basis": "actual",
+          "definition": "IEAが公表した2026年9月の8月対比供給増加量。前年同月比ではない。前年値・前月値を独立した観測値として逆算しない。",
+          "value": 2.5,
+          "source": {
+            "url": "https://www.iea.org/reports/oil-market-report-october-2026",
+            "publishedOn": "2026-10-14",
+            "locator": "Highlights, second bullet: increased by 2.5 mb/d m-o-m to 102.3 mb/d in September",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "IEAは、9月の世界供給が前月から日量250万バレル増え、日量1億230万バレルになったと推計している。",
+      "calculations": []
+    }
+  ]
+}

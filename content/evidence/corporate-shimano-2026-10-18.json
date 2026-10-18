@@ -1,0 +1,5061 @@
+{
+  "version": 1,
+  "articleSlug": "corporate-shimano-2026-10-18",
+  "articleSha256": "eb5767b9a5e53b691cc4c8db6a041a4a470519937fe64548b46948ac332e4472",
+  "checkedAt": "2026-10-18T19:19:24+09:00",
+  "informationCutoff": "2026-10-18T19:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "本文全体・10年実績表・半期セグメント表・CF表・すべての重要な数値比較を原本でレビュー。会社IRが配信するxj-storage原本PDFを使用。PDF頁は1始まり。2026上期概要の画像表および補足資料の為替表は画像で確認。短信は切捨て、補足資料は丸め差あり。実績表は短信、為替分解と下期計画は補足資料。articleSha256は最終TSX/article.json統合前のため未算出。公開工程で最終ソースを再レビュー後、公式articleDigest(files)で設定する必要がある。 最終統合時に受領原稿のSHA256とMarkdown完全一致を確認。本文・数値・出典は変更せず、公開日時と既存ResearchArticleルートを設定し、その全JSON/TSXを正式articleDigestで計算した。",
+  "comparisons": [
+    {
+      "id": "ten-year-history",
+      "question": "10年間の売上・利益・営業CFはどう変化したか。コロナ前とピークからの回復は同じか。",
+      "definition": "2016〜2025年の各1〜12月の連結JGAAP実績。表は百万円を100で割り億円で表示。純利益の定義は親会社株主帰属利益。全40入力と営業利益率、2019/2022比較を確認。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2016-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2016-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2016-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する当期純利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2016-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2017-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2017-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2017-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する当期純利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2017-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2018-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2018-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2018-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する当期純利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2018-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2019-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2019-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2019-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する当期純利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2019-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2020-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2020-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2020-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する当期純利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2020-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2021-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2021-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2021-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する当期純利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2021-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2022-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2022-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2022-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する当期純利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2022-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2023-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2023-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2023-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する当期純利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2023-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2024-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2024-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2024-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する当期純利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2024-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2025-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2025-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2025-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する当期純利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2025-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2016-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 322998,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/b66edf22/609d/41de/adbe/f808c9ea30e0/140120170214499365.pdf",
+            "publishedOn": "2017-02-14",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2016-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 64546,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/b66edf22/609d/41de/adbe/f808c9ea30e0/140120170214499365.pdf",
+            "publishedOn": "2017-02-14",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2016-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する当期純利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 50964,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/b66edf22/609d/41de/adbe/f808c9ea30e0/140120170214499365.pdf",
+            "publishedOn": "2017-02-14",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2016-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。",
+          "value": 64034,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/b66edf22/609d/41de/adbe/f808c9ea30e0/140120170214499365.pdf",
+            "publishedOn": "2017-02-14",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2017-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 335800,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/17d592c3/b01c/4396/8acb/b9b385d3d243/140120180209469147.pdf",
+            "publishedOn": "2018-02-13",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2017-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 64351,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/17d592c3/b01c/4396/8acb/b9b385d3d243/140120180209469147.pdf",
+            "publishedOn": "2018-02-13",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2017-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する当期純利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 38443,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/17d592c3/b01c/4396/8acb/b9b385d3d243/140120180209469147.pdf",
+            "publishedOn": "2018-02-13",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2017-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。",
+          "value": 69265,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/17d592c3/b01c/4396/8acb/b9b385d3d243/140120180209469147.pdf",
+            "publishedOn": "2018-02-13",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2018-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 348035,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/40ad25b1/80f7/4bc3/a770/d389da1b02fa/140120190208473964.pdf",
+            "publishedOn": "2019-02-12",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2018-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 65687,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/40ad25b1/80f7/4bc3/a770/d389da1b02fa/140120190208473964.pdf",
+            "publishedOn": "2019-02-12",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2018-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する当期純利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 53931,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/40ad25b1/80f7/4bc3/a770/d389da1b02fa/140120190208473964.pdf",
+            "publishedOn": "2019-02-12",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2018-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。",
+          "value": 49593,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/40ad25b1/80f7/4bc3/a770/d389da1b02fa/140120190208473964.pdf",
+            "publishedOn": "2019-02-12",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2019-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 363230,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/7e8475a5/f171/41ce/b1bd/6c265e701710/140120200210460792.pdf",
+            "publishedOn": "2020-02-12",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2019-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 68010,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/7e8475a5/f171/41ce/b1bd/6c265e701710/140120200210460792.pdf",
+            "publishedOn": "2020-02-12",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2019-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する当期純利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 51833,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/7e8475a5/f171/41ce/b1bd/6c265e701710/140120200210460792.pdf",
+            "publishedOn": "2020-02-12",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2019-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。",
+          "value": 67897,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/7e8475a5/f171/41ce/b1bd/6c265e701710/140120200210460792.pdf",
+            "publishedOn": "2020-02-12",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2020-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 378040,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/fe9bc5a2/ba10/41dd/b5e3/58b92de9f0c7/140120210208458062.pdf",
+            "publishedOn": "2021-02-09",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2020-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 82701,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/fe9bc5a2/ba10/41dd/b5e3/58b92de9f0c7/140120210208458062.pdf",
+            "publishedOn": "2021-02-09",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2020-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する当期純利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 63472,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/fe9bc5a2/ba10/41dd/b5e3/58b92de9f0c7/140120210208458062.pdf",
+            "publishedOn": "2021-02-09",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2020-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。",
+          "value": 91050,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/fe9bc5a2/ba10/41dd/b5e3/58b92de9f0c7/140120210208458062.pdf",
+            "publishedOn": "2021-02-09",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2021-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 546515,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/0d558226/2d0b/414d/a2af/96301ef5d159/140120220203579636.pdf",
+            "publishedOn": "2022-02-08",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2021-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 148287,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/0d558226/2d0b/414d/a2af/96301ef5d159/140120220203579636.pdf",
+            "publishedOn": "2022-02-08",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2021-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する当期純利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 115937,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/0d558226/2d0b/414d/a2af/96301ef5d159/140120220203579636.pdf",
+            "publishedOn": "2022-02-08",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2021-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。",
+          "value": 112439,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/0d558226/2d0b/414d/a2af/96301ef5d159/140120220203579636.pdf",
+            "publishedOn": "2022-02-08",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2022-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 628909,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/0f785449/7b8f/4c92/8816/8541a4457e34/140120230208503464.pdf",
+            "publishedOn": "2023-02-14",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2022-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 169158,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/0f785449/7b8f/4c92/8816/8541a4457e34/140120230208503464.pdf",
+            "publishedOn": "2023-02-14",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2022-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する当期純利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 128178,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/0f785449/7b8f/4c92/8816/8541a4457e34/140120230208503464.pdf",
+            "publishedOn": "2023-02-14",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2022-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。",
+          "value": 110684,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/0f785449/7b8f/4c92/8816/8541a4457e34/140120230208503464.pdf",
+            "publishedOn": "2023-02-14",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2023-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 474362,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/b774841f/ed66/4b3c/a19d/5d7c4a814797/140120240207528651.pdf",
+            "publishedOn": "2024-02-13",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2023-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 83653,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/b774841f/ed66/4b3c/a19d/5d7c4a814797/140120240207528651.pdf",
+            "publishedOn": "2024-02-13",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2023-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する当期純利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 61142,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/b774841f/ed66/4b3c/a19d/5d7c4a814797/140120240207528651.pdf",
+            "publishedOn": "2024-02-13",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2023-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。",
+          "value": 114567,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/b774841f/ed66/4b3c/a19d/5d7c4a814797/140120240207528651.pdf",
+            "publishedOn": "2024-02-13",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2024-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 450993,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/ff3c60a3/75cd/4dfd/b6b1/61e499990411/140120250207567232.pdf",
+            "publishedOn": "2025-02-12",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2024-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 65085,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/ff3c60a3/75cd/4dfd/b6b1/61e499990411/140120250207567232.pdf",
+            "publishedOn": "2025-02-12",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2024-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する当期純利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 76329,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/ff3c60a3/75cd/4dfd/b6b1/61e499990411/140120250207567232.pdf",
+            "publishedOn": "2025-02-12",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2024-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。",
+          "value": 87032,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/ff3c60a3/75cd/4dfd/b6b1/61e499990411/140120250207567232.pdf",
+            "publishedOn": "2025-02-12",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 466243,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 51677,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する当期純利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 33991,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。",
+          "value": 63780,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "表紙：連結経営成績／連結キャッシュ・フローの状況・当年実績行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "2025年の売上高は2019年を28.4%上回る一方、営業利益は24.0%下回る。営業利益率は18.7%から11.1%へ下がった。",
+      "calculations": [
+        {
+          "id": "2016-op-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "2016-op",
+            "2016-sales"
+          ],
+          "definition": "営業利益÷売上高×100。各年通期実績。",
+          "precision": 1,
+          "value": 20
+        },
+        {
+          "id": "2017-op-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "2017-op",
+            "2017-sales"
+          ],
+          "definition": "営業利益÷売上高×100。各年通期実績。",
+          "precision": 1,
+          "value": 19.2
+        },
+        {
+          "id": "2018-op-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "2018-op",
+            "2018-sales"
+          ],
+          "definition": "営業利益÷売上高×100。各年通期実績。",
+          "precision": 1,
+          "value": 18.9
+        },
+        {
+          "id": "2019-op-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "2019-op",
+            "2019-sales"
+          ],
+          "definition": "営業利益÷売上高×100。各年通期実績。",
+          "precision": 1,
+          "value": 18.7
+        },
+        {
+          "id": "2020-op-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "2020-op",
+            "2020-sales"
+          ],
+          "definition": "営業利益÷売上高×100。各年通期実績。",
+          "precision": 1,
+          "value": 21.9
+        },
+        {
+          "id": "2021-op-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "2021-op",
+            "2021-sales"
+          ],
+          "definition": "営業利益÷売上高×100。各年通期実績。",
+          "precision": 1,
+          "value": 27.1
+        },
+        {
+          "id": "2022-op-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "2022-op",
+            "2022-sales"
+          ],
+          "definition": "営業利益÷売上高×100。各年通期実績。",
+          "precision": 1,
+          "value": 26.9
+        },
+        {
+          "id": "2023-op-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "2023-op",
+            "2023-sales"
+          ],
+          "definition": "営業利益÷売上高×100。各年通期実績。",
+          "precision": 1,
+          "value": 17.6
+        },
+        {
+          "id": "2024-op-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "2024-op",
+            "2024-sales"
+          ],
+          "definition": "営業利益÷売上高×100。各年通期実績。",
+          "precision": 1,
+          "value": 14.4
+        },
+        {
+          "id": "2025-op-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "2025-op",
+            "2025-sales"
+          ],
+          "definition": "営業利益÷売上高×100。各年通期実績。",
+          "precision": 1,
+          "value": 11.1
+        },
+        {
+          "id": "2025-vs-2019-sales",
+          "operation": "growth-percent",
+          "inputs": [
+            "2025-sales",
+            "2019-sales"
+          ],
+          "definition": "同一連結指標の通期実績比較。名目値であり為替・物価・連結範囲調整はしない。",
+          "precision": 1,
+          "value": 28.4
+        },
+        {
+          "id": "2025-vs-2019-op",
+          "operation": "growth-percent",
+          "inputs": [
+            "2025-op",
+            "2019-op"
+          ],
+          "definition": "同一連結指標の通期実績比較。名目値であり為替・物価・連結範囲調整はしない。",
+          "precision": 1,
+          "value": -24
+        },
+        {
+          "id": "2025-vs-2022-sales",
+          "operation": "growth-percent",
+          "inputs": [
+            "2025-sales",
+            "2022-sales"
+          ],
+          "definition": "同一連結指標の通期実績比較。名目値であり為替・物価・連結範囲調整はしない。",
+          "precision": 1,
+          "value": -25.9
+        },
+        {
+          "id": "2025-vs-2022-op",
+          "operation": "growth-percent",
+          "inputs": [
+            "2025-op",
+            "2022-op"
+          ],
+          "definition": "同一連結指標の通期実績比較。名目値であり為替・物価・連結範囲調整はしない。",
+          "precision": 1,
+          "value": -69.5
+        }
+      ]
+    },
+    {
+      "id": "business-mix-2025",
+      "question": "どの事業が売上と利益の中心か。",
+      "definition": "2025通期の連結セグメント実績。セグメント利益は営業利益と一致。その他事業を構成比の表記から省略しているため二事業の割合合計は100%でない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "bike-sales",
+          "entity": "シマノ・自転車部品セグメント",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・自転車部品セグメントの売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "fish-sales",
+          "entity": "シマノ・釣具セグメント",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・釣具セグメントの売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "bike-op",
+          "entity": "シマノ・自転車部品セグメント",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・自転車部品セグメントの営業利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "fish-op",
+          "entity": "シマノ・釣具セグメント",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・釣具セグメントの営業利益。金額は百万円。期間合計と残高を区別する。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 466243,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "売上高",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "bike-sales",
+          "entity": "シマノ・自転車部品セグメント",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・自転車部品セグメントの売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 354972,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "売上高",
+            "pdfPage": 17,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fish-sales",
+          "entity": "シマノ・釣具セグメント",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・釣具セグメントの売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 110832,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "売上高",
+            "pdfPage": 17,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "bike-op",
+          "entity": "シマノ・自転車部品セグメント",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・自転車部品セグメントの営業利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 42841,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "営業利益",
+            "pdfPage": 17,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fish-op",
+          "entity": "シマノ・釣具セグメント",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・釣具セグメントの営業利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 8865,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "営業利益",
+            "pdfPage": 17,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "2025年の自転車部品売上は3,549.72億円、釣具は1,108.32億円。連結売上に占める割合はそれぞれ76.1%、23.8%で、自転車部品が中心だ。同年の営業利益率は自転車部品12.1%、釣具8.0%。",
+      "calculations": [
+        {
+          "id": "bike-share",
+          "operation": "ratio-percent",
+          "inputs": [
+            "bike-sales",
+            "sales"
+          ],
+          "definition": "事業売上高÷連結売上高。",
+          "precision": 1,
+          "value": 76.1
+        },
+        {
+          "id": "fish-share",
+          "operation": "ratio-percent",
+          "inputs": [
+            "fish-sales",
+            "sales"
+          ],
+          "definition": "事業売上高÷連結売上高。",
+          "precision": 1,
+          "value": 23.8
+        },
+        {
+          "id": "bike-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "bike-op",
+            "bike-sales"
+          ],
+          "definition": "事業営業利益÷同売上高。",
+          "precision": 1,
+          "value": 12.1
+        },
+        {
+          "id": "fish-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "fish-op",
+            "fish-sales"
+          ],
+          "definition": "事業営業利益÷同売上高。",
+          "precision": 1,
+          "value": 8
+        }
+      ]
+    },
+    {
+      "id": "h1-consolidated",
+      "question": "上期の増収・営業減益・純利益急増は同じ現象か。",
+      "definition": "2025/2026年の1〜6月実績を比較。純利益の増減率は会社開示値を引用。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2025-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2025-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2025-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する中間純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する中間純利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2026-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2026-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2026-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する中間純利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する中間純利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "net-published-growth",
+          "entity": "シマノ（連結）",
+          "metric": "純利益前年同期比（会社開示率）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "百万円未満切捨て前の元金額に基づく会社開示増減率。掲載金額から再計算すると丸め差があるため開示率をそのまま使用。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2025-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 237409,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "連結経営成績（累計）・該当年度行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 28123,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "連結経営成績（累計）・該当年度行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する中間純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する中間純利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 3961,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "連結経営成績（累計）・該当年度行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2026-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 247059,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "連結経営成績（累計）・該当年度行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2026-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 27249,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "連結経営成績（累計）・該当年度行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2026-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する中間純利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の親会社株主に帰属する中間純利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 27950,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "連結経営成績（累計）・該当年度行",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net-published-growth",
+          "entity": "シマノ（連結）",
+          "metric": "純利益前年同期比（会社開示率）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "百万円未満切捨て前の元金額に基づく会社開示増減率。掲載金額から再計算すると丸め差があるため開示率をそのまま使用。",
+          "value": 605.5,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "純利益前年同期比（会社開示率）",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "最新の公表決算は2026年1〜6月の中間期である。売上高は2,470.59億円、営業利益272.49億円、純利益279.50億円。前年同期比は売上4.1%増、営業利益3.1%減、純利益605.5%増だった。営業利益率は11.8%から11.0%へ低下している。",
+      "calculations": [
+        {
+          "id": "2025-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "2025-op",
+            "2025-sales"
+          ],
+          "definition": "同じ1〜6月の営業利益÷売上高。",
+          "precision": 1,
+          "value": 11.8
+        },
+        {
+          "id": "2026-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "2026-op",
+            "2026-sales"
+          ],
+          "definition": "同じ1〜6月の営業利益÷売上高。",
+          "precision": 1,
+          "value": 11
+        },
+        {
+          "id": "sales-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "2026-sales",
+            "2025-sales"
+          ],
+          "definition": "中間期同士の実績比較。",
+          "precision": 1,
+          "value": 4.1
+        },
+        {
+          "id": "op-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "2026-op",
+            "2025-op"
+          ],
+          "definition": "中間期同士の実績比較。",
+          "precision": 1,
+          "value": -3.1
+        }
+      ]
+    },
+    {
+      "id": "h1-segments",
+      "question": "自転車と釣具の上期利益率と成長率はどう違うか。",
+      "definition": "上期事業表全8金額と利益率・増減率を収録。短信の切捨て値を優先。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2025-bike-sales",
+          "entity": "シマノ・自転車部品セグメント",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・自転車部品セグメントの売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2025-bike-op",
+          "entity": "シマノ・自転車部品セグメント",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・自転車部品セグメントの営業利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2025-fish-sales",
+          "entity": "シマノ・釣具セグメント",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・釣具セグメントの売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2025-fish-op",
+          "entity": "シマノ・釣具セグメント",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・釣具セグメントの営業利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2026-bike-sales",
+          "entity": "シマノ・自転車部品セグメント",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・自転車部品セグメントの売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2026-bike-op",
+          "entity": "シマノ・自転車部品セグメント",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・自転車部品セグメントの営業利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2026-fish-sales",
+          "entity": "シマノ・釣具セグメント",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・釣具セグメントの売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "2026-fish-op",
+          "entity": "シマノ・釣具セグメント",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・釣具セグメントの営業利益。金額は百万円。期間合計と残高を区別する。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2025-bike-sales",
+          "entity": "シマノ・自転車部品セグメント",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・自転車部品セグメントの売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 181424,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "セグメント情報・該当年度の外部顧客への売上高／セグメント利益",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025-bike-op",
+          "entity": "シマノ・自転車部品セグメント",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・自転車部品セグメントの営業利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 23631,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "セグメント情報・該当年度の外部顧客への売上高／セグメント利益",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025-fish-sales",
+          "entity": "シマノ・釣具セグメント",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・釣具セグメントの売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 55751,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "セグメント情報・該当年度の外部顧客への売上高／セグメント利益",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025-fish-op",
+          "entity": "シマノ・釣具セグメント",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・釣具セグメントの営業利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 4493,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "セグメント情報・該当年度の外部顧客への売上高／セグメント利益",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2026-bike-sales",
+          "entity": "シマノ・自転車部品セグメント",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・自転車部品セグメントの売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 181379,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "セグメント情報・該当年度の外部顧客への売上高／セグメント利益",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2026-bike-op",
+          "entity": "シマノ・自転車部品セグメント",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・自転車部品セグメントの営業利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 20064,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "セグメント情報・該当年度の外部顧客への売上高／セグメント利益",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2026-fish-sales",
+          "entity": "シマノ・釣具セグメント",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・釣具セグメントの売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 65466,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "セグメント情報・該当年度の外部顧客への売上高／セグメント利益",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2026-fish-op",
+          "entity": "シマノ・釣具セグメント",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・釣具セグメントの営業利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 7179,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "セグメント情報・該当年度の外部顧客への売上高／セグメント利益",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "自転車部品の売上は横ばいでも、営業利益は15.1%減。釣具は17.4%増収、59.8%増益となり、連結を下支えした。",
+      "calculations": [
+        {
+          "id": "2025-bike-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "2025-bike-op",
+            "2025-bike-sales"
+          ],
+          "definition": "事業の中間期営業利益÷売上高。",
+          "precision": 1,
+          "value": 13
+        },
+        {
+          "id": "2025-fish-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "2025-fish-op",
+            "2025-fish-sales"
+          ],
+          "definition": "事業の中間期営業利益÷売上高。",
+          "precision": 1,
+          "value": 8.1
+        },
+        {
+          "id": "2026-bike-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "2026-bike-op",
+            "2026-bike-sales"
+          ],
+          "definition": "事業の中間期営業利益÷売上高。",
+          "precision": 1,
+          "value": 11.1
+        },
+        {
+          "id": "2026-fish-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "2026-fish-op",
+            "2026-fish-sales"
+          ],
+          "definition": "事業の中間期営業利益÷売上高。",
+          "precision": 1,
+          "value": 11
+        },
+        {
+          "id": "bike-op-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "2026-bike-op",
+            "2025-bike-op"
+          ],
+          "definition": "同じ事業・1〜6月の前年比。",
+          "precision": 1,
+          "value": -15.1
+        },
+        {
+          "id": "fish-sales-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "2026-fish-sales",
+            "2025-fish-sales"
+          ],
+          "definition": "同じ事業・1〜6月の前年比。",
+          "precision": 1,
+          "value": 17.4
+        },
+        {
+          "id": "fish-op-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "2026-fish-op",
+            "2025-fish-op"
+          ],
+          "definition": "同じ事業・1〜6月の前年比。",
+          "precision": 1,
+          "value": 59.8
+        }
+      ]
+    },
+    {
+      "id": "h1-currency-adjusted-sales",
+      "question": "名目増収は自転車部品の需要回復を証明するか。",
+      "definition": "会社による為替影響推計を用いた中間期売上比較。数量・価格・ミックス・連結範囲は分離していない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "bike-prior",
+          "entity": "シマノ・自転車部品",
+          "metric": "前年上期売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料表示値。為替影響は会社推計。短信と百万円単位の丸め差がある。"
+        },
+        {
+          "id": "bike-current",
+          "entity": "シマノ・自転車部品",
+          "metric": "当年上期売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料表示値。為替影響は会社推計。短信と百万円単位の丸め差がある。"
+        },
+        {
+          "id": "bike-fx",
+          "entity": "シマノ・自転車部品",
+          "metric": "前年同期比売上高の為替影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料表示値。為替影響は会社推計。短信と百万円単位の丸め差がある。"
+        },
+        {
+          "id": "fish-prior",
+          "entity": "シマノ・釣具",
+          "metric": "前年上期売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料表示値。為替影響は会社推計。短信と百万円単位の丸め差がある。"
+        },
+        {
+          "id": "fish-current",
+          "entity": "シマノ・釣具",
+          "metric": "当年上期売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料表示値。為替影響は会社推計。短信と百万円単位の丸め差がある。"
+        },
+        {
+          "id": "fish-fx",
+          "entity": "シマノ・釣具",
+          "metric": "前年同期比売上高の為替影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料表示値。為替影響は会社推計。短信と百万円単位の丸め差がある。"
+        },
+        {
+          "id": "all-prior",
+          "entity": "シマノ（連結）",
+          "metric": "前年上期売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料表示値。為替影響は会社推計。短信と百万円単位の丸め差がある。"
+        },
+        {
+          "id": "all-current",
+          "entity": "シマノ（連結）",
+          "metric": "当年上期売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料表示値。為替影響は会社推計。短信と百万円単位の丸め差がある。"
+        },
+        {
+          "id": "all-fx",
+          "entity": "シマノ（連結）",
+          "metric": "前年同期比売上高の為替影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料表示値。為替影響は会社推計。短信と百万円単位の丸め差がある。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "bike-prior",
+          "entity": "シマノ・自転車部品",
+          "metric": "前年上期売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料表示値。為替影響は会社推計。短信と百万円単位の丸め差がある。",
+          "value": 181424,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/458e5cc8/eebf/411b/a784/92929d3bfa21/20260728120621058s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "2026年上期実績（前年比較）・事業別／全社・売上高・為替影響欄",
+            "pdfPage": 2,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "bike-current",
+          "entity": "シマノ・自転車部品",
+          "metric": "当年上期売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料表示値。為替影響は会社推計。短信と百万円単位の丸め差がある。",
+          "value": 181379,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/458e5cc8/eebf/411b/a784/92929d3bfa21/20260728120621058s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "2026年上期実績（前年比較）・事業別／全社・売上高・為替影響欄",
+            "pdfPage": 2,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "bike-fx",
+          "entity": "シマノ・自転車部品",
+          "metric": "前年同期比売上高の為替影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料表示値。為替影響は会社推計。短信と百万円単位の丸め差がある。",
+          "value": 8616,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/458e5cc8/eebf/411b/a784/92929d3bfa21/20260728120621058s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "2026年上期実績（前年比較）・事業別／全社・売上高・為替影響欄",
+            "pdfPage": 2,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fish-prior",
+          "entity": "シマノ・釣具",
+          "metric": "前年上期売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料表示値。為替影響は会社推計。短信と百万円単位の丸め差がある。",
+          "value": 55752,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/458e5cc8/eebf/411b/a784/92929d3bfa21/20260728120621058s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "2026年上期実績（前年比較）・事業別／全社・売上高・為替影響欄",
+            "pdfPage": 2,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fish-current",
+          "entity": "シマノ・釣具",
+          "metric": "当年上期売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料表示値。為替影響は会社推計。短信と百万円単位の丸め差がある。",
+          "value": 65466,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/458e5cc8/eebf/411b/a784/92929d3bfa21/20260728120621058s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "2026年上期実績（前年比較）・事業別／全社・売上高・為替影響欄",
+            "pdfPage": 2,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fish-fx",
+          "entity": "シマノ・釣具",
+          "metric": "前年同期比売上高の為替影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料表示値。為替影響は会社推計。短信と百万円単位の丸め差がある。",
+          "value": 3395,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/458e5cc8/eebf/411b/a784/92929d3bfa21/20260728120621058s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "2026年上期実績（前年比較）・事業別／全社・売上高・為替影響欄",
+            "pdfPage": 2,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "all-prior",
+          "entity": "シマノ（連結）",
+          "metric": "前年上期売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料表示値。為替影響は会社推計。短信と百万円単位の丸め差がある。",
+          "value": 237410,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/458e5cc8/eebf/411b/a784/92929d3bfa21/20260728120621058s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "2026年上期実績（前年比較）・事業別／全社・売上高・為替影響欄",
+            "pdfPage": 2,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "all-current",
+          "entity": "シマノ（連結）",
+          "metric": "当年上期売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料表示値。為替影響は会社推計。短信と百万円単位の丸め差がある。",
+          "value": 247059,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/458e5cc8/eebf/411b/a784/92929d3bfa21/20260728120621058s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "2026年上期実績（前年比較）・事業別／全社・売上高・為替影響欄",
+            "pdfPage": 2,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "all-fx",
+          "entity": "シマノ（連結）",
+          "metric": "前年同期比売上高の為替影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料表示値。為替影響は会社推計。短信と百万円単位の丸め差がある。",
+          "value": 12012,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/458e5cc8/eebf/411b/a784/92929d3bfa21/20260728120621058s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "2026年上期実績（前年比較）・事業別／全社・売上高・為替影響欄",
+            "pdfPage": 2,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "さらに会社の為替調整を読むと、上期の自転車売上には86.16億円、釣具売上には33.95億円の為替押上げがあった。会社説明資料の為替影響を除いた増減率は、自転車4.8%減、釣具11.3%増、全社1.0%減である。",
+      "calculations": [
+        {
+          "id": "bike-constant-sales",
+          "operation": "difference",
+          "inputs": [
+            "bike-current",
+            "bike-fx"
+          ],
+          "definition": "当年売上−会社推計為替影響。",
+          "precision": 0,
+          "value": 172763
+        },
+        {
+          "id": "bike-constant-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "bike-constant-sales",
+            "bike-prior"
+          ],
+          "definition": "会社推計為替影響控除後の前年比。数量成長ではない。",
+          "precision": 1,
+          "value": -4.8
+        },
+        {
+          "id": "fish-constant-sales",
+          "operation": "difference",
+          "inputs": [
+            "fish-current",
+            "fish-fx"
+          ],
+          "definition": "当年売上−会社推計為替影響。",
+          "precision": 0,
+          "value": 62071
+        },
+        {
+          "id": "fish-constant-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "fish-constant-sales",
+            "fish-prior"
+          ],
+          "definition": "会社推計為替影響控除後の前年比。数量成長ではない。",
+          "precision": 1,
+          "value": 11.3
+        },
+        {
+          "id": "all-constant-sales",
+          "operation": "difference",
+          "inputs": [
+            "all-current",
+            "all-fx"
+          ],
+          "definition": "当年売上−会社推計為替影響。",
+          "precision": 0,
+          "value": 235047
+        },
+        {
+          "id": "all-constant-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "all-constant-sales",
+            "all-prior"
+          ],
+          "definition": "会社推計為替影響控除後の前年比。数量成長ではない。",
+          "precision": 1,
+          "value": -1
+        }
+      ]
+    },
+    {
+      "id": "fy-forecast-fx",
+      "question": "円安による売上押上げと営業利益押下げは両立するか。",
+      "definition": "2026年通期予想の前年実績比為替影響。営業外の為替差損益とは別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高への為替影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "2026年通期会社予想対2025年実績の為替影響額。プラスは利益増加方向、マイナスは利益減少方向。売上高は売上増減。"
+        },
+        {
+          "id": "op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益への為替影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "2026年通期会社予想対2025年実績の為替影響額。プラスは利益増加方向、マイナスは利益減少方向。売上高は売上増減。"
+        },
+        {
+          "id": "translation",
+          "entity": "シマノ（連結）",
+          "metric": "売上総利益・円換算影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "2026年通期会社予想対2025年実績の為替影響額。プラスは利益増加方向、マイナスは利益減少方向。売上高は売上増減。"
+        },
+        {
+          "id": "asian",
+          "entity": "シマノ（連結）",
+          "metric": "売上総利益・アジア通貨影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "2026年通期会社予想対2025年実績の為替影響額。プラスは利益増加方向、マイナスは利益減少方向。売上高は売上増減。"
+        },
+        {
+          "id": "sga",
+          "entity": "シマノ（連結）",
+          "metric": "販管費の利益への為替影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "2026年通期会社予想対2025年実績の為替影響額。プラスは利益増加方向、マイナスは利益減少方向。売上高は売上増減。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高への為替影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "2026年通期会社予想対2025年実績の為替影響額。プラスは利益増加方向、マイナスは利益減少方向。売上高は売上増減。",
+          "value": 23500,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/e16f6524/eb29/4199/9386/b98420fb2752/20260728120813352s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "連結損益計算書の為替影響・全社・2026列。ページ画像を確認して抽出の旧レイヤー重複を除外。",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益への為替影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "2026年通期会社予想対2025年実績の為替影響額。プラスは利益増加方向、マイナスは利益減少方向。売上高は売上増減。",
+          "value": -4400,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/e16f6524/eb29/4199/9386/b98420fb2752/20260728120813352s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "連結損益計算書の為替影響・全社・2026列。ページ画像を確認して抽出の旧レイヤー重複を除外。",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "translation",
+          "entity": "シマノ（連結）",
+          "metric": "売上総利益・円換算影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "2026年通期会社予想対2025年実績の為替影響額。プラスは利益増加方向、マイナスは利益減少方向。売上高は売上増減。",
+          "value": 8800,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/e16f6524/eb29/4199/9386/b98420fb2752/20260728120813352s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "連結損益計算書の為替影響・全社・2026列。ページ画像を確認して抽出の旧レイヤー重複を除外。",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "asian",
+          "entity": "シマノ（連結）",
+          "metric": "売上総利益・アジア通貨影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "2026年通期会社予想対2025年実績の為替影響額。プラスは利益増加方向、マイナスは利益減少方向。売上高は売上増減。",
+          "value": -7100,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/e16f6524/eb29/4199/9386/b98420fb2752/20260728120813352s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "連結損益計算書の為替影響・全社・2026列。ページ画像を確認して抽出の旧レイヤー重複を除外。",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sga",
+          "entity": "シマノ（連結）",
+          "metric": "販管費の利益への為替影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "2026年通期会社予想対2025年実績の為替影響額。プラスは利益増加方向、マイナスは利益減少方向。売上高は売上増減。",
+          "value": -6100,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/e16f6524/eb29/4199/9386/b98420fb2752/20260728120813352s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "連結損益計算書の為替影響・全社・2026列。ページ画像を確認して抽出の旧レイヤー重複を除外。",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "2026年通期の会社試算では、為替は売上高を235億円押し上げる一方、営業利益を44億円押し下げる。売上総利益への円換算効果88億円に対し、アジア通貨要因は71億円の減益方向、販管費への影響は61億円の減益方向である。",
+      "calculations": [
+        {
+          "id": "fx-op-sum",
+          "operation": "sum",
+          "inputs": [
+            "translation",
+            "asian",
+            "sga"
+          ],
+          "definition": "売上総利益の円換算影響＋アジア通貨影響＋販管費の利益影響。",
+          "precision": 0,
+          "value": -4400
+        }
+      ]
+    },
+    {
+      "id": "h1-nonoperating",
+      "question": "純利益急増に営業外・特別損益はどう寄与したか。",
+      "definition": "2025/2026上期の連結損益計算書。CF調整項目の為替差損益と区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2025-fx",
+          "entity": "シマノ（連結）",
+          "metric": "営業外為替差損益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "損益計算書の為替差益を正、為替差損を負として記録。"
+        },
+        {
+          "id": "2026-fx",
+          "entity": "シマノ（連結）",
+          "metric": "営業外為替差損益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "損益計算書の為替差益を正、為替差損を負として記録。"
+        },
+        {
+          "id": "2026-security-gain",
+          "entity": "シマノ（連結）",
+          "metric": "投資有価証券売却益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の投資有価証券売却益。金額は百万円。期間合計と残高を区別する。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2025-fx",
+          "entity": "シマノ（連結）",
+          "metric": "営業外為替差損益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "損益計算書の為替差益を正、為替差損を負として記録。",
+          "value": -21690,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "営業外為替差損益",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2026-fx",
+          "entity": "シマノ（連結）",
+          "metric": "営業外為替差損益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "損益計算書の為替差益を正、為替差損を負として記録。",
+          "value": 1809,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "営業外為替差損益",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2026-security-gain",
+          "entity": "シマノ（連結）",
+          "metric": "投資有価証券売却益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の投資有価証券売却益。金額は百万円。期間合計と残高を区別する。",
+          "value": 3143,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "投資有価証券売却益",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "2025年上期は216.90億円の為替差損だったが、2026年上期は18.09億円の為替差益となった。",
+      "calculations": []
+    },
+    {
+      "id": "h1-profit-bridge",
+      "question": "上期営業利益の減益要因と相殺要因は何か。",
+      "definition": "説明資料のブリッジを丸め値のまま記録。CR効果他を恒久的な削減と断定しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "start",
+          "entity": "シマノ（連結）",
+          "metric": "前年上期営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社の営業利益増減要因図の分類と表示値。実績金額の丸め方法は短信と差異あり。"
+        },
+        {
+          "id": "bike",
+          "entity": "シマノ（連結）",
+          "metric": "自転車売上減による利益影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社の営業利益増減要因図の分類と表示値。実績金額の丸め方法は短信と差異あり。"
+        },
+        {
+          "id": "fish",
+          "entity": "シマノ（連結）",
+          "metric": "釣具売上増による利益影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社の営業利益増減要因図の分類と表示値。実績金額の丸め方法は短信と差異あり。"
+        },
+        {
+          "id": "cr",
+          "entity": "シマノ（連結）",
+          "metric": "CR効果他",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社の営業利益増減要因図の分類と表示値。実績金額の丸め方法は短信と差異あり。"
+        },
+        {
+          "id": "sga",
+          "entity": "シマノ（連結）",
+          "metric": "販管費増",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社の営業利益増減要因図の分類と表示値。実績金額の丸め方法は短信と差異あり。"
+        },
+        {
+          "id": "fx",
+          "entity": "シマノ（連結）",
+          "metric": "為替影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社の営業利益増減要因図の分類と表示値。実績金額の丸め方法は短信と差異あり。"
+        },
+        {
+          "id": "end",
+          "entity": "シマノ（連結）",
+          "metric": "当年上期営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社の営業利益増減要因図の分類と表示値。実績金額の丸め方法は短信と差異あり。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "start",
+          "entity": "シマノ（連結）",
+          "metric": "前年上期営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社の営業利益増減要因図の分類と表示値。実績金額の丸め方法は短信と差異あり。",
+          "value": 28123,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/458e5cc8/eebf/411b/a784/92929d3bfa21/20260728120621058s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "営業利益増減要因（上期比較）・画像の各棒ラベル",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "bike",
+          "entity": "シマノ（連結）",
+          "metric": "自転車売上減による利益影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社の営業利益増減要因図の分類と表示値。実績金額の丸め方法は短信と差異あり。",
+          "value": -2663,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/458e5cc8/eebf/411b/a784/92929d3bfa21/20260728120621058s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "営業利益増減要因（上期比較）・画像の各棒ラベル",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fish",
+          "entity": "シマノ（連結）",
+          "metric": "釣具売上増による利益影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社の営業利益増減要因図の分類と表示値。実績金額の丸め方法は短信と差異あり。",
+          "value": 1424,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/458e5cc8/eebf/411b/a784/92929d3bfa21/20260728120621058s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "営業利益増減要因（上期比較）・画像の各棒ラベル",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cr",
+          "entity": "シマノ（連結）",
+          "metric": "CR効果他",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社の営業利益増減要因図の分類と表示値。実績金額の丸め方法は短信と差異あり。",
+          "value": 1727,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/458e5cc8/eebf/411b/a784/92929d3bfa21/20260728120621058s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "営業利益増減要因（上期比較）・画像の各棒ラベル",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sga",
+          "entity": "シマノ（連結）",
+          "metric": "販管費増",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社の営業利益増減要因図の分類と表示値。実績金額の丸め方法は短信と差異あり。",
+          "value": -35,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/458e5cc8/eebf/411b/a784/92929d3bfa21/20260728120621058s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "営業利益増減要因（上期比較）・画像の各棒ラベル",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fx",
+          "entity": "シマノ（連結）",
+          "metric": "為替影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社の営業利益増減要因図の分類と表示値。実績金額の丸め方法は短信と差異あり。",
+          "value": -1326,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/458e5cc8/eebf/411b/a784/92929d3bfa21/20260728120621058s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "営業利益増減要因（上期比較）・画像の各棒ラベル",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "end",
+          "entity": "シマノ（連結）",
+          "metric": "当年上期営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社の営業利益増減要因図の分類と表示値。実績金額の丸め方法は短信と差異あり。",
+          "value": 27250,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/458e5cc8/eebf/411b/a784/92929d3bfa21/20260728120621058s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "営業利益増減要因（上期比較）・画像の各棒ラベル",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "上期の会社営業利益増減図では、自転車売上要因が26.63億円の減益、釣具売上要因が14.24億円の増益、CR効果他が17.27億円の増益、販管費増が0.35億円の減益、為替が13.26億円の減益となる。",
+      "calculations": [
+        {
+          "id": "bridge-total",
+          "operation": "sum",
+          "inputs": [
+            "start",
+            "bike",
+            "fish",
+            "cr",
+            "sga",
+            "fx"
+          ],
+          "definition": "会社表示値の営業利益増減ブリッジ。",
+          "precision": 0,
+          "value": 27250
+        }
+      ]
+    },
+    {
+      "id": "fy-forecast-revision",
+      "question": "増収予想への修正は営業増益予想か。",
+      "definition": "4月と7月の同一年度会社予想を比較し、2025年実績との差と区別する。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "prior-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期連結JGAAP。priorは2025年実績。"
+        },
+        {
+          "id": "prior-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期連結JGAAP。priorは2025年実績。"
+        },
+        {
+          "id": "prior-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期連結JGAAP。priorは2025年実績。"
+        },
+        {
+          "id": "old-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期連結JGAAP。oldは2026年4月23日公表の会社予想。"
+        },
+        {
+          "id": "old-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期連結JGAAP。oldは2026年4月23日公表の会社予想。"
+        },
+        {
+          "id": "old-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期連結JGAAP。oldは2026年4月23日公表の会社予想。"
+        },
+        {
+          "id": "new-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期連結JGAAP。newは2026年7月28日公表の会社予想。"
+        },
+        {
+          "id": "new-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期連結JGAAP。newは2026年7月28日公表の会社予想。"
+        },
+        {
+          "id": "new-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期連結JGAAP。newは2026年7月28日公表の会社予想。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prior-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期連結JGAAP。priorは2025年実績。",
+          "value": 466243,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "通期連結業績予想数値の変更・前回発表予想／今回修正予想／前期実績",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期連結JGAAP。priorは2025年実績。",
+          "value": 51677,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "通期連結業績予想数値の変更・前回発表予想／今回修正予想／前期実績",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期連結JGAAP。priorは2025年実績。",
+          "value": 33991,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "通期連結業績予想数値の変更・前回発表予想／今回修正予想／前期実績",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "old-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期連結JGAAP。oldは2026年4月23日公表の会社予想。",
+          "value": 467000,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "通期連結業績予想数値の変更・前回発表予想／今回修正予想／前期実績",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "old-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期連結JGAAP。oldは2026年4月23日公表の会社予想。",
+          "value": 47000,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "通期連結業績予想数値の変更・前回発表予想／今回修正予想／前期実績",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "old-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期連結JGAAP。oldは2026年4月23日公表の会社予想。",
+          "value": 42000,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "通期連結業績予想数値の変更・前回発表予想／今回修正予想／前期実績",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new-sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期連結JGAAP。newは2026年7月28日公表の会社予想。",
+          "value": 491000,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "通期連結業績予想数値の変更・前回発表予想／今回修正予想／前期実績",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new-op",
+          "entity": "シマノ（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期連結JGAAP。newは2026年7月28日公表の会社予想。",
+          "value": 47000,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "通期連結業績予想数値の変更・前回発表予想／今回修正予想／前期実績",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new-net",
+          "entity": "シマノ（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期連結JGAAP。newは2026年7月28日公表の会社予想。",
+          "value": 43000,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "通期連結業績予想数値の変更・前回発表予想／今回修正予想／前期実績",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "7月28日の会社予想は、2026年通期売上高4,910億円、営業利益470億円、純利益430億円。4月予想から売上を240億円増やしたが、営業利益は据え置いた。2025年実績との比較では5.3%増収、9.1%営業減益で、営業利益率は11.1%から9.6%へ下がる計画である。",
+      "calculations": [
+        {
+          "id": "prior-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "prior-op",
+            "prior-sales"
+          ],
+          "definition": "同じ予想版または実績同士の営業利益÷売上高。",
+          "precision": 1,
+          "value": 11.1
+        },
+        {
+          "id": "old-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "old-op",
+            "old-sales"
+          ],
+          "definition": "同じ予想版または実績同士の営業利益÷売上高。",
+          "precision": 1,
+          "value": 10.1
+        },
+        {
+          "id": "new-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "new-op",
+            "new-sales"
+          ],
+          "definition": "同じ予想版または実績同士の営業利益÷売上高。",
+          "precision": 1,
+          "value": 9.6
+        },
+        {
+          "id": "sales-revision",
+          "operation": "difference",
+          "inputs": [
+            "new-sales",
+            "old-sales"
+          ],
+          "definition": "同一年度の会社予想修正額。",
+          "precision": 0,
+          "value": 24000
+        },
+        {
+          "id": "op-revision",
+          "operation": "difference",
+          "inputs": [
+            "new-op",
+            "old-op"
+          ],
+          "definition": "同一年度の会社予想修正額。",
+          "precision": 0,
+          "value": 0
+        },
+        {
+          "id": "sales-yoy",
+          "operation": "growth-percent",
+          "inputs": [
+            "new-sales",
+            "prior-sales"
+          ],
+          "definition": "2026年会社予想対2025年実績。",
+          "precision": 1,
+          "value": 5.3
+        },
+        {
+          "id": "op-yoy",
+          "operation": "growth-percent",
+          "inputs": [
+            "new-op",
+            "prior-op"
+          ],
+          "definition": "2026年会社予想対2025年実績。",
+          "precision": 1,
+          "value": -9.1
+        }
+      ]
+    },
+    {
+      "id": "prior-oneoff",
+      "question": "前期営業利益は平常化された比較対象か。",
+      "definition": "概算額の存在を示し、独自正常利益を作らない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "retirement-gain",
+          "entity": "シマノ（連結）",
+          "metric": "割引率変更による一時利益概算",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明の約30億円。2025年4Qの退職給付引当金割引率変更による営業利益内一時利益。概算。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "retirement-gain",
+          "entity": "シマノ（連結）",
+          "metric": "割引率変更による一時利益概算",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明の約30億円。2025年4Qの退職給付引当金割引率変更による営業利益内一時利益。概算。",
+          "value": 3000,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/458e5cc8/eebf/411b/a784/92929d3bfa21/20260728120621058s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "営業利益増減要因（通期比較）・脚注",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "会社説明資料では、前年の営業利益に退職給付引当金の割引率変更に伴う約30億円の一時利益が含まれたとされる。",
+      "calculations": []
+    },
+    {
+      "id": "mideast-cost-pass-through",
+      "question": "値上げは原価増をどこまで埋める想定か。",
+      "definition": "いずれも2026年会社予想の概算。前提実現は認定しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cost",
+          "entity": "シマノ（連結）",
+          "metric": "原価増の売上総利益影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "7月初旬の情報と仮定に基づく中東情勢影響の通期概算。価格転嫁は8月以降。"
+        },
+        {
+          "id": "price",
+          "entity": "シマノ（連結）",
+          "metric": "価格転嫁の売上高増加",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "7月初旬の情報と仮定に基づく中東情勢影響の通期概算。価格転嫁は8月以降。"
+        },
+        {
+          "id": "net",
+          "entity": "シマノ（連結）",
+          "metric": "売上総利益への正味影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "7月初旬の情報と仮定に基づく中東情勢影響の通期概算。価格転嫁は8月以降。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cost",
+          "entity": "シマノ（連結）",
+          "metric": "原価増の売上総利益影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "7月初旬の情報と仮定に基づく中東情勢影響の通期概算。価格転嫁は8月以降。",
+          "value": -4000,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/458e5cc8/eebf/411b/a784/92929d3bfa21/20260728120621058s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "中東情勢の影響について・影響額見込み（損益表示）・通期",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "price",
+          "entity": "シマノ（連結）",
+          "metric": "価格転嫁の売上高増加",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "7月初旬の情報と仮定に基づく中東情勢影響の通期概算。価格転嫁は8月以降。",
+          "value": 2000,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/458e5cc8/eebf/411b/a784/92929d3bfa21/20260728120621058s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "中東情勢の影響について・影響額見込み（損益表示）・通期",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "シマノ（連結）",
+          "metric": "売上総利益への正味影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "7月初旬の情報と仮定に基づく中東情勢影響の通期概算。価格転嫁は8月以降。",
+          "value": -2000,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/458e5cc8/eebf/411b/a784/92929d3bfa21/20260728120621058s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "中東情勢の影響について・影響額見込み（損益表示）・通期",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "中東情勢による影響について、会社は通期の原価増を約40億円、8月以降の自転車部品への価格転嫁による増収を約20億円と見込み、売上総利益への正味影響を約20億円の減少とした。",
+      "calculations": [
+        {
+          "id": "net-check",
+          "operation": "sum",
+          "inputs": [
+            "cost",
+            "price"
+          ],
+          "definition": "原価負担と価格転嫁の正味営業総利益影響。",
+          "precision": 0,
+          "value": -2000
+        }
+      ]
+    },
+    {
+      "id": "fishing-half-year-forecast",
+      "question": "釣具の上期利益率を下期に延長できるか。",
+      "definition": "補足資料の実績と会社予想の比較。同じ丸め方式の表示値を使用。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "fy-op",
+          "entity": "シマノ・釣具",
+          "metric": "釣具営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "日本基準・シマノ・釣具の釣具営業利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "h2-sales",
+          "entity": "シマノ・釣具",
+          "metric": "釣具売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "日本基準・シマノ・釣具の釣具売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "h2-op",
+          "entity": "シマノ・釣具",
+          "metric": "釣具営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "日本基準・シマノ・釣具の釣具営業利益。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "h1-sales",
+          "entity": "シマノ・釣具",
+          "metric": "釣具売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・釣具の釣具売上高。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "h1-op",
+          "entity": "シマノ・釣具",
+          "metric": "釣具営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "補足説明資料の上期実績。短信7179百万円と丸め差がある。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fy-op",
+          "entity": "シマノ・釣具",
+          "metric": "釣具営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "日本基準・シマノ・釣具の釣具営業利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 8000,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/e16f6524/eb29/4199/9386/b98420fb2752/20260728120813352s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "釣具営業利益",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "h2-sales",
+          "entity": "シマノ・釣具",
+          "metric": "釣具売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "日本基準・シマノ・釣具の釣具売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 58034,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/e16f6524/eb29/4199/9386/b98420fb2752/20260728120813352s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "釣具売上高",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "h2-op",
+          "entity": "シマノ・釣具",
+          "metric": "釣具営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "日本基準・シマノ・釣具の釣具営業利益。金額は百万円。期間合計と残高を区別する。",
+          "value": 820,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/e16f6524/eb29/4199/9386/b98420fb2752/20260728120813352s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "釣具営業利益",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "h1-sales",
+          "entity": "シマノ・釣具",
+          "metric": "釣具売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ・釣具の釣具売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 65466,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/e16f6524/eb29/4199/9386/b98420fb2752/20260728120813352s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "釣具売上高",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "h1-op",
+          "entity": "シマノ・釣具",
+          "metric": "釣具営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "補足説明資料の上期実績。短信7179百万円と丸め差がある。",
+          "value": 7180,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/e16f6524/eb29/4199/9386/b98420fb2752/20260728120813352s.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "釣具営業利益",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "会社の通期釣具営業利益予想は80億円にとどまり、補足資料の下期計画は売上580.34億円、営業利益8.20億円、利益率は計算上1.4%である。上期の11.0%とは大きく違う。",
+      "calculations": [
+        {
+          "id": "h2-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "h2-op",
+            "h2-sales"
+          ],
+          "definition": "会社予想の下期利益率。",
+          "precision": 1,
+          "value": 1.4
+        },
+        {
+          "id": "h1-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "h1-op",
+            "h1-sales"
+          ],
+          "definition": "上期実績利益率。",
+          "precision": 1,
+          "value": 11
+        }
+      ]
+    },
+    {
+      "id": "inventory-versus-market",
+      "question": "市場在庫の調整と会社の棚卸資産残高の増加を区別できるか。",
+      "definition": "期末残高3時点と、2025通期・2026上期のCF増減を別の定義として収録。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2024-12-31-goods",
+          "entity": "シマノ（連結）",
+          "metric": "商品及び製品",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の期末残高。期間の資金増減と区別。"
+        },
+        {
+          "id": "2024-12-31-wip",
+          "entity": "シマノ（連結）",
+          "metric": "仕掛品",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の期末残高。期間の資金増減と区別。"
+        },
+        {
+          "id": "2024-12-31-raw",
+          "entity": "シマノ（連結）",
+          "metric": "原材料及び貯蔵品",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の期末残高。期間の資金増減と区別。"
+        },
+        {
+          "id": "2025-12-31-goods",
+          "entity": "シマノ（連結）",
+          "metric": "商品及び製品",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の期末残高。期間の資金増減と区別。"
+        },
+        {
+          "id": "2025-12-31-wip",
+          "entity": "シマノ（連結）",
+          "metric": "仕掛品",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の期末残高。期間の資金増減と区別。"
+        },
+        {
+          "id": "2025-12-31-raw",
+          "entity": "シマノ（連結）",
+          "metric": "原材料及び貯蔵品",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の期末残高。期間の資金増減と区別。"
+        },
+        {
+          "id": "2026-06-30-goods",
+          "entity": "シマノ（連結）",
+          "metric": "商品及び製品",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の期末残高。期間の資金増減と区別。"
+        },
+        {
+          "id": "2026-06-30-wip",
+          "entity": "シマノ（連結）",
+          "metric": "仕掛品",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の期末残高。期間の資金増減と区別。"
+        },
+        {
+          "id": "2026-06-30-raw",
+          "entity": "シマノ（連結）",
+          "metric": "原材料及び貯蔵品",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の期末残高。期間の資金増減と区別。"
+        },
+        {
+          "id": "2025-cf-inventory",
+          "entity": "シマノ（連結）",
+          "metric": "棚卸資産増減による営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "CF計算書の棚卸資産の増減額。マイナスは増加による資金流出。"
+        },
+        {
+          "id": "2026h1-cf-inventory",
+          "entity": "シマノ（連結）",
+          "metric": "棚卸資産増減による営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "CF計算書の棚卸資産の増減額。マイナスは増加による資金流出。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2024-12-31-goods",
+          "entity": "シマノ（連結）",
+          "metric": "商品及び製品",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の期末残高。期間の資金増減と区別。",
+          "value": 73683,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "連結貸借対照表・流動資産・該当期末",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2024-12-31-wip",
+          "entity": "シマノ（連結）",
+          "metric": "仕掛品",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の期末残高。期間の資金増減と区別。",
+          "value": 39044,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "連結貸借対照表・流動資産・該当期末",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2024-12-31-raw",
+          "entity": "シマノ（連結）",
+          "metric": "原材料及び貯蔵品",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の期末残高。期間の資金増減と区別。",
+          "value": 7914,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "連結貸借対照表・流動資産・該当期末",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025-12-31-goods",
+          "entity": "シマノ（連結）",
+          "metric": "商品及び製品",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の期末残高。期間の資金増減と区別。",
+          "value": 83669,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "連結貸借対照表・流動資産・該当期末",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025-12-31-wip",
+          "entity": "シマノ（連結）",
+          "metric": "仕掛品",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の期末残高。期間の資金増減と区別。",
+          "value": 40999,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "連結貸借対照表・流動資産・該当期末",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025-12-31-raw",
+          "entity": "シマノ（連結）",
+          "metric": "原材料及び貯蔵品",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の期末残高。期間の資金増減と区別。",
+          "value": 7328,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "連結貸借対照表・流動資産・該当期末",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2026-06-30-goods",
+          "entity": "シマノ（連結）",
+          "metric": "商品及び製品",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の期末残高。期間の資金増減と区別。",
+          "value": 88559,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "連結貸借対照表・流動資産・該当期末",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2026-06-30-wip",
+          "entity": "シマノ（連結）",
+          "metric": "仕掛品",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の期末残高。期間の資金増減と区別。",
+          "value": 40672,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "連結貸借対照表・流動資産・該当期末",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2026-06-30-raw",
+          "entity": "シマノ（連結）",
+          "metric": "原材料及び貯蔵品",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の期末残高。期間の資金増減と区別。",
+          "value": 7721,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "連結貸借対照表・流動資産・該当期末",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025-cf-inventory",
+          "entity": "シマノ（連結）",
+          "metric": "棚卸資産増減による営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "CF計算書の棚卸資産の増減額。マイナスは増加による資金流出。",
+          "value": -6968,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "棚卸資産増減による営業CF",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2026h1-cf-inventory",
+          "entity": "シマノ（連結）",
+          "metric": "棚卸資産増減による営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "CF計算書の棚卸資産の増減額。マイナスは増加による資金流出。",
+          "value": -2381,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "棚卸資産増減による営業CF",
+            "pdfPage": 11,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "連結貸借対照表の商品・製品、仕掛品、原材料・貯蔵品を合計した棚卸資産は、2024年末1,206.41億円、2025年末1,319.96億円、2026年6月末1,369.52億円となった。",
+      "calculations": [
+        {
+          "id": "2024-12-31-inventory",
+          "operation": "sum",
+          "inputs": [
+            "2024-12-31-goods",
+            "2024-12-31-wip",
+            "2024-12-31-raw"
+          ],
+          "definition": "棚卸資産＝商品及び製品＋仕掛品＋原材料及び貯蔵品。",
+          "precision": 0,
+          "value": 120641
+        },
+        {
+          "id": "2025-12-31-inventory",
+          "operation": "sum",
+          "inputs": [
+            "2025-12-31-goods",
+            "2025-12-31-wip",
+            "2025-12-31-raw"
+          ],
+          "definition": "棚卸資産＝商品及び製品＋仕掛品＋原材料及び貯蔵品。",
+          "precision": 0,
+          "value": 131996
+        },
+        {
+          "id": "2026-06-30-inventory",
+          "operation": "sum",
+          "inputs": [
+            "2026-06-30-goods",
+            "2026-06-30-wip",
+            "2026-06-30-raw"
+          ],
+          "definition": "棚卸資産＝商品及び製品＋仕掛品＋原材料及び貯蔵品。",
+          "precision": 0,
+          "value": 136952
+        }
+      ]
+    },
+    {
+      "id": "cash-strength",
+      "question": "現金残高はどれだけ厚いか。",
+      "definition": "2026年6月末の残高で統一。ネットキャッシュとは呼ばない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cash",
+          "entity": "シマノ（連結）",
+          "metric": "現金及び預金",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の現金及び預金残高。CFの現金同等物とは異なる。"
+        },
+        {
+          "id": "assets",
+          "entity": "シマノ（連結）",
+          "metric": "総資産",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の資産合計残高。"
+        },
+        {
+          "id": "equity-ratio",
+          "entity": "シマノ（連結）",
+          "metric": "自己資本比率",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示の連結自己資本÷総資産の比率。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cash",
+          "entity": "シマノ（連結）",
+          "metric": "現金及び預金",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の現金及び預金残高。CFの現金同等物とは異なる。",
+          "value": 463717,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "現金及び預金",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "assets",
+          "entity": "シマノ（連結）",
+          "metric": "総資産",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結貸借対照表の資産合計残高。",
+          "value": 949242,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "総資産",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "equity-ratio",
+          "entity": "シマノ（連結）",
+          "metric": "自己資本比率",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示の連結自己資本÷総資産の比率。",
+          "value": 92.1,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "自己資本比率",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "2026年6月末の現金及び預金は4,637.17億円で、総資産9,492.42億円の48.9%を占める。自己資本比率は92.1%。",
+      "calculations": [
+        {
+          "id": "cash-assets-ratio",
+          "operation": "ratio-percent",
+          "inputs": [
+            "cash",
+            "assets"
+          ],
+          "definition": "現金及び預金÷総資産。",
+          "precision": 1,
+          "value": 48.9
+        }
+      ]
+    },
+    {
+      "id": "cash-after-investment",
+      "question": "設備投資後の手残りは改善したか。",
+      "definition": "CF表全12入力を保存。通期同士および上期同士のみ方向を比較し、半年と一年を同列評価しない。買収・有価証券・リース返済などは控除外。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2024-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。"
+        },
+        {
+          "id": "2024-ppe",
+          "entity": "シマノ（連結）",
+          "metric": "有形固定資産の取得による支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。"
+        },
+        {
+          "id": "2024-intangible",
+          "entity": "シマノ（連結）",
+          "metric": "無形固定資産の取得による支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。"
+        },
+        {
+          "id": "2025-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。"
+        },
+        {
+          "id": "2025-ppe",
+          "entity": "シマノ（連結）",
+          "metric": "有形固定資産の取得による支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。"
+        },
+        {
+          "id": "2025-intangible",
+          "entity": "シマノ（連結）",
+          "metric": "無形固定資産の取得による支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。"
+        },
+        {
+          "id": "2025h1-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。"
+        },
+        {
+          "id": "2025h1-ppe",
+          "entity": "シマノ（連結）",
+          "metric": "有形固定資産の取得による支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。"
+        },
+        {
+          "id": "2025h1-intangible",
+          "entity": "シマノ（連結）",
+          "metric": "無形固定資産の取得による支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。"
+        },
+        {
+          "id": "2026h1-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。"
+        },
+        {
+          "id": "2026h1-ppe",
+          "entity": "シマノ（連結）",
+          "metric": "有形固定資産の取得による支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。"
+        },
+        {
+          "id": "2026h1-intangible",
+          "entity": "シマノ（連結）",
+          "metric": "無形固定資産の取得による支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2024-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。",
+          "value": 87032,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "営業活動によるキャッシュ・フロー",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2024-ppe",
+          "entity": "シマノ（連結）",
+          "metric": "有形固定資産の取得による支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。",
+          "value": -36824,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "有形固定資産の取得による支出",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2024-intangible",
+          "entity": "シマノ（連結）",
+          "metric": "無形固定資産の取得による支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。",
+          "value": -8753,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "無形固定資産の取得による支出",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。",
+          "value": 63780,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "営業活動によるキャッシュ・フロー",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025-ppe",
+          "entity": "シマノ（連結）",
+          "metric": "有形固定資産の取得による支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。",
+          "value": -35519,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "有形固定資産の取得による支出",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025-intangible",
+          "entity": "シマノ（連結）",
+          "metric": "無形固定資産の取得による支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。",
+          "value": -10247,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "無形固定資産の取得による支出",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025h1-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。",
+          "value": 31512,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "営業活動によるキャッシュ・フロー",
+            "pdfPage": 11,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025h1-ppe",
+          "entity": "シマノ（連結）",
+          "metric": "有形固定資産の取得による支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。",
+          "value": -20636,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "有形固定資産の取得による支出",
+            "pdfPage": 11,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025h1-intangible",
+          "entity": "シマノ（連結）",
+          "metric": "無形固定資産の取得による支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。",
+          "value": -4328,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "無形固定資産の取得による支出",
+            "pdfPage": 11,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2026h1-ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。",
+          "value": 39581,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "営業活動によるキャッシュ・フロー",
+            "pdfPage": 11,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2026h1-ppe",
+          "entity": "シマノ（連結）",
+          "metric": "有形固定資産の取得による支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。",
+          "value": -18057,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "有形固定資産の取得による支出",
+            "pdfPage": 11,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2026h1-intangible",
+          "entity": "シマノ（連結）",
+          "metric": "無形固定資産の取得による支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結CF計算書の実際の現金収支。取得支出は負で記録。設備投資計画・取得増加額とは区別。",
+          "value": -4814,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "無形固定資産の取得による支出",
+            "pdfPage": 11,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "2025年通期の設備投資後CFは2024年より減った一方、2026年上期は前年同期より改善した。",
+      "calculations": [
+        {
+          "id": "2024-postcapex",
+          "operation": "sum",
+          "inputs": [
+            "2024-ocf",
+            "2024-ppe",
+            "2024-intangible"
+          ],
+          "definition": "本稿設備投資後CF＝営業CF＋有形取得の負の現金支出＋無形取得の負の現金支出。",
+          "precision": 0,
+          "value": 41455
+        },
+        {
+          "id": "2025-postcapex",
+          "operation": "sum",
+          "inputs": [
+            "2025-ocf",
+            "2025-ppe",
+            "2025-intangible"
+          ],
+          "definition": "本稿設備投資後CF＝営業CF＋有形取得の負の現金支出＋無形取得の負の現金支出。",
+          "precision": 0,
+          "value": 18014
+        },
+        {
+          "id": "2025h1-postcapex",
+          "operation": "sum",
+          "inputs": [
+            "2025h1-ocf",
+            "2025h1-ppe",
+            "2025h1-intangible"
+          ],
+          "definition": "本稿設備投資後CF＝営業CF＋有形取得の負の現金支出＋無形取得の負の現金支出。",
+          "precision": 0,
+          "value": 6548
+        },
+        {
+          "id": "2026h1-postcapex",
+          "operation": "sum",
+          "inputs": [
+            "2026h1-ocf",
+            "2026h1-ppe",
+            "2026h1-intangible"
+          ],
+          "definition": "本稿設備投資後CF＝営業CF＋有形取得の負の現金支出＋無形取得の負の現金支出。",
+          "precision": 0,
+          "value": 16710
+        }
+      ]
+    },
+    {
+      "id": "cash-return-coverage",
+      "question": "還元現金は当年の設備投資後CFの範囲内か。",
+      "definition": "2025年1〜12月の現金ベース。決議した配当総額と支払額を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "buyback",
+          "entity": "シマノ（連結）",
+          "metric": "自己株式の取得による支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "CF計算書の自己株式取得支出額を正表示。"
+        },
+        {
+          "id": "dividend",
+          "entity": "シマノ（連結）",
+          "metric": "配当金の支払額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "CF計算書の親会社配当金の現金支払額を正表示。非支配株主配当は含めない。"
+        },
+        {
+          "id": "ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "ppe",
+          "entity": "シマノ（連結）",
+          "metric": "有形固定資産の取得による支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の有形固定資産の取得による支出。金額は百万円。期間合計と残高を区別する。"
+        },
+        {
+          "id": "intangible",
+          "entity": "シマノ（連結）",
+          "metric": "無形固定資産の取得による支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の無形固定資産の取得による支出。金額は百万円。期間合計と残高を区別する。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "buyback",
+          "entity": "シマノ（連結）",
+          "metric": "自己株式の取得による支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "CF計算書の自己株式取得支出額を正表示。",
+          "value": 50006,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "自己株式の取得による支出",
+            "pdfPage": 14,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dividend",
+          "entity": "シマノ（連結）",
+          "metric": "配当金の支払額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "CF計算書の親会社配当金の現金支払額を正表示。非支配株主配当は含めない。",
+          "value": 28609,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "配当金の支払額",
+            "pdfPage": 14,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "シマノ（連結）",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の営業活動によるキャッシュ・フロー。金額は百万円。期間合計と残高を区別する。",
+          "value": 63780,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "営業活動によるキャッシュ・フロー",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ppe",
+          "entity": "シマノ（連結）",
+          "metric": "有形固定資産の取得による支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の有形固定資産の取得による支出。金額は百万円。期間合計と残高を区別する。",
+          "value": -35519,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "有形固定資産の取得による支出",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "intangible",
+          "entity": "シマノ（連結）",
+          "metric": "無形固定資産の取得による支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の無形固定資産の取得による支出。金額は百万円。期間合計と残高を区別する。",
+          "value": -10247,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "無形固定資産の取得による支出",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "2025年の自社株取得による支出500.06億円と配当支払286.09億円の合計は786.15億円で、同年の設備投資後CF180.14億円を上回った。",
+      "calculations": [
+        {
+          "id": "return-total",
+          "operation": "sum",
+          "inputs": [
+            "buyback",
+            "dividend"
+          ],
+          "definition": "自社株買い現金支出と親会社配当現金支出。",
+          "precision": 0,
+          "value": 78615
+        },
+        {
+          "id": "postcapex",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "ppe",
+            "intangible"
+          ],
+          "definition": "定義した設備投資後CF。",
+          "precision": 0,
+          "value": 18014
+        }
+      ]
+    },
+    {
+      "id": "roe-decline",
+      "question": "株主資本に対する利益率は回復しているか。",
+      "definition": "2022年と2025年通期の会社開示ROE。営業ROICとは区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "roe2022",
+          "entity": "シマノ（連結）",
+          "metric": "自己資本当期純利益率",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE。親会社株主帰属純利益／期首期末平均自己資本。"
+        },
+        {
+          "id": "roe2025",
+          "entity": "シマノ（連結）",
+          "metric": "自己資本当期純利益率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE。親会社株主帰属純利益／期首期末平均自己資本。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "roe2022",
+          "entity": "シマノ（連結）",
+          "metric": "自己資本当期純利益率",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE。親会社株主帰属純利益／期首期末平均自己資本。",
+          "value": 18.9,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/0f785449/7b8f/4c92/8816/8541a4457e34/140120230208503464.pdf",
+            "publishedOn": "2023-02-14",
+            "locator": "自己資本当期純利益率",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe2025",
+          "entity": "シマノ（連結）",
+          "metric": "自己資本当期純利益率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE。親会社株主帰属純利益／期首期末平均自己資本。",
+          "value": 3.9,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "自己資本当期純利益率",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "会社開示のROEは2022年18.9%から2025年3.9%へ低下した。",
+      "calculations": []
+    },
+    {
+      "id": "rd-intensity",
+      "question": "研究開発の費用規模はどれくらいか。",
+      "definition": "2025年度費用計上研究開発費の連結売上比。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "rd",
+          "entity": "シマノ（連結）",
+          "metric": "研究開発費",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有報・研究開発活動における当年度費用総額。資産計上や広義の技術投資とは区別。"
+        },
+        {
+          "id": "sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rd",
+          "entity": "シマノ（連結）",
+          "metric": "研究開発費",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有報・研究開発活動における当年度費用総額。資産計上や広義の技術投資とは区別。",
+          "value": 16275,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/d2628e89/8487/4588/87bf/8c78642500fe/S100XQSE.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "研究開発費",
+            "pdfPage": 24,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sales",
+          "entity": "シマノ（連結）",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・シマノ（連結）の売上高。金額は百万円。期間合計と残高を区別する。",
+          "value": 466243,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/cd7ca345/bd88/4603/a654/fd688caf1d63/140120260209552867.pdf",
+            "publishedOn": "2026-02-10",
+            "locator": "売上高",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "2025年の有報に記載された研究開発費は162.75億円で、連結売上に対して3.5%に相当する。",
+      "calculations": [
+        {
+          "id": "rd-ratio",
+          "operation": "ratio-percent",
+          "inputs": [
+            "rd",
+            "sales"
+          ],
+          "definition": "研究開発費÷連結売上高。",
+          "precision": 1,
+          "value": 3.5
+        }
+      ]
+    },
+    {
+      "id": "shareholder-return",
+      "question": "増配予想と自己株式取得枠の実行度はどうか。",
+      "definition": "配当実績・会社予想と取得枠・約定実績を明示。取得枠はschema上company-forecastで管理し定義に取締役会枠と明記。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "dps2025",
+          "entity": "シマノ（連結）",
+          "metric": "年間1株配当",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "円／株",
+          "basis": "actual",
+          "definition": "2025年12月期に属する年間配当実績。"
+        },
+        {
+          "id": "dps2026",
+          "entity": "シマノ（連結）",
+          "metric": "年間1株配当",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "円／株",
+          "basis": "company-forecast",
+          "definition": "2026年年間配当の会社予想。"
+        },
+        {
+          "id": "buy-limit-yen",
+          "entity": "シマノ（連結）",
+          "metric": "自己株式取得金額上限",
+          "periodStart": "2026-02-12",
+          "periodEnd": "2027-01-31",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "取締役会が承認した取得枠上限。必ず取得する義務はない。"
+        },
+        {
+          "id": "buy-limit-shares",
+          "entity": "シマノ（連結）",
+          "metric": "自己株式取得株数上限",
+          "periodStart": "2026-02-12",
+          "periodEnd": "2027-01-31",
+          "unit": "株",
+          "basis": "company-forecast",
+          "definition": "取締役会が承認した取得枠上限。"
+        },
+        {
+          "id": "buy-actual-yen",
+          "entity": "シマノ（連結）",
+          "metric": "自己株式取得累計金額",
+          "periodStart": "2026-02-12",
+          "periodEnd": "2026-09-30",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "2026年2月10日決議に基づく9月末までの約定ベース取得実績。"
+        },
+        {
+          "id": "buy-actual-shares",
+          "entity": "シマノ（連結）",
+          "metric": "自己株式取得累計株数",
+          "periodStart": "2026-02-12",
+          "periodEnd": "2026-09-30",
+          "unit": "株",
+          "basis": "actual",
+          "definition": "2026年2月10日決議に基づく9月末までの約定ベース取得実績。"
+        },
+        {
+          "id": "payout-lower",
+          "entity": "シマノ（連結）",
+          "metric": "総還元性向の下限目安",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "会社の還元方針の目安。実績還元性向ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "dps2025",
+          "entity": "シマノ（連結）",
+          "metric": "年間1株配当",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "円／株",
+          "basis": "actual",
+          "definition": "2025年12月期に属する年間配当実績。",
+          "value": 339,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "年間1株配当",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dps2026",
+          "entity": "シマノ（連結）",
+          "metric": "年間1株配当",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "円／株",
+          "basis": "company-forecast",
+          "definition": "2026年年間配当の会社予想。",
+          "value": 363,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "年間1株配当",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "buy-limit-yen",
+          "entity": "シマノ（連結）",
+          "metric": "自己株式取得金額上限",
+          "periodStart": "2026-02-12",
+          "periodEnd": "2027-01-31",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "取締役会が承認した取得枠上限。必ず取得する義務はない。",
+          "value": 50000000000,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/2e1364b1/91e4/40c3/965a/ff07febaa250/140120260929542218.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "自己株式取得金額上限",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "buy-limit-shares",
+          "entity": "シマノ（連結）",
+          "metric": "自己株式取得株数上限",
+          "periodStart": "2026-02-12",
+          "periodEnd": "2027-01-31",
+          "unit": "株",
+          "basis": "company-forecast",
+          "definition": "取締役会が承認した取得枠上限。",
+          "value": 2950000,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/2e1364b1/91e4/40c3/965a/ff07febaa250/140120260929542218.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "自己株式取得株数上限",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "buy-actual-yen",
+          "entity": "シマノ（連結）",
+          "metric": "自己株式取得累計金額",
+          "periodStart": "2026-02-12",
+          "periodEnd": "2026-09-30",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "2026年2月10日決議に基づく9月末までの約定ベース取得実績。",
+          "value": 41403449000,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/2e1364b1/91e4/40c3/965a/ff07febaa250/140120260929542218.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "自己株式取得累計金額",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "buy-actual-shares",
+          "entity": "シマノ（連結）",
+          "metric": "自己株式取得累計株数",
+          "periodStart": "2026-02-12",
+          "periodEnd": "2026-09-30",
+          "unit": "株",
+          "basis": "actual",
+          "definition": "2026年2月10日決議に基づく9月末までの約定ベース取得実績。",
+          "value": 2368900,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/2e1364b1/91e4/40c3/965a/ff07febaa250/140120260929542218.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "自己株式取得累計株数",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "payout-lower",
+          "entity": "シマノ（連結）",
+          "metric": "総還元性向の下限目安",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "会社の還元方針の目安。実績還元性向ではない。",
+          "value": 50,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "総還元性向の下限目安",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "株主還元方針は総還元性向50%を下限の目安とし、2026年の年間配当は363円の会社予想で、2025年実績339円を上回る。自社株買いは500億円・295万株が上限の枠で、9月末までの取得は414.03億円・236万8,900株。金額ベースで枠の82.8%を実行したが、残りも必ず取得されると扱わない。",
+      "calculations": [
+        {
+          "id": "buyback-execution",
+          "operation": "ratio-percent",
+          "inputs": [
+            "buy-actual-yen",
+            "buy-limit-yen"
+          ],
+          "definition": "金額基準の取得実績÷枠上限。",
+          "precision": 1,
+          "value": 82.8
+        }
+      ]
+    },
+    {
+      "id": "quality-cost-cash",
+      "question": "製品対応の現金負担は継続しているか。",
+      "definition": "1〜6月同士の支払い実績比較。関連費用総額や将来引当金とは区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2025",
+          "entity": "シマノ（連結）",
+          "metric": "無償点検関連費用の支払額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "CF計算書の無償点検関連費用支払額を正表示。費用計上額や将来負債ではない。"
+        },
+        {
+          "id": "2026",
+          "entity": "シマノ（連結）",
+          "metric": "無償点検関連費用の支払額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "CF計算書の無償点検関連費用支払額を正表示。費用計上額や将来負債ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2025",
+          "entity": "シマノ（連結）",
+          "metric": "無償点検関連費用の支払額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "CF計算書の無償点検関連費用支払額を正表示。費用計上額や将来負債ではない。",
+          "value": 541,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "無償点検関連費用の支払額",
+            "pdfPage": 11,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2026",
+          "entity": "シマノ（連結）",
+          "metric": "無償点検関連費用の支払額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "CF計算書の無償点検関連費用支払額を正表示。費用計上額や将来負債ではない。",
+          "value": 2603,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS02673/57a91a45/d75c/4bf7/bb9b/1f45a96025cd/140120260727599816.pdf",
+            "publishedOn": "2026-07-28",
+            "locator": "無償点検関連費用の支払額",
+            "pdfPage": 11,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "財務上も、2026年上期の無償点検関連費用の支払額は26.03億円で、前年同期の5.41億円を上回った。",
+      "calculations": []
+    },
+    {
+      "id": "roic",
+      "question": "同一定義のROIC系列は回復を示すか。",
+      "definition": "NOPAT÷期首期末平均投下資本。税率、余剰現金、リースの扱いを統一する必要がある。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "roic-required",
+          "entity": "シマノ（連結）",
+          "metric": "ROIC",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "NOPAT÷期首期末平均投下資本。税率、余剰現金、リースの扱いを統一する必要がある。"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "2025年有報の経営指標・研究開発・セグメント注記、2026年中間短信、補足説明資料ROA/ROEページを確認したが、同一定義の会社ROIC系列と必要運転現金区分を確認できない。任意の税率・現金除外により数字を作らず定義だけを説明する。",
+      "omittedClaim": "同一定義のROICは2022年から2025年に改善した。"
+    },
+    {
+      "id": "market-share",
+      "question": "同一市場における競合シェアはどの程度か。",
+      "definition": "対象製品・地域・年度・金額数量基準が一致したシェア。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "market-share-required",
+          "entity": "シマノ（連結）",
+          "metric": "同一定義の市場シェア",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "対象製品・地域・年度・金額数量基準が一致したシェア。"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "シマノ年報とSRAM・Bosch・DAIWAの一次製品情報を確認したが、製品範囲と年度が一致する主要各社市場シェアの一次入力を揃えられない。定性的な競合の製品展開だけを掲載する。",
+      "omittedClaim": "シマノは市場の過半数を独占している。"
+    }
+  ]
+}

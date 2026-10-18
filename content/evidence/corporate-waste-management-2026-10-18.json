@@ -1,0 +1,5500 @@
+{
+  "version": 1,
+  "articleSlug": "corporate-waste-management-2026-10-18",
+  "articleSha256": "21af0f43d56b7ded81f0da17c554e1d7bc7624576c220afeef1946ddbc5d8e2b",
+  "checkedAt": "2026-10-18T10:24:57+00:00",
+  "informationCutoff": "2026-10-18T19:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "本文・表・要約の重要な数値比較を原典で確認。年報PDFは原資料アクセス開始日、10-QはSEC提出日をpublishedOnとした。2016営業CFは2018年報の再表示3,003を採用。2025四半期EBITDAはaccretion表示変更後の再表示比較値。FCFは現金設備投資支出を負号で計算し、売却収入の有無を区別。2026年2Q FCFの本文34.5%は原表1,104/818と不一致のため原表から35.0%を計算して明記。articleSha256は未算出であり、最終TSX/JSONルートへの組み込み後にarticleDigest(files)で確定が必要。このレビューはまだ公開ゲート通過を示さない。 最終統合時に受領原稿のSHA256とMarkdown完全一致を確認。本文・数値・出典は変更せず、公開日時と既存ResearchArticleルートを設定し、その全JSON/TSXを正式articleDigestで計算した。",
+  "comparisons": [
+    {
+      "id": "annual-2016",
+      "question": "10年の売上・営業利益と現金設備投資後の余剰はどう変わったか。 対象：2016",
+      "definition": "GAAP連結実績。CFは現金額。現金設備投資は負号で保存し営業CFに合計、表示表は支出額の絶対値。会社FCFとは区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue-2016",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "op-2016",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "cfo-2016",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "capex-2016",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-2016",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 13609,
+          "source": {
+            "url": "https://investors.wm.com/static-files/2e8f5f77-480c-4fdb-aeff-f6b0338f8df5",
+            "publishedOn": "2019-03-27",
+            "locator": "Consolidated Statements of Operations; 2016 column; GAAP連結売上高",
+            "kind": "primary",
+            "pdfPage": 126
+          }
+        },
+        {
+          "id": "op-2016",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 2296,
+          "source": {
+            "url": "https://investors.wm.com/static-files/2e8f5f77-480c-4fdb-aeff-f6b0338f8df5",
+            "publishedOn": "2019-03-27",
+            "locator": "Consolidated Statements of Operations; 2016 column; GAAP連結営業利益",
+            "kind": "primary",
+            "pdfPage": 126
+          }
+        },
+        {
+          "id": "cfo-2016",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 3003,
+          "source": {
+            "url": "https://investors.wm.com/static-files/2e8f5f77-480c-4fdb-aeff-f6b0338f8df5",
+            "publishedOn": "2019-03-27",
+            "locator": "Consolidated Statements of Cash Flows; 2016 column; 営業活動による純現金収入",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "capex-2016",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": -1339,
+          "source": {
+            "url": "https://investors.wm.com/static-files/2e8f5f77-480c-4fdb-aeff-f6b0338f8df5",
+            "publishedOn": "2019-03-27",
+            "locator": "Consolidated Statements of Cash Flows; 2016 column; 現金設備投資支出（負号）",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin-2016",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op-2016",
+            "revenue-2016"
+          ],
+          "definition": "営業利益÷売上高×100。%",
+          "precision": 1,
+          "value": 16.9
+        },
+        {
+          "id": "cfo-minus-capex-2016",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2016",
+            "capex-2016"
+          ],
+          "definition": "営業CF＋現金設備投資の負の支出額。売却収入を含めない。百万米ドル",
+          "precision": 0,
+          "value": 1664
+        }
+      ],
+      "claim": "|2016|13,609|2,296|16.9%|3,003|1,339|1,664|"
+    },
+    {
+      "id": "annual-2017",
+      "question": "10年の売上・営業利益と現金設備投資後の余剰はどう変わったか。 対象：2017",
+      "definition": "GAAP連結実績。CFは現金額。現金設備投資は負号で保存し営業CFに合計、表示表は支出額の絶対値。会社FCFとは区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue-2017",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "op-2017",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "cfo-2017",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "capex-2017",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-2017",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 14485,
+          "source": {
+            "url": "https://investors.wm.com/static-files/2e8f5f77-480c-4fdb-aeff-f6b0338f8df5",
+            "publishedOn": "2019-03-27",
+            "locator": "Consolidated Statements of Operations; 2017 column; GAAP連結売上高",
+            "kind": "primary",
+            "pdfPage": 126
+          }
+        },
+        {
+          "id": "op-2017",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 2636,
+          "source": {
+            "url": "https://investors.wm.com/static-files/2e8f5f77-480c-4fdb-aeff-f6b0338f8df5",
+            "publishedOn": "2019-03-27",
+            "locator": "Consolidated Statements of Operations; 2017 column; GAAP連結営業利益",
+            "kind": "primary",
+            "pdfPage": 126
+          }
+        },
+        {
+          "id": "cfo-2017",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 3180,
+          "source": {
+            "url": "https://investors.wm.com/static-files/2e8f5f77-480c-4fdb-aeff-f6b0338f8df5",
+            "publishedOn": "2019-03-27",
+            "locator": "Consolidated Statements of Cash Flows; 2017 column; 営業活動による純現金収入",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "capex-2017",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": -1509,
+          "source": {
+            "url": "https://investors.wm.com/static-files/2e8f5f77-480c-4fdb-aeff-f6b0338f8df5",
+            "publishedOn": "2019-03-27",
+            "locator": "Consolidated Statements of Cash Flows; 2017 column; 現金設備投資支出（負号）",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin-2017",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op-2017",
+            "revenue-2017"
+          ],
+          "definition": "営業利益÷売上高×100。%",
+          "precision": 1,
+          "value": 18.2
+        },
+        {
+          "id": "cfo-minus-capex-2017",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2017",
+            "capex-2017"
+          ],
+          "definition": "営業CF＋現金設備投資の負の支出額。売却収入を含めない。百万米ドル",
+          "precision": 0,
+          "value": 1671
+        }
+      ],
+      "claim": "|2017|14,485|2,636|18.2%|3,180|1,509|1,671|"
+    },
+    {
+      "id": "annual-2018",
+      "question": "10年の売上・営業利益と現金設備投資後の余剰はどう変わったか。 対象：2018",
+      "definition": "GAAP連結実績。CFは現金額。現金設備投資は負号で保存し営業CFに合計、表示表は支出額の絶対値。会社FCFとは区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue-2018",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "op-2018",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "cfo-2018",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "capex-2018",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-2018",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 14914,
+          "source": {
+            "url": "https://investors.wm.com/static-files/2e8f5f77-480c-4fdb-aeff-f6b0338f8df5",
+            "publishedOn": "2019-03-27",
+            "locator": "Consolidated Statements of Operations; 2018 column; GAAP連結売上高",
+            "kind": "primary",
+            "pdfPage": 126
+          }
+        },
+        {
+          "id": "op-2018",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 2789,
+          "source": {
+            "url": "https://investors.wm.com/static-files/2e8f5f77-480c-4fdb-aeff-f6b0338f8df5",
+            "publishedOn": "2019-03-27",
+            "locator": "Consolidated Statements of Operations; 2018 column; GAAP連結営業利益",
+            "kind": "primary",
+            "pdfPage": 126
+          }
+        },
+        {
+          "id": "cfo-2018",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 3570,
+          "source": {
+            "url": "https://investors.wm.com/static-files/2e8f5f77-480c-4fdb-aeff-f6b0338f8df5",
+            "publishedOn": "2019-03-27",
+            "locator": "Consolidated Statements of Cash Flows; 2018 column; 営業活動による純現金収入",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "capex-2018",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": -1694,
+          "source": {
+            "url": "https://investors.wm.com/static-files/2e8f5f77-480c-4fdb-aeff-f6b0338f8df5",
+            "publishedOn": "2019-03-27",
+            "locator": "Consolidated Statements of Cash Flows; 2018 column; 現金設備投資支出（負号）",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin-2018",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op-2018",
+            "revenue-2018"
+          ],
+          "definition": "営業利益÷売上高×100。%",
+          "precision": 1,
+          "value": 18.7
+        },
+        {
+          "id": "cfo-minus-capex-2018",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2018",
+            "capex-2018"
+          ],
+          "definition": "営業CF＋現金設備投資の負の支出額。売却収入を含めない。百万米ドル",
+          "precision": 0,
+          "value": 1876
+        }
+      ],
+      "claim": "|2018|14,914|2,789|18.7%|3,570|1,694|1,876|"
+    },
+    {
+      "id": "annual-2019",
+      "question": "10年の売上・営業利益と現金設備投資後の余剰はどう変わったか。 対象：2019",
+      "definition": "GAAP連結実績。CFは現金額。現金設備投資は負号で保存し営業CFに合計、表示表は支出額の絶対値。会社FCFとは区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue-2019",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "op-2019",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "cfo-2019",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "capex-2019",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-2019",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 15455,
+          "source": {
+            "url": "https://investors.wm.com/static-files/1d9c9790-1e40-40c4-8887-05b68361ef1d",
+            "publishedOn": "2020-03-27",
+            "locator": "Consolidated Statements of Operations; 2019 column; GAAP連結売上高",
+            "kind": "primary",
+            "pdfPage": 134
+          }
+        },
+        {
+          "id": "op-2019",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 2706,
+          "source": {
+            "url": "https://investors.wm.com/static-files/1d9c9790-1e40-40c4-8887-05b68361ef1d",
+            "publishedOn": "2020-03-27",
+            "locator": "Consolidated Statements of Operations; 2019 column; GAAP連結営業利益",
+            "kind": "primary",
+            "pdfPage": 134
+          }
+        },
+        {
+          "id": "cfo-2019",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 3874,
+          "source": {
+            "url": "https://investors.wm.com/static-files/1d9c9790-1e40-40c4-8887-05b68361ef1d",
+            "publishedOn": "2020-03-27",
+            "locator": "Consolidated Statements of Cash Flows; 2019 column; 営業活動による純現金収入",
+            "kind": "primary",
+            "pdfPage": 135
+          }
+        },
+        {
+          "id": "capex-2019",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": -1818,
+          "source": {
+            "url": "https://investors.wm.com/static-files/1d9c9790-1e40-40c4-8887-05b68361ef1d",
+            "publishedOn": "2020-03-27",
+            "locator": "Consolidated Statements of Cash Flows; 2019 column; 現金設備投資支出（負号）",
+            "kind": "primary",
+            "pdfPage": 135
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin-2019",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op-2019",
+            "revenue-2019"
+          ],
+          "definition": "営業利益÷売上高×100。%",
+          "precision": 1,
+          "value": 17.5
+        },
+        {
+          "id": "cfo-minus-capex-2019",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2019",
+            "capex-2019"
+          ],
+          "definition": "営業CF＋現金設備投資の負の支出額。売却収入を含めない。百万米ドル",
+          "precision": 0,
+          "value": 2056
+        }
+      ],
+      "claim": "|2019|15,455|2,706|17.5%|3,874|1,818|2,056|"
+    },
+    {
+      "id": "annual-2020",
+      "question": "10年の売上・営業利益と現金設備投資後の余剰はどう変わったか。 対象：2020",
+      "definition": "GAAP連結実績。CFは現金額。現金設備投資は負号で保存し営業CFに合計、表示表は支出額の絶対値。会社FCFとは区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue-2020",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "op-2020",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "cfo-2020",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "capex-2020",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-2020",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 15218,
+          "source": {
+            "url": "https://investors.wm.com/static-files/3bbb4e9d-812b-4a99-87a9-db600206f1a2",
+            "publishedOn": "2023-03-28",
+            "locator": "Consolidated Statements of Operations; 2020 column; GAAP連結売上高",
+            "kind": "primary",
+            "pdfPage": 163
+          }
+        },
+        {
+          "id": "op-2020",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 2434,
+          "source": {
+            "url": "https://investors.wm.com/static-files/3bbb4e9d-812b-4a99-87a9-db600206f1a2",
+            "publishedOn": "2023-03-28",
+            "locator": "Consolidated Statements of Operations; 2020 column; GAAP連結営業利益",
+            "kind": "primary",
+            "pdfPage": 163
+          }
+        },
+        {
+          "id": "cfo-2020",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 3403,
+          "source": {
+            "url": "https://investors.wm.com/static-files/3bbb4e9d-812b-4a99-87a9-db600206f1a2",
+            "publishedOn": "2023-03-28",
+            "locator": "Consolidated Statements of Cash Flows; 2020 column; 営業活動による純現金収入",
+            "kind": "primary",
+            "pdfPage": 164
+          }
+        },
+        {
+          "id": "capex-2020",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": -1632,
+          "source": {
+            "url": "https://investors.wm.com/static-files/3bbb4e9d-812b-4a99-87a9-db600206f1a2",
+            "publishedOn": "2023-03-28",
+            "locator": "Consolidated Statements of Cash Flows; 2020 column; 現金設備投資支出（負号）",
+            "kind": "primary",
+            "pdfPage": 164
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin-2020",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op-2020",
+            "revenue-2020"
+          ],
+          "definition": "営業利益÷売上高×100。%",
+          "precision": 1,
+          "value": 16
+        },
+        {
+          "id": "cfo-minus-capex-2020",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2020",
+            "capex-2020"
+          ],
+          "definition": "営業CF＋現金設備投資の負の支出額。売却収入を含めない。百万米ドル",
+          "precision": 0,
+          "value": 1771
+        }
+      ],
+      "claim": "|2020|15,218|2,434|16.0%|3,403|1,632|1,771|"
+    },
+    {
+      "id": "annual-2021",
+      "question": "10年の売上・営業利益と現金設備投資後の余剰はどう変わったか。 対象：2021",
+      "definition": "GAAP連結実績。CFは現金額。現金設備投資は負号で保存し営業CFに合計、表示表は支出額の絶対値。会社FCFとは区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue-2021",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "op-2021",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "cfo-2021",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "capex-2021",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-2021",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 17931,
+          "source": {
+            "url": "https://investors.wm.com/static-files/3bbb4e9d-812b-4a99-87a9-db600206f1a2",
+            "publishedOn": "2023-03-28",
+            "locator": "Consolidated Statements of Operations; 2021 column; GAAP連結売上高",
+            "kind": "primary",
+            "pdfPage": 163
+          }
+        },
+        {
+          "id": "op-2021",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 2965,
+          "source": {
+            "url": "https://investors.wm.com/static-files/3bbb4e9d-812b-4a99-87a9-db600206f1a2",
+            "publishedOn": "2023-03-28",
+            "locator": "Consolidated Statements of Operations; 2021 column; GAAP連結営業利益",
+            "kind": "primary",
+            "pdfPage": 163
+          }
+        },
+        {
+          "id": "cfo-2021",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 4338,
+          "source": {
+            "url": "https://investors.wm.com/static-files/3bbb4e9d-812b-4a99-87a9-db600206f1a2",
+            "publishedOn": "2023-03-28",
+            "locator": "Consolidated Statements of Cash Flows; 2021 column; 営業活動による純現金収入",
+            "kind": "primary",
+            "pdfPage": 164
+          }
+        },
+        {
+          "id": "capex-2021",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": -1904,
+          "source": {
+            "url": "https://investors.wm.com/static-files/3bbb4e9d-812b-4a99-87a9-db600206f1a2",
+            "publishedOn": "2023-03-28",
+            "locator": "Consolidated Statements of Cash Flows; 2021 column; 現金設備投資支出（負号）",
+            "kind": "primary",
+            "pdfPage": 164
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin-2021",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op-2021",
+            "revenue-2021"
+          ],
+          "definition": "営業利益÷売上高×100。%",
+          "precision": 1,
+          "value": 16.5
+        },
+        {
+          "id": "cfo-minus-capex-2021",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2021",
+            "capex-2021"
+          ],
+          "definition": "営業CF＋現金設備投資の負の支出額。売却収入を含めない。百万米ドル",
+          "precision": 0,
+          "value": 2434
+        }
+      ],
+      "claim": "|2021|17,931|2,965|16.5%|4,338|1,904|2,434|"
+    },
+    {
+      "id": "annual-2022",
+      "question": "10年の売上・営業利益と現金設備投資後の余剰はどう変わったか。 対象：2022",
+      "definition": "GAAP連結実績。CFは現金額。現金設備投資は負号で保存し営業CFに合計、表示表は支出額の絶対値。会社FCFとは区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue-2022",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "op-2022",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "cfo-2022",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "capex-2022",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-2022",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 19698,
+          "source": {
+            "url": "https://investors.wm.com/static-files/3bbb4e9d-812b-4a99-87a9-db600206f1a2",
+            "publishedOn": "2023-03-28",
+            "locator": "Consolidated Statements of Operations; 2022 column; GAAP連結売上高",
+            "kind": "primary",
+            "pdfPage": 163
+          }
+        },
+        {
+          "id": "op-2022",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 3365,
+          "source": {
+            "url": "https://investors.wm.com/static-files/3bbb4e9d-812b-4a99-87a9-db600206f1a2",
+            "publishedOn": "2023-03-28",
+            "locator": "Consolidated Statements of Operations; 2022 column; GAAP連結営業利益",
+            "kind": "primary",
+            "pdfPage": 163
+          }
+        },
+        {
+          "id": "cfo-2022",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 4536,
+          "source": {
+            "url": "https://investors.wm.com/static-files/3bbb4e9d-812b-4a99-87a9-db600206f1a2",
+            "publishedOn": "2023-03-28",
+            "locator": "Consolidated Statements of Cash Flows; 2022 column; 営業活動による純現金収入",
+            "kind": "primary",
+            "pdfPage": 164
+          }
+        },
+        {
+          "id": "capex-2022",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": -2587,
+          "source": {
+            "url": "https://investors.wm.com/static-files/3bbb4e9d-812b-4a99-87a9-db600206f1a2",
+            "publishedOn": "2023-03-28",
+            "locator": "Consolidated Statements of Cash Flows; 2022 column; 現金設備投資支出（負号）",
+            "kind": "primary",
+            "pdfPage": 164
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin-2022",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op-2022",
+            "revenue-2022"
+          ],
+          "definition": "営業利益÷売上高×100。%",
+          "precision": 1,
+          "value": 17.1
+        },
+        {
+          "id": "cfo-minus-capex-2022",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2022",
+            "capex-2022"
+          ],
+          "definition": "営業CF＋現金設備投資の負の支出額。売却収入を含めない。百万米ドル",
+          "precision": 0,
+          "value": 1949
+        }
+      ],
+      "claim": "|2022|19,698|3,365|17.1%|4,536|2,587|1,949|"
+    },
+    {
+      "id": "annual-2023",
+      "question": "10年の売上・営業利益と現金設備投資後の余剰はどう変わったか。 対象：2023",
+      "definition": "GAAP連結実績。CFは現金額。現金設備投資は負号で保存し営業CFに合計、表示表は支出額の絶対値。会社FCFとは区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue-2023",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "op-2023",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "cfo-2023",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "capex-2023",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-2023",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 20426,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Operations; 2023 column; GAAP連結売上高",
+            "kind": "primary",
+            "pdfPage": 160
+          }
+        },
+        {
+          "id": "op-2023",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 3575,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Operations; 2023 column; GAAP連結営業利益",
+            "kind": "primary",
+            "pdfPage": 160
+          }
+        },
+        {
+          "id": "cfo-2023",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 4719,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Cash Flows; 2023 column; 営業活動による純現金収入",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "capex-2023",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": -2895,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Cash Flows; 2023 column; 現金設備投資支出（負号）",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin-2023",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op-2023",
+            "revenue-2023"
+          ],
+          "definition": "営業利益÷売上高×100。%",
+          "precision": 1,
+          "value": 17.5
+        },
+        {
+          "id": "cfo-minus-capex-2023",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2023",
+            "capex-2023"
+          ],
+          "definition": "営業CF＋現金設備投資の負の支出額。売却収入を含めない。百万米ドル",
+          "precision": 0,
+          "value": 1824
+        }
+      ],
+      "claim": "|2023|20,426|3,575|17.5%|4,719|2,895|1,824|"
+    },
+    {
+      "id": "annual-2024",
+      "question": "10年の売上・営業利益と現金設備投資後の余剰はどう変わったか。 対象：2024",
+      "definition": "GAAP連結実績。CFは現金額。現金設備投資は負号で保存し営業CFに合計、表示表は支出額の絶対値。会社FCFとは区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue-2024",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "op-2024",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "cfo-2024",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "capex-2024",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-2024",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 22063,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Operations; 2024 column; GAAP連結売上高",
+            "kind": "primary",
+            "pdfPage": 160
+          }
+        },
+        {
+          "id": "op-2024",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 4063,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Operations; 2024 column; GAAP連結営業利益",
+            "kind": "primary",
+            "pdfPage": 160
+          }
+        },
+        {
+          "id": "cfo-2024",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 5390,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Cash Flows; 2024 column; 営業活動による純現金収入",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "capex-2024",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": -3231,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Cash Flows; 2024 column; 現金設備投資支出（負号）",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin-2024",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op-2024",
+            "revenue-2024"
+          ],
+          "definition": "営業利益÷売上高×100。%",
+          "precision": 1,
+          "value": 18.4
+        },
+        {
+          "id": "cfo-minus-capex-2024",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2024",
+            "capex-2024"
+          ],
+          "definition": "営業CF＋現金設備投資の負の支出額。売却収入を含めない。百万米ドル",
+          "precision": 0,
+          "value": 2159
+        }
+      ],
+      "claim": "|2024|22,063|4,063|18.4%|5,390|3,231|2,159|"
+    },
+    {
+      "id": "annual-2025",
+      "question": "10年の売上・営業利益と現金設備投資後の余剰はどう変わったか。 対象：2025",
+      "definition": "GAAP連結実績。CFは現金額。現金設備投資は負号で保存し営業CFに合計、表示表は支出額の絶対値。会社FCFとは区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "op-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "cfo-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "capex-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 25204,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Operations; 2025 column; GAAP連結売上高",
+            "kind": "primary",
+            "pdfPage": 160
+          }
+        },
+        {
+          "id": "op-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 4308,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Operations; 2025 column; GAAP連結営業利益",
+            "kind": "primary",
+            "pdfPage": 160
+          }
+        },
+        {
+          "id": "cfo-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 6043,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Cash Flows; 2025 column; 営業活動による純現金収入",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "capex-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": -3227,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Cash Flows; 2025 column; 現金設備投資支出（負号）",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin-2025",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op-2025",
+            "revenue-2025"
+          ],
+          "definition": "営業利益÷売上高×100。%",
+          "precision": 1,
+          "value": 17.1
+        },
+        {
+          "id": "cfo-minus-capex-2025",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2025",
+            "capex-2025"
+          ],
+          "definition": "営業CF＋現金設備投資の負の支出額。売却収入を含めない。百万米ドル",
+          "precision": 0,
+          "value": 2816
+        }
+      ],
+      "claim": "|2025|25,204|4,308|17.1%|6,043|3,227|2,816|"
+    },
+    {
+      "id": "annual-endpoint-growth",
+      "question": "2016年と2025年の成長はどの範囲を表すか。",
+      "definition": "買収・連結範囲変更を含むGAAP実績同士。既存事業成長率ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue-2016",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "op-2016",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "cfo-2016",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "capex-2016",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "revenue-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "op-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "cfo-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        },
+        {
+          "id": "capex-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-2016",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 13609,
+          "source": {
+            "url": "https://investors.wm.com/static-files/2e8f5f77-480c-4fdb-aeff-f6b0338f8df5",
+            "publishedOn": "2019-03-27",
+            "locator": "Consolidated Statements of Operations; 2016 column; GAAP連結売上高",
+            "kind": "primary",
+            "pdfPage": 126
+          }
+        },
+        {
+          "id": "op-2016",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 2296,
+          "source": {
+            "url": "https://investors.wm.com/static-files/2e8f5f77-480c-4fdb-aeff-f6b0338f8df5",
+            "publishedOn": "2019-03-27",
+            "locator": "Consolidated Statements of Operations; 2016 column; GAAP連結営業利益",
+            "kind": "primary",
+            "pdfPage": 126
+          }
+        },
+        {
+          "id": "cfo-2016",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 3003,
+          "source": {
+            "url": "https://investors.wm.com/static-files/2e8f5f77-480c-4fdb-aeff-f6b0338f8df5",
+            "publishedOn": "2019-03-27",
+            "locator": "Consolidated Statements of Cash Flows; 2016 column; 営業活動による純現金収入",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "capex-2016",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2016-01-01",
+          "periodEnd": "2016-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": -1339,
+          "source": {
+            "url": "https://investors.wm.com/static-files/2e8f5f77-480c-4fdb-aeff-f6b0338f8df5",
+            "publishedOn": "2019-03-27",
+            "locator": "Consolidated Statements of Cash Flows; 2016 column; 現金設備投資支出（負号）",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "revenue-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結売上高。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 25204,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Operations; 2025 column; GAAP連結売上高",
+            "kind": "primary",
+            "pdfPage": 160
+          }
+        },
+        {
+          "id": "op-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP連結営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結営業利益。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 4308,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Operations; 2025 column; GAAP連結営業利益",
+            "kind": "primary",
+            "pdfPage": 160
+          }
+        },
+        {
+          "id": "cfo-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業活動による純現金収入",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金収入。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": 6043,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Cash Flows; 2025 column; 営業活動による純現金収入",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "capex-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）。会計年度1〜12月。2016営業CFは2018年報のASU適用後再表示値。買収に伴う連結範囲変化を含む。",
+          "value": -3227,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Cash Flows; 2025 column; 現金設備投資支出（負号）",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "revenue-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "revenue-2025",
+            "revenue-2016"
+          ],
+          "definition": "2025実績÷2016実績－1。%",
+          "precision": 1,
+          "value": 85.2
+        },
+        {
+          "id": "op-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "op-2025",
+            "op-2016"
+          ],
+          "definition": "2025実績÷2016実績－1。%",
+          "precision": 1,
+          "value": 87.6
+        }
+      ],
+      "claim": "2016年から2025年に売上高は85.2%、営業利益は87.6%増えた。営業CFは3,003から6,043へ増加したが、現金設備投資も1,339から3,227へ増えている。"
+    },
+    {
+      "id": "2025-gaap-growth-interest",
+      "question": "2025年は増収増益でも親会社利益が増えたか。",
+      "definition": "GAAP連結年度実績と純支払利息。調整後利益と混ぜない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue-2024",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP売上高"
+        },
+        {
+          "id": "op-2024",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "net-2024",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "WM帰属純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "WM帰属純利益"
+        },
+        {
+          "id": "interest-2024",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "Interest expense, net（費用額）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Interest expense, net（費用額）"
+        },
+        {
+          "id": "revenue-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP売上高"
+        },
+        {
+          "id": "op-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "net-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "WM帰属純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "WM帰属純利益"
+        },
+        {
+          "id": "interest-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "Interest expense, net（費用額）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Interest expense, net（費用額）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-2024",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP売上高",
+          "value": 22063,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Operations; 2024; GAAP売上高",
+            "kind": "primary",
+            "pdfPage": 160
+          }
+        },
+        {
+          "id": "op-2024",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 4063,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Operations; 2024; GAAP営業利益",
+            "kind": "primary",
+            "pdfPage": 160
+          }
+        },
+        {
+          "id": "net-2024",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "WM帰属純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "WM帰属純利益",
+          "value": 2746,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Operations; 2024; WM帰属純利益",
+            "kind": "primary",
+            "pdfPage": 160
+          }
+        },
+        {
+          "id": "interest-2024",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "Interest expense, net（費用額）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Interest expense, net（費用額）",
+          "value": 598,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Operations; 2024; Interest expense, net（費用額）",
+            "kind": "primary",
+            "pdfPage": 160
+          }
+        },
+        {
+          "id": "revenue-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP売上高",
+          "value": 25204,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Operations; 2025; GAAP売上高",
+            "kind": "primary",
+            "pdfPage": 160
+          }
+        },
+        {
+          "id": "op-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 4308,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Operations; 2025; GAAP営業利益",
+            "kind": "primary",
+            "pdfPage": 160
+          }
+        },
+        {
+          "id": "net-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "WM帰属純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "WM帰属純利益",
+          "value": 2708,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Operations; 2025; WM帰属純利益",
+            "kind": "primary",
+            "pdfPage": 160
+          }
+        },
+        {
+          "id": "interest-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "Interest expense, net（費用額）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Interest expense, net（費用額）",
+          "value": 912,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Operations; 2025; Interest expense, net（費用額）",
+            "kind": "primary",
+            "pdfPage": 160
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "revenue-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "revenue-2025",
+            "revenue-2024"
+          ],
+          "definition": "前年比。%",
+          "precision": 1,
+          "value": 14.2
+        },
+        {
+          "id": "op-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "op-2025",
+            "op-2024"
+          ],
+          "definition": "前年比。%",
+          "precision": 1,
+          "value": 6
+        },
+        {
+          "id": "net-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "net-2025",
+            "net-2024"
+          ],
+          "definition": "前年比。%",
+          "precision": 1,
+          "value": -1.4
+        }
+      ],
+      "claim": "2025年の売上高は前年比14.2%増、営業利益は6.0%増だったが、親会社帰属純利益は2,746から2,708へ1.4%減少した。純支払利息は598から912へ増え、営業段階の増益がそのまま最終利益には届かなかった。"
+    },
+    {
+      "id": "legacy-growth",
+      "question": "全社の増収率を既存事業成長と見なせるか。",
+      "definition": "Legacy Business＝Healthcare Solutionsを除外し、内部取引消去後の会社区分。すべての買収影響を除いたオーガニック成長率ではない。2024年は買収後期間のみHealthcareが連結。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "total-2024",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "連結売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結売上高"
+        },
+        {
+          "id": "hc-2024",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "Healthcare Solutions外部売上",
+          "periodStart": "2024-11-04",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Healthcare Solutions外部売上"
+        },
+        {
+          "id": "total-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "連結売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結売上高"
+        },
+        {
+          "id": "hc-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "Healthcare Solutions外部売上",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Healthcare Solutions外部売上"
+        }
+      ],
+      "observations": [
+        {
+          "id": "total-2024",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "連結売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結売上高",
+          "value": 22063,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Operations",
+            "kind": "primary",
+            "pdfPage": 160
+          }
+        },
+        {
+          "id": "hc-2024",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "Healthcare Solutions外部売上",
+          "periodStart": "2024-11-04",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Healthcare Solutions外部売上",
+          "value": 403,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Note 17 Stericycle Acquisition; post-closing operating revenue",
+            "kind": "primary",
+            "pdfPage": 206
+          }
+        },
+        {
+          "id": "total-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "連結売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結売上高",
+          "value": 25204,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Consolidated Statements of Operations",
+            "kind": "primary",
+            "pdfPage": 160
+          }
+        },
+        {
+          "id": "hc-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "Healthcare Solutions外部売上",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Healthcare Solutions外部売上",
+          "value": 2508,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-fourth-quarter-and-full-year-2025-earnings",
+            "publishedOn": "2026-01-28",
+            "locator": "Revenue table; Full Year 2025; Healthcare Solutions",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "legacy-2024",
+          "operation": "difference",
+          "inputs": [
+            "total-2024",
+            "hc-2024"
+          ],
+          "definition": "連結売上－Healthcare売上。百万米ドル",
+          "precision": 0,
+          "value": 21660
+        },
+        {
+          "id": "legacy-2025",
+          "operation": "difference",
+          "inputs": [
+            "total-2025",
+            "hc-2025"
+          ],
+          "definition": "連結売上－Healthcare売上。百万米ドル",
+          "precision": 0,
+          "value": 22696
+        },
+        {
+          "id": "legacy-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "legacy-2025",
+            "legacy-2024"
+          ],
+          "definition": "既存事業売上前年比。%",
+          "precision": 1,
+          "value": 4.8
+        }
+      ],
+      "claim": "会社が別掲したヘルスケアを除く既存事業（Legacy Business、内部取引消去後）の増収率は4.8%。これは買収影響をすべて除いた成長率ではない。"
+    },
+    {
+      "id": "segment-collection",
+      "question": "各部門の売上と調整後EBITDAはどう変化したか。 対象：収集・処分",
+      "definition": "売上は社内取引消去後。会社調整後営業EBITDAは非GAAP。2025はaccretion・Healthcare内部取引表示を2026基準へ再表示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "collection-revenue-2025",
+          "entity": "WM 収集・処分",
+          "metric": "外部売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。"
+        },
+        {
+          "id": "collection-ebitda-2025",
+          "entity": "WM 収集・処分",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。"
+        },
+        {
+          "id": "collection-revenue-2026",
+          "entity": "WM 収集・処分",
+          "metric": "外部売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。"
+        },
+        {
+          "id": "collection-ebitda-2026",
+          "entity": "WM 収集・処分",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "collection-revenue-2025",
+          "entity": "WM 収集・処分",
+          "metric": "外部売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。",
+          "value": 5281,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Operating revenues, as reported",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "collection-ebitda-2025",
+          "entity": "WM 収集・処分",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。",
+          "value": 2036,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Adjusted operating EBITDA",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "collection-revenue-2026",
+          "entity": "WM 収集・処分",
+          "metric": "外部売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。",
+          "value": 5479,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Operating revenues, as reported",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "collection-ebitda-2026",
+          "entity": "WM 収集・処分",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。",
+          "value": 2115,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Adjusted operating EBITDA",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "|収集・処分|5,281|5,479|2,036|2,115|"
+    },
+    {
+      "id": "segment-recycle",
+      "question": "各部門の売上と調整後EBITDAはどう変化したか。 対象：再資源化・資源販売",
+      "definition": "売上は社内取引消去後。会社調整後営業EBITDAは非GAAP。2025はaccretion・Healthcare内部取引表示を2026基準へ再表示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "recycle-revenue-2025",
+          "entity": "WM 再資源化・資源販売",
+          "metric": "外部売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。"
+        },
+        {
+          "id": "recycle-ebitda-2025",
+          "entity": "WM 再資源化・資源販売",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。"
+        },
+        {
+          "id": "recycle-revenue-2026",
+          "entity": "WM 再資源化・資源販売",
+          "metric": "外部売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。"
+        },
+        {
+          "id": "recycle-ebitda-2026",
+          "entity": "WM 再資源化・資源販売",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "recycle-revenue-2025",
+          "entity": "WM 再資源化・資源販売",
+          "metric": "外部売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。",
+          "value": 381,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Operating revenues, as reported",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "recycle-ebitda-2025",
+          "entity": "WM 再資源化・資源販売",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。",
+          "value": 70,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Adjusted operating EBITDA",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "recycle-revenue-2026",
+          "entity": "WM 再資源化・資源販売",
+          "metric": "外部売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。",
+          "value": 403,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Operating revenues, as reported",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "recycle-ebitda-2026",
+          "entity": "WM 再資源化・資源販売",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。",
+          "value": 92,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Adjusted operating EBITDA",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "|再資源化・資源販売|381|403|70|92|"
+    },
+    {
+      "id": "segment-energy",
+      "question": "各部門の売上と調整後EBITDAはどう変化したか。 対象：再生可能エネルギー",
+      "definition": "売上は社内取引消去後。会社調整後営業EBITDAは非GAAP。2025はaccretion・Healthcare内部取引表示を2026基準へ再表示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "energy-revenue-2025",
+          "entity": "WM 再生可能エネルギー",
+          "metric": "外部売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。"
+        },
+        {
+          "id": "energy-ebitda-2025",
+          "entity": "WM 再生可能エネルギー",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。"
+        },
+        {
+          "id": "energy-revenue-2026",
+          "entity": "WM 再生可能エネルギー",
+          "metric": "外部売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。"
+        },
+        {
+          "id": "energy-ebitda-2026",
+          "entity": "WM 再生可能エネルギー",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "energy-revenue-2025",
+          "entity": "WM 再生可能エネルギー",
+          "metric": "外部売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。",
+          "value": 115,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Operating revenues, as reported",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "energy-ebitda-2025",
+          "entity": "WM 再生可能エネルギー",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。",
+          "value": 53,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Adjusted operating EBITDA",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "energy-revenue-2026",
+          "entity": "WM 再生可能エネルギー",
+          "metric": "外部売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。",
+          "value": 157,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Operating revenues, as reported",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "energy-ebitda-2026",
+          "entity": "WM 再生可能エネルギー",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。",
+          "value": 71,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Adjusted operating EBITDA",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "|再生可能エネルギー|115|157|53|71|"
+    },
+    {
+      "id": "segment-health",
+      "question": "各部門の売上と調整後EBITDAはどう変化したか。 対象：ヘルスケア",
+      "definition": "売上は社内取引消去後。会社調整後営業EBITDAは非GAAP。2025はaccretion・Healthcare内部取引表示を2026基準へ再表示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "health-revenue-2025",
+          "entity": "WM ヘルスケア",
+          "metric": "外部売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。"
+        },
+        {
+          "id": "health-ebitda-2025",
+          "entity": "WM ヘルスケア",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。"
+        },
+        {
+          "id": "health-revenue-2026",
+          "entity": "WM ヘルスケア",
+          "metric": "外部売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。"
+        },
+        {
+          "id": "health-ebitda-2026",
+          "entity": "WM ヘルスケア",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "health-revenue-2025",
+          "entity": "WM ヘルスケア",
+          "metric": "外部売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。",
+          "value": 646,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Operating revenues, as reported",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "health-ebitda-2025",
+          "entity": "WM ヘルスケア",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。",
+          "value": 110,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Adjusted operating EBITDA",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "health-revenue-2026",
+          "entity": "WM ヘルスケア",
+          "metric": "外部売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。",
+          "value": 638,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Operating revenues, as reported",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "health-ebitda-2026",
+          "entity": "WM ヘルスケア",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。",
+          "value": 121,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Adjusted operating EBITDA",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "|ヘルスケア|646|638|110|121|"
+    },
+    {
+      "id": "segment-corporate",
+      "question": "各部門の売上と調整後EBITDAはどう変化したか。 対象：本社・その他",
+      "definition": "売上は社内取引消去後。会社調整後営業EBITDAは非GAAP。2025はaccretion・Healthcare内部取引表示を2026基準へ再表示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "corporate-revenue-2025",
+          "entity": "WM 本社・その他",
+          "metric": "外部売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。"
+        },
+        {
+          "id": "corporate-ebitda-2025",
+          "entity": "WM 本社・その他",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。"
+        },
+        {
+          "id": "corporate-revenue-2026",
+          "entity": "WM 本社・その他",
+          "metric": "外部売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。"
+        },
+        {
+          "id": "corporate-ebitda-2026",
+          "entity": "WM 本社・その他",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "corporate-revenue-2025",
+          "entity": "WM 本社・その他",
+          "metric": "外部売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。",
+          "value": 7,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Operating revenues, as reported",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "corporate-ebitda-2025",
+          "entity": "WM 本社・その他",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。",
+          "value": -310,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Adjusted operating EBITDA",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "corporate-revenue-2026",
+          "entity": "WM 本社・その他",
+          "metric": "外部売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。",
+          "value": 7,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Operating revenues, as reported",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "corporate-ebitda-2026",
+          "entity": "WM 本社・その他",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。",
+          "value": -332,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Adjusted operating EBITDA",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "|本社・その他|7|7|△310|△332|"
+    },
+    {
+      "id": "segment-total",
+      "question": "各部門の売上と調整後EBITDAはどう変化したか。 対象：連結合計",
+      "definition": "売上は社内取引消去後。会社調整後営業EBITDAは非GAAP。2025はaccretion・Healthcare内部取引表示を2026基準へ再表示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "total-revenue-2025",
+          "entity": "WM 連結合計",
+          "metric": "外部売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。"
+        },
+        {
+          "id": "total-ebitda-2025",
+          "entity": "WM 連結合計",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。"
+        },
+        {
+          "id": "total-revenue-2026",
+          "entity": "WM 連結合計",
+          "metric": "外部売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。"
+        },
+        {
+          "id": "total-ebitda-2026",
+          "entity": "WM 連結合計",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "total-revenue-2025",
+          "entity": "WM 連結合計",
+          "metric": "外部売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。",
+          "value": 6430,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Operating revenues, as reported",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "total-ebitda-2025",
+          "entity": "WM 連結合計",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。",
+          "value": 1959,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Adjusted operating EBITDA",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "total-revenue-2026",
+          "entity": "WM 連結合計",
+          "metric": "外部売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当該区分の社内取引消去後売上。2025は2026発表の再表示比較値。",
+          "value": 6684,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Operating revenues, as reported",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "total-ebitda-2026",
+          "entity": "WM 連結合計",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP。営業利益＋減価償却・減耗・償却・accretion＋会社所定調整。2025は同一定義で再表示。",
+          "value": 2067,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; segment adjusted EBITDA table; Adjusted operating EBITDA",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "|連結合計|6,430|6,684|1,959|2,067|"
+    },
+    {
+      "id": "collection-revenue-share",
+      "question": "収集・処分は連結売上のどの程度か。",
+      "definition": "同じ四半期・外部売上同士。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "collection",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "収集・処分外部売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "収集・処分外部売上"
+        },
+        {
+          "id": "total",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "連結売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結売上"
+        }
+      ],
+      "observations": [
+        {
+          "id": "collection",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "収集・処分外部売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "収集・処分外部売上",
+          "value": 5479,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Note 7; mix of operating revenues; net operating revenues",
+            "kind": "primary",
+            "pdfPage": 20
+          }
+        },
+        {
+          "id": "total",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "連結売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結売上",
+          "value": 6684,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Note 7; mix of operating revenues; total net operating revenues",
+            "kind": "primary",
+            "pdfPage": 20
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "share",
+          "operation": "ratio-percent",
+          "inputs": [
+            "collection",
+            "total"
+          ],
+          "definition": "収集・処分外部売上÷連結売上×100。%",
+          "precision": 1,
+          "value": 82
+        }
+      ],
+      "claim": "収集・処分は2026年4〜6月期の連結売上の82.0%を占める。"
+    },
+    {
+      "id": "landfill-network",
+      "question": "処分場の規模と許可済み残存期間はどの程度か。",
+      "definition": "施設は保有または運営。38年は許可済み容量・予測数量からの加重平均見積もりであり全施設一律ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "solid",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "一般廃棄物埋立施設",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "施設",
+          "basis": "actual",
+          "definition": "一般廃棄物埋立施設"
+        },
+        {
+          "id": "hazardous",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "有害廃棄物埋立施設",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "施設",
+          "basis": "actual",
+          "definition": "有害廃棄物埋立施設"
+        },
+        {
+          "id": "life",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "許可済み容量に基づく加重平均残存年数",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "年",
+          "basis": "actual",
+          "definition": "会社の操業上の見積もり。未許可の増設容量は含めない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "solid",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "一般廃棄物埋立施設",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "施設",
+          "basis": "actual",
+          "definition": "一般廃棄物埋立施設",
+          "value": 253,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Landfill and Environmental Remediation Discussion; landfills owned or operated",
+            "kind": "primary",
+            "pdfPage": 140
+          }
+        },
+        {
+          "id": "hazardous",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "有害廃棄物埋立施設",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "施設",
+          "basis": "actual",
+          "definition": "有害廃棄物埋立施設",
+          "value": 4,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Landfill and Environmental Remediation Discussion; landfills owned or operated",
+            "kind": "primary",
+            "pdfPage": 140
+          }
+        },
+        {
+          "id": "life",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "許可済み容量に基づく加重平均残存年数",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "年",
+          "basis": "actual",
+          "definition": "会社の操業上の見積もり。未許可の増設容量は含めない。",
+          "value": 38,
+          "source": {
+            "url": "https://investors.wm.com/static-files/90173ebc-568b-44a8-920e-1360a0c33a1b",
+            "publishedOn": "2026-03-31",
+            "locator": "Landfill and Environmental Remediation Discussion; remaining permitted airspace and projected annual disposal volume",
+            "kind": "primary",
+            "pdfPage": 140
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "facilities",
+          "operation": "sum",
+          "inputs": [
+            "solid",
+            "hazardous"
+          ],
+          "definition": "施設数合計",
+          "precision": 0,
+          "value": 257
+        }
+      ],
+      "claim": "2025年末に保有・運営した埋立処分場は、一般廃棄物253、有害廃棄物4の計257施設。許可済みの埋立可能容量と想定処分量に基づく平均残存年数は約38年である。"
+    },
+    {
+      "id": "q2-results",
+      "question": "直近四半期は売上・営業利益・調整後EBITDAがどう増えたか。",
+      "definition": "2026年4〜6月対2025年4〜6月。同一のaccretion再表示基準。GAAP営業利益と非GAAP EBITDAを区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "rev-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP売上高"
+        },
+        {
+          "id": "op-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "ebitda-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "非GAAP調整後営業EBITDA",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP調整後営業EBITDA"
+        },
+        {
+          "id": "margin-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "調整後EBITDA利益率",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後EBITDA利益率"
+        },
+        {
+          "id": "rev-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP売上高"
+        },
+        {
+          "id": "op-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "ebitda-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "非GAAP調整後営業EBITDA",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP調整後営業EBITDA"
+        },
+        {
+          "id": "margin-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "調整後EBITDA利益率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後EBITDA利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP売上高",
+          "value": 6430,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Headline results table; As Reported / As Adjusted columns",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 1151,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Headline results table; As Reported / As Adjusted columns",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ebitda-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "非GAAP調整後営業EBITDA",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP調整後営業EBITDA",
+          "value": 1959,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Headline results table; As Reported / As Adjusted columns",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "margin-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "調整後EBITDA利益率",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後EBITDA利益率",
+          "value": 30.5,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Headline results table; Operating EBITDA Margin / As Adjusted",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "rev-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP売上高",
+          "value": 6684,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Headline results table; As Reported / As Adjusted columns",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "GAAP営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 1253,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Headline results table; As Reported / As Adjusted columns",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ebitda-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "非GAAP調整後営業EBITDA",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非GAAP調整後営業EBITDA",
+          "value": 2067,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Headline results table; As Reported / As Adjusted columns",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "margin-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "調整後EBITDA利益率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後EBITDA利益率",
+          "value": 30.9,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Headline results table; Operating EBITDA Margin / As Adjusted",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "rev-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "rev-2026",
+            "rev-2025"
+          ],
+          "definition": "同四半期前年比。%",
+          "precision": 1,
+          "value": 4
+        },
+        {
+          "id": "op-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "op-2026",
+            "op-2025"
+          ],
+          "definition": "同四半期前年比。%",
+          "precision": 1,
+          "value": 8.9
+        },
+        {
+          "id": "ebitda-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "ebitda-2026",
+            "ebitda-2025"
+          ],
+          "definition": "同四半期前年比。%",
+          "precision": 1,
+          "value": 5.5
+        }
+      ],
+      "claim": "2026年4〜6月期は、売上高6,684、営業利益1,253、調整後営業EBITDA2,067。前年同期比はそれぞれ4.0%、8.9%、5.5%増だった。調整後EBITDA利益率は30.5%から30.9%に上昇している。"
+    },
+    {
+      "id": "price-and-volume",
+      "question": "値上げの管理指標と実現価格効果、数量は同じ意味か。",
+      "definition": "core priceは会社仮定を含む管理指標、yieldは収集・処分の対象売上対比価格効果。数量は会社の価格・数量分解。異なる母数を同じ指標として比較しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "core",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "収集・処分core price（対前年価格施策管理指標）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "収集・処分core price（対前年価格施策管理指標）。会社開示値で、元の契約別・数量別集計入力は非開示。独自再計算ではない。"
+        },
+        {
+          "id": "yield",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "収集・処分yield（対前年価格寄与率）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "収集・処分yield（対前年価格寄与率）。会社開示値で、元の契約別・数量別集計入力は非開示。独自再計算ではない。"
+        },
+        {
+          "id": "volume",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "収集・処分数量の対前年変化",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "収集・処分数量の対前年変化。会社開示値で、元の契約別・数量別集計入力は非開示。独自再計算ではない。"
+        },
+        {
+          "id": "volume-ex-fire",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "前年山火事片付け需要を除いた収集・処分数量変化",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "前年山火事片付け需要を除いた収集・処分数量変化。会社開示値で、元の契約別・数量別集計入力は非開示。独自再計算ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "core",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "収集・処分core price（対前年価格施策管理指標）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "収集・処分core price（対前年価格施策管理指標）。会社開示値で、元の契約別・数量別集計入力は非開示。独自再計算ではない。",
+          "value": 5.7,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Key Highlights for the Second Quarter of 2026; first and second bullets; footnote (e)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "yield",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "収集・処分yield（対前年価格寄与率）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "収集・処分yield（対前年価格寄与率）。会社開示値で、元の契約別・数量別集計入力は非開示。独自再計算ではない。",
+          "value": 3.6,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Key Highlights for the Second Quarter of 2026; first and second bullets; footnote (e)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "volume",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "収集・処分数量の対前年変化",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "収集・処分数量の対前年変化。会社開示値で、元の契約別・数量別集計入力は非開示。独自再計算ではない。",
+          "value": -1.8,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Key Highlights for the Second Quarter of 2026; first and second bullets; footnote (e)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "volume-ex-fire",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "前年山火事片付け需要を除いた収集・処分数量変化",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "前年山火事片付け需要を除いた収集・処分数量変化。会社開示値で、元の契約別・数量別集計入力は非開示。独自再計算ではない。",
+          "value": -0.4,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Key Highlights for the Second Quarter of 2026; first and second bullets; footnote (e)",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "会社が料金設定の有効性を見るcore priceは5.7%だが、収集・処分の売上に表れた価格効果であるyieldは3.6%。"
+    },
+    {
+      "id": "healthcare-growth",
+      "question": "Healthcareは売上が減る中でも調整後EBITDAが増えたか。",
+      "definition": "同じ四半期の外部売上と非GAAP調整後EBITDAを区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "rev-2025",
+          "entity": "WM Healthcare Solutions",
+          "metric": "外部売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "外部売上"
+        },
+        {
+          "id": "ebitda-2025",
+          "entity": "WM Healthcare Solutions",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後営業EBITDA"
+        },
+        {
+          "id": "rev-2026",
+          "entity": "WM Healthcare Solutions",
+          "metric": "外部売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "外部売上"
+        },
+        {
+          "id": "ebitda-2026",
+          "entity": "WM Healthcare Solutions",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後営業EBITDA"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev-2025",
+          "entity": "WM Healthcare Solutions",
+          "metric": "外部売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "外部売上",
+          "value": 646,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; Healthcare Solutions column",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ebitda-2025",
+          "entity": "WM Healthcare Solutions",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後営業EBITDA",
+          "value": 110,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; Healthcare Solutions column",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "rev-2026",
+          "entity": "WM Healthcare Solutions",
+          "metric": "外部売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "外部売上",
+          "value": 638,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; Healthcare Solutions column",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ebitda-2026",
+          "entity": "WM Healthcare Solutions",
+          "metric": "調整後営業EBITDA",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後営業EBITDA",
+          "value": 121,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; Healthcare Solutions column",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "rev-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "rev-2026",
+            "rev-2025"
+          ],
+          "definition": "同四半期前年比。%",
+          "precision": 1,
+          "value": -1.2
+        },
+        {
+          "id": "ebitda-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "ebitda-2026",
+            "ebitda-2025"
+          ],
+          "definition": "同四半期前年比。%",
+          "precision": 1,
+          "value": 10
+        }
+      ],
+      "claim": "ヘルスケアの2026年4〜6月売上は638で、前年646から1.2%減。それでも調整後EBITDAは110から121へ10.0%増えた。"
+    },
+    {
+      "id": "healthcare-gaap-bridge",
+      "question": "調整後EBITDA121とGAAP営業利益2の差は何か。",
+      "definition": "会社開示調整表のGAAP利益から非GAAP EBITDAへの橋渡し。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "op",
+          "entity": "WM Healthcare Solutions",
+          "metric": "GAAP営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "dda",
+          "entity": "WM Healthcare Solutions",
+          "metric": "減価償却・減耗・償却・accretion",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "減価償却・減耗・償却・accretion"
+        },
+        {
+          "id": "integration",
+          "entity": "WM Healthcare Solutions",
+          "metric": "買収統合費用の調整額",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収統合費用の調整額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "op",
+          "entity": "WM Healthcare Solutions",
+          "metric": "GAAP営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 2,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; Healthcare Solutions column",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dda",
+          "entity": "WM Healthcare Solutions",
+          "metric": "減価償却・減耗・償却・accretion",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "減価償却・減耗・償却・accretion",
+          "value": 105,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; Healthcare Solutions column",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "integration",
+          "entity": "WM Healthcare Solutions",
+          "metric": "買収統合費用の調整額",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収統合費用の調整額",
+          "value": 14,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Reconciliation of Certain Non-GAAP Measures; Healthcare Solutions column",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "reported-ebitda",
+          "operation": "sum",
+          "inputs": [
+            "op",
+            "dda"
+          ],
+          "definition": "営業利益＋減価償却等。百万米ドル",
+          "precision": 0,
+          "value": 107
+        },
+        {
+          "id": "adjusted-ebitda",
+          "operation": "sum",
+          "inputs": [
+            "reported-ebitda",
+            "integration"
+          ],
+          "definition": "営業EBITDA＋買収統合費用調整。百万米ドル",
+          "precision": 0,
+          "value": 121
+        }
+      ],
+      "claim": "一方、この部門のGAAP営業利益は2にとどまる。減価償却等105を足し戻した営業EBITDAが107、さらに買収・統合費用14を除いた調整後EBITDAが121となる。"
+    },
+    {
+      "id": "acquisition-value",
+      "question": "買収規模は何を含むか。",
+      "definition": "Stericycle取引企業価値。負債を含み、株式取得対価・現金設備投資とは異なる。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "enterprise-value",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "Stericycle取引企業価値",
+          "periodStart": "2024-11-04",
+          "periodEnd": "2024-11-04",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収完了時発表の企業価値。負債を含む概数。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "enterprise-value",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "Stericycle取引企業価値",
+          "periodStart": "2024-11-04",
+          "periodEnd": "2024-11-04",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収完了時発表の企業価値。負債を含む概数。",
+          "value": 7200,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-completes-acquisition-stericycle/",
+            "publishedOn": "2024-11-04",
+            "locator": "Opening paragraph; total enterprise value approximately $7.2 billion",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "発表した企業価値は負債を含めて約7,200。"
+    },
+    {
+      "id": "synergy-runrate",
+      "question": "300超というシナジー目標はいつの何を示すか。",
+      "definition": "2027年末までの年換算到達目標。WM各部門に表れるシナジー。年度実績やHealthcare利益との加算は不可。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "target-threshold",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "シナジー年換算到達目標の下限閾値",
+          "periodStart": "2027-12-31",
+          "periodEnd": "2027-12-31",
+          "unit": "百万米ドル／年",
+          "basis": "company-forecast",
+          "definition": "300超という経営陣予想の閾値。2027年末時点のrun-rateであり2026年度の認識額ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "target-threshold",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "シナジー年換算到達目標の下限閾値",
+          "periodStart": "2027-12-31",
+          "periodEnd": "2027-12-31",
+          "unit": "百万米ドル／年",
+          "basis": "company-forecast",
+          "definition": "300超という経営陣予想の閾値。2027年末時点のrun-rateであり2026年度の認識額ではない。",
+          "value": 300,
+          "source": {
+            "url": "https://investors.wm.com/static-files/e46ed829-66cd-4c4b-9782-0b08457d03c8",
+            "publishedOn": "2026-07-29",
+            "locator": "John J. Morris remarks: more than $300 million of synergies by end of 2027",
+            "kind": "primary",
+            "pdfPage": 6
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "経営陣は2027年末までに年換算で300を超えるシナジーを実現する見通しを示している。"
+    },
+    {
+      "id": "h1-cashflow-bridge",
+      "question": "上期FCF増のうち営業CF・投資・売却はそれぞれいくらか。",
+      "definition": "会社FCF＝営業CF＋負号の現金設備投資＋事業資産売却収入。買収・配当・元本返済は含まない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）"
+        },
+        {
+          "id": "sales-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "事業・資産売却収入（売却した現金を控除）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "事業・資産売却収入（売却した現金を控除）"
+        },
+        {
+          "id": "cfo-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）"
+        },
+        {
+          "id": "sales-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "事業・資産売却収入（売却した現金を控除）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "事業・資産売却収入（売却した現金を控除）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 2753,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Free Cash Flow reconciliation; six months ended June 30",
+            "kind": "primary",
+            "pdfPage": 41
+          }
+        },
+        {
+          "id": "capex-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）",
+          "value": -1563,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Free Cash Flow reconciliation; six months ended June 30",
+            "kind": "primary",
+            "pdfPage": 41
+          }
+        },
+        {
+          "id": "sales-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "事業・資産売却収入（売却した現金を控除）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "事業・資産売却収入（売却した現金を控除）",
+          "value": 103,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Free Cash Flow reconciliation; six months ended June 30",
+            "kind": "primary",
+            "pdfPage": 41
+          }
+        },
+        {
+          "id": "cfo-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 3227,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Free Cash Flow reconciliation; six months ended June 30",
+            "kind": "primary",
+            "pdfPage": 41
+          }
+        },
+        {
+          "id": "capex-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）",
+          "value": -1280,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Free Cash Flow reconciliation; six months ended June 30",
+            "kind": "primary",
+            "pdfPage": 41
+          }
+        },
+        {
+          "id": "sales-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "事業・資産売却収入（売却した現金を控除）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "事業・資産売却収入（売却した現金を控除）",
+          "value": 77,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Free Cash Flow reconciliation; six months ended June 30",
+            "kind": "primary",
+            "pdfPage": 41
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "simple-2025",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2025",
+            "capex-2025"
+          ],
+          "definition": "売却収入を含まない営業CF－現金設備投資。百万米ドル",
+          "precision": 0,
+          "value": 1190
+        },
+        {
+          "id": "fcf-2025",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2025",
+            "capex-2025",
+            "sales-2025"
+          ],
+          "definition": "会社定義FCF。百万米ドル",
+          "precision": 0,
+          "value": 1293
+        },
+        {
+          "id": "simple-2026",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2026",
+            "capex-2026"
+          ],
+          "definition": "売却収入を含まない営業CF－現金設備投資。百万米ドル",
+          "precision": 0,
+          "value": 1947
+        },
+        {
+          "id": "fcf-2026",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2026",
+            "capex-2026",
+            "sales-2026"
+          ],
+          "definition": "会社定義FCF。百万米ドル",
+          "precision": 0,
+          "value": 2024
+        },
+        {
+          "id": "cfo-change",
+          "operation": "difference",
+          "inputs": [
+            "cfo-2026",
+            "cfo-2025"
+          ],
+          "definition": "当期－前年。capexは負の支出額の差なので283は支出削減のプラス寄与。百万米ドル",
+          "precision": 0,
+          "value": 474
+        },
+        {
+          "id": "capex-change",
+          "operation": "difference",
+          "inputs": [
+            "capex-2026",
+            "capex-2025"
+          ],
+          "definition": "当期－前年。capexは負の支出額の差なので283は支出削減のプラス寄与。百万米ドル",
+          "precision": 0,
+          "value": 283
+        },
+        {
+          "id": "simple-change",
+          "operation": "difference",
+          "inputs": [
+            "simple-2026",
+            "simple-2025"
+          ],
+          "definition": "当期－前年。capexは負の支出額の差なので283は支出削減のプラス寄与。百万米ドル",
+          "precision": 0,
+          "value": 757
+        },
+        {
+          "id": "sales-change",
+          "operation": "difference",
+          "inputs": [
+            "sales-2026",
+            "sales-2025"
+          ],
+          "definition": "当期－前年。capexは負の支出額の差なので283は支出削減のプラス寄与。百万米ドル",
+          "precision": 0,
+          "value": -26
+        },
+        {
+          "id": "fcf-change",
+          "operation": "difference",
+          "inputs": [
+            "fcf-2026",
+            "fcf-2025"
+          ],
+          "definition": "当期－前年。capexは負の支出額の差なので283は支出削減のプラス寄与。百万米ドル",
+          "precision": 0,
+          "value": 731
+        },
+        {
+          "id": "fcf-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "fcf-2026",
+            "fcf-2025"
+          ],
+          "definition": "上期会社定義FCFの前年比。%",
+          "precision": 1,
+          "value": 56.5
+        },
+        {
+          "id": "bridge-check",
+          "operation": "sum",
+          "inputs": [
+            "cfo-change",
+            "capex-change",
+            "sales-change"
+          ],
+          "definition": "営業CF増＋投資支出削減＋売却収入減＝FCF増。百万米ドル",
+          "precision": 0,
+          "value": 731
+        }
+      ],
+      "claim": "上期の会社定義FCFは56.5%増えた。増加731の内訳は、営業CF増474と設備投資減283が押し上げ、資産売却収入の減少26が差し引いた形だ。"
+    },
+    {
+      "id": "q2-fcf-source-discrepancy",
+      "question": "決算見出しのFCF増加率は原表の金額と一致するか。",
+      "definition": "SEC提出10-QとIR調整表の同額を採用し四半期FCF成長率を再計算。ニュース本文34.5%と原表計算35.0%の差異を明記。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）"
+        },
+        {
+          "id": "sales-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "事業・資産売却収入",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "事業・資産売却収入"
+        },
+        {
+          "id": "cfo-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）"
+        },
+        {
+          "id": "sales-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "事業・資産売却収入",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "事業・資産売却収入"
+        },
+        {
+          "id": "headline-growth",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "決算ニュース本文のFCF前年比記載",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "発行者本文の記載を観察した値。原表金額からの計算とは一致せず、そのまま採用しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1545,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Free Cash Flow reconciliation; three months ended June 30",
+            "kind": "primary",
+            "pdfPage": 41
+          }
+        },
+        {
+          "id": "capex-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）",
+          "value": -732,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Free Cash Flow reconciliation; three months ended June 30",
+            "kind": "primary",
+            "pdfPage": 41
+          }
+        },
+        {
+          "id": "sales-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "事業・資産売却収入",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "事業・資産売却収入",
+          "value": 5,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Free Cash Flow reconciliation; three months ended June 30",
+            "kind": "primary",
+            "pdfPage": 41
+          }
+        },
+        {
+          "id": "cfo-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1726,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Free Cash Flow reconciliation; three months ended June 30",
+            "kind": "primary",
+            "pdfPage": 41
+          }
+        },
+        {
+          "id": "capex-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金設備投資支出（負号）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（負号）",
+          "value": -630,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Free Cash Flow reconciliation; three months ended June 30",
+            "kind": "primary",
+            "pdfPage": 41
+          }
+        },
+        {
+          "id": "sales-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "事業・資産売却収入",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "事業・資産売却収入",
+          "value": 8,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Free Cash Flow reconciliation; three months ended June 30",
+            "kind": "primary",
+            "pdfPage": 41
+          }
+        },
+        {
+          "id": "headline-growth",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "決算ニュース本文のFCF前年比記載",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "発行者本文の記載を観察した値。原表金額からの計算とは一致せず、そのまま採用しない。",
+          "value": 34.5,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Key highlights; cash flow bullet: an increase of 34.5%",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf-2025",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2025",
+            "capex-2025",
+            "sales-2025"
+          ],
+          "definition": "会社定義FCF。百万米ドル",
+          "precision": 0,
+          "value": 818
+        },
+        {
+          "id": "fcf-2026",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2026",
+            "capex-2026",
+            "sales-2026"
+          ],
+          "definition": "会社定義FCF。百万米ドル",
+          "precision": 0,
+          "value": 1104
+        },
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "fcf-2026",
+            "fcf-2025"
+          ],
+          "definition": "原表の丸め金額から再計算した四半期FCF前年比。%",
+          "precision": 1,
+          "value": 35
+        }
+      ],
+      "claim": "なお、4〜6月単独のFCFは10-Q原表で1,104、前年818であり、再計算した増加率は35.0%。決算ニュース冒頭の「34.5%」とは一致しないため、本稿では原表の金額と再計算値を採用した。"
+    },
+    {
+      "id": "net-debt",
+      "question": "FCF増が上期の純負債削減に結びついたか。",
+      "definition": "貸借対照表の流動長期債務＋非流動長期債務－現金同等物。制限付き現金・環境債務は含めず会社レバレッジ定義とは区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current-2025-12-31",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "長期債務の流動部分",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期債務の流動部分"
+        },
+        {
+          "id": "long-2025-12-31",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "長期債務の非流動部分",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期債務の非流動部分"
+        },
+        {
+          "id": "cash-2025-12-31",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金及び現金同等物",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金及び現金同等物"
+        },
+        {
+          "id": "current-2026-06-30",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "長期債務の流動部分",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期債務の流動部分"
+        },
+        {
+          "id": "long-2026-06-30",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "長期債務の非流動部分",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期債務の非流動部分"
+        },
+        {
+          "id": "cash-2026-06-30",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金及び現金同等物",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金及び現金同等物"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current-2025-12-31",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "長期債務の流動部分",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期債務の流動部分",
+          "value": 711,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Condensed Consolidated Balance Sheets",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "long-2025-12-31",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "長期債務の非流動部分",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期債務の非流動部分",
+          "value": 22196,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Condensed Consolidated Balance Sheets",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "cash-2025-12-31",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金及び現金同等物",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金及び現金同等物",
+          "value": 201,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Condensed Consolidated Balance Sheets",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "current-2026-06-30",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "長期債務の流動部分",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期債務の流動部分",
+          "value": 1075,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Condensed Consolidated Balance Sheets",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "long-2026-06-30",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "長期債務の非流動部分",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期債務の非流動部分",
+          "value": 22281,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Condensed Consolidated Balance Sheets",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "cash-2026-06-30",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金及び現金同等物",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金及び現金同等物",
+          "value": 557,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Condensed Consolidated Balance Sheets",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "debt-2025-12-31",
+          "operation": "sum",
+          "inputs": [
+            "current-2025-12-31",
+            "long-2025-12-31"
+          ],
+          "definition": "貸借対照表上の有利子負債。百万米ドル",
+          "precision": 0,
+          "value": 22907
+        },
+        {
+          "id": "net-2025-12-31",
+          "operation": "difference",
+          "inputs": [
+            "debt-2025-12-31",
+            "cash-2025-12-31"
+          ],
+          "definition": "単純純負債＝上記負債－現金同等物。百万米ドル",
+          "precision": 0,
+          "value": 22706
+        },
+        {
+          "id": "debt-2026-06-30",
+          "operation": "sum",
+          "inputs": [
+            "current-2026-06-30",
+            "long-2026-06-30"
+          ],
+          "definition": "貸借対照表上の有利子負債。百万米ドル",
+          "precision": 0,
+          "value": 23356
+        },
+        {
+          "id": "net-2026-06-30",
+          "operation": "difference",
+          "inputs": [
+            "debt-2026-06-30",
+            "cash-2026-06-30"
+          ],
+          "definition": "単純純負債＝上記負債－現金同等物。百万米ドル",
+          "precision": 0,
+          "value": 22799
+        },
+        {
+          "id": "net-change",
+          "operation": "difference",
+          "inputs": [
+            "net-2026-06-30",
+            "net-2025-12-31"
+          ],
+          "definition": "単純純負債の増減。百万米ドル",
+          "precision": 0,
+          "value": 93
+        }
+      ],
+      "claim": "2026年6月末の貸借対照表上の有利子負債は、長期債務の流動部分1,075と非流動部分22,281の合計23,356。現金同等物557を引いた単純純負債は22,799となる。同じ定義で2025年末は22,706であり、上期にFCFが増えても純負債は減っていない。"
+    },
+    {
+      "id": "shareholder-cash-returns",
+      "question": "上期の現金は株主へどの程度配分されたか。",
+      "definition": "CF計算書の現金支払額。株主資本等変動計算書の計上額と混ぜない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "buybacks",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "自社株買い現金支払額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "自社株買い現金支払額"
+        },
+        {
+          "id": "dividends",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金配当支払額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金配当支払額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "buybacks",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "自社株買い現金支払額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "自社株買い現金支払額",
+          "value": 1003,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Condensed Consolidated Statements of Cash Flows; Common stock repurchase program",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "dividends",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "現金配当支払額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金配当支払額",
+          "value": 764,
+          "source": {
+            "url": "https://investors.wm.com/static-files/f1003f8e-07a3-43ba-879e-5d7b8d402247",
+            "publishedOn": "2026-07-29",
+            "locator": "Condensed Consolidated Statements of Cash Flows; Cash dividends",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "returns",
+          "operation": "sum",
+          "inputs": [
+            "buybacks",
+            "dividends"
+          ],
+          "definition": "現金による自社株買い＋配当。百万米ドル",
+          "precision": 0,
+          "value": 1767
+        }
+      ],
+      "claim": "上期の現金支出は自社株買い1,003、配当764で、合計1,767だった。"
+    },
+    {
+      "id": "rng-growth-and-prices",
+      "question": "RNGの増収増益は価格上昇によるものか。",
+      "definition": "Renewable Energy区分の外部売上・調整後EBITDAと、会社実現価格。同一四半期。RFS credit価格とガス価格は異なる単位で比較しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "rev-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "Renewable Energy外部売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Renewable Energy外部売上"
+        },
+        {
+          "id": "ebitda-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "Renewable Energy調整後EBITDA",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Renewable Energy調整後EBITDA"
+        },
+        {
+          "id": "credit-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "RFS credit平均実現価格",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "米ドル／クレジット",
+          "basis": "actual",
+          "definition": "RFS credit平均実現価格"
+        },
+        {
+          "id": "gas-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "天然ガス平均実現価格",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "米ドル／MMBtu",
+          "basis": "actual",
+          "definition": "天然ガス平均実現価格"
+        },
+        {
+          "id": "rev-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "Renewable Energy外部売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Renewable Energy外部売上"
+        },
+        {
+          "id": "ebitda-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "Renewable Energy調整後EBITDA",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Renewable Energy調整後EBITDA"
+        },
+        {
+          "id": "credit-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "RFS credit平均実現価格",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "米ドル／クレジット",
+          "basis": "actual",
+          "definition": "RFS credit平均実現価格"
+        },
+        {
+          "id": "gas-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "天然ガス平均実現価格",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "米ドル／MMBtu",
+          "basis": "actual",
+          "definition": "天然ガス平均実現価格"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "Renewable Energy外部売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Renewable Energy外部売上",
+          "value": 115,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Segment adjusted EBITDA reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ebitda-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "Renewable Energy調整後EBITDA",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Renewable Energy調整後EBITDA",
+          "value": 53,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Segment adjusted EBITDA reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "credit-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "RFS credit平均実現価格",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "米ドル／クレジット",
+          "basis": "actual",
+          "definition": "RFS credit平均実現価格",
+          "value": 2.53,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Footnote (f); average price received for Renewable Fuel Standard credits",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "gas-2025",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "天然ガス平均実現価格",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "米ドル／MMBtu",
+          "basis": "actual",
+          "definition": "天然ガス平均実現価格",
+          "value": 2.81,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Footnote (f); average price received for natural gas",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "rev-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "Renewable Energy外部売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Renewable Energy外部売上",
+          "value": 157,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Segment adjusted EBITDA reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ebitda-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "Renewable Energy調整後EBITDA",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Renewable Energy調整後EBITDA",
+          "value": 71,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Segment adjusted EBITDA reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "credit-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "RFS credit平均実現価格",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "米ドル／クレジット",
+          "basis": "actual",
+          "definition": "RFS credit平均実現価格",
+          "value": 2.33,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Footnote (f); average price received for Renewable Fuel Standard credits",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "gas-2026",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "天然ガス平均実現価格",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "米ドル／MMBtu",
+          "basis": "actual",
+          "definition": "天然ガス平均実現価格",
+          "value": 2.23,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Footnote (f); average price received for natural gas",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "2026年4〜6月期の再生可能エネルギー売上は115から157、調整後EBITDAは53から71へ増えた。一方、実現したRFS制度のクレジット価格は2.53ドルから2.33ドルへ、天然ガスの平均受取価格は1MMBtu当たり2.81ドルから2.23ドルへ低下した。"
+    },
+    {
+      "id": "guidance-ranges",
+      "question": "年初と最新の会社予想は何が変わったか。",
+      "definition": "2026年1〜12月会社予想。市場コンセンサスではない。EBITDAは非GAAP、FCFは売却収入加算の会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old-revenue-low",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "revenue予想low",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想revenueのlow。oldは2026-01-28公表。"
+        },
+        {
+          "id": "old-revenue-high",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "revenue予想high",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想revenueのhigh。oldは2026-01-28公表。"
+        },
+        {
+          "id": "old-ebitda-low",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "ebitda予想low",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想ebitdaのlow。oldは2026-01-28公表。"
+        },
+        {
+          "id": "old-ebitda-high",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "ebitda予想high",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想ebitdaのhigh。oldは2026-01-28公表。"
+        },
+        {
+          "id": "old-fcf-low",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "fcf予想low",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想fcfのlow。oldは2026-01-28公表。"
+        },
+        {
+          "id": "old-fcf-high",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "fcf予想high",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想fcfのhigh。oldは2026-01-28公表。"
+        },
+        {
+          "id": "new-revenue-low",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "revenue予想low",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想revenueのlow。newは2026-07-28公表。"
+        },
+        {
+          "id": "new-revenue-high",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "revenue予想high",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想revenueのhigh。newは2026-07-28公表。"
+        },
+        {
+          "id": "new-ebitda-low",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "ebitda予想low",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想ebitdaのlow。newは2026-07-28公表。"
+        },
+        {
+          "id": "new-ebitda-high",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "ebitda予想high",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想ebitdaのhigh。newは2026-07-28公表。"
+        },
+        {
+          "id": "new-fcf-low",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "fcf予想low",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想fcfのlow。newは2026-07-28公表。"
+        },
+        {
+          "id": "new-fcf-high",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "fcf予想high",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想fcfのhigh。newは2026-07-28公表。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old-revenue-low",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "revenue予想low",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想revenueのlow。oldは2026-01-28公表。",
+          "value": 26425,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-fourth-quarter-and-full-year-2025-earnings",
+            "publishedOn": "2026-01-28",
+            "locator": "Financial Outlook / 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "old-revenue-high",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "revenue予想high",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想revenueのhigh。oldは2026-01-28公表。",
+          "value": 26625,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-fourth-quarter-and-full-year-2025-earnings",
+            "publishedOn": "2026-01-28",
+            "locator": "Financial Outlook / 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "old-ebitda-low",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "ebitda予想low",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想ebitdaのlow。oldは2026-01-28公表。",
+          "value": 8150,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-fourth-quarter-and-full-year-2025-earnings",
+            "publishedOn": "2026-01-28",
+            "locator": "Financial Outlook / 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "old-ebitda-high",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "ebitda予想high",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想ebitdaのhigh。oldは2026-01-28公表。",
+          "value": 8250,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-fourth-quarter-and-full-year-2025-earnings",
+            "publishedOn": "2026-01-28",
+            "locator": "Financial Outlook / 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "old-fcf-low",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "fcf予想low",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想fcfのlow。oldは2026-01-28公表。",
+          "value": 3750,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-fourth-quarter-and-full-year-2025-earnings",
+            "publishedOn": "2026-01-28",
+            "locator": "Financial Outlook / 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "old-fcf-high",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "fcf予想high",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想fcfのhigh。oldは2026-01-28公表。",
+          "value": 3850,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-fourth-quarter-and-full-year-2025-earnings",
+            "publishedOn": "2026-01-28",
+            "locator": "Financial Outlook / 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new-revenue-low",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "revenue予想low",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想revenueのlow。newは2026-07-28公表。",
+          "value": 26275,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Financial Outlook / 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new-revenue-high",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "revenue予想high",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想revenueのhigh。newは2026-07-28公表。",
+          "value": 26475,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Financial Outlook / 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new-ebitda-low",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "ebitda予想low",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想ebitdaのlow。newは2026-07-28公表。",
+          "value": 8150,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Financial Outlook / 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new-ebitda-high",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "ebitda予想high",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想ebitdaのhigh。newは2026-07-28公表。",
+          "value": 8250,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Financial Outlook / 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new-fcf-low",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "fcf予想low",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想fcfのlow。newは2026-07-28公表。",
+          "value": 3750,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Financial Outlook / 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new-fcf-high",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "fcf予想high",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年度会社予想fcfのhigh。newは2026-07-28公表。",
+          "value": 3850,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "Financial Outlook / 2026 Outlook",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "7月時点の2026年通期会社予想は、売上高26,275〜26,475、調整後営業EBITDA8,150〜8,250、会社定義FCF3,750〜3,850。売上予想は年初の26,425〜26,625から引き下げたが、EBITDAとFCFの予想は維持した。"
+    },
+    {
+      "id": "guidance-fcf-components",
+      "question": "FCF会社予想は現金投資をすべて引いた計算か。",
+      "definition": "会社が示す対応するScenario 1と2。各レンジを任意に組み替えない。成長設備投資も現金支出として控除する。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo-1",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業CF予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "営業CF予想"
+        },
+        {
+          "id": "normal-1",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "通常事業現金設備投資支出予想（負号）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "通常事業現金設備投資支出予想（負号）"
+        },
+        {
+          "id": "growth-1",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "サステナビリティ現金成長投資支出予想（負号）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "サステナビリティ現金成長投資支出予想（負号）"
+        },
+        {
+          "id": "sales-1",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "事業資産売却収入予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "事業資産売却収入予想"
+        },
+        {
+          "id": "cfo-2",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業CF予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "営業CF予想"
+        },
+        {
+          "id": "normal-2",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "通常事業現金設備投資支出予想（負号）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "通常事業現金設備投資支出予想（負号）"
+        },
+        {
+          "id": "growth-2",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "サステナビリティ現金成長投資支出予想（負号）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "サステナビリティ現金成長投資支出予想（負号）"
+        },
+        {
+          "id": "sales-2",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "事業資産売却収入予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "事業資産売却収入予想"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo-1",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業CF予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "営業CF予想",
+          "value": 6300,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "2026 Projected Free Cash Flow Reconciliation; Scenario 1",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "normal-1",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "通常事業現金設備投資支出予想（負号）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "通常事業現金設備投資支出予想（負号）",
+          "value": -2400,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "2026 Projected Free Cash Flow Reconciliation; Scenario 1",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "growth-1",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "サステナビリティ現金成長投資支出予想（負号）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "サステナビリティ現金成長投資支出予想（負号）",
+          "value": -250,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "2026 Projected Free Cash Flow Reconciliation; Scenario 1",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sales-1",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "事業資産売却収入予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "事業資産売却収入予想",
+          "value": 100,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "2026 Projected Free Cash Flow Reconciliation; Scenario 1",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo-2",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "営業CF予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "営業CF予想",
+          "value": 6450,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "2026 Projected Free Cash Flow Reconciliation; Scenario 2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "normal-2",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "通常事業現金設備投資支出予想（負号）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "通常事業現金設備投資支出予想（負号）",
+          "value": -2500,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "2026 Projected Free Cash Flow Reconciliation; Scenario 2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "growth-2",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "サステナビリティ現金成長投資支出予想（負号）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "サステナビリティ現金成長投資支出予想（負号）",
+          "value": -250,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "2026 Projected Free Cash Flow Reconciliation; Scenario 2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sales-2",
+          "entity": "Waste Management, Inc.（連結）",
+          "metric": "事業資産売却収入予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "事業資産売却収入予想",
+          "value": 150,
+          "source": {
+            "url": "https://investors.wm.com/news-releases/news-release-details/wm-announces-second-quarter-2026-earnings/",
+            "publishedOn": "2026-07-28",
+            "locator": "2026 Projected Free Cash Flow Reconciliation; Scenario 2",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf-1",
+          "operation": "sum",
+          "inputs": [
+            "cfo-1",
+            "normal-1",
+            "growth-1",
+            "sales-1"
+          ],
+          "definition": "会社が例示した対応するシナリオのFCF。百万米ドル",
+          "precision": 0,
+          "value": 3750
+        },
+        {
+          "id": "fcf-2",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2",
+            "normal-2",
+            "growth-2",
+            "sales-2"
+          ],
+          "definition": "会社が例示した対応するシナリオのFCF。百万米ドル",
+          "precision": 0,
+          "value": 3850
+        }
+      ],
+      "claim": "最新のFCF予想には、営業CF6,300〜6,450、通常事業向け現金設備投資2,400〜2,500、サステナビリティ成長投資250、事業・資産売却収入100〜150という、会社が示した対応する二つのシナリオがある。"
+    },
+    {
+      "id": "valuation-withheld",
+      "question": "現在の株価が割安か。",
+      "definition": "同一基準時点の市場株価と財務・予想定義をそろえる。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "price",
+          "entity": "Waste Management, Inc.",
+          "metric": "基準時点に対応する検証済み株価",
+          "periodStart": "2026-10-16",
+          "periodEnd": "2026-10-16",
+          "unit": "米ドル／株",
+          "basis": "market",
+          "definition": "直近米国営業日の検証済み終値"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "基準時点の一次市場株価と同一定義の市場予想を確保していない。IRトップの時刻不明の動的株価は採用しない。",
+      "omittedClaim": "現在の株価は割安であり、具体的な目標株価を提示する。"
+    }
+  ]
+}

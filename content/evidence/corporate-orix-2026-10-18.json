@@ -1,0 +1,3430 @@
+{
+  "version": 1,
+  "articleSlug": "corporate-orix-2026-10-18",
+  "articleSha256": "8622713b1db7eba048416930d56d992f2df2e175287e243022fad41cd8384c8d",
+  "checkedAt": "2026-10-18T19:19:38+09:00",
+  "informationCutoff": "2026-10-18T19:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "本文の全ての重要な数値比較を原文PDFで検証。長期表50セル、四半期・セグメント全セル、予想・配当・自己株取得・CF・会社目標を収録。営業収益は2023年以降のみ銀行非継続事業再表示であり長期CAGRは不採用。上期対通期の予想差額から下期利益を計算しない。会社調整後利益を全一時要因除外後利益と扱わない。四半期CFは非作成。articleSha256は最終TSX/JSONルート統合後にarticleDigest(files)で計算するまで未設定。本稿数値のレビュー済みと公開工程のdigest未設定を区別する。 最終統合時に受領原稿のSHA256とMarkdown完全一致を確認。本文・数値・出典は変更せず、公開日時と既存ResearchArticleルートを設定し、その全JSON/TSXを正式articleDigestで計算した。",
+  "comparisons": [
+    {
+      "id": "ten-year-financial-table",
+      "question": "利益規模、1株当たり利益と資本効率は10年間で同じ方向に変化したか。",
+      "definition": "2017〜2026年3月期の年次表50セル全件。営業収益の銀行除外再表示範囲は2023年以降であり営業収益CAGRは非表示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue-2017",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "統合報告書2026の連結営業収益。銀行の非継続事業化に係る2023年3月期以降の再表示とは範囲が異なる。年次表としてのみ表示。"
+        },
+        {
+          "id": "revenue-2018",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "統合報告書2026の連結営業収益。銀行の非継続事業化に係る2023年3月期以降の再表示とは範囲が異なる。年次表としてのみ表示。"
+        },
+        {
+          "id": "revenue-2019",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "統合報告書2026の連結営業収益。銀行の非継続事業化に係る2023年3月期以降の再表示とは範囲が異なる。年次表としてのみ表示。"
+        },
+        {
+          "id": "revenue-2020",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "統合報告書2026の連結営業収益。銀行の非継続事業化に係る2023年3月期以降の再表示とは範囲が異なる。年次表としてのみ表示。"
+        },
+        {
+          "id": "revenue-2021",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "統合報告書2026の連結営業収益。銀行の非継続事業化に係る2023年3月期以降の再表示とは範囲が異なる。年次表としてのみ表示。"
+        },
+        {
+          "id": "revenue-2022",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "統合報告書2026の連結営業収益。銀行の非継続事業化に係る2023年3月期以降の再表示とは範囲が異なる。年次表としてのみ表示。"
+        },
+        {
+          "id": "revenue-2023",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "統合報告書2026の連結営業収益。2023年3月期以降は銀行の非継続事業化に伴う組替再表示後の継続事業。2022年3月期以前とは範囲不一致。年次表としてのみ表示し10年間の成長率は計算しない。"
+        },
+        {
+          "id": "revenue-2024",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "統合報告書2026の連結営業収益。2023年3月期以降は銀行の非継続事業化に伴う組替再表示後の継続事業。2022年3月期以前とは範囲不一致。年次表としてのみ表示し10年間の成長率は計算しない。"
+        },
+        {
+          "id": "revenue-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "統合報告書2026の連結営業収益。2023年3月期以降は銀行の非継続事業化に伴う組替再表示後の継続事業。2022年3月期以前とは範囲不一致。年次表としてのみ表示し10年間の成長率は計算しない。"
+        },
+        {
+          "id": "revenue-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "統合報告書2026の連結営業収益。2023年3月期以降は銀行の非継続事業化に伴う組替再表示後の継続事業。2022年3月期以前とは範囲不一致。年次表としてのみ表示し10年間の成長率は計算しない。"
+        },
+        {
+          "id": "profit-2017",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "当社株主に帰属する当期純利益",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・株主帰属純利益。2022年3月期以降は長期保険契約会計の遡及適用後。銀行の非継続事業の損益を含む。"
+        },
+        {
+          "id": "profit-2018",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "当社株主に帰属する当期純利益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・株主帰属純利益。2022年3月期以降は長期保険契約会計の遡及適用後。銀行の非継続事業の損益を含む。"
+        },
+        {
+          "id": "profit-2019",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "当社株主に帰属する当期純利益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・株主帰属純利益。2022年3月期以降は長期保険契約会計の遡及適用後。銀行の非継続事業の損益を含む。"
+        },
+        {
+          "id": "profit-2020",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "当社株主に帰属する当期純利益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・株主帰属純利益。2022年3月期以降は長期保険契約会計の遡及適用後。銀行の非継続事業の損益を含む。"
+        },
+        {
+          "id": "profit-2021",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "当社株主に帰属する当期純利益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・株主帰属純利益。2022年3月期以降は長期保険契約会計の遡及適用後。銀行の非継続事業の損益を含む。"
+        },
+        {
+          "id": "profit-2022",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "当社株主に帰属する当期純利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・株主帰属純利益。2022年3月期以降は長期保険契約会計の遡及適用後。銀行の非継続事業の損益を含む。"
+        },
+        {
+          "id": "profit-2023",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "当社株主に帰属する当期純利益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・株主帰属純利益。2022年3月期以降は長期保険契約会計の遡及適用後。銀行の非継続事業の損益を含む。"
+        },
+        {
+          "id": "profit-2024",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "当社株主に帰属する当期純利益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・株主帰属純利益。2022年3月期以降は長期保険契約会計の遡及適用後。銀行の非継続事業の損益を含む。"
+        },
+        {
+          "id": "profit-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "当社株主に帰属する当期純利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・株主帰属純利益。2022年3月期以降は長期保険契約会計の遡及適用後。銀行の非継続事業の損益を含む。"
+        },
+        {
+          "id": "profit-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "当社株主に帰属する当期純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・株主帰属純利益。2022年3月期以降は長期保険契約会計の遡及適用後。銀行の非継続事業の損益を含む。"
+        },
+        {
+          "id": "roe-2017",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE、米国基準の当社株主資本に対する株主帰属純利益。会計変更の遡及適用範囲は長期表の注記に従う。"
+        },
+        {
+          "id": "roe-2018",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE、米国基準の当社株主資本に対する株主帰属純利益。会計変更の遡及適用範囲は長期表の注記に従う。"
+        },
+        {
+          "id": "roe-2019",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE、米国基準の当社株主資本に対する株主帰属純利益。会計変更の遡及適用範囲は長期表の注記に従う。"
+        },
+        {
+          "id": "roe-2020",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE、米国基準の当社株主資本に対する株主帰属純利益。会計変更の遡及適用範囲は長期表の注記に従う。"
+        },
+        {
+          "id": "roe-2021",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE、米国基準の当社株主資本に対する株主帰属純利益。会計変更の遡及適用範囲は長期表の注記に従う。"
+        },
+        {
+          "id": "roe-2022",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE、米国基準の当社株主資本に対する株主帰属純利益。会計変更の遡及適用範囲は長期表の注記に従う。"
+        },
+        {
+          "id": "roe-2023",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE、米国基準の当社株主資本に対する株主帰属純利益。会計変更の遡及適用範囲は長期表の注記に従う。"
+        },
+        {
+          "id": "roe-2024",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE、米国基準の当社株主資本に対する株主帰属純利益。会計変更の遡及適用範囲は長期表の注記に従う。"
+        },
+        {
+          "id": "roe-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE、米国基準の当社株主資本に対する株主帰属純利益。会計変更の遡及適用範囲は長期表の注記に従う。"
+        },
+        {
+          "id": "roe-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE、米国基準の当社株主資本に対する株主帰属純利益。会計変更の遡及適用範囲は長期表の注記に従う。"
+        },
+        {
+          "id": "eps-2017",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "基本的1株当たり純利益",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "会社開示の基本的1株当たり株主帰属純利益。希薄化後EPSとは区別。"
+        },
+        {
+          "id": "eps-2018",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "基本的1株当たり純利益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "会社開示の基本的1株当たり株主帰属純利益。希薄化後EPSとは区別。"
+        },
+        {
+          "id": "eps-2019",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "基本的1株当たり純利益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "会社開示の基本的1株当たり株主帰属純利益。希薄化後EPSとは区別。"
+        },
+        {
+          "id": "eps-2020",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "基本的1株当たり純利益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "会社開示の基本的1株当たり株主帰属純利益。希薄化後EPSとは区別。"
+        },
+        {
+          "id": "eps-2021",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "基本的1株当たり純利益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "会社開示の基本的1株当たり株主帰属純利益。希薄化後EPSとは区別。"
+        },
+        {
+          "id": "eps-2022",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "基本的1株当たり純利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "会社開示の基本的1株当たり株主帰属純利益。希薄化後EPSとは区別。"
+        },
+        {
+          "id": "eps-2023",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "基本的1株当たり純利益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "会社開示の基本的1株当たり株主帰属純利益。希薄化後EPSとは区別。"
+        },
+        {
+          "id": "eps-2024",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "基本的1株当たり純利益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "会社開示の基本的1株当たり株主帰属純利益。希薄化後EPSとは区別。"
+        },
+        {
+          "id": "eps-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "基本的1株当たり純利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "会社開示の基本的1株当たり株主帰属純利益。希薄化後EPSとは区別。"
+        },
+        {
+          "id": "eps-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "基本的1株当たり純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "会社開示の基本的1株当たり株主帰属純利益。希薄化後EPSとは区別。"
+        },
+        {
+          "id": "dividend-2017",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当金",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "該当決算期に対する1株当たり年間配当の実績。支払CF額・配当予想とは区別。"
+        },
+        {
+          "id": "dividend-2018",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当金",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "該当決算期に対する1株当たり年間配当の実績。支払CF額・配当予想とは区別。"
+        },
+        {
+          "id": "dividend-2019",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当金",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "該当決算期に対する1株当たり年間配当の実績。支払CF額・配当予想とは区別。"
+        },
+        {
+          "id": "dividend-2020",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当金",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "該当決算期に対する1株当たり年間配当の実績。支払CF額・配当予想とは区別。"
+        },
+        {
+          "id": "dividend-2021",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当金",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "該当決算期に対する1株当たり年間配当の実績。支払CF額・配当予想とは区別。"
+        },
+        {
+          "id": "dividend-2022",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当金",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "該当決算期に対する1株当たり年間配当の実績。支払CF額・配当予想とは区別。"
+        },
+        {
+          "id": "dividend-2023",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当金",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "該当決算期に対する1株当たり年間配当の実績。支払CF額・配当予想とは区別。"
+        },
+        {
+          "id": "dividend-2024",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当金",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "該当決算期に対する1株当たり年間配当の実績。支払CF額・配当予想とは区別。"
+        },
+        {
+          "id": "dividend-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当金",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "該当決算期に対する1株当たり年間配当の実績。支払CF額・配当予想とは区別。"
+        },
+        {
+          "id": "dividend-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当金",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "該当決算期に対する1株当たり年間配当の実績。支払CF額・配当予想とは区別。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-2017",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "統合報告書2026の連結営業収益。銀行の非継続事業化に係る2023年3月期以降の再表示とは範囲が異なる。年次表としてのみ表示。",
+          "value": 2678659,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2017列・営業収益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "revenue-2018",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "統合報告書2026の連結営業収益。銀行の非継続事業化に係る2023年3月期以降の再表示とは範囲が異なる。年次表としてのみ表示。",
+          "value": 2862771,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2018列・営業収益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "revenue-2019",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "統合報告書2026の連結営業収益。銀行の非継続事業化に係る2023年3月期以降の再表示とは範囲が異なる。年次表としてのみ表示。",
+          "value": 2434864,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2019列・営業収益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "revenue-2020",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "統合報告書2026の連結営業収益。銀行の非継続事業化に係る2023年3月期以降の再表示とは範囲が異なる。年次表としてのみ表示。",
+          "value": 2283000,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2020列・営業収益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "revenue-2021",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "統合報告書2026の連結営業収益。銀行の非継続事業化に係る2023年3月期以降の再表示とは範囲が異なる。年次表としてのみ表示。",
+          "value": 2292357,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2021列・営業収益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "revenue-2022",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "統合報告書2026の連結営業収益。銀行の非継続事業化に係る2023年3月期以降の再表示とは範囲が異なる。年次表としてのみ表示。",
+          "value": 2508043,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2022列・営業収益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "revenue-2023",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "統合報告書2026の連結営業収益。2023年3月期以降は銀行の非継続事業化に伴う組替再表示後の継続事業。2022年3月期以前とは範囲不一致。年次表としてのみ表示し10年間の成長率は計算しない。",
+          "value": 2607500,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2023列・営業収益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "revenue-2024",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "統合報告書2026の連結営業収益。2023年3月期以降は銀行の非継続事業化に伴う組替再表示後の継続事業。2022年3月期以前とは範囲不一致。年次表としてのみ表示し10年間の成長率は計算しない。",
+          "value": 2755044,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2024列・営業収益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "revenue-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "統合報告書2026の連結営業収益。2023年3月期以降は銀行の非継続事業化に伴う組替再表示後の継続事業。2022年3月期以前とは範囲不一致。年次表としてのみ表示し10年間の成長率は計算しない。",
+          "value": 2811567,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2025列・営業収益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "revenue-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "統合報告書2026の連結営業収益。2023年3月期以降は銀行の非継続事業化に伴う組替再表示後の継続事業。2022年3月期以前とは範囲不一致。年次表としてのみ表示し10年間の成長率は計算しない。",
+          "value": 3254402,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2026列・営業収益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "profit-2017",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "当社株主に帰属する当期純利益",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・株主帰属純利益。2022年3月期以降は長期保険契約会計の遡及適用後。銀行の非継続事業の損益を含む。",
+          "value": 273239,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2017列・当社株主に帰属する当期純利益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "profit-2018",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "当社株主に帰属する当期純利益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・株主帰属純利益。2022年3月期以降は長期保険契約会計の遡及適用後。銀行の非継続事業の損益を含む。",
+          "value": 313135,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2018列・当社株主に帰属する当期純利益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "profit-2019",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "当社株主に帰属する当期純利益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・株主帰属純利益。2022年3月期以降は長期保険契約会計の遡及適用後。銀行の非継続事業の損益を含む。",
+          "value": 323745,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2019列・当社株主に帰属する当期純利益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "profit-2020",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "当社株主に帰属する当期純利益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・株主帰属純利益。2022年3月期以降は長期保険契約会計の遡及適用後。銀行の非継続事業の損益を含む。",
+          "value": 302700,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2020列・当社株主に帰属する当期純利益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "profit-2021",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "当社株主に帰属する当期純利益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・株主帰属純利益。2022年3月期以降は長期保険契約会計の遡及適用後。銀行の非継続事業の損益を含む。",
+          "value": 192384,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2021列・当社株主に帰属する当期純利益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "profit-2022",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "当社株主に帰属する当期純利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・株主帰属純利益。2022年3月期以降は長期保険契約会計の遡及適用後。銀行の非継続事業の損益を含む。",
+          "value": 317376,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2022列・当社株主に帰属する当期純利益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "profit-2023",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "当社株主に帰属する当期純利益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・株主帰属純利益。2022年3月期以降は長期保険契約会計の遡及適用後。銀行の非継続事業の損益を含む。",
+          "value": 290340,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2023列・当社株主に帰属する当期純利益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "profit-2024",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "当社株主に帰属する当期純利益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・株主帰属純利益。2022年3月期以降は長期保険契約会計の遡及適用後。銀行の非継続事業の損益を含む。",
+          "value": 346132,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2024列・当社株主に帰属する当期純利益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "profit-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "当社株主に帰属する当期純利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・株主帰属純利益。2022年3月期以降は長期保険契約会計の遡及適用後。銀行の非継続事業の損益を含む。",
+          "value": 351630,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2025列・当社株主に帰属する当期純利益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "profit-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "当社株主に帰属する当期純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・株主帰属純利益。2022年3月期以降は長期保険契約会計の遡及適用後。銀行の非継続事業の損益を含む。",
+          "value": 447265,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2026列・当社株主に帰属する当期純利益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe-2017",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE、米国基準の当社株主資本に対する株主帰属純利益。会計変更の遡及適用範囲は長期表の注記に従う。",
+          "value": 11.3,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2017列・ROE行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe-2018",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE、米国基準の当社株主資本に対する株主帰属純利益。会計変更の遡及適用範囲は長期表の注記に従う。",
+          "value": 12.1,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2018列・ROE行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe-2019",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE、米国基準の当社株主資本に対する株主帰属純利益。会計変更の遡及適用範囲は長期表の注記に従う。",
+          "value": 11.6,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2019列・ROE行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe-2020",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE、米国基準の当社株主資本に対する株主帰属純利益。会計変更の遡及適用範囲は長期表の注記に従う。",
+          "value": 10.3,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2020列・ROE行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe-2021",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE、米国基準の当社株主資本に対する株主帰属純利益。会計変更の遡及適用範囲は長期表の注記に従う。",
+          "value": 6.4,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2021列・ROE行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe-2022",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE、米国基準の当社株主資本に対する株主帰属純利益。会計変更の遡及適用範囲は長期表の注記に従う。",
+          "value": 10,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2022列・ROE行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe-2023",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE、米国基準の当社株主資本に対する株主帰属純利益。会計変更の遡及適用範囲は長期表の注記に従う。",
+          "value": 8.5,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2023列・ROE行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe-2024",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE、米国基準の当社株主資本に対する株主帰属純利益。会計変更の遡及適用範囲は長期表の注記に従う。",
+          "value": 9.2,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2024列・ROE行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE、米国基準の当社株主資本に対する株主帰属純利益。会計変更の遡及適用範囲は長期表の注記に従う。",
+          "value": 8.8,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2025列・ROE行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE、米国基準の当社株主資本に対する株主帰属純利益。会計変更の遡及適用範囲は長期表の注記に従う。",
+          "value": 10.4,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2026列・ROE行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eps-2017",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "基本的1株当たり純利益",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "会社開示の基本的1株当たり株主帰属純利益。希薄化後EPSとは区別。",
+          "value": 208.88,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2017列・基本的1株当たり純利益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eps-2018",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "基本的1株当たり純利益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "会社開示の基本的1株当たり株主帰属純利益。希薄化後EPSとは区別。",
+          "value": 244.4,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2018列・基本的1株当たり純利益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eps-2019",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "基本的1株当たり純利益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "会社開示の基本的1株当たり株主帰属純利益。希薄化後EPSとは区別。",
+          "value": 252.92,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2019列・基本的1株当たり純利益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eps-2020",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "基本的1株当たり純利益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "会社開示の基本的1株当たり株主帰属純利益。希薄化後EPSとは区別。",
+          "value": 237.38,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2020列・基本的1株当たり純利益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eps-2021",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "基本的1株当たり純利益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "会社開示の基本的1株当たり株主帰属純利益。希薄化後EPSとは区別。",
+          "value": 155.54,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2021列・基本的1株当たり純利益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eps-2022",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "基本的1株当たり純利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "会社開示の基本的1株当たり株主帰属純利益。希薄化後EPSとは区別。",
+          "value": 263.72,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2022列・基本的1株当たり純利益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eps-2023",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "基本的1株当たり純利益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "会社開示の基本的1株当たり株主帰属純利益。希薄化後EPSとは区別。",
+          "value": 245.98,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2023列・基本的1株当たり純利益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eps-2024",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "基本的1株当たり純利益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "会社開示の基本的1株当たり株主帰属純利益。希薄化後EPSとは区別。",
+          "value": 298.55,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2024列・基本的1株当たり純利益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eps-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "基本的1株当たり純利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "会社開示の基本的1株当たり株主帰属純利益。希薄化後EPSとは区別。",
+          "value": 307.74,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2025列・基本的1株当たり純利益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eps-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "基本的1株当たり純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "会社開示の基本的1株当たり株主帰属純利益。希薄化後EPSとは区別。",
+          "value": 400.27,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2026列・基本的1株当たり純利益行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dividend-2017",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当金",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "該当決算期に対する1株当たり年間配当の実績。支払CF額・配当予想とは区別。",
+          "value": 52.25,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2017列・年間配当金行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dividend-2018",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当金",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "該当決算期に対する1株当たり年間配当の実績。支払CF額・配当予想とは区別。",
+          "value": 66,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2018列・年間配当金行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dividend-2019",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当金",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "該当決算期に対する1株当たり年間配当の実績。支払CF額・配当予想とは区別。",
+          "value": 76,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2019列・年間配当金行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dividend-2020",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当金",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "該当決算期に対する1株当たり年間配当の実績。支払CF額・配当予想とは区別。",
+          "value": 76,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2020列・年間配当金行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dividend-2021",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当金",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "該当決算期に対する1株当たり年間配当の実績。支払CF額・配当予想とは区別。",
+          "value": 78,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2021列・年間配当金行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dividend-2022",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当金",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "該当決算期に対する1株当たり年間配当の実績。支払CF額・配当予想とは区別。",
+          "value": 85.6,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2022列・年間配当金行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dividend-2023",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当金",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "該当決算期に対する1株当たり年間配当の実績。支払CF額・配当予想とは区別。",
+          "value": 85.6,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2023列・年間配当金行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dividend-2024",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当金",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "該当決算期に対する1株当たり年間配当の実績。支払CF額・配当予想とは区別。",
+          "value": 98.6,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2024列・年間配当金行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dividend-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当金",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "該当決算期に対する1株当たり年間配当の実績。支払CF額・配当予想とは区別。",
+          "value": 120.01,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2025列・年間配当金行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dividend-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当金",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "該当決算期に対する1株当たり年間配当の実績。支払CF額・配当予想とは区別。",
+          "value": 156.1,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "11年間の連結要約財務データ・2026列・年間配当金行。注13および注17も確認。",
+            "pdfPage": 78,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "純利益は2017年3月期の273,239百万円から2026年3月期の447,265百万円へ増加し、EPSは208.88円から400.27円へ増えた。一方、ROEは11.3%から10.4%となっており、利益規模の拡大だけで資本効率まで継続的に向上したとはいえない。",
+      "calculations": []
+    },
+    {
+      "id": "annual-profit-and-roe",
+      "question": "直近通期の利益とROEはどう変化したか。",
+      "definition": "同一定義の2025年3月期対2026年3月期実績。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "profit-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "株主帰属純利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年3月期決算短信の連結株主帰属純利益実績。銀行を含む。"
+        },
+        {
+          "id": "profit-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "株主帰属純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年3月期決算短信の連結株主帰属純利益実績。銀行を含む。"
+        },
+        {
+          "id": "roe-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "株主資本に対する株主帰属純利益。会社公表実績。"
+        },
+        {
+          "id": "roe-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "株主資本に対する株主帰属純利益。会社公表実績。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "profit-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "株主帰属純利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年3月期決算短信の連結株主帰属純利益実績。銀行を含む。",
+          "value": 351630,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2026_4QJ.pdf",
+            "publishedOn": "2026-05-11",
+            "locator": "連結経営成績・2025年3月期・株主帰属純利益",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "profit-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "株主帰属純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年3月期決算短信の連結株主帰属純利益実績。銀行を含む。",
+          "value": 447265,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2026_4QJ.pdf",
+            "publishedOn": "2026-05-11",
+            "locator": "連結経営成績・2026年3月期・株主帰属純利益",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "株主資本に対する株主帰属純利益。会社公表実績。",
+          "value": 8.8,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2026_4QJ.pdf",
+            "publishedOn": "2026-05-11",
+            "locator": "連結経営成績・2025年3月期・ROE",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "ROE",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "株主資本に対する株主帰属純利益。会社公表実績。",
+          "value": 10.4,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2026_4QJ.pdf",
+            "publishedOn": "2026-05-11",
+            "locator": "連結経営成績・2026年3月期・ROE",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "2026年3月期の純利益は447,265百万円で、前期351,630百万円から27.2%増加した。ROEも8.8%から10.4%へ改善した。",
+      "calculations": [
+        {
+          "id": "profit-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "profit-2026",
+            "profit-2025"
+          ],
+          "definition": "純利益の前年比増減率。会社表示を原数値から検算。",
+          "precision": 1,
+          "value": 27.2
+        }
+      ]
+    },
+    {
+      "id": "q1-profit-bridge",
+      "question": "純利益の大幅増益は営業段階の同率の改善を意味するか。",
+      "definition": "2027年3月期1Qと再表示済み前年同期。継続事業と非継続事業を含む純利益の範囲差を明記。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・4〜6月。銀行の非継続事業を除く継続事業。前年同期も組替再表示済み。"
+        },
+        {
+          "id": "revenue-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・4〜6月。銀行の非継続事業を除く継続事業。前年同期も組替再表示済み。"
+        },
+        {
+          "id": "op-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・4〜6月。銀行の非継続事業を除く継続事業。前年同期も組替再表示済み。"
+        },
+        {
+          "id": "op-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・4〜6月。銀行の非継続事業を除く継続事業。前年同期も組替再表示済み。"
+        },
+        {
+          "id": "pretax-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "税引前純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・4〜6月。銀行の非継続事業を除く継続事業。前年同期も組替再表示済み。"
+        },
+        {
+          "id": "pretax-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "税引前純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・4〜6月。銀行の非継続事業を除く継続事業。前年同期も組替再表示済み。"
+        },
+        {
+          "id": "profit-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "株主帰属純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・4〜6月。銀行の非継続事業を含む株主帰属純利益。"
+        },
+        {
+          "id": "profit-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "株主帰属純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・4〜6月。銀行の非継続事業を含む株主帰属純利益。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・4〜6月。銀行の非継続事業を除く継続事業。前年同期も組替再表示済み。",
+          "value": 746973,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "連結経営成績・2026年3月期第1四半期・営業収益",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "revenue-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業収益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・4〜6月。銀行の非継続事業を除く継続事業。前年同期も組替再表示済み。",
+          "value": 876628,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "連結経営成績・2027年3月期第1四半期・営業収益",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・4〜6月。銀行の非継続事業を除く継続事業。前年同期も組替再表示済み。",
+          "value": 119918,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "連結経営成績・2026年3月期第1四半期・営業利益",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・4〜6月。銀行の非継続事業を除く継続事業。前年同期も組替再表示済み。",
+          "value": 133919,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "連結経営成績・2027年3月期第1四半期・営業利益",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "pretax-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "税引前純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・4〜6月。銀行の非継続事業を除く継続事業。前年同期も組替再表示済み。",
+          "value": 145666,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "連結経営成績・2026年3月期第1四半期・税引前純利益",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "pretax-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "税引前純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・4〜6月。銀行の非継続事業を除く継続事業。前年同期も組替再表示済み。",
+          "value": 406150,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "連結経営成績・2027年3月期第1四半期・税引前純利益",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "profit-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "株主帰属純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・4〜6月。銀行の非継続事業を含む株主帰属純利益。",
+          "value": 107288,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "連結経営成績・2026年3月期第1四半期・株主帰属純利益",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "profit-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "株主帰属純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結・4〜6月。銀行の非継続事業を含む株主帰属純利益。",
+          "value": 280832,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "連結経営成績・2027年3月期第1四半期・株主帰属純利益",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "第1四半期の純利益は前年同期比161.8%増だったが、継続事業の営業利益は11.7%増だった。",
+      "calculations": [
+        {
+          "id": "revenue-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "revenue-2026",
+            "revenue-2025"
+          ],
+          "definition": "前年同四半期比営業収益増減率、元の百万円値から計算。",
+          "precision": 1,
+          "value": 17.4
+        },
+        {
+          "id": "op-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "op-2026",
+            "op-2025"
+          ],
+          "definition": "前年同四半期比営業利益増減率、元の百万円値から計算。",
+          "precision": 1,
+          "value": 11.7
+        },
+        {
+          "id": "pretax-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "pretax-2026",
+            "pretax-2025"
+          ],
+          "definition": "前年同四半期比税引前純利益増減率、元の百万円値から計算。",
+          "precision": 1,
+          "value": 178.8
+        },
+        {
+          "id": "profit-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "profit-2026",
+            "profit-2025"
+          ],
+          "definition": "前年同四半期比株主帰属純利益増減率、元の百万円値から計算。",
+          "precision": 1,
+          "value": 161.8
+        }
+      ]
+    },
+    {
+      "id": "q1-kioxia-adjustment",
+      "question": "報告純利益から指定キオクシア損益を除くといくらか。",
+      "definition": "会社定義の調整後税後利益。全一時要因控除後の継続利益ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "reported",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "株主帰属純利益・丸め値",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社説明資料の億円丸め。2027年3月期1Q税後。指定キオクシア関連損益のみを調整し、他の売却・評価損益は含まれ得る。"
+        },
+        {
+          "id": "kioxia",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "キオクシア売却評価益・税後",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社説明資料の億円丸め。2027年3月期1Q税後。指定キオクシア関連損益のみを調整し、他の売却・評価損益は含まれ得る。"
+        },
+        {
+          "id": "adjusted",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "調整後利益・税後",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社説明資料の億円丸め。2027年3月期1Q税後。指定キオクシア関連損益のみを調整し、他の売却・評価損益は含まれ得る。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "reported",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "株主帰属純利益・丸め値",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社説明資料の億円丸め。2027年3月期1Q税後。指定キオクシア関連損益のみを調整し、他の売却・評価損益は含まれ得る。",
+          "value": 2808,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/presentation/Presentation_2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "27.3期 上半期純利益予想・Q1実績の税後純利益",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "kioxia",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "キオクシア売却評価益・税後",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社説明資料の億円丸め。2027年3月期1Q税後。指定キオクシア関連損益のみを調整し、他の売却・評価損益は含まれ得る。",
+          "value": 1217,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/presentation/Presentation_2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "同ページ・Q1実績のキオクシア売却評価益・税後部分",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "adjusted",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "調整後利益・税後",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社説明資料の億円丸め。2027年3月期1Q税後。指定キオクシア関連損益のみを調整し、他の売却・評価損益は含まれ得る。",
+          "value": 1591,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/presentation/Presentation_2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "同ページ・Q1実績の調整後利益・税後部分",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "会社説明の億円単位の丸め値では、第1四半期純利益2,808億円のうち、東芝を通じたキオクシア株式の売却・評価益に関する税後利益は1,217億円で、これを除く調整後利益は1,591億円だった。",
+      "calculations": [
+        {
+          "id": "difference",
+          "operation": "difference",
+          "inputs": [
+            "reported",
+            "kioxia"
+          ],
+          "definition": "会社の億円丸め値の差。",
+          "precision": 0,
+          "value": 1591
+        }
+      ]
+    },
+    {
+      "id": "toshiba-reporting-lag",
+      "question": "キオクシア評価益の時点はオリックスの四半期末と一致するか。",
+      "definition": "持分法取込の時間差を明示。オリックス期末の同日株価を機械的に利益へ対応させない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "lag",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "東芝損益の取込ラグ",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "カ月",
+          "basis": "actual",
+          "definition": "持分法投資先の東芝損益をオリックスへ取り込む時間差。基礎利益との比較を誤らないために記録。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "lag",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "東芝損益の取込ラグ",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "カ月",
+          "basis": "actual",
+          "definition": "持分法投資先の東芝損益をオリックスへ取り込む時間差。基礎利益との比較を誤らないために記録。",
+          "value": 3,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/presentation/Presentation_2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "27.3期 上半期純利益予想・補足・東芝損益は持分法損益として3か月ラグで取り込み",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "オリックスはTB投資事業有限責任組合を通じて、東芝の損益を3カ月遅れで取り込む。",
+      "calculations": []
+    },
+    {
+      "id": "new-segment-profit",
+      "question": "再表示済み4セグメントで増益・減益はどこか。",
+      "definition": "表8セルと4増減率。セグメント利益は税前、純利益へ直接加算比較しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "apac-2025",
+          "entity": "オリックス・APACセグメント",
+          "metric": "セグメント利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "新区分4セグメントの税前利益。銀行を含まない継続事業。前年同期も新区分で再表示。"
+        },
+        {
+          "id": "apac-2026",
+          "entity": "オリックス・APACセグメント",
+          "metric": "セグメント利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "新区分4セグメントの税前利益。銀行を含まない継続事業。前年同期も新区分で再表示。"
+        },
+        {
+          "id": "infra-2025",
+          "entity": "オリックス・インフラセグメント",
+          "metric": "セグメント利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "新区分4セグメントの税前利益。銀行を含まない継続事業。前年同期も新区分で再表示。"
+        },
+        {
+          "id": "infra-2026",
+          "entity": "オリックス・インフラセグメント",
+          "metric": "セグメント利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "新区分4セグメントの税前利益。銀行を含まない継続事業。前年同期も新区分で再表示。"
+        },
+        {
+          "id": "western-2025",
+          "entity": "オリックス・欧米セグメント",
+          "metric": "セグメント利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "新区分4セグメントの税前利益。銀行を含まない継続事業。前年同期も新区分で再表示。"
+        },
+        {
+          "id": "western-2026",
+          "entity": "オリックス・欧米セグメント",
+          "metric": "セグメント利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "新区分4セグメントの税前利益。銀行を含まない継続事業。前年同期も新区分で再表示。"
+        },
+        {
+          "id": "insurance-2025",
+          "entity": "オリックス・保険セグメント",
+          "metric": "セグメント利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "新区分4セグメントの税前利益。銀行を含まない継続事業。前年同期も新区分で再表示。"
+        },
+        {
+          "id": "insurance-2026",
+          "entity": "オリックス・保険セグメント",
+          "metric": "セグメント利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "新区分4セグメントの税前利益。銀行を含まない継続事業。前年同期も新区分で再表示。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "apac-2025",
+          "entity": "オリックス・APACセグメント",
+          "metric": "セグメント利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "新区分4セグメントの税前利益。銀行を含まない継続事業。前年同期も新区分で再表示。",
+          "value": 52201,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "セグメント別動向・APAC・2026年3月期第1四半期",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "apac-2026",
+          "entity": "オリックス・APACセグメント",
+          "metric": "セグメント利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "新区分4セグメントの税前利益。銀行を含まない継続事業。前年同期も新区分で再表示。",
+          "value": 289811,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "セグメント別動向・APAC・2027年3月期第1四半期",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "infra-2025",
+          "entity": "オリックス・インフラセグメント",
+          "metric": "セグメント利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "新区分4セグメントの税前利益。銀行を含まない継続事業。前年同期も新区分で再表示。",
+          "value": 68407,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "セグメント別動向・インフラ・2026年3月期第1四半期",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "infra-2026",
+          "entity": "オリックス・インフラセグメント",
+          "metric": "セグメント利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "新区分4セグメントの税前利益。銀行を含まない継続事業。前年同期も新区分で再表示。",
+          "value": 43317,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "セグメント別動向・インフラ・2027年3月期第1四半期",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "western-2025",
+          "entity": "オリックス・欧米セグメント",
+          "metric": "セグメント利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "新区分4セグメントの税前利益。銀行を含まない継続事業。前年同期も新区分で再表示。",
+          "value": 10594,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "セグメント別動向・欧米・2026年3月期第1四半期",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "western-2026",
+          "entity": "オリックス・欧米セグメント",
+          "metric": "セグメント利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "新区分4セグメントの税前利益。銀行を含まない継続事業。前年同期も新区分で再表示。",
+          "value": 63000,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "セグメント別動向・欧米・2027年3月期第1四半期",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "insurance-2025",
+          "entity": "オリックス・保険セグメント",
+          "metric": "セグメント利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "新区分4セグメントの税前利益。銀行を含まない継続事業。前年同期も新区分で再表示。",
+          "value": 24063,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "セグメント別動向・保険・2026年3月期第1四半期",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "insurance-2026",
+          "entity": "オリックス・保険セグメント",
+          "metric": "セグメント利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "新区分4セグメントの税前利益。銀行を含まない継続事業。前年同期も新区分で再表示。",
+          "value": 27960,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "セグメント別動向・保険・2027年3月期第1四半期",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "新区分の前年同期比較では、APAC、欧米、保険が増益、インフラが減益となった。",
+      "calculations": [
+        {
+          "id": "apac-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "apac-2026",
+            "apac-2025"
+          ],
+          "definition": "同一定義セグメント利益の前年比。会社表示の整数百分率に丸め。",
+          "precision": 0,
+          "value": 455
+        },
+        {
+          "id": "infra-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "infra-2026",
+            "infra-2025"
+          ],
+          "definition": "同一定義セグメント利益の前年比。会社表示の整数百分率に丸め。",
+          "precision": 0,
+          "value": -37
+        },
+        {
+          "id": "western-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "western-2026",
+            "western-2025"
+          ],
+          "definition": "同一定義セグメント利益の前年比。会社表示の整数百分率に丸め。",
+          "precision": 0,
+          "value": 495
+        },
+        {
+          "id": "insurance-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "insurance-2026",
+            "insurance-2025"
+          ],
+          "definition": "同一定義セグメント利益の前年比。会社表示の整数百分率に丸め。",
+          "precision": 0,
+          "value": 16
+        }
+      ]
+    },
+    {
+      "id": "europe-aum",
+      "question": "同一定義のEurope運用資産は前期末から増加したか。",
+      "definition": "AUAを含まない新定義。資金純流入の比較とは区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "march",
+          "entity": "ORIX Europe",
+          "metric": "AUM",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "十億ユーロ",
+          "basis": "actual",
+          "definition": "2027年3月期1QよりAUAを除く定義等に見直し、過年度も組替再表示済み。本文は億ユーロ単位に換算（十億ユーロ×10）。"
+        },
+        {
+          "id": "june",
+          "entity": "ORIX Europe",
+          "metric": "AUM",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "十億ユーロ",
+          "basis": "actual",
+          "definition": "2027年3月期1QよりAUAを除く定義等に見直し、過年度も組替再表示済み。本文は億ユーロ単位に換算（十億ユーロ×10）。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "march",
+          "entity": "ORIX Europe",
+          "metric": "AUM",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "十億ユーロ",
+          "basis": "actual",
+          "definition": "2027年3月期1QよりAUAを除く定義等に見直し、過年度も組替再表示済み。本文は億ユーロ単位に換算（十億ユーロ×10）。",
+          "value": 397.3,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/supplement/ORIXResultsSupInfo2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "欧米（2）・アセットマネジメント事業 期末運用資産残高・ORIX Europe・2026-03-31。脚注も確認。",
+            "pdfPage": 11,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "june",
+          "entity": "ORIX Europe",
+          "metric": "AUM",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "十億ユーロ",
+          "basis": "actual",
+          "definition": "2027年3月期1QよりAUAを除く定義等に見直し、過年度も組替再表示済み。本文は億ユーロ単位に換算（十億ユーロ×10）。",
+          "value": 463.2,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/supplement/ORIXResultsSupInfo2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "欧米（2）・アセットマネジメント事業 期末運用資産残高・ORIX Europe・2026-06-30。脚注も確認。",
+            "pdfPage": 11,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "ORIX EuropeのAUMは2026年3月末の3,973億ユーロから6月末の4,632億ユーロへ増加した。",
+      "calculations": []
+    },
+    {
+      "id": "forecast-period-and-adjustment",
+      "question": "上期予想と通期予想は同一前提で減算できるか。",
+      "definition": "上期税後純利益、指定調整額、調整後利益と通期据え置き予想を区分。下期の機械的差分は計算しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "h1-reported",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "上期株主帰属純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "2026年8月6日時点の会社予想。上期は特定株価前提の見積もり。通期は据え置き、通期調整後利益は非公表。"
+        },
+        {
+          "id": "h1-adjustment",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "上期キオクシア売却評価益・税後",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "2026年8月6日時点の会社予想。上期は特定株価前提の見積もり。通期は据え置き、通期調整後利益は非公表。"
+        },
+        {
+          "id": "h1-adjusted",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "上期調整後利益・税後",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "2026年8月6日時点の会社予想。上期は特定株価前提の見積もり。通期は据え置き、通期調整後利益は非公表。"
+        },
+        {
+          "id": "fy-reported",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "通期株主帰属純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "2026年8月6日時点の会社予想。上期は特定株価前提の見積もり。通期は据え置き、通期調整後利益は非公表。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "h1-reported",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "上期株主帰属純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "2026年8月6日時点の会社予想。上期は特定株価前提の見積もり。通期は据え置き、通期調整後利益は非公表。",
+          "value": 8400,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/presentation/Presentation_2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "27.3期純利益予想・上期株主帰属純利益。通期については合理的見積困難の説明も参照。",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "h1-adjustment",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "上期キオクシア売却評価益・税後",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "2026年8月6日時点の会社予想。上期は特定株価前提の見積もり。通期は据え置き、通期調整後利益は非公表。",
+          "value": 5400,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/presentation/Presentation_2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "27.3期純利益予想・上期キオクシア売却評価益・税後。通期については合理的見積困難の説明も参照。",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "h1-adjusted",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "上期調整後利益・税後",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "2026年8月6日時点の会社予想。上期は特定株価前提の見積もり。通期は据え置き、通期調整後利益は非公表。",
+          "value": 3000,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/presentation/Presentation_2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "27.3期純利益予想・上期調整後利益・税後。通期については合理的見積困難の説明も参照。",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fy-reported",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "通期株主帰属純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "2026年8月6日時点の会社予想。上期は特定株価前提の見積もり。通期は据え置き、通期調整後利益は非公表。",
+          "value": 5300,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/presentation/Presentation_2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "27.3期純利益予想・通期株主帰属純利益。通期については合理的見積困難の説明も参照。",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "8月6日時点の会社予想は、上期純利益8,400億円、うちキオクシア関連の調整額5,400億円、調整後上期利益3,000億円。通期純利益予想は5,300億円に据え置かれている。",
+      "calculations": [
+        {
+          "id": "h1-adjusted-reconciled",
+          "operation": "difference",
+          "inputs": [
+            "h1-reported",
+            "h1-adjustment"
+          ],
+          "definition": "同一上期会社予想の税後値の調整。",
+          "precision": 0,
+          "value": 3000
+        }
+      ]
+    },
+    {
+      "id": "annual-cash-flow",
+      "question": "営業CFと投資CFの合計はどう変化したか。",
+      "definition": "営業CF+符号付き投資CF。自由な株主還元原資または会社FCFとは定義しない。CF表の全ての原数値を記録。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業活動CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年5月公表通期連結CF計算書。銀行を含む当時の連結ベース。流出は負数。期末現金は使途制限付現金を含む。"
+        },
+        {
+          "id": "cfo-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業活動CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年5月公表通期連結CF計算書。銀行を含む当時の連結ベース。流出は負数。期末現金は使途制限付現金を含む。"
+        },
+        {
+          "id": "cfi-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "投資活動CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年5月公表通期連結CF計算書。銀行を含む当時の連結ベース。流出は負数。期末現金は使途制限付現金を含む。"
+        },
+        {
+          "id": "cfi-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "投資活動CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年5月公表通期連結CF計算書。銀行を含む当時の連結ベース。流出は負数。期末現金は使途制限付現金を含む。"
+        },
+        {
+          "id": "cff-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "財務活動CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年5月公表通期連結CF計算書。銀行を含む当時の連結ベース。流出は負数。期末現金は使途制限付現金を含む。"
+        },
+        {
+          "id": "cff-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "財務活動CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年5月公表通期連結CF計算書。銀行を含む当時の連結ベース。流出は負数。期末現金は使途制限付現金を含む。"
+        },
+        {
+          "id": "cash-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "現金・現金等価物・使途制限付現金期末残高",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年5月公表通期連結CF計算書。銀行を含む当時の連結ベース。流出は負数。期末現金は使途制限付現金を含む。"
+        },
+        {
+          "id": "cash-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "現金・現金等価物・使途制限付現金期末残高",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年5月公表通期連結CF計算書。銀行を含む当時の連結ベース。流出は負数。期末現金は使途制限付現金を含む。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業活動CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年5月公表通期連結CF計算書。銀行を含む当時の連結ベース。流出は負数。期末現金は使途制限付現金を含む。",
+          "value": 1300193,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2026_4QJ.pdf",
+            "publishedOn": "2026-05-11",
+            "locator": "連結キャッシュ・フロー計算書・2025年3月期・営業活動CF",
+            "pdfPage": 17,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "営業活動CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年5月公表通期連結CF計算書。銀行を含む当時の連結ベース。流出は負数。期末現金は使途制限付現金を含む。",
+          "value": 1369567,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2026_4QJ.pdf",
+            "publishedOn": "2026-05-11",
+            "locator": "連結キャッシュ・フロー計算書・2026年3月期・営業活動CF",
+            "pdfPage": 17,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfi-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "投資活動CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年5月公表通期連結CF計算書。銀行を含む当時の連結ベース。流出は負数。期末現金は使途制限付現金を含む。",
+          "value": -1309695,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2026_4QJ.pdf",
+            "publishedOn": "2026-05-11",
+            "locator": "連結キャッシュ・フロー計算書・2025年3月期・投資活動CF",
+            "pdfPage": 17,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfi-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "投資活動CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年5月公表通期連結CF計算書。銀行を含む当時の連結ベース。流出は負数。期末現金は使途制限付現金を含む。",
+          "value": -1114671,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2026_4QJ.pdf",
+            "publishedOn": "2026-05-11",
+            "locator": "連結キャッシュ・フロー計算書・2026年3月期・投資活動CF",
+            "pdfPage": 17,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cff-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "財務活動CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年5月公表通期連結CF計算書。銀行を含む当時の連結ベース。流出は負数。期末現金は使途制限付現金を含む。",
+          "value": 149322,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2026_4QJ.pdf",
+            "publishedOn": "2026-05-11",
+            "locator": "連結キャッシュ・フロー計算書・2025年3月期・財務活動CF",
+            "pdfPage": 17,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cff-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "財務活動CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年5月公表通期連結CF計算書。銀行を含む当時の連結ベース。流出は負数。期末現金は使途制限付現金を含む。",
+          "value": -160535,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2026_4QJ.pdf",
+            "publishedOn": "2026-05-11",
+            "locator": "連結キャッシュ・フロー計算書・2026年3月期・財務活動CF",
+            "pdfPage": 17,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash-2025",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "現金・現金等価物・使途制限付現金期末残高",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年5月公表通期連結CF計算書。銀行を含む当時の連結ベース。流出は負数。期末現金は使途制限付現金を含む。",
+          "value": 1321983,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2026_4QJ.pdf",
+            "publishedOn": "2026-05-11",
+            "locator": "連結キャッシュ・フロー計算書・2025年3月期・現金・現金等価物・使途制限付現金期末残高",
+            "pdfPage": 17,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "現金・現金等価物・使途制限付現金期末残高",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年5月公表通期連結CF計算書。銀行を含む当時の連結ベース。流出は負数。期末現金は使途制限付現金を含む。",
+          "value": 1451099,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2026_4QJ.pdf",
+            "publishedOn": "2026-05-11",
+            "locator": "連結キャッシュ・フロー計算書・2026年3月期・現金・現金等価物・使途制限付現金期末残高",
+            "pdfPage": 17,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "営業CFと投資CFの合計は、2025年3月期の−9,502百万円から2026年3月期の254,896百万円へ改善した。ただし、これをそのまま配当に回せる現金とは呼ばない。",
+      "calculations": [
+        {
+          "id": "net-2025",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2025",
+            "cfi-2025"
+          ],
+          "definition": "2025年3月期営業CFと投資CFの単純合計。",
+          "precision": 0,
+          "value": -9502
+        },
+        {
+          "id": "net-2026",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2026",
+            "cfi-2026"
+          ],
+          "definition": "2026年3月期営業CFと投資CFの単純合計。",
+          "precision": 0,
+          "value": 254896
+        }
+      ]
+    },
+    {
+      "id": "capital-recycling",
+      "question": "資本回収と新規投資はどの規模か。",
+      "definition": "通期と四半期の期間を区別。回収=利益、投資=費用とは扱わず、会社管理集計の水準を確認。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "fy-in",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "資本回収額",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社のキャピタルリサイクリング管理集計。通期と四半期を明記し増減率を算出しない。連結CF計算書と対象範囲が異なる。"
+        },
+        {
+          "id": "fy-out",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "新規投資額",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社のキャピタルリサイクリング管理集計。通期と四半期を明記し増減率を算出しない。連結CF計算書と対象範囲が異なる。"
+        },
+        {
+          "id": "q1-in",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "資本回収額",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社のキャピタルリサイクリング管理集計。通期と四半期を明記し増減率を算出しない。連結CF計算書と対象範囲が異なる。"
+        },
+        {
+          "id": "q1-out",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "新規投資額",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社のキャピタルリサイクリング管理集計。通期と四半期を明記し増減率を算出しない。連結CF計算書と対象範囲が異なる。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fy-in",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "資本回収額",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社のキャピタルリサイクリング管理集計。通期と四半期を明記し増減率を算出しない。連結CF計算書と対象範囲が異なる。",
+          "value": 11000,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/presentation/Presentation_2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "キャピタルリサイクリング・2026-03-31対象期間・Cash In",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fy-out",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "新規投資額",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社のキャピタルリサイクリング管理集計。通期と四半期を明記し増減率を算出しない。連結CF計算書と対象範囲が異なる。",
+          "value": 8000,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/presentation/Presentation_2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "キャピタルリサイクリング・2026-03-31対象期間・Cash Out",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "q1-in",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "資本回収額",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社のキャピタルリサイクリング管理集計。通期と四半期を明記し増減率を算出しない。連結CF計算書と対象範囲が異なる。",
+          "value": 3000,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/presentation/Presentation_2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "キャピタルリサイクリング・2026-06-30対象期間・Cash In",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "q1-out",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "新規投資額",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社のキャピタルリサイクリング管理集計。通期と四半期を明記し増減率を算出しない。連結CF計算書と対象範囲が異なる。",
+          "value": 800,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/presentation/Presentation_2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "キャピタルリサイクリング・2026-06-30対象期間・Cash Out",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "会社の資本回収・再投資の集計では、2026年3月期は回収1兆1,000億円、新規投資8,000億円。2027年3月期第1四半期は回収3,000億円、新規投資800億円だった。",
+      "calculations": []
+    },
+    {
+      "id": "dividend-policy",
+      "question": "報告利益の急増をそのまま配当増に換算できるか。",
+      "definition": "配当性向は指定調整後EPS、前期配当を下限。中間・年間を明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "payout",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "調整後配当性向",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "2026年8月6日変更後の会社配当方針・予想。キオクシア指定損益を除く調整後EPS基準。年間187.36円は会社の据置試算で確定額ではない。"
+        },
+        {
+          "id": "floor",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当の下限",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "2026年8月6日変更後の会社配当方針・予想。キオクシア指定損益を除く調整後EPS基準。年間187.36円は会社の据置試算で確定額ではない。"
+        },
+        {
+          "id": "interim",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "中間配当予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "2026年8月6日変更後の会社配当方針・予想。キオクシア指定損益を除く調整後EPS基準。年間187.36円は会社の据置試算で確定額ではない。"
+        },
+        {
+          "id": "annual",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当試算",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "2026年8月6日変更後の会社配当方針・予想。キオクシア指定損益を除く調整後EPS基準。年間187.36円は会社の据置試算で確定額ではない。"
+        },
+        {
+          "id": "prior",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当実績",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "前期1株当たり年間配当の実績。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "payout",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "調整後配当性向",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "2026年8月6日変更後の会社配当方針・予想。キオクシア指定損益を除く調整後EPS基準。年間187.36円は会社の据置試算で確定額ではない。",
+          "value": 39,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/presentation/Presentation_2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "配当方針の変更／株主還元・調整後配当性向",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "floor",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当の下限",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "2026年8月6日変更後の会社配当方針・予想。キオクシア指定損益を除く調整後EPS基準。年間187.36円は会社の据置試算で確定額ではない。",
+          "value": 156.1,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/presentation/Presentation_2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "配当方針の変更／株主還元・年間配当の下限",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "interim",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "中間配当予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "2026年8月6日変更後の会社配当方針・予想。キオクシア指定損益を除く調整後EPS基準。年間187.36円は会社の据置試算で確定額ではない。",
+          "value": 107.27,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/presentation/Presentation_2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "配当方針の変更／株主還元・中間配当予想",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "annual",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当試算",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "2026年8月6日変更後の会社配当方針・予想。キオクシア指定損益を除く調整後EPS基準。年間187.36円は会社の据置試算で確定額ではない。",
+          "value": 187.36,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/presentation/Presentation_2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "配当方針の変更／株主還元・年間配当試算",
+            "pdfPage": 11,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "年間配当実績",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "前期1株当たり年間配当の実績。",
+          "value": 156.1,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2026_4QJ.pdf",
+            "publishedOn": "2026-05-11",
+            "locator": "配当の状況・2026年3月期合計",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "配当方針は、キオクシア関連の指定損益を除いた調整後EPSの39%と、前期の年間配当156.10円のうち、高い方を採用する形へ変更された。中間配当予想は107.27円である。会社は年間187.36円という試算を変更していないが、これは確定配当ではなく、調整後利益と対象株式数を確認して読むべき数字だ。",
+      "calculations": []
+    },
+    {
+      "id": "buyback-progress",
+      "question": "承認済み自己株買い枠の何割が実行済みか。",
+      "definition": "同一2026年5月決議に対する2026年9月末までの金額消化率。本文取得累計額は億円小数1桁に丸め。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "actual",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "自己株式取得累計額",
+          "periodStart": "2026-05-22",
+          "periodEnd": "2026-09-30",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "2026年5月11日決議の枠に基づく9月末までの取得実績。"
+        },
+        {
+          "id": "cap",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "自己株式取得額の上限",
+          "periodStart": "2026-05-22",
+          "periodEnd": "2027-03-31",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "会社が決議した取得上限。実績や全額取得の保証ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "actual",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "自己株式取得累計額",
+          "periodStart": "2026-05-22",
+          "periodEnd": "2026-09-30",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "2026年5月11日決議の枠に基づく9月末までの取得実績。",
+          "value": 138979581400,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/company/newsroom/newsrelease/pdf/261005_ORIXTJ.pdf",
+            "publishedOn": "2026-10-05",
+            "locator": "参考2・2026年9月30日現在の累計取得価額",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "自己株式取得額の上限",
+          "periodStart": "2026-05-22",
+          "periodEnd": "2027-03-31",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "会社が決議した取得上限。実績や全額取得の保証ではない。",
+          "value": 250000000000,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/company/newsroom/newsrelease/pdf/261005_ORIXTJ.pdf",
+            "publishedOn": "2026-10-05",
+            "locator": "参考1・決議内容・取得価額の総額上限",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "自己株式取得は最大2,500億円の枠に対し、2026年9月末までの累計取得額が約1,389.8億円だった。金額ベースの消化率は55.6%である。",
+      "calculations": [
+        {
+          "id": "progress",
+          "operation": "ratio-percent",
+          "inputs": [
+            "actual",
+            "cap"
+          ],
+          "definition": "9月末実績額÷取得上限額×100。",
+          "precision": 1,
+          "value": 55.6
+        }
+      ]
+    },
+    {
+      "id": "aum-and-long-term-targets",
+      "question": "運用資産拡大と長期利益目標は何か。",
+      "definition": "実績と会社目標を区別。目標未達リスクと費用・資本負担を本文で論じ、目標達成を予測しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "aum-actual",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "AUM",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "兆円",
+          "basis": "actual",
+          "definition": "AUAを含まない会社公表AUM。"
+        },
+        {
+          "id": "aum-target",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "AUM目標",
+          "periodStart": "2028-03-31",
+          "periodEnd": "2028-03-31",
+          "unit": "兆円",
+          "basis": "company-forecast",
+          "definition": "AUAを含まない会社中期目標。確約や市場予想ではない。"
+        },
+        {
+          "id": "profit-target",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "長期純利益目標",
+          "periodStart": "2034-04-01",
+          "periodEnd": "2035-03-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "2035年3月期までに目指す会社長期ビジョンの株主帰属純利益。短期業績予想ではない。"
+        },
+        {
+          "id": "roe-target",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "長期ROE目標",
+          "periodStart": "2034-04-01",
+          "periodEnd": "2035-03-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "2035年3月期までに目指す会社長期ビジョン。達成実績や確約ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "aum-actual",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "AUM",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "兆円",
+          "basis": "actual",
+          "definition": "AUAを含まない会社公表AUM。",
+          "value": 81,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "中期経営計画の進捗・AUM実績",
+            "pdfPage": 38,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "aum-target",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "AUM目標",
+          "periodStart": "2028-03-31",
+          "periodEnd": "2028-03-31",
+          "unit": "兆円",
+          "basis": "company-forecast",
+          "definition": "AUAを含まない会社中期目標。確約や市場予想ではない。",
+          "value": 100,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "中期経営計画の進捗・2028年3月期AUM目標",
+            "pdfPage": 38,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "profit-target",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "長期純利益目標",
+          "periodStart": "2034-04-01",
+          "periodEnd": "2035-03-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "2035年3月期までに目指す会社長期ビジョンの株主帰属純利益。短期業績予想ではない。",
+          "value": 10000,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "長期ビジョン・2035年3月期純利益1兆円",
+            "pdfPage": 38,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe-target",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "長期ROE目標",
+          "periodStart": "2034-04-01",
+          "periodEnd": "2035-03-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "2035年3月期までに目指す会社長期ビジョン。達成実績や確約ではない。",
+          "value": 15,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/annual_report/AR2026J.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "長期ビジョン・2035年3月期ROE15%",
+            "pdfPage": 38,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "会社は2028年3月期のAUM目標を100兆円とし、2026年3月期の81兆円からの拡大を目指す。これはAUAを含まない会社目標であり、達成済みの実績ではない。長期には2035年3月期の純利益1兆円、ROE15%を掲げている。",
+      "calculations": []
+    },
+    {
+      "id": "segment-reorganisation",
+      "question": "旧セグメントの数字を現在と直接比較できるか。",
+      "definition": "2027年3月期より新報告区分。経済的事業数が10から4へ減った意味ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "報告セグメント数",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "区分",
+          "basis": "actual",
+          "definition": "旧区分の報告セグメント数。"
+        },
+        {
+          "id": "new",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "報告セグメント数",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "区分",
+          "basis": "actual",
+          "definition": "新区分の報告セグメント数。銀行は非継続事業、セグメント外事業もあり。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "報告セグメント数",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "区分",
+          "basis": "actual",
+          "definition": "旧区分の報告セグメント数。",
+          "value": 10,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/presentation/Presentation_2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "新旧セグメントの比較・旧10セグメント",
+            "pdfPage": 30,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "報告セグメント数",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "区分",
+          "basis": "actual",
+          "definition": "新区分の報告セグメント数。銀行は非継続事業、セグメント外事業もあり。",
+          "value": 4,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/presentation/Presentation_2027_1QJ.pdf",
+            "publishedOn": "2026-08-06",
+            "locator": "新旧セグメントの比較・新4セグメント",
+            "pdfPage": 30,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "2027年3月期から従来の10セグメントをAPAC、インフラ、欧米、保険の4セグメントへ再編した。",
+      "calculations": []
+    },
+    {
+      "id": "revenue-long-term-cagr",
+      "question": "2017〜2026年の営業収益成長率は算出可能か。",
+      "definition": "銀行除外の同一連結範囲に揃えた営業収益が必要。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "comparable-2017",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "継続事業営業収益",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "銀行を除外した2026年統合報告書と同一定義の2017年営業収益。"
+        },
+        {
+          "id": "comparable-2026",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "継続事業営業収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "銀行を除外した2026年営業収益。"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "統合報告書78ページと2027年版5年間業績データを追加確認。銀行除外の再表示は2023年3月期以降。2017年の同一定義値は確認できず、10年間の営業収益成長率と依存する成長主張を除外。",
+      "omittedClaim": "営業収益は過去10年間にわたり同一基準で着実に成長した。"
+    },
+    {
+      "id": "full-year-adjusted-profit",
+      "question": "通期調整後純利益は幾らか。",
+      "definition": "キオクシア指定損益控除後の2027年3月期純利益会社予想。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "fy-adjusted",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "調整後株主帰属純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "会社が指定したキオクシア関連損益を除く通期予想。"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "2027年3月期1Q短信2ページと説明資料3〜5ページを確認。会社は合理的見積困難として通期調整後利益を公表していない。",
+      "omittedClaim": "通期調整後純利益は5,300億円と予想される。"
+    },
+    {
+      "id": "true-recurring-profit",
+      "question": "純利益のうち全一時要因控除後の継続利益は何割か。",
+      "definition": "全売却益・評価益を税後で整合的に除外した利益と報告利益の比較。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "recurring",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "全一時要因控除後の継続利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会計範囲・税効果・非支配持分が整合する全一時要因控除後利益。"
+        },
+        {
+          "id": "reported",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "報告株主帰属純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準・連結実績。"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "指定キオクシア調整は包括的な継続利益調整ではない。決算短信・説明資料・補足資料における売却評価要因を確認したが、全要因の税後ブリッジが揃わないため割合を算出しない。",
+      "omittedClaim": "調整後利益の全額が継続的に再現できる利益である。"
+    },
+    {
+      "id": "current-valuation",
+      "question": "現在株価から割安性を判定できるか。",
+      "definition": "同一時点価格と同一定義の予想EPS、同業比較が必要。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "price",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "株価",
+          "periodStart": "2026-10-16",
+          "periodEnd": "2026-10-16",
+          "unit": "円",
+          "basis": "market",
+          "definition": "直近取引日の検証済み終値。"
+        },
+        {
+          "id": "normalized-eps",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "正常化予想EPS",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "指定の一時要因を除く同一定義の予想EPS。"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "価格と全社正常化EPSを独立に確証していない。通期調整後純利益も非公表のため、PER/PBR/目標株価・同業割安比較と依存する推奨を掲載しない。",
+      "omittedClaim": "オリックス株は現在のPERから割安である。"
+    },
+    {
+      "id": "q1-cash-conversion",
+      "question": "第1四半期の純利益は営業CFに同率で転換したか。",
+      "definition": "同一四半期連結営業CFと利益の比較。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "q1-cfo",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "連結営業CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "非継続事業の範囲を明示した同一四半期の連結営業CF。"
+        },
+        {
+          "id": "q1-profit",
+          "entity": "オリックス（連結・米国基準）",
+          "metric": "連結株主帰属純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "米国基準、銀行の非継続事業を含む四半期利益。"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "1Q短信17ページで四半期連結CF計算書を作成していない旨を確認。補足資料・説明資料の管理上の資本回収を代用しない。",
+      "omittedClaim": "第1四半期の純利益増加は同じ割合の営業キャッシュフロー増加を伴った。"
+    }
+  ]
+}
