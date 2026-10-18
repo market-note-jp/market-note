@@ -1,0 +1,210 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-10-19",
+  "articleSha256": "cbeda81ecbecf7e9edbc992a2fa46fdaa68995ba0a84ea3845ab4e0faba8b4a2",
+  "checkedAt": "2026-10-18T21:24:06.971Z",
+  "informationCutoff": "2026-10-19T06:22:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終記事のtitle/headline/excerpt/description、結論、全表セル、5ニュース本文、市場分析・注目点・免責を通読した。実質的な期間・予想比較は東京製鐵の営業利益（従来予想、新予想、前期実績）のみで、会社原文PDF1ページの通期表と修正理由で全入力を照合した。50億円の修正額は同一年度の差額であり、赤字基準の増減率は算出しない。原油とCPI予想は比較を行わない単独値だが、誤分類防止のため単一入力のレビューも記録。原油の前日比・週間騰落率・限月比較、CPIの前月実績や政策目標との数値比較、米企業の未発表結果・市場予想増益率は記事にない。3nmはReutersと原報道で読んだ工程名称で、競争優位・性能比を数値比較していない。MetaとLamの開催日時は各社原文のPDT/EDTをJSTへ+16/+13時間換算して再確認。日本CPI公表予定はe-Statの全国9月分の行を確認。Samsungの計画は企業の公式確定事項として扱わず、原報道・Reutersに限定して記載。市場影響は条件付き分析であり、個別企業の受注増・投資回収を実績扱いしていない。",
+  "comparisons": [
+    {
+      "id": "tokyo-steel-operating-profit",
+      "question": "営業利益予想の上方修正は前期比の増益や実績黒字を意味するか。",
+      "definition": "2027年3月期の会社予想同士の修正と、2026年3月期実績との差を明確に区別する。金額は百万円。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old-forecast",
+          "entity": "東京製鐵（個別）",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "日本基準・個別・通期の営業利益。従来予想と修正予想の比較。"
+        },
+        {
+          "id": "new-forecast",
+          "entity": "東京製鐵（個別）",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "日本基準・個別・通期の営業利益。従来予想と修正予想の比較。"
+        },
+        {
+          "id": "prior-actual",
+          "entity": "東京製鐵（個別）",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・個別・通期の営業利益実績。会社予想と区別して表示。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old-forecast",
+          "entity": "東京製鐵（個別）",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "日本基準・個別・通期の営業利益。従来予想と修正予想の比較。",
+          "value": -4000,
+          "source": {
+            "url": "https://www.tokyosteel.co.jp/assets/docs/ir/disclosures/disclosures_20261016-01.pdf",
+            "publishedOn": "2026-10-16",
+            "locator": "2. 通期個別業績予想数値の修正・前回発表予想(A)・営業利益",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new-forecast",
+          "entity": "東京製鐵（個別）",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "日本基準・個別・通期の営業利益。従来予想と修正予想の比較。",
+          "value": 1000,
+          "source": {
+            "url": "https://www.tokyosteel.co.jp/assets/docs/ir/disclosures/disclosures_20261016-01.pdf",
+            "publishedOn": "2026-10-16",
+            "locator": "2. 通期個別業績予想数値の修正・今回修正予想(B)・営業利益",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior-actual",
+          "entity": "東京製鐵（個別）",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・個別・通期の営業利益実績。会社予想と区別して表示。",
+          "value": 7230,
+          "source": {
+            "url": "https://www.tokyosteel.co.jp/assets/docs/ir/disclosures/disclosures_20261016-01.pdf",
+            "publishedOn": "2026-10-16",
+            "locator": "2. ご参考 前期実績（2026年3月期）・営業利益",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "東京製鐵の2027年3月期の個別営業利益予想は、従来の40億円赤字から10億円黒字へ修正された。ただし前期実績は72.3億円で、新予想はそれを下回る。",
+      "calculations": [
+        {
+          "id": "forecast-revision",
+          "operation": "difference",
+          "inputs": [
+            "new-forecast",
+            "old-forecast"
+          ],
+          "definition": "新会社予想−従来会社予想（同一年度・同一指標・百万円）",
+          "precision": 0,
+          "value": 5000
+        },
+        {
+          "id": "forecast-vs-prior-actual",
+          "operation": "difference",
+          "inputs": [
+            "new-forecast",
+            "prior-actual"
+          ],
+          "definition": "当期会社予想−前期実績。予想対実績としてのみ扱う（百万円）。",
+          "precision": 0,
+          "value": -6230
+        }
+      ]
+    },
+    {
+      "id": "brent-observation",
+      "question": "原油の基準時点と値を取り違えていないか",
+      "definition": "清算値単独の確認。異なる限月・現物・19日現在値との比較はしない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "brent-settlement",
+          "entity": "ブレント原油先物（引用報道に限月記載なし）",
+          "metric": "清算値",
+          "periodStart": "2026-10-16",
+          "periodEnd": "2026-10-16",
+          "unit": "USD/barrel",
+          "basis": "market",
+          "definition": "Reuters掲載の10月16日清算値。現物価格、特定限月の比較、19日の現在値として使わない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "brent-settlement",
+          "entity": "ブレント原油先物（引用報道に限月記載なし）",
+          "metric": "清算値",
+          "periodStart": "2026-10-16",
+          "periodEnd": "2026-10-16",
+          "unit": "USD/barrel",
+          "basis": "market",
+          "definition": "Reuters掲載の10月16日清算値。現物価格、特定限月の比較、19日の現在値として使わない。",
+          "value": 109.86,
+          "source": {
+            "url": "https://live.euronext.com/en/financial-news/oil-touches-110-barrel-first-time-may-middle-east-russia-supply-fears",
+            "publishedOn": "2026-10-16",
+            "locator": "本文冒頭、Brent crude futures settled ... at $109.86 の文。18日Reuters中東市場記事でも金曜清算値を再確認。",
+            "kind": "secondary",
+            "primaryUnavailableReason": "取引所の当該限月清算表を取得できず、Reuters原文のEuronext掲載と18日報道を照合。限月の推定、値差や騰落率の計算は行わない。"
+          }
+        }
+      ],
+      "claim": "ブレント原油先物は10月16日の清算値で1バレル109.86米ドル。これは19日朝のリアルタイム価格ではない。",
+      "calculations": []
+    },
+    {
+      "id": "japan-cpi-forecast-basis",
+      "question": "9月コアCPIの2.1%は予想か実績か、定義が一致しているか",
+      "definition": "Reuters調査による未発表期間の前年比予想単独値。前月実績・日銀目標との数値比較は行わない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "japan-core-cpi-consensus",
+          "entity": "日本・全国CPI（生鮮食品を除く総合）",
+          "metric": "前年同月比上昇率の市場予想",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "consensus",
+          "definition": "エネルギーを含み生鮮食品を除く全国CPIの前年比。2026-10-16 Reutersエコノミスト調査。未発表実績ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "japan-core-cpi-consensus",
+          "entity": "日本・全国CPI（生鮮食品を除く総合）",
+          "metric": "前年同月比上昇率の市場予想",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "consensus",
+          "definition": "エネルギーを含み生鮮食品を除く全国CPIの前年比。2026-10-16 Reutersエコノミスト調査。未発表実績ではない。",
+          "value": 2.1,
+          "source": {
+            "url": "https://ca.marketscreener.com/news/japan-core-inflation-likely-exceeded-boj-target-for-first-time-since-december-ce785dd3d080f02d",
+            "publishedOn": "2026-10-16",
+            "locator": "TOKYO, Oct 16本文の最初の箇条書き：nationwide core CPI, includes energy but excludes fresh food, expected ... 2.1%。公表予定は末尾のOctober 23 8:30。",
+            "kind": "secondary",
+            "primaryUnavailableReason": "Reuters自身が実施した予想調査を転載原文で確認。公的な未発表実績を代用せず、公式e-Statは日時の確認に限る。"
+          }
+        }
+      ],
+      "claim": "Reutersが10月16日に報じた調査では、9月の全国コアCPIは前年同月比2.1%上昇の予想だった。対象は生鮮食品を除き、エネルギーを含む指数で、まだ公表実績ではない。",
+      "calculations": []
+    }
+  ]
+}
