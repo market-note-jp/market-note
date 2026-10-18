@@ -688,9 +688,13 @@ export default function Home() {
   const orderedArticles = [...articles].sort((a, b) => b.date.localeCompare(a.date));
   const latest = orderedArticles[0];
   const recent = orderedArticles.slice(1, 6);
-  const latestDaily = orderedArticles.find((article) => article.kind === "日次レポート");
-  if (latestDaily && latestDaily.href !== latest.href && !recent.some((article) => article.href === latestDaily.href)) {
-    recent.push(latestDaily);
+  // Keep the previous publishing day visible while an early daily report is live.
+  // Before 07:00 JST the freshness contract still checks that previous report.
+  const recentDaily = orderedArticles.filter((article) => article.kind === "日次レポート").slice(0, 2);
+  for (const report of recentDaily) {
+    if (report.href !== latest.href && !recent.some((article) => article.href === report.href)) {
+      recent.push(report);
+    }
   }
   const companies = orderedArticles.filter((article) => article.kind === "企業レポート").slice(0, 5);
   const assetPrefix = process.env.GITHUB_ACTIONS === "true" ? "/market-note" : "";

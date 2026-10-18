@@ -42,7 +42,9 @@ test("recent daily reports appear in the existing archive and latest section", (
   assert.ok(daily.length >= 4);
   const latest = html.slice(html.indexOf('id="latest"'), html.indexOf('id="companies"'));
   const archive = html.slice(html.indexOf('id="articles"'), html.indexOf('id="policy"'));
-  assert.ok(latest.includes(`/market-note${daily[0].href}`), "Latest daily report must use the existing latest section");
+  for (const report of daily.slice(0, 2)) {
+    assert.ok(latest.includes(`/market-note${report.href}`), `${report.href} must remain in latest across the 07:00 JST handover`);
+  }
   for (const report of daily.slice(0, 4)) {
     assert.ok(archive.includes(`/market-note${report.href}`), `${report.href} must appear in the archive`);
   }
