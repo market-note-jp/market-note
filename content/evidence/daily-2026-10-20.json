@@ -1,0 +1,378 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-10-20",
+  "articleSha256": "657d1edde21cd05f47c637a5c127200e97d19284ed8b369c7a233c3e2de6bc09",
+  "checkedAt": "2026-10-19T21:24:00.363Z",
+  "informationCutoff": "2026-10-20T06:23:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終記事の見出し・タイトル別名・説明・抜粋・結論・全表セル・5ニュース本文・影響分析・注目点・免責を通読。S&P500の騰落率は前後の通常終値を照合して計算。GMO-GSは会社原文PDF1ページの同一期間・同一指標の予想4入力を確認し、2ページの修正理由も読んだ。増益率は前年比ではなく純利益予想の修正率。中国GDPは国家統計局の冒頭四半期別の実質前年比2入力を確認し差をポイント表示。WTIは比較のない単独値も限月・時点の誤分類防止として記録。PyTorch公式記事は10月19日の発表と米国時間20日の公開ベータ予定を区別。性能・費用削減率、全モデルの完全互換やNVIDIAからの置換数量の比較はない。原油の前日比、Nasdaqの騰落率、企業の前期実績・市場予想との比較、配当額の比較、特別利益控除後の独自正常利益・FCFは記事にない。将来の市場影響は条件付きの編集分析。",
+  "comparisons": [
+    {
+      "id": "sp500-day-change",
+      "question": "S&P500は前取引日終値からどれだけ変化したか",
+      "definition": "同一現物指数・通常終値の16日と19日の比較。指数ポイントと騰落率を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "prior",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-16",
+          "periodEnd": "2026-10-16",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "米国現物指数の通常取引終値。配当込み指数、先物、時間外は含まない。"
+        },
+        {
+          "id": "current",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-19",
+          "periodEnd": "2026-10-19",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "米国現物指数の通常取引終値。配当込み指数、先物、時間外は含まない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prior",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-16",
+          "periodEnd": "2026-10-16",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "米国現物指数の通常取引終値。配当込み指数、先物、時間外は含まない。",
+          "value": 7659.44,
+          "source": {
+            "url": "https://abcnews.com/Business/wireStory/major-us-stock-indexes-fared-friday-10162026-137331951",
+            "publishedOn": "2026-10-16",
+            "locator": "On Friday節、The S&P 500 ... to 7,659.44。",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数算出元の当該2日の公式時系列表は取得できず、APの16日終値とReutersの19日確定終値を照合。先物や取引途中値は使わない。"
+          }
+        },
+        {
+          "id": "current",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-19",
+          "periodEnd": "2026-10-19",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "米国現物指数の通常取引終値。配当込み指数、先物、時間外は含まない。",
+          "value": 7690.73,
+          "source": {
+            "url": "https://www.reuters.com/business/wall-st-futures-climb-ai-stocks-rebound-oil-yields-fall-2026-10-19/",
+            "publishedOn": "2026-10-19",
+            "locator": "本文主要3指数の通常終値、S&P 500 gained 31.29 ... to 7,690.73。取引終了後更新版。",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数算出元の当該2日の公式時系列表は取得できず、APの16日終値とReutersの19日確定終値を照合。先物や取引途中値は使わない。"
+          }
+        }
+      ],
+      "claim": "S&P500の10月19日終値は7,690.73。前取引日16日の7,659.44から31.29ポイント、0.41%上昇した。",
+      "calculations": [
+        {
+          "id": "point-change",
+          "operation": "difference",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "19日終値−16日終値（指数ポイント）",
+          "precision": 2,
+          "value": 31.29
+        },
+        {
+          "id": "day-percent",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "（19日終値÷16日終値−1）×100。小数第2位まで。",
+          "precision": 2,
+          "value": 0.41
+        }
+      ]
+    },
+    {
+      "id": "gmo-net-vs-operating",
+      "question": "純利益予想の上方修正は営業利益予想も増えたことを示すか",
+      "definition": "同一年度の従来・新会社予想を純利益と営業利益それぞれで比較。純利益額と営業利益額を直接優劣比較しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "net-old",
+          "entity": "GMOグローバルサイン・ホールディングス（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "2026年12月期・日本基準・連結の会社予想。oldは2026年2月10日発表従来予想、newは10月19日修正予想。実績ではない。"
+        },
+        {
+          "id": "net-new",
+          "entity": "GMOグローバルサイン・ホールディングス（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "2026年12月期・日本基準・連結の会社予想。oldは2026年2月10日発表従来予想、newは10月19日修正予想。実績ではない。"
+        },
+        {
+          "id": "op-old",
+          "entity": "GMOグローバルサイン・ホールディングス（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "2026年12月期・日本基準・連結の会社予想。oldは2026年2月10日発表従来予想、newは10月19日修正予想。実績ではない。"
+        },
+        {
+          "id": "op-new",
+          "entity": "GMOグローバルサイン・ホールディングス（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "2026年12月期・日本基準・連結の会社予想。oldは2026年2月10日発表従来予想、newは10月19日修正予想。実績ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "net-old",
+          "entity": "GMOグローバルサイン・ホールディングス（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "2026年12月期・日本基準・連結の会社予想。oldは2026年2月10日発表従来予想、newは10月19日修正予想。実績ではない。",
+          "value": 1052,
+          "source": {
+            "url": "https://www.gmogshd.com/wp-content/uploads/2026/10/%E9%80%9A%E6%9C%9F%E6%A5%AD%E7%B8%BE%E4%BA%88%E6%83%B3%E3%81%AE%E4%BF%AE%E6%AD%A3%EF%BC%88%E4%B8%8A%E6%96%B9%E4%BF%AE%E6%AD%A3%EF%BC%89%E3%81%8A%E3%82%88%E3%81%B3%E9%85%8D%E5%BD%93%E4%BA%88%E6%83%B3%E3%81%AE%E4%BF%AE%E6%AD%A3%EF%BC%88%E5%A2%97%E9%85%8D%EF%BC%89%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B.pdf",
+            "publishedOn": "2026-10-19",
+            "locator": "1.(1) 当期の連結業績予想数値の修正、前回発表予想(A)、親会社株主に帰属する当期純利益列。修正理由はPDF2ページ。",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "net-new",
+          "entity": "GMOグローバルサイン・ホールディングス（連結）",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "2026年12月期・日本基準・連結の会社予想。oldは2026年2月10日発表従来予想、newは10月19日修正予想。実績ではない。",
+          "value": 1312,
+          "source": {
+            "url": "https://www.gmogshd.com/wp-content/uploads/2026/10/%E9%80%9A%E6%9C%9F%E6%A5%AD%E7%B8%BE%E4%BA%88%E6%83%B3%E3%81%AE%E4%BF%AE%E6%AD%A3%EF%BC%88%E4%B8%8A%E6%96%B9%E4%BF%AE%E6%AD%A3%EF%BC%89%E3%81%8A%E3%82%88%E3%81%B3%E9%85%8D%E5%BD%93%E4%BA%88%E6%83%B3%E3%81%AE%E4%BF%AE%E6%AD%A3%EF%BC%88%E5%A2%97%E9%85%8D%EF%BC%89%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B.pdf",
+            "publishedOn": "2026-10-19",
+            "locator": "1.(1) 当期の連結業績予想数値の修正、今回修正予想(B)、親会社株主に帰属する当期純利益列。修正理由はPDF2ページ。",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "op-old",
+          "entity": "GMOグローバルサイン・ホールディングス（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "2026年12月期・日本基準・連結の会社予想。oldは2026年2月10日発表従来予想、newは10月19日修正予想。実績ではない。",
+          "value": 1622,
+          "source": {
+            "url": "https://www.gmogshd.com/wp-content/uploads/2026/10/%E9%80%9A%E6%9C%9F%E6%A5%AD%E7%B8%BE%E4%BA%88%E6%83%B3%E3%81%AE%E4%BF%AE%E6%AD%A3%EF%BC%88%E4%B8%8A%E6%96%B9%E4%BF%AE%E6%AD%A3%EF%BC%89%E3%81%8A%E3%82%88%E3%81%B3%E9%85%8D%E5%BD%93%E4%BA%88%E6%83%B3%E3%81%AE%E4%BF%AE%E6%AD%A3%EF%BC%88%E5%A2%97%E9%85%8D%EF%BC%89%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B.pdf",
+            "publishedOn": "2026-10-19",
+            "locator": "1.(1) 当期の連結業績予想数値の修正、前回発表予想(A)、営業利益列。修正理由はPDF2ページ。",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "op-new",
+          "entity": "GMOグローバルサイン・ホールディングス（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "2026年12月期・日本基準・連結の会社予想。oldは2026年2月10日発表従来予想、newは10月19日修正予想。実績ではない。",
+          "value": 1622,
+          "source": {
+            "url": "https://www.gmogshd.com/wp-content/uploads/2026/10/%E9%80%9A%E6%9C%9F%E6%A5%AD%E7%B8%BE%E4%BA%88%E6%83%B3%E3%81%AE%E4%BF%AE%E6%AD%A3%EF%BC%88%E4%B8%8A%E6%96%B9%E4%BF%AE%E6%AD%A3%EF%BC%89%E3%81%8A%E3%82%88%E3%81%B3%E9%85%8D%E5%BD%93%E4%BA%88%E6%83%B3%E3%81%AE%E4%BF%AE%E6%AD%A3%EF%BC%88%E5%A2%97%E9%85%8D%EF%BC%89%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B.pdf",
+            "publishedOn": "2026-10-19",
+            "locator": "1.(1) 当期の連結業績予想数値の修正、今回修正予想(B)、営業利益列。修正理由はPDF2ページ。",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "GMOグローバルサインHDは2026年12月期の親会社株主に帰属する当期純利益予想を1,052百万円から1,312百万円へ24.7%引き上げた。一方、営業利益予想は従来・修正後とも1,622百万円で変更していない。",
+      "calculations": [
+        {
+          "id": "net-revision",
+          "operation": "difference",
+          "inputs": [
+            "net-new",
+            "net-old"
+          ],
+          "definition": "修正後純利益予想−従来予想（百万円）",
+          "precision": 0,
+          "value": 260
+        },
+        {
+          "id": "net-revision-percent",
+          "operation": "growth-percent",
+          "inputs": [
+            "net-new",
+            "net-old"
+          ],
+          "definition": "純利益予想の修正率。前年比ではない。",
+          "precision": 1,
+          "value": 24.7
+        },
+        {
+          "id": "operating-revision",
+          "operation": "difference",
+          "inputs": [
+            "op-new",
+            "op-old"
+          ],
+          "definition": "営業利益予想は同額で据え置き。確認した2入力の差額（百万円）。",
+          "precision": 0,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "china-gdp-quarterly-yoy",
+      "question": "中国GDPの前年比成長率はQ2からQ3にどう変わったか",
+      "definition": "実質GDPの四半期別前年同期比の伸び率を比較。差は%増ではなくポイント。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "q2",
+          "entity": "中国",
+          "metric": "実質GDP前年同期比成長率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "国家統計局2026-10-19公表値。価格要因を除く実質、各四半期の前年同期比。前期比や累計の成長率と混同しない。"
+        },
+        {
+          "id": "q3",
+          "entity": "中国",
+          "metric": "実質GDP前年同期比成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "国家統計局2026-10-19公表値。価格要因を除く実質、各四半期の前年同期比。前期比や累計の成長率と混同しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "q2",
+          "entity": "中国",
+          "metric": "実質GDP前年同期比成長率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "国家統計局2026-10-19公表値。価格要因を除く実質、各四半期の前年同期比。前期比や累計の成長率と混同しない。",
+          "value": 4.3,
+          "source": {
+            "url": "https://www.stats.gov.cn/english/PressRelease/202610/t20261019_1965619.html",
+            "publishedOn": "2026-10-19",
+            "locator": "冒頭By quarter節、second quarter 4.3 percent／third quarter 4.5 percent。Notes 1にconstant pricesと定義。",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "q3",
+          "entity": "中国",
+          "metric": "実質GDP前年同期比成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "国家統計局2026-10-19公表値。価格要因を除く実質、各四半期の前年同期比。前期比や累計の成長率と混同しない。",
+          "value": 4.5,
+          "source": {
+            "url": "https://www.stats.gov.cn/english/PressRelease/202610/t20261019_1965619.html",
+            "publishedOn": "2026-10-19",
+            "locator": "冒頭By quarter節、second quarter 4.3 percent／third quarter 4.5 percent。Notes 1にconstant pricesと定義。",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "中国の実質GDPは2026年7〜9月期に前年同期比4.5%増。4〜6月期の同4.3%増から、伸び率は0.2ポイント上がった。",
+      "calculations": [
+        {
+          "id": "growth-rate-gap",
+          "operation": "difference",
+          "inputs": [
+            "q3",
+            "q2"
+          ],
+          "definition": "Q3前年同期比成長率−Q2前年同期比成長率（パーセントポイント）",
+          "precision": 1,
+          "value": 0.2
+        }
+      ]
+    },
+    {
+      "id": "wti-contract-baseline",
+      "question": "103.66ドルの限月・基準日は何か",
+      "definition": "比較を行わない清算値の時点確認。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "wti-nov",
+          "entity": "WTI原油先物11月限",
+          "metric": "清算値",
+          "periodStart": "2026-10-19",
+          "periodEnd": "2026-10-19",
+          "unit": "USD/barrel",
+          "basis": "market",
+          "definition": "2026年11月限の10月19日清算値。現物、期先や20日現在値との比較はしない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "wti-nov",
+          "entity": "WTI原油先物11月限",
+          "metric": "清算値",
+          "periodStart": "2026-10-19",
+          "periodEnd": "2026-10-19",
+          "unit": "USD/barrel",
+          "basis": "market",
+          "definition": "2026年11月限の10月19日清算値。現物、期先や20日現在値との比較はしない。",
+          "value": 103.66,
+          "source": {
+            "url": "https://www.marketscreener.com/news/november-wti-crude-oil-contract-closes-up-2-25-or-2-2-settles-at-103-66-per-barrel-december-br-ce785cdbdc8af32c",
+            "publishedOn": "2026-10-19",
+            "locator": "MT Newswires、14:38 EDT配信の見出し、November WTI ... Settles at $103.66 per Barrel。Reuters19日株式市場記事の原油段落でも値を照合。",
+            "kind": "secondary",
+            "primaryUnavailableReason": "取引所の清算表を取得できず、MT Newswiresの限月付き清算値速報とReutersを照合した。先物の限月や現物を混ぜた比較はしない。"
+          }
+        }
+      ],
+      "claim": "WTI原油先物11月限の10月19日清算値は1バレル103.66米ドル。20日朝のリアルタイム価格や現物価格ではない。",
+      "calculations": []
+    }
+  ]
+}
