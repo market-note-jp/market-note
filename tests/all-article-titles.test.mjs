@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFileSync, readdirSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { createHash } from "node:crypto";
 import test from "node:test";
 import { loadArticleRegistry } from "./article-registry.mjs";
@@ -10,7 +10,7 @@ const hash = s => createHash("sha256").update(s).digest("hex");
 const baseline = JSON.parse(readFileSync("tests/fixtures/article-preservation.json", "utf8"));
 
 test("every archive article aligns its card, H1, HTML and social titles", () => {
-  assert.equal(registry.length, Object.keys(catalog).length + readdirSync("content/daily").filter(name => /^daily-.*\.json$/.test(name)).length);
+  assert.equal(registry.length, readdirSync("app/articles", { withFileTypes: true }).filter(entry => entry.isDirectory() && !entry.name.startsWith("[") && existsSync(`app/articles/${entry.name}/page.tsx`)).length + readdirSync("content/daily").filter(name => /^daily-.*\.json$/.test(name)).length);
   for (const article of registry) {
     const html = readFileSync(`out${article.href}/index.html`, "utf8");
     const title = article.title;
