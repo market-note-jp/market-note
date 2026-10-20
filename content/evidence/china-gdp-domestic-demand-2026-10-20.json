@@ -1,0 +1,659 @@
+{
+  "version": 1,
+  "articleSlug": "china-gdp-domestic-demand-2026-10-20",
+  "checkedAt": "2026-10-20T11:53:09.021Z",
+  "informationCutoff": "2026-10-20T19:27:01+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "本文に使用した成長率・増減率・率差を全件収録。国家統計局の10月19日一次資料本文・表・定義注記を確認。四半期と累計、実質と名目、内数と全体、輸出と純輸出を区別。GDPの需要項目別実質寄与度は未確認であり、加速の原因を断定しない。公開時刻確定後に最終ダイジェストを再計算する。",
+  "comparisons": [
+    {
+      "id": "gdp-acceleration",
+      "question": "中国のGDPは前期から加速したか。",
+      "definition": "前年同期比同士、季節調整済み前期比同士をそれぞれ比較する。累計成長率を四半期成長率と混同せず、加速を内需寄与の証明としない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "gdp-q2-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "実質GDP成長率・前年同期比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年4〜6月期と2025年4〜6月期の実質GDP比較。10月19日公表値。"
+        },
+        {
+          "id": "gdp-q3-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "実質GDP成長率・前年同期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年7〜9月期と2025年7〜9月期の実質GDP比較。初歩核算。"
+        },
+        {
+          "id": "gdp-q2-qoq",
+          "entity": "中国・国家統計局",
+          "metric": "実質GDP成長率・季節調整済み前期比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年4〜6月期の2026年1〜3月期比。年率換算でない。10月19日改定後系列。"
+        },
+        {
+          "id": "gdp-q3-qoq",
+          "entity": "中国・国家統計局",
+          "metric": "実質GDP成長率・季節調整済み前期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年7〜9月期の2026年4〜6月期比。年率換算でない。"
+        },
+        {
+          "id": "gdp-jansep-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "実質GDP成長率・累計前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月累計の2025年1〜9月累計比。四半期単独の4.5%と期間を区別。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "gdp-q2-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "実質GDP成長率・前年同期比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年4〜6月期と2025年4〜6月期の実質GDP比較。10月19日公表値。",
+          "value": 4.3,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261019_1965618.html",
+            "publishedOn": "2026-10-19",
+            "locator": "冒頭GDP段落・分季度看・二季度增长4.3%",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "gdp-q3-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "実質GDP成長率・前年同期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年7〜9月期と2025年7〜9月期の実質GDP比較。初歩核算。",
+          "value": 4.5,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261019_1965618.html",
+            "publishedOn": "2026-10-19",
+            "locator": "冒頭GDP段落・分季度看・三季度增长4.5%",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "gdp-q2-qoq",
+          "entity": "中国・国家統計局",
+          "metric": "実質GDP成長率・季節調整済み前期比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年4〜6月期の2026年1〜3月期比。年率換算でない。10月19日改定後系列。",
+          "value": 0.9,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261019_1965618.html",
+            "publishedOn": "2026-10-19",
+            "locator": "附注（2）・2026年一季度、二季度、三季度GDP环比增速",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "gdp-q3-qoq",
+          "entity": "中国・国家統計局",
+          "metric": "実質GDP成長率・季節調整済み前期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年7〜9月期の2026年4〜6月期比。年率換算でない。",
+          "value": 1.2,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261019_1965618.html",
+            "publishedOn": "2026-10-19",
+            "locator": "冒頭GDP段落・从环比看、附注（2）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "gdp-jansep-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "実質GDP成長率・累計前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月累計の2025年1〜9月累計比。四半期単独の4.5%と期間を区別。",
+          "value": 4.6,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261019_1965618.html",
+            "publishedOn": "2026-10-19",
+            "locator": "冒頭GDP段落・前三季度国内生产总值・按不变价格计算",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "国家統計局が10月19日に公表した実質GDP成長率は、7〜9月期が前年同期比4.5%。4〜6月期の4.3%から0.2ポイント上がった。季節調整済み前期比も0.9%から1.2%へ改善しており、前年の比較対象だけで説明するべき加速ではない。一方、1〜9月累計は前年同期比4.6%であり、四半期単独の数字とは区別したい。",
+      "calculations": [
+        {
+          "id": "gdp-yoy-acceleration",
+          "operation": "difference",
+          "inputs": [
+            "gdp-q3-yoy",
+            "gdp-q2-yoy"
+          ],
+          "definition": "7〜9月期の前年同期比成長率−4〜6月期の前年同期比成長率。単位はパーセントポイント。",
+          "precision": 1,
+          "value": 0.2
+        }
+      ]
+    },
+    {
+      "id": "traditional-retail-scope",
+      "question": "従来の小売総額1.1%を実質GDPと直接比較できるか。",
+      "definition": "1〜9月累計の名目売上統計。物品と飲食を対象とする社会消費品小売総額であり、消費全体や実質最終消費ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "traditional-retail-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "社会消費品小売総額・名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比。価格調整前。財と飲食を対象。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "traditional-retail-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "社会消費品小売総額・名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比。価格調整前。財と飲食を対象。",
+          "value": 1.1,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261019_1965614.html",
+            "publishedOn": "2026-10-19",
+            "locator": "冒頭1—9月份、主要数据表・社会消费品零售总额、表注・名义增速、附注1・指标解释",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "1〜9月の社会消費品小売総額は前年同期比1.1%増だった。この指標は主に商品販売と飲食を対象とし、サービス消費全般を網羅しない。また名目値なので、実質GDPとの伸び率の差を、そのまま需要の不足幅に置き換えることはできない。",
+      "calculations": []
+    },
+    {
+      "id": "goods-services-retail",
+      "question": "商品消費とサービス消費の伸びは同じか。",
+      "definition": "すべて2026年1〜9月累計・名目前年同期比。広義の「社会消费商品和服务零售总额」は従来の「社会消费品零售总额」と別の範囲で、改定前後の比較ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "goods-services-retail-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "商品・サービス小売総額・名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "社会消费商品和服务零售总额。2025年1〜9月との比較。"
+        },
+        {
+          "id": "services-retail-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "サービス小売額・名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "服务零售额。2025年1〜9月との比較。商品小売額と同じ期間・価格基準。"
+        },
+        {
+          "id": "goods-retail-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "商品小売額・名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "商品零售额。2025年1〜9月との比較。従来の社会消費品小売総額の財部分。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "goods-services-retail-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "商品・サービス小売総額・名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "社会消费商品和服务零售总额。2025年1〜9月との比較。",
+          "value": 2.6,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261019_1965618.html",
+            "publishedOn": "2026-10-19",
+            "locator": "四、消费市场・前三季度、附注（1）と（5）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "services-retail-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "サービス小売額・名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "服务零售额。2025年1〜9月との比較。商品小売額と同じ期間・価格基準。",
+          "value": 5.0,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261019_1965618.html",
+            "publishedOn": "2026-10-19",
+            "locator": "四、消费市场・其中服务零售额、附注（1）と（5）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "goods-retail-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "商品小売額・名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "商品零售额。2025年1〜9月との比較。従来の社会消費品小売総額の財部分。",
+          "value": 1.0,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261019_1965618.html",
+            "publishedOn": "2026-10-19",
+            "locator": "四、消费市场・商品零售额、附注（1）と（5）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "より広い「商品・サービス小売総額」は同期間に名目2.6%増。内訳はサービスが5.0%増、商品が1.0%増だった。従来の小売総額とは範囲が違うため、2.6%を1.1%からの上方修正や加速と扱うのも誤りだ。",
+      "calculations": []
+    },
+    {
+      "id": "household-income-spending",
+      "question": "家計の消費支出は可処分所得と同じ勢いで伸びているか。",
+      "definition": "全国家計調査の1人当たり数値。2026年1〜9月と2025年1〜9月を名目同士・実質同士で比較。貯蓄率の変化やGDP消費寄与度への変換はしない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "income-nominal-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "1人当たり可処分所得・名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比。名目。"
+        },
+        {
+          "id": "income-real-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "1人当たり可処分所得・実質前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比。価格要因控除後。"
+        },
+        {
+          "id": "spending-nominal-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "1人当たり消費支出・名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比。名目。"
+        },
+        {
+          "id": "spending-real-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "1人当たり消費支出・実質前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比。価格要因控除後。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "income-nominal-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "1人当たり可処分所得・名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比。名目。",
+          "value": 5.3,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261019_1965612.html",
+            "publishedOn": "2026-10-19",
+            "locator": "一、居民收入情况・第一段、表1・全国居民人均可支配收入",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "income-real-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "1人当たり可処分所得・実質前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比。価格要因控除後。",
+          "value": 4.4,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261019_1965612.html",
+            "publishedOn": "2026-10-19",
+            "locator": "一、居民收入情况・第一段、表1・全国居民人均可支配收入（実質）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "spending-nominal-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "1人当たり消費支出・名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比。名目。",
+          "value": 3.6,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261019_1965612.html",
+            "publishedOn": "2026-10-19",
+            "locator": "二、居民消费支出情况・第一段、表1・全国居民人均消费支出",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "spending-real-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "1人当たり消費支出・実質前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比。価格要因控除後。",
+          "value": 2.7,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261019_1965612.html",
+            "publishedOn": "2026-10-19",
+            "locator": "二、居民消费支出情况・第一段、表1・全国居民人均消费支出（実質）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "内需の持続性を測るうえで、より直接的なのが家計調査だ。1〜9月の1人当たり可処分所得は名目5.3%増、実質4.4%増。一方、1人当たり消費支出は名目3.6%増、実質2.7%増だった。同じ期間・同じ価格基準で比べると、実質消費の伸びは所得を1.7ポイント下回る。",
+      "calculations": [
+        {
+          "id": "household-real-growth-gap",
+          "operation": "difference",
+          "inputs": [
+            "income-real-yoy",
+            "spending-real-yoy"
+          ],
+          "definition": "同期間の実質可処分所得伸び率−実質消費支出伸び率。単位はパーセントポイントで、貯蓄率の差ではない。",
+          "precision": 1,
+          "value": 1.7
+        }
+      ]
+    },
+    {
+      "id": "investment-breadth",
+      "question": "固定資産投資の減少は不動産だけか。",
+      "definition": "2026年1〜9月累計・名目・当局の比較可能口径による前年同期比。全体、内数の不動産開発、不動産開発を除く全体を区別する。実質GDPの資本形成とは異なる。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "fai-total-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "固定資産投資（農家を除く）・名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比較可能口径比。農家を除く。"
+        },
+        {
+          "id": "property-investment-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "不動産開発投資・名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比較可能口径比。不動産開発分野。"
+        },
+        {
+          "id": "fai-ex-property-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "不動産開発を除く固定資産投資・名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比較可能口径比。非農家固定資産投資から不動産開発を除外。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fai-total-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "固定資産投資（農家を除く）・名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比較可能口径比。農家を除く。",
+          "value": -7.2,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261019_1965618.html",
+            "publishedOn": "2026-10-19",
+            "locator": "五、固定资产投资・全国固定资产投资（不含农户）、附注（1）と（7）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "property-investment-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "不動産開発投資・名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比較可能口径比。不動産開発分野。",
+          "value": -20.6,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261019_1965618.html",
+            "publishedOn": "2026-10-19",
+            "locator": "五、固定资产投资・分领域看・房地产开发投资、附注（1）と（7）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fai-ex-property-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "不動産開発を除く固定資産投資・名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比較可能口径比。非農家固定資産投資から不動産開発を除外。",
+          "value": -4.2,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261019_1965618.html",
+            "publishedOn": "2026-10-19",
+            "locator": "五、固定资产投资・扣除房地产开发的固定资产投资、附注（1）と（7）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "1〜9月の固定資産投資は農家を除く名目ベースで前年同期比7.2%減。不動産開発投資は20.6%減で、不動産を除く固定資産投資も4.2%減だった。住宅部門の調整だけで投資全体の弱さを説明し切ることはできない。",
+      "calculations": []
+    },
+    {
+      "id": "industrial-composition",
+      "question": "工業生産の伸びは均一か。",
+      "definition": "2026年1〜9月累計・実質前年同期比。一定規模以上の工業全体と、その内数のハイテク製造業の増加率を比較。設備投資・輸入・外国企業売上に転用しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "industrial-real-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "一定規模以上の工業付加価値・実質前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比。価格要因控除後。GDPの工業全部門ではなく一定規模以上。"
+        },
+        {
+          "id": "hightech-industrial-real-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "一定規模以上ハイテク製造業付加価値・実質前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比。価格要因控除後。一定規模以上の工業の内数。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "industrial-real-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "一定規模以上の工業付加価値・実質前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比。価格要因控除後。GDPの工業全部門ではなく一定規模以上。",
+          "value": 5.3,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261019_1965617.html",
+            "publishedOn": "2026-10-19",
+            "locator": "冒頭1—9月份、2026年9月份规模以上工业生产主要数据・1—9月列",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "hightech-industrial-real-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "一定規模以上ハイテク製造業付加価値・実質前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比。価格要因控除後。一定規模以上の工業の内数。",
+          "value": 14.3,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfb/202610/t20261019_1965617.html",
+            "publishedOn": "2026-10-19",
+            "locator": "2026年9月份规模以上工业生产主要数据・其中高技术制造业・1—9月列",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "同時に、生産面では別の景色もある。同期間の一定規模以上の工業付加価値は実質5.3%増、そのうちハイテク製造業は14.3%増だった。これは先端分野の生産が強い証拠だが、国内の設備投資や海外製機械の購入が同率で伸びる証拠ではない。",
+      "calculations": []
+    },
+    {
+      "id": "gross-trade-not-net-contribution",
+      "question": "輸出の増勢だけで純輸出のGDP寄与を判断できるか。",
+      "definition": "2026年1〜9月の人民元建て貨物貿易額・名目前年同期比。輸出・輸入は別基準額の伸び率で、差し引きして成長寄与としない。サービス貿易も含まない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "goods-exports-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "貨物輸出額・人民元建て名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比。海関総署データを国家統計局が掲載。"
+        },
+        {
+          "id": "goods-imports-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "貨物輸入額・人民元建て名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比。海関総署データを国家統計局が掲載。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "goods-exports-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "貨物輸出額・人民元建て名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比。海関総署データを国家統計局が掲載。",
+          "value": 16.4,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261019_1965618.html",
+            "publishedOn": "2026-10-19",
+            "locator": "六、货物进出口・出口231979亿元、附注（1）と（9）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "goods-imports-yoy",
+          "entity": "中国・国家統計局",
+          "metric": "貨物輸入額・人民元建て名目前年同期比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年1〜9月の2025年1〜9月比。海関総署データを国家統計局が掲載。",
+          "value": 22.3,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261019_1965618.html",
+            "publishedOn": "2026-10-19",
+            "locator": "六、货物进出口・进口167420亿元、附注（1）と（9）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "1〜9月の人民元建て貨物輸出額は前年同期比16.4%増だったが、輸入額も22.3%増えている。",
+      "calculations": []
+    }
+  ],
+  "articleSha256": "263901323f9bb50adfe5b03bbe7785def983fcf51f724b5f85bf39811e11fbdd"
+}

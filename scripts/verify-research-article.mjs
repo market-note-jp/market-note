@@ -63,6 +63,6 @@ export function verifyResearchArticle(article,html,{allowDraft=false}={}) {
  return {status:'article-content-verified',blocks:expected(article.markdown).length};
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href){
- const slug=process.argv[2];assert.match(slug,/^(corporate|theme)-[a-z0-9-]+$/);
+ const slug=process.argv[2];assert.match(slug,/^[a-z][a-z0-9-]*-\d{4}-\d{2}-\d{2}$/);
  console.log(verifyResearchArticle(JSON.parse(readFileSync(`app/articles/${slug}/article.json`)),readFileSync(`out/articles/${slug}/index.html`,'utf8'),{allowDraft:process.argv.includes('--draft')}));
 }

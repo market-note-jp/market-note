@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { createServer } from "node:http";
 import { readFile, stat, mkdir, writeFile } from "node:fs/promises";
-import { resolve, extname } from "node:path";
+import { resolve, extname, sep } from "node:path";
 import { chromium } from "playwright";
 import AxeBuilder from "@axe-core/playwright";
 
@@ -14,7 +14,7 @@ const server = createServer(async (request, response) => {
     const pathname = decodeURIComponent(new URL(request.url, "http://localhost").pathname);
     if (!pathname.startsWith("/market-note/")) { response.writeHead(404).end(); return; }
     let file = resolve(out, pathname.slice("/market-note/".length) || "index.html");
-    if (file !== out && !file.startsWith(out + "/")) { response.writeHead(403).end(); return; }
+    if (file !== out && !file.startsWith(out + sep)) { response.writeHead(403).end(); return; }
     if ((await stat(file)).isDirectory()) file += "/index.html";
     response.writeHead(200, { "Content-Type": types[extname(file)] || "application/octet-stream" }).end(await readFile(file));
   } catch { response.writeHead(404).end(); }
@@ -70,11 +70,11 @@ try {
   await page.goto(base, { waitUntil: "networkidle" });
   assert.equal(await page.locator(".upcoming-list time").evaluateAll(elements => elements.every(e => e.getAttribute("datetime") >= "2026-10-07")), true);
   await page.locator(".tabs button").filter({ hasText: "企業" }).click();
-  assert.equal(await page.locator(".article-row").count(), 14);
+  assert.equal(await page.locator(".article-row").count(), 17);
   assert.equal(await page.locator(".article-row:visible").count(), 10);
   await page.getByRole("button", { name: "次のページ", exact: true }).click();
-  assert.equal(await page.locator(".article-row").count(), 14);
-  assert.equal(await page.locator(".article-row:visible").count(), 4);
+  assert.equal(await page.locator(".article-row").count(), 17);
+  assert.equal(await page.locator(".article-row:visible").count(), 7);
   await page.locator(".tabs button").filter({ hasText: "すべて" }).click();
   await page.getByRole("button", { name: "次のページ", exact: true }).click();
   assert.match(await page.locator(".pagination-summary").textContent(), /11–20/);
