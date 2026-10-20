@@ -1,0 +1,359 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-10-21",
+  "articleSha256": "388a452bcd53392bc05a6a8d6f63837cc27060900801a619cb71145eae369712",
+  "checkedAt": "2026-10-21T06:29:08+09:00",
+  "informationCutoff": "2026-10-21T06:29:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "見出し・結論・一覧表・5ニュースの本文・市場分析・次の注目点・免責まで最終稿全体を確認。事前の証拠計画はS&P500の同一現物指数の前日比、アルインコの同一期間・利益段階の前年同期比較、WTIの限月を固定した清算値。Eliceの公開価格割れにも公開価格と初日終値の両入力を追加した。S&P500はReuters速報の23.79ポイント・0.31%と両日値を照合。アルインコは会社原資料PDF1ページと8ページを読み期間・単位・営業外項目を確認。数値は百万円未満切捨てで統一。日銀は未決定の観測と公式日程のみで政策数値比較なし。WTIは12月限単独で、前日11月限との騰落比較を置かない。Eliceの記事内32%表現は掲載価格との計算が整合しないため採用せず、公開価格割れの方向だけを用いた。企業間成長率・FCF・TTM・予想対実績の比較は掲載なし。未検証の比較を見出しや評価に使っていない。",
+  "comparisons": [
+    {
+      "id": "sp500-daily-return",
+      "question": "S&P500の20日速報値は19日終値に対してどれだけ上昇したか。",
+      "definition": "同一の米国現物価格指数の通常取引終値。20日は速報、19日は確定報道。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sp19",
+          "entity": "S&P500",
+          "metric": "現物価格指数の通常取引終値",
+          "periodStart": "2026-10-19",
+          "periodEnd": "2026-10-19",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米国通常取引終了時点の現物価格指数。配当込み指数・先物・時間外取引を除く。"
+        },
+        {
+          "id": "sp20",
+          "entity": "S&P500",
+          "metric": "現物価格指数の通常取引終値（速報）",
+          "periodStart": "2026-10-20",
+          "periodEnd": "2026-10-20",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米国通常取引終了時点の現物価格指数の速報。配当込み指数・先物・時間外取引を除く。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sp19",
+          "entity": "S&P500",
+          "metric": "現物価格指数の通常取引終値",
+          "periodStart": "2026-10-19",
+          "periodEnd": "2026-10-19",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米国通常取引終了時点の現物価格指数。配当込み指数・先物・時間外取引を除く。",
+          "value": 7690.73,
+          "source": {
+            "url": "https://www.reuters.com/business/wall-st-futures-climb-ai-stocks-rebound-oil-yields-fall-2026-10-19/",
+            "publishedOn": "2026-10-19",
+            "locator": "本文の主要3指数終値段落（The Dow Jones Industrial Average... S&P 500 gained...7,690.73）、通常取引終了後更新版",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数算出元の当日履歴表を確認できなかったため、同日のReuters終値報道で確認。"
+          }
+        },
+        {
+          "id": "sp20",
+          "entity": "S&P500",
+          "metric": "現物価格指数の通常取引終値（速報）",
+          "periodStart": "2026-10-20",
+          "periodEnd": "2026-10-20",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米国通常取引終了時点の現物価格指数の速報。配当込み指数・先物・時間外取引を除く。",
+          "value": 7714.52,
+          "source": {
+            "url": "https://ca.marketscreener.com/news/dow-leads-wall-street-higher-investors-focus-on-healthcare-stocks-ce785cd8dd8ef427",
+            "publishedOn": "2026-10-20",
+            "locator": "本文 According to preliminary data 段落、S&P500 7,714.52／23.79ポイント／0.31%。16:02 EDT更新。ページ上部の相場ウィジェットではない。",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数算出元の当日確定履歴表を確認できなかったため、Reuters配信の取引終了後速報を使用し速報区分を明示。"
+          }
+        }
+      ],
+      "claim": "S&P500の10月20日通常取引終了後の速報値は7,714.52。前取引日19日の終値7,690.73から23.79ポイント、0.31%上昇した。",
+      "calculations": [
+        {
+          "id": "sp-diff",
+          "operation": "difference",
+          "inputs": [
+            "sp20",
+            "sp19"
+          ],
+          "definition": "20日速報値7,714.52−19日終値7,690.73。単位は指数ポイント。",
+          "precision": 2,
+          "value": 23.79
+        },
+        {
+          "id": "sp-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "sp20",
+            "sp19"
+          ],
+          "definition": "(7,714.52÷7,690.73−1)×100。前取引日終値を分母とし小数第2位に丸める。",
+          "precision": 2,
+          "value": 0.31
+        }
+      ]
+    },
+    {
+      "id": "elice-below-ipo",
+      "question": "Eliceの初日終値は公開価格を下回ったか。",
+      "definition": "公開価格と初日終値を同じ韓国ウォン／株で照合し、方向のみを記事に記す。下落率は採用しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "ipo",
+          "entity": "Elice Group",
+          "metric": "IPO公開価格",
+          "periodStart": "2026-10-06",
+          "periodEnd": "2026-10-06",
+          "unit": "韓国ウォン／株",
+          "basis": "market",
+          "definition": "新規公開時の1株価格。上場初日の始値ではない。"
+        },
+        {
+          "id": "close",
+          "entity": "Elice Group",
+          "metric": "上場初日終値",
+          "periodStart": "2026-10-20",
+          "periodEnd": "2026-10-20",
+          "unit": "韓国ウォン／株",
+          "basis": "market",
+          "definition": "韓国市場での上場初日終値。公開価格と同じ通貨・1株単位。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ipo",
+          "entity": "Elice Group",
+          "metric": "IPO公開価格",
+          "periodStart": "2026-10-06",
+          "periodEnd": "2026-10-06",
+          "unit": "韓国ウォン／株",
+          "basis": "market",
+          "definition": "新規公開時の1株価格。上場初日の始値ではない。",
+          "value": 90500,
+          "source": {
+            "url": "https://www.reuters.com/world/asia-pacific/south-korean-ai-data-centre-firm-elice-shares-tumble-ipo-debut-2026-10-20/",
+            "publishedOn": "2026-10-20",
+            "locator": "INCREASING SCRUTINY OF AI INFRA DEALS節、Elice's shares closed at 60,500 won compared with its IPO pricing of 90,500 won。値決め日は本文October 6段落。",
+            "kind": "secondary",
+            "primaryUnavailableReason": "取引所の銘柄別公式終値とIPO届出原票を確認できなかったためReutersの価格記載を採用。本文冒頭32%とは不整合があり、比率を除外した。"
+          }
+        },
+        {
+          "id": "close",
+          "entity": "Elice Group",
+          "metric": "上場初日終値",
+          "periodStart": "2026-10-20",
+          "periodEnd": "2026-10-20",
+          "unit": "韓国ウォン／株",
+          "basis": "market",
+          "definition": "韓国市場での上場初日終値。公開価格と同じ通貨・1株単位。",
+          "value": 60500,
+          "source": {
+            "url": "https://www.reuters.com/world/asia-pacific/south-korean-ai-data-centre-firm-elice-shares-tumble-ipo-debut-2026-10-20/",
+            "publishedOn": "2026-10-20",
+            "locator": "INCREASING SCRUTINY OF AI INFRA DEALS節、Elice's shares closed at 60,500 won compared with its IPO pricing of 90,500 won。値決め日は本文October 6段落。",
+            "kind": "secondary",
+            "primaryUnavailableReason": "取引所の銘柄別公式終値とIPO届出原票を確認できなかったためReutersの価格記載を採用。本文冒頭32%とは不整合があり、比率を除外した。"
+          }
+        }
+      ],
+      "claim": "AIクラウドなどを手掛ける韓国Elice Groupは20日の上場初日、株価が公開価格を下回った。Reutersによると、同社は新規公開で調達した資金の大半を、モジュール型データセンターと関連インフラに充てる計画を示している。",
+      "calculations": []
+    },
+    {
+      "id": "alinco-operating-profit",
+      "question": "中間期営業利益は前年同期比で増加したか。",
+      "definition": "2025年3月21日〜9月20日と2026年3月21日〜9月20日の連結営業利益。表示単位は百万円未満切捨て。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "op25",
+          "entity": "アルインコ（5933）",
+          "metric": "営業利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準の連結中間期累計実績。会社開示の百万円未満切捨て額。同じ利益段階で前年中間期比較。通期予想・単独四半期・TTMではない。"
+        },
+        {
+          "id": "op26",
+          "entity": "アルインコ（5933）",
+          "metric": "営業利益",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準の連結中間期累計実績。会社開示の百万円未満切捨て額。同じ利益段階で前年中間期比較。通期予想・単独四半期・TTMではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "op25",
+          "entity": "アルインコ（5933）",
+          "metric": "営業利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準の連結中間期累計実績。会社開示の百万円未満切捨て額。同じ利益段階で前年中間期比較。通期予想・単独四半期・TTMではない。",
+          "value": 1256,
+          "source": {
+            "url": "https://kabuyoho-sls-disclose.ifis.co.jp/58f/140120261020553439.pdf",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF1ページ『1.連結経営成績（累計）』営業利益列。対象期間は同ページおよびPDF8ページ中間連結損益計算書の両期間見出し。8ページの千円額1,256,066／1,407,183とも切捨て額が一致。",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "op26",
+          "entity": "アルインコ（5933）",
+          "metric": "営業利益",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準の連結中間期累計実績。会社開示の百万円未満切捨て額。同じ利益段階で前年中間期比較。通期予想・単独四半期・TTMではない。",
+          "value": 1407,
+          "source": {
+            "url": "https://kabuyoho-sls-disclose.ifis.co.jp/58f/140120261020553439.pdf",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF1ページ『1.連結経営成績（累計）』営業利益列。対象期間は同ページおよびPDF8ページ中間連結損益計算書の両期間見出し。8ページの千円額1,256,066／1,407,183とも切捨て額が一致。",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "アルインコの2027年3月期中間期の連結営業利益は1,407百万円で、前年中間期の1,256百万円から12.0%増加した。一方、経常利益は前年中間期1,421百万円に対して1,317百万円となり、減少した。",
+      "calculations": [
+        {
+          "id": "op-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "op26",
+            "op25"
+          ],
+          "definition": "(1,407÷1,256−1)×100、開示された百万円単位の切捨て額から算出。小数第1位で12.0%。会社記載の増減率も12.0%。",
+          "precision": 1,
+          "value": 12
+        }
+      ]
+    },
+    {
+      "id": "alinco-ordinary-profit",
+      "question": "営業利益と異なり経常利益は前年中間期を下回ったか。",
+      "definition": "同一の連結中間期・経常利益で比較。営業利益との数値水準の大小を企業収益性の比較として扱わない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "ord25",
+          "entity": "アルインコ（5933）",
+          "metric": "経常利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準の連結中間期累計実績。会社開示の百万円未満切捨て額。同じ利益段階で前年中間期比較。通期予想・単独四半期・TTMではない。"
+        },
+        {
+          "id": "ord26",
+          "entity": "アルインコ（5933）",
+          "metric": "経常利益",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準の連結中間期累計実績。会社開示の百万円未満切捨て額。同じ利益段階で前年中間期比較。通期予想・単独四半期・TTMではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ord25",
+          "entity": "アルインコ（5933）",
+          "metric": "経常利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準の連結中間期累計実績。会社開示の百万円未満切捨て額。同じ利益段階で前年中間期比較。通期予想・単独四半期・TTMではない。",
+          "value": 1421,
+          "source": {
+            "url": "https://kabuyoho-sls-disclose.ifis.co.jp/58f/140120261020553439.pdf",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF1ページ『1.連結経営成績（累計）』経常利益列。PDF8ページ中間連結損益計算書に期間と千円額1,421,770／1,317,159、為替差損・支払利息の当期計上を確認。",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "ord26",
+          "entity": "アルインコ（5933）",
+          "metric": "経常利益",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準の連結中間期累計実績。会社開示の百万円未満切捨て額。同じ利益段階で前年中間期比較。通期予想・単独四半期・TTMではない。",
+          "value": 1317,
+          "source": {
+            "url": "https://kabuyoho-sls-disclose.ifis.co.jp/58f/140120261020553439.pdf",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF1ページ『1.連結経営成績（累計）』経常利益列。PDF8ページ中間連結損益計算書に期間と千円額1,421,770／1,317,159、為替差損・支払利息の当期計上を確認。",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "アルインコの2027年3月期中間期の連結営業利益は1,407百万円で、前年中間期の1,256百万円から12.0%増加した。一方、経常利益は前年中間期1,421百万円に対して1,317百万円となり、減少した。",
+      "calculations": []
+    },
+    {
+      "id": "wti-december-settlement",
+      "question": "12月限に限定した20日の清算値はいくらか。",
+      "definition": "単独値の出典確認。前日11月限との比較・連続先物の騰落率・現物の値動きは主張しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "dec20",
+          "entity": "NYMEX WTI原油先物2026年12月限",
+          "metric": "日次清算値",
+          "periodStart": "2026-10-20",
+          "periodEnd": "2026-10-20",
+          "unit": "米ドル／バレル",
+          "basis": "market",
+          "definition": "2026年12月限の清算値。11月限・現物価格・日中高値・リアルタイム価格を除く。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "dec20",
+          "entity": "NYMEX WTI原油先物2026年12月限",
+          "metric": "日次清算値",
+          "periodStart": "2026-10-20",
+          "periodEnd": "2026-10-20",
+          "unit": "米ドル／バレル",
+          "basis": "market",
+          "definition": "2026年12月限の清算値。11月限・現物価格・日中高値・リアルタイム価格を除く。",
+          "value": 97.82,
+          "source": {
+            "url": "https://www.reuters.com/business/energy/oil-eases-markets-assess-potential-waiver-russian-energy-middle-east-supply-2026-10-20/",
+            "publishedOn": "2026-10-20",
+            "locator": "清算値段落 The November contract...expired on Tuesday...The more active December contract settled...at $97.82 a barrel。",
+            "kind": "secondary",
+            "primaryUnavailableReason": "取引所の当日公式清算表を確認できなかったため、限月を明示したReuters清算後報道を用いた。"
+          }
+        }
+      ],
+      "claim": "WTI原油先物12月限の10月20日清算値は1バレル97.82米ドル。Reutersは同日、11月限の取引終了と、12月限の取引がより活発になっていることを報じた。",
+      "calculations": []
+    }
+  ]
+}
+
