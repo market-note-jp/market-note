@@ -1,0 +1,1433 @@
+{
+  "version": 1,
+  "articleSlug": "theme-tariff-recovery-earnings-2026-10-21",
+  "checkedAt": "2026-10-21T11:10:43.642Z",
+  "informationCutoff": "2026-10-21T20:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "本文の重要な数値比較を一次資料本文と照合し、期間・単位・会計基準・会社予想と実績を区別した。比較台帳の計算を再計算し、現行スキーマ外の感応度も式と前提を確認した。未確認の市場予想・株価評価を追加していない。",
+  "comparisons": [
+    {
+      "id": "eps-recovery",
+      "question": "本文の比較値・期間・定義・計算は一次資料と整合するか。",
+      "definition": "原典は百万米ドル。本文で億米ドル表示する場合は100で除す。実績と会社予想、筆者試算を区別。概数由来の試算は概数であり他の要因を完全調整していない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "gaap-prev",
+          "entity": "RTX連結",
+          "metric": "GAAP希薄化EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "GAAP希薄化EPS"
+        },
+        {
+          "id": "gaap-now",
+          "entity": "RTX連結",
+          "metric": "GAAP希薄化EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "GAAP希薄化EPS"
+        },
+        {
+          "id": "adj-prev",
+          "entity": "RTX連結",
+          "metric": "調整後希薄化EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "調整後希薄化EPS"
+        },
+        {
+          "id": "adj-now",
+          "entity": "RTX連結",
+          "metric": "調整後希薄化EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "調整後希薄化EPS"
+        },
+        {
+          "id": "recovery",
+          "entity": "RTX連結",
+          "metric": "IEEPA回収の調整後EPS寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "IEEPA回収の調整後EPS寄与"
+        }
+      ],
+      "observations": [
+        {
+          "id": "gaap-prev",
+          "entity": "RTX連結",
+          "metric": "GAAP希薄化EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "GAAP希薄化EPS",
+          "value": 1.41,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 2頁：GAAP希薄化EPS",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "gaap-now",
+          "entity": "RTX連結",
+          "metric": "GAAP希薄化EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "GAAP希薄化EPS",
+          "value": 1.89,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 2頁：GAAP希薄化EPS",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "adj-prev",
+          "entity": "RTX連結",
+          "metric": "調整後希薄化EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "調整後希薄化EPS",
+          "value": 1.7,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 2頁：調整後希薄化EPS",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "adj-now",
+          "entity": "RTX連結",
+          "metric": "調整後希薄化EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "調整後希薄化EPS",
+          "value": 2.26,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 2頁：調整後希薄化EPS",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "recovery",
+          "entity": "RTX連結",
+          "metric": "IEEPA回収の調整後EPS寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "IEEPA回収の調整後EPS寄与",
+          "value": 0.25,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁：IEEPA回収の調整後EPS寄与",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "increase",
+          "operation": "difference",
+          "inputs": [
+            "adj-now",
+            "adj-prev"
+          ],
+          "definition": "本文記載の筆者試算",
+          "precision": 2,
+          "value": 0.56
+        },
+        {
+          "id": "recovery-share",
+          "operation": "ratio-percent",
+          "inputs": [
+            "recovery",
+            "increase"
+          ],
+          "definition": "本文記載の筆者試算",
+          "precision": 1,
+          "value": 44.6
+        },
+        {
+          "id": "ex-recovery",
+          "operation": "difference",
+          "inputs": [
+            "adj-now",
+            "recovery"
+          ],
+          "definition": "本文記載の筆者試算",
+          "precision": 2,
+          "value": 2.01
+        },
+        {
+          "id": "ex-recovery-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "ex-recovery",
+            "adj-prev"
+          ],
+          "definition": "本文記載の筆者試算",
+          "precision": 1,
+          "value": 18.2
+        }
+      ],
+      "claim": "会社の調整後EPSは前年から0.56ドル増えた。その約44.6%に相当する0.25ドルがIEEPA回収だ。当年だけこの回収分を引く筆者試算では2.01ドルとなり、前年の調整後1.70ドルに対して約18.2%増益が残る。"
+    },
+    {
+      "id": "eps-reconciliation",
+      "question": "本文の比較値・期間・定義・計算は一次資料と整合するか。",
+      "definition": "原典は百万米ドル。本文で億米ドル表示する場合は100で除す。実績と会社予想、筆者試算を区別。概数由来の試算は概数であり他の要因を完全調整していない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "purchase",
+          "entity": "RTX連結",
+          "metric": "買収会計調整EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "買収会計調整EPS"
+        },
+        {
+          "id": "other",
+          "entity": "RTX連結",
+          "metric": "再編等調整EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "再編等調整EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "purchase",
+          "entity": "RTX連結",
+          "metric": "買収会計調整EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "買収会計調整EPS",
+          "value": 0.26,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁：買収会計調整EPS",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "other",
+          "entity": "RTX連結",
+          "metric": "再編等調整EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "再編等調整EPS",
+          "value": 0.11,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁：再編等調整EPS",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "なお、当年のGAAP EPSと調整後EPSの差には、買収会計調整0.26ドルと、再編などの項目0.11ドルがある。"
+    },
+    {
+      "id": "collins",
+      "question": "本文の比較値・期間・定義・計算は一次資料と整合するか。",
+      "definition": "原典は百万米ドル。本文で億米ドル表示する場合は100で除す。実績と会社予想、筆者試算を区別。概数由来の試算は概数であり他の要因を完全調整していない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "prev",
+          "entity": "Collins Aerospace",
+          "metric": "調整後セグメント営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後セグメント営業利益"
+        },
+        {
+          "id": "now",
+          "entity": "Collins Aerospace",
+          "metric": "調整後セグメント営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後セグメント営業利益"
+        },
+        {
+          "id": "benefit",
+          "entity": "Collins Aerospace",
+          "metric": "IEEPA回収（約）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "IEEPA回収（約）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prev",
+          "entity": "Collins Aerospace",
+          "metric": "調整後セグメント営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後セグメント営業利益",
+          "value": 1194,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 9頁：調整後セグメント営業利益",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "now",
+          "entity": "Collins Aerospace",
+          "metric": "調整後セグメント営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後セグメント営業利益",
+          "value": 1788,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 9頁：調整後セグメント営業利益",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "benefit",
+          "entity": "Collins Aerospace",
+          "metric": "IEEPA回収（約）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "IEEPA回収（約）",
+          "value": 250,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 3頁：IEEPA回収（約）",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "ex-benefit",
+          "operation": "difference",
+          "inputs": [
+            "now",
+            "benefit"
+          ],
+          "definition": "本文記載の筆者試算",
+          "precision": 0,
+          "value": 1538
+        }
+      ],
+      "claim": "| Collins Aerospace | 1,194 | 1,788 | IEEPA回収 約250 | 約1,538 |"
+    },
+    {
+      "id": "pratt",
+      "question": "本文の比較値・期間・定義・計算は一次資料と整合するか。",
+      "definition": "原典は百万米ドル。本文で億米ドル表示する場合は100で除す。実績と会社予想、筆者試算を区別。概数由来の試算は概数であり他の要因を完全調整していない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "prev",
+          "entity": "Pratt & Whitney",
+          "metric": "調整後セグメント営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後セグメント営業利益"
+        },
+        {
+          "id": "now",
+          "entity": "Pratt & Whitney",
+          "metric": "調整後セグメント営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後セグメント営業利益"
+        },
+        {
+          "id": "benefit",
+          "entity": "Pratt & Whitney",
+          "metric": "IEEPA回収（約）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "IEEPA回収（約）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prev",
+          "entity": "Pratt & Whitney",
+          "metric": "調整後セグメント営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後セグメント営業利益",
+          "value": 751,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 9頁：調整後セグメント営業利益",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "now",
+          "entity": "Pratt & Whitney",
+          "metric": "調整後セグメント営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後セグメント営業利益",
+          "value": 968,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 9頁：調整後セグメント営業利益",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "benefit",
+          "entity": "Pratt & Whitney",
+          "metric": "IEEPA回収（約）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "IEEPA回収（約）",
+          "value": 160,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 3頁：IEEPA回収（約）",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "ex-benefit",
+          "operation": "difference",
+          "inputs": [
+            "now",
+            "benefit"
+          ],
+          "definition": "本文記載の筆者試算",
+          "precision": 0,
+          "value": 808
+        }
+      ],
+      "claim": "| Pratt & Whitney | 751 | 968 | IEEPA回収 約160 | 約808 |"
+    },
+    {
+      "id": "raytheon",
+      "question": "本文の比較値・期間・定義・計算は一次資料と整合するか。",
+      "definition": "原典は百万米ドル。本文で億米ドル表示する場合は100で除す。実績と会社予想、筆者試算を区別。概数由来の試算は概数であり他の要因を完全調整していない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "prev",
+          "entity": "Raytheon",
+          "metric": "調整後セグメント営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後セグメント営業利益"
+        },
+        {
+          "id": "now",
+          "entity": "Raytheon",
+          "metric": "調整後セグメント営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後セグメント営業利益"
+        },
+        {
+          "id": "benefit",
+          "entity": "Raytheon",
+          "metric": "国際契約変更・オフセット義務有利調整（約）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "国際契約変更・オフセット義務有利調整（約）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prev",
+          "entity": "Raytheon",
+          "metric": "調整後セグメント営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後セグメント営業利益",
+          "value": 859,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 9頁：調整後セグメント営業利益",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "now",
+          "entity": "Raytheon",
+          "metric": "調整後セグメント営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後セグメント営業利益",
+          "value": 1134,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 9頁：調整後セグメント営業利益",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "benefit",
+          "entity": "Raytheon",
+          "metric": "国際契約変更・オフセット義務有利調整（約）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "国際契約変更・オフセット義務有利調整（約）",
+          "value": 85,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 4頁：国際契約変更・オフセット義務有利調整（約）",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "ex-benefit",
+          "operation": "difference",
+          "inputs": [
+            "now",
+            "benefit"
+          ],
+          "definition": "本文記載の筆者試算",
+          "precision": 0,
+          "value": 1049
+        }
+      ],
+      "claim": "| Raytheon | 859 | 1,134 | 国際契約変更・オフセット義務に関する有利な調整 約85 | 約1,049 |"
+    },
+    {
+      "id": "pratt-gaap",
+      "question": "本文の比較値・期間・定義・計算は一次資料と整合するか。",
+      "definition": "原典は百万米ドル。本文で億米ドル表示する場合は100で除す。実績と会社予想、筆者試算を区別。概数由来の試算は概数であり他の要因を完全調整していない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "prev",
+          "entity": "Pratt & Whitney",
+          "metric": "GAAP営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "now",
+          "entity": "Pratt & Whitney",
+          "metric": "GAAP営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "charge",
+          "entity": "Pratt & Whitney",
+          "metric": "顧客破綻費用（約）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "顧客破綻費用（約）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prev",
+          "entity": "Pratt & Whitney",
+          "metric": "GAAP営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 751,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 3頁：GAAP営業利益",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "now",
+          "entity": "Pratt & Whitney",
+          "metric": "GAAP営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 608,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 3頁：GAAP営業利益",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "charge",
+          "entity": "Pratt & Whitney",
+          "metric": "顧客破綻費用（約）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "顧客破綻費用（約）",
+          "value": 363,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 3頁：顧客破綻費用（約）",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "一方、PrattのGAAP営業利益は前年751百万ドルから当年608百万ドルへ減少した。顧客の破綻に伴う約363百万ドルの費用が計上され、会社の調整後利益では除外されている。"
+    },
+    {
+      "id": "cash-flow",
+      "question": "本文の比較値・期間・定義・計算は一次資料と整合するか。",
+      "definition": "原典は百万米ドル。本文で億米ドル表示する場合は100で除す。実績と会社予想、筆者試算を区別。概数由来の試算は概数であり他の要因を完全調整していない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2025-q3-cfo",
+          "entity": "RTX連結",
+          "metric": "営業キャッシュフロー",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業キャッシュフロー"
+        },
+        {
+          "id": "2025-q3-capex",
+          "entity": "RTX連結",
+          "metric": "設備投資現金支出（負符号）",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負符号）"
+        },
+        {
+          "id": "2026-q3-cfo",
+          "entity": "RTX連結",
+          "metric": "営業キャッシュフロー",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業キャッシュフロー"
+        },
+        {
+          "id": "2026-q3-capex",
+          "entity": "RTX連結",
+          "metric": "設備投資現金支出（負符号）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負符号）"
+        },
+        {
+          "id": "2025-9m-cfo",
+          "entity": "RTX連結",
+          "metric": "営業キャッシュフロー",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業キャッシュフロー"
+        },
+        {
+          "id": "2025-9m-capex",
+          "entity": "RTX連結",
+          "metric": "設備投資現金支出（負符号）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負符号）"
+        },
+        {
+          "id": "2026-9m-cfo",
+          "entity": "RTX連結",
+          "metric": "営業キャッシュフロー",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業キャッシュフロー"
+        },
+        {
+          "id": "2026-9m-capex",
+          "entity": "RTX連結",
+          "metric": "設備投資現金支出（負符号）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負符号）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2025-q3-cfo",
+          "entity": "RTX連結",
+          "metric": "営業キャッシュフロー",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業キャッシュフロー",
+          "value": 4639,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 11頁：営業キャッシュフロー",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "2025-q3-capex",
+          "entity": "RTX連結",
+          "metric": "設備投資現金支出（負符号）",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負符号）",
+          "value": -614,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 11頁：設備投資現金支出（負符号）",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "2026-q3-cfo",
+          "entity": "RTX連結",
+          "metric": "営業キャッシュフロー",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業キャッシュフロー",
+          "value": 2868,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 11頁：営業キャッシュフロー",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "2026-q3-capex",
+          "entity": "RTX連結",
+          "metric": "設備投資現金支出（負符号）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負符号）",
+          "value": -749,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 11頁：設備投資現金支出（負符号）",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "2025-9m-cfo",
+          "entity": "RTX連結",
+          "metric": "営業キャッシュフロー",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業キャッシュフロー",
+          "value": 6402,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 11頁：営業キャッシュフロー",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "2025-9m-capex",
+          "entity": "RTX連結",
+          "metric": "設備投資現金支出（負符号）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負符号）",
+          "value": -1657,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 11頁：設備投資現金支出（負符号）",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "2026-9m-cfo",
+          "entity": "RTX連結",
+          "metric": "営業キャッシュフロー",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業キャッシュフロー",
+          "value": 8270,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 11頁：営業キャッシュフロー",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "2026-9m-capex",
+          "entity": "RTX連結",
+          "metric": "設備投資現金支出（負符号）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負符号）",
+          "value": -1964,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 11頁：設備投資現金支出（負符号）",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "2025-q3-fcf",
+          "operation": "sum",
+          "inputs": [
+            "2025-q3-cfo",
+            "2025-q3-capex"
+          ],
+          "definition": "営業CF＋負符号の設備現金支出",
+          "precision": 0,
+          "value": 4025
+        },
+        {
+          "id": "2026-q3-fcf",
+          "operation": "sum",
+          "inputs": [
+            "2026-q3-cfo",
+            "2026-q3-capex"
+          ],
+          "definition": "営業CF＋負符号の設備現金支出",
+          "precision": 0,
+          "value": 2119
+        },
+        {
+          "id": "2025-9m-fcf",
+          "operation": "sum",
+          "inputs": [
+            "2025-9m-cfo",
+            "2025-9m-capex"
+          ],
+          "definition": "営業CF＋負符号の設備現金支出",
+          "precision": 0,
+          "value": 4745
+        },
+        {
+          "id": "2026-9m-fcf",
+          "operation": "sum",
+          "inputs": [
+            "2026-9m-cfo",
+            "2026-9m-capex"
+          ],
+          "definition": "営業CF＋負符号の設備現金支出",
+          "precision": 0,
+          "value": 6306
+        }
+      ],
+      "claim": "| 7～9月 営業キャッシュフロー | 4,639 | 2,868 |"
+    },
+    {
+      "id": "cf-recovery",
+      "question": "本文の比較値・期間・定義・計算は一次資料と整合するか。",
+      "definition": "原典は百万米ドル。本文で億米ドル表示する場合は100で除す。実績と会社予想、筆者試算を区別。概数由来の試算は概数であり他の要因を完全調整していない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "recovery",
+          "entity": "RTX連結",
+          "metric": "営業CFへのIEEPA回収寄与（約）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CFへのIEEPA回収寄与（約）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "recovery",
+          "entity": "RTX連結",
+          "metric": "営業CFへのIEEPA回収寄与（約）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CFへのIEEPA回収寄与（約）",
+          "value": 300,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁：営業CFへのIEEPA回収寄与（約）",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "当四半期の営業キャッシュフローにはIEEPA回収約3億ドルが含まれる。"
+    },
+    {
+      "id": "contract-liabilities",
+      "question": "本文の比較値・期間・定義・計算は一次資料と整合するか。",
+      "definition": "原典は百万米ドル。本文で億米ドル表示する場合は100で除す。実績と会社予想、筆者試算を区別。概数由来の試算は概数であり他の要因を完全調整していない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "prev",
+          "entity": "RTX連結",
+          "metric": "CF計算書の契約負債増減",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書の契約負債増減"
+        },
+        {
+          "id": "now",
+          "entity": "RTX連結",
+          "metric": "CF計算書の契約負債増減",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書の契約負債増減"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prev",
+          "entity": "RTX連結",
+          "metric": "CF計算書の契約負債増減",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書の契約負債増減",
+          "value": 986,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 11頁：CF計算書の契約負債増減",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "now",
+          "entity": "RTX連結",
+          "metric": "CF計算書の契約負債増減",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書の契約負債増減",
+          "value": -980,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 11頁：CF計算書の契約負債増減",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "四半期の契約負債の増減は、前年の986百万ドルの資金増加に対し、当年は980百万ドルの資金減少だった。"
+    },
+    {
+      "id": "annual-outlook",
+      "question": "本文の比較値・期間・定義・計算は一次資料と整合するか。",
+      "definition": "原典は百万米ドル。本文で億米ドル表示する場合は100で除す。実績と会社予想、筆者試算を区別。概数由来の試算は概数であり他の要因を完全調整していない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales-従来下限",
+          "entity": "RTX連結",
+          "metric": "調整後売上高従来下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "調整後売上高従来下限"
+        },
+        {
+          "id": "sales-従来上限",
+          "entity": "RTX連結",
+          "metric": "調整後売上高従来上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "調整後売上高従来上限"
+        },
+        {
+          "id": "sales-改定下限",
+          "entity": "RTX連結",
+          "metric": "調整後売上高改定下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "調整後売上高改定下限"
+        },
+        {
+          "id": "sales-改定上限",
+          "entity": "RTX連結",
+          "metric": "調整後売上高改定上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "調整後売上高改定上限"
+        },
+        {
+          "id": "eps-従来下限",
+          "entity": "RTX連結",
+          "metric": "調整後EPS従来下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS従来下限"
+        },
+        {
+          "id": "eps-従来上限",
+          "entity": "RTX連結",
+          "metric": "調整後EPS従来上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS従来上限"
+        },
+        {
+          "id": "eps-改定下限",
+          "entity": "RTX連結",
+          "metric": "調整後EPS改定下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS改定下限"
+        },
+        {
+          "id": "eps-改定上限",
+          "entity": "RTX連結",
+          "metric": "調整後EPS改定上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS改定上限"
+        },
+        {
+          "id": "fcf-従来下限",
+          "entity": "RTX連結",
+          "metric": "FCF従来下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "FCF従来下限"
+        },
+        {
+          "id": "fcf-従来上限",
+          "entity": "RTX連結",
+          "metric": "FCF従来上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "FCF従来上限"
+        },
+        {
+          "id": "fcf-改定下限",
+          "entity": "RTX連結",
+          "metric": "FCF改定下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "FCF改定下限"
+        },
+        {
+          "id": "fcf-改定上限",
+          "entity": "RTX連結",
+          "metric": "FCF改定上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "FCF改定上限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales-従来下限",
+          "entity": "RTX連結",
+          "metric": "調整後売上高従来下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "調整後売上高従来下限",
+          "value": 95000,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁：調整後売上高従来下限",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "sales-従来上限",
+          "entity": "RTX連結",
+          "metric": "調整後売上高従来上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "調整後売上高従来上限",
+          "value": 96000,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁：調整後売上高従来上限",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "sales-改定下限",
+          "entity": "RTX連結",
+          "metric": "調整後売上高改定下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "調整後売上高改定下限",
+          "value": 97000,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁：調整後売上高改定下限",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "sales-改定上限",
+          "entity": "RTX連結",
+          "metric": "調整後売上高改定上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "調整後売上高改定上限",
+          "value": 97500,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁：調整後売上高改定上限",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "eps-従来下限",
+          "entity": "RTX連結",
+          "metric": "調整後EPS従来下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS従来下限",
+          "value": 7.1,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁：調整後EPS従来下限",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "eps-従来上限",
+          "entity": "RTX連結",
+          "metric": "調整後EPS従来上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS従来上限",
+          "value": 7.25,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁：調整後EPS従来上限",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "eps-改定下限",
+          "entity": "RTX連結",
+          "metric": "調整後EPS改定下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS改定下限",
+          "value": 7.65,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁：調整後EPS改定下限",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "eps-改定上限",
+          "entity": "RTX連結",
+          "metric": "調整後EPS改定上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS改定上限",
+          "value": 7.75,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁：調整後EPS改定上限",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "fcf-従来下限",
+          "entity": "RTX連結",
+          "metric": "FCF従来下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "FCF従来下限",
+          "value": 8500,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁：FCF従来下限",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "fcf-従来上限",
+          "entity": "RTX連結",
+          "metric": "FCF従来上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "FCF従来上限",
+          "value": 8750,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁：FCF従来上限",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "fcf-改定下限",
+          "entity": "RTX連結",
+          "metric": "FCF改定下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "FCF改定下限",
+          "value": 9000,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁：FCF改定下限",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "fcf-改定上限",
+          "entity": "RTX連結",
+          "metric": "FCF改定上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "FCF改定上限",
+          "value": 9200,
+          "source": {
+            "url": "https://investors.rtx.com/static-files/46b42314-8297-41ea-91cd-4e4ddd2e9518",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁：FCF改定上限",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "2026年会社予想は、調整後売上高が950～960億ドルから970～975億ドルへ、調整後EPSが7.10～7.25ドルから7.65～7.75ドルへ、FCFが85.0～87.5億ドルから90～92億ドルへ引き上げられた。"
+    }
+  ],
+  "articleSha256": "167ca09b032a68dfb059f6ae449917d2926cb8271b8cf6c5666c101af79ee6fe"
+}

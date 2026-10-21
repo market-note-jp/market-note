@@ -1,0 +1,2308 @@
+{
+  "version": 1,
+  "articleSlug": "company-rollins-2026-10-21",
+  "checkedAt": "2026-10-21T11:10:43.637Z",
+  "informationCutoff": "2026-10-21T20:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "本文の重要な数値比較を一次資料本文と照合し、期間・単位・会計基準・会社予想と実績を区別した。比較台帳の計算を再計算し、現行スキーマ外の感応度も式と前提を確認した。未確認の市場予想・株価評価を追加していない。",
+  "comparisons": [
+    {
+      "id": "five-year-2021",
+      "question": "暦年通期GAAP連結実績とFCF。百万米ドル、小数1桁表示。FCFは営業CFと負の設備支出の和。後年10-K比較値。",
+      "definition": "暦年通期GAAP連結実績とFCF。百万米ドル、小数1桁表示。FCFは営業CFと負の設備支出の和。後年10-K比較値。",
+      "status": "ready",
+      "claim": "| 2021 | 2,424.3 | 447.6 | 401.8 | 27.2 | 374.6 |",
+      "requiredInputs": [
+        {
+          "id": "revenue-2021",
+          "entity": "Rollins（連結）",
+          "metric": "revenue",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue"
+        },
+        {
+          "id": "operating-income-2021",
+          "entity": "Rollins（連結）",
+          "metric": "operating-income",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income"
+        },
+        {
+          "id": "operating-cash-flow-2021",
+          "entity": "Rollins（連結）",
+          "metric": "operating-cash-flow",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-cash-flow"
+        },
+        {
+          "id": "capex-cash-outflow-2021",
+          "entity": "Rollins（連結）",
+          "metric": "capex-cash-outflow",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "capex-cash-outflow"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-2021",
+          "entity": "Rollins（連結）",
+          "metric": "revenue",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue",
+          "value": 2424.3,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-24-000025/rol-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "2023 10-K printed pp39,42",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "operating-income-2021",
+          "entity": "Rollins（連結）",
+          "metric": "operating-income",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income",
+          "value": 447.636,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-24-000025/rol-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "2023 10-K printed pp39,42",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "operating-cash-flow-2021",
+          "entity": "Rollins（連結）",
+          "metric": "operating-cash-flow",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-cash-flow",
+          "value": 401.805,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-24-000025/rol-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "2023 10-K printed pp39,42",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex-cash-outflow-2021",
+          "entity": "Rollins（連結）",
+          "metric": "capex-cash-outflow",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "capex-cash-outflow",
+          "value": -27.194,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-24-000025/rol-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "2023 10-K printed pp39,42",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf-2021",
+          "operation": "sum",
+          "inputs": [
+            "operating-cash-flow-2021",
+            "capex-cash-outflow-2021"
+          ],
+          "value": 374.611,
+          "definition": "FCF=営業CF−設備支出",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "five-year-2022",
+      "question": "暦年通期GAAP連結実績とFCF。百万米ドル、小数1桁表示。FCFは営業CFと負の設備支出の和。後年10-K比較値。",
+      "definition": "暦年通期GAAP連結実績とFCF。百万米ドル、小数1桁表示。FCFは営業CFと負の設備支出の和。後年10-K比較値。",
+      "status": "ready",
+      "claim": "| 2022 | 2,695.8 | 493.4 | 465.9 | 30.6 | 435.3 |",
+      "requiredInputs": [
+        {
+          "id": "revenue-2022",
+          "entity": "Rollins（連結）",
+          "metric": "revenue",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue"
+        },
+        {
+          "id": "operating-income-2022",
+          "entity": "Rollins（連結）",
+          "metric": "operating-income",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income"
+        },
+        {
+          "id": "operating-cash-flow-2022",
+          "entity": "Rollins（連結）",
+          "metric": "operating-cash-flow",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-cash-flow"
+        },
+        {
+          "id": "capex-cash-outflow-2022",
+          "entity": "Rollins（連結）",
+          "metric": "capex-cash-outflow",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "capex-cash-outflow"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-2022",
+          "entity": "Rollins（連結）",
+          "metric": "revenue",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue",
+          "value": 2695.823,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-24-000025/rol-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "2023 10-K printed pp39,42",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "operating-income-2022",
+          "entity": "Rollins（連結）",
+          "metric": "operating-income",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income",
+          "value": 493.388,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-24-000025/rol-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "2023 10-K printed pp39,42",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "operating-cash-flow-2022",
+          "entity": "Rollins（連結）",
+          "metric": "operating-cash-flow",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-cash-flow",
+          "value": 465.93,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-24-000025/rol-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "2023 10-K printed pp39,42",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex-cash-outflow-2022",
+          "entity": "Rollins（連結）",
+          "metric": "capex-cash-outflow",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "capex-cash-outflow",
+          "value": -30.628,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-24-000025/rol-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "2023 10-K printed pp39,42",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf-2022",
+          "operation": "sum",
+          "inputs": [
+            "operating-cash-flow-2022",
+            "capex-cash-outflow-2022"
+          ],
+          "value": 435.302,
+          "definition": "FCF=営業CF−設備支出",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "five-year-2023",
+      "question": "暦年通期GAAP連結実績とFCF。百万米ドル、小数1桁表示。FCFは営業CFと負の設備支出の和。後年10-K比較値。",
+      "definition": "暦年通期GAAP連結実績とFCF。百万米ドル、小数1桁表示。FCFは営業CFと負の設備支出の和。後年10-K比較値。",
+      "status": "ready",
+      "claim": "| 2023 | 3,073.3 | 583.2 | 528.4 | 32.5 | 495.9 |",
+      "requiredInputs": [
+        {
+          "id": "revenue-2023",
+          "entity": "Rollins（連結）",
+          "metric": "revenue",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue"
+        },
+        {
+          "id": "operating-income-2023",
+          "entity": "Rollins（連結）",
+          "metric": "operating-income",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income"
+        },
+        {
+          "id": "operating-cash-flow-2023",
+          "entity": "Rollins（連結）",
+          "metric": "operating-cash-flow",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-cash-flow"
+        },
+        {
+          "id": "capex-cash-outflow-2023",
+          "entity": "Rollins（連結）",
+          "metric": "capex-cash-outflow",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "capex-cash-outflow"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-2023",
+          "entity": "Rollins（連結）",
+          "metric": "revenue",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue",
+          "value": 3073.278,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed pp44,47",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "operating-income-2023",
+          "entity": "Rollins（連結）",
+          "metric": "operating-income",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income",
+          "value": 583.226,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed pp44,47",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "operating-cash-flow-2023",
+          "entity": "Rollins（連結）",
+          "metric": "operating-cash-flow",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-cash-flow",
+          "value": 528.366,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed pp44,47",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex-cash-outflow-2023",
+          "entity": "Rollins（連結）",
+          "metric": "capex-cash-outflow",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "capex-cash-outflow",
+          "value": -32.465,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed pp44,47",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf-2023",
+          "operation": "sum",
+          "inputs": [
+            "operating-cash-flow-2023",
+            "capex-cash-outflow-2023"
+          ],
+          "value": 495.901,
+          "definition": "FCF=営業CF−設備支出",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "five-year-2024",
+      "question": "暦年通期GAAP連結実績とFCF。百万米ドル、小数1桁表示。FCFは営業CFと負の設備支出の和。後年10-K比較値。",
+      "definition": "暦年通期GAAP連結実績とFCF。百万米ドル、小数1桁表示。FCFは営業CFと負の設備支出の和。後年10-K比較値。",
+      "status": "ready",
+      "claim": "| 2024 | 3,388.7 | 657.2 | 607.7 | 27.6 | 580.1 |",
+      "requiredInputs": [
+        {
+          "id": "revenue-2024",
+          "entity": "Rollins（連結）",
+          "metric": "revenue",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue"
+        },
+        {
+          "id": "operating-income-2024",
+          "entity": "Rollins（連結）",
+          "metric": "operating-income",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income"
+        },
+        {
+          "id": "operating-cash-flow-2024",
+          "entity": "Rollins（連結）",
+          "metric": "operating-cash-flow",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-cash-flow"
+        },
+        {
+          "id": "capex-cash-outflow-2024",
+          "entity": "Rollins（連結）",
+          "metric": "capex-cash-outflow",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "capex-cash-outflow"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-2024",
+          "entity": "Rollins（連結）",
+          "metric": "revenue",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue",
+          "value": 3388.708,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed pp44,47",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "operating-income-2024",
+          "entity": "Rollins（連結）",
+          "metric": "operating-income",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income",
+          "value": 657.224,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed pp44,47",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "operating-cash-flow-2024",
+          "entity": "Rollins（連結）",
+          "metric": "operating-cash-flow",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-cash-flow",
+          "value": 607.653,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed pp44,47",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex-cash-outflow-2024",
+          "entity": "Rollins（連結）",
+          "metric": "capex-cash-outflow",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "capex-cash-outflow",
+          "value": -27.572,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed pp44,47",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf-2024",
+          "operation": "sum",
+          "inputs": [
+            "operating-cash-flow-2024",
+            "capex-cash-outflow-2024"
+          ],
+          "value": 580.081,
+          "definition": "FCF=営業CF−設備支出",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "five-year-2025",
+      "question": "暦年通期GAAP連結実績とFCF。百万米ドル、小数1桁表示。FCFは営業CFと負の設備支出の和。後年10-K比較値。",
+      "definition": "暦年通期GAAP連結実績とFCF。百万米ドル、小数1桁表示。FCFは営業CFと負の設備支出の和。後年10-K比較値。",
+      "status": "ready",
+      "claim": "| 2025 | 3,761.1 | 726.1 | 678.1 | 28.1 | 650.0 |",
+      "requiredInputs": [
+        {
+          "id": "revenue-2025",
+          "entity": "Rollins（連結）",
+          "metric": "revenue",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue"
+        },
+        {
+          "id": "operating-income-2025",
+          "entity": "Rollins（連結）",
+          "metric": "operating-income",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income"
+        },
+        {
+          "id": "operating-cash-flow-2025",
+          "entity": "Rollins（連結）",
+          "metric": "operating-cash-flow",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-cash-flow"
+        },
+        {
+          "id": "capex-cash-outflow-2025",
+          "entity": "Rollins（連結）",
+          "metric": "capex-cash-outflow",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "capex-cash-outflow"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-2025",
+          "entity": "Rollins（連結）",
+          "metric": "revenue",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue",
+          "value": 3761.05,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed pp44,47",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "operating-income-2025",
+          "entity": "Rollins（連結）",
+          "metric": "operating-income",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income",
+          "value": 726.068,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed pp44,47",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "operating-cash-flow-2025",
+          "entity": "Rollins（連結）",
+          "metric": "operating-cash-flow",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-cash-flow",
+          "value": 678.107,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed pp44,47",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex-cash-outflow-2025",
+          "entity": "Rollins（連結）",
+          "metric": "capex-cash-outflow",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "capex-cash-outflow",
+          "value": -28.086,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed pp44,47",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf-2025",
+          "operation": "sum",
+          "inputs": [
+            "operating-cash-flow-2025",
+            "capex-cash-outflow-2025"
+          ],
+          "value": 650.021,
+          "definition": "FCF=営業CF−設備支出",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "q2-performance",
+      "question": "Q2単独GAAPと会社調整後利益率を区別。",
+      "definition": "Q2単独GAAPと会社調整後利益率を区別。",
+      "status": "ready",
+      "claim": "4〜6月売上は1,078.6百万ドルで前年同期比7.9%増、営業利益は201.4百万ドルで1.5%増。営業利益率は19.8%から18.7%へ低下した。会社調整後でも利益率は20.6%から19.5%へ下がった。",
+      "requiredInputs": [
+        {
+          "id": "rev26",
+          "entity": "Rollins（連結）",
+          "metric": "売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "rev25",
+          "entity": "Rollins（連結）",
+          "metric": "売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "op26",
+          "entity": "Rollins（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "op25",
+          "entity": "Rollins（連結）",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "margin26",
+          "entity": "Rollins（連結）",
+          "metric": "営業利益率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率"
+        },
+        {
+          "id": "margin25",
+          "entity": "Rollins（連結）",
+          "metric": "営業利益率",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率"
+        },
+        {
+          "id": "adj26",
+          "entity": "Rollins（連結）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後営業利益率"
+        },
+        {
+          "id": "adj25",
+          "entity": "Rollins（連結）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev26",
+          "entity": "Rollins（連結）",
+          "metric": "売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 1078.576,
+          "source": {
+            "url": "https://www.rollins.com/investors/press-releases/detail/439/rollins-inc-reports-second-quarter-2026-financial-results",
+            "publishedOn": "2026-07-22",
+            "locator": "2026 Q2 10-Q, consolidated income statement printed p4",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "rev25",
+          "entity": "Rollins（連結）",
+          "metric": "売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 999.527,
+          "source": {
+            "url": "https://www.rollins.com/investors/press-releases/detail/439/rollins-inc-reports-second-quarter-2026-financial-results",
+            "publishedOn": "2026-07-22",
+            "locator": "2026 Q2 10-Q, consolidated income statement printed p4",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op26",
+          "entity": "Rollins（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 201.359,
+          "source": {
+            "url": "https://www.rollins.com/investors/press-releases/detail/439/rollins-inc-reports-second-quarter-2026-financial-results",
+            "publishedOn": "2026-07-22",
+            "locator": "2026 Q2 10-Q, consolidated income statement printed p4",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op25",
+          "entity": "Rollins（連結）",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 198.333,
+          "source": {
+            "url": "https://www.rollins.com/investors/press-releases/detail/439/rollins-inc-reports-second-quarter-2026-financial-results",
+            "publishedOn": "2026-07-22",
+            "locator": "2026 Q2 10-Q, consolidated income statement printed p4",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "margin26",
+          "entity": "Rollins（連結）",
+          "metric": "営業利益率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率",
+          "value": 18.7,
+          "source": {
+            "url": "https://www.rollins.com/investors/press-releases/detail/439/rollins-inc-reports-second-quarter-2026-financial-results",
+            "publishedOn": "2026-07-22",
+            "locator": "2026 Q2 10-Q, consolidated income statement printed p4",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "margin25",
+          "entity": "Rollins（連結）",
+          "metric": "営業利益率",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率",
+          "value": 19.8,
+          "source": {
+            "url": "https://www.rollins.com/investors/press-releases/detail/439/rollins-inc-reports-second-quarter-2026-financial-results",
+            "publishedOn": "2026-07-22",
+            "locator": "2026 Q2 10-Q, consolidated income statement printed p4",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "adj26",
+          "entity": "Rollins（連結）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後営業利益率",
+          "value": 19.5,
+          "source": {
+            "url": "https://www.rollins.com/investors/press-releases/detail/439/rollins-inc-reports-second-quarter-2026-financial-results",
+            "publishedOn": "2026-07-22",
+            "locator": "2026 Q2 10-Q, consolidated income statement printed p4",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "adj25",
+          "entity": "Rollins（連結）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後営業利益率",
+          "value": 20.6,
+          "source": {
+            "url": "https://www.rollins.com/investors/press-releases/detail/439/rollins-inc-reports-second-quarter-2026-financial-results",
+            "publishedOn": "2026-07-22",
+            "locator": "2026 Q2 10-Q, consolidated income statement printed p4",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "revg",
+          "operation": "growth-percent",
+          "inputs": [
+            "rev26",
+            "rev25"
+          ],
+          "value": 7.9,
+          "definition": "売上前年比",
+          "precision": 1
+        },
+        {
+          "id": "opg",
+          "operation": "growth-percent",
+          "inputs": [
+            "op26",
+            "op25"
+          ],
+          "value": 1.5,
+          "definition": "営業利益前年比",
+          "precision": 1
+        }
+      ]
+    },
+    {
+      "id": "organic-growth",
+      "question": "買収寄与とorganic指標は会社開示で数量成長ではない。",
+      "definition": "買収寄与とorganic指標は会社開示で数量成長ではない。",
+      "status": "ready",
+      "claim": "売上増加の内訳は会社定義のオーガニック成長5.7%、買収寄与2.2ポイント。",
+      "requiredInputs": [
+        {
+          "id": "organic",
+          "entity": "Rollins（連結）",
+          "metric": "オーガニック増収率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "オーガニック増収率"
+        },
+        {
+          "id": "acq",
+          "entity": "Rollins（連結）",
+          "metric": "買収増収寄与",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percentage-points",
+          "basis": "actual",
+          "definition": "買収増収寄与"
+        },
+        {
+          "id": "res",
+          "entity": "Rollins（連結）",
+          "metric": "住宅オーガニック増収率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "住宅オーガニック増収率"
+        },
+        {
+          "id": "commercial",
+          "entity": "Rollins（連結）",
+          "metric": "商業オーガニック増収率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "商業オーガニック増収率"
+        },
+        {
+          "id": "termite",
+          "entity": "Rollins（連結）",
+          "metric": "シロアリ等オーガニック増収率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "シロアリ等オーガニック増収率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "organic",
+          "entity": "Rollins（連結）",
+          "metric": "オーガニック増収率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "オーガニック増収率",
+          "value": 5.7,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "Non-GAAP reconciliation printed p36",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "Rollins（連結）",
+          "metric": "買収増収寄与",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percentage-points",
+          "basis": "actual",
+          "definition": "買収増収寄与",
+          "value": 2.2,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "Non-GAAP reconciliation printed p36",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "res",
+          "entity": "Rollins（連結）",
+          "metric": "住宅オーガニック増収率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "住宅オーガニック増収率",
+          "value": 3.6,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "Revenue MD&A printed p28",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "commercial",
+          "entity": "Rollins（連結）",
+          "metric": "商業オーガニック増収率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "商業オーガニック増収率",
+          "value": 7.2,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "Revenue MD&A printed p28",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "termite",
+          "entity": "Rollins（連結）",
+          "metric": "シロアリ等オーガニック増収率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "シロアリ等オーガニック増収率",
+          "value": 8.9,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "Revenue MD&A printed p28",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "profit-bridge",
+      "question": "Q2 GAAP損益項目差額。増分営業利益率=営業利益差額÷売上差額。数量価格推計ではない。",
+      "definition": "Q2 GAAP損益項目差額。増分営業利益率=営業利益差額÷売上差額。数量価格推計ではない。",
+      "status": "ready",
+      "claim": "筆者計算では、増収79.049百万ドルに対して営業増益は3.026百万ドル。増分営業利益率は3.8%にとどまる。サービス原価が46.769百万ドル、販管費が27.381百万ドル、償却費が1.873百万ドル増え、売上増の大部分を吸収した。",
+      "requiredInputs": [
+        {
+          "id": "r26",
+          "entity": "Rollins（連結）",
+          "metric": "売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "r25",
+          "entity": "Rollins（連結）",
+          "metric": "売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "o26",
+          "entity": "Rollins（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "o25",
+          "entity": "Rollins（連結）",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "c26",
+          "entity": "Rollins（連結）",
+          "metric": "原価",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "原価"
+        },
+        {
+          "id": "c25",
+          "entity": "Rollins（連結）",
+          "metric": "原価",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "原価"
+        },
+        {
+          "id": "s26",
+          "entity": "Rollins（連結）",
+          "metric": "販管費",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "販管費"
+        },
+        {
+          "id": "s25",
+          "entity": "Rollins（連結）",
+          "metric": "販管費",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "販管費"
+        },
+        {
+          "id": "d26",
+          "entity": "Rollins（連結）",
+          "metric": "償却費",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "償却費"
+        },
+        {
+          "id": "d25",
+          "entity": "Rollins（連結）",
+          "metric": "償却費",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "償却費"
+        }
+      ],
+      "observations": [
+        {
+          "id": "r26",
+          "entity": "Rollins（連結）",
+          "metric": "売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 1078.576,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "2026 Q2 10-Q, consolidated income statement printed p4",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "r25",
+          "entity": "Rollins（連結）",
+          "metric": "売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 999.527,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "2026 Q2 10-Q, consolidated income statement printed p4",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o26",
+          "entity": "Rollins（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 201.359,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "2026 Q2 10-Q, consolidated income statement printed p4",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o25",
+          "entity": "Rollins（連結）",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 198.333,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "2026 Q2 10-Q, consolidated income statement printed p4",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c26",
+          "entity": "Rollins（連結）",
+          "metric": "原価",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "原価",
+          "value": 508.63,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "2026 Q2 10-Q, consolidated income statement printed p4",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c25",
+          "entity": "Rollins（連結）",
+          "metric": "原価",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "原価",
+          "value": 461.861,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "2026 Q2 10-Q, consolidated income statement printed p4",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "s26",
+          "entity": "Rollins（連結）",
+          "metric": "販管費",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "販管費",
+          "value": 334.977,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "2026 Q2 10-Q, consolidated income statement printed p4",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "s25",
+          "entity": "Rollins（連結）",
+          "metric": "販管費",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "販管費",
+          "value": 307.596,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "2026 Q2 10-Q, consolidated income statement printed p4",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "d26",
+          "entity": "Rollins（連結）",
+          "metric": "償却費",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "償却費",
+          "value": 33.61,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "2026 Q2 10-Q, consolidated income statement printed p4",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "d25",
+          "entity": "Rollins（連結）",
+          "metric": "償却費",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "償却費",
+          "value": 31.737,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "2026 Q2 10-Q, consolidated income statement printed p4",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "dr",
+          "operation": "difference",
+          "inputs": [
+            "r26",
+            "r25"
+          ],
+          "value": 79.049,
+          "definition": "増収",
+          "precision": 3
+        },
+        {
+          "id": "do",
+          "operation": "difference",
+          "inputs": [
+            "o26",
+            "o25"
+          ],
+          "value": 3.026,
+          "definition": "増益",
+          "precision": 3
+        },
+        {
+          "id": "dc",
+          "operation": "difference",
+          "inputs": [
+            "c26",
+            "c25"
+          ],
+          "value": 46.769,
+          "definition": "原価増",
+          "precision": 3
+        },
+        {
+          "id": "ds",
+          "operation": "difference",
+          "inputs": [
+            "s26",
+            "s25"
+          ],
+          "value": 27.381,
+          "definition": "販管費増",
+          "precision": 3
+        },
+        {
+          "id": "dd",
+          "operation": "difference",
+          "inputs": [
+            "d26",
+            "d25"
+          ],
+          "value": 1.873,
+          "definition": "償却増",
+          "precision": 3
+        },
+        {
+          "id": "incremental-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "do",
+            "dr"
+          ],
+          "value": 3.8,
+          "definition": "増分営業利益率",
+          "precision": 1
+        }
+      ]
+    },
+    {
+      "id": "fcf-allocation",
+      "question": "FCFから取得時現金控除後買収支出と現金配当を控除。条件付対価・自社株買い等を未控除。",
+      "definition": "FCFから取得時現金控除後買収支出と現金配当を控除。条件付対価・自社株買い等を未控除。",
+      "status": "ready",
+      "claim": "2025年のFCF650.021百万ドルから買収支出309.518百万ドルと現金配当327.901百万ドルを引くと、残るのは12.602百万ドル。",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "Rollins（連結）",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "Rollins（連結）",
+          "metric": "設備現金支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備現金支出"
+        },
+        {
+          "id": "acq",
+          "entity": "Rollins（連結）",
+          "metric": "買収現金支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収現金支出"
+        },
+        {
+          "id": "div",
+          "entity": "Rollins（連結）",
+          "metric": "配当現金支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当現金支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "Rollins（連結）",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 678.107,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated statements of income / cash flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Rollins（連結）",
+          "metric": "設備現金支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備現金支出",
+          "value": -28.086,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated statements of income / cash flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "Rollins（連結）",
+          "metric": "買収現金支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収現金支出",
+          "value": -309.518,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated statements of income / cash flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "div",
+          "entity": "Rollins（連結）",
+          "metric": "配当現金支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当現金支出",
+          "value": -327.901,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated statements of income / cash flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "value": 650.021,
+          "definition": "FCF",
+          "precision": 3
+        },
+        {
+          "id": "residual",
+          "operation": "sum",
+          "inputs": [
+            "fcf",
+            "acq",
+            "div"
+          ],
+          "value": 12.602,
+          "definition": "指定支出控除後残額",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "capital-efficiency",
+      "question": "2025純利益÷2024/2025末自己資本平均。ROICや買収IRRではない。",
+      "definition": "2025純利益÷2024/2025末自己資本平均。ROICや買収IRRではない。",
+      "status": "ready",
+      "claim": "同年のROEは38.9%（純利益526.705百万ドル÷期首期末平均自己資本1,352.457百万ドル）。",
+      "requiredInputs": [
+        {
+          "id": "ni",
+          "entity": "Rollins（連結）",
+          "metric": "純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "equity24",
+          "entity": "Rollins（連結）",
+          "metric": "期末自己資本",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期末自己資本"
+        },
+        {
+          "id": "equity25",
+          "entity": "Rollins（連結）",
+          "metric": "期末自己資本",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期末自己資本"
+        },
+        {
+          "id": "goodwill",
+          "entity": "Rollins（連結）",
+          "metric": "期末のれん",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期末のれん"
+        },
+        {
+          "id": "assets",
+          "entity": "Rollins（連結）",
+          "metric": "期末総資産",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期末総資産"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ni",
+          "entity": "Rollins（連結）",
+          "metric": "純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 526.705,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated statements of income / cash flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "equity24",
+          "entity": "Rollins（連結）",
+          "metric": "期末自己資本",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期末自己資本",
+          "value": 1330.593,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K balance sheet p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "equity25",
+          "entity": "Rollins（連結）",
+          "metric": "期末自己資本",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期末自己資本",
+          "value": 1374.321,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K balance sheet p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "goodwill",
+          "entity": "Rollins（連結）",
+          "metric": "期末のれん",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期末のれん",
+          "value": 1374.664,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K balance sheet p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "assets",
+          "entity": "Rollins（連結）",
+          "metric": "期末総資産",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期末総資産",
+          "value": 3140.523,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000008/rol-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K balance sheet p43",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "double-ni",
+          "operation": "sum",
+          "inputs": [
+            "ni",
+            "ni"
+          ],
+          "value": 1053.41,
+          "definition": "分母平均の代わりに分子を2倍",
+          "precision": 3
+        },
+        {
+          "id": "equity-sum",
+          "operation": "sum",
+          "inputs": [
+            "equity24",
+            "equity25"
+          ],
+          "value": 2704.914,
+          "definition": "期首期末自己資本計",
+          "precision": 3
+        },
+        {
+          "id": "roe",
+          "operation": "ratio-percent",
+          "inputs": [
+            "double-ni",
+            "equity-sum"
+          ],
+          "value": 38.9,
+          "definition": "ROE",
+          "precision": 1
+        }
+      ]
+    },
+    {
+      "id": "net-debt",
+      "question": "短期と長期の帳簿額−現金。leaseは別掲、会社調整netdebtとは異なる。",
+      "definition": "短期と長期の帳簿額−現金。leaseは別掲、会社調整netdebtとは異なる。",
+      "status": "ready",
+      "claim": "6月末の有利子負債帳簿額は703.025百万ドル、現金は109.085百万ドルで、差額は593.940百万ドル。",
+      "requiredInputs": [
+        {
+          "id": "short",
+          "entity": "Rollins（連結）",
+          "metric": "短期負債",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期負債"
+        },
+        {
+          "id": "long",
+          "entity": "Rollins（連結）",
+          "metric": "長期負債帳簿額",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期負債帳簿額"
+        },
+        {
+          "id": "cash",
+          "entity": "Rollins（連結）",
+          "metric": "現金",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金"
+        },
+        {
+          "id": "leasec",
+          "entity": "Rollins（連結）",
+          "metric": "流動リース負債",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "流動リース負債"
+        },
+        {
+          "id": "leaselt",
+          "entity": "Rollins（連結）",
+          "metric": "固定リース負債",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定リース負債"
+        }
+      ],
+      "observations": [
+        {
+          "id": "short",
+          "entity": "Rollins（連結）",
+          "metric": "短期負債",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期負債",
+          "value": 215.918,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "Balance sheet p3",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "long",
+          "entity": "Rollins（連結）",
+          "metric": "長期負債帳簿額",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期負債帳簿額",
+          "value": 487.107,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "Balance sheet p3",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash",
+          "entity": "Rollins（連結）",
+          "metric": "現金",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金",
+          "value": 109.085,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "Balance sheet p3",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "leasec",
+          "entity": "Rollins（連結）",
+          "metric": "流動リース負債",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "流動リース負債",
+          "value": 138.677,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "Balance sheet p3",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "leaselt",
+          "entity": "Rollins（連結）",
+          "metric": "固定リース負債",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定リース負債",
+          "value": 273.601,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "Balance sheet p3",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "debt",
+          "operation": "sum",
+          "inputs": [
+            "short",
+            "long"
+          ],
+          "value": 703.025,
+          "definition": "帳簿有利子負債",
+          "precision": 3
+        },
+        {
+          "id": "net",
+          "operation": "difference",
+          "inputs": [
+            "debt",
+            "cash"
+          ],
+          "value": 593.94,
+          "definition": "指定netdebt",
+          "precision": 3
+        },
+        {
+          "id": "lease",
+          "operation": "sum",
+          "inputs": [
+            "leasec",
+            "leaselt"
+          ],
+          "value": 412.278,
+          "definition": "リース計",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "h1-cash-tax",
+      "question": "H1累計、通期やQ2単独と混同しない。",
+      "definition": "H1累計、通期やQ2単独と混同しない。",
+      "status": "ready",
+      "claim": "1〜6月の営業CFは322.014百万ドルから290.873百万ドルへ9.7%減った。一方、所得税の現金支払いは85.017百万ドルから134.763百万ドルへ増加。",
+      "requiredInputs": [
+        {
+          "id": "c26",
+          "entity": "Rollins（連結）",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "c25",
+          "entity": "Rollins（連結）",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "t26",
+          "entity": "Rollins（連結）",
+          "metric": "所得税現金支払",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "所得税現金支払"
+        },
+        {
+          "id": "t25",
+          "entity": "Rollins（連結）",
+          "metric": "所得税現金支払",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "所得税現金支払"
+        }
+      ],
+      "observations": [
+        {
+          "id": "c26",
+          "entity": "Rollins（連結）",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 290.873,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "Cash flow p8",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c25",
+          "entity": "Rollins（連結）",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 322.014,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "Cash flow p8",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t26",
+          "entity": "Rollins（連結）",
+          "metric": "所得税現金支払",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "所得税現金支払",
+          "value": 134.763,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "Cash flow p8",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t25",
+          "entity": "Rollins（連結）",
+          "metric": "所得税現金支払",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "所得税現金支払",
+          "value": 85.017,
+          "source": {
+            "url": "https://www.rollins.com/investors/financial-information/sec-filings/content/0000084839-26-000040/rol-20260630.htm",
+            "publishedOn": "2026-07-23",
+            "locator": "Cash flow p8",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "c26",
+            "c25"
+          ],
+          "value": -9.7,
+          "definition": "営業CF前年比",
+          "precision": 1
+        }
+      ]
+    },
+    {
+      "id": "medium-term-goals",
+      "question": "中期目標は特定FY予想ではない。periodは発表観測日を記録。",
+      "definition": "中期目標は特定FY予想ではない。periodは発表観測日を記録。",
+      "status": "ready",
+      "claim": "5月14日に会社は中期目標としてオーガニック成長7〜8%、買収寄与2〜3%、コア事業の調整後増分EBITDAマージン30〜35%を示した。",
+      "requiredInputs": [
+        {
+          "id": "org-low",
+          "entity": "Rollins（連結）",
+          "metric": "中期organic下限",
+          "periodStart": "2026-05-14",
+          "periodEnd": "2026-05-14",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "中期organic下限"
+        },
+        {
+          "id": "org-high",
+          "entity": "Rollins（連結）",
+          "metric": "中期organic上限",
+          "periodStart": "2026-05-14",
+          "periodEnd": "2026-05-14",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "中期organic上限"
+        },
+        {
+          "id": "acq-low",
+          "entity": "Rollins（連結）",
+          "metric": "買収寄与下限",
+          "periodStart": "2026-05-14",
+          "periodEnd": "2026-05-14",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "買収寄与下限"
+        },
+        {
+          "id": "acq-high",
+          "entity": "Rollins（連結）",
+          "metric": "買収寄与上限",
+          "periodStart": "2026-05-14",
+          "periodEnd": "2026-05-14",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "買収寄与上限"
+        },
+        {
+          "id": "margin-low",
+          "entity": "Rollins（連結）",
+          "metric": "adjusted incremental EBITDA margin下限",
+          "periodStart": "2026-05-14",
+          "periodEnd": "2026-05-14",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "adjusted incremental EBITDA margin下限"
+        },
+        {
+          "id": "margin-high",
+          "entity": "Rollins（連結）",
+          "metric": "adjusted incremental EBITDA margin上限",
+          "periodStart": "2026-05-14",
+          "periodEnd": "2026-05-14",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "adjusted incremental EBITDA margin上限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "org-low",
+          "entity": "Rollins（連結）",
+          "metric": "中期organic下限",
+          "periodStart": "2026-05-14",
+          "periodEnd": "2026-05-14",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "中期organic下限",
+          "value": 7,
+          "source": {
+            "url": "https://www.rollins.com/investors/press-releases/detail/434/rollins-reinforces-long-term-value-creation-strategy-and-medium-term-growth-algorithm",
+            "publishedOn": "2026-05-14",
+            "locator": "Medium-term outlook; forward-looking statements",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "org-high",
+          "entity": "Rollins（連結）",
+          "metric": "中期organic上限",
+          "periodStart": "2026-05-14",
+          "periodEnd": "2026-05-14",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "中期organic上限",
+          "value": 8,
+          "source": {
+            "url": "https://www.rollins.com/investors/press-releases/detail/434/rollins-reinforces-long-term-value-creation-strategy-and-medium-term-growth-algorithm",
+            "publishedOn": "2026-05-14",
+            "locator": "Medium-term outlook; forward-looking statements",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq-low",
+          "entity": "Rollins（連結）",
+          "metric": "買収寄与下限",
+          "periodStart": "2026-05-14",
+          "periodEnd": "2026-05-14",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "買収寄与下限",
+          "value": 2,
+          "source": {
+            "url": "https://www.rollins.com/investors/press-releases/detail/434/rollins-reinforces-long-term-value-creation-strategy-and-medium-term-growth-algorithm",
+            "publishedOn": "2026-05-14",
+            "locator": "Medium-term outlook; forward-looking statements",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq-high",
+          "entity": "Rollins（連結）",
+          "metric": "買収寄与上限",
+          "periodStart": "2026-05-14",
+          "periodEnd": "2026-05-14",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "買収寄与上限",
+          "value": 3,
+          "source": {
+            "url": "https://www.rollins.com/investors/press-releases/detail/434/rollins-reinforces-long-term-value-creation-strategy-and-medium-term-growth-algorithm",
+            "publishedOn": "2026-05-14",
+            "locator": "Medium-term outlook; forward-looking statements",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "margin-low",
+          "entity": "Rollins（連結）",
+          "metric": "adjusted incremental EBITDA margin下限",
+          "periodStart": "2026-05-14",
+          "periodEnd": "2026-05-14",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "adjusted incremental EBITDA margin下限",
+          "value": 30,
+          "source": {
+            "url": "https://www.rollins.com/investors/press-releases/detail/434/rollins-reinforces-long-term-value-creation-strategy-and-medium-term-growth-algorithm",
+            "publishedOn": "2026-05-14",
+            "locator": "Medium-term outlook; forward-looking statements",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "margin-high",
+          "entity": "Rollins（連結）",
+          "metric": "adjusted incremental EBITDA margin上限",
+          "periodStart": "2026-05-14",
+          "periodEnd": "2026-05-14",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "adjusted incremental EBITDA margin上限",
+          "value": 35,
+          "source": {
+            "url": "https://www.rollins.com/investors/press-releases/detail/434/rollins-reinforces-long-term-value-creation-strategy-and-medium-term-growth-algorithm",
+            "publishedOn": "2026-05-14",
+            "locator": "Medium-term outlook; forward-looking statements",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "dividend",
+      "question": "Declared quarterly dividend, not cash paid yet。",
+      "definition": "Declared quarterly dividend, not cash paid yet。",
+      "status": "ready",
+      "claim": "直近では10月20日16:05 EDTに四半期配当を1株0.20ドルと発表。",
+      "requiredInputs": [
+        {
+          "id": "dps",
+          "entity": "Rollins（連結）",
+          "metric": "宣言四半期配当",
+          "periodStart": "2026-10-20",
+          "periodEnd": "2026-10-20",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "宣言四半期配当"
+        }
+      ],
+      "observations": [
+        {
+          "id": "dps",
+          "entity": "Rollins（連結）",
+          "metric": "宣言四半期配当",
+          "periodStart": "2026-10-20",
+          "periodEnd": "2026-10-20",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "宣言四半期配当",
+          "value": 0.2,
+          "source": {
+            "url": "https://www.rollins.com/investors/press-releases/detail/443/rollins-inc-increases-regular-quarterly-cash-dividend",
+            "publishedOn": "2026-10-20",
+            "locator": "Opening paragraph; paid Dec10 record Nov10",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "sensitivity",
+      "question": "筆者の対称的感応度で会社予想ではない。実績売上1078.576×仮定0.005=5.39288百万ドル。0.5ポイントは観測値でないのでrequiredInputsへ捏造しない。schemaの乗算未対応につき手計算検証、calculations空。",
+      "definition": "筆者の対称的感応度で会社予想ではない。実績売上1078.576×仮定0.005=5.39288百万ドル。0.5ポイントは観測値でないのでrequiredInputsへ捏造しない。schemaの乗算未対応につき手計算検証、calculations空。",
+      "status": "ready",
+      "claim": "利益率の感応度だけを見る独自試算では、Q2売上1,078.576百万ドルを固定し、営業利益率が0.5ポイント上がる、変わらない、0.5ポイント下がる場合の営業利益差額はそれぞれ約+5.393、0、−5.393百万ドルとなる。",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Rollins（連結）",
+          "metric": "Q2売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Q2売上"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Rollins（連結）",
+          "metric": "Q2売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Q2売上",
+          "value": 1078.576,
+          "source": {
+            "url": "https://www.rollins.com/investors/press-releases/detail/439/rollins-inc-reports-second-quarter-2026-financial-results",
+            "publishedOn": "2026-07-22",
+            "locator": "2026 Q2 10-Q, consolidated income statement printed p4",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ],
+  "articleSha256": "946789e986b7914cbfc5bf0bef7766eb992956ba564bab32def072ac5578bdf7"
+}
