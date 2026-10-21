@@ -1,0 +1,302 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-10-22",
+  "articleSha256": "883364c0de66f40a79d27913b3fd358917d6f7db8ab14db3c339a1682996aa4d",
+  "checkedAt": "2026-10-22T06:24:19+09:00",
+  "informationCutoff": "2026-10-22T06:23:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終稿全体（タイトル、要約、結論、数値表、5件の本文、市場分析、次の注目点、免責）を原資料と照合。事前計画はS&P500両日の現物通常取引確定終値、タスキHD同一年度の従来・修正経常利益予想、Tesla四半期単独の営業CF・現金設備支出・会社定義FCFの全入力。S&P500はAPの両日確定終値と差額を確認し、前号の取引終了直後速報を計算に流用しない。指数一次履歴を試みたがFREDがメンテナンス表示のため、主要報道APの確定値を採用。Teslaは公式IR掲載PDF4、29、31、32ページを読み、6,263と負数4,732から1,531を再計算し会社公表と照合。検索時の主要報道要約には異なるCF値があり、本稿は原資料数値に統一した。タスキHDは発行会社PDF1ページの両予想、対象年度、増額率、修正理由と販売時期変更を確認。Samsung/SK hynixはReuters本文の企業コメントと輸出許可不確定の記載を確認し、層数・シェア・生産能力等の数値比較を用いない。氷見野発言は日銀講演一覧では原文を確認できず、Reutersが報じた国会発言として限定記載。政策金利・物価見通しの数値比較や政策決定の断定はない。単一四半期のFCFを個別AI投資の回収やTTMと解釈しない。未確認の企業間比較や市場予想対実績比較は掲載していない。",
+  "comparisons": [
+    {
+      "id": "sp500-close-return",
+      "question": "21日のS&P500は20日の確定終値からどれだけ上昇したか。",
+      "definition": "同一現物価格指数の通常取引終値同士、速報と確定値を混ぜず前日比を再計算。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sp20",
+          "entity": "S&P500",
+          "metric": "現物価格指数・通常取引終値",
+          "periodStart": "2026-10-20",
+          "periodEnd": "2026-10-20",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "配当込み指数・先物・時間外価格・終了直後速報を除いた同一現物価格指数の確定終値。"
+        },
+        {
+          "id": "sp21",
+          "entity": "S&P500",
+          "metric": "現物価格指数・通常取引終値",
+          "periodStart": "2026-10-21",
+          "periodEnd": "2026-10-21",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "配当込み指数・先物・時間外価格・終了直後速報を除いた同一現物価格指数の確定終値。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sp20",
+          "entity": "S&P500",
+          "metric": "現物価格指数・通常取引終値",
+          "periodStart": "2026-10-20",
+          "periodEnd": "2026-10-20",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "配当込み指数・先物・時間外価格・終了直後速報を除いた同一現物価格指数の確定終値。",
+          "value": 7712.57,
+          "source": {
+            "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-0a5ea168499c6ae617c49e10bf48f9c6",
+            "publishedOn": "2026-10-20",
+            "locator": "AP『How major US stock indexes fared Tuesday 10/20/2026』本文On Tuesday節、S&P500終値行。21.84ポイント上昇、7,712.57。",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数算出元の当日履歴表を確認できず、FREDの公開ページもメンテナンス表示だったため、APの両日通常取引終値報道を使用。"
+          }
+        },
+        {
+          "id": "sp21",
+          "entity": "S&P500",
+          "metric": "現物価格指数・通常取引終値",
+          "periodStart": "2026-10-21",
+          "periodEnd": "2026-10-21",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "配当込み指数・先物・時間外価格・終了直後速報を除いた同一現物価格指数の確定終値。",
+          "value": 7757.17,
+          "source": {
+            "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-3ec2d8c93a390023ef8104973dea275f",
+            "publishedOn": "2026-10-21",
+            "locator": "AP『How major US stock indexes fared Wednesday 10/21/2026』本文On Wednesday節、S&P500終値行。44.60ポイント上昇、7,757.17。",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数算出元の当日履歴表を確認できず、FREDの公開ページもメンテナンス表示だったため、APの両日通常取引終値報道を使用。"
+          }
+        }
+      ],
+      "claim": "S&P500の10月21日終値は7,757.17。前取引日20日の終値7,712.57から44.60ポイント、0.58%上昇した。両日とも現物価格指数の通常取引終値を用い、騰落率は小数第2位に丸めた。",
+      "calculations": [
+        {
+          "id": "sp-point-change",
+          "operation": "difference",
+          "inputs": [
+            "sp21",
+            "sp20"
+          ],
+          "definition": "7,757.17−7,712.57。単位は指数ポイント。AP記載の44.60とも照合。",
+          "precision": 2,
+          "value": 44.6
+        },
+        {
+          "id": "sp-return",
+          "operation": "growth-percent",
+          "inputs": [
+            "sp21",
+            "sp20"
+          ],
+          "definition": "(7,757.17÷7,712.57−1)×100、小数第2位。APの小数第1位表示0.6%とは丸め桁が異なる。",
+          "precision": 2,
+          "value": 0.58
+        }
+      ]
+    },
+    {
+      "id": "tesla-fcf-reconciliation",
+      "question": "営業CFから会社定義の設備取得支出を控除した四半期FCFはプラスか。",
+      "definition": "Teslaの2026Q3連結・未監査・百万米ドルで統一。営業CF＋負数の設備支出を計算し、non-GAAP公表FCFと照合する。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "ocf",
+          "entity": "Tesla（連結）",
+          "metric": "営業活動によるキャッシュフロー",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026年第3四半期単独の未監査実績。Net cash provided by operating activities、GAAP。TTMではない。"
+        },
+        {
+          "id": "capex",
+          "entity": "Tesla（連結）",
+          "metric": "Capital expenditures（現金支出を負数で記録）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "四半期単独、未監査、会社表示の設備取得支出。発電・蓄電システム取得を含む。投資CF全体ではない。負数で営業CFに加算して会社定義FCFを求める。"
+        },
+        {
+          "id": "reported-fcf",
+          "entity": "Tesla（連結）",
+          "metric": "会社公表Free cash flow（non-GAAP）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "四半期単独、未監査。会社定義は営業CFからCapital expendituresを控除。TTM・AI個別投資回収額・純利益・FCFFではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf",
+          "entity": "Tesla（連結）",
+          "metric": "営業活動によるキャッシュフロー",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026年第3四半期単独の未監査実績。Net cash provided by operating activities、GAAP。TTMではない。",
+          "value": 6263,
+          "source": {
+            "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF29ページ Statement of Cash Flows（Unaudited）、Q3-2026列のNet cash provided by operating activities 6,263。PDF31ページ脚注(1)で発電・蓄電システム取得を含むこと、PDF32ページCertain TermsでFCF定義を確認。",
+            "pdfPage": 29,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Tesla（連結）",
+          "metric": "Capital expenditures（現金支出を負数で記録）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "四半期単独、未監査、会社表示の設備取得支出。発電・蓄電システム取得を含む。投資CF全体ではない。負数で営業CFに加算して会社定義FCFを求める。",
+          "value": -4732,
+          "source": {
+            "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF29ページ Statement of Cash Flows（Unaudited）、Q3-2026列のCapital expenditures (4,732)。PDF31ページ脚注(1)で発電・蓄電システム取得を含むこと、PDF32ページCertain TermsでFCF定義を確認。",
+            "pdfPage": 29,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "reported-fcf",
+          "entity": "Tesla（連結）",
+          "metric": "会社公表Free cash flow（non-GAAP）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "四半期単独、未監査。会社定義は営業CFからCapital expendituresを控除。TTM・AI個別投資回収額・純利益・FCFFではない。",
+          "value": 1531,
+          "source": {
+            "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF4ページ Financial Summary、Q3-2026列 Free cash flow 1,531。PDF31ページ下段四半期GAAP／non-GAAP調整表にも一致。",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "Teslaの2026年7〜9月期は、営業CF6,263百万米ドルから設備支出4,732百万米ドルを差し引くと、FCFは1,531百万米ドルのプラスとなる。会社公表のFCFと一致する。",
+      "calculations": [
+        {
+          "id": "computed-fcf",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "definition": "営業CF6,263＋現金支出を負数で記録したCapital expenditures(−4,732)＝1,531百万米ドル。会社公表FCF1,531に一致。",
+          "precision": 0,
+          "value": 1531
+        }
+      ]
+    },
+    {
+      "id": "taski-ordinary-forecast-revision",
+      "question": "2026年9月期の経常利益会社予想はどれだけ増額されたか。",
+      "definition": "同一年度・連結経常利益・会社予想の従来値と修正値を比較。前年比成長率や確定決算とは分ける。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "タスキホールディングス（166A、連結）",
+          "metric": "経常利益・通期会社予想",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "company-forecast",
+          "definition": "2026年9月期通期連結経常利益の従来会社予想と2026年10月21日修正会社予想。同一年度・同一利益段階。期末経過後も確定実績として扱わない。"
+        },
+        {
+          "id": "new",
+          "entity": "タスキホールディングス（166A、連結）",
+          "metric": "経常利益・通期会社予想",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "company-forecast",
+          "definition": "2026年9月期通期連結経常利益の従来会社予想と2026年10月21日修正会社予想。同一年度・同一利益段階。期末経過後も確定実績として扱わない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "タスキホールディングス（166A、連結）",
+          "metric": "経常利益・通期会社予想",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "company-forecast",
+          "definition": "2026年9月期通期連結経常利益の従来会社予想と2026年10月21日修正会社予想。同一年度・同一利益段階。期末経過後も確定実績として扱わない。",
+          "value": 9300,
+          "source": {
+            "url": "https://kabuyoho-sls-disclose.ifis.co.jp/281/140120261021553984.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF1ページ『1. 2026年9月期（2025年10月1日〜2026年9月30日）連結業績予想の修正』、経常利益列・前回発表予想(A)。増減額2,350、増減率25.3%。本文『2.修正の理由』で販売価格、売上総利益率、翌期への販売時期変更も確認。",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "タスキホールディングス（166A、連結）",
+          "metric": "経常利益・通期会社予想",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "company-forecast",
+          "definition": "2026年9月期通期連結経常利益の従来会社予想と2026年10月21日修正会社予想。同一年度・同一利益段階。期末経過後も確定実績として扱わない。",
+          "value": 11650,
+          "source": {
+            "url": "https://kabuyoho-sls-disclose.ifis.co.jp/281/140120261021553984.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF1ページ『1. 2026年9月期（2025年10月1日〜2026年9月30日）連結業績予想の修正』、経常利益列・今回修正予想(B)。増減額2,350、増減率25.3%。本文『2.修正の理由』で販売価格、売上総利益率、翌期への販売時期変更も確認。",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "タスキホールディングスは2026年9月期の連結経常利益予想を9,300百万円から11,650百万円へ引き上げた。増額は2,350百万円で、従来予想を分母とした増額率は25.3%。金額は日本円である。",
+      "calculations": [
+        {
+          "id": "forecast-increase",
+          "operation": "difference",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "11,650−9,300＝2,350百万円（日本円）。",
+          "precision": 0,
+          "value": 2350
+        },
+        {
+          "id": "forecast-revision-percent",
+          "operation": "growth-percent",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "(11,650÷9,300−1)×100、従来会社予想を分母として小数第1位に丸める。",
+          "precision": 1,
+          "value": 25.3
+        }
+      ]
+    }
+  ]
+}
+
