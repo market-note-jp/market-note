@@ -1,0 +1,999 @@
+{
+  "version": 1,
+  "articleSlug": "theme-inbound-spending-profit-2026-10-22",
+  "checkedAt": "2026-10-22T11:04:35.259461+00:00",
+  "informationCutoff": "2026-10-22T19:55:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "執筆者が一次資料本文を読み、最終原稿の全数値を期間・単位・母集団・速報区分と照合した台帳。独立レビューと最終記事ハッシュは統合時に実施。企業利益の予想、仮想成長率、数値に根拠のないシナリオは含めない。",
+  "comparisons": [
+    {
+      "id": "jnto-september",
+      "question": "本文の数値・期間・対象・速報区分は一次資料本文と一致するか",
+      "definition": "単月推計値。四半期消費増減との直接計算は行わない。",
+      "status": "ready",
+      "claim": "9月の訪日外客数は前年同月比5.0%減だった。",
+      "requiredInputs": [
+        {
+          "id": "jnto-growth",
+          "entity": "JNTO訪日外客",
+          "metric": "9月推計値前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "9月推計値前年同月比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "jnto-growth",
+          "entity": "JNTO訪日外客",
+          "metric": "9月推計値前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "9月推計値前年同月比",
+          "value": -5,
+          "source": {
+            "url": "https://www.jnto.go.jp/news/_files/20261021_1615.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "general",
+      "question": "本文の数値・期間・対象・速報区分は一次資料本文と一致するか",
+      "definition": "2026年7〜9月期1次速報。一般客はクルーズ客以外、全目的。人数・単価・消費額を同一母集団で対応。",
+      "status": "ready",
+      "claim": "| 一般客 | 942.5万人・−2.1% | 233,677円・+6.1% | 22,023億円・+3.9% |",
+      "requiredInputs": [
+        {
+          "id": "general-0",
+          "entity": "訪日一般客",
+          "metric": "旅行者数",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "万人",
+          "basis": "actual",
+          "definition": "旅行者数"
+        },
+        {
+          "id": "general-1",
+          "entity": "訪日一般客",
+          "metric": "旅行者数前年同期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "旅行者数前年同期比"
+        },
+        {
+          "id": "general-2",
+          "entity": "訪日一般客",
+          "metric": "一人当たり旅行支出・全目的",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "円/人",
+          "basis": "actual",
+          "definition": "一人当たり旅行支出・全目的"
+        },
+        {
+          "id": "general-3",
+          "entity": "訪日一般客",
+          "metric": "一人当たり旅行支出前年同期比・全目的",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "一人当たり旅行支出前年同期比・全目的"
+        },
+        {
+          "id": "general-4",
+          "entity": "訪日一般客",
+          "metric": "旅行消費額",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "旅行消費額"
+        },
+        {
+          "id": "general-5",
+          "entity": "訪日一般客",
+          "metric": "旅行消費額前年同期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "旅行消費額前年同期比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "general-0",
+          "entity": "訪日一般客",
+          "metric": "旅行者数",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "万人",
+          "basis": "actual",
+          "definition": "旅行者数",
+          "value": 942.5,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 3頁",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "general-1",
+          "entity": "訪日一般客",
+          "metric": "旅行者数前年同期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "旅行者数前年同期比",
+          "value": -2.1,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 3頁",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "general-2",
+          "entity": "訪日一般客",
+          "metric": "一人当たり旅行支出・全目的",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "円/人",
+          "basis": "actual",
+          "definition": "一人当たり旅行支出・全目的",
+          "value": 233677,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 3頁",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "general-3",
+          "entity": "訪日一般客",
+          "metric": "一人当たり旅行支出前年同期比・全目的",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "一人当たり旅行支出前年同期比・全目的",
+          "value": 6.1,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 3頁",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "general-4",
+          "entity": "訪日一般客",
+          "metric": "旅行消費額",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "旅行消費額",
+          "value": 22023,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 3頁",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "general-5",
+          "entity": "訪日一般客",
+          "metric": "旅行消費額前年同期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "旅行消費額前年同期比",
+          "value": 3.9,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 3頁",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cruise",
+      "question": "本文の数値・期間・対象・速報区分は一次資料本文と一致するか",
+      "definition": "2026年7〜9月期1次速報。一般客はクルーズ客以外、全目的。人数・単価・消費額を同一母集団で対応。",
+      "status": "ready",
+      "claim": "| クルーズ客 | 22.0万人・−56.2% | 23,973円・−33.8% | 53億円・−71.0% |",
+      "requiredInputs": [
+        {
+          "id": "cruise-0",
+          "entity": "訪日クルーズ客",
+          "metric": "旅行者数",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "万人",
+          "basis": "actual",
+          "definition": "旅行者数"
+        },
+        {
+          "id": "cruise-1",
+          "entity": "訪日クルーズ客",
+          "metric": "旅行者数前年同期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "旅行者数前年同期比"
+        },
+        {
+          "id": "cruise-2",
+          "entity": "訪日クルーズ客",
+          "metric": "一人当たり旅行支出・全目的",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "円/人",
+          "basis": "actual",
+          "definition": "一人当たり旅行支出・全目的"
+        },
+        {
+          "id": "cruise-3",
+          "entity": "訪日クルーズ客",
+          "metric": "一人当たり旅行支出前年同期比・全目的",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "一人当たり旅行支出前年同期比・全目的"
+        },
+        {
+          "id": "cruise-4",
+          "entity": "訪日クルーズ客",
+          "metric": "旅行消費額",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "旅行消費額"
+        },
+        {
+          "id": "cruise-5",
+          "entity": "訪日クルーズ客",
+          "metric": "旅行消費額前年同期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "旅行消費額前年同期比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cruise-0",
+          "entity": "訪日クルーズ客",
+          "metric": "旅行者数",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "万人",
+          "basis": "actual",
+          "definition": "旅行者数",
+          "value": 22,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 3頁",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "cruise-1",
+          "entity": "訪日クルーズ客",
+          "metric": "旅行者数前年同期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "旅行者数前年同期比",
+          "value": -56.2,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 3頁",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "cruise-2",
+          "entity": "訪日クルーズ客",
+          "metric": "一人当たり旅行支出・全目的",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "円/人",
+          "basis": "actual",
+          "definition": "一人当たり旅行支出・全目的",
+          "value": 23973,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 3頁",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "cruise-3",
+          "entity": "訪日クルーズ客",
+          "metric": "一人当たり旅行支出前年同期比・全目的",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "一人当たり旅行支出前年同期比・全目的",
+          "value": -33.8,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 3頁",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "cruise-4",
+          "entity": "訪日クルーズ客",
+          "metric": "旅行消費額",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "旅行消費額",
+          "value": 53,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 3頁",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "cruise-5",
+          "entity": "訪日クルーズ客",
+          "metric": "旅行消費額前年同期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "旅行消費額前年同期比",
+          "value": -71,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 3頁",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "total",
+      "question": "本文の数値・期間・対象・速報区分は一次資料本文と一致するか",
+      "definition": "2026年7〜9月期1次速報、全体は一般客とクルーズ客。一般客単価を全体へ流用しない。",
+      "status": "ready",
+      "claim": "| 全体 | 964.5万人・−4.8% | 一般客の単価とは別 | 22,076億円・+3.2% |",
+      "requiredInputs": [
+        {
+          "id": "all-n",
+          "entity": "訪日外国人全体",
+          "metric": "旅行者数",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "万人",
+          "basis": "actual",
+          "definition": "旅行者数"
+        },
+        {
+          "id": "all-ng",
+          "entity": "訪日外国人全体",
+          "metric": "旅行者数前年同期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "旅行者数前年同期比"
+        },
+        {
+          "id": "all-spend",
+          "entity": "訪日外国人全体",
+          "metric": "旅行消費額",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "旅行消費額"
+        },
+        {
+          "id": "all-spend-g",
+          "entity": "訪日外国人全体",
+          "metric": "旅行消費額前年同期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "旅行消費額前年同期比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "all-n",
+          "entity": "訪日外国人全体",
+          "metric": "旅行者数",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "万人",
+          "basis": "actual",
+          "definition": "旅行者数",
+          "value": 964.5,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 3頁",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "all-ng",
+          "entity": "訪日外国人全体",
+          "metric": "旅行者数前年同期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "旅行者数前年同期比",
+          "value": -4.8,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 3頁",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "all-spend",
+          "entity": "訪日外国人全体",
+          "metric": "旅行消費額",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "旅行消費額",
+          "value": 22076,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 3頁",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "all-spend-g",
+          "entity": "訪日外国人全体",
+          "metric": "旅行消費額前年同期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "旅行消費額前年同期比",
+          "value": 3.2,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 3頁",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "lodging",
+      "question": "本文の数値・期間・対象・速報区分は一次資料本文と一致するか",
+      "definition": "当年1次速報、前年同期は同資料掲載の比較値。一般客とクルーズ客を含む費目別金額。",
+      "status": "ready",
+      "claim": "| 宿泊費 | 7,794億円 | 7,778億円 |",
+      "requiredInputs": [
+        {
+          "id": "lodging-prev",
+          "entity": "訪日外国人旅行消費",
+          "metric": "宿泊費",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "宿泊費"
+        },
+        {
+          "id": "lodging-now",
+          "entity": "訪日外国人旅行消費",
+          "metric": "宿泊費",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "宿泊費"
+        }
+      ],
+      "observations": [
+        {
+          "id": "lodging-prev",
+          "entity": "訪日外国人旅行消費",
+          "metric": "宿泊費",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "宿泊費",
+          "value": 7794,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "lodging-now",
+          "entity": "訪日外国人旅行消費",
+          "metric": "宿泊費",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "宿泊費",
+          "value": 7778,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "food",
+      "question": "本文の数値・期間・対象・速報区分は一次資料本文と一致するか",
+      "definition": "当年1次速報、前年同期は同資料掲載の比較値。一般客とクルーズ客を含む費目別金額。",
+      "status": "ready",
+      "claim": "| 飲食費 | 4,926億円 | 5,058億円 |",
+      "requiredInputs": [
+        {
+          "id": "food-prev",
+          "entity": "訪日外国人旅行消費",
+          "metric": "飲食費",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "飲食費"
+        },
+        {
+          "id": "food-now",
+          "entity": "訪日外国人旅行消費",
+          "metric": "飲食費",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "飲食費"
+        }
+      ],
+      "observations": [
+        {
+          "id": "food-prev",
+          "entity": "訪日外国人旅行消費",
+          "metric": "飲食費",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "飲食費",
+          "value": 4926,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "food-now",
+          "entity": "訪日外国人旅行消費",
+          "metric": "飲食費",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "飲食費",
+          "value": 5058,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "shopping",
+      "question": "本文の数値・期間・対象・速報区分は一次資料本文と一致するか",
+      "definition": "当年1次速報、前年同期は同資料掲載の比較値。一般客とクルーズ客を含む費目別金額。",
+      "status": "ready",
+      "claim": "| 買物代 | 5,503億円 | 6,109億円 |",
+      "requiredInputs": [
+        {
+          "id": "shopping-prev",
+          "entity": "訪日外国人旅行消費",
+          "metric": "買物代",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "買物代"
+        },
+        {
+          "id": "shopping-now",
+          "entity": "訪日外国人旅行消費",
+          "metric": "買物代",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "買物代"
+        }
+      ],
+      "observations": [
+        {
+          "id": "shopping-prev",
+          "entity": "訪日外国人旅行消費",
+          "metric": "買物代",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "買物代",
+          "value": 5503,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "shopping-now",
+          "entity": "訪日外国人旅行消費",
+          "metric": "買物代",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "買物代",
+          "value": 6109,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "leisure",
+      "question": "本文の数値・期間・対象・速報区分は一次資料本文と一致するか",
+      "definition": "当年1次速報、前年同期は同資料掲載の比較値。一般客とクルーズ客を含む費目別金額。",
+      "status": "ready",
+      "claim": "| 娯楽等サービス費 | 1,054億円 | 940億円 |",
+      "requiredInputs": [
+        {
+          "id": "leisure-prev",
+          "entity": "訪日外国人旅行消費",
+          "metric": "娯楽等サービス費",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "娯楽等サービス費"
+        },
+        {
+          "id": "leisure-now",
+          "entity": "訪日外国人旅行消費",
+          "metric": "娯楽等サービス費",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "娯楽等サービス費"
+        }
+      ],
+      "observations": [
+        {
+          "id": "leisure-prev",
+          "entity": "訪日外国人旅行消費",
+          "metric": "娯楽等サービス費",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "娯楽等サービス費",
+          "value": 1054,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "leisure-now",
+          "entity": "訪日外国人旅行消費",
+          "metric": "娯楽等サービス費",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "娯楽等サービス費",
+          "value": 940,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "origin-mix",
+      "question": "本文の数値・期間・対象・速報区分は一次資料本文と一致するか",
+      "definition": "国籍・地域別、一般客とクルーズ客を含む。個人の消費性向を決め付けない。",
+      "status": "ready",
+      "claim": "四半期の消費額は中国が前年5,950億円から3,583億円へ減少し、台湾は3,026億円から3,818億円へ増えた。",
+      "requiredInputs": [
+        {
+          "id": "china-prev",
+          "entity": "中国籍等の訪日外国人",
+          "metric": "旅行消費額",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "旅行消費額"
+        },
+        {
+          "id": "china-now",
+          "entity": "中国籍等の訪日外国人",
+          "metric": "旅行消費額",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "旅行消費額"
+        },
+        {
+          "id": "taiwan-prev",
+          "entity": "台湾の訪日外国人",
+          "metric": "旅行消費額",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "旅行消費額"
+        },
+        {
+          "id": "taiwan-now",
+          "entity": "台湾の訪日外国人",
+          "metric": "旅行消費額",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "旅行消費額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "china-prev",
+          "entity": "中国籍等の訪日外国人",
+          "metric": "旅行消費額",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "旅行消費額",
+          "value": 5950,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "china-now",
+          "entity": "中国籍等の訪日外国人",
+          "metric": "旅行消費額",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "旅行消費額",
+          "value": 3583,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "taiwan-prev",
+          "entity": "台湾の訪日外国人",
+          "metric": "旅行消費額",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "旅行消費額",
+          "value": 3026,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "taiwan-now",
+          "entity": "台湾の訪日外国人",
+          "metric": "旅行消費額",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "旅行消費額",
+          "value": 3818,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "nights",
+      "question": "本文の数値・期間・対象・速報区分は一次資料本文と一致するか",
+      "definition": "入出国日から算出した平均泊数。ホテル宿泊数や同一旅行者の変化ではない。",
+      "status": "ready",
+      "claim": "一般客の全目的の平均泊数は10.3泊で、前年より1.2泊短い。",
+      "requiredInputs": [
+        {
+          "id": "nights",
+          "entity": "一般客・全目的",
+          "metric": "平均泊数",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "泊",
+          "basis": "actual",
+          "definition": "平均泊数"
+        },
+        {
+          "id": "nights-diff",
+          "entity": "一般客・全目的",
+          "metric": "平均泊数前年同期差",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "泊",
+          "basis": "actual",
+          "definition": "平均泊数前年同期差"
+        }
+      ],
+      "observations": [
+        {
+          "id": "nights",
+          "entity": "一般客・全目的",
+          "metric": "平均泊数",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "泊",
+          "basis": "actual",
+          "definition": "平均泊数",
+          "value": 10.3,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 4頁",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "nights-diff",
+          "entity": "一般客・全目的",
+          "metric": "平均泊数前年同期差",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "泊",
+          "basis": "actual",
+          "definition": "平均泊数前年同期差",
+          "value": -1.2,
+          "source": {
+            "url": "https://www.mlit.go.jp/kankocho/content/002027623.pdf",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 4頁",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ],
+  "articleSha256": "106be6f2fb1e7d12c31849788587d97caa675299a232dc24375379f497735ba8"
+}
