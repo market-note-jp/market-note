@@ -94,6 +94,13 @@ try {
     await page.getByRole('button', { name: '検索', exact: true }).click();
   };
   const reset = () => page.getByRole('button', { name: '条件をリセット', exact: true }).click();
+  for (const [query, slug] of [['キッコーマン', 'company-kikkoman-2026-10-22'], ['栗田工業', 'company-kurita-2026-10-22'], ['Cintas', 'company-cintas-2026-10-22'], ['輸出額が16.7%', 'theme-export-value-profit-2026-10-22'], ['訪日客が減っても', 'theme-inbound-spending-profit-2026-10-22']]) {
+    await reset();
+    await search(query);
+    assert.equal(await page.locator(`.news-article-card a[href="/market-note/articles/${slug}/"]`).count(), 1, `New article search: ${slug}`);
+    report.interactions.push(`Verified new article search: ${slug}`);
+  }
+  await reset();
   await search('6954');
   assert.ok(await page.locator('.news-article-card').count() > 0);
   assert.equal(new URL(page.url()).searchParams.get('q'), '6954');

@@ -1,0 +1,2302 @@
+{
+  "version": 1,
+  "articleSlug": "company-cintas-2026-10-22",
+  "checkedAt": "2026-10-22T20:08:24.467+09:00",
+  "informationCutoff": "2026-10-22T19:55:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "全本文の数値比較を原本本文と確認。FY23/24CFは後年比較表示。旧表示の推移へ接続しない。本文のROIC/感応度は明示定義の独自計算で外部予想ではない。掛け算はPython独立照合。最終登録時にdigest設定と独立レビューが必要。",
+  "comparisons": [
+    {
+      "id": "annual-2022",
+      "question": "annual-2022",
+      "definition": "米国GAAP連結。表示丸め前の原数値で検証。",
+      "status": "ready",
+      "claim": "| 2022 | 7,854.5 | 1,587.4 | 1,235.8 | 20.2% |",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Cintas連結",
+          "metric": "revenue",
+          "periodStart": "2021-06-01",
+          "periodEnd": "2022-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue"
+        },
+        {
+          "id": "operating-income",
+          "entity": "Cintas連結",
+          "metric": "operating-income",
+          "periodStart": "2021-06-01",
+          "periodEnd": "2022-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income"
+        },
+        {
+          "id": "net-income",
+          "entity": "Cintas連結",
+          "metric": "net-income",
+          "periodStart": "2021-06-01",
+          "periodEnd": "2022-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "net-income"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Cintas連結",
+          "metric": "revenue",
+          "periodStart": "2021-06-01",
+          "periodEnd": "2022-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue",
+          "value": 7854.459,
+          "source": {
+            "url": "https://www.cintas.com/docs/default-source/investor-relations/annual-reports/2024-form-10-k.pdf",
+            "publishedOn": "2024-07-25",
+            "locator": "2024 Form 10-K, consolidated statements of income",
+            "pdfPage": 36,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "operating-income",
+          "entity": "Cintas連結",
+          "metric": "operating-income",
+          "periodStart": "2021-06-01",
+          "periodEnd": "2022-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income",
+          "value": 1587.37,
+          "source": {
+            "url": "https://www.cintas.com/docs/default-source/investor-relations/annual-reports/2024-form-10-k.pdf",
+            "publishedOn": "2024-07-25",
+            "locator": "2024 Form 10-K, consolidated statements of income",
+            "pdfPage": 36,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net-income",
+          "entity": "Cintas連結",
+          "metric": "net-income",
+          "periodStart": "2021-06-01",
+          "periodEnd": "2022-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "net-income",
+          "value": 1235.757,
+          "source": {
+            "url": "https://www.cintas.com/docs/default-source/investor-relations/annual-reports/2024-form-10-k.pdf",
+            "publishedOn": "2024-07-25",
+            "locator": "2024 Form 10-K, consolidated statements of income",
+            "pdfPage": 36,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "operating-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "operating-income",
+            "revenue"
+          ],
+          "definition": "operating-margin",
+          "precision": 1,
+          "value": 20.2
+        }
+      ]
+    },
+    {
+      "id": "annual-2023",
+      "question": "annual-2023",
+      "definition": "米国GAAP連結。表示丸め前の原数値で検証。",
+      "status": "ready",
+      "claim": "| 2023 | 8,815.8 | 1,802.7 | 1,348.0 | 20.4% |",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Cintas連結",
+          "metric": "revenue",
+          "periodStart": "2022-06-01",
+          "periodEnd": "2023-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue"
+        },
+        {
+          "id": "operating-income",
+          "entity": "Cintas連結",
+          "metric": "operating-income",
+          "periodStart": "2022-06-01",
+          "periodEnd": "2023-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income"
+        },
+        {
+          "id": "net-income",
+          "entity": "Cintas連結",
+          "metric": "net-income",
+          "periodStart": "2022-06-01",
+          "periodEnd": "2023-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "net-income"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Cintas連結",
+          "metric": "revenue",
+          "periodStart": "2022-06-01",
+          "periodEnd": "2023-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue",
+          "value": 8815.769,
+          "source": {
+            "url": "https://www.cintas.com/docs/default-source/investor-relations/annual-reports/2024-form-10-k.pdf",
+            "publishedOn": "2024-07-25",
+            "locator": "2024 Form 10-K, consolidated statements of income",
+            "pdfPage": 36,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "operating-income",
+          "entity": "Cintas連結",
+          "metric": "operating-income",
+          "periodStart": "2022-06-01",
+          "periodEnd": "2023-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income",
+          "value": 1802.664,
+          "source": {
+            "url": "https://www.cintas.com/docs/default-source/investor-relations/annual-reports/2024-form-10-k.pdf",
+            "publishedOn": "2024-07-25",
+            "locator": "2024 Form 10-K, consolidated statements of income",
+            "pdfPage": 36,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net-income",
+          "entity": "Cintas連結",
+          "metric": "net-income",
+          "periodStart": "2022-06-01",
+          "periodEnd": "2023-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "net-income",
+          "value": 1348.01,
+          "source": {
+            "url": "https://www.cintas.com/docs/default-source/investor-relations/annual-reports/2024-form-10-k.pdf",
+            "publishedOn": "2024-07-25",
+            "locator": "2024 Form 10-K, consolidated statements of income",
+            "pdfPage": 36,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "operating-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "operating-income",
+            "revenue"
+          ],
+          "definition": "operating-margin",
+          "precision": 1,
+          "value": 20.4
+        }
+      ]
+    },
+    {
+      "id": "annual-2024",
+      "question": "annual-2024",
+      "definition": "米国GAAP連結。表示丸め前の原数値で検証。",
+      "status": "ready",
+      "claim": "| 2024 | 9,596.6 | 2,068.6 | 1,571.6 | 21.6% |",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Cintas連結",
+          "metric": "revenue",
+          "periodStart": "2023-06-01",
+          "periodEnd": "2024-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue"
+        },
+        {
+          "id": "operating-income",
+          "entity": "Cintas連結",
+          "metric": "operating-income",
+          "periodStart": "2023-06-01",
+          "periodEnd": "2024-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income"
+        },
+        {
+          "id": "net-income",
+          "entity": "Cintas連結",
+          "metric": "net-income",
+          "periodStart": "2023-06-01",
+          "periodEnd": "2024-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "net-income"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Cintas連結",
+          "metric": "revenue",
+          "periodStart": "2023-06-01",
+          "periodEnd": "2024-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue",
+          "value": 9596.615,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "operating-income",
+          "entity": "Cintas連結",
+          "metric": "operating-income",
+          "periodStart": "2023-06-01",
+          "periodEnd": "2024-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income",
+          "value": 2068.633,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net-income",
+          "entity": "Cintas連結",
+          "metric": "net-income",
+          "periodStart": "2023-06-01",
+          "periodEnd": "2024-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "net-income",
+          "value": 1571.592,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "operating-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "operating-income",
+            "revenue"
+          ],
+          "definition": "operating-margin",
+          "precision": 1,
+          "value": 21.6
+        }
+      ]
+    },
+    {
+      "id": "annual-2025",
+      "question": "annual-2025",
+      "definition": "米国GAAP連結。表示丸め前の原数値で検証。",
+      "status": "ready",
+      "claim": "| 2025 | 10,340.2 | 2,359.7 | 1,812.3 | 22.8% |",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Cintas連結",
+          "metric": "revenue",
+          "periodStart": "2024-06-01",
+          "periodEnd": "2025-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue"
+        },
+        {
+          "id": "operating-income",
+          "entity": "Cintas連結",
+          "metric": "operating-income",
+          "periodStart": "2024-06-01",
+          "periodEnd": "2025-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income"
+        },
+        {
+          "id": "net-income",
+          "entity": "Cintas連結",
+          "metric": "net-income",
+          "periodStart": "2024-06-01",
+          "periodEnd": "2025-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "net-income"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Cintas連結",
+          "metric": "revenue",
+          "periodStart": "2024-06-01",
+          "periodEnd": "2025-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue",
+          "value": 10340.181,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "operating-income",
+          "entity": "Cintas連結",
+          "metric": "operating-income",
+          "periodStart": "2024-06-01",
+          "periodEnd": "2025-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income",
+          "value": 2359.726,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net-income",
+          "entity": "Cintas連結",
+          "metric": "net-income",
+          "periodStart": "2024-06-01",
+          "periodEnd": "2025-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "net-income",
+          "value": 1812.281,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "operating-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "operating-income",
+            "revenue"
+          ],
+          "definition": "operating-margin",
+          "precision": 1,
+          "value": 22.8
+        }
+      ]
+    },
+    {
+      "id": "annual-2026",
+      "question": "annual-2026",
+      "definition": "米国GAAP連結。表示丸め前の原数値で検証。",
+      "status": "ready",
+      "claim": "| 2026 | 11,264.8 | 2,606.5 | 2,000.0 | 23.1% |",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Cintas連結",
+          "metric": "revenue",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue"
+        },
+        {
+          "id": "operating-income",
+          "entity": "Cintas連結",
+          "metric": "operating-income",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income"
+        },
+        {
+          "id": "net-income",
+          "entity": "Cintas連結",
+          "metric": "net-income",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "net-income"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Cintas連結",
+          "metric": "revenue",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue",
+          "value": 11264.761,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "operating-income",
+          "entity": "Cintas連結",
+          "metric": "operating-income",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income",
+          "value": 2606.512,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net-income",
+          "entity": "Cintas連結",
+          "metric": "net-income",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "net-income",
+          "value": 1999.968,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "operating-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "operating-income",
+            "revenue"
+          ],
+          "definition": "operating-margin",
+          "precision": 1,
+          "value": 23.1
+        }
+      ]
+    },
+    {
+      "id": "q1-results",
+      "question": "q1-results",
+      "definition": "米国GAAP連結。表示丸め前の原数値で検証。",
+      "status": "ready",
+      "claim": "9月23日公表の2027年5月期第1四半期は、売上3,014.0百万ドル、営業利益711.9百万ドル。前年同期比はそれぞれ10.9%、15.2%増で、営業利益率は22.7%から23.6%へ改善した。買収関連費用14.4百万ドルを営業利益に含むGAAP数値であり、費用を除いた数値だけで増益を作っているわけではない。[会社決算発表](https://www.cintas.com/about/newsroom/details/news/2026/09/22/cintas-corporation-announces-fiscal-2027-first-quarter-results/)",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Cintas連結",
+          "metric": "revenue",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue"
+        },
+        {
+          "id": "revenue-prior",
+          "entity": "Cintas連結",
+          "metric": "revenue-prior",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue-prior"
+        },
+        {
+          "id": "operating-income",
+          "entity": "Cintas連結",
+          "metric": "operating-income",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income"
+        },
+        {
+          "id": "operating-income-prior",
+          "entity": "Cintas連結",
+          "metric": "operating-income-prior",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income-prior"
+        },
+        {
+          "id": "transaction-operating-expense",
+          "entity": "Cintas連結",
+          "metric": "transaction-operating-expense",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "transaction-operating-expense"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Cintas連結",
+          "metric": "revenue",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue",
+          "value": 3013.981,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "revenue-prior",
+          "entity": "Cintas連結",
+          "metric": "revenue-prior",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue-prior",
+          "value": 2718.122,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "operating-income",
+          "entity": "Cintas連結",
+          "metric": "operating-income",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income",
+          "value": 711.887,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "operating-income-prior",
+          "entity": "Cintas連結",
+          "metric": "operating-income-prior",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income-prior",
+          "value": 617.859,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "transaction-operating-expense",
+          "entity": "Cintas連結",
+          "metric": "transaction-operating-expense",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "transaction-operating-expense",
+          "value": 14.412,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "revenue-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "revenue",
+            "revenue-prior"
+          ],
+          "definition": "revenue-growth",
+          "precision": 1,
+          "value": 10.9
+        },
+        {
+          "id": "operating-income-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "operating-income",
+            "operating-income-prior"
+          ],
+          "definition": "operating-income-growth",
+          "precision": 1,
+          "value": 15.2
+        },
+        {
+          "id": "margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "operating-income",
+            "revenue"
+          ],
+          "definition": "margin",
+          "precision": 1,
+          "value": 23.6
+        },
+        {
+          "id": "margin-prior",
+          "operation": "ratio-percent",
+          "inputs": [
+            "operating-income-prior",
+            "revenue-prior"
+          ],
+          "definition": "margin-prior",
+          "precision": 1,
+          "value": 22.7
+        }
+      ]
+    },
+    {
+      "id": "q1-revenue-bridge",
+      "question": "q1-revenue-bridge",
+      "definition": "会社開示の成長率ブリッジ。オーガニックは数量増加率ではない。",
+      "status": "ready",
+      "claim": "増収率10.9%の会社開示による内訳は、オーガニック成長8.9%、買収寄与0.4ポイント、営業日増加1.7ポイント、為替影響マイナス0.1ポイント。オーガニックは買収・営業日・為替を調整した伸びで、数量成長率ではない。価格・数量・サービス構成の完全な金額分解は未開示なので、8.9%をそのまま顧客数増とみなさない。[第1四半期10-Q、MD&A](https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm)",
+      "requiredInputs": [
+        {
+          "id": "reported-growth",
+          "entity": "Cintas連結",
+          "metric": "reported-growth",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "reported-growth"
+        },
+        {
+          "id": "organic-growth",
+          "entity": "Cintas連結",
+          "metric": "organic-growth",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "organic-growth"
+        },
+        {
+          "id": "acquisition-contribution",
+          "entity": "Cintas連結",
+          "metric": "acquisition-contribution",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percentage-point",
+          "basis": "actual",
+          "definition": "acquisition-contribution"
+        },
+        {
+          "id": "workdays-contribution",
+          "entity": "Cintas連結",
+          "metric": "workdays-contribution",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percentage-point",
+          "basis": "actual",
+          "definition": "workdays-contribution"
+        },
+        {
+          "id": "fx-contribution",
+          "entity": "Cintas連結",
+          "metric": "fx-contribution",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percentage-point",
+          "basis": "actual",
+          "definition": "fx-contribution"
+        }
+      ],
+      "observations": [
+        {
+          "id": "reported-growth",
+          "entity": "Cintas連結",
+          "metric": "reported-growth",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "reported-growth",
+          "value": 10.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "organic-growth",
+          "entity": "Cintas連結",
+          "metric": "organic-growth",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "organic-growth",
+          "value": 8.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acquisition-contribution",
+          "entity": "Cintas連結",
+          "metric": "acquisition-contribution",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percentage-point",
+          "basis": "actual",
+          "definition": "acquisition-contribution",
+          "value": 0.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "workdays-contribution",
+          "entity": "Cintas連結",
+          "metric": "workdays-contribution",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percentage-point",
+          "basis": "actual",
+          "definition": "workdays-contribution",
+          "value": 1.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fx-contribution",
+          "entity": "Cintas連結",
+          "metric": "fx-contribution",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percentage-point",
+          "basis": "actual",
+          "definition": "fx-contribution",
+          "value": -0.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "bridge-total",
+          "operation": "sum",
+          "inputs": [
+            "organic-growth",
+            "acquisition-contribution",
+            "workdays-contribution",
+            "fx-contribution"
+          ],
+          "definition": "bridge-total",
+          "precision": 1,
+          "value": 10.9
+        }
+      ]
+    },
+    {
+      "id": "segment-contrast",
+      "question": "segment-contrast",
+      "definition": "同じFY27Q1の会社開示セグメント成長率/利益率。要因は定性説明で金額配分未開示。",
+      "status": "ready",
+      "claim": "事業別では、制服レンタル・施設サービスのオーガニック成長率は8.0%、救急・安全サービスは14.2%。営業利益率もそれぞれ25.1%、25.6%と、全社平均だけでは成長の違いが見えにくい。会社は制服事業の粗利改善について、使用中レンタル品の効率的な活用、調達施策、業務効率化、固定費の吸収を挙げる。救急・安全では商品構成の改善も挙げている。これは会社説明であり、各要因の利益寄与額は分かれていない。[同10-Q、事業別MD&A](https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm)",
+      "requiredInputs": [
+        {
+          "id": "uniform-organic",
+          "entity": "Cintas連結",
+          "metric": "uniform-organic",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "uniform-organic"
+        },
+        {
+          "id": "firstaid-organic",
+          "entity": "Cintas連結",
+          "metric": "firstaid-organic",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "firstaid-organic"
+        },
+        {
+          "id": "uniform-margin",
+          "entity": "Cintas連結",
+          "metric": "uniform-margin",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "uniform-margin"
+        },
+        {
+          "id": "firstaid-margin",
+          "entity": "Cintas連結",
+          "metric": "firstaid-margin",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "firstaid-margin"
+        }
+      ],
+      "observations": [
+        {
+          "id": "uniform-organic",
+          "entity": "Cintas連結",
+          "metric": "uniform-organic",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "uniform-organic",
+          "value": 8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "firstaid-organic",
+          "entity": "Cintas連結",
+          "metric": "firstaid-organic",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "firstaid-organic",
+          "value": 14.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "uniform-margin",
+          "entity": "Cintas連結",
+          "metric": "uniform-margin",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "uniform-margin",
+          "value": 25.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "firstaid-margin",
+          "entity": "Cintas連結",
+          "metric": "firstaid-margin",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "firstaid-margin",
+          "value": 25.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "incremental-profit",
+      "question": "incremental-profit",
+      "definition": "米国GAAP連結。表示丸め前の原数値で検証。",
+      "status": "ready",
+      "claim": "筆者計算では、増収295.859百万ドルに対して増益94.028百万ドルで、増分営業利益率は31.8%。売上の増分がどれほど営業利益に残ったかを見る指標で、全社の営業利益率とは違う。原価や販管費の増加を吸収できた結果だが、この四半期の比率を毎年そのまま当てはめることはできない。新しい配送拠点や採用が先行すると、一時的に変わり得る。[同10-Q、損益計算書3頁](https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm)",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Cintas連結",
+          "metric": "revenue",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue"
+        },
+        {
+          "id": "revenue-prior",
+          "entity": "Cintas連結",
+          "metric": "revenue-prior",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue-prior"
+        },
+        {
+          "id": "operating-income",
+          "entity": "Cintas連結",
+          "metric": "operating-income",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income"
+        },
+        {
+          "id": "operating-income-prior",
+          "entity": "Cintas連結",
+          "metric": "operating-income-prior",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income-prior"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Cintas連結",
+          "metric": "revenue",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue",
+          "value": 3013.981,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "revenue-prior",
+          "entity": "Cintas連結",
+          "metric": "revenue-prior",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "revenue-prior",
+          "value": 2718.122,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "operating-income",
+          "entity": "Cintas連結",
+          "metric": "operating-income",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income",
+          "value": 711.887,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "operating-income-prior",
+          "entity": "Cintas連結",
+          "metric": "operating-income-prior",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income-prior",
+          "value": 617.859,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "incremental-revenue",
+          "operation": "difference",
+          "inputs": [
+            "revenue",
+            "revenue-prior"
+          ],
+          "definition": "incremental-revenue",
+          "precision": 3,
+          "value": 295.859
+        },
+        {
+          "id": "incremental-profit",
+          "operation": "difference",
+          "inputs": [
+            "operating-income",
+            "operating-income-prior"
+          ],
+          "definition": "incremental-profit",
+          "precision": 3,
+          "value": 94.028
+        },
+        {
+          "id": "incremental-margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "incremental-profit",
+            "incremental-revenue"
+          ],
+          "definition": "incremental-margin",
+          "precision": 1,
+          "value": 31.8
+        }
+      ]
+    },
+    {
+      "id": "annual-fcf-and-returns",
+      "question": "annual-fcf-and-returns",
+      "definition": "FCF=営業CF−設備支出。残額は買収・現金配当・CF計算書の自己株取得を控除しただけで自由余剰資金ではない。",
+      "status": "ready",
+      "claim": "2026年5月期の営業CFは2,276.280百万ドル、設備支出は395.105百万ドル。FCFを「営業CF−設備支出」と定義すると1,881.175百万ドルとなる。これから買収支出164.548百万ドル、現金配当701.485百万ドル、自己株式取得952.104百万ドルを差し引いた残額は63.038百万ドルである。この残額もその他の投資・財務支出を引く前で、自由な余剰資金の確定額ではない。[2026年10-K、CF計算書43頁](https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm)",
+      "requiredInputs": [
+        {
+          "id": "ocf",
+          "entity": "Cintas連結",
+          "metric": "ocf",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ocf"
+        },
+        {
+          "id": "capex-outflow",
+          "entity": "Cintas連結",
+          "metric": "capex-outflow",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "capex-outflow"
+        },
+        {
+          "id": "acquisition-outflow",
+          "entity": "Cintas連結",
+          "metric": "acquisition-outflow",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "acquisition-outflow"
+        },
+        {
+          "id": "dividend-outflow",
+          "entity": "Cintas連結",
+          "metric": "dividend-outflow",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "dividend-outflow"
+        },
+        {
+          "id": "repurchase-outflow",
+          "entity": "Cintas連結",
+          "metric": "repurchase-outflow",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "repurchase-outflow"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf",
+          "entity": "Cintas連結",
+          "metric": "ocf",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ocf",
+          "value": 2276.28,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex-outflow",
+          "entity": "Cintas連結",
+          "metric": "capex-outflow",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "capex-outflow",
+          "value": -395.105,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acquisition-outflow",
+          "entity": "Cintas連結",
+          "metric": "acquisition-outflow",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "acquisition-outflow",
+          "value": -164.548,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dividend-outflow",
+          "entity": "Cintas連結",
+          "metric": "dividend-outflow",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "dividend-outflow",
+          "value": -701.485,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "repurchase-outflow",
+          "entity": "Cintas連結",
+          "metric": "repurchase-outflow",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "repurchase-outflow",
+          "value": -952.104,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex-outflow"
+          ],
+          "definition": "fcf",
+          "precision": 3,
+          "value": 1881.175
+        },
+        {
+          "id": "remaining-before-other-items",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex-outflow",
+            "acquisition-outflow",
+            "dividend-outflow",
+            "repurchase-outflow"
+          ],
+          "definition": "remaining-before-other-items",
+          "precision": 3,
+          "value": 63.038
+        }
+      ]
+    },
+    {
+      "id": "annual-ocf-trend",
+      "question": "annual-ocf-trend",
+      "definition": "後年10-Kの比較表示を優先し、旧CF表示との混在を避けた。",
+      "status": "ready",
+      "claim": "営業CFの推移は、2023年1,586.228、2024年2,068.500、2025年2,165.905、2026年2,276.280百万ドル。2023〜2024年は後年資料の比較表示を使用した。過年度には表示組替えがあるので、旧発表のCFをそのままつなげて成長率を作らない。[2025年10-K、PDF 39・45頁](https://www.cintas.com/docs/default-source/investor-relations/annual-reports/2025-form-10-k.pdf)／[2026年10-K、43頁](https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm)",
+      "requiredInputs": [
+        {
+          "id": "ocf-2023",
+          "entity": "Cintas連結",
+          "metric": "ocf-2023",
+          "periodStart": "2022-06-01",
+          "periodEnd": "2023-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ocf-2023"
+        },
+        {
+          "id": "ocf-2024",
+          "entity": "Cintas連結",
+          "metric": "ocf-2024",
+          "periodStart": "2023-06-01",
+          "periodEnd": "2024-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ocf-2024"
+        },
+        {
+          "id": "ocf-2025",
+          "entity": "Cintas連結",
+          "metric": "ocf-2025",
+          "periodStart": "2024-06-01",
+          "periodEnd": "2025-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ocf-2025"
+        },
+        {
+          "id": "ocf-2026",
+          "entity": "Cintas連結",
+          "metric": "ocf-2026",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ocf-2026"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf-2023",
+          "entity": "Cintas連結",
+          "metric": "ocf-2023",
+          "periodStart": "2022-06-01",
+          "periodEnd": "2023-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ocf-2023",
+          "value": 1586.228,
+          "source": {
+            "url": "https://www.cintas.com/docs/default-source/investor-relations/annual-reports/2025-form-10-k.pdf",
+            "publishedOn": "2025-07-28",
+            "locator": "2025 Form 10-K, cash flow comparative figures; reclassification note PDF45",
+            "pdfPage": 39,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf-2024",
+          "entity": "Cintas連結",
+          "metric": "ocf-2024",
+          "periodStart": "2023-06-01",
+          "periodEnd": "2024-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ocf-2024",
+          "value": 2068.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf-2025",
+          "entity": "Cintas連結",
+          "metric": "ocf-2025",
+          "periodStart": "2024-06-01",
+          "periodEnd": "2025-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ocf-2025",
+          "value": 2165.905,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf-2026",
+          "entity": "Cintas連結",
+          "metric": "ocf-2026",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ocf-2026",
+          "value": 2276.28,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "quarter-fcf-and-periods",
+      "question": "quarter-fcf-and-periods",
+      "definition": "CFと還元は6〜8月同期間。9月までの株式取得と9月15日配当は比較に合算しない。",
+      "status": "ready",
+      "claim": "直近6〜8月のFCFは464.799百万ドル（営業CF572.331−設備支出107.532）。同期間の現金配当180.700と自己株式取得315.710百万ドルの合計を31.611百万ドル下回った。会社発表の「9月22日までの買い戻し544.7百万ドル」や「9月15日支払配当208.8百万ドル」を、8月末までのCFと混ぜてはいけない。[第1四半期10-Q、CF計算書7頁](https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm)／[会社発表](https://www.cintas.com/about/newsroom/details/news/2026/09/22/cintas-corporation-announces-fiscal-2027-first-quarter-results/)",
+      "requiredInputs": [
+        {
+          "id": "ocf",
+          "entity": "Cintas連結",
+          "metric": "ocf",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ocf"
+        },
+        {
+          "id": "capex-outflow",
+          "entity": "Cintas連結",
+          "metric": "capex-outflow",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "capex-outflow"
+        },
+        {
+          "id": "dividend-outflow",
+          "entity": "Cintas連結",
+          "metric": "dividend-outflow",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "dividend-outflow"
+        },
+        {
+          "id": "repurchase-outflow",
+          "entity": "Cintas連結",
+          "metric": "repurchase-outflow",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "repurchase-outflow"
+        },
+        {
+          "id": "buyback-through-sept22",
+          "entity": "Cintas連結",
+          "metric": "buyback-through-sept22",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-09-22",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "buyback-through-sept22"
+        },
+        {
+          "id": "dividend-sept15",
+          "entity": "Cintas連結",
+          "metric": "dividend-sept15",
+          "periodStart": "2026-09-15",
+          "periodEnd": "2026-09-15",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "dividend-sept15"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf",
+          "entity": "Cintas連結",
+          "metric": "ocf",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ocf",
+          "value": 572.331,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex-outflow",
+          "entity": "Cintas連結",
+          "metric": "capex-outflow",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "capex-outflow",
+          "value": -107.532,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dividend-outflow",
+          "entity": "Cintas連結",
+          "metric": "dividend-outflow",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "dividend-outflow",
+          "value": -180.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "repurchase-outflow",
+          "entity": "Cintas連結",
+          "metric": "repurchase-outflow",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "repurchase-outflow",
+          "value": -315.71,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000047/ctas-20260831.htm",
+            "publishedOn": "2026-10-07",
+            "locator": "FY2027 Q1 10-Q, income p3, CF p7, MD&A revenue bridge",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "buyback-through-sept22",
+          "entity": "Cintas連結",
+          "metric": "buyback-through-sept22",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-09-22",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "buyback-through-sept22",
+          "value": 544.7,
+          "source": {
+            "url": "https://www.cintas.com/about/newsroom/details/news/2026/09/22/cintas-corporation-announces-fiscal-2027-first-quarter-results/",
+            "publishedOn": "2026-09-23",
+            "locator": "FY2027 Q1 earnings release, results and guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dividend-sept15",
+          "entity": "Cintas連結",
+          "metric": "dividend-sept15",
+          "periodStart": "2026-09-15",
+          "periodEnd": "2026-09-15",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "dividend-sept15",
+          "value": 208.8,
+          "source": {
+            "url": "https://www.cintas.com/about/newsroom/details/news/2026/09/22/cintas-corporation-announces-fiscal-2027-first-quarter-results/",
+            "publishedOn": "2026-09-23",
+            "locator": "FY2027 Q1 earnings release, results and guidance",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex-outflow"
+          ],
+          "definition": "fcf",
+          "precision": 3,
+          "value": 464.799
+        },
+        {
+          "id": "fcf-minus-returns",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex-outflow",
+            "dividend-outflow",
+            "repurchase-outflow"
+          ],
+          "definition": "fcf-minus-returns",
+          "precision": 3,
+          "value": -31.611
+        }
+      ]
+    },
+    {
+      "id": "defined-roic",
+      "question": "defined-roic",
+      "definition": "ROIC独自計算。NOPAT=2606.512*(1-505.366/2505.334)=2080.73677666。平均IC=(7278.942+6845.507)/2=7062.2245。ROIC=29.46290898%→29.5%。掛け算/平均はschema非対応につき独立Python算術照合。のれんを含む、営業リース負債を足さず、全現金控除。",
+      "status": "ready",
+      "claim": "筆者の簡便ROICは2026年5月期で29.5%。計算は、営業利益2,606.512に「1−法人税費用505.366÷税前利益2,505.334」を掛けた税引後営業利益2,080.737を、期首・期末平均の投下資本7,062.225百万ドルで割ったもの。投下資本は「株主資本＋短長期有利子負債−現金同等物」とし、2025年末6,845.507、2026年末7,278.942百万ドルを使う。[2026年10-K、39・41頁](https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm)",
+      "requiredInputs": [
+        {
+          "id": "operating-income",
+          "entity": "Cintas連結",
+          "metric": "operating-income",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income"
+        },
+        {
+          "id": "tax-expense",
+          "entity": "Cintas連結",
+          "metric": "tax-expense",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "tax-expense"
+        },
+        {
+          "id": "pretax-income",
+          "entity": "Cintas連結",
+          "metric": "pretax-income",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "pretax-income"
+        },
+        {
+          "id": "equity-current",
+          "entity": "Cintas連結",
+          "metric": "equity-current",
+          "periodStart": "2026-05-31",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "equity-current"
+        },
+        {
+          "id": "equity-prior",
+          "entity": "Cintas連結",
+          "metric": "equity-prior",
+          "periodStart": "2025-05-31",
+          "periodEnd": "2025-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "equity-prior"
+        },
+        {
+          "id": "debt-current",
+          "entity": "Cintas連結",
+          "metric": "debt-current",
+          "periodStart": "2026-05-31",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "debt-current"
+        },
+        {
+          "id": "debt-prior",
+          "entity": "Cintas連結",
+          "metric": "debt-prior",
+          "periodStart": "2025-05-31",
+          "periodEnd": "2025-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "debt-prior"
+        },
+        {
+          "id": "cash-current",
+          "entity": "Cintas連結",
+          "metric": "cash-current",
+          "periodStart": "2026-05-31",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "cash-current"
+        },
+        {
+          "id": "cash-prior",
+          "entity": "Cintas連結",
+          "metric": "cash-prior",
+          "periodStart": "2025-05-31",
+          "periodEnd": "2025-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "cash-prior"
+        }
+      ],
+      "observations": [
+        {
+          "id": "operating-income",
+          "entity": "Cintas連結",
+          "metric": "operating-income",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "operating-income",
+          "value": 2606.512,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "tax-expense",
+          "entity": "Cintas連結",
+          "metric": "tax-expense",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "tax-expense",
+          "value": 505.366,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "pretax-income",
+          "entity": "Cintas連結",
+          "metric": "pretax-income",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "pretax-income",
+          "value": 2505.334,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "equity-current",
+          "entity": "Cintas連結",
+          "metric": "equity-current",
+          "periodStart": "2026-05-31",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "equity-current",
+          "value": 5139.887,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "equity-prior",
+          "entity": "Cintas連結",
+          "metric": "equity-prior",
+          "periodStart": "2025-05-31",
+          "periodEnd": "2025-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "equity-prior",
+          "value": 4684.481,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "debt-current",
+          "entity": "Cintas連結",
+          "metric": "debt-current",
+          "periodStart": "2026-05-31",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "debt-current",
+          "value": 2428.073,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "debt-prior",
+          "entity": "Cintas連結",
+          "metric": "debt-prior",
+          "periodStart": "2025-05-31",
+          "periodEnd": "2025-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "debt-prior",
+          "value": 2424.999,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash-current",
+          "entity": "Cintas連結",
+          "metric": "cash-current",
+          "periodStart": "2026-05-31",
+          "periodEnd": "2026-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "cash-current",
+          "value": -289.018,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash-prior",
+          "entity": "Cintas連結",
+          "metric": "cash-prior",
+          "periodStart": "2025-05-31",
+          "periodEnd": "2025-05-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "cash-prior",
+          "value": -263.973,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/723254/000072325426000028/ctas-20260531.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2026 Form 10-K, statements of income pp39, balance sheet p41, cash flow p43",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "invested-capital-current",
+          "operation": "sum",
+          "inputs": [
+            "equity-current",
+            "debt-current",
+            "cash-current"
+          ],
+          "definition": "invested-capital-current",
+          "precision": 3,
+          "value": 7278.942
+        },
+        {
+          "id": "invested-capital-prior",
+          "operation": "sum",
+          "inputs": [
+            "equity-prior",
+            "debt-prior",
+            "cash-prior"
+          ],
+          "definition": "invested-capital-prior",
+          "precision": 3,
+          "value": 6845.507
+        }
+      ]
+    },
+    {
+      "id": "acquisition-announcement",
+      "question": "acquisition-announcement",
+      "definition": "発表時点の会社試算。将来相乗効果を実績として扱わない。",
+      "status": "ready",
+      "claim": "3月11日の買収発表では取引の企業価値を約55億ドル、4年以内に実現を見込む運営コスト相乗効果を約3.75億ドルと説明した。ここで「相乗効果込み8倍」という取得倍率は、まだ実現していない費用削減を含む会社説明である。単独実績のEBITDA倍率や、確定した投資利回りではない。EBITDAは利息・税・減価償却前の利益で、設備更新や統合支出を控除した現金とも違う。[買収発表](https://www.cintas.com/about/newsroom/details/news/2026/03/11/cintas-to-acquire-unifirst-in-5.5-billion-transaction-that-expands-service-capabilities-enhances-workday-solutions-and-advances-industry-innovation/)",
+      "requiredInputs": [
+        {
+          "id": "enterprise-value",
+          "entity": "Cintas連結",
+          "metric": "enterprise-value",
+          "periodStart": "2026-03-11",
+          "periodEnd": "2026-03-11",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "公表時点の概算取引企業価値。完了後取得原価ではない"
+        },
+        {
+          "id": "operating-cost-synergies",
+          "entity": "Cintas連結",
+          "metric": "operating-cost-synergies",
+          "periodStart": "2026-03-11",
+          "periodEnd": "2026-03-11",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "会社公表の4年以内の運営コスト相乗効果見込み"
+        },
+        {
+          "id": "synergy-inclusive-multiple",
+          "entity": "Cintas連結",
+          "metric": "synergy-inclusive-multiple",
+          "periodStart": "2026-03-11",
+          "periodEnd": "2026-03-11",
+          "unit": "倍",
+          "basis": "company-forecast",
+          "definition": "会社説明のrun-rate TTM EBITDA相乗効果込み倍率。単独実績倍率ではない"
+        }
+      ],
+      "observations": [
+        {
+          "id": "enterprise-value",
+          "entity": "Cintas連結",
+          "metric": "enterprise-value",
+          "periodStart": "2026-03-11",
+          "periodEnd": "2026-03-11",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "公表時点の概算取引企業価値。完了後取得原価ではない",
+          "value": 5500,
+          "source": {
+            "url": "https://www.cintas.com/about/newsroom/details/news/2026/03/11/cintas-to-acquire-unifirst-in-5.5-billion-transaction-that-expands-service-capabilities-enhances-workday-solutions-and-advances-industry-innovation/",
+            "publishedOn": "2026-03-11",
+            "locator": "Transaction details, enterprise value and synergies",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "operating-cost-synergies",
+          "entity": "Cintas連結",
+          "metric": "operating-cost-synergies",
+          "periodStart": "2026-03-11",
+          "periodEnd": "2026-03-11",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "会社公表の4年以内の運営コスト相乗効果見込み",
+          "value": 375,
+          "source": {
+            "url": "https://www.cintas.com/about/newsroom/details/news/2026/03/11/cintas-to-acquire-unifirst-in-5.5-billion-transaction-that-expands-service-capabilities-enhances-workday-solutions-and-advances-industry-innovation/",
+            "publishedOn": "2026-03-11",
+            "locator": "Transaction details, enterprise value and synergies",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "synergy-inclusive-multiple",
+          "entity": "Cintas連結",
+          "metric": "synergy-inclusive-multiple",
+          "periodStart": "2026-03-11",
+          "periodEnd": "2026-03-11",
+          "unit": "倍",
+          "basis": "company-forecast",
+          "definition": "会社説明のrun-rate TTM EBITDA相乗効果込み倍率。単独実績倍率ではない",
+          "value": 8,
+          "source": {
+            "url": "https://www.cintas.com/about/newsroom/details/news/2026/03/11/cintas-to-acquire-unifirst-in-5.5-billion-transaction-that-expands-service-capabilities-enhances-workday-solutions-and-advances-industry-innovation/",
+            "publishedOn": "2026-03-11",
+            "locator": "Transaction details, enterprise value and synergies",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "company-guidance",
+      "question": "company-guidance",
+      "definition": "9月23日会社修正予想と以前の会社予想。市場予想ではない。UniFirst/将来買収除外、調整EPSは取引費用除外。",
+      "status": "ready",
+      "claim": "会社の2027年5月期売上予想は12,150〜12,270百万ドル、調整後希薄化EPS予想は5.45〜5.54ドルへ引き上げられた。買収予定のUniFirstや今後の買収を売上予想に含めず、調整後EPSは買収関連の非反復費用を除く。GAAP予想EPSと混同しない。過去の1株指標は2024年の1対4分割調整も必要となる。[9月23日決算発表、見通しの前提](https://www.cintas.com/about/newsroom/details/news/2026/09/22/cintas-corporation-announces-fiscal-2027-first-quarter-results/)／[2025年10-K、PDF 45頁](https://www.cintas.com/docs/default-source/investor-relations/annual-reports/2025-form-10-k.pdf)",
+      "requiredInputs": [
+        {
+          "id": "revenue-low",
+          "entity": "Cintas連結",
+          "metric": "revenue-low",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2027-05-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "revenue-low"
+        },
+        {
+          "id": "revenue-high",
+          "entity": "Cintas連結",
+          "metric": "revenue-high",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2027-05-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "revenue-high"
+        },
+        {
+          "id": "adjusted-eps-low",
+          "entity": "Cintas連結",
+          "metric": "adjusted-eps-low",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2027-05-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "adjusted-eps-low"
+        },
+        {
+          "id": "adjusted-eps-high",
+          "entity": "Cintas連結",
+          "metric": "adjusted-eps-high",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2027-05-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "adjusted-eps-high"
+        },
+        {
+          "id": "prior-revenue-low",
+          "entity": "Cintas連結",
+          "metric": "prior-revenue-low",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2027-05-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "prior-revenue-low"
+        },
+        {
+          "id": "prior-revenue-high",
+          "entity": "Cintas連結",
+          "metric": "prior-revenue-high",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2027-05-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "prior-revenue-high"
+        },
+        {
+          "id": "prior-adjusted-eps-low",
+          "entity": "Cintas連結",
+          "metric": "prior-adjusted-eps-low",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2027-05-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "prior-adjusted-eps-low"
+        },
+        {
+          "id": "prior-adjusted-eps-high",
+          "entity": "Cintas連結",
+          "metric": "prior-adjusted-eps-high",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2027-05-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "prior-adjusted-eps-high"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-low",
+          "entity": "Cintas連結",
+          "metric": "revenue-low",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2027-05-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "revenue-low",
+          "value": 12150,
+          "source": {
+            "url": "https://www.cintas.com/about/newsroom/details/news/2026/09/22/cintas-corporation-announces-fiscal-2027-first-quarter-results/",
+            "publishedOn": "2026-09-23",
+            "locator": "FY2027 Q1 earnings release, results and guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "revenue-high",
+          "entity": "Cintas連結",
+          "metric": "revenue-high",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2027-05-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "revenue-high",
+          "value": 12270,
+          "source": {
+            "url": "https://www.cintas.com/about/newsroom/details/news/2026/09/22/cintas-corporation-announces-fiscal-2027-first-quarter-results/",
+            "publishedOn": "2026-09-23",
+            "locator": "FY2027 Q1 earnings release, results and guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "adjusted-eps-low",
+          "entity": "Cintas連結",
+          "metric": "adjusted-eps-low",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2027-05-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "adjusted-eps-low",
+          "value": 5.45,
+          "source": {
+            "url": "https://www.cintas.com/about/newsroom/details/news/2026/09/22/cintas-corporation-announces-fiscal-2027-first-quarter-results/",
+            "publishedOn": "2026-09-23",
+            "locator": "FY2027 Q1 earnings release, results and guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "adjusted-eps-high",
+          "entity": "Cintas連結",
+          "metric": "adjusted-eps-high",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2027-05-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "adjusted-eps-high",
+          "value": 5.54,
+          "source": {
+            "url": "https://www.cintas.com/about/newsroom/details/news/2026/09/22/cintas-corporation-announces-fiscal-2027-first-quarter-results/",
+            "publishedOn": "2026-09-23",
+            "locator": "FY2027 Q1 earnings release, results and guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior-revenue-low",
+          "entity": "Cintas連結",
+          "metric": "prior-revenue-low",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2027-05-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "prior-revenue-low",
+          "value": 12100,
+          "source": {
+            "url": "https://www.cintas.com/about/newsroom/details/news/2026/09/22/cintas-corporation-announces-fiscal-2027-first-quarter-results/",
+            "publishedOn": "2026-09-23",
+            "locator": "FY2027 Q1 earnings release, results and guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior-revenue-high",
+          "entity": "Cintas連結",
+          "metric": "prior-revenue-high",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2027-05-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "prior-revenue-high",
+          "value": 12250,
+          "source": {
+            "url": "https://www.cintas.com/about/newsroom/details/news/2026/09/22/cintas-corporation-announces-fiscal-2027-first-quarter-results/",
+            "publishedOn": "2026-09-23",
+            "locator": "FY2027 Q1 earnings release, results and guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior-adjusted-eps-low",
+          "entity": "Cintas連結",
+          "metric": "prior-adjusted-eps-low",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2027-05-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "prior-adjusted-eps-low",
+          "value": 5.36,
+          "source": {
+            "url": "https://www.cintas.com/about/newsroom/details/news/2026/09/22/cintas-corporation-announces-fiscal-2027-first-quarter-results/",
+            "publishedOn": "2026-09-23",
+            "locator": "FY2027 Q1 earnings release, results and guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior-adjusted-eps-high",
+          "entity": "Cintas連結",
+          "metric": "prior-adjusted-eps-high",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2027-05-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "prior-adjusted-eps-high",
+          "value": 5.5,
+          "source": {
+            "url": "https://www.cintas.com/about/newsroom/details/news/2026/09/22/cintas-corporation-announces-fiscal-2027-first-quarter-results/",
+            "publishedOn": "2026-09-23",
+            "locator": "FY2027 Q1 earnings release, results and guidance",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "margin-sensitivity",
+      "question": "margin-sensitivity",
+      "definition": "独自仮定の±0.5ptは観測値ではなく試算条件。12150*0.005=60.75百万ドル。売上一定で他費用/税/数量を予測しない。",
+      "status": "ready",
+      "claim": "感応度として、売上を会社予想下限の12,150百万ドルに固定し、営業利益率だけが0.5ポイント上下すると、営業利益はそれぞれ約60.75百万ドル増減する。これは数量・追加コスト・税金を別々に予測したものではなく、利益率変化の大きさを示す機械的な独自試算だ。",
+      "requiredInputs": [
+        {
+          "id": "forecast-revenue-low",
+          "entity": "Cintas連結",
+          "metric": "forecast-revenue-low",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2027-05-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "forecast-revenue-low"
+        }
+      ],
+      "observations": [
+        {
+          "id": "forecast-revenue-low",
+          "entity": "Cintas連結",
+          "metric": "forecast-revenue-low",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2027-05-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "forecast-revenue-low",
+          "value": 12150,
+          "source": {
+            "url": "https://www.cintas.com/about/newsroom/details/news/2026/09/22/cintas-corporation-announces-fiscal-2027-first-quarter-results/",
+            "publishedOn": "2026-09-23",
+            "locator": "FY2027 Q1 earnings release, results and guidance",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ],
+  "articleSha256": "5bd74b0cb3a05534c5d656bcaafae4a09202606bbcfa00887f6fba1e9198d733"
+}
