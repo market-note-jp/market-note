@@ -1,0 +1,490 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-10-23",
+  "articleSha256": "5d277d3216386a9b707d3d4de5ff880c211504f5edb4dd053bed8884610129a3",
+  "checkedAt": "2026-10-22T21:29:55.999Z",
+  "informationCutoff": "2026-10-23T06:29:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終記事の見出し・要約・全段落・次の注目点・免責を通読し、重要数値を全件照合。S&P500両日終値、Meta四半期FCFの全構成値、Besi受注単一実績、UEX予想レンジの全端点、週次新規申請と前週改定値を記録。Besiは主要報道で確認できた実績のみ採用し未確認の比較を本文から除外。受注・売上・利益・CF、会社予想と実績を区別。MetaのFCFからAI個別投資の回収率を断定しない。全ソースは基準時刻以前の公表。PDFは抽出本文の該当ページ・表と数値を確認。TTMや市場予想、独自の中点・追加成長率は使用しない。",
+  "comparisons": [
+    {
+      "id": "sp500-close",
+      "question": "22日の終値は21日とどう変わったか",
+      "definition": "S&P500現物価格指数の米国通常取引終値。配当再投資・先物・時間外を含まない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sp22",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-22",
+          "periodEnd": "2026-10-22",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "S&P500現物価格指数の米国通常取引終値。配当再投資・先物・時間外を含まない。"
+        },
+        {
+          "id": "sp21",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-21",
+          "periodEnd": "2026-10-21",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "S&P500現物価格指数の米国通常取引終値。配当再投資・先物・時間外を含まない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sp22",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-22",
+          "periodEnd": "2026-10-22",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "S&P500現物価格指数の米国通常取引終値。配当再投資・先物・時間外を含まない。",
+          "value": 7663.43,
+          "source": {
+            "url": "https://apnews.com/article/stocks-wall-street-nasdaq-dow-1970e79d013cbddcae89c53b4b98f384",
+            "publishedOn": "2026-10-22",
+            "locator": "How major US stock indexes fared: S&P500 daily closing summary",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数提供元の両日確定終値を今回の確認経路で取得できず、主要報道APの両日確定終値記事を照合した。"
+          }
+        },
+        {
+          "id": "sp21",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-21",
+          "periodEnd": "2026-10-21",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "S&P500現物価格指数の米国通常取引終値。配当再投資・先物・時間外を含まない。",
+          "value": 7757.17,
+          "source": {
+            "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-3ec2d8c93a390023ef8104973dea275f",
+            "publishedOn": "2026-10-21",
+            "locator": "How major US stock indexes fared: S&P500 daily closing summary",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数提供元の両日確定終値を今回の確認経路で取得できず、主要報道APの両日確定終値記事を照合した。"
+          }
+        }
+      ],
+      "claim": "S&P500の10月22日終値は7,663.43。21日の7,757.17から93.74ポイント、1.21%下落した。両日とも米国現物価格指数の通常取引終値を比較し、騰落率は小数第2位に丸めた。22日16:00 EDTは23日05:00 JSTに当たる。",
+      "calculations": [
+        {
+          "id": "sp-diff",
+          "operation": "difference",
+          "inputs": [
+            "sp22",
+            "sp21"
+          ],
+          "definition": "当日終値−前取引日終値",
+          "precision": 2,
+          "value": -93.74
+        },
+        {
+          "id": "sp-return",
+          "operation": "growth-percent",
+          "inputs": [
+            "sp22",
+            "sp21"
+          ],
+          "definition": "(当日終値÷前取引日終値−1)×100",
+          "precision": 2,
+          "value": -1.21
+        }
+      ]
+    },
+    {
+      "id": "meta-fcf",
+      "question": "MetaのFCFを全構成値から照合できるか",
+      "definition": "会社定義の四半期FCFを全構成値から再計算。FCFは現金残高変化や投資CF全体ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "ocf",
+          "entity": "Meta",
+          "metric": "Net cash provided by operating activities",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "連結四半期単独・未監査の営業活動による現金収入"
+        },
+        {
+          "id": "ppe",
+          "entity": "Meta",
+          "metric": "Purchases of property and equipment",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "連結四半期単独・未監査の有形固定資産取得現金支出、負の符号"
+        },
+        {
+          "id": "lease",
+          "entity": "Meta",
+          "metric": "Principal payments on finance leases",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "連結四半期単独・未監査のファイナンスリース元本返済、負の符号"
+        },
+        {
+          "id": "reported-fcf",
+          "entity": "Meta",
+          "metric": "Free cash flow",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "会社定義の非GAAP指標。営業CF−有形固定資産取得現金支出−ファイナンスリース元本返済、四半期単独・未監査"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf",
+          "entity": "Meta",
+          "metric": "Net cash provided by operating activities",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "連結四半期単独・未監査の営業活動による現金収入",
+          "value": 32786,
+          "source": {
+            "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+            "publishedOn": "2026-10-21",
+            "locator": "Reconciliation of GAAP to Non-GAAP Results / In millions, unaudited / Three Months Ended September 30, 2026 / Net cash provided by operating activities; FCF definition in Non-GAAP Financial Measures",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ppe",
+          "entity": "Meta",
+          "metric": "Purchases of property and equipment",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "連結四半期単独・未監査の有形固定資産取得現金支出、負の符号",
+          "value": -33942,
+          "source": {
+            "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+            "publishedOn": "2026-10-21",
+            "locator": "Reconciliation of GAAP to Non-GAAP Results / In millions, unaudited / Three Months Ended September 30, 2026 / Purchases of property and equipment; FCF definition in Non-GAAP Financial Measures",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "lease",
+          "entity": "Meta",
+          "metric": "Principal payments on finance leases",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "連結四半期単独・未監査のファイナンスリース元本返済、負の符号",
+          "value": -964,
+          "source": {
+            "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+            "publishedOn": "2026-10-21",
+            "locator": "Reconciliation of GAAP to Non-GAAP Results / In millions, unaudited / Three Months Ended September 30, 2026 / Principal payments on finance leases; FCF definition in Non-GAAP Financial Measures",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "reported-fcf",
+          "entity": "Meta",
+          "metric": "Free cash flow",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "会社定義の非GAAP指標。営業CF−有形固定資産取得現金支出−ファイナンスリース元本返済、四半期単独・未監査",
+          "value": -2120,
+          "source": {
+            "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/default.aspx",
+            "publishedOn": "2026-10-21",
+            "locator": "Reconciliation of GAAP to Non-GAAP Results / In millions, unaudited / Three Months Ended September 30, 2026 / Free cash flow; FCF definition in Non-GAAP Financial Measures",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "Metaの2026年7〜9月期は、営業CF32,786−設備取得支出33,942−ファイナンスリース元本返済964＝FCFマイナス2,120百万米ドル。会社公表値と一致する。対象は四半期単独の未監査実績である。",
+      "calculations": [
+        {
+          "id": "computed-fcf",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "ppe",
+            "lease"
+          ],
+          "definition": "32,786＋(−33,942)＋(−964)",
+          "precision": 0,
+          "value": -2120
+        },
+        {
+          "id": "fcf-check",
+          "operation": "difference",
+          "inputs": [
+            "computed-fcf",
+            "reported-fcf"
+          ],
+          "definition": "計算FCF−会社公表FCF",
+          "precision": 0,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "besi-orders",
+      "question": "確認した四半期受注実績は何か",
+      "definition": "単一期間の受注実績のみ。売上やCFとの同一視、前期比・前年比・市場予想比較は不採用。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "orders",
+          "entity": "Besi",
+          "metric": "Order intake",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million EUR",
+          "basis": "actual",
+          "definition": "2026年第3四半期単独の受注額。売上高・現金収入ではない"
+        }
+      ],
+      "observations": [
+        {
+          "id": "orders",
+          "entity": "Besi",
+          "metric": "Order intake",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million EUR",
+          "basis": "actual",
+          "definition": "2026年第3四半期単独の受注額。売上高・現金収入ではない",
+          "value": 342.6,
+          "source": {
+            "url": "https://www.reuters.com/business/besis-quarterly-orders-beat-expectations-ai-data-centre-demand-stays-strong-2026-10-22/",
+            "publishedOn": "2026-10-22",
+            "locator": "本文の第3四半期order intake記載段落（342.6 million euros）",
+            "kind": "secondary",
+            "primaryUnavailableReason": "Besi公式IRのプレスリリース一覧はタイムアウトおよびHTTP503。会社発表転載もPDF本文を取得できず、限定回数の追加確認後、主要報道Reutersの受注実績だけを採用。前年・前期・市場予想との差は原資料入力がそろわないため除外。"
+          }
+        }
+      ],
+      "claim": "Reutersによると、Besiの2026年7〜9月期の受注額は342.6百万ユーロだった。これは四半期の受注実績で、売上高や現金収入ではない。今回は同一定義の原資料一式を確認できていないため、前期比・前年同期比や市場予想との差の比較は採用しない。",
+      "calculations": []
+    },
+    {
+      "id": "uex-forecast",
+      "question": "UEXの経常利益予想レンジはどう改定されたか",
+      "definition": "同一決算期・連結経常利益の前回と今回の会社予想レンジ比較。上下限を維持。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old-low",
+          "entity": "UEX",
+          "metric": "通期連結経常利益予想・前回発表・下限",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "2027年3月期通期連結会社予想レンジの端点。実績・市場予想・レンジ中点ではない"
+        },
+        {
+          "id": "old-high",
+          "entity": "UEX",
+          "metric": "通期連結経常利益予想・前回発表・上限",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "2027年3月期通期連結会社予想レンジの端点。実績・市場予想・レンジ中点ではない"
+        },
+        {
+          "id": "new-low",
+          "entity": "UEX",
+          "metric": "通期連結経常利益予想・今回修正・下限",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "2027年3月期通期連結会社予想レンジの端点。実績・市場予想・レンジ中点ではない"
+        },
+        {
+          "id": "new-high",
+          "entity": "UEX",
+          "metric": "通期連結経常利益予想・今回修正・上限",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "2027年3月期通期連結会社予想レンジの端点。実績・市場予想・レンジ中点ではない"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old-low",
+          "entity": "UEX",
+          "metric": "通期連結経常利益予想・前回発表・下限",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "2027年3月期通期連結会社予想レンジの端点。実績・市場予想・レンジ中点ではない",
+          "value": 2000,
+          "source": {
+            "url": "https://assets.minkabu.jp/news/article_media_content/urn:newsml:tdnet.info:20261022554346/140120261022554346.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "2．令和9年3月期通期連結業績予想の修正／単位百万円／経常利益／前回発表予想(A)／下限",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "old-high",
+          "entity": "UEX",
+          "metric": "通期連結経常利益予想・前回発表・上限",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "2027年3月期通期連結会社予想レンジの端点。実績・市場予想・レンジ中点ではない",
+          "value": 2400,
+          "source": {
+            "url": "https://assets.minkabu.jp/news/article_media_content/urn:newsml:tdnet.info:20261022554346/140120261022554346.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "2．令和9年3月期通期連結業績予想の修正／単位百万円／経常利益／前回発表予想(A)／上限",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "new-low",
+          "entity": "UEX",
+          "metric": "通期連結経常利益予想・今回修正・下限",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "2027年3月期通期連結会社予想レンジの端点。実績・市場予想・レンジ中点ではない",
+          "value": 2800,
+          "source": {
+            "url": "https://assets.minkabu.jp/news/article_media_content/urn:newsml:tdnet.info:20261022554346/140120261022554346.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "2．令和9年3月期通期連結業績予想の修正／単位百万円／経常利益／今回修正予想(B)／下限",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "new-high",
+          "entity": "UEX",
+          "metric": "通期連結経常利益予想・今回修正・上限",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "2027年3月期通期連結会社予想レンジの端点。実績・市場予想・レンジ中点ではない",
+          "value": 3300,
+          "source": {
+            "url": "https://assets.minkabu.jp/news/article_media_content/urn:newsml:tdnet.info:20261022554346/140120261022554346.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "2．令和9年3月期通期連結業績予想の修正／単位百万円／経常利益／今回修正予想(B)／上限",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "UEXは2027年3月期の連結経常利益予想を2,000〜2,400百万円から2,800〜3,300百万円へ引き上げた。対象期間は2026年4月1日〜2027年3月31日、通貨は日本円。従来・修正とも会社予想で、確定実績や市場予想ではない。レンジの中点を会社の単一予想値として扱わない。",
+      "calculations": []
+    },
+    {
+      "id": "initial-claims",
+      "question": "米週次新規申請は前週改定値からどう変わったか",
+      "definition": "同じ季節調整済み新規申請。継続申請・雇用者数・失業率を混ぜず、前週は今回改定値。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "claims17",
+          "entity": "米労働省",
+          "metric": "新規失業保険申請件数",
+          "periodStart": "2026-10-11",
+          "periodEnd": "2026-10-17",
+          "unit": "persons/claims",
+          "basis": "actual",
+          "definition": "季節調整済み週次新規申請の今回速報値"
+        },
+        {
+          "id": "claims10",
+          "entity": "米労働省",
+          "metric": "新規失業保険申請件数",
+          "periodStart": "2026-10-04",
+          "periodEnd": "2026-10-10",
+          "unit": "persons/claims",
+          "basis": "actual",
+          "definition": "季節調整済み週次新規申請の10月22日公表改定値"
+        }
+      ],
+      "observations": [
+        {
+          "id": "claims17",
+          "entity": "米労働省",
+          "metric": "新規失業保険申請件数",
+          "periodStart": "2026-10-11",
+          "periodEnd": "2026-10-17",
+          "unit": "persons/claims",
+          "basis": "actual",
+          "definition": "季節調整済み週次新規申請の今回速報値",
+          "value": 194000,
+          "source": {
+            "url": "https://www.dol.gov/ui/data.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "UNEMPLOYMENT INSURANCE WEEKLY CLAIMS / SEASONALLY ADJUSTED DATA / week ending October 17 / 194,000; embargo October22 08:30Eastern",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "claims10",
+          "entity": "米労働省",
+          "metric": "新規失業保険申請件数",
+          "periodStart": "2026-10-04",
+          "periodEnd": "2026-10-10",
+          "unit": "persons/claims",
+          "basis": "actual",
+          "definition": "季節調整済み週次新規申請の10月22日公表改定値",
+          "value": 200000,
+          "source": {
+            "url": "https://www.dol.gov/ui/data.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "UNEMPLOYMENT INSURANCE WEEKLY CLAIMS / SEASONALLY ADJUSTED DATA / previous week's level revised / 200,000; embargo October22 08:30Eastern",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "米労働省が10月22日に公表した、17日終了週の季節調整済み新規失業保険申請は194,000件。10日終了週の改定値200,000件から6,000件減少した。前週は今回公表された改定後の値を使い、速報時の値と混ぜていない。",
+      "calculations": [
+        {
+          "id": "claims-diff",
+          "operation": "difference",
+          "inputs": [
+            "claims17",
+            "claims10"
+          ],
+          "definition": "今回速報値−前週の今回改定値",
+          "precision": 0,
+          "value": -6000
+        }
+      ]
+    }
+  ]
+}
