@@ -9,6 +9,15 @@ import { withEditorialTitle } from "../lib/article-metadata";
 
 const legacyArticles = [
 {
+  "kind": "週次レポート",
+  "theme": "日米株・金融政策",
+  "date": "2026-10-24 08:00",
+  "dateTime": "2026-10-24T08:00:00+09:00",
+  "title": "AI投資の資金調達に警戒、原油高と日米の政策会合へ｜10月19日〜23日",
+  "excerpt": "2026年10月19日〜23日の日米株を、4指数の前週末比、SolidigmのIPO検討中止、ファナックの上方修正、原油・債券・円と翌週の金融政策から整理する。",
+  "href": "/articles/weekly-2026-10-19"
+},
+{
   "kind": "企業レポート",
   "theme": "企業分析",
   "date": "2026-10-23 19:38",
