@@ -29,7 +29,7 @@ try {
   const page = await context.newPage();
   await page.clock.install({ time: new Date("2026-10-07T11:00:00Z") });
   page.on("pageerror", error => report.errors.push(error.message));
-  const routes = { oct22_1: "articles/company-kikkoman-2026-10-22/", oct22_2: "articles/company-kurita-2026-10-22/", oct22_3: "articles/company-cintas-2026-10-22/", oct22_4: "articles/theme-export-value-profit-2026-10-22/", oct22_5: "articles/theme-inbound-spending-profit-2026-10-22/", oct21_1: "articles/company-nitto-2026-10-21/", oct21_2: "articles/company-smc-2026-10-21/", oct21_3: "articles/company-rollins-2026-10-21/", oct21_4: "articles/theme-profit-margin-growth-2026-10-21/", oct21_5: "articles/theme-tariff-recovery-earnings-2026-10-21/",  aug4: "articles/daily-2026-08-04/", sep5: "articles/daily-2026-09-05/", sep21: "articles/daily-2026-09-21/", sep24: "articles/daily-2026-09-24/", home: "", daily: "articles/daily-2026-10-07/", weekly: "articles/weekly-2026-09-28/", company: "articles/kioxia-per-2026-09-23/", calendar: "calendar/", airi: "airi/" };
+  const routes = { oct23_1: "articles/company-bunzl-2026-10-23/", oct23_2: "articles/company-nifco-2026-10-23/", oct23_3: "articles/company-rinnai-2026-10-23/", oct23_4: "articles/theme-bloom-revenue-cash-2026-10-23/", oct23_5: "articles/theme-meta-class-c-dilution-2026-10-23/", oct22_1: "articles/company-kikkoman-2026-10-22/", oct22_2: "articles/company-kurita-2026-10-22/", oct22_3: "articles/company-cintas-2026-10-22/", oct22_4: "articles/theme-export-value-profit-2026-10-22/", oct22_5: "articles/theme-inbound-spending-profit-2026-10-22/", oct21_1: "articles/company-nitto-2026-10-21/", oct21_2: "articles/company-smc-2026-10-21/", oct21_3: "articles/company-rollins-2026-10-21/", oct21_4: "articles/theme-profit-margin-growth-2026-10-21/", oct21_5: "articles/theme-tariff-recovery-earnings-2026-10-21/",  aug4: "articles/daily-2026-08-04/", sep5: "articles/daily-2026-09-05/", sep21: "articles/daily-2026-09-21/", sep24: "articles/daily-2026-09-24/", home: "", daily: "articles/daily-2026-10-07/", weekly: "articles/weekly-2026-09-28/", company: "articles/kioxia-per-2026-09-23/", calendar: "calendar/", airi: "airi/" };
   for (const width of [360, 390, 768, 1440]) {
     await page.setViewportSize({ width, height: 1000 });
     for (const [label, route] of Object.entries(routes)) {
@@ -70,10 +70,10 @@ try {
   await page.goto(base, { waitUntil: "networkidle" });
   assert.equal(await page.locator(".upcoming-list time").evaluateAll(elements => elements.every(e => e.getAttribute("datetime") >= "2026-10-07")), true);
   await page.locator(".tabs button").filter({ hasText: "企業" }).click();
-  assert.equal(await page.locator(".article-row").count(), 23);
+  assert.equal(await page.locator(".article-row").count(), 26);
   assert.equal(await page.locator(".article-row:visible").count(), 10);
   await page.getByRole("button", { name: "次のページ", exact: true }).click();
-  assert.equal(await page.locator(".article-row").count(), 23);
+  assert.equal(await page.locator(".article-row").count(), 26);
   assert.equal(await page.locator(".article-row:visible").count(), 10);
   await page.locator(".tabs button").filter({ hasText: "すべて" }).click();
   await page.getByRole("button", { name: "次のページ", exact: true }).click();
