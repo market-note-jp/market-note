@@ -1,0 +1,396 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-10-24",
+  "articleSha256": "4f2489ee1ad93b5e4dabdd3be47c632b1a194cdb24c62b48f992142b12c10d80",
+  "checkedAt": "2026-10-23T21:20:37.426Z",
+  "informationCutoff": "2026-10-24T06:19:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "見出し、結論、要約、全5ニュースの本文・分析・注目点、免責まで最終記事全体を確認。数値比較はS&P500終値、ファナック通期営業利益会社予想、全国CPIの同一基準系列、米総合PMI速報と9月比較値および境界50に集約し、全構成入力と計算を記録。ファナックの前回値は7月31日短信と10月23日修正表を相互照合し、前年比や市場予想比較と混ぜない。CPIは2025年基準の同じ表で両月を照合。Solidigmは会社の10月23日原文で検討中止と投資需要不変・代替手段検討を読み、未確定の調達額・評価額や株価騰落率は掲載しない。PMIは取得制限があるため、Reutersが明示する数値と解釈に限り、9月値を確認せず確報と断定しない。FCF独自計算、TTM、GDP実績への置換、市場予想比較、週間比較はない。数値を伴わない条件付き分析は事実と区別した。",
+  "sourceChecks": [
+    {
+      "url": "https://news.skhynix.com/en/fact-12/",
+      "publishedOn": "2026-10-23",
+      "locator": "本文IPO Review to Be Discontinued / An IPO Was Considered as a Means of Enhancing Shareholder Value Through Growth",
+      "reviewed": "IPO・pre-IPO検討中止、成長見通し・投資需要は変わらず、投資時期・規模・調達方法を引き続き検討するとの会社説明。恒久的な投資撤回や資金確保済みとは書かない。"
+    },
+    {
+      "url": "https://www.fanuc.co.jp/ja/ir/announce/pdf/2026/reference202609.pdf",
+      "publishedOn": "2026-10-23",
+      "pdfPage": 2,
+      "locator": "市場環境／FA・ロボット・地域別",
+      "reviewed": "中国中心のFA、米州・中国の自動化投資、AIデータセンター・半導体向け等。数値のない部門・地域ごとの会社説明を要約。"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "sp500-close",
+      "question": "23日の米国株終値は前取引日からどう変わったか",
+      "definition": "S&P500現物価格指数の米国通常取引終値。配当再投資・先物・時間外を含まない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sp23",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-23",
+          "periodEnd": "2026-10-23",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "S&P500現物価格指数の米国通常取引終値。配当再投資・先物・時間外を含まない。"
+        },
+        {
+          "id": "sp22",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-22",
+          "periodEnd": "2026-10-22",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "S&P500現物価格指数の米国通常取引終値。配当再投資・先物・時間外を含まない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sp23",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-23",
+          "periodEnd": "2026-10-23",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "S&P500現物価格指数の米国通常取引終値。配当再投資・先物・時間外を含まない。",
+          "value": 7623.68,
+          "source": {
+            "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-e07c72bc5cbe5dffe352ddf30054e35f",
+            "publishedOn": "2026-10-23",
+            "locator": "How major US stock indexes fared / On Friday or On Thursday / S&P500 closing summary",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数提供元の両日の履歴一式は取得していないため、主要報道APの各日の確定終値記事を直接読み、同一の通常取引終値を照合した。"
+          }
+        },
+        {
+          "id": "sp22",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-22",
+          "periodEnd": "2026-10-22",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "S&P500現物価格指数の米国通常取引終値。配当再投資・先物・時間外を含まない。",
+          "value": 7663.43,
+          "source": {
+            "url": "https://apnews.com/article/stocks-wall-street-nasdaq-dow-1970e79d013cbddcae89c53b4b98f384",
+            "publishedOn": "2026-10-22",
+            "locator": "How major US stock indexes fared / On Friday or On Thursday / S&P500 closing summary",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数提供元の両日の履歴一式は取得していないため、主要報道APの各日の確定終値記事を直接読み、同一の通常取引終値を照合した。"
+          }
+        }
+      ],
+      "claim": "S&P500の10月23日終値は7,623.68。22日の7,663.43から39.75ポイント、0.52%下落した。比較は両日とも現物価格指数の通常取引終値で、騰落率は小数第2位に丸めた。23日16:00 EDTは24日05:00 JSTに当たる。",
+      "calculations": [
+        {
+          "id": "points",
+          "operation": "difference",
+          "inputs": [
+            "sp23",
+            "sp22"
+          ],
+          "definition": "当日通常取引終値−前取引日通常取引終値",
+          "precision": 2,
+          "value": -39.75
+        },
+        {
+          "id": "return",
+          "operation": "growth-percent",
+          "inputs": [
+            "sp23",
+            "sp22"
+          ],
+          "definition": "(当日終値÷前取引日終値−1)×100",
+          "precision": 2,
+          "value": -0.52
+        }
+      ]
+    },
+    {
+      "id": "fanuc-operating-profit",
+      "question": "ファナックの営業利益会社予想はどれだけ増額されたか",
+      "definition": "日本基準・連結・2027年3月期通期営業利益の会社予想。同一年度の前回予想と今回予想。実績・市場予想ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old-op",
+          "entity": "ファナック",
+          "metric": "通期営業利益・前回予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "日本基準・連結・2027年3月期通期営業利益の会社予想。同一年度の前回予想と今回予想。実績・市場予想ではない。"
+        },
+        {
+          "id": "new-op",
+          "entity": "ファナック",
+          "metric": "通期営業利益・今回予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "日本基準・連結・2027年3月期通期営業利益の会社予想。同一年度の前回予想と今回予想。実績・市場予想ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old-op",
+          "entity": "ファナック",
+          "metric": "通期営業利益・前回予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "日本基準・連結・2027年3月期通期営業利益の会社予想。同一年度の前回予想と今回予想。実績・市場予想ではない。",
+          "value": 218000,
+          "source": {
+            "url": "https://www.fanuc.co.jp/ja/ir/announce/pdf/2026/financialresult202606.pdf",
+            "publishedOn": "2026-07-31",
+            "locator": "3．2027年3月期の連結業績予想／通期／営業利益／百万円。10月23日短信PDF5ページの前回発表予想(A)とも一致。",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "new-op",
+          "entity": "ファナック",
+          "metric": "通期営業利益・今回予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "日本基準・連結・2027年3月期通期営業利益の会社予想。同一年度の前回予想と今回予想。実績・市場予想ではない。",
+          "value": 240700,
+          "source": {
+            "url": "https://www.fanuc.co.jp/ja/ir/announce/pdf/2026/financialresult202609.pdf",
+            "publishedOn": "2026-10-23",
+            "locator": "（3）連結業績予想に関する説明／通期／営業利益／前回発表予想(A)=218,000、今回公表予想(B)=240,700／金額百万円。表紙の通期予想とも一致。",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "claim": "ファナックは2027年3月期の連結営業利益予想を218,000百万円から240,700百万円へ引き上げた。増額は22,700百万円、従来予想を分母とした改定率は10.4%。両方とも2026年4月1日〜2027年3月31日の会社予想で、金額は日本円である。",
+      "calculations": [
+        {
+          "id": "op-change",
+          "operation": "difference",
+          "inputs": [
+            "new-op",
+            "old-op"
+          ],
+          "definition": "今回会社予想−前回会社予想、百万円",
+          "precision": 0,
+          "value": 22700
+        },
+        {
+          "id": "op-revision",
+          "operation": "growth-percent",
+          "inputs": [
+            "new-op",
+            "old-op"
+          ],
+          "definition": "(今回会社予想÷前回会社予想−1)×100。前年比実績成長率ではない。",
+          "precision": 1,
+          "value": 10.4
+        }
+      ]
+    },
+    {
+      "id": "japan-core-cpi",
+      "question": "全国コアCPIの前年比上昇率は8月から9月にどう変わったか",
+      "definition": "2025年基準の全国CPI、生鮮食品を除く総合、原数値の前年同月比。エネルギーを含む。季節調整済み前月比ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cpiSep",
+          "entity": "総務省統計局",
+          "metric": "全国CPI・生鮮食品を除く総合・前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "2025年基準の全国CPI、生鮮食品を除く総合、原数値の前年同月比。エネルギーを含む。季節調整済み前月比ではない。"
+        },
+        {
+          "id": "cpiAug",
+          "entity": "総務省統計局",
+          "metric": "全国CPI・生鮮食品を除く総合・前年同月比",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "2025年基準の全国CPI、生鮮食品を除く総合、原数値の前年同月比。エネルギーを含む。季節調整済み前月比ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cpiSep",
+          "entity": "総務省統計局",
+          "metric": "全国CPI・生鮮食品を除く総合・前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "2025年基準の全国CPI、生鮮食品を除く総合、原数値の前年同月比。エネルギーを含む。季節調整済み前月比ではない。",
+          "value": 2.1,
+          "source": {
+            "url": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/pdf/zenkoku.pdf",
+            "publishedOn": "2026-10-23",
+            "locator": "表1 総合、生鮮食品を除く総合、生鮮食品及びエネルギーを除く総合の指数及び前年同月比／生鮮食品を除く総合／前年同月比／2026年9月（2025年=100）。公表時点は10月23日。",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "cpiAug",
+          "entity": "総務省統計局",
+          "metric": "全国CPI・生鮮食品を除く総合・前年同月比",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "2025年基準の全国CPI、生鮮食品を除く総合、原数値の前年同月比。エネルギーを含む。季節調整済み前月比ではない。",
+          "value": 1.7,
+          "source": {
+            "url": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/pdf/zenkoku.pdf",
+            "publishedOn": "2026-10-23",
+            "locator": "表1 総合、生鮮食品を除く総合、生鮮食品及びエネルギーを除く総合の指数及び前年同月比／生鮮食品を除く総合／前年同月比／2026年8月（2025年=100）。公表時点は10月23日。",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "総務省統計局が10月23日に公表した9月の全国CPIでは、生鮮食品を除く総合の前年同月比は2.1%上昇。8月の1.7%上昇から0.4パーセントポイント拡大した。両月とも2025年基準の同じ系列・原数値の前年同月比を比較している。",
+      "calculations": [
+        {
+          "id": "cpi-change",
+          "operation": "difference",
+          "inputs": [
+            "cpiSep",
+            "cpiAug"
+          ],
+          "definition": "9月前年比上昇率−8月前年比上昇率、パーセントポイント。物価指数水準の前月比ではない。",
+          "precision": 1,
+          "value": 0.4
+        }
+      ]
+    },
+    {
+      "id": "us-composite-pmi",
+      "question": "米総合PMIは低下しても活動拡大を示すか",
+      "definition": "S&P Global US Composite PMI Output Index、米国製造業・サービス業の総合産出指数。10月速報と当該報道の9月比較値。GDP成長率ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "pmiOct",
+          "entity": "S&P Global・米国",
+          "metric": "Composite PMI Output Index・10月速報",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "S&P Global US Composite PMI Output Index、米国製造業・サービス業の総合産出指数。10月速報と当該報道の9月比較値。GDP成長率ではない。"
+        },
+        {
+          "id": "pmiSep",
+          "entity": "S&P Global・米国",
+          "metric": "Composite PMI Output Index・9月比較値",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "S&P Global US Composite PMI Output Index、米国製造業・サービス業の総合産出指数。10月速報と当該報道の9月比較値。GDP成長率ではない。"
+        },
+        {
+          "id": "pmiBoundary",
+          "entity": "S&P Global・米国",
+          "metric": "PMI活動拡大・縮小の境界",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "調査方法の境界値50。経済活動の観測値や成長率ではなく、50超で前月からの活動拡大とする解釈基準。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "pmiOct",
+          "entity": "S&P Global・米国",
+          "metric": "Composite PMI Output Index・10月速報",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "S&P Global US Composite PMI Output Index、米国製造業・サービス業の総合産出指数。10月速報と当該報道の9月比較値。GDP成長率ではない。",
+          "value": 57.6,
+          "source": {
+            "url": "https://www.reuters.com/business/us-business-activity-cools-october-strong-demand-fueling-price-pressures-2026-10-23/",
+            "publishedOn": "2026-10-23",
+            "locator": "本文冒頭のS&P Global flash US Composite PMI Output Indexの10月57.6・9月58.4、および直後の50超は活動拡大との説明。記事公表13:49 UTC（22:49 JST）。",
+            "kind": "secondary",
+            "primaryUnavailableReason": "S&P Globalの当日公式リリースURL（07d16568e63346999890940d47639cd9）を検索で特定したが本文取得は失敗、直接の公開GETもHTTP403だった。限定回数で確認を打ち切り、主要報道Reutersの本文で指数名・両期間値・境界を確認した。原資料で照合できない追加系列、GDP換算、雇用や価格の数値比較は採用しない。"
+          }
+        },
+        {
+          "id": "pmiSep",
+          "entity": "S&P Global・米国",
+          "metric": "Composite PMI Output Index・9月比較値",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "S&P Global US Composite PMI Output Index、米国製造業・サービス業の総合産出指数。10月速報と当該報道の9月比較値。GDP成長率ではない。",
+          "value": 58.4,
+          "source": {
+            "url": "https://www.reuters.com/business/us-business-activity-cools-october-strong-demand-fueling-price-pressures-2026-10-23/",
+            "publishedOn": "2026-10-23",
+            "locator": "本文冒頭のS&P Global flash US Composite PMI Output Indexの10月57.6・9月58.4、および直後の50超は活動拡大との説明。記事公表13:49 UTC（22:49 JST）。",
+            "kind": "secondary",
+            "primaryUnavailableReason": "S&P Globalの当日公式リリースURL（07d16568e63346999890940d47639cd9）を検索で特定したが本文取得は失敗、直接の公開GETもHTTP403だった。限定回数で確認を打ち切り、主要報道Reutersの本文で指数名・両期間値・境界を確認した。原資料で照合できない追加系列、GDP換算、雇用や価格の数値比較は採用しない。"
+          }
+        },
+        {
+          "id": "pmiBoundary",
+          "entity": "S&P Global・米国",
+          "metric": "PMI活動拡大・縮小の境界",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "調査方法の境界値50。経済活動の観測値や成長率ではなく、50超で前月からの活動拡大とする解釈基準。",
+          "value": 50,
+          "source": {
+            "url": "https://www.reuters.com/business/us-business-activity-cools-october-strong-demand-fueling-price-pressures-2026-10-23/",
+            "publishedOn": "2026-10-23",
+            "locator": "本文冒頭のS&P Global flash US Composite PMI Output Indexの10月57.6・9月58.4、および直後の50超は活動拡大との説明。記事公表13:49 UTC（22:49 JST）。",
+            "kind": "secondary",
+            "primaryUnavailableReason": "S&P Globalの当日公式リリースURL（07d16568e63346999890940d47639cd9）を検索で特定したが本文取得は失敗、直接の公開GETもHTTP403だった。限定回数で確認を打ち切り、主要報道Reutersの本文で指数名・両期間値・境界を確認した。原資料で照合できない追加系列、GDP換算、雇用や価格の数値比較は採用しない。"
+          }
+        }
+      ],
+      "claim": "Reutersによると、S&P Globalの10月米国総合PMI産出指数の速報は57.6で、同報道の9月比較値58.4から0.8ポイント低下した。製造業とサービス業を合わせた景況調査で、50を上回る値は前月からの活動拡大を示す。低下したことと、活動が縮小したことは同義ではない。",
+      "calculations": [
+        {
+          "id": "pmi-change",
+          "operation": "difference",
+          "inputs": [
+            "pmiOct",
+            "pmiSep"
+          ],
+          "definition": "10月速報−同報道の9月比較値、指数ポイント",
+          "precision": 1,
+          "value": -0.8
+        }
+      ]
+    }
+  ]
+}
