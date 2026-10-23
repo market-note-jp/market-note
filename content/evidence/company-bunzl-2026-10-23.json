@@ -1,0 +1,2873 @@
+{
+  "version": 1,
+  "articleSlug": "company-bunzl-2026-10-23",
+  "checkedAt": "2026-10-23T10:36:14.876814+00:00",
+  "informationCutoff": "2026-10-23T19:30:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "原本本文とPDF頁で全数値比較を確認。会社APM/IFRS、返金除外/込み、会社計画/実績を明示。感応度の乗算はPython検算。ROICとレバレッジは会社定義の公表値で分母原値の独立再計算ではない。最終記事統合後に独立レビューとdigest設定が必要。",
+  "comparisons": [
+    {
+      "id": "annual-2021",
+      "question": "annual-2021",
+      "definition": "各年1月〜12月IFRS連結実績。調整後営業利益は会社APMでIFRS利益と分離。",
+      "status": "ready",
+      "claim": "| 2021 | 10,285.1 | 623.3 | 752.8 | 132.7 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "Bunzl IFRS連結",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "ifrs-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        },
+        {
+          "id": "adj-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社調整後営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社調整後営業利益"
+        },
+        {
+          "id": "eps",
+          "entity": "Bunzl IFRS連結",
+          "metric": "基本EPS",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "ペンス",
+          "basis": "actual",
+          "definition": "基本EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "Bunzl IFRS連結",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 10285.1,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        },
+        {
+          "id": "ifrs-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 623.3,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        },
+        {
+          "id": "adj-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社調整後営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社調整後営業利益",
+          "value": 752.8,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        },
+        {
+          "id": "eps",
+          "entity": "Bunzl IFRS連結",
+          "metric": "基本EPS",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "ペンス",
+          "basis": "actual",
+          "definition": "基本EPS",
+          "value": 132.7,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "annual-2022",
+      "question": "annual-2022",
+      "definition": "各年1月〜12月IFRS連結実績。調整後営業利益は会社APMでIFRS利益と分離。",
+      "status": "ready",
+      "claim": "| 2022 | 12,039.5 | 701.6 | 885.9 | 141.7 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "Bunzl IFRS連結",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "ifrs-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        },
+        {
+          "id": "adj-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社調整後営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社調整後営業利益"
+        },
+        {
+          "id": "eps",
+          "entity": "Bunzl IFRS連結",
+          "metric": "基本EPS",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "ペンス",
+          "basis": "actual",
+          "definition": "基本EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "Bunzl IFRS連結",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 12039.5,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        },
+        {
+          "id": "ifrs-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 701.6,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        },
+        {
+          "id": "adj-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社調整後営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社調整後営業利益",
+          "value": 885.9,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        },
+        {
+          "id": "eps",
+          "entity": "Bunzl IFRS連結",
+          "metric": "基本EPS",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "ペンス",
+          "basis": "actual",
+          "definition": "基本EPS",
+          "value": 141.7,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "annual-2023",
+      "question": "annual-2023",
+      "definition": "各年1月〜12月IFRS連結実績。調整後営業利益は会社APMでIFRS利益と分離。",
+      "status": "ready",
+      "claim": "| 2023 | 11,797.1 | 789.1 | 944.2 | 157.1 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "Bunzl IFRS連結",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "ifrs-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        },
+        {
+          "id": "adj-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社調整後営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社調整後営業利益"
+        },
+        {
+          "id": "eps",
+          "entity": "Bunzl IFRS連結",
+          "metric": "基本EPS",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "ペンス",
+          "basis": "actual",
+          "definition": "基本EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "Bunzl IFRS連結",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 11797.1,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        },
+        {
+          "id": "ifrs-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 789.1,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        },
+        {
+          "id": "adj-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社調整後営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社調整後営業利益",
+          "value": 944.2,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        },
+        {
+          "id": "eps",
+          "entity": "Bunzl IFRS連結",
+          "metric": "基本EPS",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "ペンス",
+          "basis": "actual",
+          "definition": "基本EPS",
+          "value": 157.1,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "annual-2024",
+      "question": "annual-2024",
+      "definition": "各年1月〜12月IFRS連結実績。調整後営業利益は会社APMでIFRS利益と分離。",
+      "status": "ready",
+      "claim": "| 2024 | 11,776.4 | 799.3 | 976.1 | 149.6 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "Bunzl IFRS連結",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "ifrs-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        },
+        {
+          "id": "adj-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社調整後営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社調整後営業利益"
+        },
+        {
+          "id": "eps",
+          "entity": "Bunzl IFRS連結",
+          "metric": "基本EPS",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "ペンス",
+          "basis": "actual",
+          "definition": "基本EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "Bunzl IFRS連結",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 11776.4,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        },
+        {
+          "id": "ifrs-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 799.3,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        },
+        {
+          "id": "adj-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社調整後営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社調整後営業利益",
+          "value": 976.1,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        },
+        {
+          "id": "eps",
+          "entity": "Bunzl IFRS連結",
+          "metric": "基本EPS",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "ペンス",
+          "basis": "actual",
+          "definition": "基本EPS",
+          "value": 149.6,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "annual-2025",
+      "question": "annual-2025",
+      "definition": "各年1月〜12月IFRS連結実績。調整後営業利益は会社APMでIFRS利益と分離。",
+      "status": "ready",
+      "claim": "| 2025 | 11,845.4 | 735.3 | 910.3 | 141.5 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "Bunzl IFRS連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "ifrs-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        },
+        {
+          "id": "adj-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社調整後営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社調整後営業利益"
+        },
+        {
+          "id": "eps",
+          "entity": "Bunzl IFRS連結",
+          "metric": "基本EPS",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "ペンス",
+          "basis": "actual",
+          "definition": "基本EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "Bunzl IFRS連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 11845.4,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        },
+        {
+          "id": "ifrs-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 735.3,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        },
+        {
+          "id": "adj-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社調整後営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社調整後営業利益",
+          "value": 910.3,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        },
+        {
+          "id": "eps",
+          "entity": "Bunzl IFRS連結",
+          "metric": "基本EPS",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "ペンス",
+          "basis": "actual",
+          "definition": "基本EPS",
+          "value": 141.5,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fy25-growth",
+      "question": "fy25-growth",
+      "definition": "実績前年比。報告・為替一定・営業日等調整の基礎的成長を区別。",
+      "status": "ready",
+      "claim": "2025年は報告売上が0.6%増えた一方、調整後営業利益は6.7%減った。為替一定では増収3.0%、減益4.3%。既存事業を中心に営業日などを調整した「基礎的売上成長」は0.4%にとどまった。増収の見た目より、本業の成長と採算が弱かった年だ。[2025年決算発表、2026年3月2日](https://www.bunzl.com/newsroom/annual-results-for-2025/)",
+      "requiredInputs": [
+        {
+          "id": "reported-revenue-growth",
+          "entity": "Bunzl IFRS連結",
+          "metric": "報告売上増減率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "報告売上増減率"
+        },
+        {
+          "id": "reported-adj-op-growth",
+          "entity": "Bunzl IFRS連結",
+          "metric": "報告調整後営業利益増減率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "報告調整後営業利益増減率"
+        },
+        {
+          "id": "cc-revenue-growth",
+          "entity": "Bunzl IFRS連結",
+          "metric": "為替一定売上増減率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "為替一定売上増減率"
+        },
+        {
+          "id": "cc-adj-op-growth",
+          "entity": "Bunzl IFRS連結",
+          "metric": "為替一定調整後営業利益増減率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "為替一定調整後営業利益増減率"
+        },
+        {
+          "id": "underlying-growth",
+          "entity": "Bunzl IFRS連結",
+          "metric": "基礎的売上増減率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "基礎的売上増減率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "reported-revenue-growth",
+          "entity": "Bunzl IFRS連結",
+          "metric": "報告売上増減率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "報告売上増減率",
+          "value": 0.6,
+          "source": {
+            "url": "https://www.bunzl.com/newsroom/annual-results-for-2025/",
+            "publishedOn": "2026-03-02",
+            "locator": "2025 annual results, financial results and highlights",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "reported-adj-op-growth",
+          "entity": "Bunzl IFRS連結",
+          "metric": "報告調整後営業利益増減率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "報告調整後営業利益増減率",
+          "value": -6.7,
+          "source": {
+            "url": "https://www.bunzl.com/newsroom/annual-results-for-2025/",
+            "publishedOn": "2026-03-02",
+            "locator": "2025 annual results, financial results and highlights",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cc-revenue-growth",
+          "entity": "Bunzl IFRS連結",
+          "metric": "為替一定売上増減率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "為替一定売上増減率",
+          "value": 3,
+          "source": {
+            "url": "https://www.bunzl.com/newsroom/annual-results-for-2025/",
+            "publishedOn": "2026-03-02",
+            "locator": "2025 annual results, financial results and highlights",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cc-adj-op-growth",
+          "entity": "Bunzl IFRS連結",
+          "metric": "為替一定調整後営業利益増減率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "為替一定調整後営業利益増減率",
+          "value": -4.3,
+          "source": {
+            "url": "https://www.bunzl.com/newsroom/annual-results-for-2025/",
+            "publishedOn": "2026-03-02",
+            "locator": "2025 annual results, financial results and highlights",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "underlying-growth",
+          "entity": "Bunzl IFRS連結",
+          "metric": "基礎的売上増減率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "基礎的売上増減率",
+          "value": 0.4,
+          "source": {
+            "url": "https://www.bunzl.com/newsroom/annual-results-for-2025/",
+            "publishedOn": "2026-03-02",
+            "locator": "2025 annual results, financial results and highlights",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "h1-profit-bridge",
+      "question": "h1-profit-bridge",
+      "definition": "半年同士。会社開示利益ブリッジ、当期成長を数量効果と同一視しない。",
+      "status": "ready",
+      "claim": "2026年上期は売上5,933.1、調整後営業利益440.6、IFRS営業利益351.2。前年上期はそれぞれ5,759.6、404.5、300.5だった。会社の増減表では、調整後営業利益の増分36.1のうち、為替換算が3.6、超インフレ会計調整の変化が0.8、当期の成長部分が31.7である。最後の31.7を数量だけの効果と解釈することはできない。[半期決算、PDF 13〜14頁](https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf)",
+      "requiredInputs": [
+        {
+          "id": "sales26",
+          "entity": "Bunzl IFRS連結",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "sales25",
+          "entity": "Bunzl IFRS連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "adj-op26",
+          "entity": "Bunzl IFRS連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        },
+        {
+          "id": "adj-op25",
+          "entity": "Bunzl IFRS連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        },
+        {
+          "id": "ifrs-op26",
+          "entity": "Bunzl IFRS連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        },
+        {
+          "id": "ifrs-op25",
+          "entity": "Bunzl IFRS連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        },
+        {
+          "id": "fx",
+          "entity": "Bunzl IFRS連結",
+          "metric": "調整後営業利益の為替換算寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "調整後営業利益の為替換算寄与"
+        },
+        {
+          "id": "hyperinflation",
+          "entity": "Bunzl IFRS連結",
+          "metric": "超インフレ会計調整変化の利益寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "超インフレ会計調整変化の利益寄与"
+        },
+        {
+          "id": "growth",
+          "entity": "Bunzl IFRS連結",
+          "metric": "当期成長による調整後営業利益寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "当期成長による調整後営業利益寄与"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales26",
+          "entity": "Bunzl IFRS連結",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 5933.1,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 13頁",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "sales25",
+          "entity": "Bunzl IFRS連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 5759.6,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 13頁",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "adj-op26",
+          "entity": "Bunzl IFRS連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 440.6,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 13頁",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "adj-op25",
+          "entity": "Bunzl IFRS連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 404.5,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 13頁",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "ifrs-op26",
+          "entity": "Bunzl IFRS連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 351.2,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 14頁",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "ifrs-op25",
+          "entity": "Bunzl IFRS連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 300.5,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 14頁",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "fx",
+          "entity": "Bunzl IFRS連結",
+          "metric": "調整後営業利益の為替換算寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "調整後営業利益の為替換算寄与",
+          "value": 3.6,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 13頁",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "hyperinflation",
+          "entity": "Bunzl IFRS連結",
+          "metric": "超インフレ会計調整変化の利益寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "超インフレ会計調整変化の利益寄与",
+          "value": 0.8,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 13頁",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "growth",
+          "entity": "Bunzl IFRS連結",
+          "metric": "当期成長による調整後営業利益寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "当期成長による調整後営業利益寄与",
+          "value": 31.7,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 13頁",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "delta",
+          "operation": "difference",
+          "inputs": [
+            "adj-op26",
+            "adj-op25"
+          ],
+          "definition": "報告調整後営業利益差",
+          "precision": 1,
+          "value": 36.1
+        },
+        {
+          "id": "bridge",
+          "operation": "sum",
+          "inputs": [
+            "fx",
+            "hyperinflation",
+            "growth"
+          ],
+          "definition": "会社開示の調整後営業利益増分",
+          "precision": 1,
+          "value": 36.1
+        }
+      ]
+    },
+    {
+      "id": "h1-regions",
+      "question": "h1-regions",
+      "definition": "地域別利益は本社費用控除前。利益率は会社定義。",
+      "status": "ready",
+      "claim": "地域別の調整後営業利益は、北米199.4、欧州大陸106.7、英国・アイルランド65.6、その他地域85.7。本社費用などを控除する前の数字で、地域の単純合計は全社利益と一致しない。北米は数量回復があっても会社表示利益率は前年上期と同じ6.4%。英国・アイルランドはNisbets買収後の相乗効果の通年化も寄与した。全地域を一つの「回復」でまとめないほうがよい。[半期決算、PDF 2頁・31頁](https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf)",
+      "requiredInputs": [
+        {
+          "id": "na",
+          "entity": "Bunzl IFRS連結",
+          "metric": "北米調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "北米調整後営業利益"
+        },
+        {
+          "id": "eu",
+          "entity": "Bunzl IFRS連結",
+          "metric": "欧州大陸調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "欧州大陸調整後営業利益"
+        },
+        {
+          "id": "uk",
+          "entity": "Bunzl IFRS連結",
+          "metric": "英国アイルランド調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "英国アイルランド調整後営業利益"
+        },
+        {
+          "id": "row",
+          "entity": "Bunzl IFRS連結",
+          "metric": "その他地域調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "その他地域調整後営業利益"
+        },
+        {
+          "id": "na-margin26",
+          "entity": "Bunzl IFRS連結",
+          "metric": "北米会社表示営業利益率（返金除外売上分母）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米会社表示営業利益率（返金除外売上分母）"
+        },
+        {
+          "id": "na-margin25",
+          "entity": "Bunzl IFRS連結",
+          "metric": "北米会社表示営業利益率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米会社表示営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "na",
+          "entity": "Bunzl IFRS連結",
+          "metric": "北米調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "北米調整後営業利益",
+          "value": 199.4,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "eu",
+          "entity": "Bunzl IFRS連結",
+          "metric": "欧州大陸調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "欧州大陸調整後営業利益",
+          "value": 106.7,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "uk",
+          "entity": "Bunzl IFRS連結",
+          "metric": "英国アイルランド調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "英国アイルランド調整後営業利益",
+          "value": 65.6,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "row",
+          "entity": "Bunzl IFRS連結",
+          "metric": "その他地域調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "その他地域調整後営業利益",
+          "value": 85.7,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "na-margin26",
+          "entity": "Bunzl IFRS連結",
+          "metric": "北米会社表示営業利益率（返金除外売上分母）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米会社表示営業利益率（返金除外売上分母）",
+          "value": 6.4,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "na-margin25",
+          "entity": "Bunzl IFRS連結",
+          "metric": "北米会社表示営業利益率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米会社表示営業利益率",
+          "value": 6.4,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3-growth-guidance",
+      "question": "q3-growth-guidance",
+      "definition": "四半期成長率。丸め差あり。通期会社ガイダンスは前年度比較基準と将来予想を区別。",
+      "status": "ready",
+      "claim": "最新の7〜9月期は、基礎的売上成長3.7%、買収寄与0.4ポイント、営業日減少の影響マイナス1.1ポイント。為替一定増収率は3.1%で、内訳は丸めのため厳密には足し合わない。数量と価格を分離した成長率は開示されていない。10月20日時点で通期見通しは据え置き、会社表示営業利益率は2025年の7.6%とおおむね同水準を見込む。これは株式報酬の戻入益を除く比較で、表の調整後利益をそのまま割った率とは異なる。9月1日以降に発表した買収は見通しに含まない。[Q3業況開示、2026年10月20日、PDF 1頁](https://www.bunzl.com/media/iicb2u44/q3-2026-trading-update-vf.pdf)",
+      "requiredInputs": [
+        {
+          "id": "underlying",
+          "entity": "Bunzl IFRS連結",
+          "metric": "基礎的売上成長",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "基礎的売上成長"
+        },
+        {
+          "id": "acq",
+          "entity": "Bunzl IFRS連結",
+          "metric": "買収の売上成長寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "ポイント",
+          "basis": "actual",
+          "definition": "買収の売上成長寄与"
+        },
+        {
+          "id": "days",
+          "entity": "Bunzl IFRS連結",
+          "metric": "営業日売上成長寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "ポイント",
+          "basis": "actual",
+          "definition": "営業日売上成長寄与"
+        },
+        {
+          "id": "cc",
+          "entity": "Bunzl IFRS連結",
+          "metric": "為替一定売上増加率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "為替一定売上増加率"
+        },
+        {
+          "id": "margin25-comparable",
+          "entity": "Bunzl IFRS連結",
+          "metric": "株式報酬戻入を除く会社表示営業利益率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "株式報酬戻入を除く会社表示営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "underlying",
+          "entity": "Bunzl IFRS連結",
+          "metric": "基礎的売上成長",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "基礎的売上成長",
+          "value": 3.7,
+          "source": {
+            "url": "https://www.bunzl.com/media/iicb2u44/q3-2026-trading-update-vf.pdf",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "Bunzl IFRS連結",
+          "metric": "買収の売上成長寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "ポイント",
+          "basis": "actual",
+          "definition": "買収の売上成長寄与",
+          "value": 0.4,
+          "source": {
+            "url": "https://www.bunzl.com/media/iicb2u44/q3-2026-trading-update-vf.pdf",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "days",
+          "entity": "Bunzl IFRS連結",
+          "metric": "営業日売上成長寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "ポイント",
+          "basis": "actual",
+          "definition": "営業日売上成長寄与",
+          "value": -1.1,
+          "source": {
+            "url": "https://www.bunzl.com/media/iicb2u44/q3-2026-trading-update-vf.pdf",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "cc",
+          "entity": "Bunzl IFRS連結",
+          "metric": "為替一定売上増加率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "為替一定売上増加率",
+          "value": 3.1,
+          "source": {
+            "url": "https://www.bunzl.com/media/iicb2u44/q3-2026-trading-update-vf.pdf",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "margin25-comparable",
+          "entity": "Bunzl IFRS連結",
+          "metric": "株式報酬戻入を除く会社表示営業利益率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "株式報酬戻入を除く会社表示営業利益率",
+          "value": 7.6,
+          "source": {
+            "url": "https://www.bunzl.com/media/iicb2u44/q3-2026-trading-update-vf.pdf",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "h1-margin-definition",
+      "question": "h1-margin-definition",
+      "definition": "分母不一致を説明する比較。会社表示7.3%をIFRS売上高で再計算しない。",
+      "status": "ready",
+      "claim": "半期決算で見落とせないのが米IEEPA関税の返金だ。会社は顧客へ返す見込みとして売上と売上原価を同額減額しており、調整後営業利益への影響はない。会社表示の利益率はこの返金を除いた売上を分母にする。したがって、調整後営業利益440.6を会計上の売上5,933.1で割った値を、会社表示の7.3%と同じ指標として比較してはいけない。[半期決算、PDF 4頁・28〜29頁](https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf)",
+      "requiredInputs": [
+        {
+          "id": "adjop",
+          "entity": "Bunzl IFRS連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        },
+        {
+          "id": "ifrssales",
+          "entity": "Bunzl IFRS連結",
+          "metric": "IFRS売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "IFRS売上高"
+        },
+        {
+          "id": "companymargin",
+          "entity": "Bunzl IFRS連結",
+          "metric": "返金除外売上高分母の会社営業利益率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "返金除外売上高分母の会社営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "adjop",
+          "entity": "Bunzl IFRS連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 440.6,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 13頁",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "ifrssales",
+          "entity": "Bunzl IFRS連結",
+          "metric": "IFRS売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "IFRS売上高",
+          "value": 5933.1,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 13頁",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "companymargin",
+          "entity": "Bunzl IFRS連結",
+          "metric": "返金除外売上高分母の会社営業利益率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "返金除外売上高分母の会社営業利益率",
+          "value": 7.3,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-2021",
+      "question": "cash-2021",
+      "definition": "買収前会社FCF、税・純利息・設備純支出・リース支払控除後。買収支出は別欄、当年合意額ではない。",
+      "status": "ready",
+      "claim": "| 2021 | 525.4 | 452.7 |",
+      "requiredInputs": [
+        {
+          "id": "fcf",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社定義FCF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社定義FCF"
+        },
+        {
+          "id": "acq",
+          "entity": "Bunzl IFRS連結",
+          "metric": "買収関連現金支出（取得支払及び関連項目）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "買収関連現金支出（取得支払及び関連項目）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fcf",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社定義FCF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社定義FCF",
+          "value": 525.4,
+          "source": {
+            "url": "https://www.bunzl.com/media/tacomncs/bunzl-ar21-web.pdf",
+            "publishedOn": "2022-03-17",
+            "locator": "PDF 81頁",
+            "kind": "primary",
+            "pdfPage": 81
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "Bunzl IFRS連結",
+          "metric": "買収関連現金支出（取得支払及び関連項目）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "買収関連現金支出（取得支払及び関連項目）",
+          "value": 452.7,
+          "source": {
+            "url": "https://www.bunzl.com/media/tacomncs/bunzl-ar21-web.pdf",
+            "publishedOn": "2022-03-17",
+            "locator": "PDF 81頁",
+            "kind": "primary",
+            "pdfPage": 81
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-2022",
+      "question": "cash-2022",
+      "definition": "買収前会社FCF、税・純利息・設備純支出・リース支払控除後。買収支出は別欄、当年合意額ではない。",
+      "status": "ready",
+      "claim": "| 2022 | 705.7 | 264.2 |",
+      "requiredInputs": [
+        {
+          "id": "fcf",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社定義FCF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社定義FCF"
+        },
+        {
+          "id": "acq",
+          "entity": "Bunzl IFRS連結",
+          "metric": "買収関連現金支出（取得支払及び関連項目）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "買収関連現金支出（取得支払及び関連項目）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fcf",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社定義FCF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社定義FCF",
+          "value": 705.7,
+          "source": {
+            "url": "https://www.bunzl.com/media/0aljxph1/annual-report-2023.pdf",
+            "publishedOn": "2024-03-15",
+            "locator": "PDF 86頁",
+            "kind": "primary",
+            "pdfPage": 86
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "Bunzl IFRS連結",
+          "metric": "買収関連現金支出（取得支払及び関連項目）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "買収関連現金支出（取得支払及び関連項目）",
+          "value": 264.2,
+          "source": {
+            "url": "https://www.bunzl.com/media/0aljxph1/annual-report-2023.pdf",
+            "publishedOn": "2024-03-15",
+            "locator": "PDF 86頁",
+            "kind": "primary",
+            "pdfPage": 86
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-2023",
+      "question": "cash-2023",
+      "definition": "買収前会社FCF、税・純利息・設備純支出・リース支払控除後。買収支出は別欄、当年合意額ではない。",
+      "status": "ready",
+      "claim": "| 2023 | 643.5 | 374.6 |",
+      "requiredInputs": [
+        {
+          "id": "fcf",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社定義FCF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社定義FCF"
+        },
+        {
+          "id": "acq",
+          "entity": "Bunzl IFRS連結",
+          "metric": "買収関連現金支出（取得支払及び関連項目）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "買収関連現金支出（取得支払及び関連項目）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fcf",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社定義FCF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社定義FCF",
+          "value": 643.5,
+          "source": {
+            "url": "https://www.bunzl.com/media/0aljxph1/annual-report-2023.pdf",
+            "publishedOn": "2024-03-15",
+            "locator": "PDF 86頁",
+            "kind": "primary",
+            "pdfPage": 86
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "Bunzl IFRS連結",
+          "metric": "買収関連現金支出（取得支払及び関連項目）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "買収関連現金支出（取得支払及び関連項目）",
+          "value": 374.6,
+          "source": {
+            "url": "https://www.bunzl.com/media/0aljxph1/annual-report-2023.pdf",
+            "publishedOn": "2024-03-15",
+            "locator": "PDF 86頁",
+            "kind": "primary",
+            "pdfPage": 86
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-2024",
+      "question": "cash-2024",
+      "definition": "買収前会社FCF、税・純利息・設備純支出・リース支払控除後。買収支出は別欄、当年合意額ではない。",
+      "status": "ready",
+      "claim": "| 2024 | 633.8 | 678.2 |",
+      "requiredInputs": [
+        {
+          "id": "fcf",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社定義FCF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社定義FCF"
+        },
+        {
+          "id": "acq",
+          "entity": "Bunzl IFRS連結",
+          "metric": "買収関連現金支出（取得支払及び関連項目）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "買収関連現金支出（取得支払及び関連項目）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fcf",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社定義FCF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社定義FCF",
+          "value": 633.8,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 34頁",
+            "kind": "primary",
+            "pdfPage": 34
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "Bunzl IFRS連結",
+          "metric": "買収関連現金支出（取得支払及び関連項目）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "買収関連現金支出（取得支払及び関連項目）",
+          "value": 678.2,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 34頁",
+            "kind": "primary",
+            "pdfPage": 34
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-2025",
+      "question": "cash-2025",
+      "definition": "買収前会社FCF、税・純利息・設備純支出・リース支払控除後。買収支出は別欄、当年合意額ではない。",
+      "status": "ready",
+      "claim": "| 2025 | 578.5 | 161.9 |",
+      "requiredInputs": [
+        {
+          "id": "fcf",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社定義FCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社定義FCF"
+        },
+        {
+          "id": "acq",
+          "entity": "Bunzl IFRS連結",
+          "metric": "買収関連現金支出（取得支払及び関連項目）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "買収関連現金支出（取得支払及び関連項目）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fcf",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社定義FCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社定義FCF",
+          "value": 578.5,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 34頁",
+            "kind": "primary",
+            "pdfPage": 34
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "Bunzl IFRS連結",
+          "metric": "買収関連現金支出（取得支払及び関連項目）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "買収関連現金支出（取得支払及び関連項目）",
+          "value": 161.9,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 34頁",
+            "kind": "primary",
+            "pdfPage": 34
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fy25-cash-uses",
+      "question": "fy25-cash-uses",
+      "definition": "現金支払ベース。FCFは会社定義でリース支払利息二重控除なし。",
+      "status": "ready",
+      "claim": "2025年の会社FCF578.5は、買収関連項目控除前の事業資金1,136.1から、リース232.7、純設備支出68.8、純支払利息76.4、税金179.7を引いた値だ。そこから配当242.2、自己株式取得204.8、従業員株式制度の純支出40.0、買収161.9を引き、売却収入17.0を加えると、純流出は53.4となる。黒字のFCFと、借入負担を減らせるかは別問題だ。[2025年年次報告書、PDF 34頁](https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf)",
+      "requiredInputs": [
+        {
+          "id": "opcash",
+          "entity": "Bunzl IFRS連結",
+          "metric": "買収関連項目前の事業現金",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "買収関連項目前の事業現金"
+        },
+        {
+          "id": "lease",
+          "entity": "Bunzl IFRS連結",
+          "metric": "リース元本利息支払",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "リース元本利息支払"
+        },
+        {
+          "id": "netcapex",
+          "entity": "Bunzl IFRS連結",
+          "metric": "設備ソフトウエア純支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "設備ソフトウエア純支出"
+        },
+        {
+          "id": "interest",
+          "entity": "Bunzl IFRS連結",
+          "metric": "リース利息を除く純支払利息",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "リース利息を除く純支払利息"
+        },
+        {
+          "id": "tax",
+          "entity": "Bunzl IFRS連結",
+          "metric": "税支払",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "税支払"
+        },
+        {
+          "id": "dividend",
+          "entity": "Bunzl IFRS連結",
+          "metric": "配当支払",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "配当支払"
+        },
+        {
+          "id": "buyback",
+          "entity": "Bunzl IFRS連結",
+          "metric": "自己株式取得支払",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "自己株式取得支払"
+        },
+        {
+          "id": "employee",
+          "entity": "Bunzl IFRS連結",
+          "metric": "従業員株式制度純支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "従業員株式制度純支出"
+        },
+        {
+          "id": "acq",
+          "entity": "Bunzl IFRS連結",
+          "metric": "買収関連支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "買収関連支出"
+        },
+        {
+          "id": "dispose",
+          "entity": "Bunzl IFRS連結",
+          "metric": "売却収入",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "売却収入"
+        }
+      ],
+      "observations": [
+        {
+          "id": "opcash",
+          "entity": "Bunzl IFRS連結",
+          "metric": "買収関連項目前の事業現金",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "買収関連項目前の事業現金",
+          "value": 1136.1,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 34頁",
+            "kind": "primary",
+            "pdfPage": 34
+          }
+        },
+        {
+          "id": "lease",
+          "entity": "Bunzl IFRS連結",
+          "metric": "リース元本利息支払",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "リース元本利息支払",
+          "value": -232.7,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 34頁",
+            "kind": "primary",
+            "pdfPage": 34
+          }
+        },
+        {
+          "id": "netcapex",
+          "entity": "Bunzl IFRS連結",
+          "metric": "設備ソフトウエア純支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "設備ソフトウエア純支出",
+          "value": -68.8,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 34頁",
+            "kind": "primary",
+            "pdfPage": 34
+          }
+        },
+        {
+          "id": "interest",
+          "entity": "Bunzl IFRS連結",
+          "metric": "リース利息を除く純支払利息",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "リース利息を除く純支払利息",
+          "value": -76.4,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 34頁",
+            "kind": "primary",
+            "pdfPage": 34
+          }
+        },
+        {
+          "id": "tax",
+          "entity": "Bunzl IFRS連結",
+          "metric": "税支払",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "税支払",
+          "value": -179.7,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 34頁",
+            "kind": "primary",
+            "pdfPage": 34
+          }
+        },
+        {
+          "id": "dividend",
+          "entity": "Bunzl IFRS連結",
+          "metric": "配当支払",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "配当支払",
+          "value": -242.2,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 34頁",
+            "kind": "primary",
+            "pdfPage": 34
+          }
+        },
+        {
+          "id": "buyback",
+          "entity": "Bunzl IFRS連結",
+          "metric": "自己株式取得支払",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "自己株式取得支払",
+          "value": -204.8,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 34頁",
+            "kind": "primary",
+            "pdfPage": 34
+          }
+        },
+        {
+          "id": "employee",
+          "entity": "Bunzl IFRS連結",
+          "metric": "従業員株式制度純支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "従業員株式制度純支出",
+          "value": -40,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 34頁",
+            "kind": "primary",
+            "pdfPage": 34
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "Bunzl IFRS連結",
+          "metric": "買収関連支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "買収関連支出",
+          "value": -161.9,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 34頁",
+            "kind": "primary",
+            "pdfPage": 34
+          }
+        },
+        {
+          "id": "dispose",
+          "entity": "Bunzl IFRS連結",
+          "metric": "売却収入",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "売却収入",
+          "value": 17,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 34頁",
+            "kind": "primary",
+            "pdfPage": 34
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "opcash",
+            "lease",
+            "netcapex",
+            "interest",
+            "tax"
+          ],
+          "definition": "会社定義FCF",
+          "precision": 1,
+          "value": 578.5
+        },
+        {
+          "id": "remaining",
+          "operation": "sum",
+          "inputs": [
+            "fcf",
+            "dividend",
+            "buyback",
+            "employee",
+            "acq",
+            "dispose"
+          ],
+          "definition": "配当等控除し売却収入加算後現金変動",
+          "precision": 1,
+          "value": -53.4
+        }
+      ]
+    },
+    {
+      "id": "h1-cash-refund",
+      "question": "h1-cash-refund",
+      "definition": "会社の返金除外FCFと返金込みCF表を明示分離。比率変化は会社数値。",
+      "status": "ready",
+      "claim": "2026年上期の返金影響を除く会社FCFは256.8で、前年上期243.2から5.6%増。返金込みで示される327.8と混ぜない。運転資本への投資もあり、会社の現金化比率は97%から90%へ下がった。この現金化比率は、返金を除く会社定義の営業キャッシュ指標381.0を、調整後営業利益440.6＋使用権資産の減価償却101.3−リース支払119.3＝422.6で割ったもの。IFRS営業CFを純利益で割る比率ではない。増益率だけで資金繰りまで同じ速度で改善したとはいえない。[半期決算、PDF 5頁・16〜17頁・26頁](https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf)",
+      "requiredInputs": [
+        {
+          "id": "fcf-ex-refund",
+          "entity": "Bunzl IFRS連結",
+          "metric": "関税返金除外会社FCF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "関税返金除外会社FCF"
+        },
+        {
+          "id": "fcf25",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社FCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社FCF"
+        },
+        {
+          "id": "fcf-in-refund",
+          "entity": "Bunzl IFRS連結",
+          "metric": "返金を含む会社FCF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "返金を含む会社FCF"
+        },
+        {
+          "id": "conversion26",
+          "entity": "Bunzl IFRS連結",
+          "metric": "返金除外会社現金化比率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "返金除外会社現金化比率"
+        },
+        {
+          "id": "conversion25",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社現金化比率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社現金化比率"
+        },
+        {
+          "id": "conversion-numerator",
+          "entity": "Bunzl IFRS連結",
+          "metric": "返金除外会社営業キャッシュ指標",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "返金除外会社営業キャッシュ指標"
+        },
+        {
+          "id": "conversion-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        },
+        {
+          "id": "conversion-depreciation",
+          "entity": "Bunzl IFRS連結",
+          "metric": "使用権資産減価償却",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "使用権資産減価償却"
+        },
+        {
+          "id": "conversion-lease",
+          "entity": "Bunzl IFRS連結",
+          "metric": "リース支払",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "リース支払"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fcf-ex-refund",
+          "entity": "Bunzl IFRS連結",
+          "metric": "関税返金除外会社FCF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "関税返金除外会社FCF",
+          "value": 256.8,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "fcf25",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社FCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "会社FCF",
+          "value": 243.2,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 16頁",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        },
+        {
+          "id": "fcf-in-refund",
+          "entity": "Bunzl IFRS連結",
+          "metric": "返金を含む会社FCF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "返金を含む会社FCF",
+          "value": 327.8,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 16頁",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        },
+        {
+          "id": "conversion26",
+          "entity": "Bunzl IFRS連結",
+          "metric": "返金除外会社現金化比率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "返金除外会社現金化比率",
+          "value": 90,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 17頁",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "conversion25",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社現金化比率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社現金化比率",
+          "value": 97,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 17頁",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "conversion-numerator",
+          "entity": "Bunzl IFRS連結",
+          "metric": "返金除外会社営業キャッシュ指標",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "返金除外会社営業キャッシュ指標",
+          "value": 381,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 17頁",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "conversion-op",
+          "entity": "Bunzl IFRS連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 440.6,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 17頁",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "conversion-depreciation",
+          "entity": "Bunzl IFRS連結",
+          "metric": "使用権資産減価償却",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "使用権資産減価償却",
+          "value": 101.3,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 17頁",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "conversion-lease",
+          "entity": "Bunzl IFRS連結",
+          "metric": "リース支払",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "リース支払",
+          "value": -119.3,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 17頁",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "fcf-ex-refund",
+            "fcf25"
+          ],
+          "definition": "返金除外FCF前年比",
+          "precision": 1,
+          "value": 5.6
+        },
+        {
+          "id": "conversion-denominator",
+          "operation": "sum",
+          "inputs": [
+            "conversion-op",
+            "conversion-depreciation",
+            "conversion-lease"
+          ],
+          "definition": "リース調整営業利益",
+          "precision": 1,
+          "value": 422.6
+        },
+        {
+          "id": "conversion-ratio",
+          "operation": "ratio-percent",
+          "inputs": [
+            "conversion-numerator",
+            "conversion-denominator"
+          ],
+          "definition": "会社現金化比率",
+          "precision": 0,
+          "value": 90
+        }
+      ]
+    },
+    {
+      "id": "returns-definitions",
+      "question": "returns-definitions",
+      "definition": "会社公表指標引用。月末平均分母原値は開示未確認なので独自再計算ROICとはしない。税引後WACCと直接比較しない。",
+      "status": "ready",
+      "claim": "2025年の会社表示ROICは13.0%で、前年14.8%から低下した。一方、営業用資本に対する利益率は37.0%。この差は矛盾ではない。前者の分母には、自己資本へ純負債などを加え、過去の償却・買収関連項目・のれん減損などを調整した月末平均投下資本を使う。後者は設備・使用権資産・ソフトウエア・運転資本が中心だ。両方とも分子は調整後営業利益で、税引後ROICではない。[2025年年次報告書、PDF 35頁・150頁](https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf)",
+      "requiredInputs": [
+        {
+          "id": "roic25",
+          "entity": "Bunzl IFRS連結",
+          "metric": "税引前調整後営業利益／会社調整平均投下資本",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "税引前調整後営業利益／会社調整平均投下資本"
+        },
+        {
+          "id": "roic24",
+          "entity": "Bunzl IFRS連結",
+          "metric": "税引前調整後営業利益／会社調整平均投下資本",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "税引前調整後営業利益／会社調整平均投下資本"
+        },
+        {
+          "id": "roace25",
+          "entity": "Bunzl IFRS連結",
+          "metric": "調整後営業利益／平均営業用資本",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後営業利益／平均営業用資本"
+        }
+      ],
+      "observations": [
+        {
+          "id": "roic25",
+          "entity": "Bunzl IFRS連結",
+          "metric": "税引前調整後営業利益／会社調整平均投下資本",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "税引前調整後営業利益／会社調整平均投下資本",
+          "value": 13,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 35頁",
+            "kind": "primary",
+            "pdfPage": 35
+          }
+        },
+        {
+          "id": "roic24",
+          "entity": "Bunzl IFRS連結",
+          "metric": "税引前調整後営業利益／会社調整平均投下資本",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "税引前調整後営業利益／会社調整平均投下資本",
+          "value": 14.8,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 35頁",
+            "kind": "primary",
+            "pdfPage": 35
+          }
+        },
+        {
+          "id": "roace25",
+          "entity": "Bunzl IFRS連結",
+          "metric": "調整後営業利益／平均営業用資本",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後営業利益／平均営業用資本",
+          "value": 37,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 35頁",
+            "kind": "primary",
+            "pdfPage": 35
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "acquisition-payback-policy",
+      "question": "acquisition-payback-policy",
+      "definition": "会社説明会の方針で実績や将来の保証ではない。",
+      "status": "ready",
+      "claim": "会社は買収案件が2〜3年目に案件別の資本コストを上回ることを期待すると説明している。ただし、過去の平均買収倍率は初期持分等を対象とし、将来利益に連動する対価などを除く。低い見かけの倍率だけで全額の買収価格や投資回収を判断できない。[2025年10月8日買収説明会、PDF 11頁](https://www.bunzl.com/media/oqkhxqf5/insight-event-spotlight-on-acquisitions-vfinal.pdf)",
+      "requiredInputs": [
+        {
+          "id": "low",
+          "entity": "Bunzl IFRS連結",
+          "metric": "案件資本コスト到達目標下限年",
+          "periodStart": "2025-10-08",
+          "periodEnd": "2025-10-08",
+          "unit": "年",
+          "basis": "company-forecast",
+          "definition": "案件資本コスト到達目標下限年"
+        },
+        {
+          "id": "high",
+          "entity": "Bunzl IFRS連結",
+          "metric": "案件資本コスト到達目標上限年",
+          "periodStart": "2025-10-08",
+          "periodEnd": "2025-10-08",
+          "unit": "年",
+          "basis": "company-forecast",
+          "definition": "案件資本コスト到達目標上限年"
+        }
+      ],
+      "observations": [
+        {
+          "id": "low",
+          "entity": "Bunzl IFRS連結",
+          "metric": "案件資本コスト到達目標下限年",
+          "periodStart": "2025-10-08",
+          "periodEnd": "2025-10-08",
+          "unit": "年",
+          "basis": "company-forecast",
+          "definition": "案件資本コスト到達目標下限年",
+          "value": 2,
+          "source": {
+            "url": "https://www.bunzl.com/media/oqkhxqf5/insight-event-spotlight-on-acquisitions-vfinal.pdf",
+            "publishedOn": "2025-10-08",
+            "locator": "PDF 11頁",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "high",
+          "entity": "Bunzl IFRS連結",
+          "metric": "案件資本コスト到達目標上限年",
+          "periodStart": "2025-10-08",
+          "periodEnd": "2025-10-08",
+          "unit": "年",
+          "basis": "company-forecast",
+          "definition": "案件資本コスト到達目標上限年",
+          "value": 3,
+          "source": {
+            "url": "https://www.bunzl.com/media/oqkhxqf5/insight-event-spotlight-on-acquisitions-vfinal.pdf",
+            "publishedOn": "2025-10-08",
+            "locator": "PDF 11頁",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "h1-netdebt",
+      "question": "h1-netdebt",
+      "definition": "2026年6月末残高。倍率は平均為替及び契約買収利益調整等を含む会社定義の公表値。",
+      "status": "ready",
+      "claim": "2026年6月末の調整後純負債は1,682.8、リース負債を含めると2,423.6。会社表示の調整後純負債／EBITDAは1.8倍で、リースを含む別系列は2.0倍だ。両倍率は関税返金の影響を除き、平均為替や買収の契約利益などを調整している。リース込み系列では使用権資産の減価償却も戻すため、分母のEBITDAも同一ではない。後払い・条件付買収対価を含む負担として見る必要がある。負債がゼロという意味でも、今後の買収・還元が無制限という意味でもない。[半期決算、PDF 17頁・29頁](https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf)",
+      "requiredInputs": [
+        {
+          "id": "debt-exlease",
+          "entity": "Bunzl IFRS連結",
+          "metric": "調整後純負債（リース除外）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "調整後純負債（リース除外）"
+        },
+        {
+          "id": "debt-inlease",
+          "entity": "Bunzl IFRS連結",
+          "metric": "調整後純負債（リース含む）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "調整後純負債（リース含む）"
+        },
+        {
+          "id": "leverage-exlease",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社調整後純負債／EBITDA（リース除外）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "会社調整後純負債／EBITDA（リース除外）"
+        },
+        {
+          "id": "leverage-inlease",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社調整後純負債／EBITDA（リース含む）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "会社調整後純負債／EBITDA（リース含む）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "debt-exlease",
+          "entity": "Bunzl IFRS連結",
+          "metric": "調整後純負債（リース除外）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "調整後純負債（リース除外）",
+          "value": 1682.8,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 17頁",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "debt-inlease",
+          "entity": "Bunzl IFRS連結",
+          "metric": "調整後純負債（リース含む）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "調整後純負債（リース含む）",
+          "value": 2423.6,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 17頁",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "leverage-exlease",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社調整後純負債／EBITDA（リース除外）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "会社調整後純負債／EBITDA（リース除外）",
+          "value": 1.8,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 17頁",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "leverage-inlease",
+          "entity": "Bunzl IFRS連結",
+          "metric": "会社調整後純負債／EBITDA（リース含む）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "会社調整後純負債／EBITDA（リース含む）",
+          "value": 2,
+          "source": {
+            "url": "https://www.bunzl.com/media/kwhj3z12/bunzl-hy-26-press-release-final.pdf",
+            "publishedOn": "2026-09-01",
+            "locator": "PDF 17頁",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "buybacks",
+      "question": "buybacks",
+      "definition": "計画額と完了概算を分離。",
+      "status": "ready",
+      "claim": "10月20日時点で、新たな自己株式取得枠500のうち約225を実施したと公表した。買収も並行するため、株数減によるEPS押し上げと、本業の利益増加を分けて見る。買い戻しが合理的かは取得価格と残る投資機会次第で、枠の大きさ自体は投資魅力を証明しない。[Q3業況開示、PDF 1頁](https://www.bunzl.com/media/iicb2u44/q3-2026-trading-update-vf.pdf)",
+      "requiredInputs": [
+        {
+          "id": "programme",
+          "entity": "Bunzl IFRS連結",
+          "metric": "新自己株式取得計画総額",
+          "periodStart": "2026-10-20",
+          "periodEnd": "2026-10-20",
+          "unit": "百万英ポンド",
+          "basis": "company-forecast",
+          "definition": "新自己株式取得計画総額"
+        },
+        {
+          "id": "completed",
+          "entity": "Bunzl IFRS連結",
+          "metric": "上記計画実施額（概算）",
+          "periodStart": "2026-10-20",
+          "periodEnd": "2026-10-20",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "上記計画実施額（概算）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "programme",
+          "entity": "Bunzl IFRS連結",
+          "metric": "新自己株式取得計画総額",
+          "periodStart": "2026-10-20",
+          "periodEnd": "2026-10-20",
+          "unit": "百万英ポンド",
+          "basis": "company-forecast",
+          "definition": "新自己株式取得計画総額",
+          "value": 500,
+          "source": {
+            "url": "https://www.bunzl.com/media/iicb2u44/q3-2026-trading-update-vf.pdf",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "completed",
+          "entity": "Bunzl IFRS連結",
+          "metric": "上記計画実施額（概算）",
+          "periodStart": "2026-10-20",
+          "periodEnd": "2026-10-20",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "上記計画実施額（概算）",
+          "value": 225,
+          "source": {
+            "url": "https://www.bunzl.com/media/iicb2u44/q3-2026-trading-update-vf.pdf",
+            "publishedOn": "2026-10-20",
+            "locator": "PDF 1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "margin-sensitivity",
+      "question": "margin-sensitivity",
+      "definition": "筆者独自試算。売上固定、率0.1ppt=0.001を乗じ11.8454→11.8。売上1%=118.454→118.5。前提は仮定で予測ではない。対応外の掛算は生成スクリプトと独立レビューで検算。",
+      "status": "ready",
+      "claim": "感応度を一つだけ示す。2025年売上11,845.4を固定した単純計算では、営業利益率が0.1ポイント変わると営業利益は約11.8動く。計算は11,845.4×0.001。売上高の1%は約118.5だが、それがすべて利益になるわけではない。この試算は利益率の小さな変化の重要性を見るもので、価格・数量・費用が同時に動く実際の2026年予想ではない。[売上の出典：2025年年次報告書、PDF 214頁](https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf)",
+      "requiredInputs": [
+        {
+          "id": "sales25",
+          "entity": "Bunzl IFRS連結",
+          "metric": "2025年売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "2025年売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales25",
+          "entity": "Bunzl IFRS連結",
+          "metric": "2025年売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万英ポンド",
+          "basis": "actual",
+          "definition": "2025年売上高",
+          "value": 11845.4,
+          "source": {
+            "url": "https://www.bunzl.com/media/5msdlthc/bunzl-annual-report-2025.pdf",
+            "publishedOn": "2026-03-17",
+            "locator": "PDF 214頁",
+            "kind": "primary",
+            "pdfPage": 214
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "valuation-and-peer-ranking",
+      "question": "株価評価と競合財務比較",
+      "definition": "同日株価と期間整合利益、競合同一定義財務が必要",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "current-price",
+          "entity": "Bunzl",
+          "metric": "株価",
+          "periodStart": "2026-10-23",
+          "periodEnd": "2026-10-23",
+          "unit": "GBP",
+          "basis": "market",
+          "definition": "情報基準日時点の同日株価。未取得。"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "現在株価と競合の同一定義財務は未確認。分析に不必要な推定はしない。",
+      "omittedClaim": "現在のBunzl株は競合より割安である。"
+    }
+  ],
+  "articleSha256": "618fb7ae7708d7db3d38d584a5b7f5ddd47fe6b29ae85291a4de65bf8d595e32"
+}

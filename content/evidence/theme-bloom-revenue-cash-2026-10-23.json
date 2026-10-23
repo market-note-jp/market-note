@@ -1,0 +1,723 @@
+{
+  "version": 1,
+  "articleSlug": "theme-bloom-revenue-cash-2026-10-23",
+  "checkedAt": "2026-10-23T10:34:04.448512+00:00",
+  "informationCutoff": "2026-10-23T19:30:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "執筆者が一次資料本文を確認。独立レビューと最終ハッシュ確定は統合時。仮想の数値予想、未確認の株価反応・コンセンサス比較は使用しない。",
+  "comparisons": [
+    {
+      "id": "q3-profit",
+      "question": "本文の数値・計算・定義は一次資料と整合するか",
+      "definition": "原資料の期間と単位をそろえ、本文と照合。",
+      "status": "ready",
+      "claim": "7〜9月の売上高は12億3,583.7万ドル、連結純利益は2億4,897.6万ドルだったが、営業キャッシュフロー（営業CF）は2,714.7万ドルの流出だった。",
+      "requiredInputs": [
+        {
+          "id": "q3-revenue",
+          "entity": "Bloom Energy連結",
+          "metric": "GAAP売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP売上高"
+        },
+        {
+          "id": "q3-ni",
+          "entity": "Bloom Energy連結",
+          "metric": "GAAP連結純利益（親会社帰属額とは別）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結純利益（親会社帰属額とは別）"
+        },
+        {
+          "id": "intro-ocf",
+          "entity": "Bloom Energy連結",
+          "metric": "営業CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "q3-revenue",
+          "entity": "Bloom Energy連結",
+          "metric": "GAAP売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP売上高",
+          "value": 1235.837,
+          "source": {
+            "url": "https://www.bloomenergy.com/news/bloom-energy-reports-record-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance/",
+            "publishedOn": "2026-10-22",
+            "locator": "Condensed Consolidated Statements of Operations, three months ended September 30, 2026; 原表千ドル÷1000",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "q3-ni",
+          "entity": "Bloom Energy連結",
+          "metric": "GAAP連結純利益（親会社帰属額とは別）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP連結純利益（親会社帰属額とは別）",
+          "value": 248.976,
+          "source": {
+            "url": "https://www.bloomenergy.com/news/bloom-energy-reports-record-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance/",
+            "publishedOn": "2026-10-22",
+            "locator": "Statements of Cash Flows, Net income, three months ended September 30, 2026; 千ドル÷1000",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "intro-ocf",
+          "entity": "Bloom Energy連結",
+          "metric": "営業CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": -27.147,
+          "source": {
+            "url": "https://www.bloomenergy.com/news/bloom-energy-reports-record-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance/",
+            "publishedOn": "2026-10-22",
+            "locator": "Cash Flows, Net cash provided by (used in) operating activities, Q3 2026",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fcf-prior",
+      "question": "本文の数値・計算・定義は一次資料と整合するか",
+      "definition": "筆者定義FCF＝営業CF−有形固定資産取得支出。設備売却収入、JV投資、借入返済を含まない。",
+      "status": "ready",
+      "claim": "| 2025年7〜9月 | 19.669 | 12.301 | 7.368 |",
+      "requiredInputs": [
+        {
+          "id": "prior-ocf",
+          "entity": "Bloom Energy連結",
+          "metric": "営業CF",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "prior-capex",
+          "entity": "Bloom Energy連結",
+          "metric": "Purchase of property, plant and equipment・支出を正数表示",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Purchase of property, plant and equipment・支出を正数表示"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prior-ocf",
+          "entity": "Bloom Energy連結",
+          "metric": "営業CF",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 19.669,
+          "source": {
+            "url": "https://www.bloomenergy.com/news/bloom-energy-reports-record-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance/",
+            "publishedOn": "2026-10-22",
+            "locator": "Statements of Cash Flows; corresponding period column; 千ドル÷1000",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior-capex",
+          "entity": "Bloom Energy連結",
+          "metric": "Purchase of property, plant and equipment・支出を正数表示",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Purchase of property, plant and equipment・支出を正数表示",
+          "value": 12.301,
+          "source": {
+            "url": "https://www.bloomenergy.com/news/bloom-energy-reports-record-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance/",
+            "publishedOn": "2026-10-22",
+            "locator": "Statements of Cash Flows; corresponding period column; 千ドル÷1000",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "prior-fcf",
+          "operation": "difference",
+          "inputs": [
+            "prior-ocf",
+            "prior-capex"
+          ],
+          "definition": "同一期間・同一単位の数値で計算。",
+          "precision": 3,
+          "value": 7.368
+        }
+      ]
+    },
+    {
+      "id": "fcf-q2",
+      "question": "本文の数値・計算・定義は一次資料と整合するか",
+      "definition": "筆者定義FCF＝営業CF−有形固定資産取得支出。設備売却収入、JV投資、借入返済を含まない。",
+      "status": "ready",
+      "claim": "| 2026年4〜6月 | 226.432 | 51.641 | 174.791 |",
+      "requiredInputs": [
+        {
+          "id": "q2-ocf",
+          "entity": "Bloom Energy連結",
+          "metric": "営業CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "q2-capex",
+          "entity": "Bloom Energy連結",
+          "metric": "Purchase of property, plant and equipment・支出を正数表示",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Purchase of property, plant and equipment・支出を正数表示"
+        }
+      ],
+      "observations": [
+        {
+          "id": "q2-ocf",
+          "entity": "Bloom Energy連結",
+          "metric": "営業CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 226.432,
+          "source": {
+            "url": "https://www.bloomenergy.com/news/bloom-energy-reports-record-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance/",
+            "publishedOn": "2026-10-22",
+            "locator": "Statements of Cash Flows; corresponding period column; 千ドル÷1000",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "q2-capex",
+          "entity": "Bloom Energy連結",
+          "metric": "Purchase of property, plant and equipment・支出を正数表示",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Purchase of property, plant and equipment・支出を正数表示",
+          "value": 51.641,
+          "source": {
+            "url": "https://www.bloomenergy.com/news/bloom-energy-reports-record-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance/",
+            "publishedOn": "2026-10-22",
+            "locator": "Statements of Cash Flows; corresponding period column; 千ドル÷1000",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "q2-fcf",
+          "operation": "difference",
+          "inputs": [
+            "q2-ocf",
+            "q2-capex"
+          ],
+          "definition": "同一期間・同一単位の数値で計算。",
+          "precision": 3,
+          "value": 174.791
+        }
+      ]
+    },
+    {
+      "id": "fcf-q3",
+      "question": "本文の数値・計算・定義は一次資料と整合するか",
+      "definition": "筆者定義FCF＝営業CF−有形固定資産取得支出。設備売却収入、JV投資、借入返済を含まない。",
+      "status": "ready",
+      "claim": "| 2026年7〜9月 | −27.147 | 153.487 | −180.634 |",
+      "requiredInputs": [
+        {
+          "id": "q3-ocf",
+          "entity": "Bloom Energy連結",
+          "metric": "営業CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "q3-capex",
+          "entity": "Bloom Energy連結",
+          "metric": "Purchase of property, plant and equipment・支出を正数表示",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Purchase of property, plant and equipment・支出を正数表示"
+        }
+      ],
+      "observations": [
+        {
+          "id": "q3-ocf",
+          "entity": "Bloom Energy連結",
+          "metric": "営業CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": -27.147,
+          "source": {
+            "url": "https://www.bloomenergy.com/news/bloom-energy-reports-record-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance/",
+            "publishedOn": "2026-10-22",
+            "locator": "Statements of Cash Flows; corresponding period column; 千ドル÷1000",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "q3-capex",
+          "entity": "Bloom Energy連結",
+          "metric": "Purchase of property, plant and equipment・支出を正数表示",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Purchase of property, plant and equipment・支出を正数表示",
+          "value": 153.487,
+          "source": {
+            "url": "https://www.bloomenergy.com/news/bloom-energy-reports-record-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance/",
+            "publishedOn": "2026-10-22",
+            "locator": "Statements of Cash Flows; corresponding period column; 千ドル÷1000",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "q3-fcf",
+          "operation": "difference",
+          "inputs": [
+            "q3-ocf",
+            "q3-capex"
+          ],
+          "definition": "同一期間・同一単位の数値で計算。",
+          "precision": 3,
+          "value": -180.634
+        }
+      ]
+    },
+    {
+      "id": "fcf-ytd",
+      "question": "本文の数値・計算・定義は一次資料と整合するか",
+      "definition": "筆者定義FCF＝営業CF−有形固定資産取得支出。設備売却収入、JV投資、借入返済を含まない。",
+      "status": "ready",
+      "claim": "| 2026年1〜9月累計 | 272.895 | 231.310 | 41.585 |",
+      "requiredInputs": [
+        {
+          "id": "ytd-ocf",
+          "entity": "Bloom Energy連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "ytd-capex",
+          "entity": "Bloom Energy連結",
+          "metric": "Purchase of property, plant and equipment・支出を正数表示",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Purchase of property, plant and equipment・支出を正数表示"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ytd-ocf",
+          "entity": "Bloom Energy連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 272.895,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066931/be-20260930.htm",
+            "publishedOn": "2026-10-22",
+            "locator": "Statements of Cash Flows; corresponding period column; 千ドル÷1000",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ytd-capex",
+          "entity": "Bloom Energy連結",
+          "metric": "Purchase of property, plant and equipment・支出を正数表示",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Purchase of property, plant and equipment・支出を正数表示",
+          "value": 231.31,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066931/be-20260930.htm",
+            "publishedOn": "2026-10-22",
+            "locator": "Statements of Cash Flows; corresponding period column; 千ドル÷1000",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "ytd-fcf",
+          "operation": "difference",
+          "inputs": [
+            "ytd-ocf",
+            "ytd-capex"
+          ],
+          "definition": "同一期間・同一単位の数値で計算。",
+          "precision": 3,
+          "value": 41.585
+        }
+      ]
+    },
+    {
+      "id": "contract-assets",
+      "question": "本文の数値・計算・定義は一次資料と整合するか",
+      "definition": "Q3単独の契約資産変動。振替は入金ではなく売掛金化。全ての期中請求額や延滞額を示す表ではない。",
+      "status": "ready",
+      "claim": "計算は428.298−33.539＋463.887＝858.646となる。",
+      "requiredInputs": [
+        {
+          "id": "ca-start",
+          "entity": "Bloom Energy連結",
+          "metric": "契約資産期首残高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "契約資産期首残高"
+        },
+        {
+          "id": "ca-transfer",
+          "entity": "Bloom Energy連結",
+          "metric": "期首契約資産から売掛金への振替・減少を負数表示",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期首契約資産から売掛金への振替・減少を負数表示"
+        },
+        {
+          "id": "ca-new",
+          "entity": "Bloom Energy連結",
+          "metric": "当期売上認識し期末未請求の追加",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当期売上認識し期末未請求の追加"
+        },
+        {
+          "id": "ca-end",
+          "entity": "Bloom Energy連結",
+          "metric": "契約資産期末残高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "契約資産期末残高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ca-start",
+          "entity": "Bloom Energy連結",
+          "metric": "契約資産期首残高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "契約資産期首残高",
+          "value": 428.298,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066931/be-20260930.htm",
+            "publishedOn": "2026-10-22",
+            "locator": "Note 3 Contract Assets; three months ended September 30, 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ca-transfer",
+          "entity": "Bloom Energy連結",
+          "metric": "期首契約資産から売掛金への振替・減少を負数表示",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期首契約資産から売掛金への振替・減少を負数表示",
+          "value": -33.539,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066931/be-20260930.htm",
+            "publishedOn": "2026-10-22",
+            "locator": "Note 3 Contract Assets; Transferred to accounts receivable from beginning balance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ca-new",
+          "entity": "Bloom Energy連結",
+          "metric": "当期売上認識し期末未請求の追加",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当期売上認識し期末未請求の追加",
+          "value": 463.887,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066931/be-20260930.htm",
+            "publishedOn": "2026-10-22",
+            "locator": "Note 3 Contract Assets; Revenue recognized during period but not billed",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ca-end",
+          "entity": "Bloom Energy連結",
+          "metric": "契約資産期末残高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "契約資産期末残高",
+          "value": 858.646,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1664703/000162828026066931/be-20260930.htm",
+            "publishedOn": "2026-10-22",
+            "locator": "Note 3 Contract Assets; End of period",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "ca-rollforward",
+          "operation": "sum",
+          "inputs": [
+            "ca-start",
+            "ca-transfer",
+            "ca-new"
+          ],
+          "definition": "同一期間・同一単位の数値で計算。",
+          "precision": 3,
+          "value": 858.646
+        }
+      ]
+    },
+    {
+      "id": "working-capital",
+      "question": "本文の数値・計算・定義は一次資料と整合するか",
+      "definition": "営業CFを左右した主要項目のみ。全CFブリッジではない。本文は増加額を正数、台帳はCF符号で表示。",
+      "status": "ready",
+      "claim": "同じ決算の営業CF表では、契約資産の増加が430.348百万ドル、売掛金の増加が175.235百万ドル、在庫の増加が170.401百万ドル、それぞれ現金を減らす方向に働いた。一方、繰延売上・顧客前受金の増加は309.333百万ドル、買掛金の増加は184.664百万ドル、未払費用等の増加は158.758百万ドル、現金を支える方向に働いている。",
+      "requiredInputs": [
+        {
+          "id": "wc-ca",
+          "entity": "Bloom Energy連結",
+          "metric": "Contract assets",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Contract assets"
+        },
+        {
+          "id": "wc-ar",
+          "entity": "Bloom Energy連結",
+          "metric": "Accounts receivable",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Accounts receivable"
+        },
+        {
+          "id": "wc-inventory",
+          "entity": "Bloom Energy連結",
+          "metric": "Inventories",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Inventories"
+        },
+        {
+          "id": "wc-advance",
+          "entity": "Bloom Energy連結",
+          "metric": "Deferred revenue and customer deposits",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Deferred revenue and customer deposits"
+        },
+        {
+          "id": "wc-ap",
+          "entity": "Bloom Energy連結",
+          "metric": "Accounts payable",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Accounts payable"
+        },
+        {
+          "id": "wc-accrual",
+          "entity": "Bloom Energy連結",
+          "metric": "Accrued expenses and other current liabilities",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Accrued expenses and other current liabilities"
+        }
+      ],
+      "observations": [
+        {
+          "id": "wc-ca",
+          "entity": "Bloom Energy連結",
+          "metric": "Contract assets",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Contract assets",
+          "value": -430.348,
+          "source": {
+            "url": "https://www.bloomenergy.com/news/bloom-energy-reports-record-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance/",
+            "publishedOn": "2026-10-22",
+            "locator": "Statements of Cash Flows; Q3 2026; cash-flow sign, 千ドル÷1000",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "wc-ar",
+          "entity": "Bloom Energy連結",
+          "metric": "Accounts receivable",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Accounts receivable",
+          "value": -175.235,
+          "source": {
+            "url": "https://www.bloomenergy.com/news/bloom-energy-reports-record-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance/",
+            "publishedOn": "2026-10-22",
+            "locator": "Statements of Cash Flows; Q3 2026; cash-flow sign, 千ドル÷1000",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "wc-inventory",
+          "entity": "Bloom Energy連結",
+          "metric": "Inventories",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Inventories",
+          "value": -170.401,
+          "source": {
+            "url": "https://www.bloomenergy.com/news/bloom-energy-reports-record-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance/",
+            "publishedOn": "2026-10-22",
+            "locator": "Statements of Cash Flows; Q3 2026; cash-flow sign, 千ドル÷1000",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "wc-advance",
+          "entity": "Bloom Energy連結",
+          "metric": "Deferred revenue and customer deposits",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Deferred revenue and customer deposits",
+          "value": 309.333,
+          "source": {
+            "url": "https://www.bloomenergy.com/news/bloom-energy-reports-record-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance/",
+            "publishedOn": "2026-10-22",
+            "locator": "Statements of Cash Flows; Q3 2026; cash-flow sign, 千ドル÷1000",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "wc-ap",
+          "entity": "Bloom Energy連結",
+          "metric": "Accounts payable",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Accounts payable",
+          "value": 184.664,
+          "source": {
+            "url": "https://www.bloomenergy.com/news/bloom-energy-reports-record-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance/",
+            "publishedOn": "2026-10-22",
+            "locator": "Statements of Cash Flows; Q3 2026; cash-flow sign, 千ドル÷1000",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "wc-accrual",
+          "entity": "Bloom Energy連結",
+          "metric": "Accrued expenses and other current liabilities",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Accrued expenses and other current liabilities",
+          "value": 158.758,
+          "source": {
+            "url": "https://www.bloomenergy.com/news/bloom-energy-reports-record-third-quarter-2026-financial-results-and-raises-full-year-2026-guidance/",
+            "publishedOn": "2026-10-22",
+            "locator": "Statements of Cash Flows; Q3 2026; cash-flow sign, 千ドル÷1000",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ],
+  "articleSha256": "b45c5f742692a41b908753f1609ff4ff7f722f8dc08fcb49824a49b8a5805bf5"
+}
