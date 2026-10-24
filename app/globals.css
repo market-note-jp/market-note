@@ -81,7 +81,7 @@ svg { flex-shrink: 0; }
 .upcoming-list h4 { margin: 5px 0 0; font-size: 14px; font-weight: 550; line-height: 1.65; }
 .upcoming-list svg { margin-top: 6px; color: var(--muted); }
 .event-type { font-size: 11px; font-weight: 550; color: var(--accent); }
-.event-type-休場 { color: #8b5264; }
+.event-type-休場, .event-type-短縮取引 { color: #8b5264; }
 .event-type-決算 { color: #956129; }
 .calendar-all-link { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 17px 0; color: var(--accent); font-size: 14px; font-weight: 650; }
 .companies-section { padding: 56px 0 62px; background: var(--surface); border-block: 1px solid var(--line); }
@@ -164,7 +164,7 @@ svg { flex-shrink: 0; }
 .dot { width: 4px; height: 4px; border-radius: 50%; background: var(--accent); }
 .dot-決算 { background: #8f5f22; }
 .dot-金融政策 { background: #3c5878; }
-.dot-休場 { background: #885a64; }
+.dot-休場, .dot-短縮取引 { background: #885a64; }
 .event-panel { min-width: 0; padding: 28px 0 28px 30px; border-left: 1px solid var(--line); }
 .event-panel-heading { display: flex; align-items: start; justify-content: space-between; gap: 16px; margin-bottom: 22px; }
 .event-list { border-top: 1px solid var(--line); }
@@ -176,7 +176,7 @@ svg { flex-shrink: 0; }
 .calendar-badge { display: inline-flex; align-items: center; min-height: 23px; padding: 0 7px; background: var(--accent-soft); color: var(--accent); font-weight: 600; }
 .calendar-badge-決算 { background: #f4ecdf; color: #8f5f22; }
 .calendar-badge-金融政策 { background: #e9eef4; color: #3c5878; }
-.calendar-badge-休場 { background: #f4ecee; color: #885a64; }
+.calendar-badge-休場, .calendar-badge-短縮取引 { background: #f4ecee; color: #885a64; }
 .event-copy h3 { margin-bottom: 10px; font-size: 19px; font-weight: 600; line-height: 1.65; }
 .event-copy > p { margin-bottom: 12px; color: var(--muted); font-size: 14px; line-height: 1.85; }
 .event-meta { display: flex; flex-wrap: wrap; gap: 6px 12px; font-size: 12px !important; font-variant-numeric: tabular-nums; }

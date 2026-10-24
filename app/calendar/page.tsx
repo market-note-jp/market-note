@@ -15,8 +15,8 @@ export default function CalendarPage() {
         <Link className="calendar-breadcrumb" href="/">ホーム /</Link>
         <p className="kicker">MARKET CALENDAR</p>
         <h1>市場カレンダー</h1>
-        <p>主要企業の決算、日米の経済指標・金融政策・休場日。</p>
-        <p className="calendar-review-note">予定更新日：{marketCalendarReviewedAt}。時刻は日本時間、休場日は現地市場の取引日基準。公表予定は変更される場合があります。</p>
+        <p>主要企業の決算、日米の経済指標・金融政策・休場日・短縮取引。主な予定を選抜して掲載しています。</p>
+        <p className="calendar-review-note">予定更新日：{marketCalendarReviewedAt}。時刻は日本時間、休場日・短縮取引の日付は現地市場の取引日基準。米国は11月1日に夏時間終了。発表と説明会は区別し、未公表時刻は未定としています。公表予定は変更される場合があります。</p>
       </section>
 
       <section className="calendar-section" aria-labelledby="calendar-title">
