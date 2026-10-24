@@ -43,7 +43,8 @@ test('native page is readable without another sign-in and preserves shared navig
   assert.ok(html.includes('62,582.22'));
   assert.ok(html.includes('62,693.16'));
   assert.ok(html.includes('2026-10-23'));
-  assert.ok(html.includes('自動更新は未接続'));
+  assert.ok(html.includes('最新履歴を確認中'));
+  assert.ok(html.includes('独自指数の蓄積履歴'));
   assert.ok(html.includes('独自指数の履歴をCSV出力'));
   assert.ok(html.includes('均等加重ラボ・CSV計算'));
   assert.ok(html.includes(data.source.validation.url.replaceAll('&', '&amp;')));

@@ -21,7 +21,7 @@
     "returnPct": "change/(close-change)*100",
     "equalWeightDailyReturnPct": "arithmetic mean of 225 daily returns; all constituents equal at start of day",
     "dividendsIncluded": false,
-    "historyAvailable": "Only one daily return observation; no multi-day equal-weight history or 25-day moving average computed."
+    "historyAvailable": "1 daily return observation accumulated since 2026-10-22; no backfilled or simulated observations."
   },
   "validation": {
     "count": 225,
@@ -239,5 +239,94 @@
       }
     ],
     "weightDate": "2026-10-23"
+  },
+  "schemaVersion": 1,
+  "level": 62582.2179035782,
+  "pointChange": -325.6220964217937,
+  "history": [
+    {
+      "date": "2026-10-22",
+      "ew": 100,
+      "median": null,
+      "advanceRatio": null,
+      "aboveMA25": null,
+      "advancers": null,
+      "decliners": null,
+      "unchanged": null,
+      "count": 225,
+      "maEligible": 0,
+      "return": null
+    },
+    {
+      "date": "2026-10-23",
+      "ew": 99.48238232878161,
+      "median": -0.004507042253521127,
+      "advanceRatio": 36,
+      "aboveMA25": null,
+      "advancers": 81,
+      "decliners": 144,
+      "unchanged": 0,
+      "count": 225,
+      "maEligible": 0,
+      "return": -0.005176176712183956
+    }
+  ],
+  "calendar": {
+    "years": [
+      2026,
+      2027
+    ],
+    "closedDates": [
+      "2026-01-01",
+      "2026-01-02",
+      "2026-01-03",
+      "2026-01-12",
+      "2026-02-11",
+      "2026-02-23",
+      "2026-03-20",
+      "2026-04-29",
+      "2026-05-03",
+      "2026-05-04",
+      "2026-05-05",
+      "2026-05-06",
+      "2026-07-20",
+      "2026-08-11",
+      "2026-09-21",
+      "2026-09-22",
+      "2026-09-23",
+      "2026-10-12",
+      "2026-11-03",
+      "2026-11-23",
+      "2026-12-31",
+      "2027-01-01",
+      "2027-01-02",
+      "2027-01-03",
+      "2027-01-11",
+      "2027-02-11",
+      "2027-02-23",
+      "2027-03-21",
+      "2027-03-22",
+      "2027-04-29",
+      "2027-05-03",
+      "2027-05-04",
+      "2027-05-05",
+      "2027-07-19",
+      "2027-08-11",
+      "2027-09-20",
+      "2027-09-23",
+      "2027-10-11",
+      "2027-11-03",
+      "2027-11-23",
+      "2027-12-31"
+    ],
+    "source": "https://www8.cao.go.jp/chosei/shukujitsu/syukujitsu.csv"
+  },
+  "inputSHA256": "b51320fe4ff1eef90c388873c8e3c01d2afb8eedfe05fd6212fcca5a8feeea95",
+  "constituentsSHA256": "5e586415a809736f2dd5edf1ab738f927f458301919fd720d9d9a84d751723b6",
+  "updatedAt": "2026-10-24T16:07:06.593770+09:00",
+  "automation": {
+    "timezone": "Asia/Tokyo",
+    "window": "取引終了後の平日夕方",
+    "dataBranch": "market-breadth-data"
   }
 }
