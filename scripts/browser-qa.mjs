@@ -4,6 +4,13 @@ import { readFile, stat, mkdir, writeFile } from "node:fs/promises";
 import { resolve, extname, sep } from "node:path";
 import { chromium } from "playwright";
 import AxeBuilder from "@axe-core/playwright";
+import ts from "typescript";
+
+const calendarModule = { exports: {} };
+const calendarSource = await readFile("app/market-calendar-data.ts", "utf8");
+const calendarCode = ts.transpileModule(calendarSource, { compilerOptions: { module: ts.ModuleKind.CommonJS } }).outputText;
+new Function("module", "exports", calendarCode)(calendarModule, calendarModule.exports);
+const calendarEvents = calendarModule.exports.marketCalendarEvents;
 
 const out = resolve("out");
 const artifacts = resolve("artifacts/browser-qa");
@@ -97,10 +104,30 @@ try {
   report.interactions.push("Legacy report table focus and keyboard horizontal scrolling");
   await page.clock.setFixedTime(new Date("2026-12-01T10:00:00Z"));
   await page.goto(base, { waitUntil: "networkidle" });
-  assert.match(await page.locator(".schedule-empty").textContent(), /登録済みの今後の予定はありません/);
+  const decemberUpcoming = calendarEvents.filter(e => e.date >= "2026-12-01").sort((a, b) => (a.date + " " + a.time).localeCompare(b.date + " " + b.time)).slice(0, 4);
+  assert.ok(decemberUpcoming.length > 0, "December additions must be present");
+  assert.deepEqual(await page.locator(".upcoming-list h4").allTextContents(), decemberUpcoming.map(e => e.title));
   await page.goto(base + routes.calendar, { waitUntil: "networkidle" });
   assert.equal(await page.locator(".month-heading h2").textContent(), "2026年12月");
-  report.interactions.push("Mobile menu open, Escape, focus restoration, navigation and body unlock", "Archive kind/year/month filters and pagination", "October upcoming dates and December empty state", "Article TOC, 17px body text and reduced-motion setting");
+  for (const month of ["2026-10", "2026-11", "2026-12"]) {
+    await page.getByRole("button", { name: "2026年" + Number(month.slice(5)) + "月", exact: true }).click();
+    const expected = calendarEvents.filter(e => e.date.startsWith(month)).sort((a, b) => (a.date + " " + a.time).localeCompare(b.date + " " + b.time, "ja"));
+    assert.deepEqual(await page.locator(".event-row h3").allTextContents(), expected.map(e => e.title));
+    assert.deepEqual(await page.locator(".event-row .source-link").evaluateAll(elements => elements.map(e => e.getAttribute("href"))), expected.map(e => e.sourceUrl));
+    assert.deepEqual(await page.locator(".event-row .event-date > span").allTextContents(), expected.map(e => ["日", "月", "火", "水", "木", "金", "土"][new Date(e.date + "T00:00:00Z").getUTCDay()]));
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, month + " mobile overflow");
+    await page.screenshot({ path: artifacts + "/calendar-updated-" + month + "-390.png", fullPage: true });
+  }
+  await page.getByRole("button", { name: "2026年11月", exact: true }).click();
+  await page.getByLabel(/^分類/).selectOption("短縮取引");
+  assert.equal(await page.locator(".event-row").count(), 1);
+  assert.match(await page.locator(".event-row").textContent(), /日本時間11月28日03:00/);
+  const afterLast = new Date(calendarEvents.map(e => e.date).sort().at(-1) + "T12:00:00+09:00");
+  afterLast.setUTCDate(afterLast.getUTCDate() + 1);
+  await page.clock.setFixedTime(afterLast);
+  await page.goto(base, { waitUntil: "networkidle" });
+  assert.match(await page.locator(".schedule-empty").textContent(), /登録済みの今後の予定はありません/);
+  report.interactions.push("Mobile menu open, Escape, focus restoration, navigation and body unlock", "Archive kind/year/month filters and pagination", "October and December upcoming dates, all updated calendar rows, weekdays, source links, short trading and empty state after the last event", "Article TOC, 17px body text and reduced-motion setting");
   assert.deepEqual(report.errors, [], "Browser runtime errors");
   const serious = report.accessibility.flatMap(check => check.violations.filter(v => ["serious", "critical"].includes(v.impact)).map(v => ({ ...v, width: check.width, route: check.route })));
   assert.deepEqual(serious, [], "Serious accessibility violations; inspect the JSON artifact");

@@ -11,7 +11,7 @@ type MonthKey = `${number}-${string}`;
 type CategoryFilter = "すべて" | CalendarEventCategory;
 type RegionFilter = "すべて" | CalendarEventRegion;
 
-const categoryFilters: CategoryFilter[] = ["すべて", "経済指標", "決算", "金融政策", "休場"];
+const categoryFilters: CategoryFilter[] = ["すべて", "経済指標", "決算", "金融政策", "休場", "短縮取引"];
 const regionFilters: RegionFilter[] = ["すべて", "日本", "米国"];
 const weekdays = ["月", "火", "水", "木", "金", "土", "日"];
 
