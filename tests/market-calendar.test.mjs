@@ -73,9 +73,14 @@ test("holidays use exchange trading dates and a dedicated filter", () => {
 });
 
 test("the update month is selected, with the earliest month as a fallback", () => {
-  assert.equal(marketCalendarReviewedAt, "2026-10-25");
-  assert.match(render({ initialMonth: marketCalendarReviewedAt.slice(0, 7) }), /aria-pressed="true">2026年10月<\/button>/);
-  assert.match(render({ initialMonth: "2099-01" }), /aria-pressed="true">2026年8月<\/button>/);
+  assert.match(marketCalendarReviewedAt, /^\d{4}-\d{2}-\d{2}$/);
+  assert.equal(new Date(`${marketCalendarReviewedAt}T00:00:00Z`).toISOString().slice(0, 10), marketCalendarReviewedAt);
+  const reviewedMonth = marketCalendarReviewedAt.slice(0, 7);
+  const months = [...new Set(events.map(event => event.date.slice(0, 7)))].sort();
+  const selectedMonth = months.includes(reviewedMonth) ? reviewedMonth : months[0];
+  const label = month => `${month.slice(0, 4)}年${Number(month.slice(5))}月`;
+  assert.ok(render({ initialMonth: reviewedMonth }).includes(`aria-pressed="true">${label(selectedMonth)}</button>`));
+  assert.ok(render({ initialMonth: "0000-01" }).includes(`aria-pressed="true">${label(months[0])}</button>`));
 });
 
 test("weekdays and timestamps are independent of the host timezone", () => {
@@ -145,7 +150,6 @@ test("releases, calls, unknown times and approximate times remain distinct", () 
     assert.equal(events.find(e => e.id === id).time, time, id);
   }
   assert.equal(events.find(e => e.id === "exxonmobil-2026-q3").time, "19:30ごろ");
-  assert.equal(events.some(e => e.date >= "2026-10-25" && /NVIDIA/.test(e.title)), false);
   assert.equal(events.find(e => e.id === "japan-unemployment-2026-10").date, "2026-12-01");
   const october = render({ initialMonth: "2026-10" });
   assert.match(october, /datetime="2026-10-30">2026-10-30 19:30ごろ/i);

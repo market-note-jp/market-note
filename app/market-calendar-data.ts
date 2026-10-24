@@ -1026,7 +1026,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     region: "米国",
     importance: "高",
     summary: "説明会開始時刻。決算発表は現地10月29日予定で、正確な資料公開時刻は未公表。",
-    sourceName: "Eli 公式IR・決算案内",
+    sourceName: "Eli Lilly 公式IR・決算案内",
     sourceUrl: "https://investor.lilly.com/node/55096/pdf",
     sourceTime: "10月29日 10:00 EDT（UTC-4）（2026-10-25確認）",
   },
