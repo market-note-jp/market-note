@@ -30,7 +30,10 @@ test("upcoming schedules never show past September events as October upcoming", 
   assert.ok(html.includes("予定データ更新："));
 });
 test("expired schedules use a truthful empty state", () => {
-  const html = render("2026-12-01");
+  const { marketCalendarEvents } = load(resolve("app/market-calendar-data.ts"));
+  const afterLast = new Date(marketCalendarEvents.map(event => event.date).sort().at(-1) + "T00:00:00Z");
+  afterLast.setUTCDate(afterLast.getUTCDate() + 1);
+  const html = render(afterLast.toISOString().slice(0, 10));
   assert.ok(html.includes("登録済みの今後の予定はありません"));
   assert.ok(!html.includes("upcoming-list"));
 });
