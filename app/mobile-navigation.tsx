@@ -10,6 +10,7 @@ const links = [
   ["/#companies", "企業レポート", "COMPANIES"],
   ["/company-analysis", "財務分析", "KANALYZER"],
   ["/airi", "AIRI・AI株指標", "AI RESEARCH INDEX"],
+  ["/market-breadth", "MN225・日本株指標", "JAPAN EQUAL WEIGHT INDEX"],
   ["/calendar", "市場カレンダー", "CALENDAR"],
   ["/#policy", "Market Noteについて", "ABOUT US"],
 ];

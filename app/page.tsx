@@ -6,6 +6,7 @@ import UpcomingEvents from "./upcoming-events";
 import SectorGraphic from "./components/sector-graphic";
 import { getDailyArticleMetadata } from "../lib/article-content";
 import { withEditorialTitle } from "../lib/article-metadata";
+import BreadthHomeCard from "./market-breadth/home-card";
 
 const legacyArticles = [
 {
@@ -953,6 +954,8 @@ export default function Home() {
         <span><span className="edition-label">LATEST UPDATE</span><time dateTime={latest.dateTime}>{latest.date}</time> JST</span>
         <span>日本株 / 米国株 / 企業分析</span>
       </div></div>
+
+      <BreadthHomeCard />
 
       <section className="latest-section content-width" id="latest" aria-labelledby="latest-title">
         <div className="section-title-row"><div><p className="kicker">LATEST INSIGHTS</p><h2 id="latest-title">最新レポート</h2></div><a className="text-link" href="#articles">一覧へ <ArrowRight size={18} aria-hidden="true" /></a></div>
