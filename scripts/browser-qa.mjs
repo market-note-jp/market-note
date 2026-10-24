@@ -119,7 +119,7 @@ try {
     await page.screenshot({ path: artifacts + "/calendar-updated-" + month + "-390.png", fullPage: true });
   }
   await page.getByRole("button", { name: "2026年11月", exact: true }).click();
-  await page.getByLabel("分類", { exact: true }).selectOption("短縮取引");
+  await page.getByLabel(/^分類/).selectOption("短縮取引");
   assert.equal(await page.locator(".event-row").count(), 1);
   assert.match(await page.locator(".event-row").textContent(), /日本時間11月28日03:00/);
   const afterLast = new Date(calendarEvents.map(e => e.date).sort().at(-1) + "T12:00:00+09:00");
