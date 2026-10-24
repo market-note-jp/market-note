@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "articleSlug": "theme-solidigm-ipo-investment-2026-10-24",
+  "articleSha256": "6545887235ce669a706c84e566b5abedf173ab9a9e59c2734ae6b9b1669cf926",
+  "checkedAt": "2026-10-24T11:04:57.413Z",
+  "informationCutoff": "2026-10-24T19:50:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "一次資料本文・期間・単位・定義を作者と別担当で確認。原稿の重要数値比較は以下に収録。説明用の架空数値・記号による感応度は実績観測と混同せず、本文で仮定と式を明記し算術を別確認。第三者による全稿レビューの完了は別の公開前ゲートで確認する。",
+  "comparisons": [
+    {
+      "id": "capital-return-policy",
+      "question": "既発表の還元方針はSolidigm投資とどのように両立するか",
+      "definition": "決議額と実行額を区別し、50%超は下限閾値として記録する。",
+      "status": "ready",
+      "claim": "会社は8月19日、40兆ウォンの自社株取得・消却を決議し、2025〜2027年累計FCFに対する還元目標を50%超へ拡大する方針を示した。",
+      "requiredInputs": [
+        {
+          "id": "buyback",
+          "entity": "SK hynix",
+          "metric": "決議した自己株取得・消却上限金額",
+          "periodStart": "2026-08-19",
+          "periodEnd": "2026-08-19",
+          "unit": "KRW trillion",
+          "basis": "company-forecast",
+          "definition": "決議した自己株取得・消却上限金額"
+        },
+        {
+          "id": "return",
+          "entity": "SK hynix",
+          "metric": "累計FCF還元目標が超えるとされた閾値（目標は50%超で50%丁度ではない）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "累計FCF還元目標が超えるとされた閾値（目標は50%超で50%丁度ではない）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "buyback",
+          "entity": "SK hynix",
+          "metric": "決議した自己株取得・消却上限金額",
+          "periodStart": "2026-08-19",
+          "periodEnd": "2026-08-19",
+          "unit": "KRW trillion",
+          "basis": "company-forecast",
+          "definition": "決議した自己株取得・消却上限金額",
+          "value": 40,
+          "source": {
+            "url": "https://news.skhynix.com/en/share-buyback-and-retirement/",
+            "publishedOn": "2026-08-19",
+            "locator": "PRESS本文 冒頭の取締役会決議および2025–2027累計FCF還元方針",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "return",
+          "entity": "SK hynix",
+          "metric": "累計FCF還元目標が超えるとされた閾値（目標は50%超で50%丁度ではない）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "累計FCF還元目標が超えるとされた閾値（目標は50%超で50%丁度ではない）",
+          "value": 50,
+          "source": {
+            "url": "https://news.skhynix.com/en/share-buyback-and-retirement/",
+            "publishedOn": "2026-08-19",
+            "locator": "PRESS本文 冒頭の取締役会決議および2025–2027累計FCF還元方針",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}

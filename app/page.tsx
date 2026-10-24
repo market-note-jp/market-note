@@ -10,6 +10,51 @@ import BreadthHomeCard from "./market-breadth/home-card";
 
 const legacyArticles = [
 {
+  "kind": "企業レポート",
+  "theme": "企業分析",
+  "date": "2026-10-24 20:04",
+  "dateTime": "2026-10-24T20:04:57+09:00",
+  "title": "オービックは、なぜ営業利益率65%超を保てるのか。継続収入と「本業以外の利益」を分けて読む",
+  "excerpt": "オービックの継続サービスと高利益率を、長期業績、本業以外の利益、現金創出と資本配分から検証する。",
+  "href": "/articles/company-obic-2026-10-24"
+},
+{
+  "kind": "企業レポート",
+  "theme": "企業分析",
+  "date": "2026-10-24 20:04",
+  "dateTime": "2026-10-24T20:04:57+09:00",
+  "title": "理研計器：安全を守る機器の成長は、海外サービスの利益に変わるか",
+  "excerpt": "理研計器のガス検知器と保守の仕組みを、長期財務、半導体向け需要、在庫・現金・成長投資から読む。",
+  "href": "/articles/company-riken-keiki-2026-10-24"
+},
+{
+  "kind": "企業レポート",
+  "theme": "企業分析",
+  "date": "2026-10-24 20:04",
+  "dateTime": "2026-10-24T20:04:57+09:00",
+  "title": "Church & Dwight――日用品の現金創出力を、買収の成功と同一視しない",
+  "excerpt": "Church & Dwightの日用品ブランドと買収戦略を、5年の業績・現金収支とGAAP・調整利益の差から検証する。",
+  "href": "/articles/company-church-dwight-2026-10-24"
+},
+{
+  "kind": "テーマ解説",
+  "theme": "市場テーマ",
+  "date": "2026-10-24 20:04",
+  "dateTime": "2026-10-24T20:04:57+09:00",
+  "title": "SolidigmのIPO検討中止は、設備投資の撤回を意味するのか",
+  "excerpt": "SolidigmのIPO検討中止を、投資の必要性、資金調達、親会社負担、既存株主の取り分に分けて考える。",
+  "href": "/articles/theme-solidigm-ipo-investment-2026-10-24"
+},
+{
+  "kind": "テーマ解説",
+  "theme": "市場テーマ",
+  "date": "2026-10-24 20:04",
+  "dateTime": "2026-10-24T20:04:57+09:00",
+  "title": "9月CPIの再加速は、エネルギーだけで説明できるのか",
+  "excerpt": "9月CPIの再加速を、同一基準の3系列と品目別寄与度から検証。前年比と月次、政策支援と持続的物価を区別する。",
+  "href": "/articles/theme-cpi-energy-2026-10-24"
+},
+{
   "kind": "週次レポート",
   "theme": "日米株・金融政策",
   "date": "2026-10-24 08:00",

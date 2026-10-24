@@ -1,0 +1,2591 @@
+{
+  "version": 1,
+  "articleSlug": "company-riken-keiki-2026-10-24",
+  "articleSha256": "c53729da56f36f15a4f2e76b3a425c6d1b624da945f14f5fe1a05bfe0c7b827a",
+  "checkedAt": "2026-10-24T11:04:57.409Z",
+  "informationCutoff": "2026-10-24T19:50:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "一次資料本文・期間・単位・定義を作者と別担当で確認。原稿の重要数値比較は以下に収録。説明用の架空数値・記号による感応度は実績観測と混同せず、本文で仮定と式を明記し算術を別確認。第三者による全稿レビューの完了は別の公開前ゲートで確認する。",
+  "comparisons": [
+    {
+      "id": "year-2020",
+      "question": "year-2020",
+      "definition": "期間・連結範囲・単位・実績と計画の区別を確認。",
+      "status": "ready",
+      "claim": "| 2020 | 321.89 | 61.97 | 19.3% | 43.42 | 51.80 |",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "理研計器 日本基準連結",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業活動によるキャッシュフロー",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュフロー"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 321.89,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 売上高",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 61.97,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 営業利益",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "理研計器 日本基準連結",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益",
+          "value": 43.42,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 親会社株主帰属純利益",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業活動によるキャッシュフロー",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュフロー",
+          "value": 51.8,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 営業活動によるキャッシュフロー",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op",
+            "s"
+          ],
+          "value": 19.3,
+          "precision": 1,
+          "definition": "開示値から計算"
+        }
+      ]
+    },
+    {
+      "id": "year-2021",
+      "question": "year-2021",
+      "definition": "期間・連結範囲・単位・実績と計画の区別を確認。",
+      "status": "ready",
+      "claim": "| 2021 | 322.09 | 65.98 | 20.5% | 46.91 | 40.89 |",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "理研計器 日本基準連結",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業活動によるキャッシュフロー",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュフロー"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 322.09,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 売上高",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 65.98,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 営業利益",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "理研計器 日本基準連結",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益",
+          "value": 46.91,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 親会社株主帰属純利益",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業活動によるキャッシュフロー",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュフロー",
+          "value": 40.89,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 営業活動によるキャッシュフロー",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op",
+            "s"
+          ],
+          "value": 20.5,
+          "precision": 1,
+          "definition": "開示値から計算"
+        }
+      ]
+    },
+    {
+      "id": "year-2022",
+      "question": "year-2022",
+      "definition": "期間・連結範囲・単位・実績と計画の区別を確認。",
+      "status": "ready",
+      "claim": "| 2022 | 373.63 | 84.02 | 22.5% | 59.63 | 92.52 |",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "理研計器 日本基準連結",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業活動によるキャッシュフロー",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュフロー"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 373.63,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 売上高",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 84.02,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 営業利益",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "理研計器 日本基準連結",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益",
+          "value": 59.63,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 親会社株主帰属純利益",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業活動によるキャッシュフロー",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュフロー",
+          "value": 92.52,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 営業活動によるキャッシュフロー",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op",
+            "s"
+          ],
+          "value": 22.5,
+          "precision": 1,
+          "definition": "開示値から計算"
+        }
+      ]
+    },
+    {
+      "id": "year-2023",
+      "question": "year-2023",
+      "definition": "期間・連結範囲・単位・実績と計画の区別を確認。",
+      "status": "ready",
+      "claim": "| 2023 | 450.04 | 115.51 | 25.7% | 86.70 | 51.89 |",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "理研計器 日本基準連結",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業活動によるキャッシュフロー",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュフロー"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 450.04,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 売上高",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 115.51,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 営業利益",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "理研計器 日本基準連結",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益",
+          "value": 86.7,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 親会社株主帰属純利益",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業活動によるキャッシュフロー",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュフロー",
+          "value": 51.89,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 営業活動によるキャッシュフロー",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op",
+            "s"
+          ],
+          "value": 25.7,
+          "precision": 1,
+          "definition": "開示値から計算"
+        }
+      ]
+    },
+    {
+      "id": "year-2024",
+      "question": "year-2024",
+      "definition": "期間・連結範囲・単位・実績と計画の区別を確認。",
+      "status": "ready",
+      "claim": "| 2024 | 455.81 | 114.76 | 25.2% | 83.78 | 26.13 |",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "理研計器 日本基準連結",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業活動によるキャッシュフロー",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュフロー"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 455.81,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 売上高",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 114.76,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 営業利益",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "理研計器 日本基準連結",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益",
+          "value": 83.78,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 親会社株主帰属純利益",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業活動によるキャッシュフロー",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュフロー",
+          "value": 26.13,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 営業活動によるキャッシュフロー",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op",
+            "s"
+          ],
+          "value": 25.2,
+          "precision": 1,
+          "definition": "開示値から計算"
+        }
+      ]
+    },
+    {
+      "id": "year-2025",
+      "question": "year-2025",
+      "definition": "期間・連結範囲・単位・実績と計画の区別を確認。",
+      "status": "ready",
+      "claim": "| 2025 | 490.38 | 106.42 | 21.7% | 80.07 | 62.95 |",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "理研計器 日本基準連結",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業活動によるキャッシュフロー",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュフロー"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 490.38,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 売上高",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 106.42,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 営業利益",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "理研計器 日本基準連結",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益",
+          "value": 80.07,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 親会社株主帰属純利益",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業活動によるキャッシュフロー",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュフロー",
+          "value": 62.95,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 営業活動によるキャッシュフロー",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op",
+            "s"
+          ],
+          "value": 21.7,
+          "precision": 1,
+          "definition": "開示値から計算"
+        }
+      ]
+    },
+    {
+      "id": "year-2026",
+      "question": "year-2026",
+      "definition": "期間・連結範囲・単位・実績と計画の区別を確認。",
+      "status": "ready",
+      "claim": "| 2026 | 552.12 | 124.25 | 22.5% | 99.57 | 111.26 |",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "理研計器 日本基準連結",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業活動によるキャッシュフロー",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュフロー"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 552.12,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 売上高",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 124.25,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 営業利益",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "理研計器 日本基準連結",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益",
+          "value": 99.57,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 親会社株主帰属純利益",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業活動によるキャッシュフロー",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュフロー",
+          "value": 111.26,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 営業活動によるキャッシュフロー",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op",
+            "s"
+          ],
+          "value": 22.5,
+          "precision": 1,
+          "definition": "開示値から計算"
+        }
+      ]
+    },
+    {
+      "id": "five-year-cagr",
+      "question": "five-year-cagr",
+      "definition": "CAGR=(552.12/322.09)^(1/5)-1=11.3810%。演算仕様に指数演算なし。原値を保持し別途Python算術で検証。",
+      "status": "ready",
+      "claim": "2021年3月期から2026年3月期の売上高は年率約11.4%で増えた。一方、2025年3月期には増収でも営業減益だった。営業CFも利益ほど滑らかではない。これは「売上成長だけで利益・現金まで予測できる会社ではない」ことを示している。",
+      "requiredInputs": [
+        {
+          "id": "a",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "b",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "a",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 322.09,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 売上高",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "b",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 552.12,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 売上高",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "maintenance-scope",
+      "question": "maintenance-scope",
+      "definition": "期間・連結範囲・単位・実績と計画の区別を確認。",
+      "status": "ready",
+      "claim": "ただし、継続需要と契約上の定額収入は同じではない。2027年3月期第1四半期のメンテナンス売上比率40.6%は、会社が示した**単体**の構成比であって、連結売上の40.6%がサブスクリプション収入という意味ではない。[第1四半期説明資料、12ページ][S3]",
+      "requiredInputs": [
+        {
+          "id": "m",
+          "entity": "理研計器 単体",
+          "metric": "単体メンテナンス売上構成比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "単体メンテナンス売上構成比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "m",
+          "entity": "理研計器 単体",
+          "metric": "単体メンテナンス売上構成比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "単体メンテナンス売上構成比",
+          "value": 40.6,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/e8djpV6D/27%E5%B9%B43%E6%9C%88%E6%9C%9F_%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E8%AA%AC%E6%98%8E%E8%B3%87%E6%96%99.pdf",
+            "publishedOn": "2026-08-10",
+            "locator": "PDF 12ページ / 単体メンテナンス売上構成比",
+            "pdfPage": 12,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q1-results",
+      "question": "q1-results",
+      "definition": "期間・連結範囲・単位・実績と計画の区別を確認。",
+      "status": "ready",
+      "claim": "2027年3月期第1四半期の売上高は152.03億円、前年同期比12.2%増。営業利益は30.83億円、3.2%増で、営業利益率は20.3%だった。会社は人件費上昇や新製品の販売価格政策などを説明している。",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "sp",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "opp",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 152.03,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/e8djpV6D/27%E5%B9%B43%E6%9C%88%E6%9C%9F_%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E8%AA%AC%E6%98%8E%E8%B3%87%E6%96%99.pdf",
+            "publishedOn": "2026-08-10",
+            "locator": "PDF 6ページ / 売上高",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sp",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 135.54,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/e8djpV6D/27%E5%B9%B43%E6%9C%88%E6%9C%9F_%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E8%AA%AC%E6%98%8E%E8%B3%87%E6%96%99.pdf",
+            "publishedOn": "2026-08-10",
+            "locator": "PDF 6ページ / 売上高",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 30.83,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/e8djpV6D/27%E5%B9%B43%E6%9C%88%E6%9C%9F_%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E8%AA%AC%E6%98%8E%E8%B3%87%E6%96%99.pdf",
+            "publishedOn": "2026-08-10",
+            "locator": "PDF 6ページ / 営業利益",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "opp",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 29.88,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/e8djpV6D/27%E5%B9%B43%E6%9C%88%E6%9C%9F_%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E8%AA%AC%E6%98%8E%E8%B3%87%E6%96%99.pdf",
+            "publishedOn": "2026-08-10",
+            "locator": "PDF 6ページ / 営業利益",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "sg",
+          "operation": "growth-percent",
+          "inputs": [
+            "s",
+            "sp"
+          ],
+          "value": 12.2,
+          "precision": 1,
+          "definition": "開示値から計算"
+        },
+        {
+          "id": "og",
+          "operation": "growth-percent",
+          "inputs": [
+            "op",
+            "opp"
+          ],
+          "value": 3.2,
+          "precision": 1,
+          "definition": "開示値から計算"
+        },
+        {
+          "id": "mar",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op",
+            "s"
+          ],
+          "value": 20.3,
+          "precision": 1,
+          "definition": "開示値から計算"
+        }
+      ]
+    },
+    {
+      "id": "q1-mix-orders",
+      "question": "q1-mix-orders",
+      "definition": "期間・連結範囲・単位・実績と計画の区別を確認。",
+      "status": "ready",
+      "claim": "製品別では、可搬型の増収額が12.57億円。連結全体の増収16.49億円の約76%に相当する。定置型の増収額は3.19億円だ。受注高は199.33億円で前年同期比約38.7%増だが、受注を直ちに売上とみなすことはできない。[第1四半期説明資料、6・8～9ページ][S3]",
+      "requiredInputs": [
+        {
+          "id": "portable",
+          "entity": "理研計器 日本基準連結",
+          "metric": "可搬型売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "可搬型売上高"
+        },
+        {
+          "id": "portablep",
+          "entity": "理研計器 日本基準連結",
+          "metric": "可搬型売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "可搬型売上高"
+        },
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "sp",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "fixed",
+          "entity": "理研計器 日本基準連結",
+          "metric": "定置型売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "定置型売上高"
+        },
+        {
+          "id": "fixedp",
+          "entity": "理研計器 日本基準連結",
+          "metric": "定置型売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "定置型売上高"
+        },
+        {
+          "id": "orders",
+          "entity": "理研計器 日本基準連結",
+          "metric": "受注高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "受注高"
+        },
+        {
+          "id": "ordersp",
+          "entity": "理研計器 日本基準連結",
+          "metric": "受注高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "受注高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "portable",
+          "entity": "理研計器 日本基準連結",
+          "metric": "可搬型売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "可搬型売上高",
+          "value": 57.43,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/e8djpV6D/27%E5%B9%B43%E6%9C%88%E6%9C%9F_%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E8%AA%AC%E6%98%8E%E8%B3%87%E6%96%99.pdf",
+            "publishedOn": "2026-08-10",
+            "locator": "PDF 8ページ / 可搬型売上高",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "portablep",
+          "entity": "理研計器 日本基準連結",
+          "metric": "可搬型売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "可搬型売上高",
+          "value": 44.86,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/e8djpV6D/27%E5%B9%B43%E6%9C%88%E6%9C%9F_%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E8%AA%AC%E6%98%8E%E8%B3%87%E6%96%99.pdf",
+            "publishedOn": "2026-08-10",
+            "locator": "PDF 8ページ / 可搬型売上高",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 152.03,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/e8djpV6D/27%E5%B9%B43%E6%9C%88%E6%9C%9F_%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E8%AA%AC%E6%98%8E%E8%B3%87%E6%96%99.pdf",
+            "publishedOn": "2026-08-10",
+            "locator": "PDF 6ページ / 売上高",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sp",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 135.54,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/e8djpV6D/27%E5%B9%B43%E6%9C%88%E6%9C%9F_%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E8%AA%AC%E6%98%8E%E8%B3%87%E6%96%99.pdf",
+            "publishedOn": "2026-08-10",
+            "locator": "PDF 6ページ / 売上高",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fixed",
+          "entity": "理研計器 日本基準連結",
+          "metric": "定置型売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "定置型売上高",
+          "value": 90.88,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/e8djpV6D/27%E5%B9%B43%E6%9C%88%E6%9C%9F_%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E8%AA%AC%E6%98%8E%E8%B3%87%E6%96%99.pdf",
+            "publishedOn": "2026-08-10",
+            "locator": "PDF 8ページ / 定置型売上高",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fixedp",
+          "entity": "理研計器 日本基準連結",
+          "metric": "定置型売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "定置型売上高",
+          "value": 87.69,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/e8djpV6D/27%E5%B9%B43%E6%9C%88%E6%9C%9F_%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E8%AA%AC%E6%98%8E%E8%B3%87%E6%96%99.pdf",
+            "publishedOn": "2026-08-10",
+            "locator": "PDF 8ページ / 定置型売上高",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "orders",
+          "entity": "理研計器 日本基準連結",
+          "metric": "受注高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "受注高",
+          "value": 199.33,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/e8djpV6D/27%E5%B9%B43%E6%9C%88%E6%9C%9F_%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E8%AA%AC%E6%98%8E%E8%B3%87%E6%96%99.pdf",
+            "publishedOn": "2026-08-10",
+            "locator": "PDF 9ページ / 受注高",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ordersp",
+          "entity": "理研計器 日本基準連結",
+          "metric": "受注高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "受注高",
+          "value": 143.76,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/e8djpV6D/27%E5%B9%B43%E6%9C%88%E6%9C%9F_%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E8%AA%AC%E6%98%8E%E8%B3%87%E6%96%99.pdf",
+            "publishedOn": "2026-08-10",
+            "locator": "PDF 9ページ / 受注高",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "portableinc",
+          "operation": "difference",
+          "inputs": [
+            "portable",
+            "portablep"
+          ],
+          "value": 12.57,
+          "precision": 2,
+          "definition": "開示値から計算"
+        },
+        {
+          "id": "salesinc",
+          "operation": "difference",
+          "inputs": [
+            "s",
+            "sp"
+          ],
+          "value": 16.49,
+          "precision": 2,
+          "definition": "開示値から計算"
+        },
+        {
+          "id": "contribution",
+          "operation": "ratio-percent",
+          "inputs": [
+            "portableinc",
+            "salesinc"
+          ],
+          "value": 76,
+          "precision": 0,
+          "definition": "開示値から計算"
+        },
+        {
+          "id": "fixedinc",
+          "operation": "difference",
+          "inputs": [
+            "fixed",
+            "fixedp"
+          ],
+          "value": 3.19,
+          "precision": 2,
+          "definition": "開示値から計算"
+        },
+        {
+          "id": "ordergrowth",
+          "operation": "growth-percent",
+          "inputs": [
+            "orders",
+            "ordersp"
+          ],
+          "value": 38.7,
+          "precision": 1,
+          "definition": "開示値から計算"
+        }
+      ]
+    },
+    {
+      "id": "fcf-and-returns",
+      "question": "fcf-and-returns",
+      "definition": "金額は元資料千円を100000で除して億円化。FCF=営業CF+有形取得支出負値+無形取得支出負値。リース返済・還元別掲。本文丸め前で計算。",
+      "status": "ready",
+      "claim": "2026年3月期の営業CF111.26億円から、有形固定資産取得の現金支出15.11億円と無形固定資産取得13.09億円を引くと、筆者定義の設備投資後FCFは**83.07億円**となる（金額は千円単位の開示値で計算後に四捨五入）。さらにリース債務返済7.40億円を引いた残額は75.67億円。配当支払いと自己株式の純増減による現金支出の合計38.42億円を上回った。[決算短信、添付11～12ページ][S2]",
+      "requiredInputs": [
+        {
+          "id": "ocf",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "ppe",
+          "entity": "理研計器 日本基準連結",
+          "metric": "有形固定資産取得現金支出（負値）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "有形固定資産取得現金支出（負値）"
+        },
+        {
+          "id": "intang",
+          "entity": "理研計器 日本基準連結",
+          "metric": "無形固定資産取得現金支出（負値）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "無形固定資産取得現金支出（負値）"
+        },
+        {
+          "id": "lease",
+          "entity": "理研計器 日本基準連結",
+          "metric": "リース債務返済現金支出（負値）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "リース債務返済現金支出（負値）"
+        },
+        {
+          "id": "div",
+          "entity": "理研計器 日本基準連結",
+          "metric": "配当金現金支出の絶対値",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "配当金現金支出の絶対値"
+        },
+        {
+          "id": "buy",
+          "entity": "理研計器 日本基準連結",
+          "metric": "自己株式の純増減による現金支出の絶対値",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "自己株式の純増減による現金支出の絶対値"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 111.26309,
+          "source": {
+            "url": "https://www2.jpx.co.jp/disc/77340/140120260513528085.pdf",
+            "publishedOn": "2026-05-13",
+            "locator": "PDF 13ページ / 営業CF",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ppe",
+          "entity": "理研計器 日本基準連結",
+          "metric": "有形固定資産取得現金支出（負値）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "有形固定資産取得現金支出（負値）",
+          "value": -15.10658,
+          "source": {
+            "url": "https://www2.jpx.co.jp/disc/77340/140120260513528085.pdf",
+            "publishedOn": "2026-05-13",
+            "locator": "PDF 14ページ / 有形固定資産取得現金支出（負値）",
+            "pdfPage": 14,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "intang",
+          "entity": "理研計器 日本基準連結",
+          "metric": "無形固定資産取得現金支出（負値）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "無形固定資産取得現金支出（負値）",
+          "value": -13.08848,
+          "source": {
+            "url": "https://www2.jpx.co.jp/disc/77340/140120260513528085.pdf",
+            "publishedOn": "2026-05-13",
+            "locator": "PDF 14ページ / 無形固定資産取得現金支出（負値）",
+            "pdfPage": 14,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "lease",
+          "entity": "理研計器 日本基準連結",
+          "metric": "リース債務返済現金支出（負値）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "リース債務返済現金支出（負値）",
+          "value": -7.40303,
+          "source": {
+            "url": "https://www2.jpx.co.jp/disc/77340/140120260513528085.pdf",
+            "publishedOn": "2026-05-13",
+            "locator": "PDF 14ページ / リース債務返済現金支出（負値）",
+            "pdfPage": 14,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "div",
+          "entity": "理研計器 日本基準連結",
+          "metric": "配当金現金支出の絶対値",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "配当金現金支出の絶対値",
+          "value": 22.9313,
+          "source": {
+            "url": "https://www2.jpx.co.jp/disc/77340/140120260513528085.pdf",
+            "publishedOn": "2026-05-13",
+            "locator": "PDF 14ページ / 配当金現金支出の絶対値",
+            "pdfPage": 14,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "buy",
+          "entity": "理研計器 日本基準連結",
+          "metric": "自己株式の純増減による現金支出の絶対値",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "自己株式の純増減による現金支出の絶対値",
+          "value": 15.4883,
+          "source": {
+            "url": "https://www2.jpx.co.jp/disc/77340/140120260513528085.pdf",
+            "publishedOn": "2026-05-13",
+            "locator": "PDF 14ページ / 自己株式取得現金支出の絶対値",
+            "pdfPage": 14,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "ppe",
+            "intang"
+          ],
+          "value": 83.06803,
+          "precision": 5,
+          "definition": "開示値から計算"
+        },
+        {
+          "id": "afterlease",
+          "operation": "sum",
+          "inputs": [
+            "fcf",
+            "lease"
+          ],
+          "value": 75.665,
+          "precision": 3,
+          "definition": "開示値から計算"
+        },
+        {
+          "id": "returns",
+          "operation": "sum",
+          "inputs": [
+            "div",
+            "buy"
+          ],
+          "value": 38.4196,
+          "precision": 4,
+          "definition": "開示値から計算"
+        }
+      ]
+    },
+    {
+      "id": "working-capital",
+      "question": "working-capital",
+      "definition": "期間・連結範囲・単位・実績と計画の区別を確認。",
+      "status": "ready",
+      "claim": "これは良好な結果だが、毎年83億円を生むと置くのは早い。営業CFの前期比改善約48.31億円のうち、仕入債務の減少による流出が小さくなった効果だけで約29.35億円ある。売上債権の回収面も改善した一方、在庫と税金支払いは逆方向だった。増益に加え、運転資金の変動が効いた年である。[同資料][S2]",
+      "requiredInputs": [
+        {
+          "id": "c",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "p",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "pay",
+          "entity": "理研計器 日本基準連結",
+          "metric": "仕入債務増減のCF寄与",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "仕入債務増減のCF寄与"
+        },
+        {
+          "id": "payp",
+          "entity": "理研計器 日本基準連結",
+          "metric": "仕入債務増減のCF寄与",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "仕入債務増減のCF寄与"
+        }
+      ],
+      "observations": [
+        {
+          "id": "c",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 111.26309,
+          "source": {
+            "url": "https://www2.jpx.co.jp/disc/77340/140120260513528085.pdf",
+            "publishedOn": "2026-05-13",
+            "locator": "PDF 13ページ / 営業CF",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "p",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 62.95257,
+          "source": {
+            "url": "https://www2.jpx.co.jp/disc/77340/140120260513528085.pdf",
+            "publishedOn": "2026-05-13",
+            "locator": "PDF 13ページ / 営業CF",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "pay",
+          "entity": "理研計器 日本基準連結",
+          "metric": "仕入債務増減のCF寄与",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "仕入債務増減のCF寄与",
+          "value": -0.1075,
+          "source": {
+            "url": "https://www2.jpx.co.jp/disc/77340/140120260513528085.pdf",
+            "publishedOn": "2026-05-13",
+            "locator": "PDF 13ページ / 仕入債務増減のCF寄与",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "payp",
+          "entity": "理研計器 日本基準連結",
+          "metric": "仕入債務増減のCF寄与",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "仕入債務増減のCF寄与",
+          "value": -29.45393,
+          "source": {
+            "url": "https://www2.jpx.co.jp/disc/77340/140120260513528085.pdf",
+            "publishedOn": "2026-05-13",
+            "locator": "PDF 13ページ / 仕入債務増減のCF寄与",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "increase",
+          "operation": "difference",
+          "inputs": [
+            "c",
+            "p"
+          ],
+          "value": 48.31052,
+          "precision": 5,
+          "definition": "開示値から計算"
+        },
+        {
+          "id": "payimprove",
+          "operation": "difference",
+          "inputs": [
+            "pay",
+            "payp"
+          ],
+          "value": 29.34643,
+          "precision": 5,
+          "definition": "開示値から計算"
+        }
+      ]
+    },
+    {
+      "id": "netcash",
+      "question": "netcash",
+      "definition": "期間・連結範囲・単位・実績と計画の区別を確認。",
+      "status": "ready",
+      "claim": "2026年3月末の現金同等物244.07億円から、統合報告書の有利子負債38.68億円を差し引いた簡便なネットキャッシュは205.39億円となる。この定義には現金同等物以外の有価証券などを足していない。また、有利子負債にはリースを含むので、「借入が少ない」と「負債がない」は同じではない。[統合報告書、50～51ページ][S1]",
+      "requiredInputs": [
+        {
+          "id": "cash",
+          "entity": "理研計器 日本基準連結",
+          "metric": "現金及び現金同等物",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "現金及び現金同等物"
+        },
+        {
+          "id": "debt",
+          "entity": "理研計器 日本基準連結",
+          "metric": "有利子負債",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "有利子負債"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cash",
+          "entity": "理研計器 日本基準連結",
+          "metric": "現金及び現金同等物",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "現金及び現金同等物",
+          "value": 244.07,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 現金及び現金同等物",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "debt",
+          "entity": "理研計器 日本基準連結",
+          "metric": "有利子負債",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "有利子負債",
+          "value": 38.68,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 有利子負債",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "netcash",
+          "operation": "difference",
+          "inputs": [
+            "cash",
+            "debt"
+          ],
+          "value": 205.39,
+          "precision": 2,
+          "definition": "開示値から計算"
+        }
+      ]
+    },
+    {
+      "id": "roe-cost",
+      "question": "roe-cost",
+      "definition": "期間・連結範囲・単位・実績と計画の区別を確認。",
+      "status": "ready",
+      "claim": "財務余力は、設備投資の減速や顧客の検収遅延への耐久力になる。ただし、現金を積み上げ続けるだけでは資本効率が下がりうる。会社が説明する株主資本コスト約7%とROE10%以上の方針に対し、2026年3月期ROEは12.2%だった。資本コストは会社の推計で、確定した金利ではない。[統合報告書、20ページ][S1] [決算短信、表紙][S2]",
+      "requiredInputs": [
+        {
+          "id": "roe",
+          "entity": "理研計器 日本基準連結",
+          "metric": "ROE",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "ROE"
+        },
+        {
+          "id": "cost",
+          "entity": "理研計器 日本基準連結",
+          "metric": "会社推計株主資本コスト（将来の株主要求収益率の見積り、実績リターンではない）",
+          "periodStart": "2026-10-09",
+          "periodEnd": "2026-10-09",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "会社推計株主資本コスト（将来の株主要求収益率の見積り、実績リターンではない）"
+        },
+        {
+          "id": "goal",
+          "entity": "理研計器 日本基準連結",
+          "metric": "会社ROE目標下限",
+          "periodStart": "2028-04-01",
+          "periodEnd": "2029-03-31",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "会社ROE目標下限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "roe",
+          "entity": "理研計器 日本基準連結",
+          "metric": "ROE",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "ROE",
+          "value": 12.2,
+          "source": {
+            "url": "https://www2.jpx.co.jp/disc/77340/140120260513528085.pdf",
+            "publishedOn": "2026-05-13",
+            "locator": "PDF 1ページ / ROE",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cost",
+          "entity": "理研計器 日本基準連結",
+          "metric": "会社推計株主資本コスト（将来の株主要求収益率の見積り、実績リターンではない）",
+          "periodStart": "2026-10-09",
+          "periodEnd": "2026-10-09",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "会社推計株主資本コスト（将来の株主要求収益率の見積り、実績リターンではない）",
+          "value": 7,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 22ページ / 会社推計株主資本コスト（将来の株主要求収益率の見積り、実績リターンではない）",
+            "pdfPage": 22,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "goal",
+          "entity": "理研計器 日本基準連結",
+          "metric": "会社ROE目標下限",
+          "periodStart": "2028-04-01",
+          "periodEnd": "2029-03-31",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "会社ROE目標下限",
+          "value": 10,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 22ページ / 会社ROE目標下限",
+            "pdfPage": 22,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "peer-comparison",
+      "question": "peer-comparison",
+      "definition": "期間・連結範囲・単位・実績と計画の区別を確認。",
+      "status": "ready",
+      "claim": "同じ2026年3月期・日本基準・連結実績で比べると、理研計器の営業利益率22.5%に対し、新コスモス電機は14.7%。売上高はそれぞれ552.12億円と500.91億円だった。",
+      "requiredInputs": [
+        {
+          "id": "r",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "rm",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益率",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "営業利益率"
+        },
+        {
+          "id": "c",
+          "entity": "新コスモス電機 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "cm",
+          "entity": "新コスモス電機 日本基準連結",
+          "metric": "営業利益率",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "r",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 552.12,
+          "source": {
+            "url": "https://www2.jpx.co.jp/disc/77340/140120260513528085.pdf",
+            "publishedOn": "2026-05-13",
+            "locator": "PDF 1ページ / 売上高",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "rm",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益率",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "営業利益率",
+          "value": 22.5,
+          "source": {
+            "url": "https://www2.jpx.co.jp/disc/77340/140120260513528085.pdf",
+            "publishedOn": "2026-05-13",
+            "locator": "PDF 1ページ / 営業利益率",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c",
+          "entity": "新コスモス電機 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 500.91,
+          "source": {
+            "url": "https://www2.jpx.co.jp/disc/68240/140120260514534085.pdf",
+            "publishedOn": "2026-05-15",
+            "locator": "PDF 1ページ / 売上高",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cm",
+          "entity": "新コスモス電機 日本基準連結",
+          "metric": "営業利益率",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "営業利益率",
+          "value": 14.7,
+          "source": {
+            "url": "https://www2.jpx.co.jp/disc/68240/140120260514534085.pdf",
+            "publishedOn": "2026-05-15",
+            "locator": "PDF 1ページ / 営業利益率",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "peer-mix",
+      "question": "peer-mix",
+      "definition": "期間・連結範囲・単位・実績と計画の区別を確認。",
+      "status": "ready",
+      "claim": "ただし、新コスモス電機は家庭用ガス警報器関連が売上の59.0%を占める。製品構成が異なるため、利益率の差を技術力の差や、同じ事業での価格支配力の差と読むことはできない。[新コスモス電機・2026年3月期決算短信、表紙・添付2ページ][S5]",
+      "requiredInputs": [
+        {
+          "id": "home",
+          "entity": "新コスモス電機 日本基準連結",
+          "metric": "家庭用ガス警報器関連売上構成比",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "家庭用ガス警報器関連売上構成比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "home",
+          "entity": "新コスモス電機 日本基準連結",
+          "metric": "家庭用ガス警報器関連売上構成比",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "家庭用ガス警報器関連売上構成比",
+          "value": 59,
+          "source": {
+            "url": "https://www2.jpx.co.jp/disc/68240/140120260514534085.pdf",
+            "publishedOn": "2026-05-15",
+            "locator": "PDF 4ページ / 家庭用ガス警報器関連売上構成比",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "midterm",
+      "question": "midterm",
+      "definition": "独自計算CAGR=(700/552.12)^(1/3)-1=8.2318%、(140/124.25)^(1/3)-1=4.0584%。対応演算に指数演算なし、原値保持・Python算術確認。",
+      "status": "ready",
+      "claim": "新中期計画は2029年3月期に売上700億円、営業利益140億円以上を目指す。2026年3月期実績からの年平均成長率は、売上約8.2%、営業利益の下限約4.1%となる。会社自身も、人的投資、DX、海外販売網、価格政策などで計画期間中の利益率低下を想定している。[統合報告書、16ページ][S1] [中期経営計画、9～10ページ][S6]",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "sf",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高目標",
+          "periodStart": "2028-04-01",
+          "periodEnd": "2029-03-31",
+          "unit": "JPY 100 million",
+          "basis": "company-forecast",
+          "definition": "売上高目標"
+        },
+        {
+          "id": "of",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益目標下限",
+          "periodStart": "2028-04-01",
+          "periodEnd": "2029-03-31",
+          "unit": "JPY 100 million",
+          "basis": "company-forecast",
+          "definition": "営業利益目標下限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 552.12,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 売上高",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "JPY 100 million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 124.25,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 53ページ / 営業利益",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sf",
+          "entity": "理研計器 日本基準連結",
+          "metric": "売上高目標",
+          "periodStart": "2028-04-01",
+          "periodEnd": "2029-03-31",
+          "unit": "JPY 100 million",
+          "basis": "company-forecast",
+          "definition": "売上高目標",
+          "value": 700,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 18ページ / 売上高目標",
+            "pdfPage": 18,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "of",
+          "entity": "理研計器 日本基準連結",
+          "metric": "営業利益目標下限",
+          "periodStart": "2028-04-01",
+          "periodEnd": "2029-03-31",
+          "unit": "JPY 100 million",
+          "basis": "company-forecast",
+          "definition": "営業利益目標下限",
+          "value": 140,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/integratedreport/Integrated_report_2026_A4.pdf",
+            "publishedOn": "2026-10-09",
+            "locator": "PDF 18ページ / 営業利益目標下限",
+            "pdfPage": 18,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "sensitivity-18",
+      "question": "sensitivity-18",
+      "definition": "独自感応度で仮定利益率19%/会社127÷600/23%。売上600×19%=114、600×23%=138。乗算未対応のため算術は別途確認。仮定は観測値にしない。",
+      "status": "ready",
+      "claim": "| 弱気 | 19.0% | 114億円 | 人件費・原価増を価格転嫁できず、海外立ち上げ費用が先行 |",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "通期会社予想売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "JPY 100 million",
+          "basis": "company-forecast",
+          "definition": "通期会社予想売上高"
+        },
+        {
+          "id": "o",
+          "entity": "理研計器 日本基準連結",
+          "metric": "通期会社予想営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "JPY 100 million",
+          "basis": "company-forecast",
+          "definition": "通期会社予想営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "通期会社予想売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "JPY 100 million",
+          "basis": "company-forecast",
+          "definition": "通期会社予想売上高",
+          "value": 600,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/e8djpV6D/27%E5%B9%B43%E6%9C%88%E6%9C%9F_%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E8%AA%AC%E6%98%8E%E8%B3%87%E6%96%99.pdf",
+            "publishedOn": "2026-08-10",
+            "locator": "PDF 6ページ / 通期会社予想売上高",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o",
+          "entity": "理研計器 日本基準連結",
+          "metric": "通期会社予想営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "JPY 100 million",
+          "basis": "company-forecast",
+          "definition": "通期会社予想営業利益",
+          "value": 127,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/e8djpV6D/27%E5%B9%B43%E6%9C%88%E6%9C%9F_%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E8%AA%AC%E6%98%8E%E8%B3%87%E6%96%99.pdf",
+            "publishedOn": "2026-08-10",
+            "locator": "PDF 6ページ / 通期会社予想営業利益",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "sensitivity-19",
+      "question": "sensitivity-19",
+      "definition": "独自感応度で仮定利益率19%/会社127÷600/23%。売上600×19%=114、600×23%=138。乗算未対応のため算術は別途確認。仮定は観測値にしない。",
+      "status": "ready",
+      "claim": "| 基準 | 約21.17% | 127億円 | 会社の2027年3月期通期計画と同じ売上・利益 |",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "通期会社予想売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "JPY 100 million",
+          "basis": "company-forecast",
+          "definition": "通期会社予想売上高"
+        },
+        {
+          "id": "o",
+          "entity": "理研計器 日本基準連結",
+          "metric": "通期会社予想営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "JPY 100 million",
+          "basis": "company-forecast",
+          "definition": "通期会社予想営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "通期会社予想売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "JPY 100 million",
+          "basis": "company-forecast",
+          "definition": "通期会社予想売上高",
+          "value": 600,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/e8djpV6D/27%E5%B9%B43%E6%9C%88%E6%9C%9F_%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E8%AA%AC%E6%98%8E%E8%B3%87%E6%96%99.pdf",
+            "publishedOn": "2026-08-10",
+            "locator": "PDF 6ページ / 通期会社予想売上高",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o",
+          "entity": "理研計器 日本基準連結",
+          "metric": "通期会社予想営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "JPY 100 million",
+          "basis": "company-forecast",
+          "definition": "通期会社予想営業利益",
+          "value": 127,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/e8djpV6D/27%E5%B9%B43%E6%9C%88%E6%9C%9F_%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E8%AA%AC%E6%98%8E%E8%B3%87%E6%96%99.pdf",
+            "publishedOn": "2026-08-10",
+            "locator": "PDF 6ページ / 通期会社予想営業利益",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "sensitivity-20",
+      "question": "sensitivity-20",
+      "definition": "独自感応度で仮定利益率19%/会社127÷600/23%。売上600×19%=114、600×23%=138。乗算未対応のため算術は別途確認。仮定は観測値にしない。",
+      "status": "ready",
+      "claim": "| 強気 | 23.0% | 138億円 | 値上げと稼働率改善、保守の増加が費用増を上回る |",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "通期会社予想売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "JPY 100 million",
+          "basis": "company-forecast",
+          "definition": "通期会社予想売上高"
+        },
+        {
+          "id": "o",
+          "entity": "理研計器 日本基準連結",
+          "metric": "通期会社予想営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "JPY 100 million",
+          "basis": "company-forecast",
+          "definition": "通期会社予想営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "通期会社予想売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "JPY 100 million",
+          "basis": "company-forecast",
+          "definition": "通期会社予想売上高",
+          "value": 600,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/e8djpV6D/27%E5%B9%B43%E6%9C%88%E6%9C%9F_%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E8%AA%AC%E6%98%8E%E8%B3%87%E6%96%99.pdf",
+            "publishedOn": "2026-08-10",
+            "locator": "PDF 6ページ / 通期会社予想売上高",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o",
+          "entity": "理研計器 日本基準連結",
+          "metric": "通期会社予想営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "JPY 100 million",
+          "basis": "company-forecast",
+          "definition": "通期会社予想営業利益",
+          "value": 127,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/e8djpV6D/27%E5%B9%B43%E6%9C%88%E6%9C%9F_%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E8%AA%AC%E6%98%8E%E8%B3%87%E6%96%99.pdf",
+            "publishedOn": "2026-08-10",
+            "locator": "PDF 6ページ / 通期会社予想営業利益",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "sensitivity-one-point",
+      "question": "sensitivity-one-point",
+      "definition": "独自感応度。売上600億円×仮定0.01=利益6億円。乗算未対応のため別途算術確認。仮定を一次資料の観測値にしていない。",
+      "status": "ready",
+      "claim": "売上600億円では利益率1ポイントの差が営業利益6億円に相当する。売上未達と利益率低下が同時に起きれば、弱気ケースをさらに下回りうる。反対に強気ケースも、保守体制や価格転嫁の確認なしに達成を見込むものではない。",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "通期会社予想売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "JPY 100 million",
+          "basis": "company-forecast",
+          "definition": "通期会社予想売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "理研計器 日本基準連結",
+          "metric": "通期会社予想売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "JPY 100 million",
+          "basis": "company-forecast",
+          "definition": "通期会社予想売上高",
+          "value": 600,
+          "source": {
+            "url": "https://www.rikenkeiki.co.jp/cms/rikenkeiki-origin/pdf/ir/e8djpV6D/27%E5%B9%B43%E6%9C%88%E6%9C%9F_%E7%AC%AC1%E5%9B%9B%E5%8D%8A%E6%9C%9F%E6%B1%BA%E7%AE%97%E8%AA%AC%E6%98%8E%E8%B3%87%E6%96%99.pdf",
+            "publishedOn": "2026-08-10",
+            "locator": "PDF 6ページ / 通期会社予想売上高",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
