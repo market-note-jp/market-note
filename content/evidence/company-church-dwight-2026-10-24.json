@@ -1,0 +1,3566 @@
+{
+  "version": 1,
+  "articleSlug": "company-church-dwight-2026-10-24",
+  "articleSha256": "c61cd8d6d50820f843a7da68b3b6586fcfa9a608de757e0ef1b4b798c1d9c850",
+  "checkedAt": "2026-10-24T11:04:57.411Z",
+  "informationCutoff": "2026-10-24T19:50:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "一次資料本文・期間・単位・定義を作者と別担当で確認。原稿の重要数値比較は以下に収録。説明用の架空数値・記号による感応度は実績観測と混同せず、本文で仮定と式を明記し算術を別確認。第三者による全稿レビューの完了は別の公開前ゲートで確認する。",
+  "comparisons": [
+    {
+      "id": "year2021",
+      "question": "year2021",
+      "definition": "米国会計基準連結。対象期・単位・実績と会社調整値を区別。会社PDF法定本文と対応するSEC10-K本文を参照。",
+      "status": "ready",
+      "claim": "|2021|5,190.1|1,079.1|827.5|993.8|118.8|875.0|",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net sales",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net sales"
+        },
+        {
+          "id": "op",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Income from operations",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Income from operations"
+        },
+        {
+          "id": "ni",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net income",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net income"
+        },
+        {
+          "id": "ocf",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net cash provided by operating activities",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net cash provided by operating activities"
+        },
+        {
+          "id": "capex",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Additions to property plant equipment (cash outflow, signed)",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Additions to property plant equipment (cash outflow, signed)"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net sales",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net sales",
+          "value": 5190.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000095017024015810/chd-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "2023 10-K printed61/63; company Annual Report PDF74/76",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Income from operations",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Income from operations",
+          "value": 1079.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000095017024015810/chd-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "2023 10-K printed61/63; company Annual Report PDF74/76",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net income",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net income",
+          "value": 827.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000095017024015810/chd-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "2023 10-K printed61/63; company Annual Report PDF74/76",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net cash provided by operating activities",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net cash provided by operating activities",
+          "value": 993.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000095017024015810/chd-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "2023 10-K printed61/63; company Annual Report PDF74/76",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Additions to property plant equipment (cash outflow, signed)",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Additions to property plant equipment (cash outflow, signed)",
+          "value": -118.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000095017024015810/chd-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "2023 10-K printed61/63; company Annual Report PDF74/76",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": 875
+        }
+      ]
+    },
+    {
+      "id": "year2022",
+      "question": "year2022",
+      "definition": "米国会計基準連結。対象期・単位・実績と会社調整値を区別。会社PDF法定本文と対応するSEC10-K本文を参照。",
+      "status": "ready",
+      "claim": "|2022|5,375.6|597.8|413.9|885.2|178.8|706.4|",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net sales",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net sales"
+        },
+        {
+          "id": "op",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Income from operations",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Income from operations"
+        },
+        {
+          "id": "ni",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net income",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net income"
+        },
+        {
+          "id": "ocf",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net cash provided by operating activities",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net cash provided by operating activities"
+        },
+        {
+          "id": "capex",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Additions to property plant equipment (cash outflow, signed)",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Additions to property plant equipment (cash outflow, signed)"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net sales",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net sales",
+          "value": 5375.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000095017024015810/chd-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "2023 10-K printed61/63; company Annual Report PDF74/76",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Income from operations",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Income from operations",
+          "value": 597.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000095017024015810/chd-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "2023 10-K printed61/63; company Annual Report PDF74/76",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net income",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net income",
+          "value": 413.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000095017024015810/chd-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "2023 10-K printed61/63; company Annual Report PDF74/76",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net cash provided by operating activities",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net cash provided by operating activities",
+          "value": 885.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000095017024015810/chd-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "2023 10-K printed61/63; company Annual Report PDF74/76",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Additions to property plant equipment (cash outflow, signed)",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Additions to property plant equipment (cash outflow, signed)",
+          "value": -178.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000095017024015810/chd-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "2023 10-K printed61/63; company Annual Report PDF74/76",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": 706.4
+        }
+      ]
+    },
+    {
+      "id": "year2023",
+      "question": "year2023",
+      "definition": "米国会計基準連結。対象期・単位・実績と会社調整値を区別。会社PDF法定本文と対応するSEC10-K本文を参照。",
+      "status": "ready",
+      "claim": "|2023|5,867.9|1,057.4|755.6|1,030.6|223.5|807.1|",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net sales",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net sales"
+        },
+        {
+          "id": "op",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Income from operations",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Income from operations"
+        },
+        {
+          "id": "ni",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net income",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net income"
+        },
+        {
+          "id": "ocf",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net cash provided by operating activities",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net cash provided by operating activities"
+        },
+        {
+          "id": "capex",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Additions to property plant equipment (cash outflow, signed)",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Additions to property plant equipment (cash outflow, signed)"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net sales",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net sales",
+          "value": 5867.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed55/57; company Annual Report PDF65/67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Income from operations",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Income from operations",
+          "value": 1057.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed55/57; company Annual Report PDF65/67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net income",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net income",
+          "value": 755.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed55/57; company Annual Report PDF65/67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net cash provided by operating activities",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net cash provided by operating activities",
+          "value": 1030.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed55/57; company Annual Report PDF65/67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Additions to property plant equipment (cash outflow, signed)",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Additions to property plant equipment (cash outflow, signed)",
+          "value": -223.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed55/57; company Annual Report PDF65/67",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": 807.1
+        }
+      ]
+    },
+    {
+      "id": "year2024",
+      "question": "year2024",
+      "definition": "米国会計基準連結。対象期・単位・実績と会社調整値を区別。会社PDF法定本文と対応するSEC10-K本文を参照。",
+      "status": "ready",
+      "claim": "|2024|6,107.1|807.1|585.3|1,156.2|179.8|976.4|",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net sales",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net sales"
+        },
+        {
+          "id": "op",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Income from operations",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Income from operations"
+        },
+        {
+          "id": "ni",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net income",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net income"
+        },
+        {
+          "id": "ocf",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net cash provided by operating activities",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net cash provided by operating activities"
+        },
+        {
+          "id": "capex",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Additions to property plant equipment (cash outflow, signed)",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Additions to property plant equipment (cash outflow, signed)"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net sales",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net sales",
+          "value": 6107.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed55/57; company Annual Report PDF65/67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Income from operations",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Income from operations",
+          "value": 807.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed55/57; company Annual Report PDF65/67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net income",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net income",
+          "value": 585.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed55/57; company Annual Report PDF65/67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net cash provided by operating activities",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net cash provided by operating activities",
+          "value": 1156.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed55/57; company Annual Report PDF65/67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Additions to property plant equipment (cash outflow, signed)",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Additions to property plant equipment (cash outflow, signed)",
+          "value": -179.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed55/57; company Annual Report PDF65/67",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": 976.4
+        }
+      ]
+    },
+    {
+      "id": "year2025",
+      "question": "year2025",
+      "definition": "米国会計基準連結。対象期・単位・実績と会社調整値を区別。会社PDF法定本文と対応するSEC10-K本文を参照。",
+      "status": "ready",
+      "claim": "|2025|6,203.2|1,077.6|736.8|1,215.4|122.4|1,093.0|",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net sales",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net sales"
+        },
+        {
+          "id": "op",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Income from operations",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Income from operations"
+        },
+        {
+          "id": "ni",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net income",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net income"
+        },
+        {
+          "id": "ocf",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net cash provided by operating activities",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net cash provided by operating activities"
+        },
+        {
+          "id": "capex",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Additions to property plant equipment (cash outflow, signed)",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Additions to property plant equipment (cash outflow, signed)"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net sales",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net sales",
+          "value": 6203.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed55/57; company Annual Report PDF65/67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Income from operations",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Income from operations",
+          "value": 1077.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed55/57; company Annual Report PDF65/67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net income",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net income",
+          "value": 736.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed55/57; company Annual Report PDF65/67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net cash provided by operating activities",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net cash provided by operating activities",
+          "value": 1215.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed55/57; company Annual Report PDF65/67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Additions to property plant equipment (cash outflow, signed)",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Additions to property plant equipment (cash outflow, signed)",
+          "value": -122.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K printed55/57; company Annual Report PDF65/67",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": 1093
+        }
+      ]
+    },
+    {
+      "id": "growth-and-impairments",
+      "question": "growth-and-impairments",
+      "definition": "CAGR=(6203.2/5190.1)^(1/4)-1=4.558661%。5観測4期間。演算種類に累乗なしのため手計算/Python検証、calculationへ架空演算を置かない。営業利益比較はGAAP総額。",
+      "status": "ready",
+      "claim": "2021～2025年の売上高の年平均成長率は約4.6%。しかし2025年の営業利益は2021年をわずかに下回る。2022年にはFlawlessの4.11億ドル、2024年にはVMSの3.571億ドルの減損があり、年度間の利益比較を大きく動かした。[1][3]",
+      "requiredInputs": [
+        {
+          "id": "s21",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net sales",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net sales"
+        },
+        {
+          "id": "s25",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net sales",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net sales"
+        },
+        {
+          "id": "op21",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Income from operations",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Income from operations"
+        },
+        {
+          "id": "op25",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Income from operations",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Income from operations"
+        },
+        {
+          "id": "flawless",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Flawless impairment",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Flawless impairment"
+        },
+        {
+          "id": "vms",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "VMS impairment",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "VMS impairment"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s21",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net sales",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net sales",
+          "value": 5190.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000095017024015810/chd-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "Consolidated Statements of Income / Cash Flows, printed pp55/57 (company Annual Report PDF65/67)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "s25",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net sales",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net sales",
+          "value": 6203.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows, printed pp55/57 (company Annual Report PDF65/67)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op21",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Income from operations",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Income from operations",
+          "value": 1079.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000095017024015810/chd-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "Consolidated Statements of Income / Cash Flows, printed pp55/57 (company Annual Report PDF65/67)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op25",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Income from operations",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Income from operations",
+          "value": 1077.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows, printed pp55/57 (company Annual Report PDF65/67)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "flawless",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Flawless impairment",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Flawless impairment",
+          "value": 411,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000095017024015810/chd-20231231.htm",
+            "publishedOn": "2024-02-15",
+            "locator": "2023 10-K impairment discussion",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "vms",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "VMS impairment",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "VMS impairment",
+          "value": 357.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K impairment discussion",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "walmart",
+      "question": "walmart",
+      "definition": "米国会計基準連結。対象期・単位・実績と会社調整値を区別。会社PDF法定本文と対応するSEC10-K本文を参照。",
+      "status": "ready",
+      "claim": "販路は強みであると同時に依存先でもある。2025年のWalmart向け売上は全体の約23%。受注から出荷までが短く、長期の受注残で将来売上を守る事業ではない。棚の確保、消費者の購入、小売店の在庫調整の影響を受ける。[1：本文8頁]",
+      "requiredInputs": [
+        {
+          "id": "share",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Walmart share of net sales",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "Walmart share of net sales"
+        }
+      ],
+      "observations": [
+        {
+          "id": "share",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Walmart share of net sales",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "Walmart share of net sales",
+          "value": 23,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "2025 10-K Business Customers printed8; company annual PDF18",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q2-sales",
+      "question": "q2-sales",
+      "definition": "米国会計基準連結。対象期・単位・実績と会社調整値を区別。会社PDF法定本文と対応するSEC10-K本文を参照。",
+      "status": "ready",
+      "claim": "7月31日公表の4～6月期は、売上15.30億ドル、前年比1.6%増。買収・売却などの影響を除く会社独自の「オーガニック売上」は5.8%増で、数量4.3%、価格・商品構成1.5%が寄与した。総売上の伸びが小さいのは、事業退出などによる減少を含むためだ。[2]",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net sales",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net sales"
+        },
+        {
+          "id": "prev",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net sales",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net sales"
+        },
+        {
+          "id": "organic",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Organic sales growth company non-GAAP",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "Organic sales growth company non-GAAP"
+        },
+        {
+          "id": "vol",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Volume contribution to organic growth",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "Volume contribution to organic growth"
+        },
+        {
+          "id": "mix",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Price mix contribution",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "Price mix contribution"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net sales",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net sales",
+          "value": 1530,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prev",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net sales",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net sales",
+          "value": 1506.3,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "organic",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Organic sales growth company non-GAAP",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "Organic sales growth company non-GAAP",
+          "value": 5.8,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "vol",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Volume contribution to organic growth",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "Volume contribution to organic growth",
+          "value": 4.3,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "mix",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Price mix contribution",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "Price mix contribution",
+          "value": 1.5,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "s",
+            "prev"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": 1.6
+        },
+        {
+          "id": "organiccalc",
+          "operation": "sum",
+          "inputs": [
+            "vol",
+            "mix"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": 5.8
+        }
+      ]
+    },
+    {
+      "id": "q2-segments",
+      "question": "q2-segments",
+      "definition": "米国会計基準連結。対象期・単位・実績と会社調整値を区別。会社PDF法定本文と対応するSEC10-K本文を参照。",
+      "status": "ready",
+      "claim": "部門別では、米国内の売上はほぼ横ばいでもオーガニックでは5.1%増、海外は売上7.2%増・オーガニック9.1%増、特殊製品は2.8%増。海外のオーガニック増収も数量7.3%、価格・構成1.8%が寄与しており、値上げだけの成長ではない。[2]",
+      "requiredInputs": [
+        {
+          "id": "ds",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Domestic net sales",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Domestic net sales"
+        },
+        {
+          "id": "dp",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Domestic net sales",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Domestic net sales"
+        },
+        {
+          "id": "do",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Domestic organic growth",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "Domestic organic growth"
+        },
+        {
+          "id": "is",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "International net sales",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "International net sales"
+        },
+        {
+          "id": "ip",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "International net sales",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "International net sales"
+        },
+        {
+          "id": "io",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "International organic growth",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "International organic growth"
+        },
+        {
+          "id": "iv",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "International organic volume",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "International organic volume"
+        },
+        {
+          "id": "im",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "International organic price mix",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "International organic price mix"
+        },
+        {
+          "id": "ss",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "SPD net sales",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "SPD net sales"
+        },
+        {
+          "id": "sp",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "SPD net sales",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "SPD net sales"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ds",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Domestic net sales",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Domestic net sales",
+          "value": 1155.8,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dp",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Domestic net sales",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Domestic net sales",
+          "value": 1154.1,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "do",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Domestic organic growth",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "Domestic organic growth",
+          "value": 5.1,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "is",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "International net sales",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "International net sales",
+          "value": 297.5,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ip",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "International net sales",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "International net sales",
+          "value": 277.6,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "io",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "International organic growth",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "International organic growth",
+          "value": 9.1,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "iv",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "International organic volume",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "International organic volume",
+          "value": 7.3,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "im",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "International organic price mix",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "International organic price mix",
+          "value": 1.8,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ss",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "SPD net sales",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "SPD net sales",
+          "value": 76.7,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sp",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "SPD net sales",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "SPD net sales",
+          "value": 74.6,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "ig",
+          "operation": "growth-percent",
+          "inputs": [
+            "is",
+            "ip"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": 7.2
+        },
+        {
+          "id": "sg",
+          "operation": "growth-percent",
+          "inputs": [
+            "ss",
+            "sp"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": 2.8
+        },
+        {
+          "id": "iog",
+          "operation": "sum",
+          "inputs": [
+            "iv",
+            "im"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": 9.1
+        }
+      ]
+    },
+    {
+      "id": "gaap-op",
+      "question": "gaap-op",
+      "definition": "米国会計基準連結。対象期・単位・実績と会社調整値を区別。会社PDF法定本文と対応するSEC10-K本文を参照。",
+      "status": "ready",
+      "claim": "|営業利益（GAAP）|261.7|276.4|約5.6%増|",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "GAAP income from operations",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP income from operations"
+        },
+        {
+          "id": "new",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "GAAP income from operations",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP income from operations"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "GAAP income from operations",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP income from operations",
+          "value": 261.7,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "GAAP income from operations",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP income from operations",
+          "value": 276.4,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": 5.6
+        }
+      ]
+    },
+    {
+      "id": "adj-op",
+      "question": "adj-op",
+      "definition": "米国会計基準連結。対象期・単位・実績と会社調整値を区別。会社PDF法定本文と対応するSEC10-K本文を参照。",
+      "status": "ready",
+      "claim": "|調整後営業利益（会社定義）|315.9|287.2|約9.1%減|",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Adjusted income from operations company non-GAAP",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Adjusted income from operations company non-GAAP"
+        },
+        {
+          "id": "new",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Adjusted income from operations company non-GAAP",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Adjusted income from operations company non-GAAP"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Adjusted income from operations company non-GAAP",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Adjusted income from operations company non-GAAP",
+          "value": 315.9,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Adjusted income from operations company non-GAAP",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Adjusted income from operations company non-GAAP",
+          "value": 287.2,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": -9.1
+        }
+      ]
+    },
+    {
+      "id": "gaap-eps",
+      "question": "gaap-eps",
+      "definition": "米国会計基準連結。対象期・単位・実績と会社調整値を区別。会社PDF法定本文と対応するSEC10-K本文を参照。",
+      "status": "ready",
+      "claim": "|希薄化後EPS（GAAP、ドル）|0.78|0.85|前年の特別費用等を含む比較|",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "GAAP diluted EPS",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "GAAP diluted EPS"
+        },
+        {
+          "id": "new",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "GAAP diluted EPS",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "GAAP diluted EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "GAAP diluted EPS",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "GAAP diluted EPS",
+          "value": 0.78,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "GAAP diluted EPS",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "GAAP diluted EPS",
+          "value": 0.85,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "adj-eps",
+      "question": "adj-eps",
+      "definition": "米国会計基準連結。対象期・単位・実績と会社調整値を区別。会社PDF法定本文と対応するSEC10-K本文を参照。",
+      "status": "ready",
+      "claim": "|調整後EPS（会社定義、ドル）|0.94|0.89|前年より低い|",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Adjusted EPS company non-GAAP",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "Adjusted EPS company non-GAAP"
+        },
+        {
+          "id": "new",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Adjusted EPS company non-GAAP",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "Adjusted EPS company non-GAAP"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Adjusted EPS company non-GAAP",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "Adjusted EPS company non-GAAP",
+          "value": 0.94,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Adjusted EPS company non-GAAP",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "Adjusted EPS company non-GAAP",
+          "value": 0.89,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "ads-tax",
+      "question": "ads-tax",
+      "definition": "米国会計基準連結。対象期・単位・実績と会社調整値を区別。会社PDF法定本文と対応するSEC10-K本文を参照。",
+      "status": "ready",
+      "claim": "粗利益は増えたが、広告費は820万ドル増加。買収したTouchlandの償却費や販売管理費も増えた。調整後実効税率は23.8%から20.3%へ低下しているため、EPSの底堅さをそのまま本業利益の強さと読むこともできない。ここでの「計画超過」は会社自身の計画に対するもの。市場予想との比較は本稿では行っていない。[2]",
+      "requiredInputs": [
+        {
+          "id": "gp",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Gross profit",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Gross profit"
+        },
+        {
+          "id": "gpp",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Gross profit",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Gross profit"
+        },
+        {
+          "id": "ad",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Marketing",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Marketing"
+        },
+        {
+          "id": "adp",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Marketing",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Marketing"
+        },
+        {
+          "id": "tax",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Adjusted effective tax rate",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "Adjusted effective tax rate"
+        },
+        {
+          "id": "taxp",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Adjusted effective tax rate",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "Adjusted effective tax rate"
+        }
+      ],
+      "observations": [
+        {
+          "id": "gp",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Gross profit",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Gross profit",
+          "value": 693.9,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "gpp",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Gross profit",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Gross profit",
+          "value": 647,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ad",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Marketing",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Marketing",
+          "value": 165.3,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "adp",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Marketing",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Marketing",
+          "value": 157.1,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "tax",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Adjusted effective tax rate",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "Adjusted effective tax rate",
+          "value": 20.3,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "taxp",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Adjusted effective tax rate",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "Adjusted effective tax rate",
+          "value": 23.8,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "adschange",
+          "operation": "difference",
+          "inputs": [
+            "ad",
+            "adp"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": 8.2
+        }
+      ]
+    },
+    {
+      "id": "fcf-growth",
+      "question": "fcf-growth",
+      "definition": "米国会計基準連結。対象期・単位・実績と会社調整値を区別。会社PDF法定本文と対応するSEC10-K本文を参照。",
+      "status": "ready",
+      "claim": "2025年は営業CFが前年より5,920万ドル増え、設備投資は5,740万ドル減った。この二つが重なり、営業CFから設備投資を引いた額は10.93億ドルへ増加した。[1]",
+      "requiredInputs": [
+        {
+          "id": "ocf",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Operating CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Operating CF"
+        },
+        {
+          "id": "prev",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Operating CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Operating CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "PP&E cash additions",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "PP&E cash additions"
+        },
+        {
+          "id": "capp",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "PP&E cash additions",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "PP&E cash additions"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Operating CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Operating CF",
+          "value": 1215.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows, printed pp55/57 (company Annual Report PDF65/67)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prev",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Operating CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Operating CF",
+          "value": 1156.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows, printed pp55/57 (company Annual Report PDF65/67)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "PP&E cash additions",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "PP&E cash additions",
+          "value": 122.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows, printed pp55/57 (company Annual Report PDF65/67)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capp",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "PP&E cash additions",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "PP&E cash additions",
+          "value": 179.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows, printed pp55/57 (company Annual Report PDF65/67)",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "ocfchange",
+          "operation": "difference",
+          "inputs": [
+            "ocf",
+            "prev"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": 59.2
+        },
+        {
+          "id": "capchange",
+          "operation": "difference",
+          "inputs": [
+            "capp",
+            "cap"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": 57.4
+        },
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "ocf",
+            "cap"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": 1093
+        }
+      ]
+    },
+    {
+      "id": "ccc",
+      "question": "ccc",
+      "definition": "米国会計基準連結。対象期・単位・実績と会社調整値を区別。会社PDF法定本文と対応するSEC10-K本文を参照。",
+      "status": "ready",
+      "claim": "現金回収サイクルは28日から20日へ短縮した。会社の定義は「売掛金回収日数＋在庫日数－買掛金支払日数」。内訳は35日＋62日－77日＝20日だ。在庫日数が5日減った一方、買掛金支払日数が4日伸びており、会社は一部仕入先との支払条件延長を説明している。[1：本文48頁]",
+      "requiredInputs": [
+        {
+          "id": "ar2024",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Days sales outstanding",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "days",
+          "basis": "actual",
+          "definition": "Days sales outstanding"
+        },
+        {
+          "id": "inv2024",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Days inventory outstanding",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "days",
+          "basis": "actual",
+          "definition": "Days inventory outstanding"
+        },
+        {
+          "id": "ap2024",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Negative days payable outstanding",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "days",
+          "basis": "actual",
+          "definition": "Negative days payable outstanding"
+        },
+        {
+          "id": "ar2025",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Days sales outstanding",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "days",
+          "basis": "actual",
+          "definition": "Days sales outstanding"
+        },
+        {
+          "id": "inv2025",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Days inventory outstanding",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "days",
+          "basis": "actual",
+          "definition": "Days inventory outstanding"
+        },
+        {
+          "id": "ap2025",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Negative days payable outstanding",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "days",
+          "basis": "actual",
+          "definition": "Negative days payable outstanding"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ar2024",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Days sales outstanding",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "days",
+          "basis": "actual",
+          "definition": "Days sales outstanding",
+          "value": 34,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Liquidity cash conversion cycle printed48; company annual PDF58",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "inv2024",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Days inventory outstanding",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "days",
+          "basis": "actual",
+          "definition": "Days inventory outstanding",
+          "value": 67,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Liquidity cash conversion cycle printed48; company annual PDF58",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ap2024",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Negative days payable outstanding",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "days",
+          "basis": "actual",
+          "definition": "Negative days payable outstanding",
+          "value": -73,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Liquidity cash conversion cycle printed48; company annual PDF58",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ar2025",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Days sales outstanding",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "days",
+          "basis": "actual",
+          "definition": "Days sales outstanding",
+          "value": 35,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Liquidity cash conversion cycle printed48; company annual PDF58",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "inv2025",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Days inventory outstanding",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "days",
+          "basis": "actual",
+          "definition": "Days inventory outstanding",
+          "value": 62,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Liquidity cash conversion cycle printed48; company annual PDF58",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ap2025",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Negative days payable outstanding",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "days",
+          "basis": "actual",
+          "definition": "Negative days payable outstanding",
+          "value": -77,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Liquidity cash conversion cycle printed48; company annual PDF58",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "old",
+          "operation": "sum",
+          "inputs": [
+            "ar2024",
+            "inv2024",
+            "ap2024"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 0,
+          "value": 28
+        },
+        {
+          "id": "new",
+          "operation": "sum",
+          "inputs": [
+            "ar2025",
+            "inv2025",
+            "ap2025"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 0,
+          "value": 20
+        },
+        {
+          "id": "inventory",
+          "operation": "difference",
+          "inputs": [
+            "inv2024",
+            "inv2025"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 0,
+          "value": 5
+        },
+        {
+          "id": "payable",
+          "operation": "difference",
+          "inputs": [
+            "ap2024",
+            "ap2025"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 0,
+          "value": 4
+        }
+      ]
+    },
+    {
+      "id": "h1-working-capital",
+      "question": "h1-working-capital",
+      "definition": "米国会計基準連結。対象期・単位・実績と会社調整値を区別。会社PDF法定本文と対応するSEC10-K本文を参照。",
+      "status": "ready",
+      "claim": "さらに2026年1～6月では、在庫増加が6,540万ドルの現金流出になり、買掛金増加が5,250万ドルの現金流入になった。営業CFは4.616億ドル、設備投資控除後は3.998億ドル。前年より増えているものの、在庫の増加理由と次の四半期の回転を確認すべきだ。[2]",
+      "requiredInputs": [
+        {
+          "id": "inv",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Cash flow inventories",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Cash flow inventories"
+        },
+        {
+          "id": "ap",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Cash flow accounts payable",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Cash flow accounts payable"
+        },
+        {
+          "id": "ocf",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Operating CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Operating CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "PP&E cash outflow signed",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "PP&E cash outflow signed"
+        },
+        {
+          "id": "ocfp",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Operating CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Operating CF"
+        },
+        {
+          "id": "capp",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "PP&E cash outflow signed",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "PP&E cash outflow signed"
+        }
+      ],
+      "observations": [
+        {
+          "id": "inv",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Cash flow inventories",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Cash flow inventories",
+          "value": -65.4,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ap",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Cash flow accounts payable",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Cash flow accounts payable",
+          "value": 52.5,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Operating CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Operating CF",
+          "value": 461.6,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "PP&E cash outflow signed",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "PP&E cash outflow signed",
+          "value": -61.8,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocfp",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Operating CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Operating CF",
+          "value": 416.5,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capp",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "PP&E cash outflow signed",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "PP&E cash outflow signed",
+          "value": -39,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "cap"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": 399.8
+        },
+        {
+          "id": "fcfp",
+          "operation": "sum",
+          "inputs": [
+            "ocfp",
+            "capp"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": 377.5
+        }
+      ]
+    },
+    {
+      "id": "allocation2025",
+      "question": "allocation2025",
+      "definition": "全CFではなく用途別部分集計。過年度買収債務は財務CFで投資CF買収支出と重複しない。",
+      "status": "ready",
+      "claim": "2025年の簡易的な現金配分は、営業CF1,215.4－設備投資122.4－買収656.0＋ビタミン事業売却160.3－買収債務支払5.9－配当287.2－自社株買い900.0＝マイナス595.8となる。これは筆者の用途別集計で、全CF項目を含まないため現金増減そのものではない。株式報酬関連等も含む実際の現金残高は964.1から409.0へ減少した。[1：本文57頁]",
+      "requiredInputs": [
+        {
+          "id": "ocf",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Operating CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Operating CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "PP&E outflow signed",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "PP&E outflow signed"
+        },
+        {
+          "id": "acq",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Acquisition net cash outflow signed",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Acquisition net cash outflow signed"
+        },
+        {
+          "id": "sale",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "VMS sale proceeds",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "VMS sale proceeds"
+        },
+        {
+          "id": "liab",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Acquisition liabilities payment signed",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Acquisition liabilities payment signed"
+        },
+        {
+          "id": "div",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Dividends paid signed",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Dividends paid signed"
+        },
+        {
+          "id": "buy",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Share repurchases signed",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Share repurchases signed"
+        },
+        {
+          "id": "cash",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Cash end",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Cash end"
+        },
+        {
+          "id": "cashp",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Cash beginning",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Cash beginning"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Operating CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Operating CF",
+          "value": 1215.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated cash flows printed57 companyPDF67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "PP&E outflow signed",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "PP&E outflow signed",
+          "value": -122.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated cash flows printed57 companyPDF67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Acquisition net cash outflow signed",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Acquisition net cash outflow signed",
+          "value": -656,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated cash flows printed57 companyPDF67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sale",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "VMS sale proceeds",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "VMS sale proceeds",
+          "value": 160.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated cash flows printed57 companyPDF67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "liab",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Acquisition liabilities payment signed",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Acquisition liabilities payment signed",
+          "value": -5.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated cash flows printed57 companyPDF67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "div",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Dividends paid signed",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Dividends paid signed",
+          "value": -287.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated cash flows printed57 companyPDF67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "buy",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Share repurchases signed",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Share repurchases signed",
+          "value": -900,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated cash flows printed57 companyPDF67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Cash end",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Cash end",
+          "value": 409,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated cash flows printed57 companyPDF67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cashp",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Cash beginning",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Cash beginning",
+          "value": 964.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated cash flows printed57 companyPDF67",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "allocation",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "cap",
+            "acq",
+            "sale",
+            "liab",
+            "div",
+            "buy"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": -595.8
+        },
+        {
+          "id": "cashchange",
+          "operation": "difference",
+          "inputs": [
+            "cash",
+            "cashp"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": -555.1
+        }
+      ]
+    },
+    {
+      "id": "allocationh1",
+      "question": "allocationh1",
+      "definition": "米国会計基準連結。対象期・単位・実績と会社調整値を区別。会社PDF法定本文と対応するSEC10-K本文を参照。",
+      "status": "ready",
+      "claim": "2026年上期も、設備投資控除後399.8から、新規買収300.0、過年度買収関連債務の支払い180.5、配当145.8を引くとマイナス226.5になる。買収をすべて悪い支出と見る必要はないが、FCFの数字だけを使った「買収も還元も無理なく賄える」という評価は不十分だ。[2]",
+      "requiredInputs": [
+        {
+          "id": "ocf",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Operating CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Operating CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "PP&E outflow signed",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "PP&E outflow signed"
+        },
+        {
+          "id": "acq",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Acquisitions net cash signed",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Acquisitions net cash signed"
+        },
+        {
+          "id": "liab",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Payment acquisition liabilities signed",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Payment acquisition liabilities signed"
+        },
+        {
+          "id": "div",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Dividends paid signed",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Dividends paid signed"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Operating CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Operating CF",
+          "value": 461.6,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "PP&E outflow signed",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "PP&E outflow signed",
+          "value": -61.8,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Acquisitions net cash signed",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Acquisitions net cash signed",
+          "value": -300,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "liab",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Payment acquisition liabilities signed",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Payment acquisition liabilities signed",
+          "value": -180.5,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "div",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Dividends paid signed",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Dividends paid signed",
+          "value": -145.8,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "Q2 2026 release: income/segment/non-GAAP reconciliations or six-month cash-flow tables; 指定metricの行",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "allocation",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "cap",
+            "acq",
+            "liab",
+            "div"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": -226.5
+        }
+      ]
+    },
+    {
+      "id": "capital-efficiency",
+      "question": "capital-efficiency",
+      "definition": "ROE=736.8/((4360.8+4002.2)/2)*100=17.62047%; IC0=4360.8+2204.6-964.1=5601.3; IC1=4002.2+2205.1-409=5798.3;平均5699.8; ROIC=1077.6*(1-220.1/956.9)/5699.8*100=14.55731%。平均と乗算は非対応演算なので定義欄に式、Pythonで検算。会社値と偽装せず筆者定義。",
+      "status": "ready",
+      "claim": "計算の使用値（百万ドル）は、純利益736.8、自己資本が2024年末4,360.8・2025年末4,002.2。有利子負債は同2,204.6・2,205.1、現預金は964.1・409.0である。ROE＝736.8÷｛（4,360.8＋4,002.2）÷2｝＝17.6%。簡易ROICの税率は法人税220.1÷税引前利益956.9＝約23.0%。税引後営業利益は1,077.6×（1－220.1÷956.9）、投下資本は期首5,601.3・期末5,798.3、平均5,699.8として、約14.6%となる。現預金を全額控除する簡易定義なので、事業に必要な現金を厳密に残す経済的な投下資本とは異なる。[1：本文55～56頁]",
+      "requiredInputs": [
+        {
+          "id": "ni",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net income",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net income"
+        },
+        {
+          "id": "op",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Operating income",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Operating income"
+        },
+        {
+          "id": "tax",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Income taxes",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Income taxes"
+        },
+        {
+          "id": "pbt",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Income before tax",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Income before tax"
+        },
+        {
+          "id": "eq0",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Stockholders equity",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Stockholders equity"
+        },
+        {
+          "id": "eq1",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Stockholders equity",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Stockholders equity"
+        },
+        {
+          "id": "debt0",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Total debt",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Total debt"
+        },
+        {
+          "id": "debt1",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Total debt",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Total debt"
+        },
+        {
+          "id": "cash0",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Cash and cash equivalents",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Cash and cash equivalents"
+        },
+        {
+          "id": "cash1",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Cash and cash equivalents",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Cash and cash equivalents"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ni",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net income",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net income",
+          "value": 736.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Income and balance sheet printed55/56 companyPDF65/66",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Operating income",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Operating income",
+          "value": 1077.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Income and balance sheet printed55/56 companyPDF65/66",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "tax",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Income taxes",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Income taxes",
+          "value": 220.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Income and balance sheet printed55/56 companyPDF65/66",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "pbt",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Income before tax",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Income before tax",
+          "value": 956.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Income and balance sheet printed55/56 companyPDF65/66",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eq0",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Stockholders equity",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Stockholders equity",
+          "value": 4360.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Income and balance sheet printed55/56 companyPDF65/66",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eq1",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Stockholders equity",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Stockholders equity",
+          "value": 4002.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Income and balance sheet printed55/56 companyPDF65/66",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "debt0",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Total debt",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Total debt",
+          "value": 2204.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Income and balance sheet printed55/56 companyPDF65/66",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "debt1",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Total debt",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Total debt",
+          "value": 2205.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Income and balance sheet printed55/56 companyPDF65/66",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash0",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Cash and cash equivalents",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Cash and cash equivalents",
+          "value": 964.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Income and balance sheet printed55/56 companyPDF65/66",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash1",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Cash and cash equivalents",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Cash and cash equivalents",
+          "value": 409,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Income and balance sheet printed55/56 companyPDF65/66",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "taxrate",
+          "operation": "ratio-percent",
+          "inputs": [
+            "tax",
+            "pbt"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 5,
+          "value": 23.00136
+        }
+      ]
+    },
+    {
+      "id": "depreciation",
+      "question": "depreciation",
+      "definition": "122.4/89.7=1.36455倍。122.4/(89.7+157.7)=0.494745倍。倍数のratio演算非対応なので計算定義を明示しPython検算。",
+      "status": "ready",
+      "claim": "また2025年の設備投資122.4は、有形固定資産の減価償却89.7の約1.36倍。買収ブランド等の無形資産償却157.7まで加えた償却費全体との比率は約0.49倍に落ちる。後者だけを見て設備更新が不足していると判断するのは適切でない。[1：本文57頁]",
+      "requiredInputs": [
+        {
+          "id": "cap",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "PP&E cash additions",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "PP&E cash additions"
+        },
+        {
+          "id": "dep",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Depreciation",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Depreciation"
+        },
+        {
+          "id": "amort",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Amortization",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Amortization"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cap",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "PP&E cash additions",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "PP&E cash additions",
+          "value": 122.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows, printed pp55/57 (company Annual Report PDF65/67)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dep",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Depreciation",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Depreciation",
+          "value": 89.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows, printed pp55/57 (company Annual Report PDF65/67)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "amort",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Amortization",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Amortization",
+          "value": 157.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows, printed pp55/57 (company Annual Report PDF65/67)",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "all",
+          "operation": "sum",
+          "inputs": [
+            "dep",
+            "amort"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": 247.4
+        }
+      ]
+    },
+    {
+      "id": "sensitivity",
+      "question": "sensitivity",
+      "definition": "2025売上6203.2×0.01=62.032millionUSD=6203.2万ドル。1ポイントは仮定で観測値ではない。予測ではなく固定売上機械感応度。",
+      "status": "ready",
+      "claim": "感応度として、2025年の売上規模では利益率1ポイントの変化は税前利益約6,203万ドルに相当する。これは売上が変わらない機械的計算で、価格・数量・広告費が連動する実際の業績予測ではない。",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net sales",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net sales"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Net sales",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Net sales",
+          "value": 6203.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526048139/chd-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows, printed pp55/57 (company Annual Report PDF65/67)",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "outlook",
+      "question": "outlook",
+      "definition": "米国会計基準連結。対象期・単位・実績と会社調整値を区別。会社PDF法定本文と対応するSEC10-K本文を参照。",
+      "status": "ready",
+      "claim": "次回の焦点は、10月30日予定の第3四半期決算説明会で、数量成長、調整後営業利益、在庫・買掛金、買収関連の追加支払いがどう動くかだ。7月末時点の会社予想は通期オーガニック増収4～5%、営業CF約11.75億ドル、設備投資約1.30億ドル。機械的な差額は10.45億ドルだが、ここにも買収・配当・自社株買いは含まれない。[2][4]",
+      "requiredInputs": [
+        {
+          "id": "low",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Organic net sales growth forecast lower",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "Organic net sales growth forecast lower"
+        },
+        {
+          "id": "high",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Organic net sales growth forecast upper",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "Organic net sales growth forecast upper"
+        },
+        {
+          "id": "ocf",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Operating cash flow forecast",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "Operating cash flow forecast"
+        },
+        {
+          "id": "cap",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "PP&E cash forecast outflow signed",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "PP&E cash forecast outflow signed"
+        }
+      ],
+      "observations": [
+        {
+          "id": "low",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Organic net sales growth forecast lower",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "Organic net sales growth forecast lower",
+          "value": 4,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "high",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Organic net sales growth forecast upper",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "Organic net sales growth forecast upper",
+          "value": 5,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "Operating cash flow forecast",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "Operating cash flow forecast",
+          "value": 1175,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Church & Dwight US GAAP consolidated",
+          "metric": "PP&E cash forecast outflow signed",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "PP&E cash forecast outflow signed",
+          "value": -130,
+          "source": {
+            "url": "https://investors.churchdwight.com/Investors/news/news-details/2026/Church--Dwight-Delivers-Strong-Second-Quarter-Results/default.aspx",
+            "publishedOn": "2026-07-31",
+            "locator": "2026 Outlook",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "cap"
+          ],
+          "definition": "明示した使用値から再計算",
+          "precision": 1,
+          "value": 1045
+        }
+      ]
+    }
+  ]
+}

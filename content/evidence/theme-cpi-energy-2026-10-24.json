@@ -1,0 +1,463 @@
+{
+  "version": 1,
+  "articleSlug": "theme-cpi-energy-2026-10-24",
+  "articleSha256": "5e72b9e056af5acb83a8ace4d0a6f21fec9fc52bfa15bceb8c26e1b8db027392",
+  "checkedAt": "2026-10-24T11:04:57.413Z",
+  "informationCutoff": "2026-10-24T19:50:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "一次資料本文・期間・単位・定義を作者と別担当で確認。原稿の重要数値比較は以下に収録。説明用の架空数値・記号による感応度は実績観測と混同せず、本文で仮定と式を明記し算術を別確認。第三者による全稿レビューの完了は別の公開前ゲートで確認する。",
+  "comparisons": [
+    {
+      "id": "headline-0",
+      "question": "| 総合 | 1.9% | 2.1% | 0.4% |",
+      "definition": "同じ2025年基準。前年比・季調前月比・総合寄与度差を別指標として扱う。",
+      "status": "ready",
+      "claim": "| 総合 | 1.9% | 2.1% | 0.4% |",
+      "requiredInputs": [
+        {
+          "id": "aug",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "総合 前年同月比",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "総合 前年同月比"
+        },
+        {
+          "id": "sep",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "総合 前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "総合 前年同月比"
+        },
+        {
+          "id": "mom",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "総合 季節調整済み前月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "総合 季節調整済み前月比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "aug",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "総合 前年同月比",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "総合 前年同月比",
+          "value": 1.9,
+          "source": {
+            "url": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=2&statInfId=000040513537",
+            "publishedOn": "2026-10-23",
+            "locator": "PDF1ページ 全国2026年9月結果",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sep",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "総合 前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "総合 前年同月比",
+          "value": 2.1,
+          "source": {
+            "url": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=2&statInfId=000040513537",
+            "publishedOn": "2026-10-23",
+            "locator": "PDF1ページ 全国2026年9月結果",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "mom",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "総合 季節調整済み前月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "総合 季節調整済み前月比",
+          "value": 0.4,
+          "source": {
+            "url": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=2&statInfId=000040513537",
+            "publishedOn": "2026-10-23",
+            "locator": "PDF1ページ 全国2026年9月結果",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "headline-1",
+      "question": "| 生鮮食品を除く総合 | 1.7% | 2.1% | 0.5% |",
+      "definition": "同じ2025年基準。前年比・季調前月比・総合寄与度差を別指標として扱う。",
+      "status": "ready",
+      "claim": "| 生鮮食品を除く総合 | 1.7% | 2.1% | 0.5% |",
+      "requiredInputs": [
+        {
+          "id": "aug",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "生鮮食品を除く総合 前年同月比",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "生鮮食品を除く総合 前年同月比"
+        },
+        {
+          "id": "sep",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "生鮮食品を除く総合 前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "生鮮食品を除く総合 前年同月比"
+        },
+        {
+          "id": "mom",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "生鮮食品を除く総合 季節調整済み前月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "生鮮食品を除く総合 季節調整済み前月比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "aug",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "生鮮食品を除く総合 前年同月比",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "生鮮食品を除く総合 前年同月比",
+          "value": 1.7,
+          "source": {
+            "url": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=2&statInfId=000040513537",
+            "publishedOn": "2026-10-23",
+            "locator": "PDF1ページ 全国2026年9月結果",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sep",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "生鮮食品を除く総合 前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "生鮮食品を除く総合 前年同月比",
+          "value": 2.1,
+          "source": {
+            "url": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=2&statInfId=000040513537",
+            "publishedOn": "2026-10-23",
+            "locator": "PDF1ページ 全国2026年9月結果",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "mom",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "生鮮食品を除く総合 季節調整済み前月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "生鮮食品を除く総合 季節調整済み前月比",
+          "value": 0.5,
+          "source": {
+            "url": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=2&statInfId=000040513537",
+            "publishedOn": "2026-10-23",
+            "locator": "PDF1ページ 全国2026年9月結果",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "headline-2",
+      "question": "| 生鮮食品・エネルギーを除く総合 | 1.9% | 2.4% | 0.5% |",
+      "definition": "同じ2025年基準。前年比・季調前月比・総合寄与度差を別指標として扱う。",
+      "status": "ready",
+      "claim": "| 生鮮食品・エネルギーを除く総合 | 1.9% | 2.4% | 0.5% |",
+      "requiredInputs": [
+        {
+          "id": "aug",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "生鮮食品・エネルギーを除く総合 前年同月比",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "生鮮食品・エネルギーを除く総合 前年同月比"
+        },
+        {
+          "id": "sep",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "生鮮食品・エネルギーを除く総合 前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "生鮮食品・エネルギーを除く総合 前年同月比"
+        },
+        {
+          "id": "mom",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "生鮮食品・エネルギーを除く総合 季節調整済み前月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "生鮮食品・エネルギーを除く総合 季節調整済み前月比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "aug",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "生鮮食品・エネルギーを除く総合 前年同月比",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "生鮮食品・エネルギーを除く総合 前年同月比",
+          "value": 1.9,
+          "source": {
+            "url": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=2&statInfId=000040513537",
+            "publishedOn": "2026-10-23",
+            "locator": "PDF1ページ 全国2026年9月結果",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sep",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "生鮮食品・エネルギーを除く総合 前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "生鮮食品・エネルギーを除く総合 前年同月比",
+          "value": 2.4,
+          "source": {
+            "url": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=2&statInfId=000040513537",
+            "publishedOn": "2026-10-23",
+            "locator": "PDF1ページ 全国2026年9月結果",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "mom",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "生鮮食品・エネルギーを除く総合 季節調整済み前月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "生鮮食品・エネルギーを除く総合 季節調整済み前月比",
+          "value": 0.5,
+          "source": {
+            "url": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=2&statInfId=000040513537",
+            "publishedOn": "2026-10-23",
+            "locator": "PDF1ページ 全国2026年9月結果",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "contributions",
+      "question": "公式資料の「総合の前年同月比」に対する8月から9月への寄与度差は、エネルギーが+0.01ポイント、宿泊料と水道料がそれぞれ+0.07ポイント、生鮮食品を除く食料が+0.04ポイントだった。",
+      "definition": "同じ2025年基準。前年比・季調前月比・総合寄与度差を別指標として扱う。",
+      "status": "ready",
+      "claim": "公式資料の「総合の前年同月比」に対する8月から9月への寄与度差は、エネルギーが+0.01ポイント、宿泊料と水道料がそれぞれ+0.07ポイント、生鮮食品を除く食料が+0.04ポイントだった。",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "エネルギー 総合前年比寄与度の8月から9月への変化",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "エネルギー 総合前年比寄与度の8月から9月への変化"
+        },
+        {
+          "id": "1",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "宿泊料 総合前年比寄与度の8月から9月への変化",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "宿泊料 総合前年比寄与度の8月から9月への変化"
+        },
+        {
+          "id": "2",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "水道料 総合前年比寄与度の8月から9月への変化",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "水道料 総合前年比寄与度の8月から9月への変化"
+        },
+        {
+          "id": "3",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "生鮮食品を除く食料 総合前年比寄与度の8月から9月への変化",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "生鮮食品を除く食料 総合前年比寄与度の8月から9月への変化"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "エネルギー 総合前年比寄与度の8月から9月への変化",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "エネルギー 総合前年比寄与度の8月から9月への変化",
+          "value": 0.01,
+          "source": {
+            "url": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=2&statInfId=000040513537",
+            "publishedOn": "2026-10-23",
+            "locator": "PDF3ページ 全国2026年9月結果",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "1",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "宿泊料 総合前年比寄与度の8月から9月への変化",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "宿泊料 総合前年比寄与度の8月から9月への変化",
+          "value": 0.07,
+          "source": {
+            "url": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=2&statInfId=000040513537",
+            "publishedOn": "2026-10-23",
+            "locator": "PDF3ページ 全国2026年9月結果",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "水道料 総合前年比寄与度の8月から9月への変化",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "水道料 総合前年比寄与度の8月から9月への変化",
+          "value": 0.07,
+          "source": {
+            "url": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=2&statInfId=000040513537",
+            "publishedOn": "2026-10-23",
+            "locator": "PDF3ページ 全国2026年9月結果",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "3",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "生鮮食品を除く食料 総合前年比寄与度の8月から9月への変化",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "生鮮食品を除く食料 総合前年比寄与度の8月から9月への変化",
+          "value": 0.04,
+          "source": {
+            "url": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=2&statInfId=000040513537",
+            "publishedOn": "2026-10-23",
+            "locator": "PDF3ページ 全国2026年9月結果",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fresh-food",
+      "question": "一方、生鮮食品は−0.15ポイントの方向に働いた。",
+      "definition": "同じ2025年基準。前年比・季調前月比・総合寄与度差を別指標として扱う。",
+      "status": "ready",
+      "claim": "一方、生鮮食品は−0.15ポイントの方向に働いた。",
+      "requiredInputs": [
+        {
+          "id": "fresh",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "生鮮食品 総合前年比寄与度の8月から9月への変化",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "生鮮食品 総合前年比寄与度の8月から9月への変化"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fresh",
+          "entity": "総務省統計局 全国CPI 2025年基準",
+          "metric": "生鮮食品 総合前年比寄与度の8月から9月への変化",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "生鮮食品 総合前年比寄与度の8月から9月への変化",
+          "value": -0.15,
+          "source": {
+            "url": "https://www.e-stat.go.jp/stat-search/file-download?fileKind=2&statInfId=000040513537",
+            "publishedOn": "2026-10-23",
+            "locator": "PDF3ページ 全国2026年9月結果",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
