@@ -1,0 +1,320 @@
+{
+  "version": 1,
+  "articleSlug": "theme-us-deficit-bond-yields-2026-10-25",
+  "articleSha256": "053656a4a213fdbda5de2e6539da9fc2be7befd88cfaa6903bb803c76145378b",
+  "checkedAt": "2026-10-25T10:51:43.569Z",
+  "informationCutoff": "2026-10-25T19:45:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "全本文確認。CBO FY2026は既終了年度の暫定推計でactual分類の定義に明示。財務省借入見通しは発行主体予測でcompany-forecast分類の意味を明示。最終MTS取得403につき確定値を掲載しない。現在の利回り・赤字金利感応度・GDP比を推測していない。",
+  "comparisons": [
+    {
+      "id": "receipts",
+      "question": "| 歳入 | 5,235 | 5,403 |",
+      "definition": "本文の期間・単位・集計範囲を一致させて一次資料本文と照合。",
+      "status": "ready",
+      "claim": "| 歳入 | 5,235 | 5,403 |",
+      "requiredInputs": [
+        {
+          "id": "fy25",
+          "entity": "米連邦政府",
+          "metric": "歳入",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "CBO表のFY2025 actual。赤字は正数に変換。"
+        },
+        {
+          "id": "fy26",
+          "entity": "米連邦政府",
+          "metric": "歳入",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "CBOが2026-10-08公表した既終了年度の暫定実績推計。最終確定値・将来予測ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fy25",
+          "entity": "米連邦政府",
+          "metric": "歳入",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "CBO表のFY2025 actual。赤字は正数に変換。",
+          "value": 5235,
+          "source": {
+            "url": "https://www.cbo.gov/system/files/2026-10/61985-MBR.pdf",
+            "publishedOn": "2026-10-08",
+            "locator": "Table 1 Budget Totals, October–September; FY2026 Preliminary",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fy26",
+          "entity": "米連邦政府",
+          "metric": "歳入",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "CBOが2026-10-08公表した既終了年度の暫定実績推計。最終確定値・将来予測ではない。",
+          "value": 5403,
+          "source": {
+            "url": "https://www.cbo.gov/system/files/2026-10/61985-MBR.pdf",
+            "publishedOn": "2026-10-08",
+            "locator": "Table 1 Budget Totals, October–September; FY2026 Preliminary",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "outlays",
+      "question": "| 歳出 | 7,010 | 7,396 |",
+      "definition": "本文の期間・単位・集計範囲を一致させて一次資料本文と照合。",
+      "status": "ready",
+      "claim": "| 歳出 | 7,010 | 7,396 |",
+      "requiredInputs": [
+        {
+          "id": "fy25",
+          "entity": "米連邦政府",
+          "metric": "歳出",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "CBO表のFY2025 actual。赤字は正数に変換。"
+        },
+        {
+          "id": "fy26",
+          "entity": "米連邦政府",
+          "metric": "歳出",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "CBOが2026-10-08公表した既終了年度の暫定実績推計。最終確定値・将来予測ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fy25",
+          "entity": "米連邦政府",
+          "metric": "歳出",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "CBO表のFY2025 actual。赤字は正数に変換。",
+          "value": 7010,
+          "source": {
+            "url": "https://www.cbo.gov/system/files/2026-10/61985-MBR.pdf",
+            "publishedOn": "2026-10-08",
+            "locator": "Table 1 Budget Totals, October–September; FY2026 Preliminary",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fy26",
+          "entity": "米連邦政府",
+          "metric": "歳出",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "CBOが2026-10-08公表した既終了年度の暫定実績推計。最終確定値・将来予測ではない。",
+          "value": 7396,
+          "source": {
+            "url": "https://www.cbo.gov/system/files/2026-10/61985-MBR.pdf",
+            "publishedOn": "2026-10-08",
+            "locator": "Table 1 Budget Totals, October–September; FY2026 Preliminary",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "deficit",
+      "question": "| 赤字額・正数表示 | 1,775 | 1,993 |",
+      "definition": "本文の期間・単位・集計範囲を一致させて一次資料本文と照合。",
+      "status": "ready",
+      "claim": "| 赤字額・正数表示 | 1,775 | 1,993 |",
+      "requiredInputs": [
+        {
+          "id": "fy25",
+          "entity": "米連邦政府",
+          "metric": "赤字額・正数表示",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "CBO表のFY2025 actual。赤字は正数に変換。"
+        },
+        {
+          "id": "fy26",
+          "entity": "米連邦政府",
+          "metric": "赤字額・正数表示",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "CBOが2026-10-08公表した既終了年度の暫定実績推計。最終確定値・将来予測ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fy25",
+          "entity": "米連邦政府",
+          "metric": "赤字額・正数表示",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "CBO表のFY2025 actual。赤字は正数に変換。",
+          "value": 1775,
+          "source": {
+            "url": "https://www.cbo.gov/system/files/2026-10/61985-MBR.pdf",
+            "publishedOn": "2026-10-08",
+            "locator": "Table 1 Budget Totals, October–September; FY2026 Preliminary",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fy26",
+          "entity": "米連邦政府",
+          "metric": "赤字額・正数表示",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "CBOが2026-10-08公表した既終了年度の暫定実績推計。最終確定値・将来予測ではない。",
+          "value": 1993,
+          "source": {
+            "url": "https://www.cbo.gov/system/files/2026-10/61985-MBR.pdf",
+            "publishedOn": "2026-10-08",
+            "locator": "Table 1 Budget Totals, October–September; FY2026 Preliminary",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-balance",
+      "question": "5月時点からの増額は680億ドルだが、期首現金残高が想定より多かった効果を除くと増額は870億ドルだった。差は190億ドルである。",
+      "definition": "本文の期間・単位・集計範囲を一致させて一次資料本文と照合。",
+      "status": "ready",
+      "claim": "5月時点からの増額は680億ドルだが、期首現金残高が想定より多かった効果を除くと増額は870億ドルだった。差は190億ドルである。",
+      "requiredInputs": [
+        {
+          "id": "net",
+          "entity": "米財務省",
+          "metric": "純借入見通し",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "2026-08-03時点の財務省見通し。company-forecast分類は発行主体自身の予測を表す。"
+        },
+        {
+          "id": "increase",
+          "entity": "米財務省",
+          "metric": "5月からの見通し増額",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "期首現金残高効果込み、8月3日時点発行主体見通し"
+        },
+        {
+          "id": "excluding",
+          "entity": "米財務省",
+          "metric": "期首現金残高効果除外増額",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "期首現金残高効果除外、8月3日時点発行主体見通し"
+        }
+      ],
+      "observations": [
+        {
+          "id": "net",
+          "entity": "米財務省",
+          "metric": "純借入見通し",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "2026-08-03時点の財務省見通し。company-forecast分類は発行主体自身の予測を表す。",
+          "value": 739,
+          "source": {
+            "url": "https://home.treasury.gov/news/press-releases/sb0584",
+            "publishedOn": "2026-08-03",
+            "locator": "July–September 2026 paragraph; Cash Balance assumptions table",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "increase",
+          "entity": "米財務省",
+          "metric": "5月からの見通し増額",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "期首現金残高効果込み、8月3日時点発行主体見通し",
+          "value": 68,
+          "source": {
+            "url": "https://home.treasury.gov/news/press-releases/sb0584",
+            "publishedOn": "2026-08-03",
+            "locator": "July–September 2026 paragraph; Cash Balance assumptions table",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "excluding",
+          "entity": "米財務省",
+          "metric": "期首現金残高効果除外増額",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "期首現金残高効果除外、8月3日時点発行主体見通し",
+          "value": 87,
+          "source": {
+            "url": "https://home.treasury.gov/news/press-releases/sb0584",
+            "publishedOn": "2026-08-03",
+            "locator": "July–September 2026 paragraph; Cash Balance assumptions table",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "cash-effect",
+          "operation": "difference",
+          "inputs": [
+            "excluding",
+            "increase"
+          ],
+          "definition": "87-68。期首現金残高が多かったことによる借入見通しの抑制額。",
+          "precision": 0,
+          "value": 19
+        }
+      ]
+    }
+  ]
+}
