@@ -1,0 +1,350 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-10-26",
+  "articleSha256": "7ddbe80a0060684111adfe68bd52e0a9b12afe6fa07987681d5aec2ce6e21e7a",
+  "checkedAt": "2026-10-25T21:28:23.841Z",
+  "informationCutoff": "2026-10-26T06:26:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終記事の題名、結論、要約、5つの材料の全文・分析・注目点・免責を通読し、重要数値を照合。SpaceXは借入調達に関する発言としてのみ採用し、売上・CAPEXとの比率やFCF比較を作らない。S&P500は23日/22日の通常取引終値、週明けの新値と区別。パーク24は会社原文PDF1ページの通期予想表と費用説明を読み、純利益と営業利益の前回/今回の全入力、特別損失見込額を確認。日銀FSRは原文HTMLの問題意識・要旨を読み、モデル仮定を予測にしない。未照合の危機シナリオの具体的株価下落率は使わない。日米会合は公式日程を確認し、予定と結果を区別。週間騰落率、TTM、市場予想、FCF独自計算、未確認の関税合意は掲載しない。",
+  "sourceChecks": [
+    {
+      "url": "https://www.boj.or.jp/research/brp/fsr/fsr261023.htm",
+      "publishedOn": "2026-10-23",
+      "locator": "2026年10月号の問題意識／わが国金融システムの安定性評価（要旨）",
+      "reviewed": "安定性評価、AI関連投資の収益性・調達、海外ノンバンク、地政学・金利の複合ストレス、サイバーセキュリティへの言及を原文HTMLで確認。全文PDFは取得できず、HTMLで確認できない数値は採用していない。"
+    },
+    {
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "accessedOn": "2026-10-26",
+      "publicationDateNote": "ページ自体の公表日記載なし。確認日を明記。",
+      "locator": "2026 FOMC Meetings / October 27-28",
+      "reviewed": "米国現地の開催予定日だけを記載。政策判断や発表時刻を推測しない。"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmsche_minu/m_ref/mref250731a.pdf",
+      "publishedOn": "2025-07-31",
+      "pdfPage": 1,
+      "locator": "2026年の金融政策決定会合等の日程／10月29・30日／展望基本的見解10月30日",
+      "reviewed": "会合と展望公表の予定。開催日と決定内容を区別。"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "spacex-debt-statement",
+      "question": "GPU向けの調達額と実績利益を混同していないか",
+      "definition": "Musk氏が2026年10月25日に完了と述べたとReutersが報じた、SpaceXのGPU購入向け借入調達額。発言としての数値で、資金全額の実行や四半期の売上・利益・FCFではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "debt",
+          "entity": "SpaceX（Musk氏の発言報道）",
+          "metric": "GPU向け借入調達額",
+          "periodStart": "2026-10-25",
+          "periodEnd": "2026-10-25",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "Musk氏が2026年10月25日に完了と述べたとReutersが報じた、SpaceXのGPU購入向け借入調達額。発言としての数値で、資金全額の実行や四半期の売上・利益・FCFではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "debt",
+          "entity": "SpaceX（Musk氏の発言報道）",
+          "metric": "GPU向け借入調達額",
+          "periodStart": "2026-10-25",
+          "periodEnd": "2026-10-25",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "Musk氏が2026年10月25日に完了と述べたとReutersが報じた、SpaceXのGPU購入向け借入調達額。発言としての数値で、資金全額の実行や四半期の売上・利益・FCFではない。",
+          "value": 40000,
+          "source": {
+            "url": "https://www.reuters.com/business/media-telecom/musk-says-spacex-raised-40-billion-debt-gpus-2026-10-25/",
+            "publishedOn": "2026-10-25",
+            "locator": "冒頭：had closed $40 billion in debt financing for graphics processing units。記事時刻2026-10-25 20:05 UTC（10月26日05:05 JST）。直後にMusk氏の信用力・Starlink/launch収入の説明。",
+            "kind": "secondary",
+            "primaryUnavailableReason": "Reuters本文はMusk氏のX投稿を出典とするが原投稿のリンクがなく、本人アカウントを指定した限定回数の追加検索でも原投稿を取得できなかった。主要報道Reutersを直接読み、発言としての金額と属性に限定。未照合の契約条件、全額の実行、四半期売上やCAPEXとの比較を採用しない。"
+          }
+        }
+      ],
+      "claim": "Reutersは10月25日20:05 UTC（26日05:05 JST）、Musk氏がSpaceXのGPU向け借入調達400億米ドルを完了したと述べたと報じた。400億米ドルは40,000百万米ドル。今回は経営者の発言として報じられた調達額であり、四半期売上、利益、FCFの数値ではない。",
+      "calculations": []
+    },
+    {
+      "id": "sp500-last-session",
+      "question": "直近取引日の米株は前取引日からどう動いたか",
+      "definition": "S&P500現物価格指数の米国通常取引終値。先物、時間外、配当再投資を含まない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sp23",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-23",
+          "periodEnd": "2026-10-23",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "S&P500現物価格指数の米国通常取引終値。先物、時間外、配当再投資を含まない。"
+        },
+        {
+          "id": "sp22",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-22",
+          "periodEnd": "2026-10-22",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "S&P500現物価格指数の米国通常取引終値。先物、時間外、配当再投資を含まない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sp23",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-23",
+          "periodEnd": "2026-10-23",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "S&P500現物価格指数の米国通常取引終値。先物、時間外、配当再投資を含まない。",
+          "value": 7623.68,
+          "source": {
+            "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-e07c72bc5cbe5dffe352ddf30054e35f",
+            "publishedOn": "2026-10-23",
+            "locator": "How major US stock indexes fared / On Friday or On Thursday / S&P500 daily closing summary",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数提供元の両日の履歴一式は取得していないため、主要報道APの両日の確定終値記事を直接読み、同じ通常取引終値を照合した。"
+          }
+        },
+        {
+          "id": "sp22",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-22",
+          "periodEnd": "2026-10-22",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "S&P500現物価格指数の米国通常取引終値。先物、時間外、配当再投資を含まない。",
+          "value": 7663.43,
+          "source": {
+            "url": "https://apnews.com/article/stocks-wall-street-nasdaq-dow-1970e79d013cbddcae89c53b4b98f384",
+            "publishedOn": "2026-10-22",
+            "locator": "How major US stock indexes fared / On Friday or On Thursday / S&P500 daily closing summary",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数提供元の両日の履歴一式は取得していないため、主要報道APの両日の確定終値記事を直接読み、同じ通常取引終値を照合した。"
+          }
+        }
+      ],
+      "claim": "S&P500の直近通常取引終値は10月23日の7,623.68。22日の7,663.43から39.75ポイント、0.52%下落した。両日とも現物価格指数の通常取引終値で、騰落率は小数第2位に丸めた。23日16:00 EDTは24日05:00 JSTに当たる。",
+      "calculations": [
+        {
+          "id": "sp-diff",
+          "operation": "difference",
+          "inputs": [
+            "sp23",
+            "sp22"
+          ],
+          "definition": "23日通常取引終値−22日通常取引終値",
+          "precision": 2,
+          "value": -39.75
+        },
+        {
+          "id": "sp-percent",
+          "operation": "growth-percent",
+          "inputs": [
+            "sp23",
+            "sp22"
+          ],
+          "definition": "(23日終値÷22日終値−1)×100。週明け26日の騰落率ではない。",
+          "precision": 2,
+          "value": -0.52
+        }
+      ]
+    },
+    {
+      "id": "park24-profit-revision",
+      "question": "情報漏えい対応費用は会社予想のどの利益段階に反映されたか",
+      "definition": "同一通期の会社予想を比較。純利益の減額、営業利益予想の据え置き、四半期の特別損失計上見込みを区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old-net",
+          "entity": "パーク24",
+          "metric": "通期親会社株主帰属当期純利益・前回予想",
+          "periodStart": "2025-11-01",
+          "periodEnd": "2026-10-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "2026年10月期、日本基準・連結・親会社株主に帰属する当期純利益の会社予想。同一期間の前回予想と今回修正予想。実績・市場予想ではない。"
+        },
+        {
+          "id": "new-net",
+          "entity": "パーク24",
+          "metric": "通期親会社株主帰属当期純利益・今回修正予想",
+          "periodStart": "2025-11-01",
+          "periodEnd": "2026-10-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "2026年10月期、日本基準・連結・親会社株主に帰属する当期純利益の会社予想。同一期間の前回予想と今回修正予想。実績・市場予想ではない。"
+        },
+        {
+          "id": "special-loss",
+          "entity": "パーク24",
+          "metric": "不正アクセス対応の特別損失計上見込額",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-10-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "第4四半期に計上見込みのお見舞金および諸対応費用。現金支払実績や営業損失ではない。"
+        },
+        {
+          "id": "old-op",
+          "entity": "パーク24",
+          "metric": "通期営業利益・前回予想",
+          "periodStart": "2025-11-01",
+          "periodEnd": "2026-10-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "2026年10月期、日本基準・連結・通期営業利益の会社予想。特別損失や純利益とは別の段階の指標。"
+        },
+        {
+          "id": "new-op",
+          "entity": "パーク24",
+          "metric": "通期営業利益・今回修正予想",
+          "periodStart": "2025-11-01",
+          "periodEnd": "2026-10-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "2026年10月期、日本基準・連結・通期営業利益の会社予想。特別損失や純利益とは別の段階の指標。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old-net",
+          "entity": "パーク24",
+          "metric": "通期親会社株主帰属当期純利益・前回予想",
+          "periodStart": "2025-11-01",
+          "periodEnd": "2026-10-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "2026年10月期、日本基準・連結・親会社株主に帰属する当期純利益の会社予想。同一期間の前回予想と今回修正予想。実績・市場予想ではない。",
+          "value": 44000,
+          "source": {
+            "url": "https://japanir.jp/wp-content/uploads/2026/10/4666-20261023-02.pdf",
+            "publishedOn": "2026-10-23",
+            "locator": "2．通期連結業績予想の修正／前回発表予想(A)／親会社株主に帰属する当期純利益／単位百万円",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "new-net",
+          "entity": "パーク24",
+          "metric": "通期親会社株主帰属当期純利益・今回修正予想",
+          "periodStart": "2025-11-01",
+          "periodEnd": "2026-10-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "2026年10月期、日本基準・連結・親会社株主に帰属する当期純利益の会社予想。同一期間の前回予想と今回修正予想。実績・市場予想ではない。",
+          "value": 38500,
+          "source": {
+            "url": "https://japanir.jp/wp-content/uploads/2026/10/4666-20261023-02.pdf",
+            "publishedOn": "2026-10-23",
+            "locator": "2．通期連結業績予想の修正／今回修正予想(B)／親会社株主に帰属する当期純利益／単位百万円",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "special-loss",
+          "entity": "パーク24",
+          "metric": "不正アクセス対応の特別損失計上見込額",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-10-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "第4四半期に計上見込みのお見舞金および諸対応費用。現金支払実績や営業損失ではない。",
+          "value": 5500,
+          "source": {
+            "url": "https://japanir.jp/wp-content/uploads/2026/10/4666-20261023-02.pdf",
+            "publishedOn": "2026-10-23",
+            "locator": "1．特別損失の計上／第4四半期のお見舞金および諸対応費用5,500百万円",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "old-op",
+          "entity": "パーク24",
+          "metric": "通期営業利益・前回予想",
+          "periodStart": "2025-11-01",
+          "periodEnd": "2026-10-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "2026年10月期、日本基準・連結・通期営業利益の会社予想。特別損失や純利益とは別の段階の指標。",
+          "value": 42500,
+          "source": {
+            "url": "https://japanir.jp/wp-content/uploads/2026/10/4666-20261023-02.pdf",
+            "publishedOn": "2026-10-23",
+            "locator": "2．通期連結業績予想の修正／前回発表予想(A)／営業利益／単位百万円",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "new-op",
+          "entity": "パーク24",
+          "metric": "通期営業利益・今回修正予想",
+          "periodStart": "2025-11-01",
+          "periodEnd": "2026-10-31",
+          "unit": "million JPY",
+          "basis": "company-forecast",
+          "definition": "2026年10月期、日本基準・連結・通期営業利益の会社予想。特別損失や純利益とは別の段階の指標。",
+          "value": 42500,
+          "source": {
+            "url": "https://japanir.jp/wp-content/uploads/2026/10/4666-20261023-02.pdf",
+            "publishedOn": "2026-10-23",
+            "locator": "2．通期連結業績予想の修正／今回修正予想(B)／営業利益／単位百万円",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "パーク24は2026年10月期の連結親会社株主に帰属する当期純利益予想を44,000百万円から38,500百万円へ下方修正した。減額は5,500百万円、従来予想比12.5%。対象期間は2025年11月1日〜2026年10月31日、通貨は日本円で、いずれも会社予想である。",
+      "calculations": [
+        {
+          "id": "net-revision",
+          "operation": "difference",
+          "inputs": [
+            "new-net",
+            "old-net"
+          ],
+          "definition": "今回純利益会社予想−前回純利益会社予想、百万円",
+          "precision": 0,
+          "value": -5500
+        },
+        {
+          "id": "net-percent",
+          "operation": "growth-percent",
+          "inputs": [
+            "new-net",
+            "old-net"
+          ],
+          "definition": "(今回純利益会社予想÷前回純利益会社予想−1)×100、前年比ではない。",
+          "precision": 1,
+          "value": -12.5
+        },
+        {
+          "id": "op-revision",
+          "operation": "difference",
+          "inputs": [
+            "new-op",
+            "old-op"
+          ],
+          "definition": "今回営業利益会社予想−前回営業利益会社予想、百万円",
+          "precision": 0,
+          "value": 0
+        }
+      ]
+    }
+  ]
+}
