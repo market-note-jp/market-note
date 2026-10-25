@@ -1,0 +1,158 @@
+{
+  "version": 1,
+  "articleSlug": "theme-gold-etf-flows-price-2026-10-25",
+  "articleSha256": "baa0a2067554307ffe68478ce43e3caecc02a6edea454f3f34ce56808f955b6d",
+  "checkedAt": "2026-10-25T10:51:43.569Z",
+  "informationCutoff": "2026-10-25T19:45:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "全本文を一次資料と照合。数値集計は9月単月・月末残高。説明用仮想例は100×100=10000、102×90=9180、9180/10000-1=-8.2%、0.9×1.1-1=-1%を再計算。仮想入力を実際の観測や予測として登録していない。",
+  "comparisons": [
+    {
+      "id": "september-etf",
+      "question": "9月は世界の現物裏付け金ETFに100億米ドルが流入し、保有量は67トン増えて4,256トンになった。一方、運用資産額は前月比7%減の5,740億米ドルだった。",
+      "definition": "本文の期間・単位・集計範囲を一致させて一次資料本文と照合。",
+      "status": "ready",
+      "claim": "9月は世界の現物裏付け金ETFに100億米ドルが流入し、保有量は67トン増えて4,256トンになった。一方、運用資産額は前月比7%減の5,740億米ドルだった。",
+      "requiredInputs": [
+        {
+          "id": "flows",
+          "entity": "World Gold Council 金ETF集計",
+          "metric": "資金流入",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "資金流入"
+        },
+        {
+          "id": "change",
+          "entity": "World Gold Council 金ETF集計",
+          "metric": "保有量増加",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "tonnes",
+          "basis": "actual",
+          "definition": "保有量増加"
+        },
+        {
+          "id": "holdings",
+          "entity": "World Gold Council 金ETF集計",
+          "metric": "月末保有量",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "tonnes",
+          "basis": "actual",
+          "definition": "月末保有量"
+        },
+        {
+          "id": "aumchange",
+          "entity": "World Gold Council 金ETF集計",
+          "metric": "AUM前月比",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "AUM前月比"
+        },
+        {
+          "id": "aum",
+          "entity": "World Gold Council 金ETF集計",
+          "metric": "月末AUM",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "月末AUM"
+        }
+      ],
+      "observations": [
+        {
+          "id": "flows",
+          "entity": "World Gold Council 金ETF集計",
+          "metric": "資金流入",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "資金流入",
+          "value": 10,
+          "source": {
+            "url": "https://www.gold.org/goldhub/research/gold-etfs-holdings-and-flows/2026/10",
+            "publishedOn": "2026-10-07",
+            "locator": "September and Q3 in review; 2026年9月単月と9月末残高",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "change",
+          "entity": "World Gold Council 金ETF集計",
+          "metric": "保有量増加",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "tonnes",
+          "basis": "actual",
+          "definition": "保有量増加",
+          "value": 67,
+          "source": {
+            "url": "https://www.gold.org/goldhub/research/gold-etfs-holdings-and-flows/2026/10",
+            "publishedOn": "2026-10-07",
+            "locator": "September and Q3 in review; 2026年9月単月と9月末残高",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "holdings",
+          "entity": "World Gold Council 金ETF集計",
+          "metric": "月末保有量",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "tonnes",
+          "basis": "actual",
+          "definition": "月末保有量",
+          "value": 4256,
+          "source": {
+            "url": "https://www.gold.org/goldhub/research/gold-etfs-holdings-and-flows/2026/10",
+            "publishedOn": "2026-10-07",
+            "locator": "September and Q3 in review; 2026年9月単月と9月末残高",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "aumchange",
+          "entity": "World Gold Council 金ETF集計",
+          "metric": "AUM前月比",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "AUM前月比",
+          "value": -7,
+          "source": {
+            "url": "https://www.gold.org/goldhub/research/gold-etfs-holdings-and-flows/2026/10",
+            "publishedOn": "2026-10-07",
+            "locator": "September and Q3 in review; 2026年9月単月と9月末残高",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "aum",
+          "entity": "World Gold Council 金ETF集計",
+          "metric": "月末AUM",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "月末AUM",
+          "value": 574,
+          "source": {
+            "url": "https://www.gold.org/goldhub/research/gold-etfs-holdings-and-flows/2026/10",
+            "publishedOn": "2026-10-07",
+            "locator": "September and Q3 in review; 2026年9月単月と9月末残高",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
