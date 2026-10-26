@@ -1,0 +1,351 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-10-27",
+  "articleSha256": "8efd85c28c39f627c4e758dbb1a67f1c434ac53f1f747ccf50be29872a109143",
+  "checkedAt": "2026-10-26T21:29:12.025Z",
+  "informationCutoff": "2026-10-27T06:28:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終記事の見出し・概要・本文・分析・注目点・免責を全文レビュー。事前に契約額、S&P500通常終値の前営業日比、国内会社予想新旧比較、IPO手続きと政策日程を列挙。Apollo原文冒頭とTransaction Details、Anthropic原文、APの両日のOn Monday/On Friday、コーエーテクモPDF1ページ、FRBカレンダーと日銀PDF1ページを読んだ。重要な数値比較は以下に全件記録。FCF・ROIC・回収年数・IPO想定評価額・企業間比率は計算・掲載していない。日付・時差は手続きと観測時刻の識別であり収益比較ではない。",
+  "sourceChecks": [
+    {
+      "url": "https://www.apollo.com/insights-news/pressreleases/2026/10/spacex-secures--40-billion-in-the-largest-gpu-financing-ever",
+      "publishedOn": "2026-10-26",
+      "locator": "冒頭、Transaction Details、Forward-Looking Statements",
+      "finding": "拘束力あるコミットメント、条件付きで年末前クロージング予定、2027年上期納入後リース開始。未完了を完了としない。公開時刻表記なし、06:28 JSTより前の閲覧で存在確認。CFOの未検証回収年数比較は掲載しない。"
+    },
+    {
+      "url": "https://www.anthropic.com/news/s1-sec",
+      "publishedOn": "2026-10-26",
+      "locator": "本文第1〜4段落",
+      "finding": "S-1提出、Nasdaq/ANT意向、募集株数・価格帯未決定、登録未発効。06:28 JSTより前に発表確認。評価額・資金調達額は除外。"
+    },
+    {
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+      "publishedOn": null,
+      "accessedOn": "2026-10-27",
+      "locator": "2026 FOMC Meetings / October",
+      "finding": "27–28日。未公表政策判断は掲載しない。"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmsche_minu/m_ref/mref250731a.pdf",
+      "publishedOn": "2025-07-31",
+      "pdfPage": 1,
+      "locator": "10月開催日・展望公表日",
+      "finding": "29–30日、基本的見解30日。時差を区別。"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "spacex-lease-amount",
+      "question": "契約の約束額と実績投資・現金収益を混同していないか。",
+      "definition": "単一契約の額を記録し、未確認の企業間比較・売上比率を行わない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "committed-lease",
+          "entity": "SpaceX",
+          "metric": "マスター・ファイナンスリースのコミットメント額",
+          "periodStart": "2026-10-26",
+          "periodEnd": "2026-10-26",
+          "unit": "十億米ドル",
+          "basis": "company-forecast",
+          "definition": "条件付きクロージング前の約束額。実績投資額・FCFではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "committed-lease",
+          "entity": "SpaceX",
+          "metric": "マスター・ファイナンスリースのコミットメント額",
+          "periodStart": "2026-10-26",
+          "periodEnd": "2026-10-26",
+          "unit": "十億米ドル",
+          "basis": "company-forecast",
+          "definition": "条件付きクロージング前の約束額。実績投資額・FCFではない。",
+          "value": 40,
+          "source": {
+            "url": "https://www.apollo.com/insights-news/pressreleases/2026/10/spacex-secures--40-billion-in-the-largest-gpu-financing-ever",
+            "publishedOn": "2026-10-26",
+            "locator": "冒頭のbinding commitment / approximately $40 billion master finance lease",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "Apolloが10月26日に公表した資料によると、SpaceXはApollo運用主体とのGPU・関連設備のマスター・ファイナンスリースについて、約400億米ドルの拘束力あるコミットメントを得た。対象にはNVIDIA Vera Rubinが含まれる。これは調達契約の予定額であり、売上やFCFの実績ではない。"
+    },
+    {
+      "id": "sp500-daily-close",
+      "question": "S&P500の26日通常終値は前営業日比でどう変化したか。",
+      "definition": "同じ現物価格指数・通常終値・ポイントを比較。23日から26日への営業日比。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sp-23",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-23",
+          "periodEnd": "2026-10-23",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米国現物価格指数の通常取引終値。配当込み指数・先物・時間外価格ではない。"
+        },
+        {
+          "id": "sp-26",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-26",
+          "periodEnd": "2026-10-26",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米国現物価格指数の通常取引終値。配当込み指数・先物・時間外価格ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sp-23",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-23",
+          "periodEnd": "2026-10-23",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米国現物価格指数の通常取引終値。配当込み指数・先物・時間外価格ではない。",
+          "value": 7623.68,
+          "source": {
+            "url": "https://krmg.com/2026/10/23/how-major-us-stock-indexes-fared-friday-10-23-2026/",
+            "publishedOn": "2026-10-23",
+            "locator": "On Friday: S&P500 paragraph; by Associated Press; 15:14 CDT",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数管理会社の対象日公式終値を限定検索で確認できず、更新時刻が対象終値と異なるトップ表示は不採用。両日のAP終値記事原文をKRMGの配信ページで確認。"
+          }
+        },
+        {
+          "id": "sp-26",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-26",
+          "periodEnd": "2026-10-26",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米国現物価格指数の通常取引終値。配当込み指数・先物・時間外価格ではない。",
+          "value": 7676.77,
+          "source": {
+            "url": "https://krmg.com/2026/10/26/how-major-us-stock-indexes-fared-monday-10-26-2026/",
+            "publishedOn": "2026-10-26",
+            "locator": "On Monday: S&P500 paragraph; by Associated Press; 15:13 CDT",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数管理会社の対象日公式終値を限定検索で確認できず、更新時刻が対象終値と異なるトップ表示は不採用。両日のAP終値記事原文をKRMGの配信ページで確認。"
+          }
+        }
+      ],
+      "claim": "S&P500の10月26日の通常取引終値は7,676.77。前営業日23日の7,623.68から53.09ポイント、0.70%上昇した。両日とも現物の価格指数の終値で、騰落率は（26日終値÷23日終値−1）×100を小数第2位に丸めた。26日16:00 EDTは27日05:00 JSTに当たる。",
+      "calculations": [
+        {
+          "id": "delta",
+          "operation": "difference",
+          "inputs": [
+            "sp-26",
+            "sp-23"
+          ],
+          "definition": "26日−23日（ポイント）",
+          "precision": 2,
+          "value": 53.09
+        },
+        {
+          "id": "return",
+          "operation": "growth-percent",
+          "inputs": [
+            "sp-26",
+            "sp-23"
+          ],
+          "definition": "（26日÷23日−1）×100、価格騰落率",
+          "precision": 2,
+          "value": 0.7
+        }
+      ]
+    },
+    {
+      "id": "koei-ordinary",
+      "question": "経常利益の同年度会社予想はどれだけ修正されたか。",
+      "definition": "実績・市場予想ではなく同一年度会社予想同士を比較。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "コーエーテクモホールディングス（連結）",
+          "metric": "経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円・日本円",
+          "basis": "company-forecast",
+          "definition": "日本基準・連結通期の経常利益。2026年4月27日予想と10月26日修正予想。"
+        },
+        {
+          "id": "new",
+          "entity": "コーエーテクモホールディングス（連結）",
+          "metric": "経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円・日本円",
+          "basis": "company-forecast",
+          "definition": "日本基準・連結通期の経常利益。2026年4月27日予想と10月26日修正予想。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "コーエーテクモホールディングス（連結）",
+          "metric": "経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円・日本円",
+          "basis": "company-forecast",
+          "definition": "日本基準・連結通期の経常利益。2026年4月27日予想と10月26日修正予想。",
+          "value": 42000,
+          "source": {
+            "url": "https://www.koeitecmo.co.jp/ir/docs/ir6_20261026.pdf",
+            "publishedOn": "2026-10-26",
+            "locator": "1. 連結業績予想数値の修正・経常利益列・前回発表予想(A)",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "コーエーテクモホールディングス（連結）",
+          "metric": "経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円・日本円",
+          "basis": "company-forecast",
+          "definition": "日本基準・連結通期の経常利益。2026年4月27日予想と10月26日修正予想。",
+          "value": 51000,
+          "source": {
+            "url": "https://www.koeitecmo.co.jp/ir/docs/ir6_20261026.pdf",
+            "publishedOn": "2026-10-26",
+            "locator": "1. 連結業績予想数値の修正・経常利益列・今回修正予想(B)",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "コーエーテクモホールディングスは10月26日、2027年3月期の連結経常利益予想を42,000百万円から51,000百万円へ、9,000百万円、21.4%引き上げた。対象は2026年4月1日〜2027年3月31日、通貨は日本円で、双方とも同一年度の会社予想である。",
+      "calculations": [
+        {
+          "id": "delta",
+          "operation": "difference",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "新予想−従来予想（百万円）",
+          "precision": 0,
+          "value": 9000
+        },
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "（新予想÷従来予想−1）×100",
+          "precision": 1,
+          "value": 21.4
+        }
+      ]
+    },
+    {
+      "id": "koei-operating",
+      "question": "営業利益の同年度会社予想はどれだけ修正されたか。",
+      "definition": "実績・市場予想ではなく同一年度会社予想同士を比較。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "コーエーテクモホールディングス（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円・日本円",
+          "basis": "company-forecast",
+          "definition": "日本基準・連結通期の営業利益。2026年4月27日予想と10月26日修正予想。"
+        },
+        {
+          "id": "new",
+          "entity": "コーエーテクモホールディングス（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円・日本円",
+          "basis": "company-forecast",
+          "definition": "日本基準・連結通期の営業利益。2026年4月27日予想と10月26日修正予想。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "コーエーテクモホールディングス（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円・日本円",
+          "basis": "company-forecast",
+          "definition": "日本基準・連結通期の営業利益。2026年4月27日予想と10月26日修正予想。",
+          "value": 32000,
+          "source": {
+            "url": "https://www.koeitecmo.co.jp/ir/docs/ir6_20261026.pdf",
+            "publishedOn": "2026-10-26",
+            "locator": "1. 連結業績予想数値の修正・営業利益列・前回発表予想(A)",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "コーエーテクモホールディングス（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円・日本円",
+          "basis": "company-forecast",
+          "definition": "日本基準・連結通期の営業利益。2026年4月27日予想と10月26日修正予想。",
+          "value": 34000,
+          "source": {
+            "url": "https://www.koeitecmo.co.jp/ir/docs/ir6_20261026.pdf",
+            "publishedOn": "2026-10-26",
+            "locator": "1. 連結業績予想数値の修正・営業利益列・今回修正予想(B)",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "同じ年度の連結営業利益予想は32,000百万円から34,000百万円へ、2,000百万円、6.3%の引き上げ。会社は中間期の業績、通期の為替前提の見直し、事業環境と金融市場の動向を修正理由に挙げた。経常利益と営業利益を同じ指標として扱わず、上方修正を既に達成した通期実績とも扱わない。",
+      "calculations": [
+        {
+          "id": "delta",
+          "operation": "difference",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "新予想−従来予想（百万円）",
+          "precision": 0,
+          "value": 2000
+        },
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "（新予想÷従来予想−1）×100",
+          "precision": 1,
+          "value": 6.3
+        }
+      ]
+    }
+  ]
+}
