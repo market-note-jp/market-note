@@ -1,0 +1,347 @@
+{
+  "version": 1,
+  "articleSlug": "theme-japan-corporate-rate-timing-2026-10-27",
+  "articleSha256": "cdc52467bb90369e714bb79e894af1dd731c3072d78fbe7611e9813f5c1e425e",
+  "checkedAt": "2026-10-27T10:26:45Z",
+  "informationCutoff": "2026-10-27T19:15:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "執筆者一次資料本文確認。みずほモデルは条件付調査予測をcompany-forecastとして記録、実績ではない。日銀満期分布2030–31は定性分布の記述を本文31–32/PDF36–37で確認、全国一律推定なし。財務省四半期対象資本金1000万円以上確認。独立担当が一次資料と全計算を照合し、修正後本文をPASS。",
+  "comparisons": [
+    {
+      "id": "model-conditional",
+      "question": "みずほの10月15日資料は、政策金利が2027年半ばに2%へ上がり、企業の有利子負債が年2%増えるなどの仮定で、2026〜28年度の利払い負担増加を試算した。年間約3兆円の支払利息等の増加は条件付きの推計であり、受取利息の増加による恩恵は含めていない。各社の純利益がそのまま減るという予想でも、全社共通の借換日でもない。[みずほ調査・PDF4〜6ページ、注記8](https://www.mizuhobank.co.jp/corporate/mhri/research/report/pdf/insight-jp261015.pdf)",
+      "definition": "対象期・単位・実績／条件付き計画を区別。本文の解釈は別途独立監査。",
+      "status": "ready",
+      "claim": "みずほの10月15日資料は、政策金利が2027年半ばに2%へ上がり、企業の有利子負債が年2%増えるなどの仮定で、2026〜28年度の利払い負担増加を試算した。年間約3兆円の支払利息等の増加は条件付きの推計であり、受取利息の増加による恩恵は含めていない。各社の純利益がそのまま減るという予想でも、全社共通の借換日でもない。[みずほ調査・PDF4〜6ページ、注記8](https://www.mizuhobank.co.jp/corporate/mhri/research/report/pdf/insight-jp261015.pdf)",
+      "requiredInputs": [
+        {
+          "id": "policy",
+          "entity": "みずほ調査仮定",
+          "metric": "2027年半ば政策金利仮定",
+          "periodStart": "2026-10-15",
+          "periodEnd": "2026-10-15",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "2027年半ば政策金利仮定。10月15日公表時点の仮定・条件付モデル。政策金利は2027年半ば、負債増加・費用増は2026〜28年度の分析対象であり、実現保証なし。"
+        },
+        {
+          "id": "debt-growth",
+          "entity": "みずほ調査仮定",
+          "metric": "負債年増加率仮定",
+          "periodStart": "2026-10-15",
+          "periodEnd": "2026-10-15",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "負債年増加率仮定。10月15日公表時点の仮定・条件付モデル。政策金利は2027年半ば、負債増加・費用増は2026〜28年度の分析対象であり、実現保証なし。"
+        },
+        {
+          "id": "cost",
+          "entity": "みずほ調査条件付推計",
+          "metric": "支払利息等年間増加額概算",
+          "periodStart": "2026-10-15",
+          "periodEnd": "2026-10-15",
+          "unit": "JPY trillion",
+          "basis": "company-forecast",
+          "definition": "支払利息等年間増加額概算。10月15日公表時点の仮定・条件付モデル。政策金利は2027年半ば、負債増加・費用増は2026〜28年度の分析対象であり、実現保証なし。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "policy",
+          "entity": "みずほ調査仮定",
+          "metric": "2027年半ば政策金利仮定",
+          "periodStart": "2026-10-15",
+          "periodEnd": "2026-10-15",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "2027年半ば政策金利仮定。10月15日公表時点の仮定・条件付モデル。政策金利は2027年半ば、負債増加・費用増は2026〜28年度の分析対象であり、実現保証なし。",
+          "value": 2,
+          "source": {
+            "url": "https://www.mizuhobank.co.jp/corporate/mhri/research/report/pdf/insight-jp261015.pdf",
+            "publishedOn": "2026-10-15",
+            "locator": "p4政策金利仮定",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "debt-growth",
+          "entity": "みずほ調査仮定",
+          "metric": "負債年増加率仮定",
+          "periodStart": "2026-10-15",
+          "periodEnd": "2026-10-15",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "負債年増加率仮定。10月15日公表時点の仮定・条件付モデル。政策金利は2027年半ば、負債増加・費用増は2026〜28年度の分析対象であり、実現保証なし。",
+          "value": 2,
+          "source": {
+            "url": "https://www.mizuhobank.co.jp/corporate/mhri/research/report/pdf/insight-jp261015.pdf",
+            "publishedOn": "2026-10-15",
+            "locator": "p5負債残高仮定",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "cost",
+          "entity": "みずほ調査条件付推計",
+          "metric": "支払利息等年間増加額概算",
+          "periodStart": "2026-10-15",
+          "periodEnd": "2026-10-15",
+          "unit": "JPY trillion",
+          "basis": "company-forecast",
+          "definition": "支払利息等年間増加額概算。10月15日公表時点の仮定・条件付モデル。政策金利は2027年半ば、負債増加・費用増は2026〜28年度の分析対象であり、実現保証なし。",
+          "value": 3,
+          "source": {
+            "url": "https://www.mizuhobank.co.jp/corporate/mhri/research/report/pdf/insight-jp261015.pdf",
+            "publishedOn": "2026-10-15",
+            "locator": "p5・注8受取利息除外",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "mizuho-prime",
+      "question": "| みずほ銀行・みずほ信託銀行 | 年2.375%→2.625% | 11月2日以降の新規実行、書換え、利息支払日から |",
+      "definition": "対象期・単位・実績／条件付き計画を区別。本文の解釈は別途独立監査。",
+      "status": "ready",
+      "claim": "| みずほ銀行・みずほ信託銀行 | 年2.375%→2.625% | 11月2日以降の新規実行、書換え、利息支払日から |",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "みずほ銀行・みずほ信託銀行",
+          "metric": "変更前短期プライム",
+          "periodStart": "2026-10-27",
+          "periodEnd": "2026-10-27",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "変更前短期プライム"
+        },
+        {
+          "id": "new",
+          "entity": "みずほ銀行・みずほ信託銀行",
+          "metric": "変更後短期プライム",
+          "periodStart": "2026-11-02",
+          "periodEnd": "2026-11-02",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "変更後短期プライム"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "みずほ銀行・みずほ信託銀行",
+          "metric": "変更前短期プライム",
+          "periodStart": "2026-10-27",
+          "periodEnd": "2026-10-27",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "変更前短期プライム",
+          "value": 2.375,
+          "source": {
+            "url": "https://www.mizuhobank.co.jp/release/pdf/20260918release_jp.pdf",
+            "publishedOn": "2026-09-18",
+            "locator": "短期プライムレート改定通知",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "new",
+          "entity": "みずほ銀行・みずほ信託銀行",
+          "metric": "変更後短期プライム",
+          "periodStart": "2026-11-02",
+          "periodEnd": "2026-11-02",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "変更後短期プライム",
+          "value": 2.625,
+          "source": {
+            "url": "https://www.mizuhobank.co.jp/release/pdf/20260918release_jp.pdf",
+            "publishedOn": "2026-09-18",
+            "locator": "短期プライムレート改定通知",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "delta",
+          "operation": "difference",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "新−旧、percentage points",
+          "precision": 3,
+          "value": 0.25
+        }
+      ]
+    },
+    {
+      "id": "smbc-prime",
+      "question": "| 三井住友銀行 | 年2.375%→2.625% | 11月9日以降の新規取組、利息支払い等に適用 |",
+      "definition": "対象期・単位・実績／条件付き計画を区別。本文の解釈は別途独立監査。",
+      "status": "ready",
+      "claim": "| 三井住友銀行 | 年2.375%→2.625% | 11月9日以降の新規取組、利息支払い等に適用 |",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "三井住友銀行",
+          "metric": "変更前短期プライム",
+          "periodStart": "2026-10-27",
+          "periodEnd": "2026-10-27",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "変更前短期プライム"
+        },
+        {
+          "id": "new",
+          "entity": "三井住友銀行",
+          "metric": "変更後短期プライム",
+          "periodStart": "2026-11-09",
+          "periodEnd": "2026-11-09",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "変更後短期プライム"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "三井住友銀行",
+          "metric": "変更前短期プライム",
+          "periodStart": "2026-10-27",
+          "periodEnd": "2026-10-27",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "変更前短期プライム",
+          "value": 2.375,
+          "source": {
+            "url": "https://www.smbc.co.jp/news/pdf/j20260928_02.pdf",
+            "publishedOn": "2026-09-28",
+            "locator": "短期プライムレート改定通知",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "new",
+          "entity": "三井住友銀行",
+          "metric": "変更後短期プライム",
+          "periodStart": "2026-11-09",
+          "periodEnd": "2026-11-09",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "変更後短期プライム",
+          "value": 2.625,
+          "source": {
+            "url": "https://www.smbc.co.jp/news/pdf/j20260928_02.pdf",
+            "publishedOn": "2026-09-28",
+            "locator": "短期プライムレート改定通知",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "delta",
+          "operation": "difference",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "新−旧、percentage points",
+          "precision": 3,
+          "value": 0.25
+        }
+      ]
+    },
+    {
+      "id": "deposit-repricing",
+      "question": "企業の純負担を考えるには、支払利息から受取利息を引く必要がある。ただし、貸出金利と預金金利が同じ幅・同じ日で動くとは限らない。みずほの円普通預金金利は11月2日に年0.400%から0.500%へ上がる予定で、上昇幅は0.10ポイント。前述の短期プライムレートの0.25ポイントとは異なる。いずれも公表時点の年率で、普通預金の数値は税引前だ。[円預金金利通知・PDF1ページ](https://www.mizuhobank.co.jp/release/pdf/20260918_2release_jp.pdf)",
+      "definition": "対象期・単位・実績／条件付き計画を区別。本文の解釈は別途独立監査。",
+      "status": "ready",
+      "claim": "企業の純負担を考えるには、支払利息から受取利息を引く必要がある。ただし、貸出金利と預金金利が同じ幅・同じ日で動くとは限らない。みずほの円普通預金金利は11月2日に年0.400%から0.500%へ上がる予定で、上昇幅は0.10ポイント。前述の短期プライムレートの0.25ポイントとは異なる。いずれも公表時点の年率で、普通預金の数値は税引前だ。[円預金金利通知・PDF1ページ](https://www.mizuhobank.co.jp/release/pdf/20260918_2release_jp.pdf)",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "みずほ銀行",
+          "metric": "改定前円普通預金",
+          "periodStart": "2026-10-27",
+          "periodEnd": "2026-10-27",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "改定前円普通預金"
+        },
+        {
+          "id": "new",
+          "entity": "みずほ銀行",
+          "metric": "改定後円普通預金",
+          "periodStart": "2026-11-02",
+          "periodEnd": "2026-11-02",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "改定後円普通預金"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "みずほ銀行",
+          "metric": "改定前円普通預金",
+          "periodStart": "2026-10-27",
+          "periodEnd": "2026-10-27",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "改定前円普通預金",
+          "value": 0.4,
+          "source": {
+            "url": "https://www.mizuhobank.co.jp/release/pdf/20260918_2release_jp.pdf",
+            "publishedOn": "2026-09-18",
+            "locator": "円普通預金年率税引前",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "new",
+          "entity": "みずほ銀行",
+          "metric": "改定後円普通預金",
+          "periodStart": "2026-11-02",
+          "periodEnd": "2026-11-02",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "改定後円普通預金",
+          "value": 0.5,
+          "source": {
+            "url": "https://www.mizuhobank.co.jp/release/pdf/20260918_2release_jp.pdf",
+            "publishedOn": "2026-09-18",
+            "locator": "円普通預金年率税引前",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "delta",
+          "operation": "difference",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "年率の差、percentage points",
+          "precision": 2,
+          "value": 0.1
+        }
+      ]
+    }
+  ]
+}
