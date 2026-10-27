@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-26",
-  "observedAt": "2026-10-26T15:45:00+09:00",
-  "retrieved": "2026-10-26T18:27:38.716089+09:00",
+  "date": "2026-10-27",
+  "observedAt": "2026-10-27T15:45:00+09:00",
+  "retrieved": "2026-10-27T18:06:48.546423+09:00",
   "source": {
     "prices": {
       "name": "トレーダーズ・ウェブ 日経225銘柄",
@@ -10,44 +10,44 @@
     "constituents": {
       "name": "日経平均プロフィル 構成銘柄一覧",
       "url": "https://indexes.nikkei.co.jp/nkave/index/component?idx=nk225",
-      "updated": "2026-10-26"
+      "updated": "2026-10-27"
     },
     "validation": {
       "name": "日経平均プロフィル 日次サマリー",
-      "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261026&idx=nk225",
+      "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261027&idx=nk225",
       "retrievedFrom": "https://indexes.nikkei.co.jp/nkave/archives/summary",
-      "verifiedDate": "2026-10-26"
+      "verifiedDate": "2026-10-27"
     }
   },
   "method": {
     "returnPct": "change/(close-change)*100",
     "equalWeightDailyReturnPct": "arithmetic mean of 225 daily returns; all constituents equal at start of day",
     "dividendsIncluded": false,
-    "historyAvailable": "2 daily return observations accumulated since 2026-10-22; no backfilled or simulated observations."
+    "historyAvailable": "3 daily return observations accumulated since 2026-10-22; no backfilled or simulated observations."
   },
   "validation": {
     "count": 225,
     "constituentSetMatch": true,
-    "officialUp": 149,
-    "officialDown": 73,
-    "officialFlat": 3,
-    "calculatedUp": 149,
-    "calculatedDown": 73,
-    "calculatedFlat": 3,
-    "maxAbsoluteDifferenceVsDisplayedReturnPp": 0.0049860724233983245
+    "officialUp": 124,
+    "officialDown": 100,
+    "officialFlat": 1,
+    "calculatedUp": 124,
+    "calculatedDown": 100,
+    "calculatedFlat": 1,
+    "maxAbsoluteDifferenceVsDisplayedReturnPp": 0.004988334111059256
   },
   "metrics": {
-    "nikkeiClose": 62189.65,
-    "nikkeiPreviousClose": 62693.16,
-    "nikkeiChange": -503.51,
-    "nikkeiReturnPct": -0.8031338665972492,
-    "equalWeightReturnPct": 0.45342495398112304,
-    "medianReturnPct": 0.5698711595639246,
-    "advancers": 149,
-    "decliners": 73,
-    "unchanged": 3,
-    "advancerPct": 66.22222222222223,
-    "nikkeiMinusEqualWeightPp": -1.2565588205783722
+    "nikkeiClose": 63268.37,
+    "nikkeiPreviousClose": 62189.65,
+    "nikkeiChange": 1078.72,
+    "nikkeiReturnPct": 1.7345651567423195,
+    "equalWeightReturnPct": 0.37640217517764013,
+    "medianReturnPct": 0.3761755485893417,
+    "advancers": 124,
+    "decliners": 100,
+    "unchanged": 1,
+    "advancerPct": 55.111111111111114,
+    "nikkeiMinusEqualWeightPp": 1.3581629815646794
   },
   "baseDate": "2026-10-22",
   "baseValue": 62907.84,
@@ -226,6 +226,16 @@
         "down": 73,
         "flat": 3,
         "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261026&idx=nk225"
+      },
+      {
+        "date": "2026-10-27",
+        "close": 63268.37,
+        "change": 1078.72,
+        "changePct": 1.7345651567423195,
+        "up": 124,
+        "down": 100,
+        "flat": 1,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261027&idx=nk225"
       }
     ],
     "weights": [
@@ -253,8 +263,8 @@
     "weightDate": "2026-10-23"
   },
   "schemaVersion": 1,
-  "level": 62865.98129630787,
-  "pointChange": 283.76339272967016,
+  "level": 63102.61021735395,
+  "pointChange": 236.62892104607454,
   "history": [
     {
       "date": "2026-10-22",
@@ -292,6 +302,19 @@
       "advancers": 149,
       "decliners": 73,
       "unchanged": 3,
+      "count": 225,
+      "maEligible": 0
+    },
+    {
+      "date": "2026-10-27",
+      "ew": 100.30961199328088,
+      "return": 0.0037640217517764013,
+      "median": 0.003761755485893417,
+      "advanceRatio": 55.111111111111114,
+      "aboveMA25": null,
+      "advancers": 124,
+      "decliners": 100,
+      "unchanged": 1,
       "count": 225,
       "maEligible": 0
     }
@@ -346,9 +369,9 @@
     ],
     "source": "https://www8.cao.go.jp/chosei/shukujitsu/syukujitsu.csv"
   },
-  "inputSHA256": "303f593e739c5abbb1ec2dd40b13351f87dadc4a493c25e8ea101228390c6238",
+  "inputSHA256": "99a497a7d6c19fa9745973effd5fcd44f88059e5cfde4c256d56c4ccdaf381d5",
   "constituentsSHA256": "5e586415a809736f2dd5edf1ab738f927f458301919fd720d9d9a84d751723b6",
-  "updatedAt": "2026-10-26T18:27:38.716089+09:00",
+  "updatedAt": "2026-10-27T18:06:48.546423+09:00",
   "automation": {
     "timezone": "Asia/Tokyo",
     "window": "取引終了後の平日夕方",
