@@ -1,0 +1,711 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-10-28",
+  "articleSha256": "5748732ad41a59b3ae5ecd931e4cf4c9123f2e77d8cbba06f5a5dcc949772848",
+  "checkedAt": "2026-10-27T21:27:20.177Z",
+  "informationCutoff": "2026-10-28T06:25:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "記事全体のタイトル、概要、本文、分析、次の注目点、免責を最終レビュー。事前に必要入力を列挙し、Corningの同一発表内の2025/2026年Q3比較表、日東電工決算短信PDF1ページ・定性説明PDF4ページ、配当資料PDF1・2ページ、Censusの同一Table1の8月改定と9月速報、APの26/27日終値原文を確認。Blackstone原文のSPV・担保順位・残存価値支援を確認。数値比較は以下に全件記録。coreとGAAPを混在させず、利益・受注・株価・設備金融・配当見込みは別々の基準で表示。FCF/ROICの独自計算、市場予想との比較、未検証の企業間倍率は掲載していない。SPVの支援契約について未開示条件や損失分担の保証範囲を推測せず、分析を条件付きにした。",
+  "sourceChecks": [
+    {
+      "url": "https://investor.corning.com/news-and-events/news/news-details/2026/Corning-Delivers-Outstanding-Third-Quarter-Results1/default.aspx",
+      "publishedOn": "2026-10-27",
+      "locator": "News Summary、Core Results、Third-Quarter 2026 Segment Results、Presentation of Information",
+      "finding": "coreはnon-GAAP。Solarの生産増加は想定より遅いとの会社説明。発表を06:25 JSTより前に確認。株価の下落率や予想上振れ率は未採用。"
+    },
+    {
+      "url": "https://www.blackstone.com/news/press/bank-of-america-blackstone-citi-and-morgan-stanley-announce-landmark-63-billion-financing-structure-to-enable-ai-compute/",
+      "publishedOn": "2026-10-26",
+      "locator": "冒頭第1〜3段落",
+      "finding": "SPVが設備を購入しAnthropicにリース、納入は2027年から予定。第一順位/第二順位の融資とBroadcom残存価値支援を原文確認。具体的契約条件や回収保証は断定しない。"
+    },
+    {
+      "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+      "publishedOn": "2026-10-27",
+      "pdfPage": 4,
+      "locator": "経営成績に関する説明・最初の段落群",
+      "finding": "AI/DC・半導体向け部材、ハイエンドスマホ、価格適正化、為替の影響。増益をAIだけに帰属させない。"
+    },
+    {
+      "url": "https://www.ctinsider.com/business/article/how-major-us-stock-indexes-fared-tuesday-22497350.php",
+      "publishedOn": "2026-10-27",
+      "locator": "市場概況・influential AI stocks",
+      "finding": "AI銘柄が指数を押し上げたとの報道。銘柄数や割合の独自計算はしない。"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "corning-optical",
+      "question": "Optical Communications売上は前年同期比でどう変化したか。",
+      "definition": "同じ会社公表の同じ定義、2026年7–9月対2025年7–9月、百万米ドル。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2025",
+          "entity": "Corning",
+          "metric": "Optical Communications売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社公表のセグメント報告ベースのOptical Communications Net Sales。2026年発表に掲載された前年比較値。"
+        },
+        {
+          "id": "2026",
+          "entity": "Corning",
+          "metric": "Optical Communications売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社公表のセグメント報告ベースのOptical Communications Net Sales。2026年発表に掲載された前年比較値。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2025",
+          "entity": "Corning",
+          "metric": "Optical Communications売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社公表のセグメント報告ベースのOptical Communications Net Sales。2026年発表に掲載された前年比較値。",
+          "value": 1652,
+          "source": {
+            "url": "https://investor.corning.com/news-and-events/news/news-details/2026/Corning-Delivers-Outstanding-Third-Quarter-Results1/default.aspx",
+            "publishedOn": "2026-10-27",
+            "locator": "Third-Quarter 2026 Segment Results / Optical Communications / Net Sales / Q3 2025 and Q3 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2026",
+          "entity": "Corning",
+          "metric": "Optical Communications売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社公表のセグメント報告ベースのOptical Communications Net Sales。2026年発表に掲載された前年比較値。",
+          "value": 2379,
+          "source": {
+            "url": "https://investor.corning.com/news-and-events/news/news-details/2026/Corning-Delivers-Outstanding-Third-Quarter-Results1/default.aspx",
+            "publishedOn": "2026-10-27",
+            "locator": "Third-Quarter 2026 Segment Results / Optical Communications / Net Sales / Q3 2025 and Q3 2026",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "Corningが10月27日に公表した2026年7〜9月期のOptical Communications売上は2,379百万米ドル。前年同期の1,652百万米ドルから44%増えた。同社が公表した同一セグメントの実績を比較し、増収率は整数に丸めている。",
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "2026",
+            "2025"
+          ],
+          "definition": "（当期÷比較期−1）×100。同一定義の値を比較。",
+          "precision": 0,
+          "value": 44
+        }
+      ]
+    },
+    {
+      "id": "corning-core-sales",
+      "question": "core売上は前年同期比でどう変化したか。",
+      "definition": "同じ会社公表の同じ定義、2026年7–9月対2025年7–9月、百万米ドル。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2025",
+          "entity": "Corning",
+          "metric": "core売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社定義のnon-GAAP Core Sales。GAAP Net Salesとは異なる。同一発表に掲載された両期値。"
+        },
+        {
+          "id": "2026",
+          "entity": "Corning",
+          "metric": "core売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社定義のnon-GAAP Core Sales。GAAP Net Salesとは異なる。同一発表に掲載された両期値。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2025",
+          "entity": "Corning",
+          "metric": "core売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社定義のnon-GAAP Core Sales。GAAP Net Salesとは異なる。同一発表に掲載された両期値。",
+          "value": 4272,
+          "source": {
+            "url": "https://investor.corning.com/news-and-events/news/news-details/2026/Corning-Delivers-Outstanding-Third-Quarter-Results1/default.aspx",
+            "publishedOn": "2026-10-27",
+            "locator": "Third-Quarter 2026 Results and Comparisons / Core Results (Non-GAAP) / Core Sales / Q3 2025 and Q3 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2026",
+          "entity": "Corning",
+          "metric": "core売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社定義のnon-GAAP Core Sales。GAAP Net Salesとは異なる。同一発表に掲載された両期値。",
+          "value": 5081,
+          "source": {
+            "url": "https://investor.corning.com/news-and-events/news/news-details/2026/Corning-Delivers-Outstanding-Third-Quarter-Results1/default.aspx",
+            "publishedOn": "2026-10-27",
+            "locator": "Third-Quarter 2026 Results and Comparisons / Core Results (Non-GAAP) / Core Sales / Q3 2025 and Q3 2026",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "全社のcore売上は前年同期の4,272百万米ドルから5,081百万米ドルへ19%増加した。coreは会社定義のnon-GAAP指標で、GAAP売上とは区別する。会社はAI向け需要を説明する一方、Solar事業の生産拡大は想定より遅いとも述べた。全事業の見通しをAI部材だけで代表させない。",
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "2026",
+            "2025"
+          ],
+          "definition": "（当期÷比較期−1）×100。同一定義の値を比較。",
+          "precision": 0,
+          "value": 19
+        }
+      ]
+    },
+    {
+      "id": "ai-equipment-finance",
+      "question": "公表額は何の金額か。",
+      "definition": "単一取引額を記録。他社調達額との合算・売上比・実行額への読み替えはしない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "transaction",
+          "entity": "Anthropic向けSPV設備金融",
+          "metric": "公表された金融取引規模",
+          "periodStart": "2026-10-26",
+          "periodEnd": "2026-10-26",
+          "unit": "十億米ドル",
+          "basis": "company-forecast",
+          "definition": "2027年からの納入を見込む設備金融の取引規模。売上・調達実行額・現金収益の実績ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "transaction",
+          "entity": "Anthropic向けSPV設備金融",
+          "metric": "公表された金融取引規模",
+          "periodStart": "2026-10-26",
+          "periodEnd": "2026-10-26",
+          "unit": "十億米ドル",
+          "basis": "company-forecast",
+          "definition": "2027年からの納入を見込む設備金融の取引規模。売上・調達実行額・現金収益の実績ではない。",
+          "value": 63,
+          "source": {
+            "url": "https://www.blackstone.com/news/press/bank-of-america-blackstone-citi-and-morgan-stanley-announce-landmark-63-billion-financing-structure-to-enable-ai-compute/",
+            "publishedOn": "2026-10-26",
+            "locator": "冒頭の$63 billion transactionおよび次段落のSPV/committed financing",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "Bank of America、Blackstone、Citi、Morgan Stanleyは10月26日、Broadcomの技術を使うAnthropic向け計算設備について、630億米ドルの取引を公表した。新設の特別目的会社（SPV）がBroadcomのXPUとネットワーク機器を購入し、Anthropicにリースする構造で、納入は暦年2027年からを見込む。",
+      "calculations": []
+    },
+    {
+      "id": "sp500-close",
+      "question": "27日の通常終値は26日比でどう変化したか。",
+      "definition": "同一現物価格指数・通常終値を営業日比で比較。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sp26",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-26",
+          "periodEnd": "2026-10-26",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米国現物価格指数・通常取引終値。配当込み指数や先物・時間外とは異なる。"
+        },
+        {
+          "id": "sp27",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-27",
+          "periodEnd": "2026-10-27",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米国現物価格指数・通常取引終値。配当込み指数や先物・時間外とは異なる。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sp26",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-26",
+          "periodEnd": "2026-10-26",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米国現物価格指数・通常取引終値。配当込み指数や先物・時間外とは異なる。",
+          "value": 7676.77,
+          "source": {
+            "url": "https://krmg.com/2026/10/26/how-major-us-stock-indexes-fared-monday-10-26-2026/",
+            "publishedOn": "2026-10-26",
+            "locator": "On Monday / S&P500",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数管理会社の対象日終値を限定検索で確認できず、APの対象日通常終値記事を採用。動的トップの観測時刻が不明な値は不採用。"
+          }
+        },
+        {
+          "id": "sp27",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-27",
+          "periodEnd": "2026-10-27",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米国現物価格指数・通常取引終値。配当込み指数や先物・時間外とは異なる。",
+          "value": 7722.6,
+          "source": {
+            "url": "https://www.ctinsider.com/business/article/how-major-us-stock-indexes-fared-tuesday-22497350.php",
+            "publishedOn": "2026-10-27",
+            "locator": "On Tuesday / S&P500",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数管理会社の対象日終値を限定検索で確認できず、APの対象日通常終値記事原文をCT Insider掲載ページで確認。"
+          }
+        }
+      ],
+      "claim": "S&P500の10月27日の通常取引終値は7,722.60。前営業日26日の7,676.77から45.83ポイント、0.60%上昇した。両日とも米国現物価格指数の通常終値で、騰落率は（27日終値÷26日終値−1）×100を小数第2位に丸めた。27日16:00 EDTは28日05:00 JSTに当たる。",
+      "calculations": [
+        {
+          "id": "difference",
+          "operation": "difference",
+          "inputs": [
+            "sp27",
+            "sp26"
+          ],
+          "definition": "当期値−比較期値。同じ単位で差額を算出。",
+          "precision": 2,
+          "value": 45.83
+        },
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "sp27",
+            "sp26"
+          ],
+          "definition": "（当期÷比較期−1）×100。同一定義の値を比較。",
+          "precision": 2,
+          "value": 0.6
+        }
+      ]
+    },
+    {
+      "id": "nitto-interim-profit",
+      "question": "中間期の親会社所有者帰属利益は前年同期比で増えたか。",
+      "definition": "4〜9月の同一IFRS連結指標。通期や他の利益区分とは混ぜない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2025",
+          "entity": "日東電工（IFRS連結）",
+          "metric": "親会社の所有者に帰属する中間利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円・日本円",
+          "basis": "actual",
+          "definition": "IFRS連結・4〜9月の親会社所有者帰属利益。中間利益総額と区別。"
+        },
+        {
+          "id": "2026",
+          "entity": "日東電工（IFRS連結）",
+          "metric": "親会社の所有者に帰属する中間利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円・日本円",
+          "basis": "actual",
+          "definition": "IFRS連結・4〜9月の親会社所有者帰属利益。中間利益総額と区別。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2025",
+          "entity": "日東電工（IFRS連結）",
+          "metric": "親会社の所有者に帰属する中間利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円・日本円",
+          "basis": "actual",
+          "definition": "IFRS連結・4〜9月の親会社所有者帰属利益。中間利益総額と区別。",
+          "value": 68926,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "1. 連結経営成績(累計) / 親会社の所有者に帰属する中間利益 / 2027年3月期・2026年3月期中間期",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2026",
+          "entity": "日東電工（IFRS連結）",
+          "metric": "親会社の所有者に帰属する中間利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円・日本円",
+          "basis": "actual",
+          "definition": "IFRS連結・4〜9月の親会社所有者帰属利益。中間利益総額と区別。",
+          "value": 76502,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "1. 連結経営成績(累計) / 親会社の所有者に帰属する中間利益 / 2027年3月期・2026年3月期中間期",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "日東電工の2026年4〜9月期の親会社所有者に帰属する中間利益は76,502百万円で、前年同期の68,926百万円から11.0%増加した。通貨は日本円、IFRS連結の同じ利益指標・同じ長さの期間の実績比較である。",
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "2026",
+            "2025"
+          ],
+          "definition": "（当期÷比較期−1）×100。同一定義の値を比較。",
+          "precision": 1,
+          "value": 11
+        }
+      ]
+    },
+    {
+      "id": "nitto-dividend",
+      "question": "同じ年度の年間配当予想の改定と内訳は何か。",
+      "definition": "2027年3月期の従来・新見込みを比較し、中間決定額と未確定期末予想を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "日東電工",
+          "metric": "年間1株配当予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円／株",
+          "basis": "company-forecast",
+          "definition": "2026年4月27日公表の2027年3月期年間配当予想"
+        },
+        {
+          "id": "new",
+          "entity": "日東電工",
+          "metric": "年間1株配当見込み",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円／株",
+          "basis": "company-forecast",
+          "definition": "2026年10月27日公表の2027年3月期年間配当見込み。決定した中間額と期末会社予想の合計。"
+        },
+        {
+          "id": "interim",
+          "entity": "日東電工",
+          "metric": "中間1株配当決定額",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "円／株",
+          "basis": "actual",
+          "definition": "9月30日を基準日とする10月27日取締役会決定額。支払済みとは異なる。"
+        },
+        {
+          "id": "final",
+          "entity": "日東電工",
+          "metric": "期末1株配当予想",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円／株",
+          "basis": "company-forecast",
+          "definition": "10月27日公表の2027年3月期期末会社予想。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "日東電工",
+          "metric": "年間1株配当予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円／株",
+          "basis": "company-forecast",
+          "definition": "2026年4月27日公表の2027年3月期年間配当予想",
+          "value": 64,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/gLET.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "3. 期末配当予想修正の内容 / 年間1株配当予想",
+            "pdfPage": 2,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "日東電工",
+          "metric": "年間1株配当見込み",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円／株",
+          "basis": "company-forecast",
+          "definition": "2026年10月27日公表の2027年3月期年間配当見込み。決定した中間額と期末会社予想の合計。",
+          "value": 72,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/gLET.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "3. 期末配当予想修正の内容 / 年間1株配当見込み",
+            "pdfPage": 2,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "interim",
+          "entity": "日東電工",
+          "metric": "中間1株配当決定額",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "円／株",
+          "basis": "actual",
+          "definition": "9月30日を基準日とする10月27日取締役会決定額。支払済みとは異なる。",
+          "value": 36,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/gLET.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "2. 剰余金の配当(中間配当) 決定額",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "final",
+          "entity": "日東電工",
+          "metric": "期末1株配当予想",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円／株",
+          "basis": "company-forecast",
+          "definition": "10月27日公表の2027年3月期期末会社予想。",
+          "value": 36,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/gLET.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "3. 期末配当予想修正の内容 / 期末1株配当予想",
+            "pdfPage": 2,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "2027年3月期の年間配当は従来予想の1株64円から72円へ8円引き上げた。新しい年間額は中間配当の決定額36円と期末予想36円を合わせたもので、年間配当の支払い完了とは異なる。",
+      "calculations": [
+        {
+          "id": "annual",
+          "operation": "sum",
+          "inputs": [
+            "interim",
+            "final"
+          ],
+          "definition": "中間決定額＋期末会社予想＝年間見込み（円/株）。支払完了額ではない。",
+          "precision": 0,
+          "value": 72
+        },
+        {
+          "id": "change",
+          "operation": "difference",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "新年間見込み−従来年間予想（円/株）",
+          "precision": 0,
+          "value": 8
+        }
+      ]
+    },
+    {
+      "id": "durable-total",
+      "question": "9月の新規受注総額は8月比でどう変化したか。",
+      "definition": "10月27日公表の同じ速報表の季節調整済金額。9月速報対8月改定、名目、百万米ドル。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "08",
+          "entity": "米Census Bureau",
+          "metric": "新規受注総額",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "耐久財製造業の新規受注総額。季節調整済名目金額、10月27日同一ビンテージ、8月改定・9月速報。"
+        },
+        {
+          "id": "09",
+          "entity": "米Census Bureau",
+          "metric": "新規受注総額",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "耐久財製造業の新規受注総額。季節調整済名目金額、10月27日同一ビンテージ、8月改定・9月速報。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "08",
+          "entity": "米Census Bureau",
+          "metric": "新規受注総額",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "耐久財製造業の新規受注総額。季節調整済名目金額、10月27日同一ビンテージ、8月改定・9月速報。",
+          "value": 339117,
+          "source": {
+            "url": "https://www.census.gov/manufacturing/m3/adv/pdf/table1a.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Table1 / Seasonally Adjusted / DURABLE GOODS Total / New Orders / Aug2026 r and Sep2026",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "09",
+          "entity": "米Census Bureau",
+          "metric": "新規受注総額",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "耐久財製造業の新規受注総額。季節調整済名目金額、10月27日同一ビンテージ、8月改定・9月速報。",
+          "value": 345371,
+          "source": {
+            "url": "https://www.census.gov/manufacturing/m3/adv/pdf/table1a.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Table1 / Seasonally Adjusted / DURABLE GOODS Total / New Orders / Aug2026 r and Sep2026",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "米Census Bureauが10月27日に公表した9月の耐久財新規受注速報は、季節調整済みで345,371百万米ドル。8月の改定値339,117百万米ドルから1.8%増加した。いずれも名目の受注額で、数量や物価調整後の実質成長率ではない。",
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "09",
+            "08"
+          ],
+          "definition": "（当期÷比較期−1）×100。同一定義の値を比較。",
+          "precision": 1,
+          "value": 1.8
+        }
+      ]
+    },
+    {
+      "id": "durable-ex-transport",
+      "question": "9月の輸送機器除外の新規受注は8月比でどう変化したか。",
+      "definition": "10月27日公表の同じ速報表の季節調整済金額。9月速報対8月改定、名目、百万米ドル。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "08",
+          "entity": "米Census Bureau",
+          "metric": "輸送機器除外の新規受注",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "耐久財製造業の輸送機器除外の新規受注。季節調整済名目金額、10月27日同一ビンテージ、8月改定・9月速報。"
+        },
+        {
+          "id": "09",
+          "entity": "米Census Bureau",
+          "metric": "輸送機器除外の新規受注",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "耐久財製造業の輸送機器除外の新規受注。季節調整済名目金額、10月27日同一ビンテージ、8月改定・9月速報。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "08",
+          "entity": "米Census Bureau",
+          "metric": "輸送機器除外の新規受注",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "耐久財製造業の輸送機器除外の新規受注。季節調整済名目金額、10月27日同一ビンテージ、8月改定・9月速報。",
+          "value": 224529,
+          "source": {
+            "url": "https://www.census.gov/manufacturing/m3/adv/pdf/table1a.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Table1 / Seasonally Adjusted / Excluding transportation / New Orders / Aug2026 r and Sep2026",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "09",
+          "entity": "米Census Bureau",
+          "metric": "輸送機器除外の新規受注",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "耐久財製造業の輸送機器除外の新規受注。季節調整済名目金額、10月27日同一ビンテージ、8月改定・9月速報。",
+          "value": 225565,
+          "source": {
+            "url": "https://www.census.gov/manufacturing/m3/adv/pdf/table1a.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Table1 / Seasonally Adjusted / Excluding transportation / New Orders / Aug2026 r and Sep2026",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "輸送機器を除く新規受注は、8月の224,529百万米ドルから9月の225,565百万米ドルへ0.5%増えた。増減率はそれぞれの同一定義の新旧金額から小数第1位に丸めた。全体と輸送除外では対象範囲が異なるため、設備投資全体の勢いを一つの数字だけで判断しない。",
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "09",
+            "08"
+          ],
+          "definition": "（当期÷比較期−1）×100。同一定義の値を比較。",
+          "precision": 1,
+          "value": 0.5
+        }
+      ]
+    }
+  ]
+}
