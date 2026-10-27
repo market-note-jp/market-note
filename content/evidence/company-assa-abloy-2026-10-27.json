@@ -1,0 +1,5553 @@
+{
+  "version": 1,
+  "articleSlug": "company-assa-abloy-2026-10-27",
+  "articleSha256": "5464926d75a64e80909f79ccc57e681e61709e22858c64d514484c12898824e3",
+  "checkedAt": "2026-10-27T10:37:45Z",
+  "informationCutoff": "2026-10-27T19:25:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "草稿の全数値比較を本文・表ごとに照合。一次PDFはローカル取得して本文表を確認。Q3は2026-10-27 08:00 CET公表でcutoff前。Markdown用のdigestであり、サイト変換時は最終記事全体の再確認とdigest再計算が必要。取得前計画は初期資料取得後に追加依頼されたため、残りの調査・執筆・検証前に比較計画を保存。これを遡及的な事前作業とは主張しない。未解決比較はwithheld。 Independent primary-source and calculation review PASS on 2026-10-27; see assa_abloy_audit.md. Final route digest must be regenerated after integration.",
+  "comparisons": [
+    {
+      "id": "aftermarket-mix",
+      "question": "更新需要と新築需要の構成はどうか",
+      "definition": "会社の概数。継続課金・定額契約比率とは異なる。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "aftermarket",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Aftermarket sales share",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "比率（概数）",
+          "basis": "actual",
+          "definition": "既存建物向け改修、交換、更新、サービスを含む会社概数"
+        },
+        {
+          "id": "new",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "New construction sales share",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "比率（概数）",
+          "basis": "actual",
+          "definition": "New construction sales share"
+        }
+      ],
+      "observations": [
+        {
+          "id": "aftermarket",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Aftermarket sales share",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "比率（概数）",
+          "basis": "actual",
+          "definition": "既存建物向け改修、交換、更新、サービスを含む会社概数",
+          "value": 0.6666666666666666,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Sales breakdown: Aftermarket 2/3, New construction 1/3",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        },
+        {
+          "id": "new",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "New construction sales share",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "比率（概数）",
+          "basis": "actual",
+          "definition": "New construction sales share",
+          "value": 0.3333333333333333,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Sales breakdown: Aftermarket 2/3, New construction 1/3",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        }
+      ],
+      "claim": "会社によると売上の約3分の2が既存建物向けの更新・交換・サービス等、約3分の1が新築向けである。",
+      "calculations": []
+    },
+    {
+      "id": "annual-sales",
+      "question": "2021–2025年の売上高はどう推移したか",
+      "definition": "IFRS連結売上高",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS連結売上高"
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS連結売上高"
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS連結売上高"
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS連結売上高"
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS連結売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS連結売上高",
+          "value": 95007,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 売上高 / 2021; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS連結売上高",
+          "value": 120793,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 売上高 / 2022; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS連結売上高",
+          "value": 140716,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 売上高 / 2023; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS連結売上高",
+          "value": 150162,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 売上高 / 2024; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS連結売上高",
+          "value": 152409,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 売上高 / 2025; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        }
+      ],
+      "claim": "| 売上高 | 95,007 | 120,793 | 140,716 | 150,162 | 152,409 |",
+      "calculations": []
+    },
+    {
+      "id": "annual-organic",
+      "question": "2021–2025年のオーガニック成長率はどう推移したか",
+      "definition": "買収、売却、為替効果調整後の比較可能事業の売上増減率。数量成長とは異なる会社APM",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "オーガニック成長率",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収、売却、為替効果調整後の比較可能事業の売上増減率。数量成長とは異なる会社APM"
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "オーガニック成長率",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収、売却、為替効果調整後の比較可能事業の売上増減率。数量成長とは異なる会社APM"
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "オーガニック成長率",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収、売却、為替効果調整後の比較可能事業の売上増減率。数量成長とは異なる会社APM"
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "オーガニック成長率",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収、売却、為替効果調整後の比較可能事業の売上増減率。数量成長とは異なる会社APM"
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "オーガニック成長率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収、売却、為替効果調整後の比較可能事業の売上増減率。数量成長とは異なる会社APM"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "オーガニック成長率",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収、売却、為替効果調整後の比較可能事業の売上増減率。数量成長とは異なる会社APM",
+          "value": 11,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / オーガニック成長率 / 2021; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "オーガニック成長率",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収、売却、為替効果調整後の比較可能事業の売上増減率。数量成長とは異なる会社APM",
+          "value": 12,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / オーガニック成長率 / 2022; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "オーガニック成長率",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収、売却、為替効果調整後の比較可能事業の売上増減率。数量成長とは異なる会社APM",
+          "value": 3,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / オーガニック成長率 / 2023; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "オーガニック成長率",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収、売却、為替効果調整後の比較可能事業の売上増減率。数量成長とは異なる会社APM",
+          "value": -1,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / オーガニック成長率 / 2024; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "オーガニック成長率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収、売却、為替効果調整後の比較可能事業の売上増減率。数量成長とは異なる会社APM",
+          "value": 3,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / オーガニック成長率 / 2025; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        }
+      ],
+      "claim": "| オーガニック成長率 | 11% | 12% | 3% | −1% | 3% |",
+      "calculations": []
+    },
+    {
+      "id": "annual-acquired",
+      "question": "2021–2025年の買収・売却による純増率はどう推移したか",
+      "definition": "買収と売却が前年売上に与えた純成長寄与。会社APM",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "買収・売却による純増率",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収と売却が前年売上に与えた純成長寄与。会社APM"
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "買収・売却による純増率",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収と売却が前年売上に与えた純成長寄与。会社APM"
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "買収・売却による純増率",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収と売却が前年売上に与えた純成長寄与。会社APM"
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "買収・売却による純増率",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収と売却が前年売上に与えた純成長寄与。会社APM"
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "買収・売却による純増率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収と売却が前年売上に与えた純成長寄与。会社APM"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "買収・売却による純増率",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収と売却が前年売上に与えた純成長寄与。会社APM",
+          "value": 2,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 買収・売却による純増率 / 2021; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "買収・売却による純増率",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収と売却が前年売上に与えた純成長寄与。会社APM",
+          "value": 2,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 買収・売却による純増率 / 2022; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "買収・売却による純増率",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収と売却が前年売上に与えた純成長寄与。会社APM",
+          "value": 8,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 買収・売却による純増率 / 2023; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "買収・売却による純増率",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収と売却が前年売上に与えた純成長寄与。会社APM",
+          "value": 8,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 買収・売却による純増率 / 2024; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "買収・売却による純増率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収と売却が前年売上に与えた純成長寄与。会社APM",
+          "value": 5,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 買収・売却による純増率 / 2025; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        }
+      ],
+      "claim": "| 買収・売却による純増率 | 2% | 2% | 8% | 8% | 5% |",
+      "calculations": []
+    },
+    {
+      "id": "annual-ifrs-ebit",
+      "question": "2021–2025年のIFRS営業利益はどう推移したか",
+      "definition": "比較可能性調整前のIFRS連結営業利益",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "IFRS営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "比較可能性調整前のIFRS連結営業利益"
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "IFRS営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "比較可能性調整前のIFRS連結営業利益"
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "IFRS営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "比較可能性調整前のIFRS連結営業利益"
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "IFRS営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "比較可能性調整前のIFRS連結営業利益"
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "比較可能性調整前のIFRS連結営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "IFRS営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "比較可能性調整前のIFRS連結営業利益",
+          "value": 14181,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / IFRS営業利益 / 2021; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "IFRS営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "比較可能性調整前のIFRS連結営業利益",
+          "value": 18532,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / IFRS営業利益 / 2022; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "IFRS営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "比較可能性調整前のIFRS連結営業利益",
+          "value": 21785,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / IFRS営業利益 / 2023; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "IFRS営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "比較可能性調整前のIFRS連結営業利益",
+          "value": 24275,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / IFRS営業利益 / 2024; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "比較可能性調整前のIFRS連結営業利益",
+          "value": 23151,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / IFRS営業利益 / 2025; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        }
+      ],
+      "claim": "| IFRS営業利益 | 14,181 | 18,532 | 21,785 | 24,275 | 23,151 |",
+      "calculations": []
+    },
+    {
+      "id": "annual-adjusted-ebit",
+      "question": "2021–2025年の調整後営業利益はどう推移したか",
+      "definition": "Items affecting comparability除外後EBIT。APM",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT。APM"
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT。APM"
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT。APM"
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT。APM"
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT。APM"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT。APM",
+          "value": 14181,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 調整後営業利益 / 2021; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT。APM",
+          "value": 18532,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 調整後営業利益 / 2022; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT。APM",
+          "value": 22185,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 調整後営業利益 / 2023; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT。APM",
+          "value": 24296,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 調整後営業利益 / 2024; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT。APM",
+          "value": 24664,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 調整後営業利益 / 2025; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        }
+      ],
+      "claim": "| 調整後営業利益 | 14,181 | 18,532 | 22,185 | 24,296 | 24,664 |",
+      "calculations": []
+    },
+    {
+      "id": "annual-adjusted-margin",
+      "question": "2021–2025年の調整後営業利益率はどう推移したか",
+      "definition": "Items affecting comparability除外後EBIT/売上。会社APM",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT/売上。会社APM"
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT/売上。会社APM"
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT/売上。会社APM"
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT/売上。会社APM"
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT/売上。会社APM"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT/売上。会社APM",
+          "value": 14.9,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 調整後営業利益率 / 2021; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT/売上。会社APM",
+          "value": 15.3,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 調整後営業利益率 / 2022; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT/売上。会社APM",
+          "value": 15.8,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 調整後営業利益率 / 2023; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT/売上。会社APM",
+          "value": 16.2,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 調整後営業利益率 / 2024; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT/売上。会社APM",
+          "value": 16.2,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 調整後営業利益率 / 2025; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        }
+      ],
+      "claim": "| 調整後営業利益率 | 14.9% | 15.3% | 15.8% | 16.2% | 16.2% |",
+      "calculations": []
+    },
+    {
+      "id": "annual-cfo",
+      "question": "2021–2025年の営業活動CFはどう推移したか",
+      "definition": "IFRS cash flow from operating activities。税金と利払い等支払い後",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "営業活動CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS cash flow from operating activities。税金と利払い等支払い後"
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "営業活動CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS cash flow from operating activities。税金と利払い等支払い後"
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "営業活動CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS cash flow from operating activities。税金と利払い等支払い後"
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "営業活動CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS cash flow from operating activities。税金と利払い等支払い後"
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "営業活動CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS cash flow from operating activities。税金と利払い等支払い後"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "営業活動CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS cash flow from operating activities。税金と利払い等支払い後",
+          "value": 12456,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 営業活動CF / 2021; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "営業活動CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS cash flow from operating activities。税金と利払い等支払い後",
+          "value": 14357,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 営業活動CF / 2022; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "営業活動CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS cash flow from operating activities。税金と利払い等支払い後",
+          "value": 21294,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 営業活動CF / 2023; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "営業活動CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS cash flow from operating activities。税金と利払い等支払い後",
+          "value": 21391,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 営業活動CF / 2024; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "営業活動CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS cash flow from operating activities。税金と利払い等支払い後",
+          "value": 21412,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 営業活動CF / 2025; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        }
+      ],
+      "claim": "| 営業活動CF | 12,456 | 14,357 | 21,294 | 21,391 | 21,412 |",
+      "calculations": []
+    },
+    {
+      "id": "annual-operating-cf",
+      "question": "2021–2025年の会社営業CFはどう推移したか",
+      "definition": "会社APM: CFO+税支払+再編支払−純設備投資−リース元本返済。税引後FCFではない",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "会社APM: CFO+税支払+再編支払−純設備投資−リース元本返済。税引後FCFではない"
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "会社APM: CFO+税支払+再編支払−純設備投資−リース元本返済。税引後FCFではない"
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "会社APM: CFO+税支払+再編支払−純設備投資−リース元本返済。税引後FCFではない"
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "会社APM: CFO+税支払+再編支払−純設備投資−リース元本返済。税引後FCFではない"
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "会社APM: CFO+税支払+再編支払−純設備投資−リース元本返済。税引後FCFではない"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "会社APM: CFO+税支払+再編支払−純設備投資−リース元本返済。税引後FCFではない",
+          "value": 13265,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 会社営業CF / 2021; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "会社APM: CFO+税支払+再編支払−純設備投資−リース元本返済。税引後FCFではない",
+          "value": 15808,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 会社営業CF / 2022; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "会社APM: CFO+税支払+再編支払−純設備投資−リース元本返済。税引後FCFではない",
+          "value": 25232,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 会社営業CF / 2023; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "会社APM: CFO+税支払+再編支払−純設備投資−リース元本返済。税引後FCFではない",
+          "value": 23052,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 会社営業CF / 2024; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "会社APM: CFO+税支払+再編支払−純設備投資−リース元本返済。税引後FCFではない",
+          "value": 22660,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 会社営業CF / 2025; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        }
+      ],
+      "claim": "| 会社営業CF | 13,265 | 15,808 | 25,232 | 23,052 | 22,660 |",
+      "calculations": []
+    },
+    {
+      "id": "annual-goodwill",
+      "question": "2021–2025年ののれんはどう推移したか",
+      "definition": "期末IFRSのれん帳簿価額",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "のれん",
+          "periodStart": "2021-12-31",
+          "periodEnd": "2021-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "期末IFRSのれん帳簿価額"
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "のれん",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2022-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "期末IFRSのれん帳簿価額"
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "のれん",
+          "periodStart": "2023-12-31",
+          "periodEnd": "2023-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "期末IFRSのれん帳簿価額"
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "のれん",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "期末IFRSのれん帳簿価額"
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "のれん",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "期末IFRSのれん帳簿価額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "のれん",
+          "periodStart": "2021-12-31",
+          "periodEnd": "2021-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "期末IFRSのれん帳簿価額",
+          "value": 62502,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / のれん / 2021; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "のれん",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2022-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "期末IFRSのれん帳簿価額",
+          "value": 75873,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / のれん / 2022; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "のれん",
+          "periodStart": "2023-12-31",
+          "periodEnd": "2023-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "期末IFRSのれん帳簿価額",
+          "value": 92873,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / のれん / 2023; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "のれん",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "期末IFRSのれん帳簿価額",
+          "value": 106874,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / のれん / 2024; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "のれん",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "期末IFRSのれん帳簿価額",
+          "value": 101119,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / のれん / 2025; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        }
+      ],
+      "claim": "| のれん | 62,502 | 75,873 | 92,873 | 106,874 | 101,119 |",
+      "calculations": []
+    },
+    {
+      "id": "annual-roce",
+      "question": "2021–2025年の会社ROCEはどう推移したか",
+      "definition": "調整後直近12カ月EBIT/再編引当金調整後の平均使用資本。のれん込み、税引前",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社ROCE",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後直近12カ月EBIT/再編引当金調整後の平均使用資本。のれん込み、税引前"
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社ROCE",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後直近12カ月EBIT/再編引当金調整後の平均使用資本。のれん込み、税引前"
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社ROCE",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後直近12カ月EBIT/再編引当金調整後の平均使用資本。のれん込み、税引前"
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社ROCE",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後直近12カ月EBIT/再編引当金調整後の平均使用資本。のれん込み、税引前"
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社ROCE",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後直近12カ月EBIT/再編引当金調整後の平均使用資本。のれん込み、税引前"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社ROCE",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後直近12カ月EBIT/再編引当金調整後の平均使用資本。のれん込み、税引前",
+          "value": 15.2,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 会社ROCE / 2021; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社ROCE",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後直近12カ月EBIT/再編引当金調整後の平均使用資本。のれん込み、税引前",
+          "value": 16.9,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 会社ROCE / 2022; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社ROCE",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後直近12カ月EBIT/再編引当金調整後の平均使用資本。のれん込み、税引前",
+          "value": 15.6,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 会社ROCE / 2023; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社ROCE",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後直近12カ月EBIT/再編引当金調整後の平均使用資本。のれん込み、税引前",
+          "value": 14.4,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 会社ROCE / 2024; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社ROCE",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後直近12カ月EBIT/再編引当金調整後の平均使用資本。のれん込み、税引前",
+          "value": 14.2,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 会社ROCE / 2025; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        }
+      ],
+      "claim": "| 会社ROCE | 15.2% | 16.9% | 15.6% | 14.4% | 14.2% |",
+      "calculations": []
+    },
+    {
+      "id": "annual-leverage",
+      "question": "2021–2025年の純有利子負債／EBITDAはどう推移したか",
+      "definition": "期末会社定義純有利子負債/直近12カ月EBITDA（IAC除外）。会社APM",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "純有利子負債／EBITDA",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "期末会社定義純有利子負債/直近12カ月EBITDA（IAC除外）。会社APM"
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "純有利子負債／EBITDA",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "期末会社定義純有利子負債/直近12カ月EBITDA（IAC除外）。会社APM"
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "純有利子負債／EBITDA",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "期末会社定義純有利子負債/直近12カ月EBITDA（IAC除外）。会社APM"
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "純有利子負債／EBITDA",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "期末会社定義純有利子負債/直近12カ月EBITDA（IAC除外）。会社APM"
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "純有利子負債／EBITDA",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "期末会社定義純有利子負債/直近12カ月EBITDA（IAC除外）。会社APM"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2021",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "純有利子負債／EBITDA",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "期末会社定義純有利子負債/直近12カ月EBITDA（IAC除外）。会社APM",
+          "value": 1.5,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 純有利子負債／EBITDA / 2021; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "純有利子負債／EBITDA",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "期末会社定義純有利子負債/直近12カ月EBITDA（IAC除外）。会社APM",
+          "value": 1.4,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 純有利子負債／EBITDA / 2022; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2023",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "純有利子負債／EBITDA",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "期末会社定義純有利子負債/直近12カ月EBITDA（IAC除外）。会社APM",
+          "value": 2.3,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 純有利子負債／EBITDA / 2023; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "純有利子負債／EBITDA",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "期末会社定義純有利子負債/直近12カ月EBITDA（IAC除外）。会社APM",
+          "value": 2.3,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 純有利子負債／EBITDA / 2024; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "純有利子負債／EBITDA",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "期末会社定義純有利子負債/直近12カ月EBITDA（IAC除外）。会社APM",
+          "value": 2.1,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / 純有利子負債／EBITDA / 2025; Definitions p.163",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        }
+      ],
+      "claim": "| 純有利子負債／EBITDA | 1.5倍 | 1.4倍 | 2.3倍 | 2.3倍 | 2.1倍 |",
+      "calculations": []
+    },
+    {
+      "id": "annual-sales-bridge",
+      "question": "2025年の増収の内訳は何か",
+      "definition": "会社開示の丸めた成長率。実額増減率と丸め差がある。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "organic",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Organic growth",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Organic growth"
+        },
+        {
+          "id": "ma",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Acquisitions and divestments",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Acquisitions and divestments"
+        },
+        {
+          "id": "fx",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Exchange rate effects",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Exchange rate effects"
+        },
+        {
+          "id": "total",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Total sales growth rounded",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Total sales growth rounded"
+        }
+      ],
+      "observations": [
+        {
+          "id": "organic",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Organic growth",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Organic growth",
+          "value": 3,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Change in sales / Organic growth 2025",
+            "kind": "primary",
+            "pdfPage": 120
+          }
+        },
+        {
+          "id": "ma",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Acquisitions and divestments",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Acquisitions and divestments",
+          "value": 5,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Change in sales / Acquisitions and divestments 2025",
+            "kind": "primary",
+            "pdfPage": 120
+          }
+        },
+        {
+          "id": "fx",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Exchange rate effects",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Exchange rate effects",
+          "value": -7,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Change in sales / Exchange rate effects 2025",
+            "kind": "primary",
+            "pdfPage": 120
+          }
+        },
+        {
+          "id": "total",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Total sales growth rounded",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Total sales growth rounded",
+          "value": 1,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Change in sales / Total 2025",
+            "kind": "primary",
+            "pdfPage": 120
+          }
+        }
+      ],
+      "claim": "2025年の売上変化は、会社の丸めた成長率で、オーガニック＋3%、買収・売却＋5%、為替−7%、合計＋1%だった。",
+      "calculations": [
+        {
+          "id": "bridge",
+          "operation": "sum",
+          "inputs": [
+            "organic",
+            "ma",
+            "fx"
+          ],
+          "definition": "公表丸め値の加算（%）",
+          "precision": 0,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "annual-ebit-adjustment",
+      "question": "調整後利益の増加はIFRS利益の増加か",
+      "definition": "同一期間のIFRSと調整後APMを区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "ifrs-2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "IFRS EBIT",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS EBIT"
+        },
+        {
+          "id": "adjusted-2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Items affecting comparability除外後EBIT",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT"
+        },
+        {
+          "id": "ifrs-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "IFRS EBIT",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS EBIT"
+        },
+        {
+          "id": "adjusted-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Items affecting comparability除外後EBIT",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ifrs-2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "IFRS EBIT",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS EBIT",
+          "value": 24275,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / EBIT / 2024",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "adjusted-2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Items affecting comparability除外後EBIT",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT",
+          "value": 24296,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / EBIT / 2024",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "ifrs-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "IFRS EBIT",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS EBIT",
+          "value": 23151,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / EBIT / 2025",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        },
+        {
+          "id": "adjusted-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Items affecting comparability除外後EBIT",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT",
+          "value": 24664,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / EBIT / 2025",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        }
+      ],
+      "claim": "一方、IFRS営業利益は23,151へ減少し、調整後営業利益は24,664へ増加した。両者の差1,513は無視できない。",
+      "calculations": [
+        {
+          "id": "gap",
+          "operation": "difference",
+          "inputs": [
+            "adjusted-2025",
+            "ifrs-2025"
+          ],
+          "definition": "調整後EBIT−IFRS EBIT（百万SEK）",
+          "precision": 0,
+          "value": 1513
+        }
+      ]
+    },
+    {
+      "id": "cycle-targets",
+      "question": "成長率10%と利益率16–17%は単年度予想か",
+      "definition": "長期目標を会社予想の区分で保存するが、単年度予想ではないと定義・本文で明記。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales growth target",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "年次2025に示された景気循環を通じた目標。期間日は対象会計年度末の表示基準日であり、2025年実績または2026年単年予想ではない。"
+        },
+        {
+          "id": "organic",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Organic growth target",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "年次2025に示された景気循環を通じた目標。期間日は対象会計年度末の表示基準日であり、2025年実績または2026年単年予想ではない。"
+        },
+        {
+          "id": "acquired",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Acquired growth target",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "年次2025に示された景気循環を通じた目標。期間日は対象会計年度末の表示基準日であり、2025年実績または2026年単年予想ではない。"
+        },
+        {
+          "id": "margin-low",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "EBIT margin target lower bound",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "年次2025に示された景気循環を通じた目標。期間日は対象会計年度末の表示基準日であり、2025年実績または2026年単年予想ではない。"
+        },
+        {
+          "id": "margin-high",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "EBIT margin target upper bound",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "年次2025に示された景気循環を通じた目標。期間日は対象会計年度末の表示基準日であり、2025年実績または2026年単年予想ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales growth target",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "年次2025に示された景気循環を通じた目標。期間日は対象会計年度末の表示基準日であり、2025年実績または2026年単年予想ではない。",
+          "value": 10,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Financial targets",
+            "kind": "primary",
+            "pdfPage": 28
+          }
+        },
+        {
+          "id": "organic",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Organic growth target",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "年次2025に示された景気循環を通じた目標。期間日は対象会計年度末の表示基準日であり、2025年実績または2026年単年予想ではない。",
+          "value": 5,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Financial targets",
+            "kind": "primary",
+            "pdfPage": 28
+          }
+        },
+        {
+          "id": "acquired",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Acquired growth target",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "年次2025に示された景気循環を通じた目標。期間日は対象会計年度末の表示基準日であり、2025年実績または2026年単年予想ではない。",
+          "value": 5,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Financial targets",
+            "kind": "primary",
+            "pdfPage": 28
+          }
+        },
+        {
+          "id": "margin-low",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "EBIT margin target lower bound",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "年次2025に示された景気循環を通じた目標。期間日は対象会計年度末の表示基準日であり、2025年実績または2026年単年予想ではない。",
+          "value": 16,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Financial targets",
+            "kind": "primary",
+            "pdfPage": 28
+          }
+        },
+        {
+          "id": "margin-high",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "EBIT margin target upper bound",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "年次2025に示された景気循環を通じた目標。期間日は対象会計年度末の表示基準日であり、2025年実績または2026年単年予想ではない。",
+          "value": 17,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Financial targets",
+            "kind": "primary",
+            "pdfPage": 28
+          }
+        }
+      ],
+      "claim": "会社の景気循環を通じた目標は、売上成長10%をオーガニック5%と買収5%で構成し、営業利益率を16〜17%とするものだ。これは2026年の会社業績予想ではない。",
+      "calculations": []
+    },
+    {
+      "id": "latest-sales-bridges",
+      "question": "最新四半期と累計の売上増減は何で説明できるか",
+      "definition": "会社の実額売上ブリッジ。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "q-old",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "売上または前年同期売上からの成長寄与実額（買収・売却と為替を別表示）"
+        },
+        {
+          "id": "q-new",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "売上または前年同期売上からの成長寄与実額（買収・売却と為替を別表示）"
+        },
+        {
+          "id": "q-organic",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales bridge organic",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "売上または前年同期売上からの成長寄与実額（買収・売却と為替を別表示）"
+        },
+        {
+          "id": "q-ma",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales bridge ma",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "売上または前年同期売上からの成長寄与実額（買収・売却と為替を別表示）"
+        },
+        {
+          "id": "q-fx",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales bridge fx",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "売上または前年同期売上からの成長寄与実額（買収・売却と為替を別表示）"
+        },
+        {
+          "id": "n-old",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "売上または前年同期売上からの成長寄与実額（買収・売却と為替を別表示）"
+        },
+        {
+          "id": "n-new",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "売上または前年同期売上からの成長寄与実額（買収・売却と為替を別表示）"
+        },
+        {
+          "id": "n-organic",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales bridge organic",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "売上または前年同期売上からの成長寄与実額（買収・売却と為替を別表示）"
+        },
+        {
+          "id": "n-ma",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales bridge ma",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "売上または前年同期売上からの成長寄与実額（買収・売却と為替を別表示）"
+        },
+        {
+          "id": "n-fx",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales bridge fx",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "売上または前年同期売上からの成長寄与実額（買収・売却と為替を別表示）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "q-old",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "売上または前年同期売上からの成長寄与実額（買収・売却と為替を別表示）",
+          "value": 38146,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / old",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "q-new",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "売上または前年同期売上からの成長寄与実額（買収・売却と為替を別表示）",
+          "value": 40771,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / new",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "q-organic",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales bridge organic",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "売上または前年同期売上からの成長寄与実額（買収・売却と為替を別表示）",
+          "value": 1428,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / organic",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "q-ma",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales bridge ma",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "売上または前年同期売上からの成長寄与実額（買収・売却と為替を別表示）",
+          "value": 935,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / ma",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "q-fx",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales bridge fx",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "売上または前年同期売上からの成長寄与実額（買収・売却と為替を別表示）",
+          "value": 262,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / fx",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "n-old",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "売上または前年同期売上からの成長寄与実額（買収・売却と為替を別表示）",
+          "value": 114102,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / January–September / old",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "n-new",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "売上または前年同期売上からの成長寄与実額（買収・売却と為替を別表示）",
+          "value": 115781,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / January–September / new",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "n-organic",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales bridge organic",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "売上または前年同期売上からの成長寄与実額（買収・売却と為替を別表示）",
+          "value": 3568,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / January–September / organic",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "n-ma",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales bridge ma",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "売上または前年同期売上からの成長寄与実額（買収・売却と為替を別表示）",
+          "value": 2623,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / January–September / ma",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "n-fx",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Sales bridge fx",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "売上または前年同期売上からの成長寄与実額（買収・売却と為替を別表示）",
+          "value": -4512,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / January–September / fx",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "2026年7〜9月の売上は40,771、前年の38,146から増加した。増分2,625の内訳は、オーガニック1,428、買収・売却935、為替262である。9カ月累計では、前年114,102にオーガニック3,568、買収・売却2,623、為替−4,512が加わり、115,781となった。四半期の為替は追い風に転じたが、累計ではまだ逆風だった。[Q3 2026 p.1](https://mb.cision.com/Main/7333/4415570/4340384.pdf#page=1)",
+      "calculations": [
+        {
+          "id": "q-change",
+          "operation": "difference",
+          "inputs": [
+            "q-new",
+            "q-old"
+          ],
+          "definition": "Q3売上増分",
+          "precision": 0,
+          "value": 2625
+        },
+        {
+          "id": "q-new-check",
+          "operation": "sum",
+          "inputs": [
+            "q-old",
+            "q-organic",
+            "q-ma",
+            "q-fx"
+          ],
+          "definition": "Q3前年売上＋全成長寄与",
+          "precision": 0,
+          "value": 40771
+        },
+        {
+          "id": "n-new-check",
+          "operation": "sum",
+          "inputs": [
+            "n-old",
+            "n-organic",
+            "n-ma",
+            "n-fx"
+          ],
+          "definition": "9M前年売上＋全成長寄与",
+          "precision": 0,
+          "value": 115781
+        }
+      ]
+    },
+    {
+      "id": "quarter-sales",
+      "question": "2026年7–9月の売上高は前年同期とどう違うか",
+      "definition": "IFRS連結売上高",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS連結売上高"
+        },
+        {
+          "id": "2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS連結売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS連結売上高",
+          "value": 38146,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / 売上高; p.12 quarterly summary",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS連結売上高",
+          "value": 40771,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / 売上高; p.12 quarterly summary",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "| 売上高 | 38,146 | 40,771 |",
+      "calculations": []
+    },
+    {
+      "id": "quarter-organic",
+      "question": "2026年7–9月のオーガニック成長率は前年同期とどう違うか",
+      "definition": "買収・売却・為替を除く会社APM",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "オーガニック成長率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収・売却・為替を除く会社APM"
+        },
+        {
+          "id": "2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "オーガニック成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収・売却・為替を除く会社APM"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "オーガニック成長率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収・売却・為替を除く会社APM",
+          "value": 3,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / オーガニック成長率; p.12 quarterly summary",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "オーガニック成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収・売却・為替を除く会社APM",
+          "value": 4,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / オーガニック成長率; p.12 quarterly summary",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "| オーガニック成長率 | 3% | 4% |",
+      "calculations": []
+    },
+    {
+      "id": "quarter-ebit",
+      "question": "2026年7–9月の調整後EBITは前年同期とどう違うか",
+      "definition": "Items affecting comparability除外後EBIT",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後EBIT",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT"
+        },
+        {
+          "id": "2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後EBIT",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後EBIT",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT",
+          "value": 6416,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / 調整後EBIT; p.12 quarterly summary",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後EBIT",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Items affecting comparability除外後EBIT",
+          "value": 7102,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / 調整後EBIT; p.12 quarterly summary",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "| 調整後EBIT | 6,416 | 7,102 |",
+      "calculations": []
+    },
+    {
+      "id": "quarter-margin",
+      "question": "2026年7–9月の調整後EBIT利益率は前年同期とどう違うか",
+      "definition": "調整後EBIT/売上",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後EBIT利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後EBIT/売上"
+        },
+        {
+          "id": "2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後EBIT利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後EBIT/売上"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後EBIT利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後EBIT/売上",
+          "value": 16.8,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / 調整後EBIT利益率; p.12 quarterly summary",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後EBIT利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後EBIT/売上",
+          "value": 17.4,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / 調整後EBIT利益率; p.12 quarterly summary",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "| 調整後EBIT利益率 | 16.8% | 17.4% |",
+      "calculations": []
+    },
+    {
+      "id": "quarter-ebita",
+      "question": "2026年7–9月のEBITAは前年同期とどう違うか",
+      "definition": "買収由来の無形資産償却等を除くEBITA、比較期IAC除外",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "EBITA",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "買収由来の無形資産償却等を除くEBITA、比較期IAC除外"
+        },
+        {
+          "id": "2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "EBITA",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "買収由来の無形資産償却等を除くEBITA、比較期IAC除外"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "EBITA",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "買収由来の無形資産償却等を除くEBITA、比較期IAC除外",
+          "value": 6815,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / EBITA; p.12 quarterly summary",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "EBITA",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "買収由来の無形資産償却等を除くEBITA、比較期IAC除外",
+          "value": 7612,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / EBITA; p.12 quarterly summary",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "| 調整後EBITA | 6,815 | 7,612 |",
+      "calculations": []
+    },
+    {
+      "id": "quarter-ebita-margin",
+      "question": "2026年7–9月のEBITA利益率は前年同期とどう違うか",
+      "definition": "前行EBITA/売上",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "EBITA利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "前行EBITA/売上"
+        },
+        {
+          "id": "2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "EBITA利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "前行EBITA/売上"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "EBITA利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "前行EBITA/売上",
+          "value": 17.9,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / EBITA利益率; p.12 quarterly summary",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "EBITA利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "前行EBITA/売上",
+          "value": 18.7,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / EBITA利益率; p.12 quarterly summary",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "| 調整後EBITA利益率 | 17.9% | 18.7% |",
+      "calculations": []
+    },
+    {
+      "id": "quarter-eps",
+      "question": "2026年7–9月の調整後EPS（SEK）は前年同期とどう違うか",
+      "definition": "IAC除外後、親会社株主利益/加重平均株式数",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後EPS（SEK）",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK/株",
+          "basis": "actual",
+          "definition": "IAC除外後、親会社株主利益/加重平均株式数"
+        },
+        {
+          "id": "2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後EPS（SEK）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK/株",
+          "basis": "actual",
+          "definition": "IAC除外後、親会社株主利益/加重平均株式数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後EPS（SEK）",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK/株",
+          "basis": "actual",
+          "definition": "IAC除外後、親会社株主利益/加重平均株式数",
+          "value": 3.73,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / 調整後EPS（SEK）; p.12 quarterly summary",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "調整後EPS（SEK）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK/株",
+          "basis": "actual",
+          "definition": "IAC除外後、親会社株主利益/加重平均株式数",
+          "value": 4.24,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / 調整後EPS（SEK）; p.12 quarterly summary",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "| 調整後EPS（SEK） | 3.73 | 4.24 |",
+      "calculations": []
+    },
+    {
+      "id": "quarter-ocf",
+      "question": "2026年7–9月の会社営業CFは前年同期とどう違うか",
+      "definition": "税支払・再編支払加算後、純投資・リース返済控除後の会社APM",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社営業CF",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "税支払・再編支払加算後、純投資・リース返済控除後の会社APM"
+        },
+        {
+          "id": "2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社営業CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "税支払・再編支払加算後、純投資・リース返済控除後の会社APM"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社営業CF",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "税支払・再編支払加算後、純投資・リース返済控除後の会社APM",
+          "value": 6969,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / 会社営業CF; p.12 quarterly summary",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "会社営業CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "税支払・再編支払加算後、純投資・リース返済控除後の会社APM",
+          "value": 7405,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Sales and income / Third quarter / 会社営業CF; p.12 quarterly summary",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "| 会社営業CF | 6,969 | 7,405 |",
+      "calculations": []
+    },
+    {
+      "id": "quarter-ifrs-distinction",
+      "question": "比較期のIFRSと調整後は一致するか",
+      "definition": "2026調整なし、2025は小さな調整あり。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "ebit",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "IFRS EBIT",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS EBIT"
+        },
+        {
+          "id": "eps",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "IFRS EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK/株",
+          "basis": "actual",
+          "definition": "IFRS EPS"
+        },
+        {
+          "id": "iac",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "EBIT items affecting comparability",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "開示のダッシュは2026年該当調整なし。ゼロ代入による欠測補完ではない"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ebit",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "IFRS EBIT",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS EBIT",
+          "value": 6429,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Condensed income statement / Operating income / Q3 2025",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "eps",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "IFRS EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK/株",
+          "basis": "actual",
+          "definition": "IFRS EPS",
+          "value": 3.74,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Earnings per share before and after dilution / Q3 2025",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "iac",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "EBIT items affecting comparability",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "開示のダッシュは2026年該当調整なし。ゼロ代入による欠測補完ではない",
+          "value": 0,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Quarterly summary / Items affecting comparability / Q3 2026",
+            "kind": "primary",
+            "pdfPage": 12
+          }
+        }
+      ],
+      "claim": "2026年7〜9月には比較可能性調整項目がなく、EBIT・EPSの調整後とIFRS値は一致する。2025年7〜9月のIFRS営業利益は6,429、IFRS EPSは3.74であり、表の調整後値とは異なる。",
+      "calculations": []
+    },
+    {
+      "id": "division-EMEIA",
+      "question": "最新の部門別成長、利益率、資本効率はどうか",
+      "definition": "四半期売上成長/利益率と直近12カ月ROCEの期間差を明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "organic",
+          "entity": "ASSA ABLOY / Opening Solutions EMEIA",
+          "metric": "Organic sales growth",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収売却為替除外後売上増減"
+        },
+        {
+          "id": "margin",
+          "entity": "ASSA ABLOY / Opening Solutions EMEIA",
+          "metric": "EBIT margin",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "IAC除外後EBIT/売上"
+        },
+        {
+          "id": "roce",
+          "entity": "ASSA ABLOY / Opening Solutions EMEIA",
+          "metric": "Return on capital employed",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "直近12カ月調整後EBIT/平均調整後使用資本。部門数値は年率表記"
+        }
+      ],
+      "observations": [
+        {
+          "id": "organic",
+          "entity": "ASSA ABLOY / Opening Solutions EMEIA",
+          "metric": "Organic sales growth",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収売却為替除外後売上増減",
+          "value": 5,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Quarterly comments by division / Opening Solutions EMEIA",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "margin",
+          "entity": "ASSA ABLOY / Opening Solutions EMEIA",
+          "metric": "EBIT margin",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "IAC除外後EBIT/売上",
+          "value": 15.8,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Quarterly comments by division / Opening Solutions EMEIA",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "roce",
+          "entity": "ASSA ABLOY / Opening Solutions EMEIA",
+          "metric": "Return on capital employed",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "直近12カ月調整後EBIT/平均調整後使用資本。部門数値は年率表記",
+          "value": 16.7,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Quarterly comments by division / Opening Solutions EMEIA / ROCE; definition p.19",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "claim": "| Opening Solutions EMEIA | 5% | 15.8% | 16.7% |",
+      "calculations": []
+    },
+    {
+      "id": "division-Americas",
+      "question": "最新の部門別成長、利益率、資本効率はどうか",
+      "definition": "四半期売上成長/利益率と直近12カ月ROCEの期間差を明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "organic",
+          "entity": "ASSA ABLOY / Opening Solutions Americas",
+          "metric": "Organic sales growth",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収売却為替除外後売上増減"
+        },
+        {
+          "id": "margin",
+          "entity": "ASSA ABLOY / Opening Solutions Americas",
+          "metric": "EBIT margin",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "IAC除外後EBIT/売上"
+        },
+        {
+          "id": "roce",
+          "entity": "ASSA ABLOY / Opening Solutions Americas",
+          "metric": "Return on capital employed",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "直近12カ月調整後EBIT/平均調整後使用資本。部門数値は年率表記"
+        }
+      ],
+      "observations": [
+        {
+          "id": "organic",
+          "entity": "ASSA ABLOY / Opening Solutions Americas",
+          "metric": "Organic sales growth",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収売却為替除外後売上増減",
+          "value": 6,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Quarterly comments by division / Opening Solutions Americas",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "margin",
+          "entity": "ASSA ABLOY / Opening Solutions Americas",
+          "metric": "EBIT margin",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "IAC除外後EBIT/売上",
+          "value": 19.6,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Quarterly comments by division / Opening Solutions Americas",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "roce",
+          "entity": "ASSA ABLOY / Opening Solutions Americas",
+          "metric": "Return on capital employed",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "直近12カ月調整後EBIT/平均調整後使用資本。部門数値は年率表記",
+          "value": 13.7,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Quarterly comments by division / Opening Solutions Americas / ROCE; definition p.19",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "claim": "| Opening Solutions Americas | 6% | 19.6% | 13.7% |",
+      "calculations": []
+    },
+    {
+      "id": "division-APAC",
+      "question": "最新の部門別成長、利益率、資本効率はどうか",
+      "definition": "四半期売上成長/利益率と直近12カ月ROCEの期間差を明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "organic",
+          "entity": "ASSA ABLOY / Opening Solutions Asia Pacific",
+          "metric": "Organic sales growth",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収売却為替除外後売上増減"
+        },
+        {
+          "id": "margin",
+          "entity": "ASSA ABLOY / Opening Solutions Asia Pacific",
+          "metric": "EBIT margin",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "IAC除外後EBIT/売上"
+        },
+        {
+          "id": "roce",
+          "entity": "ASSA ABLOY / Opening Solutions Asia Pacific",
+          "metric": "Return on capital employed",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "直近12カ月調整後EBIT/平均調整後使用資本。部門数値は年率表記"
+        }
+      ],
+      "observations": [
+        {
+          "id": "organic",
+          "entity": "ASSA ABLOY / Opening Solutions Asia Pacific",
+          "metric": "Organic sales growth",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収売却為替除外後売上増減",
+          "value": -1,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Quarterly comments by division / Opening Solutions Asia Pacific",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "margin",
+          "entity": "ASSA ABLOY / Opening Solutions Asia Pacific",
+          "metric": "EBIT margin",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "IAC除外後EBIT/売上",
+          "value": 9.8,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Quarterly comments by division / Opening Solutions Asia Pacific",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "roce",
+          "entity": "ASSA ABLOY / Opening Solutions Asia Pacific",
+          "metric": "Return on capital employed",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "直近12カ月調整後EBIT/平均調整後使用資本。部門数値は年率表記",
+          "value": 6.8,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Quarterly comments by division / Opening Solutions Asia Pacific / ROCE; definition p.19",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "claim": "| Opening Solutions Asia Pacific | −1% | 9.8% | 6.8% |",
+      "calculations": []
+    },
+    {
+      "id": "division-GT",
+      "question": "最新の部門別成長、利益率、資本効率はどうか",
+      "definition": "四半期売上成長/利益率と直近12カ月ROCEの期間差を明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "organic",
+          "entity": "ASSA ABLOY / Global Technologies",
+          "metric": "Organic sales growth",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収売却為替除外後売上増減"
+        },
+        {
+          "id": "margin",
+          "entity": "ASSA ABLOY / Global Technologies",
+          "metric": "EBIT margin",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "IAC除外後EBIT/売上"
+        },
+        {
+          "id": "roce",
+          "entity": "ASSA ABLOY / Global Technologies",
+          "metric": "Return on capital employed",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "直近12カ月調整後EBIT/平均調整後使用資本。部門数値は年率表記"
+        }
+      ],
+      "observations": [
+        {
+          "id": "organic",
+          "entity": "ASSA ABLOY / Global Technologies",
+          "metric": "Organic sales growth",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収売却為替除外後売上増減",
+          "value": 4,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Quarterly comments by division / Global Technologies",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "margin",
+          "entity": "ASSA ABLOY / Global Technologies",
+          "metric": "EBIT margin",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "IAC除外後EBIT/売上",
+          "value": 20,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Quarterly comments by division / Global Technologies",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "roce",
+          "entity": "ASSA ABLOY / Global Technologies",
+          "metric": "Return on capital employed",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "直近12カ月調整後EBIT/平均調整後使用資本。部門数値は年率表記",
+          "value": 15.3,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Quarterly comments by division / Global Technologies / ROCE; definition p.19",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "claim": "| Global Technologies | 4% | 20.0% | 15.3% |",
+      "calculations": []
+    },
+    {
+      "id": "division-ES",
+      "question": "最新の部門別成長、利益率、資本効率はどうか",
+      "definition": "四半期売上成長/利益率と直近12カ月ROCEの期間差を明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "organic",
+          "entity": "ASSA ABLOY / Entrance Systems",
+          "metric": "Organic sales growth",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収売却為替除外後売上増減"
+        },
+        {
+          "id": "margin",
+          "entity": "ASSA ABLOY / Entrance Systems",
+          "metric": "EBIT margin",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "IAC除外後EBIT/売上"
+        },
+        {
+          "id": "roce",
+          "entity": "ASSA ABLOY / Entrance Systems",
+          "metric": "Return on capital employed",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "直近12カ月調整後EBIT/平均調整後使用資本。部門数値は年率表記"
+        }
+      ],
+      "observations": [
+        {
+          "id": "organic",
+          "entity": "ASSA ABLOY / Entrance Systems",
+          "metric": "Organic sales growth",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収売却為替除外後売上増減",
+          "value": 3,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Quarterly comments by division / Entrance Systems",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "margin",
+          "entity": "ASSA ABLOY / Entrance Systems",
+          "metric": "EBIT margin",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "IAC除外後EBIT/売上",
+          "value": 17.1,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Quarterly comments by division / Entrance Systems",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "roce",
+          "entity": "ASSA ABLOY / Entrance Systems",
+          "metric": "Return on capital employed",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "直近12カ月調整後EBIT/平均調整後使用資本。部門数値は年率表記",
+          "value": 18.6,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Quarterly comments by division / Entrance Systems / ROCE; definition p.19",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "claim": "| Entrance Systems | 3% | 17.1% | 18.6% |",
+      "calculations": []
+    },
+    {
+      "id": "cash-conversion-definition",
+      "question": "会社cash conversion117%の分母は何か",
+      "definition": "営業CF/PBT。純利益またはEBIT基準ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "ocf",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Operating cash flow",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Operating cash flow"
+        },
+        {
+          "id": "pbt",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Adjusted income before tax",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Adjusted income before tax"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Operating cash flow",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Operating cash flow",
+          "value": 7405,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Third quarter / Operating cash flow",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "pbt",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Adjusted income before tax",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Adjusted income before tax",
+          "value": 6333,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Third quarter / Income before tax",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "claim": "2026年7〜9月の117%という会社表示は、7,405を税引前利益6,333と比較したものだ。",
+      "calculations": [
+        {
+          "id": "conversion",
+          "operation": "ratio-percent",
+          "inputs": [
+            "ocf",
+            "pbt"
+          ],
+          "definition": "会社営業CF/調整後税引前利益×100",
+          "precision": 0,
+          "value": 117
+        }
+      ]
+    },
+    {
+      "id": "annual-cash-waterfall",
+      "question": "税引後CFは投資、リース、M&A、配当をどこまで賄ったか",
+      "definition": "会社営業CFと異なる独自定義FCF。流出は負符号。 Exact claim anchor is the final full data row; all inputs, observations and calculations retain review coverage of the entire comparison table.",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo-2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Cash flow from operating activities",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。"
+        },
+        {
+          "id": "capex-2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Cash investments in PPE and intangible assets",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。"
+        },
+        {
+          "id": "lease-2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Lease principal repayments",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。"
+        },
+        {
+          "id": "acq-2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Investments in subsidiaries",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。"
+        },
+        {
+          "id": "divest-2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Divestments of subsidiaries",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。"
+        },
+        {
+          "id": "div-2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Dividend cash payments",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。"
+        },
+        {
+          "id": "cfo-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Cash flow from operating activities",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。"
+        },
+        {
+          "id": "capex-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Cash investments in PPE and intangible assets",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。"
+        },
+        {
+          "id": "lease-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Lease principal repayments",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。"
+        },
+        {
+          "id": "acq-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Investments in subsidiaries",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。"
+        },
+        {
+          "id": "divest-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Divestments of subsidiaries",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。"
+        },
+        {
+          "id": "div-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Dividend cash payments",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo-2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Cash flow from operating activities",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。",
+          "value": 21391,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Consolidated statement of cash flows / Cash flow from operating activities / 2024",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "capex-2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Cash investments in PPE and intangible assets",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。",
+          "value": -2562,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Consolidated statement of cash flows / Cash investments in PPE and intangible assets / 2024",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "lease-2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Lease principal repayments",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。",
+          "value": -1797,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Consolidated statement of cash flows / Lease principal repayments / 2024",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "acq-2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Investments in subsidiaries",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。",
+          "value": -12136,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Consolidated statement of cash flows / Investments in subsidiaries / 2024",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "divest-2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Divestments of subsidiaries",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。",
+          "value": 460,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Consolidated statement of cash flows / Divestments of subsidiaries / 2024",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "div-2024",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Dividend cash payments",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。",
+          "value": -5999,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Consolidated statement of cash flows / Dividend cash payments / 2024",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "cfo-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Cash flow from operating activities",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。",
+          "value": 21412,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Consolidated statement of cash flows / Cash flow from operating activities / 2025",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "capex-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Cash investments in PPE and intangible assets",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。",
+          "value": -2773,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Consolidated statement of cash flows / Cash investments in PPE and intangible assets / 2025",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "lease-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Lease principal repayments",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。",
+          "value": -1968,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Consolidated statement of cash flows / Lease principal repayments / 2025",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "acq-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Investments in subsidiaries",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。",
+          "value": -11409,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Consolidated statement of cash flows / Investments in subsidiaries / 2025",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "divest-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Divestments of subsidiaries",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。",
+          "value": 835,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Consolidated statement of cash flows / Divestments of subsidiaries / 2025",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "div-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Dividend cash payments",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。",
+          "value": -6563,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Consolidated statement of cash flows / Dividend cash payments / 2025",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        }
+      ],
+      "claim": "| 配当支払い | −5,999 | −6,563 |",
+      "calculations": [
+        {
+          "id": "fcf-2024",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2024",
+            "capex-2024",
+            "lease-2024"
+          ],
+          "definition": "独自FCF=CFO−総設備・無形資産取得支出−リース元本返済。資産売却収入、M&A、配当前",
+          "precision": 0,
+          "value": 17032
+        },
+        {
+          "id": "ma-2024",
+          "operation": "sum",
+          "inputs": [
+            "acq-2024",
+            "divest-2024"
+          ],
+          "definition": "子会社取得・売却純現金収支",
+          "precision": 0,
+          "value": -11676
+        },
+        {
+          "id": "fcf-2025",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2025",
+            "capex-2025",
+            "lease-2025"
+          ],
+          "definition": "独自FCF=CFO−総設備・無形資産取得支出−リース元本返済。資産売却収入、M&A、配当前",
+          "precision": 0,
+          "value": 16671
+        },
+        {
+          "id": "ma-2025",
+          "operation": "sum",
+          "inputs": [
+            "acq-2025",
+            "divest-2025"
+          ],
+          "definition": "子会社取得・売却純現金収支",
+          "precision": 0,
+          "value": -10574
+        }
+      ]
+    },
+    {
+      "id": "cash-allocation-residual",
+      "question": "2025FCFはM&Aと配当を賄ったか",
+      "definition": "上記独自FCFと同じ。売却収入相殺後M&Aと配当を比較する。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Cash flow from operating activities",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。"
+        },
+        {
+          "id": "capex-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Cash investments in PPE and intangible assets",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。"
+        },
+        {
+          "id": "lease-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Lease principal repayments",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。"
+        },
+        {
+          "id": "acq-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Investments in subsidiaries",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。"
+        },
+        {
+          "id": "divest-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Divestments of subsidiaries",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。"
+        },
+        {
+          "id": "div-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Dividend cash payments",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Cash flow from operating activities",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。",
+          "value": 21412,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Consolidated statement of cash flows / Cash flow from operating activities / 2025",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "capex-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Cash investments in PPE and intangible assets",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。",
+          "value": -2773,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Consolidated statement of cash flows / Cash investments in PPE and intangible assets / 2025",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "lease-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Lease principal repayments",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。",
+          "value": -1968,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Consolidated statement of cash flows / Lease principal repayments / 2025",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "acq-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Investments in subsidiaries",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。",
+          "value": -11409,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Consolidated statement of cash flows / Investments in subsidiaries / 2025",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "divest-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Divestments of subsidiaries",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。",
+          "value": 835,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Consolidated statement of cash flows / Divestments of subsidiaries / 2025",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        },
+        {
+          "id": "div-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Dividend cash payments",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS現金収支、流出は負符号。設備取得は売却相殺前の現金支出、リース元本は財務CF分類。",
+          "value": -6563,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Consolidated statement of cash flows / Dividend cash payments / 2025",
+            "kind": "primary",
+            "pdfPage": 127
+          }
+        }
+      ],
+      "claim": "2025年の独自定義FCF16,671に対し、純M&A支出と配当の合計は17,137で、466上回った。",
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo-2025",
+            "capex-2025",
+            "lease-2025"
+          ],
+          "definition": "独自FCF",
+          "precision": 0,
+          "value": 16671
+        },
+        {
+          "id": "ma",
+          "operation": "sum",
+          "inputs": [
+            "acq-2025",
+            "divest-2025"
+          ],
+          "definition": "純M&A現金収支",
+          "precision": 0,
+          "value": -10574
+        },
+        {
+          "id": "outflows",
+          "operation": "sum",
+          "inputs": [
+            "ma",
+            "div-2025"
+          ],
+          "definition": "純M&Aと配当の流出合計",
+          "precision": 0,
+          "value": -17137
+        },
+        {
+          "id": "residual",
+          "operation": "sum",
+          "inputs": [
+            "fcf",
+            "outflows"
+          ],
+          "definition": "独自FCFとM&A・配当の差引残余",
+          "precision": 0,
+          "value": -466
+        }
+      ]
+    },
+    {
+      "id": "net-debt-fx",
+      "question": "2025純負債減少はすべて営業CFによる返済か",
+      "definition": "会社の負債増減表。為替差額等を現金返済と区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Net debt",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Net debt"
+        },
+        {
+          "id": "new",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Net debt",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Net debt"
+        },
+        {
+          "id": "fx",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Exchange rate differences etc. impact on net debt",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Exchange rate differences etc. impact on net debt"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Net debt",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Net debt",
+          "value": 70253,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Change in net debt / Net debt at January 1, 2025",
+            "kind": "primary",
+            "pdfPage": 126
+          }
+        },
+        {
+          "id": "new",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Net debt",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Net debt",
+          "value": 64277,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Change in net debt / Net debt at December 31, 2025",
+            "kind": "primary",
+            "pdfPage": 126
+          }
+        },
+        {
+          "id": "fx",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Exchange rate differences etc. impact on net debt",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Exchange rate differences etc. impact on net debt",
+          "value": -8352,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Change in net debt / Exchange rate differences, etc. / 2025",
+            "kind": "primary",
+            "pdfPage": 126
+          }
+        }
+      ],
+      "claim": "2025年末の純有利子負債は70,253から64,277へ5,976減ったが、会社の負債増減表では「為替差額等」が8,352の減少要因だった。",
+      "calculations": [
+        {
+          "id": "decrease",
+          "operation": "difference",
+          "inputs": [
+            "old",
+            "new"
+          ],
+          "definition": "前年末純負債−当年末純負債",
+          "precision": 0,
+          "value": 5976
+        }
+      ]
+    },
+    {
+      "id": "nine-month-cfo-quality",
+      "question": "2026累計営業CF改善のうち税と運転資本はいくらか",
+      "definition": "前年同一9カ月比較。税支払減・運転資本流出縮小を利益成長と分ける。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Cash flow from operating activities",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS営業CF構成項目。税と運転資本流出は負符号"
+        },
+        {
+          "id": "tax-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Tax paid on income",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS営業CF構成項目。税と運転資本流出は負符号"
+        },
+        {
+          "id": "wc-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Changes in working capital",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS営業CF構成項目。税と運転資本流出は負符号"
+        },
+        {
+          "id": "cfo-2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Cash flow from operating activities",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS営業CF構成項目。税と運転資本流出は負符号"
+        },
+        {
+          "id": "tax-2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Tax paid on income",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS営業CF構成項目。税と運転資本流出は負符号"
+        },
+        {
+          "id": "wc-2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Changes in working capital",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS営業CF構成項目。税と運転資本流出は負符号"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Cash flow from operating activities",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS営業CF構成項目。税と運転資本流出は負符号",
+          "value": 14001,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Condensed statement of cash flows / Cash flow from operating activities / Jan–Sep 2025",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "tax-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Tax paid on income",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS営業CF構成項目。税と運転資本流出は負符号",
+          "value": -3709,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Condensed statement of cash flows / Tax paid on income / Jan–Sep 2025",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "wc-2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Changes in working capital",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS営業CF構成項目。税と運転資本流出は負符号",
+          "value": -2031,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Condensed statement of cash flows / Changes in working capital / Jan–Sep 2025",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "cfo-2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Cash flow from operating activities",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS営業CF構成項目。税と運転資本流出は負符号",
+          "value": 17631,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Condensed statement of cash flows / Cash flow from operating activities / Jan–Sep 2026",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "tax-2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Tax paid on income",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS営業CF構成項目。税と運転資本流出は負符号",
+          "value": -2672,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Condensed statement of cash flows / Tax paid on income / Jan–Sep 2026",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "wc-2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Changes in working capital",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "IFRS営業CF構成項目。税と運転資本流出は負符号",
+          "value": -850,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Condensed statement of cash flows / Changes in working capital / Jan–Sep 2026",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        }
+      ],
+      "claim": "2026年1〜9月の営業活動CFは17,631で、前年14,001から3,630増えた。このうち税金支払いの減少が1,037、運転資本の流出縮小が1,181、合計2,218を説明する。増分の約61%に当たり、利益成長だけの成果ではない。",
+      "calculations": [
+        {
+          "id": "cfo-growth",
+          "operation": "difference",
+          "inputs": [
+            "cfo-2026",
+            "cfo-2025"
+          ],
+          "definition": "営業CF増分",
+          "precision": 0,
+          "value": 3630
+        },
+        {
+          "id": "tax-improvement",
+          "operation": "difference",
+          "inputs": [
+            "tax-2026",
+            "tax-2025"
+          ],
+          "definition": "税支払流出の縮小",
+          "precision": 0,
+          "value": 1037
+        },
+        {
+          "id": "wc-improvement",
+          "operation": "difference",
+          "inputs": [
+            "wc-2026",
+            "wc-2025"
+          ],
+          "definition": "運転資本流出縮小",
+          "precision": 0,
+          "value": 1181
+        },
+        {
+          "id": "two-effects",
+          "operation": "sum",
+          "inputs": [
+            "tax-improvement",
+            "wc-improvement"
+          ],
+          "definition": "上記2項目合計",
+          "precision": 0,
+          "value": 2218
+        },
+        {
+          "id": "share",
+          "operation": "ratio-percent",
+          "inputs": [
+            "two-effects",
+            "cfo-growth"
+          ],
+          "definition": "2項目合計/営業CF増分×100",
+          "precision": 0,
+          "value": 61
+        }
+      ]
+    },
+    {
+      "id": "goodwill-weight",
+      "question": "無形資産の比率はどの程度か",
+      "definition": "のれんとその他無形資産は別勘定を合計。簿価比率は損失率ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "goodwill",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Goodwill",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Goodwill"
+        },
+        {
+          "id": "intangibles",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Other intangible assets",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Other intangible assets"
+        },
+        {
+          "id": "assets",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Total assets",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Total assets"
+        }
+      ],
+      "observations": [
+        {
+          "id": "goodwill",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Goodwill",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Goodwill",
+          "value": 112230,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Condensed balance sheet / Goodwill / 30 Sep 2026",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "intangibles",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Other intangible assets",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Other intangible assets",
+          "value": 39836,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Condensed balance sheet / Other intangible assets / 30 Sep 2026",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "assets",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Total assets",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Total assets",
+          "value": 234774,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Condensed balance sheet / Total assets / 30 Sep 2026",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        }
+      ],
+      "claim": "2026年9月末ののれんは112,230、その他無形資産は39,836で、合計152,066は総資産234,774の64.8%に相当する。",
+      "calculations": [
+        {
+          "id": "intangibles-total",
+          "operation": "sum",
+          "inputs": [
+            "goodwill",
+            "intangibles"
+          ],
+          "definition": "のれん＋その他無形資産",
+          "precision": 0,
+          "value": 152066
+        },
+        {
+          "id": "asset-share",
+          "operation": "ratio-percent",
+          "inputs": [
+            "intangibles-total",
+            "assets"
+          ],
+          "definition": "無形資産合計/総資産",
+          "precision": 1,
+          "value": 64.8
+        }
+      ]
+    },
+    {
+      "id": "current-ma-price",
+      "question": "直近買収でどの資産が取得計上されたか",
+      "definition": "取得価格と取得配分は暫定、過年度調整等含む。支払済CFと区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "price",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Acquisition price cash/debt free",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "買収価格、現金負債除外、過年度買収調整を含む"
+        },
+        {
+          "id": "goodwill-indefinite",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Goodwill and indefinite-lived intangibles acquired",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "暫定取得配分でののれんと無期限無形資産"
+        }
+      ],
+      "observations": [
+        {
+          "id": "price",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Acquisition price cash/debt free",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "買収価格、現金負債除外、過年度買収調整を含む",
+          "value": 5876,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Acquisitions / combined acquisition price on a cash- and debt-free basis",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "goodwill-indefinite",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Goodwill and indefinite-lived intangibles acquired",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "暫定取得配分でののれんと無期限無形資産",
+          "value": 4256,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Acquisitions / Preliminary acquisition analyses",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "claim": "2026年1〜9月の買収価格は、過年度の買収に係る調整を含み、現金・負債を除く基準で5,876。暫定的な取得配分では、のれんと耐用年数が無期限の無形資産が4,256だった。",
+      "calculations": []
+    },
+    {
+      "id": "current-roce",
+      "question": "最新ROCEは改善したか",
+      "definition": "税引前調整後LTM EBIT/平均調整使用資本。のれん込み。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Company ROCE",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Company ROCE"
+        },
+        {
+          "id": "2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Company ROCE",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Company ROCE"
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Company ROCE",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Company ROCE"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2025",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Company ROCE",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Company ROCE",
+          "value": 14.2,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Other key ratios / Return on capital employed / Q4 2025",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "2026",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Company ROCE",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Company ROCE",
+          "value": 14.9,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Other key ratios / Return on capital employed / Q3 2026",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "2022",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Company ROCE",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Company ROCE",
+          "value": 16.9,
+          "source": {
+            "url": "https://www.assaabloy.com/group/en/documents/investors/annual-reports/2025/Annual%20Report%202025.pdf",
+            "publishedOn": "2026-03-16",
+            "locator": "Five years in summary / Return on capital employed / 2022",
+            "kind": "primary",
+            "pdfPage": 161
+          }
+        }
+      ],
+      "claim": "2025年末14.2%から2026年9月末14.9%へ改善したが、2022年の16.9%には届いていない。",
+      "calculations": []
+    },
+    {
+      "id": "current-leverage",
+      "question": "最新負債と倍率はどの程度か",
+      "definition": "会社純負債はリース、年金、デリバティブ等込み。倍率の分母はLTM EBITDA。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "debt",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Company net debt",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Company net debt"
+        },
+        {
+          "id": "leverage",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Net debt/EBITDA",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "期末純負債/LTM EBITDA"
+        }
+      ],
+      "observations": [
+        {
+          "id": "debt",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Company net debt",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Company net debt",
+          "value": 64212,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "NET DEBT / Total / Q3 2026",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "leverage",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Net debt/EBITDA",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "期末純負債/LTM EBITDA",
+          "value": 2,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Other key ratios / Net debt/EBITDA / Q3 2026",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "claim": "9月末の純有利子負債は64,212、会社の純有利子負債／EBITDAは2.0倍だった。",
+      "calculations": []
+    },
+    {
+      "id": "competitor-organic",
+      "question": "同一四半期の成長率は競合とどう違うか",
+      "definition": "同一暦四半期、ただし同じ事業ポートフォリオではなく市場シェア差を計算しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "assa-total",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Organic sales growth",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収・売却・為替の影響を除く前年同期売上成長。製品地域構成差あり"
+        },
+        {
+          "id": "al-total",
+          "entity": "Allegion（連結）",
+          "metric": "Organic sales growth",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収・売却・為替の影響を除く前年同期売上成長。製品地域構成差あり"
+        },
+        {
+          "id": "assa-americas",
+          "entity": "ASSA ABLOY / Opening Solutions Americas",
+          "metric": "Organic sales growth",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収・売却・為替の影響を除く前年同期売上成長。製品地域構成差あり"
+        },
+        {
+          "id": "al-americas",
+          "entity": "Allegion Americas",
+          "metric": "Organic sales growth",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収・売却・為替の影響を除く前年同期売上成長。製品地域構成差あり"
+        }
+      ],
+      "observations": [
+        {
+          "id": "assa-total",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Organic sales growth",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収・売却・為替の影響を除く前年同期売上成長。製品地域構成差あり",
+          "value": 4,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "ASSA ABLOY（連結） / Organic revenue growth / Q3 2026",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "al-total",
+          "entity": "Allegion（連結）",
+          "metric": "Organic sales growth",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収・売却・為替の影響を除く前年同期売上成長。製品地域構成差あり",
+          "value": 7.2,
+          "source": {
+            "url": "https://investor.allegion.com/~/media/Files/A/Allegion-IR/press-release/q3-2026-allegion-earnings-call-press-release-final.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "Allegion（連結） / Organic revenue growth / Q3 2026",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "assa-americas",
+          "entity": "ASSA ABLOY / Opening Solutions Americas",
+          "metric": "Organic sales growth",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収・売却・為替の影響を除く前年同期売上成長。製品地域構成差あり",
+          "value": 6,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "ASSA ABLOY / Opening Solutions Americas / Organic revenue growth / Q3 2026",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "al-americas",
+          "entity": "Allegion Americas",
+          "metric": "Organic sales growth",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収・売却・為替の影響を除く前年同期売上成長。製品地域構成差あり",
+          "value": 9.1,
+          "source": {
+            "url": "https://investor.allegion.com/~/media/Files/A/Allegion-IR/press-release/q3-2026-allegion-earnings-call-press-release-final.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "Allegion Americas / Organic revenue growth / Q3 2026",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "claim": "同じ2026年7〜9月で比べると、オーガニック成長率はASSA ABLOYが4%、Allegionが7.2%。米州部門ではそれぞれ6%、9.1%だった。",
+      "calculations": []
+    },
+    {
+      "id": "competitor-margin-bases",
+      "question": "利益率は同じ基準で比べられるか",
+      "definition": "GAAPと非GAAP、IFRSおよび製品構成が異なるためランキング化しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "gaap",
+          "entity": "Allegion（連結）",
+          "metric": "GAAP operating margin",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "米国GAAP連結営業利益/売上"
+        },
+        {
+          "id": "adjusted",
+          "entity": "Allegion（連結）",
+          "metric": "Adjusted operating margin",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "非GAAP、関税還付除外・償却等加算"
+        },
+        {
+          "id": "tariff",
+          "entity": "Allegion（連結）",
+          "metric": "Tariff refund benefit to operating income",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万USD",
+          "basis": "actual",
+          "definition": "営業利益への関税還付効果"
+        },
+        {
+          "id": "assa-margin",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "IFRS EBIT margin",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "当期IACなし、IFRS営業利益/売上"
+        }
+      ],
+      "observations": [
+        {
+          "id": "gaap",
+          "entity": "Allegion（連結）",
+          "metric": "GAAP operating margin",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "米国GAAP連結営業利益/売上",
+          "value": 24.3,
+          "source": {
+            "url": "https://investor.allegion.com/~/media/Files/A/Allegion-IR/press-release/q3-2026-allegion-earnings-call-press-release-final.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "Q3 2026 company results / Operating margin",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "adjusted",
+          "entity": "Allegion（連結）",
+          "metric": "Adjusted operating margin",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "非GAAP、関税還付除外・償却等加算",
+          "value": 24.7,
+          "source": {
+            "url": "https://investor.allegion.com/~/media/Files/A/Allegion-IR/press-release/q3-2026-allegion-earnings-call-press-release-final.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "Q3 2026 company results / Adjusted operating margin",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "tariff",
+          "entity": "Allegion（連結）",
+          "metric": "Tariff refund benefit to operating income",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万USD",
+          "basis": "actual",
+          "definition": "営業利益への関税還付効果",
+          "value": 19.9,
+          "source": {
+            "url": "https://investor.allegion.com/~/media/Files/A/Allegion-IR/press-release/q3-2026-allegion-earnings-call-press-release-final.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "IEEPA Tariff Refunds",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "assa-margin",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "IFRS EBIT margin",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "当期IACなし、IFRS営業利益/売上",
+          "value": 17.4,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "Quarterly information / Operating margin EBIT / Q3 2026",
+            "kind": "primary",
+            "pdfPage": 12
+          }
+        }
+      ],
+      "claim": "利益率の比較にはさらに注意がいる。Allegionの同四半期の米国GAAP営業利益率は24.3%、調整後は24.7%だった。GAAP利益には関税還付による営業利益19.9百万米ドルの押上げが入り、調整後ではその効果を除く一方、買収関連償却等を加算する。ASSA ABLOYのIFRS EBIT利益率17.4%と単純に差し引いて、経営の優劣を決めることはできない。ASSA ABLOYは自動ドア、住宅、中国等も抱え、事業構成が違う。Allegionの収益性は有力な比較材料だが、調整項目と事業の混合比率をそろえる作業が先になる。[Allegion Q3 pp.1–3、非GAAP調整表](https://investor.allegion.com/~/media/Files/A/Allegion-IR/press-release/q3-2026-allegion-earnings-call-press-release-final.pdf#page=1)",
+      "calculations": []
+    },
+    {
+      "id": "dormakaba-price-volume",
+      "question": "補助比較の成長は価格か数量か",
+      "definition": "2025/26年度。ASSAの最新四半期とは非同時期で成長率順位を論じない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "organic",
+          "entity": "dormakaba（連結）",
+          "metric": "Organic net sales growth",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示によるオーガニック売上成長内訳。Swiss GAAP FER報告年度"
+        },
+        {
+          "id": "price",
+          "entity": "dormakaba（連結）",
+          "metric": "Price increase contribution",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示によるオーガニック売上成長内訳。Swiss GAAP FER報告年度"
+        },
+        {
+          "id": "volume",
+          "entity": "dormakaba（連結）",
+          "metric": "Volume growth contribution",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示によるオーガニック売上成長内訳。Swiss GAAP FER報告年度"
+        }
+      ],
+      "observations": [
+        {
+          "id": "organic",
+          "entity": "dormakaba（連結）",
+          "metric": "Organic net sales growth",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示によるオーガニック売上成長内訳。Swiss GAAP FER報告年度",
+          "value": 3,
+          "source": {
+            "url": "https://report.dormakaba.com/2025_26/group-performance",
+            "publishedOn": "2026-09-01",
+            "locator": "Group performance / net sales organic growth decomposition",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "price",
+          "entity": "dormakaba（連結）",
+          "metric": "Price increase contribution",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示によるオーガニック売上成長内訳。Swiss GAAP FER報告年度",
+          "value": 2.6,
+          "source": {
+            "url": "https://report.dormakaba.com/2025_26/group-performance",
+            "publishedOn": "2026-09-01",
+            "locator": "Group performance / net sales organic growth decomposition",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "volume",
+          "entity": "dormakaba（連結）",
+          "metric": "Volume growth contribution",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示によるオーガニック売上成長内訳。Swiss GAAP FER報告年度",
+          "value": 0.4,
+          "source": {
+            "url": "https://report.dormakaba.com/2025_26/group-performance",
+            "publishedOn": "2026-09-01",
+            "locator": "Group performance / net sales organic growth decomposition",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "もう一社のdormakabaは、2025年7月〜2026年6月期にオーガニック＋3.0%で、価格＋2.6%、数量＋0.4%と説明した。これはASSA ABLOYの最新四半期とは期間が違うため、成長順位には使わない。",
+      "calculations": [
+        {
+          "id": "organic-check",
+          "operation": "sum",
+          "inputs": [
+            "price",
+            "volume"
+          ],
+          "definition": "価格寄与＋数量寄与（会社公表丸め値）",
+          "precision": 1,
+          "value": 3
+        }
+      ]
+    },
+    {
+      "id": "q4-mechanical-guidance",
+      "question": "Q4の売上モデル情報は需要予測か",
+      "definition": "9月末時点の完了済M&A・為替レート固定による機械的会社見積り。オーガニック成長や全社業績の予想ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "ma",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Completed acquisitions and divestments sales contribution",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "9月末時点完了済案件のローリング12カ月寄与見積り"
+        },
+        {
+          "id": "fx",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "FX sales contribution",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "2026-09-30レート固定による前年同期売上換算寄与見積り"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ma",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Completed acquisitions and divestments sales contribution",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "9月末時点完了済案件のローリング12カ月寄与見積り",
+          "value": 2,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "M&A and FX guidance / Acquisitions and divestments",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "fx",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "FX sales contribution",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "2026-09-30レート固定による前年同期売上換算寄与見積り",
+          "value": 5,
+          "source": {
+            "url": "https://mb.cision.com/Main/7333/4415570/4340384.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "M&A and FX guidance / Exchange rate effects",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        }
+      ],
+      "claim": "会社は9月末時点の情報に基づき、2026年10〜12月の売上に、完了済み買収・売却が約＋2%、為替が約＋5%寄与するとした。これはオーガニック需要や全社業績の予想ではなく、機械的なモデル作成用の情報である。",
+      "calculations": []
+    },
+    {
+      "id": "valuation",
+      "question": "現在のPERは何倍か",
+      "definition": "確認不能な比較は本文および派生結論から除外。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "missing",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Dated market price",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "SEK/株",
+          "basis": "market",
+          "definition": "Dated market price"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "現在株価の表示には時刻のみで売買日が確認できない。株価とEPSの基準日・期間が確定しないため比較未採用。",
+      "omittedClaim": "現在のPERは割安である。"
+    },
+    {
+      "id": "assa-volume-price",
+      "question": "ASSAのオーガニック成長内訳は価格と数量で何ポイントか",
+      "definition": "確認不能な比較は本文および派生結論から除外。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "missing",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Organic volume growth",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Organic volume growth"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "Q3本文の定性説明では分離不能。数量に値を代入しない。",
+      "omittedClaim": "ASSA ABLOYの販売数量は4%増えた。"
+    },
+    {
+      "id": "recurring-arr",
+      "question": "継続課金売上の維持率とARR比率はどの程度か",
+      "definition": "確認不能な比較は本文および派生結論から除外。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "missing",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Net revenue retention",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Net revenue retention"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "年次の定性説明とカテゴリー成長図では正確なARR・維持率・有機成長に分離できない。",
+      "omittedClaim": "売上の3分の2が定額課金である。"
+    },
+    {
+      "id": "deal-roic",
+      "question": "個別買収の税引後ROICはWACCを上回るか",
+      "definition": "確認不能な比較は本文および派生結論から除外。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "missing",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Deal NOPAT",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万SEK",
+          "basis": "actual",
+          "definition": "Deal NOPAT"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "案件別税引後利益・投下資本・統合投資・資本コストを確認できない。",
+      "omittedClaim": "個別買収のROICはWACCを確実に上回る。"
+    },
+    {
+      "id": "unclosed-ma",
+      "question": "未完了案件の利益寄与はいくらか",
+      "definition": "確認不能な比較は本文および派生結論から除外。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "missing",
+          "entity": "ASSA ABLOY（連結）",
+          "metric": "Gunnebo earnings contribution",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万SEK",
+          "basis": "company-forecast",
+          "definition": "Gunnebo earnings contribution"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "契約と完了を区別。確定取得対価や税後利益寄与を本稿では確認できない。",
+      "omittedClaim": "GunneboとPKIの取引利益を2026年実績に織り込んだ。"
+    }
+  ]
+}
