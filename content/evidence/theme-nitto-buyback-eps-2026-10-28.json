@@ -1,0 +1,1298 @@
+{
+  "version": 1,
+  "articleSlug": "theme-nitto-buyback-eps-2026-10-28",
+  "articleSha256": "f6f7ae7374700d0a52cb8882401764c41e6eebe4ae16c97d9622548ea69b7813",
+  "checkedAt": "2026-10-28T10:21:03.878794+00:00",
+  "informationCutoff": "2026-10-28T10:17:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "全重要比較と表を原本で照合。独立担当が取得開示・中間期短信・取得終了開示の原本、全比較、仮定計算・反証を照合済み。仮定感応度は実績・会社予想ではないため仮の単価を観測値として登録せず、実資料の入力を列挙し定義に手計算検証を記録。最終サイト本文で再レビュー・digest再計算が必要。前回Oct21企業レポート後のOct27新規枠・中間決算・消却完了の新情報を対象。 Integration review: frozen Markdown preserved byte-for-byte. Multi-line table claims represented as exact individual table-row claims for JSON-source gate; all reviewed inputs/calculations retained, no gate change.",
+  "comparisons": [
+    {
+      "id": "authorization",
+      "question": "新規枠と実行の違い",
+      "definition": "新規枠と実行の違い",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "shares",
+          "entity": "日東電工（連結）",
+          "metric": "新規取得株数上限",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2027-03-24",
+          "unit": "株",
+          "basis": "company-forecast",
+          "definition": "新規取得株数上限"
+        },
+        {
+          "id": "cash",
+          "entity": "日東電工（連結）",
+          "metric": "取得金額上限",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2027-03-24",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "取得金額上限"
+        },
+        {
+          "id": "ratio",
+          "entity": "日東電工（連結）",
+          "metric": "自己株式控除後株数に対する上限割合",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "自己株式控除後株数に対する上限割合"
+        }
+      ],
+      "observations": [
+        {
+          "id": "shares",
+          "entity": "日東電工（連結）",
+          "metric": "新規取得株数上限",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2027-03-24",
+          "unit": "株",
+          "basis": "company-forecast",
+          "definition": "新規取得株数上限",
+          "value": 17000000,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/gLET.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF2頁：新規取得株数上限",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "cash",
+          "entity": "日東電工（連結）",
+          "metric": "取得金額上限",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2027-03-24",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "取得金額上限",
+          "value": 50000000000,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/gLET.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF2頁：取得金額上限",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "ratio",
+          "entity": "日東電工（連結）",
+          "metric": "自己株式控除後株数に対する上限割合",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "自己株式控除後株数に対する上限割合",
+          "value": 2.58,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/gLET.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF2頁：自己株式控除後株数に対する上限割合",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "日東電工は新たに、1,700万株・500億円をそれぞれ上限とする自社株買いを決議した。取得期間は11月4日〜2027年3月24日。10月28日時点では開始前だ。株数上限は自己株式を除く発行済株式の2.58%に当たるが、これは取得実績でもEPSの上昇率でもない。[10月27日開示、PDF2ページ](https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/gLET.pdf)"
+    },
+    {
+      "id": "forecast",
+      "question": "EPS予想は取得影響を含むか",
+      "definition": "EPS予想は取得影響を含むか",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "eps",
+          "entity": "日東電工（連結）",
+          "metric": "基本的EPS会社予想（両取得枠影響込み）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "基本的EPS会社予想（両取得枠影響込み）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "eps",
+          "entity": "日東電工（連結）",
+          "metric": "基本的EPS会社予想（両取得枠影響込み）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "基本的EPS会社予想（両取得枠影響込み）",
+          "value": 216.29,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF1頁：基本的EPS会社予想（両取得枠影響込み）",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "特に注意したいのは、**最新の会社予想EPS216.29円には、今回の取得による影響が既に考慮されている**ことだ。そこへ「買い戻しでさらに約2.6%増える」と上乗せすれば、同じ効果を二度数えるおそれがある。[中間期決算短信、PDF1ページ・注記2](https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf)"
+    },
+    {
+      "id": "old-program",
+      "question": "前回枠の株数と金額は双方使い切ったか",
+      "definition": "前回枠の株数と金額は双方使い切ったか",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cap",
+          "entity": "日東電工（連結）",
+          "metric": "旧枠株数上限",
+          "periodStart": "2026-04-08",
+          "periodEnd": "2026-08-31",
+          "unit": "株",
+          "basis": "company-forecast",
+          "definition": "旧枠株数上限"
+        },
+        {
+          "id": "cashcap",
+          "entity": "日東電工（連結）",
+          "metric": "旧枠金額上限",
+          "periodStart": "2026-04-08",
+          "periodEnd": "2026-08-31",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "旧枠金額上限"
+        },
+        {
+          "id": "bought",
+          "entity": "日東電工（連結）",
+          "metric": "旧枠取得実績株数",
+          "periodStart": "2026-04-08",
+          "periodEnd": "2026-08-21",
+          "unit": "株",
+          "basis": "actual",
+          "definition": "旧枠取得実績株数"
+        },
+        {
+          "id": "paid",
+          "entity": "日東電工（連結）",
+          "metric": "旧枠取得額",
+          "periodStart": "2026-04-08",
+          "periodEnd": "2026-08-21",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "旧枠取得額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cap",
+          "entity": "日東電工（連結）",
+          "metric": "旧枠株数上限",
+          "periodStart": "2026-04-08",
+          "periodEnd": "2026-08-31",
+          "unit": "株",
+          "basis": "company-forecast",
+          "definition": "旧枠株数上限",
+          "value": 20000000,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/tx0r/Pwbb/POiD.pdf",
+            "publishedOn": "2026-08-24",
+            "locator": "PDF1頁：旧枠株数上限",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "cashcap",
+          "entity": "日東電工（連結）",
+          "metric": "旧枠金額上限",
+          "periodStart": "2026-04-08",
+          "periodEnd": "2026-08-31",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "旧枠金額上限",
+          "value": 50000000000,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/tx0r/Pwbb/POiD.pdf",
+            "publishedOn": "2026-08-24",
+            "locator": "PDF1頁：旧枠金額上限",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "bought",
+          "entity": "日東電工（連結）",
+          "metric": "旧枠取得実績株数",
+          "periodStart": "2026-04-08",
+          "periodEnd": "2026-08-21",
+          "unit": "株",
+          "basis": "actual",
+          "definition": "旧枠取得実績株数",
+          "value": 15502800,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/tx0r/Pwbb/POiD.pdf",
+            "publishedOn": "2026-08-24",
+            "locator": "PDF1頁：旧枠取得実績株数",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "paid",
+          "entity": "日東電工（連結）",
+          "metric": "旧枠取得額",
+          "periodStart": "2026-04-08",
+          "periodEnd": "2026-08-21",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "旧枠取得額",
+          "value": 49999993250,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/tx0r/Pwbb/POiD.pdf",
+            "publishedOn": "2026-08-24",
+            "locator": "PDF1頁：旧枠取得額",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "既に実例がある。3月30日に決議した前回の枠は2,000万株・500億円が上限だったが、8月21日までの取得実績は1,550万2,800株、49,999,993,250円で終了した。金額をほぼ使い切っても、株数上限までは買えていない。[8月24日取得終了開示、PDF1ページ](https://pdf.irpocket.com/C6988/xoA3/tx0r/Pwbb/POiD.pdf)"
+    },
+    {
+      "id": "sensitivity-row1",
+      "question": "取得単価による株数とEPSの条件感応度",
+      "definition": "仮定2500/3000/4000円は予測でない任意の説明値。b=min(17,000,000,50,000,000,000/P),cash=bP,EPS増率=b/(658187650-b)。独立計算結果b=17000000/16666666.6667/12500000,cash=425億/500億/500億,増率2.6513299/2.5979924/1.9359206%。単元/手数料/利息/期中加重を無視。会社予想への上乗せ不可。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "shares",
+          "entity": "日東電工（連結）",
+          "metric": "新規取得株数上限",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2027-03-24",
+          "unit": "株",
+          "basis": "company-forecast",
+          "definition": "新規取得株数上限"
+        },
+        {
+          "id": "cash",
+          "entity": "日東電工（連結）",
+          "metric": "取得金額上限",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2027-03-24",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "取得金額上限"
+        },
+        {
+          "id": "n",
+          "entity": "日東電工（連結）",
+          "metric": "自己株式控除後発行株数",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "株",
+          "basis": "actual",
+          "definition": "自己株式控除後発行株数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "shares",
+          "entity": "日東電工（連結）",
+          "metric": "新規取得株数上限",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2027-03-24",
+          "unit": "株",
+          "basis": "company-forecast",
+          "definition": "新規取得株数上限",
+          "value": 17000000,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/gLET.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF2頁：新規取得株数上限",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "cash",
+          "entity": "日東電工（連結）",
+          "metric": "取得金額上限",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2027-03-24",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "取得金額上限",
+          "value": 50000000000,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/gLET.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF2頁：取得金額上限",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "n",
+          "entity": "日東電工（連結）",
+          "metric": "自己株式控除後発行株数",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "株",
+          "basis": "actual",
+          "definition": "自己株式控除後発行株数",
+          "value": 658187650,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/gLET.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF2頁：自己株式控除後発行株数",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "| 2,500円 | 1,700万株 | 425億円 | 約2.65% |"
+    },
+    {
+      "id": "sensitivity-row2",
+      "question": "取得単価による株数とEPSの条件感応度",
+      "definition": "仮定2500/3000/4000円は予測でない任意の説明値。b=min(17,000,000,50,000,000,000/P),cash=bP,EPS増率=b/(658187650-b)。独立計算結果b=17000000/16666666.6667/12500000,cash=425億/500億/500億,増率2.6513299/2.5979924/1.9359206%。単元/手数料/利息/期中加重を無視。会社予想への上乗せ不可。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "shares",
+          "entity": "日東電工（連結）",
+          "metric": "新規取得株数上限",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2027-03-24",
+          "unit": "株",
+          "basis": "company-forecast",
+          "definition": "新規取得株数上限"
+        },
+        {
+          "id": "cash",
+          "entity": "日東電工（連結）",
+          "metric": "取得金額上限",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2027-03-24",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "取得金額上限"
+        },
+        {
+          "id": "n",
+          "entity": "日東電工（連結）",
+          "metric": "自己株式控除後発行株数",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "株",
+          "basis": "actual",
+          "definition": "自己株式控除後発行株数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "shares",
+          "entity": "日東電工（連結）",
+          "metric": "新規取得株数上限",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2027-03-24",
+          "unit": "株",
+          "basis": "company-forecast",
+          "definition": "新規取得株数上限",
+          "value": 17000000,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/gLET.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF2頁：新規取得株数上限",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "cash",
+          "entity": "日東電工（連結）",
+          "metric": "取得金額上限",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2027-03-24",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "取得金額上限",
+          "value": 50000000000,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/gLET.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF2頁：取得金額上限",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "n",
+          "entity": "日東電工（連結）",
+          "metric": "自己株式控除後発行株数",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "株",
+          "basis": "actual",
+          "definition": "自己株式控除後発行株数",
+          "value": 658187650,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/gLET.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF2頁：自己株式控除後発行株数",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "| 3,000円 | 約1,667万株 | 500億円 | 約2.60% |"
+    },
+    {
+      "id": "sensitivity-row3",
+      "question": "取得単価による株数とEPSの条件感応度",
+      "definition": "仮定2500/3000/4000円は予測でない任意の説明値。b=min(17,000,000,50,000,000,000/P),cash=bP,EPS増率=b/(658187650-b)。独立計算結果b=17000000/16666666.6667/12500000,cash=425億/500億/500億,増率2.6513299/2.5979924/1.9359206%。単元/手数料/利息/期中加重を無視。会社予想への上乗せ不可。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "shares",
+          "entity": "日東電工（連結）",
+          "metric": "新規取得株数上限",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2027-03-24",
+          "unit": "株",
+          "basis": "company-forecast",
+          "definition": "新規取得株数上限"
+        },
+        {
+          "id": "cash",
+          "entity": "日東電工（連結）",
+          "metric": "取得金額上限",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2027-03-24",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "取得金額上限"
+        },
+        {
+          "id": "n",
+          "entity": "日東電工（連結）",
+          "metric": "自己株式控除後発行株数",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "株",
+          "basis": "actual",
+          "definition": "自己株式控除後発行株数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "shares",
+          "entity": "日東電工（連結）",
+          "metric": "新規取得株数上限",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2027-03-24",
+          "unit": "株",
+          "basis": "company-forecast",
+          "definition": "新規取得株数上限",
+          "value": 17000000,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/gLET.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF2頁：新規取得株数上限",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "cash",
+          "entity": "日東電工（連結）",
+          "metric": "取得金額上限",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2027-03-24",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "取得金額上限",
+          "value": 50000000000,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/gLET.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF2頁：取得金額上限",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "n",
+          "entity": "日東電工（連結）",
+          "metric": "自己株式控除後発行株数",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "株",
+          "basis": "actual",
+          "definition": "自己株式控除後発行株数",
+          "value": 658187650,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/gLET.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF2頁：自己株式控除後発行株数",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "| 4,000円 | 1,250万株 | 500億円 | 約1.94% |"
+    },
+    {
+      "id": "eps-growth",
+      "question": "利益とEPSの増加は同一か",
+      "definition": "利益とEPSの増加は同一か",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "profit2025",
+          "entity": "日東電工（連結）",
+          "metric": "親会社帰属中間利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属中間利益"
+        },
+        {
+          "id": "eps2025",
+          "entity": "日東電工（連結）",
+          "metric": "基本的中間EPS",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "基本的中間EPS"
+        },
+        {
+          "id": "shares2025",
+          "entity": "日東電工（連結）",
+          "metric": "期中平均株式数",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "株",
+          "basis": "actual",
+          "definition": "期中平均株式数"
+        },
+        {
+          "id": "profit2026",
+          "entity": "日東電工（連結）",
+          "metric": "親会社帰属中間利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属中間利益"
+        },
+        {
+          "id": "eps2026",
+          "entity": "日東電工（連結）",
+          "metric": "基本的中間EPS",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "基本的中間EPS"
+        },
+        {
+          "id": "shares2026",
+          "entity": "日東電工（連結）",
+          "metric": "期中平均株式数",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "株",
+          "basis": "actual",
+          "definition": "期中平均株式数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "profit2025",
+          "entity": "日東電工（連結）",
+          "metric": "親会社帰属中間利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属中間利益",
+          "value": 68926,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF1頁：親会社帰属中間利益",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "eps2025",
+          "entity": "日東電工（連結）",
+          "metric": "基本的中間EPS",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "基本的中間EPS",
+          "value": 101.32,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF1頁：基本的中間EPS",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "shares2025",
+          "entity": "日東電工（連結）",
+          "metric": "期中平均株式数",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "株",
+          "basis": "actual",
+          "definition": "期中平均株式数",
+          "value": 680298516,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF2頁：期中平均株式数",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "profit2026",
+          "entity": "日東電工（連結）",
+          "metric": "親会社帰属中間利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属中間利益",
+          "value": 76502,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF1頁：親会社帰属中間利益",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "eps2026",
+          "entity": "日東電工（連結）",
+          "metric": "基本的中間EPS",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "基本的中間EPS",
+          "value": 115.32,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF1頁：基本的中間EPS",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "shares2026",
+          "entity": "日東電工（連結）",
+          "metric": "期中平均株式数",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "株",
+          "basis": "actual",
+          "definition": "期中平均株式数",
+          "value": 663371100,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF2頁：期中平均株式数",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "pg",
+          "operation": "growth-percent",
+          "inputs": [
+            "profit2026",
+            "profit2025"
+          ],
+          "definition": "筆者計算",
+          "precision": 1,
+          "value": 11
+        },
+        {
+          "id": "eg",
+          "operation": "growth-percent",
+          "inputs": [
+            "eps2026",
+            "eps2025"
+          ],
+          "definition": "筆者計算",
+          "precision": 1,
+          "value": 13.8
+        }
+      ],
+      "claim": "日東の中間期では、親会社所有者に帰属する利益が前年同期68,926百万円から76,502百万円へ約11.0%増加した。一方、基本的EPSは101.32円から115.32円へ約13.8%増えた。期中平均株式数が680,298,516株から663,371,100株へ減ったことも、一株利益の伸びを支えている。事業全体の利益成長と株数減少の効果は、分けて読む必要がある。[中間期短信、PDF1〜2ページ](https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf)"
+    },
+    {
+      "id": "retirement",
+      "question": "消却は新規取得か",
+      "definition": "消却は新規取得か",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "retired",
+          "entity": "日東電工（連結）",
+          "metric": "消却済み株数",
+          "periodStart": "2026-10-20",
+          "periodEnd": "2026-10-20",
+          "unit": "株",
+          "basis": "actual",
+          "definition": "消却済み株数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "retired",
+          "entity": "日東電工（連結）",
+          "metric": "消却済み株数",
+          "periodStart": "2026-10-20",
+          "periodEnd": "2026-10-20",
+          "unit": "株",
+          "basis": "actual",
+          "definition": "消却済み株数",
+          "value": 15472050,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/gLET.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF2頁：消却済み株数",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "また会社は、10月20日に15,472,050株を消却済みと今回の開示で明記した。これは保有済みの自己株式を消す手続きで、新たな市場買付けではない。自己株式は既にEPS算定の株数から除かれているため、消却日に同じ株数分だけEPSがもう一度増えるわけではない。将来の再交付余地を減らすことと、当期の追加利益を生むことを混同しない。[10月27日開示、PDF2ページ](https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/gLET.pdf)"
+    },
+    {
+      "id": "net-guidance",
+      "question": "利益予想とEPSの取得影響",
+      "definition": "利益予想とEPSの取得影響",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "ni",
+          "entity": "日東電工（連結）",
+          "metric": "親会社帰属利益会社予想（据置）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "親会社帰属利益会社予想（据置）"
+        },
+        {
+          "id": "eps",
+          "entity": "日東電工（連結）",
+          "metric": "基本EPS会社予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "基本EPS会社予想"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ni",
+          "entity": "日東電工（連結）",
+          "metric": "親会社帰属利益会社予想（据置）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "親会社帰属利益会社予想（据置）",
+          "value": 142000,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF1頁：親会社帰属利益会社予想（据置）",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "eps",
+          "entity": "日東電工（連結）",
+          "metric": "基本EPS会社予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円",
+          "basis": "company-forecast",
+          "definition": "基本EPS会社予想",
+          "value": 216.29,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF1頁：基本EPS会社予想",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "通期の親会社帰属利益予想142,000百万円は据え置かれた。今回の会社予想EPS216.29円は買付影響込みなので、独自予想を作るなら、会社が想定した取得株数・平均単価・時期との差を検証する必要がある。開示にない想定を逆算で確定したり、上限取得を実行済みとして扱ったりしない。[中間期短信、PDF1ページ](https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf)"
+    },
+    {
+      "id": "cash-after-investment",
+      "question": "投資とリース返済後の独自現金収支",
+      "definition": "投資とリース返済後の独自現金収支",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "ocf",
+          "entity": "日東電工（連結）",
+          "metric": "営業CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "日東電工（連結）",
+          "metric": "有形・無形資産取得現金支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形・無形資産取得現金支出"
+        },
+        {
+          "id": "lease",
+          "entity": "日東電工（連結）",
+          "metric": "リース負債返済支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リース負債返済支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf",
+          "entity": "日東電工（連結）",
+          "metric": "営業CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 108847,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF13頁：営業CF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "日東電工（連結）",
+          "metric": "有形・無形資産取得現金支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形・無形資産取得現金支出",
+          "value": -56502,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF13頁：有形・無形資産取得現金支出",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "lease",
+          "entity": "日東電工（連結）",
+          "metric": "リース負債返済支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リース負債返済支出",
+          "value": -3853,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF13頁：リース負債返済支出",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "cash",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex",
+            "lease"
+          ],
+          "definition": "筆者計算",
+          "precision": 0,
+          "value": 48492
+        }
+      ],
+      "claim": "日東の2026年4〜9月の営業CFは108,847百万円。有形・無形資産取得の現金支出56,502百万円とリース負債返済3,853百万円を引くと、48,492百万円が残る。本稿ではこれを「設備取得・リース返済後の現金収支」と呼ぶ。会社のFCF定義と同一とは限らず、定期預金や投資有価証券、資産売却などは含めない。[中間期短信、PDF13ページ](https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf)"
+    },
+    {
+      "id": "cash-after-return",
+      "question": "還元を含む限定収支",
+      "definition": "還元を含む限定収支",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "ocf",
+          "entity": "日東電工（連結）",
+          "metric": "営業CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "日東電工（連結）",
+          "metric": "有形・無形資産取得現金支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形・無形資産取得現金支出"
+        },
+        {
+          "id": "lease",
+          "entity": "日東電工（連結）",
+          "metric": "リース負債返済支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リース負債返済支出"
+        },
+        {
+          "id": "treasury",
+          "entity": "日東電工（連結）",
+          "metric": "自己株式純増減CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "自己株式純増減CF"
+        },
+        {
+          "id": "dividend",
+          "entity": "日東電工（連結）",
+          "metric": "配当支払CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "配当支払CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf",
+          "entity": "日東電工（連結）",
+          "metric": "営業CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 108847,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF13頁：営業CF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "日東電工（連結）",
+          "metric": "有形・無形資産取得現金支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形・無形資産取得現金支出",
+          "value": -56502,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF13頁：有形・無形資産取得現金支出",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "lease",
+          "entity": "日東電工（連結）",
+          "metric": "リース負債返済支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リース負債返済支出",
+          "value": -3853,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF13頁：リース負債返済支出",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "treasury",
+          "entity": "日東電工（連結）",
+          "metric": "自己株式純増減CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "自己株式純増減CF",
+          "value": -50183,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF13頁：自己株式純増減CF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "dividend",
+          "entity": "日東電工（連結）",
+          "metric": "配当支払CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "配当支払CF",
+          "value": -20209,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF13頁：配当支払CF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "net",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex",
+            "lease",
+            "treasury",
+            "dividend"
+          ],
+          "definition": "筆者計算",
+          "precision": 0,
+          "value": -21900
+        }
+      ],
+      "claim": "同じ期間のCF計算書には、自己株式の純増減による支出50,183百万円と配当支出20,209百万円がある。上記の現金収支からこの二つを差し引くと−21,900百万円。これは独自に区切った収支であり、現金全体の増減額ではない。また自己株式の純増減額は、取得終了開示の市場買付額と定義が異なるので無理に一致させない。"
+    },
+    {
+      "id": "cash-buffer",
+      "question": "還元は資金不足か",
+      "definition": "還元は資金不足か",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cash",
+          "entity": "日東電工（連結）",
+          "metric": "現金及び現金同等物",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金及び現金同等物"
+        },
+        {
+          "id": "tax26",
+          "entity": "日東電工（連結）",
+          "metric": "法人税等支払還付CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "法人税等支払還付CF"
+        },
+        {
+          "id": "tax25",
+          "entity": "日東電工（連結）",
+          "metric": "法人税等支払還付CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "法人税等支払還付CF"
+        },
+        {
+          "id": "advance26",
+          "entity": "日東電工（連結）",
+          "metric": "前受金増減CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "前受金増減CF"
+        },
+        {
+          "id": "advance25",
+          "entity": "日東電工（連結）",
+          "metric": "前受金増減CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "前受金増減CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cash",
+          "entity": "日東電工（連結）",
+          "metric": "現金及び現金同等物",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金及び現金同等物",
+          "value": 332359,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF13頁：現金及び現金同等物",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "tax26",
+          "entity": "日東電工（連結）",
+          "metric": "法人税等支払還付CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "法人税等支払還付CF",
+          "value": -19676,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF13頁：法人税等支払還付CF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "tax25",
+          "entity": "日東電工（連結）",
+          "metric": "法人税等支払還付CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "法人税等支払還付CF",
+          "value": -31734,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF13頁：法人税等支払還付CF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "advance26",
+          "entity": "日東電工（連結）",
+          "metric": "前受金増減CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "前受金増減CF",
+          "value": 8757,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF13頁：前受金増減CF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "advance25",
+          "entity": "日東電工（連結）",
+          "metric": "前受金増減CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "前受金増減CF",
+          "value": -166,
+          "source": {
+            "url": "https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf",
+            "publishedOn": "2026-10-27",
+            "locator": "PDF13頁：前受金増減CF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "ただし、この差額だけで還元の無理や資金不足を結論してはいけない。9月末の現金及び現金同等物は332,359百万円あり、過去に蓄積した余剰資金を返すという別の説明が成り立つ。会社も、成長投資と手元流動性・株主資本の適正化を並行する方針を示す。一方、営業CFには税支払いの減少や前受金の増加も含まれるため、中間期の収支をそのまま倍にして通期の還元余力としない。[中間期短信、PDF13ページ](https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/IQ90.pdf)／[還元方針、PDF1ページ](https://pdf.irpocket.com/C6988/xoA3/f6yw/jWfr/gLET.pdf)"
+    }
+  ]
+}
