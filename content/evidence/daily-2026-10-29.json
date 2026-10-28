@@ -1,0 +1,758 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-10-29",
+  "articleSha256": "950473cb358337e366c4f45557dea0f340aae17252935ea22bc3271977a609da",
+  "checkedAt": "2026-10-29T06:30:00+09:00",
+  "informationCutoff": "2026-10-29T06:28:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終記事の見出し・要約・本文・分析・次の注目点・免責を全文確認。重要な数値比較8件を全て記録した。Google CloudとAzureは事業定義が異なり企業間順位比較をしていない。Alphabet FCFはQ3単独四半期の全構成値を転載された会社調整表で確認。前年比・TTMや市場予想の未確認比較は加えていない。原本取得を追加確認したが取得できなかったAlphabetは二次掲載と明記。アドバンテスト原本PDFは抽出成功しPDFページ番号を記録。S&Pは原資料の時点不明の値を除きAP終値を使用。数値は欠損補完していない。",
+  "sourceChecks": [
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "publishedOn": "2026-10-28",
+      "locator": "冒頭10対2と末尾反対者",
+      "notes": "10賛成2反対、反対者は利上げ希望。14:00 EDT=29日03:00 JST、基準時以前。"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast",
+      "publishedOn": "2026-10-28",
+      "locator": "Outlook / Webcast and Conference Call",
+      "notes": "決算発表のみ。06:30 JST開始予定の電話会議の未公表予想は不使用。"
+    },
+    {
+      "url": "https://www.marketscreener.com/news/alphabet-2026-q3-earnings-press-release-ce785cd3d981f42c",
+      "publishedOn": "2026-10-28",
+      "locator": "掲載時刻16:06 EDT、会社発表・四半期表・FCF調整表",
+      "notes": "29日05:06 JSTまでに公表済み。Publicnow転載との一致、公式IRとSEC検索を追加確認。"
+    },
+    {
+      "url": "https://www.advantest.com/document/ja/investors/ir-library/result/J_FR_FY2026_2Q.pdf",
+      "publishedOn": "2026-10-28",
+      "locator": "PDF4ページ経営成績・PDF5ページ今後の見通し",
+      "notes": "AI向け生産増、複雑化、顧客のテスタ設備投資の説明を確認。"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "fomc-range",
+      "question": "10月決定のレンジは9月決定から変わったか",
+      "definition": "FOMC政策決定における誘導目標の下限と上限。実効金利ではない。",
+      "status": "ready",
+      "claim": "FRBは10月28日14:00 EDT（29日03:00 JST）、フェデラルファンド金利の誘導目標を年率3.75〜4.00%に据え置いた。9月16日決定の同じ下限3.75%、上限4.00%から変更はない。これは政策金利の目標レンジであり、市場で成立した実効金利ではない。",
+      "requiredInputs": [
+        {
+          "id": "oldLower",
+          "entity": "Federal Reserve",
+          "metric": "FF target range endpoints",
+          "periodStart": "2026-09-16",
+          "periodEnd": "2026-09-16",
+          "unit": "percent per annum",
+          "basis": "actual",
+          "definition": "FOMC政策決定における誘導目標の下限と上限。実効金利ではない。"
+        },
+        {
+          "id": "oldUpper",
+          "entity": "Federal Reserve",
+          "metric": "FF target range endpoints",
+          "periodStart": "2026-09-16",
+          "periodEnd": "2026-09-16",
+          "unit": "percent per annum",
+          "basis": "actual",
+          "definition": "FOMC政策決定における誘導目標の下限と上限。実効金利ではない。"
+        },
+        {
+          "id": "newLower",
+          "entity": "Federal Reserve",
+          "metric": "FF target range endpoints",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "percent per annum",
+          "basis": "actual",
+          "definition": "FOMC政策決定における誘導目標の下限と上限。実効金利ではない。"
+        },
+        {
+          "id": "newUpper",
+          "entity": "Federal Reserve",
+          "metric": "FF target range endpoints",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "percent per annum",
+          "basis": "actual",
+          "definition": "FOMC政策決定における誘導目標の下限と上限。実効金利ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oldLower",
+          "entity": "Federal Reserve",
+          "metric": "FF target range endpoints",
+          "periodStart": "2026-09-16",
+          "periodEnd": "2026-09-16",
+          "unit": "percent per annum",
+          "basis": "actual",
+          "definition": "FOMC政策決定における誘導目標の下限と上限。実効金利ではない。",
+          "value": 3.75,
+          "source": {
+            "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+            "publishedOn": "2026-09-16",
+            "locator": "政策決定の第1段落",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldUpper",
+          "entity": "Federal Reserve",
+          "metric": "FF target range endpoints",
+          "periodStart": "2026-09-16",
+          "periodEnd": "2026-09-16",
+          "unit": "percent per annum",
+          "basis": "actual",
+          "definition": "FOMC政策決定における誘導目標の下限と上限。実効金利ではない。",
+          "value": 4,
+          "source": {
+            "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+            "publishedOn": "2026-09-16",
+            "locator": "政策決定の第1段落",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newLower",
+          "entity": "Federal Reserve",
+          "metric": "FF target range endpoints",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "percent per annum",
+          "basis": "actual",
+          "definition": "FOMC政策決定における誘導目標の下限と上限。実効金利ではない。",
+          "value": 3.75,
+          "source": {
+            "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+            "publishedOn": "2026-10-28",
+            "locator": "政策決定段落",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newUpper",
+          "entity": "Federal Reserve",
+          "metric": "FF target range endpoints",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "percent per annum",
+          "basis": "actual",
+          "definition": "FOMC政策決定における誘導目標の下限と上限。実効金利ではない。",
+          "value": 4,
+          "source": {
+            "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+            "publishedOn": "2026-10-28",
+            "locator": "政策決定段落",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "lowerChange",
+          "operation": "difference",
+          "inputs": [
+            "newLower",
+            "oldLower"
+          ],
+          "definition": "新下限−従来下限。欠損を0で補ったものではない。",
+          "precision": 2,
+          "value": 0
+        },
+        {
+          "id": "upperChange",
+          "operation": "difference",
+          "inputs": [
+            "newUpper",
+            "oldUpper"
+          ],
+          "definition": "新上限−従来上限",
+          "precision": 2,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "alphabet-cloud-yoy",
+      "question": "Google Cloudの前年同期比増収率",
+      "definition": "公表通貨ベースの同一セグメント四半期売上。連結売上や他社クラウドとは直接比較しない。",
+      "status": "ready",
+      "claim": "Alphabetの2026年7〜9月期Google Cloud売上は30,709百万米ドルで、前年同期15,157百万米ドルから103%増えた。会社発表の転載資料にある同一セグメント・同一四半期の実績比較で、増収率は整数に丸めた。",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "Alphabet / Google Cloud",
+          "metric": "Segment revenue",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "公表通貨ベースの同一セグメント四半期売上。連結売上や他社クラウドとは直接比較しない。"
+        },
+        {
+          "id": "previous",
+          "entity": "Alphabet / Google Cloud",
+          "metric": "Segment revenue",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "公表通貨ベースの同一セグメント四半期売上。連結売上や他社クラウドとは直接比較しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "Alphabet / Google Cloud",
+          "metric": "Segment revenue",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "公表通貨ベースの同一セグメント四半期売上。連結売上や他社クラウドとは直接比較しない。",
+          "value": 30709,
+          "source": {
+            "url": "https://www.marketscreener.com/news/alphabet-2026-q3-earnings-press-release-ce785cd3d981f42c",
+            "publishedOn": "2026-10-28",
+            "locator": "Q3 2026 Supplemental Information / Google Cloud row; Quarter Ended September 30",
+            "kind": "secondary",
+            "primaryUnavailableReason": "公式IRトップとEarningsページは動的内容で当該リリースを取得できず、公式ドメイン・SECの追加検索でも原本URLを確認できなかった。会社発表の転載全文で表と公表時刻（10月28日16:06 EDT）を確認。Publicnowの同じ会社発表とも照合した。"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "Alphabet / Google Cloud",
+          "metric": "Segment revenue",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "公表通貨ベースの同一セグメント四半期売上。連結売上や他社クラウドとは直接比較しない。",
+          "value": 15157,
+          "source": {
+            "url": "https://www.marketscreener.com/news/alphabet-2026-q3-earnings-press-release-ce785cd3d981f42c",
+            "publishedOn": "2026-10-28",
+            "locator": "Q3 2026 Supplemental Information / Google Cloud row; Quarter Ended September 30",
+            "kind": "secondary",
+            "primaryUnavailableReason": "公式IRトップとEarningsページは動的内容で当該リリースを取得できず、公式ドメイン・SECの追加検索でも原本URLを確認できなかった。会社発表の転載全文で表と公表時刻（10月28日16:06 EDT）を確認。Publicnowの同じ会社発表とも照合した。"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "（当期または新予想÷前年同期または従来予想−1）×100",
+          "precision": 0,
+          "value": 103
+        }
+      ]
+    },
+    {
+      "id": "alphabet-quarter-fcf",
+      "question": "Q3単独四半期のFCFと全構成値",
+      "definition": "2026年7〜9月の営業CF＋符号付き有形固定資産現金取得支出。TTM、会計利益、非現金リース追加を混ぜない。",
+      "status": "ready",
+      "claim": "同四半期の会社定義FCFは、営業CF42,290百万米ドルから有形固定資産の現金取得51,355百万米ドルを差し引いた−9,065百万米ドル。単独四半期のnon-GAAP指標であり、TTMでも会計上の純損失でもない。需要拡大と設備支出後の資金負担が同時に表れている。",
+      "requiredInputs": [
+        {
+          "id": "operating",
+          "entity": "Alphabet",
+          "metric": "Quarterly cash flows",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "2026年7〜9月の営業CF＋符号付き有形固定資産現金取得支出。TTM、会計利益、非現金リース追加を混ぜない。"
+        },
+        {
+          "id": "ppe",
+          "entity": "Alphabet",
+          "metric": "Quarterly cash flows",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "2026年7〜9月の営業CF＋符号付き有形固定資産現金取得支出。TTM、会計利益、非現金リース追加を混ぜない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "operating",
+          "entity": "Alphabet",
+          "metric": "Quarterly cash flows",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "2026年7〜9月の営業CF＋符号付き有形固定資産現金取得支出。TTM、会計利益、非現金リース追加を混ぜない。",
+          "value": 42290,
+          "source": {
+            "url": "https://www.marketscreener.com/news/alphabet-2026-q3-earnings-press-release-ce785cd3d981f42c",
+            "publishedOn": "2026-10-28",
+            "locator": "Reconciliation from GAAP Net Cash Provided by Operating Activities to Non-GAAP Free Cash Flow / Q3 2026 column",
+            "kind": "secondary",
+            "primaryUnavailableReason": "公式IRトップとEarningsページは動的内容で当該リリースを取得できず、公式ドメイン・SECの追加検索でも原本URLを確認できなかった。会社発表の転載全文で表と公表時刻（10月28日16:06 EDT）を確認。Publicnowの同じ会社発表とも照合した。"
+          }
+        },
+        {
+          "id": "ppe",
+          "entity": "Alphabet",
+          "metric": "Quarterly cash flows",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "2026年7〜9月の営業CF＋符号付き有形固定資産現金取得支出。TTM、会計利益、非現金リース追加を混ぜない。",
+          "value": -51355,
+          "source": {
+            "url": "https://www.marketscreener.com/news/alphabet-2026-q3-earnings-press-release-ce785cd3d981f42c",
+            "publishedOn": "2026-10-28",
+            "locator": "Reconciliation from GAAP Net Cash Provided by Operating Activities to Non-GAAP Free Cash Flow / Q3 2026 column",
+            "kind": "secondary",
+            "primaryUnavailableReason": "公式IRトップとEarningsページは動的内容で当該リリースを取得できず、公式ドメイン・SECの追加検索でも原本URLを確認できなかった。会社発表の転載全文で表と公表時刻（10月28日16:06 EDT）を確認。Publicnowの同じ会社発表とも照合した。"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "operating",
+            "ppe"
+          ],
+          "definition": "営業CF42,290＋現金設備取得支出（−51,355）＝−9,065百万USD。会社FCF定義に一致。",
+          "precision": 0,
+          "value": -9065
+        }
+      ]
+    },
+    {
+      "id": "ms-azure-yoy",
+      "question": "組み替え後Azure売上の前年同期比",
+      "definition": "公表通貨ベース。前年値もFY2027表示区分へ組み替え済み。",
+      "status": "ready",
+      "claim": "Microsoftが10月28日に公表した2027会計年度第1四半期（2026年7〜9月）のAzure売上は33,165百万米ドル。現在の表示区分に組み替えた前年同期22,384百万米ドルに対し48%増だった。これは為替調整前の公表通貨ベースの実績比較である。",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "Microsoft / Azure",
+          "metric": "Azure revenue",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "公表通貨ベース。前年値もFY2027表示区分へ組み替え済み。"
+        },
+        {
+          "id": "previous",
+          "entity": "Microsoft / Azure",
+          "metric": "Azure revenue",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "公表通貨ベース。前年値もFY2027表示区分へ組み替え済み。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "Microsoft / Azure",
+          "metric": "Azure revenue",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "公表通貨ベース。前年値もFY2027表示区分へ組み替え済み。",
+          "value": 33165,
+          "source": {
+            "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast",
+            "publishedOn": "2026-10-28",
+            "locator": "PRODUCT AND SERVICE OFFERINGS REVENUE / Azure row and recast note",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "Microsoft / Azure",
+          "metric": "Azure revenue",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "公表通貨ベース。前年値もFY2027表示区分へ組み替え済み。",
+          "value": 22384,
+          "source": {
+            "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast",
+            "publishedOn": "2026-10-28",
+            "locator": "PRODUCT AND SERVICE OFFERINGS REVENUE / Azure row and recast note",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "（当期または新予想÷前年同期または従来予想−1）×100",
+          "precision": 0,
+          "value": 48
+        }
+      ]
+    },
+    {
+      "id": "ms-total-yoy",
+      "question": "全社売上の前年同期比",
+      "definition": "同じ3か月期間、全社売上の公表通貨実績。",
+      "status": "ready",
+      "claim": "全社売上は前年同期77,673百万米ドルから92,279百万米ドルへ19%増加した。AzureとGoogle Cloudは対象サービスや売上認識の範囲が異なるため、両社の成長率を同一定義の競争成績として順位付けしない。",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "Microsoft",
+          "metric": "Total GAAP revenue",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "同じ3か月期間、全社売上の公表通貨実績。"
+        },
+        {
+          "id": "previous",
+          "entity": "Microsoft",
+          "metric": "Total GAAP revenue",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "同じ3か月期間、全社売上の公表通貨実績。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "Microsoft",
+          "metric": "Total GAAP revenue",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "同じ3か月期間、全社売上の公表通貨実績。",
+          "value": 92279,
+          "source": {
+            "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast",
+            "publishedOn": "2026-10-28",
+            "locator": "INCOME STATEMENTS / Total revenue",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "Microsoft",
+          "metric": "Total GAAP revenue",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "同じ3か月期間、全社売上の公表通貨実績。",
+          "value": 77673,
+          "source": {
+            "url": "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast",
+            "publishedOn": "2026-10-28",
+            "locator": "INCOME STATEMENTS / Total revenue",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "（当期または新予想÷前年同期または従来予想−1）×100",
+          "precision": 0,
+          "value": 19
+        }
+      ]
+    },
+    {
+      "id": "adv-forecast-revision",
+      "question": "通期営業利益の会社予想改定幅",
+      "definition": "FY2027年3月期（2026-04-01〜2027-03-31）同一年度の7月会社予想と10月会社予想。",
+      "status": "ready",
+      "claim": "アドバンテストは10月28日、2027年3月期（2026年4月〜2027年3月）のIFRS連結営業利益予想を、7月時点の8,460億円から9,670億円へ引き上げた。同じ年度の会社予想同士で、増額は1,210億円、14.3%。実績や市場予想との比較ではない。",
+      "requiredInputs": [
+        {
+          "id": "new",
+          "entity": "Advantest",
+          "metric": "Consolidated IFRS operating profit forecast",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "100 million JPY",
+          "basis": "company-forecast",
+          "definition": "FY2027年3月期（2026-04-01〜2027-03-31）同一年度の7月会社予想と10月会社予想。"
+        },
+        {
+          "id": "old",
+          "entity": "Advantest",
+          "metric": "Consolidated IFRS operating profit forecast",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "100 million JPY",
+          "basis": "company-forecast",
+          "definition": "FY2027年3月期（2026-04-01〜2027-03-31）同一年度の7月会社予想と10月会社予想。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "new",
+          "entity": "Advantest",
+          "metric": "Consolidated IFRS operating profit forecast",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "100 million JPY",
+          "basis": "company-forecast",
+          "definition": "FY2027年3月期（2026-04-01〜2027-03-31）同一年度の7月会社予想と10月会社予想。",
+          "value": 9670,
+          "source": {
+            "url": "https://www.advantest.com/document/ja/investors/ir-library/result/J_FR_FY2026_2Q.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "(4)今後の見通し：2026年7月時点と修正予想",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "old",
+          "entity": "Advantest",
+          "metric": "Consolidated IFRS operating profit forecast",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "100 million JPY",
+          "basis": "company-forecast",
+          "definition": "FY2027年3月期（2026-04-01〜2027-03-31）同一年度の7月会社予想と10月会社予想。",
+          "value": 8460,
+          "source": {
+            "url": "https://www.advantest.com/document/ja/investors/ir-library/result/J_FR_FY2026_2Q.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "(4)今後の見通し：2026年7月時点と修正予想",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "increase",
+          "operation": "difference",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "新会社予想−7月会社予想",
+          "precision": 0,
+          "value": 1210
+        },
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "（当期または新予想÷前年同期または従来予想−1）×100",
+          "precision": 1,
+          "value": 14.3
+        }
+      ]
+    },
+    {
+      "id": "adv-h1-yoy",
+      "question": "中間営業利益の前年同期比",
+      "definition": "4月1日〜9月30日の6か月IFRS連結営業利益実績。",
+      "status": "ready",
+      "claim": "2026年4〜9月期の営業利益実績は456,809百万円で、前年同期232,435百万円から96.5%増加した。会社はAI関連の高性能半導体の生産増加と複雑化、顧客のテスタ投資を説明した。通貨は日本円で、短信の百万円単位と予想説明の億円単位を区別する。",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "Advantest",
+          "metric": "Consolidated IFRS operating profit",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million JPY",
+          "basis": "actual",
+          "definition": "4月1日〜9月30日の6か月IFRS連結営業利益実績。"
+        },
+        {
+          "id": "previous",
+          "entity": "Advantest",
+          "metric": "Consolidated IFRS operating profit",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "million JPY",
+          "basis": "actual",
+          "definition": "4月1日〜9月30日の6か月IFRS連結営業利益実績。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "Advantest",
+          "metric": "Consolidated IFRS operating profit",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million JPY",
+          "basis": "actual",
+          "definition": "4月1日〜9月30日の6か月IFRS連結営業利益実績。",
+          "value": 456809,
+          "source": {
+            "url": "https://www.advantest.com/document/ja/investors/ir-library/result/J_FR_FY2026_2Q.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "1.(1)連結経営成績（累計）営業利益行",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "Advantest",
+          "metric": "Consolidated IFRS operating profit",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "million JPY",
+          "basis": "actual",
+          "definition": "4月1日〜9月30日の6か月IFRS連結営業利益実績。",
+          "value": 232435,
+          "source": {
+            "url": "https://www.advantest.com/document/ja/investors/ir-library/result/J_FR_FY2026_2Q.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "1.(1)連結経営成績（累計）営業利益行",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "（当期または新予想÷前年同期または従来予想−1）×100",
+          "precision": 1,
+          "value": 96.5
+        }
+      ]
+    },
+    {
+      "id": "sp500-close",
+      "question": "米現物価格指数の通常終値前営業日比",
+      "definition": "各米国営業日16:00 EDTの現物価格指数通常終値。先物、時間外、配当込み指数を含まない。",
+      "status": "ready",
+      "claim": "S&P500の10月28日通常取引終値は7,743.98で、27日の7,722.60から21.38ポイント、0.28%上昇した。いずれも米国現物価格指数の通常終値。騰落率は（28日終値÷27日終値−1）×100を小数第2位に丸めた。28日16:00 EDTは29日05:00 JSTに当たる。",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "S&P 500",
+          "metric": "Regular-session price index close",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "各米国営業日16:00 EDTの現物価格指数通常終値。先物、時間外、配当込み指数を含まない。"
+        },
+        {
+          "id": "previous",
+          "entity": "S&P 500",
+          "metric": "Regular-session price index close",
+          "periodStart": "2026-10-27",
+          "periodEnd": "2026-10-27",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "各米国営業日16:00 EDTの現物価格指数通常終値。先物、時間外、配当込み指数を含まない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "S&P 500",
+          "metric": "Regular-session price index close",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "各米国営業日16:00 EDTの現物価格指数通常終値。先物、時間外、配当込み指数を含まない。",
+          "value": 7743.98,
+          "source": {
+            "url": "https://www.ctinsider.com/business/article/how-major-us-stock-indexes-fared-wednesday-22499204.php",
+            "publishedOn": "2026-10-28",
+            "locator": "On Wednesday / S&P 500",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数提供元の公開トップでは観測日時付き通常終値を確認できなかったため、APの各営業日終値一覧を使用。日中の現在値や先物で代用していない。"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "S&P 500",
+          "metric": "Regular-session price index close",
+          "periodStart": "2026-10-27",
+          "periodEnd": "2026-10-27",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "各米国営業日16:00 EDTの現物価格指数通常終値。先物、時間外、配当込み指数を含まない。",
+          "value": 7722.6,
+          "source": {
+            "url": "https://www.ctinsider.com/business/article/how-major-us-stock-indexes-fared-tuesday-22497350.php",
+            "publishedOn": "2026-10-27",
+            "locator": "On Tuesday / S&P 500",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数提供元の公開トップでは観測日時付き通常終値を確認できなかったため、APの各営業日終値一覧を使用。日中の現在値や先物で代用していない。"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "points",
+          "operation": "difference",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "28日終値−27日終値",
+          "precision": 2,
+          "value": 21.38
+        },
+        {
+          "id": "return",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "（当期または新予想÷前年同期または従来予想−1）×100",
+          "precision": 2,
+          "value": 0.28
+        }
+      ]
+    }
+  ]
+}
