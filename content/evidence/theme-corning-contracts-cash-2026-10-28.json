@@ -1,0 +1,1123 @@
+{
+  "version": 1,
+  "articleSlug": "theme-corning-contracts-cash-2026-10-28",
+  "articleSha256": "9007ad8fd8cd248e82900f89bb770a7da909696ae94763f36103d51d780cc22c",
+  "checkedAt": "2026-10-28T10:21:03.878794+00:00",
+  "informationCutoff": "2026-10-28T10:17:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "全重要比較と表を原本で照合。独立担当がSEC原本・Verizon公式発表、定義・期間・計算・反証を照合済み。仮定感応度は実績・会社予想ではないため仮の単価を観測値として登録せず、実資料の入力を列挙し定義に手計算検証を記録。最終サイト本文で再レビュー・digest再計算が必要。Q3定義変更と6月末契約の時点差を本文に明示。Q3 10-Qの詳細未確認、検索不在を未提出の証拠にはしない。 Integration review: frozen Markdown preserved byte-for-byte. Multi-line table claims represented as exact individual table-row claims for JSON-source gate; all reviewed inputs/calculations retained, no gate change.",
+  "comparisons": [
+    {
+      "id": "optical-demand",
+      "question": "長期契約と光通信の実績",
+      "definition": "長期契約と光通信の実績",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "agreements",
+          "entity": "Corning（連結）",
+          "metric": "第3四半期長期顧客契約件数",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "第3四半期長期顧客契約件数"
+        },
+        {
+          "id": "sales26",
+          "entity": "Corning（連結）",
+          "metric": "光通信部門売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "光通信部門売上"
+        },
+        {
+          "id": "sales25",
+          "entity": "Corning（連結）",
+          "metric": "光通信部門売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "光通信部門売上"
+        }
+      ],
+      "observations": [
+        {
+          "id": "agreements",
+          "entity": "Corning（連結）",
+          "metric": "第3四半期長期顧客契約件数",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "第3四半期長期顧客契約件数",
+          "value": 4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文1頁：第3四半期長期顧客契約件数",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sales26",
+          "entity": "Corning（連結）",
+          "metric": "光通信部門売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "光通信部門売上",
+          "value": 2379,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文4頁：光通信部門売上",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sales25",
+          "entity": "Corning（連結）",
+          "metric": "光通信部門売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "光通信部門売上",
+          "value": 1652,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文4頁：光通信部門売上",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "sales26",
+            "sales25"
+          ],
+          "definition": "筆者計算",
+          "precision": 0,
+          "value": 44
+        }
+      ],
+      "claim": "この問いが重要なのは、光通信需要の拡大が既に実績と契約の両方に表れているからだ。Corningは第3四半期に、VerizonやAT&Tを含む四つの長期・複数十億ドル規模の顧客契約を確保したと発表した。光通信部門の売上は前年同期1,652百万ドルから2,379百万ドルへ、会社表示で44%増えた。しかし契約額と、その四半期の現金受取額は別の指標である。[第3四半期決算、本文1・4ページ](https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm)"
+    },
+    {
+      "id": "verizon-term",
+      "question": "供給量と期間と入金を区別",
+      "definition": "80million超。顧客の契約発表で供給窓2027–2032、年別配分/前受条件は未開示。経路距離ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "miles",
+          "entity": "Corning（連結）",
+          "metric": "契約光ファイバー量下限（超）",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2032-12-31",
+          "unit": "fiber miles",
+          "basis": "company-forecast",
+          "definition": "契約光ファイバー量下限（超）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "miles",
+          "entity": "Corning（連結）",
+          "metric": "契約光ファイバー量下限（超）",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2032-12-31",
+          "unit": "fiber miles",
+          "basis": "company-forecast",
+          "definition": "契約光ファイバー量下限（超）",
+          "value": 80000000,
+          "source": {
+            "url": "https://www.verizon.com/about/news/verizon-corning-broadband-ai-fiber-agreement",
+            "publishedOn": "2026-09-08",
+            "locator": "本文1頁：契約光ファイバー量下限（超）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "Verizon側の9月8日発表は、2027〜2032年に8,000万マイル超の光ファイバーと接続ソリューションを供給する契約と説明している。住宅・企業向けブロードバンドとAI向け長距離網の双方が対象だ。ここでのマイルはファイバーの量であり、新設する道路沿いの経路距離と同一視しない。[Verizon公式発表](https://www.verizon.com/about/news/verizon-corning-broadband-ai-fiber-agreement)"
+    },
+    {
+      "id": "deposit-net",
+      "question": "預り金と契約負債の違い",
+      "definition": "1,000−296=704百万ドル、会社概数約0.7bn。期末契約負債総額ではなく当四半期の契約。供給終了2029-12-31。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "deposit",
+          "entity": "Corning（連結）",
+          "metric": "顧客預り金",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "顧客預り金"
+        },
+        {
+          "id": "warrant",
+          "entity": "Corning（連結）",
+          "metric": "顧客へのTraditional Warrant付与時公正価値",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "顧客へのTraditional Warrant付与時公正価値"
+        }
+      ],
+      "observations": [
+        {
+          "id": "deposit",
+          "entity": "Corning（連結）",
+          "metric": "顧客預り金",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "顧客預り金",
+          "value": 1000,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000255/glw-20260630.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "本文9頁：顧客預り金",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "warrant",
+          "entity": "Corning（連結）",
+          "metric": "顧客へのTraditional Warrant付与時公正価値",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "顧客へのTraditional Warrant付与時公正価値",
+          "value": 296,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000255/glw-20260630.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "本文9頁：顧客へのTraditional Warrant付与時公正価値",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "net",
+          "operation": "difference",
+          "inputs": [
+            "deposit",
+            "warrant"
+          ],
+          "definition": "筆者計算",
+          "precision": 0,
+          "value": 704
+        }
+      ],
+      "claim": "第2四半期には、2029年12月31日までの供給契約に基づく1,000百万ドルの顧客預り金があり、顧客へ発行した新株予約権の評価額296百万ドルが契約負債から差し引かれた。その結果、記録された純契約負債は約700百万ドルとなった。296百万ドルは現金返金ではなく、販売に応じて将来の売上を減らす対価として処理される。[6月末10-Q、注記2・本文9ページ](https://www.sec.gov/Archives/edgar/data/24741/000002474126000255/glw-20260630.htm)"
+    },
+    {
+      "id": "equity-cash",
+      "question": "前払型新株予約権の資金は営業売上か",
+      "definition": "前払型新株予約権の資金は営業売上か",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "prefunded",
+          "entity": "Corning（連結）",
+          "metric": "Pre-Funded Warrant受取現金",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "Pre-Funded Warrant受取現金"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prefunded",
+          "entity": "Corning（連結）",
+          "metric": "Pre-Funded Warrant受取現金",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "Pre-Funded Warrant受取現金",
+          "value": 500,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000255/glw-20260630.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "本文16頁：Pre-Funded Warrant受取現金",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "同10-Qには、別種の前払型新株予約権から500百万ドルを受け取ったことも記載される。これは財務活動による資金調達であり、製品販売による営業収入ではない。関連する普通株式はEPS計算上、発行済みとして扱われる。顧客預り金、株式に関わる調達、売上を一つの「需要の現金化」として合算しない。[同10-Q、注記12・本文16ページ](https://www.sec.gov/Archives/edgar/data/24741/000002474126000255/glw-20260630.htm)"
+    },
+    {
+      "id": "fcf-definitions-row1",
+      "question": "三つの現金指標の定義差",
+      "definition": "会社調整後FCFには投資CF分類ヘッジ利益を再分類。独自475は全用途控除後現金でない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "ocf",
+          "entity": "Corning（連結）",
+          "metric": "営業CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "Corning（連結）",
+          "metric": "設備取得支出CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "設備取得支出CF"
+        },
+        {
+          "id": "hedge",
+          "entity": "Corning（連結）",
+          "metric": "為替ヘッジ等実現利益（投資CF）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "為替ヘッジ等実現利益（投資CF）"
+        },
+        {
+          "id": "lease",
+          "entity": "Corning（連結）",
+          "metric": "ファイナンスリース元本支出CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "ファイナンスリース元本支出CF"
+        },
+        {
+          "id": "reportedafcf",
+          "entity": "Corning（連結）",
+          "metric": "会社調整後FCF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "会社調整後FCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf",
+          "entity": "Corning（連結）",
+          "metric": "営業CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1061,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文10頁：営業CF",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Corning（連結）",
+          "metric": "設備取得支出CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "設備取得支出CF",
+          "value": -545,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文10頁：設備取得支出CF",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "hedge",
+          "entity": "Corning（連結）",
+          "metric": "為替ヘッジ等実現利益（投資CF）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "為替ヘッジ等実現利益（投資CF）",
+          "value": 145,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文19頁：為替ヘッジ等実現利益（投資CF）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "lease",
+          "entity": "Corning（連結）",
+          "metric": "ファイナンスリース元本支出CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "ファイナンスリース元本支出CF",
+          "value": -41,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文10頁：ファイナンスリース元本支出CF",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "reportedafcf",
+          "entity": "Corning（連結）",
+          "metric": "会社調整後FCF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "会社調整後FCF",
+          "value": 661,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文19頁：会社調整後FCF",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "simple",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "definition": "筆者計算",
+          "precision": 0,
+          "value": 516
+        },
+        {
+          "id": "adjusted",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex",
+            "hedge"
+          ],
+          "definition": "筆者計算",
+          "precision": 0,
+          "value": 661
+        },
+        {
+          "id": "leaseafter",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex",
+            "lease"
+          ],
+          "definition": "筆者計算",
+          "precision": 0,
+          "value": 475
+        }
+      ],
+      "claim": "| 営業CFから設備取得支出を控除 | 1,061−545 | 516 |"
+    },
+    {
+      "id": "fcf-definitions-row2",
+      "question": "三つの現金指標の定義差",
+      "definition": "会社調整後FCFには投資CF分類ヘッジ利益を再分類。独自475は全用途控除後現金でない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "ocf",
+          "entity": "Corning（連結）",
+          "metric": "営業CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "Corning（連結）",
+          "metric": "設備取得支出CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "設備取得支出CF"
+        },
+        {
+          "id": "hedge",
+          "entity": "Corning（連結）",
+          "metric": "為替ヘッジ等実現利益（投資CF）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "為替ヘッジ等実現利益（投資CF）"
+        },
+        {
+          "id": "lease",
+          "entity": "Corning（連結）",
+          "metric": "ファイナンスリース元本支出CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "ファイナンスリース元本支出CF"
+        },
+        {
+          "id": "reportedafcf",
+          "entity": "Corning（連結）",
+          "metric": "会社調整後FCF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "会社調整後FCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf",
+          "entity": "Corning（連結）",
+          "metric": "営業CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1061,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文10頁：営業CF",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Corning（連結）",
+          "metric": "設備取得支出CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "設備取得支出CF",
+          "value": -545,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文10頁：設備取得支出CF",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "hedge",
+          "entity": "Corning（連結）",
+          "metric": "為替ヘッジ等実現利益（投資CF）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "為替ヘッジ等実現利益（投資CF）",
+          "value": 145,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文19頁：為替ヘッジ等実現利益（投資CF）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "lease",
+          "entity": "Corning（連結）",
+          "metric": "ファイナンスリース元本支出CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "ファイナンスリース元本支出CF",
+          "value": -41,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文10頁：ファイナンスリース元本支出CF",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "reportedafcf",
+          "entity": "Corning（連結）",
+          "metric": "会社調整後FCF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "会社調整後FCF",
+          "value": 661,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文19頁：会社調整後FCF",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "simple",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "definition": "筆者計算",
+          "precision": 0,
+          "value": 516
+        },
+        {
+          "id": "adjusted",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex",
+            "hedge"
+          ],
+          "definition": "筆者計算",
+          "precision": 0,
+          "value": 661
+        },
+        {
+          "id": "leaseafter",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex",
+            "lease"
+          ],
+          "definition": "筆者計算",
+          "precision": 0,
+          "value": 475
+        }
+      ],
+      "claim": "| 会社の調整後FCF | 1,061＋145−545 | 661 |"
+    },
+    {
+      "id": "fcf-definitions-row3",
+      "question": "三つの現金指標の定義差",
+      "definition": "会社調整後FCFには投資CF分類ヘッジ利益を再分類。独自475は全用途控除後現金でない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "ocf",
+          "entity": "Corning（連結）",
+          "metric": "営業CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "Corning（連結）",
+          "metric": "設備取得支出CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "設備取得支出CF"
+        },
+        {
+          "id": "hedge",
+          "entity": "Corning（連結）",
+          "metric": "為替ヘッジ等実現利益（投資CF）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "為替ヘッジ等実現利益（投資CF）"
+        },
+        {
+          "id": "lease",
+          "entity": "Corning（連結）",
+          "metric": "ファイナンスリース元本支出CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "ファイナンスリース元本支出CF"
+        },
+        {
+          "id": "reportedafcf",
+          "entity": "Corning（連結）",
+          "metric": "会社調整後FCF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "会社調整後FCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf",
+          "entity": "Corning（連結）",
+          "metric": "営業CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1061,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文10頁：営業CF",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Corning（連結）",
+          "metric": "設備取得支出CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "設備取得支出CF",
+          "value": -545,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文10頁：設備取得支出CF",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "hedge",
+          "entity": "Corning（連結）",
+          "metric": "為替ヘッジ等実現利益（投資CF）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "為替ヘッジ等実現利益（投資CF）",
+          "value": 145,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文19頁：為替ヘッジ等実現利益（投資CF）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "lease",
+          "entity": "Corning（連結）",
+          "metric": "ファイナンスリース元本支出CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "ファイナンスリース元本支出CF",
+          "value": -41,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文10頁：ファイナンスリース元本支出CF",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "reportedafcf",
+          "entity": "Corning（連結）",
+          "metric": "会社調整後FCF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "会社調整後FCF",
+          "value": 661,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文19頁：会社調整後FCF",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "simple",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "definition": "筆者計算",
+          "precision": 0,
+          "value": 516
+        },
+        {
+          "id": "adjusted",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex",
+            "hedge"
+          ],
+          "definition": "筆者計算",
+          "precision": 0,
+          "value": 661
+        },
+        {
+          "id": "leaseafter",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex",
+            "lease"
+          ],
+          "definition": "筆者計算",
+          "precision": 0,
+          "value": 475
+        }
+      ],
+      "claim": "| 設備取得・ファイナンスリース元本返済後 | 1,061−545−41 | 475 |"
+    },
+    {
+      "id": "deposits-flow",
+      "question": "契約件数と調整CFを混同しない",
+      "definition": "純額調整行はgross receiptsではない。負値から前受なし/取消を推論しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "q3",
+          "entity": "Corning（連結）",
+          "metric": "Customer deposits and government incentives 営業CF調整",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "Customer deposits and government incentives 営業CF調整"
+        },
+        {
+          "id": "ytd",
+          "entity": "Corning（連結）",
+          "metric": "Customer deposits and government incentives 営業CF調整",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "Customer deposits and government incentives 営業CF調整"
+        }
+      ],
+      "observations": [
+        {
+          "id": "q3",
+          "entity": "Corning（連結）",
+          "metric": "Customer deposits and government incentives 営業CF調整",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "Customer deposits and government incentives 営業CF調整",
+          "value": -70,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文10頁：Customer deposits and government incentives 営業CF調整",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ytd",
+          "entity": "Corning（連結）",
+          "metric": "Customer deposits and government incentives 営業CF調整",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "Customer deposits and government incentives 営業CF調整",
+          "value": 639,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文10頁：Customer deposits and government incentives 営業CF調整",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "なお、顧客預り金と政府インセンティブを合計した営業CFの調整項目は、7〜9月が−70百万ドル、1〜9月累計は＋639百万ドルだった。これは**純額の調整項目であり、顧客からの新規受取総額ではない**。四つの契約があるのに−70だから「前払いはなかった」、または「契約が取り消された」とは言えない。逆に、累計の＋639を毎四半期繰り返す入金とも扱えない。[同CF計算書・本文10ページ](https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm)"
+    },
+    {
+      "id": "segment-cash-gap",
+      "question": "光通信成長と他事業採算",
+      "definition": "部門構成組替済。core為替調整は2026年4月変更、前年未遡及。完全同一定義成長率とせず公表値の比率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "s26",
+          "entity": "Corning（連結）",
+          "metric": "光通信部門売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "光通信部門売上"
+        },
+        {
+          "id": "s25",
+          "entity": "Corning（連結）",
+          "metric": "光通信部門売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "光通信部門売上"
+        },
+        {
+          "id": "ni26",
+          "entity": "Corning（連結）",
+          "metric": "光通信部門純利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "光通信部門純利益"
+        },
+        {
+          "id": "ni25",
+          "entity": "Corning（連結）",
+          "metric": "光通信部門純利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "光通信部門純利益"
+        },
+        {
+          "id": "solars",
+          "entity": "Corning（連結）",
+          "metric": "Solar部門売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "Solar部門売上"
+        },
+        {
+          "id": "solarni",
+          "entity": "Corning（連結）",
+          "metric": "Solar部門純損益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "Solar部門純損益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s26",
+          "entity": "Corning（連結）",
+          "metric": "光通信部門売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "光通信部門売上",
+          "value": 2379,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文4頁：光通信部門売上",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "s25",
+          "entity": "Corning（連結）",
+          "metric": "光通信部門売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "光通信部門売上",
+          "value": 1652,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文4頁：光通信部門売上",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni26",
+          "entity": "Corning（連結）",
+          "metric": "光通信部門純利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "光通信部門純利益",
+          "value": 532,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文4頁：光通信部門純利益",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni25",
+          "entity": "Corning（連結）",
+          "metric": "光通信部門純利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "光通信部門純利益",
+          "value": 295,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文4頁：光通信部門純利益",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "solars",
+          "entity": "Corning（連結）",
+          "metric": "Solar部門売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "Solar部門売上",
+          "value": 436,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文4頁：Solar部門売上",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "solarni",
+          "entity": "Corning（連結）",
+          "metric": "Solar部門純損益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "Solar部門純損益",
+          "value": -7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "本文4頁：Solar部門純損益",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin26",
+          "operation": "ratio-percent",
+          "inputs": [
+            "ni26",
+            "s26"
+          ],
+          "definition": "筆者計算",
+          "precision": 1,
+          "value": 22.4
+        },
+        {
+          "id": "margin25",
+          "operation": "ratio-percent",
+          "inputs": [
+            "ni25",
+            "s25"
+          ],
+          "definition": "筆者計算",
+          "precision": 1,
+          "value": 17.9
+        }
+      ],
+      "claim": "光通信部門の純利益は前年同期295百万ドルから532百万ドルに増え、部門売上に対する比率も約17.9%から約22.4%へ上がった。これは会社の部門利益ベースの比率であり、連結営業利益率とは違う。一方、Solar部門は売上436百万ドルに対して7百万ドルの赤字で、会社は生産の立ち上がりが想定より遅いと説明している。好調な事業があっても、他の投資の回収速度は別に確認する必要がある。[第3四半期決算、本文1・4ページ](https://www.sec.gov/Archives/edgar/data/24741/000002474126000273/glw-20261027xex99xq32026.htm)"
+    },
+    {
+      "id": "future-leases",
+      "question": "開始前契約は当期支出か",
+      "definition": "2026年開始予定は会社の当時の見込み、9月末残高に流用不可。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "uncommenced",
+          "entity": "Corning（連結）",
+          "metric": "未開始リース割引前契約額",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "未開始リース割引前契約額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "uncommenced",
+          "entity": "Corning（連結）",
+          "metric": "未開始リース割引前契約額",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ドル",
+          "basis": "actual",
+          "definition": "未開始リース割引前契約額",
+          "value": 348,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/24741/000002474126000255/glw-20260630.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "本文10頁：未開始リース割引前契約額",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "6月末の注記では、Solarの設備に関連する開始前リース契約が、割引前で348百万ドルあった。開始は2026年を予定していたが、これを9月末の残高や年内の一括支払額とは扱えない。設備が稼働してもすぐ高い採算に達するとは限らず、リースによる調達は現金設備投資額だけでは見えにくい支払いを後に残す。[6月末10-Q、注記4・本文10ページ](https://www.sec.gov/Archives/edgar/data/24741/000002474126000255/glw-20260630.htm)"
+    }
+  ]
+}
