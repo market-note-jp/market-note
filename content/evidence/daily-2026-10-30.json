@@ -1,0 +1,821 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-10-30",
+  "articleSha256": "0eacd6d838dde9e95d0a3a79c9ca40b2bc8b35cdf96cb8bad3644cc77daf5027",
+  "checkedAt": "2026-10-29T21:27:16.881Z",
+  "informationCutoff": "2026-10-30T06:25:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終記事のタイトル・要約・説明・全文・分析・次の注目点・免責を確認し、全8件の重要数値比較・独自計算を記録した。TTM FCFの営業CF・現金設備取得・売却/奨励金を全て原資料で確認。AWSは単独四半期と明示。Samsungは全社営業利益の同一定義を確認。イビデンは原文PDF保管版で新旧通期予想と上期実績を確認し、下期必要額を独自計算と表示。旧上期入力を確認できない従来下期との差は除外。GDPは同じ速報公表資料の実質SAAR。市場値はAP通常終値。PDF本文抽出は成功しており、検索不成功を記載なしと判断していない。数値の欠損補完なし。",
+  "sourceChecks": [
+    {
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+      "publishedOn": "2026-10-29",
+      "locator": "会社IR HTML、Segment information、Cash Flows Twelve Months2026、補足FCF定義",
+      "notes": "Press版のPDFは取得できなかったが、別途見つかった公式IR HTMLで全使用値を確認。TTM FCFは3入力を合算し会社公表値と一致。公開済み決算で、06:00 JST開始の会議内容を未確認引用していない。"
+    },
+    {
+      "url": "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results",
+      "publishedOn": "2026-10-29",
+      "locator": "DS To Sustain Growth",
+      "notes": "AI製品構成、供給能力制約、HBM4とserver SSD需要の説明を確認。顧客側の投資収益と断定していない。"
+    },
+    {
+      "url": "https://japanir.jp/wp-content/uploads/2026/10/4062-20261029-03.pdf",
+      "publishedOn": "2026-10-29",
+      "locator": "PDF1ページ修正理由",
+      "notes": "会社名・公表日・表見出しと原文を確認。JapanIRのAI要約は配当表現が原本と不一致のため使用せず、原文PDFのみを使用。"
+    },
+    {
+      "url": "https://www.bea.gov/sites/default/files/2026-10/gdp3q26-adv.pdf",
+      "publishedOn": "2026-10-29",
+      "locator": "PDF1ページ・4ページTechnical Notes",
+      "notes": "08:30 EDT=29日21:30 JST公表、基準時以前。情報処理設備と在庫投資の説明を確認。"
+    },
+    {
+      "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-2c26b0b1bbc3bfab9f3f4b902172f458",
+      "publishedOn": "2026-10-29",
+      "locator": "市場概況・On Thursday",
+      "notes": "多数銘柄上昇と指数低下の違いを確認。Amazon引け後と通常終値を区別。"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "aws-revenue-yoy",
+      "question": "AWS四半期売上の前年同期比",
+      "definition": "同一AWSセグメント・3か月売上実績。公表通貨ベース、為替調整成長率ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "Amazon / AWS",
+          "metric": "Net sales",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "同一AWSセグメント・3か月売上実績。公表通貨ベース、為替調整成長率ではない。"
+        },
+        {
+          "id": "previous",
+          "entity": "Amazon / AWS",
+          "metric": "Net sales",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "同一AWSセグメント・3か月売上実績。公表通貨ベース、為替調整成長率ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "Amazon / AWS",
+          "metric": "Net sales",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "同一AWSセグメント・3か月売上実績。公表通貨ベース、為替調整成長率ではない。",
+          "value": 45984,
+          "source": {
+            "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+            "publishedOn": "2026-10-29",
+            "locator": "Consolidated Segment Information / AWS Net sales、Three Months Ended September 30 2025/2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "Amazon / AWS",
+          "metric": "Net sales",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "同一AWSセグメント・3か月売上実績。公表通貨ベース、為替調整成長率ではない。",
+          "value": 33006,
+          "source": {
+            "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+            "publishedOn": "2026-10-29",
+            "locator": "Consolidated Segment Information / AWS Net sales、Three Months Ended September 30 2025/2026",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "Amazonが10月29日に公表した2026年7〜9月期のAWS売上は45,984百万米ドルで、前年同期33,006百万米ドルから39.3%増加した。同じセグメントの公表通貨ベースの実績比較で、増収率は小数第1位に丸めた。",
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "（当期または新会社予想÷前年同期または旧会社予想−1）×100",
+          "precision": 1,
+          "value": 39.3
+        }
+      ]
+    },
+    {
+      "id": "amazon-ttm-fcf",
+      "question": "設備支出純額を控除したTTMのFCFはいくらか",
+      "definition": "2025年10月1日〜2026年9月30日の全社TTM。会社定義FCF＝営業CF＋負数の設備取得支出＋設備売却・奨励金収入。非現金設備取得・リース追加を混ぜない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "operating",
+          "entity": "Amazon",
+          "metric": "Net cash provided by operating activities",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "2025年10月1日〜2026年9月30日の全社TTM。会社定義FCF＝営業CF＋負数の設備取得支出＋設備売却・奨励金収入。非現金設備取得・リース追加を混ぜない。"
+        },
+        {
+          "id": "ppe",
+          "entity": "Amazon",
+          "metric": "Purchases of property and equipment (signed cash outflow)",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "2025年10月1日〜2026年9月30日の全社TTM。会社定義FCF＝営業CF＋負数の設備取得支出＋設備売却・奨励金収入。非現金設備取得・リース追加を混ぜない。"
+        },
+        {
+          "id": "proceeds",
+          "entity": "Amazon",
+          "metric": "Proceeds from property and equipment sales and incentives",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "2025年10月1日〜2026年9月30日の全社TTM。会社定義FCF＝営業CF＋負数の設備取得支出＋設備売却・奨励金収入。非現金設備取得・リース追加を混ぜない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "operating",
+          "entity": "Amazon",
+          "metric": "Net cash provided by operating activities",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "2025年10月1日〜2026年9月30日の全社TTM。会社定義FCF＝営業CF＋負数の設備取得支出＋設備売却・奨励金収入。非現金設備取得・リース追加を混ぜない。",
+          "value": 168300,
+          "source": {
+            "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+            "publishedOn": "2026-10-29",
+            "locator": "Consolidated Statements of Cash Flows / Twelve Months Ended September 30, 2026; Supplemental Financial Information / TTM FCF and footnote (1)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ppe",
+          "entity": "Amazon",
+          "metric": "Purchases of property and equipment (signed cash outflow)",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "2025年10月1日〜2026年9月30日の全社TTM。会社定義FCF＝営業CF＋負数の設備取得支出＋設備売却・奨励金収入。非現金設備取得・リース追加を混ぜない。",
+          "value": -215192,
+          "source": {
+            "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+            "publishedOn": "2026-10-29",
+            "locator": "Consolidated Statements of Cash Flows / Twelve Months Ended September 30, 2026; Supplemental Financial Information / TTM FCF and footnote (1)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "proceeds",
+          "entity": "Amazon",
+          "metric": "Proceeds from property and equipment sales and incentives",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "2025年10月1日〜2026年9月30日の全社TTM。会社定義FCF＝営業CF＋負数の設備取得支出＋設備売却・奨励金収入。非現金設備取得・リース追加を混ぜない。",
+          "value": 4535,
+          "source": {
+            "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+            "publishedOn": "2026-10-29",
+            "locator": "Consolidated Statements of Cash Flows / Twelve Months Ended September 30, 2026; Supplemental Financial Information / TTM FCF and footnote (1)",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "全社の2026年9月末までのTTM（2025年10月〜2026年9月）のFCFは−42,357百万米ドル。計算は営業CF168,300−有形固定資産取得支出215,192＋設備売却・奨励金収入4,535である。会社定義の設備取得純額は210,657百万米ドルで、FCFはこの純額を控除するnon-GAAP指標。四半期だけの値や会計上の純損失とは区別する。",
+      "calculations": [
+        {
+          "id": "net-ppe",
+          "operation": "sum",
+          "inputs": [
+            "ppe",
+            "proceeds"
+          ],
+          "definition": "符号付き設備取得純支出−215192＋4535＝−210657百万USD（本文は支出の正額表示）",
+          "precision": 0,
+          "value": -210657
+        },
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "operating",
+            "ppe",
+            "proceeds"
+          ],
+          "definition": "営業CF168300−設備取得215192＋売却等4535＝−42357百万USD。単独四半期ではない。",
+          "precision": 0,
+          "value": -42357
+        }
+      ]
+    },
+    {
+      "id": "samsung-operating-yoy",
+      "question": "Samsung全社営業利益の前年同四半期との比較",
+      "definition": "同じ連結・単独3か月の営業利益。純利益やDS部門だけの利益と区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "Samsung Electronics consolidated",
+          "metric": "Operating profit",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "trillion KRW",
+          "basis": "actual",
+          "definition": "同じ連結・単独3か月の営業利益。純利益やDS部門だけの利益と区別。"
+        },
+        {
+          "id": "previous",
+          "entity": "Samsung Electronics consolidated",
+          "metric": "Operating profit",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "trillion KRW",
+          "basis": "actual",
+          "definition": "同じ連結・単独3か月の営業利益。純利益やDS部門だけの利益と区別。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "Samsung Electronics consolidated",
+          "metric": "Operating profit",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "trillion KRW",
+          "basis": "actual",
+          "definition": "同じ連結・単独3か月の営業利益。純利益やDS部門だけの利益と区別。",
+          "value": 107.4,
+          "source": {
+            "url": "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results",
+            "publishedOn": "2026-10-29",
+            "locator": "冒頭Quarterly revenue / operating profitと全社業績段落",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "Samsung Electronics consolidated",
+          "metric": "Operating profit",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "trillion KRW",
+          "basis": "actual",
+          "definition": "同じ連結・単独3か月の営業利益。純利益やDS部門だけの利益と区別。",
+          "value": 12.2,
+          "source": {
+            "url": "https://news.samsung.com/be/samsung-electronics-announces-third-quarter-2025-results",
+            "publishedOn": "2025-10-30",
+            "locator": "2025年Q3会社決算発表冒頭、全社営業利益",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "Samsung Electronicsの2026年7〜9月期連結営業利益は107.4兆韓国ウォン。前年同期の12.2兆韓国ウォンから拡大した。いずれも同社が公表した単独四半期の営業利益実績で、米ドル換算値や純利益と混同しない。",
+      "calculations": []
+    },
+    {
+      "id": "ibiden-full-year-revision",
+      "question": "経常利益会社予想の増額幅",
+      "definition": "日本基準連結・2027年3月期の通期経常利益。2026年8月会社予想と10月会社予想の同一年度比較。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "new",
+          "entity": "イビデン",
+          "metric": "連結経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "日本基準連結・2027年3月期の通期経常利益。2026年8月会社予想と10月会社予想の同一年度比較。"
+        },
+        {
+          "id": "old",
+          "entity": "イビデン",
+          "metric": "連結経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "日本基準連結・2027年3月期の通期経常利益。2026年8月会社予想と10月会社予想の同一年度比較。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "new",
+          "entity": "イビデン",
+          "metric": "連結経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "日本基準連結・2027年3月期の通期経常利益。2026年8月会社予想と10月会社予想の同一年度比較。",
+          "value": 134500,
+          "source": {
+            "url": "https://japanir.jp/wp-content/uploads/2026/10/4062-20261029-03.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "1.(1)2027年3月期通期連結業績予想の修正、経常利益列、A/B/増減額・率",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "old",
+          "entity": "イビデン",
+          "metric": "連結経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "日本基準連結・2027年3月期の通期経常利益。2026年8月会社予想と10月会社予想の同一年度比較。",
+          "value": 127000,
+          "source": {
+            "url": "https://japanir.jp/wp-content/uploads/2026/10/4062-20261029-03.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "1.(1)2027年3月期通期連結業績予想の修正、経常利益列、A/B/増減額・率",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "イビデンは10月29日、2027年3月期（2026年4月〜2027年3月）の連結経常利益予想を127,000百万円から134,500百万円へ引き上げた。増額は7,500百万円、5.9%。日本円・日本基準の同じ年度の会社予想同士の比較で、営業利益や市場予想との比較ではない。",
+      "calculations": [
+        {
+          "id": "increase",
+          "operation": "difference",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "新通期会社予想−旧通期会社予想（百万円）",
+          "precision": 0,
+          "value": 7500
+        },
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "（当期または新会社予想÷前年同期または旧会社予想−1）×100",
+          "precision": 1,
+          "value": 5.9
+        }
+      ]
+    },
+    {
+      "id": "ibiden-h1-yoy",
+      "question": "経常利益の上期前年同期比",
+      "definition": "日本基準連結・4月1日〜9月30日の中間期経常利益実績。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "イビデン",
+          "metric": "連結経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準連結・4月1日〜9月30日の中間期経常利益実績。"
+        },
+        {
+          "id": "previous",
+          "entity": "イビデン",
+          "metric": "連結経常利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準連結・4月1日〜9月30日の中間期経常利益実績。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "イビデン",
+          "metric": "連結経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準連結・4月1日〜9月30日の中間期経常利益実績。",
+          "value": 61009,
+          "source": {
+            "url": "https://japanir.jp/wp-content/uploads/2026/10/4062-20261029-01.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "1.(1)連結経営成績（累計）経常利益2027年3月期中間期/2026年3月期中間期",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "イビデン",
+          "metric": "連結経常利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準連結・4月1日〜9月30日の中間期経常利益実績。",
+          "value": 32305,
+          "source": {
+            "url": "https://japanir.jp/wp-content/uploads/2026/10/4062-20261029-01.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "1.(1)連結経営成績（累計）経常利益2027年3月期中間期/2026年3月期中間期",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "2026年4〜9月期の経常利益実績は61,009百万円で、前年同期32,305百万円から88.9%増加した。会社はAIサーバー向け高付加価値製品の受注、製品構成の改善、円安の寄与を説明した。",
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "（当期または新会社予想÷前年同期または旧会社予想−1）×100",
+          "precision": 1,
+          "value": 88.9
+        }
+      ]
+    },
+    {
+      "id": "ibiden-implied-h2",
+      "question": "新通期予想達成に必要な下期経常利益",
+      "definition": "同じ会計年度の新通期会社予想から上期実績を控除する独自計算。2026-10-01〜2027-03-31の必要額、独立した会社下期予想ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "new",
+          "entity": "イビデン",
+          "metric": "連結経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "日本基準連結・2027年3月期の通期経常利益。2026年8月会社予想と10月会社予想の同一年度比較。"
+        },
+        {
+          "id": "h1",
+          "entity": "イビデン",
+          "metric": "連結経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準連結・4月1日〜9月30日の中間期経常利益実績。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "new",
+          "entity": "イビデン",
+          "metric": "連結経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "日本基準連結・2027年3月期の通期経常利益。2026年8月会社予想と10月会社予想の同一年度比較。",
+          "value": 134500,
+          "source": {
+            "url": "https://japanir.jp/wp-content/uploads/2026/10/4062-20261029-03.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "1.(1)2027年3月期通期連結業績予想の修正、経常利益列、A/B/増減額・率",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "h1",
+          "entity": "イビデン",
+          "metric": "連結経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準連結・4月1日〜9月30日の中間期経常利益実績。",
+          "value": 61009,
+          "source": {
+            "url": "https://japanir.jp/wp-content/uploads/2026/10/4062-20261029-01.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "1.(1)連結経営成績（累計）経常利益2027年3月期中間期/2026年3月期中間期",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "新通期予想134,500百万円から上期実績61,009百万円を引くと、下期に必要な経常利益は73,491百万円となる。これは当サイトが算出した2026年10月〜2027年3月の必要額で、会社が独立して公表した下期予想とは区別する。旧上期計画との整合を確認できていないため、従来下期からの増額幅は断定しない。",
+      "calculations": [
+        {
+          "id": "implied-h2",
+          "operation": "difference",
+          "inputs": [
+            "new",
+            "h1"
+          ],
+          "definition": "134500（通期会社予想）−61009（上期実績）＝73491百万円。予想と実績の区分を保って差し引く。",
+          "precision": 0,
+          "value": 73491
+        }
+      ]
+    },
+    {
+      "id": "gdp-growth-rate",
+      "question": "BEA実質GDP成長率のQ3とQ2比較",
+      "definition": "BEA2026年10月29日公表時点の季節調整済み実質GDP前期比年率。Q3速報と同一公表資料のQ2値。前年比・名目ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "q3",
+          "entity": "US BEA",
+          "metric": "Real GDP annualized quarterly growth",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent SAAR",
+          "basis": "actual",
+          "definition": "BEA2026年10月29日公表時点の季節調整済み実質GDP前期比年率。Q3速報と同一公表資料のQ2値。前年比・名目ではない。"
+        },
+        {
+          "id": "q2",
+          "entity": "US BEA",
+          "metric": "Real GDP annualized quarterly growth",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent SAAR",
+          "basis": "actual",
+          "definition": "BEA2026年10月29日公表時点の季節調整済み実質GDP前期比年率。Q3速報と同一公表資料のQ2値。前年比・名目ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "q3",
+          "entity": "US BEA",
+          "metric": "Real GDP annualized quarterly growth",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent SAAR",
+          "basis": "actual",
+          "definition": "BEA2026年10月29日公表時点の季節調整済み実質GDP前期比年率。Q3速報と同一公表資料のQ2値。前年比・名目ではない。",
+          "value": 3.4,
+          "source": {
+            "url": "https://www.bea.gov/sites/default/files/2026-10/gdp3q26-adv.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "冒頭Real GDP Q3 3.4%、Q2 2.2%、グラフ注記Seasonally adjusted annual rates",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "q2",
+          "entity": "US BEA",
+          "metric": "Real GDP annualized quarterly growth",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent SAAR",
+          "basis": "actual",
+          "definition": "BEA2026年10月29日公表時点の季節調整済み実質GDP前期比年率。Q3速報と同一公表資料のQ2値。前年比・名目ではない。",
+          "value": 2.2,
+          "source": {
+            "url": "https://www.bea.gov/sites/default/files/2026-10/gdp3q26-adv.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "冒頭Real GDP Q3 3.4%、Q2 2.2%、グラフ注記Seasonally adjusted annual rates",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "米BEAが10月29日08:30 EDT（同日21:30 JST）に公表した2026年7〜9月期の実質GDP速報は、季節調整済み前期比年率3.4%増。同じ公表資料にある4〜6月期の2.2%増から成長率が加速した。前年比でも名目成長率でもなく、速報は改定され得る。",
+      "calculations": []
+    },
+    {
+      "id": "sp500-daily-return",
+      "question": "S&P500通常終値の前営業日比",
+      "definition": "S&P500現物価格指数の各米営業日16:00 EDT通常終値。先物・時間外・配当込みではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "S&P 500",
+          "metric": "Regular-session price index close",
+          "periodStart": "2026-10-29",
+          "periodEnd": "2026-10-29",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "S&P500現物価格指数の各米営業日16:00 EDT通常終値。先物・時間外・配当込みではない。"
+        },
+        {
+          "id": "previous",
+          "entity": "S&P 500",
+          "metric": "Regular-session price index close",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "S&P500現物価格指数の各米営業日16:00 EDT通常終値。先物・時間外・配当込みではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "S&P 500",
+          "metric": "Regular-session price index close",
+          "periodStart": "2026-10-29",
+          "periodEnd": "2026-10-29",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "S&P500現物価格指数の各米営業日16:00 EDT通常終値。先物・時間外・配当込みではない。",
+          "value": 7720.39,
+          "source": {
+            "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-2c26b0b1bbc3bfab9f3f4b902172f458",
+            "publishedOn": "2026-10-29",
+            "locator": "On Thursday / S&P500",
+            "kind": "secondary",
+            "primaryUnavailableReason": "提供元公開トップの値では観測日付き通常終値を確認できず、AP各営業日終値一覧を使用。一般ニュース集計や日中現在値で代用していない。"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "S&P 500",
+          "metric": "Regular-session price index close",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "S&P500現物価格指数の各米営業日16:00 EDT通常終値。先物・時間外・配当込みではない。",
+          "value": 7743.98,
+          "source": {
+            "url": "https://www.ctinsider.com/business/article/how-major-us-stock-indexes-fared-wednesday-22499204.php",
+            "publishedOn": "2026-10-28",
+            "locator": "On Wednesday / S&P500",
+            "kind": "secondary",
+            "primaryUnavailableReason": "提供元公開トップの値では観測日付き通常終値を確認できず、AP各営業日終値一覧を使用。一般ニュース集計や日中現在値で代用していない。"
+          }
+        }
+      ],
+      "claim": "S&P500の10月29日通常取引終値は7,720.39で、28日の7,743.98から23.59ポイント、0.30%下落した。米国現物価格指数の通常終値を比較し、（29日終値÷28日終値−1）×100を小数第2位に丸めた。29日16:00 EDTは30日05:00 JSTに当たる。",
+      "calculations": [
+        {
+          "id": "points",
+          "operation": "difference",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "29日終値−28日終値",
+          "precision": 2,
+          "value": -23.59
+        },
+        {
+          "id": "return",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "（当期または新会社予想÷前年同期または旧会社予想−1）×100",
+          "precision": 2,
+          "value": -0.3
+        }
+      ]
+    },
+    {
+      "id": "ibiden-old-h2-revision-withheld",
+      "question": "従来下期から今回下期への利益計画増額幅はどの程度か",
+      "definition": "旧通期−旧上期と、新通期−上期実績をそろえて比較する。旧上期の確証なしに通期増額を下期増額とみなさない。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "new",
+          "entity": "イビデン",
+          "metric": "連結経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "日本基準連結・2027年3月期の通期経常利益。2026年8月会社予想と10月会社予想の同一年度比較。"
+        },
+        {
+          "id": "old",
+          "entity": "イビデン",
+          "metric": "連結経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "日本基準連結・2027年3月期の通期経常利益。2026年8月会社予想と10月会社予想の同一年度比較。"
+        },
+        {
+          "id": "old-h1",
+          "entity": "イビデン",
+          "metric": "連結経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "2026年8月時点の上期経常利益会社予想。下期旧計画算出の入力。"
+        },
+        {
+          "id": "h1",
+          "entity": "イビデン",
+          "metric": "連結経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準連結・4月1日〜9月30日の中間期経常利益実績。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "new",
+          "entity": "イビデン",
+          "metric": "連結経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "日本基準連結・2027年3月期の通期経常利益。2026年8月会社予想と10月会社予想の同一年度比較。",
+          "value": 134500,
+          "source": {
+            "url": "https://japanir.jp/wp-content/uploads/2026/10/4062-20261029-03.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "1.(1)2027年3月期通期連結業績予想の修正、経常利益列、A/B/増減額・率",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "old",
+          "entity": "イビデン",
+          "metric": "連結経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "日本基準連結・2027年3月期の通期経常利益。2026年8月会社予想と10月会社予想の同一年度比較。",
+          "value": 127000,
+          "source": {
+            "url": "https://japanir.jp/wp-content/uploads/2026/10/4062-20261029-03.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "1.(1)2027年3月期通期連結業績予想の修正、経常利益列、A/B/増減額・率",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "h1",
+          "entity": "イビデン",
+          "metric": "連結経常利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準連結・4月1日〜9月30日の中間期経常利益実績。",
+          "value": 61009,
+          "source": {
+            "url": "https://japanir.jp/wp-content/uploads/2026/10/4062-20261029-01.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "1.(1)連結経営成績（累計）経常利益2027年3月期中間期/2026年3月期中間期",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [],
+      "reason": "公式IR・短信一覧とRSSで8月決算原本URLまで確認したがPDFを取得できず、限定回数の追加検索でも旧上期会社予想を確証できなかった。記載なしと判断せず、この比較だけ除外。現上期・通期は原文PDFで確認済み。",
+      "omittedClaim": "下期経常利益計画の引き上げは10億円にとどまる。"
+    }
+  ]
+}
