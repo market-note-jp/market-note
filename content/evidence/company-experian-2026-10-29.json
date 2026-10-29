@@ -1,0 +1,2569 @@
+{
+  "version": 1,
+  "articleSlug": "company-experian-2026-10-29",
+  "articleSha256": "0b6b302dd60c907bab3ba5f82ec29a05250e76c7477c20a838146687698604c9",
+  "checkedAt": "2026-10-29T10:21:57.518Z",
+  "informationCutoff": "2026-10-29T19:15:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "一次年報PDF全文の該当頁、FY26発表PDF、Q1本文、Equifax決算本文をwebで読取。数値自己検証済、独立レビュー待ち。現在digestはMarkdown単体SHAであり統合時にarticleDigest要。ROCE非支配持分控除7を追加一次注記で確認し、17.21%へ再現。 独立監査修正: Q1は契約の完全終了ではなくinitial wind-down、本文全箇所を縮小へ。純株式購入に従業員信託分を含むこと明記。 Final integrated Markdown reviewed against frozen source; independent review PASS: experian/review.md. Public body and internal evidence kept separate.",
+  "comparisons": [
+    {
+      "id": "annual-2020",
+      "question": "| 2020 | 5,179 | 1,386 | 1,214 |",
+      "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Experian",
+          "metric": "revenue",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        },
+        {
+          "id": "ongoingBenchmarkEBIT",
+          "entity": "Experian",
+          "metric": "ongoingBenchmarkEBIT",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        },
+        {
+          "id": "benchmarkOCF",
+          "entity": "Experian",
+          "metric": "benchmarkOCF",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Experian",
+          "metric": "revenue",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 5179,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        },
+        {
+          "id": "ongoingBenchmarkEBIT",
+          "entity": "Experian",
+          "metric": "ongoingBenchmarkEBIT",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 1386,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        },
+        {
+          "id": "benchmarkOCF",
+          "entity": "Experian",
+          "metric": "benchmarkOCF",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 1214,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "| 2020 | 5,179 | 1,386 | 1,214 |"
+    },
+    {
+      "id": "annual-2021",
+      "question": "| 2021 | 5,372 | 1,379 | 1,476 |",
+      "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Experian",
+          "metric": "revenue",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        },
+        {
+          "id": "ongoingBenchmarkEBIT",
+          "entity": "Experian",
+          "metric": "ongoingBenchmarkEBIT",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        },
+        {
+          "id": "benchmarkOCF",
+          "entity": "Experian",
+          "metric": "benchmarkOCF",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Experian",
+          "metric": "revenue",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 5372,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        },
+        {
+          "id": "ongoingBenchmarkEBIT",
+          "entity": "Experian",
+          "metric": "ongoingBenchmarkEBIT",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 1379,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        },
+        {
+          "id": "benchmarkOCF",
+          "entity": "Experian",
+          "metric": "benchmarkOCF",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 1476,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "| 2021 | 5,372 | 1,379 | 1,476 |"
+    },
+    {
+      "id": "annual-2022",
+      "question": "| 2022 | 6,288 | 1,653 | 1,800 |",
+      "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Experian",
+          "metric": "revenue",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        },
+        {
+          "id": "ongoingBenchmarkEBIT",
+          "entity": "Experian",
+          "metric": "ongoingBenchmarkEBIT",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        },
+        {
+          "id": "benchmarkOCF",
+          "entity": "Experian",
+          "metric": "benchmarkOCF",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Experian",
+          "metric": "revenue",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 6288,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        },
+        {
+          "id": "ongoingBenchmarkEBIT",
+          "entity": "Experian",
+          "metric": "ongoingBenchmarkEBIT",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 1653,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        },
+        {
+          "id": "benchmarkOCF",
+          "entity": "Experian",
+          "metric": "benchmarkOCF",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 1800,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "| 2022 | 6,288 | 1,653 | 1,800 |"
+    },
+    {
+      "id": "annual-2023",
+      "question": "| 2023 | 6,619 | 1,798 | 1,753 |",
+      "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Experian",
+          "metric": "revenue",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        },
+        {
+          "id": "ongoingBenchmarkEBIT",
+          "entity": "Experian",
+          "metric": "ongoingBenchmarkEBIT",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        },
+        {
+          "id": "benchmarkOCF",
+          "entity": "Experian",
+          "metric": "benchmarkOCF",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Experian",
+          "metric": "revenue",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 6619,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        },
+        {
+          "id": "ongoingBenchmarkEBIT",
+          "entity": "Experian",
+          "metric": "ongoingBenchmarkEBIT",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 1798,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        },
+        {
+          "id": "benchmarkOCF",
+          "entity": "Experian",
+          "metric": "benchmarkOCF",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 1753,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "| 2023 | 6,619 | 1,798 | 1,753 |"
+    },
+    {
+      "id": "annual-2024",
+      "question": "| 2024 | 7,097 | 1,944 | 1,864 |",
+      "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Experian",
+          "metric": "revenue",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        },
+        {
+          "id": "ongoingBenchmarkEBIT",
+          "entity": "Experian",
+          "metric": "ongoingBenchmarkEBIT",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        },
+        {
+          "id": "benchmarkOCF",
+          "entity": "Experian",
+          "metric": "benchmarkOCF",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Experian",
+          "metric": "revenue",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 7097,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        },
+        {
+          "id": "ongoingBenchmarkEBIT",
+          "entity": "Experian",
+          "metric": "ongoingBenchmarkEBIT",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 1944,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        },
+        {
+          "id": "benchmarkOCF",
+          "entity": "Experian",
+          "metric": "benchmarkOCF",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 1864,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "| 2024 | 7,097 | 1,944 | 1,864 |"
+    },
+    {
+      "id": "annual-2025",
+      "question": "| 2025 | 7,523 | 2,102 | 2,025 |",
+      "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Experian",
+          "metric": "revenue",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        },
+        {
+          "id": "ongoingBenchmarkEBIT",
+          "entity": "Experian",
+          "metric": "ongoingBenchmarkEBIT",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        },
+        {
+          "id": "benchmarkOCF",
+          "entity": "Experian",
+          "metric": "benchmarkOCF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Experian",
+          "metric": "revenue",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 7523,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        },
+        {
+          "id": "ongoingBenchmarkEBIT",
+          "entity": "Experian",
+          "metric": "ongoingBenchmarkEBIT",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 2102,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        },
+        {
+          "id": "benchmarkOCF",
+          "entity": "Experian",
+          "metric": "benchmarkOCF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 2025,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "| 2025 | 7,523 | 2,102 | 2,025 |"
+    },
+    {
+      "id": "annual-2026",
+      "question": "| 2026 | 8,445 | 2,407 | 2,221 |",
+      "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Experian",
+          "metric": "revenue",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        },
+        {
+          "id": "ongoingBenchmarkEBIT",
+          "entity": "Experian",
+          "metric": "ongoingBenchmarkEBIT",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        },
+        {
+          "id": "benchmarkOCF",
+          "entity": "Experian",
+          "metric": "benchmarkOCF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Experian",
+          "metric": "revenue",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 8445,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        },
+        {
+          "id": "ongoingBenchmarkEBIT",
+          "entity": "Experian",
+          "metric": "ongoingBenchmarkEBIT",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 2407,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        },
+        {
+          "id": "benchmarkOCF",
+          "entity": "Experian",
+          "metric": "benchmarkOCF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "年報長期系列：法定全社売上、継続事業Benchmark EBIT、会社定義Benchmark営業CF。為替/範囲変更を含む。",
+          "value": 2221,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 65頁",
+            "kind": "primary",
+            "pdfPage": 65
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "| 2026 | 8,445 | 2,407 | 2,221 |"
+    },
+    {
+      "id": "revenue-bridge",
+      "question": "FY26の継続事業売上は、前年7,475から8,425へ増加した。",
+      "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "Experian",
+          "metric": "current",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "previous",
+          "entity": "Experian",
+          "metric": "previous",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "priorFXadjustment",
+          "entity": "Experian",
+          "metric": "priorFXadjustment",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "organic",
+          "entity": "Experian",
+          "metric": "organic",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "acquisitions",
+          "entity": "Experian",
+          "metric": "acquisitions",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "currentFX",
+          "entity": "Experian",
+          "metric": "currentFX",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "Experian",
+          "metric": "current",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 8425,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 174頁",
+            "kind": "primary",
+            "pdfPage": 174
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "Experian",
+          "metric": "previous",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 7475,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 174頁",
+            "kind": "primary",
+            "pdfPage": 174
+          }
+        },
+        {
+          "id": "priorFXadjustment",
+          "entity": "Experian",
+          "metric": "priorFXadjustment",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 7,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 174頁",
+            "kind": "primary",
+            "pdfPage": 174
+          }
+        },
+        {
+          "id": "organic",
+          "entity": "Experian",
+          "metric": "organic",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 622,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 174頁",
+            "kind": "primary",
+            "pdfPage": 174
+          }
+        },
+        {
+          "id": "acquisitions",
+          "entity": "Experian",
+          "metric": "acquisitions",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 214,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 174頁",
+            "kind": "primary",
+            "pdfPage": 174
+          }
+        },
+        {
+          "id": "currentFX",
+          "entity": "Experian",
+          "metric": "currentFX",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 107,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 174頁",
+            "kind": "primary",
+            "pdfPage": 174
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "bridge",
+          "operation": "sum",
+          "inputs": [
+            "previous",
+            "priorFXadjustment",
+            "organic",
+            "acquisitions",
+            "currentFX"
+          ],
+          "definition": "継続売上ブリッジ",
+          "precision": 0,
+          "value": 8425
+        }
+      ],
+      "claim": "FY26の継続事業売上は、前年7,475から8,425へ増加した。"
+    },
+    {
+      "id": "business-margin",
+      "question": "FY26のB2BのBenchmark利益率は30.9%で前年31.1%を下回る一方、Consumer Servicesは27.4%から29.6%へ上昇した。",
+      "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "b2b2026",
+          "entity": "Experian",
+          "metric": "b2b2026",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "b2b2025",
+          "entity": "Experian",
+          "metric": "b2b2025",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "consumer2025",
+          "entity": "Experian",
+          "metric": "consumer2025",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "consumer2026",
+          "entity": "Experian",
+          "metric": "consumer2026",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "b2b2026",
+          "entity": "Experian",
+          "metric": "b2b2026",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 30.9,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/results-and-presentations/2026/Experian-FY26-FY-results-announcement.pdf",
+            "publishedOn": "2026-05-20",
+            "locator": "PDF 15頁",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        },
+        {
+          "id": "b2b2025",
+          "entity": "Experian",
+          "metric": "b2b2025",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 31.1,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/results-and-presentations/2026/Experian-FY26-FY-results-announcement.pdf",
+            "publishedOn": "2026-05-20",
+            "locator": "PDF 15頁",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        },
+        {
+          "id": "consumer2025",
+          "entity": "Experian",
+          "metric": "consumer2025",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 27.4,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/results-and-presentations/2026/Experian-FY26-FY-results-announcement.pdf",
+            "publishedOn": "2026-05-20",
+            "locator": "PDF 15頁",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        },
+        {
+          "id": "consumer2026",
+          "entity": "Experian",
+          "metric": "consumer2026",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 29.6,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/results-and-presentations/2026/Experian-FY26-FY-results-announcement.pdf",
+            "publishedOn": "2026-05-20",
+            "locator": "PDF 15頁",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "FY26のB2BのBenchmark利益率は30.9%で前年31.1%を下回る一方、Consumer Servicesは27.4%から29.6%へ上昇した。"
+    },
+    {
+      "id": "region-organic",
+      "question": "地域別の既存事業増収率も、北米10%、中南米8%、英国・アイルランド2%、EMEA・アジア太平洋5%と差がある。",
+      "definition": "FY26対FY25、継続事業・為替一定organic成長率",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "NA",
+          "entity": "Experian",
+          "metric": "NA",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "FY26対FY25、継続事業・為替一定organic成長率"
+        },
+        {
+          "id": "LatAm",
+          "entity": "Experian",
+          "metric": "LatAm",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "FY26対FY25、継続事業・為替一定organic成長率"
+        },
+        {
+          "id": "UK",
+          "entity": "Experian",
+          "metric": "UK",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "FY26対FY25、継続事業・為替一定organic成長率"
+        },
+        {
+          "id": "EMEA_APAC",
+          "entity": "Experian",
+          "metric": "EMEA_APAC",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "FY26対FY25、継続事業・為替一定organic成長率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "NA",
+          "entity": "Experian",
+          "metric": "NA",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "FY26対FY25、継続事業・為替一定organic成長率",
+          "value": 10,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/results-and-presentations/2026/Experian-FY26-FY-results-announcement.pdf",
+            "publishedOn": "2026-05-20",
+            "locator": "Highlights、organic revenue growth by region",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "LatAm",
+          "entity": "Experian",
+          "metric": "LatAm",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "FY26対FY25、継続事業・為替一定organic成長率",
+          "value": 8,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/results-and-presentations/2026/Experian-FY26-FY-results-announcement.pdf",
+            "publishedOn": "2026-05-20",
+            "locator": "Highlights、organic revenue growth by region",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "UK",
+          "entity": "Experian",
+          "metric": "UK",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "FY26対FY25、継続事業・為替一定organic成長率",
+          "value": 2,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/results-and-presentations/2026/Experian-FY26-FY-results-announcement.pdf",
+            "publishedOn": "2026-05-20",
+            "locator": "Highlights、organic revenue growth by region",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "EMEA_APAC",
+          "entity": "Experian",
+          "metric": "EMEA_APAC",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "FY26対FY25、継続事業・為替一定organic成長率",
+          "value": 5,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/results-and-presentations/2026/Experian-FY26-FY-results-announcement.pdf",
+            "publishedOn": "2026-05-20",
+            "locator": "Highlights、organic revenue growth by region",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "地域別の既存事業増収率も、北米10%、中南米8%、英国・アイルランド2%、EMEA・アジア太平洋5%と差がある。"
+    },
+    {
+      "id": "latest-growth",
+      "question": "7月公表のFY27第1四半期は、全社売上が実勢為替で10%増、為替一定で8%増、既存事業で7%増だった。",
+      "definition": "前年同四半期比成長率、継続事業",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "actualFX",
+          "entity": "Experian",
+          "metric": "actualFX",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "前年同四半期比成長率、継続事業"
+        },
+        {
+          "id": "constantFX",
+          "entity": "Experian",
+          "metric": "constantFX",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "前年同四半期比成長率、継続事業"
+        },
+        {
+          "id": "organic",
+          "entity": "Experian",
+          "metric": "organic",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "前年同四半期比成長率、継続事業"
+        }
+      ],
+      "observations": [
+        {
+          "id": "actualFX",
+          "entity": "Experian",
+          "metric": "actualFX",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "前年同四半期比成長率、継続事業",
+          "value": 10,
+          "source": {
+            "url": "https://www.experianplc.com/newsroom/press-releases/2026/trading-update--first-quarter-fy27",
+            "publishedOn": "2026-07-16",
+            "locator": "本文・表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "constantFX",
+          "entity": "Experian",
+          "metric": "constantFX",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "前年同四半期比成長率、継続事業",
+          "value": 8,
+          "source": {
+            "url": "https://www.experianplc.com/newsroom/press-releases/2026/trading-update--first-quarter-fy27",
+            "publishedOn": "2026-07-16",
+            "locator": "本文・表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "organic",
+          "entity": "Experian",
+          "metric": "organic",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "前年同四半期比成長率、継続事業",
+          "value": 7,
+          "source": {
+            "url": "https://www.experianplc.com/newsroom/press-releases/2026/trading-update--first-quarter-fy27",
+            "publishedOn": "2026-07-16",
+            "locator": "本文・表",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "7月公表のFY27第1四半期は、全社売上が実勢為替で10%増、為替一定で8%増、既存事業で7%増だった。"
+    },
+    {
+      "id": "na-contracts",
+      "question": "北米B2Bは既存事業で11%増だが、北米Consumer Servicesは2%減。",
+      "definition": "organic前年比。contractsのみ契約件数（2件）。consumerExBreachは漏洩対応サービスを除外",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "b2b",
+          "entity": "Experian",
+          "metric": "b2b",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "organic前年比。contractsのみ契約件数（2件）。consumerExBreachは漏洩対応サービスを除外"
+        },
+        {
+          "id": "consumer",
+          "entity": "Experian",
+          "metric": "consumer",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "organic前年比。contractsのみ契約件数（2件）。consumerExBreachは漏洩対応サービスを除外"
+        },
+        {
+          "id": "consumerExBreach",
+          "entity": "Experian",
+          "metric": "consumerExBreach",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "organic前年比。contractsのみ契約件数（2件）。consumerExBreachは漏洩対応サービスを除外"
+        },
+        {
+          "id": "contracts",
+          "entity": "Experian",
+          "metric": "contracts",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "organic前年比。contractsのみ契約件数（2件）。consumerExBreachは漏洩対応サービスを除外"
+        }
+      ],
+      "observations": [
+        {
+          "id": "b2b",
+          "entity": "Experian",
+          "metric": "b2b",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "organic前年比。contractsのみ契約件数（2件）。consumerExBreachは漏洩対応サービスを除外",
+          "value": 11,
+          "source": {
+            "url": "https://www.experianplc.com/newsroom/press-releases/2026/trading-update--first-quarter-fy27",
+            "publishedOn": "2026-07-16",
+            "locator": "本文・表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "consumer",
+          "entity": "Experian",
+          "metric": "consumer",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "organic前年比。contractsのみ契約件数（2件）。consumerExBreachは漏洩対応サービスを除外",
+          "value": -2,
+          "source": {
+            "url": "https://www.experianplc.com/newsroom/press-releases/2026/trading-update--first-quarter-fy27",
+            "publishedOn": "2026-07-16",
+            "locator": "本文・表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "consumerExBreach",
+          "entity": "Experian",
+          "metric": "consumerExBreach",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "organic前年比。contractsのみ契約件数（2件）。consumerExBreachは漏洩対応サービスを除外",
+          "value": 3,
+          "source": {
+            "url": "https://www.experianplc.com/newsroom/press-releases/2026/trading-update--first-quarter-fy27",
+            "publishedOn": "2026-07-16",
+            "locator": "本文・表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "contracts",
+          "entity": "Experian",
+          "metric": "contracts",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "organic前年比。contractsのみ契約件数（2件）。consumerExBreachは漏洩対応サービスを除外",
+          "value": 2,
+          "source": {
+            "url": "https://www.experianplc.com/newsroom/press-releases/2026/trading-update--first-quarter-fy27",
+            "publishedOn": "2026-07-16",
+            "locator": "本文・表",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "北米B2Bは既存事業で11%増だが、北米Consumer Servicesは2%減。"
+    },
+    {
+      "id": "guidance",
+      "question": "期初の既存事業増収率計画は6〜8%。",
+      "definition": "会社FY27期初organic増収計画、Q1更新で維持",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "low",
+          "entity": "Experian",
+          "metric": "low",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "会社FY27期初organic増収計画、Q1更新で維持"
+        },
+        {
+          "id": "high",
+          "entity": "Experian",
+          "metric": "high",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "会社FY27期初organic増収計画、Q1更新で維持"
+        }
+      ],
+      "observations": [
+        {
+          "id": "low",
+          "entity": "Experian",
+          "metric": "low",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "会社FY27期初organic増収計画、Q1更新で維持",
+          "value": 6,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/results-and-presentations/2026/Experian-FY26-FY-results-announcement.pdf",
+            "publishedOn": "2026-05-20",
+            "locator": "PDF 1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "high",
+          "entity": "Experian",
+          "metric": "high",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "会社FY27期初organic増収計画、Q1更新で維持",
+          "value": 8,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/results-and-presentations/2026/Experian-FY26-FY-results-announcement.pdf",
+            "publishedOn": "2026-05-20",
+            "locator": "PDF 1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "期初の既存事業増収率計画は6〜8%。"
+    },
+    {
+      "id": "stat-benchmark",
+      "question": "FY26の法定営業利益は2,045、総Benchmark EBITは2,397。",
+      "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "statutory",
+          "entity": "Experian",
+          "metric": "statutory",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "benchmark",
+          "entity": "Experian",
+          "metric": "benchmark",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "statutory",
+          "entity": "Experian",
+          "metric": "statutory",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 2045,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 63頁",
+            "kind": "primary",
+            "pdfPage": 63
+          }
+        },
+        {
+          "id": "benchmark",
+          "entity": "Experian",
+          "metric": "benchmark",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 2397,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 63頁",
+            "kind": "primary",
+            "pdfPage": 63
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "gap",
+          "operation": "difference",
+          "inputs": [
+            "benchmark",
+            "statutory"
+          ],
+          "definition": "総Benchmark EBITと法定営業利益の差",
+          "precision": 0,
+          "value": 352
+        }
+      ],
+      "claim": "FY26の法定営業利益は2,045、総Benchmark EBITは2,397。"
+    },
+    {
+      "id": "benchmark-cash",
+      "question": "さらに税・純支払利息・非支配持分配当を引いたBenchmark FCFは1,583となる。",
+      "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "benchmarkOCF",
+          "entity": "Experian",
+          "metric": "benchmarkOCF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "interest",
+          "entity": "Experian",
+          "metric": "interest",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "tax",
+          "entity": "Experian",
+          "metric": "tax",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "nciDividend",
+          "entity": "Experian",
+          "metric": "nciDividend",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "benchmarkFCF",
+          "entity": "Experian",
+          "metric": "benchmarkFCF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "conversion",
+          "entity": "Experian",
+          "metric": "conversion",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "benchmarkOCF",
+          "entity": "Experian",
+          "metric": "benchmarkOCF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 2221,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 212頁",
+            "kind": "primary",
+            "pdfPage": 212
+          }
+        },
+        {
+          "id": "interest",
+          "entity": "Experian",
+          "metric": "interest",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": -198,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 212頁",
+            "kind": "primary",
+            "pdfPage": 212
+          }
+        },
+        {
+          "id": "tax",
+          "entity": "Experian",
+          "metric": "tax",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": -438,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 212頁",
+            "kind": "primary",
+            "pdfPage": 212
+          }
+        },
+        {
+          "id": "nciDividend",
+          "entity": "Experian",
+          "metric": "nciDividend",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": -2,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 212頁",
+            "kind": "primary",
+            "pdfPage": 212
+          }
+        },
+        {
+          "id": "benchmarkFCF",
+          "entity": "Experian",
+          "metric": "benchmarkFCF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 1583,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 212頁",
+            "kind": "primary",
+            "pdfPage": 212
+          }
+        },
+        {
+          "id": "conversion",
+          "entity": "Experian",
+          "metric": "conversion",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 93,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF45頁 Cash flow conversion",
+            "kind": "primary",
+            "pdfPage": 45
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "benchmarkOCF",
+            "interest",
+            "tax",
+            "nciDividend"
+          ],
+          "definition": "Benchmark FCF",
+          "precision": 0,
+          "value": 1583
+        }
+      ],
+      "claim": "さらに税・純支払利息・非支配持分配当を引いたBenchmark FCFは1,583となる。"
+    },
+    {
+      "id": "stat-cash",
+      "question": "法定CFから別の見方をすると、営業CF2,239−無形資産購入677−有形資産購入49＝1,513。",
+      "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "OCF",
+          "entity": "Experian",
+          "metric": "OCF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "intangible",
+          "entity": "Experian",
+          "metric": "intangible",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "ppe",
+          "entity": "Experian",
+          "metric": "ppe",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "lease",
+          "entity": "Experian",
+          "metric": "lease",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "OCF",
+          "entity": "Experian",
+          "metric": "OCF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 2239,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 158頁",
+            "kind": "primary",
+            "pdfPage": 158
+          }
+        },
+        {
+          "id": "intangible",
+          "entity": "Experian",
+          "metric": "intangible",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": -677,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 158頁",
+            "kind": "primary",
+            "pdfPage": 158
+          }
+        },
+        {
+          "id": "ppe",
+          "entity": "Experian",
+          "metric": "ppe",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": -49,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 158頁",
+            "kind": "primary",
+            "pdfPage": 158
+          }
+        },
+        {
+          "id": "lease",
+          "entity": "Experian",
+          "metric": "lease",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": -48,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 158頁",
+            "kind": "primary",
+            "pdfPage": 158
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "postCapex",
+          "operation": "sum",
+          "inputs": [
+            "OCF",
+            "intangible",
+            "ppe"
+          ],
+          "definition": "筆者定義、資産売却加算せず、買収還元前",
+          "precision": 0,
+          "value": 1513
+        },
+        {
+          "id": "postLease",
+          "operation": "sum",
+          "inputs": [
+            "postCapex",
+            "lease"
+          ],
+          "definition": "上記からリース元本控除",
+          "precision": 0,
+          "value": 1465
+        }
+      ],
+      "claim": "法定CFから別の見方をすると、営業CF2,239−無形資産購入677−有形資産購入49＝1,513。"
+    },
+    {
+      "id": "capex-mix",
+      "question": "FY26の無形資産購入677の内訳はデータベース216、開発・購入ソフト461。",
+      "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "total",
+          "entity": "Experian",
+          "metric": "total",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "database",
+          "entity": "Experian",
+          "metric": "database",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "software",
+          "entity": "Experian",
+          "metric": "software",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "total",
+          "entity": "Experian",
+          "metric": "total",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 677,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 211頁",
+            "kind": "primary",
+            "pdfPage": 211
+          }
+        },
+        {
+          "id": "database",
+          "entity": "Experian",
+          "metric": "database",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 216,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 211頁",
+            "kind": "primary",
+            "pdfPage": 211
+          }
+        },
+        {
+          "id": "software",
+          "entity": "Experian",
+          "metric": "software",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 461,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 211頁",
+            "kind": "primary",
+            "pdfPage": 211
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "totalCapex",
+          "operation": "sum",
+          "inputs": [
+            "database",
+            "software"
+          ],
+          "definition": "無形資産購入",
+          "precision": 0,
+          "value": 677
+        }
+      ],
+      "claim": "FY26の無形資産購入677の内訳はデータベース216、開発・購入ソフト461。"
+    },
+    {
+      "id": "working-capital",
+      "question": "FY26の資金拘束は163で前年54より増加した。",
+      "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "Experian",
+          "metric": "current",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "previous",
+          "entity": "Experian",
+          "metric": "previous",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "receivables",
+          "entity": "Experian",
+          "metric": "receivables",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "payables",
+          "entity": "Experian",
+          "metric": "payables",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "grossReclassification",
+          "entity": "Experian",
+          "metric": "grossReclassification",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "Experian",
+          "metric": "current",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 163,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 211頁",
+            "kind": "primary",
+            "pdfPage": 211
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "Experian",
+          "metric": "previous",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 54,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 211頁",
+            "kind": "primary",
+            "pdfPage": 211
+          }
+        },
+        {
+          "id": "receivables",
+          "entity": "Experian",
+          "metric": "receivables",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 534,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 211頁",
+            "kind": "primary",
+            "pdfPage": 211
+          }
+        },
+        {
+          "id": "payables",
+          "entity": "Experian",
+          "metric": "payables",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 371,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 211頁",
+            "kind": "primary",
+            "pdfPage": 211
+          }
+        },
+        {
+          "id": "grossReclassification",
+          "entity": "Experian",
+          "metric": "grossReclassification",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 350,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 211頁",
+            "kind": "primary",
+            "pdfPage": 211
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "net",
+          "operation": "difference",
+          "inputs": [
+            "receivables",
+            "payables"
+          ],
+          "definition": "運転資本資金拘束",
+          "precision": 0,
+          "value": 163
+        }
+      ],
+      "claim": "FY26の資金拘束は163で前年54より増加した。"
+    },
+    {
+      "id": "allocation",
+      "question": "会社定義の買収関連支出792、普通配当590、純株式購入の現金698をBenchmark FCF1,583から差し引くと、単純差額はマイナス497。",
+      "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "fcf",
+          "entity": "Experian",
+          "metric": "fcf",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "acquisition",
+          "entity": "Experian",
+          "metric": "acquisition",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "dividend",
+          "entity": "Experian",
+          "metric": "dividend",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "netSharePurchase",
+          "entity": "Experian",
+          "metric": "netSharePurchase",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fcf",
+          "entity": "Experian",
+          "metric": "fcf",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 1583,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 67頁",
+            "kind": "primary",
+            "pdfPage": 67
+          }
+        },
+        {
+          "id": "acquisition",
+          "entity": "Experian",
+          "metric": "acquisition",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": -792,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 67頁",
+            "kind": "primary",
+            "pdfPage": 67
+          }
+        },
+        {
+          "id": "dividend",
+          "entity": "Experian",
+          "metric": "dividend",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": -590,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 67頁",
+            "kind": "primary",
+            "pdfPage": 67
+          }
+        },
+        {
+          "id": "netSharePurchase",
+          "entity": "Experian",
+          "metric": "netSharePurchase",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": -698,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 67頁",
+            "kind": "primary",
+            "pdfPage": 67
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "residual",
+          "operation": "sum",
+          "inputs": [
+            "fcf",
+            "acquisition",
+            "dividend",
+            "netSharePurchase"
+          ],
+          "definition": "部分的な資金使用の比較。完全CF bridgeではない",
+          "precision": 0,
+          "value": -497
+        }
+      ],
+      "claim": "会社定義の買収関連支出792、普通配当590、純株式購入の現金698をBenchmark FCF1,583から差し引くと、単純差額はマイナス497。"
+    },
+    {
+      "id": "net-debt",
+      "question": "実際、会社定義の期末純負債は4,684から5,179へ増えた。",
+      "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "Experian",
+          "metric": "current",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "previous",
+          "entity": "Experian",
+          "metric": "previous",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "Experian",
+          "metric": "current",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 5179,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 67頁",
+            "kind": "primary",
+            "pdfPage": 67
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "Experian",
+          "metric": "previous",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 4684,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 67頁",
+            "kind": "primary",
+            "pdfPage": 67
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "実際、会社定義の期末純負債は4,684から5,179へ増えた。"
+    },
+    {
+      "id": "roce",
+      "question": "会社の税引後ROCEは17.2%。",
+      "definition": "(Benchmark EBIT×(1−Benchmark tax rate)−NCI利益)/3点平均使用資本。会社公表17.2%。丸め入力再計算17.21%。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "roce",
+          "entity": "Experian",
+          "metric": "roce",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "(Benchmark EBIT×(1−Benchmark tax rate)−NCI利益)/3点平均使用資本。会社公表17.2%。丸め入力再計算17.21%。"
+        },
+        {
+          "id": "ebit",
+          "entity": "Experian",
+          "metric": "ebit",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "(Benchmark EBIT×(1−Benchmark tax rate)−NCI利益)/3点平均使用資本。会社公表17.2%。丸め入力再計算17.21%。"
+        },
+        {
+          "id": "taxRate",
+          "entity": "Experian",
+          "metric": "taxRate",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "(Benchmark EBIT×(1−Benchmark tax rate)−NCI利益)/3点平均使用資本。会社公表17.2%。丸め入力再計算17.21%。"
+        },
+        {
+          "id": "averageCapital",
+          "entity": "Experian",
+          "metric": "averageCapital",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "(Benchmark EBIT×(1−Benchmark tax rate)−NCI利益)/3点平均使用資本。会社公表17.2%。丸め入力再計算17.21%。"
+        },
+        {
+          "id": "noncontrolling",
+          "entity": "Experian",
+          "metric": "非支配持分帰属Benchmark利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "(Benchmark EBIT×(1−Benchmark tax rate)−NCI利益)/3点平均使用資本。会社公表17.2%。丸め入力再計算17.21%。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "roce",
+          "entity": "Experian",
+          "metric": "roce",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "(Benchmark EBIT×(1−Benchmark tax rate)−NCI利益)/3点平均使用資本。会社公表17.2%。丸め入力再計算17.21%。",
+          "value": 17.2,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 67頁",
+            "kind": "primary",
+            "pdfPage": 67
+          }
+        },
+        {
+          "id": "ebit",
+          "entity": "Experian",
+          "metric": "ebit",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "(Benchmark EBIT×(1−Benchmark tax rate)−NCI利益)/3点平均使用資本。会社公表17.2%。丸め入力再計算17.21%。",
+          "value": 2397,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 67頁",
+            "kind": "primary",
+            "pdfPage": 67
+          }
+        },
+        {
+          "id": "taxRate",
+          "entity": "Experian",
+          "metric": "taxRate",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "(Benchmark EBIT×(1−Benchmark tax rate)−NCI利益)/3点平均使用資本。会社公表17.2%。丸め入力再計算17.21%。",
+          "value": 25.5,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 67頁",
+            "kind": "primary",
+            "pdfPage": 67
+          }
+        },
+        {
+          "id": "averageCapital",
+          "entity": "Experian",
+          "metric": "averageCapital",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "(Benchmark EBIT×(1−Benchmark tax rate)−NCI利益)/3点平均使用資本。会社公表17.2%。丸め入力再計算17.21%。",
+          "value": 10335,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/reports/2026/experian-annual-report-2026.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 67頁",
+            "kind": "primary",
+            "pdfPage": 67
+          }
+        },
+        {
+          "id": "noncontrolling",
+          "entity": "Experian",
+          "metric": "非支配持分帰属Benchmark利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "(Benchmark EBIT×(1−Benchmark tax rate)−NCI利益)/3点平均使用資本。会社公表17.2%。丸め入力再計算17.21%。",
+          "value": 7,
+          "source": {
+            "url": "https://www.experianplc.com/content/dam/marketing/global/plc/en/assets/documents/results-and-presentations/2026/Experian-FY26-FY-results-announcement.pdf",
+            "publishedOn": "2026-05-20",
+            "locator": "Note6(g)(iii) capital employed",
+            "pdfPage": 30,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "会社の税引後ROCEは17.2%。"
+    },
+    {
+      "id": "equifax-cash",
+      "question": "信用情報で競合するEquifaxの2025年12月期は、営業CF1,615.7から現金設備投資481.4を引くと1,134.3となる。",
+      "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "OCF",
+          "entity": "Equifax",
+          "metric": "OCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        },
+        {
+          "id": "capex",
+          "entity": "Equifax",
+          "metric": "capex",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "OCF",
+          "entity": "Equifax",
+          "metric": "OCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": 1615.7,
+          "source": {
+            "url": "https://investor.equifax.com/sec-filings/all-sec-filings/content/0000033185-26-000004/a2025q48-kexhibit991.htm",
+            "publishedOn": "2026-02-04",
+            "locator": "本文・表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Equifax",
+          "metric": "capex",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結実績。Benchmarkは会社定義の非GAAP指標。",
+          "value": -481.4,
+          "source": {
+            "url": "https://investor.equifax.com/sec-filings/all-sec-filings/content/0000033185-26-000004/a2025q48-kexhibit991.htm",
+            "publishedOn": "2026-02-04",
+            "locator": "本文・表",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "postCapex",
+          "operation": "sum",
+          "inputs": [
+            "OCF",
+            "capex"
+          ],
+          "definition": "営業CF−現金資本支出。IFRS/USGAAP/期間差があり順位比較不可",
+          "precision": 1,
+          "value": 1134.3
+        }
+      ],
+      "claim": "信用情報で競合するEquifaxの2025年12月期は、営業CF1,615.7から現金設備投資481.4を引くと1,134.3となる。"
+    },
+    {
+      "id": "valuation-withheld",
+      "question": "現在の評価倍率",
+      "definition": "株価と整合したEPS期間が必要",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "price",
+          "entity": "Experian",
+          "metric": "株価",
+          "periodStart": "2026-10-29",
+          "periodEnd": "2026-10-29",
+          "unit": "GBP",
+          "basis": "market",
+          "definition": "同日時株価"
+        },
+        {
+          "id": "eps",
+          "entity": "Experian",
+          "metric": "EPS",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "GBP/share",
+          "basis": "company-forecast",
+          "definition": "株価と整合した予想利益"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "同日時株価及び整合した予想EPSを未検証。本文で倍率/目標株価を示さない。",
+      "omittedClaim": "現在のPERは割安である"
+    }
+  ]
+}
