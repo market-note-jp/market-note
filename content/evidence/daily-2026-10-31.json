@@ -1,0 +1,632 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-10-31",
+  "articleSha256": "4935c1694f8a96d6bef4f7195a1605553cf47b8f0aa57c1cff19886151639a13",
+  "checkedAt": "2026-10-30T21:25:14.180Z",
+  "informationCutoff": "2026-10-31T06:22:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "見出し、結論、要約、説明文、5件の全本文・影響分析・注目点・免責を最終確認。重要比較7件について全入力を確認し、SCREENの従来予想比較1件は原資料不足により依存する主張ごと除外。新旧予想の未確認を0で埋めず、現在会社予想156500百万円は10月30日原文PDF1頁で単独確認。キオクシアの単独四半期・IFRSとSCREENの上期・日本基準を企業間の利益順位に利用していない。ETFは簿価の将来政策ペース、配当は分割前決定額、CPIは同一系列、株価は通常終値同士である。PDF本文と必要なページ画像を読み、統計の3系列や決算累計列を混同しないことを確認。資料公表日は全て10月30日以前、日銀は30日12:02、SCREEN15:35、キオクシア18:45、AP30日通常終値は31日05:00JST以降・基準時刻前に取得した報道。",
+  "sourceChecks": [
+    {
+      "url": "https://ssl4.eir-parts.net/doc/285A/tdnet/2902681/00.pdf",
+      "publishedOn": "2026-10-30",
+      "pdfPage": 1,
+      "locator": "1.株主還元方針／2.剰余金配当",
+      "verified": "AI関連需要、投資とネットキャッシュ考慮、初配、10月1日1対3分割前、12月8日効力予定を確認。100%還元を利益全額配当と説明していない。"
+    },
+    {
+      "url": "https://www.release.tdnet.info/inbs/140120261029560240.pdf",
+      "publishedOn": "2026-10-30",
+      "pdfPage": 4,
+      "locator": "1.(1)当中間期の経営成績、半導体製造装置事業",
+      "verified": "AI、微細化・先端パッケージ、先端ロジック・メモリ投資、ファウンドリー/DRAM/保守需要の説明を確認。セグメント数値比較を追加しない。"
+    },
+    {
+      "url": "https://www.release.tdnet.info/inbs/140120261029560240.pdf",
+      "publishedOn": "2026-10-30",
+      "pdfPage": 1,
+      "locator": "3.連結業績予想",
+      "verified": "現通期会社営業利益予想156500百万円を確認。実績、経常利益、市場予想と区別。"
+    },
+    {
+      "url": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/",
+      "publishedOn": "2026-10-30",
+      "locator": "Data／Characteristics",
+      "verified": "動的表示のため当該日時通常終値を取得できずAP2営業日原報道を使用。"
+    },
+    {
+      "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-a01d3551e794fed1a0c317c20bc3f0a2",
+      "publishedOn": "2026-10-30",
+      "locator": "冒頭の市場説明",
+      "verified": "AI関連株の評価と投資支出への懸念というAPの説明を確認。指数下落を単一企業だけに帰属させていない。"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "kioxia-quarter-ifrs-op",
+      "question": "キオクシアの営業利益は同じ四半期・会計基準で拡大したか。",
+      "definition": "IFRS連結の単独7〜9月期の営業利益。中間累計・親会社利益・non-GAAPとは区別する。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "キオクシアHD（連結）",
+          "metric": "IFRS営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "単独四半期のIFRS連結営業利益"
+        },
+        {
+          "id": "previous",
+          "entity": "キオクシアHD（連結）",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "単独四半期のIFRS連結営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "キオクシアHD（連結）",
+          "metric": "IFRS営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "単独四半期のIFRS連結営業利益",
+          "value": 1994710,
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/285A/tdnet/2902676/00.pdf",
+            "publishedOn": "2026-10-30",
+            "pdfPage": 14,
+            "locator": "要約四半期連結損益計算書（印刷12頁）・営業利益・当/前第2四半期連結会計期間",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "キオクシアHD（連結）",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "単独四半期のIFRS連結営業利益",
+          "value": 85921,
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/285A/tdnet/2902676/00.pdf",
+            "publishedOn": "2026-10-30",
+            "pdfPage": 14,
+            "locator": "要約四半期連結損益計算書（印刷12頁）・営業利益・前第2四半期連結会計期間",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "キオクシアホールディングスが10月30日に発表した2026年7〜9月期の連結営業利益は1,994,710百万円で、前年同期85,921百万円から拡大した。いずれも日本円・IFRSの単独四半期実績であり、4〜9月累計やnon-GAAP営業利益との比較ではない。",
+      "calculations": []
+    },
+    {
+      "id": "kioxia-interim-dividend",
+      "question": "中間配当決定は従来予想とどう違うか。",
+      "definition": "9月30日基準日の中間配当。双方10月1日の1対3株式分割前の1株基準。決定額は支払済実績ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "decision",
+          "entity": "キオクシアHD",
+          "metric": "決定中間配当",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "円／分割前1株",
+          "basis": "actual",
+          "definition": "10月30日取締役会決定、12月8日効力予定の中間配当（現金支払済ではない）"
+        },
+        {
+          "id": "old",
+          "entity": "キオクシアHD",
+          "metric": "従来中間配当予想",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "円／分割前1株",
+          "basis": "company-forecast",
+          "definition": "7月31日公表の9月30日基準日中間配当予想"
+        }
+      ],
+      "observations": [
+        {
+          "id": "decision",
+          "entity": "キオクシアHD",
+          "metric": "決定中間配当",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "円／分割前1株",
+          "basis": "actual",
+          "definition": "10月30日取締役会決定、12月8日効力予定の中間配当（現金支払済ではない）",
+          "value": 90,
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/285A/tdnet/2902681/00.pdf",
+            "publishedOn": "2026-10-30",
+            "pdfPage": 1,
+            "locator": "2.剰余金の配当・決定額／1株当たり配当金、効力発生日、注記の分割基準",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "old",
+          "entity": "キオクシアHD",
+          "metric": "従来中間配当予想",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "円／分割前1株",
+          "basis": "company-forecast",
+          "definition": "7月31日公表の9月30日基準日中間配当予想",
+          "value": 0,
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/285A/tdnet/2902681/00.pdf",
+            "publishedOn": "2026-10-30",
+            "pdfPage": 1,
+            "locator": "2.剰余金の配当・直近の配当予想（7月31日公表）／1株当たり配当金。0円は表の確認値であり欠損代入ではない",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "同社は9月30日を基準日とする中間配当を、7月31日公表の予想0円から1株90円に決定した。90円は10月1日の1株を3株とする株式分割前の基準で、効力発生日は12月8日。配当決定を、すでに現金を受け取った実績と混同しない。",
+      "calculations": []
+    },
+    {
+      "id": "screen-h1-op-growth",
+      "question": "SCREENの上期営業利益は前年同期比でどう変化したか。",
+      "definition": "日本基準連結の4〜9月期営業利益実績同士。公表百万円値から増益率を計算。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "SCREEN HD（連結）",
+          "metric": "上期営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "日本基準連結の上期営業利益実績"
+        },
+        {
+          "id": "previous",
+          "entity": "SCREEN HD（連結）",
+          "metric": "上期営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "日本基準連結の上期営業利益実績"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "SCREEN HD（連結）",
+          "metric": "上期営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "日本基準連結の上期営業利益実績",
+          "value": 54523,
+          "source": {
+            "url": "https://www.release.tdnet.info/inbs/140120261029560240.pdf",
+            "publishedOn": "2026-10-30",
+            "pdfPage": 1,
+            "locator": "1.(1)連結経営成績・営業利益・2027年3月期中間期",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "SCREEN HD（連結）",
+          "metric": "上期営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "日本基準連結の上期営業利益実績",
+          "value": 46454,
+          "source": {
+            "url": "https://www.release.tdnet.info/inbs/140120261029560240.pdf",
+            "publishedOn": "2026-10-30",
+            "pdfPage": 1,
+            "locator": "1.(1)連結経営成績・営業利益・2026年3月期中間期",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "SCREENホールディングスの2026年4〜9月期連結営業利益は54,523百万円で、前年同期46,454百万円から17.4%増加した。日本円・日本基準の上期実績同士の比較で、増益率は公表された百万円単位の数値から小数第1位に丸めた。",
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "(54523/46454−1)×100、小数第1位。原数値の百万円未満切捨差により表の増減金額とは1百万円ずれる可能性がある。",
+          "precision": 1,
+          "value": 17.4
+        }
+      ]
+    },
+    {
+      "id": "boj-policy-rate",
+      "question": "政策金利の誘導水準は前回決定から変わったか。",
+      "definition": "無担保コール翌日物の誘導方針。年率%。付利・貸出金利・国債利回りではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "日本銀行",
+          "metric": "無担保コール翌日物の誘導水準",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "年率%",
+          "basis": "actual",
+          "definition": "10月30日に採択された次回会合までの政策誘導水準、程度"
+        },
+        {
+          "id": "previous",
+          "entity": "日本銀行",
+          "metric": "無担保コール翌日物の誘導水準",
+          "periodStart": "2026-09-18",
+          "periodEnd": "2026-09-18",
+          "unit": "年率%",
+          "basis": "actual",
+          "definition": "9月18日に決定、9月24日適用の政策誘導水準、程度"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "日本銀行",
+          "metric": "無担保コール翌日物の誘導水準",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "年率%",
+          "basis": "actual",
+          "definition": "10月30日に採択された次回会合までの政策誘導水準、程度",
+          "value": 1.25,
+          "source": {
+            "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+            "publishedOn": "2026-10-30",
+            "pdfPage": 1,
+            "locator": "1.金融市場調節方針・無担保コールレート1.25%程度。PDF3頁で12:02公表を確認",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "日本銀行",
+          "metric": "無担保コール翌日物の誘導水準",
+          "periodStart": "2026-09-18",
+          "periodEnd": "2026-09-18",
+          "unit": "年率%",
+          "basis": "actual",
+          "definition": "9月18日に決定、9月24日適用の政策誘導水準、程度",
+          "value": 1.25,
+          "source": {
+            "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k260918a.pdf",
+            "publishedOn": "2026-09-18",
+            "pdfPage": 1,
+            "locator": "1.金融市場調節方針・無担保コールレート1.25%程度、注1の適用日",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "日銀は10月30日、無担保コールレート（オーバーナイト物）を1.25%程度で推移するよう促す方針を決定した。9月18日の決定と同じ水準で、政策金利の誘導方針を維持した。預金金利や国債利回りそのものを固定する決定ではない。",
+      "calculations": [
+        {
+          "id": "change",
+          "operation": "difference",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "新誘導水準−前回誘導水準（%ポイント）。同値を確認した結果であり欠損値を0にしていない。",
+          "precision": 2,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "boj-etf-sale-pace",
+      "question": "ETF売却の公表年間ペースはどの基準で変更されるか。",
+      "definition": "旧・新の簿価による年間政策ペースを比較。実売却額や時価換算ではない。新ペースは2027年1月実施。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "日本銀行",
+          "metric": "ETF年間売却ペース",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "億円／年（簿価）",
+          "basis": "actual",
+          "definition": "2025年9月決定、2026年1月開始の公表政策ペース。年間実績ではない"
+        },
+        {
+          "id": "new",
+          "entity": "日本銀行",
+          "metric": "ETF年間売却ペース",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "億円／年（簿価）",
+          "basis": "actual",
+          "definition": "2026年10月30日採択、2027年1月実施の公表政策ペース。将来の実売却額ではない"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "日本銀行",
+          "metric": "ETF年間売却ペース",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "億円／年（簿価）",
+          "basis": "actual",
+          "definition": "2025年9月決定、2026年1月開始の公表政策ペース。年間実績ではない",
+          "value": 3300,
+          "source": {
+            "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+            "publishedOn": "2026-10-30",
+            "pdfPage": 1,
+            "locator": "2.ETFの売却ペースの見直し・従来年3300億円（簿価）、本年1月売却開始",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "日本銀行",
+          "metric": "ETF年間売却ペース",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "億円／年（簿価）",
+          "basis": "actual",
+          "definition": "2026年10月30日採択、2027年1月実施の公表政策ペース。将来の実売却額ではない",
+          "value": 8600,
+          "source": {
+            "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+            "publishedOn": "2026-10-30",
+            "pdfPage": 1,
+            "locator": "2.ETFの売却ペースの見直し・年8600億円（簿価）、脚注2（2027年1月）、脚注3（調整・停止可能）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "一方、保有ETFの年間売却ペースは簿価ベースで3,300億円程度から8,600億円程度へ見直す。新ペースの実施は2027年1月から。両方とも公表された年間の方針額であり、今年すでに売却した実績額や時価ベースの額ではない。",
+      "calculations": []
+    },
+    {
+      "id": "tokyo-core-cpi",
+      "question": "東京都区部コアCPI前年比の伸びは9月からどう変わったか。",
+      "definition": "2025年基準・東京都区部・生鮮食品を除く総合の前年同月比。9月掲載値と10月中旬速報。全国、総合、エネルギー除外系列とは混ぜない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "october",
+          "entity": "総務省統計局／東京都区部",
+          "metric": "生鮮食品を除く総合CPI前年同月比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%（前年同月比）",
+          "basis": "actual",
+          "definition": "2025年基準、東京都区部、10月中旬速報、季節調整前前年同月比"
+        },
+        {
+          "id": "september",
+          "entity": "総務省統計局／東京都区部",
+          "metric": "生鮮食品を除く総合CPI前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%（前年同月比）",
+          "basis": "actual",
+          "definition": "同じ2025年基準、東京都区部、10月公表表に載る9月値の前年同月比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "october",
+          "entity": "総務省統計局／東京都区部",
+          "metric": "生鮮食品を除く総合CPI前年同月比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%（前年同月比）",
+          "basis": "actual",
+          "definition": "2025年基準、東京都区部、10月中旬速報、季節調整前前年同月比",
+          "value": 2.6,
+          "source": {
+            "url": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/pdf/kubu.pdf",
+            "publishedOn": "2026-10-30",
+            "pdfPage": 1,
+            "locator": "表1 総合指数などの動き・生鮮食品を除く総合／前年同月比／2026年10月。PDF1頁画像で系列名と列を照合",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "september",
+          "entity": "総務省統計局／東京都区部",
+          "metric": "生鮮食品を除く総合CPI前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%（前年同月比）",
+          "basis": "actual",
+          "definition": "同じ2025年基準、東京都区部、10月公表表に載る9月値の前年同月比",
+          "value": 2.7,
+          "source": {
+            "url": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/pdf/kubu.pdf",
+            "publishedOn": "2026-10-30",
+            "pdfPage": 1,
+            "locator": "表1 総合指数などの動き・生鮮食品を除く総合／前年同月比／2026年9月。PDF1頁画像で系列名と列を照合",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "総務省が10月30日に公表した東京都区部の10月中旬速報では、生鮮食品を除く総合CPIの前年同月比は2.6%上昇。9月の2.7%上昇から0.1ポイント縮小した。同じ2025年基準・東京都区部・生鮮食品除く系列の比較である。",
+      "calculations": [
+        {
+          "id": "change",
+          "operation": "difference",
+          "inputs": [
+            "october",
+            "september"
+          ],
+          "definition": "10月前年比−9月前年比。価格水準の前月比ではない。",
+          "precision": 1,
+          "value": -0.1
+        }
+      ]
+    },
+    {
+      "id": "sp500-daily-cash-close",
+      "question": "米株下落率を同じ通常取引終値同士で算出できるか。",
+      "definition": "S&P500価格指数ポイント。10月30日16:00EDTと10月29日16:00EDTの通常終値。ドル金額・先物・配当込み指数ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米東部夏時間16:00の価格指数通常終値（日本時間10月31日05:00）"
+        },
+        {
+          "id": "previous",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-29",
+          "periodEnd": "2026-10-29",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米東部夏時間16:00の価格指数通常終値（日本時間10月30日05:00）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米東部夏時間16:00の価格指数通常終値（日本時間10月31日05:00）",
+          "value": 7580.07,
+          "source": {
+            "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-a01d3551e794fed1a0c317c20bc3f0a2",
+            "publishedOn": "2026-10-30",
+            "locator": "On Friday: The S&P 500 fell 140.32 points ... to 7,580.07。APの10/30終値記事",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数提供元S&P DJIの公開ページはデータ欄が動的表示で、観測日時付きの当該通常終値を取得できなかった。代わりに主要報道APの各営業日の通常取引終値一覧を確認した。先物・日中値・時間外値で代用していない。"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-29",
+          "periodEnd": "2026-10-29",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米東部夏時間16:00の価格指数通常終値（日本時間10月30日05:00）",
+          "value": 7720.39,
+          "source": {
+            "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-2c26b0b1bbc3bfab9f3f4b902172f458",
+            "publishedOn": "2026-10-29",
+            "locator": "On Thursday: The S&P 500 ... to 7,720.39。APの10/29終値記事。Centrien参照リンクからAP原報道を開いて確認",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数提供元S&P DJIの公開ページはデータ欄が動的表示で、観測日時付きの当該通常終値を取得できなかった。代わりに主要報道APの各営業日の通常取引終値一覧を確認した。先物・日中値・時間外値で代用していない。"
+          }
+        }
+      ],
+      "claim": "10月30日の米通常取引でS&P500は7,580.07ポイントで終了し、29日終値7,720.39ポイントから140.32ポイント下落した。日次騰落率は（7,580.07÷7,720.39−1）×100で−1.82%（小数第2位）。通常取引終了は米東部夏時間30日16:00、日本時間31日05:00で、先物や時間外取引の値ではない。",
+      "calculations": [
+        {
+          "id": "points",
+          "operation": "difference",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "30日終値−29日終値",
+          "precision": 2,
+          "value": -140.32
+        },
+        {
+          "id": "daily-return",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "(7580.07/7720.39−1)×100。日次価格騰落率を小数第2位に丸める。",
+          "precision": 2,
+          "value": -1.82
+        }
+      ]
+    },
+    {
+      "id": "screen-prior-forecast-change-withheld",
+      "question": "SCREENの通期予想は前回会社予想からどれだけ修正されたか。",
+      "definition": "同じ2027年3月期の日本基準連結営業利益会社予想について新旧原資料を確認する計画。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "SCREEN HD（連結）",
+          "metric": "従来通期営業利益会社予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円（日本円）",
+          "basis": "company-forecast",
+          "definition": "前回決算時点の2027年3月期通期営業利益会社予想"
+        },
+        {
+          "id": "current",
+          "entity": "SCREEN HD（連結）",
+          "metric": "現在通期営業利益会社予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円（日本円）",
+          "basis": "company-forecast",
+          "definition": "10月30日公表の2027年3月期通期営業利益会社予想"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "SCREEN HD（連結）",
+          "metric": "現在通期営業利益会社予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円（日本円）",
+          "basis": "company-forecast",
+          "definition": "10月30日公表の2027年3月期通期営業利益会社予想",
+          "value": 156500,
+          "source": {
+            "url": "https://www.release.tdnet.info/inbs/140120261029560240.pdf",
+            "publishedOn": "2026-10-30",
+            "pdfPage": 1,
+            "locator": "3.連結業績予想・通期営業利益156500百万円",
+            "kind": "primary"
+          }
+        }
+      ],
+      "reason": "現在短信には修正無の注記があるが、当初計画の独立原資料をそろえる計画については公式IRライブラリが403、前回短信の保管版PDFリンクがHTML応答、追加の公開リンク確認もタイムアウトで内容を確認できなかった。未確認を記載なしとは判定しない。旧数値との比較および据え置き・上方修正等の見出し・要約・本文を外し、確認できた現在会社予想だけを掲載。",
+      "omittedClaim": "SCREENの通期営業利益予想の新旧比較による修正幅を断定する。",
+      "calculations": []
+    }
+  ]
+}
