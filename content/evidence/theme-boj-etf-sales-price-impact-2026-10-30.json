@@ -1,0 +1,425 @@
+{
+  "version": 1,
+  "articleSlug": "theme-boj-etf-sales-price-impact-2026-10-30",
+  "articleSha256": "ae221ccc5dff33b4f609e0c547599b593ffe0b2b860cbfae847d8c36900d620d",
+  "checkedAt": "2026-10-30T11:02:37.445Z",
+  "informationCutoff": "2026-10-30T10:54:00.937877+00:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "日銀10/30決定PDF1/3頁と参考PDF1頁、旧処分方針、JPXETF機構本文照合。倍率/割合/価格影響を区別。 Markdown仮digest。統合後final route digestと独立レビューを実施する。 Final integrated Markdown reviewed against frozen source; independent review PASS: themes/theme-boj-etf-sales-price-impact-2026-10-30/review.md. Public body and internal evidence kept separate.",
+  "comparisons": [
+    {
+      "id": "pace",
+      "question": "10月30日12時02分公表の決定で、ETFの年間売却ペースは簿価で3,300億円程度から8,600億円程度へ増える。",
+      "definition": "本文の対象期・単位・定義に従い原本照合。",
+      "status": "ready",
+      "claim": "10月30日12時02分公表の決定で、ETFの年間売却ペースは簿価で3,300億円程度から8,600億円程度へ増える。",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "日本銀行",
+          "metric": "旧年間売却簿価",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "旧年間売却簿価"
+        },
+        {
+          "id": "new",
+          "entity": "日本銀行",
+          "metric": "新年間売却簿価",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "新年間売却簿価"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "日本銀行",
+          "metric": "旧年間売却簿価",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "旧年間売却簿価",
+          "value": 3300,
+          "source": {
+            "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF1頁・旧年間売却簿価",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "日本銀行",
+          "metric": "新年間売却簿価",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "新年間売却簿価",
+          "value": 8600,
+          "source": {
+            "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF1頁・新年間売却簿価",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "ratio",
+      "question": "現在より約2.61倍だが、きょう直ちにその量を売ったという意味ではない。",
+      "definition": "本文の対象期・単位・定義に従い原本照合。",
+      "status": "ready",
+      "claim": "現在より約2.61倍だが、きょう直ちにその量を売ったという意味ではない。",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "日本銀行",
+          "metric": "旧年間売却簿価",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "旧年間売却簿価"
+        },
+        {
+          "id": "new",
+          "entity": "日本銀行",
+          "metric": "新年間売却簿価",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "新年間売却簿価"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "日本銀行",
+          "metric": "旧年間売却簿価",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "旧年間売却簿価",
+          "value": 3300,
+          "source": {
+            "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF1頁・旧年間売却簿価",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "日本銀行",
+          "metric": "新年間売却簿価",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "新年間売却簿価",
+          "value": 8600,
+          "source": {
+            "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF1頁・新年間売却簿価",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "ratio-percent",
+          "operation": "ratio-percent",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "value": 260.61,
+          "definition": "新/旧×100、本文倍数は100で除す",
+          "precision": 2
+        }
+      ]
+    },
+    {
+      "id": "marketvalue",
+      "question": "日銀は新ペースを時価換算すると年間2兆4,600億円程度と説明している。",
+      "definition": "本文の対象期・単位・定義に従い原本照合。",
+      "status": "ready",
+      "claim": "日銀は新ペースを時価換算すると年間2兆4,600億円程度と説明している。",
+      "requiredInputs": [
+        {
+          "id": "mv",
+          "entity": "日本銀行",
+          "metric": "時価換算売却額・過去比率利用の概算",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "時価換算売却額・過去比率利用の概算"
+        }
+      ],
+      "observations": [
+        {
+          "id": "mv",
+          "entity": "日本銀行",
+          "metric": "時価換算売却額・過去比率利用の概算",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "時価換算売却額・過去比率利用の概算",
+          "value": 24600,
+          "source": {
+            "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF1頁・時価換算売却額・過去比率利用の概算",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "table-book",
+      "question": "| 年間売却ペース・簿価 | 約3,300億円 | 約8,600億円 |",
+      "definition": "本文の対象期・単位・定義に従い原本照合。",
+      "status": "ready",
+      "claim": "| 年間売却ペース・簿価 | 約3,300億円 | 約8,600億円 |",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "日本銀行",
+          "metric": "年間簿価ペース",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "年間簿価ペース"
+        },
+        {
+          "id": "new",
+          "entity": "日本銀行",
+          "metric": "年間簿価ペース",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "年間簿価ペース"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "日本銀行",
+          "metric": "年間簿価ペース",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "年間簿価ペース",
+          "value": 3300,
+          "source": {
+            "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k261030c.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF1頁・年間簿価ペース",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "日本銀行",
+          "metric": "年間簿価ペース",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "年間簿価ペース",
+          "value": 8600,
+          "source": {
+            "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k261030c.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF1頁・年間簿価ペース",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "table-share",
+      "question": "| 市場全体の売買代金に対する割合の目安 | 約0.05% | 約0.1% |",
+      "definition": "本文の対象期・単位・定義に従い原本照合。",
+      "status": "ready",
+      "claim": "| 市場全体の売買代金に対する割合の目安 | 約0.05% | 約0.1% |",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "日本銀行",
+          "metric": "売買代金割合・計算基準時点が異なる",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "売買代金割合・計算基準時点が異なる"
+        },
+        {
+          "id": "new",
+          "entity": "日本銀行",
+          "metric": "売買代金割合・計算基準時点が異なる",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "売買代金割合・計算基準時点が異なる"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "日本銀行",
+          "metric": "売買代金割合・計算基準時点が異なる",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "売買代金割合・計算基準時点が異なる",
+          "value": 0.05,
+          "source": {
+            "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k261030c.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF1頁・売買代金割合・計算基準時点が異なる",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "日本銀行",
+          "metric": "売買代金割合・計算基準時点が異なる",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "売買代金割合・計算基準時点が異なる",
+          "value": 0.1,
+          "source": {
+            "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k261030c.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF1頁・売買代金割合・計算基準時点が異なる",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "years",
+      "question": "| 残高と年間簿価売却額から計算した完了年数 | 約112年 | 約43年 |",
+      "definition": "本文の対象期・単位・定義に従い原本照合。",
+      "status": "ready",
+      "claim": "| 残高と年間簿価売却額から計算した完了年数 | 約112年 | 約43年 |",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "日本銀行",
+          "metric": "9月末残高/年額の機械的年数",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "年",
+          "basis": "company-forecast",
+          "definition": "9月末残高/年額の機械的年数"
+        },
+        {
+          "id": "new",
+          "entity": "日本銀行",
+          "metric": "9月末残高/年額の機械的年数",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "年",
+          "basis": "company-forecast",
+          "definition": "9月末残高/年額の機械的年数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "日本銀行",
+          "metric": "9月末残高/年額の機械的年数",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "年",
+          "basis": "company-forecast",
+          "definition": "9月末残高/年額の機械的年数",
+          "value": 112,
+          "source": {
+            "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k261030c.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF1頁・9月末残高/年額の機械的年数",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "日本銀行",
+          "metric": "9月末残高/年額の機械的年数",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "年",
+          "basis": "company-forecast",
+          "definition": "9月末残高/年額の機械的年数",
+          "value": 43,
+          "source": {
+            "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k261030c.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF1頁・9月末残高/年額の機械的年数",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "price-impact",
+      "question": "ETF売却増額から株価下落幅を計算できるか",
+      "definition": "流動性・買い需要・相場要因を統制した因果推定が必要",
+      "status": "withheld",
+      "reason": "公表ペース/市場割合は価格弾性を含まない。個別執行と対照データ未確認。",
+      "omittedClaim": "日銀のETF売却で日経平均は必ず2.6%下落する",
+      "requiredInputs": [
+        {
+          "id": "missing",
+          "entity": "ETF市場",
+          "metric": "売却起因の価格影響推計",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-10-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "流動性・買い需要・相場要因を統制した因果推定が必要"
+        }
+      ],
+      "observations": [],
+      "calculations": []
+    }
+  ]
+}
