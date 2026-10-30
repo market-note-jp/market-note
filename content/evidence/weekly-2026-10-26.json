@@ -1,0 +1,654 @@
+{
+  "version": 1,
+  "articleSlug": "weekly-2026-10-26",
+  "articleSha256": "58a55d664570772000d17dd4e5e2d0dfa55d3110e0facbf70a7a701b10cd665b",
+  "checkedAt": "2026-10-31T08:05:05.894352+09:00",
+  "informationCutoff": "2026-10-31T08:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終記事の見出し・要約・全表・本文・関係者見解・予定・出典・免責をレビュー。重要な数値比較は4指数週間、SOX前日比、Amazon TTM FCFの全3構成値と式、日銀ETF年間ペース。すべて入力の期間・単位・基準を保存。Amazonの四半期利益との混在や企業間のFCFランキングは行わない。SOXは同じ二次データの精度統一とFREDの更新期限を明記。キオクシア原文PDFの取得が503となり、未確認の利益倍率・予想比較・配当額比較は見出しも含め除外し、主要報道で確認した発表事実と時刻に限定。金利・為替・原油は朝の定性報道で統一時刻の週間数値比較はない。政策金利は当該声明の決定をそのまま記載。将来の選挙結果・政策結果・投資回収を実績としない。",
+  "sourceChecks": [
+    {
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+      "publishedOn": "2026-10-29",
+      "locator": "連結CF表、Supplemental Financial Information、脚注(1)",
+      "reviewed": "168300−215192＋4535＝−42357、会社FCF表と一致。"
+    },
+    {
+      "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+      "publishedOn": "2026-10-30",
+      "pdfPage": 1,
+      "locator": "第1節・第2節及び脚注",
+      "reviewed": "原文PDFをクラウドに取得しpdftotextで確認。金利1.25%、ETFの方針と時期、調整停止を確認。PDF3ページに11月2日14時の全文公表予定。"
+    },
+    {
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+      "publishedOn": "2026-10-28",
+      "locator": "決定及び景気・物価の段落",
+      "reviewed": "FF金利3.75–4%維持、強い活動と設備投資、高い物価。次回利下げの約束とはしない。"
+    },
+    {
+      "url": "https://www.zacks.com/stock/news/3019994/2-ai-stocks-poised-to-surge-on-the-halloween-effect",
+      "publishedOn": "2026-10-30",
+      "locator": "Tirthankar Chakraborty署名・Halloween strategy説明",
+      "reviewed": "検索で確認できた著者・季節性を根拠にした強気論に限定。目標価格、確率、過去リターンは引用しない。"
+    },
+    {
+      "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-tumble-as-amazon-intel-results-deepen-ai-spending-woes-4986163",
+      "publishedOn": "2026-10-30",
+      "locator": "Jake Behan発言",
+      "reviewed": "成長速度だけでなく必要な支出が問われるとの見解を要約。朝の記事の先物や個別下落率は採用しない。"
+    },
+    {
+      "url": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+      "publishedOn": "2026-10-30",
+      "locator": "最終終値版・Oliver Pursche発言",
+      "reviewed": "回収の有無と実現時期、高い期待に応える企業と届かない企業の評価の違いを要約。"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "nikkei-weekly",
+      "question": "日経平均株価の23日終値から30日終値の週間騰落率は",
+      "definition": "現物価格指数の通常取引終値。配当再投資・円換算・先物・時間外を含まない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "previous",
+          "entity": "日経平均株価",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-23",
+          "periodEnd": "2026-10-23",
+          "unit": "JPY",
+          "basis": "market",
+          "definition": "現物価格指数の通常取引終値。配当再投資・円換算・先物・時間外を含まない。"
+        },
+        {
+          "id": "current",
+          "entity": "日経平均株価",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "JPY",
+          "basis": "market",
+          "definition": "現物価格指数の通常取引終値。配当再投資・円換算・先物・時間外を含まない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "previous",
+          "entity": "日経平均株価",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-23",
+          "periodEnd": "2026-10-23",
+          "unit": "JPY",
+          "basis": "market",
+          "definition": "現物価格指数の通常取引終値。配当再投資・円換算・先物・時間外を含まない。",
+          "value": 62693.16,
+          "source": {
+            "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261023&idx=nk225",
+            "publishedOn": "2026-10-23",
+            "locator": "2026-10-23の日次サマリー／日経平均株価／終値",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "current",
+          "entity": "日経平均株価",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "JPY",
+          "basis": "market",
+          "definition": "現物価格指数の通常取引終値。配当再投資・円換算・先物・時間外を含まない。",
+          "value": 63290.11,
+          "source": {
+            "url": "https://indexes.nikkei.co.jp/nkave/archives/summary",
+            "publishedOn": "2026-10-30",
+            "locator": "2026-10-30の日次サマリー／日経平均株価／終値",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "日経平均は週間+0.95%",
+      "calculations": [
+        {
+          "id": "return",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "（10月30日終値÷10月23日終値−1）×100",
+          "precision": 2,
+          "value": 0.95
+        }
+      ]
+    },
+    {
+      "id": "dow-weekly",
+      "question": "ダウ工業株30種平均の23日終値から30日終値の週間騰落率は",
+      "definition": "現物価格指数の通常取引終値。配当再投資・円換算・先物・時間外を含まない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "previous",
+          "entity": "ダウ工業株30種平均",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-23",
+          "periodEnd": "2026-10-23",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "現物価格指数の通常取引終値。配当再投資・円換算・先物・時間外を含まない。"
+        },
+        {
+          "id": "current",
+          "entity": "ダウ工業株30種平均",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "現物価格指数の通常取引終値。配当再投資・円換算・先物・時間外を含まない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "previous",
+          "entity": "ダウ工業株30種平均",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-23",
+          "periodEnd": "2026-10-23",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "現物価格指数の通常取引終値。配当再投資・円換算・先物・時間外を含まない。",
+          "value": 52215.16,
+          "source": {
+            "url": "https://apnews.com/article/e07c72bc5cbe5dffe352ddf30054e35f",
+            "publishedOn": "2026-10-23",
+            "locator": "How major US stock indexes fared Friday 10/23/2026／On Friday／ダウ工業株30種平均",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数提供元の両日履歴一式を取得できず、AP確定終値報道を検索結果で確認。30日はReuters最終版と照合。"
+          }
+        },
+        {
+          "id": "current",
+          "entity": "ダウ工業株30種平均",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "現物価格指数の通常取引終値。配当再投資・円換算・先物・時間外を含まない。",
+          "value": 51770.31,
+          "source": {
+            "url": "https://apnews.com/article/a01d3551e794fed1a0c317c20bc3f0a2",
+            "publishedOn": "2026-10-30",
+            "locator": "How major US stock indexes fared Friday 10/30/2026／On Friday／ダウ工業株30種平均",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数提供元の両日履歴一式を取得できず、AP確定終値報道を検索結果で確認。30日はReuters最終版と照合。"
+          }
+        }
+      ],
+      "claim": "ダウ平均は-0.85%",
+      "calculations": [
+        {
+          "id": "return",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "（10月30日終値÷10月23日終値−1）×100",
+          "precision": 2,
+          "value": -0.85
+        }
+      ]
+    },
+    {
+      "id": "nasdaq-weekly",
+      "question": "NASDAQ総合の23日終値から30日終値の週間騰落率は",
+      "definition": "現物価格指数の通常取引終値。配当再投資・円換算・先物・時間外を含まない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "previous",
+          "entity": "NASDAQ総合",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-23",
+          "periodEnd": "2026-10-23",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "現物価格指数の通常取引終値。配当再投資・円換算・先物・時間外を含まない。"
+        },
+        {
+          "id": "current",
+          "entity": "NASDAQ総合",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "現物価格指数の通常取引終値。配当再投資・円換算・先物・時間外を含まない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "previous",
+          "entity": "NASDAQ総合",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-23",
+          "periodEnd": "2026-10-23",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "現物価格指数の通常取引終値。配当再投資・円換算・先物・時間外を含まない。",
+          "value": 25955.34,
+          "source": {
+            "url": "https://apnews.com/article/e07c72bc5cbe5dffe352ddf30054e35f",
+            "publishedOn": "2026-10-23",
+            "locator": "How major US stock indexes fared Friday 10/23/2026／On Friday／NASDAQ総合",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数提供元の両日履歴一式を取得できず、AP確定終値報道を検索結果で確認。30日はReuters最終版と照合。"
+          }
+        },
+        {
+          "id": "current",
+          "entity": "NASDAQ総合",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "現物価格指数の通常取引終値。配当再投資・円換算・先物・時間外を含まない。",
+          "value": 25437,
+          "source": {
+            "url": "https://apnews.com/article/a01d3551e794fed1a0c317c20bc3f0a2",
+            "publishedOn": "2026-10-30",
+            "locator": "How major US stock indexes fared Friday 10/30/2026／On Friday／NASDAQ総合",
+            "kind": "secondary",
+            "primaryUnavailableReason": "指数提供元の両日履歴一式を取得できず、AP確定終値報道を検索結果で確認。30日はReuters最終版と照合。"
+          }
+        }
+      ],
+      "claim": "NASDAQ総合は-2.00%",
+      "calculations": [
+        {
+          "id": "return",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "（10月30日終値÷10月23日終値−1）×100",
+          "precision": 2,
+          "value": -2
+        }
+      ]
+    },
+    {
+      "id": "sox-weekly",
+      "question": "SOXの23日終値から30日終値の週間騰落率は",
+      "definition": "現物価格指数の通常取引終値。配当再投資・円換算・先物・時間外を含まない。両日とも同じInvesting.com日次履歴、小数第1位。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "previous",
+          "entity": "SOX",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-23",
+          "periodEnd": "2026-10-23",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "現物価格指数の通常取引終値。配当再投資・円換算・先物・時間外を含まない。両日とも同じInvesting.com日次履歴、小数第1位。"
+        },
+        {
+          "id": "current",
+          "entity": "SOX",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "現物価格指数の通常取引終値。配当再投資・円換算・先物・時間外を含まない。両日とも同じInvesting.com日次履歴、小数第1位。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "previous",
+          "entity": "SOX",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-23",
+          "periodEnd": "2026-10-23",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "現物価格指数の通常取引終値。配当再投資・円換算・先物・時間外を含まない。両日とも同じInvesting.com日次履歴、小数第1位。",
+          "value": 10779.5,
+          "source": {
+            "url": "https://jp.investing.com/indices/phlx-semiconductor-historical-data",
+            "publishedOn": "2026-10-30",
+            "locator": "2026-10-23行・終値列（小数第1位）",
+            "kind": "secondary",
+            "primaryUnavailableReason": "Nasdaq提供FREDは確認時点で29日までの更新。両日を同一提供元・精度に統一。23日はFREDの10779.46と丸め後一致。"
+          }
+        },
+        {
+          "id": "current",
+          "entity": "SOX",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "現物価格指数の通常取引終値。配当再投資・円換算・先物・時間外を含まない。両日とも同じInvesting.com日次履歴、小数第1位。",
+          "value": 10688.8,
+          "source": {
+            "url": "https://jp.investing.com/indices/phlx-semiconductor-historical-data",
+            "publishedOn": "2026-10-30",
+            "locator": "2026-10-30行・終値列（小数第1位）",
+            "kind": "secondary",
+            "primaryUnavailableReason": "Nasdaq提供FREDは確認時点で29日までの更新。両日を同一提供元・精度に統一。23日はFREDの10779.46と丸め後一致。"
+          }
+        }
+      ],
+      "claim": "SOXは-0.84%",
+      "calculations": [
+        {
+          "id": "return",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "（10月30日終値÷10月23日終値−1）×100",
+          "precision": 2,
+          "value": -0.84
+        }
+      ]
+    },
+    {
+      "id": "sox-friday",
+      "question": "SOXの金曜日の前日比は週間騰落率と同じか",
+      "definition": "通常取引終値の前日比。週初来・月初来とは異なる。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "prev",
+          "entity": "SOX",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-29",
+          "periodEnd": "2026-10-29",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "同じInvesting.com日次履歴の現物通常取引終値、小数1位。"
+        },
+        {
+          "id": "cur",
+          "entity": "SOX",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "同じInvesting.com日次履歴の現物通常取引終値、小数1位。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prev",
+          "entity": "SOX",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-29",
+          "periodEnd": "2026-10-29",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "同じInvesting.com日次履歴の現物通常取引終値、小数1位。",
+          "value": 11518.2,
+          "source": {
+            "url": "https://jp.investing.com/indices/phlx-semiconductor-historical-data",
+            "publishedOn": "2026-10-30",
+            "locator": "2026-10-29行・終値列",
+            "kind": "secondary",
+            "primaryUnavailableReason": "FREDの30日値未更新。両日同一提供元・精度で比較。"
+          }
+        },
+        {
+          "id": "cur",
+          "entity": "SOX",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "index points",
+          "basis": "market",
+          "definition": "同じInvesting.com日次履歴の現物通常取引終値、小数1位。",
+          "value": 10688.8,
+          "source": {
+            "url": "https://jp.investing.com/indices/phlx-semiconductor-historical-data",
+            "publishedOn": "2026-10-30",
+            "locator": "2026-10-30行・終値列",
+            "kind": "secondary",
+            "primaryUnavailableReason": "FREDの30日値未更新。両日同一提供元・精度で比較。"
+          }
+        }
+      ],
+      "claim": "SOXの30日終値は10,688.8で、29日の11,518.2から前日比-7.20%。",
+      "calculations": [
+        {
+          "id": "return",
+          "operation": "growth-percent",
+          "inputs": [
+            "cur",
+            "prev"
+          ],
+          "definition": "（30日÷29日−1）×100",
+          "precision": 2,
+          "value": -7.2
+        }
+      ]
+    },
+    {
+      "id": "amazon-fcf",
+      "question": "Amazonの営業CFと設備取得支出から会社定義FCFを再計算すると",
+      "definition": "会社定義FCF＝営業CF−有形固定資産取得支出＋有形固定資産売却収入・インセンティブ。全て同じTTM・百万ドル。買収や全リース元本返済を引いた定義ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "ocf",
+          "entity": "Amazon・連結",
+          "metric": "営業活動によるCF",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "US GAAP連結CF計算書、2026年9月30日までの直近12カ月、未監査。"
+        },
+        {
+          "id": "ppe",
+          "entity": "Amazon・連結",
+          "metric": "有形固定資産取得支出",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "同じ連結CF計算書・TTM。キャッシュアウトフローを負数で保存。"
+        },
+        {
+          "id": "proceeds",
+          "entity": "Amazon・連結",
+          "metric": "有形固定資産売却収入・インセンティブ",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "同じ連結CF計算書・TTM。流入を正数で保存。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf",
+          "entity": "Amazon・連結",
+          "metric": "営業活動によるCF",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "US GAAP連結CF計算書、2026年9月30日までの直近12カ月、未監査。",
+          "value": 168300,
+          "source": {
+            "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+            "publishedOn": "2026-10-29",
+            "locator": "Consolidated Statements of Cash Flows／Twelve Months Ended September 30, 2026／営業活動によるCF。Supplemental Financial InformationのFCF及び脚注(1)とも照合。",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ppe",
+          "entity": "Amazon・連結",
+          "metric": "有形固定資産取得支出",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "同じ連結CF計算書・TTM。キャッシュアウトフローを負数で保存。",
+          "value": -215192,
+          "source": {
+            "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+            "publishedOn": "2026-10-29",
+            "locator": "Consolidated Statements of Cash Flows／Twelve Months Ended September 30, 2026／有形固定資産取得支出。Supplemental Financial InformationのFCF及び脚注(1)とも照合。",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "proceeds",
+          "entity": "Amazon・連結",
+          "metric": "有形固定資産売却収入・インセンティブ",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million USD",
+          "basis": "actual",
+          "definition": "同じ連結CF計算書・TTM。流入を正数で保存。",
+          "value": 4535,
+          "source": {
+            "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+            "publishedOn": "2026-10-29",
+            "locator": "Consolidated Statements of Cash Flows／Twelve Months Ended September 30, 2026／有形固定資産売却収入・インセンティブ。Supplemental Financial InformationのFCF及び脚注(1)とも照合。",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "FCF＝168,300−215,192＋4,535＝−42,357百万ドル。",
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "ppe",
+            "proceeds"
+          ],
+          "definition": "同一期間の営業CFと符号付き設備取得支出・売却収入等を合計",
+          "precision": 0,
+          "value": -42357
+        }
+      ]
+    },
+    {
+      "id": "boj-etf-pace",
+      "question": "日銀ETFの年間売却ペースはどの定義で変わるか",
+      "definition": "政策方針同士の比較。いずれも簿価の年間ペースで時価や売却実績とは比較しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "日本銀行",
+          "metric": "ETF年間売却ペース・従来方針",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "億円・簿価",
+          "basis": "company-forecast",
+          "definition": "保有ETF売却の公表方針額。実績や時価ではない。"
+        },
+        {
+          "id": "new",
+          "entity": "日本銀行",
+          "metric": "ETF年間売却ペース・新方針",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "億円・簿価",
+          "basis": "company-forecast",
+          "definition": "保有ETF売却の公表方針額。2027年1月実施。実績や時価ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "日本銀行",
+          "metric": "ETF年間売却ペース・従来方針",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "億円・簿価",
+          "basis": "company-forecast",
+          "definition": "保有ETF売却の公表方針額。実績や時価ではない。",
+          "value": 3300,
+          "source": {
+            "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "2．ETFの売却ペースの見直し／従来3,300億円・新8,600億円、脚注2（2027年1月から）・脚注3（調整・停止可）",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "日本銀行",
+          "metric": "ETF年間売却ペース・新方針",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "億円・簿価",
+          "basis": "company-forecast",
+          "definition": "保有ETF売却の公表方針額。2027年1月実施。実績や時価ではない。",
+          "value": 8600,
+          "source": {
+            "url": "https://www.boj.or.jp/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "2．ETFの売却ペースの見直し／従来3,300億円・新8,600億円、脚注2（2027年1月から）・脚注3（調整・停止可）",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "ETFの年間売却ペースは簿価ベース3,300億円程度から8,600億円程度へ見直し、2027年1月から実施する。",
+      "calculations": []
+    },
+    {
+      "id": "kioxia-profit-withheld",
+      "question": "キオクシアの単独四半期IFRS営業利益の前年比は",
+      "definition": "同じ単独四半期IFRS営業利益同士の比較。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "prior",
+          "entity": "キオクシアホールディングス・連結",
+          "metric": "IFRS営業利益・単独四半期",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "million JPY",
+          "basis": "actual",
+          "definition": "IFRS連結、7〜9月の単独四半期営業利益。上期累計・non-GAAP・会社予想ではない。"
+        },
+        {
+          "id": "current",
+          "entity": "キオクシアホールディングス・連結",
+          "metric": "IFRS営業利益・単独四半期",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "million JPY",
+          "basis": "actual",
+          "definition": "IFRS連結、7〜9月の単独四半期営業利益。上期累計・non-GAAP・会社予想ではない。"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "原文決算PDFをWebとクラウドHTTPで取得したが503等の取得エラー。原文の表を独立確認できないため、既存日次記事や報道にある値を転記せず数値比較を除外。原文未取得でページ画像も取得できず、記載がないとは判断していない。",
+      "omittedClaim": "キオクシアの営業利益は前年同期比23倍となった。"
+    }
+  ]
+}

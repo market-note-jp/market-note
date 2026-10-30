@@ -10,6 +10,15 @@ import BreadthHomeCard from "./market-breadth/home-card";
 
 const legacyArticles = [
 {
+  "kind": "週次レポート",
+  "theme": "日米株・AI投資",
+  "date": "2026-10-31 08:03",
+  "dateTime": "2026-10-31T08:03:55+09:00",
+  "title": "AI投資の現金負担に警戒、日銀ETF売却見直しと米選挙へ｜10月26日〜30日",
+  "excerpt": "10月26日〜30日の日米株を4指数の週間騰落率、AmazonのFCF、キオクシア決算、日米の政策、債券・為替・原油から整理。翌週の米中間選挙と雇用統計を点検する。",
+  "href": "/articles/weekly-2026-10-26"
+},
+{
   "kind": "企業レポート",
   "theme": "個別企業",
   "date": "2026-10-30 20:02",
