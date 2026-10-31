@@ -1,0 +1,2934 @@
+{
+  "version": 1,
+  "articleSlug": "company-halma-2026-10-31",
+  "articleSha256": "0db2d13e3ef6b88ccb8ba4616e382003799f38911d50f72a08f5029c646e502a",
+  "checkedAt": "2026-10-31T10:28:41.266Z",
+  "informationCutoff": "2026-10-31T19:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "公式決算・年報PDF本文を取得。年報PDF243頁を画像でも確認。5年CAGRは別途Pythonで14.067745/15.591399%と検算（gateは指数演算非対応）。顧客感応度20%×10%=2%は独自静的試算。他条件一定、利益換算しない。年報historyEBIT2025の486.2と決算486.3の不一致は未解決のため当該history行を使わずPBTを掲載。独立レビュー中。統合後route digestへの更新が必要。",
+  "comparisons": [
+    {
+      "id": "history-0",
+      "question": "以下は3月末を期末とするIFRS連結実績。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "| 2026年 | 2,582.3 | 564.5 | 23.0% | 16.2% |",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "売上高",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "売上高",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "売上高",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "売上高",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v4",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "売上高",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 1525.3,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "売上高",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 1852.8,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "売上高",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 2034.1,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "売上高",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 2248.1,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 2582.3,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history-1",
+      "question": "以下は3月末を期末とするIFRS連結実績。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "| 2026年 | 2,582.3 | 564.5 | 23.0% | 16.2% |",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後税引前利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後税引前利益"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後税引前利益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後税引前利益"
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後税引前利益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後税引前利益"
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後税引前利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後税引前利益"
+        },
+        {
+          "id": "v4",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後税引前利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後税引前利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後税引前利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後税引前利益",
+          "value": 316.2,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後税引前利益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後税引前利益",
+          "value": 361.3,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後税引前利益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後税引前利益",
+          "value": 396.4,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後税引前利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後税引前利益",
+          "value": 459.4,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後税引前利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後税引前利益",
+          "value": 564.5,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history-2",
+      "question": "以下は3月末を期末とするIFRS連結実績。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "| 2026年 | 2,582.3 | 564.5 | 23.0% | 16.2% |",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後EBIT利益率",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後EBIT利益率"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後EBIT利益率",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後EBIT利益率"
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後EBIT利益率",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後EBIT利益率"
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後EBIT利益率",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後EBIT利益率"
+        },
+        {
+          "id": "v4",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後EBIT利益率",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後EBIT利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後EBIT利益率",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後EBIT利益率",
+          "value": 21.3,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後EBIT利益率",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後EBIT利益率",
+          "value": 20.4,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後EBIT利益率",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後EBIT利益率",
+          "value": 20.8,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後EBIT利益率",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後EBIT利益率",
+          "value": 21.6,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後EBIT利益率",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後EBIT利益率",
+          "value": 23,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history-3",
+      "question": "以下は3月末を期末とするIFRS連結実績。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "| 2026年 | 2,582.3 | 564.5 | 23.0% | 16.2% |",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後ROTIC",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後ROTIC"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後ROTIC",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後ROTIC"
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後ROTIC",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後ROTIC"
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後ROTIC",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後ROTIC"
+        },
+        {
+          "id": "v4",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後ROTIC",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後ROTIC"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後ROTIC",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後ROTIC",
+          "value": 14.6,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後ROTIC",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後ROTIC",
+          "value": 14.8,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後ROTIC",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後ROTIC",
+          "value": 14.4,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後ROTIC",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後ROTIC",
+          "value": 15,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後ROTIC",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後ROTIC",
+          "value": 16.2,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cagr",
+      "question": "2022年から2026年までの4年間の売上高CAGRは約14.1%、調整後税引前利益は約15.6%となる。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "2022年から2026年までの4年間の売上高CAGRは約14.1%、調整後税引前利益は約15.6%となる。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "売上高",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後税引前利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後税引前利益"
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後税引前利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後税引前利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "売上高",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 1525.3,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 2582.3,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後税引前利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後税引前利益",
+          "value": 316.2,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後税引前利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後税引前利益",
+          "value": 564.5,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/annual-report/halma-plc-annual-report-2026.pdf",
+            "publishedOn": "2026-06-24",
+            "locator": "PDF 243頁",
+            "pdfPage": 243,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "growth-bridge",
+      "question": "2026年3月期の増収率14.9%は、会社の増減分析では有機成長16.6%、買収2.5%、売却−1.5%、為替−2.7%という構成。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "2026年3月期の増収率14.9%は、会社の増減分析では有機成長16.6%、買収2.5%、売却−1.5%、為替−2.7%という構成。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "報告増収",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "報告増収"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "有機増収",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "有機増収"
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "買収効果",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収効果"
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "売却効果",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売却効果"
+        },
+        {
+          "id": "v4",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "為替効果",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "為替効果"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "報告増収",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "報告増収",
+          "value": 14.9,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 8頁",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "有機増収",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "有機増収",
+          "value": 16.6,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 8頁",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "買収効果",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収効果",
+          "value": 2.5,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 8頁",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "売却効果",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売却効果",
+          "value": -1.5,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 8頁",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "為替効果",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "為替効果",
+          "value": -2.7,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 8頁",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "pricing",
+      "question": "平均1〜2%の値上げも含まれる。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "平均1〜2%の値上げも含まれる。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "平均値上げ下限",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "平均値上げ下限"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "平均値上げ上限",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "平均値上げ上限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "平均値上げ下限",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "平均値上げ下限",
+          "value": 1,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 8頁",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "平均値上げ上限",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "平均値上げ上限",
+          "value": 2,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 8頁",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "segment-7",
+      "question": "| 安全 | 947.5 | 6.5% | 253.6 |",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "| 安全 | 947.5 | 6.5% | 253.6 |",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "安全売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "安全売上"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "安全有機増収",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "安全有機増収"
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "安全調整後部門利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "安全調整後部門利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "安全売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "安全売上",
+          "value": 947.5,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 9頁",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "安全有機増収",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "安全有機増収",
+          "value": 6.5,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 9頁",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "安全調整後部門利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "安全調整後部門利益",
+          "value": 253.6,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 9頁",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "segment-8",
+      "question": "| 環境・分析 | 1,037.7 | 35.7% | 250.6 |",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "| 環境・分析 | 1,037.7 | 35.7% | 250.6 |",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "環境・分析売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "環境・分析売上"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "環境・分析有機増収",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "環境・分析有機増収"
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "環境・分析調整後部門利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "環境・分析調整後部門利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "環境・分析売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "環境・分析売上",
+          "value": 1037.7,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 9頁",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "環境・分析有機増収",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "環境・分析有機増収",
+          "value": 35.7,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 9頁",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "環境・分析調整後部門利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "環境・分析調整後部門利益",
+          "value": 250.6,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 9頁",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "segment-9",
+      "question": "| ヘルスケア | 598.4 | 6.3% | 143.1 |",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "| ヘルスケア | 598.4 | 6.3% | 143.1 |",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "ヘルスケア売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "ヘルスケア売上"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "ヘルスケア有機増収",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "ヘルスケア有機増収"
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "ヘルスケア調整後部門利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "ヘルスケア調整後部門利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "ヘルスケア売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "ヘルスケア売上",
+          "value": 598.4,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 9頁",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "ヘルスケア有機増収",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "ヘルスケア有機増収",
+          "value": 6.3,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 9頁",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "ヘルスケア調整後部門利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "ヘルスケア調整後部門利益",
+          "value": 143.1,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 9頁",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "segment-bridge",
+      "question": "売上には部門間消去−1.3百万ポンド、部門利益合計647.3百万ポンドには本社費−52.8百万ポンドを反映すると、連結売上2,582.3百万ポンド、調整後EBIT594.5百万ポンドになる。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "売上には部門間消去−1.3百万ポンド、部門利益合計647.3百万ポンドには本社費−52.8百万ポンドを反映すると、連結売上2,582.3百万ポンド、調整後EBIT594.5百万ポンドになる。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "部門売上合計",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "部門売上合計"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "消去",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "消去"
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "部門利益合計",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "部門利益合計"
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "本社費",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "本社費"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "部門売上合計",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "部門売上合計",
+          "value": 2583.6,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 9頁",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "消去",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "消去",
+          "value": -1.3,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 9頁",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "部門利益合計",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "部門利益合計",
+          "value": 647.3,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 9頁",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "本社費",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "本社費",
+          "value": -52.8,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 9頁",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "sales",
+          "operation": "sum",
+          "inputs": [
+            "v0",
+            "v1"
+          ],
+          "definition": "部門売上合計＋部門間消去",
+          "precision": 1,
+          "value": 2582.3
+        },
+        {
+          "id": "ebit",
+          "operation": "sum",
+          "inputs": [
+            "v2",
+            "v3"
+          ],
+          "definition": "部門利益合計＋本社費",
+          "precision": 1,
+          "value": 594.5
+        }
+      ]
+    },
+    {
+      "id": "concentration",
+      "question": "その顧客の売上構成比は2025年3月期15%から2026年3月期20%へ上昇した。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "その顧客の売上構成比は2025年3月期15%から2026年3月期20%へ上昇した。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "大口顧客売上構成比",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "大口顧客売上構成比"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "大口顧客売上構成比",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "大口顧客売上構成比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "大口顧客売上構成比",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "大口顧客売上構成比",
+          "value": 15,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 5頁",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "大口顧客売上構成比",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "大口顧客売上構成比",
+          "value": 20,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 5頁",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "profit-bridge",
+      "question": "2026年3月期の調整後EBITは594.5百万ポンド、法定の税・利息前利益は520.7百万ポンドだった。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "2026年3月期の調整後EBITは594.5百万ポンド、法定の税・利息前利益は520.7百万ポンドだった。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後EBIT",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後EBIT"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "法定EBIT",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "法定EBIT"
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "取得無形資産償却減損",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "取得無形資産償却減損"
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "買収関連",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "買収関連"
+        },
+        {
+          "id": "v4",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "事業処分等",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "事業処分等"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後EBIT",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後EBIT",
+          "value": 594.5,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 53頁",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "法定EBIT",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "法定EBIT",
+          "value": 520.7,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 53頁",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "取得無形資産償却減損",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "取得無形資産償却減損",
+          "value": 63.2,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 53頁",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "買収関連",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "買収関連",
+          "value": 4.4,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 53頁",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "事業処分等",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "事業処分等",
+          "value": 6.2,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 53頁",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "difference",
+          "operation": "difference",
+          "inputs": [
+            "v0",
+            "v1"
+          ],
+          "definition": "調整後EBIT−法定EBIT",
+          "precision": 1,
+          "value": 73.8
+        }
+      ]
+    },
+    {
+      "id": "oneoff",
+      "question": "売上9.9百万ポンド、調整後利益9.3百万ポンドを一時的に認識した。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "売上9.9百万ポンド、調整後利益9.3百万ポンドを一時的に認識した。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "Nuvonic一時売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "Nuvonic一時売上"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "Nuvonic一時調整後利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "Nuvonic一時調整後利益"
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "相手方取得持分",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "相手方取得持分"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "Nuvonic一時売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "Nuvonic一時売上",
+          "value": 9.9,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 2頁",
+            "pdfPage": 2,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "Nuvonic一時調整後利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "Nuvonic一時調整後利益",
+          "value": 9.3,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 2頁",
+            "pdfPage": 2,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "相手方取得持分",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "相手方取得持分",
+          "value": 35,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 2頁",
+            "pdfPage": 2,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "underlying",
+      "question": "この取引を除くと、連結売上は2,572.4百万ポンド、調整後EBITは585.2百万ポンド、利益率は22.7%。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "この取引を除くと、連結売上は2,572.4百万ポンド、調整後EBITは585.2百万ポンド、利益率は22.7%。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "一時除外売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "一時除外売上"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "一時除外EBIT",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "一時除外EBIT"
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "一時除外利益率",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "一時除外利益率"
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "前年利益率",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "前年利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "一時除外売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "一時除外売上",
+          "value": 2572.4,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 1頁",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "一時除外EBIT",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "一時除外EBIT",
+          "value": 585.2,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 1頁",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "一時除外利益率",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "一時除外利益率",
+          "value": 22.7,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 1頁",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "前年利益率",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "前年利益率",
+          "value": 21.6,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 1頁",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "environment-margin",
+      "question": "一方、環境・分析部門では、一時取引込みの利益率24.1%に対し、除外後は23.5%で前年23.9%を下回った。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "一方、環境・分析部門では、一時取引込みの利益率24.1%に対し、除外後は23.5%で前年23.9%を下回った。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "環境分析調整後利益率",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "環境分析調整後利益率"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "同一時除外",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "同一時除外"
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "前年調整後利益率",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "前年調整後利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "環境分析調整後利益率",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "環境分析調整後利益率",
+          "value": 24.1,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 20頁",
+            "pdfPage": 20,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "同一時除外",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "同一時除外",
+          "value": 23.5,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 20頁",
+            "pdfPage": 20,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "前年調整後利益率",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "前年調整後利益率",
+          "value": 23.9,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 20頁",
+            "pdfPage": 20,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash",
+      "question": "現金面では、税払い後の営業活動によるキャッシュフローは492.4→480.6百万ポンドへ減少。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "現金面では、税払い後の営業活動によるキャッシュフローは492.4→480.6百万ポンドへ減少。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "営業CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "営業CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 492.4,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 53頁",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 480.6,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 53頁",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "working-capital",
+      "question": "運転資本は前期の29.6百万ポンドの流入から、66.3百万ポンドの流出へ変わった。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "運転資本は前期の29.6百万ポンドの流入から、66.3百万ポンドの流出へ変わった。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "運転資本CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "運転資本CF"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "運転資本CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "運転資本CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "運転資本CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "運転資本CF",
+          "value": 29.6,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 14頁",
+            "pdfPage": 14,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "運転資本CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "運転資本CF",
+          "value": -66.3,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 14頁",
+            "pdfPage": 14,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-conversion",
+      "question": "会社の調整後キャッシュ転換率は112%→93%だが、分子は税などを調整した独自の営業キャッシュフロー550.2百万ポンド、分母は調整後営業利益593.4百万ポンド。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "会社の調整後キャッシュ転換率は112%→93%だが、分子は税などを調整した独自の営業キャッシュフロー550.2百万ポンド、分母は調整後営業利益593.4百万ポンド。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "前年現金転換率",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "前年現金転換率"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "現金転換率",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "現金転換率"
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後営業CF"
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "前年現金転換率",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "前年現金転換率",
+          "value": 112,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 53頁",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "現金転換率",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "現金転換率",
+          "value": 93,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 53頁",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後営業CF",
+          "value": 550.2,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 53頁",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 593.4,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 53頁",
+            "pdfPage": 53,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "conversion",
+          "operation": "ratio-percent",
+          "inputs": [
+            "v2",
+            "v3"
+          ],
+          "definition": "調整後営業CF÷調整後営業利益×100",
+          "precision": 0,
+          "value": 93
+        }
+      ]
+    },
+    {
+      "id": "acquisition",
+      "question": "2026年3月期の事業取得関連支出は469.1百万ポンドで、前年167.9百万ポンドから大きく増えた。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "2026年3月期の事業取得関連支出は469.1百万ポンドで、前年167.9百万ポンドから大きく増えた。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "事業取得関連支出",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "事業取得関連支出"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "事業取得関連支出",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "事業取得関連支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "事業取得関連支出",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "事業取得関連支出",
+          "value": 469.1,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 14頁",
+            "pdfPage": 14,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "事業取得関連支出",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "事業取得関連支出",
+          "value": 167.9,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 14頁",
+            "pdfPage": 14,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "acquisition-price",
+      "question": "当期に成立した5件の最大買収対価447百万ポンドと定義が違う。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "当期に成立した5件の最大買収対価447百万ポンドと定義が違う。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "成立買収件数",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "成立買収件数"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "最大買収対価",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "最大買収対価"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "成立買収件数",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "成立買収件数",
+          "value": 5,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 1頁",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "最大買収対価",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "最大買収対価",
+          "value": 447,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 1頁",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "leverage",
+      "question": "純有利子負債は535.8→769.1百万ポンド、調整後EBITDAに対する比率は0.97→1.16倍へ上昇した。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "純有利子負債は535.8→769.1百万ポンド、調整後EBITDAに対する比率は0.97→1.16倍へ上昇した。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "純負債",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "純負債"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "純負債",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "純負債"
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "負債倍率",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "負債倍率"
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "負債倍率",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "負債倍率"
+        },
+        {
+          "id": "v4",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "含まれるリース負債",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "含まれるリース負債"
+        },
+        {
+          "id": "v5",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "融資契約上限",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "融資契約上限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "純負債",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "純負債",
+          "value": 535.8,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 15頁",
+            "pdfPage": 15,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "純負債",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "純負債",
+          "value": 769.1,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 15頁",
+            "pdfPage": 15,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "負債倍率",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "負債倍率",
+          "value": 0.97,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 15頁",
+            "pdfPage": 15,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "負債倍率",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "負債倍率",
+          "value": 1.16,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 15頁",
+            "pdfPage": 15,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "含まれるリース負債",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "含まれるリース負債",
+          "value": 107.8,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 15頁",
+            "pdfPage": 15,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "融資契約上限",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "融資契約上限",
+          "value": 3.5,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 15頁",
+            "pdfPage": 15,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "rotic",
+      "question": "2026年3月期の調整後ROTIC16.2%は、調整後税引後利益430.7百万ポンド÷平均投資資本2,660.4百万ポンド。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "2026年3月期の調整後ROTIC16.2%は、調整後税引後利益430.7百万ポンド÷平均投資資本2,660.4百万ポンド。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後税引後利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後税引後利益"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "平均会社定義投資資本",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "平均会社定義投資資本"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後税引後利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "調整後税引後利益",
+          "value": 430.7,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 54頁",
+            "pdfPage": 54,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "平均会社定義投資資本",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "平均会社定義投資資本",
+          "value": 2660.4,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 54頁",
+            "pdfPage": 54,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "rotic",
+          "operation": "ratio-percent",
+          "inputs": [
+            "v0",
+            "v1"
+          ],
+          "definition": "調整後税引後利益÷会社定義平均投資資本×100",
+          "precision": 1,
+          "value": 16.2
+        }
+      ]
+    },
+    {
+      "id": "new-acquisitions",
+      "question": "9月24日時点では、新年度の買収は6件、最大対価515百万ポンド、売却は3件で費用控除後約83百万ポンド。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "9月24日時点では、新年度の買収は6件、最大対価515百万ポンド、売却は3件で費用控除後約83百万ポンド。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "期中買収件数",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-24",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "期中買収件数"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "最大対価",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-24",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "最大対価"
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "期中売却件数",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-24",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "期中売却件数"
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "売却費用控除後対価",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-24",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "売却費用控除後対価"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "期中買収件数",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-24",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "期中買収件数",
+          "value": 6,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2027/halma_trading_update_september_2026.pdf",
+            "publishedOn": "2026-09-24",
+            "locator": "PDF 1頁",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "最大対価",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-24",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "最大対価",
+          "value": 515,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2027/halma_trading_update_september_2026.pdf",
+            "publishedOn": "2026-09-24",
+            "locator": "PDF 1頁",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "期中売却件数",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-24",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "期中売却件数",
+          "value": 3,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2027/halma_trading_update_september_2026.pdf",
+            "publishedOn": "2026-09-24",
+            "locator": "PDF 1頁",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "売却費用控除後対価",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-24",
+          "unit": "百万ポンド",
+          "basis": "actual",
+          "definition": "売却費用控除後対価",
+          "value": 83,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2027/halma_trading_update_september_2026.pdf",
+            "publishedOn": "2026-09-24",
+            "locator": "PDF 1頁",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "outlook",
+      "question": "調整後EBIT利益率は23.5〜24%。",
+      "definition": "本文記載の会計期間・会社調整後定義・単位に従う。買収対価と現金支出、ROTICと一般的ROICは区別。",
+      "status": "ready",
+      "claim": "調整後EBIT利益率は23.5〜24%。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後EBIT利益率下限",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "調整後EBIT利益率下限"
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後EBIT利益率上限",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "調整後EBIT利益率上限"
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "従来見通し",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "従来見通し"
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "光技術premium寄与",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "percentage-points",
+          "basis": "company-forecast",
+          "definition": "光技術premium寄与"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後EBIT利益率下限",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "調整後EBIT利益率下限",
+          "value": 23.5,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2027/halma_trading_update_september_2026.pdf",
+            "publishedOn": "2026-09-24",
+            "locator": "PDF 1頁",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "調整後EBIT利益率上限",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "調整後EBIT利益率上限",
+          "value": 24,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2027/halma_trading_update_september_2026.pdf",
+            "publishedOn": "2026-09-24",
+            "locator": "PDF 1頁",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "従来見通し",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "従来見通し",
+          "value": 22.7,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2027/halma_trading_update_september_2026.pdf",
+            "publishedOn": "2026-09-24",
+            "locator": "PDF 1頁",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "光技術premium寄与",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "percentage-points",
+          "basis": "company-forecast",
+          "definition": "光技術premium寄与",
+          "value": 5,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2027/halma_trading_update_september_2026.pdf",
+            "publishedOn": "2026-09-24",
+            "locator": "PDF 1頁",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "customer-sensitivity",
+      "question": "感応度を示すと、売上構成比20%を固定し、その顧客向け売上だけが10%増減すれば、連結売上への機械的な影響は約±2%になる。",
+      "definition": "公表構成比20%を基礎に筆者が±10%売上変化を仮定。20%×±10%=±2%。仮定10%は会社見通しや観測値ではなく、架空のsourceを付けずdefinitionに保持。利益への換算なし。",
+      "status": "ready",
+      "claim": "感応度を示すと、売上構成比20%を固定し、その顧客向け売上だけが10%増減すれば、連結売上への機械的な影響は約±2%になる。",
+      "requiredInputs": [
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "大口顧客売上構成比",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "大口顧客売上構成比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v1",
+          "entity": "Halma連結（部門はmetricに明記）",
+          "metric": "大口顧客売上構成比",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "大口顧客売上構成比",
+          "value": 20,
+          "source": {
+            "url": "https://www.halma.com/~/media/Files/H/Halma/Corp-V2/reports-and-presentations/reports/2026/halma-plc-fy26-rns.pdf",
+            "publishedOn": "2026-06-11",
+            "locator": "PDF 5頁",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "withheld-valuation",
+      "question": "現在株価の投資魅力",
+      "definition": "整合する株価と予想EPS",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "price",
+          "entity": "Halma",
+          "metric": "LSE通常取引終値",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "英ペンス",
+          "basis": "market",
+          "definition": "権利調整を整合した通常取引終値"
+        },
+        {
+          "id": "eps",
+          "entity": "Halma",
+          "metric": "FY2027調整後EPS市場予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "英ペンス",
+          "basis": "consensus",
+          "definition": "株価日までに取得された予想EPS。法定と調整後の混同を避ける。"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "現在株価と整合した市場予想は今回未取得。",
+      "omittedClaim": "現在株価は割安である"
+    }
+  ]
+}
