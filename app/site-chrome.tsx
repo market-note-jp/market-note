@@ -17,7 +17,6 @@ export function SiteHeader() {
           <Link href="/#articles">レポート</Link>
           <Link href="/#companies">企業レポート</Link>
           <Link href="/company-analysis">財務分析</Link>
-          <Link href="/airi">AIRI・AI株指標</Link>
           <Link href="/market-breadth">MN225・日本株指標</Link>
           <Link href="/calendar"><CalendarDays size={16} aria-hidden="true" />市場カレンダー</Link>
           <Link href="/#policy">Market Noteについて</Link>
@@ -38,7 +37,6 @@ export function SiteFooter() {
           <Link href="/#articles">レポート一覧 <ArrowUpRight size={16} aria-hidden="true" /></Link>
           <Link href="/#companies">企業レポート <ArrowUpRight size={16} aria-hidden="true" /></Link>
           <Link href="/company-analysis">財務分析 <ArrowUpRight size={16} aria-hidden="true" /></Link>
-          <Link href="/airi">AIRI・AI株指標 <ArrowUpRight size={16} aria-hidden="true" /></Link>
           <Link href="/market-breadth">MN225・日本株指標 <ArrowUpRight size={16} aria-hidden="true" /></Link>
           <Link href="/calendar">市場カレンダー <ArrowUpRight size={16} aria-hidden="true" /></Link>
         </nav>

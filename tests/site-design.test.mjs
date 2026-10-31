@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { readFile, access } from "node:fs/promises";
+import { readFile, access, readdir } from "node:fs/promises";
 import test from "node:test";
 import { loadArticleRegistry } from "./article-registry.mjs";
 
@@ -91,4 +91,21 @@ test("the masthead asset is an optimized local WebP", async () => {
   assert.ok(bytes.length < 400_000);
   const exported = await readFile(new URL("out/market-district-v1.webp", root));
   assert.deepEqual(exported, bytes);
+});
+
+test("retired AIRI is absent from the public export while research data remains", async () => {
+  for (const path of ["out/airi", "out/airi.html", "out/airi.txt", "app/airi/page.tsx"]) {
+    await assert.rejects(access(new URL(path, root)), { code: "ENOENT" }, path);
+  }
+  const files = await readdir(new URL("out/", root), { recursive: true });
+  for (const file of files.filter(file => /\.(?:html|xml)$/.test(file))) {
+    const html = await readFile(new URL(`out/${file}`, root), "utf8");
+    assert.doesNotMatch(html, /(?:href|src)=["'][^"']*\/airi(?:[\/"'?#])|AIRI・AI株指標/, file);
+  }
+  for (const path of ["app/site-chrome.tsx", "app/mobile-navigation.tsx"]) {
+    assert.doesNotMatch(await readFile(new URL(path, root), "utf8"), /\/airi|AIRI・AI株指標/, path);
+  }
+  for (const path of ["data/airi/input.json", "data/airi/releases/", "app/airi-data.json", "scripts/airi_model.py", "scripts/update_airi.py"]) {
+    await access(new URL(path, root));
+  }
 });
