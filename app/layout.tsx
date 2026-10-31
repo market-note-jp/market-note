@@ -8,7 +8,7 @@ const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
 const siteUrl = isGitHubPages
   ? "https://market-note-jp.github.io/market-note/"
   : "https://market-note-jp.ktsht.chatgpt.site/";
-const faviconUrl = isGitHubPages ? "/market-note/favicon.svg" : "/favicon.svg";
+const faviconUrl = `${isGitHubPages ? "/market-note" : ""}/favicon.svg?v=market-note-m-20261031`;
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
