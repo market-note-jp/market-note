@@ -135,7 +135,8 @@ test("autumn official times retain DST offsets and next-day JST dates", () => {
     const event = events.find(e => e.id === id);
     assert.ok(event, id);
     assert.equal(event.date + " " + event.time, format.format(new Date(local)), id);
-    assert.match(event.sourceTime, /2026-10-25確認/);
+    assert.match(event.sourceTime, /\d{4}-\d{2}-\d{2}確認/);
+    assert.ok(event.sourceTime.match(/(\d{4}-\d{2}-\d{2})確認/)[1] <= marketCalendarReviewedAt);
   }
 });
 
@@ -166,4 +167,28 @@ test("short trading uses the local trading day without a false JST timestamp", (
   assert.match(html, /<option value="短縮取引">短縮取引<\/option>/);
   assert.match(html, /datetime="2026-11-27">2026-11-27 短縮取引/i);
   assert.equal(events.some(e => e.date === "2026-11-11" && e.category === "休場"), false);
+});
+
+
+test("November review additions preserve winter JST conversions and approximate release times", () => {
+  const format = new Intl.DateTimeFormat("sv-SE", { timeZone: "Asia/Tokyo", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
+  for (const [id, local] of [
+    ["arista-2026-q3-call", "2026-11-03T13:30:00-08:00"],
+    ["nvidia-fy27-q3-call", "2026-11-17T14:00:00-08:00"],
+    ["fomc-2026-12", "2026-12-09T14:00:00-05:00"],
+    ["fomc-press-conference-2026-12", "2026-12-09T14:30:00-05:00"],
+    ["bls-cpi-2026-11", "2026-12-10T08:30:00-05:00"],
+  ]) {
+    const event = events.find(e => e.id === id);
+    assert.ok(event, id);
+    assert.equal(event.date + " " + event.time, format.format(new Date(local)), id);
+    assert.match(event.sourceTime, /2026-11-01確認/);
+  }
+  const release = events.find(e => e.id === "nvidia-fy27-q3-release");
+  assert.equal(release.date, "2026-11-18");
+  assert.equal(release.time, "06:20ごろ");
+  assert.match(release.summary, /厳密な確定時刻ではない/);
+  const december = render({ initialMonth: "2026-12" });
+  assert.match(december, /datetime="2026-12-10T04:00:00\+09:00"/i);
+  assert.match(december, /datetime="2026-12-10T04:30:00\+09:00"/i);
 });
