@@ -1,0 +1,414 @@
+{
+  "date": "2026-10-28",
+  "observedAt": "2026-10-28T15:45:00+09:00",
+  "retrieved": "2026-10-28T17:34:57.591478+09:00",
+  "source": {
+    "prices": {
+      "name": "トレーダーズ・ウェブ 日経225銘柄",
+      "url": "https://www.traders.co.jp/market_jp/nikkei225/all/stock-asc"
+    },
+    "constituents": {
+      "name": "日経平均プロフィル 構成銘柄一覧",
+      "url": "https://indexes.nikkei.co.jp/nkave/index/component?idx=nk225",
+      "updated": "2026-10-28"
+    },
+    "validation": {
+      "name": "日経平均プロフィル 日次サマリー",
+      "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261028&idx=nk225",
+      "retrievedFrom": "https://indexes.nikkei.co.jp/nkave/archives/summary",
+      "verifiedDate": "2026-10-28"
+    }
+  },
+  "method": {
+    "returnPct": "change/(close-change)*100",
+    "equalWeightDailyReturnPct": "arithmetic mean of 225 daily returns; all constituents equal at start of day",
+    "dividendsIncluded": false,
+    "historyAvailable": "4 daily return observations accumulated since 2026-10-22; no backfilled or simulated observations."
+  },
+  "validation": {
+    "count": 225,
+    "constituentSetMatch": true,
+    "officialUp": 85,
+    "officialDown": 139,
+    "officialFlat": 1,
+    "calculatedUp": 85,
+    "calculatedDown": 139,
+    "calculatedFlat": 1,
+    "maxAbsoluteDifferenceVsDisplayedReturnPp": 0.00498489425981874
+  },
+  "metrics": {
+    "nikkeiClose": 63954.19,
+    "nikkeiPreviousClose": 63268.37,
+    "nikkeiChange": 685.82,
+    "nikkeiReturnPct": 1.0839855681440822,
+    "equalWeightReturnPct": -0.22073879002616512,
+    "medianReturnPct": -0.7636237417563346,
+    "advancers": 85,
+    "decliners": 139,
+    "unchanged": 1,
+    "advancerPct": 37.77777777777778,
+    "nikkeiMinusEqualWeightPp": 1.3047243581702472
+  },
+  "baseDate": "2026-10-22",
+  "baseValue": 100,
+  "name": "Market Note 225",
+  "official": {
+    "source": "Nikkei Indexes 日次サマリー",
+    "retrieved": "2026-10-24",
+    "notes": "騰落銘柄数はその日の日経225構成銘柄。上昇比率は up/225。EW騰落率と中央値の算出に必要な個別騰落率はこのソースに含まれない。",
+    "rows": [
+      {
+        "date": "2026-10-01",
+        "close": 68956.72,
+        "changePct": 3.3,
+        "change": 2203,
+        "up": 108,
+        "down": 115,
+        "flat": 2,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261001&idx=nk225"
+      },
+      {
+        "date": "2026-10-02",
+        "close": 68309.46,
+        "changePct": -0.94,
+        "change": -647.26,
+        "up": 51,
+        "down": 173,
+        "flat": 1,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261002&idx=nk225"
+      },
+      {
+        "date": "2026-10-05",
+        "close": 69946.86,
+        "changePct": 2.4,
+        "change": 1637.4,
+        "up": 157,
+        "down": 68,
+        "flat": 0,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261005&idx=nk225"
+      },
+      {
+        "date": "2026-10-06",
+        "close": 70683.98,
+        "changePct": 1.05,
+        "change": 737.12,
+        "up": 165,
+        "down": 55,
+        "flat": 5,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261006&idx=nk225"
+      },
+      {
+        "date": "2026-10-07",
+        "close": 70035.71,
+        "changePct": -0.92,
+        "change": -648.27,
+        "up": 90,
+        "down": 134,
+        "flat": 1,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261007&idx=nk225"
+      },
+      {
+        "date": "2026-10-08",
+        "close": 69042.11,
+        "changePct": -1.42,
+        "change": -993.6,
+        "up": 56,
+        "down": 165,
+        "flat": 4,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261008&idx=nk225"
+      },
+      {
+        "date": "2026-10-09",
+        "close": 69030.92,
+        "changePct": -0.02,
+        "change": -11.19,
+        "up": 148,
+        "down": 74,
+        "flat": 3,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261009&idx=nk225"
+      },
+      {
+        "date": "2026-10-13",
+        "close": 67777.52,
+        "changePct": -1.82,
+        "change": -1253.4,
+        "up": 156,
+        "down": 68,
+        "flat": 1,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261013&idx=nk225"
+      },
+      {
+        "date": "2026-10-14",
+        "close": 67744.29,
+        "changePct": -0.05,
+        "change": -33.23,
+        "up": 100,
+        "down": 124,
+        "flat": 1,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261014&idx=nk225"
+      },
+      {
+        "date": "2026-10-15",
+        "close": 64425.95,
+        "changePct": -4.9,
+        "change": -3318.34,
+        "up": 87,
+        "down": 136,
+        "flat": 2,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261015&idx=nk225"
+      },
+      {
+        "date": "2026-10-16",
+        "close": 65324.29,
+        "changePct": 1.39,
+        "change": 898.34,
+        "up": 194,
+        "down": 29,
+        "flat": 2,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261016&idx=nk225"
+      },
+      {
+        "date": "2026-10-19",
+        "close": 64916.7,
+        "changePct": -0.62,
+        "change": -407.59,
+        "up": 111,
+        "down": 108,
+        "flat": 6,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261019&idx=nk225"
+      },
+      {
+        "date": "2026-10-20",
+        "close": 64075.42,
+        "changePct": -1.3,
+        "change": -841.28,
+        "up": 77,
+        "down": 144,
+        "flat": 4,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261020&idx=nk225"
+      },
+      {
+        "date": "2026-10-21",
+        "close": 64621.24,
+        "changePct": 0.85,
+        "change": 545.82,
+        "up": 152,
+        "down": 71,
+        "flat": 2,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261021&idx=nk225"
+      },
+      {
+        "date": "2026-10-22",
+        "close": 62907.84,
+        "changePct": -2.65,
+        "change": -1713.4,
+        "up": 81,
+        "down": 141,
+        "flat": 3,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261022&idx=nk225"
+      },
+      {
+        "date": "2026-10-23",
+        "close": 62693.16,
+        "changePct": -0.34,
+        "change": -214.68,
+        "up": 81,
+        "down": 144,
+        "flat": 0,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261023&idx=nk225"
+      },
+      {
+        "date": "2026-10-26",
+        "close": 62189.65,
+        "change": -503.51,
+        "changePct": -0.8031338665972492,
+        "up": 149,
+        "down": 73,
+        "flat": 3,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261026&idx=nk225"
+      },
+      {
+        "date": "2026-10-27",
+        "close": 63268.37,
+        "change": 1078.72,
+        "changePct": 1.7345651567423195,
+        "up": 124,
+        "down": 100,
+        "flat": 1,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261027&idx=nk225"
+      },
+      {
+        "date": "2026-10-28",
+        "close": 63954.19,
+        "change": 685.82,
+        "changePct": 1.0839855681440822,
+        "up": 85,
+        "down": 139,
+        "flat": 1,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261028&idx=nk225"
+      }
+    ],
+    "weights": [
+      {
+        "code": "6857",
+        "name": "アドバンテスト",
+        "weight": 11.13
+      },
+      {
+        "code": "9983",
+        "name": "ファーストリテイリング",
+        "weight": 9.79
+      },
+      {
+        "code": "8035",
+        "name": "東京エレクトロン",
+        "weight": 7.63
+      },
+      {
+        "code": "9984",
+        "name": "ソフトバンクグループ",
+        "weight": 5.52
+      }
+    ],
+    "weightDate": "2026-10-23"
+  },
+  "schemaVersion": 1,
+  "level": 100.08818976948697,
+  "pointChange": -0.2214222237939083,
+  "history": [
+    {
+      "date": "2026-10-22",
+      "ew": 100,
+      "median": null,
+      "advanceRatio": null,
+      "aboveMA25": null,
+      "advancers": null,
+      "decliners": null,
+      "unchanged": null,
+      "count": 225,
+      "maEligible": 0,
+      "return": null
+    },
+    {
+      "date": "2026-10-23",
+      "ew": 99.48238232878161,
+      "median": -0.004507042253521127,
+      "advanceRatio": 36,
+      "aboveMA25": null,
+      "advancers": 81,
+      "decliners": 144,
+      "unchanged": 0,
+      "count": 225,
+      "maEligible": 0,
+      "return": -0.005176176712183956
+    },
+    {
+      "date": "2026-10-26",
+      "ew": 99.93346027507522,
+      "return": 0.00453424953981123,
+      "median": 0.005698711595639247,
+      "advanceRatio": 66.22222222222223,
+      "aboveMA25": null,
+      "advancers": 149,
+      "decliners": 73,
+      "unchanged": 3,
+      "count": 225,
+      "maEligible": 0
+    },
+    {
+      "date": "2026-10-27",
+      "ew": 100.30961199328088,
+      "return": 0.0037640217517764013,
+      "median": 0.003761755485893417,
+      "advanceRatio": 55.111111111111114,
+      "aboveMA25": null,
+      "advancers": 124,
+      "decliners": 100,
+      "unchanged": 1,
+      "count": 225,
+      "maEligible": 0
+    },
+    {
+      "date": "2026-10-28",
+      "ew": 100.08818976948697,
+      "return": -0.002207387900261651,
+      "median": -0.0076362374175633465,
+      "advanceRatio": 37.77777777777778,
+      "aboveMA25": null,
+      "advancers": 85,
+      "decliners": 139,
+      "unchanged": 1,
+      "count": 225,
+      "maEligible": 0
+    }
+  ],
+  "calendar": {
+    "years": [
+      2026,
+      2027
+    ],
+    "closedDates": [
+      "2026-01-01",
+      "2026-01-02",
+      "2026-01-03",
+      "2026-01-12",
+      "2026-02-11",
+      "2026-02-23",
+      "2026-03-20",
+      "2026-04-29",
+      "2026-05-03",
+      "2026-05-04",
+      "2026-05-05",
+      "2026-05-06",
+      "2026-07-20",
+      "2026-08-11",
+      "2026-09-21",
+      "2026-09-22",
+      "2026-09-23",
+      "2026-10-12",
+      "2026-11-03",
+      "2026-11-23",
+      "2026-12-31",
+      "2027-01-01",
+      "2027-01-02",
+      "2027-01-03",
+      "2027-01-11",
+      "2027-02-11",
+      "2027-02-23",
+      "2027-03-21",
+      "2027-03-22",
+      "2027-04-29",
+      "2027-05-03",
+      "2027-05-04",
+      "2027-05-05",
+      "2027-07-19",
+      "2027-08-11",
+      "2027-09-20",
+      "2027-09-23",
+      "2027-10-11",
+      "2027-11-03",
+      "2027-11-23",
+      "2027-12-31"
+    ],
+    "source": "https://www8.cao.go.jp/chosei/shukujitsu/syukujitsu.csv"
+  },
+  "inputSHA256": "40f6c5d5f866e193e4f43a5517e05f5c7eabc27c59d681b9c177adcba486e8f3",
+  "constituentsSHA256": "5e586415a809736f2dd5edf1ab738f927f458301919fd720d9d9a84d751723b6",
+  "updatedAt": "2026-10-28T17:34:57.591478+09:00",
+  "automation": {
+    "timezone": "Asia/Tokyo",
+    "window": "取引終了後の平日夕方",
+    "dataBranch": "market-breadth-data"
+  },
+  "scaleConversion": {
+    "kind": "unit-conversion",
+    "sourceCommit": "acdff0d68dbdcfeb785adeeaee78600d98553c40",
+    "sourceBaseDate": "2026-10-22",
+    "sourceBaseValue": 62907.84,
+    "targetBaseValue": 100,
+    "factor": 0.0015896269844903276,
+    "lastObservationDate": "2026-10-28",
+    "observationCount": 5,
+    "note": "Only level and pointChange units changed. Dates, returns, input hashes, official closes and normalized company histories are unchanged. Original root files remain immutable."
+  }
+}
