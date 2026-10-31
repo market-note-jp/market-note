@@ -168,7 +168,7 @@ def accumulate(latest, state, quotes, official, calendar, now):
     day = quotes["date"]
     require(state["date"] == latest["date"] == latest["history"][-1]["date"], "State/history date mismatch")
     require(state["inputSHA256"] == latest["inputSHA256"], "State/input digest mismatch")
-    require(state["baseDate"] == latest["baseDate"] and state["baseValue"] == latest["baseValue"], "Index baseline mismatch")
+    require(state["baseDate"] == latest["baseDate"] == "2026-10-22" and state["baseValue"] == latest["baseValue"] == 100, "Index baseline must remain 2026-10-22 = 100")
     if day == state["date"]:
         require(fingerprint == state["inputSHA256"], "Past input changed: hold for reviewed correction; never overwrite")
         return {"status": "unchanged", "date": day, "files": {}}
@@ -201,7 +201,10 @@ def accumulate(latest, state, quotes, official, calendar, now):
     result["official"]["rows"].append({"date": day, "close": official["close"], "change": official["change"], "changePct": nk_return * 100, "up": official["up"], "down": official["down"], "flat": official["flat"], "url": official["summaryURL"]})
     result["method"]["historyAvailable"] = f'{len(result["history"]) - 1} daily return observations accumulated since {result["baseDate"]}; no backfilled or simulated observations.'
     new_state = {"schemaVersion": 1, "date": day, "baseDate": latest["baseDate"], "baseValue": latest["baseValue"], "level": level, "inputSHA256": fingerprint, "normalizedLevels": rolling}
-    archive = {"schemaVersion": 1, "date": day, "level": level, "pointChange": result["pointChange"], "metrics": result["metrics"], "breadth": row, "source": result["source"], "observedAt": quotes["observedAt"], "retrieved": result["retrieved"], "inputSHA256": fingerprint, "constituentsSHA256": result["constituentsSHA256"], "members": sorted(official["codes"])}
+    archive = {"schemaVersion": 1, "baseDate": latest["baseDate"], "baseValue": latest["baseValue"], "date": day, "level": level, "pointChange": result["pointChange"], "metrics": result["metrics"], "breadth": row, "source": result["source"], "observedAt": quotes["observedAt"], "retrieved": result["retrieved"], "inputSHA256": fingerprint, "constituentsSHA256": result["constituentsSHA256"], "members": sorted(official["codes"])}
+    if "scaleConversion" in latest:
+        new_state["scaleConversion"] = copy.deepcopy(latest["scaleConversion"])
+        archive["scaleConversion"] = copy.deepcopy(latest["scaleConversion"])
     return {"status": "updated", "date": day, "files": {"latest.json": result, "state.json": new_state, f"history/{day}.json": archive}}
 
 

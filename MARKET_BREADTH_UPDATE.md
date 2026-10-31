@@ -53,8 +53,8 @@ previous chat state or an old local checkout. Read the current
 
 ## Compute and publish the data
 
-Download `latest.json`, `state.json`, and inspect the archive paths from the
-pinned data SHA. Run:
+Download `base100/latest.json`, `base100/state.json`, and inspect the archive paths from the
+pinned data SHA under `base100/history/`. Pass `--data` the pinned `base100/` directory. The helper emits relative paths; prefix all three with `base100/` when publishing. Run:
 
 ```sh
 python scripts/update_market_breadth.py --data DATA_ROOT --official official.json --output CANDIDATE_ROOT
@@ -71,7 +71,7 @@ previous official close, immutable baseline, and uninterrupted trading sessions.
   session. Never compound a return twice or create a holiday row.
 - `updated`: exactly three candidate files: `latest.json`, `state.json`, and
   `history/YYYY-MM-DD.json`. Preserve every existing history file. The main
-  index begins **2026-10-22 = 62,907.84** and chains from its own prior value,
+  index begins **2026-10-22 = 100pt** and chains from its own prior value,
   never from each new Nikkei close. The aggregate history starts with the
   verified 2026-10-23 return. Do not fabricate earlier MN225 data.
 - Error: retry a transient source read within this run. Preserve the last good
@@ -102,7 +102,7 @@ excludes dividends and transaction costs, and is not an official Nikkei index.
 
 After an update, verify current branch SHA equals the intended commit and read
 back all three JSON files from that exact SHA. Then fetch the runtime public feed
-https://raw.githubusercontent.com/market-note-jp/market-note/market-breadth-data/latest.json
+https://raw.githubusercontent.com/market-note-jp/market-note/market-breadth-data/base100/latest.json
 and dated archive. Require matching date, level, fingerprint, history length,
 official close and SHA-backed archive; tolerate cache lag only by waiting and
 checking again. `lib/market-breadth/feed.mjs` validates the feed and rejects
@@ -130,3 +130,33 @@ node --test tests/market-breadth-engine.test.mjs tests/market-breadth-feed.test.
 Static fallback snapshots can advance only to a verified data commit. They must
 retain the full original baseline/history. Changing this file alone never proves
 that the externally saved Automation prompt or cadence changed.
+
+## Authorized 100-point scale conversion (2026-10-31)
+
+The user selected **2026-10-22 = 100pt**, retaining the same daily equal-weight
+calculation and Nikkei 225 constituents. This changes units only, never returns.
+The active dataset is `base100/latest.json`, `base100/state.json`, and
+`base100/history/YYYY-MM-DD.json` on `market-breadth-data`. Routine updates write
+only those three paths. The old root `latest.json`, `state.json` and `history/`
+remain frozen and byte-for-byte unchanged; do not resume writes to that scale.
+
+`scripts/rebase_market_breadth.py` performs the one-time conversion from a pinned
+original dataset into a separate empty output directory. It checks every dated
+archive against the original chain. It reuses the existing 100-based `history.ew`
+values, scales point changes, and preserves all dates, returns, breadth metrics,
+official Nikkei closes, input fingerprints and normalized per-company histories.
+`base100/scale-conversion.json` records the source commit, scale factor and
+original baseline. It is provenance, not a new observation or backfilled input.
+Do not rerun a migration over an existing dataset.
+
+The frontend rejects any base other than 100 and checks the official Nikkei
+baseline against its separately saved official close, not the independent MN225
+baseline. Chart comparisons use both series at the same starting scale; never
+subtract the yen-denominated Nikkei close from a 100-point MN225 level. CSV keeps
+actual Nikkei closes in a separate column from rebased values and point gaps.
+
+This conversion does not recover missing sessions or fix the separate 2026-10-29
+source-return validation failure. The existing writer was paused after that
+failure. Updating its prompt to the new paths/baseline does not establish that it
+has resumed. Resume only after the validation issue and every missing session
+have been resolved from fully verified complete source inputs.

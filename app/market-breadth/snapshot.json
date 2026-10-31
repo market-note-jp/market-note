@@ -1,7 +1,7 @@
 {
-  "date": "2026-10-23",
-  "observedAt": "2026-10-23T15:45:00+09:00",
-  "retrieved": "2026-10-24",
+  "date": "2026-10-28",
+  "observedAt": "2026-10-28T15:45:00+09:00",
+  "retrieved": "2026-10-28T17:34:57.591478+09:00",
   "source": {
     "prices": {
       "name": "トレーダーズ・ウェブ 日経225銘柄",
@@ -10,45 +10,47 @@
     "constituents": {
       "name": "日経平均プロフィル 構成銘柄一覧",
       "url": "https://indexes.nikkei.co.jp/nkave/index/component?idx=nk225",
-      "updated": "2026-10-23"
+      "updated": "2026-10-28"
     },
     "validation": {
       "name": "日経平均プロフィル 日次サマリー",
-      "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261023&idx=nk225"
+      "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261028&idx=nk225",
+      "retrievedFrom": "https://indexes.nikkei.co.jp/nkave/archives/summary",
+      "verifiedDate": "2026-10-28"
     }
   },
   "method": {
     "returnPct": "change/(close-change)*100",
     "equalWeightDailyReturnPct": "arithmetic mean of 225 daily returns; all constituents equal at start of day",
     "dividendsIncluded": false,
-    "historyAvailable": "1 daily return observation accumulated since 2026-10-22; no backfilled or simulated observations."
+    "historyAvailable": "4 daily return observations accumulated since 2026-10-22; no backfilled or simulated observations."
   },
   "validation": {
     "count": 225,
     "constituentSetMatch": true,
-    "officialUp": 81,
-    "officialDown": 144,
-    "officialFlat": 0,
-    "calculatedUp": 81,
-    "calculatedDown": 144,
-    "calculatedFlat": 0,
-    "maxAbsoluteDifferenceVsDisplayedReturnPp": 0.004924623115577953
+    "officialUp": 85,
+    "officialDown": 139,
+    "officialFlat": 1,
+    "calculatedUp": 85,
+    "calculatedDown": 139,
+    "calculatedFlat": 1,
+    "maxAbsoluteDifferenceVsDisplayedReturnPp": 0.00498489425981874
   },
   "metrics": {
-    "nikkeiClose": 62693.16,
-    "nikkeiPreviousClose": 62907.84,
-    "nikkeiChange": -214.68,
-    "nikkeiReturnPct": -0.34126112103038353,
-    "equalWeightReturnPct": -0.5176176712183956,
-    "medianReturnPct": -0.4507042253521127,
-    "advancers": 81,
-    "decliners": 144,
-    "unchanged": 0,
-    "advancerPct": 36,
-    "nikkeiMinusEqualWeightPp": 0.1763565501880121
+    "nikkeiClose": 63954.19,
+    "nikkeiPreviousClose": 63268.37,
+    "nikkeiChange": 685.82,
+    "nikkeiReturnPct": 1.0839855681440822,
+    "equalWeightReturnPct": -0.22073879002616512,
+    "medianReturnPct": -0.7636237417563346,
+    "advancers": 85,
+    "decliners": 139,
+    "unchanged": 1,
+    "advancerPct": 37.77777777777778,
+    "nikkeiMinusEqualWeightPp": 1.3047243581702472
   },
   "baseDate": "2026-10-22",
-  "baseValue": 62907.84,
+  "baseValue": 100,
   "name": "Market Note 225",
   "official": {
     "source": "Nikkei Indexes 日次サマリー",
@@ -214,6 +216,36 @@
         "down": 144,
         "flat": 0,
         "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261023&idx=nk225"
+      },
+      {
+        "date": "2026-10-26",
+        "close": 62189.65,
+        "change": -503.51,
+        "changePct": -0.8031338665972492,
+        "up": 149,
+        "down": 73,
+        "flat": 3,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261026&idx=nk225"
+      },
+      {
+        "date": "2026-10-27",
+        "close": 63268.37,
+        "change": 1078.72,
+        "changePct": 1.7345651567423195,
+        "up": 124,
+        "down": 100,
+        "flat": 1,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261027&idx=nk225"
+      },
+      {
+        "date": "2026-10-28",
+        "close": 63954.19,
+        "change": 685.82,
+        "changePct": 1.0839855681440822,
+        "up": 85,
+        "down": 139,
+        "flat": 1,
+        "url": "https://indexes.nikkei.co.jp/nkave/archives/summary?dt=20261028&idx=nk225"
       }
     ],
     "weights": [
@@ -241,8 +273,8 @@
     "weightDate": "2026-10-23"
   },
   "schemaVersion": 1,
-  "level": 62582.2179035782,
-  "pointChange": -325.6220964217937,
+  "level": 100.08818976948697,
+  "pointChange": -0.2214222237939083,
   "history": [
     {
       "date": "2026-10-22",
@@ -269,6 +301,45 @@
       "count": 225,
       "maEligible": 0,
       "return": -0.005176176712183956
+    },
+    {
+      "date": "2026-10-26",
+      "ew": 99.93346027507522,
+      "return": 0.00453424953981123,
+      "median": 0.005698711595639247,
+      "advanceRatio": 66.22222222222223,
+      "aboveMA25": null,
+      "advancers": 149,
+      "decliners": 73,
+      "unchanged": 3,
+      "count": 225,
+      "maEligible": 0
+    },
+    {
+      "date": "2026-10-27",
+      "ew": 100.30961199328088,
+      "return": 0.0037640217517764013,
+      "median": 0.003761755485893417,
+      "advanceRatio": 55.111111111111114,
+      "aboveMA25": null,
+      "advancers": 124,
+      "decliners": 100,
+      "unchanged": 1,
+      "count": 225,
+      "maEligible": 0
+    },
+    {
+      "date": "2026-10-28",
+      "ew": 100.08818976948697,
+      "return": -0.002207387900261651,
+      "median": -0.0076362374175633465,
+      "advanceRatio": 37.77777777777778,
+      "aboveMA25": null,
+      "advancers": 85,
+      "decliners": 139,
+      "unchanged": 1,
+      "count": 225,
+      "maEligible": 0
     }
   ],
   "calendar": {
@@ -321,12 +392,23 @@
     ],
     "source": "https://www8.cao.go.jp/chosei/shukujitsu/syukujitsu.csv"
   },
-  "inputSHA256": "b51320fe4ff1eef90c388873c8e3c01d2afb8eedfe05fd6212fcca5a8feeea95",
+  "inputSHA256": "40f6c5d5f866e193e4f43a5517e05f5c7eabc27c59d681b9c177adcba486e8f3",
   "constituentsSHA256": "5e586415a809736f2dd5edf1ab738f927f458301919fd720d9d9a84d751723b6",
-  "updatedAt": "2026-10-24T16:07:06.593770+09:00",
+  "updatedAt": "2026-10-28T17:34:57.591478+09:00",
   "automation": {
     "timezone": "Asia/Tokyo",
     "window": "取引終了後の平日夕方",
     "dataBranch": "market-breadth-data"
+  },
+  "scaleConversion": {
+    "kind": "unit-conversion",
+    "sourceCommit": "acdff0d68dbdcfeb785adeeaee78600d98553c40",
+    "sourceBaseDate": "2026-10-22",
+    "sourceBaseValue": 62907.84,
+    "targetBaseValue": 100,
+    "factor": 0.0015896269844903276,
+    "lastObservationDate": "2026-10-28",
+    "observationCount": 5,
+    "note": "Only level and pointChange units changed. Dates, returns, input hashes, official closes and normalized company histories are unchanged. Original root files remain immutable."
   }
 }
