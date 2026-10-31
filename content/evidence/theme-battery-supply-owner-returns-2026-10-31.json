@@ -1,0 +1,381 @@
+{
+  "version": 1,
+  "articleSlug": "theme-battery-supply-owner-returns-2026-10-31",
+  "articleSha256": "9c2b470b3e8ac61fd1fc5e6b348d311adb6eac5e95da64334c9a36bd292f9040",
+  "checkedAt": "2026-10-31T10:27:51.300Z",
+  "informationCutoff": "2026-10-31T10:24:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "CAISO公式原PDFの既存保存bytes29–30/34頁を独立読取。web再取得はInternalError、freshGETとはしない。CPUC2026MPB原PDF1–3頁をweb読取、ATB本文確認。個別資産利益/容量評価の加算/固定cohort比較は不成立と明記。 Markdownのみの仮digest。統合後の最終route digest・独立レビューは別途必要。 Final integrated Markdown reviewed against frozen source; independent review PASS: themes/theme-battery-supply-owner-returns-2026-10-31/review.md. Public body and internal evidence kept separate.",
+  "comparisons": [
+    {
+      "id": "market-unit",
+      "question": "市場純収入は、2024年の約53ドル/kW・年から、2025年は約45ドル/kW・年へ減った。",
+      "definition": "本文の対象期間・単位・母集団を維持。",
+      "status": "ready",
+      "claim": "市場純収入は、2024年の約53ドル/kW・年から、2025年は約45ドル/kW・年へ減った。",
+      "requiredInputs": [
+        {
+          "id": "p",
+          "entity": "CAISO域内通年稼働電池・容量加重平均",
+          "metric": "市場純収入",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "米ドル/kW年",
+          "basis": "actual",
+          "definition": "市場純収入"
+        },
+        {
+          "id": "c",
+          "entity": "CAISO域内通年稼働電池・容量加重平均",
+          "metric": "市場純収入",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/kW年",
+          "basis": "actual",
+          "definition": "市場純収入"
+        }
+      ],
+      "observations": [
+        {
+          "id": "p",
+          "entity": "CAISO域内通年稼働電池・容量加重平均",
+          "metric": "市場純収入",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "米ドル/kW年",
+          "basis": "actual",
+          "definition": "市場純収入",
+          "value": 53,
+          "source": {
+            "url": "https://www.caiso.com/documents/2025-special-report-on-battery-storage-oct-28-2026.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Figure2.24、29〜30頁",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        },
+        {
+          "id": "c",
+          "entity": "CAISO域内通年稼働電池・容量加重平均",
+          "metric": "市場純収入",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/kW年",
+          "basis": "actual",
+          "definition": "市場純収入",
+          "value": 45,
+          "source": {
+            "url": "https://www.caiso.com/documents/2025-special-report-on-battery-storage-oct-28-2026.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Figure2.24、29〜30頁",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "market-decline",
+      "question": "丸められた公表値で計算すると約15.1%の低下になる。",
+      "definition": "本文の対象期間・単位・母集団を維持。",
+      "status": "ready",
+      "claim": "丸められた公表値で計算すると約15.1%の低下になる。",
+      "requiredInputs": [
+        {
+          "id": "p",
+          "entity": "CAISO域内通年稼働電池・容量加重平均",
+          "metric": "市場純収入",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "米ドル/kW年",
+          "basis": "actual",
+          "definition": "市場純収入"
+        },
+        {
+          "id": "c",
+          "entity": "CAISO域内通年稼働電池・容量加重平均",
+          "metric": "市場純収入",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/kW年",
+          "basis": "actual",
+          "definition": "市場純収入"
+        }
+      ],
+      "observations": [
+        {
+          "id": "p",
+          "entity": "CAISO域内通年稼働電池・容量加重平均",
+          "metric": "市場純収入",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "米ドル/kW年",
+          "basis": "actual",
+          "definition": "市場純収入",
+          "value": 53,
+          "source": {
+            "url": "https://www.caiso.com/documents/2025-special-report-on-battery-storage-oct-28-2026.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Figure2.24、29〜30頁",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        },
+        {
+          "id": "c",
+          "entity": "CAISO域内通年稼働電池・容量加重平均",
+          "metric": "市場純収入",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/kW年",
+          "basis": "actual",
+          "definition": "市場純収入",
+          "value": 45,
+          "source": {
+            "url": "https://www.caiso.com/documents/2025-special-report-on-battery-storage-oct-28-2026.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Figure2.24、29〜30頁",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "g",
+          "operation": "growth-percent",
+          "inputs": [
+            "c",
+            "p"
+          ],
+          "value": -15.1,
+          "definition": "公表概数による前年比",
+          "precision": 1
+        }
+      ]
+    },
+    {
+      "id": "market-total",
+      "question": "一方、電池群全体の市場純収入は約2%増えた。",
+      "definition": "本文の対象期間・単位・母集団を維持。",
+      "status": "ready",
+      "claim": "一方、電池群全体の市場純収入は約2%増えた。",
+      "requiredInputs": [
+        {
+          "id": "g",
+          "entity": "CAISO域内全電池群",
+          "metric": "市場純収入前年比・概数",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "市場純収入前年比・概数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "g",
+          "entity": "CAISO域内全電池群",
+          "metric": "市場純収入前年比・概数",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "市場純収入前年比・概数",
+          "value": 2,
+          "source": {
+            "url": "https://www.caiso.com/documents/2025-special-report-on-battery-storage-oct-28-2026.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "2.9.1 Total net market revenues",
+            "kind": "primary",
+            "pdfPage": 29
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "ra-final",
+      "question": "| Final同士：2025年→2026年 | 11.21 | 10.11 | −9.8% |",
+      "definition": "本文の対象期間・単位・母集団を維持。",
+      "status": "ready",
+      "claim": "| Final同士：2025年→2026年 | 11.21 | 10.11 | −9.8% |",
+      "requiredInputs": [
+        {
+          "id": "p",
+          "entity": "CPUC統一RAベンチマーク",
+          "metric": "Final RA評価",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/kW月",
+          "basis": "actual",
+          "definition": "Final RA評価"
+        },
+        {
+          "id": "c",
+          "entity": "CPUC統一RAベンチマーク",
+          "metric": "Final RA評価",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/kW月",
+          "basis": "actual",
+          "definition": "Final RA評価"
+        }
+      ],
+      "observations": [
+        {
+          "id": "p",
+          "entity": "CPUC統一RAベンチマーク",
+          "metric": "Final RA評価",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/kW月",
+          "basis": "actual",
+          "definition": "Final RA評価",
+          "value": 11.21,
+          "source": {
+            "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/energy-division/documents/community-choice-aggregation-and-direct-access/2026-market-price-benchmarks.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "Table1、1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "c",
+          "entity": "CPUC統一RAベンチマーク",
+          "metric": "Final RA評価",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/kW月",
+          "basis": "actual",
+          "definition": "Final RA評価",
+          "value": 10.11,
+          "source": {
+            "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/energy-division/documents/community-choice-aggregation-and-direct-access/2026-market-price-benchmarks.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "Table1、1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "g",
+          "operation": "growth-percent",
+          "inputs": [
+            "c",
+            "p"
+          ],
+          "value": -9.8,
+          "definition": "同じFinalラベルの対象年比較",
+          "precision": 1
+        }
+      ]
+    },
+    {
+      "id": "ra-forecast",
+      "question": "| Forecast同士：2026年→2027年 | 11.53 | 10.02 | −13.1% |",
+      "definition": "本文の対象期間・単位・母集団を維持。",
+      "status": "ready",
+      "claim": "| Forecast同士：2026年→2027年 | 11.53 | 10.02 | −13.1% |",
+      "requiredInputs": [
+        {
+          "id": "p",
+          "entity": "CPUC統一RAベンチマーク",
+          "metric": "Forecast RA評価・制度上の公表値",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/kW月",
+          "basis": "actual",
+          "definition": "Forecast RA評価・制度上の公表値"
+        },
+        {
+          "id": "c",
+          "entity": "CPUC統一RAベンチマーク",
+          "metric": "Forecast RA評価・制度上の公表値",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "米ドル/kW月",
+          "basis": "actual",
+          "definition": "Forecast RA評価・制度上の公表値"
+        }
+      ],
+      "observations": [
+        {
+          "id": "p",
+          "entity": "CPUC統一RAベンチマーク",
+          "metric": "Forecast RA評価・制度上の公表値",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/kW月",
+          "basis": "actual",
+          "definition": "Forecast RA評価・制度上の公表値",
+          "value": 11.53,
+          "source": {
+            "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/energy-division/documents/community-choice-aggregation-and-direct-access/2026-market-price-benchmarks.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "Table2、2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "c",
+          "entity": "CPUC統一RAベンチマーク",
+          "metric": "Forecast RA評価・制度上の公表値",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "米ドル/kW月",
+          "basis": "actual",
+          "definition": "Forecast RA評価・制度上の公表値",
+          "value": 10.02,
+          "source": {
+            "url": "https://www.cpuc.ca.gov/-/media/cpuc-website/divisions/energy-division/documents/community-choice-aggregation-and-direct-access/2026-market-price-benchmarks.pdf",
+            "publishedOn": "2026-10-01",
+            "locator": "Table2、2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "g",
+          "operation": "growth-percent",
+          "inputs": [
+            "c",
+            "p"
+          ],
+          "value": -13.1,
+          "definition": "Forecast比較、実収入前年比ではない",
+          "precision": 1
+        }
+      ]
+    },
+    {
+      "id": "total-profit",
+      "question": "同じ電池の総投資利益の2024→2025変化",
+      "definition": "個別資産の市場収入/容量契約/維持費/投資/金融条件",
+      "status": "withheld",
+      "reason": "同一設備ベースの容量収入・費用・投資額未取得。RA benchmarkは代用不可。",
+      "omittedClaim": "蓄電池の総利益も15.1%低下した",
+      "requiredInputs": [
+        {
+          "id": "missing",
+          "entity": "同一CAISO電池設備",
+          "metric": "同じ電池の総投資利益の2024→2025変化",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2026-10-31",
+          "unit": "米ドル",
+          "basis": "actual",
+          "definition": "個別資産の市場収入/容量契約/維持費/投資/金融条件"
+        }
+      ],
+      "observations": [],
+      "calculations": []
+    }
+  ]
+}

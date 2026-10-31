@@ -1,0 +1,882 @@
+{
+  "version": 1,
+  "articleSlug": "theme-us-health-premiums-wages-2026-10-31",
+  "articleSha256": "ceff0f4d91c1c1b11229506e830108e06209932eea11964163a3982a6b9dfa14",
+  "checkedAt": "2026-10-31T10:27:51.297Z",
+  "informationCutoff": "2026-10-31T10:24:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "BLS ECI原HTML表A、KFF2025/2026本文と調査方法、公表資料、BLS概念・計算法を独立再読。雇用主費用と本人負担、割合/ドル、名目/実質、家族加入者/民間職種を区別。 Markdownのみの仮digest。統合後の最終route digest・独立レビューは別途必要。 Final integrated Markdown reviewed against frozen source; independent review PASS: themes/theme-us-health-premiums-wages-2026-10-31/review.md. Public body and internal evidence kept separate.",
+  "comparisons": [
+    {
+      "id": "eci-current",
+      "question": "民間部門では2026年9月までの1年間に名目賃金・給与が3.1%上がった一方、物価調整後は0.6%減った。雇用主の医療給付費は6.4%増えている。",
+      "definition": "本文の対象期間・単位・母集団を維持。",
+      "status": "ready",
+      "claim": "民間部門では2026年9月までの1年間に名目賃金・給与が3.1%上がった一方、物価調整後は0.6%減った。雇用主の医療給付費は6.4%増えている。",
+      "requiredInputs": [
+        {
+          "id": "nominal",
+          "entity": "米民間部門ECI",
+          "metric": "名目賃金給与・前年比",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "名目賃金給与・前年比"
+        },
+        {
+          "id": "real",
+          "entity": "米民間部門ECI",
+          "metric": "実質賃金給与・前年比",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "実質賃金給与・前年比"
+        },
+        {
+          "id": "health",
+          "entity": "米民間部門ECI",
+          "metric": "雇用主医療給付費・前年比",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "雇用主医療給付費・前年比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "nominal",
+          "entity": "米民間部門ECI",
+          "metric": "名目賃金給与・前年比",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "名目賃金給与・前年比",
+          "value": 3.1,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/eci_10302026.htm",
+            "publishedOn": "2026-10-30",
+            "locator": "Table A、12か月変化・季節未調整",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "real",
+          "entity": "米民間部門ECI",
+          "metric": "実質賃金給与・前年比",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "実質賃金給与・前年比",
+          "value": -0.6,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/eci_10302026.htm",
+            "publishedOn": "2026-10-30",
+            "locator": "Table A、12か月変化・季節未調整",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "health",
+          "entity": "米民間部門ECI",
+          "metric": "雇用主医療給付費・前年比",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "雇用主医療給付費・前年比",
+          "value": 6.4,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/eci_10302026.htm",
+            "publishedOn": "2026-10-30",
+            "locator": "Table A、12か月変化・季節未調整",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "premium-total",
+      "question": "| 保険料総額 | 26,993ドル | 28,303ドル | ＋1,310ドル |",
+      "definition": "本文の対象期間・単位・母集団を維持。",
+      "status": "ready",
+      "claim": "| 保険料総額 | 26,993ドル | 28,303ドル | ＋1,310ドル |",
+      "requiredInputs": [
+        {
+          "id": "p",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "総保険料",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "総保険料"
+        },
+        {
+          "id": "c",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "総保険料",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "総保険料"
+        }
+      ],
+      "observations": [
+        {
+          "id": "p",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "総保険料",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "総保険料",
+          "value": 26993,
+          "source": {
+            "url": "https://www.kff.org/health-costs/2025-employer-health-benefits-survey/",
+            "publishedOn": "2025-10-22",
+            "locator": "Overview / Summary、調査時点の現行プラン、暦年平均ではない",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "総保険料",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "総保険料",
+          "value": 28303,
+          "source": {
+            "url": "https://www.kff.org/private-insurance/workers-now-pay-7471-on-average-annually-for-family-health-coverage-up-9-or-621-from-2025-benchmark-employer-health-benefits-survey-finds/",
+            "publishedOn": "2026-10-22",
+            "locator": "Overview / Summary、調査時点の現行プラン、暦年平均ではない",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "d",
+          "operation": "difference",
+          "inputs": [
+            "c",
+            "p"
+          ],
+          "value": 1310,
+          "definition": "2026平均−2025平均",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "premium-worker",
+      "question": "| 従業員負担 | 6,850ドル | 7,471ドル | ＋621ドル |",
+      "definition": "本文の対象期間・単位・母集団を維持。",
+      "status": "ready",
+      "claim": "| 従業員負担 | 6,850ドル | 7,471ドル | ＋621ドル |",
+      "requiredInputs": [
+        {
+          "id": "p",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "従業員保険料",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "従業員保険料"
+        },
+        {
+          "id": "c",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "従業員保険料",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "従業員保険料"
+        }
+      ],
+      "observations": [
+        {
+          "id": "p",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "従業員保険料",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "従業員保険料",
+          "value": 6850,
+          "source": {
+            "url": "https://www.kff.org/health-costs/2025-employer-health-benefits-survey/",
+            "publishedOn": "2025-10-22",
+            "locator": "Overview / Summary、調査時点の現行プラン、暦年平均ではない",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "従業員保険料",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "従業員保険料",
+          "value": 7471,
+          "source": {
+            "url": "https://www.kff.org/private-insurance/workers-now-pay-7471-on-average-annually-for-family-health-coverage-up-9-or-621-from-2025-benchmark-employer-health-benefits-survey-finds/",
+            "publishedOn": "2026-10-22",
+            "locator": "Overview / Summary、調査時点の現行プラン、暦年平均ではない",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "d",
+          "operation": "difference",
+          "inputs": [
+            "c",
+            "p"
+          ],
+          "value": 621,
+          "definition": "2026平均−2025平均",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "premium-employer",
+      "question": "| 差額から求めた雇用主負担 | 20,143ドル | 20,832ドル | ＋689ドル |",
+      "definition": "本文の対象期間・単位・母集団を維持。",
+      "status": "ready",
+      "claim": "| 差額から求めた雇用主負担 | 20,143ドル | 20,832ドル | ＋689ドル |",
+      "requiredInputs": [
+        {
+          "id": "tp",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "総保険料",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "総保険料"
+        },
+        {
+          "id": "tc",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "総保険料",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "総保険料"
+        },
+        {
+          "id": "wp",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "従業員保険料",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "従業員保険料"
+        },
+        {
+          "id": "wc",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "従業員保険料",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "従業員保険料"
+        }
+      ],
+      "observations": [
+        {
+          "id": "tp",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "総保険料",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "総保険料",
+          "value": 26993,
+          "source": {
+            "url": "https://www.kff.org/health-costs/2025-employer-health-benefits-survey/",
+            "publishedOn": "2025-10-22",
+            "locator": "Overview / Summary、調査時点の現行プラン、暦年平均ではない",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "tc",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "総保険料",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "総保険料",
+          "value": 28303,
+          "source": {
+            "url": "https://www.kff.org/private-insurance/workers-now-pay-7471-on-average-annually-for-family-health-coverage-up-9-or-621-from-2025-benchmark-employer-health-benefits-survey-finds/",
+            "publishedOn": "2026-10-22",
+            "locator": "Overview / Summary、調査時点の現行プラン、暦年平均ではない",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "wp",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "従業員保険料",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "従業員保険料",
+          "value": 6850,
+          "source": {
+            "url": "https://www.kff.org/health-costs/2025-employer-health-benefits-survey/",
+            "publishedOn": "2025-10-22",
+            "locator": "Overview / Summary、調査時点の現行プラン、暦年平均ではない",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "wc",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "従業員保険料",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "従業員保険料",
+          "value": 7471,
+          "source": {
+            "url": "https://www.kff.org/private-insurance/workers-now-pay-7471-on-average-annually-for-family-health-coverage-up-9-or-621-from-2025-benchmark-employer-health-benefits-survey-finds/",
+            "publishedOn": "2026-10-22",
+            "locator": "Overview / Summary、調査時点の現行プラン、暦年平均ではない",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "ep",
+          "operation": "difference",
+          "inputs": [
+            "tp",
+            "wp"
+          ],
+          "value": 20143,
+          "definition": "前年総額−従業員",
+          "precision": 0
+        },
+        {
+          "id": "ec",
+          "operation": "difference",
+          "inputs": [
+            "tc",
+            "wc"
+          ],
+          "value": 20832,
+          "definition": "当年総額−従業員",
+          "precision": 0
+        },
+        {
+          "id": "ed",
+          "operation": "difference",
+          "inputs": [
+            "ec",
+            "ep"
+          ],
+          "value": 689,
+          "definition": "当年差額−前年差額",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "worker-growth",
+      "question": "従業員負担の増加率は621÷6,850＝約9.1%。",
+      "definition": "本文の対象期間・単位・母集団を維持。",
+      "status": "ready",
+      "claim": "従業員負担の増加率は621÷6,850＝約9.1%。",
+      "requiredInputs": [
+        {
+          "id": "p",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "従業員保険料",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "従業員保険料"
+        },
+        {
+          "id": "c",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "従業員保険料",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "従業員保険料"
+        }
+      ],
+      "observations": [
+        {
+          "id": "p",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "従業員保険料",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "従業員保険料",
+          "value": 6850,
+          "source": {
+            "url": "https://www.kff.org/health-costs/2025-employer-health-benefits-survey/",
+            "publishedOn": "2025-10-22",
+            "locator": "Overview / Summary、調査時点の現行プラン、暦年平均ではない",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "従業員保険料",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "従業員保険料",
+          "value": 7471,
+          "source": {
+            "url": "https://www.kff.org/private-insurance/workers-now-pay-7471-on-average-annually-for-family-health-coverage-up-9-or-621-from-2025-benchmark-employer-health-benefits-survey-finds/",
+            "publishedOn": "2026-10-22",
+            "locator": "Overview / Summary、調査時点の現行プラン、暦年平均ではない",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "g",
+          "operation": "growth-percent",
+          "inputs": [
+            "c",
+            "p"
+          ],
+          "value": 9.1,
+          "definition": "従業員保険料平均の前年比",
+          "precision": 1
+        }
+      ]
+    },
+    {
+      "id": "worker-month",
+      "question": "月換算では621÷12＝51.75ドルの増額になる。",
+      "definition": "本文の対象期間・単位・母集団を維持。",
+      "status": "ready",
+      "claim": "月換算では621÷12＝51.75ドルの増額になる。",
+      "requiredInputs": [
+        {
+          "id": "p",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "従業員保険料",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "従業員保険料"
+        },
+        {
+          "id": "c",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "従業員保険料",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "従業員保険料"
+        },
+        {
+          "id": "months",
+          "entity": "暦",
+          "metric": "1年の月数",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "月",
+          "basis": "actual",
+          "definition": "1年の月数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "p",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "従業員保険料",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "従業員保険料",
+          "value": 6850,
+          "source": {
+            "url": "https://www.kff.org/health-costs/2025-employer-health-benefits-survey/",
+            "publishedOn": "2025-10-22",
+            "locator": "Overview / Summary、調査時点の現行プラン、暦年平均ではない",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c",
+          "entity": "KFF・雇用主提供の家族向け医療保険加入者",
+          "metric": "従業員保険料",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/年",
+          "basis": "actual",
+          "definition": "従業員保険料",
+          "value": 7471,
+          "source": {
+            "url": "https://www.kff.org/private-insurance/workers-now-pay-7471-on-average-annually-for-family-health-coverage-up-9-or-621-from-2025-benchmark-employer-health-benefits-survey-finds/",
+            "publishedOn": "2026-10-22",
+            "locator": "Overview / Summary、調査時点の現行プラン、暦年平均ではない",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "months",
+          "entity": "暦",
+          "metric": "1年の月数",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "月",
+          "basis": "actual",
+          "definition": "1年の月数",
+          "value": 12,
+          "source": {
+            "url": "https://www.kff.org/private-insurance/workers-now-pay-7471-on-average-annually-for-family-health-coverage-up-9-or-621-from-2025-benchmark-employer-health-benefits-survey-finds/",
+            "publishedOn": "2026-10-22",
+            "locator": "年額を月換算する定数",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "d",
+          "operation": "difference",
+          "inputs": [
+            "c",
+            "p"
+          ],
+          "value": 621,
+          "definition": "年額差",
+          "precision": 0
+        },
+        {
+          "id": "r",
+          "operation": "ratio-percent",
+          "inputs": [
+            "d",
+            "months"
+          ],
+          "value": 5175,
+          "definition": "年額差÷12×100。本文51.75ドルはこの値÷100",
+          "precision": 2
+        }
+      ]
+    },
+    {
+      "id": "worker-share",
+      "question": "KFFは2026年の家族向け保険料に対する平均従業員負担割合を27%とし、前年と統計的に同程度としている。",
+      "definition": "本文の対象期間・単位・母集団を維持。",
+      "status": "ready",
+      "claim": "KFFは2026年の家族向け保険料に対する平均従業員負担割合を27%とし、前年と統計的に同程度としている。",
+      "requiredInputs": [
+        {
+          "id": "share",
+          "entity": "KFF家族保険加入者",
+          "metric": "平均従業員負担割合",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-07-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "平均従業員負担割合"
+        }
+      ],
+      "observations": [
+        {
+          "id": "share",
+          "entity": "KFF家族保険加入者",
+          "metric": "平均従業員負担割合",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-07-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "平均従業員負担割合",
+          "value": 27,
+          "source": {
+            "url": "https://www.kff.org/health-costs/2026-employer-health-benefits-survey/",
+            "publishedOn": "2026-10-22",
+            "locator": "Worker and Employer Contributions、Figure 6.1。原文similar to lastyear",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "eci-annual",
+      "question": "民間の医療給付費上昇率は2025年9月の6.1%から2026年9月の6.4%へ、賃金・給与上昇率は3.6%から3.1%へ動いている。",
+      "definition": "本文の対象期間・単位・母集団を維持。",
+      "status": "ready",
+      "claim": "民間の医療給付費上昇率は2025年9月の6.1%から2026年9月の6.4%へ、賃金・給与上昇率は3.6%から3.1%へ動いている。",
+      "requiredInputs": [
+        {
+          "id": "hp",
+          "entity": "米民間部門ECI",
+          "metric": "医療給付費・前年比",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "医療給付費・前年比"
+        },
+        {
+          "id": "hc",
+          "entity": "米民間部門ECI",
+          "metric": "医療給付費・前年比",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "医療給付費・前年比"
+        },
+        {
+          "id": "wp",
+          "entity": "米民間部門ECI",
+          "metric": "名目賃金給与・前年比",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "名目賃金給与・前年比"
+        },
+        {
+          "id": "wc",
+          "entity": "米民間部門ECI",
+          "metric": "名目賃金給与・前年比",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "名目賃金給与・前年比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "hp",
+          "entity": "米民間部門ECI",
+          "metric": "医療給付費・前年比",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "医療給付費・前年比",
+          "value": 6.1,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/eci_10302026.htm",
+            "publishedOn": "2026-10-30",
+            "locator": "Table A、12か月変化・季節未調整",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "hc",
+          "entity": "米民間部門ECI",
+          "metric": "医療給付費・前年比",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "医療給付費・前年比",
+          "value": 6.4,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/eci_10302026.htm",
+            "publishedOn": "2026-10-30",
+            "locator": "Table A、12か月変化・季節未調整",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "wp",
+          "entity": "米民間部門ECI",
+          "metric": "名目賃金給与・前年比",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "名目賃金給与・前年比",
+          "value": 3.6,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/eci_10302026.htm",
+            "publishedOn": "2026-10-30",
+            "locator": "Table A、12か月変化・季節未調整",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "wc",
+          "entity": "米民間部門ECI",
+          "metric": "名目賃金給与・前年比",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "名目賃金給与・前年比",
+          "value": 3.1,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/eci_10302026.htm",
+            "publishedOn": "2026-10-30",
+            "locator": "Table A、12か月変化・季節未調整",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "five-year",
+      "question": "2021年からの5年間の家族保険料は28%、本人負担は26%、賃金は27%増で、長めに見ると近い伸びだった。",
+      "definition": "本文の対象期間・単位・母集団を維持。",
+      "status": "ready",
+      "claim": "2021年からの5年間の家族保険料は28%、本人負担は26%、賃金は27%増で、長めに見ると近い伸びだった。",
+      "requiredInputs": [
+        {
+          "id": "premium",
+          "entity": "KFF2026比較",
+          "metric": "家族保険料5年増加率",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "家族保険料5年増加率"
+        },
+        {
+          "id": "worker",
+          "entity": "KFF2026比較",
+          "metric": "本人保険料5年増加率",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "本人保険料5年増加率"
+        },
+        {
+          "id": "wage",
+          "entity": "KFF2026比較",
+          "metric": "賃金5年増加率",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "賃金5年増加率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "premium",
+          "entity": "KFF2026比較",
+          "metric": "家族保険料5年増加率",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "家族保険料5年増加率",
+          "value": 28,
+          "source": {
+            "url": "https://www.kff.org/private-insurance/workers-now-pay-7471-on-average-annually-for-family-health-coverage-up-9-or-621-from-2025-benchmark-employer-health-benefits-survey-finds/",
+            "publishedOn": "2026-10-22",
+            "locator": "公表資料Since 2021、ECI9月系列とは別",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "worker",
+          "entity": "KFF2026比較",
+          "metric": "本人保険料5年増加率",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "本人保険料5年増加率",
+          "value": 26,
+          "source": {
+            "url": "https://www.kff.org/private-insurance/workers-now-pay-7471-on-average-annually-for-family-health-coverage-up-9-or-621-from-2025-benchmark-employer-health-benefits-survey-finds/",
+            "publishedOn": "2026-10-22",
+            "locator": "公表資料Since 2021、ECI9月系列とは別",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "wage",
+          "entity": "KFF2026比較",
+          "metric": "賃金5年増加率",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "賃金5年増加率",
+          "value": 27,
+          "source": {
+            "url": "https://www.kff.org/private-insurance/workers-now-pay-7471-on-average-annually-for-family-health-coverage-up-9-or-621-from-2025-benchmark-employer-health-benefits-survey-finds/",
+            "publishedOn": "2026-10-22",
+            "locator": "公表資料Since 2021、ECI9月系列とは別",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "causal-wage",
+      "question": "医療費増加が失わせた賃上げと消費減少額",
+      "definition": "同一企業・加入者と反実仮想を含む因果識別が必要",
+      "status": "withheld",
+      "reason": "雇用主ECIとKFF家族保険平均では因果推定できない。税調整後所得・消費反応未取得。",
+      "omittedClaim": "医療費高騰が米国の賃金鈍化を引き起こした",
+      "requiredInputs": [
+        {
+          "id": "missing",
+          "entity": "同一企業・従業員集団",
+          "metric": "医療費増加が失わせた賃上げと消費減少額",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2026-10-31",
+          "unit": "米ドル",
+          "basis": "actual",
+          "definition": "同一企業・加入者と反実仮想を含む因果識別が必要"
+        }
+      ],
+      "observations": [],
+      "calculations": []
+    }
+  ]
+}

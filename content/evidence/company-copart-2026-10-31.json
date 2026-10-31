@@ -1,0 +1,2432 @@
+{
+  "version": 1,
+  "articleSlug": "company-copart-2026-10-31",
+  "articleSha256": "2a4752d1b4749cab948ca5f89746c6bffbbfd9d682b2d2e2eae3bb1d5265609f",
+  "checkedAt": "2026-10-31T10:28:41.264Z",
+  "informationCutoff": "2026-10-31T19:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "原本本文と全重要比較を執筆者確認、独立監査依頼。Markdown暫定digestは統合時に最終記事digestへ置換する。感応度は4666.209÷100=46.66209→46.662を手計算・Python確認。ROE平均資本18284.328÷2=9142.164。独自仮定を会社予想にしない。",
+  "comparisons": [
+    {
+      "id": "history-2021",
+      "question": "| 2021 | 2,692.5 | 1,136.4 | 990.9 | 463.0 | 527.9 |",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "| 2021 | 2,692.5 | 1,136.4 | 990.9 | 463.0 | 527.9 |",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Copart連結",
+          "metric": "売上",
+          "periodStart": "2020-08-01",
+          "periodEnd": "2021-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "op",
+          "entity": "Copart連結",
+          "metric": "営業利益",
+          "periodStart": "2020-08-01",
+          "periodEnd": "2021-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "Copart連結",
+          "metric": "営業CF",
+          "periodStart": "2020-08-01",
+          "periodEnd": "2021-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "Copart連結",
+          "metric": "現金設備購入",
+          "periodStart": "2020-08-01",
+          "periodEnd": "2021-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備購入"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Copart連結",
+          "metric": "売上",
+          "periodStart": "2020-08-01",
+          "periodEnd": "2021-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 2692.511,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000090007523000034/cprt-20230731.htm",
+            "publishedOn": "2023-09-28",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "Copart連結",
+          "metric": "営業利益",
+          "periodStart": "2020-08-01",
+          "periodEnd": "2021-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 1136.426,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000090007523000034/cprt-20230731.htm",
+            "publishedOn": "2023-09-28",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "Copart連結",
+          "metric": "営業CF",
+          "periodStart": "2020-08-01",
+          "periodEnd": "2021-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 990.891,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000090007523000034/cprt-20230731.htm",
+            "publishedOn": "2023-09-28",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Copart連結",
+          "metric": "現金設備購入",
+          "periodStart": "2020-08-01",
+          "periodEnd": "2021-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備購入",
+          "value": 462.996,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000090007523000034/cprt-20230731.htm",
+            "publishedOn": "2023-09-28",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "value": 527.895,
+          "definition": "本稿FCF=営業CF−現金設備購入",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "history-2022",
+      "question": "| 2022 | 3,500.9 | 1,375.0 | 1,176.7 | 337.4 | 839.2 |",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "| 2022 | 3,500.9 | 1,375.0 | 1,176.7 | 337.4 | 839.2 |",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Copart連結",
+          "metric": "売上",
+          "periodStart": "2021-08-01",
+          "periodEnd": "2022-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "op",
+          "entity": "Copart連結",
+          "metric": "営業利益",
+          "periodStart": "2021-08-01",
+          "periodEnd": "2022-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "Copart連結",
+          "metric": "営業CF",
+          "periodStart": "2021-08-01",
+          "periodEnd": "2022-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "Copart連結",
+          "metric": "現金設備購入",
+          "periodStart": "2021-08-01",
+          "periodEnd": "2022-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備購入"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Copart連結",
+          "metric": "売上",
+          "periodStart": "2021-08-01",
+          "periodEnd": "2022-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 3500.921,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000090007523000034/cprt-20230731.htm",
+            "publishedOn": "2023-09-28",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "Copart連結",
+          "metric": "営業利益",
+          "periodStart": "2021-08-01",
+          "periodEnd": "2022-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 1374.997,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000090007523000034/cprt-20230731.htm",
+            "publishedOn": "2023-09-28",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "Copart連結",
+          "metric": "営業CF",
+          "periodStart": "2021-08-01",
+          "periodEnd": "2022-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1176.683,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000090007523000034/cprt-20230731.htm",
+            "publishedOn": "2023-09-28",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Copart連結",
+          "metric": "現金設備購入",
+          "periodStart": "2021-08-01",
+          "periodEnd": "2022-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備購入",
+          "value": 337.448,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000090007523000034/cprt-20230731.htm",
+            "publishedOn": "2023-09-28",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "value": 839.235,
+          "definition": "本稿FCF=営業CF−現金設備購入",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "history-2023",
+      "question": "| 2023 | 3,869.5 | 1,486.6 | 1,364.2 | 516.6 | 847.6 |",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "| 2023 | 3,869.5 | 1,486.6 | 1,364.2 | 516.6 | 847.6 |",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Copart連結",
+          "metric": "売上",
+          "periodStart": "2022-08-01",
+          "periodEnd": "2023-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "op",
+          "entity": "Copart連結",
+          "metric": "営業利益",
+          "periodStart": "2022-08-01",
+          "periodEnd": "2023-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "Copart連結",
+          "metric": "営業CF",
+          "periodStart": "2022-08-01",
+          "periodEnd": "2023-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "Copart連結",
+          "metric": "現金設備購入",
+          "periodStart": "2022-08-01",
+          "periodEnd": "2023-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備購入"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Copart連結",
+          "metric": "売上",
+          "periodStart": "2022-08-01",
+          "periodEnd": "2023-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 3869.518,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000090007523000034/cprt-20230731.htm",
+            "publishedOn": "2023-09-28",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "Copart連結",
+          "metric": "営業利益",
+          "periodStart": "2022-08-01",
+          "periodEnd": "2023-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 1486.569,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000090007523000034/cprt-20230731.htm",
+            "publishedOn": "2023-09-28",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "Copart連結",
+          "metric": "営業CF",
+          "periodStart": "2022-08-01",
+          "periodEnd": "2023-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1364.21,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000090007523000034/cprt-20230731.htm",
+            "publishedOn": "2023-09-28",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Copart連結",
+          "metric": "現金設備購入",
+          "periodStart": "2022-08-01",
+          "periodEnd": "2023-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備購入",
+          "value": 516.636,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000090007523000034/cprt-20230731.htm",
+            "publishedOn": "2023-09-28",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "value": 847.574,
+          "definition": "本稿FCF=営業CF−現金設備購入",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "history-2024",
+      "question": "| 2024 | 4,236.8 | 1,572.0 | 1,472.6 | 511.0 | 961.6 |",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "| 2024 | 4,236.8 | 1,572.0 | 1,472.6 | 511.0 | 961.6 |",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Copart連結",
+          "metric": "売上",
+          "periodStart": "2023-08-01",
+          "periodEnd": "2024-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "op",
+          "entity": "Copart連結",
+          "metric": "営業利益",
+          "periodStart": "2023-08-01",
+          "periodEnd": "2024-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "Copart連結",
+          "metric": "営業CF",
+          "periodStart": "2023-08-01",
+          "periodEnd": "2024-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "Copart連結",
+          "metric": "現金設備購入",
+          "periodStart": "2023-08-01",
+          "periodEnd": "2024-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備購入"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Copart連結",
+          "metric": "売上",
+          "periodStart": "2023-08-01",
+          "periodEnd": "2024-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 4236.823,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "Copart連結",
+          "metric": "営業利益",
+          "periodStart": "2023-08-01",
+          "periodEnd": "2024-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 1572.023,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "Copart連結",
+          "metric": "営業CF",
+          "periodStart": "2023-08-01",
+          "periodEnd": "2024-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1472.564,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Copart連結",
+          "metric": "現金設備購入",
+          "periodStart": "2023-08-01",
+          "periodEnd": "2024-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備購入",
+          "value": 510.99,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "value": 961.574,
+          "definition": "本稿FCF=営業CF−現金設備購入",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "history-2025",
+      "question": "| 2025 | 4,647.0 | 1,696.7 | 1,799.8 | 569.0 | 1,230.8 |",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "| 2025 | 4,647.0 | 1,696.7 | 1,799.8 | 569.0 | 1,230.8 |",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Copart連結",
+          "metric": "売上",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "op",
+          "entity": "Copart連結",
+          "metric": "営業利益",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "Copart連結",
+          "metric": "営業CF",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "Copart連結",
+          "metric": "現金設備購入",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備購入"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Copart連結",
+          "metric": "売上",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 4646.958,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "Copart連結",
+          "metric": "営業利益",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 1696.714,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "Copart連結",
+          "metric": "営業CF",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1799.75,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Copart連結",
+          "metric": "現金設備購入",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備購入",
+          "value": 568.99,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "value": 1230.76,
+          "definition": "本稿FCF=営業CF−現金設備購入",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "history-2026",
+      "question": "| 2026 | 4,666.2 | 1,652.6 | 1,604.5 | 337.4 | 1,267.1 |",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "| 2026 | 4,666.2 | 1,652.6 | 1,604.5 | 337.4 | 1,267.1 |",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Copart連結",
+          "metric": "売上",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "op",
+          "entity": "Copart連結",
+          "metric": "営業利益",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "Copart連結",
+          "metric": "営業CF",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "Copart連結",
+          "metric": "現金設備購入",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備購入"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Copart連結",
+          "metric": "売上",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 4666.209,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "Copart連結",
+          "metric": "営業利益",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 1652.59,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "Copart連結",
+          "metric": "営業CF",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1604.492,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Copart連結",
+          "metric": "現金設備購入",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備購入",
+          "value": 337.363,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Consolidated Statements of Income / Cash Flows; FY2026 printed pp58,61",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "value": 1267.129,
+          "definition": "本稿FCF=営業CF−現金設備購入",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "revenue-types",
+      "question": "2026年7月期はサービス収入3,969.5百万ドル、車両販売696.7百万ドル。",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "2026年7月期はサービス収入3,969.5百万ドル、車両販売696.7百万ドル。",
+      "requiredInputs": [
+        {
+          "id": "service",
+          "entity": "Copart連結",
+          "metric": "サービス収入",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "サービス収入"
+        },
+        {
+          "id": "vehicle",
+          "entity": "Copart連結",
+          "metric": "車両販売",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "車両販売"
+        }
+      ],
+      "observations": [
+        {
+          "id": "service",
+          "entity": "Copart連結",
+          "metric": "サービス収入",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "サービス収入",
+          "value": 3969.52,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Income statement p58",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "vehicle",
+          "entity": "Copart連結",
+          "metric": "車両販売",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "車両販売",
+          "value": 696.689,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Income statement p58",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "growth-margin",
+      "question": "2026年期の売上高は前期比0.4%増、営業利益は2.6%減。営業利益率は36.5%から35.4%へ低下した。",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "2026年期の売上高は前期比0.4%増、営業利益は2.6%減。営業利益率は36.5%から35.4%へ低下した。",
+      "requiredInputs": [
+        {
+          "id": "rev26",
+          "entity": "Copart連結",
+          "metric": "売上",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "rev25",
+          "entity": "Copart連結",
+          "metric": "売上",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "op26",
+          "entity": "Copart連結",
+          "metric": "営業利益",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "op25",
+          "entity": "Copart連結",
+          "metric": "営業利益",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev26",
+          "entity": "Copart連結",
+          "metric": "売上",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 4666.209,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "p58",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "rev25",
+          "entity": "Copart連結",
+          "metric": "売上",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 4646.958,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "p58",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op26",
+          "entity": "Copart連結",
+          "metric": "営業利益",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 1652.59,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "p58",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op25",
+          "entity": "Copart連結",
+          "metric": "営業利益",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 1696.714,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "p58",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "rev-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "rev26",
+            "rev25"
+          ],
+          "value": 0.4,
+          "definition": "売上増減率",
+          "precision": 1
+        },
+        {
+          "id": "op-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "op26",
+            "op25"
+          ],
+          "value": -2.6,
+          "definition": "営業利益増減率",
+          "precision": 1
+        },
+        {
+          "id": "margin26",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op26",
+            "rev26"
+          ],
+          "value": 35.4,
+          "definition": "営業利益率",
+          "precision": 1
+        },
+        {
+          "id": "margin25",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op25",
+            "rev25"
+          ],
+          "value": 36.5,
+          "definition": "営業利益率",
+          "precision": 1
+        }
+      ]
+    },
+    {
+      "id": "regions",
+      "question": "米国は3,451.6→3,388.3百万ドル、海外は517.1→581.2百万ドル。",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "米国は3,451.6→3,388.3百万ドル、海外は517.1→581.2百万ドル。",
+      "requiredInputs": [
+        {
+          "id": "us25",
+          "entity": "Copart連結",
+          "metric": "米国サービス収入",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "米国サービス収入"
+        },
+        {
+          "id": "us26",
+          "entity": "Copart連結",
+          "metric": "米国サービス収入",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "米国サービス収入"
+        },
+        {
+          "id": "int25",
+          "entity": "Copart連結",
+          "metric": "海外サービス収入",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "海外サービス収入"
+        },
+        {
+          "id": "int26",
+          "entity": "Copart連結",
+          "metric": "海外サービス収入",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "海外サービス収入"
+        }
+      ],
+      "observations": [
+        {
+          "id": "us25",
+          "entity": "Copart連結",
+          "metric": "米国サービス収入",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "米国サービス収入",
+          "value": 3451.558,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "MD&A p37",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "us26",
+          "entity": "Copart連結",
+          "metric": "米国サービス収入",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "米国サービス収入",
+          "value": 3388.287,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "MD&A p37",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "int25",
+          "entity": "Copart連結",
+          "metric": "海外サービス収入",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "海外サービス収入",
+          "value": 517.104,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "MD&A p37",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "int26",
+          "entity": "Copart連結",
+          "metric": "海外サービス収入",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "海外サービス収入",
+          "value": 581.233,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "MD&A p37",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fx",
+      "question": "海外の増収には21.9百万ドルの為替押上げが含まれる。",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "海外の増収には21.9百万ドルの為替押上げが含まれる。",
+      "requiredInputs": [
+        {
+          "id": "fx",
+          "entity": "Copart連結",
+          "metric": "サービス収入への為替増加効果",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "サービス収入への為替増加効果"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fx",
+          "entity": "Copart連結",
+          "metric": "サービス収入への為替増加効果",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "サービス収入への為替増加効果",
+          "value": 21.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "MD&A p37",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "bridge-rev",
+      "question": "| 売上高の増加 | +19.3 |",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "| 売上高の増加 | +19.3 |",
+      "requiredInputs": [
+        {
+          "id": "now",
+          "entity": "Copart連結",
+          "metric": "売上",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "prior",
+          "entity": "Copart連結",
+          "metric": "売上",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上"
+        }
+      ],
+      "observations": [
+        {
+          "id": "now",
+          "entity": "Copart連結",
+          "metric": "売上",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 4666.209,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Income statement p58",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "Copart連結",
+          "metric": "売上",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 4646.958,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Income statement p58",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "change",
+          "operation": "difference",
+          "inputs": [
+            "now",
+            "prior"
+          ],
+          "value": 19.251,
+          "definition": "当期−前期。費用増加の営業利益への寄与は符号反転",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "bridge-facility",
+      "question": "| 施設運営費の増加 | −21.6 |",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "| 施設運営費の増加 | −21.6 |",
+      "requiredInputs": [
+        {
+          "id": "now",
+          "entity": "Copart連結",
+          "metric": "施設運営費",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "施設運営費"
+        },
+        {
+          "id": "prior",
+          "entity": "Copart連結",
+          "metric": "施設運営費",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "施設運営費"
+        }
+      ],
+      "observations": [
+        {
+          "id": "now",
+          "entity": "Copart連結",
+          "metric": "施設運営費",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "施設運営費",
+          "value": 1965.888,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Income statement p58",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "Copart連結",
+          "metric": "施設運営費",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "施設運営費",
+          "value": 1944.318,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Income statement p58",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "change",
+          "operation": "difference",
+          "inputs": [
+            "now",
+            "prior"
+          ],
+          "value": 21.57,
+          "definition": "当期−前期。費用増加の営業利益への寄与は符号反転",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "bridge-cogs",
+      "question": "| 車両販売原価の増加 | −13.5 |",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "| 車両販売原価の増加 | −13.5 |",
+      "requiredInputs": [
+        {
+          "id": "now",
+          "entity": "Copart連結",
+          "metric": "車両販売原価",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "車両販売原価"
+        },
+        {
+          "id": "prior",
+          "entity": "Copart連結",
+          "metric": "車両販売原価",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "車両販売原価"
+        }
+      ],
+      "observations": [
+        {
+          "id": "now",
+          "entity": "Copart連結",
+          "metric": "車両販売原価",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "車両販売原価",
+          "value": 616.463,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Income statement p58",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "Copart連結",
+          "metric": "車両販売原価",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "車両販売原価",
+          "value": 602.997,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Income statement p58",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "change",
+          "operation": "difference",
+          "inputs": [
+            "now",
+            "prior"
+          ],
+          "value": 13.466,
+          "definition": "当期−前期。費用増加の営業利益への寄与は符号反転",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "bridge-ga",
+      "question": "| 一般管理費の増加 | −28.3 |",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "| 一般管理費の増加 | −28.3 |",
+      "requiredInputs": [
+        {
+          "id": "now",
+          "entity": "Copart連結",
+          "metric": "一般管理費",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "一般管理費"
+        },
+        {
+          "id": "prior",
+          "entity": "Copart連結",
+          "metric": "一般管理費",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "一般管理費"
+        }
+      ],
+      "observations": [
+        {
+          "id": "now",
+          "entity": "Copart連結",
+          "metric": "一般管理費",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "一般管理費",
+          "value": 431.268,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Income statement p58",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "Copart連結",
+          "metric": "一般管理費",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "一般管理費",
+          "value": 402.929,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Income statement p58",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "change",
+          "operation": "difference",
+          "inputs": [
+            "now",
+            "prior"
+          ],
+          "value": 28.339,
+          "definition": "当期−前期。費用増加の営業利益への寄与は符号反転",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "bridge-op",
+      "question": "| 営業利益の変化 | −44.1 |",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "| 営業利益の変化 | −44.1 |",
+      "requiredInputs": [
+        {
+          "id": "now",
+          "entity": "Copart連結",
+          "metric": "営業利益",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "prior",
+          "entity": "Copart連結",
+          "metric": "営業利益",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "now",
+          "entity": "Copart連結",
+          "metric": "営業利益",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 1652.59,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Income statement p58",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "Copart連結",
+          "metric": "営業利益",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 1696.714,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "Income statement p58",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "change",
+          "operation": "difference",
+          "inputs": [
+            "now",
+            "prior"
+          ],
+          "value": -44.124,
+          "definition": "当期−前期。費用増加の営業利益への寄与は符号反転",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "rba-volume",
+      "question": "RB Globalは2026年4～6月のAutomotive取扱数量が前年同期比11%増え",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "RB Globalは2026年4～6月のAutomotive取扱数量が前年同期比11%増え",
+      "requiredInputs": [
+        {
+          "id": "now",
+          "entity": "RB Global Automotive",
+          "metric": "Automotive lots sold",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千件",
+          "basis": "actual",
+          "definition": "Automotive lots sold"
+        },
+        {
+          "id": "prior",
+          "entity": "RB Global Automotive",
+          "metric": "Automotive lots sold",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千件",
+          "basis": "actual",
+          "definition": "Automotive lots sold"
+        }
+      ],
+      "observations": [
+        {
+          "id": "now",
+          "entity": "RB Global Automotive",
+          "metric": "Automotive lots sold",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千件",
+          "basis": "actual",
+          "definition": "Automotive lots sold",
+          "value": 658.8,
+          "source": {
+            "url": "https://investor.rbglobal.com/news/news-details/2026/RB-Global-Reports-Second-Quarter-2026-Results/default.aspx",
+            "publishedOn": "2026-08-04",
+            "locator": "Lots Sold by Sector",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "RB Global Automotive",
+          "metric": "Automotive lots sold",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千件",
+          "basis": "actual",
+          "definition": "Automotive lots sold",
+          "value": 595.9,
+          "source": {
+            "url": "https://investor.rbglobal.com/news/news-details/2026/RB-Global-Reports-Second-Quarter-2026-Results/default.aspx",
+            "publishedOn": "2026-08-04",
+            "locator": "Lots Sold by Sector",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "now",
+            "prior"
+          ],
+          "value": 11,
+          "definition": "同一RB Global部門前年同期比、Copartとの直接比較ではない",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "fcf-bridge",
+      "question": "原数値で計算すると、営業CFの減少195.258百万ドルを、設備購入支出の減少231.627百万ドルが上回り、差引36.369百万ドルのFCF増加となる。",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "原数値で計算すると、営業CFの減少195.258百万ドルを、設備購入支出の減少231.627百万ドルが上回り、差引36.369百万ドルのFCF増加となる。",
+      "requiredInputs": [
+        {
+          "id": "ocf26",
+          "entity": "Copart連結",
+          "metric": "営業CF",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "ocf25",
+          "entity": "Copart連結",
+          "metric": "営業CF",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex26",
+          "entity": "Copart連結",
+          "metric": "現金設備購入",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備購入"
+        },
+        {
+          "id": "capex25",
+          "entity": "Copart連結",
+          "metric": "現金設備購入",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備購入"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf26",
+          "entity": "Copart連結",
+          "metric": "営業CF",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1604.492,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "CF p61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf25",
+          "entity": "Copart連結",
+          "metric": "営業CF",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1799.75,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "CF p61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex26",
+          "entity": "Copart連結",
+          "metric": "現金設備購入",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備購入",
+          "value": 337.363,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "CF p61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex25",
+          "entity": "Copart連結",
+          "metric": "現金設備購入",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備購入",
+          "value": 568.99,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "CF p61",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "ocf-decrease",
+          "operation": "difference",
+          "inputs": [
+            "ocf25",
+            "ocf26"
+          ],
+          "value": 195.258,
+          "definition": "営業CF減少額",
+          "precision": 3
+        },
+        {
+          "id": "capex-decrease",
+          "operation": "difference",
+          "inputs": [
+            "capex25",
+            "capex26"
+          ],
+          "value": 231.627,
+          "definition": "設備購入支出減少額",
+          "precision": 3
+        },
+        {
+          "id": "fcf-change",
+          "operation": "difference",
+          "inputs": [
+            "capex-decrease",
+            "ocf-decrease"
+          ],
+          "value": 36.369,
+          "definition": "本稿FCF増加額",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "receivable",
+      "question": "CF計算書の売掛金による資金流出は33.950→80.629百万ドルへ拡大した。",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "CF計算書の売掛金による資金流出は33.950→80.629百万ドルへ拡大した。",
+      "requiredInputs": [
+        {
+          "id": "prior",
+          "entity": "Copart連結",
+          "metric": "Accounts receivable CF資金流出額",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Accounts receivable CF資金流出額"
+        },
+        {
+          "id": "now",
+          "entity": "Copart連結",
+          "metric": "Accounts receivable CF資金流出額",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Accounts receivable CF資金流出額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prior",
+          "entity": "Copart連結",
+          "metric": "Accounts receivable CF資金流出額",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Accounts receivable CF資金流出額",
+          "value": 33.95,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "CF p61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "now",
+          "entity": "Copart連結",
+          "metric": "Accounts receivable CF資金流出額",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Accounts receivable CF資金流出額",
+          "value": 80.629,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "CF p61",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "noncash-ppe",
+      "question": "2026年期には6.222百万ドル、2025年期には64.050百万ドルの設備取得が、預け金の振替によって行われた。",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "2026年期には6.222百万ドル、2025年期には64.050百万ドルの設備取得が、預け金の振替によって行われた。",
+      "requiredInputs": [
+        {
+          "id": "now",
+          "entity": "Copart連結",
+          "metric": "PPE purchase through settlement of deposit",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "PPE purchase through settlement of deposit"
+        },
+        {
+          "id": "prior",
+          "entity": "Copart連結",
+          "metric": "PPE purchase through settlement of deposit",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "PPE purchase through settlement of deposit"
+        }
+      ],
+      "observations": [
+        {
+          "id": "now",
+          "entity": "Copart連結",
+          "metric": "PPE purchase through settlement of deposit",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "PPE purchase through settlement of deposit",
+          "value": 6.222,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "CF supplemental p61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "Copart連結",
+          "metric": "PPE purchase through settlement of deposit",
+          "periodStart": "2024-08-01",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "PPE purchase through settlement of deposit",
+          "value": 64.05,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "CF supplemental p61",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "financialassets",
+      "question": "7月末の現金・現金同等物・制限付き現金は1,907.9百万ドル、満期保有の米国財務省短期証券は2,581.9百万ドル。合計は4,489.8百万ドル",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "7月末の現金・現金同等物・制限付き現金は1,907.9百万ドル、満期保有の米国財務省短期証券は2,581.9百万ドル。合計は4,489.8百万ドル",
+      "requiredInputs": [
+        {
+          "id": "cash",
+          "entity": "Copart連結",
+          "metric": "現金・同等物・制限付き現金",
+          "periodStart": "2026-07-31",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金・同等物・制限付き現金"
+        },
+        {
+          "id": "bills",
+          "entity": "Copart連結",
+          "metric": "満期保有証券簿価",
+          "periodStart": "2026-07-31",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "満期保有証券簿価"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cash",
+          "entity": "Copart連結",
+          "metric": "現金・同等物・制限付き現金",
+          "periodStart": "2026-07-31",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金・同等物・制限付き現金",
+          "value": 1907.901,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "BS p57",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "bills",
+          "entity": "Copart連結",
+          "metric": "満期保有証券簿価",
+          "periodStart": "2026-07-31",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "満期保有証券簿価",
+          "value": 2581.901,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "BS p57 / Note1",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "total",
+          "operation": "sum",
+          "inputs": [
+            "cash",
+            "bills"
+          ],
+          "value": 4489.802,
+          "definition": "制限付き含む合計、自由現金ではない",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "buyback",
+      "question": "2026年期の自己株式取得の現金支出は1,632.5百万ドル。本稿FCFを365.4百万ドル上回る。",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "2026年期の自己株式取得の現金支出は1,632.5百万ドル。本稿FCFを365.4百万ドル上回る。",
+      "requiredInputs": [
+        {
+          "id": "buyback",
+          "entity": "Copart連結",
+          "metric": "自己株買戻しCF支出",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "自己株買戻しCF支出"
+        },
+        {
+          "id": "ocf",
+          "entity": "Copart連結",
+          "metric": "営業CF",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "Copart連結",
+          "metric": "現金設備購入",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備購入"
+        }
+      ],
+      "observations": [
+        {
+          "id": "buyback",
+          "entity": "Copart連結",
+          "metric": "自己株買戻しCF支出",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "自己株買戻しCF支出",
+          "value": 1632.538,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "CF p61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "Copart連結",
+          "metric": "営業CF",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1604.492,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "CF p61",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Copart連結",
+          "metric": "現金設備購入",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備購入",
+          "value": 337.363,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "CF p61",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "value": 1267.129,
+          "definition": "本稿FCF",
+          "precision": 3
+        },
+        {
+          "id": "excess",
+          "operation": "difference",
+          "inputs": [
+            "buyback",
+            "fcf"
+          ],
+          "value": 365.409,
+          "definition": "買戻し支出−本稿FCF",
+          "precision": 3
+        }
+      ]
+    },
+    {
+      "id": "roe",
+      "question": "資本効率は、本稿計算のROEで16.2%。親会社帰属利益1,484.270百万ドルを、期首・期末の株主資本平均9,142.164百万ドルで割った値だ。",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "資本効率は、本稿計算のROEで16.2%。親会社帰属利益1,484.270百万ドルを、期首・期末の株主資本平均9,142.164百万ドルで割った値だ。",
+      "requiredInputs": [
+        {
+          "id": "profit1",
+          "entity": "Copart連結",
+          "metric": "親会社帰属利益",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "親会社帰属利益"
+        },
+        {
+          "id": "profit2",
+          "entity": "Copart連結",
+          "metric": "親会社帰属利益（ROE算式の2倍化用同値）",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "親会社帰属利益（ROE算式の2倍化用同値）"
+        },
+        {
+          "id": "eq25",
+          "entity": "Copart連結",
+          "metric": "株主資本",
+          "periodStart": "2025-07-31",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "株主資本"
+        },
+        {
+          "id": "eq26",
+          "entity": "Copart連結",
+          "metric": "株主資本",
+          "periodStart": "2026-07-31",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "株主資本"
+        }
+      ],
+      "observations": [
+        {
+          "id": "profit1",
+          "entity": "Copart連結",
+          "metric": "親会社帰属利益",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "親会社帰属利益",
+          "value": 1484.27,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "IS p58",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "profit2",
+          "entity": "Copart連結",
+          "metric": "親会社帰属利益（ROE算式の2倍化用同値）",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "親会社帰属利益（ROE算式の2倍化用同値）",
+          "value": 1484.27,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "IS p58",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eq25",
+          "entity": "Copart連結",
+          "metric": "株主資本",
+          "periodStart": "2025-07-31",
+          "periodEnd": "2025-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "株主資本",
+          "value": 9187.033,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "BS p57",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eq26",
+          "entity": "Copart連結",
+          "metric": "株主資本",
+          "periodStart": "2026-07-31",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "株主資本",
+          "value": 9097.295,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "BS p57",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "profit-double",
+          "operation": "sum",
+          "inputs": [
+            "profit1",
+            "profit2"
+          ],
+          "value": 2968.54,
+          "definition": "平均残高式を比率演算へ変換するため利益を2倍",
+          "precision": 3
+        },
+        {
+          "id": "equity-sum",
+          "operation": "sum",
+          "inputs": [
+            "eq25",
+            "eq26"
+          ],
+          "value": 18284.328,
+          "definition": "期首期末株主資本合計",
+          "precision": 3
+        },
+        {
+          "id": "roe",
+          "operation": "ratio-percent",
+          "inputs": [
+            "profit-double",
+            "equity-sum"
+          ],
+          "value": 16.2,
+          "definition": "利益÷平均資本と同値",
+          "precision": 1
+        }
+      ]
+    },
+    {
+      "id": "deal-price",
+      "question": "9月10日の合意時に示されたACVの株式価値は約19億ドル、1株当たり現金10.50ドル。",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "9月10日の合意時に示されたACVの株式価値は約19億ドル、1株当たり現金10.50ドル。",
+      "requiredInputs": [
+        {
+          "id": "value",
+          "entity": "Copart連結",
+          "metric": "合意時概算株式価値。EVや最終取得原価ではない",
+          "periodStart": "2026-09-10",
+          "periodEnd": "2026-09-10",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "合意時概算株式価値。EVや最終取得原価ではない"
+        },
+        {
+          "id": "price",
+          "entity": "Copart連結",
+          "metric": "普通株1株現金対価",
+          "periodStart": "2026-09-10",
+          "periodEnd": "2026-09-10",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "普通株1株現金対価"
+        }
+      ],
+      "observations": [
+        {
+          "id": "value",
+          "entity": "Copart連結",
+          "metric": "合意時概算株式価値。EVや最終取得原価ではない",
+          "periodStart": "2026-09-10",
+          "periodEnd": "2026-09-10",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "合意時概算株式価値。EVや最終取得原価ではない",
+          "value": 1900,
+          "source": {
+            "url": "https://www.copart.com/content/us/en/press-releases/copart-to-acquire-acv",
+            "publishedOn": "2026-09-10",
+            "locator": "opening paragraphs",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "price",
+          "entity": "Copart連結",
+          "metric": "普通株1株現金対価",
+          "periodStart": "2026-09-10",
+          "periodEnd": "2026-09-10",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "普通株1株現金対価",
+          "value": 10.5,
+          "source": {
+            "url": "https://www.copart.com/content/us/en/press-releases/copart-to-acquire-acv",
+            "publishedOn": "2026-09-10",
+            "locator": "opening paragraphs",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "sensitivity",
+      "question": "2026年期の売上高を固定し営業利益率だけが1ポイント動けば、営業利益は46.662百万ドル変わる。",
+      "definition": "米国会計基準・連結。年次は7月期12か月。数値単位と異なる期間・定義を本文で区別。",
+      "status": "ready",
+      "claim": "2026年期の売上高を固定し営業利益率だけが1ポイント動けば、営業利益は46.662百万ドル変わる。",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Copart連結",
+          "metric": "売上高",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Copart連結",
+          "metric": "売上高",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 4666.209,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/900075/000119312526405731/cprt-20260731.htm",
+            "publishedOn": "2026-09-29",
+            "locator": "IS p58",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "valuation-withheld",
+      "question": "現在株価と予想利益の整合した評価",
+      "definition": "同時点価格・予想EPSを必要とする",
+      "status": "withheld",
+      "reason": "同時点株価・コンセンサスを独立取得していないため、評価・株価反応を除外。",
+      "omittedClaim": "予想PERから現在株価は割安と判断できる。",
+      "requiredInputs": [
+        {
+          "id": "price",
+          "entity": "Copart",
+          "metric": "通常取引確定終値",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "米ドル/株",
+          "basis": "market",
+          "definition": "米国2026年10月30日の通常取引終値"
+        },
+        {
+          "id": "eps",
+          "entity": "Copart連結",
+          "metric": "予想希薄化EPS",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2027-07-31",
+          "unit": "米ドル/株",
+          "basis": "consensus",
+          "definition": "同株価時点で取得した2027年7月期コンセンサス希薄化EPS、株式分割整合"
+        }
+      ],
+      "observations": [],
+      "calculations": []
+    }
+  ]
+}
