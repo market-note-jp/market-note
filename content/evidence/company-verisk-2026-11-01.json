@@ -1,0 +1,2750 @@
+{
+  "version": 1,
+  "articleSlug": "company-verisk-2026-11-01",
+  "articleSha256": "4d1d549d0537ab5c57e3739706762ebaaadad014ea0e4968f6ab4ea10505a80a",
+  "checkedAt": "2026-11-01T10:55:22.769Z",
+  "informationCutoff": "2026-11-01T19:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "全ての財務表・数値比較を一次資料全文から照合。2025/2023年報PDFの全文とSEC本文、6月10-Q全文、7月29日8-K決算発表全文使用。2021–22継続事業と現在Insuranceの範囲差明示。CFの非継続範囲・丸めEPS・GAAP調整後差・CF買戻し合計の定義確認。AI収益/買収ROIC/価格倍率は未検証のため数値なし。公開前独立レビュー待ち。digestは統合後に設定。 独立レビュー指摘に基づき債務帳簿値にはfinance lease liabilitiesと発行費用等の調整が含まれる旨を明示。",
+  "comparisons": [
+    {
+      "id": "subscription",
+      "question": "2025年の売上の約83%は hosted subscriptions（継続利用型契約）で、2024年の約81%から比率が上がりました。",
+      "claim": "2025年の売上の約83%は hosted subscriptions（継続利用型契約）で、2024年の約81%から比率が上がりました。",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "a",
+          "entity": "Verisk連結",
+          "metric": "hosted subscriptions構成比",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "hosted subscriptions構成比"
+        },
+        {
+          "id": "b",
+          "entity": "Verisk連結",
+          "metric": "hosted subscriptions構成比",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "hosted subscriptions構成比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "a",
+          "entity": "Verisk連結",
+          "metric": "hosted subscriptions構成比",
+          "value": 83,
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "hosted subscriptions構成比",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "MD&A Revenues",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "b",
+          "entity": "Verisk連結",
+          "metric": "hosted subscriptions構成比",
+          "value": 81,
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "hosted subscriptions構成比",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "MD&A Revenues",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2021",
+      "question": "| 2021 | 2,462.5 | 911.4 |",
+      "claim": "| 2021 | 2,462.5 | 911.4 |",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Verisk連結",
+          "metric": "継続事業売上",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "各報告書の継続事業。2021–22には後に売却した事業の一部が含まれ現行Insuranceだけと同一範囲ではない"
+        },
+        {
+          "id": "op",
+          "entity": "Verisk連結",
+          "metric": "継続事業営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Verisk連結",
+          "metric": "継続事業売上",
+          "value": 2462.5,
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "各報告書の継続事業。2021–22には後に売却した事業の一部が含まれ現行Insuranceだけと同一範囲ではない",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774924004939/vrsk20231231c_10k.htm",
+            "publishedOn": "2024-02-21",
+            "locator": "Consolidated statements of operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "Verisk連結",
+          "metric": "継続事業営業利益",
+          "value": 911.4,
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業利益",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774924004939/vrsk20231231c_10k.htm",
+            "publishedOn": "2024-02-21",
+            "locator": "Consolidated statements of operations",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2022",
+      "question": "| 2022 | 2,497.0 | 1,406.5 |",
+      "claim": "| 2022 | 2,497.0 | 1,406.5 |",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Verisk連結",
+          "metric": "継続事業売上",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "各報告書の継続事業。2021–22には後に売却した事業の一部が含まれ現行Insuranceだけと同一範囲ではない"
+        },
+        {
+          "id": "op",
+          "entity": "Verisk連結",
+          "metric": "継続事業営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Verisk連結",
+          "metric": "継続事業売上",
+          "value": 2497,
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "各報告書の継続事業。2021–22には後に売却した事業の一部が含まれ現行Insuranceだけと同一範囲ではない",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774924004939/vrsk20231231c_10k.htm",
+            "publishedOn": "2024-02-21",
+            "locator": "Consolidated statements of operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "Verisk連結",
+          "metric": "継続事業営業利益",
+          "value": 1406.5,
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業利益",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774924004939/vrsk20231231c_10k.htm",
+            "publishedOn": "2024-02-21",
+            "locator": "Consolidated statements of operations",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2023",
+      "question": "| 2023 | 2,681.4 | 1,131.7 |",
+      "claim": "| 2023 | 2,681.4 | 1,131.7 |",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Verisk連結",
+          "metric": "継続事業売上",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "各報告書の継続事業。2021–22には後に売却した事業の一部が含まれ現行Insuranceだけと同一範囲ではない"
+        },
+        {
+          "id": "op",
+          "entity": "Verisk連結",
+          "metric": "継続事業営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Verisk連結",
+          "metric": "継続事業売上",
+          "value": 2681.4,
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "各報告書の継続事業。2021–22には後に売却した事業の一部が含まれ現行Insuranceだけと同一範囲ではない",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated statements of operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "Verisk連結",
+          "metric": "継続事業営業利益",
+          "value": 1131.7,
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業利益",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated statements of operations",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2024",
+      "question": "| 2024 | 2,881.7 | 1,253.9 |",
+      "claim": "| 2024 | 2,881.7 | 1,253.9 |",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Verisk連結",
+          "metric": "継続事業売上",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "各報告書の継続事業。2021–22には後に売却した事業の一部が含まれ現行Insuranceだけと同一範囲ではない"
+        },
+        {
+          "id": "op",
+          "entity": "Verisk連結",
+          "metric": "継続事業営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Verisk連結",
+          "metric": "継続事業売上",
+          "value": 2881.7,
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "各報告書の継続事業。2021–22には後に売却した事業の一部が含まれ現行Insuranceだけと同一範囲ではない",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated statements of operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "Verisk連結",
+          "metric": "継続事業営業利益",
+          "value": 1253.9,
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業利益",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated statements of operations",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2025",
+      "question": "| 2025 | 3,072.7 | 1,343.9 |",
+      "claim": "| 2025 | 3,072.7 | 1,343.9 |",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Verisk連結",
+          "metric": "継続事業売上",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "各報告書の継続事業。2021–22には後に売却した事業の一部が含まれ現行Insuranceだけと同一範囲ではない"
+        },
+        {
+          "id": "op",
+          "entity": "Verisk連結",
+          "metric": "継続事業営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Verisk連結",
+          "metric": "継続事業売上",
+          "value": 3072.7,
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "各報告書の継続事業。2021–22には後に売却した事業の一部が含まれ現行Insuranceだけと同一範囲ではない",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated statements of operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "Verisk連結",
+          "metric": "継続事業営業利益",
+          "value": 1343.9,
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業利益",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated statements of operations",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "oneoff",
+      "question": "2022年には売却に伴う利益を主因とするその他営業収益354.2百万ドルが入り、2021年にはその他営業損失134.0百万ドルがありました。",
+      "claim": "2022年には売却に伴う利益を主因とするその他営業収益354.2百万ドルが入り、2021年にはその他営業損失134.0百万ドルがありました。",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "gain",
+          "entity": "Verisk連結",
+          "metric": "その他営業収益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "その他営業収益"
+        },
+        {
+          "id": "loss",
+          "entity": "Verisk連結",
+          "metric": "その他営業損失",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "その他営業損失"
+        }
+      ],
+      "observations": [
+        {
+          "id": "gain",
+          "entity": "Verisk連結",
+          "metric": "その他営業収益",
+          "value": 354.2,
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "その他営業収益",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774924004939/vrsk20231231c_10k.htm",
+            "publishedOn": "2024-02-21",
+            "locator": "MD&A Other Operating (Income) Loss",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "loss",
+          "entity": "Verisk連結",
+          "metric": "その他営業損失",
+          "value": 134,
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "その他営業損失",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774924004939/vrsk20231231c_10k.htm",
+            "publishedOn": "2024-02-21",
+            "locator": "MD&A Other Operating (Income) Loss",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "segment",
+      "question": "直近の通期を分けると、2025年の引受関連売上は2,179.9百万ドル、前年は2,024.3百万ドル。請求関連は892.8百万ドル、前年は857.4百万ドルでした。",
+      "claim": "直近の通期を分けると、2025年の引受関連売上は2,179.9百万ドル、前年は2,024.3百万ドル。請求関連は892.8百万ドル、前年は857.4百万ドルでした。",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "u25",
+          "entity": "Verisk連結",
+          "metric": "引受関連売上",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "引受関連売上"
+        },
+        {
+          "id": "u24",
+          "entity": "Verisk連結",
+          "metric": "引受関連売上",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "引受関連売上"
+        },
+        {
+          "id": "c25",
+          "entity": "Verisk連結",
+          "metric": "請求関連売上",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "請求関連売上"
+        },
+        {
+          "id": "c24",
+          "entity": "Verisk連結",
+          "metric": "請求関連売上",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "請求関連売上"
+        }
+      ],
+      "observations": [
+        {
+          "id": "u25",
+          "entity": "Verisk連結",
+          "metric": "引受関連売上",
+          "value": 2179.9,
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "引受関連売上",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "MD&A Revenues category table",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "u24",
+          "entity": "Verisk連結",
+          "metric": "引受関連売上",
+          "value": 2024.3,
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "引受関連売上",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "MD&A Revenues category table",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c25",
+          "entity": "Verisk連結",
+          "metric": "請求関連売上",
+          "value": 892.8,
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "請求関連売上",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "MD&A Revenues category table",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c24",
+          "entity": "Verisk連結",
+          "metric": "請求関連売上",
+          "value": 857.4,
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "請求関連売上",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "MD&A Revenues category table",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "segment-organic",
+      "question": "買収・売却を除く伸びは、会社計算で引受関連8.1%、請求関連4.1%です。",
+      "claim": "買収・売却を除く伸びは、会社計算で引受関連8.1%、請求関連4.1%です。",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "u",
+          "entity": "Verisk連結",
+          "metric": "引受関連増収率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収売却除外。為替未調整"
+        },
+        {
+          "id": "c",
+          "entity": "Verisk連結",
+          "metric": "請求関連増収率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収売却除外。為替未調整"
+        }
+      ],
+      "observations": [
+        {
+          "id": "u",
+          "entity": "Verisk連結",
+          "metric": "引受関連増収率",
+          "value": 8.1,
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収売却除外。為替未調整",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "MD&A Revenues",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c",
+          "entity": "Verisk連結",
+          "metric": "請求関連増収率",
+          "value": 4.1,
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収売却除外。為替未調整",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "MD&A Revenues",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "region",
+      "question": "同じ年の米国売上は2,522.3百万ドル、英国250.1百万ドル、その他300.3百万ドルです。",
+      "claim": "同じ年の米国売上は2,522.3百万ドル、英国250.1百万ドル、その他300.3百万ドルです。",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "us",
+          "entity": "Verisk連結",
+          "metric": "米国売上",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "米国売上"
+        },
+        {
+          "id": "uk",
+          "entity": "Verisk連結",
+          "metric": "英国売上",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "英国売上"
+        },
+        {
+          "id": "other",
+          "entity": "Verisk連結",
+          "metric": "その他国売上",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "その他国売上"
+        }
+      ],
+      "observations": [
+        {
+          "id": "us",
+          "entity": "Verisk連結",
+          "metric": "米国売上",
+          "value": 2522.3,
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "米国売上",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Note4 Revenue Recognition geographical disaggregation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "uk",
+          "entity": "Verisk連結",
+          "metric": "英国売上",
+          "value": 250.1,
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "英国売上",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Note4 Revenue Recognition geographical disaggregation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "other",
+          "entity": "Verisk連結",
+          "metric": "その他国売上",
+          "value": 300.3,
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "その他国売上",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Note4 Revenue Recognition geographical disaggregation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q2-0",
+      "question": "| 売上高 | 772.6 | 806.3 |",
+      "claim": "| 売上高 | 772.6 | 806.3 |",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Verisk連結",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "new",
+          "entity": "Verisk連結",
+          "metric": "売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Verisk連結",
+          "metric": "売上高",
+          "value": 772.6,
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Income statement / Adjusted Net Income and Diluted Adjusted EPS Reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Verisk連結",
+          "metric": "売上高",
+          "value": 806.3,
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Income statement / Adjusted Net Income and Diluted Adjusted EPS Reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q2-1",
+      "question": "| 営業利益 | 354.3 | 363.7 |",
+      "claim": "| 営業利益 | 354.3 | 363.7 |",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Verisk連結",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "new",
+          "entity": "Verisk連結",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Verisk連結",
+          "metric": "営業利益",
+          "value": 354.3,
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Income statement / Adjusted Net Income and Diluted Adjusted EPS Reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Verisk連結",
+          "metric": "営業利益",
+          "value": 363.7,
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Income statement / Adjusted Net Income and Diluted Adjusted EPS Reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q2-2",
+      "question": "| 純利益 | 253.3 | 228.6 |",
+      "claim": "| 純利益 | 253.3 | 228.6 |",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Verisk連結",
+          "metric": "純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "new",
+          "entity": "Verisk連結",
+          "metric": "純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Verisk連結",
+          "metric": "純利益",
+          "value": 253.3,
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Income statement / Adjusted Net Income and Diluted Adjusted EPS Reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Verisk連結",
+          "metric": "純利益",
+          "value": 228.6,
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Income statement / Adjusted Net Income and Diluted Adjusted EPS Reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q2-3",
+      "question": "| 調整後純利益 | 264.4 | 259.3 |",
+      "claim": "| 調整後純利益 | 264.4 | 259.3 |",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Verisk連結",
+          "metric": "調整後純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後純利益"
+        },
+        {
+          "id": "new",
+          "entity": "Verisk連結",
+          "metric": "調整後純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Verisk連結",
+          "metric": "調整後純利益",
+          "value": 264.4,
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後純利益",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024748/ex_968691.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Income statement / Adjusted Net Income and Diluted Adjusted EPS Reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Verisk連結",
+          "metric": "調整後純利益",
+          "value": 259.3,
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後純利益",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024748/ex_968691.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Income statement / Adjusted Net Income and Diluted Adjusted EPS Reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q2-4",
+      "question": "| GAAP希薄化後EPS | 1.81 | 1.75 |",
+      "claim": "| GAAP希薄化後EPS | 1.81 | 1.75 |",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Verisk連結",
+          "metric": "GAAP希薄化後EPS",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "GAAP希薄化後EPS"
+        },
+        {
+          "id": "new",
+          "entity": "Verisk連結",
+          "metric": "GAAP希薄化後EPS",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "GAAP希薄化後EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Verisk連結",
+          "metric": "GAAP希薄化後EPS",
+          "value": 1.81,
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "GAAP希薄化後EPS",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Income statement / Adjusted Net Income and Diluted Adjusted EPS Reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Verisk連結",
+          "metric": "GAAP希薄化後EPS",
+          "value": 1.75,
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "GAAP希薄化後EPS",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Income statement / Adjusted Net Income and Diluted Adjusted EPS Reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q2-5",
+      "question": "| 調整後希薄化後EPS | 1.88 | 1.98 |",
+      "claim": "| 調整後希薄化後EPS | 1.88 | 1.98 |",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Verisk連結",
+          "metric": "調整後希薄化後EPS",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "調整後希薄化後EPS"
+        },
+        {
+          "id": "new",
+          "entity": "Verisk連結",
+          "metric": "調整後希薄化後EPS",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "調整後希薄化後EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Verisk連結",
+          "metric": "調整後希薄化後EPS",
+          "value": 1.88,
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "調整後希薄化後EPS",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024748/ex_968691.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Income statement / Adjusted Net Income and Diluted Adjusted EPS Reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Verisk連結",
+          "metric": "調整後希薄化後EPS",
+          "value": 1.98,
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "調整後希薄化後EPS",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024748/ex_968691.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Income statement / Adjusted Net Income and Diluted Adjusted EPS Reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q2-6",
+      "question": "| 希薄化後平均株式数（百万株、会社開示丸め値） | 140.3 | 130.9 |",
+      "claim": "| 希薄化後平均株式数（百万株、会社開示丸め値） | 140.3 | 130.9 |",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Verisk連結",
+          "metric": "希薄化後平均株式数（百万株、会社開示丸め値）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万株",
+          "basis": "actual",
+          "definition": "希薄化後平均株式数（百万株、会社開示丸め値）"
+        },
+        {
+          "id": "new",
+          "entity": "Verisk連結",
+          "metric": "希薄化後平均株式数（百万株、会社開示丸め値）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万株",
+          "basis": "actual",
+          "definition": "希薄化後平均株式数（百万株、会社開示丸め値）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Verisk連結",
+          "metric": "希薄化後平均株式数（百万株、会社開示丸め値）",
+          "value": 140.3,
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万株",
+          "basis": "actual",
+          "definition": "希薄化後平均株式数（百万株、会社開示丸め値）",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024748/ex_968691.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Income statement / Adjusted Net Income and Diluted Adjusted EPS Reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Verisk連結",
+          "metric": "希薄化後平均株式数（百万株、会社開示丸め値）",
+          "value": 130.9,
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万株",
+          "basis": "actual",
+          "definition": "希薄化後平均株式数（百万株、会社開示丸め値）",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024748/ex_968691.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Income statement / Adjusted Net Income and Diluted Adjusted EPS Reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "revenue-bridge",
+      "question": "買収・売却を除く増収は44.5百万ドルでしたが、その範囲変更が10.8百万ドルの減収要因となり、報告増収は33.7百万ドルに縮まりました。",
+      "claim": "買収・売却を除く増収は44.5百万ドルでしたが、その範囲変更が10.8百万ドルの減収要因となり、報告増収は33.7百万ドルに縮まりました。",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "organic",
+          "entity": "Verisk連結",
+          "metric": "買収売却除外の売上増加",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収売却除外の売上増加"
+        },
+        {
+          "id": "scope",
+          "entity": "Verisk連結",
+          "metric": "範囲変化による売上減",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "範囲変化による売上減"
+        }
+      ],
+      "observations": [
+        {
+          "id": "organic",
+          "entity": "Verisk連結",
+          "metric": "買収売却除外の売上増加",
+          "value": 44.5,
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収売却除外の売上増加",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "MD&A Q2 Revenues",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "scope",
+          "entity": "Verisk連結",
+          "metric": "範囲変化による売上減",
+          "value": 10.8,
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "範囲変化による売上減",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "MD&A Q2 Revenues",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "reported",
+          "operation": "difference",
+          "inputs": [
+            "organic",
+            "scope"
+          ],
+          "value": 33.7,
+          "precision": 1,
+          "definition": "本文定義による計算"
+        }
+      ]
+    },
+    {
+      "id": "occ",
+      "question": "会社のOCC増収率は5.8%。これは買収・売却と為替の影響を調整する指標で、10-Qの買収・売却のみを除く5.9%とは定義が違います。",
+      "claim": "会社のOCC増収率は5.8%。これは買収・売却と為替の影響を調整する指標で、10-Qの買収・売却のみを除く5.9%とは定義が違います。",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "occ",
+          "entity": "Verisk連結",
+          "metric": "OCC増収率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収売却および為替除外"
+        },
+        {
+          "id": "organic",
+          "entity": "Verisk連結",
+          "metric": "買収売却除外増収率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収売却除外、為替は未調整"
+        }
+      ],
+      "observations": [
+        {
+          "id": "occ",
+          "entity": "Verisk連結",
+          "metric": "OCC増収率",
+          "value": 5.8,
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収売却および為替除外",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024748/ex_968691.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Revenue / OCC reconciliations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "organic",
+          "entity": "Verisk連結",
+          "metric": "買収売却除外増収率",
+          "value": 5.9,
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収売却除外、為替は未調整",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "MD&A Q2 Revenues",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "costs",
+      "question": "費用面では、販管費が106.5→128.6百万ドルへ増え、その増加のうち16.3百万ドルは買収・売却・AccuLynx関連費用でした。さらに純支払利息は35.5→52.8百万ドルへ増加しています。",
+      "claim": "費用面では、販管費が106.5→128.6百万ドルへ増え、その増加のうち16.3百万ドルは買収・売却・AccuLynx関連費用でした。さらに純支払利息は35.5→52.8百万ドルへ増加しています。",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "s25",
+          "entity": "Verisk連結",
+          "metric": "販管費",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "販管費"
+        },
+        {
+          "id": "s26",
+          "entity": "Verisk連結",
+          "metric": "販管費",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "販管費"
+        },
+        {
+          "id": "delta",
+          "entity": "Verisk連結",
+          "metric": "買収売却等による販管費増加",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収売却等による販管費増加"
+        },
+        {
+          "id": "i25",
+          "entity": "Verisk連結",
+          "metric": "純支払利息",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純支払利息"
+        },
+        {
+          "id": "i26",
+          "entity": "Verisk連結",
+          "metric": "純支払利息",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純支払利息"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s25",
+          "entity": "Verisk連結",
+          "metric": "販管費",
+          "value": 106.5,
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "販管費",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "MD&A SG&A",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "s26",
+          "entity": "Verisk連結",
+          "metric": "販管費",
+          "value": 128.6,
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "販管費",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "MD&A SG&A",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "delta",
+          "entity": "Verisk連結",
+          "metric": "買収売却等による販管費増加",
+          "value": 16.3,
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収売却等による販管費増加",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "MD&A SG&A",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i25",
+          "entity": "Verisk連結",
+          "metric": "純支払利息",
+          "value": 35.5,
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純支払利息",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "MD&A Interest expense net",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i26",
+          "entity": "Verisk連結",
+          "metric": "純支払利息",
+          "value": 52.8,
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純支払利息",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "MD&A Interest expense net",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "annual-cfo",
+      "question": "| 営業CF | 1,060.7 | 1,144.0 | 1,436.0 |",
+      "claim": "| 営業CF | 1,060.7 | 1,144.0 | 1,436.0 |",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2023",
+          "entity": "Verisk連結",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結CF。非継続事業を含み得る。設備投資は現金支出の正数表示"
+        },
+        {
+          "id": "2024",
+          "entity": "Verisk連結",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結CF。非継続事業を含み得る。設備投資は現金支出の正数表示"
+        },
+        {
+          "id": "2025",
+          "entity": "Verisk連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結CF。非継続事業を含み得る。設備投資は現金支出の正数表示"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2023",
+          "entity": "Verisk連結",
+          "metric": "営業CF",
+          "value": 1060.7,
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結CF。非継続事業を含み得る。設備投資は現金支出の正数表示",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated statements of cash flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2024",
+          "entity": "Verisk連結",
+          "metric": "営業CF",
+          "value": 1144,
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結CF。非継続事業を含み得る。設備投資は現金支出の正数表示",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated statements of cash flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025",
+          "entity": "Verisk連結",
+          "metric": "営業CF",
+          "value": 1436,
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結CF。非継続事業を含み得る。設備投資は現金支出の正数表示",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated statements of cash flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "annual-capex",
+      "question": "| 設備投資の現金支出 | 230.0 | 223.9 | 244.1 |",
+      "claim": "| 設備投資の現金支出 | 230.0 | 223.9 | 244.1 |",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2023",
+          "entity": "Verisk連結",
+          "metric": "設備投資の現金支出",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結CF。非継続事業を含み得る。設備投資は現金支出の正数表示"
+        },
+        {
+          "id": "2024",
+          "entity": "Verisk連結",
+          "metric": "設備投資の現金支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結CF。非継続事業を含み得る。設備投資は現金支出の正数表示"
+        },
+        {
+          "id": "2025",
+          "entity": "Verisk連結",
+          "metric": "設備投資の現金支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結CF。非継続事業を含み得る。設備投資は現金支出の正数表示"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2023",
+          "entity": "Verisk連結",
+          "metric": "設備投資の現金支出",
+          "value": 230,
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結CF。非継続事業を含み得る。設備投資は現金支出の正数表示",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated statements of cash flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2024",
+          "entity": "Verisk連結",
+          "metric": "設備投資の現金支出",
+          "value": 223.9,
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結CF。非継続事業を含み得る。設備投資は現金支出の正数表示",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated statements of cash flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2025",
+          "entity": "Verisk連結",
+          "metric": "設備投資の現金支出",
+          "value": 244.1,
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "連結CF。非継続事業を含み得る。設備投資は現金支出の正数表示",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated statements of cash flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "annual-fcf",
+      "question": "| FCF（上記差額） | 830.7 | 920.1 | 1,191.9 |",
+      "claim": "| FCF（上記差額） | 830.7 | 920.1 | 1,191.9 |",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo2023",
+          "entity": "Verisk連結",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex2023",
+          "entity": "Verisk連結",
+          "metric": "設備投資CF支出",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資CF支出"
+        },
+        {
+          "id": "cfo2024",
+          "entity": "Verisk連結",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex2024",
+          "entity": "Verisk連結",
+          "metric": "設備投資CF支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資CF支出"
+        },
+        {
+          "id": "cfo2025",
+          "entity": "Verisk連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex2025",
+          "entity": "Verisk連結",
+          "metric": "設備投資CF支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資CF支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo2023",
+          "entity": "Verisk連結",
+          "metric": "営業CF",
+          "value": 1060.7,
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated statements of cash flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex2023",
+          "entity": "Verisk連結",
+          "metric": "設備投資CF支出",
+          "value": -230,
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資CF支出",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated statements of cash flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo2024",
+          "entity": "Verisk連結",
+          "metric": "営業CF",
+          "value": 1144,
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated statements of cash flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex2024",
+          "entity": "Verisk連結",
+          "metric": "設備投資CF支出",
+          "value": -223.9,
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資CF支出",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated statements of cash flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo2025",
+          "entity": "Verisk連結",
+          "metric": "営業CF",
+          "value": 1436,
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated statements of cash flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex2025",
+          "entity": "Verisk連結",
+          "metric": "設備投資CF支出",
+          "value": -244.1,
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資CF支出",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926004452/vrsk20251231_10k.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated statements of cash flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf2023",
+          "operation": "sum",
+          "inputs": [
+            "cfo2023",
+            "capex2023"
+          ],
+          "value": 830.7,
+          "precision": 1,
+          "definition": "営業CF＋負符号設備投資支出。買収・還元・借入返済は未控除"
+        },
+        {
+          "id": "fcf2024",
+          "operation": "sum",
+          "inputs": [
+            "cfo2024",
+            "capex2024"
+          ],
+          "value": 920.1,
+          "precision": 1,
+          "definition": "営業CF＋負符号設備投資支出。買収・還元・借入返済は未控除"
+        },
+        {
+          "id": "fcf2025",
+          "operation": "sum",
+          "inputs": [
+            "cfo2025",
+            "capex2025"
+          ],
+          "value": 1191.9,
+          "precision": 1,
+          "definition": "営業CF＋負符号設備投資支出。買収・還元・借入返済は未控除"
+        }
+      ]
+    },
+    {
+      "id": "h1-fcf",
+      "question": "2026年1〜6月の営業CFは756.4百万ドル、設備投資支出は132.1百万ドルで、FCFは624.3百万ドルです。",
+      "claim": "2026年1〜6月の営業CFは756.4百万ドル、設備投資支出は132.1百万ドルで、FCFは624.3百万ドルです。",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "Verisk連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "Verisk連結",
+          "metric": "設備投資CF支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資CF支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "Verisk連結",
+          "metric": "営業CF",
+          "value": 756.4,
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Cash flow statement",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Verisk連結",
+          "metric": "設備投資CF支出",
+          "value": -132.1,
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資CF支出",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Cash flow statement",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "value": 624.3,
+          "precision": 1,
+          "definition": "本文定義による計算"
+        }
+      ]
+    },
+    {
+      "id": "h1-buybacks",
+      "question": "一方、CF計算書の自己株式取得支出1,571.9百万ドルと未決済買戻しへの支出255.1百万ドルの合計は1,827.0百万ドル。さらに配当支払130.9百万ドルがありました。",
+      "claim": "一方、CF計算書の自己株式取得支出1,571.9百万ドルと未決済買戻しへの支出255.1百万ドルの合計は1,827.0百万ドル。さらに配当支払130.9百万ドルがありました。",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "rep",
+          "entity": "Verisk連結",
+          "metric": "自己株式取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "自己株式取得支出"
+        },
+        {
+          "id": "unsettled",
+          "entity": "Verisk連結",
+          "metric": "未決済買戻し支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "未決済買戻し支出"
+        },
+        {
+          "id": "div",
+          "entity": "Verisk連結",
+          "metric": "配当支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rep",
+          "entity": "Verisk連結",
+          "metric": "自己株式取得支出",
+          "value": 1571.9,
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "自己株式取得支出",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Cash flow statement",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "unsettled",
+          "entity": "Verisk連結",
+          "metric": "未決済買戻し支出",
+          "value": 255.1,
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "未決済買戻し支出",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Cash flow statement",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "div",
+          "entity": "Verisk連結",
+          "metric": "配当支出",
+          "value": 130.9,
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当支出",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Cash flow statement",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "buybacks",
+          "operation": "sum",
+          "inputs": [
+            "rep",
+            "unsettled"
+          ],
+          "value": 1827,
+          "precision": 1,
+          "definition": "本文定義による計算"
+        }
+      ]
+    },
+    {
+      "id": "debt",
+      "question": "| 短期・長期債務の帳簿残高合計 | 4,737.2 | 4,473.5 |",
+      "claim": "| 短期・長期債務の帳簿残高合計 | 4,737.2 | 4,473.5 |",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "oldshort",
+          "entity": "Verisk連結",
+          "metric": "短期債務等帳簿残高",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期債務等帳簿残高"
+        },
+        {
+          "id": "oldlong",
+          "entity": "Verisk連結",
+          "metric": "長期債務等帳簿残高",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期債務等帳簿残高"
+        },
+        {
+          "id": "newshort",
+          "entity": "Verisk連結",
+          "metric": "短期債務等帳簿残高",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期債務等帳簿残高"
+        },
+        {
+          "id": "newlong",
+          "entity": "Verisk連結",
+          "metric": "長期債務等帳簿残高",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期債務等帳簿残高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oldshort",
+          "entity": "Verisk連結",
+          "metric": "短期債務等帳簿残高",
+          "value": 1508.9,
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期債務等帳簿残高",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Balance sheet",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldlong",
+          "entity": "Verisk連結",
+          "metric": "長期債務等帳簿残高",
+          "value": 3228.3,
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期債務等帳簿残高",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Balance sheet",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newshort",
+          "entity": "Verisk連結",
+          "metric": "短期債務等帳簿残高",
+          "value": 257.7,
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期債務等帳簿残高",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Balance sheet",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newlong",
+          "entity": "Verisk連結",
+          "metric": "長期債務等帳簿残高",
+          "value": 4215.8,
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期債務等帳簿残高",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Balance sheet",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "olddebt",
+          "operation": "sum",
+          "inputs": [
+            "oldshort",
+            "oldlong"
+          ],
+          "value": 4737.2,
+          "precision": 1,
+          "definition": "本文定義による計算"
+        },
+        {
+          "id": "newdebt",
+          "operation": "sum",
+          "inputs": [
+            "newshort",
+            "newlong"
+          ],
+          "value": 4473.5,
+          "precision": 1,
+          "definition": "本文定義による計算"
+        }
+      ]
+    },
+    {
+      "id": "cash",
+      "question": "| 現金及び現金同等物 | 2,178.2 | 551.4 |",
+      "claim": "| 現金及び現金同等物 | 2,178.2 | 551.4 |",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Verisk連結",
+          "metric": "現金同等物",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金同等物"
+        },
+        {
+          "id": "new",
+          "entity": "Verisk連結",
+          "metric": "現金同等物",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金同等物"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Verisk連結",
+          "metric": "現金同等物",
+          "value": 2178.2,
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金同等物",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Balance sheet",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Verisk連結",
+          "metric": "現金同等物",
+          "value": 551.4,
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金同等物",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Balance sheet",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "netdebt",
+      "question": "| 上記債務合計－現金同等物（独自計算） | 2,559.0 | 3,922.1 |",
+      "claim": "| 上記債務合計－現金同等物（独自計算） | 2,559.0 | 3,922.1 |",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "oldshort",
+          "entity": "Verisk連結",
+          "metric": "短期債務等帳簿残高",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期債務等帳簿残高"
+        },
+        {
+          "id": "oldlong",
+          "entity": "Verisk連結",
+          "metric": "長期債務等帳簿残高",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期債務等帳簿残高"
+        },
+        {
+          "id": "newshort",
+          "entity": "Verisk連結",
+          "metric": "短期債務等帳簿残高",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期債務等帳簿残高"
+        },
+        {
+          "id": "newlong",
+          "entity": "Verisk連結",
+          "metric": "長期債務等帳簿残高",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期債務等帳簿残高"
+        },
+        {
+          "id": "oldcash",
+          "entity": "Verisk連結",
+          "metric": "現金同等物",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金同等物"
+        },
+        {
+          "id": "newcash",
+          "entity": "Verisk連結",
+          "metric": "現金同等物",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金同等物"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oldshort",
+          "entity": "Verisk連結",
+          "metric": "短期債務等帳簿残高",
+          "value": 1508.9,
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期債務等帳簿残高",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Balance sheet",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldlong",
+          "entity": "Verisk連結",
+          "metric": "長期債務等帳簿残高",
+          "value": 3228.3,
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期債務等帳簿残高",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Balance sheet",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newshort",
+          "entity": "Verisk連結",
+          "metric": "短期債務等帳簿残高",
+          "value": 257.7,
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期債務等帳簿残高",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Balance sheet",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newlong",
+          "entity": "Verisk連結",
+          "metric": "長期債務等帳簿残高",
+          "value": 4215.8,
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期債務等帳簿残高",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Balance sheet",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldcash",
+          "entity": "Verisk連結",
+          "metric": "現金同等物",
+          "value": 2178.2,
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金同等物",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Balance sheet",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newcash",
+          "entity": "Verisk連結",
+          "metric": "現金同等物",
+          "value": 551.4,
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金同等物",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Balance sheet",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "olddebt",
+          "operation": "sum",
+          "inputs": [
+            "oldshort",
+            "oldlong"
+          ],
+          "value": 4737.2,
+          "precision": 1,
+          "definition": "本文定義による計算"
+        },
+        {
+          "id": "newdebt",
+          "operation": "sum",
+          "inputs": [
+            "newshort",
+            "newlong"
+          ],
+          "value": 4473.5,
+          "precision": 1,
+          "definition": "本文定義による計算"
+        },
+        {
+          "id": "oldnet",
+          "operation": "difference",
+          "inputs": [
+            "olddebt",
+            "oldcash"
+          ],
+          "value": 2559,
+          "precision": 1,
+          "definition": "本文定義による計算"
+        },
+        {
+          "id": "newnet",
+          "operation": "difference",
+          "inputs": [
+            "newdebt",
+            "newcash"
+          ],
+          "value": 3922.1,
+          "precision": 1,
+          "definition": "本文定義による計算"
+        }
+      ]
+    },
+    {
+      "id": "equity",
+      "question": "自己資本も、親会社株主持分で309.0百万ドルからマイナス1,189.0百万ドルになりました。",
+      "claim": "自己資本も、親会社株主持分で309.0百万ドルからマイナス1,189.0百万ドルになりました。",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Verisk連結",
+          "metric": "親会社株主持分",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "親会社株主持分"
+        },
+        {
+          "id": "new",
+          "entity": "Verisk連結",
+          "metric": "親会社株主持分",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "親会社株主持分"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Verisk連結",
+          "metric": "親会社株主持分",
+          "value": 309,
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "親会社株主持分",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Balance sheet / Changes in stockholders equity",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Verisk連結",
+          "metric": "親会社株主持分",
+          "value": -1189,
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "親会社株主持分",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024749/vrsk20260630_10q.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Balance sheet / Changes in stockholders equity",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "guidance",
+      "question": "7月29日時点の2026年会社見通しは、売上3,190〜3,240百万ドル、調整後EBITDA1,790〜1,830百万ドル、調整後EPS7.45〜7.75ドルです。",
+      "claim": "7月29日時点の2026年会社見通しは、売上3,190〜3,240百万ドル、調整後EBITDA1,790〜1,830百万ドル、調整後EPS7.45〜7.75ドルです。",
+      "definition": "本文の期間・連結範囲・指標定義・単位に従う。異なるbasisは本文で明示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "rl",
+          "entity": "Verisk連結",
+          "metric": "売上予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "売上予想下限"
+        },
+        {
+          "id": "rh",
+          "entity": "Verisk連結",
+          "metric": "売上予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "売上予想上限"
+        },
+        {
+          "id": "el",
+          "entity": "Verisk連結",
+          "metric": "調整後EBITDA予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "調整後EBITDA予想下限"
+        },
+        {
+          "id": "eh",
+          "entity": "Verisk連結",
+          "metric": "調整後EBITDA予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "調整後EBITDA予想上限"
+        },
+        {
+          "id": "pl",
+          "entity": "Verisk連結",
+          "metric": "調整後EPS予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS予想下限"
+        },
+        {
+          "id": "ph",
+          "entity": "Verisk連結",
+          "metric": "調整後EPS予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS予想上限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rl",
+          "entity": "Verisk連結",
+          "metric": "売上予想下限",
+          "value": 3190,
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "売上予想下限",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024748/ex_968691.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Full Year 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "rh",
+          "entity": "Verisk連結",
+          "metric": "売上予想上限",
+          "value": 3240,
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "売上予想上限",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024748/ex_968691.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Full Year 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "el",
+          "entity": "Verisk連結",
+          "metric": "調整後EBITDA予想下限",
+          "value": 1790,
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "調整後EBITDA予想下限",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024748/ex_968691.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Full Year 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eh",
+          "entity": "Verisk連結",
+          "metric": "調整後EBITDA予想上限",
+          "value": 1830,
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "調整後EBITDA予想上限",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024748/ex_968691.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Full Year 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "pl",
+          "entity": "Verisk連結",
+          "metric": "調整後EPS予想下限",
+          "value": 7.45,
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS予想下限",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024748/ex_968691.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Full Year 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ph",
+          "entity": "Verisk連結",
+          "metric": "調整後EPS予想上限",
+          "value": 7.75,
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS予想上限",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1442145/000143774926024748/ex_968691.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Full Year 2026 Outlook",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}

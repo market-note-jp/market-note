@@ -1,0 +1,2654 @@
+{
+  "version": 1,
+  "articleSlug": "company-loreal-2026-11-01",
+  "articleSha256": "76f8b5b0c22e2b6450381b43a7a4b2e570147b9fa6b04246709035e1ea638a1f",
+  "checkedAt": "2026-11-01T10:55:22.769Z",
+  "informationCutoff": "2026-11-01T19:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "一次資料本文と表を照合。5年財務、通常LFL、上期利益率、CF、純借入金独自定義、ROE、競合の異なる期間を台帳化。株価・予想・買収ROICは非掲載。独立監査と統合後articleDigest再計算を要する。HTML登録文書の検索要約と実ページにずれがあったため長期数値は実際に読んだ決算PDFを優先。",
+  "comparisons": [
+    {
+      "id": "fy-2021",
+      "question": "| 2021 | 32,287.6 | 6,160.3 | 6,728.4 | 1,075.2 | 5,653.2 |",
+      "claim": "| 2021 | 32,287.6 | 6,160.3 | 6,728.4 | 1,075.2 | 5,653.2 |",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "L’Oréal連結",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "L’Oréal連結",
+          "metric": "営業利益（Operating profit）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業利益（Operating profit）"
+        },
+        {
+          "id": "ocf",
+          "entity": "L’Oréal連結",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "L’Oréal連結",
+          "metric": "設備取得現金支出（負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "設備取得現金支出（負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "L’Oréal連結",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 32287.6,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/migrate-files/LOreal_2022_Annual_Results.pdf",
+            "publishedOn": "2023-02-09",
+            "locator": "売上高、PDF 12頁",
+            "kind": "primary",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "op",
+          "entity": "L’Oréal連結",
+          "metric": "営業利益（Operating profit）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業利益（Operating profit）",
+          "value": 6160.3,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/migrate-files/LOreal_2022_Annual_Results.pdf",
+            "publishedOn": "2023-02-09",
+            "locator": "営業利益（Operating profit）、PDF 12頁",
+            "kind": "primary",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "L’Oréal連結",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 6728.4,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/migrate-files/LOreal_2022_Annual_Results.pdf",
+            "publishedOn": "2023-02-09",
+            "locator": "営業CF、PDF 17頁",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "L’Oréal連結",
+          "metric": "設備取得現金支出（負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "設備取得現金支出（負数）",
+          "value": -1075.2,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/migrate-files/LOreal_2022_Annual_Results.pdf",
+            "publishedOn": "2023-02-09",
+            "locator": "設備取得現金支出（負数）、PDF 17頁",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "definition": "営業CF＋負数の有形・無形固定資産取得現金支出。買収・金融投資・リース元本返済を含まない。",
+          "precision": 1,
+          "value": 5653.2
+        }
+      ]
+    },
+    {
+      "id": "fy-2022",
+      "question": "| 2022 | 38,260.6 | 7,456.9 | 6,278.3 | 1,343.2 | 4,935.1 |",
+      "claim": "| 2022 | 38,260.6 | 7,456.9 | 6,278.3 | 1,343.2 | 4,935.1 |",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "L’Oréal連結",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "L’Oréal連結",
+          "metric": "営業利益（Operating profit）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業利益（Operating profit）"
+        },
+        {
+          "id": "ocf",
+          "entity": "L’Oréal連結",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "L’Oréal連結",
+          "metric": "設備取得現金支出（負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "設備取得現金支出（負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "L’Oréal連結",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 38260.6,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/migrate-files/LOreal_2022_Annual_Results.pdf",
+            "publishedOn": "2023-02-09",
+            "locator": "売上高、PDF 12頁",
+            "kind": "primary",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "op",
+          "entity": "L’Oréal連結",
+          "metric": "営業利益（Operating profit）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業利益（Operating profit）",
+          "value": 7456.9,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/migrate-files/LOreal_2022_Annual_Results.pdf",
+            "publishedOn": "2023-02-09",
+            "locator": "営業利益（Operating profit）、PDF 12頁",
+            "kind": "primary",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "L’Oréal連結",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 6278.3,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/migrate-files/LOreal_2022_Annual_Results.pdf",
+            "publishedOn": "2023-02-09",
+            "locator": "営業CF、PDF 17頁",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "L’Oréal連結",
+          "metric": "設備取得現金支出（負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "設備取得現金支出（負数）",
+          "value": -1343.2,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/migrate-files/LOreal_2022_Annual_Results.pdf",
+            "publishedOn": "2023-02-09",
+            "locator": "設備取得現金支出（負数）、PDF 17頁",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "definition": "営業CF＋負数の有形・無形固定資産取得現金支出。買収・金融投資・リース元本返済を含まない。",
+          "precision": 1,
+          "value": 4935.1
+        }
+      ]
+    },
+    {
+      "id": "fy-2023",
+      "question": "| 2023 | 41,182.5 | 8,143.3 | 7,604.6 | 1,488.7 | 6,115.9 |",
+      "claim": "| 2023 | 41,182.5 | 8,143.3 | 7,604.6 | 1,488.7 | 6,115.9 |",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "L’Oréal連結",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "L’Oréal連結",
+          "metric": "営業利益（Operating profit）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業利益（Operating profit）"
+        },
+        {
+          "id": "ocf",
+          "entity": "L’Oréal連結",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "L’Oréal連結",
+          "metric": "設備取得現金支出（負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "設備取得現金支出（負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "L’Oréal連結",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 41182.5,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-02/CPFY25ENv12.02%2017.00.pdf",
+            "publishedOn": "2026-02-12",
+            "locator": "売上高、PDF 14頁",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "op",
+          "entity": "L’Oréal連結",
+          "metric": "営業利益（Operating profit）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業利益（Operating profit）",
+          "value": 8143.3,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-02/CPFY25ENv12.02%2017.00.pdf",
+            "publishedOn": "2026-02-12",
+            "locator": "営業利益（Operating profit）、PDF 14頁",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "L’Oréal連結",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 7604.6,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-02/CPFY25ENv12.02%2017.00.pdf",
+            "publishedOn": "2026-02-12",
+            "locator": "営業CF、PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "L’Oréal連結",
+          "metric": "設備取得現金支出（負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "設備取得現金支出（負数）",
+          "value": -1488.7,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-02/CPFY25ENv12.02%2017.00.pdf",
+            "publishedOn": "2026-02-12",
+            "locator": "設備取得現金支出（負数）、PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "definition": "営業CF＋負数の有形・無形固定資産取得現金支出。買収・金融投資・リース元本返済を含まない。",
+          "precision": 1,
+          "value": 6115.9
+        }
+      ]
+    },
+    {
+      "id": "fy-2024",
+      "question": "| 2024 | 43,486.8 | 8,687.5 | 8,286.0 | 1,641.7 | 6,644.3 |",
+      "claim": "| 2024 | 43,486.8 | 8,687.5 | 8,286.0 | 1,641.7 | 6,644.3 |",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "L’Oréal連結",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "L’Oréal連結",
+          "metric": "営業利益（Operating profit）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業利益（Operating profit）"
+        },
+        {
+          "id": "ocf",
+          "entity": "L’Oréal連結",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "L’Oréal連結",
+          "metric": "設備取得現金支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "設備取得現金支出（負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "L’Oréal連結",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 43486.8,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-02/CPFY25ENv12.02%2017.00.pdf",
+            "publishedOn": "2026-02-12",
+            "locator": "売上高、PDF 14頁",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "op",
+          "entity": "L’Oréal連結",
+          "metric": "営業利益（Operating profit）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業利益（Operating profit）",
+          "value": 8687.5,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-02/CPFY25ENv12.02%2017.00.pdf",
+            "publishedOn": "2026-02-12",
+            "locator": "営業利益（Operating profit）、PDF 14頁",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "L’Oréal連結",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 8286,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-02/CPFY25ENv12.02%2017.00.pdf",
+            "publishedOn": "2026-02-12",
+            "locator": "営業CF、PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "L’Oréal連結",
+          "metric": "設備取得現金支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "設備取得現金支出（負数）",
+          "value": -1641.7,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-02/CPFY25ENv12.02%2017.00.pdf",
+            "publishedOn": "2026-02-12",
+            "locator": "設備取得現金支出（負数）、PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "definition": "営業CF＋負数の有形・無形固定資産取得現金支出。買収・金融投資・リース元本返済を含まない。",
+          "precision": 1,
+          "value": 6644.3
+        }
+      ]
+    },
+    {
+      "id": "fy-2025",
+      "question": "| 2025 | 44,052.0 | 8,891.9 | 8,656.9 | 1,495.3 | 7,161.6 |",
+      "claim": "| 2025 | 44,052.0 | 8,891.9 | 8,656.9 | 1,495.3 | 7,161.6 |",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "L’Oréal連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "L’Oréal連結",
+          "metric": "営業利益（Operating profit）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業利益（Operating profit）"
+        },
+        {
+          "id": "ocf",
+          "entity": "L’Oréal連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "L’Oréal連結",
+          "metric": "設備取得現金支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "設備取得現金支出（負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "L’Oréal連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 44052,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-02/CPFY25ENv12.02%2017.00.pdf",
+            "publishedOn": "2026-02-12",
+            "locator": "売上高、PDF 14頁",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "op",
+          "entity": "L’Oréal連結",
+          "metric": "営業利益（Operating profit）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業利益（Operating profit）",
+          "value": 8891.9,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-02/CPFY25ENv12.02%2017.00.pdf",
+            "publishedOn": "2026-02-12",
+            "locator": "営業利益（Operating profit）、PDF 14頁",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "L’Oréal連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 8656.9,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-02/CPFY25ENv12.02%2017.00.pdf",
+            "publishedOn": "2026-02-12",
+            "locator": "営業CF、PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "L’Oréal連結",
+          "metric": "設備取得現金支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "設備取得現金支出（負数）",
+          "value": -1495.3,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-02/CPFY25ENv12.02%2017.00.pdf",
+            "publishedOn": "2026-02-12",
+            "locator": "設備取得現金支出（負数）、PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "definition": "営業CF＋負数の有形・無形固定資産取得現金支出。買収・金融投資・リース元本返済を含まない。",
+          "precision": 1,
+          "value": 7161.6
+        }
+      ]
+    },
+    {
+      "id": "fy25-coststructure",
+      "question": "2025年の売上総利益率は74.3%だったが、これは営業利益率ではない。",
+      "claim": "2025年の売上総利益率は74.3%だったが、これは営業利益率ではない。",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "gross",
+          "entity": "L’Oréal連結",
+          "metric": "売上総利益率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上総利益率"
+        },
+        {
+          "id": "ad",
+          "entity": "L’Oréal連結",
+          "metric": "広告販促費率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "広告販促費率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "gross",
+          "entity": "L’Oréal連結",
+          "metric": "売上総利益率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上総利益率",
+          "value": 74.3,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-02/CPFY25ENv12.02%2017.00.pdf",
+            "publishedOn": "2026-02-12",
+            "locator": "売上総利益率、PDF 10頁",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "ad",
+          "entity": "L’Oréal連結",
+          "metric": "広告販促費率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "広告販促費率",
+          "value": 32.2,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-02/CPFY25ENv12.02%2017.00.pdf",
+            "publishedOn": "2026-02-12",
+            "locator": "広告販促費率、PDF 10頁",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "workingcapital",
+      "question": "運転資本のCF寄与は2024年の−226.6から＋327.4へ改善した。",
+      "claim": "運転資本のCF寄与は2024年の−226.6から＋327.4へ改善した。",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "L’Oréal連結",
+          "metric": "運転資本のCF寄与",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "運転資本のCF寄与"
+        },
+        {
+          "id": "new",
+          "entity": "L’Oréal連結",
+          "metric": "運転資本のCF寄与",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "運転資本のCF寄与"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "L’Oréal連結",
+          "metric": "運転資本のCF寄与",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "運転資本のCF寄与",
+          "value": -226.6,
+          "source": {
+            "url": "https://www.loreal-finance.com/eng/2025-universal-registration-document/en/article/44/",
+            "publishedOn": "2026-03-18",
+            "locator": "運転資本のCF寄与",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "L’Oréal連結",
+          "metric": "運転資本のCF寄与",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "運転資本のCF寄与",
+          "value": 327.4,
+          "source": {
+            "url": "https://www.loreal-finance.com/eng/2025-universal-registration-document/en/article/44/",
+            "publishedOn": "2026-03-18",
+            "locator": "運転資本のCF寄与",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "nine-bridge",
+      "question": "2026年1〜9月の売上は35,337.6百万ユーロ。",
+      "claim": "2026年1〜9月の売上は35,337.6百万ユーロ。",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "L’Oréal連結",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "reported",
+          "entity": "L’Oréal連結",
+          "metric": "報告増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "報告増収率"
+        },
+        {
+          "id": "lfl",
+          "entity": "L’Oréal連結",
+          "metric": "通常LFL増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "通常LFL増収率"
+        },
+        {
+          "id": "scope",
+          "entity": "L’Oréal連結",
+          "metric": "連結範囲寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結範囲寄与"
+        },
+        {
+          "id": "fx",
+          "entity": "L’Oréal連結",
+          "metric": "為替寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "為替寄与"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "L’Oréal連結",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 35337.6,
+          "source": {
+            "url": "https://www.loreal-finance.com/eng/press-release/sales-30-september-2026",
+            "publishedOn": "2026-10-22",
+            "locator": "売上高",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "reported",
+          "entity": "L’Oréal連結",
+          "metric": "報告増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "報告増収率",
+          "value": 7.7,
+          "source": {
+            "url": "https://www.loreal-finance.com/eng/press-release/sales-30-september-2026",
+            "publishedOn": "2026-10-22",
+            "locator": "報告増収率",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "lfl",
+          "entity": "L’Oréal連結",
+          "metric": "通常LFL増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "通常LFL増収率",
+          "value": 6.9,
+          "source": {
+            "url": "https://www.loreal-finance.com/eng/press-release/sales-30-september-2026",
+            "publishedOn": "2026-10-22",
+            "locator": "通常LFL増収率",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "scope",
+          "entity": "L’Oréal連結",
+          "metric": "連結範囲寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結範囲寄与",
+          "value": 2,
+          "source": {
+            "url": "https://www.loreal-finance.com/eng/press-release/sales-30-september-2026",
+            "publishedOn": "2026-10-22",
+            "locator": "連結範囲寄与",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fx",
+          "entity": "L’Oréal連結",
+          "metric": "為替寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "為替寄与",
+          "value": -1.2,
+          "source": {
+            "url": "https://www.loreal-finance.com/eng/press-release/sales-30-september-2026",
+            "publishedOn": "2026-10-22",
+            "locator": "為替寄与",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "division-1",
+      "question": "| Professional Products | 4,389.8 | 12.4% |",
+      "claim": "| Professional Products | 4,389.8 | 12.4% |",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "L’Oréal連結",
+          "metric": "Professional Products売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "Professional Products売上高"
+        },
+        {
+          "id": "g",
+          "entity": "L’Oréal連結",
+          "metric": "Professional Products通常LFL増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Professional Products通常LFL増収率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "L’Oréal連結",
+          "metric": "Professional Products売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "Professional Products売上高",
+          "value": 4389.8,
+          "source": {
+            "url": "https://www.loreal-finance.com/eng/press-release/sales-30-september-2026",
+            "publishedOn": "2026-10-22",
+            "locator": "Professional Products売上高",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "g",
+          "entity": "L’Oréal連結",
+          "metric": "Professional Products通常LFL増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Professional Products通常LFL増収率",
+          "value": 12.4,
+          "source": {
+            "url": "https://www.loreal-finance.com/eng/press-release/sales-30-september-2026",
+            "publishedOn": "2026-10-22",
+            "locator": "Professional Products通常LFL増収率",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "division-2",
+      "question": "| Consumer Products | 12,687.1 | 4.2% |",
+      "claim": "| Consumer Products | 12,687.1 | 4.2% |",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "L’Oréal連結",
+          "metric": "Consumer Products売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "Consumer Products売上高"
+        },
+        {
+          "id": "g",
+          "entity": "L’Oréal連結",
+          "metric": "Consumer Products通常LFL増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Consumer Products通常LFL増収率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "L’Oréal連結",
+          "metric": "Consumer Products売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "Consumer Products売上高",
+          "value": 12687.1,
+          "source": {
+            "url": "https://www.loreal-finance.com/eng/press-release/sales-30-september-2026",
+            "publishedOn": "2026-10-22",
+            "locator": "Consumer Products売上高",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "g",
+          "entity": "L’Oréal連結",
+          "metric": "Consumer Products通常LFL増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Consumer Products通常LFL増収率",
+          "value": 4.2,
+          "source": {
+            "url": "https://www.loreal-finance.com/eng/press-release/sales-30-september-2026",
+            "publishedOn": "2026-10-22",
+            "locator": "Consumer Products通常LFL増収率",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "division-3",
+      "question": "| Luxe | 12,173.3 | 5.7% |",
+      "claim": "| Luxe | 12,173.3 | 5.7% |",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "L’Oréal連結",
+          "metric": "Luxe売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "Luxe売上高"
+        },
+        {
+          "id": "g",
+          "entity": "L’Oréal連結",
+          "metric": "Luxe通常LFL増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Luxe通常LFL増収率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "L’Oréal連結",
+          "metric": "Luxe売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "Luxe売上高",
+          "value": 12173.3,
+          "source": {
+            "url": "https://www.loreal-finance.com/eng/press-release/sales-30-september-2026",
+            "publishedOn": "2026-10-22",
+            "locator": "Luxe売上高",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "g",
+          "entity": "L’Oréal連結",
+          "metric": "Luxe通常LFL増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Luxe通常LFL増収率",
+          "value": 5.7,
+          "source": {
+            "url": "https://www.loreal-finance.com/eng/press-release/sales-30-september-2026",
+            "publishedOn": "2026-10-22",
+            "locator": "Luxe通常LFL増収率",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "division-4",
+      "question": "| Dermatological Beauty | 6,087.4 | 11.6% |",
+      "claim": "| Dermatological Beauty | 6,087.4 | 11.6% |",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "L’Oréal連結",
+          "metric": "Dermatological Beauty売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "Dermatological Beauty売上高"
+        },
+        {
+          "id": "g",
+          "entity": "L’Oréal連結",
+          "metric": "Dermatological Beauty通常LFL増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Dermatological Beauty通常LFL増収率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "L’Oréal連結",
+          "metric": "Dermatological Beauty売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "Dermatological Beauty売上高",
+          "value": 6087.4,
+          "source": {
+            "url": "https://www.loreal-finance.com/eng/press-release/sales-30-september-2026",
+            "publishedOn": "2026-10-22",
+            "locator": "Dermatological Beauty売上高",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "g",
+          "entity": "L’Oréal連結",
+          "metric": "Dermatological Beauty通常LFL増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Dermatological Beauty通常LFL増収率",
+          "value": 11.6,
+          "source": {
+            "url": "https://www.loreal-finance.com/eng/press-release/sales-30-september-2026",
+            "publishedOn": "2026-10-22",
+            "locator": "Dermatological Beauty通常LFL増収率",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "region",
+      "question": "同じ資料では欧州のLFL増収率が7.0%、北アジアが5.5%。",
+      "claim": "同じ資料では欧州のLFL増収率が7.0%、北アジアが5.5%。",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "eu",
+          "entity": "L’Oréal連結",
+          "metric": "欧州通常LFL増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "欧州通常LFL増収率"
+        },
+        {
+          "id": "asia",
+          "entity": "L’Oréal連結",
+          "metric": "北アジア通常LFL増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北アジア通常LFL増収率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "eu",
+          "entity": "L’Oréal連結",
+          "metric": "欧州通常LFL増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "欧州通常LFL増収率",
+          "value": 7,
+          "source": {
+            "url": "https://www.loreal-finance.com/eng/press-release/sales-30-september-2026",
+            "publishedOn": "2026-10-22",
+            "locator": "欧州通常LFL増収率",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "asia",
+          "entity": "L’Oréal連結",
+          "metric": "北アジア通常LFL増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北アジア通常LFL増収率",
+          "value": 5.5,
+          "source": {
+            "url": "https://www.loreal-finance.com/eng/press-release/sales-30-september-2026",
+            "publishedOn": "2026-10-22",
+            "locator": "北アジア通常LFL増収率",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "latam",
+      "question": "一方、ラテンアメリカは7〜9月単独でLFL−1.0%に対し報告ベース＋11.0%だった。",
+      "claim": "一方、ラテンアメリカは7〜9月単独でLFL−1.0%に対し報告ベース＋11.0%だった。",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "lfl",
+          "entity": "L’Oréal連結",
+          "metric": "LATAM通常LFL増収率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "LATAM通常LFL増収率"
+        },
+        {
+          "id": "reported",
+          "entity": "L’Oréal連結",
+          "metric": "LATAM報告増収率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "LATAM報告増収率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "lfl",
+          "entity": "L’Oréal連結",
+          "metric": "LATAM通常LFL増収率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "LATAM通常LFL増収率",
+          "value": -1,
+          "source": {
+            "url": "https://www.loreal-finance.com/eng/press-release/sales-30-september-2026",
+            "publishedOn": "2026-10-22",
+            "locator": "LATAM通常LFL増収率",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "reported",
+          "entity": "L’Oréal連結",
+          "metric": "LATAM報告増収率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "LATAM報告増収率",
+          "value": 11,
+          "source": {
+            "url": "https://www.loreal-finance.com/eng/press-release/sales-30-september-2026",
+            "publishedOn": "2026-10-22",
+            "locator": "LATAM報告増収率",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "h1-margin",
+      "question": "2026年上期の営業利益率は前年同期21.1%から21.3%へ上昇。",
+      "claim": "2026年上期の営業利益率は前年同期21.1%から21.3%へ上昇。",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "営業利益率-2025",
+          "entity": "L’Oréal連結",
+          "metric": "営業利益率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率"
+        },
+        {
+          "id": "営業利益率-2026",
+          "entity": "L’Oréal連結",
+          "metric": "営業利益率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率"
+        },
+        {
+          "id": "広告販促費率-2025",
+          "entity": "L’Oréal連結",
+          "metric": "広告販促費率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "広告販促費率"
+        },
+        {
+          "id": "広告販促費率-2026",
+          "entity": "L’Oréal連結",
+          "metric": "広告販促費率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "広告販促費率"
+        },
+        {
+          "id": "販売一般管理費率-2025",
+          "entity": "L’Oréal連結",
+          "metric": "販売一般管理費率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "販売一般管理費率"
+        },
+        {
+          "id": "販売一般管理費率-2026",
+          "entity": "L’Oréal連結",
+          "metric": "販売一般管理費率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "販売一般管理費率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "営業利益率-2025",
+          "entity": "L’Oréal連結",
+          "metric": "営業利益率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率",
+          "value": 21.1,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "営業利益率、PDF 8頁",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "営業利益率-2026",
+          "entity": "L’Oréal連結",
+          "metric": "営業利益率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率",
+          "value": 21.3,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "営業利益率、PDF 8頁",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "広告販促費率-2025",
+          "entity": "L’Oréal連結",
+          "metric": "広告販促費率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "広告販促費率",
+          "value": 31.9,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "広告販促費率、PDF 8頁",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "広告販促費率-2026",
+          "entity": "L’Oréal連結",
+          "metric": "広告販促費率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "広告販促費率",
+          "value": 32.6,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "広告販促費率、PDF 8頁",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "販売一般管理費率-2025",
+          "entity": "L’Oréal連結",
+          "metric": "販売一般管理費率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "販売一般管理費率",
+          "value": 18.7,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "販売一般管理費率、PDF 8頁",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "販売一般管理費率-2026",
+          "entity": "L’Oréal連結",
+          "metric": "販売一般管理費率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "販売一般管理費率",
+          "value": 18,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "販売一般管理費率、PDF 8頁",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "luxe-margin",
+      "question": "ただし、Luxeの上期営業利益率は22.3%から22.1%へ低下した。",
+      "claim": "ただし、Luxeの上期営業利益率は22.3%から22.1%へ低下した。",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "L’Oréal連結",
+          "metric": "Luxe営業利益率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Luxe営業利益率"
+        },
+        {
+          "id": "new",
+          "entity": "L’Oréal連結",
+          "metric": "Luxe営業利益率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Luxe営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "L’Oréal連結",
+          "metric": "Luxe営業利益率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Luxe営業利益率",
+          "value": 22.3,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "Luxe営業利益率、PDF 9頁",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "new",
+          "entity": "L’Oréal連結",
+          "metric": "Luxe営業利益率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Luxe営業利益率",
+          "value": 22.1,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "Luxe営業利益率、PDF 9頁",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "half-ocf",
+      "question": "| 営業CF | 3,507.1 | 3,838.6 |",
+      "claim": "| 営業CF | 3,507.1 | 3,838.6 |",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "L’Oréal連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "new",
+          "entity": "L’Oréal連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "L’Oréal連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 3507.1,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "営業CF、PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        },
+        {
+          "id": "new",
+          "entity": "L’Oréal連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 3838.6,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "営業CF、PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "half-cap",
+      "question": "| 設備支出 | 765.8 | 716.1 |",
+      "claim": "| 設備支出 | 765.8 | 716.1 |",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "L’Oréal連結",
+          "metric": "設備支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "設備支出"
+        },
+        {
+          "id": "new",
+          "entity": "L’Oréal連結",
+          "metric": "設備支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "設備支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "L’Oréal連結",
+          "metric": "設備支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "設備支出",
+          "value": 765.8,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "設備支出、PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        },
+        {
+          "id": "new",
+          "entity": "L’Oréal連結",
+          "metric": "設備支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "設備支出",
+          "value": 716.1,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "設備支出、PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "half-icf",
+      "question": "| 投資活動CF（設備・買収・金融資産等の合計） | 1,373.2 | −8,969.7 |",
+      "claim": "| 投資活動CF（設備・買収・金融資産等の合計） | 1,373.2 | −8,969.7 |",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "L’Oréal連結",
+          "metric": "投資活動CF（設備・買収・金融資産等の合計）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "投資活動CF（設備・買収・金融資産等の合計）"
+        },
+        {
+          "id": "new",
+          "entity": "L’Oréal連結",
+          "metric": "投資活動CF（設備・買収・金融資産等の合計）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "投資活動CF（設備・買収・金融資産等の合計）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "L’Oréal連結",
+          "metric": "投資活動CF（設備・買収・金融資産等の合計）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "投資活動CF（設備・買収・金融資産等の合計）",
+          "value": 1373.2,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "投資活動CF（設備・買収・金融資産等の合計）、PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        },
+        {
+          "id": "new",
+          "entity": "L’Oréal連結",
+          "metric": "投資活動CF（設備・買収・金融資産等の合計）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "投資活動CF（設備・買収・金融資産等の合計）",
+          "value": -8969.7,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "投資活動CF（設備・買収・金融資産等の合計）、PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "half-div",
+      "question": "| 現金配当支払 | 3,840.7 | 3,926.3 |",
+      "claim": "| 現金配当支払 | 3,840.7 | 3,926.3 |",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "L’Oréal連結",
+          "metric": "現金配当支払",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "現金配当支払"
+        },
+        {
+          "id": "new",
+          "entity": "L’Oréal連結",
+          "metric": "現金配当支払",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "現金配当支払"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "L’Oréal連結",
+          "metric": "現金配当支払",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "現金配当支払",
+          "value": 3840.7,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "現金配当支払、PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        },
+        {
+          "id": "new",
+          "entity": "L’Oréal連結",
+          "metric": "現金配当支払",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "現金配当支払",
+          "value": 3926.3,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "現金配当支払、PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "half-buyback",
+      "question": "| 自己株式取得等の純支出 | 501.6 | 501.4 |",
+      "claim": "| 自己株式取得等の純支出 | 501.6 | 501.4 |",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "L’Oréal連結",
+          "metric": "自己株式取得等の純支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "自己株式取得等の純支出"
+        },
+        {
+          "id": "new",
+          "entity": "L’Oréal連結",
+          "metric": "自己株式取得等の純支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "自己株式取得等の純支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "L’Oréal連結",
+          "metric": "自己株式取得等の純支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "自己株式取得等の純支出",
+          "value": 501.6,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "自己株式取得等の純支出、PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        },
+        {
+          "id": "new",
+          "entity": "L’Oréal連結",
+          "metric": "自己株式取得等の純支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "自己株式取得等の純支出",
+          "value": 501.4,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "自己株式取得等の純支出、PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "half-fcf",
+      "question": "| 営業CF−設備支出 | 2,741.3 | 3,122.5 |",
+      "claim": "| 営業CF−設備支出 | 2,741.3 | 3,122.5 |",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "o2025",
+          "entity": "L’Oréal連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "c2025",
+          "entity": "L’Oréal連結",
+          "metric": "設備取得現金支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "設備取得現金支出（負数）"
+        },
+        {
+          "id": "o2026",
+          "entity": "L’Oréal連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "c2026",
+          "entity": "L’Oréal連結",
+          "metric": "設備取得現金支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "設備取得現金支出（負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "o2025",
+          "entity": "L’Oréal連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 3507.1,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "営業CF、PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        },
+        {
+          "id": "c2025",
+          "entity": "L’Oréal連結",
+          "metric": "設備取得現金支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "設備取得現金支出（負数）",
+          "value": -765.8,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "設備取得現金支出（負数）、PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        },
+        {
+          "id": "o2026",
+          "entity": "L’Oréal連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 3838.6,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "営業CF、PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        },
+        {
+          "id": "c2026",
+          "entity": "L’Oréal連結",
+          "metric": "設備取得現金支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "設備取得現金支出（負数）",
+          "value": -716.1,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "設備取得現金支出（負数）、PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf25",
+          "operation": "sum",
+          "inputs": [
+            "o2025",
+            "c2025"
+          ],
+          "definition": "営業CF−設備取得現金支出",
+          "precision": 1,
+          "value": 2741.3
+        },
+        {
+          "id": "fcf26",
+          "operation": "sum",
+          "inputs": [
+            "o2026",
+            "c2026"
+          ],
+          "definition": "営業CF−設備取得現金支出",
+          "precision": 1,
+          "value": 3122.5
+        }
+      ]
+    },
+    {
+      "id": "cashbalance",
+      "question": "2026年上期末の現金同等物は4,048.8百万ユーロで、2025年末9,865.0百万ユーロを下回った。",
+      "claim": "2026年上期末の現金同等物は4,048.8百万ユーロで、2025年末9,865.0百万ユーロを下回った。",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "L’Oréal連結",
+          "metric": "現金同等物",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "現金同等物"
+        },
+        {
+          "id": "new",
+          "entity": "L’Oréal連結",
+          "metric": "現金同等物",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "現金同等物"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "L’Oréal連結",
+          "metric": "現金同等物",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "現金同等物",
+          "value": 9865,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "現金同等物、PDF 16頁",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        },
+        {
+          "id": "new",
+          "entity": "L’Oréal連結",
+          "metric": "現金同等物",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "現金同等物",
+          "value": 4048.8,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "現金同等物、PDF 16頁",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "netdebt",
+      "question": "この定義では2025年末253.6百万ユーロ、2026年6月末10,288.4百万ユーロとなる。",
+      "claim": "この定義では2025年末253.6百万ユーロ、2026年6月末10,288.4百万ユーロとなる。",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "lt2025",
+          "entity": "L’Oréal連結",
+          "metric": "非流動借入金",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "非流動借入金"
+        },
+        {
+          "id": "st2025",
+          "entity": "L’Oréal連結",
+          "metric": "流動借入金",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "流動借入金"
+        },
+        {
+          "id": "cash2025",
+          "entity": "L’Oréal連結",
+          "metric": "現金同等物",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "現金同等物"
+        },
+        {
+          "id": "lt2026",
+          "entity": "L’Oréal連結",
+          "metric": "非流動借入金",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "非流動借入金"
+        },
+        {
+          "id": "st2026",
+          "entity": "L’Oréal連結",
+          "metric": "流動借入金",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "流動借入金"
+        },
+        {
+          "id": "cash2026",
+          "entity": "L’Oréal連結",
+          "metric": "現金同等物",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "現金同等物"
+        }
+      ],
+      "observations": [
+        {
+          "id": "lt2025",
+          "entity": "L’Oréal連結",
+          "metric": "非流動借入金",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "非流動借入金",
+          "value": 8069.7,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "非流動借入金、PDF 16頁",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        },
+        {
+          "id": "st2025",
+          "entity": "L’Oréal連結",
+          "metric": "流動借入金",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "流動借入金",
+          "value": 2048.9,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "流動借入金、PDF 16頁",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        },
+        {
+          "id": "cash2025",
+          "entity": "L’Oréal連結",
+          "metric": "現金同等物",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "現金同等物",
+          "value": 9865,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "現金同等物、PDF 16頁",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        },
+        {
+          "id": "lt2026",
+          "entity": "L’Oréal連結",
+          "metric": "非流動借入金",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "非流動借入金",
+          "value": 9787.5,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "非流動借入金、PDF 16頁",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        },
+        {
+          "id": "st2026",
+          "entity": "L’Oréal連結",
+          "metric": "流動借入金",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "流動借入金",
+          "value": 4549.7,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "流動借入金、PDF 16頁",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        },
+        {
+          "id": "cash2026",
+          "entity": "L’Oréal連結",
+          "metric": "現金同等物",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "現金同等物",
+          "value": 4048.8,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/CP_1H26_EN%2029.07.pdf",
+            "publishedOn": "2026-07-29",
+            "locator": "現金同等物、PDF 16頁",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "gross2025",
+          "operation": "sum",
+          "inputs": [
+            "lt2025",
+            "st2025"
+          ],
+          "definition": "長短借入金合計",
+          "precision": 1,
+          "value": 10118.6
+        },
+        {
+          "id": "net2025",
+          "operation": "difference",
+          "inputs": [
+            "gross2025",
+            "cash2025"
+          ],
+          "definition": "長短借入金−現金同等物。リース債務、保有株式、金融資産除外。",
+          "precision": 1,
+          "value": 253.6
+        },
+        {
+          "id": "gross2026",
+          "operation": "sum",
+          "inputs": [
+            "lt2026",
+            "st2026"
+          ],
+          "definition": "長短借入金合計",
+          "precision": 1,
+          "value": 14337.2
+        },
+        {
+          "id": "net2026",
+          "operation": "difference",
+          "inputs": [
+            "gross2026",
+            "cash2026"
+          ],
+          "definition": "長短借入金−現金同等物。リース債務、保有株式、金融資産除外。",
+          "precision": 1,
+          "value": 10288.4
+        }
+      ]
+    },
+    {
+      "id": "galderma",
+      "question": "追加取得後の20%持分は2026年2月10日から持分法を適用する。",
+      "claim": "追加取得後の20%持分は2026年2月10日から持分法を適用する。",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "stake",
+          "entity": "L’Oréal連結",
+          "metric": "Galderma持分",
+          "periodStart": "2026-02-10",
+          "periodEnd": "2026-02-10",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Galderma持分"
+        }
+      ],
+      "observations": [
+        {
+          "id": "stake",
+          "entity": "L’Oréal連結",
+          "metric": "Galderma持分",
+          "periodStart": "2026-02-10",
+          "periodEnd": "2026-02-10",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Galderma持分",
+          "value": 20,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-07/LOREAL_RFS_2026_UK.pdf",
+            "publishedOn": "2026-07-31",
+            "locator": "Galderma持分、PDF 21頁",
+            "kind": "primary",
+            "pdfPage": 21
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "roe",
+      "question": "資本効率の入口として、2025年ROEを「親会社株主帰属利益÷期首期末平均の親会社株主帰属持分」で計算すると18.0%。",
+      "claim": "資本効率の入口として、2025年ROEを「親会社株主帰属利益÷期首期末平均の親会社株主帰属持分」で計算すると18.0%。",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "profit",
+          "entity": "L’Oréal連結",
+          "metric": "親会社株主帰属利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "親会社株主帰属利益"
+        },
+        {
+          "id": "opening",
+          "entity": "L’Oréal連結",
+          "metric": "親会社株主帰属持分",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "親会社株主帰属持分"
+        },
+        {
+          "id": "closing",
+          "entity": "L’Oréal連結",
+          "metric": "親会社株主帰属持分",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "親会社株主帰属持分"
+        }
+      ],
+      "observations": [
+        {
+          "id": "profit",
+          "entity": "L’Oréal連結",
+          "metric": "親会社株主帰属利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "親会社株主帰属利益",
+          "value": 6127.2,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-02/CPFY25ENv12.02%2017.00.pdf",
+            "publishedOn": "2026-02-12",
+            "locator": "親会社株主帰属利益、PDF 14頁",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "opening",
+          "entity": "L’Oréal連結",
+          "metric": "親会社株主帰属持分",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "親会社株主帰属持分",
+          "value": 33133.3,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-02/CPFY25ENv12.02%2017.00.pdf",
+            "publishedOn": "2026-02-12",
+            "locator": "親会社株主帰属持分、PDF 17頁",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "closing",
+          "entity": "L’Oréal連結",
+          "metric": "親会社株主帰属持分",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "親会社株主帰属持分",
+          "value": 34953.2,
+          "source": {
+            "url": "https://www.loreal-finance.com/sites/default/files/2026-02/CPFY25ENv12.02%2017.00.pdf",
+            "publishedOn": "2026-02-12",
+            "locator": "親会社株主帰属持分、PDF 18頁",
+            "kind": "primary",
+            "pdfPage": 18
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "eqsum",
+          "operation": "sum",
+          "inputs": [
+            "opening",
+            "closing"
+          ],
+          "definition": "期首期末親会社株主帰属持分合計",
+          "precision": 1,
+          "value": 68086.5
+        },
+        {
+          "id": "twoprofit",
+          "operation": "sum",
+          "inputs": [
+            "profit",
+            "profit"
+          ],
+          "definition": "平均持分を分母にするため利益の2倍",
+          "precision": 1,
+          "value": 12254.4
+        },
+        {
+          "id": "roe",
+          "operation": "ratio-percent",
+          "inputs": [
+            "twoprofit",
+            "eqsum"
+          ],
+          "definition": "親会社株主帰属利益÷期首期末平均親会社株主帰属持分",
+          "precision": 1,
+          "value": 18
+        }
+      ]
+    },
+    {
+      "id": "competitor",
+      "question": "同社の2026年6月期はオーガニック売上が3%増、4〜6月単独は5%増だった。",
+      "claim": "同社の2026年6月期はオーガニック売上が3%増、4〜6月単独は5%増だった。",
+      "definition": "本文の対象期、連結範囲、指標定義に従う。金額は百万ユーロ、明示箇所のみ率。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "fy",
+          "entity": "Estée Lauder",
+          "metric": "Organic net sales growth",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Organic net sales growth"
+        },
+        {
+          "id": "q4",
+          "entity": "Estée Lauder",
+          "metric": "Organic net sales growth",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Organic net sales growth"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fy",
+          "entity": "Estée Lauder",
+          "metric": "Organic net sales growth",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Organic net sales growth",
+          "value": 3,
+          "source": {
+            "url": "https://www.elcompanies.com/en/news-and-media/newsroom/press-releases/2026/08-19-2026-110037466",
+            "publishedOn": "2026-08-19",
+            "locator": "Organic net sales growth",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "q4",
+          "entity": "Estée Lauder",
+          "metric": "Organic net sales growth",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Organic net sales growth",
+          "value": 5,
+          "source": {
+            "url": "https://www.elcompanies.com/en/news-and-media/newsroom/press-releases/2026/08-19-2026-110037466",
+            "publishedOn": "2026-08-19",
+            "locator": "Organic net sales growth",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "withheld-acquisition-roic",
+      "question": "買収別ROICと評価倍率",
+      "definition": "投下資本に対する税後営業利益。単独利益と投下資本を要する。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "nopat",
+          "entity": "Kering Beauté",
+          "metric": "買収後税後営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "買収後事業単独税後営業利益"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "対象期間未終了、ブランド単独収益・税金・運転資本・ロイヤルティー率未確認。未公表をゼロ扱いしない。",
+      "omittedClaim": "Kering Beauté買収のROICは20%を超える。"
+    }
+  ]
+}

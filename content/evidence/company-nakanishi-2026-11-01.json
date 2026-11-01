@@ -1,0 +1,2600 @@
+{
+  "version": 1,
+  "articleSlug": "company-nakanishi-2026-11-01",
+  "articleSha256": "c6e6154f5c479a8a5f20b45b94e9da3f8a90ac0ea363da7cfa133cf72c166185",
+  "checkedAt": "2026-11-01T10:55:22.769Z",
+  "informationCutoff": "2026-11-01T19:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "一次PDF全文をローカル取得、CF/企業結合/収益認識/R&D配賦変更/会社説明を確認。数値は原則千円原値、億円1桁表示。主な定性説明の別資料照合・競合公式製品も本文にURL記載。株価、PER、ROIC、数量寄与、厳密為替除外率は断定しない。独立レビュー待ち。articleSha256はMarkdown仮値で統合後最終ファイルのdigestへ更新が必要。",
+  "comparisons": [
+    {
+      "id": "five-year-2021",
+      "question": "five-year-2021",
+      "claim": "| 2021年 | 448.6億円 | 101.0億円 | 119.7億円 | 12.7% |",
+      "definition": "連結実績。2022年から収益認識基準変更。売上・純利益・CFは千円原数値を億円1桁表示。ROEは会社開示値で、一時損益含む。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "ナカニシ連結",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "net",
+          "entity": "ナカニシ連結",
+          "metric": "親会社純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "親会社純利益"
+        },
+        {
+          "id": "cfo",
+          "entity": "ナカニシ連結",
+          "metric": "営業活動によるCF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業活動によるCF"
+        },
+        {
+          "id": "roe",
+          "entity": "ナカニシ連結",
+          "metric": "ROE",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "親会社純利益/期首期末平均自己資本、会社開示値"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "ナカニシ連結",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 44857730,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/03/FY2025Q4_ASR.pdf",
+            "publishedOn": "2026-03-27",
+            "locator": "売上高、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "ナカニシ連結",
+          "metric": "親会社純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "親会社純利益",
+          "value": 10102609,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/03/FY2025Q4_ASR.pdf",
+            "publishedOn": "2026-03-27",
+            "locator": "親会社純利益、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "ナカニシ連結",
+          "metric": "営業活動によるCF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業活動によるCF",
+          "value": 11970529,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/03/FY2025Q4_ASR.pdf",
+            "publishedOn": "2026-03-27",
+            "locator": "営業活動によるCF、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe",
+          "entity": "ナカニシ連結",
+          "metric": "ROE",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "親会社純利益/期首期末平均自己資本、会社開示値",
+          "value": 12.7,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/03/FY2025Q4_ASR.pdf",
+            "publishedOn": "2026-03-27",
+            "locator": "ROE、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "five-year-2022",
+      "question": "five-year-2022",
+      "claim": "| 2022年 | 486.7億円 | 124.7億円 | 77.6億円 | 14.4% |",
+      "definition": "連結実績。2022年から収益認識基準変更。売上・純利益・CFは千円原数値を億円1桁表示。ROEは会社開示値で、一時損益含む。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "ナカニシ連結",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "net",
+          "entity": "ナカニシ連結",
+          "metric": "親会社純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "親会社純利益"
+        },
+        {
+          "id": "cfo",
+          "entity": "ナカニシ連結",
+          "metric": "営業活動によるCF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業活動によるCF"
+        },
+        {
+          "id": "roe",
+          "entity": "ナカニシ連結",
+          "metric": "ROE",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "親会社純利益/期首期末平均自己資本、会社開示値"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "ナカニシ連結",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 48671452,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/03/FY2025Q4_ASR.pdf",
+            "publishedOn": "2026-03-27",
+            "locator": "売上高、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "ナカニシ連結",
+          "metric": "親会社純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "親会社純利益",
+          "value": 12471540,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/03/FY2025Q4_ASR.pdf",
+            "publishedOn": "2026-03-27",
+            "locator": "親会社純利益、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "ナカニシ連結",
+          "metric": "営業活動によるCF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業活動によるCF",
+          "value": 7764417,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/03/FY2025Q4_ASR.pdf",
+            "publishedOn": "2026-03-27",
+            "locator": "営業活動によるCF、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe",
+          "entity": "ナカニシ連結",
+          "metric": "ROE",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "親会社純利益/期首期末平均自己資本、会社開示値",
+          "value": 14.4,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/03/FY2025Q4_ASR.pdf",
+            "publishedOn": "2026-03-27",
+            "locator": "ROE、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "five-year-2023",
+      "question": "five-year-2023",
+      "claim": "| 2023年 | 596.9億円 | 228.0億円 | 85.6億円 | 22.4% |",
+      "definition": "連結実績。2022年から収益認識基準変更。売上・純利益・CFは千円原数値を億円1桁表示。ROEは会社開示値で、一時損益含む。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "ナカニシ連結",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "net",
+          "entity": "ナカニシ連結",
+          "metric": "親会社純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "親会社純利益"
+        },
+        {
+          "id": "cfo",
+          "entity": "ナカニシ連結",
+          "metric": "営業活動によるCF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業活動によるCF"
+        },
+        {
+          "id": "roe",
+          "entity": "ナカニシ連結",
+          "metric": "ROE",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "親会社純利益/期首期末平均自己資本、会社開示値"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "ナカニシ連結",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 59692369,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/03/FY2025Q4_ASR.pdf",
+            "publishedOn": "2026-03-27",
+            "locator": "売上高、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "ナカニシ連結",
+          "metric": "親会社純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "親会社純利益",
+          "value": 22799807,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/03/FY2025Q4_ASR.pdf",
+            "publishedOn": "2026-03-27",
+            "locator": "親会社純利益、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "ナカニシ連結",
+          "metric": "営業活動によるCF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業活動によるCF",
+          "value": 8557326,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/03/FY2025Q4_ASR.pdf",
+            "publishedOn": "2026-03-27",
+            "locator": "営業活動によるCF、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe",
+          "entity": "ナカニシ連結",
+          "metric": "ROE",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "親会社純利益/期首期末平均自己資本、会社開示値",
+          "value": 22.4,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/03/FY2025Q4_ASR.pdf",
+            "publishedOn": "2026-03-27",
+            "locator": "ROE、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "five-year-2024",
+      "question": "five-year-2024",
+      "claim": "| 2024年 | 770.4億円 | 85.8億円 | 153.0億円 | 7.3% |",
+      "definition": "連結実績。2022年から収益認識基準変更。売上・純利益・CFは千円原数値を億円1桁表示。ROEは会社開示値で、一時損益含む。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "ナカニシ連結",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "net",
+          "entity": "ナカニシ連結",
+          "metric": "親会社純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "親会社純利益"
+        },
+        {
+          "id": "cfo",
+          "entity": "ナカニシ連結",
+          "metric": "営業活動によるCF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業活動によるCF"
+        },
+        {
+          "id": "roe",
+          "entity": "ナカニシ連結",
+          "metric": "ROE",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "親会社純利益/期首期末平均自己資本、会社開示値"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "ナカニシ連結",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 77041446,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/03/FY2025Q4_ASR.pdf",
+            "publishedOn": "2026-03-27",
+            "locator": "売上高、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "ナカニシ連結",
+          "metric": "親会社純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "親会社純利益",
+          "value": 8577872,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/03/FY2025Q4_ASR.pdf",
+            "publishedOn": "2026-03-27",
+            "locator": "親会社純利益、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "ナカニシ連結",
+          "metric": "営業活動によるCF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業活動によるCF",
+          "value": 15302565,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/03/FY2025Q4_ASR.pdf",
+            "publishedOn": "2026-03-27",
+            "locator": "営業活動によるCF、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe",
+          "entity": "ナカニシ連結",
+          "metric": "ROE",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "親会社純利益/期首期末平均自己資本、会社開示値",
+          "value": 7.3,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/03/FY2025Q4_ASR.pdf",
+            "publishedOn": "2026-03-27",
+            "locator": "ROE、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "five-year-2025",
+      "question": "five-year-2025",
+      "claim": "| 2025年 | 811.8億円 | −24.0億円 | 166.5億円 | −2.0% |",
+      "definition": "連結実績。2022年から収益認識基準変更。売上・純利益・CFは千円原数値を億円1桁表示。ROEは会社開示値で、一時損益含む。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "ナカニシ連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "net",
+          "entity": "ナカニシ連結",
+          "metric": "親会社純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "親会社純利益"
+        },
+        {
+          "id": "cfo",
+          "entity": "ナカニシ連結",
+          "metric": "営業活動によるCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業活動によるCF"
+        },
+        {
+          "id": "roe",
+          "entity": "ナカニシ連結",
+          "metric": "ROE",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "親会社純利益/期首期末平均自己資本、会社開示値"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "ナカニシ連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 81179143,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/03/FY2025Q4_ASR.pdf",
+            "publishedOn": "2026-03-27",
+            "locator": "売上高、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "ナカニシ連結",
+          "metric": "親会社純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "親会社純利益",
+          "value": -2398213,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/03/FY2025Q4_ASR.pdf",
+            "publishedOn": "2026-03-27",
+            "locator": "親会社純利益、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "ナカニシ連結",
+          "metric": "営業活動によるCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業活動によるCF",
+          "value": 16649420,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/03/FY2025Q4_ASR.pdf",
+            "publishedOn": "2026-03-27",
+            "locator": "営業活動によるCF、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe",
+          "entity": "ナカニシ連結",
+          "metric": "ROE",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "親会社純利益/期首期末平均自己資本、会社開示値",
+          "value": -2,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/03/FY2025Q4_ASR.pdf",
+            "publishedOn": "2026-03-27",
+            "locator": "ROE、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "impairment-and-amortization",
+      "question": "impairment-and-amortization",
+      "claim": "会社は、前者を約114億円、後者を約137億円と説明しています。さらに後者によって、2026年以降の年間のれん償却負担が約10億円減る見込みとしました。",
+      "definition": "会社説明の概数。段階取得利益と減損は非現金項目。償却減少は2026年以降の年間会社見込みで実績と分離。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "gain",
+          "entity": "ナカニシ連結",
+          "metric": "DCI段階取得差益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "DCI段階取得差益"
+        },
+        {
+          "id": "impairment",
+          "entity": "ナカニシ連結",
+          "metric": "DCIのれん減損",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "DCIのれん減損"
+        },
+        {
+          "id": "reduction",
+          "entity": "ナカニシ連結",
+          "metric": "減損後の年間のれん償却負担減少見込み",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "減損後の年間のれん償却負担減少見込み"
+        }
+      ],
+      "observations": [
+        {
+          "id": "gain",
+          "entity": "ナカニシ連結",
+          "metric": "DCI段階取得差益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "DCI段階取得差益",
+          "value": 114,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/02/FY2025Q4_PMS.pdf",
+            "publishedOn": "2026-02-19",
+            "locator": "DCI段階取得差益、PDF11頁",
+            "pdfPage": 11,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "impairment",
+          "entity": "ナカニシ連結",
+          "metric": "DCIのれん減損",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "DCIのれん減損",
+          "value": 137,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/02/FY2025Q4_PMS.pdf",
+            "publishedOn": "2026-02-19",
+            "locator": "DCIのれん減損、PDF11頁",
+            "pdfPage": 11,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "reduction",
+          "entity": "ナカニシ連結",
+          "metric": "減損後の年間のれん償却負担減少見込み",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "減損後の年間のれん償却負担減少見込み",
+          "value": 10,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/02/FY2025Q4_PMS.pdf",
+            "publishedOn": "2026-02-19",
+            "locator": "減損後の年間のれん償却負担減少見込み、PDF11頁",
+            "pdfPage": 11,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "consolidated-half",
+      "question": "consolidated-half",
+      "claim": "2026年上期は売上高472.3億円、営業利益100.1億円、親会社純利益81.4億円でした。前年同期はそれぞれ391.9億円、75.9億円、35.1億円です。",
+      "definition": "本文記載の期間・単位・基準を使用。原資料の千円を億円へ換算、小数1桁で表示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales2025",
+          "entity": "ナカニシ連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op2025",
+          "entity": "ナカニシ連結",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "net2025",
+          "entity": "ナカニシ連結",
+          "metric": "親会社純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "親会社純利益"
+        },
+        {
+          "id": "sales2026",
+          "entity": "ナカニシ連結",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op2026",
+          "entity": "ナカニシ連結",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "net2026",
+          "entity": "ナカニシ連結",
+          "metric": "親会社純利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "親会社純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales2025",
+          "entity": "ナカニシ連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 39189728,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "売上高、PDF8頁",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op2025",
+          "entity": "ナカニシ連結",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 7587221,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "営業利益、PDF8頁",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net2025",
+          "entity": "ナカニシ連結",
+          "metric": "親会社純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "親会社純利益",
+          "value": 3510366,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "親会社純利益、PDF8頁",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sales2026",
+          "entity": "ナカニシ連結",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 47234964,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "売上高、PDF8頁",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op2026",
+          "entity": "ナカニシ連結",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 10012512,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "営業利益、PDF8頁",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net2026",
+          "entity": "ナカニシ連結",
+          "metric": "親会社純利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "親会社純利益",
+          "value": 8144522,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "親会社純利益、PDF8頁",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "dci-sales",
+      "question": "dci-sales",
+      "claim": "| 売上高 | 98.3億円 | 121.6億円 |",
+      "definition": "本文記載の期間・単位・基準を使用。原資料の千円を億円へ換算、小数1桁で表示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "ナカニシDCI事業",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "2026年開示の比較値。R&D配賦変更後。同一定義で比較。EBITDAは営業利益+減価償却+のれん償却。"
+        },
+        {
+          "id": "new",
+          "entity": "ナカニシDCI事業",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "2026年開示の比較値。R&D配賦変更後。同一定義で比較。EBITDAは営業利益+減価償却+のれん償却。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "ナカニシDCI事業",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "2026年開示の比較値。R&D配賦変更後。同一定義で比較。EBITDAは営業利益+減価償却+のれん償却。",
+          "value": 9834925,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "売上高、PDF12頁",
+            "pdfPage": 12,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "ナカニシDCI事業",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "2026年開示の比較値。R&D配賦変更後。同一定義で比較。EBITDAは営業利益+減価償却+のれん償却。",
+          "value": 12155168,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "売上高、PDF12頁",
+            "pdfPage": 12,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "dci-op",
+      "question": "dci-op",
+      "claim": "| セグメント営業利益 | 0.7億円 | 6.7億円 |",
+      "definition": "本文記載の期間・単位・基準を使用。原資料の千円を億円へ換算、小数1桁で表示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "ナカニシDCI事業",
+          "metric": "セグメント営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "2026年開示の比較値。R&D配賦変更後。同一定義で比較。EBITDAは営業利益+減価償却+のれん償却。"
+        },
+        {
+          "id": "new",
+          "entity": "ナカニシDCI事業",
+          "metric": "セグメント営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "2026年開示の比較値。R&D配賦変更後。同一定義で比較。EBITDAは営業利益+減価償却+のれん償却。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "ナカニシDCI事業",
+          "metric": "セグメント営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "2026年開示の比較値。R&D配賦変更後。同一定義で比較。EBITDAは営業利益+減価償却+のれん償却。",
+          "value": 66492,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "セグメント営業利益、PDF12頁",
+            "pdfPage": 12,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "ナカニシDCI事業",
+          "metric": "セグメント営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "2026年開示の比較値。R&D配賦変更後。同一定義で比較。EBITDAは営業利益+減価償却+のれん償却。",
+          "value": 674182,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "セグメント営業利益、PDF12頁",
+            "pdfPage": 12,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "dci-ebitda",
+      "question": "dci-ebitda",
+      "claim": "| セグメントEBITDA | 12.3億円 | 14.7億円 |",
+      "definition": "本文記載の期間・単位・基準を使用。原資料の千円を億円へ換算、小数1桁で表示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "ナカニシDCI事業",
+          "metric": "セグメントEBITDA",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年開示の比較値。R&D配賦変更後。同一定義で比較。EBITDAは営業利益+減価償却+のれん償却。"
+        },
+        {
+          "id": "new",
+          "entity": "ナカニシDCI事業",
+          "metric": "セグメントEBITDA",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年開示の比較値。R&D配賦変更後。同一定義で比較。EBITDAは営業利益+減価償却+のれん償却。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "ナカニシDCI事業",
+          "metric": "セグメントEBITDA",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年開示の比較値。R&D配賦変更後。同一定義で比較。EBITDAは営業利益+減価償却+のれん償却。",
+          "value": 1233,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_PM_2.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "セグメントEBITDA、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "ナカニシDCI事業",
+          "metric": "セグメントEBITDA",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2026年開示の比較値。R&D配賦変更後。同一定義で比較。EBITDAは営業利益+減価償却+のれん償却。",
+          "value": 1469,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_PM_2.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "セグメントEBITDA、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "dci-margin",
+      "question": "dci-margin",
+      "claim": "| EBITDA÷売上高 | 約12.5% | 約12.1% |",
+      "definition": "同じ2026上期説明資料の組替え済み前年値。百万円単位切捨て値から参考計算。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "e2025",
+          "entity": "ナカニシDCI事業",
+          "metric": "DCI EBITDA",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "DCI EBITDA"
+        },
+        {
+          "id": "s2025",
+          "entity": "ナカニシDCI事業",
+          "metric": "DCI外部売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "DCI外部売上高"
+        },
+        {
+          "id": "e2026",
+          "entity": "ナカニシDCI事業",
+          "metric": "DCI EBITDA",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "DCI EBITDA"
+        },
+        {
+          "id": "s2026",
+          "entity": "ナカニシDCI事業",
+          "metric": "DCI外部売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "DCI外部売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "e2025",
+          "entity": "ナカニシDCI事業",
+          "metric": "DCI EBITDA",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "DCI EBITDA",
+          "value": 1233,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_PM_2.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "DCI EBITDA、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "s2025",
+          "entity": "ナカニシDCI事業",
+          "metric": "DCI外部売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "DCI外部売上高",
+          "value": 9834,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_PM_2.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "DCI外部売上高、PDF6頁",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "e2026",
+          "entity": "ナカニシDCI事業",
+          "metric": "DCI EBITDA",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "DCI EBITDA",
+          "value": 1469,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_PM_2.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "DCI EBITDA、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "s2026",
+          "entity": "ナカニシDCI事業",
+          "metric": "DCI外部売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "DCI外部売上高",
+          "value": 12155,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_PM_2.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "DCI外部売上高、PDF6頁",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin2025",
+          "operation": "ratio-percent",
+          "inputs": [
+            "e2025",
+            "s2025"
+          ],
+          "definition": "EBITDA/外部売上高×100",
+          "precision": 1,
+          "value": 12.5
+        },
+        {
+          "id": "margin2026",
+          "operation": "ratio-percent",
+          "inputs": [
+            "e2026",
+            "s2026"
+          ],
+          "definition": "EBITDA/外部売上高×100",
+          "precision": 1,
+          "value": 12.1
+        }
+      ]
+    },
+    {
+      "id": "cash-cfo",
+      "question": "cash-cfo",
+      "claim": "| 営業CF | 75.8 | 76.2 |",
+      "definition": "CF計算書原数値。支出は原数値で負、本文表では支出額の絶対値を表示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "ナカニシ連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "new",
+          "entity": "ナカニシ連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "ナカニシ連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 7578364,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "営業CF、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "ナカニシ連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 7620752,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "営業CF、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-ppe",
+      "question": "cash-ppe",
+      "claim": "| 有形固定資産の取得支出 | 27.3 | 62.5 |",
+      "definition": "CF計算書原数値。支出は原数値で負、本文表では支出額の絶対値を表示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "ナカニシ連結",
+          "metric": "有形固定資産の取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "有形固定資産の取得支出"
+        },
+        {
+          "id": "new",
+          "entity": "ナカニシ連結",
+          "metric": "有形固定資産の取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "有形固定資産の取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "ナカニシ連結",
+          "metric": "有形固定資産の取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "有形固定資産の取得支出",
+          "value": -2729195,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "有形固定資産の取得支出、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "ナカニシ連結",
+          "metric": "有形固定資産の取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "有形固定資産の取得支出",
+          "value": -6251889,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "有形固定資産の取得支出、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-intangible",
+      "question": "cash-intangible",
+      "claim": "| 無形固定資産の取得支出 | 4.6 | 2.5 |",
+      "definition": "CF計算書原数値。支出は原数値で負、本文表では支出額の絶対値を表示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "ナカニシ連結",
+          "metric": "無形固定資産の取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "無形固定資産の取得支出"
+        },
+        {
+          "id": "new",
+          "entity": "ナカニシ連結",
+          "metric": "無形固定資産の取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "無形固定資産の取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "ナカニシ連結",
+          "metric": "無形固定資産の取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "無形固定資産の取得支出",
+          "value": -456577,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "無形固定資産の取得支出、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "ナカニシ連結",
+          "metric": "無形固定資産の取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "無形固定資産の取得支出",
+          "value": -245275,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "無形固定資産の取得支出、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "defined-investment-cashflow",
+      "question": "defined-investment-cashflow",
+      "claim": "| 本稿の設備投資後CF | 43.9 | 11.2 |",
+      "definition": "会社指標でない。買収・金融資産・固定資産売却を含めない。取得支出はCF実額。単位千円で計算し億円小数1桁表示。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo2025",
+          "entity": "ナカニシ連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "t2025",
+          "entity": "ナカニシ連結",
+          "metric": "有形固定資産取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出"
+        },
+        {
+          "id": "i2025",
+          "entity": "ナカニシ連結",
+          "metric": "無形固定資産取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "無形固定資産取得支出"
+        },
+        {
+          "id": "cfo2026",
+          "entity": "ナカニシ連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "t2026",
+          "entity": "ナカニシ連結",
+          "metric": "有形固定資産取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出"
+        },
+        {
+          "id": "i2026",
+          "entity": "ナカニシ連結",
+          "metric": "無形固定資産取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "無形固定資産取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo2025",
+          "entity": "ナカニシ連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 7578364,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "営業CF、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t2025",
+          "entity": "ナカニシ連結",
+          "metric": "有形固定資産取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出",
+          "value": -2729195,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "有形固定資産取得支出、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2025",
+          "entity": "ナカニシ連結",
+          "metric": "無形固定資産取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "無形固定資産取得支出",
+          "value": -456577,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "無形固定資産取得支出、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo2026",
+          "entity": "ナカニシ連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 7620752,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "営業CF、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t2026",
+          "entity": "ナカニシ連結",
+          "metric": "有形固定資産取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出",
+          "value": -6251889,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "有形固定資産取得支出、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2026",
+          "entity": "ナカニシ連結",
+          "metric": "無形固定資産取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "無形固定資産取得支出",
+          "value": -245275,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "無形固定資産取得支出、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf2025",
+          "operation": "sum",
+          "inputs": [
+            "cfo2025",
+            "t2025",
+            "i2025"
+          ],
+          "definition": "営業CF+負号の有形固定資産取得支出+負号の無形固定資産取得支出（千円）",
+          "precision": 0,
+          "value": 4392592
+        },
+        {
+          "id": "fcf2026",
+          "operation": "sum",
+          "inputs": [
+            "cfo2026",
+            "t2026",
+            "i2026"
+          ],
+          "definition": "営業CF+負号の有形固定資産取得支出+負号の無形固定資産取得支出（千円）",
+          "precision": 0,
+          "value": 1123588
+        }
+      ]
+    },
+    {
+      "id": "cash-drivers",
+      "question": "cash-drivers",
+      "claim": "税前利益の増加に対し、為替差損益の非現金調整、売上債権・在庫の増加、仕入債務の動き、税金支払が相殺しています。",
+      "definition": "本文の方向性を検証するCFブリッジ主要項目。全差額の完全分解とは称さない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "pretax2025",
+          "entity": "ナカニシ連結",
+          "metric": "税前利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "税前利益"
+        },
+        {
+          "id": "fx2025",
+          "entity": "ナカニシ連結",
+          "metric": "CF上為替差損益調整",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "CF上為替差損益調整"
+        },
+        {
+          "id": "receivables2025",
+          "entity": "ナカニシ連結",
+          "metric": "売上債権増減CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "売上債権増減CF"
+        },
+        {
+          "id": "inventory2025",
+          "entity": "ナカニシ連結",
+          "metric": "棚卸資産増減CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "棚卸資産増減CF"
+        },
+        {
+          "id": "payables2025",
+          "entity": "ナカニシ連結",
+          "metric": "仕入債務増減CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "仕入債務増減CF"
+        },
+        {
+          "id": "tax2025",
+          "entity": "ナカニシ連結",
+          "metric": "法人税等支払",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "法人税等支払"
+        },
+        {
+          "id": "pretax2026",
+          "entity": "ナカニシ連結",
+          "metric": "税前利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "税前利益"
+        },
+        {
+          "id": "fx2026",
+          "entity": "ナカニシ連結",
+          "metric": "CF上為替差損益調整",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "CF上為替差損益調整"
+        },
+        {
+          "id": "receivables2026",
+          "entity": "ナカニシ連結",
+          "metric": "売上債権増減CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "売上債権増減CF"
+        },
+        {
+          "id": "inventory2026",
+          "entity": "ナカニシ連結",
+          "metric": "棚卸資産増減CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "棚卸資産増減CF"
+        },
+        {
+          "id": "payables2026",
+          "entity": "ナカニシ連結",
+          "metric": "仕入債務増減CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "仕入債務増減CF"
+        },
+        {
+          "id": "tax2026",
+          "entity": "ナカニシ連結",
+          "metric": "法人税等支払",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "法人税等支払"
+        }
+      ],
+      "observations": [
+        {
+          "id": "pretax2025",
+          "entity": "ナカニシ連結",
+          "metric": "税前利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "税前利益",
+          "value": 7048013,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "税前利益、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fx2025",
+          "entity": "ナカニシ連結",
+          "metric": "CF上為替差損益調整",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "CF上為替差損益調整",
+          "value": 1036101,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "CF上為替差損益調整、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "receivables2025",
+          "entity": "ナカニシ連結",
+          "metric": "売上債権増減CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "売上債権増減CF",
+          "value": -230578,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "売上債権増減CF、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "inventory2025",
+          "entity": "ナカニシ連結",
+          "metric": "棚卸資産増減CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "棚卸資産増減CF",
+          "value": -198064,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "棚卸資産増減CF、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "payables2025",
+          "entity": "ナカニシ連結",
+          "metric": "仕入債務増減CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "仕入債務増減CF",
+          "value": 269650,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "仕入債務増減CF、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "tax2025",
+          "entity": "ナカニシ連結",
+          "metric": "法人税等支払",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "法人税等支払",
+          "value": -3238781,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "法人税等支払、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "pretax2026",
+          "entity": "ナカニシ連結",
+          "metric": "税前利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "税前利益",
+          "value": 11521075,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "税前利益、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fx2026",
+          "entity": "ナカニシ連結",
+          "metric": "CF上為替差損益調整",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "CF上為替差損益調整",
+          "value": -904819,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "CF上為替差損益調整、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "receivables2026",
+          "entity": "ナカニシ連結",
+          "metric": "売上債権増減CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "売上債権増減CF",
+          "value": -1023624,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "売上債権増減CF、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "inventory2026",
+          "entity": "ナカニシ連結",
+          "metric": "棚卸資産増減CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "棚卸資産増減CF",
+          "value": -964026,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "棚卸資産増減CF、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "payables2026",
+          "entity": "ナカニシ連結",
+          "metric": "仕入債務増減CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "仕入債務増減CF",
+          "value": -1109,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "仕入債務増減CF、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "tax2026",
+          "entity": "ナカニシ連結",
+          "metric": "法人税等支払",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "法人税等支払",
+          "value": -3845119,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "法人税等支払、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "acquisition-consideration",
+      "question": "acquisition-consideration",
+      "claim": "取得原価は両社合計約138.8億円。暫定のれんは約126.2億円で、10年間の均等償却です。さらに2026年9月期〜2027年9月期の業績に応じ、最大1,400万ドルの追加対価があり得ます。",
+      "definition": "取得原価、暫定PPAのれん、条件付上限を分離。キャッシュフロー上買収支出と同一ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "acra",
+          "entity": "ナカニシ連結",
+          "metric": "Acra Cut取得原価",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "Acra Cut取得原価"
+        },
+        {
+          "id": "intech",
+          "entity": "ナカニシ連結",
+          "metric": "Intech取得原価",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "Intech取得原価"
+        },
+        {
+          "id": "goodwill",
+          "entity": "ナカニシ連結",
+          "metric": "暫定のれん",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "暫定のれん"
+        },
+        {
+          "id": "years",
+          "entity": "ナカニシ連結",
+          "metric": "のれん償却期間",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "年",
+          "basis": "actual",
+          "definition": "のれん償却期間"
+        },
+        {
+          "id": "earnout",
+          "entity": "ナカニシ連結",
+          "metric": "アーンアウト上限",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2027-09-30",
+          "unit": "千米ドル",
+          "basis": "company-forecast",
+          "definition": "2026/9期〜2027/9期の業績条件に応じた追加支払上限。実績支払でない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "acra",
+          "entity": "ナカニシ連結",
+          "metric": "Acra Cut取得原価",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "Acra Cut取得原価",
+          "value": 12212478,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_QR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "Acra Cut取得原価、PDF21頁",
+            "pdfPage": 21,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "intech",
+          "entity": "ナカニシ連結",
+          "metric": "Intech取得原価",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "Intech取得原価",
+          "value": 1665338,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_QR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "Intech取得原価、PDF21頁",
+            "pdfPage": 21,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "goodwill",
+          "entity": "ナカニシ連結",
+          "metric": "暫定のれん",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "暫定のれん",
+          "value": 12622148,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_QR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "暫定のれん、PDF22頁",
+            "pdfPage": 22,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "years",
+          "entity": "ナカニシ連結",
+          "metric": "のれん償却期間",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "年",
+          "basis": "actual",
+          "definition": "のれん償却期間",
+          "value": 10,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_QR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "のれん償却期間、PDF22頁",
+            "pdfPage": 22,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "earnout",
+          "entity": "ナカニシ連結",
+          "metric": "アーンアウト上限",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2027-09-30",
+          "unit": "千米ドル",
+          "basis": "company-forecast",
+          "definition": "2026/9期〜2027/9期の業績条件に応じた追加支払上限。実績支払でない。",
+          "value": 14000,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_QR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "アーンアウト上限、PDF21頁",
+            "pdfPage": 21,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "acquisition-sum",
+          "operation": "sum",
+          "inputs": [
+            "acra",
+            "intech"
+          ],
+          "definition": "両社取得原価合計、千円",
+          "precision": 0,
+          "value": 13877816
+        }
+      ]
+    },
+    {
+      "id": "liquidity-and-debt",
+      "question": "liquidity-and-debt",
+      "claim": "6月末の現金同等物は404.5億円、短期・1年内返済・長期借入金の合計は338.8億円でした。",
+      "definition": "2026/6/30時点、現金同等物と借入金の限定的差額65.7億円。余剰資金・全債務控除ネットキャッシュとはしない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cash",
+          "entity": "ナカニシ連結",
+          "metric": "現金同等物",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "現金同等物"
+        },
+        {
+          "id": "short",
+          "entity": "ナカニシ連結",
+          "metric": "短期借入金",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "短期借入金"
+        },
+        {
+          "id": "current",
+          "entity": "ナカニシ連結",
+          "metric": "1年内返済予定長期借入金",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "1年内返済予定長期借入金"
+        },
+        {
+          "id": "long",
+          "entity": "ナカニシ連結",
+          "metric": "長期借入金",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "長期借入金"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cash",
+          "entity": "ナカニシ連結",
+          "metric": "現金同等物",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "現金同等物",
+          "value": 40448681,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "現金同等物、PDF10頁",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "short",
+          "entity": "ナカニシ連結",
+          "metric": "短期借入金",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "短期借入金",
+          "value": 16119350,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "短期借入金、PDF7頁",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "current",
+          "entity": "ナカニシ連結",
+          "metric": "1年内返済予定長期借入金",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "1年内返済予定長期借入金",
+          "value": 8571687,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "1年内返済予定長期借入金、PDF7頁",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "long",
+          "entity": "ナカニシ連結",
+          "metric": "長期借入金",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "千円",
+          "basis": "actual",
+          "definition": "長期借入金",
+          "value": 9189669,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "長期借入金、PDF7頁",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "debt",
+          "operation": "sum",
+          "inputs": [
+            "short",
+            "current",
+            "long"
+          ],
+          "definition": "借入金3項目合計",
+          "precision": 0,
+          "value": 33880706
+        },
+        {
+          "id": "difference",
+          "operation": "difference",
+          "inputs": [
+            "cash",
+            "debt"
+          ],
+          "definition": "現金同等物から借入金のみ控除、全債務控除ではない",
+          "precision": 0,
+          "value": 6567975
+        }
+      ]
+    },
+    {
+      "id": "buyback",
+      "question": "buyback",
+      "claim": "8月には約40億円の自己株買いを完了しました。",
+      "definition": "8/18 ToSTNeT-3実行額。計画枠でなく実績。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "amount",
+          "entity": "ナカニシ連結",
+          "metric": "自己株式取得価額総額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-08-18",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "自己株式取得価額総額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "amount",
+          "entity": "ナカニシ連結",
+          "metric": "自己株式取得価額総額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-08-18",
+          "unit": "円",
+          "basis": "actual",
+          "definition": "自己株式取得価額総額",
+          "value": 3999781500,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/20260818.pdf",
+            "publishedOn": "2026-08-18",
+            "locator": "自己株式取得価額総額、PDF1頁",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "forecast",
+      "question": "forecast",
+      "claim": "8月7日の会社通期予想は、売上944.8億円、営業利益186.5億円です。",
+      "definition": "2026/8/7公表2026/12期会社通期予想。上期倍算/実績/市場予想ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "ナカニシ連結",
+          "metric": "通期売上予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期売上予想"
+        },
+        {
+          "id": "op",
+          "entity": "ナカニシ連結",
+          "metric": "通期営業利益予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期営業利益予想"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "ナカニシ連結",
+          "metric": "通期売上予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期売上予想",
+          "value": 94480,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "通期売上予想、PDF2頁",
+            "pdfPage": 2,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "ナカニシ連結",
+          "metric": "通期営業利益予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期営業利益予想",
+          "value": 18649,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "通期営業利益予想、PDF2頁",
+            "pdfPage": 2,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "shareholder-policy",
+      "question": "shareholder-policy",
+      "claim": "会社は累進配当と中期的な総還元性向70%を志向し、",
+      "definition": "8/25説明スクリプト23頁と現行株式情報で同じ70%方針を照合。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "payout",
+          "entity": "ナカニシ",
+          "metric": "中期総還元性向目安",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "中期的志向、保証や現年度実績ではない。過去年は調整後利益基準が混在。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "payout",
+          "entity": "ナカニシ",
+          "metric": "中期総還元性向目安",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "中期的志向、保証や現年度実績ではない。過去年は調整後利益基準が混在。",
+          "value": 70,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_PMS.pdf",
+            "publishedOn": "2026-08-25",
+            "locator": "株主還元方針、PDF23頁",
+            "pdfPage": 23,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "withheld-ex-fx-growth",
+      "question": "為替除外売上成長率の精密値を断定できるか",
+      "definition": "会社記載率と説明資料の金額を用いた単純調整率の不一致。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "fx-growth",
+          "entity": "ナカニシ連結",
+          "metric": "会社記載為替除外売上増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社記載為替除外売上増収率"
+        },
+        {
+          "id": "sales",
+          "entity": "ナカニシ連結",
+          "metric": "当期売上",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "当期売上"
+        },
+        {
+          "id": "prior",
+          "entity": "ナカニシ連結",
+          "metric": "前年売上",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "前年売上"
+        },
+        {
+          "id": "fx",
+          "entity": "ナカニシ連結",
+          "metric": "売上為替影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上為替影響"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fx-growth",
+          "entity": "ナカニシ連結",
+          "metric": "会社記載為替除外売上増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社記載為替除外売上増収率",
+          "value": 12.3,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_FR.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "会社記載為替除外売上増収率、PDF4頁",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sales",
+          "entity": "ナカニシ連結",
+          "metric": "当期売上",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "当期売上",
+          "value": 47234,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_PM_2.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "当期売上、PDF5頁",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "ナカニシ連結",
+          "metric": "前年売上",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "前年売上",
+          "value": 39189,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_PM_2.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "前年売上、PDF5頁",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fx",
+          "entity": "ナカニシ連結",
+          "metric": "売上為替影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上為替影響",
+          "value": 2884,
+          "source": {
+            "url": "https://www.nakanishi-inc.jp/app/wp-content/uploads/2026/08/FY2026Q2_PM_2.pdf",
+            "publishedOn": "2026-08-07",
+            "locator": "売上為替影響、PDF5頁",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "reason": "短信12.3%と説明資料の金額からの単純調整13.17%が一致せず、基準差未確認。数量・価格・製品構成の完全分解も未開示。数字を独自修正せず本文から精密率を除外。",
+      "omittedClaim": "為替除外の売上成長率は13.17%である。"
+    }
+  ]
+}
