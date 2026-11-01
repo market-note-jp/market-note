@@ -1,0 +1,488 @@
+{
+  "version": 1,
+  "articleSlug": "theme-uk-mortgage-reset-arrears-2026-11-01",
+  "articleSha256": "25256ca076a933664526ccd616e2e75ff280a12609ea664e94ff85e7c6fd8457",
+  "checkedAt": "2026-11-01T10:55:22.769Z",
+  "informationCutoff": "2026-11-01T10:49:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "公式HTML本文を再読。全重要数値を対象。本文Markdownの仮digestであり、統合後のroute digestへ更新が必要。公開数値の期間と定義を保持し未確認の実績・価格効果を補っていない。",
+  "comparisons": [
+    {
+      "id": "rates",
+      "question": "新規実行金利は4.60%から4.63%、既存残高の金利は4.00%から4.03%へ上がった。",
+      "definition": "本文の対象期間・母集団・実績と予測の区別を維持。",
+      "status": "ready",
+      "claim": "新規実行金利は4.60%から4.63%、既存残高の金利は4.00%から4.03%へ上がった。",
+      "requiredInputs": [
+        {
+          "id": "new8",
+          "entity": "BOE英国住宅ローン",
+          "metric": "新規実行実効金利",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "新規実行実効金利"
+        },
+        {
+          "id": "new9",
+          "entity": "BOE英国住宅ローン",
+          "metric": "新規実行実効金利",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "新規実行実効金利"
+        },
+        {
+          "id": "stock8",
+          "entity": "BOE英国住宅ローン",
+          "metric": "既存残高実効金利",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "既存残高実効金利"
+        },
+        {
+          "id": "stock9",
+          "entity": "BOE英国住宅ローン",
+          "metric": "既存残高実効金利",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "既存残高実効金利"
+        }
+      ],
+      "observations": [
+        {
+          "id": "new8",
+          "entity": "BOE英国住宅ローン",
+          "metric": "新規実行実効金利",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "新規実行実効金利",
+          "value": 4.6,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/statistics/money-and-credit/2026/september-2026",
+            "publishedOn": "2026-10-29",
+            "locator": "Mortgage lending: effective rates",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new9",
+          "entity": "BOE英国住宅ローン",
+          "metric": "新規実行実効金利",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "新規実行実効金利",
+          "value": 4.63,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/statistics/money-and-credit/2026/september-2026",
+            "publishedOn": "2026-10-29",
+            "locator": "Mortgage lending: effective rates",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "stock8",
+          "entity": "BOE英国住宅ローン",
+          "metric": "既存残高実効金利",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "既存残高実効金利",
+          "value": 4,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/statistics/money-and-credit/2026/september-2026",
+            "publishedOn": "2026-10-29",
+            "locator": "Mortgage lending: effective rates",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "stock9",
+          "entity": "BOE英国住宅ローン",
+          "metric": "既存残高実効金利",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "既存残高実効金利",
+          "value": 4.03,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/statistics/money-and-credit/2026/september-2026",
+            "publishedOn": "2026-10-29",
+            "locator": "Mortgage lending: effective rates",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "approvals",
+      "question": "借換承認は34,000件から42,600件へ増えた。",
+      "definition": "本文の対象期間・母集団・実績と予測の区別を維持。",
+      "status": "ready",
+      "claim": "借換承認は34,000件から42,600件へ増えた。",
+      "requiredInputs": [
+        {
+          "id": "a8",
+          "entity": "BOE英国住宅ローン",
+          "metric": "別貸手への借換承認",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "季節調整・取消控除後、同一貸手商品切替除外"
+        },
+        {
+          "id": "a9",
+          "entity": "BOE英国住宅ローン",
+          "metric": "別貸手への借換承認",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "季節調整・取消控除後、同一貸手商品切替除外"
+        }
+      ],
+      "observations": [
+        {
+          "id": "a8",
+          "entity": "BOE英国住宅ローン",
+          "metric": "別貸手への借換承認",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "季節調整・取消控除後、同一貸手商品切替除外",
+          "value": 34000,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/statistics/money-and-credit/2026/september-2026",
+            "publishedOn": "2026-10-29",
+            "locator": "Mortgage lending: Chart 2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "a9",
+          "entity": "BOE英国住宅ローン",
+          "metric": "別貸手への借換承認",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "季節調整・取消控除後、同一貸手商品切替除外",
+          "value": 42600,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/statistics/money-and-credit/2026/september-2026",
+            "publishedOn": "2026-10-29",
+            "locator": "Mortgage lending: Chart 2",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "reset",
+      "question": "2026年中に3%未満の固定金利が終了する約75万世帯について、返済額が月平均170ポンド増える",
+      "definition": "本文の対象期間・母集団・実績と予測の区別を維持。",
+      "status": "ready",
+      "claim": "2026年中に3%未満の固定金利が終了する約75万世帯について、返済額が月平均170ポンド増える",
+      "requiredInputs": [
+        {
+          "id": "cohort",
+          "entity": "BOE自己居住住宅ローン",
+          "metric": "2026年固定終了3%未満世帯",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "世帯",
+          "basis": "company-forecast",
+          "definition": "2026年固定終了3%未満世帯"
+        },
+        {
+          "id": "increase",
+          "entity": "BOE自己居住住宅ローン",
+          "metric": "同対象の平均月返済増額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "GBP/月",
+          "basis": "company-forecast",
+          "definition": "同対象の平均月返済増額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cohort",
+          "entity": "BOE自己居住住宅ローン",
+          "metric": "2026年固定終了3%未満世帯",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "世帯",
+          "basis": "company-forecast",
+          "definition": "2026年固定終了3%未満世帯",
+          "value": 750000,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/financial-stability-report/2026/july-2026",
+            "publishedOn": "2026-07-07",
+            "locator": "5.2, Chart 5.2及び脚注",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "increase",
+          "entity": "BOE自己居住住宅ローン",
+          "metric": "同対象の平均月返済増額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "GBP/月",
+          "basis": "company-forecast",
+          "definition": "同対象の平均月返済増額",
+          "value": 170,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/financial-stability-report/2026/july-2026",
+            "publishedOn": "2026-07-07",
+            "locator": "5.2, Chart 5.2及び脚注",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "arrears-fca",
+      "question": "延滞のある住宅ローン残高は197億ポンド、前期比1.9%減、前年同期比7.3%減",
+      "definition": "本文の対象期間・母集団・実績と予測の区別を維持。",
+      "status": "ready",
+      "claim": "延滞のある住宅ローン残高は197億ポンド、前期比1.9%減、前年同期比7.3%減",
+      "requiredInputs": [
+        {
+          "id": "balance",
+          "entity": "FCA/PRA MLAR",
+          "metric": "延滞ありローン残高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "GBP billion",
+          "basis": "actual",
+          "definition": "延滞相当額1.5%以上又は物件差押え保有。未払額自体ではない。季節調整なし"
+        },
+        {
+          "id": "qoq",
+          "entity": "FCA/PRA MLAR",
+          "metric": "延滞ありローン残高の前期比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "延滞ありローン残高の前期比"
+        },
+        {
+          "id": "yoy",
+          "entity": "FCA/PRA MLAR",
+          "metric": "延滞ありローン残高の前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "延滞ありローン残高の前年比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "balance",
+          "entity": "FCA/PRA MLAR",
+          "metric": "延滞ありローン残高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "GBP billion",
+          "basis": "actual",
+          "definition": "延滞相当額1.5%以上又は物件差押え保有。未払額自体ではない。季節調整なし",
+          "value": 19.7,
+          "source": {
+            "url": "https://www.fca.org.uk/data/commentary-mortgage-lending-statistics-q2-2026",
+            "publishedOn": "2026-09-08",
+            "locator": "Chart 6",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "qoq",
+          "entity": "FCA/PRA MLAR",
+          "metric": "延滞ありローン残高の前期比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "延滞ありローン残高の前期比",
+          "value": -1.9,
+          "source": {
+            "url": "https://www.fca.org.uk/data/commentary-mortgage-lending-statistics-q2-2026",
+            "publishedOn": "2026-09-08",
+            "locator": "Chart 6",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "yoy",
+          "entity": "FCA/PRA MLAR",
+          "metric": "延滞ありローン残高の前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "延滞ありローン残高の前年比",
+          "value": -7.3,
+          "source": {
+            "url": "https://www.fca.org.uk/data/commentary-mortgage-lending-statistics-q2-2026",
+            "publishedOn": "2026-09-08",
+            "locator": "Chart 6",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "arrears-ukf",
+      "question": "延滞額が残高の2.5%以上の件数は77,940件、前期比1%減だった。",
+      "definition": "本文の対象期間・母集団・実績と予測の区別を維持。",
+      "status": "ready",
+      "claim": "延滞額が残高の2.5%以上の件数は77,940件、前期比1%減だった。",
+      "requiredInputs": [
+        {
+          "id": "count",
+          "entity": "UK Finance会員first charge",
+          "metric": "自己居住用延滞件数",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "延滞額が残高の2.5%以上"
+        },
+        {
+          "id": "change",
+          "entity": "UK Finance会員first charge",
+          "metric": "同件数前期比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "同件数前期比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "count",
+          "entity": "UK Finance会員first charge",
+          "metric": "自己居住用延滞件数",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "延滞額が残高の2.5%以上",
+          "value": 77940,
+          "source": {
+            "url": "https://www.ukfinance.org.uk/data-and-research/data/arrears-and-possessions",
+            "publishedOn": "2026-08-13",
+            "locator": "Latest Data Q2 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "change",
+          "entity": "UK Finance会員first charge",
+          "metric": "同件数前期比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "同件数前期比",
+          "value": -1,
+          "source": {
+            "url": "https://www.ukfinance.org.uk/data-and-research/data/arrears-and-possessions",
+            "publishedOn": "2026-08-13",
+            "locator": "Latest Data Q2 2026",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "obr-rate",
+      "question": "既存住宅ローン全体の平均実効金利が2026年の4%から2031年には約5%へ上がると予測した。",
+      "definition": "本文の対象期間・母集団・実績と予測の区別を維持。",
+      "status": "ready",
+      "claim": "既存住宅ローン全体の平均実効金利が2026年の4%から2031年には約5%へ上がると予測した。",
+      "requiredInputs": [
+        {
+          "id": "r26",
+          "entity": "OBR",
+          "metric": "既存住宅ローン平均実効金利",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "既存住宅ローン平均実効金利"
+        },
+        {
+          "id": "r31",
+          "entity": "OBR",
+          "metric": "既存住宅ローン平均実効金利",
+          "periodStart": "2031-01-01",
+          "periodEnd": "2031-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "既存住宅ローン平均実効金利"
+        }
+      ],
+      "observations": [
+        {
+          "id": "r26",
+          "entity": "OBR",
+          "metric": "既存住宅ローン平均実効金利",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "既存住宅ローン平均実効金利",
+          "value": 4,
+          "source": {
+            "url": "https://www.gov.uk/government/publications/october-2026-economic-and-fiscal-outlook/economic-and-fiscal-outlook-october-2026",
+            "publishedOn": "2026-10-28",
+            "locator": "2.59",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "r31",
+          "entity": "OBR",
+          "metric": "既存住宅ローン平均実効金利",
+          "periodStart": "2031-01-01",
+          "periodEnd": "2031-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "既存住宅ローン平均実効金利",
+          "value": 5,
+          "source": {
+            "url": "https://www.gov.uk/government/publications/october-2026-economic-and-fiscal-outlook/economic-and-fiscal-outlook-october-2026",
+            "publishedOn": "2026-10-28",
+            "locator": "2.59 approximate",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
