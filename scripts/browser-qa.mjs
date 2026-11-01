@@ -83,10 +83,10 @@ try {
   await page.goto(base, { waitUntil: "networkidle" });
   assert.equal(await page.locator(".upcoming-list time").evaluateAll(elements => elements.every(e => e.getAttribute("datetime") >= "2026-10-07")), true);
   await page.locator(".tabs button").filter({ hasText: "企業" }).click();
-  assert.equal(await page.locator(".article-row").count(), 47);
+  assert.equal(await page.locator(".article-row").count(), 50);
   assert.equal(await page.locator(".article-row:visible").count(), 10);
   await page.getByRole("button", { name: "次のページ", exact: true }).click();
-  assert.equal(await page.locator(".article-row").count(), 47);
+  assert.equal(await page.locator(".article-row").count(), 50);
   assert.equal(await page.locator(".article-row:visible").count(), 10);
   await page.locator(".tabs button").filter({ hasText: "すべて" }).click();
   await page.getByRole("button", { name: "次のページ", exact: true }).click();
