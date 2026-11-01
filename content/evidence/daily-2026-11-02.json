@@ -1,0 +1,766 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-11-02",
+  "articleSha256": "e230d09a0200bcdaa670c40966ba9f3309c5ca583cc683dea50a9c1e471608ee",
+  "checkedAt": "2026-11-01T21:24:08.305Z",
+  "informationCutoff": "2026-11-02T06:21:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "記事全体の見出し・結論・抜粋・説明・5件の本文・分析・注目点・免責を原資料と照合した。重要比較6件は全構成値をそろえ、TEL従来予想比較と韓国前年比独自計算2件は除外。TELの未定を0とせず、通期予想と前期実績を区別。コマツは上期売上・営業利益の4入力で増収増益率と利益率を計算。国をまたぐ輸出と景況調査を同じ成長率で比較しない。株価は直近米現物通常終値と前週末を使用。文字検索で不一致だったTELは原文PDFを取得し4・5頁のページ画像を確認、コマツ1頁画像も照合した。全情報は基準時刻までに公開済み。11月1日は日曜のため記事対象外、当月の対象は11月2日の1件のみ。",
+  "sourceChecks": [
+    {
+      "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view",
+      "publishedOn": "2026-11-01",
+      "locator": "〖품목〗(IT)、(모빌리티)",
+      "verified": "AI関連投資、半導体価格・物量、秋夕の時期に伴う稼働日数の違いを確認。国全体の需要と企業の利益・現金回収へは断定を拡張しない。"
+    },
+    {
+      "url": "https://www.tel.com/ir/irta3a00000006g5-att/fy27q2tanshin-e.pdf",
+      "publishedOn": "2026-10-30",
+      "pdfPage": 4,
+      "locator": "(4)(ii)Full-Year Consolidated Financial Forecast Revision",
+      "verified": "原文とページ画像で従来通期予想未定、AIデータセンター需要を背景に今回提示したことを確認。87.1%は前期実績比。"
+    },
+    {
+      "url": "https://www.komatsu.jp/ja/newsroom/2026/20261029_1",
+      "publishedOn": "2026-10-29",
+      "locator": "1.2027年3月期第2四半期概要",
+      "verified": "円安・販売量・価格改善とコスト増の説明を確認。売上の増加を数量だけの増加としない。"
+    },
+    {
+      "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261031_1965718.html",
+      "publishedOn": "2026-10-31",
+      "locator": "付注 1.主要指标解释、调查范围・方法",
+      "verified": "50を前月比の拡大縮小境界とする拡散指数の定義を確認。公表09:30中国時間＝10:30JST。"
+    },
+    {
+      "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-a01d3551e794fed1a0c317c20bc3f0a2",
+      "publishedOn": "2026-10-30",
+      "locator": "冒頭の市場説明",
+      "verified": "APによるAI関連の評価・投資支出への懸念の説明を確認。指数量の価格変化を全半導体需要の変化へ置換しない。"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "korea-semiconductor-export-share",
+      "question": "10月の韓国輸出に占める半導体の割合はどの程度か。",
+      "definition": "同じ2026年10月の公表通関輸出金額。名目・米ドルで、半導体額を全品目総額で割る。数量や利益比率ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "semiconductor",
+          "entity": "韓国産業通商部／韓国",
+          "metric": "半導体輸出額",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "億米ドル",
+          "basis": "actual",
+          "definition": "2026年10月の公表通関輸出金額、品目別の半導体"
+        },
+        {
+          "id": "total",
+          "entity": "韓国産業通商部／韓国",
+          "metric": "全品目輸出総額",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "億米ドル",
+          "basis": "actual",
+          "definition": "2026年10月の公表通関輸出金額、全品目総額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "semiconductor",
+          "entity": "韓国産業通商部／韓国",
+          "metric": "半導体輸出額",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "億米ドル",
+          "basis": "actual",
+          "definition": "2026年10月の公表通関輸出金額、品目別の半導体",
+          "value": 564.4,
+          "source": {
+            "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view",
+            "publishedOn": "2026-11-01",
+            "locator": "本文〖품목〗(IT)：반도체 수출(564.4 억 달러)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "total",
+          "entity": "韓国産業通商部／韓国",
+          "metric": "全品目輸出総額",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "億米ドル",
+          "basis": "actual",
+          "definition": "2026年10月の公表通関輸出金額、全品目総額",
+          "value": 1152.8,
+          "source": {
+            "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view",
+            "publishedOn": "2026-11-01",
+            "locator": "本文〖총괄〗：10월 수출 1,152.8 억 달러",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "韓国産業通商部が11月1日に公表した10月の輸出総額は1,152.8億米ドル、うち半導体は564.4億米ドルだった。同じ月・米ドル建ての公表輸出額同士から、半導体比率は564.4÷1,152.8×100＝49.0%と計算した（小数第1位）。輸出数量や企業利益の比率ではない。",
+      "calculations": [
+        {
+          "id": "share",
+          "operation": "ratio-percent",
+          "inputs": [
+            "semiconductor",
+            "total"
+          ],
+          "definition": "564.4/1152.8×100、小数第1位。見出し49%は同じ49.0%の整数表記。",
+          "precision": 1,
+          "value": 49
+        }
+      ]
+    },
+    {
+      "id": "tel-fy-company-forecast-vs-actual",
+      "question": "TELが今回示した通期営業利益会社予想は前期実績と比べてどうか。",
+      "definition": "日本基準連結の同じ通期営業利益。2027年3月期会社予想と2026年3月期実績を明確に分け、従来会社予想からの修正率や市場予想差にはしない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "forecast",
+          "entity": "東京エレクトロン（連結）",
+          "metric": "通期営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円（日本円）",
+          "basis": "company-forecast",
+          "definition": "10月30日公表の日本基準連結・2027年3月期通期営業利益会社予想"
+        },
+        {
+          "id": "prior",
+          "entity": "東京エレクトロン（連結）",
+          "metric": "通期営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "日本基準連結・2026年3月期通期営業利益実績"
+        }
+      ],
+      "observations": [
+        {
+          "id": "forecast",
+          "entity": "東京エレクトロン（連結）",
+          "metric": "通期営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円（日本円）",
+          "basis": "company-forecast",
+          "definition": "10月30日公表の日本基準連結・2027年3月期通期営業利益会社予想",
+          "value": 1169000,
+          "source": {
+            "url": "https://www.tel.com/ir/irta3a00000006g5-att/fy27q2tanshin-e.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "Full-Year Consolidated Financial Forecasts／Revised Forecast(B)／Operating Income",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "東京エレクトロン（連結）",
+          "metric": "通期営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "日本基準連結・2026年3月期通期営業利益実績",
+          "value": 624936,
+          "source": {
+            "url": "https://www.tel.com/ir/irta3a00000006g5-att/fy27q2tanshin-e.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "同表 Results(Fiscal Year Ended March31,2026)(A)／Operating Income",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "claim": "東京エレクトロンが10月30日に示した2027年3月期（2026年4月〜2027年3月）の連結営業利益予想は1,169,000百万円。2026年3月期の実績624,936百万円に対して87.1%増を見込む。日本円・日本基準の同じ営業利益で、将来の会社予想と前期実績を比較した値である。",
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "forecast",
+            "prior"
+          ],
+          "definition": "(1169000/624936−1)×100、前期実績比の予想増益率。1,169,000百万円＝1兆1690億円。",
+          "precision": 1,
+          "value": 87.1
+        }
+      ]
+    },
+    {
+      "id": "komatsu-h1-growth",
+      "question": "コマツの上期増収率と営業増益率は同程度か。",
+      "definition": "同じ4〜9月累計・米国基準連結・日本円の前年同期比。営業利益を純利益や税前利益と混同しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales-now",
+          "entity": "コマツ（連結）",
+          "metric": "上期売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "米国基準連結の4〜9月売上高実績"
+        },
+        {
+          "id": "sales-prior",
+          "entity": "コマツ（連結）",
+          "metric": "上期売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "米国基準連結の4〜9月売上高実績"
+        },
+        {
+          "id": "op-now",
+          "entity": "コマツ（連結）",
+          "metric": "上期営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "米国基準連結の4〜9月営業利益実績"
+        },
+        {
+          "id": "op-prior",
+          "entity": "コマツ（連結）",
+          "metric": "上期営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "米国基準連結の4〜9月営業利益実績"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales-now",
+          "entity": "コマツ（連結）",
+          "metric": "上期売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "米国基準連結の4〜9月売上高実績",
+          "value": 2158639,
+          "source": {
+            "url": "https://www.komatsu.jp/ja/-/media/home/ir/library/financial/ja/2703q2_j.pdf?hash=4A9DAFB930D817876617A87184C5A895&rev=0fb45eb40e8c45d392baf97d09fcb002",
+            "publishedOn": "2026-10-29",
+            "locator": "1.(1)連結経営成績（累計）・上期売上高・2027年3月期中間期。ページ画像でも列を照合",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "sales-prior",
+          "entity": "コマツ（連結）",
+          "metric": "上期売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "米国基準連結の4〜9月売上高実績",
+          "value": 1891587,
+          "source": {
+            "url": "https://www.komatsu.jp/ja/-/media/home/ir/library/financial/ja/2703q2_j.pdf?hash=4A9DAFB930D817876617A87184C5A895&rev=0fb45eb40e8c45d392baf97d09fcb002",
+            "publishedOn": "2026-10-29",
+            "locator": "1.(1)連結経営成績（累計）・上期売上高・2026年3月期中間期。ページ画像でも列を照合",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "op-now",
+          "entity": "コマツ（連結）",
+          "metric": "上期営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "米国基準連結の4〜9月営業利益実績",
+          "value": 286625,
+          "source": {
+            "url": "https://www.komatsu.jp/ja/-/media/home/ir/library/financial/ja/2703q2_j.pdf?hash=4A9DAFB930D817876617A87184C5A895&rev=0fb45eb40e8c45d392baf97d09fcb002",
+            "publishedOn": "2026-10-29",
+            "locator": "1.(1)連結経営成績（累計）・上期営業利益・2027年3月期中間期。ページ画像でも列を照合",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "op-prior",
+          "entity": "コマツ（連結）",
+          "metric": "上期営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "米国基準連結の4〜9月営業利益実績",
+          "value": 277061,
+          "source": {
+            "url": "https://www.komatsu.jp/ja/-/media/home/ir/library/financial/ja/2703q2_j.pdf?hash=4A9DAFB930D817876617A87184C5A895&rev=0fb45eb40e8c45d392baf97d09fcb002",
+            "publishedOn": "2026-10-29",
+            "locator": "1.(1)連結経営成績（累計）・上期営業利益・2026年3月期中間期。ページ画像でも列を照合",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "コマツの2026年4〜9月期連結売上高は2,158,639百万円、営業利益は286,625百万円だった。前年同期はそれぞれ1,891,587百万円、277,061百万円。売上高は14.1%増、営業利益は3.5%増で、同じ上期・日本円・米国基準の実績比較である。",
+      "calculations": [
+        {
+          "id": "sales-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "sales-now",
+            "sales-prior"
+          ],
+          "definition": "(2158639/1891587−1)×100",
+          "precision": 1,
+          "value": 14.1
+        },
+        {
+          "id": "op-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "op-now",
+            "op-prior"
+          ],
+          "definition": "(286625/277061−1)×100",
+          "precision": 1,
+          "value": 3.5
+        }
+      ]
+    },
+    {
+      "id": "komatsu-h1-operating-margin",
+      "question": "利益額が増えたとき、売上高営業利益率も改善しているか。",
+      "definition": "営業利益÷同じ期間の売上高×100。全4構成値から前年同期と比較し、表示は小数第1位。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales-now",
+          "entity": "コマツ（連結）",
+          "metric": "上期売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "米国基準連結の4〜9月売上高実績"
+        },
+        {
+          "id": "sales-prior",
+          "entity": "コマツ（連結）",
+          "metric": "上期売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "米国基準連結の4〜9月売上高実績"
+        },
+        {
+          "id": "op-now",
+          "entity": "コマツ（連結）",
+          "metric": "上期営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "米国基準連結の4〜9月営業利益実績"
+        },
+        {
+          "id": "op-prior",
+          "entity": "コマツ（連結）",
+          "metric": "上期営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "米国基準連結の4〜9月営業利益実績"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales-now",
+          "entity": "コマツ（連結）",
+          "metric": "上期売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "米国基準連結の4〜9月売上高実績",
+          "value": 2158639,
+          "source": {
+            "url": "https://www.komatsu.jp/ja/-/media/home/ir/library/financial/ja/2703q2_j.pdf?hash=4A9DAFB930D817876617A87184C5A895&rev=0fb45eb40e8c45d392baf97d09fcb002",
+            "publishedOn": "2026-10-29",
+            "locator": "1.(1)連結経営成績（累計）・上期売上高・2027年3月期中間期。ページ画像でも列を照合",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "sales-prior",
+          "entity": "コマツ（連結）",
+          "metric": "上期売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "米国基準連結の4〜9月売上高実績",
+          "value": 1891587,
+          "source": {
+            "url": "https://www.komatsu.jp/ja/-/media/home/ir/library/financial/ja/2703q2_j.pdf?hash=4A9DAFB930D817876617A87184C5A895&rev=0fb45eb40e8c45d392baf97d09fcb002",
+            "publishedOn": "2026-10-29",
+            "locator": "1.(1)連結経営成績（累計）・上期売上高・2026年3月期中間期。ページ画像でも列を照合",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "op-now",
+          "entity": "コマツ（連結）",
+          "metric": "上期営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "米国基準連結の4〜9月営業利益実績",
+          "value": 286625,
+          "source": {
+            "url": "https://www.komatsu.jp/ja/-/media/home/ir/library/financial/ja/2703q2_j.pdf?hash=4A9DAFB930D817876617A87184C5A895&rev=0fb45eb40e8c45d392baf97d09fcb002",
+            "publishedOn": "2026-10-29",
+            "locator": "1.(1)連結経営成績（累計）・上期営業利益・2027年3月期中間期。ページ画像でも列を照合",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "op-prior",
+          "entity": "コマツ（連結）",
+          "metric": "上期営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "米国基準連結の4〜9月営業利益実績",
+          "value": 277061,
+          "source": {
+            "url": "https://www.komatsu.jp/ja/-/media/home/ir/library/financial/ja/2703q2_j.pdf?hash=4A9DAFB930D817876617A87184C5A895&rev=0fb45eb40e8c45d392baf97d09fcb002",
+            "publishedOn": "2026-10-29",
+            "locator": "1.(1)連結経営成績（累計）・上期営業利益・2026年3月期中間期。ページ画像でも列を照合",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "営業利益÷売上高×100で算出した営業利益率は、前年同期14.6%から13.3%へ低下した（小数第1位）。利益額が増えていても、売上に対する利益の残り方は異なる。",
+      "calculations": [
+        {
+          "id": "margin-now",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op-now",
+            "sales-now"
+          ],
+          "definition": "286625/2158639×100",
+          "precision": 1,
+          "value": 13.3
+        },
+        {
+          "id": "margin-prior",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op-prior",
+            "sales-prior"
+          ],
+          "definition": "277061/1891587×100",
+          "precision": 1,
+          "value": 14.6
+        }
+      ]
+    },
+    {
+      "id": "china-manufacturing-pmi",
+      "question": "中国公式製造業PMIは9月から10月にどう変化したか。",
+      "definition": "国家統計局の公式・季節調整済み製造業PMI。同一系列の拡散指数を比較し、指数差を経済の実額成長率と扱わない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "oct",
+          "entity": "中国国家統計局",
+          "metric": "公式製造業PMI",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "指数（公表単位%）",
+          "basis": "actual",
+          "definition": "季節調整済み製造業PMI、前月対比の拡散指数"
+        },
+        {
+          "id": "sep",
+          "entity": "中国国家統計局",
+          "metric": "公式製造業PMI",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "指数（公表単位%）",
+          "basis": "actual",
+          "definition": "季節調整済み製造業PMI、前月対比の拡散指数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oct",
+          "entity": "中国国家統計局",
+          "metric": "公式製造業PMI",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "指数（公表単位%）",
+          "basis": "actual",
+          "definition": "季節調整済み製造業PMI、前月対比の拡散指数",
+          "value": 49.3,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261031_1965718.html",
+            "publishedOn": "2026-10-31",
+            "locator": "表1 中国制造业PMI及构成指数（经季节调整）／PMI列／2026年10月。ページ冒頭09:30公表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sep",
+          "entity": "中国国家統計局",
+          "metric": "公式製造業PMI",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "指数（公表単位%）",
+          "basis": "actual",
+          "definition": "季節調整済み製造業PMI、前月対比の拡散指数",
+          "value": 50.1,
+          "source": {
+            "url": "https://www.stats.gov.cn/sj/zxfbhjd/202610/t20261031_1965718.html",
+            "publishedOn": "2026-10-31",
+            "locator": "同表／PMI列／2026年9月",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "中国国家統計局が10月31日09:30（中国時間、日本時間10:30）に公表した10月の公式製造業PMIは49.3。9月の50.1から0.8ポイント低下した。いずれも季節調整済みの同じ製造業調査系列である。",
+      "calculations": [
+        {
+          "id": "difference",
+          "operation": "difference",
+          "inputs": [
+            "oct",
+            "sep"
+          ],
+          "definition": "49.3−50.1、指数ポイント差",
+          "precision": 1,
+          "value": -0.8
+        }
+      ]
+    },
+    {
+      "id": "sp500-weekly-cash-return",
+      "question": "S&P500の直近週間騰落率を通常終値同士で計算できるか。",
+      "definition": "10月30日と23日の米16:00 EDT通常終値による10月26〜30日週の価格騰落率。指数ポイントで、米ドル金額・配当込み・先物・DEXではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米16:00EDTの現物価格指数通常終値、日本時間31日05:00"
+        },
+        {
+          "id": "previous",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-23",
+          "periodEnd": "2026-10-23",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米16:00EDTの現物価格指数通常終値、日本時間24日05:00"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米16:00EDTの現物価格指数通常終値、日本時間31日05:00",
+          "value": 7580.07,
+          "source": {
+            "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-a01d3551e794fed1a0c317c20bc3f0a2",
+            "publishedOn": "2026-10-30",
+            "locator": "On Friday／S&P500 7580.07。For the weekの43.61ポイント減と整合",
+            "kind": "secondary",
+            "primaryUnavailableReason": "S&P DJIの公開指数ページを開いたが、データ欄は動的表示で対象2営業日の観測時点付き通常終値を取得できなかったため、主要報道APの各日の終値一覧を原報道で確認した。先物・時間外・休日の別市場の価格で代用していない。"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-10-23",
+          "periodEnd": "2026-10-23",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米16:00EDTの現物価格指数通常終値、日本時間24日05:00",
+          "value": 7623.68,
+          "source": {
+            "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-e07c72bc5cbe5dffe352ddf30054e35f",
+            "publishedOn": "2026-10-23",
+            "locator": "On Friday／S&P500 7623.68",
+            "kind": "secondary",
+            "primaryUnavailableReason": "S&P DJIの公開指数ページを開いたが、データ欄は動的表示で対象2営業日の観測時点付き通常終値を取得できなかったため、主要報道APの各日の終値一覧を原報道で確認した。先物・時間外・休日の別市場の価格で代用していない。"
+          }
+        }
+      ],
+      "claim": "S&P500の10月30日通常取引終値は7,580.07ポイント。前週末23日の7,623.68ポイントから43.61ポイント下落し、26〜30日の週間騰落率は（7,580.07÷7,623.68−1）×100＝−0.57%だった（小数第2位）。米国の現物価格指数で、配当込み収益率ではない。",
+      "calculations": [
+        {
+          "id": "points",
+          "operation": "difference",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "7580.07−7623.68",
+          "precision": 2,
+          "value": -43.61
+        },
+        {
+          "id": "weekly",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "(7580.07/7623.68−1)×100、小数第2位",
+          "precision": 2,
+          "value": -0.57
+        }
+      ]
+    },
+    {
+      "id": "tel-old-forecast-revision-withheld",
+      "question": "従来通期会社予想から営業利益はいくら引き上げられたか。",
+      "definition": "同じ2027年3月期通期営業利益の会社予想新旧値を想定していたが、原文で従来通期予想が未定と判明。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "東京エレクトロン（連結）",
+          "metric": "従来通期営業利益予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円（日本円）",
+          "basis": "company-forecast",
+          "definition": "10月30日以前の同年度通期会社予想"
+        },
+        {
+          "id": "new",
+          "entity": "東京エレクトロン（連結）",
+          "metric": "新通期営業利益予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円（日本円）",
+          "basis": "company-forecast",
+          "definition": "10月30日の同年度通期会社予想"
+        }
+      ],
+      "observations": [
+        {
+          "id": "new",
+          "entity": "東京エレクトロン（連結）",
+          "metric": "新通期営業利益予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円（日本円）",
+          "basis": "company-forecast",
+          "definition": "10月30日の同年度通期会社予想",
+          "value": 1169000,
+          "source": {
+            "url": "https://www.tel.com/ir/irta3a00000006g5-att/fy27q2tanshin-e.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "通期予想表／Revised Forecast(B)営業利益",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "reason": "PDF4頁(ii)は通期予想が従来未定だったと明記。文字検索不一致の後、PDF4・5頁をPNGで読んで確認した。従来値が0なのではなく数値が定義されていないため、旧予想からの増額・上方修正率を全て外し、前期実績比87.1%に限定。",
+      "omittedClaim": "東エレクの通期営業利益は従来会社予想から87.1%上方修正された。",
+      "calculations": []
+    },
+    {
+      "id": "korea-yoy-independent-growth-withheld",
+      "question": "韓国輸出の前年原数値から前年比を独立して計算するか。",
+      "definition": "同じ通関定義の2026年10月と2025年10月の全品目輸出額が必要。記事は確認済みの当月構成比に限定する。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "韓国産業通商部／韓国",
+          "metric": "全品目輸出総額",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "億米ドル",
+          "basis": "actual",
+          "definition": "月間通関輸出総額"
+        },
+        {
+          "id": "previous",
+          "entity": "韓国産業通商部／韓国",
+          "metric": "全品目輸出総額",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2025-10-31",
+          "unit": "億米ドル",
+          "basis": "actual",
+          "definition": "月間通関輸出総額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "韓国産業通商部／韓国",
+          "metric": "全品目輸出総額",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "億米ドル",
+          "basis": "actual",
+          "definition": "月間通関輸出総額",
+          "value": 1152.8,
+          "source": {
+            "url": "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view",
+            "publishedOn": "2026-11-01",
+            "locator": "本文〖총괄〗10月輸出総額",
+            "kind": "primary"
+          }
+        }
+      ],
+      "reason": "初回の公式URL読込は一時エラー、同じ公式検索参照を再度開いて総括・品目説明を確認。公開本文は前年比の率を示すが、同一定義の前年全品目原数値を本レビューで独立確認していないため、前年比93.7%およびそれに依存する記録・歴史比較は採用しない。比率から前年値を逆算して原数値扱いにはしない。",
+      "omittedClaim": "韓国の10月輸出は前年同月比93.7%増加した。",
+      "calculations": []
+    }
+  ]
+}
