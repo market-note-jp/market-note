@@ -1,0 +1,386 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-11-03",
+  "articleSha256": "27e39fb92a2642cb7a402c803c8ac067432159322477b22f9e09330d7b7685ea",
+  "checkedAt": "2026-11-02T21:29:52.988Z",
+  "informationCutoff": "2026-11-03T06:29:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終記事の見出し・要約・本文・分析・注目点・免責を全文確認。事前計画の住友商事予想比較、FCF全構成値、ISM前月比較の全入力を原資料で照合。住友商事PDFは取得して3/6/13ページ画像を実見し、文字検索不一致を記載なしと扱わなかった。記事のFCFは概要表丸め値に限定し、詳細表の営業CF130,512百万円・投資CF−449,082百万円とは精度を混ぜない。市場数値は速報と最終報道の差を確認後、厳密な騰落率と依存表現を外した。Marvellの取引条件は単独条件の確認で、EVを株式価値や現金支払額へ変換しない。銀行調査は国内銀行と外国銀行、基準と需要の定性的回答を区別。5件をすべて完成させた。",
+  "sourceChecks": [
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1835632/000119312526442714/d81187dex991.htm",
+      "publishedOn": "2026-11-02",
+      "locator": "Exhibit99.1冒頭およびTransaction Structure and Terms",
+      "checked": "固定交換比率4.500 Marvell株/Lumentum株、企業価値EV115billionUSD=1150億USD、2028暦年前半の条件付き完了予定を原文確認。定量的プレミアム・シナジー・市場規模比較は不採用。"
+    },
+    {
+      "url": "https://www.sumitomocorp.com/-/media/Files/hq/ir/report/summary/2026/2609Tanshin.pdf?sc_lang=ja",
+      "publishedOn": "2026-11-02",
+      "pdfPage": 13,
+      "locator": "連結CF計算書（印刷11ページ）、財務活動",
+      "checked": "非支配持分株主からの子会社持分取得支出は財務CF。PDF6ページ概要はSCSK追加取得を財務CF、Sumisho Air Lease買収を投資CFと説明。"
+    },
+    {
+      "url": "https://www.federalreserve.gov/data/sloos/sloos-202610.htm",
+      "publishedOn": "2026-11-02",
+      "locator": "Lending to Businesses/Table1Q1–12/Table2Q1–8/注1–4",
+      "checked": "主として第3四半期の変化。国内銀行の大中堅基準ほぼ不変、小企業基準厳格化、全規模C&I需要弱化、CRE各区分基準厳格化・需要弱化、外国銀行C&I需要強化を原文確認。定量的銀行比率や融資残高比較は作成せず。"
+    },
+    {
+      "url": "https://apnews.com/article/stocks-markets-ai-earnings-oil-iran-048328e49e47ce7afe6c1fb9d9acf13d",
+      "publishedOn": "2026-11-02",
+      "locator": "取引終了本文／All told",
+      "checked": "S&PとNasdaq下落、Dow上昇、多くの構成銘柄上昇の定性事実を確認。AP最終7541.40とReuters明示的preliminary7542.27に差があるため数値比較は不採用。S&P公式ページは動的データが取得本文に表示されず。"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "sumitomo-forecast",
+      "question": "同じ通期・定義の会社予想修正額は",
+      "definition": "バッファー考慮後会社予想同士",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "new",
+          "entity": "住友商事",
+          "metric": "親会社所有者帰属当期利益・11月2日改定予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円（JPY）",
+          "basis": "company-forecast",
+          "definition": "IFRS連結・親会社所有者帰属当期利益の2027年3月期通期会社予想。バッファー考慮後。期初予想と11月2日改定予想を比較。"
+        },
+        {
+          "id": "old",
+          "entity": "住友商事",
+          "metric": "親会社所有者帰属当期利益・期初予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円（JPY）",
+          "basis": "company-forecast",
+          "definition": "IFRS連結・親会社所有者帰属当期利益の2027年3月期通期会社予想。バッファー考慮後。期初予想と11月2日改定予想を比較。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "new",
+          "entity": "住友商事",
+          "metric": "親会社所有者帰属当期利益・11月2日改定予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円（JPY）",
+          "basis": "company-forecast",
+          "definition": "IFRS連結・親会社所有者帰属当期利益の2027年3月期通期会社予想。バッファー考慮後。期初予想と11月2日改定予想を比較。",
+          "value": 6700,
+          "source": {
+            "url": "https://www.sumitomocorp.com/-/media/Files/hq/ir/report/summary/2026/2609Presentation.pdf?sc_lang=ja",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF3ページ、通期見通しサマリーの上段バッファー考慮後／通期見通し③と期初予想④、注1",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "old",
+          "entity": "住友商事",
+          "metric": "親会社所有者帰属当期利益・期初予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円（JPY）",
+          "basis": "company-forecast",
+          "definition": "IFRS連結・親会社所有者帰属当期利益の2027年3月期通期会社予想。バッファー考慮後。期初予想と11月2日改定予想を比較。",
+          "value": 6300,
+          "source": {
+            "url": "https://www.sumitomocorp.com/-/media/Files/hq/ir/report/summary/2026/2609Presentation.pdf?sc_lang=ja",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF3ページ、通期見通しサマリーの上段バッファー考慮後／通期見通し③と期初予想④、注1",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "claim": "住友商事は11月2日、2027年3月期（2026年4月〜2027年3月）の親会社所有者に帰属する当期利益の会社予想を6,300億円から6,700億円へ、400億円引き上げた。同一年度・IFRS連結・日本円の会社予想同士の比較で、いずれも会社が不確実性へのバッファーを織り込んだ後の金額である。実績や市場予想との比較ではない。",
+      "calculations": [
+        {
+          "id": "increase",
+          "operation": "difference",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "改定予想−期初予想、億円",
+          "precision": 0,
+          "value": 400
+        }
+      ]
+    },
+    {
+      "id": "sumitomo-fcf",
+      "question": "会社CF概要のFCFを全構成値から確認できるか",
+      "definition": "2026年4〜9月期IFRS連結実績。決算短信CF概要表の億円丸め値を使用。FCF=営業活動CF+投資活動CF全額。財務活動CF・株主還元を控除する調整後指標ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "住友商事",
+          "metric": "営業活動によるCF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円（JPY、概要表丸め値）",
+          "basis": "actual",
+          "definition": "2026年4〜9月期IFRS連結実績。決算短信CF概要表の億円丸め値を使用。FCF=営業活動CF+投資活動CF全額。財務活動CF・株主還元を控除する調整後指標ではない。"
+        },
+        {
+          "id": "cfi",
+          "entity": "住友商事",
+          "metric": "投資活動によるCF（支出超過は負）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円（JPY、概要表丸め値）",
+          "basis": "actual",
+          "definition": "2026年4〜9月期IFRS連結実績。決算短信CF概要表の億円丸め値を使用。FCF=営業活動CF+投資活動CF全額。財務活動CF・株主還元を控除する調整後指標ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "住友商事",
+          "metric": "営業活動によるCF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円（JPY、概要表丸め値）",
+          "basis": "actual",
+          "definition": "2026年4〜9月期IFRS連結実績。決算短信CF概要表の億円丸め値を使用。FCF=営業活動CF+投資活動CF全額。財務活動CF・株主還元を控除する調整後指標ではない。",
+          "value": 1305,
+          "source": {
+            "url": "https://www.sumitomocorp.com/-/media/Files/hq/ir/report/summary/2026/2609Tanshin.pdf?sc_lang=ja",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF6ページ、CF概要表2026年4月1日〜9月30日列（印刷4ページ）、画像実見",
+            "kind": "primary",
+            "pdfPage": 6
+          }
+        },
+        {
+          "id": "cfi",
+          "entity": "住友商事",
+          "metric": "投資活動によるCF（支出超過は負）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円（JPY、概要表丸め値）",
+          "basis": "actual",
+          "definition": "2026年4〜9月期IFRS連結実績。決算短信CF概要表の億円丸め値を使用。FCF=営業活動CF+投資活動CF全額。財務活動CF・株主還元を控除する調整後指標ではない。",
+          "value": -4491,
+          "source": {
+            "url": "https://www.sumitomocorp.com/-/media/Files/hq/ir/report/summary/2026/2609Tanshin.pdf?sc_lang=ja",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF6ページ、CF概要表2026年4月1日〜9月30日列（印刷4ページ）、画像実見",
+            "kind": "primary",
+            "pdfPage": 6
+          }
+        }
+      ],
+      "claim": "2026年4〜9月期の営業キャッシュフローは1,305億円、投資キャッシュフローは−4,491億円。決算短信の億円単位の概要表にそろえ、FCF＝営業CF＋投資CF＝1,305＋（−4,491）＝−3,186億円と確認した。投資CF全体を使う定義で、設備投資額だけを差し引く計算ではない。概要表の丸め値による計算であり、百万円単位の原数値とは区別する。",
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "cfi"
+          ],
+          "definition": "営業CF+投資CF（投資CF全体の符号付き額、億円丸め値）",
+          "precision": 0,
+          "value": -3186
+        }
+      ]
+    },
+    {
+      "id": "ism-pmi",
+      "question": "10月製造業PMIは9月比どう変化したか",
+      "definition": "ISM製造業PMI総合拡散指数・月次調査実績。季節調整済み構成指数を含む同一系列。前月差はポイントで生産額成長率ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "oct",
+          "entity": "ISM米製造業調査",
+          "metric": "Manufacturing PMI",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "指数ポイント",
+          "basis": "actual",
+          "definition": "ISM製造業PMI総合拡散指数・月次調査実績。季節調整済み構成指数を含む同一系列。前月差はポイントで生産額成長率ではない。"
+        },
+        {
+          "id": "sep",
+          "entity": "ISM米製造業調査",
+          "metric": "Manufacturing PMI",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "指数ポイント",
+          "basis": "actual",
+          "definition": "ISM製造業PMI総合拡散指数・月次調査実績。季節調整済み構成指数を含む同一系列。前月差はポイントで生産額成長率ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oct",
+          "entity": "ISM米製造業調査",
+          "metric": "Manufacturing PMI",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "指数ポイント",
+          "basis": "actual",
+          "definition": "ISM製造業PMI総合拡散指数・月次調査実績。季節調整済み構成指数を含む同一系列。前月差はポイントで生産額成長率ではない。",
+          "value": 55.5,
+          "source": {
+            "url": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-55-5-october-2026-ism-manufacturing-pmi-report-302925617.html",
+            "publishedOn": "2026-11-02",
+            "locator": "Manufacturing at a Glance、October/September/Change、調整注記",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sep",
+          "entity": "ISM米製造業調査",
+          "metric": "Manufacturing PMI",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "指数ポイント",
+          "basis": "actual",
+          "definition": "ISM製造業PMI総合拡散指数・月次調査実績。季節調整済み構成指数を含む同一系列。前月差はポイントで生産額成長率ではない。",
+          "value": 54.5,
+          "source": {
+            "url": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-55-5-october-2026-ism-manufacturing-pmi-report-302925617.html",
+            "publishedOn": "2026-11-02",
+            "locator": "Manufacturing at a Glance、October/September/Change、調整注記",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "ISMが11月2日10:00（米東部標準時間、日本時間3日00:00）に発表した10月の製造業PMIは55.5で、9月の54.5から1.0ポイント上昇した。同じ季節調整済み製造業系列の調査実績である。50を上回ることは前月に対する拡大を示すが、製造業生産額が5.5%増えた意味ではない。",
+      "calculations": [
+        {
+          "id": "difference",
+          "operation": "difference",
+          "inputs": [
+            "oct",
+            "sep"
+          ],
+          "definition": "10月−9月、ポイント",
+          "precision": 1,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "ism-prices",
+      "question": "価格指数の低下と価格水準下落を区別できるか",
+      "definition": "ISM製造業Prices拡散指数、非季節調整の同一月次系列。50超は価格上昇方向。前月差はポイントで価格水準騰落率ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "oct",
+          "entity": "ISM米製造業調査",
+          "metric": "Prices Index",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "指数ポイント",
+          "basis": "actual",
+          "definition": "ISM製造業Prices拡散指数、非季節調整の同一月次系列。50超は価格上昇方向。前月差はポイントで価格水準騰落率ではない。"
+        },
+        {
+          "id": "sep",
+          "entity": "ISM米製造業調査",
+          "metric": "Prices Index",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "指数ポイント",
+          "basis": "actual",
+          "definition": "ISM製造業Prices拡散指数、非季節調整の同一月次系列。50超は価格上昇方向。前月差はポイントで価格水準騰落率ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oct",
+          "entity": "ISM米製造業調査",
+          "metric": "Prices Index",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "指数ポイント",
+          "basis": "actual",
+          "definition": "ISM製造業Prices拡散指数、非季節調整の同一月次系列。50超は価格上昇方向。前月差はポイントで価格水準騰落率ではない。",
+          "value": 75.2,
+          "source": {
+            "url": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-55-5-october-2026-ism-manufacturing-pmi-report-302925617.html",
+            "publishedOn": "2026-11-02",
+            "locator": "Manufacturing at a Glance Prices行、Prices本文とOctober/September表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sep",
+          "entity": "ISM米製造業調査",
+          "metric": "Prices Index",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "指数ポイント",
+          "basis": "actual",
+          "definition": "ISM製造業Prices拡散指数、非季節調整の同一月次系列。50超は価格上昇方向。前月差はポイントで価格水準騰落率ではない。",
+          "value": 77.9,
+          "source": {
+            "url": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-55-5-october-2026-ism-manufacturing-pmi-report-302925617.html",
+            "publishedOn": "2026-11-02",
+            "locator": "Manufacturing at a Glance Prices行、Prices本文とOctober/September表",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "同じ公表資料の価格指数は9月77.9から10月75.2へ2.7ポイント低下した。ただし75.2は50を上回っており、仕入れ価格の上昇が続く方向を示す。指数の低下を価格水準そのものの下落や、消費者物価の低下に読み替えない。",
+      "calculations": [
+        {
+          "id": "difference",
+          "operation": "difference",
+          "inputs": [
+            "oct",
+            "sep"
+          ],
+          "definition": "10月−9月、ポイント",
+          "precision": 1,
+          "value": -2.7
+        }
+      ]
+    },
+    {
+      "id": "sp500-close-change-withheld",
+      "question": "通常取引終値同士の日次騰落率",
+      "definition": "S&P500現物価格指数、配当なし、米国通常終値",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "nov2",
+          "entity": "S&P500",
+          "metric": "通常終値",
+          "periodStart": "2026-11-02",
+          "periodEnd": "2026-11-02",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "16:00米東部標準時間の通常終値"
+        },
+        {
+          "id": "oct30",
+          "entity": "S&P500",
+          "metric": "通常終値",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "16:00米東部夏時間の通常終値"
+        }
+      ],
+      "observations": [],
+      "reason": "AP終値報道とReutersのpreliminaryデータに差。公式S&Pページ本文には動的終値が表示されず、追加の主要報道・scorecard検索で同じ確定系列の全入力を今回再確認できなかったため精密数値比較を外した。需要事実や定性的方向は別途確認済み。",
+      "omittedClaim": "S&P500の11月2日日次騰落率は−0.51%だった。",
+      "calculations": []
+    }
+  ]
+}
