@@ -1,0 +1,2161 @@
+{
+  "version": 1,
+  "articleSlug": "company-dorman-2026-11-02",
+  "articleSha256": "949b4608ce2fc9a83e3b89e7c3c6f3edf8627f37d915681d0e9a07ba6a612a5e",
+  "checkedAt": "2026-11-02T12:11:55.142931+00:00",
+  "informationCutoff": "2026-11-02T21:03:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "著者照合。2023/2025 10-K、最新10-Qと決算リリース全文に基づく。2021期末と2022期首、買収範囲差、Q3/累計数量説明差、還付/在庫二重計上回避、segment/GAAP、CF buyback定義に注意。独立監査は親担当待ち。 独立担当が2023/2025 10-K、Q3 10-Q、IR原文を別途取得し全重要表・CF・数量要因・還付・借換えを照合。セグメント定義を明確化し買戻し出典追加。",
+  "comparisons": [
+    {
+      "id": "fy2021",
+      "question": "| 2021 | 1,345.2 | 171.6 | 100.3 | 19.8 | 80.5 |",
+      "claim": "| 2021 | 1,345.2 | 171.6 | 100.3 | 19.8 | 80.5 |",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売上高",
+          "periodStart": "2020-12-27",
+          "periodEnd": "2021-12-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2020-12-27",
+          "periodEnd": "2021-12-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Dorman連結",
+          "metric": "営業CF",
+          "periodStart": "2020-12-27",
+          "periodEnd": "2021-12-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "i3",
+          "entity": "Dorman連結",
+          "metric": "有形固定資産支出",
+          "periodStart": "2020-12-27",
+          "periodEnd": "2021-12-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売上高",
+          "periodStart": "2020-12-27",
+          "periodEnd": "2021-12-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 1345.249,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878024000011/dorm-20231231.htm",
+            "publishedOn": "2024-02-28",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2020-12-27",
+          "periodEnd": "2021-12-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 171.551,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878024000011/dorm-20231231.htm",
+            "publishedOn": "2024-02-28",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Dorman連結",
+          "metric": "営業CF",
+          "periodStart": "2020-12-27",
+          "periodEnd": "2021-12-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 100.338,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878024000011/dorm-20231231.htm",
+            "publishedOn": "2024-02-28",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Dorman連結",
+          "metric": "有形固定資産支出",
+          "periodStart": "2020-12-27",
+          "periodEnd": "2021-12-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産支出",
+          "value": 19.84,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878024000011/dorm-20231231.htm",
+            "publishedOn": "2024-02-28",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "i2",
+            "i3"
+          ],
+          "definition": "独自FCF=営業CF−有形固定資産支出",
+          "precision": 1,
+          "value": 80.5
+        }
+      ]
+    },
+    {
+      "id": "fy2022",
+      "question": "| 2022 | 1,733.7 | 171.0 | 41.7 | 37.9 | 3.8 |",
+      "claim": "| 2022 | 1,733.7 | 171.0 | 41.7 | 37.9 | 3.8 |",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売上高",
+          "periodStart": "2021-12-26",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2021-12-26",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Dorman連結",
+          "metric": "営業CF",
+          "periodStart": "2021-12-26",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "i3",
+          "entity": "Dorman連結",
+          "metric": "有形固定資産支出",
+          "periodStart": "2021-12-26",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売上高",
+          "periodStart": "2021-12-26",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 1733.749,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878024000011/dorm-20231231.htm",
+            "publishedOn": "2024-02-28",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2021-12-26",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 171.048,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878024000011/dorm-20231231.htm",
+            "publishedOn": "2024-02-28",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Dorman連結",
+          "metric": "営業CF",
+          "periodStart": "2021-12-26",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 41.688,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878024000011/dorm-20231231.htm",
+            "publishedOn": "2024-02-28",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Dorman連結",
+          "metric": "有形固定資産支出",
+          "periodStart": "2021-12-26",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産支出",
+          "value": 37.883,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878024000011/dorm-20231231.htm",
+            "publishedOn": "2024-02-28",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "i2",
+            "i3"
+          ],
+          "definition": "独自FCF=営業CF−有形固定資産支出",
+          "precision": 1,
+          "value": 3.8
+        }
+      ]
+    },
+    {
+      "id": "fy2023",
+      "question": "| 2023 | 1,929.8 | 214.8 | 208.8 | 44.0 | 164.8 |",
+      "claim": "| 2023 | 1,929.8 | 214.8 | 208.8 | 44.0 | 164.8 |",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Dorman連結",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "i3",
+          "entity": "Dorman連結",
+          "metric": "有形固定資産支出",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 1929.788,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878026000014/dorm-20251231.htm",
+            "publishedOn": "2026-02-27",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 214.76,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878026000014/dorm-20251231.htm",
+            "publishedOn": "2026-02-27",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Dorman連結",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 208.758,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878026000014/dorm-20251231.htm",
+            "publishedOn": "2026-02-27",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Dorman連結",
+          "metric": "有形固定資産支出",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産支出",
+          "value": 43.968,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878026000014/dorm-20251231.htm",
+            "publishedOn": "2026-02-27",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "i2",
+            "i3"
+          ],
+          "definition": "独自FCF=営業CF−有形固定資産支出",
+          "precision": 1,
+          "value": 164.8
+        }
+      ]
+    },
+    {
+      "id": "fy2024",
+      "question": "| 2024 | 2,009.2 | 292.9 | 231.0 | 39.4 | 191.6 |",
+      "claim": "| 2024 | 2,009.2 | 292.9 | 231.0 | 39.4 | 191.6 |",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Dorman連結",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "i3",
+          "entity": "Dorman連結",
+          "metric": "有形固定資産支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 2009.197,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878026000014/dorm-20251231.htm",
+            "publishedOn": "2026-02-27",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 292.909,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878026000014/dorm-20251231.htm",
+            "publishedOn": "2026-02-27",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Dorman連結",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 231.047,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878026000014/dorm-20251231.htm",
+            "publishedOn": "2026-02-27",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Dorman連結",
+          "metric": "有形固定資産支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産支出",
+          "value": 39.421,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878026000014/dorm-20251231.htm",
+            "publishedOn": "2026-02-27",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "i2",
+            "i3"
+          ],
+          "definition": "独自FCF=営業CF−有形固定資産支出",
+          "precision": 1,
+          "value": 191.6
+        }
+      ]
+    },
+    {
+      "id": "fy2025",
+      "question": "| 2025 | 2,130.3 | 299.5 | 113.6 | 38.0 | 75.7 |",
+      "claim": "| 2025 | 2,130.3 | 299.5 | 113.6 | 38.0 | 75.7 |",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Dorman連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "i3",
+          "entity": "Dorman連結",
+          "metric": "有形固定資産支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 2130.319,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878026000014/dorm-20251231.htm",
+            "publishedOn": "2026-02-27",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 299.547,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878026000014/dorm-20251231.htm",
+            "publishedOn": "2026-02-27",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Dorman連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 113.634,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878026000014/dorm-20251231.htm",
+            "publishedOn": "2026-02-27",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Dorman連結",
+          "metric": "有形固定資産支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産支出",
+          "value": 37.969,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878026000014/dorm-20251231.htm",
+            "publishedOn": "2026-02-27",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "i2",
+            "i3"
+          ],
+          "definition": "独自FCF=営業CF−有形固定資産支出",
+          "precision": 1,
+          "value": 75.7
+        }
+      ]
+    },
+    {
+      "id": "sales",
+      "question": "| 売上高 | 543.7 | 561.7 |",
+      "claim": "| 売上高 | 543.7 | 561.7 |",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売上高",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "売上高",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売上高",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 543.736,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "Q3 comparative results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "売上高",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 561.722,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "Q3 comparative results",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "gp",
+      "question": "| 売上総利益 | 241.4 | 221.6 |",
+      "claim": "| 売上総利益 | 241.4 | 221.6 |",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売上総利益",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上総利益"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "売上総利益",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上総利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売上総利益",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上総利益",
+          "value": 241.427,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "Q3 comparative results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "売上総利益",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上総利益",
+          "value": 221.598,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "Q3 comparative results",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "gm",
+      "question": "| 売上総利益率 | 44.4% | 39.4% |",
+      "claim": "| 売上総利益率 | 44.4% | 39.4% |",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売上総利益率",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上総利益率"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "売上総利益率",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上総利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売上総利益率",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上総利益率",
+          "value": 44.4,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "Q3 comparative results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "売上総利益率",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上総利益率",
+          "value": 39.4,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "Q3 comparative results",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "op",
+      "question": "| 営業利益 | 105.8 | 82.9 |",
+      "claim": "| 営業利益 | 105.8 | 82.9 |",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "営業利益",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "営業利益",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "営業利益",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 105.75,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "Q3 comparative results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "営業利益",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 82.938,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "Q3 comparative results",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "eps",
+      "question": "| GAAP EPS | 2.48 | 1.98 |",
+      "claim": "| GAAP EPS | 2.48 | 1.98 |",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "GAAP EPS",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "GAAP EPS"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "GAAP EPS",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "GAAP EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "GAAP EPS",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "GAAP EPS",
+          "value": 2.48,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "Q3 comparative results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "GAAP EPS",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "GAAP EPS",
+          "value": 1.98,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "Q3 comparative results",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "adj",
+      "question": "| 調整後EPS（会社定義） | 2.62 | 2.08 |",
+      "claim": "| 調整後EPS（会社定義） | 2.62 | 2.08 |",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "調整後EPS（会社定義）",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "調整後EPS（会社定義）"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "調整後EPS（会社定義）",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "調整後EPS（会社定義）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "調整後EPS（会社定義）",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "調整後EPS（会社定義）",
+          "value": 2.62,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "Q3 comparative results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "調整後EPS（会社定義）",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "調整後EPS（会社定義）",
+          "value": 2.08,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "Q3 comparative results",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "ocf",
+      "question": "| 営業CF | 72.0 | 260.9 |",
+      "claim": "| 営業CF | 72.0 | 260.9 |",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 71.99,
+          "source": {
+            "url": "https://investors.dormanproducts.com/financial-info/sec-filings/content/0000868780-26-000053/dorm-20260926.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Cash flows p6 / Note 2 p7",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 260.947,
+          "source": {
+            "url": "https://investors.dormanproducts.com/financial-info/sec-filings/content/0000868780-26-000053/dorm-20260926.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Cash flows p6 / Note 2 p7",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "capex",
+      "question": "| 設備投資支出 | 29.8 | 25.2 |",
+      "claim": "| 設備投資支出 | 29.8 | 25.2 |",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "設備投資支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "設備投資支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "設備投資支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出",
+          "value": 29.818,
+          "source": {
+            "url": "https://investors.dormanproducts.com/financial-info/sec-filings/content/0000868780-26-000053/dorm-20260926.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Cash flows p6 / Note 2 p7",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "設備投資支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出",
+          "value": 25.208,
+          "source": {
+            "url": "https://investors.dormanproducts.com/financial-info/sec-filings/content/0000868780-26-000053/dorm-20260926.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Cash flows p6 / Note 2 p7",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "arsales",
+      "question": "| 売却した売掛金 | 1,030.1 | 843.6 |",
+      "claim": "| 売却した売掛金 | 1,030.1 | 843.6 |",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売却した売掛金",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売却した売掛金"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "売却した売掛金",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売却した売掛金"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売却した売掛金",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売却した売掛金",
+          "value": 1030.085,
+          "source": {
+            "url": "https://investors.dormanproducts.com/financial-info/sec-filings/content/0000868780-26-000053/dorm-20260926.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Cash flows p6 / Note 2 p7",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "売却した売掛金",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売却した売掛金",
+          "value": 843.582,
+          "source": {
+            "url": "https://investors.dormanproducts.com/financial-info/sec-filings/content/0000868780-26-000053/dorm-20260926.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Cash flows p6 / Note 2 p7",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "arcost",
+      "question": "| 売掛金売却費用 | 43.7 | 36.1 |",
+      "claim": "| 売掛金売却費用 | 43.7 | 36.1 |",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売掛金売却費用",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売掛金売却費用"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "売掛金売却費用",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売掛金売却費用"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売掛金売却費用",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売掛金売却費用",
+          "value": 43.744,
+          "source": {
+            "url": "https://investors.dormanproducts.com/financial-info/sec-filings/content/0000868780-26-000053/dorm-20260926.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Cash flows p6 / Note 2 p7",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "売掛金売却費用",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売掛金売却費用",
+          "value": 36.113,
+          "source": {
+            "url": "https://investors.dormanproducts.com/financial-info/sec-filings/content/0000868780-26-000053/dorm-20260926.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Cash flows p6 / Note 2 p7",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fcf9",
+      "question": "| 独自計算FCF | 42.2 | 235.7 |",
+      "claim": "| 独自計算FCF | 42.2 | 235.7 |",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "2025営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2025営業CF"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "2025設備支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2025設備支出"
+        },
+        {
+          "id": "i2",
+          "entity": "Dorman連結",
+          "metric": "2026営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2026営業CF"
+        },
+        {
+          "id": "i3",
+          "entity": "Dorman連結",
+          "metric": "2026設備支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2026設備支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "2025営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2025営業CF",
+          "value": 71.99,
+          "source": {
+            "url": "https://investors.dormanproducts.com/financial-info/sec-filings/content/0000868780-26-000053/dorm-20260926.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Financial statements / MD&A",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "2025設備支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2025設備支出",
+          "value": 29.818,
+          "source": {
+            "url": "https://investors.dormanproducts.com/financial-info/sec-filings/content/0000868780-26-000053/dorm-20260926.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Financial statements / MD&A",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Dorman連結",
+          "metric": "2026営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2026営業CF",
+          "value": 260.947,
+          "source": {
+            "url": "https://investors.dormanproducts.com/financial-info/sec-filings/content/0000868780-26-000053/dorm-20260926.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Financial statements / MD&A",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Dorman連結",
+          "metric": "2026設備支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2026設備支出",
+          "value": 25.208,
+          "source": {
+            "url": "https://investors.dormanproducts.com/financial-info/sec-filings/content/0000868780-26-000053/dorm-20260926.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Financial statements / MD&A",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "f0",
+          "operation": "difference",
+          "inputs": [
+            "i0",
+            "i1"
+          ],
+          "definition": "営業CF−有形固定資産支出",
+          "precision": 1,
+          "value": 42.2
+        },
+        {
+          "id": "f1",
+          "operation": "difference",
+          "inputs": [
+            "i2",
+            "i3"
+          ],
+          "definition": "営業CF−有形固定資産支出",
+          "precision": 1,
+          "value": 235.7
+        }
+      ]
+    },
+    {
+      "id": "refund",
+      "question": "IEEPA関税の還付と関連利息の受領99.7百万ドル",
+      "claim": "IEEPA関税の還付と関連利息の受領99.7百万ドル",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "関税還付と利息受領",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "関税還付と利息受領"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "関税還付と利息受領",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "関税還付と利息受領",
+          "value": 99.7,
+          "source": {
+            "url": "https://investors.dormanproducts.com/financial-info/sec-filings/content/0000868780-26-000053/dorm-20260926.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "MD&A liquidity p26",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "impairment",
+      "question": "Heavy Dutyに関するのれん減損56.7百万ドル",
+      "claim": "Heavy Dutyに関するのれん減損56.7百万ドル",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "のれん減損",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "のれん減損"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "のれん減損",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "のれん減損",
+          "value": 56.706,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878026000014/dorm-20251231.htm",
+            "publishedOn": "2026-02-27",
+            "locator": "Goodwill",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "segment",
+      "question": "最新四半期のLight Dutyのセグメント営業利益率は18.5%で、前年23.7%から低下しました。",
+      "claim": "最新四半期のLight Dutyのセグメント営業利益率は18.5%で、前年23.7%から低下しました。",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "Light Dutyセグメント利益率",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Light Dutyセグメント利益率"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "Light Dutyセグメント利益率",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Light Dutyセグメント利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "Light Dutyセグメント利益率",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Light Dutyセグメント利益率",
+          "value": 18.5,
+          "source": {
+            "url": "https://investors.dormanproducts.com/financial-info/sec-filings/content/0000868780-26-000053/dorm-20260926.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "MD&A segment performance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "Light Dutyセグメント利益率",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Light Dutyセグメント利益率",
+          "value": 23.7,
+          "source": {
+            "url": "https://investors.dormanproducts.com/financial-info/sec-filings/content/0000868780-26-000053/dorm-20260926.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "MD&A segment performance",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "sv",
+      "question": "Specialty Vehicleは13.1%でした。",
+      "claim": "Specialty Vehicleは13.1%でした。",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "Specialty Vehicle利益率",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Specialty Vehicle利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "Specialty Vehicle利益率",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Specialty Vehicle利益率",
+          "value": 13.1,
+          "source": {
+            "url": "https://investors.dormanproducts.com/financial-info/sec-filings/content/0000868780-26-000053/dorm-20260926.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Financial statements / MD&A",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "customers",
+      "question": "2025年は2社の顧客がそれぞれ売上の10%超を占め、合計40%でした。",
+      "claim": "2025年は2社の顧客がそれぞれ売上の10%超を占め、合計40%でした。",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "大口2顧客売上比率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "大口2顧客売上比率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "大口2顧客売上比率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "大口2顧客売上比率",
+          "value": 40,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/868780/000086878026000014/dorm-20251231.htm",
+            "publishedOn": "2026-02-27",
+            "locator": "Customer Concentration",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "notes",
+      "question": "元本450百万ドル、年率6.25%、2034年6月16日満期の社債",
+      "claim": "元本450百万ドル、年率6.25%、2034年6月16日満期の社債",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "Senior notes元本",
+          "periodStart": "2026-09-26",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Senior notes元本"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "Senior notes固定クーポン",
+          "periodStart": "2026-09-26",
+          "periodEnd": "2026-09-26",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Senior notes固定クーポン"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "Senior notes元本",
+          "periodStart": "2026-09-26",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Senior notes元本",
+          "value": 450,
+          "source": {
+            "url": "https://investors.dormanproducts.com/financial-info/sec-filings/content/0000868780-26-000053/dorm-20260926.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Note 5",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "Senior notes固定クーポン",
+          "periodStart": "2026-09-26",
+          "periodEnd": "2026-09-26",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Senior notes固定クーポン",
+          "value": 6.25,
+          "source": {
+            "url": "https://investors.dormanproducts.com/financial-info/sec-filings/content/0000868780-26-000053/dorm-20260926.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Note 5",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "buyback",
+      "question": "株式の取得・消却への支出が113.8百万ドル",
+      "claim": "株式の取得・消却への支出が113.8百万ドル",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "Purchase and cancellation of common stock",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Purchase and cancellation of common stock"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "Purchase and cancellation of common stock",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Purchase and cancellation of common stock",
+          "value": 113.814,
+          "source": {
+            "url": "https://investors.dormanproducts.com/financial-info/sec-filings/content/0000868780-26-000053/dorm-20260926.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Cash flows p6",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "guidesales",
+      "question": "| 売上高成長率 | 3〜5% | 2〜3% |",
+      "claim": "| 売上高成長率 | 3〜5% | 2〜3% |",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売上高成長率 従来下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "売上高成長率 従来下限"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "売上高成長率 従来上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "売上高成長率 従来上限"
+        },
+        {
+          "id": "i2",
+          "entity": "Dorman連結",
+          "metric": "売上高成長率 更新下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "売上高成長率 更新下限"
+        },
+        {
+          "id": "i3",
+          "entity": "Dorman連結",
+          "metric": "売上高成長率 更新上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "売上高成長率 更新上限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "売上高成長率 従来下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "売上高成長率 従来下限",
+          "value": 3,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "2026 Guidance prior vs updated",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "売上高成長率 従来上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "売上高成長率 従来上限",
+          "value": 5,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "2026 Guidance prior vs updated",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Dorman連結",
+          "metric": "売上高成長率 更新下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "売上高成長率 更新下限",
+          "value": 2,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "2026 Guidance prior vs updated",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Dorman連結",
+          "metric": "売上高成長率 更新上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "売上高成長率 更新上限",
+          "value": 3,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "2026 Guidance prior vs updated",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "guideeps",
+      "question": "| GAAP EPS | 7.93〜8.23 | 7.95〜8.15 |",
+      "claim": "| GAAP EPS | 7.93〜8.23 | 7.95〜8.15 |",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "GAAP EPS 従来下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "GAAP EPS 従来下限"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "GAAP EPS 従来上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "GAAP EPS 従来上限"
+        },
+        {
+          "id": "i2",
+          "entity": "Dorman連結",
+          "metric": "GAAP EPS 更新下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "GAAP EPS 更新下限"
+        },
+        {
+          "id": "i3",
+          "entity": "Dorman連結",
+          "metric": "GAAP EPS 更新上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "GAAP EPS 更新上限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "GAAP EPS 従来下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "GAAP EPS 従来下限",
+          "value": 7.93,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "2026 Guidance prior vs updated",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "GAAP EPS 従来上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "GAAP EPS 従来上限",
+          "value": 8.23,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "2026 Guidance prior vs updated",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Dorman連結",
+          "metric": "GAAP EPS 更新下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "GAAP EPS 更新下限",
+          "value": 7.95,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "2026 Guidance prior vs updated",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Dorman連結",
+          "metric": "GAAP EPS 更新上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "GAAP EPS 更新上限",
+          "value": 8.15,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "2026 Guidance prior vs updated",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "guideadj",
+      "question": "| 調整後EPS | 8.50〜8.80 | 8.50〜8.70 |",
+      "claim": "| 調整後EPS | 8.50〜8.80 | 8.50〜8.70 |",
+      "definition": "本文で表示した期間・連結範囲・指標。千USDから百万USDへの換算・丸めは表注。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "調整後EPS 従来下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "調整後EPS 従来下限"
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "調整後EPS 従来上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "調整後EPS 従来上限"
+        },
+        {
+          "id": "i2",
+          "entity": "Dorman連結",
+          "metric": "調整後EPS 更新下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "調整後EPS 更新下限"
+        },
+        {
+          "id": "i3",
+          "entity": "Dorman連結",
+          "metric": "調整後EPS 更新上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "調整後EPS 更新上限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Dorman連結",
+          "metric": "調整後EPS 従来下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "調整後EPS 従来下限",
+          "value": 8.5,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "2026 Guidance prior vs updated",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Dorman連結",
+          "metric": "調整後EPS 従来上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "調整後EPS 従来上限",
+          "value": 8.8,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "2026 Guidance prior vs updated",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Dorman連結",
+          "metric": "調整後EPS 更新下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "調整後EPS 更新下限",
+          "value": 8.5,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "2026 Guidance prior vs updated",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Dorman連結",
+          "metric": "調整後EPS 更新上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "調整後EPS 更新上限",
+          "value": 8.7,
+          "source": {
+            "url": "https://investors.dormanproducts.com/news-events/press-releases/detail/350/dorman-products-inc-reports-third-quarter-2026-results-updates-2026-guidance",
+            "publishedOn": "2026-10-26",
+            "locator": "2026 Guidance prior vs updated",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "articleSlug": "theme-opec-targets-actual-supply-2026-11-02",
+  "articleSha256": "23c9b62f8052e764ceb57ece5c29e09e9adc3ebf6452244b59ecb6d523364ee9",
+  "checkedAt": "2026-11-02T12:06:25.921Z",
+  "informationCutoff": "2026-11-02T12:05:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終本文全体を読んで数値・制度範囲・推計と実績を照合。日付は事象/公表/観測を区別。企業採算・目標と実生産の差・株価寄与の未確認数値は本文に置かない。旧記事との問い・根拠差分確認済み。別担当の公開前レビューは統合担当が実施。",
+  "comparisons": [
+    {
+      "id": "shut-in-change",
+      "question": "EIA10月版による8月から9月の中東原油生産停止量の変化",
+      "definition": "EIA当時推計の月平均生産停止量。輸出・到着の増加や7か国目標との差ではない。",
+      "status": "ready",
+      "claim": "EIAが10月6日に公表した見通しでは、中東の原油生産停止量を8月の日量580万バレルから9月の日量480万バレルへ縮小したと推計していた。差は日量100万バレルである。",
+      "requiredInputs": [
+        {
+          "id": "aug",
+          "entity": "中東",
+          "metric": "原油生産停止量",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "万バレル/日",
+          "basis": "actual",
+          "definition": "EIA2026年10月版の実績期間推計。月平均。"
+        },
+        {
+          "id": "sep",
+          "entity": "中東",
+          "metric": "原油生産停止量",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "万バレル/日",
+          "basis": "actual",
+          "definition": "EIA2026年10月版の実績期間推計。月平均。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "aug",
+          "entity": "中東",
+          "metric": "原油生産停止量",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "万バレル/日",
+          "basis": "actual",
+          "definition": "EIA2026年10月版の実績期間推計。月平均。",
+          "value": 580,
+          "source": {
+            "url": "https://www.eia.gov/outlooks/steo/report/global_oil.php",
+            "publishedOn": "2026-10-06",
+            "locator": "Global oil prices 第4段落。Forecast completed October 1, 2026。5.8/4.8 million b/dを万単位へ換算",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sep",
+          "entity": "中東",
+          "metric": "原油生産停止量",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "万バレル/日",
+          "basis": "actual",
+          "definition": "EIA2026年10月版の実績期間推計。月平均。",
+          "value": 480,
+          "source": {
+            "url": "https://www.eia.gov/outlooks/steo/report/global_oil.php",
+            "publishedOn": "2026-10-06",
+            "locator": "Global oil prices 第4段落。Forecast completed October 1, 2026。5.8/4.8 million b/dを万単位へ換算",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "reduction",
+          "operation": "difference",
+          "inputs": [
+            "aug",
+            "sep"
+          ],
+          "definition": "8月推計−9月推計。生産停止量の減少幅",
+          "precision": 0,
+          "value": 100
+        }
+      ]
+    }
+  ]
+}

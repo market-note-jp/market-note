@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "articleSlug": "theme-tax-refund-retail-profit-2026-11-02",
+  "articleSha256": "1cf0ebc35b28f7862368387b92a32d9f9ca159ce12b3fa8d44d8a598d720e242",
+  "checkedAt": "2026-11-02T12:06:25.921Z",
+  "informationCutoff": "2026-11-02T12:05:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終本文全体を読んで数値・制度範囲・推計と実績を照合。日付は事象/公表/観測を区別。企業採算・目標と実生産の差・株価寄与の未確認数値は本文に置かない。旧記事との問い・根拠差分確認済み。別担当の公開前レビューは統合担当が実施。",
+  "comparisons": [
+    {
+      "id": "old-consumables-cap",
+      "question": "廃止された消耗品上限の金額と範囲",
+      "definition": "旧制度の同一店舗・同一日・同一購入者の消耗品税抜上限。新制度全免税条件の消滅ではない。",
+      "status": "ready",
+      "claim": "従来の消耗品の同一店舗・同一日・同一購入者に対する税抜50万円の上限も廃止された。",
+      "requiredInputs": [
+        {
+          "id": "cap",
+          "entity": "日本の旧免税制度",
+          "metric": "消耗品購入上限",
+          "periodStart": "2026-10-31",
+          "periodEnd": "2026-10-31",
+          "unit": "万円",
+          "basis": "actual",
+          "definition": "同一店舗・同一日・同一購入者、税抜価額。旧制度最終日。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cap",
+          "entity": "日本の旧免税制度",
+          "metric": "消耗品購入上限",
+          "periodStart": "2026-10-31",
+          "periodEnd": "2026-10-31",
+          "unit": "万円",
+          "basis": "actual",
+          "definition": "同一店舗・同一日・同一購入者、税抜価額。旧制度最終日。",
+          "value": 50,
+          "source": {
+            "url": "https://www.nta.go.jp/publication/pamph/shohi/menzei/201805/pdf/0025012-025_01.pdf",
+            "publishedOn": "2025-12-17",
+            "locator": "国税庁掲載告知2025年12月17日。PDF3頁（印刷2頁）免税対象物品の範囲等の見直し。50万円上限廃止は11月改訂概要Q&A問4 PDF17頁でも再確認。",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
