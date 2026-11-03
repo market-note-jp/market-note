@@ -1,0 +1,462 @@
+{
+  "version": 1,
+  "articleSlug": "theme-marvell-lumentum-shareholder-value-2026-11-03",
+  "articleSha256": "8c94cdde917e8e3c1cd7145acacaa9f07a5852afcb65c78207fda025eb033a3c",
+  "checkedAt": "2026-11-03T10:46:55.509434+00:00",
+  "informationCutoff": "2026-11-03T10:40:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "本文全体の数値と定義・期間・条件を執筆担当が一次本文と照合。独立レビューは統合担当で別途実施。日付・解除条件は監査メモに定位。年率換算を通期予想にせず、SLOOS銀行数を残高変化としない。参考式・条件表は筆者の説明で実績予測ではない。",
+  "comparisons": [
+    {
+      "id": "transaction-values",
+      "question": "買収の株式交換条件と完全希薄化後の持分。基準株価によるEVは現金支払額ではない。",
+      "definition": "買収の株式交換条件と完全希薄化後の持分。基準株価によるEVは現金支払額ではない。",
+      "status": "ready",
+      "claim": "普通株の交換比率は、Lumentum1株に対してMarvell4.500株で固定されている。取引後の完全希薄化後持分は、既存Marvell株主が約67%、Lumentum株主が約33%の見込みだ。",
+      "requiredInputs": [
+        {
+          "id": "ratio",
+          "entity": "Marvell/Lumentum",
+          "metric": "普通株交換比率",
+          "periodStart": "2026-11-02",
+          "periodEnd": "2026-11-02",
+          "unit": "Marvell株/Lumentum株",
+          "basis": "actual",
+          "definition": "普通株交換比率"
+        },
+        {
+          "id": "mshare",
+          "entity": "Marvell株主",
+          "metric": "予定完全希薄化後持分",
+          "periodStart": "2026-11-02",
+          "periodEnd": "2026-11-02",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "予定完全希薄化後持分"
+        },
+        {
+          "id": "lshare",
+          "entity": "Lumentum株主",
+          "metric": "予定完全希薄化後持分",
+          "periodStart": "2026-11-02",
+          "periodEnd": "2026-11-02",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "予定完全希薄化後持分"
+        },
+        {
+          "id": "ev",
+          "entity": "Lumentum",
+          "metric": "取引における基準株価換算企業価値",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "億USD",
+          "basis": "market",
+          "definition": "取引における基準株価換算企業価値"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ratio",
+          "entity": "Marvell/Lumentum",
+          "metric": "普通株交換比率",
+          "periodStart": "2026-11-02",
+          "periodEnd": "2026-11-02",
+          "unit": "Marvell株/Lumentum株",
+          "basis": "actual",
+          "definition": "普通株交換比率",
+          "value": 4.5,
+          "source": {
+            "url": "https://investor.marvell.com/_assets/_4b2ef940d8378f4928a6a90255e70f76/marvell/news/2026-11-02_Marvell_and_Lumentum_to_Combine_Creating_a_1040.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF1頁 取引概要",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "mshare",
+          "entity": "Marvell株主",
+          "metric": "予定完全希薄化後持分",
+          "periodStart": "2026-11-02",
+          "periodEnd": "2026-11-02",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "予定完全希薄化後持分",
+          "value": 67,
+          "source": {
+            "url": "https://investor.marvell.com/_assets/_4b2ef940d8378f4928a6a90255e70f76/marvell/news/2026-11-02_Marvell_and_Lumentum_to_Combine_Creating_a_1040.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF1頁 Post-closing",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "lshare",
+          "entity": "Lumentum株主",
+          "metric": "予定完全希薄化後持分",
+          "periodStart": "2026-11-02",
+          "periodEnd": "2026-11-02",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "予定完全希薄化後持分",
+          "value": 33,
+          "source": {
+            "url": "https://investor.marvell.com/_assets/_4b2ef940d8378f4928a6a90255e70f76/marvell/news/2026-11-02_Marvell_and_Lumentum_to_Combine_Creating_a_1040.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF1頁 Post-closing",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "ev",
+          "entity": "Lumentum",
+          "metric": "取引における基準株価換算企業価値",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "億USD",
+          "basis": "market",
+          "definition": "取引における基準株価換算企業価値",
+          "value": 1150,
+          "source": {
+            "url": "https://investor.marvell.com/_assets/_4b2ef940d8378f4928a6a90255e70f76/marvell/news/2026-11-02_Marvell_and_Lumentum_to_Combine_Creating_a_1040.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF1頁 $115 billion, October28価格基準",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "annualized-not-annual-forecast",
+      "question": "予想四半期と実績四半期を年率換算した会社参考図。各値は2026-11-02公表時点の参考値であり通期の期間ではない。",
+      "definition": "予想四半期と実績四半期を年率換算した会社参考図。各値は2026-11-02公表時点の参考値であり通期の期間ではない。",
+      "status": "ready",
+      "claim": "統合説明資料の売上高は、Marvell126億ドル、Lumentum51億ドル、合計177億ドルと示される。",
+      "requiredInputs": [
+        {
+          "id": "m",
+          "entity": "Marvell",
+          "metric": "FY2027第3四半期予想の年率換算売上",
+          "periodStart": "2026-11-02",
+          "periodEnd": "2026-11-02",
+          "unit": "億USD/年率換算",
+          "basis": "company-forecast",
+          "definition": "FY2027第3四半期予想の年率換算売上"
+        },
+        {
+          "id": "l",
+          "entity": "Lumentum",
+          "metric": "FY2027第1四半期実績の年率換算売上",
+          "periodStart": "2026-09-26",
+          "periodEnd": "2026-09-26",
+          "unit": "億USD/年率換算",
+          "basis": "actual",
+          "definition": "FY2027第1四半期実績の年率換算売上"
+        },
+        {
+          "id": "combined",
+          "entity": "参考合算",
+          "metric": "異なる四半期ベースの年率換算合計",
+          "periodStart": "2026-11-02",
+          "periodEnd": "2026-11-02",
+          "unit": "億USD/年率換算",
+          "basis": "company-forecast",
+          "definition": "異なる四半期ベースの年率換算合計"
+        }
+      ],
+      "observations": [
+        {
+          "id": "m",
+          "entity": "Marvell",
+          "metric": "FY2027第3四半期予想の年率換算売上",
+          "periodStart": "2026-11-02",
+          "periodEnd": "2026-11-02",
+          "unit": "億USD/年率換算",
+          "basis": "company-forecast",
+          "definition": "FY2027第3四半期予想の年率換算売上",
+          "value": 126,
+          "source": {
+            "url": "https://investor.marvell.com/sec-filings/all-sec-filings/content/0001193125-26-442714/d81187dex992.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "スライド20 Revenue (MRQ Annualized), FQ3’27 Guidance; Aug27予想使用",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "l",
+          "entity": "Lumentum",
+          "metric": "FY2027第1四半期実績の年率換算売上",
+          "periodStart": "2026-09-26",
+          "periodEnd": "2026-09-26",
+          "unit": "億USD/年率換算",
+          "basis": "actual",
+          "definition": "FY2027第1四半期実績の年率換算売上",
+          "value": 51,
+          "source": {
+            "url": "https://investor.marvell.com/sec-filings/all-sec-filings/content/0001193125-26-442714/d81187dex992.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "スライド20 Revenue (MRQ Annualized), FQ1’27",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "combined",
+          "entity": "参考合算",
+          "metric": "異なる四半期ベースの年率換算合計",
+          "periodStart": "2026-11-02",
+          "periodEnd": "2026-11-02",
+          "unit": "億USD/年率換算",
+          "basis": "company-forecast",
+          "definition": "異なる四半期ベースの年率換算合計",
+          "value": 177,
+          "source": {
+            "url": "https://investor.marvell.com/sec-filings/all-sec-filings/content/0001193125-26-442714/d81187dex992.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "スライド20 Pro Forma (excl. Synergies)",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "sum",
+          "operation": "sum",
+          "inputs": [
+            "m",
+            "l"
+          ],
+          "precision": 0,
+          "value": 177,
+          "definition": "会社が丸めて表示した年率換算値の加算。通期予想の計算ではない。"
+        }
+      ]
+    },
+    {
+      "id": "lumentum-growth",
+      "question": "Lumentum FY2027第1四半期と前年同期の連結売上高。期間末日を識別子とし両方Three Months Ended。",
+      "definition": "Lumentum FY2027第1四半期と前年同期の連結売上高。期間末日を識別子とし両方Three Months Ended。",
+      "status": "ready",
+      "claim": "Lumentumの9月26日終了四半期は売上高12.626億ドル、前年同期5.338億ドルに対し136.5%増だった。",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "Lumentum",
+          "metric": "連結売上高・3か月",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "億USD",
+          "basis": "actual",
+          "definition": "連結売上高・3か月"
+        },
+        {
+          "id": "previous",
+          "entity": "Lumentum",
+          "metric": "連結売上高・3か月",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "億USD",
+          "basis": "actual",
+          "definition": "連結売上高・3か月"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "Lumentum",
+          "metric": "連結売上高・3か月",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "億USD",
+          "basis": "actual",
+          "definition": "連結売上高・3か月",
+          "value": 12.626,
+          "source": {
+            "url": "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx",
+            "publishedOn": "2026-11-02",
+            "locator": "Condensed consolidated statements of operations, September26,2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "Lumentum",
+          "metric": "連結売上高・3か月",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "億USD",
+          "basis": "actual",
+          "definition": "連結売上高・3か月",
+          "value": 5.338,
+          "source": {
+            "url": "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx",
+            "publishedOn": "2026-11-02",
+            "locator": "Condensed consolidated statements of operations, September27,2025",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "precision": 1,
+          "value": 136.5,
+          "definition": "前年同期比。100millionUSDへの単位換算後も比率同じ。"
+        }
+      ]
+    },
+    {
+      "id": "operating-margin-definitions",
+      "question": "同じLumentum FY27Q1のGAAPと会社調整後営業利益率。定義差であり他社比較ではない。",
+      "definition": "同じLumentum FY27Q1のGAAPと会社調整後営業利益率。定義差であり他社比較ではない。",
+      "status": "ready",
+      "claim": "GAAP営業利益率は28.5%、会社調整後は42.3%。",
+      "requiredInputs": [
+        {
+          "id": "gaap",
+          "entity": "Lumentum",
+          "metric": "GAAP営業利益率",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "GAAP営業利益率"
+        },
+        {
+          "id": "adj",
+          "entity": "Lumentum",
+          "metric": "Non-GAAP営業利益率",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Non-GAAP営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "gaap",
+          "entity": "Lumentum",
+          "metric": "GAAP営業利益率",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "GAAP営業利益率",
+          "value": 28.5,
+          "source": {
+            "url": "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx",
+            "publishedOn": "2026-11-02",
+            "locator": "Financial Overview—Fiscal First Quarter Ended September26,2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "adj",
+          "entity": "Lumentum",
+          "metric": "Non-GAAP営業利益率",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Non-GAAP営業利益率",
+          "value": 42.3,
+          "source": {
+            "url": "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-First-Quarter-of-Fiscal-Year-2027-Financial-Results/default.aspx",
+            "publishedOn": "2026-11-02",
+            "locator": "同表Non-GAAP Results, Reconciliation of GAAP measures",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "synergy-expectation",
+      "question": "会社が見込む年率相乗効果の下限。初年度実現額や現金CFではない。",
+      "definition": "会社が見込む年率相乗効果の下限。初年度実現額や現金CFではない。",
+      "status": "ready",
+      "claim": "会社は、主に売上原価を中心とする年率10億ドル超の相乗効果と、完了後初年度のMarvell調整後EPSへの上乗せを見込む。",
+      "requiredInputs": [
+        {
+          "id": "synergy",
+          "entity": "Marvell/Lumentum",
+          "metric": "年率相乗効果の会社見通し下限（超）",
+          "periodStart": "2026-11-02",
+          "periodEnd": "2026-11-02",
+          "unit": "億USD/年",
+          "basis": "company-forecast",
+          "definition": "年率相乗効果の会社見通し下限（超）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "synergy",
+          "entity": "Marvell/Lumentum",
+          "metric": "年率相乗効果の会社見通し下限（超）",
+          "periodStart": "2026-11-02",
+          "periodEnd": "2026-11-02",
+          "unit": "億USD/年",
+          "basis": "company-forecast",
+          "definition": "年率相乗効果の会社見通し下限（超）",
+          "value": 10,
+          "source": {
+            "url": "https://investor.marvell.com/sec-filings/all-sec-filings/content/0001193125-26-442714/d81187dex992.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "スライド20〜21 $1B+ run-rate synergies primarily COGS",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "conditional-regulatory-fee",
+      "question": "条件付き規制解約料。契約8.2(d)の解除事由・他成立条件の充足と、8.2(e)の資金形態を確認。現在の支払ではない。",
+      "definition": "条件付き規制解約料。契約8.2(d)の解除事由・他成立条件の充足と、8.2(e)の資金形態を確認。現在の支払ではない。",
+      "status": "ready",
+      "claim": "MarvellからLumentumへ32億ドルの規制関連解約料",
+      "requiredInputs": [
+        {
+          "id": "fee",
+          "entity": "MarvellからLumentum",
+          "metric": "条件付き規制関連解約料",
+          "periodStart": "2026-11-01",
+          "periodEnd": "2026-11-01",
+          "unit": "億USD",
+          "basis": "actual",
+          "definition": "条件付き規制関連解約料"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fee",
+          "entity": "MarvellからLumentum",
+          "metric": "条件付き規制関連解約料",
+          "periodStart": "2026-11-01",
+          "periodEnd": "2026-11-01",
+          "unit": "億USD",
+          "basis": "actual",
+          "definition": "条件付き規制関連解約料",
+          "value": 32,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1633978/000119312526442758/d163169dex21.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "第8.2(d)〜(e)条、印刷78頁。Parent=Marvell, Company=Lumentum。$3.2bn, immediate funds。契約日Nov1、公表Nov2",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}

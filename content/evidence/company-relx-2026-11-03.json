@@ -1,0 +1,2230 @@
+{
+  "version": 1,
+  "articleSlug": "company-relx-2026-11-03",
+  "articleSha256": "e0e4e8d4ac72499f7656dcd1caeb2d4fdefc97bbe8eb38d2b8a4bcc136a0a1ad",
+  "checkedAt": "2026-11-03T10:44:03.499263+00:00",
+  "informationCutoff": "2026-11-03T19:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "執筆者が2025年報、公式5年財務表、2026上期決算本文、10月更新本文を照合。会社独自の調整CF・FCF・underlying・ROICを報告値と区別し、主要比較の入力/計算を記録。独立レビューと最終digestは統合時に実施。",
+  "comparisons": [
+    {
+      "id": "year2021",
+      "claim": "|2021|7,244|1,884|2,210|2,230|6,017|",
+      "question": "|2021|7,244|1,884|2,210|2,230|6,017|",
+      "definition": "本文に記載の連結・会計期間・通貨と会社独自指標の定義。報告値と調整値を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "売上",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "報告営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "報告営業利益"
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "調整営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整営業利益"
+        },
+        {
+          "id": "3",
+          "entity": "RELX連結",
+          "metric": "調整CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整CF"
+        },
+        {
+          "id": "4",
+          "entity": "RELX連結",
+          "metric": "純負債",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "純負債"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "売上",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 7244,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "報告営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "報告営業利益",
+          "value": 1884,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "調整営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整営業利益",
+          "value": 2210,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "3",
+          "entity": "RELX連結",
+          "metric": "調整CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整CF",
+          "value": 2230,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "4",
+          "entity": "RELX連結",
+          "metric": "純負債",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "純負債",
+          "value": 6017,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "year2022",
+      "claim": "|2022|8,553|2,323|2,683|2,709|6,604|",
+      "question": "|2022|8,553|2,323|2,683|2,709|6,604|",
+      "definition": "本文に記載の連結・会計期間・通貨と会社独自指標の定義。報告値と調整値を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "売上",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "報告営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "報告営業利益"
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "調整営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整営業利益"
+        },
+        {
+          "id": "3",
+          "entity": "RELX連結",
+          "metric": "調整CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整CF"
+        },
+        {
+          "id": "4",
+          "entity": "RELX連結",
+          "metric": "純負債",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "純負債"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "売上",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 8553,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "報告営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "報告営業利益",
+          "value": 2323,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "調整営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整営業利益",
+          "value": 2683,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "3",
+          "entity": "RELX連結",
+          "metric": "調整CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整CF",
+          "value": 2709,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "4",
+          "entity": "RELX連結",
+          "metric": "純負債",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "純負債",
+          "value": 6604,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "year2023",
+      "claim": "|2023|9,161|2,682|3,030|2,962|6,446|",
+      "question": "|2023|9,161|2,682|3,030|2,962|6,446|",
+      "definition": "本文に記載の連結・会計期間・通貨と会社独自指標の定義。報告値と調整値を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "売上",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "報告営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "報告営業利益"
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "調整営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整営業利益"
+        },
+        {
+          "id": "3",
+          "entity": "RELX連結",
+          "metric": "調整CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整CF"
+        },
+        {
+          "id": "4",
+          "entity": "RELX連結",
+          "metric": "純負債",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "純負債"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "売上",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 9161,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "報告営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "報告営業利益",
+          "value": 2682,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "調整営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整営業利益",
+          "value": 3030,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "3",
+          "entity": "RELX連結",
+          "metric": "調整CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整CF",
+          "value": 2962,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "4",
+          "entity": "RELX連結",
+          "metric": "純負債",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "純負債",
+          "value": 6446,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "year2024",
+      "claim": "|2024|9,434|2,861|3,199|3,101|6,563|",
+      "question": "|2024|9,434|2,861|3,199|3,101|6,563|",
+      "definition": "本文に記載の連結・会計期間・通貨と会社独自指標の定義。報告値と調整値を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "売上",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "報告営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "報告営業利益"
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "調整営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整営業利益"
+        },
+        {
+          "id": "3",
+          "entity": "RELX連結",
+          "metric": "調整CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整CF"
+        },
+        {
+          "id": "4",
+          "entity": "RELX連結",
+          "metric": "純負債",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "純負債"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "売上",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 9434,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "報告営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "報告営業利益",
+          "value": 2861,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "調整営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整営業利益",
+          "value": 3199,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "3",
+          "entity": "RELX連結",
+          "metric": "調整CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整CF",
+          "value": 3101,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "4",
+          "entity": "RELX連結",
+          "metric": "純負債",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "純負債",
+          "value": 6563,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "year2025",
+      "claim": "|2025|9,590|3,027|3,342|3,301|7,201|",
+      "question": "|2025|9,590|3,027|3,342|3,301|7,201|",
+      "definition": "本文に記載の連結・会計期間・通貨と会社独自指標の定義。報告値と調整値を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "売上",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "報告営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "報告営業利益"
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "調整営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整営業利益"
+        },
+        {
+          "id": "3",
+          "entity": "RELX連結",
+          "metric": "調整CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整CF"
+        },
+        {
+          "id": "4",
+          "entity": "RELX連結",
+          "metric": "純負債",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "純負債"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "売上",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 9590,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "報告営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "報告営業利益",
+          "value": 3027,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "調整営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整営業利益",
+          "value": 3342,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "3",
+          "entity": "RELX連結",
+          "metric": "調整CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整CF",
+          "value": 3301,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "4",
+          "entity": "RELX連結",
+          "metric": "純負債",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "純負債",
+          "value": 7201,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "margin",
+      "claim": "調整営業利益率は30.5%から34.8%へ改善しました。これは成長の全てが買戻しによる1株指標の改善ではないことを示します。一方、為替、事業売却、展示会の回復などを含む5年間なので、売上の増加率をそのまま今後の需要成長へ延長できません。[公式5年財務・2021–2025年、11月3日確認](https://www.relx.com/investors/key-financial-data)",
+      "question": "調整営業利益率は30.5%から34.8%へ改善しました。これは成長の全てが買戻しによる1株指標の改善ではないことを示します。一方、為替、事業売却、展示会の回復などを含む5年間なので、売上の増加率をそのまま今後の需要成長へ延長できません。[公式5年財務・2021–2025年、11月3日確認](https://www.relx.com/investors/key-financial-data)",
+      "definition": "本文に記載の連結・会計期間・通貨と会社独自指標の定義。報告値と調整値を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "調整営業利益率",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整営業利益率"
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "調整営業利益率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "調整営業利益率",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整営業利益率",
+          "value": 30.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "調整営業利益率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整営業利益率",
+          "value": 34.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Five year summary, printed p186",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "half-growth",
+      "claim": "2026年上期は売上4,741→4,871百万ポンド、ポンド表示で会社公表の増収率は3%。一方、為替一定では5%、underlyingでは7%でした。underlyingは、為替だけでなく、一定の買収・売却、紙・紙関連、展示会開催周期や時期ずれも除いた会社独自の成長率です。",
+      "question": "2026年上期は売上4,741→4,871百万ポンド、ポンド表示で会社公表の増収率は3%。一方、為替一定では5%、underlyingでは7%でした。underlyingは、為替だけでなく、一定の買収・売却、紙・紙関連、展示会開催周期や時期ずれも除いた会社独自の成長率です。",
+      "definition": "本文に記載の連結・会計期間・通貨と会社独自指標の定義。報告値と調整値を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "売上",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "売上",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "報告増収率会社丸め値",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "報告増収率会社丸め値"
+        },
+        {
+          "id": "3",
+          "entity": "RELX連結",
+          "metric": "為替一定増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "為替一定増収率"
+        },
+        {
+          "id": "4",
+          "entity": "RELX連結",
+          "metric": "underlying増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "underlying増収率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "売上",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 4741,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Financial summary, PDF3",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "売上",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 4871,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Financial summary, PDF3",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "報告増収率会社丸め値",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "報告増収率会社丸め値",
+          "value": 3,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Financial summary, PDF3",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "3",
+          "entity": "RELX連結",
+          "metric": "為替一定増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "為替一定増収率",
+          "value": 5,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Financial summary, PDF3",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "4",
+          "entity": "RELX連結",
+          "metric": "underlying増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "underlying増収率",
+          "value": 7,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Financial summary, PDF3",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "print",
+      "claim": "上期の紙・紙関連売上は189→157百万ポンド。したがって、成長事業の強さを見るにはunderlyingが役立つ一方、縮小事業も含めた全社の現金を考えるときに、除外した部分を忘れてはいけません。**調整は不正の証拠ではなく、問いに合う数字を選ぶための手掛かり**です。[上期決算・PDF3–4頁、対象2026年1–6月](https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf)",
+      "question": "上期の紙・紙関連売上は189→157百万ポンド。したがって、成長事業の強さを見るにはunderlyingが役立つ一方、縮小事業も含めた全社の現金を考えるときに、除外した部分を忘れてはいけません。**調整は不正の証拠ではなく、問いに合う数字を選ぶための手掛かり**です。[上期決算・PDF3–4頁、対象2026年1–6月](https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf)",
+      "definition": "本文に記載の連結・会計期間・通貨と会社独自指標の定義。報告値と調整値を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "紙関連売上",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "紙関連売上"
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "紙関連売上",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "紙関連売上"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "紙関連売上",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "紙関連売上",
+          "value": 189,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Business area analysis, PDF4",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "紙関連売上",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "紙関連売上",
+          "value": 157,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Business area analysis, PDF4",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "october",
+      "claim": "10月22日更新では1–9月のunderlying増収率は全社7%、Risk8%、STM6%、Legal10%、展示会4%。会社は通期見通しを維持しました。展示会には中東の混乱の影響があるとしています。法務・科学分野ではAI対応製品の採用を成長要因に挙げていますが、AI単独の売上・利益や、価格と数量の完全な分解は公表文からは確認できません。[10月22日更新、対象2026年1–9月](https://www.relx.com/media/press-releases/year-2026/trading-update-oct)",
+      "question": "10月22日更新では1–9月のunderlying増収率は全社7%、Risk8%、STM6%、Legal10%、展示会4%。会社は通期見通しを維持しました。展示会には中東の混乱の影響があるとしています。法務・科学分野ではAI対応製品の採用を成長要因に挙げていますが、AI単独の売上・利益や、価格と数量の完全な分解は公表文からは確認できません。[10月22日更新、対象2026年1–9月](https://www.relx.com/media/press-releases/year-2026/trading-update-oct)",
+      "definition": "本文に記載の連結・会計期間・通貨と会社独自指標の定義。報告値と調整値を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "全社underlying増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "全社underlying増収率"
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "Risk同率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Risk同率"
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "STM同率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "STM同率"
+        },
+        {
+          "id": "3",
+          "entity": "RELX連結",
+          "metric": "Legal同率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Legal同率"
+        },
+        {
+          "id": "4",
+          "entity": "RELX連結",
+          "metric": "展示会同率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "展示会同率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "全社underlying増収率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "全社underlying増収率",
+          "value": 7,
+          "source": {
+            "url": "https://www.relx.com/media/press-releases/year-2026/trading-update-oct",
+            "publishedOn": "2026-10-22",
+            "locator": "Highlights and business segments",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "Risk同率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Risk同率",
+          "value": 8,
+          "source": {
+            "url": "https://www.relx.com/media/press-releases/year-2026/trading-update-oct",
+            "publishedOn": "2026-10-22",
+            "locator": "Highlights and business segments",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "STM同率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "STM同率",
+          "value": 6,
+          "source": {
+            "url": "https://www.relx.com/media/press-releases/year-2026/trading-update-oct",
+            "publishedOn": "2026-10-22",
+            "locator": "Highlights and business segments",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "3",
+          "entity": "RELX連結",
+          "metric": "Legal同率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Legal同率",
+          "value": 10,
+          "source": {
+            "url": "https://www.relx.com/media/press-releases/year-2026/trading-update-oct",
+            "publishedOn": "2026-10-22",
+            "locator": "Highlights and business segments",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "4",
+          "entity": "RELX連結",
+          "metric": "展示会同率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "展示会同率",
+          "value": 4,
+          "source": {
+            "url": "https://www.relx.com/media/press-releases/year-2026/trading-update-oct",
+            "publishedOn": "2026-10-22",
+            "locator": "Highlights and business segments",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "annual-cf",
+      "claim": "2025年の会社定義のFCFは、調整CF3,301から純支払利息261、現金税638、買収・売却関連支払89を差し引いた2,313百万ポンド。配当1,181の後には1,132が残りました。これに対し、自社株買いは1,500。買収などの資金配分も加わり、年末純負債は前年末より638増えています。[2025年報・Financial review、印刷68–69頁、APM203頁](https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm)",
+      "question": "2025年の会社定義のFCFは、調整CF3,301から純支払利息261、現金税638、買収・売却関連支払89を差し引いた2,313百万ポンド。配当1,181の後には1,132が残りました。これに対し、自社株買いは1,500。買収などの資金配分も加わり、年末純負債は前年末より638増えています。[2025年報・Financial review、印刷68–69頁、APM203頁](https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm)",
+      "definition": "本文に記載の連結・会計期間・通貨と会社独自指標の定義。報告値と調整値を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "調整CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整CF"
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "純支払利息",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "純支払利息"
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "現金税",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "現金税"
+        },
+        {
+          "id": "3",
+          "entity": "RELX連結",
+          "metric": "買収売却関連支払",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "買収売却関連支払"
+        },
+        {
+          "id": "4",
+          "entity": "RELX連結",
+          "metric": "配当前FCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "配当前FCF"
+        },
+        {
+          "id": "5",
+          "entity": "RELX連結",
+          "metric": "配当",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "配当"
+        },
+        {
+          "id": "6",
+          "entity": "RELX連結",
+          "metric": "配当後FCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "配当後FCF"
+        },
+        {
+          "id": "7",
+          "entity": "RELX連結",
+          "metric": "自社株買い",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "自社株買い"
+        },
+        {
+          "id": "8",
+          "entity": "RELX連結",
+          "metric": "純負債増分",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "純負債増分"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "調整CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整CF",
+          "value": 3301,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Financial review printed pp68–69, APM p203",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "純支払利息",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "純支払利息",
+          "value": 261,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Financial review printed pp68–69, APM p203",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "現金税",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "現金税",
+          "value": 638,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Financial review printed pp68–69, APM p203",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "3",
+          "entity": "RELX連結",
+          "metric": "買収売却関連支払",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "買収売却関連支払",
+          "value": 89,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Financial review printed pp68–69, APM p203",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "4",
+          "entity": "RELX連結",
+          "metric": "配当前FCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "配当前FCF",
+          "value": 2313,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Financial review printed pp68–69, APM p203",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "5",
+          "entity": "RELX連結",
+          "metric": "配当",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "配当",
+          "value": 1181,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Financial review printed pp68–69, APM p203",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "6",
+          "entity": "RELX連結",
+          "metric": "配当後FCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "配当後FCF",
+          "value": 1132,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Financial review printed pp68–69, APM p203",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "7",
+          "entity": "RELX連結",
+          "metric": "自社株買い",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "自社株買い",
+          "value": 1500,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Financial review printed pp68–69, APM p203",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "8",
+          "entity": "RELX連結",
+          "metric": "純負債増分",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "純負債増分",
+          "value": 638,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Financial review printed pp68–69, APM p203",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "less-interest",
+          "operation": "difference",
+          "inputs": [
+            "0",
+            "1"
+          ],
+          "definition": "調整CF−純支払利息",
+          "precision": 0,
+          "value": 3040
+        },
+        {
+          "id": "less-tax",
+          "operation": "difference",
+          "inputs": [
+            "less-interest",
+            "2"
+          ],
+          "definition": "さらに現金税控除",
+          "precision": 0,
+          "value": 2402
+        },
+        {
+          "id": "free-cash",
+          "operation": "difference",
+          "inputs": [
+            "less-tax",
+            "3"
+          ],
+          "definition": "さらに買収売却関連支払控除",
+          "precision": 0,
+          "value": 2313
+        },
+        {
+          "id": "post-div",
+          "operation": "difference",
+          "inputs": [
+            "4",
+            "5"
+          ],
+          "definition": "配当前FCF−配当",
+          "precision": 0,
+          "value": 1132
+        }
+      ]
+    },
+    {
+      "id": "h1-adjustedcf",
+      "claim": "|調整CF|1,691|利息・税金等の控除前|",
+      "question": "|調整CF|1,691|利息・税金等の控除前|",
+      "definition": "本文に記載の連結・会計期間・通貨と会社独自指標の定義。報告値と調整値を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "調整CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "調整CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整CF",
+          "value": 1691,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Free cash flow, PDF11",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "h1-fcf",
+      "claim": "|配当前FCF|1,163|1,691−166−342−20|",
+      "question": "|配当前FCF|1,163|1,691−166−342−20|",
+      "definition": "本文に記載の連結・会計期間・通貨と会社独自指標の定義。報告値と調整値を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "調整CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整CF"
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "純支払利息",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "純支払利息"
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "現金税",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "現金税"
+        },
+        {
+          "id": "3",
+          "entity": "RELX連結",
+          "metric": "買収売却関連支払",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "買収売却関連支払"
+        },
+        {
+          "id": "4",
+          "entity": "RELX連結",
+          "metric": "FCF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "FCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "調整CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整CF",
+          "value": 1691,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Free cash flow, PDF11",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "純支払利息",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "純支払利息",
+          "value": 166,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Free cash flow, PDF11",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "現金税",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "現金税",
+          "value": 342,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Free cash flow, PDF11",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "3",
+          "entity": "RELX連結",
+          "metric": "買収売却関連支払",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "買収売却関連支払",
+          "value": 20,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Free cash flow, PDF11",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "4",
+          "entity": "RELX連結",
+          "metric": "FCF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "FCF",
+          "value": 1163,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Free cash flow, PDF11",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "less-interest",
+          "operation": "difference",
+          "inputs": [
+            "0",
+            "1"
+          ],
+          "definition": "調整CF−純支払利息",
+          "precision": 0,
+          "value": 1525
+        },
+        {
+          "id": "less-tax",
+          "operation": "difference",
+          "inputs": [
+            "less-interest",
+            "2"
+          ],
+          "definition": "さらに現金税控除",
+          "precision": 0,
+          "value": 1183
+        },
+        {
+          "id": "free-cash",
+          "operation": "difference",
+          "inputs": [
+            "less-tax",
+            "3"
+          ],
+          "definition": "さらに買収売却関連支払控除",
+          "precision": 0,
+          "value": 1163
+        }
+      ]
+    },
+    {
+      "id": "h1-dividend",
+      "claim": "|配当後FCF|312|1,163−851|",
+      "question": "|配当後FCF|312|1,163−851|",
+      "definition": "本文に記載の連結・会計期間・通貨と会社独自指標の定義。報告値と調整値を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "FCF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "FCF"
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "配当",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "配当"
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "配当後FCF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "配当後FCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "FCF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "FCF",
+          "value": 1163,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Free cash flow, PDF11",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "配当",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "配当",
+          "value": 851,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Free cash flow, PDF11",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "配当後FCF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "配当後FCF",
+          "value": 312,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Free cash flow, PDF11",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "post-div",
+          "operation": "difference",
+          "inputs": [
+            "0",
+            "1"
+          ],
+          "definition": "FCF−配当",
+          "precision": 0,
+          "value": 312
+        }
+      ]
+    },
+    {
+      "id": "h1-buyback",
+      "claim": "|自社株買い|1,750|資金の使途であり費用ではない|",
+      "question": "|自社株買い|1,750|資金の使途であり費用ではない|",
+      "definition": "本文に記載の連結・会計期間・通貨と会社独自指標の定義。報告値と調整値を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "自社株買い",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "自社株買い"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "自社株買い",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "自社株買い",
+          "value": 1750,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Net debt reconciliation, PDF11",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "h1-debt",
+      "claim": "|6月末純負債|8,733|前年末7,201から1,532増加|",
+      "question": "|6月末純負債|8,733|前年末7,201から1,532増加|",
+      "definition": "本文に記載の連結・会計期間・通貨と会社独自指標の定義。報告値と調整値を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "純負債",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "純負債"
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "純負債",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "純負債"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "純負債",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "純負債",
+          "value": 8733,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Net debt reconciliation, PDF11",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "純負債",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "純負債",
+          "value": 7201,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Net debt reconciliation, PDF11",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "increase",
+          "operation": "difference",
+          "inputs": [
+            "0",
+            "1"
+          ],
+          "definition": "期末純負債−前年末純負債",
+          "precision": 0,
+          "value": 1532
+        }
+      ]
+    },
+    {
+      "id": "h1-development",
+      "claim": "2026年上期の設備・開発投資292百万ポンドのうち280は資産計上された開発費です。工場設備の少ない企業だからといって、再投資が不要ではありません。さらに調整CFの増減には運転資本等も入ります。利益と現金の差を全て回収遅れとみなすのではなく、開発投資、支払時期、債権・前受金などを確認する必要があります。[上期決算・PDF10頁](https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf)",
+      "question": "2026年上期の設備・開発投資292百万ポンドのうち280は資産計上された開発費です。工場設備の少ない企業だからといって、再投資が不要ではありません。さらに調整CFの増減には運転資本等も入ります。利益と現金の差を全て回収遅れとみなすのではなく、開発投資、支払時期、債権・前受金などを確認する必要があります。[上期決算・PDF10頁](https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf)",
+      "definition": "本文に記載の連結・会計期間・通貨と会社独自指標の定義。報告値と調整値を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "設備開発投資",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "設備開発投資"
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "資産計上開発費",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "資産計上開発費"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "設備開発投資",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "設備開発投資",
+          "value": 292,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Cash flows, PDF10",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "資産計上開発費",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "資産計上開発費",
+          "value": 280,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Cash flows, PDF10",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "roic",
+      "claim": "会社ROICは2025年15.4%。定義は調整税引後営業利益2,590を平均投下資本16,799で割ったものです。投下資本は買収無形資産等の累積償却・減損を戻す調整を含み、単純な貸借対照表の純資産ではありません。買収を重ねる会社を評価する際に、償却で小さくなった簿価だけを分母にしない点は有用です。他社の同名ROICとの直接比較は避けます。[2025年報・ROIC定義、印刷204頁](https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm)",
+      "question": "会社ROICは2025年15.4%。定義は調整税引後営業利益2,590を平均投下資本16,799で割ったものです。投下資本は買収無形資産等の累積償却・減損を戻す調整を含み、単純な貸借対照表の純資産ではありません。買収を重ねる会社を評価する際に、償却で小さくなった簿価だけを分母にしない点は有用です。他社の同名ROICとの直接比較は避けます。[2025年報・ROIC定義、印刷204頁](https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm)",
+      "definition": "本文に記載の連結・会計期間・通貨と会社独自指標の定義。報告値と調整値を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "ROIC",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "ROIC"
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "調整税引後営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整税引後営業利益"
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "平均投下資本",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "平均投下資本"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "ROIC",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "ROIC",
+          "value": 15.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "APM, printed p204",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "調整税引後営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "調整税引後営業利益",
+          "value": 2590,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "APM, printed p204",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "平均投下資本",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万GBP",
+          "basis": "actual",
+          "definition": "平均投下資本",
+          "value": 16799,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/929869/000110465926017277/relx-20251231xex15d2.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "APM, printed p204",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "roic-value",
+          "operation": "ratio-percent",
+          "inputs": [
+            "1",
+            "2"
+          ],
+          "definition": "調整税引後営業利益÷平均投下資本×100",
+          "precision": 1,
+          "value": 15.4
+        }
+      ]
+    },
+    {
+      "id": "liquidity",
+      "claim": "6月末の未使用のコミット済み銀行枠は約41億米ドル。うち35億米ドルは2030年11月満期で、2年間の延長選択肢があります。これは上表の英ポンドとは別通貨です。会社定義の純負債（年金を含む）／EBITDAは、米ドル換算で前年末2.0倍から2.3倍へ上がりました。未使用枠は資金繰りの支えですが、使えば返済義務が増えるため負債の減少とは違います。純負債の増加だけで資金繰り難とは結論せず、還元後の負債、金利、借換え条件を継続して見ます。[上期決算・PDF12頁、Debt・Liquidity](https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf)",
+      "question": "6月末の未使用のコミット済み銀行枠は約41億米ドル。うち35億米ドルは2030年11月満期で、2年間の延長選択肢があります。これは上表の英ポンドとは別通貨です。会社定義の純負債（年金を含む）／EBITDAは、米ドル換算で前年末2.0倍から2.3倍へ上がりました。未使用枠は資金繰りの支えですが、使えば返済義務が増えるため負債の減少とは違います。純負債の増加だけで資金繰り難とは結論せず、還元後の負債、金利、借換え条件を継続して見ます。[上期決算・PDF12頁、Debt・Liquidity](https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf)",
+      "definition": "本文に記載の連結・会計期間・通貨と会社独自指標の定義。報告値と調整値を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "未使用銀行枠",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "十億USD",
+          "basis": "actual",
+          "definition": "未使用銀行枠"
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "2030年11月満期銀行枠",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "十億USD",
+          "basis": "actual",
+          "definition": "2030年11月満期銀行枠"
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "純負債年金込み対EBITDA会社米ドル定義",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "純負債年金込み対EBITDA会社米ドル定義"
+        },
+        {
+          "id": "3",
+          "entity": "RELX連結",
+          "metric": "純負債年金込み対EBITDA会社米ドル定義",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "純負債年金込み対EBITDA会社米ドル定義"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "RELX連結",
+          "metric": "未使用銀行枠",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "十億USD",
+          "basis": "actual",
+          "definition": "未使用銀行枠",
+          "value": 4.1,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Debt and Liquidity, PDF12",
+            "kind": "primary",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "1",
+          "entity": "RELX連結",
+          "metric": "2030年11月満期銀行枠",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "十億USD",
+          "basis": "actual",
+          "definition": "2030年11月満期銀行枠",
+          "value": 3.5,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Debt and Liquidity, PDF12",
+            "kind": "primary",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "2",
+          "entity": "RELX連結",
+          "metric": "純負債年金込み対EBITDA会社米ドル定義",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "純負債年金込み対EBITDA会社米ドル定義",
+          "value": 2,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Debt and Liquidity, PDF12",
+            "kind": "primary",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "3",
+          "entity": "RELX連結",
+          "metric": "純負債年金込み対EBITDA会社米ドル定義",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "純負債年金込み対EBITDA会社米ドル定義",
+          "value": 2.3,
+          "source": {
+            "url": "https://www.relx.com/~/media/Files/R/RELX-Group/documents/press-releases/2026/first-half-results-2026-pressrelease.pdf",
+            "publishedOn": "2026-07-23",
+            "locator": "Debt and Liquidity, PDF12",
+            "kind": "primary",
+            "pdfPage": 12
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
