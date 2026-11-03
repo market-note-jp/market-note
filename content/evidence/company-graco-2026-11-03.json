@@ -1,0 +1,2951 @@
+{
+  "version": 1,
+  "articleSlug": "company-graco-2026-11-03",
+  "articleSha256": "49a42eed2c3afb6c7f22a2abfd13759c561a825912c37b5b7c7ba04aaeb18eb3",
+  "checkedAt": "2026-11-03T10:46:23.472961+00:00",
+  "informationCutoff": "2026-11-03T19:40:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "著者一次本文照合。5年財務/FCF/Q3/累計/部門/買収/資金配分/会社予想を網羅。FY表は2025年報告書PDF7頁の原数値、2021〜23は2023年報告書損益CFにも照合。新調整定義・部門比較は最新再掲値を使用。ABB2029末は会社の初設置目標で金額未公表。独立監査と最終ダイジェストは統合時に実施。 独立レビューでExpansion Markets前年Q3の注記42.339とMD&A42.4の表示差を確認し脚注追加。部門表はMD&A準拠、連結はPLを使用。",
+  "comparisons": [
+    {
+      "id": "fy2021",
+      "question": "| 2021 | 1,987.6 | 531.3 | 456.9 | 133.6 | 323.3 |",
+      "claim": "| 2021 | 1,987.6 | 531.3 | 456.9 | 133.6 | 323.3 |",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2020-12-26",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "GAAP営業利益",
+          "periodStart": "2020-12-26",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "営業CF",
+          "periodStart": "2020-12-26",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "設備投資支出",
+          "periodStart": "2020-12-26",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2020-12-26",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 1987.608,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/0000042888/000119312526101276/d93954dars.pdf",
+            "publishedOn": "2026-03-11",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "GAAP営業利益",
+          "periodStart": "2020-12-26",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 531.323,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/0000042888/000119312526101276/d93954dars.pdf",
+            "publishedOn": "2026-03-11",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "営業CF",
+          "periodStart": "2020-12-26",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 456.896,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/0000042888/000119312526101276/d93954dars.pdf",
+            "publishedOn": "2026-03-11",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "設備投資支出",
+          "periodStart": "2020-12-26",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出",
+          "value": 133.566,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/0000042888/000119312526101276/d93954dars.pdf",
+            "publishedOn": "2026-03-11",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "i2",
+            "i3"
+          ],
+          "definition": "営業CF−有形固定資産現金支出",
+          "precision": 1,
+          "value": 323.3
+        }
+      ]
+    },
+    {
+      "id": "fy2022",
+      "question": "| 2022 | 2,143.5 | 572.7 | 377.4 | 201.2 | 176.2 |",
+      "claim": "| 2022 | 2,143.5 | 572.7 | 377.4 | 201.2 | 176.2 |",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "GAAP営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "設備投資支出",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 2143.521,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/0000042888/000119312526101276/d93954dars.pdf",
+            "publishedOn": "2026-03-11",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "GAAP営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 572.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/0000042888/000119312526101276/d93954dars.pdf",
+            "publishedOn": "2026-03-11",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 377.394,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/0000042888/000119312526101276/d93954dars.pdf",
+            "publishedOn": "2026-03-11",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "設備投資支出",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出",
+          "value": 201.161,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/0000042888/000119312526101276/d93954dars.pdf",
+            "publishedOn": "2026-03-11",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "i2",
+            "i3"
+          ],
+          "definition": "営業CF−有形固定資産現金支出",
+          "precision": 1,
+          "value": 176.2
+        }
+      ]
+    },
+    {
+      "id": "fy2023",
+      "question": "| 2023 | 2,195.6 | 646.8 | 651.0 | 184.8 | 466.2 |",
+      "claim": "| 2023 | 2,195.6 | 646.8 | 651.0 | 184.8 | 466.2 |",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2023-12-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "GAAP営業利益",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2023-12-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "営業CF",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2023-12-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "設備投資支出",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2023-12-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2023-12-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 2195.606,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/0000042888/000119312526101276/d93954dars.pdf",
+            "publishedOn": "2026-03-11",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "GAAP営業利益",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2023-12-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 646.843,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/0000042888/000119312526101276/d93954dars.pdf",
+            "publishedOn": "2026-03-11",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "営業CF",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2023-12-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 651.017,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/0000042888/000119312526101276/d93954dars.pdf",
+            "publishedOn": "2026-03-11",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "設備投資支出",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2023-12-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出",
+          "value": 184.775,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/0000042888/000119312526101276/d93954dars.pdf",
+            "publishedOn": "2026-03-11",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "i2",
+            "i3"
+          ],
+          "definition": "営業CF−有形固定資産現金支出",
+          "precision": 1,
+          "value": 466.2
+        }
+      ]
+    },
+    {
+      "id": "fy2024",
+      "question": "| 2024 | 2,113.3 | 570.1 | 621.7 | 106.7 | 515.0 |",
+      "claim": "| 2024 | 2,113.3 | 570.1 | 621.7 | 106.7 | 515.0 |",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2023-12-30",
+          "periodEnd": "2024-12-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "GAAP営業利益",
+          "periodStart": "2023-12-30",
+          "periodEnd": "2024-12-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "営業CF",
+          "periodStart": "2023-12-30",
+          "periodEnd": "2024-12-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "設備投資支出",
+          "periodStart": "2023-12-30",
+          "periodEnd": "2024-12-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2023-12-30",
+          "periodEnd": "2024-12-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 2113.316,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/0000042888/000119312526101276/d93954dars.pdf",
+            "publishedOn": "2026-03-11",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "GAAP営業利益",
+          "periodStart": "2023-12-30",
+          "periodEnd": "2024-12-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 570.098,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/0000042888/000119312526101276/d93954dars.pdf",
+            "publishedOn": "2026-03-11",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "営業CF",
+          "periodStart": "2023-12-30",
+          "periodEnd": "2024-12-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 621.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/0000042888/000119312526101276/d93954dars.pdf",
+            "publishedOn": "2026-03-11",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "設備投資支出",
+          "periodStart": "2023-12-30",
+          "periodEnd": "2024-12-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出",
+          "value": 106.737,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/0000042888/000119312526101276/d93954dars.pdf",
+            "publishedOn": "2026-03-11",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "i2",
+            "i3"
+          ],
+          "definition": "営業CF−有形固定資産現金支出",
+          "precision": 1,
+          "value": 515
+        }
+      ]
+    },
+    {
+      "id": "fy2025",
+      "question": "| 2025 | 2,236.6 | 624.8 | 683.6 | 45.7 | 637.9 |",
+      "claim": "| 2025 | 2,236.6 | 624.8 | 683.6 | 45.7 | 637.9 |",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-12-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "GAAP営業利益",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-12-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "営業CF",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-12-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "設備投資支出",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-12-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-12-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 2236.604,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/0000042888/000119312526101276/d93954dars.pdf",
+            "publishedOn": "2026-03-11",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "GAAP営業利益",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-12-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 624.797,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/0000042888/000119312526101276/d93954dars.pdf",
+            "publishedOn": "2026-03-11",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "営業CF",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-12-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 683.591,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/0000042888/000119312526101276/d93954dars.pdf",
+            "publishedOn": "2026-03-11",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "設備投資支出",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-12-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出",
+          "value": 45.669,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/0000042888/000119312526101276/d93954dars.pdf",
+            "publishedOn": "2026-03-11",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "i2",
+            "i3"
+          ],
+          "definition": "営業CF−有形固定資産現金支出",
+          "precision": 1,
+          "value": 637.9
+        }
+      ]
+    },
+    {
+      "id": "quarter-sales",
+      "question": "| 売上高 | 543.4 | 586.4 |",
+      "claim": "| 売上高 | 543.4 | 586.4 |",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "売上高2025Q3",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高2025Q3"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "売上高2026Q3",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高2026Q3"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "売上高2025Q3",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高2025Q3",
+          "value": 543.4,
+          "source": {
+            "url": "https://investors.graco.com/news-releases/news-release-details/graco-reports-record-third-quarter-sales-0",
+            "publishedOn": "2026-10-21",
+            "locator": "本文の数値・調整表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "売上高2026Q3",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高2026Q3",
+          "value": 586.4,
+          "source": {
+            "url": "https://investors.graco.com/news-releases/news-release-details/graco-reports-record-third-quarter-sales-0",
+            "publishedOn": "2026-10-21",
+            "locator": "本文の数値・調整表",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "quarter-op",
+      "question": "| GAAP営業利益 | 164.7 | 148.1 |",
+      "claim": "| GAAP営業利益 | 164.7 | 148.1 |",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "GAAP営業利益2025Q3",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益2025Q3"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "GAAP営業利益2026Q3",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益2026Q3"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "GAAP営業利益2025Q3",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益2025Q3",
+          "value": 164.7,
+          "source": {
+            "url": "https://investors.graco.com/news-releases/news-release-details/graco-reports-record-third-quarter-sales-0",
+            "publishedOn": "2026-10-21",
+            "locator": "本文の数値・調整表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "GAAP営業利益2026Q3",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益2026Q3",
+          "value": 148.1,
+          "source": {
+            "url": "https://investors.graco.com/news-releases/news-release-details/graco-reports-record-third-quarter-sales-0",
+            "publishedOn": "2026-10-21",
+            "locator": "本文の数値・調整表",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "quarter-adjop",
+      "question": "| 調整後営業利益 | 158.7 | 160.9 |",
+      "claim": "| 調整後営業利益 | 158.7 | 160.9 |",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "調整後営業利益2025Q3",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "調整後営業利益2025Q3"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "調整後営業利益2026Q3",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "調整後営業利益2026Q3"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "調整後営業利益2025Q3",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "調整後営業利益2025Q3",
+          "value": 158.7,
+          "source": {
+            "url": "https://investors.graco.com/news-releases/news-release-details/graco-reports-record-third-quarter-sales-0",
+            "publishedOn": "2026-10-21",
+            "locator": "本文の数値・調整表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "調整後営業利益2026Q3",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "調整後営業利益2026Q3",
+          "value": 160.9,
+          "source": {
+            "url": "https://investors.graco.com/news-releases/news-release-details/graco-reports-record-third-quarter-sales-0",
+            "publishedOn": "2026-10-21",
+            "locator": "本文の数値・調整表",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "quarter-eps",
+      "question": "| GAAP希薄化後EPS（ドル） | 0.82 | 0.75 |",
+      "claim": "| GAAP希薄化後EPS（ドル） | 0.82 | 0.75 |",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "GAAP希薄化後EPS（ドル）2025Q3",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "GAAP希薄化後EPS（ドル）2025Q3"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "GAAP希薄化後EPS（ドル）2026Q3",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "GAAP希薄化後EPS（ドル）2026Q3"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "GAAP希薄化後EPS（ドル）2025Q3",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "GAAP希薄化後EPS（ドル）2025Q3",
+          "value": 0.82,
+          "source": {
+            "url": "https://investors.graco.com/news-releases/news-release-details/graco-reports-record-third-quarter-sales-0",
+            "publishedOn": "2026-10-21",
+            "locator": "本文の数値・調整表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "GAAP希薄化後EPS（ドル）2026Q3",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "GAAP希薄化後EPS（ドル）2026Q3",
+          "value": 0.75,
+          "source": {
+            "url": "https://investors.graco.com/news-releases/news-release-details/graco-reports-record-third-quarter-sales-0",
+            "publishedOn": "2026-10-21",
+            "locator": "本文の数値・調整表",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "quarter-adjeps",
+      "question": "| 調整後希薄化後EPS（ドル） | 0.77 | 0.81 |",
+      "claim": "| 調整後希薄化後EPS（ドル） | 0.77 | 0.81 |",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "調整後希薄化後EPS（ドル）2025Q3",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "調整後希薄化後EPS（ドル）2025Q3"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "調整後希薄化後EPS（ドル）2026Q3",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "調整後希薄化後EPS（ドル）2026Q3"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "調整後希薄化後EPS（ドル）2025Q3",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "調整後希薄化後EPS（ドル）2025Q3",
+          "value": 0.77,
+          "source": {
+            "url": "https://investors.graco.com/news-releases/news-release-details/graco-reports-record-third-quarter-sales-0",
+            "publishedOn": "2026-10-21",
+            "locator": "本文の数値・調整表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "調整後希薄化後EPS（ドル）2026Q3",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "調整後希薄化後EPS（ドル）2026Q3",
+          "value": 0.81,
+          "source": {
+            "url": "https://investors.graco.com/news-releases/news-release-details/graco-reports-record-third-quarter-sales-0",
+            "publishedOn": "2026-10-21",
+            "locator": "本文の数値・調整表",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "sales-bridge",
+      "question": "会社の売上増減分析では、四半期の増収8%は、数量・価格の合計4ポイント、買収4ポイント、為替0ポイント。一方、9か月累計の増収4%は、数量・価格がマイナス1ポイント、買収4ポイント、為替1ポイントです。**足元の改善と、年間を通じた既存需要の強さは同じではありません。** 数量と価格を別々に金額分解できる開示ではないため、販売個数が4%増えたとも書けません。[Q3報告書、PDF17〜18頁](https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e)",
+      "claim": "会社の売上増減分析では、四半期の増収8%は、数量・価格の合計4ポイント、買収4ポイント、為替0ポイント。一方、9か月累計の増収4%は、数量・価格がマイナス1ポイント、買収4ポイント、為替1ポイントです。**足元の改善と、年間を通じた既存需要の強さは同じではありません。** 数量と価格を別々に金額分解できる開示ではないため、販売個数が4%増えたとも書けません。[Q3報告書、PDF17〜18頁](https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e)",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "Q3数量価格",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "Q3数量価格"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "Q3買収",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "Q3買収"
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "Q3為替",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "Q3為替"
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "Q3合計",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "Q3合計"
+        },
+        {
+          "id": "i4",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "累計数量価格",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "累計数量価格"
+        },
+        {
+          "id": "i5",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "累計買収",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "累計買収"
+        },
+        {
+          "id": "i6",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "累計為替",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "累計為替"
+        },
+        {
+          "id": "i7",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "累計合計",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "累計合計"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "Q3数量価格",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "Q3数量価格",
+          "value": 4,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 18頁",
+            "kind": "primary",
+            "pdfPage": 18
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "Q3買収",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "Q3買収",
+          "value": 4,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 18頁",
+            "kind": "primary",
+            "pdfPage": 18
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "Q3為替",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "Q3為替",
+          "value": 0,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 18頁",
+            "kind": "primary",
+            "pdfPage": 18
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "Q3合計",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "Q3合計",
+          "value": 8,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 18頁",
+            "kind": "primary",
+            "pdfPage": 18
+          }
+        },
+        {
+          "id": "i4",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "累計数量価格",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "累計数量価格",
+          "value": -1,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 18頁",
+            "kind": "primary",
+            "pdfPage": 18
+          }
+        },
+        {
+          "id": "i5",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "累計買収",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "累計買収",
+          "value": 4,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 18頁",
+            "kind": "primary",
+            "pdfPage": 18
+          }
+        },
+        {
+          "id": "i6",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "累計為替",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "累計為替",
+          "value": 1,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 18頁",
+            "kind": "primary",
+            "pdfPage": 18
+          }
+        },
+        {
+          "id": "i7",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "累計合計",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "累計合計",
+          "value": 4,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 18頁",
+            "kind": "primary",
+            "pdfPage": 18
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "contingent",
+      "question": "前年Q3には、買収後に追加支払いする条件付き対価の評価額が下がり、14.061百万ドルの非現金利益が営業利益に入っていました。今年はこれがありません。前年の利益が特に高かったことは減益の一因ですが、原価上昇や買収事業・製品構成による利益率への圧力まで消えるわけではありません。[Q3報告書、損益計算書・MD&A、PDF3・18〜19頁](https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e)",
+      "claim": "前年Q3には、買収後に追加支払いする条件付き対価の評価額が下がり、14.061百万ドルの非現金利益が営業利益に入っていました。今年はこれがありません。前年の利益が特に高かったことは減益の一因ですが、原価上昇や買収事業・製品構成による利益率への圧力まで消えるわけではありません。[Q3報告書、損益計算書・MD&A、PDF3・18〜19頁](https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e)",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "前年条件付対価評価益",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "前年条件付対価評価益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "前年条件付対価評価益",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "前年条件付対価評価益",
+          "value": 14.061,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 3頁",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "seg-Contractor",
+      "question": "| Contractor | 塗装・保護コーティング等 | 262.4 | 276.0 | 26% | 26% |",
+      "claim": "| Contractor | 塗装・保護コーティング等 | 262.4 | 276.0 | 26% | 26% |",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "前年Q3部門売上",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "前年Q3部門売上"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "当年Q3部門売上",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "当年Q3部門売上"
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "前年Q3部門利益率",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "前年Q3部門利益率"
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "当年Q3部門利益率",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "当年Q3部門利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "前年Q3部門売上",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "前年Q3部門売上",
+          "value": 262.4,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "当年Q3部門売上",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "当年Q3部門売上",
+          "value": 276,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "前年Q3部門利益率",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "前年Q3部門利益率",
+          "value": 26,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "当年Q3部門利益率",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "当年Q3部門利益率",
+          "value": 26,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 19頁",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "seg-Industrial",
+      "question": "| Industrial | 工場の塗装・材料供給等 | 238.6 | 264.6 | 34% | 28% |",
+      "claim": "| Industrial | 工場の塗装・材料供給等 | 238.6 | 264.6 | 34% | 28% |",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "前年Q3部門売上",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "前年Q3部門売上"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "当年Q3部門売上",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "当年Q3部門売上"
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "前年Q3部門利益率",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "前年Q3部門利益率"
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "当年Q3部門利益率",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "当年Q3部門利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "前年Q3部門売上",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "前年Q3部門売上",
+          "value": 238.6,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 20頁",
+            "kind": "primary",
+            "pdfPage": 20
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "当年Q3部門売上",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "当年Q3部門売上",
+          "value": 264.6,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 20頁",
+            "kind": "primary",
+            "pdfPage": 20
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "前年Q3部門利益率",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "前年Q3部門利益率",
+          "value": 34,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 20頁",
+            "kind": "primary",
+            "pdfPage": 20
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "当年Q3部門利益率",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "当年Q3部門利益率",
+          "value": 28,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 20頁",
+            "kind": "primary",
+            "pdfPage": 20
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "seg-Expansion-Markets",
+      "question": "| Expansion Markets | 半導体・環境・電動機等 | 42.4 | 45.7 | 25% | 24% |",
+      "claim": "| Expansion Markets | 半導体・環境・電動機等 | 42.4 | 45.7 | 25% | 24% |",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。 前年売上はPDF21頁MD&A42.4。PDF8頁注記42.339と表示差がある点を記事に明記。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "前年Q3部門売上",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "前年Q3部門売上"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "当年Q3部門売上",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "当年Q3部門売上"
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "前年Q3部門利益率",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "前年Q3部門利益率"
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "当年Q3部門利益率",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "当年Q3部門利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "前年Q3部門売上",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "前年Q3部門売上",
+          "value": 42.4,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 21頁",
+            "kind": "primary",
+            "pdfPage": 21
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "当年Q3部門売上",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "当年Q3部門売上",
+          "value": 45.7,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 21頁",
+            "kind": "primary",
+            "pdfPage": 21
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "前年Q3部門利益率",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "前年Q3部門利益率",
+          "value": 25,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 21頁",
+            "kind": "primary",
+            "pdfPage": 21
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "当年Q3部門利益率",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "当年Q3部門利益率",
+          "value": 24,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 21頁",
+            "kind": "primary",
+            "pdfPage": 21
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "valco-price",
+      "question": "8月31日に完了したValco Melton買収は、接着剤を精密に塗り、製品の品質を確認する事業を広げるものです。発表時の現金価格は447百万ドル。会社が示す約14倍は、期待する税便益の現在価値約40百万ドルを調整した取引価値を、2025年の調整後EBITDAと比べたものです。約10倍という別の数字は、2026年の通期予想に相乗効果を加えたEBITDAが分母です。[買収完了発表、8月31日16:30 EDT](https://graco.gcs-web.com/news-releases/news-release-details/graco-inc-closes-acquisition-valco-melton)",
+      "claim": "8月31日に完了したValco Melton買収は、接着剤を精密に塗り、製品の品質を確認する事業を広げるものです。発表時の現金価格は447百万ドル。会社が示す約14倍は、期待する税便益の現在価値約40百万ドルを調整した取引価値を、2025年の調整後EBITDAと比べたものです。約10倍という別の数字は、2026年の通期予想に相乗効果を加えたEBITDAが分母です。[買収完了発表、8月31日16:30 EDT](https://graco.gcs-web.com/news-releases/news-release-details/graco-inc-closes-acquisition-valco-melton)",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "現金価格",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金価格"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "税便益現在価値",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-08-31",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "税便益現在価値"
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "2025調整EBITDA倍率",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-12-26",
+          "unit": "times",
+          "basis": "actual",
+          "definition": "2025調整EBITDA倍率"
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "2026予想相乗効果込みEBITDA倍率",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-12-25",
+          "unit": "times",
+          "basis": "company-forecast",
+          "definition": "2026予想相乗効果込みEBITDA倍率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "現金価格",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金価格",
+          "value": 447,
+          "source": {
+            "url": "https://graco.gcs-web.com/news-releases/news-release-details/graco-inc-closes-acquisition-valco-melton",
+            "publishedOn": "2026-08-31",
+            "locator": "本文の数値・調整表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "税便益現在価値",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-08-31",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "税便益現在価値",
+          "value": 40,
+          "source": {
+            "url": "https://graco.gcs-web.com/news-releases/news-release-details/graco-inc-closes-acquisition-valco-melton",
+            "publishedOn": "2026-08-31",
+            "locator": "本文の数値・調整表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "2025調整EBITDA倍率",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-12-26",
+          "unit": "times",
+          "basis": "actual",
+          "definition": "2025調整EBITDA倍率",
+          "value": 14,
+          "source": {
+            "url": "https://graco.gcs-web.com/news-releases/news-release-details/graco-inc-closes-acquisition-valco-melton",
+            "publishedOn": "2026-08-31",
+            "locator": "本文の数値・調整表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "2026予想相乗効果込みEBITDA倍率",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-12-25",
+          "unit": "times",
+          "basis": "company-forecast",
+          "definition": "2026予想相乗効果込みEBITDA倍率",
+          "value": 10,
+          "source": {
+            "url": "https://graco.gcs-web.com/news-releases/news-release-details/graco-inc-closes-acquisition-valco-melton",
+            "publishedOn": "2026-08-31",
+            "locator": "本文の数値・調整表",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "valco-actual",
+      "question": "Q3の注記では、現金取得額は諸調整後約462百万ドル、取得した現金は約25百万ドルです。連結CFに出る取得現金控除後の買収支出と、発表価格を同じ数値として扱えません。買収後から9月25日までに連結された実績は売上12百万ドル、営業損失5百万ドル。期間が短く、買収会計の影響もあるため、これを単純に年率換算して買収後の採算と決めつけません。[Q3報告書・買収注記、PDF13〜14頁](https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e)",
+      "claim": "Q3の注記では、現金取得額は諸調整後約462百万ドル、取得した現金は約25百万ドルです。連結CFに出る取得現金控除後の買収支出と、発表価格を同じ数値として扱えません。買収後から9月25日までに連結された実績は売上12百万ドル、営業損失5百万ドル。期間が短く、買収会計の影響もあるため、これを単純に年率換算して買収後の採算と決めつけません。[Q3報告書・買収注記、PDF13〜14頁](https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e)",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "諸調整後総現金対価",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "諸調整後総現金対価"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "取得現金",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金"
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "連結売上",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結売上"
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "連結営業損失",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結営業損失"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "諸調整後総現金対価",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "諸調整後総現金対価",
+          "value": 461.985,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 13頁",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "取得現金",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金",
+          "value": 25.445,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 13頁",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "連結売上",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結売上",
+          "value": 12,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 13頁",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "連結営業損失",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結営業損失",
+          "value": -5,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 13頁",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-ocf",
+      "question": "| 営業CF | 487.3 | 463.4 |",
+      "claim": "| 営業CF | 487.3 | 463.4 |",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "営業CF2025累計",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF2025累計"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "営業CF2026累計",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF2026累計"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "営業CF2025累計",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF2025累計",
+          "value": 487.262,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "営業CF2026累計",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF2026累計",
+          "value": 463.439,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-capex",
+      "question": "| 設備投資支出 | 33.6 | 47.6 |",
+      "claim": "| 設備投資支出 | 33.6 | 47.6 |",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "設備投資支出2025累計",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出2025累計"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "設備投資支出2026累計",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出2026累計"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "設備投資支出2025累計",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出2025累計",
+          "value": 33.646,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "設備投資支出2026累計",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出2026累計",
+          "value": 47.649,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-acquisition",
+      "question": "| 買収支出（取得現金控除後） | 70.1 | 436.3 |",
+      "claim": "| 買収支出（取得現金控除後） | 70.1 | 436.3 |",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "買収支出（取得現金控除後）2025累計",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "買収支出（取得現金控除後）2025累計"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "買収支出（取得現金控除後）2026累計",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "買収支出（取得現金控除後）2026累計"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "買収支出（取得現金控除後）2025累計",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "買収支出（取得現金控除後）2025累計",
+          "value": 70.107,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "買収支出（取得現金控除後）2026累計",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "買収支出（取得現金控除後）2026累計",
+          "value": 436.313,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-repurchase",
+      "question": "| 自社株買い支出 | 361.0 | 462.9 |",
+      "claim": "| 自社株買い支出 | 361.0 | 462.9 |",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "自社株買い支出2025累計",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自社株買い支出2025累計"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "自社株買い支出2026累計",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自社株買い支出2026累計"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "自社株買い支出2025累計",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自社株買い支出2025累計",
+          "value": 360.952,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "自社株買い支出2026累計",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自社株買い支出2026累計",
+          "value": 462.902,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-dividend",
+      "question": "| 支払配当 | 137.8 | 145.3 |",
+      "claim": "| 支払配当 | 137.8 | 145.3 |",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "支払配当2025累計",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "支払配当2025累計"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "支払配当2026累計",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "支払配当2026累計"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "支払配当2025累計",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "支払配当2025累計",
+          "value": 137.764,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "支払配当2026累計",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "支払配当2026累計",
+          "value": 145.346,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "ytd-fcf",
+      "question": "| 独自計算FCF | 453.6 | 415.8 |",
+      "claim": "| 独自計算FCF | 453.6 | 415.8 |",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "2025営業CF",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2025営業CF"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "2025設備投資",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2025設備投資"
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "2026営業CF",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2026営業CF"
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "2026設備投資",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2026設備投資"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "2025営業CF",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2025営業CF",
+          "value": 487.262,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "2025設備投資",
+          "periodStart": "2024-12-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2025設備投資",
+          "value": 33.646,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "2026営業CF",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2026営業CF",
+          "value": 463.439,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "2026設備投資",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2026設備投資",
+          "value": 47.649,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf25",
+          "operation": "difference",
+          "inputs": [
+            "i0",
+            "i1"
+          ],
+          "definition": "営業CF−設備投資",
+          "precision": 1,
+          "value": 453.6
+        },
+        {
+          "id": "fcf26",
+          "operation": "difference",
+          "inputs": [
+            "i2",
+            "i3"
+          ],
+          "definition": "営業CF−設備投資",
+          "precision": 1,
+          "value": 415.8
+        }
+      ]
+    },
+    {
+      "id": "allocation-gap",
+      "question": "今年のFCF415.8百万ドルに対し、買収・自社株買い・配当の合計は1,044.6百万ドルです。差額628.8百万ドルは、営業CFだけでは賄えていないことを示します。ただしこれは全現金増減ではありません。株式発行、借入と返済、為替などを含めたCF計算書全体で資金残高が決まります。",
+      "claim": "今年のFCF415.8百万ドルに対し、買収・自社株買い・配当の合計は1,044.6百万ドルです。差額628.8百万ドルは、営業CFだけでは賄えていないことを示します。ただしこれは全現金増減ではありません。株式発行、借入と返済、為替などを含めたCF計算書全体で資金残高が決まります。",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "営業CF",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "設備投資",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資"
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "買収",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "買収"
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "自社株買い",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自社株買い"
+        },
+        {
+          "id": "i4",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "配当",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "配当"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "営業CF",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 463.439,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "設備投資",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資",
+          "value": 47.649,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "買収",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "買収",
+          "value": 436.313,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "自社株買い",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自社株買い",
+          "value": 462.902,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "i4",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "配当",
+          "periodStart": "2025-12-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "配当",
+          "value": 145.346,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "i0",
+            "i1"
+          ],
+          "definition": "営業CF−設備投資",
+          "precision": 3,
+          "value": 415.79
+        },
+        {
+          "id": "uses",
+          "operation": "sum",
+          "inputs": [
+            "i2",
+            "i3",
+            "i4"
+          ],
+          "definition": "買収+自社株買い+配当",
+          "precision": 3,
+          "value": 1044.561
+        },
+        {
+          "id": "gap",
+          "operation": "difference",
+          "inputs": [
+            "uses",
+            "fcf"
+          ],
+          "definition": "上記使途−FCF、全現金増減とは異なる",
+          "precision": 1,
+          "value": 628.8
+        }
+      ]
+    },
+    {
+      "id": "liquidity",
+      "question": "9月25日の現金は139.8百万ドルで、前年末624.1百万ドルから減りました。銀行借入・長期債務の流動部分・長期部分の合計は134.5百万ドル。現金との差は約5.4百万ドルで、本稿の単純なネットキャッシュは小さくなっています。リース債務・年金等を差し引いた数値ではありません。会社が示す利用可能な流動性808百万ドルには、未使用融資枠が含まれます。融資枠は支払能力を支えますが、自己資金や利益ではありません。[Q3報告書・貸借対照表と流動性、PDF4・21頁](https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e)",
+      "claim": "9月25日の現金は139.8百万ドルで、前年末624.1百万ドルから減りました。銀行借入・長期債務の流動部分・長期部分の合計は134.5百万ドル。現金との差は約5.4百万ドルで、本稿の単純なネットキャッシュは小さくなっています。リース債務・年金等を差し引いた数値ではありません。会社が示す利用可能な流動性808百万ドルには、未使用融資枠が含まれます。融資枠は支払能力を支えますが、自己資金や利益ではありません。[Q3報告書・貸借対照表と流動性、PDF4・21頁](https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e)",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "現金",
+          "periodStart": "2026-09-25",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "前年末現金",
+          "periodStart": "2025-12-26",
+          "periodEnd": "2025-12-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "前年末現金"
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "銀行借入",
+          "periodStart": "2026-09-25",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "銀行借入"
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "長期債務流動部分",
+          "periodStart": "2026-09-25",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "長期債務流動部分"
+        },
+        {
+          "id": "i4",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "長期債務非流動部分",
+          "periodStart": "2026-09-25",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "長期債務非流動部分"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "現金",
+          "periodStart": "2026-09-25",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金",
+          "value": 139.818,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 4頁",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "前年末現金",
+          "periodStart": "2025-12-26",
+          "periodEnd": "2025-12-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "前年末現金",
+          "value": 624.083,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 4頁",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "銀行借入",
+          "periodStart": "2026-09-25",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "銀行借入",
+          "value": 29.979,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 4頁",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "長期債務流動部分",
+          "periodStart": "2026-09-25",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "長期債務流動部分",
+          "value": 0.677,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 4頁",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "i4",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "長期債務非流動部分",
+          "periodStart": "2026-09-25",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "長期債務非流動部分",
+          "value": 103.802,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 4頁",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "debt",
+          "operation": "sum",
+          "inputs": [
+            "i2",
+            "i3",
+            "i4"
+          ],
+          "definition": "有利子債務3区分の合計、リース除外",
+          "precision": 3,
+          "value": 134.458
+        },
+        {
+          "id": "netcash",
+          "operation": "difference",
+          "inputs": [
+            "i0",
+            "debt"
+          ],
+          "definition": "現金−上記債務",
+          "precision": 1,
+          "value": 5.4
+        }
+      ]
+    },
+    {
+      "id": "available-liquidity",
+      "question": "9月25日の現金は139.8百万ドルで、前年末624.1百万ドルから減りました。銀行借入・長期債務の流動部分・長期部分の合計は134.5百万ドル。現金との差は約5.4百万ドルで、本稿の単純なネットキャッシュは小さくなっています。リース債務・年金等を差し引いた数値ではありません。会社が示す利用可能な流動性808百万ドルには、未使用融資枠が含まれます。融資枠は支払能力を支えますが、自己資金や利益ではありません。[Q3報告書・貸借対照表と流動性、PDF4・21頁](https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e)",
+      "claim": "9月25日の現金は139.8百万ドルで、前年末624.1百万ドルから減りました。銀行借入・長期債務の流動部分・長期部分の合計は134.5百万ドル。現金との差は約5.4百万ドルで、本稿の単純なネットキャッシュは小さくなっています。リース債務・年金等を差し引いた数値ではありません。会社が示す利用可能な流動性808百万ドルには、未使用融資枠が含まれます。融資枠は支払能力を支えますが、自己資金や利益ではありません。[Q3報告書・貸借対照表と流動性、PDF4・21頁](https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e)",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "利用可能流動性",
+          "periodStart": "2026-09-25",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "利用可能流動性"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "利用可能流動性",
+          "periodStart": "2026-09-25",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "利用可能流動性",
+          "value": 808,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 21頁",
+            "kind": "primary",
+            "pdfPage": 21
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "outlook",
+      "question": "会社はQ4売上を610〜640百万ドルと予想し、Valco Meltonを含みます。これは会社予想であり、市場予想でも通期の確定実績でもありません。[Q3報告書・Outlook、PDF22頁](https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e)",
+      "claim": "会社はQ4売上を610〜640百万ドルと予想し、Valco Meltonを含みます。これは会社予想であり、市場予想でも通期の確定実績でもありません。[Q3報告書・Outlook、PDF22頁](https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e)",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "Q4売上下限",
+          "periodStart": "2026-09-26",
+          "periodEnd": "2026-12-25",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "Q4売上下限"
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "Q4売上上限",
+          "periodStart": "2026-09-26",
+          "periodEnd": "2026-12-25",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "Q4売上上限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "Q4売上下限",
+          "periodStart": "2026-09-26",
+          "periodEnd": "2026-12-25",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "Q4売上下限",
+          "value": 610,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 22頁",
+            "kind": "primary",
+            "pdfPage": 22
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "Q4売上上限",
+          "periodStart": "2026-09-26",
+          "periodEnd": "2026-12-25",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "Q4売上上限",
+          "value": 640,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 22頁",
+            "kind": "primary",
+            "pdfPage": 22
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "sensitivity",
+      "question": "規模感だけを確かめる独自感応度として、Q3売上586.385百万ドルを固定し、営業利益率が1ポイント動くと営業利益は約5.864百万ドル動きます。将来予想ではなく、売上と利益率のどちらが効くかを見る計算です。税金・金利・数量変化は含みません。",
+      "claim": "規模感だけを確かめる独自感応度として、Q3売上586.385百万ドルを固定し、営業利益率が1ポイント動くと営業利益は約5.864百万ドル動きます。将来予想ではなく、売上と利益率のどちらが効くかを見る計算です。税金・金利・数量変化は含みません。",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "Q3売上",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Q3売上"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "Q3売上",
+          "periodStart": "2026-06-27",
+          "periodEnd": "2026-09-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Q3売上",
+          "value": 586.385,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF 3頁",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "segment-disclosure-display-difference",
+      "question": "Expansion Markets前年Q3の注記とMD&Aの数値差",
+      "claim": "部門表はMD&Aの表示値を使用しています。Expansion Marketsの前年Q3売上は、注記の42.339百万ドルとMD&Aの42.4百万ドルに表示上の差があります。本稿は部門表の合計から連結数値を再計算せず、連結売上は損益計算書を使用しています。",
+      "definition": "記事本文の期間・単位・GAAP/会社調整指標に従う。千ドルから百万ドルへ換算し表示は丸める。 前年売上はPDF21頁MD&A42.4。PDF8頁注記42.339と表示差がある点を記事に明記。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "前年Q3部門売上（注記）",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "注記表示42.339百万ドル"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Graco連結（部門表は当該部門）",
+          "metric": "前年Q3部門売上（注記）",
+          "periodStart": "2025-06-28",
+          "periodEnd": "2025-09-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "注記表示42.339百万ドル",
+          "value": 42.339,
+          "source": {
+            "url": "https://investors.graco.com/static-files/d0f54115-f9b0-42b9-9467-d4d674b0e55e",
+            "publishedOn": "2026-10-21",
+            "locator": "PDF8頁 Segment Information: Expansion Markets net sales",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}

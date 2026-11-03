@@ -1,0 +1,346 @@
+{
+  "version": 1,
+  "articleSlug": "theme-sloos-private-equity-credit-2026-11-03",
+  "articleSha256": "2fe68d38086210f99cb1ffa1ab1359da6b66943ea7d6b0e13521eb929432a8bd",
+  "checkedAt": "2026-11-03T10:46:55.509434+00:00",
+  "informationCutoff": "2026-11-03T10:40:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "本文全体の数値と定義・期間・条件を執筆担当が一次本文と照合。独立レビューは統合担当で別途実施。日付・解除条件は監査メモに定位。年率換算を通期予想にせず、SLOOS銀行数を残高変化としない。参考式・条件表は筆者の説明で実績予測ではない。",
+  "comparisons": [
+    {
+      "id": "pe-standards-counts",
+      "question": "PE向けの融資基準回答割合とネット割合。金額割合ではない。",
+      "definition": "PE向けの融資基準回答割合とネット割合。金額割合ではない。",
+      "status": "ready",
+      "claim": "PEファンド向けの融資基準について、厳格化10行、ほぼ不変40行、緩和2行、合計52行だった。厳格化割合は19.2%、不変は76.9%、緩和は3.8%。厳格化から緩和を引いたネット割合は、行数から計算して15.4ポイントとなる。",
+      "requiredInputs": [
+        {
+          "id": "tight",
+          "entity": "国内銀行・PEファンド向け",
+          "metric": "融資基準回答数:厳格化",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "行",
+          "basis": "actual",
+          "definition": "主に2026Q3、前四半期からのPE向け融資基準変化。質問に回答した行数、非金額加重。"
+        },
+        {
+          "id": "same",
+          "entity": "国内銀行・PEファンド向け",
+          "metric": "融資基準回答数:不変",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "行",
+          "basis": "actual",
+          "definition": "主に2026Q3、前四半期からのPE向け融資基準変化。質問に回答した行数、非金額加重。"
+        },
+        {
+          "id": "ease",
+          "entity": "国内銀行・PEファンド向け",
+          "metric": "融資基準回答数:緩和",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "行",
+          "basis": "actual",
+          "definition": "主に2026Q3、前四半期からのPE向け融資基準変化。質問に回答した行数、非金額加重。"
+        },
+        {
+          "id": "total",
+          "entity": "国内銀行・PEファンド向け",
+          "metric": "融資基準回答数:合計",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "行",
+          "basis": "actual",
+          "definition": "主に2026Q3、前四半期からのPE向け融資基準変化。質問に回答した行数、非金額加重。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "tight",
+          "entity": "国内銀行・PEファンド向け",
+          "metric": "融資基準回答数:厳格化",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "行",
+          "basis": "actual",
+          "definition": "主に2026Q3、前四半期からのPE向け融資基準変化。質問に回答した行数、非金額加重。",
+          "value": 10,
+          "source": {
+            "url": "https://www.federalreserve.gov/data/sloos/sloos-202610-table-1.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Table1 Question29C",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "same",
+          "entity": "国内銀行・PEファンド向け",
+          "metric": "融資基準回答数:不変",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "行",
+          "basis": "actual",
+          "definition": "主に2026Q3、前四半期からのPE向け融資基準変化。質問に回答した行数、非金額加重。",
+          "value": 40,
+          "source": {
+            "url": "https://www.federalreserve.gov/data/sloos/sloos-202610-table-1.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Table1 Question29C",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ease",
+          "entity": "国内銀行・PEファンド向け",
+          "metric": "融資基準回答数:緩和",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "行",
+          "basis": "actual",
+          "definition": "主に2026Q3、前四半期からのPE向け融資基準変化。質問に回答した行数、非金額加重。",
+          "value": 2,
+          "source": {
+            "url": "https://www.federalreserve.gov/data/sloos/sloos-202610-table-1.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Table1 Question29C",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "total",
+          "entity": "国内銀行・PEファンド向け",
+          "metric": "融資基準回答数:合計",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "行",
+          "basis": "actual",
+          "definition": "主に2026Q3、前四半期からのPE向け融資基準変化。質問に回答した行数、非金額加重。",
+          "value": 52,
+          "source": {
+            "url": "https://www.federalreserve.gov/data/sloos/sloos-202610-table-1.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Table1 Question29C",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "tightPct",
+          "operation": "ratio-percent",
+          "inputs": [
+            "tight",
+            "total"
+          ],
+          "precision": 1,
+          "value": 19.2,
+          "definition": "厳格化行/回答行"
+        },
+        {
+          "id": "samePct",
+          "operation": "ratio-percent",
+          "inputs": [
+            "same",
+            "total"
+          ],
+          "precision": 1,
+          "value": 76.9,
+          "definition": "不変行/回答行"
+        },
+        {
+          "id": "easePct",
+          "operation": "ratio-percent",
+          "inputs": [
+            "ease",
+            "total"
+          ],
+          "precision": 1,
+          "value": 3.8,
+          "definition": "緩和行/回答行"
+        },
+        {
+          "id": "net",
+          "operation": "difference",
+          "inputs": [
+            "tight",
+            "ease"
+          ],
+          "precision": 0,
+          "value": 8,
+          "definition": "厳格化行−緩和行"
+        },
+        {
+          "id": "netPct",
+          "operation": "ratio-percent",
+          "inputs": [
+            "net",
+            "total"
+          ],
+          "precision": 1,
+          "value": 15.4,
+          "definition": "ネット行数/回答行。ポイント表記。"
+        }
+      ]
+    },
+    {
+      "id": "pe-demand-counts",
+      "question": "需要の回答と融資基準の分母が異なることを確認。両設問を同じ銀行のパネルとして結合しない。",
+      "definition": "需要の回答と融資基準の分母が異なることを確認。両設問を同じ銀行のパネルとして結合しない。",
+      "status": "ready",
+      "claim": "同じ調査のPE向け需要の回答は、強まった8行、ほぼ同じ43行、弱まった5行、計56行。",
+      "requiredInputs": [
+        {
+          "id": "up",
+          "entity": "国内銀行・PEファンド向け",
+          "metric": "融資需要回答数:増加",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "行",
+          "basis": "actual",
+          "definition": "主に2026Q3、実際に資金供与した融資についてPE向け需要の変化。与信枠の新設増額申込みを除く。行数、非金額加重。"
+        },
+        {
+          "id": "same",
+          "entity": "国内銀行・PEファンド向け",
+          "metric": "融資需要回答数:不変",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "行",
+          "basis": "actual",
+          "definition": "主に2026Q3、実際に資金供与した融資についてPE向け需要の変化。与信枠の新設増額申込みを除く。行数、非金額加重。"
+        },
+        {
+          "id": "down",
+          "entity": "国内銀行・PEファンド向け",
+          "metric": "融資需要回答数:減少",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "行",
+          "basis": "actual",
+          "definition": "主に2026Q3、実際に資金供与した融資についてPE向け需要の変化。与信枠の新設増額申込みを除く。行数、非金額加重。"
+        },
+        {
+          "id": "total",
+          "entity": "国内銀行・PEファンド向け",
+          "metric": "融資需要回答数:合計",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "行",
+          "basis": "actual",
+          "definition": "主に2026Q3、実際に資金供与した融資についてPE向け需要の変化。与信枠の新設増額申込みを除く。行数、非金額加重。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "up",
+          "entity": "国内銀行・PEファンド向け",
+          "metric": "融資需要回答数:増加",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "行",
+          "basis": "actual",
+          "definition": "主に2026Q3、実際に資金供与した融資についてPE向け需要の変化。与信枠の新設増額申込みを除く。行数、非金額加重。",
+          "value": 8,
+          "source": {
+            "url": "https://www.federalreserve.gov/data/sloos/sloos-202610-table-1.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Table1 Question32C",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "same",
+          "entity": "国内銀行・PEファンド向け",
+          "metric": "融資需要回答数:不変",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "行",
+          "basis": "actual",
+          "definition": "主に2026Q3、実際に資金供与した融資についてPE向け需要の変化。与信枠の新設増額申込みを除く。行数、非金額加重。",
+          "value": 43,
+          "source": {
+            "url": "https://www.federalreserve.gov/data/sloos/sloos-202610-table-1.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Table1 Question32C",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "down",
+          "entity": "国内銀行・PEファンド向け",
+          "metric": "融資需要回答数:減少",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "行",
+          "basis": "actual",
+          "definition": "主に2026Q3、実際に資金供与した融資についてPE向け需要の変化。与信枠の新設増額申込みを除く。行数、非金額加重。",
+          "value": 5,
+          "source": {
+            "url": "https://www.federalreserve.gov/data/sloos/sloos-202610-table-1.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Table1 Question32C",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "total",
+          "entity": "国内銀行・PEファンド向け",
+          "metric": "融資需要回答数:合計",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "行",
+          "basis": "actual",
+          "definition": "主に2026Q3、実際に資金供与した融資についてPE向け需要の変化。与信枠の新設増額申込みを除く。行数、非金額加重。",
+          "value": 56,
+          "source": {
+            "url": "https://www.federalreserve.gov/data/sloos/sloos-202610-table-1.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Table1 Question32C",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "historical-bdc-concentration",
+      "question": "過去研究のBDC利用済み銀行融資における上位5行シェア。現在PE向け市場との一致を仮定しない。",
+      "definition": "過去研究のBDC利用済み銀行融資における上位5行シェア。現在PE向け市場との一致を仮定しない。",
+      "status": "ready",
+      "claim": "2012年第3四半期〜2023年第4四半期を集計した利用済み融資額では、上位5行のシェアが64.75%だった。",
+      "requiredInputs": [
+        {
+          "id": "top5",
+          "entity": "Y-14報告銀行からBDCへの融資",
+          "metric": "利用済み融資額上位5行シェア",
+          "periodStart": "2012-07-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "利用済み融資額上位5行シェア"
+        }
+      ],
+      "observations": [
+        {
+          "id": "top5",
+          "entity": "Y-14報告銀行からBDCへの融資",
+          "metric": "利用済み融資額上位5行シェア",
+          "periodStart": "2012-07-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "利用済み融資額上位5行シェア",
+          "value": 64.75,
+          "source": {
+            "url": "https://www.federalreserve.gov/econres/notes/feds-notes/the-price-of-bank-funding-behind-private-credit-evidence-from-business-development-companies-20260807.html",
+            "publishedOn": "2026-08-07",
+            "locator": "Table2 Market Concentration in Bank Lending to BDCs; notes aggregate bank lending 2012Q3–2023Q4",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
