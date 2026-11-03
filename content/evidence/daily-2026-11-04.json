@@ -1,0 +1,411 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-11-04",
+  "articleSha256": "ec200674fc3d602640b18504e012e0f4b1f3b93a31b05fd20d139f3470fe74ec",
+  "checkedAt": "2026-11-03T21:28:51.991Z",
+  "informationCutoff": "2026-11-04T06:27:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終記事全体の見出し・要約・本文・分析・次の注目点・免責を確認。事前列挙したAMD・Appleの同四半期売上、三菱電機の同上期営業利益、RBA政策目標の変更前後について全入力を原資料で照合。Appleと三菱電機のPDF1ページは画像も実見し、四半期／通期や営業利益／調整後利益の列を区別した。FCFの独自計算、市場予想比較、株価日次変化率、株価の決算後反応は採用しない。AMD決算は通常取引終了後06:15JST発表で、06:27基準までに発表資料を読んだ。原資料の財政期末を使い、暦年7〜9月に強制的にそろえていない。",
+  "sourceChecks": [
+    {
+      "url": "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results",
+      "publishedOn": "2026-11-03",
+      "locator": "GAAP Quarterly Financial Results、Segment Summary、Current Outlook／IR press release indexのNov3 4:15pmEST",
+      "checked": "13,377と9,246百万USDをQ3'26/Q3'25で照合。DataCenter約8.5bUSD=85億USDは単独部門売上、Q4約17bUSD=170億USD±3%は単独会社予想であり、予想対市場予想や部門同比は計算しない。Q2'26期末June27は同資料のQ2列、Q2'25期末June28は2025-08-05公式8-K Item2.02で確認し、翌日をQ3開始日とした。"
+    },
+    {
+      "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-25-000106/amd-20250805.htm",
+      "publishedOn": "2025-08-05",
+      "locator": "Item2.02",
+      "checked": "前年Q2期末June28,2025を確認。Q3比較期間はJune29〜September27,2025。"
+    },
+    {
+      "url": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+      "publishedOn": "2026-11-02",
+      "locator": "決算本文・関税還付説明",
+      "checked": "粗利とEPSへの関税還付効果を原文確認したが、正確な調整後利益率や還付前年比較は作らない。"
+    },
+    {
+      "url": "https://www.apple.com/ie/newsroom/2025/07/apple-reports-third-quarter-results/",
+      "publishedOn": "2025-07-31",
+      "locator": "冒頭Q3period ended June28,2025",
+      "checked": "前年Q4開始は前四半期末の翌日June29。2026Q3期末June27は同年Q3公式提出資料の記載を確認。"
+    },
+    {
+      "url": "https://www.mitsubishielectric.co.jp/ja/pr/2026/pdf/1030_co1-1.pdf",
+      "publishedOn": "2026-10-30",
+      "pdfPage": 2,
+      "locator": "調整後営業利益について／遡及修正及び組替再表示",
+      "checked": "営業利益からその他損益を控除する調整後指標の定義、Nozomi暫定会計確定に伴う前年数値修正を確認。"
+    },
+    {
+      "url": "https://www.mitsubishielectric.co.jp/ja/pr/2026/pdf/1030_co1-2.pdf",
+      "publishedOn": "2026-10-30",
+      "pdfPage": 4,
+      "locator": "今回のポイント",
+      "checked": "DC・半導体、防衛、空調の需要および収益性・効率性改善を会社説明として採用。部門別数値比較と通期予想修正は採用せず。"
+    },
+    {
+      "url": "https://www.rba.gov.au/media-releases/2026/mr-26-30.html",
+      "publishedOn": "2026-11-03",
+      "locator": "冒頭とDecision",
+      "checked": "国内能力制約、燃料等のコスト、AI投資に伴う技術財価格、景気・住宅・雇用、企業投資に関する定性説明を読んだ。未確認の物価予想の前回差や投票比率比較は使わない。"
+    },
+    {
+      "url": "https://www.reuters.com/business/retail-consumer/us-stock-futures-mixed-apple-slides-midterms-loom-2026-11-03/",
+      "publishedOn": "2026-11-03",
+      "locator": "終了報道、本文冒頭と指数終値段落、sector indexes、Declining stocks",
+      "checked": "S&P/Nasdaq上昇、Dow下落、Apple下落、半導体反発、S&P下落銘柄優勢を確認。通常終値後のAMD決算の反応と取り違えない。選挙結果や政策実施を予測値から実績に転換しない。"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "amd-quarter-sales",
+      "question": "同一定義・対応期間の変化を全入力で検証する",
+      "definition": "対応する会計年度第3四半期実績。Q2終了翌日から公表Q3期末まで。米国会計基準・連結。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "AMD",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "対応する会計年度第3四半期実績。Q2終了翌日から公表Q3期末まで。米国会計基準・連結。"
+        },
+        {
+          "id": "previous",
+          "entity": "AMD",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "対応する会計年度第3四半期実績。Q2終了翌日から公表Q3期末まで。米国会計基準・連結。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "AMD",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "対応する会計年度第3四半期実績。Q2終了翌日から公表Q3期末まで。米国会計基準・連結。",
+          "value": 13377,
+          "source": {
+            "url": "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results",
+            "publishedOn": "2026-11-03",
+            "locator": "GAAP Quarterly Financial Results Revenue ($M)、Condensed Consolidated Statements of Operations Three Months Ended",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "AMD",
+          "metric": "GAAP連結売上高",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "対応する会計年度第3四半期実績。Q2終了翌日から公表Q3期末まで。米国会計基準・連結。",
+          "value": 9246,
+          "source": {
+            "url": "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results",
+            "publishedOn": "2026-11-03",
+            "locator": "GAAP Quarterly Financial Results Revenue ($M)、Condensed Consolidated Statements of Operations Three Months Ended",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "AMDが11月3日16:15（米東部標準時間、日本時間4日06:15）に発表した2026年度第3四半期の売上高は13,377百万米ドル。前年同期の9,246百万米ドルから44.7%増えた（小数第1位）。いずれも米国会計基準の連結売上実績で、期間末はそれぞれ2026年9月26日、2025年9月27日である。",
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "（当期÷前年同期−1）×100、%",
+          "precision": 1,
+          "value": 44.7
+        }
+      ]
+    },
+    {
+      "id": "apple-quarter-sales",
+      "question": "同一定義・対応期間の変化を全入力で検証する",
+      "definition": "同会計年度第4四半期の3カ月間。米国会計基準・連結実績、四半期と通期を区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "Apple",
+          "metric": "GAAP連結Total net sales",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "同会計年度第4四半期の3カ月間。米国会計基準・連結実績、四半期と通期を区別。"
+        },
+        {
+          "id": "previous",
+          "entity": "Apple",
+          "metric": "GAAP連結Total net sales",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "同会計年度第4四半期の3カ月間。米国会計基準・連結実績、四半期と通期を区別。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "Apple",
+          "metric": "GAAP連結Total net sales",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "同会計年度第4四半期の3カ月間。米国会計基準・連結実績、四半期と通期を区別。",
+          "value": 114477,
+          "source": {
+            "url": "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF1ページ、Three Months Ended September26,2026/September27,2025のTotal net sales行。画像でも列照合。",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "Apple",
+          "metric": "GAAP連結Total net sales",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "同会計年度第4四半期の3カ月間。米国会計基準・連結実績、四半期と通期を区別。",
+          "value": 102466,
+          "source": {
+            "url": "https://www.apple.com/newsroom/pdfs/fy2026q4/FY26_Q4_Consolidated_Financial_Statements.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF1ページ、Three Months Ended September26,2026/September27,2025のTotal net sales行。画像でも列照合。",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "Appleの2026年度第4四半期売上高は114,477百万米ドルで、前年同期の102,466百万米ドルから11.7%増えた（小数第1位）。11月2日公表の米国会計基準・連結実績で、対象はそれぞれ2026年9月26日、2025年9月27日に終了した3カ月間。通期売上や翌四半期の予想とは区別する。",
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "（当期÷前年同期−1）×100、%",
+          "precision": 1,
+          "value": 11.7
+        }
+      ]
+    },
+    {
+      "id": "mitsubishi-half-year-operating-income",
+      "question": "同一定義・対応期間の変化を全入力で検証する",
+      "definition": "同上期実績、営業利益のまま比較。会社定義の調整後利益と混同せず。前年値は2026-10-30短信の再表示後。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "三菱電機",
+          "metric": "IFRS連結営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "同上期実績、営業利益のまま比較。会社定義の調整後利益と混同せず。前年値は2026-10-30短信の再表示後。"
+        },
+        {
+          "id": "previous",
+          "entity": "三菱電機",
+          "metric": "IFRS連結営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "同上期実績、営業利益のまま比較。会社定義の調整後利益と混同せず。前年値は2026-10-30短信の再表示後。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "三菱電機",
+          "metric": "IFRS連結営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "同上期実績、営業利益のまま比較。会社定義の調整後利益と混同せず。前年値は2026-10-30短信の再表示後。",
+          "value": 358112,
+          "source": {
+            "url": "https://www.mitsubishielectric.co.jp/ja/pr/2026/pdf/1030_co1-1.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF1ページ、連結経営成績累計の営業利益行。PDF4ページ損益計算書でも照合。",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "三菱電機",
+          "metric": "IFRS連結営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "同上期実績、営業利益のまま比較。会社定義の調整後利益と混同せず。前年値は2026-10-30短信の再表示後。",
+          "value": 224366,
+          "source": {
+            "url": "https://www.mitsubishielectric.co.jp/ja/pr/2026/pdf/1030_co1-1.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF1ページ、連結経営成績累計の営業利益行。PDF4ページ損益計算書でも照合。",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "claim": "三菱電機が10月30日に発表した2026年4〜9月期の連結営業利益は358,112百万円、前年同期は224,366百万円で、59.6%増だった。日本円・IFRSの同じ上期実績を比較し、前年値は今回の決算短信に掲載された遡及修正・組替再表示後の数値を使用した。",
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "（当期÷前年同期−1）×100、%",
+          "precision": 1,
+          "value": 59.6
+        }
+      ]
+    },
+    {
+      "id": "rba-policy-rate",
+      "question": "変更前後の同じ政策目標と利上げ幅を確認できるか",
+      "definition": "RBAキャッシュレート目標の同じ11月3日政策決定直前と決定後。年率%で、実効金利や貸出金利ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "after",
+          "entity": "RBA",
+          "metric": "決定後キャッシュレート目標",
+          "periodStart": "2026-11-03",
+          "periodEnd": "2026-11-03",
+          "unit": "年率%",
+          "basis": "actual",
+          "definition": "RBAキャッシュレート目標の同じ11月3日政策決定直前と決定後。年率%で、実効金利や貸出金利ではない。"
+        },
+        {
+          "id": "before",
+          "entity": "RBA",
+          "metric": "決定前キャッシュレート目標",
+          "periodStart": "2026-11-03",
+          "periodEnd": "2026-11-03",
+          "unit": "年率%",
+          "basis": "actual",
+          "definition": "RBAキャッシュレート目標の同じ11月3日政策決定直前と決定後。年率%で、実効金利や貸出金利ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "after",
+          "entity": "RBA",
+          "metric": "決定後キャッシュレート目標",
+          "periodStart": "2026-11-03",
+          "periodEnd": "2026-11-03",
+          "unit": "年率%",
+          "basis": "actual",
+          "definition": "RBAキャッシュレート目標の同じ11月3日政策決定直前と決定後。年率%で、実効金利や貸出金利ではない。",
+          "value": 4.85,
+          "source": {
+            "url": "https://www.rba.gov.au/media-releases/2026/mr-26-30.html",
+            "publishedOn": "2026-11-03",
+            "locator": "冒頭25bp to4.85とDecision末尾のunchanged at4.60",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "before",
+          "entity": "RBA",
+          "metric": "決定前キャッシュレート目標",
+          "periodStart": "2026-11-03",
+          "periodEnd": "2026-11-03",
+          "unit": "年率%",
+          "basis": "actual",
+          "definition": "RBAキャッシュレート目標の同じ11月3日政策決定直前と決定後。年率%で、実効金利や貸出金利ではない。",
+          "value": 4.6,
+          "source": {
+            "url": "https://www.rba.gov.au/media-releases/2026/mr-26-30.html",
+            "publishedOn": "2026-11-03",
+            "locator": "冒頭25bp to4.85とDecision末尾のunchanged at4.60",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "オーストラリア準備銀行（RBA）は11月3日、キャッシュレート目標を年4.60%から4.85%へ引き上げた。差は0.25パーセントポイント、25ベーシスポイントである。同じ政策金利目標の変更前後を比較したもので、住宅ローン金利や国債利回りの変化ではない。",
+      "calculations": [
+        {
+          "id": "percentage-points",
+          "operation": "difference",
+          "inputs": [
+            "after",
+            "before"
+          ],
+          "definition": "目標変更後−変更前、パーセントポイント。0.25ポイントは25bp。",
+          "precision": 2,
+          "value": 0.25
+        }
+      ]
+    },
+    {
+      "id": "us-index-daily-change-withheld",
+      "question": "同一定義の通常終値による日次騰落率",
+      "definition": "S&P500現物価格指数、通常終値、配当除外。全原数値がそろう場合だけ計算。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "S&P500",
+          "metric": "通常終値",
+          "periodStart": "2026-11-03",
+          "periodEnd": "2026-11-03",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "16:00米東部標準時間の通常終値"
+        },
+        {
+          "id": "previous",
+          "entity": "S&P500",
+          "metric": "通常終値",
+          "periodStart": "2026-11-02",
+          "periodEnd": "2026-11-02",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "16:00米東部標準時間の通常終値"
+        }
+      ],
+      "observations": [],
+      "reason": "今回の終了報道を確認したが、同一定義の両日原数値を一次系列でそろえていないため、正確な日次率と依存する数値見出しは不採用。確認済み方向・市場の広がりだけを記事に残した。",
+      "omittedClaim": "S&P500の日次騰落率を独自計算で確定した。",
+      "calculations": []
+    }
+  ]
+}
