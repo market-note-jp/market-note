@@ -9,6 +9,16 @@ const decode = s => s.replaceAll("&amp;", "&").replaceAll("&quot;", '"').replace
 const hash = s => createHash("sha256").update(s).digest("hex");
 const baseline = JSON.parse(readFileSync("tests/fixtures/article-preservation.json", "utf8"));
 
+test("November 4 research retains an explicit title block and Parker company introduction", () => {
+  for (const slug of ["company-agc-2026-11-04", "company-parker-hannifin-2026-11-04", "company-diploma-2026-11-04", "theme-amd-profit-working-capital-2026-11-04", "theme-rba-inflation-housing-2026-11-04"]) {
+    const article = JSON.parse(readFileSync(`app/articles/${slug}/article.json`, "utf8"));
+    assert.equal(article.markdown.trim().split(/\n\s*\n/)[0], `# ${article.title}`, slug);
+  }
+  const introduction = "Parker Hannifinは、工場や航空機の「動き、流れ、圧力」を制御する部品・システムの会社です。油圧、空圧、フィルター、シールなどを組み合わせ、装置メーカーへの販売と、その後の補修・交換で稼ぎます。";
+  const html = readFileSync("out/articles/company-parker-hannifin-2026-11-04/index.html", "utf8");
+  assert.ok(html.includes(`<div class="report-body research-article-body"><p>${introduction}</p>`));
+});
+
 test("every archive article aligns its card, H1, HTML and social titles", () => {
   assert.equal(registry.length, readdirSync("app/articles", { withFileTypes: true }).filter(entry => entry.isDirectory() && !entry.name.startsWith("[") && existsSync(`app/articles/${entry.name}/page.tsx`)).length + readdirSync("content/daily").filter(name => /^daily-.*\.json$/.test(name)).length);
   for (const article of registry) {

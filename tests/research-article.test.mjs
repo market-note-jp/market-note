@@ -7,6 +7,12 @@ for(const slug of slugs){
  const article=JSON.parse(readFileSync(`app/articles/${slug}/article.json`));
  const html=readFileSync(`out/articles/${slug}/index.html`,'utf8');
  const verify=markup=>verifyResearchArticle(article,markup,{allowDraft:article.publishedTime===null});
+ if(slug.endsWith('-2026-11-04'))test(`${slug}: explicit title block precedes article content`,()=>assert.equal(article.markdown.trim().split(/\n\s*\n/)[0],`# ${article.title}`));
+ if(slug==='company-parker-hannifin-2026-11-04')test(`${slug}: opening company description is visibly rendered`,()=>{
+  const introduction='Parker Hannifinは、工場や航空機の「動き、流れ、圧力」を制御する部品・システムの会社です。油圧、空圧、フィルター、シールなどを組み合わせ、装置メーカーへの販売と、その後の補修・交換で稼ぎます。';
+  assert.equal(article.markdown.trim().split(/\n\s*\n/)[1],introduction);
+  assert.ok(html.includes(`<div class="report-body research-article-body"><p>${introduction}</p>`));
+ });
  test(`${slug}: complete ordered body, every cell/link and metadata`,()=>verify(html));
  for(const [label,mutate] of [
   ['removed paragraph',h=>h.replace(/(<div class="report-body research-article-body">[\s\S]*?)<p>.*?<\/p>/s,'$1')],
