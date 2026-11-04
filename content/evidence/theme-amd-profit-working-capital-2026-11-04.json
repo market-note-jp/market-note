@@ -1,0 +1,1206 @@
+{
+  "version": 1,
+  "articleSlug": "theme-amd-profit-working-capital-2026-11-04",
+  "articleSha256": "895ff8cd00a712e22312d745f6ceb3774a3ab064a131e2cfce410a0d13dce56f",
+  "checkedAt": "2026-11-04T10:48:35.224949+00:00",
+  "informationCutoff": "2026-11-04T10:43:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "全数値表・CF分解を公式EX99.1本文と照合。数字は未監査、百万米ドル。3か月と9か月累計、GAAPと会社定義FCFを区別。Q3の非継続事業CFはゼロだが前年には存在し、継続営業CFで比較。原資料は同一企業で独立外部資料の追認とはしない。顧客別回収や在庫との契約対応は未確認として本文に明示。株価評価・予測FCFは作らない。独立レビューは親担当予定。",
+  "comparisons": [
+    {
+      "id": "profit-cash-table",
+      "question": "四半期と9か月累計を分離。営業CFは継続事業、純利益はGAAP、FCFは会社定義。非継続営業CFを混ぜない。",
+      "definition": "四半期と9か月累計を分離。営業CFは継続事業、純利益はGAAP、FCFは会社定義。非継続営業CFを混ぜない。",
+      "status": "ready",
+      "claim": "| GAAP純利益 | 1,243 | 2,428 |",
+      "requiredInputs": [
+        {
+          "id": "oldni",
+          "entity": "AMD",
+          "metric": "GAAP純利益",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        },
+        {
+          "id": "oldcfo",
+          "entity": "AMD",
+          "metric": "継続事業営業CF",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF"
+        },
+        {
+          "id": "oldcapex",
+          "entity": "AMD",
+          "metric": "有形固定資産購入額",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "有形固定資産購入額"
+        },
+        {
+          "id": "oldfcf",
+          "entity": "AMD",
+          "metric": "会社定義FCF",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社定義FCF"
+        },
+        {
+          "id": "newni",
+          "entity": "AMD",
+          "metric": "GAAP純利益",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        },
+        {
+          "id": "newcfo",
+          "entity": "AMD",
+          "metric": "継続事業営業CF",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF"
+        },
+        {
+          "id": "newcapex",
+          "entity": "AMD",
+          "metric": "有形固定資産購入額",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "有形固定資産購入額"
+        },
+        {
+          "id": "newfcf",
+          "entity": "AMD",
+          "metric": "会社定義FCF",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社定義FCF"
+        },
+        {
+          "id": "old9",
+          "entity": "AMD",
+          "metric": "9か月累計FCF",
+          "periodStart": "2024-12-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "9か月累計FCF"
+        },
+        {
+          "id": "new9",
+          "entity": "AMD",
+          "metric": "9か月累計FCF",
+          "periodStart": "2025-12-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "9か月累計FCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oldni",
+          "entity": "AMD",
+          "metric": "GAAP純利益",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 1243,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "損益計算書・CF計算書・FCF調整表、印刷8・10・12頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldcfo",
+          "entity": "AMD",
+          "metric": "継続事業営業CF",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF",
+          "value": 1788,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "損益計算書・CF計算書・FCF調整表、印刷8・10・12頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldcapex",
+          "entity": "AMD",
+          "metric": "有形固定資産購入額",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "有形固定資産購入額",
+          "value": 258,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "損益計算書・CF計算書・FCF調整表、印刷8・10・12頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldfcf",
+          "entity": "AMD",
+          "metric": "会社定義FCF",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社定義FCF",
+          "value": 1530,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "損益計算書・CF計算書・FCF調整表、印刷8・10・12頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newni",
+          "entity": "AMD",
+          "metric": "GAAP純利益",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 2428,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "損益計算書・CF計算書・FCF調整表、印刷8・10・12頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newcfo",
+          "entity": "AMD",
+          "metric": "継続事業営業CF",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF",
+          "value": 1202,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "損益計算書・CF計算書・FCF調整表、印刷8・10・12頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newcapex",
+          "entity": "AMD",
+          "metric": "有形固定資産購入額",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "有形固定資産購入額",
+          "value": 648,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "損益計算書・CF計算書・FCF調整表、印刷8・10・12頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newfcf",
+          "entity": "AMD",
+          "metric": "会社定義FCF",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社定義FCF",
+          "value": 554,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "損益計算書・CF計算書・FCF調整表、印刷8・10・12頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "old9",
+          "entity": "AMD",
+          "metric": "9か月累計FCF",
+          "periodStart": "2024-12-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "9か月累計FCF",
+          "value": 3437,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "FCF調整表、印刷12頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new9",
+          "entity": "AMD",
+          "metric": "9か月累計FCF",
+          "periodStart": "2025-12-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "9か月累計FCF",
+          "value": 4678,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "FCF調整表、印刷12頁",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fcf-bridge",
+      "question": "四半期FCFの減少額976は、営業CFの減少586と設備購入の増加390に分けられる。",
+      "definition": "四半期FCFの減少額976は、営業CFの減少586と設備購入の増加390に分けられる。",
+      "status": "ready",
+      "claim": "四半期FCFの減少額976は、営業CFの減少586と設備購入の増加390に分けられる。",
+      "requiredInputs": [
+        {
+          "id": "oldni",
+          "entity": "AMD",
+          "metric": "GAAP純利益",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        },
+        {
+          "id": "oldcfo",
+          "entity": "AMD",
+          "metric": "継続事業営業CF",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF"
+        },
+        {
+          "id": "oldcapex",
+          "entity": "AMD",
+          "metric": "有形固定資産購入額",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "有形固定資産購入額"
+        },
+        {
+          "id": "oldfcf",
+          "entity": "AMD",
+          "metric": "会社定義FCF",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社定義FCF"
+        },
+        {
+          "id": "newni",
+          "entity": "AMD",
+          "metric": "GAAP純利益",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        },
+        {
+          "id": "newcfo",
+          "entity": "AMD",
+          "metric": "継続事業営業CF",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF"
+        },
+        {
+          "id": "newcapex",
+          "entity": "AMD",
+          "metric": "有形固定資産購入額",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "有形固定資産購入額"
+        },
+        {
+          "id": "newfcf",
+          "entity": "AMD",
+          "metric": "会社定義FCF",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社定義FCF"
+        },
+        {
+          "id": "old9",
+          "entity": "AMD",
+          "metric": "9か月累計FCF",
+          "periodStart": "2024-12-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "9か月累計FCF"
+        },
+        {
+          "id": "new9",
+          "entity": "AMD",
+          "metric": "9か月累計FCF",
+          "periodStart": "2025-12-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "9か月累計FCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oldni",
+          "entity": "AMD",
+          "metric": "GAAP純利益",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 1243,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "損益計算書・CF計算書・FCF調整表、印刷8・10・12頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldcfo",
+          "entity": "AMD",
+          "metric": "継続事業営業CF",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF",
+          "value": 1788,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "損益計算書・CF計算書・FCF調整表、印刷8・10・12頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldcapex",
+          "entity": "AMD",
+          "metric": "有形固定資産購入額",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "有形固定資産購入額",
+          "value": 258,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "損益計算書・CF計算書・FCF調整表、印刷8・10・12頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldfcf",
+          "entity": "AMD",
+          "metric": "会社定義FCF",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社定義FCF",
+          "value": 1530,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "損益計算書・CF計算書・FCF調整表、印刷8・10・12頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newni",
+          "entity": "AMD",
+          "metric": "GAAP純利益",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 2428,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "損益計算書・CF計算書・FCF調整表、印刷8・10・12頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newcfo",
+          "entity": "AMD",
+          "metric": "継続事業営業CF",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF",
+          "value": 1202,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "損益計算書・CF計算書・FCF調整表、印刷8・10・12頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newcapex",
+          "entity": "AMD",
+          "metric": "有形固定資産購入額",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "有形固定資産購入額",
+          "value": 648,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "損益計算書・CF計算書・FCF調整表、印刷8・10・12頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newfcf",
+          "entity": "AMD",
+          "metric": "会社定義FCF",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社定義FCF",
+          "value": 554,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "損益計算書・CF計算書・FCF調整表、印刷8・10・12頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "old9",
+          "entity": "AMD",
+          "metric": "9か月累計FCF",
+          "periodStart": "2024-12-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "9か月累計FCF",
+          "value": 3437,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "FCF調整表、印刷12頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new9",
+          "entity": "AMD",
+          "metric": "9か月累計FCF",
+          "periodStart": "2025-12-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "9か月累計FCF",
+          "value": 4678,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "FCF調整表、印刷12頁",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fall",
+          "operation": "difference",
+          "inputs": [
+            "oldfcf",
+            "newfcf"
+          ],
+          "value": 976,
+          "definition": "前年四半期FCF−当四半期FCF",
+          "precision": 0
+        },
+        {
+          "id": "cfofall",
+          "operation": "difference",
+          "inputs": [
+            "oldcfo",
+            "newcfo"
+          ],
+          "value": 586,
+          "definition": "継続営業CFの減少額",
+          "precision": 0
+        },
+        {
+          "id": "capexrise",
+          "operation": "difference",
+          "inputs": [
+            "newcapex",
+            "oldcapex"
+          ],
+          "value": 390,
+          "definition": "設備購入の増加額",
+          "precision": 0
+        },
+        {
+          "id": "sumbridge",
+          "operation": "sum",
+          "inputs": [
+            "cfofall",
+            "capexrise"
+          ],
+          "value": 976,
+          "definition": "営業CF減少＋設備支出増加",
+          "precision": 0
+        },
+        {
+          "id": "nineincrease",
+          "operation": "difference",
+          "inputs": [
+            "new9",
+            "old9"
+          ],
+          "value": 1241,
+          "definition": "累計FCF増加額",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "working-capital",
+      "question": "| 上記5項目の合計（筆者計算） | −708 | −3,357 |",
+      "definition": "| 上記5項目の合計（筆者計算） | −708 | −3,357 |",
+      "status": "ready",
+      "claim": "| 上記5項目の合計（筆者計算） | −708 | −3,357 |",
+      "requiredInputs": [
+        {
+          "id": "oldar",
+          "entity": "AMD",
+          "metric": "売掛金の営業CF影響",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書 Changes in operating assets and liabilities の符号付き数値。残高ではない。"
+        },
+        {
+          "id": "oldinv",
+          "entity": "AMD",
+          "metric": "棚卸資産の営業CF影響",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書 Changes in operating assets and liabilities の符号付き数値。残高ではない。"
+        },
+        {
+          "id": "oldpre",
+          "entity": "AMD",
+          "metric": "前払費用その他資産の営業CF影響",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書 Changes in operating assets and liabilities の符号付き数値。残高ではない。"
+        },
+        {
+          "id": "oldap",
+          "entity": "AMD",
+          "metric": "買掛金の営業CF影響",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書 Changes in operating assets and liabilities の符号付き数値。残高ではない。"
+        },
+        {
+          "id": "oldaccr",
+          "entity": "AMD",
+          "metric": "未払費用その他負債の営業CF影響",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書 Changes in operating assets and liabilities の符号付き数値。残高ではない。"
+        },
+        {
+          "id": "newar",
+          "entity": "AMD",
+          "metric": "売掛金の営業CF影響",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書 Changes in operating assets and liabilities の符号付き数値。残高ではない。"
+        },
+        {
+          "id": "newinv",
+          "entity": "AMD",
+          "metric": "棚卸資産の営業CF影響",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書 Changes in operating assets and liabilities の符号付き数値。残高ではない。"
+        },
+        {
+          "id": "newpre",
+          "entity": "AMD",
+          "metric": "前払費用その他資産の営業CF影響",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書 Changes in operating assets and liabilities の符号付き数値。残高ではない。"
+        },
+        {
+          "id": "newap",
+          "entity": "AMD",
+          "metric": "買掛金の営業CF影響",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書 Changes in operating assets and liabilities の符号付き数値。残高ではない。"
+        },
+        {
+          "id": "newaccr",
+          "entity": "AMD",
+          "metric": "未払費用その他負債の営業CF影響",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書 Changes in operating assets and liabilities の符号付き数値。残高ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oldar",
+          "entity": "AMD",
+          "metric": "売掛金の営業CF影響",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書 Changes in operating assets and liabilities の符号付き数値。残高ではない。",
+          "value": -1085,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "CF計算書、印刷10頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldinv",
+          "entity": "AMD",
+          "metric": "棚卸資産の営業CF影響",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書 Changes in operating assets and liabilities の符号付き数値。残高ではない。",
+          "value": -636,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "CF計算書、印刷10頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldpre",
+          "entity": "AMD",
+          "metric": "前払費用その他資産の営業CF影響",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書 Changes in operating assets and liabilities の符号付き数値。残高ではない。",
+          "value": 118,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "CF計算書、印刷10頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldap",
+          "entity": "AMD",
+          "metric": "買掛金の営業CF影響",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書 Changes in operating assets and liabilities の符号付き数値。残高ではない。",
+          "value": 451,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "CF計算書、印刷10頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldaccr",
+          "entity": "AMD",
+          "metric": "未払費用その他負債の営業CF影響",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書 Changes in operating assets and liabilities の符号付き数値。残高ではない。",
+          "value": 444,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "CF計算書、印刷10頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newar",
+          "entity": "AMD",
+          "metric": "売掛金の営業CF影響",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書 Changes in operating assets and liabilities の符号付き数値。残高ではない。",
+          "value": -1928,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "CF計算書、印刷10頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newinv",
+          "entity": "AMD",
+          "metric": "棚卸資産の営業CF影響",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書 Changes in operating assets and liabilities の符号付き数値。残高ではない。",
+          "value": -2995,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "CF計算書、印刷10頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newpre",
+          "entity": "AMD",
+          "metric": "前払費用その他資産の営業CF影響",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書 Changes in operating assets and liabilities の符号付き数値。残高ではない。",
+          "value": -1070,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "CF計算書、印刷10頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newap",
+          "entity": "AMD",
+          "metric": "買掛金の営業CF影響",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書 Changes in operating assets and liabilities の符号付き数値。残高ではない。",
+          "value": 2313,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "CF計算書、印刷10頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newaccr",
+          "entity": "AMD",
+          "metric": "未払費用その他負債の営業CF影響",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書 Changes in operating assets and liabilities の符号付き数値。残高ではない。",
+          "value": 323,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "CF計算書、印刷10頁",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "oldsum",
+          "operation": "sum",
+          "inputs": [
+            "oldar",
+            "oldinv",
+            "oldpre",
+            "oldap",
+            "oldaccr"
+          ],
+          "value": -708,
+          "definition": "5項目の符号付き合計",
+          "precision": 0
+        },
+        {
+          "id": "newsum",
+          "operation": "sum",
+          "inputs": [
+            "newar",
+            "newinv",
+            "newpre",
+            "newap",
+            "newaccr"
+          ],
+          "value": -3357,
+          "definition": "5項目の符号付き合計",
+          "precision": 0
+        },
+        {
+          "id": "outflowrise",
+          "operation": "difference",
+          "inputs": [
+            "oldsum",
+            "newsum"
+          ],
+          "value": 2649,
+          "definition": "5項目によるCF押し下げの増加",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "cash-financing",
+      "question": "今回の現金・現金同等物・使途制限付現金の増加は2,307。一方、営業CFは＋1,202、投資CFは−1,243、財務CFは＋2,348だった。",
+      "definition": "今回の現金・現金同等物・使途制限付現金の増加は2,307。一方、営業CFは＋1,202、投資CFは−1,243、財務CFは＋2,348だった。",
+      "status": "ready",
+      "claim": "今回の現金・現金同等物・使途制限付現金の増加は2,307。一方、営業CFは＋1,202、投資CFは−1,243、財務CFは＋2,348だった。",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "AMD",
+          "metric": "営業CF",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "invest",
+          "entity": "AMD",
+          "metric": "投資CF",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "投資CF"
+        },
+        {
+          "id": "finance",
+          "entity": "AMD",
+          "metric": "財務CF",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "財務CF"
+        },
+        {
+          "id": "increase",
+          "entity": "AMD",
+          "metric": "現金・現金同等物・使途制限付現金純増",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金・現金同等物・使途制限付現金純増"
+        },
+        {
+          "id": "debt",
+          "entity": "AMD",
+          "metric": "借入調達純額",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "借入調達純額"
+        },
+        {
+          "id": "repay",
+          "entity": "AMD",
+          "metric": "借入返済支出額",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "借入返済支出額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "AMD",
+          "metric": "営業CF",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1202,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "CF計算書、印刷10頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "invest",
+          "entity": "AMD",
+          "metric": "投資CF",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "投資CF",
+          "value": -1243,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "CF計算書、印刷10頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "finance",
+          "entity": "AMD",
+          "metric": "財務CF",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "財務CF",
+          "value": 2348,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "CF計算書、印刷10頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "increase",
+          "entity": "AMD",
+          "metric": "現金・現金同等物・使途制限付現金純増",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金・現金同等物・使途制限付現金純増",
+          "value": 2307,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "CF計算書、印刷10頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "debt",
+          "entity": "AMD",
+          "metric": "借入調達純額",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "借入調達純額",
+          "value": 4726,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "CF計算書、印刷10頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "repay",
+          "entity": "AMD",
+          "metric": "借入返済支出額",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "借入返済支出額",
+          "value": 875,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "CF計算書、印刷10頁",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "cashsum",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "invest",
+            "finance"
+          ],
+          "value": 2307,
+          "definition": "三活動CFの合計。借入金使途の追跡を示さない。",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "noncash-and-discontinued",
+      "question": "今回は顧客ワラントに関する非現金項目1,179の加算もある。",
+      "definition": "今回は顧客ワラントに関する非現金項目1,179の加算もある。",
+      "status": "ready",
+      "claim": "今回は顧客ワラントに関する非現金項目1,179の加算もある。",
+      "requiredInputs": [
+        {
+          "id": "warrant",
+          "entity": "AMD",
+          "metric": "顧客ワラント非現金営業CF調整",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "顧客ワラント非現金営業CF調整"
+        },
+        {
+          "id": "disc",
+          "entity": "AMD",
+          "metric": "非継続事業純利益",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非継続事業純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "warrant",
+          "entity": "AMD",
+          "metric": "顧客ワラント非現金営業CF調整",
+          "periodStart": "2026-06-28",
+          "periodEnd": "2026-09-26",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "顧客ワラント非現金営業CF調整",
+          "value": 1179,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "CF計算書、印刷10頁",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "disc",
+          "entity": "AMD",
+          "metric": "非継続事業純利益",
+          "periodStart": "2025-06-29",
+          "periodEnd": "2025-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "非継続事業純利益",
+          "value": 71,
+          "source": {
+            "url": "https://ir.amd.com/financial-information/sec-filings/content/0000002488-26-000188/q32026991.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "CF計算書の非継続事業利益控除−71、及び損益計算書",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
