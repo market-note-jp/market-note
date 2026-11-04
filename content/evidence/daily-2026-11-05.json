@@ -1,0 +1,631 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-11-05",
+  "articleSha256": "6156d002ae79c8ea6b5b16342b4c561218d4c16d851033061b9d548cc1a6ae25",
+  "checkedAt": "2026-11-04T21:24:31.732Z",
+  "informationCutoff": "2026-11-05T06:23:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "事前列挙後に原資料を読み、最終記事の見出し・抜粋・結論・全本文・分析・注目点・免責を確認した。Arm総売上と収益区分別の全6入力、三菱商事の新旧予想とFCFの全2構成値、ISM前月比較、ADP当月と前月改定後を照合。Arm PDF6ページ、三菱商事短信PDF6・8ページをページ画像でも実見。説明会PDFで『フリー』の文字検索が失敗したことを記載なしと扱わず、短信の該当ページでCF表を確認した。FTT/TTMやNon-GAAP利益比較は採用しない。Reuters米株の指数値は明示的なpreliminaryであり、一次指数ページも動的終値を返さないため精密日次率を外した。未確認値を0で埋めていない。ADPの差0は実際に確認した86,000と86,000の差である。",
+  "sourceChecks": [
+    {
+      "url": "https://investors.arm.com/static-files/0b5baa2e-fc47-4d05-b724-e49de7bd4356",
+      "publishedOn": "2026-11-04",
+      "pdfPage": 5,
+      "locator": "Q2 FYE27 Financial Overview",
+      "checked": "ライセンス売上の規模・計上時期・高額契約による変動を確認。収益区分と通期・四半期、GAAP売上とNon-GAAP利益を区別。PDF6と10の売上表も読んだ。"
+    },
+    {
+      "url": "https://www.mitsubishicorp.com/jp/ja/ir/library/earnings/pdf/202611j.pdf",
+      "publishedOn": "2026-11-04",
+      "pdfPage": 6,
+      "locator": "キャッシュ・フローの状況／概要表と脚注",
+      "checked": "営業CF9,913、投資CF−11,280、FCF−1,367億円の同じ列を画像照合。米国シェールガス株式取得と千代田化工建設持分法化による現預金減少を確認。会社独自営業収益CFは運転資金増減除外とリース支払反映の別定義で、FCF計算に使わない。"
+    },
+    {
+      "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+      "publishedOn": "2026-11-04",
+      "locator": "Services PMI本文、Results at a Glance、Prices、定義・調整注記",
+      "checked": "PMI54.5/54.9、境界50、価格指数73.0を原文で確認。価格指数は仕入価格の上昇方向でCPIではない。価格指数前月差や新規受注の前月差など追加数値比較は記事で不採用。"
+    },
+    {
+      "url": "https://mediacenter.adp.com/2026-11-04-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-86,000-Jobs-in-October",
+      "publishedOn": "2026-11-04",
+      "locator": "Employment Report／Change by Sector／September revision末尾",
+      "checked": "10月86,000、9月改定後86,000、Professional and business services −27,000人を確認。給与支払データに基づく独自の民間雇用推計という説明も読んだ。9月初報90,000を時系列比較に混ぜず、政府統計の予測値・結果へ置換しない。"
+    },
+    {
+      "url": "https://www.reuters.com/business/us-stock-index-futures-steady-democrats-seize-congress-2026-11-04/",
+      "publishedOn": "2026-11-04",
+      "locator": "取引終了報道冒頭、AI HEAVYWEIGHTS RISE, DATA CENTER OPERATORS FALL、According to preliminary data",
+      "checked": "主要指数上昇、データセンター運営株下落、民主党の上下両院多数派確保という報道時点の大勢を確認。政治・規制の期待と実際に成立した制度を区別。個別銘柄変化率・議席数・指数終値は記事に不採用。"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "arm-total-revenue",
+      "question": "対応四半期の連結売上成長率",
+      "definition": "Armの米国会計基準・連結売上。FYE27Q2=2026年7〜9月とFYE26Q2=2025年7〜9月の対応四半期。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "total-current",
+          "entity": "Arm",
+          "metric": "Total revenue",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Armの米国会計基準・連結売上。FYE27Q2=2026年7〜9月とFYE26Q2=2025年7〜9月の対応四半期。"
+        },
+        {
+          "id": "total-prior",
+          "entity": "Arm",
+          "metric": "Total revenue",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Armの米国会計基準・連結売上。FYE27Q2=2026年7〜9月とFYE26Q2=2025年7〜9月の対応四半期。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "total-current",
+          "entity": "Arm",
+          "metric": "Total revenue",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Armの米国会計基準・連結売上。FYE27Q2=2026年7〜9月とFYE26Q2=2025年7〜9月の対応四半期。",
+          "value": 1443,
+          "source": {
+            "url": "https://investors.arm.com/static-files/0b5baa2e-fc47-4d05-b724-e49de7bd4356",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF6ページKey Financial and Operating MetricsのGAAP Total revenue／License and other revenue／Royalty revenue、PDF10ページ3カ月の損益表",
+            "kind": "primary",
+            "pdfPage": 6
+          }
+        },
+        {
+          "id": "total-prior",
+          "entity": "Arm",
+          "metric": "Total revenue",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Armの米国会計基準・連結売上。FYE27Q2=2026年7〜9月とFYE26Q2=2025年7〜9月の対応四半期。",
+          "value": 1135,
+          "source": {
+            "url": "https://investors.arm.com/static-files/0b5baa2e-fc47-4d05-b724-e49de7bd4356",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF6ページKey Financial and Operating MetricsのGAAP Total revenue／License and other revenue／Royalty revenue、PDF10ページ3カ月の損益表",
+            "kind": "primary",
+            "pdfPage": 6
+          }
+        }
+      ],
+      "claim": "Armが11月4日に公表した2027年3月期第2四半期（2026年7〜9月）の連結売上高は1,443百万米ドル。前年同期の1,135百万米ドルから27.1%増えた（小数第1位）。同じ四半期・米ドル建ての米国会計基準による実績比較である。",
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "total-current",
+            "total-prior"
+          ],
+          "definition": "（当期÷前年同期−1）×100、同じ収益区分の前年比、%",
+          "precision": 1,
+          "value": 27.1
+        }
+      ]
+    },
+    {
+      "id": "arm-license-and-royalty",
+      "question": "同期間の各収益区分の前年比を別々に確認する",
+      "definition": "Armの米国会計基準・連結売上。FYE27Q2=2026年7〜9月とFYE26Q2=2025年7〜9月の対応四半期。ライセンスその他とロイヤルティーは別の収益区分であり、それぞれの前年比だけ計算。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "license-current",
+          "entity": "Arm",
+          "metric": "License and other revenue",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Armの米国会計基準・連結売上。FYE27Q2=2026年7〜9月とFYE26Q2=2025年7〜9月の対応四半期。"
+        },
+        {
+          "id": "license-prior",
+          "entity": "Arm",
+          "metric": "License and other revenue",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Armの米国会計基準・連結売上。FYE27Q2=2026年7〜9月とFYE26Q2=2025年7〜9月の対応四半期。"
+        },
+        {
+          "id": "royalty-current",
+          "entity": "Arm",
+          "metric": "Royalty revenue",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Armの米国会計基準・連結売上。FYE27Q2=2026年7〜9月とFYE26Q2=2025年7〜9月の対応四半期。"
+        },
+        {
+          "id": "royalty-prior",
+          "entity": "Arm",
+          "metric": "Royalty revenue",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Armの米国会計基準・連結売上。FYE27Q2=2026年7〜9月とFYE26Q2=2025年7〜9月の対応四半期。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "license-current",
+          "entity": "Arm",
+          "metric": "License and other revenue",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Armの米国会計基準・連結売上。FYE27Q2=2026年7〜9月とFYE26Q2=2025年7〜9月の対応四半期。",
+          "value": 773,
+          "source": {
+            "url": "https://investors.arm.com/static-files/0b5baa2e-fc47-4d05-b724-e49de7bd4356",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF6ページKey Financial and Operating MetricsのGAAP Total revenue／License and other revenue／Royalty revenue、PDF10ページ3カ月の損益表",
+            "kind": "primary",
+            "pdfPage": 6
+          }
+        },
+        {
+          "id": "license-prior",
+          "entity": "Arm",
+          "metric": "License and other revenue",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Armの米国会計基準・連結売上。FYE27Q2=2026年7〜9月とFYE26Q2=2025年7〜9月の対応四半期。",
+          "value": 515,
+          "source": {
+            "url": "https://investors.arm.com/static-files/0b5baa2e-fc47-4d05-b724-e49de7bd4356",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF6ページKey Financial and Operating MetricsのGAAP Total revenue／License and other revenue／Royalty revenue、PDF10ページ3カ月の損益表",
+            "kind": "primary",
+            "pdfPage": 6
+          }
+        },
+        {
+          "id": "royalty-current",
+          "entity": "Arm",
+          "metric": "Royalty revenue",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Armの米国会計基準・連結売上。FYE27Q2=2026年7〜9月とFYE26Q2=2025年7〜9月の対応四半期。",
+          "value": 670,
+          "source": {
+            "url": "https://investors.arm.com/static-files/0b5baa2e-fc47-4d05-b724-e49de7bd4356",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF6ページKey Financial and Operating MetricsのGAAP Total revenue／License and other revenue／Royalty revenue、PDF10ページ3カ月の損益表",
+            "kind": "primary",
+            "pdfPage": 6
+          }
+        },
+        {
+          "id": "royalty-prior",
+          "entity": "Arm",
+          "metric": "Royalty revenue",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Armの米国会計基準・連結売上。FYE27Q2=2026年7〜9月とFYE26Q2=2025年7〜9月の対応四半期。",
+          "value": 620,
+          "source": {
+            "url": "https://investors.arm.com/static-files/0b5baa2e-fc47-4d05-b724-e49de7bd4356",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF6ページKey Financial and Operating MetricsのGAAP Total revenue／License and other revenue／Royalty revenue、PDF10ページ3カ月の損益表",
+            "kind": "primary",
+            "pdfPage": 6
+          }
+        }
+      ],
+      "claim": "内訳はライセンスその他売上が773百万米ドル（前年同期515百万米ドル）、ロイヤルティー売上が670百万米ドル（同620百万米ドル）。それぞれ50.1%増、8.1%増で、売上の伸び方は収入の種類によって異なる。両項目は同じ会計期間の別の収益区分であり、片方の増加率を全事業へ当てはめない。",
+      "calculations": [
+        {
+          "id": "license-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "license-current",
+            "license-prior"
+          ],
+          "definition": "（当期÷前年同期−1）×100、同じ収益区分の前年比、%",
+          "precision": 1,
+          "value": 50.1
+        },
+        {
+          "id": "royalty-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "royalty-current",
+            "royalty-prior"
+          ],
+          "definition": "（当期÷前年同期−1）×100、同じ収益区分の前年比、%",
+          "precision": 1,
+          "value": 8.1
+        }
+      ]
+    },
+    {
+      "id": "mitsubishi-profit-forecast",
+      "question": "同年度の利益予想修正額と修正率",
+      "definition": "三菱商事IFRS連結・親会社所有者帰属当期利益、2027年3月期同一年度の2026-11-04修正会社予想と2026-05-01公表予想。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "new",
+          "entity": "三菱商事",
+          "metric": "修正後・親会社所有者帰属利益予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円（JPY）",
+          "basis": "company-forecast",
+          "definition": "三菱商事IFRS連結・親会社所有者帰属当期利益、2027年3月期同一年度の2026-11-04修正会社予想と2026-05-01公表予想。"
+        },
+        {
+          "id": "old",
+          "entity": "三菱商事",
+          "metric": "2026-05-01公表・親会社所有者帰属利益予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円（JPY）",
+          "basis": "company-forecast",
+          "definition": "三菱商事IFRS連結・親会社所有者帰属当期利益、2027年3月期同一年度の2026-11-04修正会社予想と2026-05-01公表予想。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "new",
+          "entity": "三菱商事",
+          "metric": "修正後・親会社所有者帰属利益予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円（JPY）",
+          "basis": "company-forecast",
+          "definition": "三菱商事IFRS連結・親会社所有者帰属当期利益、2027年3月期同一年度の2026-11-04修正会社予想と2026-05-01公表予想。",
+          "value": 12000,
+          "source": {
+            "url": "https://www.mitsubishicorp.com/jp/ja/ir/library/earnings/pdf/202611j.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF8ページ（印刷6ページ）業績予想の修正、2026年5月1日公表予想Aと今回修正B",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "old",
+          "entity": "三菱商事",
+          "metric": "2026-05-01公表・親会社所有者帰属利益予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円（JPY）",
+          "basis": "company-forecast",
+          "definition": "三菱商事IFRS連結・親会社所有者帰属当期利益、2027年3月期同一年度の2026-11-04修正会社予想と2026-05-01公表予想。",
+          "value": 11000,
+          "source": {
+            "url": "https://www.mitsubishicorp.com/jp/ja/ir/library/earnings/pdf/202611j.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF8ページ（印刷6ページ）業績予想の修正、2026年5月1日公表予想Aと今回修正B",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        }
+      ],
+      "claim": "三菱商事は11月4日、2027年3月期（2026年4月〜2027年3月）の親会社所有者に帰属する当期利益の会社予想を1兆1,000億円から1兆2,000億円へ引き上げた。上乗せは1,000億円、従来予想比9.1%。IFRS連結・日本円の同一年度の会社予想同士で、市場予想や前期実績との比較ではない。",
+      "calculations": [
+        {
+          "id": "increase",
+          "operation": "difference",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "修正後−従来予想、億円",
+          "precision": 0,
+          "value": 1000
+        },
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "（修正後÷従来予想−1）×100、%",
+          "precision": 1,
+          "value": 9.1
+        }
+      ]
+    },
+    {
+      "id": "mitsubishi-fcf",
+      "question": "FCFの全構成値を同期間同単位で確認できるか",
+      "definition": "三菱商事IFRS連結2026年4〜9月期実績、短信CF概要表の億円丸め値。FCF=財務会計の営業CF+投資CF全体。会社独自の営業収益CFや設備投資控除CFに置換しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "三菱商事",
+          "metric": "営業活動によるCF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円（JPY、概要表丸め値）",
+          "basis": "actual",
+          "definition": "三菱商事IFRS連結2026年4〜9月期実績、短信CF概要表の億円丸め値。FCF=財務会計の営業CF+投資CF全体。会社独自の営業収益CFや設備投資控除CFに置換しない。"
+        },
+        {
+          "id": "cfi",
+          "entity": "三菱商事",
+          "metric": "投資活動によるCF（支出超過は負）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円（JPY、概要表丸め値）",
+          "basis": "actual",
+          "definition": "三菱商事IFRS連結2026年4〜9月期実績、短信CF概要表の億円丸め値。FCF=財務会計の営業CF+投資CF全体。会社独自の営業収益CFや設備投資控除CFに置換しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "三菱商事",
+          "metric": "営業活動によるCF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円（JPY、概要表丸め値）",
+          "basis": "actual",
+          "definition": "三菱商事IFRS連結2026年4〜9月期実績、短信CF概要表の億円丸め値。FCF=財務会計の営業CF+投資CF全体。会社独自の営業収益CFや設備投資控除CFに置換しない。",
+          "value": 9913,
+          "source": {
+            "url": "https://www.mitsubishicorp.com/jp/ja/ir/library/earnings/pdf/202611j.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF6ページ（印刷4ページ）キャッシュ・フロー概要表、当中間連結会計期間列、画像実見",
+            "kind": "primary",
+            "pdfPage": 6
+          }
+        },
+        {
+          "id": "cfi",
+          "entity": "三菱商事",
+          "metric": "投資活動によるCF（支出超過は負）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円（JPY、概要表丸め値）",
+          "basis": "actual",
+          "definition": "三菱商事IFRS連結2026年4〜9月期実績、短信CF概要表の億円丸め値。FCF=財務会計の営業CF+投資CF全体。会社独自の営業収益CFや設備投資控除CFに置換しない。",
+          "value": -11280,
+          "source": {
+            "url": "https://www.mitsubishicorp.com/jp/ja/ir/library/earnings/pdf/202611j.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF6ページ（印刷4ページ）キャッシュ・フロー概要表、当中間連結会計期間列、画像実見",
+            "kind": "primary",
+            "pdfPage": 6
+          }
+        }
+      ],
+      "claim": "一方、2026年4〜9月期の営業キャッシュフローは9,913億円、投資キャッシュフローは−11,280億円だった。決算短信の億円単位の概要表にそろえると、FCF＝営業CF＋投資CF＝9,913＋（−11,280）＝−1,367億円となる。投資CF全体を加える定義で、設備投資だけを控除した数字ではなく、概要表の丸め値を使っている。",
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "cfi"
+          ],
+          "definition": "営業CF＋投資CF全額、負の投資CFを加算、億円",
+          "precision": 0,
+          "value": -1367
+        }
+      ]
+    },
+    {
+      "id": "ism-services-pmi",
+      "question": "同系列PMI前月差",
+      "definition": "ISM Services PMIの同一公表系列、月次拡散指数。Business Activity/NewOrders/Employment等の季節調整済み系列を含む総合指数。GDP成長率ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "oct",
+          "entity": "ISM米サービス業調査",
+          "metric": "Services PMI",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "指数ポイント",
+          "basis": "actual",
+          "definition": "ISM Services PMIの同一公表系列、月次拡散指数。Business Activity/NewOrders/Employment等の季節調整済み系列を含む総合指数。GDP成長率ではない。"
+        },
+        {
+          "id": "sep",
+          "entity": "ISM米サービス業調査",
+          "metric": "Services PMI",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "指数ポイント",
+          "basis": "actual",
+          "definition": "ISM Services PMIの同一公表系列、月次拡散指数。Business Activity/NewOrders/Employment等の季節調整済み系列を含む総合指数。GDP成長率ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oct",
+          "entity": "ISM米サービス業調査",
+          "metric": "Services PMI",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "指数ポイント",
+          "basis": "actual",
+          "definition": "ISM Services PMIの同一公表系列、月次拡散指数。Business Activity/NewOrders/Employment等の季節調整済み系列を含む総合指数。GDP成長率ではない。",
+          "value": 54.5,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "冒頭とResults at a GlanceのServices PMI October/September/Point Change行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sep",
+          "entity": "ISM米サービス業調査",
+          "metric": "Services PMI",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "指数ポイント",
+          "basis": "actual",
+          "definition": "ISM Services PMIの同一公表系列、月次拡散指数。Business Activity/NewOrders/Employment等の季節調整済み系列を含む総合指数。GDP成長率ではない。",
+          "value": 54.9,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "冒頭とResults at a GlanceのServices PMI October/September/Point Change行",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "ISMが11月4日10:00（米東部標準時間、日本時間5日00:00）に公表した10月のサービス業PMIは54.5。9月の54.9から0.4ポイント低下した。同じ月次調査系列の比較で、50を上回る拡大側にある一方、拡大の勢いは前月より弱い。0.4ポイントの低下をサービス生産額の0.4%減少とは解釈しない。",
+      "calculations": [
+        {
+          "id": "point-change",
+          "operation": "difference",
+          "inputs": [
+            "oct",
+            "sep"
+          ],
+          "definition": "10月−9月、ポイント",
+          "precision": 1,
+          "value": -0.4
+        }
+      ]
+    },
+    {
+      "id": "adp-private-payrolls",
+      "question": "当月純増と今回改定後の前月純増を比較できるか",
+      "definition": "ADP公表の米民間雇用月次純増推計。今回発表の10月と9月改定後を使用。政府部門を含むBLS非農業部門統計と区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "oct",
+          "entity": "ADP米民間雇用",
+          "metric": "雇用者数月次純増",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "人",
+          "basis": "actual",
+          "definition": "ADP公表の米民間雇用月次純増推計。今回発表の10月と9月改定後を使用。政府部門を含むBLS非農業部門統計と区別。"
+        },
+        {
+          "id": "sep",
+          "entity": "ADP米民間雇用",
+          "metric": "雇用者数月次純増（今回改定後）",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "人",
+          "basis": "actual",
+          "definition": "ADP公表の米民間雇用月次純増推計。今回発表の10月と9月改定後を使用。政府部門を含むBLS非農業部門統計と区別。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oct",
+          "entity": "ADP米民間雇用",
+          "metric": "雇用者数月次純増",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "人",
+          "basis": "actual",
+          "definition": "ADP公表の米民間雇用月次純増推計。今回発表の10月と9月改定後を使用。政府部門を含むBLS非農業部門統計と区別。",
+          "value": 86000,
+          "source": {
+            "url": "https://mediacenter.adp.com/2026-11-04-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-86,000-Jobs-in-October",
+            "publishedOn": "2026-11-04",
+            "locator": "Employment Report October 86,000、末尾『September ... revised ... to86,000』",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sep",
+          "entity": "ADP米民間雇用",
+          "metric": "雇用者数月次純増（今回改定後）",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "人",
+          "basis": "actual",
+          "definition": "ADP公表の米民間雇用月次純増推計。今回発表の10月と9月改定後を使用。政府部門を含むBLS非農業部門統計と区別。",
+          "value": 86000,
+          "source": {
+            "url": "https://mediacenter.adp.com/2026-11-04-ADP-National-Employment-Report-Private-Sector-Employment-Increased-by-86,000-Jobs-in-October",
+            "publishedOn": "2026-11-04",
+            "locator": "Employment Report October 86,000、末尾『September ... revised ... to86,000』",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "ADPが11月4日に公表した10月の米民間雇用の純増は86,000人だった。同じ発表資料で9月も改定後86,000人とされ、10月は同じ増加幅である。比較には今回公表の改定後系列を使い、前月の初報とは混ぜない。",
+      "calculations": [
+        {
+          "id": "change-in-net-gains",
+          "operation": "difference",
+          "inputs": [
+            "oct",
+            "sep"
+          ],
+          "definition": "当月純増−前月改定後純増、人。確認した同じ86,000の差。",
+          "precision": 0,
+          "value": 0
+        }
+      ]
+    },
+    {
+      "id": "sp500-close-change-withheld",
+      "question": "通常終値同士の日次騰落率を確定できるか",
+      "definition": "S&P500現物価格指数・配当なし・11月4日と3日の16時米東部標準時間通常終値。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2026-11-04",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "16:00米東部標準時間通常終値"
+        },
+        {
+          "id": "previous",
+          "entity": "S&P500",
+          "metric": "通常取引終値",
+          "periodStart": "2026-11-03",
+          "periodEnd": "2026-11-03",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "16:00米東部標準時間通常終値"
+        }
+      ],
+      "observations": [],
+      "reason": "終了報道は明示的にpreliminary。追加確認したS&P公式指数ページでは動的終値が取得本文に表示されず、最終値としての全入力はそろわなかった。正確な日次率・終値・それに依存する数値見出しを外し、確認済み方向と政策期待を区別する記事を完成。",
+      "omittedClaim": "S&P500の確定終値から日次騰落率を算出した。",
+      "calculations": []
+    }
+  ]
+}
