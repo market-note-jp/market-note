@@ -1,0 +1,2884 @@
+{
+  "version": 1,
+  "articleSlug": "company-diploma-2026-11-04",
+  "articleSha256": "4a92103c5d07d465497d1c48129d6c9b6d6df4a551c8d51ee06c4f6f38788b5d",
+  "checkedAt": "2026-11-04T10:49:25.965900+00:00",
+  "informationCutoff": "2026-11-04T19:40:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "一次PDFをローカル取得・本文抽出。5年表はPDF170頁画像も確認。数値比較全件を記録。独自感応度1524.5×0.01=15.245を小数1桁15.2に丸める。架空予測はなし。原稿hashは統合時に最終確定。 独立レビューでリース利息二重控除を修正。営業CF控除後は元本7.8のみ、独自CF95.6/82.3を再照合。H1新規RCF100百万ポンド・2028年12月満期を追記し読み戻し済み。independent-review-parker.md参照。",
+  "comparisons": [
+    {
+      "id": "fy2021",
+      "question": "| 2021 | 787.4 | 148.7 | 18.9% | 96.6 | 108.8 |",
+      "claim": "| 2021 | 787.4 | 148.7 | 18.9% | 96.6 | 108.8 |",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2020-10-01",
+          "periodEnd": "2021-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益",
+          "periodStart": "2020-10-01",
+          "periodEnd": "2021-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2020-10-01",
+          "periodEnd": "2021-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "調整後営業利益率"
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計税引前利益",
+          "periodStart": "2020-10-01",
+          "periodEnd": "2021-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計税引前利益"
+        },
+        {
+          "id": "i4",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社定義FCF",
+          "periodStart": "2020-10-01",
+          "periodEnd": "2021-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会社定義FCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2020-10-01",
+          "periodEnd": "2021-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 787.4,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益",
+          "periodStart": "2020-10-01",
+          "periodEnd": "2021-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 148.7,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2020-10-01",
+          "periodEnd": "2021-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "調整後営業利益率",
+          "value": 18.9,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計税引前利益",
+          "periodStart": "2020-10-01",
+          "periodEnd": "2021-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計税引前利益",
+          "value": 96.6,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i4",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社定義FCF",
+          "periodStart": "2020-10-01",
+          "periodEnd": "2021-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会社定義FCF",
+          "value": 108.8,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fy2022",
+      "question": "| 2022 | 1,012.8 | 191.2 | 18.9% | 129.5 | 120.4 |",
+      "claim": "| 2022 | 1,012.8 | 191.2 | 18.9% | 129.5 | 120.4 |",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2021-10-01",
+          "periodEnd": "2022-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益",
+          "periodStart": "2021-10-01",
+          "periodEnd": "2022-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2021-10-01",
+          "periodEnd": "2022-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "調整後営業利益率"
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計税引前利益",
+          "periodStart": "2021-10-01",
+          "periodEnd": "2022-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計税引前利益"
+        },
+        {
+          "id": "i4",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社定義FCF",
+          "periodStart": "2021-10-01",
+          "periodEnd": "2022-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会社定義FCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2021-10-01",
+          "periodEnd": "2022-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 1012.8,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益",
+          "periodStart": "2021-10-01",
+          "periodEnd": "2022-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 191.2,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2021-10-01",
+          "periodEnd": "2022-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "調整後営業利益率",
+          "value": 18.9,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計税引前利益",
+          "periodStart": "2021-10-01",
+          "periodEnd": "2022-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計税引前利益",
+          "value": 129.5,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i4",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社定義FCF",
+          "periodStart": "2021-10-01",
+          "periodEnd": "2022-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会社定義FCF",
+          "value": 120.4,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fy2023",
+      "question": "| 2023 | 1,200.3 | 237.0 | 19.7% | 155.6 | 163.8 |",
+      "claim": "| 2023 | 1,200.3 | 237.0 | 19.7% | 155.6 | 163.8 |",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2022-10-01",
+          "periodEnd": "2023-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益",
+          "periodStart": "2022-10-01",
+          "periodEnd": "2023-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2022-10-01",
+          "periodEnd": "2023-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "調整後営業利益率"
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計税引前利益",
+          "periodStart": "2022-10-01",
+          "periodEnd": "2023-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計税引前利益"
+        },
+        {
+          "id": "i4",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社定義FCF",
+          "periodStart": "2022-10-01",
+          "periodEnd": "2023-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会社定義FCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2022-10-01",
+          "periodEnd": "2023-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 1200.3,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益",
+          "periodStart": "2022-10-01",
+          "periodEnd": "2023-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 237,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2022-10-01",
+          "periodEnd": "2023-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "調整後営業利益率",
+          "value": 19.7,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計税引前利益",
+          "periodStart": "2022-10-01",
+          "periodEnd": "2023-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計税引前利益",
+          "value": 155.6,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i4",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社定義FCF",
+          "periodStart": "2022-10-01",
+          "periodEnd": "2023-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会社定義FCF",
+          "value": 163.8,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fy2024",
+      "question": "| 2024 | 1,363.4 | 285.0 | 20.9% | 176.6 | 197.9 |",
+      "claim": "| 2024 | 1,363.4 | 285.0 | 20.9% | 176.6 | 197.9 |",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2023-10-01",
+          "periodEnd": "2024-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益",
+          "periodStart": "2023-10-01",
+          "periodEnd": "2024-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2023-10-01",
+          "periodEnd": "2024-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "調整後営業利益率"
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計税引前利益",
+          "periodStart": "2023-10-01",
+          "periodEnd": "2024-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計税引前利益"
+        },
+        {
+          "id": "i4",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社定義FCF",
+          "periodStart": "2023-10-01",
+          "periodEnd": "2024-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会社定義FCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2023-10-01",
+          "periodEnd": "2024-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 1363.4,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益",
+          "periodStart": "2023-10-01",
+          "periodEnd": "2024-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 285,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2023-10-01",
+          "periodEnd": "2024-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "調整後営業利益率",
+          "value": 20.9,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計税引前利益",
+          "periodStart": "2023-10-01",
+          "periodEnd": "2024-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計税引前利益",
+          "value": 176.6,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i4",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社定義FCF",
+          "periodStart": "2023-10-01",
+          "periodEnd": "2024-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会社定義FCF",
+          "value": 197.9,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fy2025",
+      "question": "| 2025 | 1,524.5 | 342.7 | 22.5% | 248.3 | 247.2 |",
+      "claim": "| 2025 | 1,524.5 | 342.7 | 22.5% | 248.3 | 247.2 |",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "調整後営業利益率"
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計税引前利益",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計税引前利益"
+        },
+        {
+          "id": "i4",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社定義FCF",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会社定義FCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 1524.5,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 342.7,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益率",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "調整後営業利益率",
+          "value": 22.5,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計税引前利益",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計税引前利益",
+          "value": 248.3,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i4",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社定義FCF",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会社定義FCF",
+          "value": 247.2,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "h1-growth",
+      "question": "売上高は728.5から851.1へ、調整後営業利益は156.9から208.9へ増えた。",
+      "claim": "売上高は728.5から851.1へ、調整後営業利益は156.9から208.9へ増えた。",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 728.5,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 12頁（本文の表示定義に従う）",
+            "pdfPage": 12,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "売上高",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 851.1,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 12頁（本文の表示定義に従う）",
+            "pdfPage": 12,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 156.9,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 12頁（本文の表示定義に従う）",
+            "pdfPage": 12,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後営業利益",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 208.9,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 12頁（本文の表示定義に従う）",
+            "pdfPage": 12,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "growth-bridge",
+      "question": "買収・売却の純効果24.2、既存事業の成長116.3、為替換算の減少17.9",
+      "claim": "買収・売却の純効果24.2、既存事業の成長116.3、為替換算の減少17.9",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "買収売却純効果",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "買収売却純効果"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "既存事業成長",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "既存事業成長"
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "為替効果",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "為替効果"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "買収売却純効果",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "買収売却純効果",
+          "value": 24.2,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 39頁（本文の表示定義に従う）",
+            "pdfPage": 39,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "既存事業成長",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "既存事業成長",
+          "value": 116.3,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 39頁（本文の表示定義に従う）",
+            "pdfPage": 39,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "為替効果",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "為替効果",
+          "value": -17.9,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 39頁（本文の表示定義に従う）",
+            "pdfPage": 39,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "sector-Controls",
+      "question": "| Controls | 391.3→495.3 | 114.4→165.7 | 26% |",
+      "claim": "| Controls | 391.3→495.3 | 114.4→165.7 | 26% |",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Controls売上",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Controls売上"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Controls売上",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Controls売上"
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Controls調整後営業利益",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Controls調整後営業利益"
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Controls調整後営業利益",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Controls調整後営業利益"
+        },
+        {
+          "id": "i4",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Controls会社定義既存事業増収率",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "Controls会社定義既存事業増収率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Controls売上",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Controls売上",
+          "value": 391.3,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 28頁（本文の表示定義に従う）",
+            "pdfPage": 28,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Controls売上",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Controls売上",
+          "value": 495.3,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 28頁（本文の表示定義に従う）",
+            "pdfPage": 28,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Controls調整後営業利益",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Controls調整後営業利益",
+          "value": 114.4,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 28頁（本文の表示定義に従う）",
+            "pdfPage": 28,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Controls調整後営業利益",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Controls調整後営業利益",
+          "value": 165.7,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 28頁（本文の表示定義に従う）",
+            "pdfPage": 28,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i4",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Controls会社定義既存事業増収率",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "Controls会社定義既存事業増収率",
+          "value": 26,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 5頁 Revenue by Sector",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "sector-Seals",
+      "question": "| Seals | 226.7→224.9 | 42.4→42.5 | 2% |",
+      "claim": "| Seals | 226.7→224.9 | 42.4→42.5 | 2% |",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Seals売上",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Seals売上"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Seals売上",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Seals売上"
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Seals調整後営業利益",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Seals調整後営業利益"
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Seals調整後営業利益",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Seals調整後営業利益"
+        },
+        {
+          "id": "i4",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Seals会社定義既存事業増収率",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "Seals会社定義既存事業増収率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Seals売上",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Seals売上",
+          "value": 226.7,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 28頁（本文の表示定義に従う）",
+            "pdfPage": 28,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Seals売上",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Seals売上",
+          "value": 224.9,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 28頁（本文の表示定義に従う）",
+            "pdfPage": 28,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Seals調整後営業利益",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Seals調整後営業利益",
+          "value": 42.4,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 28頁（本文の表示定義に従う）",
+            "pdfPage": 28,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Seals調整後営業利益",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Seals調整後営業利益",
+          "value": 42.5,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 28頁（本文の表示定義に従う）",
+            "pdfPage": 28,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i4",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Seals会社定義既存事業増収率",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "Seals会社定義既存事業増収率",
+          "value": 2,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 5頁 Revenue by Sector",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "sector-LifeSciences",
+      "question": "| Life Sciences | 110.5→130.9 | 21.9→25.9 | 4% |",
+      "claim": "| Life Sciences | 110.5→130.9 | 21.9→25.9 | 4% |",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Life Sciences売上",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Life Sciences売上"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Life Sciences売上",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Life Sciences売上"
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Life Sciences調整後営業利益",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Life Sciences調整後営業利益"
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Life Sciences調整後営業利益",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Life Sciences調整後営業利益"
+        },
+        {
+          "id": "i4",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Life Sciences会社定義既存事業増収率",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "Life Sciences会社定義既存事業増収率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Life Sciences売上",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Life Sciences売上",
+          "value": 110.5,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 28頁（本文の表示定義に従う）",
+            "pdfPage": 28,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Life Sciences売上",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Life Sciences売上",
+          "value": 130.9,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 28頁（本文の表示定義に従う）",
+            "pdfPage": 28,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Life Sciences調整後営業利益",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Life Sciences調整後営業利益",
+          "value": 21.9,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 28頁（本文の表示定義に従う）",
+            "pdfPage": 28,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Life Sciences調整後営業利益",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "Life Sciences調整後営業利益",
+          "value": 25.9,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 28頁（本文の表示定義に従う）",
+            "pdfPage": 28,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i4",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "Life Sciences会社定義既存事業増収率",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "Life Sciences会社定義既存事業増収率",
+          "value": 4,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 5頁 Revenue by Sector",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "corporate",
+      "question": "| 本社費用 | ― | −21.8→−25.2 | ― |",
+      "claim": "| 本社費用 | ― | −21.8→−25.2 | ― |",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "本社調整後営業損失",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "本社調整後営業損失"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "本社調整後営業損失",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "本社調整後営業損失"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "本社調整後営業損失",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "本社調整後営業損失",
+          "value": -21.8,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 28頁（本文の表示定義に従う）",
+            "pdfPage": 28,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "本社調整後営業損失",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "本社調整後営業損失",
+          "value": -25.2,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 28頁（本文の表示定義に従う）",
+            "pdfPage": 28,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "stat-adj",
+      "question": "会計上の営業利益は139.4から165.1へ増えたが、調整項目は17.5から43.8へ拡大した。",
+      "claim": "会計上の営業利益は139.4から165.1へ増えたが、調整項目は17.5から43.8へ拡大した。",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計営業利益",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計営業利益"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計営業利益",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整項目",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "調整項目"
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整項目",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "調整項目"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計営業利益",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計営業利益",
+          "value": 139.4,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 12頁（本文の表示定義に従う）",
+            "pdfPage": 12,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計営業利益",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計営業利益",
+          "value": 165.1,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 12頁（本文の表示定義に従う）",
+            "pdfPage": 12,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整項目",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "調整項目",
+          "value": 17.5,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 12頁（本文の表示定義に従う）",
+            "pdfPage": 12,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整項目",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "調整項目",
+          "value": 43.8,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 12頁（本文の表示定義に従う）",
+            "pdfPage": 12,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "disposal",
+      "question": "前年には事業売却益19.3があり、今回はゼロ。",
+      "claim": "前年には事業売却益19.3があり、今回はゼロ。",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "事業売却純利益",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "事業売却純利益"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "事業売却純利益",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "事業売却純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "事業売却純利益",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "事業売却純利益",
+          "value": 19.3,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 12頁（本文の表示定義に従う）",
+            "pdfPage": 12,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "事業売却純利益",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "事業売却純利益",
+          "value": 0,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 12頁（本文の表示定義に従う）",
+            "pdfPage": 12,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "eps",
+      "question": "調整後EPSは80.2ペンスから109.2ペンス、基本EPSは71.5ペンスから74.7ペンス",
+      "claim": "調整後EPSは80.2ペンスから109.2ペンス、基本EPSは71.5ペンスから74.7ペンス",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後EPS",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBp/share",
+          "basis": "actual",
+          "definition": "調整後EPS"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後EPS",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBp/share",
+          "basis": "actual",
+          "definition": "調整後EPS"
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "基本EPS",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBp/share",
+          "basis": "actual",
+          "definition": "基本EPS"
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "基本EPS",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBp/share",
+          "basis": "actual",
+          "definition": "基本EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後EPS",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBp/share",
+          "basis": "actual",
+          "definition": "調整後EPS",
+          "value": 80.2,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 13頁（本文の表示定義に従う）",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "調整後EPS",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBp/share",
+          "basis": "actual",
+          "definition": "調整後EPS",
+          "value": 109.2,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 13頁（本文の表示定義に従う）",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "基本EPS",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBp/share",
+          "basis": "actual",
+          "definition": "基本EPS",
+          "value": 71.5,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 13頁（本文の表示定義に従う）",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "基本EPS",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBp/share",
+          "basis": "actual",
+          "definition": "基本EPS",
+          "value": 74.7,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 13頁（本文の表示定義に従う）",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash",
+      "question": "上期の会社FCFは83.8から110.7へ増えた。しかし営業活動による純現金流入は94.7から111.0。",
+      "claim": "上期の会社FCFは83.8から110.7へ増えた。しかし営業活動による純現金流入は94.7から111.0。",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社FCF",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会社FCF"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社FCF",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会社FCF"
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計営業CF",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計営業CF"
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計営業CF",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社FCF",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会社FCF",
+          "value": 83.8,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 13頁（本文の表示定義に従う）",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社FCF",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会社FCF",
+          "value": 110.7,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 13頁（本文の表示定義に従う）",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計営業CF",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計営業CF",
+          "value": 94.7,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 13頁（本文の表示定義に従う）",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計営業CF",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計営業CF",
+          "value": 111,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 13頁（本文の表示定義に従う）",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-own2025",
+      "question": "- 前年：94.7 − 4.3 − 0.3 − 7.8 ＝ 82.3",
+      "claim": "- 前年：94.7 − 4.3 − 0.3 − 7.8 ＝ 82.3",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計営業CF",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計営業CF"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "有形固定資産購入支出",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "有形固定資産購入支出"
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "無形資産購入支出",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "無形資産購入支出"
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "リース元本返済",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "リース元本返済"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計営業CF",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計営業CF",
+          "value": 94.7,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 25頁（本文の表示定義に従う）",
+            "pdfPage": 25,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "有形固定資産購入支出",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "有形固定資産購入支出",
+          "value": -4.3,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 25頁（本文の表示定義に従う）",
+            "pdfPage": 25,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "無形資産購入支出",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "無形資産購入支出",
+          "value": -0.3,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 25頁（本文の表示定義に従う）",
+            "pdfPage": 25,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "リース元本返済",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "リース元本返済",
+          "value": -7.8,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF25頁 CF Principal elements of lease payments",
+            "pdfPage": 25,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "own",
+          "operation": "sum",
+          "inputs": [
+            "i0",
+            "i1",
+            "i2",
+            "i3"
+          ],
+          "definition": "会計営業CFから有形無形投資支出とリース元本返済を差し引く。売却収入なし。",
+          "precision": 1,
+          "value": 82.3
+        }
+      ]
+    },
+    {
+      "id": "cash-own2026",
+      "question": "- 今回：111.0 − 6.6 − 1.0 − 7.8 ＝ 95.6",
+      "claim": "- 今回：111.0 − 6.6 − 1.0 − 7.8 ＝ 95.6",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計営業CF",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計営業CF"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "有形固定資産購入支出",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "有形固定資産購入支出"
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "無形資産購入支出",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "無形資産購入支出"
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "リース元本返済",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "リース元本返済"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会計営業CF",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会計営業CF",
+          "value": 111,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 25頁（本文の表示定義に従う）",
+            "pdfPage": 25,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "有形固定資産購入支出",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "有形固定資産購入支出",
+          "value": -6.6,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 25頁（本文の表示定義に従う）",
+            "pdfPage": 25,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "無形資産購入支出",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "無形資産購入支出",
+          "value": -1,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 25頁（本文の表示定義に従う）",
+            "pdfPage": 25,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "リース元本返済",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "リース元本返済",
+          "value": -7.8,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF25頁 CF Principal elements of lease payments",
+            "pdfPage": 25,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "own",
+          "operation": "sum",
+          "inputs": [
+            "i0",
+            "i1",
+            "i2",
+            "i3"
+          ],
+          "definition": "会計営業CFから有形無形投資支出とリース元本返済を差し引く。売却収入なし。",
+          "precision": 1,
+          "value": 95.6
+        }
+      ]
+    },
+    {
+      "id": "trust",
+      "question": "従業員持株信託への資金拠出が前年4.1、今回はゼロ",
+      "claim": "従業員持株信託への資金拠出が前年4.1、今回はゼロ",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "従業員持株信託資金拠出",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "従業員持株信託資金拠出"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "従業員持株信託資金拠出",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "従業員持株信託資金拠出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "従業員持株信託資金拠出",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "従業員持株信託資金拠出",
+          "value": 4.1,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 14頁（本文の表示定義に従う）",
+            "pdfPage": 14,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "従業員持株信託資金拠出",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "従業員持株信託資金拠出",
+          "value": 0,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 14頁（本文の表示定義に従う）",
+            "pdfPage": 14,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-after",
+      "question": "会社FCF110.7から、買収・売却関連の純支出91.8と配当59.5を引けば、**−40.6**となる。",
+      "claim": "会社FCF110.7から、買収・売却関連の純支出91.8と配当59.5を引けば、**−40.6**となる。",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社FCF",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会社FCF"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "買収売却関連純支出",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "買収売却関連純支出"
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "配当",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "配当"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社FCF",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "会社FCF",
+          "value": 110.7,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 13頁（本文の表示定義に従う）",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "買収売却関連純支出",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "買収売却関連純支出",
+          "value": -91.8,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 13頁（本文の表示定義に従う）",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "配当",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "配当",
+          "value": -59.5,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 13頁（本文の表示定義に従う）",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "after",
+          "operation": "sum",
+          "inputs": [
+            "i0",
+            "i1",
+            "i2"
+          ],
+          "definition": "買収配当後、借入前・為替等調整前",
+          "precision": 1,
+          "value": -40.6
+        }
+      ]
+    },
+    {
+      "id": "wc",
+      "question": "運転資本による資金流出は37.7から58.9へ拡大した。",
+      "claim": "運転資本による資金流出は37.7から58.9へ拡大した。",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "運転資本資金流出",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "運転資本資金流出"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "運転資本資金流出",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "運転資本資金流出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "運転資本資金流出",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "運転資本資金流出",
+          "value": 37.7,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 13頁（本文の表示定義に従う）",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "運転資本資金流出",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "運転資本資金流出",
+          "value": 58.9,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 13頁（本文の表示定義に従う）",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "roatce",
+      "question": "2025年9月末20.9%から2026年3月末22.7%へ上がった。",
+      "claim": "2025年9月末20.9%から2026年3月末22.7%へ上がった。",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社ROATCE",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "会社ROATCE"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社ROATCE",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "会社ROATCE"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社ROATCE",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "会社ROATCE",
+          "value": 20.9,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 42頁（本文の表示定義に従う）",
+            "pdfPage": 42,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社ROATCE",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "会社ROATCE",
+          "value": 22.7,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 42頁（本文の表示定義に従う）",
+            "pdfPage": 42,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "debt",
+      "question": "ネット有利子負債は2025年9月末299.4から2026年3月末343.9百万ポンドへ増加した。",
+      "claim": "ネット有利子負債は2025年9月末299.4から2026年3月末343.9百万ポンドへ増加した。",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "ネット有利子負債",
+          "periodStart": "2025-09-30",
+          "periodEnd": "2025-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "ネット有利子負債"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "ネット有利子負債",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "ネット有利子負債"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "ネット有利子負債",
+          "periodStart": "2025-09-30",
+          "periodEnd": "2025-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "ネット有利子負債",
+          "value": 299.4,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 42頁（本文の表示定義に従う）",
+            "pdfPage": 42,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "ネット有利子負債",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "ネット有利子負債",
+          "value": 343.9,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 42頁（本文の表示定義に従う）",
+            "pdfPage": 42,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "leverage",
+      "question": "会社レバレッジは0.8倍。",
+      "claim": "会社レバレッジは0.8倍。",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社レバレッジ",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "times",
+          "basis": "actual",
+          "definition": "会社レバレッジ"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社レバレッジ",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "times",
+          "basis": "actual",
+          "definition": "会社レバレッジ",
+          "value": 0.8,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 41頁（本文の表示定義に従う）",
+            "pdfPage": 41,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "guidance",
+      "question": "通期の既存事業増収率を12%から14%、調整後営業利益率を約25%から約26.5%へ引き上げた。買収の増収寄与見通しは6%。",
+      "claim": "通期の既存事業増収率を12%から14%、調整後営業利益率を約25%から約26.5%へ引き上げた。買収の増収寄与見通しは6%。",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "旧会社既存事業増収率予想",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "旧会社既存事業増収率予想"
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "新会社既存事業増収率予想",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "新会社既存事業増収率予想"
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "旧会社調整後利益率予想",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "旧会社調整後利益率予想"
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "新会社調整後利益率予想",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "新会社調整後利益率予想"
+        },
+        {
+          "id": "i4",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社買収寄与予想",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "会社買収寄与予想"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "旧会社既存事業増収率予想",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "旧会社既存事業増収率予想",
+          "value": 12,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/z4vpiw3u/diploma-plc-q3-trading-update.pdf",
+            "publishedOn": "2026-07-16",
+            "locator": "PDF 1頁（本文の表示定義に従う）",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "新会社既存事業増収率予想",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "新会社既存事業増収率予想",
+          "value": 14,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/z4vpiw3u/diploma-plc-q3-trading-update.pdf",
+            "publishedOn": "2026-07-16",
+            "locator": "PDF 1頁（本文の表示定義に従う）",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "旧会社調整後利益率予想",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "旧会社調整後利益率予想",
+          "value": 25,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/z4vpiw3u/diploma-plc-q3-trading-update.pdf",
+            "publishedOn": "2026-07-16",
+            "locator": "PDF 1頁（本文の表示定義に従う）",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "新会社調整後利益率予想",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "新会社調整後利益率予想",
+          "value": 26.5,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/z4vpiw3u/diploma-plc-q3-trading-update.pdf",
+            "publishedOn": "2026-07-16",
+            "locator": "PDF 1頁（本文の表示定義に従う）",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i4",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "会社買収寄与予想",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "会社買収寄与予想",
+          "value": 6,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/z4vpiw3u/diploma-plc-q3-trading-update.pdf",
+            "publishedOn": "2026-07-16",
+            "locator": "PDF 1頁（本文の表示定義に従う）",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "sensitivity",
+      "question": "営業利益率1ポイントの差は約15.2百万ポンドの営業利益差になる。",
+      "claim": "営業利益率1ポイントの差は約15.2百万ポンドの営業利益差になる。",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "固定した売上実績",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "固定した売上実績"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "固定した売上実績",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "固定した売上実績",
+          "value": 1524.5,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5s3fi0yk/diploma-plc-annual-report-and-accounts-2025.pdf",
+            "publishedOn": "2025-12-08",
+            "locator": "PDF 170頁（本文の表示定義に従う）",
+            "pdfPage": 170,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "new-rcf",
+      "question": "追加の100百万ポンドの融資枠も開示され、その満期は2028年12月で、1年ずつ2回の延長選択肢が付く。",
+      "claim": "追加の100百万ポンドの融資枠も開示され、その満期は2028年12月で、1年ずつ2回の延長選択肢が付く。",
+      "definition": "単位・対象期間・会計指標と会社調整指標を本文で区別。売上成長は会社定義。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "追加RCF枠",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "追加RCF枠"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Diploma plc連結（部門名を付した項目は当該部門）",
+          "metric": "追加RCF枠",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-03-31",
+          "unit": "GBP million",
+          "basis": "actual",
+          "definition": "追加RCF枠",
+          "value": 100,
+          "source": {
+            "url": "https://www.diplomaplc.com/media/5m0fmngw/diploma-plc-half-year-results-2026.pdf",
+            "publishedOn": "2026-05-19",
+            "locator": "PDF 14頁（本文の表示定義に従う）",
+            "pdfPage": 14,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}

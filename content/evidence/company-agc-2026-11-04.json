@@ -1,0 +1,3444 @@
+{
+  "version": 1,
+  "articleSlug": "company-agc-2026-11-04",
+  "articleSha256": "35e71fdd48014b48e2a5841e6271b9d2e1b3e4c292e80a8a26f3a41264256581",
+  "checkedAt": "2026-11-04T10:50:55.253107+00:00",
+  "informationCutoff": "2026-11-04T19:45:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "著者一次本文確認。独立レビュー待ち。上期説明会8頁はPDFを画像表示してブリッジ確認。統合報告書PDF90頁の9年財務を使用。会社FCFと筆者設備支出後CFを分離。第3四半期は翌日予定で未発表。企業間の製品別採算、株価、市場予想は未検証。",
+  "comparisons": [
+    {
+      "id": "year2017",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "| 2017年 | 14,635.32億円 | 1,196.46億円 | 692.25億円 | 2,035.04億円 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "AGC連結",
+          "metric": "親会社純利益",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社純利益"
+        },
+        {
+          "id": "cf",
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "value": 1463532,
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・売上高",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "value": 119646,
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・営業利益",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "value": 69225,
+          "entity": "AGC連結",
+          "metric": "親会社純利益",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社純利益",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・親会社純利益",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cf",
+          "value": 203504,
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2017-01-01",
+          "periodEnd": "2017-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・営業CF",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "year2018",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "| 2018年 | 15,229.04億円 | 1,205.55億円 | 895.93億円 | 1,892.87億円 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "AGC連結",
+          "metric": "親会社純利益",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社純利益"
+        },
+        {
+          "id": "cf",
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "value": 1522904,
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・売上高",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "value": 120555,
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・営業利益",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "value": 89593,
+          "entity": "AGC連結",
+          "metric": "親会社純利益",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社純利益",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・親会社純利益",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cf",
+          "value": 189287,
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2018-01-01",
+          "periodEnd": "2018-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・営業CF",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "year2019",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "| 2019年 | 15,180.39億円 | 1,016.24億円 | 444.34億円 | 1,919.06億円 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "AGC連結",
+          "metric": "親会社純利益",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社純利益"
+        },
+        {
+          "id": "cf",
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "value": 1518039,
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・売上高",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "value": 101624,
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・営業利益",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "value": 44434,
+          "entity": "AGC連結",
+          "metric": "親会社純利益",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社純利益",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・親会社純利益",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cf",
+          "value": 191906,
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2019-01-01",
+          "periodEnd": "2019-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・営業CF",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "year2020",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "| 2020年 | 14,123.06億円 | 757.80億円 | 327.15億円 | 2,253.92億円 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "AGC連結",
+          "metric": "親会社純利益",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社純利益"
+        },
+        {
+          "id": "cf",
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "value": 1412306,
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・売上高",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "value": 75780,
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・営業利益",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "value": 32715,
+          "entity": "AGC連結",
+          "metric": "親会社純利益",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社純利益",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・親会社純利益",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cf",
+          "value": 225392,
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2020-01-01",
+          "periodEnd": "2020-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・営業CF",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "year2021",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "| 2021年 | 16,973.83億円 | 2,061.68億円 | 1,238.40億円 | 3,267.13億円 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "AGC連結",
+          "metric": "親会社純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社純利益"
+        },
+        {
+          "id": "cf",
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "value": 1697383,
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・売上高",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "value": 206168,
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・営業利益",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "value": 123840,
+          "entity": "AGC連結",
+          "metric": "親会社純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社純利益",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・親会社純利益",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cf",
+          "value": 326713,
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・営業CF",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "year2022",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "| 2022年 | 20,358.74億円 | 1,839.42億円 | -31.52億円 | 2,171.46億円 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "AGC連結",
+          "metric": "親会社純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社純利益"
+        },
+        {
+          "id": "cf",
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "value": 2035874,
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・売上高",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "value": 183942,
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・営業利益",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "value": -3152,
+          "entity": "AGC連結",
+          "metric": "親会社純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社純利益",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・親会社純利益",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cf",
+          "value": 217146,
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・営業CF",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "year2023",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "| 2023年 | 20,192.54億円 | 1,287.79億円 | 657.98億円 | 2,125.46億円 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "AGC連結",
+          "metric": "親会社純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社純利益"
+        },
+        {
+          "id": "cf",
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "value": 2019254,
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・売上高",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "value": 128779,
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・営業利益",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "value": 65798,
+          "entity": "AGC連結",
+          "metric": "親会社純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社純利益",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・親会社純利益",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cf",
+          "value": 212546,
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・営業CF",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "year2024",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "| 2024年 | 20,676.03億円 | 1,258.35億円 | -940.42億円 | 2,848.15億円 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "AGC連結",
+          "metric": "親会社純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社純利益"
+        },
+        {
+          "id": "cf",
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "value": 2067603,
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・売上高",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "value": 125835,
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・営業利益",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "value": -94042,
+          "entity": "AGC連結",
+          "metric": "親会社純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社純利益",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・親会社純利益",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cf",
+          "value": 284815,
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・営業CF",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "year2025",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "| 2025年 | 20,588.32億円 | 1,274.65億円 | 691.62億円 | 2,744.76億円 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "AGC連結",
+          "metric": "親会社純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社純利益"
+        },
+        {
+          "id": "cf",
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "value": 2058832,
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・売上高",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "value": 127465,
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・営業利益",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "value": 69162,
+          "entity": "AGC連結",
+          "metric": "親会社純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社純利益",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・親会社純利益",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cf",
+          "value": 274476,
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "source": {
+            "url": "https://www.agc.com/company/agc_report/pdf/agc_report_2026.pdf",
+            "publishedOn": "2026-05-29",
+            "locator": "PDF90頁・営業CF",
+            "pdfPage": 90,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "profit-quality",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "営業利益は2024年の1,258.35億円から2025年の1,274.65億円へ小幅増にとどまる一方、その他費用の「減損損失」行は1,247.74億円から96.87億円へ減少。固定資産売却益は22.61億円から262.25億円へ増えています。",
+      "requiredInputs": [
+        {
+          "id": "op24",
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "op25",
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "imp24",
+          "entity": "AGC連結",
+          "metric": "減損損失の絶対額",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "減損損失の絶対額"
+        },
+        {
+          "id": "imp25",
+          "entity": "AGC連結",
+          "metric": "減損損失の絶対額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "減損損失の絶対額"
+        },
+        {
+          "id": "gain24",
+          "entity": "AGC連結",
+          "metric": "固定資産売却益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "固定資産売却益"
+        },
+        {
+          "id": "gain25",
+          "entity": "AGC連結",
+          "metric": "固定資産売却益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "固定資産売却益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "op24",
+          "value": 125835,
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2751528/00.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF1頁・営業利益",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op25",
+          "value": 127465,
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2751528/00.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF1頁・営業利益",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "imp24",
+          "value": 124774,
+          "entity": "AGC連結",
+          "metric": "減損損失の絶対額",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "減損損失の絶対額",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2751528/00.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF19頁・減損損失の絶対額",
+            "pdfPage": 19,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "imp25",
+          "value": 9687,
+          "entity": "AGC連結",
+          "metric": "減損損失の絶対額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "減損損失の絶対額",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2751528/00.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF19頁・減損損失の絶対額",
+            "pdfPage": 19,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "gain24",
+          "value": 2261,
+          "entity": "AGC連結",
+          "metric": "固定資産売却益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "固定資産売却益",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2751528/00.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF19頁・固定資産売却益",
+            "pdfPage": 19,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "gain25",
+          "value": 26225,
+          "entity": "AGC連結",
+          "metric": "固定資産売却益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "固定資産売却益",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2751528/00.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF19頁・固定資産売却益",
+            "pdfPage": 19,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "h1",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "2026年1〜6月の売上は11,006.09億円、営業利益646.61億円。前年同期の9,954.74億円、540.22億円から増加しました。",
+      "requiredInputs": [
+        {
+          "id": "sales26",
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op26",
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "sales25",
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op25",
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales26",
+          "value": 1100609,
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF1頁・売上高",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op26",
+          "value": 64661,
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF1頁・営業利益",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sales25",
+          "value": 995474,
+          "entity": "AGC連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF1頁・売上高",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op25",
+          "value": 54022,
+          "entity": "AGC連結",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF1頁・営業利益",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fxbridge",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "会社説明では、約1,051億円の増収のうち円安効果が679億円、連結範囲変更がマイナス16億円です。差し引き約388億円が残りますが、これは数量だけではなく価格や製品構成などを含む残差です。",
+      "requiredInputs": [
+        {
+          "id": "total",
+          "entity": "AGC連結",
+          "metric": "会社丸め増収額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社丸め増収額"
+        },
+        {
+          "id": "fx",
+          "entity": "AGC連結",
+          "metric": "増収への為替寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "増収への為替寄与"
+        },
+        {
+          "id": "scope",
+          "entity": "AGC連結",
+          "metric": "連結範囲変更寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "連結範囲変更寄与"
+        }
+      ],
+      "observations": [
+        {
+          "id": "total",
+          "value": 1051,
+          "entity": "AGC連結",
+          "metric": "会社丸め増収額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社丸め増収額",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF6頁・会社丸め増収額",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fx",
+          "value": 679,
+          "entity": "AGC連結",
+          "metric": "増収への為替寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "増収への為替寄与",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF6頁・増収への為替寄与",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "scope",
+          "value": -16,
+          "entity": "AGC連結",
+          "metric": "連結範囲変更寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "連結範囲変更寄与",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF6頁・連結範囲変更寄与",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "residual",
+          "operation": "difference",
+          "inputs": [
+            "total",
+            "fx"
+          ],
+          "value": 372,
+          "definition": "増収から為替寄与を控除",
+          "precision": 0
+        },
+        {
+          "id": "residual2",
+          "operation": "difference",
+          "inputs": [
+            "residual",
+            "scope"
+          ],
+          "value": 388,
+          "definition": "さらに連結範囲寄与を控除",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "opbridge",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "営業利益の会社ブリッジは、数量・売価・品種構成でプラス265億円、原燃材料価格でマイナス44億円、コストその他でマイナス114億円です。",
+      "requiredInputs": [
+        {
+          "id": "volume",
+          "entity": "AGC連結",
+          "metric": "数量・売価・品種構成寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "数量・売価・品種構成寄与"
+        },
+        {
+          "id": "materials",
+          "entity": "AGC連結",
+          "metric": "原燃材料価格寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "原燃材料価格寄与"
+        },
+        {
+          "id": "cost",
+          "entity": "AGC連結",
+          "metric": "コストその他寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "コストその他寄与"
+        }
+      ],
+      "observations": [
+        {
+          "id": "volume",
+          "value": 265,
+          "entity": "AGC連結",
+          "metric": "数量・売価・品種構成寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "数量・売価・品種構成寄与",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF8頁・数量・売価・品種構成寄与",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "materials",
+          "value": -44,
+          "entity": "AGC連結",
+          "metric": "原燃材料価格寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "原燃材料価格寄与",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF8頁・原燃材料価格寄与",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cost",
+          "value": -114,
+          "entity": "AGC連結",
+          "metric": "コストその他寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "コストその他寄与",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF8頁・コストその他寄与",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "segment0",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "| 建築ガラス | 32億円 | 88億円 | 欧州の価格政策などが寄与 |",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "AGC連結",
+          "metric": "建築ガラス営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "建築ガラス営業利益"
+        },
+        {
+          "id": "new",
+          "entity": "AGC連結",
+          "metric": "建築ガラス営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "建築ガラス営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "value": 32,
+          "entity": "AGC連結",
+          "metric": "建築ガラス営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "建築ガラス営業利益",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF7頁・建築ガラス営業利益",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "value": 88,
+          "entity": "AGC連結",
+          "metric": "建築ガラス営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "建築ガラス営業利益",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF7頁・建築ガラス営業利益",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "segment1",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "| オートモーティブ | 151億円 | 133億円 | 数量・構成改善でも欧米の製造コストが上昇 |",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "AGC連結",
+          "metric": "オートモーティブ営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "オートモーティブ営業利益"
+        },
+        {
+          "id": "new",
+          "entity": "AGC連結",
+          "metric": "オートモーティブ営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "オートモーティブ営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "value": 151,
+          "entity": "AGC連結",
+          "metric": "オートモーティブ営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "オートモーティブ営業利益",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF7頁・オートモーティブ営業利益",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "value": 133,
+          "entity": "AGC連結",
+          "metric": "オートモーティブ営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "オートモーティブ営業利益",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF7頁・オートモーティブ営業利益",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "segment2",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "| 電子 | 244億円 | 187億円 | 半導体関連の出荷増だけでは費用増を吸収できず |",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "AGC連結",
+          "metric": "電子営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "電子営業利益"
+        },
+        {
+          "id": "new",
+          "entity": "AGC連結",
+          "metric": "電子営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "電子営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "value": 244,
+          "entity": "AGC連結",
+          "metric": "電子営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "電子営業利益",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF7頁・電子営業利益",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "value": 187,
+          "entity": "AGC連結",
+          "metric": "電子営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "電子営業利益",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF7頁・電子営業利益",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "segment3",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "| 化学品 | 225億円 | 282億円 | 価格・出荷増が原燃料高を吸収 |",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "AGC連結",
+          "metric": "化学品営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "化学品営業利益"
+        },
+        {
+          "id": "new",
+          "entity": "AGC連結",
+          "metric": "化学品営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "化学品営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "value": 225,
+          "entity": "AGC連結",
+          "metric": "化学品営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "化学品営業利益",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF7頁・化学品営業利益",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "value": 282,
+          "entity": "AGC連結",
+          "metric": "化学品営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "化学品営業利益",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF7頁・化学品営業利益",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "segment4",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "| ライフサイエンス | -119億円 | -61億円 | 赤字は縮小したが黒字ではない |",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "AGC連結",
+          "metric": "ライフサイエンス営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "ライフサイエンス営業利益"
+        },
+        {
+          "id": "new",
+          "entity": "AGC連結",
+          "metric": "ライフサイエンス営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "ライフサイエンス営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "value": -119,
+          "entity": "AGC連結",
+          "metric": "ライフサイエンス営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "ライフサイエンス営業利益",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF7頁・ライフサイエンス営業利益",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "value": -61,
+          "entity": "AGC連結",
+          "metric": "ライフサイエンス営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "ライフサイエンス営業利益",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF7頁・ライフサイエンス営業利益",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "capex-v-cash",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "2026年上期の会社表示の設備投資額は969億円から901億円へ減った一方、有形・無形固定資産取得の現金支出は917.39億円から1,027.23億円へ増えました。",
+      "requiredInputs": [
+        {
+          "id": "cap25",
+          "entity": "AGC連結",
+          "metric": "会社表示設備投資額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社表示設備投資額"
+        },
+        {
+          "id": "cap26",
+          "entity": "AGC連結",
+          "metric": "会社表示設備投資額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社表示設備投資額"
+        },
+        {
+          "id": "cash25",
+          "entity": "AGC連結",
+          "metric": "有形無形固定資産取得現金支出の絶対額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形無形固定資産取得現金支出の絶対額"
+        },
+        {
+          "id": "cash26",
+          "entity": "AGC連結",
+          "metric": "有形無形固定資産取得現金支出の絶対額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形無形固定資産取得現金支出の絶対額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cap25",
+          "value": 969,
+          "entity": "AGC連結",
+          "metric": "会社表示設備投資額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社表示設備投資額",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF11頁・会社表示設備投資額",
+            "pdfPage": 11,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap26",
+          "value": 901,
+          "entity": "AGC連結",
+          "metric": "会社表示設備投資額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社表示設備投資額",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF11頁・会社表示設備投資額",
+            "pdfPage": 11,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash25",
+          "value": 91739,
+          "entity": "AGC連結",
+          "metric": "有形無形固定資産取得現金支出の絶対額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形無形固定資産取得現金支出の絶対額",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・有形無形固定資産取得現金支出の絶対額",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash26",
+          "value": 102723,
+          "entity": "AGC連結",
+          "metric": "有形無形固定資産取得現金支出の絶対額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形無形固定資産取得現金支出の絶対額",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・有形無形固定資産取得現金支出の絶対額",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "ocf",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "| 営業CF | 1,171.39億円 | 1,048.91億円 |",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "new",
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "value": 117139,
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・営業CF",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "value": 104891,
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・営業CF",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "icf",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "| 投資CF | -877.26億円 | -948.31億円 |",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "AGC連結",
+          "metric": "投資CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF"
+        },
+        {
+          "id": "new",
+          "entity": "AGC連結",
+          "metric": "投資CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "value": -87726,
+          "entity": "AGC連結",
+          "metric": "投資CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・投資CF",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "value": -94831,
+          "entity": "AGC連結",
+          "metric": "投資CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・投資CF",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "capcash",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "| 設備取得の現金支出（絶対額） | 917.39億円 | 1,027.23億円 |",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "AGC連結",
+          "metric": "設備取得の現金支出（絶対額）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "設備取得の現金支出（絶対額）"
+        },
+        {
+          "id": "new",
+          "entity": "AGC連結",
+          "metric": "設備取得の現金支出（絶対額）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "設備取得の現金支出（絶対額）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "value": 91739,
+          "entity": "AGC連結",
+          "metric": "設備取得の現金支出（絶対額）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "設備取得の現金支出（絶対額）",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・設備取得の現金支出（絶対額）",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "value": 102723,
+          "entity": "AGC連結",
+          "metric": "設備取得の現金支出（絶対額）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "設備取得の現金支出（絶対額）",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・設備取得の現金支出（絶対額）",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fcf",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "| 営業CF＋投資CF | 294.13億円 | 100.60億円 |",
+      "requiredInputs": [
+        {
+          "id": "ocf25",
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "ocf26",
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "out25",
+          "entity": "AGC連結",
+          "metric": "投資CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF"
+        },
+        {
+          "id": "out26",
+          "entity": "AGC連結",
+          "metric": "投資CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf25",
+          "value": 117139,
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・営業CF",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf26",
+          "value": 104891,
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・営業CF",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "out25",
+          "value": -87726,
+          "entity": "AGC連結",
+          "metric": "投資CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・投資CF",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "out26",
+          "value": -94831,
+          "entity": "AGC連結",
+          "metric": "投資CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・投資CF",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "result25",
+          "operation": "sum",
+          "inputs": [
+            "ocf25",
+            "out25"
+          ],
+          "value": 29413,
+          "definition": "営業CF＋投資CF",
+          "precision": 0
+        },
+        {
+          "id": "result26",
+          "operation": "sum",
+          "inputs": [
+            "ocf26",
+            "out26"
+          ],
+          "value": 10060,
+          "definition": "営業CF＋投資CF",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "simple",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "| 営業CF−設備取得の現金支出 | 254.00億円 | 21.68億円 |",
+      "requiredInputs": [
+        {
+          "id": "ocf25",
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "ocf26",
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "out25",
+          "entity": "AGC連結",
+          "metric": "固定資産取得CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "固定資産取得CF"
+        },
+        {
+          "id": "out26",
+          "entity": "AGC連結",
+          "metric": "固定資産取得CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "固定資産取得CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf25",
+          "value": 117139,
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・営業CF",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf26",
+          "value": 104891,
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・営業CF",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "out25",
+          "value": -91739,
+          "entity": "AGC連結",
+          "metric": "固定資産取得CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "固定資産取得CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・固定資産取得CF",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "out26",
+          "value": -102723,
+          "entity": "AGC連結",
+          "metric": "固定資産取得CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "固定資産取得CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・固定資産取得CF",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "result25",
+          "operation": "sum",
+          "inputs": [
+            "ocf25",
+            "out25"
+          ],
+          "value": 25400,
+          "definition": "営業CF−設備取得の現金支出",
+          "precision": 0
+        },
+        {
+          "id": "result26",
+          "operation": "sum",
+          "inputs": [
+            "ocf26",
+            "out26"
+          ],
+          "value": 2168,
+          "definition": "営業CF−設備取得の現金支出",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "workingcapital",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "営業債権・棚卸資産・営業債務の増減によるCF寄与は、前年上期のプラス25.88億円から、当上期のマイナス401.80億円へ変わっています。",
+      "requiredInputs": [
+        {
+          "id": "ar25",
+          "entity": "AGC連結",
+          "metric": "営業債権増減CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業債権増減CF"
+        },
+        {
+          "id": "inv25",
+          "entity": "AGC連結",
+          "metric": "棚卸資産増減CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "棚卸資産増減CF"
+        },
+        {
+          "id": "ap25",
+          "entity": "AGC連結",
+          "metric": "営業債務増減CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業債務増減CF"
+        },
+        {
+          "id": "ar26",
+          "entity": "AGC連結",
+          "metric": "営業債権増減CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業債権増減CF"
+        },
+        {
+          "id": "inv26",
+          "entity": "AGC連結",
+          "metric": "棚卸資産増減CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "棚卸資産増減CF"
+        },
+        {
+          "id": "ap26",
+          "entity": "AGC連結",
+          "metric": "営業債務増減CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業債務増減CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ar25",
+          "value": 15534,
+          "entity": "AGC連結",
+          "metric": "営業債権増減CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業債権増減CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・営業債権増減CF",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "inv25",
+          "value": -9496,
+          "entity": "AGC連結",
+          "metric": "棚卸資産増減CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "棚卸資産増減CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・棚卸資産増減CF",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ap25",
+          "value": -3450,
+          "entity": "AGC連結",
+          "metric": "営業債務増減CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業債務増減CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・営業債務増減CF",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ar26",
+          "value": -14357,
+          "entity": "AGC連結",
+          "metric": "営業債権増減CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業債権増減CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・営業債権増減CF",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "inv26",
+          "value": -25809,
+          "entity": "AGC連結",
+          "metric": "棚卸資産増減CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "棚卸資産増減CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・棚卸資産増減CF",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ap26",
+          "value": -14,
+          "entity": "AGC連結",
+          "metric": "営業債務増減CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業債務増減CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF10頁・営業債務増減CF",
+            "pdfPage": 10,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "wc25",
+          "operation": "sum",
+          "inputs": [
+            "ar25",
+            "inv25",
+            "ap25"
+          ],
+          "value": 2588,
+          "definition": "運転資金3項目合計",
+          "precision": 0
+        },
+        {
+          "id": "wc26",
+          "operation": "sum",
+          "inputs": [
+            "ar26",
+            "inv26",
+            "ap26"
+          ],
+          "value": -40180,
+          "definition": "運転資金3項目合計",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "annualcf",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "2025年通期でも、会社FCFの960.72億円に対し、営業CF2,744.76億円から設備取得の現金支出2,095.45億円を引いた値は649.31億円です。有形固定資産売却の現金収入305.15億円もあり、会社FCF全額を反復可能な事業の余剰資金とは扱えません。",
+      "requiredInputs": [
+        {
+          "id": "ocf",
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "icf",
+          "entity": "AGC連結",
+          "metric": "投資CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF"
+        },
+        {
+          "id": "cap",
+          "entity": "AGC連結",
+          "metric": "固定資産取得CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "固定資産取得CF"
+        },
+        {
+          "id": "disposal",
+          "entity": "AGC連結",
+          "metric": "有形固定資産売却収入",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形固定資産売却収入"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf",
+          "value": 274476,
+          "entity": "AGC連結",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2751528/00.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF15頁・営業CF",
+            "pdfPage": 15,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "icf",
+          "value": -178404,
+          "entity": "AGC連結",
+          "metric": "投資CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2751528/00.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF15頁・投資CF",
+            "pdfPage": 15,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "value": -209545,
+          "entity": "AGC連結",
+          "metric": "固定資産取得CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "固定資産取得CF",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2751528/00.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF15頁・固定資産取得CF",
+            "pdfPage": 15,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "disposal",
+          "value": 30515,
+          "entity": "AGC連結",
+          "metric": "有形固定資産売却収入",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形固定資産売却収入",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2751528/00.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF15頁・有形固定資産売却収入",
+            "pdfPage": 15,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "icf"
+          ],
+          "value": 96072,
+          "definition": "会社FCF",
+          "precision": 0
+        },
+        {
+          "id": "simple",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "cap"
+          ],
+          "value": 64931,
+          "definition": "設備支出後CF",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "netdebt",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "2025年末の会社表示の有利子負債は約6,465億円、現金同等物は約947億円。単純に差し引くと約5,518億円の純有利子負債です。",
+      "requiredInputs": [
+        {
+          "id": "total",
+          "entity": "AGC連結",
+          "metric": "会社表示有利子負債・億円丸め",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社表示有利子負債・億円丸め"
+        },
+        {
+          "id": "cash",
+          "entity": "AGC連結",
+          "metric": "現金同等物・億円丸め",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "現金同等物・億円丸め"
+        }
+      ],
+      "observations": [
+        {
+          "id": "total",
+          "value": 6465,
+          "entity": "AGC連結",
+          "metric": "会社表示有利子負債・億円丸め",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社表示有利子負債・億円丸め",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF9頁・会社表示有利子負債・億円丸め",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash",
+          "value": 947,
+          "entity": "AGC連結",
+          "metric": "現金同等物・億円丸め",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "現金同等物・億円丸め",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF9頁・現金同等物・億円丸め",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "net",
+          "operation": "difference",
+          "inputs": [
+            "total",
+            "cash"
+          ],
+          "value": 5518,
+          "definition": "会社丸め値の有利子負債から現金同等物を控除",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "netdebt-h1",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "2026年6月末は有利子負債約6,732億円、現金同等物約876億円で、同じ丸め値の差額は約5,856億円へ増えています。",
+      "requiredInputs": [
+        {
+          "id": "total",
+          "entity": "AGC連結",
+          "metric": "会社表示有利子負債・億円丸め",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社表示有利子負債・億円丸め"
+        },
+        {
+          "id": "cash",
+          "entity": "AGC連結",
+          "metric": "現金同等物・億円丸め",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "現金同等物・億円丸め"
+        }
+      ],
+      "observations": [
+        {
+          "id": "total",
+          "value": 6732,
+          "entity": "AGC連結",
+          "metric": "会社表示有利子負債・億円丸め",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社表示有利子負債・億円丸め",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF9頁・会社表示有利子負債・億円丸め",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash",
+          "value": 876,
+          "entity": "AGC連結",
+          "metric": "現金同等物・億円丸め",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "現金同等物・億円丸め",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF9頁・現金同等物・億円丸め",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "net",
+          "operation": "difference",
+          "inputs": [
+            "total",
+            "cash"
+          ],
+          "value": 5856,
+          "definition": "会社丸め値の有利子負債から現金同等物を控除",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "semigoal",
+      "question": "2026年6月2日に表明した2030年の目標であり実績ではない。電子部門の範囲説明は同PDF35頁。",
+      "definition": "2026年6月2日に表明した2030年の目標であり実績ではない。電子部門の範囲説明は同PDF35頁。",
+      "status": "ready",
+      "claim": "会社は2030年の半導体関連売上を2025年比で倍増させる目標を掲げています。一方、電子部門の説明では、この目標に後工程の新製品は基本的にほとんど含めず、既存製品の伸びを織り込んでいるとしています。",
+      "requiredInputs": [
+        {
+          "id": "factor",
+          "entity": "AGC連結",
+          "metric": "2030年半導体関連売上の2025年比目標倍率",
+          "periodStart": "2030-01-01",
+          "periodEnd": "2030-12-31",
+          "unit": "倍",
+          "basis": "company-forecast",
+          "definition": "2030年半導体関連売上の2025年比目標倍率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "factor",
+          "value": 2,
+          "entity": "AGC連結",
+          "metric": "2030年半導体関連売上の2025年比目標倍率",
+          "periodStart": "2030-01-01",
+          "periodEnd": "2030-12-31",
+          "unit": "倍",
+          "basis": "company-forecast",
+          "definition": "2030年半導体関連売上の2025年比目標倍率",
+          "source": {
+            "url": "https://www.agc.com/ir/library/bizbriefing/pdf/2026_0602semiconductor_script.pdf",
+            "publishedOn": "2026-06-02",
+            "locator": "PDF33頁・2030年半導体関連売上の2025年比目標倍率",
+            "pdfPage": 33,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "expansion",
+      "question": "製品群に対する会社の増産投資計画。2028年量産開始予定であり当年売上実績ではない。",
+      "definition": "製品群に対する会社の増産投資計画。2028年量産開始予定であり当年売上実績ではない。",
+      "status": "ready",
+      "claim": "8月の資料では、EUVマスクブランクス、CMPスラリー、露光用レンズ材の増産投資を示し、能力増強は2〜5割、量産開始は2028年としています。",
+      "requiredInputs": [
+        {
+          "id": "low",
+          "entity": "AGC連結",
+          "metric": "会社計画増産率下限",
+          "periodStart": "2028-01-01",
+          "periodEnd": "2028-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "会社計画増産率下限"
+        },
+        {
+          "id": "high",
+          "entity": "AGC連結",
+          "metric": "会社計画増産率上限",
+          "periodStart": "2028-01-01",
+          "periodEnd": "2028-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "会社計画増産率上限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "low",
+          "value": 20,
+          "entity": "AGC連結",
+          "metric": "会社計画増産率下限",
+          "periodStart": "2028-01-01",
+          "periodEnd": "2028-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "会社計画増産率下限",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF34頁・会社計画増産率下限",
+            "pdfPage": 34,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "high",
+          "value": 50,
+          "entity": "AGC連結",
+          "metric": "会社計画増産率上限",
+          "periodStart": "2028-01-01",
+          "periodEnd": "2028-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "会社計画増産率上限",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF34頁・会社計画増産率上限",
+            "pdfPage": 34,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "forecast",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "8月時点の2026年会社予想は売上2兆2,000億円、営業利益1,500億円、親会社純利益770億円。上期営業利益646.61億円との差から、下期には853.39億円が必要です。",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "AGC連結",
+          "metric": "通期売上予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期売上予想"
+        },
+        {
+          "id": "op",
+          "entity": "AGC連結",
+          "metric": "通期営業利益予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期営業利益予想"
+        },
+        {
+          "id": "net",
+          "entity": "AGC連結",
+          "metric": "通期親会社純利益予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期親会社純利益予想"
+        },
+        {
+          "id": "h1",
+          "entity": "AGC連結",
+          "metric": "上期営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "上期営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "value": 2200000,
+          "entity": "AGC連結",
+          "metric": "通期売上予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期売上予想",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF1頁・通期売上予想",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "value": 150000,
+          "entity": "AGC連結",
+          "metric": "通期営業利益予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期営業利益予想",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF1頁・通期営業利益予想",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "value": 77000,
+          "entity": "AGC連結",
+          "metric": "通期親会社純利益予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期親会社純利益予想",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF1頁・通期親会社純利益予想",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "h1",
+          "value": 64661,
+          "entity": "AGC連結",
+          "metric": "上期営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "上期営業利益",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861932/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF1頁・上期営業利益",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "required",
+          "operation": "difference",
+          "inputs": [
+            "op",
+            "h1"
+          ],
+          "value": 85339,
+          "definition": "通期会社予想から上期実績を控除した必要下期利益",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "lifescience-required",
+      "question": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "definition": "AGC連結IFRS。数値は原資料の表示単位を保持し、本文の億円へは百万円÷100で換算。",
+      "status": "ready",
+      "claim": "ライフサイエンスの通期営業損益予想はマイナス50億円に対し、上期は約61億円の赤字です。会社の丸め値からは、下期に約11億円の黒字が必要になります。",
+      "requiredInputs": [
+        {
+          "id": "full",
+          "entity": "AGC連結",
+          "metric": "ライフサイエンス通期営業利益予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "ライフサイエンス通期営業利益予想"
+        },
+        {
+          "id": "half",
+          "entity": "AGC連結",
+          "metric": "ライフサイエンス上期営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "ライフサイエンス上期営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "full",
+          "value": -50,
+          "entity": "AGC連結",
+          "metric": "ライフサイエンス通期営業利益予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "ライフサイエンス通期営業利益予想",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF23頁・ライフサイエンス通期営業利益予想",
+            "pdfPage": 23,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "half",
+          "value": -61,
+          "entity": "AGC連結",
+          "metric": "ライフサイエンス上期営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-06-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "ライフサイエンス上期営業利益",
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/5201/tdnet/2861935/00.pdf",
+            "publishedOn": "2026-08-04",
+            "locator": "PDF7頁・ライフサイエンス上期営業利益",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "required",
+          "operation": "difference",
+          "inputs": [
+            "full",
+            "half"
+          ],
+          "value": 11,
+          "definition": "丸め値から計算した必要下期利益",
+          "precision": 0
+        }
+      ]
+    }
+  ]
+}

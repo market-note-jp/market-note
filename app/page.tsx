@@ -12,6 +12,51 @@ const legacyArticles = [
 {
   "kind": "企業レポート",
   "theme": "個別企業",
+  "date": "2026-11-04 19:51",
+  "dateTime": "2026-11-04T10:51:58.277Z",
+  "title": "AGC：半導体だけでは読めない、投資回収と利益の質",
+  "excerpt": "AGCの9年財務と最新上期を検証。半導体材料の増産計画、CDMO改革、設備投資額と現金支出のずれから、利益改善と投資回収の条件を読む。",
+  "href": "/articles/company-agc-2026-11-04"
+},
+{
+  "kind": "企業レポート",
+  "theme": "個別企業",
+  "date": "2026-11-04 19:51",
+  "dateTime": "2026-11-04T10:51:58.277Z",
+  "title": "Parker Hannifin：強い現金創出は、大型買収後も株主に残るか",
+  "excerpt": "制御技術と補修需要を土台に伸びるParker。5年の財務、関税還付、受注指標の変更、FGC買収後の負債を分けて検証する。",
+  "href": "/articles/company-parker-hannifin-2026-11-04"
+},
+{
+  "kind": "企業レポート",
+  "theme": "個別企業",
+  "date": "2026-11-04 19:51",
+  "dateTime": "2026-11-04T10:51:58.277Z",
+  "title": "Diploma：買収を続けながら、利益を現金に変えられるか",
+  "excerpt": "専門部品グループDiplomaの5年財務と最新開示を検証。Controlsの成長、買収・売却益、運転資本、会社FCFと買収後の現金を分けて読みます。",
+  "href": "/articles/company-diploma-2026-11-04"
+},
+{
+  "kind": "論点解説",
+  "theme": "市場テーマ",
+  "date": "2026-11-04 19:51",
+  "dateTime": "2026-11-04T10:51:58.277Z",
+  "title": "AMDは増益なのに、なぜ四半期の自由に使える現金が減ったのか",
+  "excerpt": "AMDのQ3決算から、単独四半期と累計のFCF、在庫・売掛金・買掛金、借入を分けて利益の現金化を検証する。",
+  "href": "/articles/theme-amd-profit-working-capital-2026-11-04"
+},
+{
+  "kind": "論点解説",
+  "theme": "市場テーマ",
+  "date": "2026-11-04 19:51",
+  "dateTime": "2026-11-04T10:51:58.277Z",
+  "title": "住宅が冷えているのに、なぜ豪州は利上げするのか",
+  "excerpt": "RBAの利上げとABS物価実績から、住宅・家計の減速と物価圧力の残存が両立する条件を考える。",
+  "href": "/articles/theme-rba-inflation-housing-2026-11-04"
+},
+{
+  "kind": "企業レポート",
+  "theme": "個別企業",
   "date": "2026-11-03 19:48",
   "dateTime": "2026-11-03T10:48:16.322Z",
   "title": "Graco：増収でも利益が減る理由と、買収・還元後に残る現金",
