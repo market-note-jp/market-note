@@ -1,0 +1,883 @@
+{
+  "version": 1,
+  "articleSlug": "theme-ism-services-demand-deliveries-2026-11-05",
+  "articleSha256": "4a7bd977a9a7db8a5b7cd23c15fbcb4b0decf487b7f7aef47ee27b16fff3094d",
+  "checkedAt": "2026-11-05T10:19:00.953934+00:00",
+  "informationCutoff": "2026-11-05T10:14:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "全文・全表・見出しの全重要数値を確認。4構成指数の季節調整有無、入荷遅延の向き、Pricesの非構成を一次本文で確認。既存操作difference/sumで合計差まで記録し、÷4は原文equal weightsに従う補足手計算欄と本文で明示。スキーマを変更せず架空の観測分母も追加しない。−0.450は丸め後公表構成値からの近似、公式差−0.4と区別。景気後退・因果分解・金利予測は推定しない。公開時publishedTimeを実際の時刻に設定した後、本文を再確認してdigest再生成が必要。",
+  "comparisons": [
+    {
+      "id": "official-composite-change",
+      "question": "11月4日に公表されたISMサービス業PMIは、9月54.9から10月54.5へ低下した。",
+      "definition": "公式表示値同士の差。指数ポイントであり経済活動額の成長率ではない。",
+      "status": "ready",
+      "claim": "11月4日に公表されたISMサービス業PMIは、9月54.9から10月54.5へ低下した。",
+      "requiredInputs": [
+        {
+          "id": "sep",
+          "entity": "ISM米国サービス業調査",
+          "metric": "Services PMI",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。"
+        },
+        {
+          "id": "oct",
+          "entity": "ISM米国サービス業調査",
+          "metric": "Services PMI",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sep",
+          "entity": "ISM米国サービス業調査",
+          "metric": "Services PMI",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。",
+          "value": 54.9,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "October 2026, Results at a Glance, Services column; Data and Method of Presentation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oct",
+          "entity": "ISM米国サービス業調査",
+          "metric": "Services PMI",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。",
+          "value": 54.5,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "October 2026, Results at a Glance, Services column; Data and Method of Presentation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "change",
+          "operation": "difference",
+          "inputs": [
+            "oct",
+            "sep"
+          ],
+          "value": -0.4,
+          "precision": 1,
+          "definition": "公式表示値54.5−54.9"
+        }
+      ]
+    },
+    {
+      "id": "four-equal-components",
+      "question": "ISMサービス業の総合PMIは、事業活動、新規受注、雇用、入荷遅延の4指数を同じ重みで平均する。",
+      "definition": "原文が4構成指数をequal weightsで平均すると定義。入荷遅延は上昇ほど遅延、他指数の50超は拡大。",
+      "status": "ready",
+      "claim": "ISMサービス業の総合PMIは、事業活動、新規受注、雇用、入荷遅延の4指数を同じ重みで平均する。",
+      "requiredInputs": [
+        {
+          "id": "components",
+          "entity": "ISM",
+          "metric": "Services PMI構成指数数",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "count",
+          "basis": "actual",
+          "definition": "総合PMIを同じ重みで平均する構成指数の数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "components",
+          "entity": "ISM",
+          "metric": "Services PMI構成指数数",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "count",
+          "basis": "actual",
+          "definition": "総合PMIを同じ重みで平均する構成指数の数",
+          "value": 4,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "Data and Method of Presentation: four of the indicators with equal weights",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "manualCalculationReview": {
+        "equalWeight": "1 ÷ 4 = 0.25。架空の分母を観測値として追加せず、原文の等ウェート定義を手計算に適用。"
+      }
+    },
+    {
+      "id": "activity-contribution",
+      "question": "| 事業活動 | 56.5 | 53.8 | −2.7 | −0.675 |",
+      "definition": "公表済み丸め値同士の差。総合PMI寄与は差÷4で手計算。構成指数原データを再現する厳密値ではない。",
+      "status": "ready",
+      "claim": "| 事業活動 | 56.5 | 53.8 | −2.7 | −0.675 |",
+      "requiredInputs": [
+        {
+          "id": "activitySep",
+          "entity": "ISM米国サービス業調査",
+          "metric": "事業活動",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。"
+        },
+        {
+          "id": "activityOct",
+          "entity": "ISM米国サービス業調査",
+          "metric": "事業活動",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "activitySep",
+          "entity": "ISM米国サービス業調査",
+          "metric": "事業活動",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。",
+          "value": 56.5,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "October 2026, Results at a Glance, Services column; Data and Method of Presentation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "activityOct",
+          "entity": "ISM米国サービス業調査",
+          "metric": "事業活動",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。",
+          "value": 53.8,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "October 2026, Results at a Glance, Services column; Data and Method of Presentation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "activityChange",
+          "operation": "difference",
+          "inputs": [
+            "activityOct",
+            "activitySep"
+          ],
+          "value": -2.7,
+          "precision": 1,
+          "definition": "同一公表版の10月−9月、指数ポイント"
+        }
+      ],
+      "manualCalculationReview": {
+        "formula": "(53.8 - 56.5) / 4",
+        "result": -0.675,
+        "unit": "index points",
+        "weightSource": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/ (Data and Method of Presentation)",
+        "precision": 3,
+        "limitation": "3桁は検算表示であり観測精度ではない。"
+      }
+    },
+    {
+      "id": "orders-contribution",
+      "question": "| 新規受注 | 59.8 | 55.9 | −3.9 | −0.975 |",
+      "definition": "公表済み丸め値同士の差。総合PMI寄与は差÷4で手計算。構成指数原データを再現する厳密値ではない。",
+      "status": "ready",
+      "claim": "| 新規受注 | 59.8 | 55.9 | −3.9 | −0.975 |",
+      "requiredInputs": [
+        {
+          "id": "ordersSep",
+          "entity": "ISM米国サービス業調査",
+          "metric": "新規受注",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。"
+        },
+        {
+          "id": "ordersOct",
+          "entity": "ISM米国サービス業調査",
+          "metric": "新規受注",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ordersSep",
+          "entity": "ISM米国サービス業調査",
+          "metric": "新規受注",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。",
+          "value": 59.8,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "October 2026, Results at a Glance, Services column; Data and Method of Presentation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ordersOct",
+          "entity": "ISM米国サービス業調査",
+          "metric": "新規受注",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。",
+          "value": 55.9,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "October 2026, Results at a Glance, Services column; Data and Method of Presentation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "ordersChange",
+          "operation": "difference",
+          "inputs": [
+            "ordersOct",
+            "ordersSep"
+          ],
+          "value": -3.9,
+          "precision": 1,
+          "definition": "同一公表版の10月−9月、指数ポイント"
+        }
+      ],
+      "manualCalculationReview": {
+        "formula": "(55.9 - 59.8) / 4",
+        "result": -0.975,
+        "unit": "index points",
+        "weightSource": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/ (Data and Method of Presentation)",
+        "precision": 3,
+        "limitation": "3桁は検算表示であり観測精度ではない。"
+      }
+    },
+    {
+      "id": "employment-contribution",
+      "question": "| 雇用 | 50.1 | 51.4 | ＋1.3 | ＋0.325 |",
+      "definition": "公表済み丸め値同士の差。総合PMI寄与は差÷4で手計算。構成指数原データを再現する厳密値ではない。",
+      "status": "ready",
+      "claim": "| 雇用 | 50.1 | 51.4 | ＋1.3 | ＋0.325 |",
+      "requiredInputs": [
+        {
+          "id": "employmentSep",
+          "entity": "ISM米国サービス業調査",
+          "metric": "雇用",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。"
+        },
+        {
+          "id": "employmentOct",
+          "entity": "ISM米国サービス業調査",
+          "metric": "雇用",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "employmentSep",
+          "entity": "ISM米国サービス業調査",
+          "metric": "雇用",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。",
+          "value": 50.1,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "October 2026, Results at a Glance, Services column; Data and Method of Presentation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "employmentOct",
+          "entity": "ISM米国サービス業調査",
+          "metric": "雇用",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。",
+          "value": 51.4,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "October 2026, Results at a Glance, Services column; Data and Method of Presentation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "employmentChange",
+          "operation": "difference",
+          "inputs": [
+            "employmentOct",
+            "employmentSep"
+          ],
+          "value": 1.3,
+          "precision": 1,
+          "definition": "同一公表版の10月−9月、指数ポイント"
+        }
+      ],
+      "manualCalculationReview": {
+        "formula": "(51.4 - 50.1) / 4",
+        "result": 0.325,
+        "unit": "index points",
+        "weightSource": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/ (Data and Method of Presentation)",
+        "precision": 3,
+        "limitation": "3桁は検算表示であり観測精度ではない。"
+      }
+    },
+    {
+      "id": "deliveries-contribution",
+      "question": "| 入荷遅延 | 53.2 | 56.7 | ＋3.5 | ＋0.875 |",
+      "definition": "公表済み丸め値同士の差。総合PMI寄与は差÷4で手計算。構成指数原データを再現する厳密値ではない。",
+      "status": "ready",
+      "claim": "| 入荷遅延 | 53.2 | 56.7 | ＋3.5 | ＋0.875 |",
+      "requiredInputs": [
+        {
+          "id": "deliveriesSep",
+          "entity": "ISM米国サービス業調査",
+          "metric": "入荷遅延",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。"
+        },
+        {
+          "id": "deliveriesOct",
+          "entity": "ISM米国サービス業調査",
+          "metric": "入荷遅延",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "deliveriesSep",
+          "entity": "ISM米国サービス業調査",
+          "metric": "入荷遅延",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。",
+          "value": 53.2,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "October 2026, Results at a Glance, Services column; Data and Method of Presentation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "deliveriesOct",
+          "entity": "ISM米国サービス業調査",
+          "metric": "入荷遅延",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。",
+          "value": 56.7,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "October 2026, Results at a Glance, Services column; Data and Method of Presentation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "deliveriesChange",
+          "operation": "difference",
+          "inputs": [
+            "deliveriesOct",
+            "deliveriesSep"
+          ],
+          "value": 3.5,
+          "precision": 1,
+          "definition": "同一公表版の10月−9月、指数ポイント"
+        }
+      ],
+      "manualCalculationReview": {
+        "formula": "(56.7 - 53.2) / 4",
+        "result": 0.875,
+        "unit": "index points",
+        "weightSource": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/ (Data and Method of Presentation)",
+        "precision": 3,
+        "limitation": "3桁は検算表示であり観測精度ではない。"
+      }
+    },
+    {
+      "id": "decomposition-total",
+      "question": "事業活動と新規受注を合わせた寄与は−1.650ポイント。雇用と入荷遅延による＋1.200ポイントが、その一部を相殺した。公表された構成指数からの合計は−0.450ポイントとなるが、公式の総合PMIの表示値同士では−0.4ポイントになる。",
+      "definition": "構成指数差の合計は−1.8。equal weightsに従い÷4で−0.450。総合表示値の公式差−0.4とは丸め過程が異なる。一次資料の4構成指数を確認し全算式を手計算・Decimal再検算。",
+      "status": "ready",
+      "claim": "事業活動と新規受注を合わせた寄与は−1.650ポイント。雇用と入荷遅延による＋1.200ポイントが、その一部を相殺した。公表された構成指数からの合計は−0.450ポイントとなるが、公式の総合PMIの表示値同士では−0.4ポイントになる。",
+      "requiredInputs": [
+        {
+          "id": "activitySep",
+          "entity": "ISM米国サービス業調査",
+          "metric": "事業活動",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。"
+        },
+        {
+          "id": "activityOct",
+          "entity": "ISM米国サービス業調査",
+          "metric": "事業活動",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。"
+        },
+        {
+          "id": "ordersSep",
+          "entity": "ISM米国サービス業調査",
+          "metric": "新規受注",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。"
+        },
+        {
+          "id": "ordersOct",
+          "entity": "ISM米国サービス業調査",
+          "metric": "新規受注",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。"
+        },
+        {
+          "id": "employmentSep",
+          "entity": "ISM米国サービス業調査",
+          "metric": "雇用",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。"
+        },
+        {
+          "id": "employmentOct",
+          "entity": "ISM米国サービス業調査",
+          "metric": "雇用",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。"
+        },
+        {
+          "id": "deliveriesSep",
+          "entity": "ISM米国サービス業調査",
+          "metric": "入荷遅延",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。"
+        },
+        {
+          "id": "deliveriesOct",
+          "entity": "ISM米国サービス業調査",
+          "metric": "入荷遅延",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "activitySep",
+          "entity": "ISM米国サービス業調査",
+          "metric": "事業活動",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。",
+          "value": 56.5,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "October 2026, Results at a Glance, Services column; Data and Method of Presentation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "activityOct",
+          "entity": "ISM米国サービス業調査",
+          "metric": "事業活動",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。",
+          "value": 53.8,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "October 2026, Results at a Glance, Services column; Data and Method of Presentation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ordersSep",
+          "entity": "ISM米国サービス業調査",
+          "metric": "新規受注",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。",
+          "value": 59.8,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "October 2026, Results at a Glance, Services column; Data and Method of Presentation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ordersOct",
+          "entity": "ISM米国サービス業調査",
+          "metric": "新規受注",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。",
+          "value": 55.9,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "October 2026, Results at a Glance, Services column; Data and Method of Presentation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "employmentSep",
+          "entity": "ISM米国サービス業調査",
+          "metric": "雇用",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。",
+          "value": 50.1,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "October 2026, Results at a Glance, Services column; Data and Method of Presentation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "employmentOct",
+          "entity": "ISM米国サービス業調査",
+          "metric": "雇用",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。",
+          "value": 51.4,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "October 2026, Results at a Glance, Services column; Data and Method of Presentation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "deliveriesSep",
+          "entity": "ISM米国サービス業調査",
+          "metric": "入荷遅延",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。",
+          "value": 53.2,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "October 2026, Results at a Glance, Services column; Data and Method of Presentation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "deliveriesOct",
+          "entity": "ISM米国サービス業調査",
+          "metric": "入荷遅延",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "ISMサービス業月次拡散指数。10月報告に掲載された同一版の9月/10月値。事業活動・新規受注・雇用は季節調整済み、入荷遅延は未調整。",
+          "value": 56.7,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "October 2026, Results at a Glance, Services column; Data and Method of Presentation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "activityChange",
+          "operation": "difference",
+          "inputs": [
+            "activityOct",
+            "activitySep"
+          ],
+          "value": -2.7,
+          "precision": 1,
+          "definition": "同一公表版の10月−9月、指数ポイント"
+        },
+        {
+          "id": "ordersChange",
+          "operation": "difference",
+          "inputs": [
+            "ordersOct",
+            "ordersSep"
+          ],
+          "value": -3.9,
+          "precision": 1,
+          "definition": "同一公表版の10月−9月、指数ポイント"
+        },
+        {
+          "id": "employmentChange",
+          "operation": "difference",
+          "inputs": [
+            "employmentOct",
+            "employmentSep"
+          ],
+          "value": 1.3,
+          "precision": 1,
+          "definition": "同一公表版の10月−9月、指数ポイント"
+        },
+        {
+          "id": "deliveriesChange",
+          "operation": "difference",
+          "inputs": [
+            "deliveriesOct",
+            "deliveriesSep"
+          ],
+          "value": 3.5,
+          "precision": 1,
+          "definition": "同一公表版の10月−9月、指数ポイント"
+        },
+        {
+          "id": "demandSum",
+          "operation": "sum",
+          "inputs": [
+            "activityChange",
+            "ordersChange"
+          ],
+          "value": -6.6,
+          "precision": 1,
+          "definition": "事業活動と新規受注の前月差の合計"
+        },
+        {
+          "id": "offsetSum",
+          "operation": "sum",
+          "inputs": [
+            "employmentChange",
+            "deliveriesChange"
+          ],
+          "value": 4.8,
+          "precision": 1,
+          "definition": "雇用と入荷遅延の前月差の合計"
+        },
+        {
+          "id": "allChange",
+          "operation": "sum",
+          "inputs": [
+            "demandSum",
+            "offsetSum"
+          ],
+          "value": -1.8,
+          "precision": 1,
+          "definition": "4指数の前月差合計"
+        }
+      ],
+      "manualCalculationReview": {
+        "demand": "-6.6 / 4 = -1.650",
+        "offset": "4.8 / 4 = 1.200",
+        "total": "-1.8 / 4 = -0.450",
+        "levelOctober": "(53.8 + 55.9 + 51.4 + 56.7) / 4 = 54.450",
+        "levelSeptember": "(56.5 + 59.8 + 50.1 + 53.2) / 4 = 54.900",
+        "official": "54.5 - 54.9 = -0.4",
+        "methodSource": "https://www.ismworld.org/supply-management-news-and-reports/reports/seasonal-adjustment-factors/",
+        "roundingCaveat": "ISM算出方法ページは丸めによる計算値と公表値の相違を明記。"
+      }
+    },
+    {
+      "id": "price-index",
+      "question": "10月の仕入価格指数は73.0で、9月74.0より低い。しかし、この価格指数は総合PMIの構成項目ではない。",
+      "definition": "季節調整済み仕入価格拡散指数。価格水準の減少・上昇率・CPIではない。価格は4構成指数に含まれない。",
+      "status": "ready",
+      "claim": "10月の仕入価格指数は73.0で、9月74.0より低い。しかし、この価格指数は総合PMIの構成項目ではない。",
+      "requiredInputs": [
+        {
+          "id": "pricesSep",
+          "entity": "ISM米国サービス業調査",
+          "metric": "仕入価格指数",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "季節調整済み仕入価格拡散指数"
+        },
+        {
+          "id": "pricesOct",
+          "entity": "ISM米国サービス業調査",
+          "metric": "仕入価格指数",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "季節調整済み仕入価格拡散指数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "pricesSep",
+          "entity": "ISM米国サービス業調査",
+          "metric": "仕入価格指数",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "季節調整済み仕入価格拡散指数",
+          "value": 74,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "October 2026, Results at a Glance, Services column; Data and Method of Presentation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "pricesOct",
+          "entity": "ISM米国サービス業調査",
+          "metric": "仕入価格指数",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "index points",
+          "basis": "actual",
+          "definition": "季節調整済み仕入価格拡散指数",
+          "value": 73,
+          "source": {
+            "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+            "publishedOn": "2026-11-04",
+            "locator": "October 2026, Results at a Glance, Services column; Data and Method of Presentation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "pricesChange",
+          "operation": "difference",
+          "inputs": [
+            "pricesOct",
+            "pricesSep"
+          ],
+          "value": -1,
+          "precision": 1,
+          "definition": "73.0−74.0"
+        }
+      ]
+    }
+  ],
+  "qualitativeChecks": [
+    {
+      "claim": "納期短縮が総合PMI低下をもたらしても、供給改善の場合がある。",
+      "source": "https://www.ismworld.org/supply-management-news-and-reports/news-publications/inside-supply-management-magazine/blog/2022/2022-01/report-on-business-roundup-november-2021-services-pmi/",
+      "locator": "2022-01-06, Supplier Deliveries discussion",
+      "review": "過去の説明を構造の補強に使用。過去と今回の局面一致や数値比較を主張しない。"
+    },
+    {
+      "claim": "需要・供給どちらが遅延原因かを総合集計だけから確定しない。",
+      "source": "https://www.ismworld.org/supply-management-news-and-reports/reports/ism-pmi-reports/services/october/",
+      "locator": "About This Report; Data and Method of Presentation",
+      "review": "原文の拡散指数定義から本稿が導く分析。因果寄与を新造しない。"
+    }
+  ]
+}

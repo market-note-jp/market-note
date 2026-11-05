@@ -3,6 +3,7 @@ import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { createHash } from "node:crypto";
 import test from "node:test";
 import { loadArticleRegistry } from "./article-registry.mjs";
+import { verifyResearchArticle } from '../scripts/verify-research-article.mjs';
 const registry = await loadArticleRegistry();
 const catalog = JSON.parse(readFileSync("content/editorial-titles.json", "utf8"));
 const decode = s => s.replaceAll("&amp;", "&").replaceAll("&quot;", '"').replaceAll("&#x27;", "'").replaceAll("&lt;", "<").replaceAll("&gt;", ">");
@@ -57,3 +58,13 @@ test("all five company article publication metadata dates are retained", () => {
     assert.ok(html.includes(`property="article:published_time" content="${catalog[slug].publishedTime}"`), slug);
   }
 });
+
+// The November 5 batch must preserve the complete source body and first paragraph.
+for (const slug of ["company-nintendo-2026-11-05", "company-autozone-2026-11-05", "company-atlas-copco-2026-11-05", "theme-ism-services-demand-deliveries-2026-11-05", "theme-arm-silicon-gross-margin-2026-11-05"]) {
+  test(`${slug}: explicit title, complete visible content and metadata`, () => {
+    const article = JSON.parse(readFileSync(`app/articles/${slug}/article.json`, 'utf8'));
+    assert.equal(article.markdown.trim().split(/\n\s*\n/)[0], `# ${article.title}`);
+    const html = readFileSync(`out/articles/${slug}/index.html`, 'utf8');
+    verifyResearchArticle(article, html);
+  });
+}
