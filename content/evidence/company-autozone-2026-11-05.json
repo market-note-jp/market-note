@@ -1,0 +1,4372 @@
+{
+  "version": 1,
+  "articleSlug": "company-autozone-2026-11-05",
+  "articleSha256": "0cc68961195cda35ae597a8fdd08deb24644ca15e0c40f4e6addf91c4e68e088",
+  "checkedAt": "2026-11-05T10:15:20.870480+00:00",
+  "informationCutoff": "2026-11-05T19:12:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "著者が最終本文・3表・全数値比較を一次本文と照合。5年損益とROICは2026年10-K、2022〜23年CFは2023年10-KのCF計算書PDF50頁、2024〜26年CFは2026年10-K。全金額を千ドルから百万ドルへ換算し、FCF・利益率・成長率・現金ブリッジ・ROIC分子分母を再計算。2024年度53週、会社非GAAP定義、還付の現金/原価/在庫差、サプライヤー金融の二重計上を明記。数値のない競争・将来条件は本文に直接一次出典。株価妥当性は未判定。独立レビューと公開検証は統合担当で別途行う。",
+  "comparisons": [
+    {
+      "id": "pnl-2022",
+      "question": "| 2022 | 16,252.2 | 3,270.7 | 20.1% | 2,429.6 | 117.19 |",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "| 2022 | 16,252.2 | 3,270.7 | 20.1% | 2,429.6 | 117.19 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "AutoZone連結",
+          "metric": "売上高",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "AutoZone連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "AutoZone連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        },
+        {
+          "id": "eps",
+          "entity": "AutoZone連結",
+          "metric": "希薄化後EPS",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "希薄化後EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "AutoZone連結",
+          "metric": "売上高",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 16252.23,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 Results of Operations five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "AutoZone連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 3270.729,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 Results of Operations five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "AutoZone連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 2429.604,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 Results of Operations five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eps",
+          "entity": "AutoZone連結",
+          "metric": "希薄化後EPS",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "希薄化後EPS",
+          "value": 117.19,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 Results of Operations five-year table, printed p.30",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op",
+            "sales"
+          ],
+          "definition": "営業利益÷売上高×100",
+          "precision": 1,
+          "value": 20.1
+        }
+      ]
+    },
+    {
+      "id": "cash-2022",
+      "question": "| 2022 | 3,211.1 | 672.4 | 2,538.7 | 4,360.0 | 52.9% |",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "| 2022 | 3,211.1 | 672.4 | 2,538.7 | 4,360.0 | 52.9% |",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "AutoZone連結",
+          "metric": "営業CF",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出（負数）",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負数）"
+        },
+        {
+          "id": "buy",
+          "entity": "AutoZone連結",
+          "metric": "自社株買い現金支出（表示用正数）",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自社株買い現金支出（表示用正数）"
+        },
+        {
+          "id": "roic",
+          "entity": "AutoZone連結",
+          "metric": "会社調整税引後ROIC",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "税調整利息・賃料を戻した収益÷会社投下資本。賃料6倍を資本化、平均は直近5四半期"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "AutoZone連結",
+          "metric": "営業CF",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 3211.135,
+          "source": {
+            "url": "https://investors.autozone.com/static-files/6a3485e5-1183-4a09-89bc-f06642850b46",
+            "publishedOn": "2023-10-24",
+            "locator": "Consolidated Statements of Cash Flows, PDF p.50 (printed p.50)",
+            "kind": "primary",
+            "pdfPage": 50
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出（負数）",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負数）",
+          "value": -672.391,
+          "source": {
+            "url": "https://investors.autozone.com/static-files/6a3485e5-1183-4a09-89bc-f06642850b46",
+            "publishedOn": "2023-10-24",
+            "locator": "Consolidated Statements of Cash Flows, PDF p.50 (printed p.50)",
+            "kind": "primary",
+            "pdfPage": 50
+          }
+        },
+        {
+          "id": "buy",
+          "entity": "AutoZone連結",
+          "metric": "自社株買い現金支出（表示用正数）",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自社株買い現金支出（表示用正数）",
+          "value": 4359.991,
+          "source": {
+            "url": "https://investors.autozone.com/static-files/6a3485e5-1183-4a09-89bc-f06642850b46",
+            "publishedOn": "2023-10-24",
+            "locator": "Consolidated Statements of Cash Flows, PDF p.50 (printed p.50)",
+            "kind": "primary",
+            "pdfPage": 50
+          }
+        },
+        {
+          "id": "roic",
+          "entity": "AutoZone連結",
+          "metric": "会社調整税引後ROIC",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "税調整利息・賃料を戻した収益÷会社投下資本。賃料6倍を資本化、平均は直近5四半期",
+          "value": 52.9,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Adjusted After-tax ROIC, printed p.39",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "definition": "営業CF＋設備投資支出（負数）",
+          "precision": 1,
+          "value": 2538.7
+        }
+      ]
+    },
+    {
+      "id": "pnl-2023",
+      "question": "| 2023 | 17,457.2 | 3,474.0 | 19.9% | 2,528.4 | 132.36 |",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "| 2023 | 17,457.2 | 3,474.0 | 19.9% | 2,528.4 | 132.36 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "AutoZone連結",
+          "metric": "売上高",
+          "periodStart": "2022-08-28",
+          "periodEnd": "2023-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "AutoZone連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2022-08-28",
+          "periodEnd": "2023-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "AutoZone連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2022-08-28",
+          "periodEnd": "2023-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        },
+        {
+          "id": "eps",
+          "entity": "AutoZone連結",
+          "metric": "希薄化後EPS",
+          "periodStart": "2022-08-28",
+          "periodEnd": "2023-08-26",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "希薄化後EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "AutoZone連結",
+          "metric": "売上高",
+          "periodStart": "2022-08-28",
+          "periodEnd": "2023-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 17457.209,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 Results of Operations five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "AutoZone連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2022-08-28",
+          "periodEnd": "2023-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 3473.986,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 Results of Operations five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "AutoZone連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2022-08-28",
+          "periodEnd": "2023-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 2528.426,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 Results of Operations five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eps",
+          "entity": "AutoZone連結",
+          "metric": "希薄化後EPS",
+          "periodStart": "2022-08-28",
+          "periodEnd": "2023-08-26",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "希薄化後EPS",
+          "value": 132.36,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 Results of Operations five-year table, printed p.30",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op",
+            "sales"
+          ],
+          "definition": "営業利益÷売上高×100",
+          "precision": 1,
+          "value": 19.9
+        }
+      ]
+    },
+    {
+      "id": "cash-2023",
+      "question": "| 2023 | 2,940.8 | 796.7 | 2,144.1 | 3,699.6 | 55.4% |",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "| 2023 | 2,940.8 | 796.7 | 2,144.1 | 3,699.6 | 55.4% |",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "AutoZone連結",
+          "metric": "営業CF",
+          "periodStart": "2022-08-28",
+          "periodEnd": "2023-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出（負数）",
+          "periodStart": "2022-08-28",
+          "periodEnd": "2023-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負数）"
+        },
+        {
+          "id": "buy",
+          "entity": "AutoZone連結",
+          "metric": "自社株買い現金支出（表示用正数）",
+          "periodStart": "2022-08-28",
+          "periodEnd": "2023-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自社株買い現金支出（表示用正数）"
+        },
+        {
+          "id": "roic",
+          "entity": "AutoZone連結",
+          "metric": "会社調整税引後ROIC",
+          "periodStart": "2022-08-28",
+          "periodEnd": "2023-08-26",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "税調整利息・賃料を戻した収益÷会社投下資本。賃料6倍を資本化、平均は直近5四半期"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "AutoZone連結",
+          "metric": "営業CF",
+          "periodStart": "2022-08-28",
+          "periodEnd": "2023-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 2940.788,
+          "source": {
+            "url": "https://investors.autozone.com/static-files/6a3485e5-1183-4a09-89bc-f06642850b46",
+            "publishedOn": "2023-10-24",
+            "locator": "Consolidated Statements of Cash Flows, PDF p.50 (printed p.50)",
+            "kind": "primary",
+            "pdfPage": 50
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出（負数）",
+          "periodStart": "2022-08-28",
+          "periodEnd": "2023-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負数）",
+          "value": -796.657,
+          "source": {
+            "url": "https://investors.autozone.com/static-files/6a3485e5-1183-4a09-89bc-f06642850b46",
+            "publishedOn": "2023-10-24",
+            "locator": "Consolidated Statements of Cash Flows, PDF p.50 (printed p.50)",
+            "kind": "primary",
+            "pdfPage": 50
+          }
+        },
+        {
+          "id": "buy",
+          "entity": "AutoZone連結",
+          "metric": "自社株買い現金支出（表示用正数）",
+          "periodStart": "2022-08-28",
+          "periodEnd": "2023-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自社株買い現金支出（表示用正数）",
+          "value": 3699.552,
+          "source": {
+            "url": "https://investors.autozone.com/static-files/6a3485e5-1183-4a09-89bc-f06642850b46",
+            "publishedOn": "2023-10-24",
+            "locator": "Consolidated Statements of Cash Flows, PDF p.50 (printed p.50)",
+            "kind": "primary",
+            "pdfPage": 50
+          }
+        },
+        {
+          "id": "roic",
+          "entity": "AutoZone連結",
+          "metric": "会社調整税引後ROIC",
+          "periodStart": "2022-08-28",
+          "periodEnd": "2023-08-26",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "税調整利息・賃料を戻した収益÷会社投下資本。賃料6倍を資本化、平均は直近5四半期",
+          "value": 55.4,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Adjusted After-tax ROIC, printed p.39",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "definition": "営業CF＋設備投資支出（負数）",
+          "precision": 1,
+          "value": 2144.1
+        }
+      ]
+    },
+    {
+      "id": "pnl-2024",
+      "question": "| 2024 | 18,490.3 | 3,788.7 | 20.5% | 2,662.4 | 149.55 |",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "| 2024 | 18,490.3 | 3,788.7 | 20.5% | 2,662.4 | 149.55 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "AutoZone連結",
+          "metric": "売上高",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "AutoZone連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "AutoZone連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        },
+        {
+          "id": "eps",
+          "entity": "AutoZone連結",
+          "metric": "希薄化後EPS",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "希薄化後EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "AutoZone連結",
+          "metric": "売上高",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 18490.268,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 Results of Operations five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "AutoZone連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 3788.708,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 Results of Operations five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "AutoZone連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 2662.427,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 Results of Operations five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eps",
+          "entity": "AutoZone連結",
+          "metric": "希薄化後EPS",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "希薄化後EPS",
+          "value": 149.55,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 Results of Operations five-year table, printed p.30",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op",
+            "sales"
+          ],
+          "definition": "営業利益÷売上高×100",
+          "precision": 1,
+          "value": 20.5
+        }
+      ]
+    },
+    {
+      "id": "cash-2024",
+      "question": "| 2024 | 3,004.1 | 1,072.7 | 1,931.4 | 3,140.9 | 49.7% |",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "| 2024 | 3,004.1 | 1,072.7 | 1,931.4 | 3,140.9 | 49.7% |",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "AutoZone連結",
+          "metric": "営業CF",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出（負数）",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負数）"
+        },
+        {
+          "id": "buy",
+          "entity": "AutoZone連結",
+          "metric": "自社株買い現金支出（表示用正数）",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自社株買い現金支出（表示用正数）"
+        },
+        {
+          "id": "roic",
+          "entity": "AutoZone連結",
+          "metric": "会社調整税引後ROIC",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "税調整利息・賃料を戻した収益÷会社投下資本。賃料6倍を資本化、平均は直近5四半期"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "AutoZone連結",
+          "metric": "営業CF",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 3004.116,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出（負数）",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負数）",
+          "value": -1072.696,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "buy",
+          "entity": "AutoZone連結",
+          "metric": "自社株買い現金支出（表示用正数）",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自社株買い現金支出（表示用正数）",
+          "value": 3140.917,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roic",
+          "entity": "AutoZone連結",
+          "metric": "会社調整税引後ROIC",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "税調整利息・賃料を戻した収益÷会社投下資本。賃料6倍を資本化、平均は直近5四半期",
+          "value": 49.7,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Adjusted After-tax ROIC, printed p.39",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "definition": "営業CF＋設備投資支出（負数）",
+          "precision": 1,
+          "value": 1931.4
+        }
+      ]
+    },
+    {
+      "id": "pnl-2025",
+      "question": "| 2025 | 18,938.7 | 3,610.2 | 19.1% | 2,498.2 | 144.87 |",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "| 2025 | 18,938.7 | 3,610.2 | 19.1% | 2,498.2 | 144.87 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "AutoZone連結",
+          "metric": "売上高",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "AutoZone連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "AutoZone連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        },
+        {
+          "id": "eps",
+          "entity": "AutoZone連結",
+          "metric": "希薄化後EPS",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "希薄化後EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "AutoZone連結",
+          "metric": "売上高",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 18938.717,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 Results of Operations five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "AutoZone連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 3610.156,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 Results of Operations five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "AutoZone連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 2498.247,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 Results of Operations five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eps",
+          "entity": "AutoZone連結",
+          "metric": "希薄化後EPS",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "希薄化後EPS",
+          "value": 144.87,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 Results of Operations five-year table, printed p.30",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op",
+            "sales"
+          ],
+          "definition": "営業利益÷売上高×100",
+          "precision": 1,
+          "value": 19.1
+        }
+      ]
+    },
+    {
+      "id": "cash-2025",
+      "question": "| 2025 | 3,117.3 | 1,327.3 | 1,790.1 | 1,578.2 | 41.3% |",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "| 2025 | 3,117.3 | 1,327.3 | 1,790.1 | 1,578.2 | 41.3% |",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "AutoZone連結",
+          "metric": "営業CF",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出（負数）",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負数）"
+        },
+        {
+          "id": "buy",
+          "entity": "AutoZone連結",
+          "metric": "自社株買い現金支出（表示用正数）",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自社株買い現金支出（表示用正数）"
+        },
+        {
+          "id": "roic",
+          "entity": "AutoZone連結",
+          "metric": "会社調整税引後ROIC",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "税調整利息・賃料を戻した収益÷会社投下資本。賃料6倍を資本化、平均は直近5四半期"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "AutoZone連結",
+          "metric": "営業CF",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 3117.337,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出（負数）",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負数）",
+          "value": -1327.257,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "buy",
+          "entity": "AutoZone連結",
+          "metric": "自社株買い現金支出（表示用正数）",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自社株買い現金支出（表示用正数）",
+          "value": 1578.186,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roic",
+          "entity": "AutoZone連結",
+          "metric": "会社調整税引後ROIC",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "税調整利息・賃料を戻した収益÷会社投下資本。賃料6倍を資本化、平均は直近5四半期",
+          "value": 41.3,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Adjusted After-tax ROIC, printed p.39",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "definition": "営業CF＋設備投資支出（負数）",
+          "precision": 1,
+          "value": 1790.1
+        }
+      ]
+    },
+    {
+      "id": "pnl-2026",
+      "question": "| 2026 | 20,338.6 | 3,723.3 | 18.3% | 2,572.8 | 152.55 |",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "| 2026 | 20,338.6 | 3,723.3 | 18.3% | 2,572.8 | 152.55 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "AutoZone連結",
+          "metric": "売上高",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "AutoZone連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "net",
+          "entity": "AutoZone連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        },
+        {
+          "id": "eps",
+          "entity": "AutoZone連結",
+          "metric": "希薄化後EPS",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "希薄化後EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "AutoZone連結",
+          "metric": "売上高",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 20338.555,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 Results of Operations five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "AutoZone連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 3723.314,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 Results of Operations five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "AutoZone連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 2572.777,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 Results of Operations five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eps",
+          "entity": "AutoZone連結",
+          "metric": "希薄化後EPS",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "希薄化後EPS",
+          "value": 152.55,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 Results of Operations five-year table, printed p.30",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op",
+            "sales"
+          ],
+          "definition": "営業利益÷売上高×100",
+          "precision": 1,
+          "value": 18.3
+        }
+      ]
+    },
+    {
+      "id": "cash-2026",
+      "question": "| 2026 | 3,249.1 | 1,433.6 | 1,815.5 | 2,013.2 | 35.8% |",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "| 2026 | 3,249.1 | 1,433.6 | 1,815.5 | 2,013.2 | 35.8% |",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "AutoZone連結",
+          "metric": "営業CF",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出（負数）",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負数）"
+        },
+        {
+          "id": "buy",
+          "entity": "AutoZone連結",
+          "metric": "自社株買い現金支出（表示用正数）",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自社株買い現金支出（表示用正数）"
+        },
+        {
+          "id": "roic",
+          "entity": "AutoZone連結",
+          "metric": "会社調整税引後ROIC",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "税調整利息・賃料を戻した収益÷会社投下資本。賃料6倍を資本化、平均は直近5四半期"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "AutoZone連結",
+          "metric": "営業CF",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 3249.117,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出（負数）",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負数）",
+          "value": -1433.587,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "buy",
+          "entity": "AutoZone連結",
+          "metric": "自社株買い現金支出（表示用正数）",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自社株買い現金支出（表示用正数）",
+          "value": 2013.195,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roic",
+          "entity": "AutoZone連結",
+          "metric": "会社調整税引後ROIC",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "税調整利息・賃料を戻した収益÷会社投下資本。賃料6倍を資本化、平均は直近5四半期",
+          "value": 35.8,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Adjusted After-tax ROIC, printed p.39",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "definition": "営業CF＋設備投資支出（負数）",
+          "precision": 1,
+          "value": 1815.5
+        }
+      ]
+    },
+    {
+      "id": "store-network",
+      "question": "2026年度末の店舗は米国6,863店、メキシコ1,001店、ブラジル167店。一般店の取扱品目が約2万〜2.5万に対し、メガハブは約8万〜11万品目を持ちます。国内メガハブは133店から172店へ増えました。すべての店にすべての在庫を置かず、拠点から融通する設計です。修理業者向けには配送と掛け売りを提供しますが、会社自身は修理・取付サービスから売上を得ていません。[10-K、Store Formats・Commercial、7〜8頁](https://investors.autozone.com/node/29456/html)",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "2026年度末の店舗は米国6,863店、メキシコ1,001店、ブラジル167店。一般店の取扱品目が約2万〜2.5万に対し、メガハブは約8万〜11万品目を持ちます。国内メガハブは133店から172店へ増えました。すべての店にすべての在庫を置かず、拠点から融通する設計です。修理業者向けには配送と掛け売りを提供しますが、会社自身は修理・取付サービスから売上を得ていません。[10-K、Store Formats・Commercial、7〜8頁](https://investors.autozone.com/node/29456/html)",
+      "requiredInputs": [
+        {
+          "id": "us",
+          "entity": "AutoZone連結",
+          "metric": "米国店舗数",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "stores",
+          "basis": "actual",
+          "definition": "米国店舗数"
+        },
+        {
+          "id": "mx",
+          "entity": "AutoZone連結",
+          "metric": "メキシコ店舗数",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "stores",
+          "basis": "actual",
+          "definition": "メキシコ店舗数"
+        },
+        {
+          "id": "br",
+          "entity": "AutoZone連結",
+          "metric": "ブラジル店舗数",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "stores",
+          "basis": "actual",
+          "definition": "ブラジル店舗数"
+        },
+        {
+          "id": "skul",
+          "entity": "AutoZone連結",
+          "metric": "一般店取扱SKU下限",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "SKUs",
+          "basis": "actual",
+          "definition": "一般店取扱SKU下限"
+        },
+        {
+          "id": "skuh",
+          "entity": "AutoZone連結",
+          "metric": "一般店取扱SKU上限",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "SKUs",
+          "basis": "actual",
+          "definition": "一般店取扱SKU上限"
+        },
+        {
+          "id": "megaL",
+          "entity": "AutoZone連結",
+          "metric": "メガハブSKU下限",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "SKUs",
+          "basis": "actual",
+          "definition": "メガハブSKU下限"
+        },
+        {
+          "id": "megaH",
+          "entity": "AutoZone連結",
+          "metric": "メガハブSKU上限",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "SKUs",
+          "basis": "actual",
+          "definition": "メガハブSKU上限"
+        },
+        {
+          "id": "mega26",
+          "entity": "AutoZone連結",
+          "metric": "国内メガハブ店舗数",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "stores",
+          "basis": "actual",
+          "definition": "国内メガハブ店舗数"
+        },
+        {
+          "id": "megaincrease",
+          "entity": "AutoZone連結",
+          "metric": "国内メガハブ前年比増加",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "stores",
+          "basis": "actual",
+          "definition": "国内メガハブ前年比増加"
+        }
+      ],
+      "observations": [
+        {
+          "id": "us",
+          "entity": "AutoZone連結",
+          "metric": "米国店舗数",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "stores",
+          "basis": "actual",
+          "definition": "米国店舗数",
+          "value": 6863,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Store Operations, printed p.6",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "mx",
+          "entity": "AutoZone連結",
+          "metric": "メキシコ店舗数",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "stores",
+          "basis": "actual",
+          "definition": "メキシコ店舗数",
+          "value": 1001,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Store Operations, printed p.6",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "br",
+          "entity": "AutoZone連結",
+          "metric": "ブラジル店舗数",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "stores",
+          "basis": "actual",
+          "definition": "ブラジル店舗数",
+          "value": 167,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Store Operations, printed p.6",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "skul",
+          "entity": "AutoZone連結",
+          "metric": "一般店取扱SKU下限",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "SKUs",
+          "basis": "actual",
+          "definition": "一般店取扱SKU下限",
+          "value": 20000,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Store Formats, printed p.7",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "skuh",
+          "entity": "AutoZone連結",
+          "metric": "一般店取扱SKU上限",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "SKUs",
+          "basis": "actual",
+          "definition": "一般店取扱SKU上限",
+          "value": 25000,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Store Formats, printed p.7",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "megaL",
+          "entity": "AutoZone連結",
+          "metric": "メガハブSKU下限",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "SKUs",
+          "basis": "actual",
+          "definition": "メガハブSKU下限",
+          "value": 80000,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Store Formats, printed p.7",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "megaH",
+          "entity": "AutoZone連結",
+          "metric": "メガハブSKU上限",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "SKUs",
+          "basis": "actual",
+          "definition": "メガハブSKU上限",
+          "value": 110000,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Store Formats, printed p.7",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "mega26",
+          "entity": "AutoZone連結",
+          "metric": "国内メガハブ店舗数",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "stores",
+          "basis": "actual",
+          "definition": "国内メガハブ店舗数",
+          "value": 172,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Store Formats, printed p.7",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "megaincrease",
+          "entity": "AutoZone連結",
+          "metric": "国内メガハブ前年比増加",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "stores",
+          "basis": "actual",
+          "definition": "国内メガハブ前年比増加",
+          "value": 39,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Store Formats, printed p.7",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "mega25",
+          "operation": "difference",
+          "inputs": [
+            "mega26",
+            "megaincrease"
+          ],
+          "definition": "前年末メガハブ＝当年末−開示増加数",
+          "precision": 0,
+          "value": 133
+        }
+      ]
+    },
+    {
+      "id": "extra-week",
+      "question": "年度は8月最終土曜日で終了します。2024年度だけ53週、ほかは52週で、上表は期間補正前です。2024年度の追加1週分は売上365.9、営業利益86.7百万ドルと会社が開示しています。2025年度の減益をすべて需要悪化に帰すことも、追加週だけで説明することもできません。[10-K、5年財務表・追加週の調整表、30・40頁](https://investors.autozone.com/node/29456/html)",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "年度は8月最終土曜日で終了します。2024年度だけ53週、ほかは52週で、上表は期間補正前です。2024年度の追加1週分は売上365.9、営業利益86.7百万ドルと会社が開示しています。2025年度の減益をすべて需要悪化に帰すことも、追加週だけで説明することもできません。[10-K、5年財務表・追加週の調整表、30・40頁](https://investors.autozone.com/node/29456/html)",
+      "requiredInputs": [
+        {
+          "id": "week24",
+          "entity": "AutoZone連結",
+          "metric": "2024年度週数",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "weeks",
+          "basis": "actual",
+          "definition": "2024年度週数"
+        },
+        {
+          "id": "extraSales",
+          "entity": "AutoZone連結",
+          "metric": "追加1週の売上",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "追加1週の売上"
+        },
+        {
+          "id": "extraOp",
+          "entity": "AutoZone連結",
+          "metric": "追加1週の営業利益",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "追加1週の営業利益"
+        },
+        {
+          "id": "op24",
+          "entity": "AutoZone連結",
+          "metric": "2024営業利益",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2024営業利益"
+        },
+        {
+          "id": "op25",
+          "entity": "AutoZone連結",
+          "metric": "2025営業利益",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2025営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "week24",
+          "entity": "AutoZone連結",
+          "metric": "2024年度週数",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "weeks",
+          "basis": "actual",
+          "definition": "2024年度週数",
+          "value": 53,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Note A Fiscal Year, printed p.52",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "extraSales",
+          "entity": "AutoZone連結",
+          "metric": "追加1週の売上",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "追加1週の売上",
+          "value": 365.879,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Fiscal 2024 Results Excluding Impact of 53rd Week, printed p.40",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "extraOp",
+          "entity": "AutoZone連結",
+          "metric": "追加1週の営業利益",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "追加1週の営業利益",
+          "value": 86.746,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Fiscal 2024 Results Excluding Impact of 53rd Week, printed p.40",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op24",
+          "entity": "AutoZone連結",
+          "metric": "2024営業利益",
+          "periodStart": "2023-08-27",
+          "periodEnd": "2024-08-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2024営業利益",
+          "value": 3788.708,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Fiscal 2024 Results Excluding Impact of 53rd Week, printed p.40",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op25",
+          "entity": "AutoZone連結",
+          "metric": "2025営業利益",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2025営業利益",
+          "value": 3610.156,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Income, printed p.48",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "op24normalized",
+          "operation": "difference",
+          "inputs": [
+            "op24",
+            "extraOp"
+          ],
+          "definition": "追加週を控除した会社開示営業利益",
+          "precision": 3,
+          "value": 3701.962
+        },
+        {
+          "id": "op25decline",
+          "operation": "difference",
+          "inputs": [
+            "op25",
+            "op24normalized"
+          ],
+          "definition": "追加週を除いても2025営業利益は減少",
+          "precision": 3,
+          "value": -91.806
+        }
+      ]
+    },
+    {
+      "id": "five-year-growth",
+      "question": "2022年度から2026年度へ、売上は25.1%増、純利益は5.9%増、EPSは30.2%増でした。同じ期間の希薄化後加重平均株式数は20.733百万株から16.865百万株へ18.7%減っています。買戻しなどによる分母の縮小が、1株利益を支えています。これは既存株主への利益配分を厚くしますが、会社全体の稼ぐ力が同じ率で伸びたわけではありません。買戻し価格が高すぎれば、EPSが増えても投下した現金に見合わない可能性があります。[10-K、5年財務表、30頁](https://investors.autozone.com/node/29456/html)",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "2022年度から2026年度へ、売上は25.1%増、純利益は5.9%増、EPSは30.2%増でした。同じ期間の希薄化後加重平均株式数は20.733百万株から16.865百万株へ18.7%減っています。買戻しなどによる分母の縮小が、1株利益を支えています。これは既存株主への利益配分を厚くしますが、会社全体の稼ぐ力が同じ率で伸びたわけではありません。買戻し価格が高すぎれば、EPSが増えても投下した現金に見合わない可能性があります。[10-K、5年財務表、30頁](https://investors.autozone.com/node/29456/html)",
+      "requiredInputs": [
+        {
+          "id": "s2022",
+          "entity": "AutoZone連結",
+          "metric": "売上高",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "n2022",
+          "entity": "AutoZone連結",
+          "metric": "純利益",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "e2022",
+          "entity": "AutoZone連結",
+          "metric": "希薄化後EPS",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "希薄化後EPS"
+        },
+        {
+          "id": "sh2022",
+          "entity": "AutoZone連結",
+          "metric": "希薄化後加重平均株式数",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "million shares",
+          "basis": "actual",
+          "definition": "希薄化後加重平均株式数"
+        },
+        {
+          "id": "s2026",
+          "entity": "AutoZone連結",
+          "metric": "売上高",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "n2026",
+          "entity": "AutoZone連結",
+          "metric": "純利益",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "e2026",
+          "entity": "AutoZone連結",
+          "metric": "希薄化後EPS",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "希薄化後EPS"
+        },
+        {
+          "id": "sh2026",
+          "entity": "AutoZone連結",
+          "metric": "希薄化後加重平均株式数",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "million shares",
+          "basis": "actual",
+          "definition": "希薄化後加重平均株式数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s2022",
+          "entity": "AutoZone連結",
+          "metric": "売上高",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 16252.23,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n2022",
+          "entity": "AutoZone連結",
+          "metric": "純利益",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 2429.604,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "e2022",
+          "entity": "AutoZone連結",
+          "metric": "希薄化後EPS",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "希薄化後EPS",
+          "value": 117.19,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sh2022",
+          "entity": "AutoZone連結",
+          "metric": "希薄化後加重平均株式数",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "million shares",
+          "basis": "actual",
+          "definition": "希薄化後加重平均株式数",
+          "value": 20.733,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "s2026",
+          "entity": "AutoZone連結",
+          "metric": "売上高",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 20338.555,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n2026",
+          "entity": "AutoZone連結",
+          "metric": "純利益",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 2572.777,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "e2026",
+          "entity": "AutoZone連結",
+          "metric": "希薄化後EPS",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD per share",
+          "basis": "actual",
+          "definition": "希薄化後EPS",
+          "value": 152.55,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 five-year table, printed p.30",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sh2026",
+          "entity": "AutoZone連結",
+          "metric": "希薄化後加重平均株式数",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "million shares",
+          "basis": "actual",
+          "definition": "希薄化後加重平均株式数",
+          "value": 16.865,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 7 five-year table, printed p.30",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "saleg",
+          "operation": "growth-percent",
+          "inputs": [
+            "s2026",
+            "s2022"
+          ],
+          "definition": "売上の累積増加率、4年度間",
+          "precision": 1,
+          "value": 25.1
+        },
+        {
+          "id": "netg",
+          "operation": "growth-percent",
+          "inputs": [
+            "n2026",
+            "n2022"
+          ],
+          "definition": "純利益累積増加率",
+          "precision": 1,
+          "value": 5.9
+        },
+        {
+          "id": "epsg",
+          "operation": "growth-percent",
+          "inputs": [
+            "e2026",
+            "e2022"
+          ],
+          "definition": "EPS累積増加率",
+          "precision": 1,
+          "value": 30.2
+        },
+        {
+          "id": "shareg",
+          "operation": "growth-percent",
+          "inputs": [
+            "sh2026",
+            "sh2022"
+          ],
+          "definition": "希薄化加重平均株式数変化率",
+          "precision": 1,
+          "value": -18.7
+        }
+      ]
+    },
+    {
+      "id": "sales-composition",
+      "question": "2026年度の増収率は7.4%ですが、国内既存店売上は3.3%増でした。新店からの売上534.3百万ドルに加え、為替が売上を254.4百万ドル押し上げています。海外既存店の増収率はドル換算で13.5%、為替を固定すると2.2%。数字の大きい方だけを海外需要の勢いと読むのは適切ではありません。国内の修理業者向け売上は10.6%増で、国内売上の33.1%を占めました。[10-K、Executive Summary・Fiscal 2026 Compared with Fiscal 2025、28・32頁](https://investors.autozone.com/node/29456/html)",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "2026年度の増収率は7.4%ですが、国内既存店売上は3.3%増でした。新店からの売上534.3百万ドルに加え、為替が売上を254.4百万ドル押し上げています。海外既存店の増収率はドル換算で13.5%、為替を固定すると2.2%。数字の大きい方だけを海外需要の勢いと読むのは適切ではありません。国内の修理業者向け売上は10.6%増で、国内売上の33.1%を占めました。[10-K、Executive Summary・Fiscal 2026 Compared with Fiscal 2025、28・32頁](https://investors.autozone.com/node/29456/html)",
+      "requiredInputs": [
+        {
+          "id": "growth",
+          "entity": "AutoZone連結",
+          "metric": "売上増加率",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "売上増加率"
+        },
+        {
+          "id": "domss",
+          "entity": "AutoZone連結",
+          "metric": "国内既存店売上増加率",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "国内既存店売上増加率"
+        },
+        {
+          "id": "newstore",
+          "entity": "AutoZone連結",
+          "metric": "新国内海外店舗売上",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "新国内海外店舗売上"
+        },
+        {
+          "id": "fxsales",
+          "entity": "AutoZone連結",
+          "metric": "為替の売上前年差影響",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "為替の売上前年差影響"
+        },
+        {
+          "id": "intss",
+          "entity": "AutoZone連結",
+          "metric": "海外既存店売上増加率・ドル換算",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "海外既存店売上増加率・ドル換算"
+        },
+        {
+          "id": "intsscc",
+          "entity": "AutoZone連結",
+          "metric": "海外既存店売上増加率・一定為替",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "海外既存店売上増加率・一定為替"
+        },
+        {
+          "id": "commercialg",
+          "entity": "AutoZone連結",
+          "metric": "国内業者向け売上増加率",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "国内業者向け売上増加率"
+        },
+        {
+          "id": "commercialmix",
+          "entity": "AutoZone連結",
+          "metric": "国内売上に対する業者向け比率",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "国内売上に対する業者向け比率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "growth",
+          "entity": "AutoZone連結",
+          "metric": "売上増加率",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "売上増加率",
+          "value": 7.4,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Executive Summary / Fiscal 2026 Compared with Fiscal 2025, printed pp.28,32",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "domss",
+          "entity": "AutoZone連結",
+          "metric": "国内既存店売上増加率",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "国内既存店売上増加率",
+          "value": 3.3,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Same Store Sales table, printed p.32",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newstore",
+          "entity": "AutoZone連結",
+          "metric": "新国内海外店舗売上",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "新国内海外店舗売上",
+          "value": 534.3,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Fiscal 2026 Compared with Fiscal 2025, printed p.32",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fxsales",
+          "entity": "AutoZone連結",
+          "metric": "為替の売上前年差影響",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "為替の売上前年差影響",
+          "value": 254.4,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Executive Summary, printed p.28",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "intss",
+          "entity": "AutoZone連結",
+          "metric": "海外既存店売上増加率・ドル換算",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "海外既存店売上増加率・ドル換算",
+          "value": 13.5,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Same Store Sales table, printed p.32",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "intsscc",
+          "entity": "AutoZone連結",
+          "metric": "海外既存店売上増加率・一定為替",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "海外既存店売上増加率・一定為替",
+          "value": 2.2,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Same Store Sales table, printed p.32",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "commercialg",
+          "entity": "AutoZone連結",
+          "metric": "国内業者向け売上増加率",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "国内業者向け売上増加率",
+          "value": 10.6,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Executive Summary, printed p.28",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "commercialmix",
+          "entity": "AutoZone連結",
+          "metric": "国内売上に対する業者向け比率",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "国内売上に対する業者向け比率",
+          "value": 33.1,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Executive Summary, printed p.28",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "operating-drivers",
+      "question": "通期営業利益は3.1%増ですが、その比較には関税還付のプラス96.0百万ドル、為替のプラス73.9百万ドル、非現金LIFO影響の前年差マイナス128.0百万ドルが含まれます。LIFOは後に仕入れた商品の原価を先に売上原価へ対応させる評価方法です。「非現金」は当期の評価費用がそのまま現金流出ではないという意味で、補充商品の仕入代金が不要になる意味ではありません。[10-K、Executive Summary・Inventories](https://investors.autozone.com/node/29456/html)",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "通期営業利益は3.1%増ですが、その比較には関税還付のプラス96.0百万ドル、為替のプラス73.9百万ドル、非現金LIFO影響の前年差マイナス128.0百万ドルが含まれます。LIFOは後に仕入れた商品の原価を先に売上原価へ対応させる評価方法です。「非現金」は当期の評価費用がそのまま現金流出ではないという意味で、補充商品の仕入代金が不要になる意味ではありません。[10-K、Executive Summary・Inventories](https://investors.autozone.com/node/29456/html)",
+      "requiredInputs": [
+        {
+          "id": "opgrowth",
+          "entity": "AutoZone連結",
+          "metric": "通期営業利益増加率",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "通期営業利益増加率"
+        },
+        {
+          "id": "refund",
+          "entity": "AutoZone連結",
+          "metric": "関税還付の営業利益効果",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "関税還付の営業利益効果"
+        },
+        {
+          "id": "fx",
+          "entity": "AutoZone連結",
+          "metric": "為替の営業利益効果",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "為替の営業利益効果"
+        },
+        {
+          "id": "lifo",
+          "entity": "AutoZone連結",
+          "metric": "非現金LIFOの前年差営業利益効果",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "非現金LIFOの前年差営業利益効果"
+        }
+      ],
+      "observations": [
+        {
+          "id": "opgrowth",
+          "entity": "AutoZone連結",
+          "metric": "通期営業利益増加率",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "通期営業利益増加率",
+          "value": 3.1,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Executive Summary, printed p.28",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "refund",
+          "entity": "AutoZone連結",
+          "metric": "関税還付の営業利益効果",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "関税還付の営業利益効果",
+          "value": 96,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Executive Summary, printed p.28",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fx",
+          "entity": "AutoZone連結",
+          "metric": "為替の営業利益効果",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "為替の営業利益効果",
+          "value": 73.9,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Executive Summary, printed p.28",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "lifo",
+          "entity": "AutoZone連結",
+          "metric": "非現金LIFOの前年差営業利益効果",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "非現金LIFOの前年差営業利益効果",
+          "value": -128,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Executive Summary, printed p.28",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "refund-cash-profit",
+      "question": "還付の現金受取額は127.6百万ドルでした。このうち96.0百万ドルは売却済み商品の売上原価を減らし、31.6百万ドルは未販売在庫の帳簿額を減らしています。後者は対象在庫を売ったときに原価へ反映されます。**現金を受け取った額と、その年の利益を押し上げた額が違う**ため、還付全額を営業利益へ足したり、将来の原価軽減をもう一度の入金と扱ったりしてはいけません。[10-K、Tariffs、29頁](https://investors.autozone.com/node/29456/html)",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "還付の現金受取額は127.6百万ドルでした。このうち96.0百万ドルは売却済み商品の売上原価を減らし、31.6百万ドルは未販売在庫の帳簿額を減らしています。後者は対象在庫を売ったときに原価へ反映されます。**現金を受け取った額と、その年の利益を押し上げた額が違う**ため、還付全額を営業利益へ足したり、将来の原価軽減をもう一度の入金と扱ったりしてはいけません。[10-K、Tariffs、29頁](https://investors.autozone.com/node/29456/html)",
+      "requiredInputs": [
+        {
+          "id": "received",
+          "entity": "AutoZone連結",
+          "metric": "IEEPA還付受取現金",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "IEEPA還付受取現金"
+        },
+        {
+          "id": "sold",
+          "entity": "AutoZone連結",
+          "metric": "売却済み分・原価軽減",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売却済み分・原価軽減"
+        },
+        {
+          "id": "unsold",
+          "entity": "AutoZone連結",
+          "metric": "未売却在庫簿価の軽減",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "未売却在庫簿価の軽減"
+        }
+      ],
+      "observations": [
+        {
+          "id": "received",
+          "entity": "AutoZone連結",
+          "metric": "IEEPA還付受取現金",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "IEEPA還付受取現金",
+          "value": 127.6,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Tariffs, printed p.29",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sold",
+          "entity": "AutoZone連結",
+          "metric": "売却済み分・原価軽減",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売却済み分・原価軽減",
+          "value": 96,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Tariffs, printed p.29",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "unsold",
+          "entity": "AutoZone連結",
+          "metric": "未売却在庫簿価の軽減",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "未売却在庫簿価の軽減",
+          "value": 31.6,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Tariffs, printed p.29",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "refundtotal",
+          "operation": "sum",
+          "inputs": [
+            "sold",
+            "unsold"
+          ],
+          "definition": "利益反映分と未販売在庫反映分の合計",
+          "precision": 1,
+          "value": 127.6
+        }
+      ]
+    },
+    {
+      "id": "q4-profit",
+      "question": "直近Q4の営業利益は10.1%増でしたが、粗利率の前年比改善182bpには、還付145bp、非現金LIFOの純効果105bpが含まれ、業者向け売上構成などが一部相殺しました。1bpは0.01ポイントです。四半期の好転を、そのまま恒常的な値上げ力や通期の改善率とみなすことはできません。[9月22日決算発表、Q4の粗利益説明](https://investors.autozone.com/news-releases/news-release-details/autozone-4th-quarter-total-company-same-store-sales-increase-15)",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "直近Q4の営業利益は10.1%増でしたが、粗利率の前年比改善182bpには、還付145bp、非現金LIFOの純効果105bpが含まれ、業者向け売上構成などが一部相殺しました。1bpは0.01ポイントです。四半期の好転を、そのまま恒常的な値上げ力や通期の改善率とみなすことはできません。[9月22日決算発表、Q4の粗利益説明](https://investors.autozone.com/news-releases/news-release-details/autozone-4th-quarter-total-company-same-store-sales-increase-15)",
+      "requiredInputs": [
+        {
+          "id": "q4opg",
+          "entity": "AutoZone連結",
+          "metric": "Q4営業利益増加率",
+          "periodStart": "2026-05-10",
+          "periodEnd": "2026-08-29",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "Q4営業利益増加率"
+        },
+        {
+          "id": "q4gm",
+          "entity": "AutoZone連結",
+          "metric": "Q4粗利率の前年比改善",
+          "periodStart": "2026-05-10",
+          "periodEnd": "2026-08-29",
+          "unit": "basis points",
+          "basis": "actual",
+          "definition": "Q4粗利率の前年比改善"
+        },
+        {
+          "id": "q4refund",
+          "entity": "AutoZone連結",
+          "metric": "Q4還付による粗利率影響",
+          "periodStart": "2026-05-10",
+          "periodEnd": "2026-08-29",
+          "unit": "basis points",
+          "basis": "actual",
+          "definition": "Q4還付による粗利率影響"
+        },
+        {
+          "id": "q4lifo",
+          "entity": "AutoZone連結",
+          "metric": "Q4非現金LIFO純粗利率影響",
+          "periodStart": "2026-05-10",
+          "periodEnd": "2026-08-29",
+          "unit": "basis points",
+          "basis": "actual",
+          "definition": "Q4非現金LIFO純粗利率影響"
+        }
+      ],
+      "observations": [
+        {
+          "id": "q4opg",
+          "entity": "AutoZone連結",
+          "metric": "Q4営業利益増加率",
+          "periodStart": "2026-05-10",
+          "periodEnd": "2026-08-29",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "Q4営業利益増加率",
+          "value": 10.1,
+          "source": {
+            "url": "https://investors.autozone.com/news-releases/news-release-details/autozone-4th-quarter-total-company-same-store-sales-increase-15",
+            "publishedOn": "2026-09-22",
+            "locator": "Q4 gross margin and operating profit paragraphs",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "q4gm",
+          "entity": "AutoZone連結",
+          "metric": "Q4粗利率の前年比改善",
+          "periodStart": "2026-05-10",
+          "periodEnd": "2026-08-29",
+          "unit": "basis points",
+          "basis": "actual",
+          "definition": "Q4粗利率の前年比改善",
+          "value": 182,
+          "source": {
+            "url": "https://investors.autozone.com/news-releases/news-release-details/autozone-4th-quarter-total-company-same-store-sales-increase-15",
+            "publishedOn": "2026-09-22",
+            "locator": "Q4 gross margin paragraph",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "q4refund",
+          "entity": "AutoZone連結",
+          "metric": "Q4還付による粗利率影響",
+          "periodStart": "2026-05-10",
+          "periodEnd": "2026-08-29",
+          "unit": "basis points",
+          "basis": "actual",
+          "definition": "Q4還付による粗利率影響",
+          "value": 145,
+          "source": {
+            "url": "https://investors.autozone.com/news-releases/news-release-details/autozone-4th-quarter-total-company-same-store-sales-increase-15",
+            "publishedOn": "2026-09-22",
+            "locator": "Q4 gross margin paragraph",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "q4lifo",
+          "entity": "AutoZone連結",
+          "metric": "Q4非現金LIFO純粗利率影響",
+          "periodStart": "2026-05-10",
+          "periodEnd": "2026-08-29",
+          "unit": "basis points",
+          "basis": "actual",
+          "definition": "Q4非現金LIFO純粗利率影響",
+          "value": 105,
+          "source": {
+            "url": "https://investors.autozone.com/news-releases/news-release-details/autozone-4th-quarter-total-company-same-store-sales-increase-15",
+            "publishedOn": "2026-09-22",
+            "locator": "Q4 gross margin paragraph",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-growth",
+      "question": "2022年度比で2026年度の設備投資支出は113.2%増え、FCFは28.5%減りました。直近の2026年度は営業CFが4.2%増えた一方、FCFの増加は1.4%です。資金は新店やハブ網へ先に出ていきます。国内メガハブと店舗数を増やす投資は将来の配送力を高めますが、開設した時点で投資回収が終わるわけではありません。",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "2022年度比で2026年度の設備投資支出は113.2%増え、FCFは28.5%減りました。直近の2026年度は営業CFが4.2%増えた一方、FCFの増加は1.4%です。資金は新店やハブ網へ先に出ていきます。国内メガハブと店舗数を増やす投資は将来の配送力を高めますが、開設した時点で投資回収が終わるわけではありません。",
+      "requiredInputs": [
+        {
+          "id": "cfo2022",
+          "entity": "AutoZone連結",
+          "metric": "営業CF",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cap2022",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出（負数）",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負数）"
+        },
+        {
+          "id": "cappos2022",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出・比較用正数",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出・比較用正数"
+        },
+        {
+          "id": "cfo2025",
+          "entity": "AutoZone連結",
+          "metric": "営業CF",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cap2025",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出（負数）",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負数）"
+        },
+        {
+          "id": "cappos2025",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出・比較用正数",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出・比較用正数"
+        },
+        {
+          "id": "cfo2026",
+          "entity": "AutoZone連結",
+          "metric": "営業CF",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cap2026",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出（負数）",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負数）"
+        },
+        {
+          "id": "cappos2026",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出・比較用正数",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出・比較用正数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo2022",
+          "entity": "AutoZone連結",
+          "metric": "営業CF",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 3211.135,
+          "source": {
+            "url": "https://investors.autozone.com/static-files/6a3485e5-1183-4a09-89bc-f06642850b46",
+            "publishedOn": "2023-10-24",
+            "locator": "Consolidated Statements of Cash Flows, PDF p.50",
+            "kind": "primary",
+            "pdfPage": 50
+          }
+        },
+        {
+          "id": "cap2022",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出（負数）",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負数）",
+          "value": -672.391,
+          "source": {
+            "url": "https://investors.autozone.com/static-files/6a3485e5-1183-4a09-89bc-f06642850b46",
+            "publishedOn": "2023-10-24",
+            "locator": "Consolidated Statements of Cash Flows, PDF p.50",
+            "kind": "primary",
+            "pdfPage": 50
+          }
+        },
+        {
+          "id": "cappos2022",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出・比較用正数",
+          "periodStart": "2021-08-29",
+          "periodEnd": "2022-08-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出・比較用正数",
+          "value": 672.391,
+          "source": {
+            "url": "https://investors.autozone.com/static-files/6a3485e5-1183-4a09-89bc-f06642850b46",
+            "publishedOn": "2023-10-24",
+            "locator": "Consolidated Statements of Cash Flows, PDF p.50",
+            "kind": "primary",
+            "pdfPage": 50
+          }
+        },
+        {
+          "id": "cfo2025",
+          "entity": "AutoZone連結",
+          "metric": "営業CF",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 3117.337,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap2025",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出（負数）",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負数）",
+          "value": -1327.257,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cappos2025",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出・比較用正数",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出・比較用正数",
+          "value": 1327.257,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo2026",
+          "entity": "AutoZone連結",
+          "metric": "営業CF",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 3249.117,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap2026",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出（負数）",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出（負数）",
+          "value": -1433.587,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cappos2026",
+          "entity": "AutoZone連結",
+          "metric": "設備投資現金支出・比較用正数",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資現金支出・比較用正数",
+          "value": 1433.587,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "f2022",
+          "operation": "sum",
+          "inputs": [
+            "cfo2022",
+            "cap2022"
+          ],
+          "definition": "営業CF＋設備投資支出（負数）",
+          "precision": 3,
+          "value": 2538.744
+        },
+        {
+          "id": "f2025",
+          "operation": "sum",
+          "inputs": [
+            "cfo2025",
+            "cap2025"
+          ],
+          "definition": "営業CF＋設備投資支出（負数）",
+          "precision": 3,
+          "value": 1790.08
+        },
+        {
+          "id": "f2026",
+          "operation": "sum",
+          "inputs": [
+            "cfo2026",
+            "cap2026"
+          ],
+          "definition": "営業CF＋設備投資支出（負数）",
+          "precision": 3,
+          "value": 1815.53
+        },
+        {
+          "id": "capg",
+          "operation": "growth-percent",
+          "inputs": [
+            "cappos2026",
+            "cappos2022"
+          ],
+          "definition": "2022→26設備投資支出増加率",
+          "precision": 1,
+          "value": 113.2
+        },
+        {
+          "id": "fcfg",
+          "operation": "growth-percent",
+          "inputs": [
+            "f2026",
+            "f2022"
+          ],
+          "definition": "2022→26FCF増加率",
+          "precision": 1,
+          "value": -28.5
+        },
+        {
+          "id": "cfog",
+          "operation": "growth-percent",
+          "inputs": [
+            "cfo2026",
+            "cfo2025"
+          ],
+          "definition": "2026営業CF前年比",
+          "precision": 1,
+          "value": 4.2
+        },
+        {
+          "id": "fcfg26",
+          "operation": "growth-percent",
+          "inputs": [
+            "f2026",
+            "f2025"
+          ],
+          "definition": "2026FCF前年比",
+          "precision": 1,
+          "value": 1.4
+        }
+      ]
+    },
+    {
+      "id": "working-capital",
+      "question": "営業CFの増加も、在庫の取り崩しだけで説明できません。2026年度のCF計算書では在庫増加が832.8百万ドルの資金使用、買掛金・未払費用の増加が458.6百万ドルの資金源でした。在庫による資金使用は前年の893.9百万ドルより小さくなりましたが、なお現金を使っています。CF計算書の増減は為替や非現金項目を調整するため、貸借対照表の期首期末差と一致するとは限りません。[10-K、CF計算書、50頁](https://investors.autozone.com/node/29456/html)",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "営業CFの増加も、在庫の取り崩しだけで説明できません。2026年度のCF計算書では在庫増加が832.8百万ドルの資金使用、買掛金・未払費用の増加が458.6百万ドルの資金源でした。在庫による資金使用は前年の893.9百万ドルより小さくなりましたが、なお現金を使っています。CF計算書の増減は為替や非現金項目を調整するため、貸借対照表の期首期末差と一致するとは限りません。[10-K、CF計算書、50頁](https://investors.autozone.com/node/29456/html)",
+      "requiredInputs": [
+        {
+          "id": "inv26",
+          "entity": "AutoZone連結",
+          "metric": "在庫増加によるCF",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "在庫増加によるCF"
+        },
+        {
+          "id": "ap26",
+          "entity": "AutoZone連結",
+          "metric": "買掛金・未払費用変動によるCF",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "買掛金・未払費用変動によるCF"
+        },
+        {
+          "id": "inv25",
+          "entity": "AutoZone連結",
+          "metric": "在庫増加によるCF",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "在庫増加によるCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "inv26",
+          "entity": "AutoZone連結",
+          "metric": "在庫増加によるCF",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "在庫増加によるCF",
+          "value": -832.799,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ap26",
+          "entity": "AutoZone連結",
+          "metric": "買掛金・未払費用変動によるCF",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "買掛金・未払費用変動によるCF",
+          "value": 458.552,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "inv25",
+          "entity": "AutoZone連結",
+          "metric": "在庫増加によるCF",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "在庫増加によるCF",
+          "value": -893.908,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-bridge",
+      "question": "| 現金の動き | 金額 |\n|---|---:|\n| 営業CF | 3,249.1 |\n| 設備投資 | −1,433.6 |\n| 設備投資以外の投資CF（差引） | −10.8 |\n| 株式発行・行使等の現金収入 | 95.9 |\n| ファイナンス・リース元本返済 | −109.0 |\n| その他財務CF | −18.4 |\n| 現金への為替影響 | 17.9 |\n| 会社定義の「買戻し・債務増減前CF」 | 1,791.1 |\n| 自社株買い支出 | −2,013.2 |\n| 債務の純増による現金収入 | 276.4 |\n| 現金・現金同等物の増加 | 54.3 |",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "| 現金・現金同等物の増加 | 54.3 |",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "AutoZone連結",
+          "metric": "営業CF",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "AutoZone連結",
+          "metric": "設備投資支出",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出"
+        },
+        {
+          "id": "invest",
+          "entity": "AutoZone連結",
+          "metric": "投資CF",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "投資CF"
+        },
+        {
+          "id": "shares",
+          "entity": "AutoZone連結",
+          "metric": "株式売却純収入",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株式売却純収入"
+        },
+        {
+          "id": "lease",
+          "entity": "AutoZone連結",
+          "metric": "ファイナンスリース元本返済",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "ファイナンスリース元本返済"
+        },
+        {
+          "id": "otherfin",
+          "entity": "AutoZone連結",
+          "metric": "その他財務CF",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "その他財務CF"
+        },
+        {
+          "id": "fx",
+          "entity": "AutoZone連結",
+          "metric": "為替変動による現金影響",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "為替変動による現金影響"
+        },
+        {
+          "id": "buy",
+          "entity": "AutoZone連結",
+          "metric": "自己株式取得現金支出",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自己株式取得現金支出"
+        },
+        {
+          "id": "cp",
+          "entity": "AutoZone連結",
+          "metric": "CP純発行収入",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "CP純発行収入"
+        },
+        {
+          "id": "issue",
+          "entity": "AutoZone連結",
+          "metric": "債務発行収入",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "債務発行収入"
+        },
+        {
+          "id": "repay",
+          "entity": "AutoZone連結",
+          "metric": "債務返済支出",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "債務返済支出"
+        },
+        {
+          "id": "companyCF",
+          "entity": "AutoZone連結",
+          "metric": "会社定義買戻し債務増減前CF",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "会社定義買戻し債務増減前CF"
+        },
+        {
+          "id": "cashdelta",
+          "entity": "AutoZone連結",
+          "metric": "現金増減",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金増減"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "AutoZone連結",
+          "metric": "営業CF",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 3249.117,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "AutoZone連結",
+          "metric": "設備投資支出",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出",
+          "value": -1433.587,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "invest",
+          "entity": "AutoZone連結",
+          "metric": "投資CF",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "投資CF",
+          "value": -1444.366,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "shares",
+          "entity": "AutoZone連結",
+          "metric": "株式売却純収入",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株式売却純収入",
+          "value": 95.874,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "lease",
+          "entity": "AutoZone連結",
+          "metric": "ファイナンスリース元本返済",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "ファイナンスリース元本返済",
+          "value": -109.01,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "otherfin",
+          "entity": "AutoZone連結",
+          "metric": "その他財務CF",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "その他財務CF",
+          "value": -18.401,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fx",
+          "entity": "AutoZone連結",
+          "metric": "為替変動による現金影響",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "為替変動による現金影響",
+          "value": 17.893,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "buy",
+          "entity": "AutoZone連結",
+          "metric": "自己株式取得現金支出",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自己株式取得現金支出",
+          "value": -2013.195,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cp",
+          "entity": "AutoZone連結",
+          "metric": "CP純発行収入",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "CP純発行収入",
+          "value": 276.4,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "issue",
+          "entity": "AutoZone連結",
+          "metric": "債務発行収入",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "債務発行収入",
+          "value": 850,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "repay",
+          "entity": "AutoZone連結",
+          "metric": "債務返済支出",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "債務返済支出",
+          "value": -850,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "companyCF",
+          "entity": "AutoZone連結",
+          "metric": "会社定義買戻し債務増減前CF",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "会社定義買戻し債務増減前CF",
+          "value": 1791.107,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Cash Flow Before Share Repurchases and Changes in Debt reconciliation, printed p.38",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cashdelta",
+          "entity": "AutoZone連結",
+          "metric": "現金増減",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金増減",
+          "value": 54.312,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "otherinvest",
+          "operation": "difference",
+          "inputs": [
+            "invest",
+            "capex"
+          ],
+          "definition": "投資CF−設備投資支出",
+          "precision": 3,
+          "value": -10.779
+        },
+        {
+          "id": "cfprior",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "invest",
+            "shares",
+            "lease",
+            "otherfin",
+            "fx"
+          ],
+          "definition": "買戻し・債務変動以外の現金全項目",
+          "precision": 3,
+          "value": 1791.107
+        },
+        {
+          "id": "netdebt",
+          "operation": "sum",
+          "inputs": [
+            "cp",
+            "issue",
+            "repay"
+          ],
+          "definition": "CP純増＋債務発行−返済",
+          "precision": 3,
+          "value": 276.4
+        },
+        {
+          "id": "cashtotal",
+          "operation": "sum",
+          "inputs": [
+            "cfprior",
+            "buy",
+            "netdebt"
+          ],
+          "definition": "全CFと為替の合計",
+          "precision": 3,
+          "value": 54.312
+        }
+      ]
+    },
+    {
+      "id": "buyback-gap",
+      "question": "この会社指標は本稿のFCFとは異なり、株式発行収入や為替も含みます。買戻し支出は同指標を222.1百万ドル上回り、債務純増を含めて現金残高が増えた関係です。個々の買戻しにどの借入を充てたかを特定する計算ではありません。表は丸め前の原数値では54.312百万ドルに一致します。会社は普通株配当を行っていません。[10-K、Cash Flow Before Share Repurchases and Changes in Debt・CF計算書・Item 5、26・38・50頁](https://investors.autozone.com/node/29456/html)",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "この会社指標は本稿のFCFとは異なり、株式発行収入や為替も含みます。買戻し支出は同指標を222.1百万ドル上回り、債務純増を含めて現金残高が増えた関係です。個々の買戻しにどの借入を充てたかを特定する計算ではありません。表は丸め前の原数値では54.312百万ドルに一致します。会社は普通株配当を行っていません。[10-K、Cash Flow Before Share Repurchases and Changes in Debt・CF計算書・Item 5、26・38・50頁](https://investors.autozone.com/node/29456/html)",
+      "requiredInputs": [
+        {
+          "id": "cf",
+          "entity": "AutoZone連結",
+          "metric": "会社定義買戻し債務増減前CF",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "会社定義買戻し債務増減前CF"
+        },
+        {
+          "id": "buy",
+          "entity": "AutoZone連結",
+          "metric": "自社株買い現金支出・正数",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自社株買い現金支出・正数"
+        },
+        {
+          "id": "delta",
+          "entity": "AutoZone連結",
+          "metric": "現金増減",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金増減"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cf",
+          "entity": "AutoZone連結",
+          "metric": "会社定義買戻し債務増減前CF",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "会社定義買戻し債務増減前CF",
+          "value": 1791.107,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Cash Flow Before Share Repurchases and Changes in Debt reconciliation, printed p.38",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "buy",
+          "entity": "AutoZone連結",
+          "metric": "自社株買い現金支出・正数",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自社株買い現金支出・正数",
+          "value": 2013.195,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "delta",
+          "entity": "AutoZone連結",
+          "metric": "現金増減",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金増減",
+          "value": 54.312,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Statements of Cash Flows, printed p.50",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "gap",
+          "operation": "difference",
+          "inputs": [
+            "buy",
+            "cf"
+          ],
+          "definition": "買戻し−会社定義の買戻し・債務増減前CF",
+          "precision": 1,
+          "value": 222.1
+        }
+      ]
+    },
+    {
+      "id": "negative-equity",
+      "question": "2026年度末の自己資本はマイナス2,502.5百万ドルです。長年の買戻しは自己資本を減らすため、負の自己資本だけで営業赤字企業や支払不能と判断するのは誤りです。一方、これを理由に借入や仕入代金の支払能力を無視することもできません。負の自己資本を分母にするROEやPBRは、通常の健全企業の比較尺度として扱いにくくなります。[10-K、貸借対照表・株主資本変動表、49・51頁](https://investors.autozone.com/node/29456/html)",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "2026年度末の自己資本はマイナス2,502.5百万ドルです。長年の買戻しは自己資本を減らすため、負の自己資本だけで営業赤字企業や支払不能と判断するのは誤りです。一方、これを理由に借入や仕入代金の支払能力を無視することもできません。負の自己資本を分母にするROEやPBRは、通常の健全企業の比較尺度として扱いにくくなります。[10-K、貸借対照表・株主資本変動表、49・51頁](https://investors.autozone.com/node/29456/html)",
+      "requiredInputs": [
+        {
+          "id": "equity",
+          "entity": "AutoZone連結",
+          "metric": "株主資本",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本"
+        }
+      ],
+      "observations": [
+        {
+          "id": "equity",
+          "entity": "AutoZone連結",
+          "metric": "株主資本",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本",
+          "value": -2502.47,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Balance Sheets, printed p.49",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "roic-definition",
+      "question": "会社調整ROICは、税引後利益へ利息・賃料を税調整して戻した収益を、平均債務、平均自己資本、年間賃料の6倍、平均ファイナンス・リース債務の合計で割ります。平均値は直近5四半期です。2026年度は分子3,342.1百万ドル、分母9,333.0百万ドルで35.8%。分子の前年比増加は2.9%にとどまり、分母は18.6%増えました。[10-K、Adjusted After-tax ROIC、39〜40頁](https://investors.autozone.com/node/29456/html)",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "会社調整ROICは、税引後利益へ利息・賃料を税調整して戻した収益を、平均債務、平均自己資本、年間賃料の6倍、平均ファイナンス・リース債務の合計で割ります。平均値は直近5四半期です。2026年度は分子3,342.1百万ドル、分母9,333.0百万ドルで35.8%。分子の前年比増加は2.9%にとどまり、分母は18.6%増えました。[10-K、Adjusted After-tax ROIC、39〜40頁](https://investors.autozone.com/node/29456/html)",
+      "requiredInputs": [
+        {
+          "id": "return26",
+          "entity": "AutoZone連結",
+          "metric": "会社調整税引後収益",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "会社調整税引後収益"
+        },
+        {
+          "id": "return25",
+          "entity": "AutoZone連結",
+          "metric": "会社調整税引後収益",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "会社調整税引後収益"
+        },
+        {
+          "id": "capital26",
+          "entity": "AutoZone連結",
+          "metric": "会社定義投下資本",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "会社定義投下資本"
+        },
+        {
+          "id": "capital25",
+          "entity": "AutoZone連結",
+          "metric": "会社定義投下資本",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "会社定義投下資本"
+        },
+        {
+          "id": "net",
+          "entity": "AutoZone連結",
+          "metric": "純利益",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "interest",
+          "entity": "AutoZone連結",
+          "metric": "純支払利息",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "純支払利息"
+        },
+        {
+          "id": "rent",
+          "entity": "AutoZone連結",
+          "metric": "賃料",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "賃料"
+        },
+        {
+          "id": "tax",
+          "entity": "AutoZone連結",
+          "metric": "上記利息賃料の税調整",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "上記利息賃料の税調整"
+        },
+        {
+          "id": "avgdebt",
+          "entity": "AutoZone連結",
+          "metric": "直近5四半期平均債務",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "直近5四半期平均債務"
+        },
+        {
+          "id": "avgequity",
+          "entity": "AutoZone連結",
+          "metric": "直近5四半期平均株主資本",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "直近5四半期平均株主資本"
+        },
+        {
+          "id": "rent6",
+          "entity": "AutoZone連結",
+          "metric": "年間賃料6倍",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "年間賃料6倍"
+        },
+        {
+          "id": "avglease",
+          "entity": "AutoZone連結",
+          "metric": "平均ファイナンスリース債務",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "平均ファイナンスリース債務"
+        }
+      ],
+      "observations": [
+        {
+          "id": "return26",
+          "entity": "AutoZone連結",
+          "metric": "会社調整税引後収益",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "会社調整税引後収益",
+          "value": 3342.13,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Adjusted After-tax ROIC reconciliation, printed p.39",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "return25",
+          "entity": "AutoZone連結",
+          "metric": "会社調整税引後収益",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "会社調整税引後収益",
+          "value": 3246.514,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Adjusted After-tax ROIC reconciliation, printed p.39",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capital26",
+          "entity": "AutoZone連結",
+          "metric": "会社定義投下資本",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "会社定義投下資本",
+          "value": 9333.026,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Adjusted After-tax ROIC reconciliation, printed p.39",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capital25",
+          "entity": "AutoZone連結",
+          "metric": "会社定義投下資本",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "会社定義投下資本",
+          "value": 7869.085,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Adjusted After-tax ROIC reconciliation, printed p.39",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "AutoZone連結",
+          "metric": "純利益",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 2572.777,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Adjusted After-tax ROIC reconciliation, printed p.39",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "interest",
+          "entity": "AutoZone連結",
+          "metric": "純支払利息",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "純支払利息",
+          "value": 472.614,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Adjusted After-tax ROIC reconciliation, printed p.39",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "rent",
+          "entity": "AutoZone連結",
+          "metric": "賃料",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "賃料",
+          "value": 500.02,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Adjusted After-tax ROIC reconciliation, printed p.39",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "tax",
+          "entity": "AutoZone連結",
+          "metric": "上記利息賃料の税調整",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "上記利息賃料の税調整",
+          "value": -203.281,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Adjusted After-tax ROIC reconciliation, printed p.39",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "avgdebt",
+          "entity": "AutoZone連結",
+          "metric": "直近5四半期平均債務",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "直近5四半期平均債務",
+          "value": 8884.947,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Adjusted After-tax ROIC reconciliation, printed p.39",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "avgequity",
+          "entity": "AutoZone連結",
+          "metric": "直近5四半期平均株主資本",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "直近5四半期平均株主資本",
+          "value": -2967.742,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Adjusted After-tax ROIC reconciliation, printed p.39",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "rent6",
+          "entity": "AutoZone連結",
+          "metric": "年間賃料6倍",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "年間賃料6倍",
+          "value": 3000.12,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Adjusted After-tax ROIC reconciliation, printed p.39",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "avglease",
+          "entity": "AutoZone連結",
+          "metric": "平均ファイナンスリース債務",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "平均ファイナンスリース債務",
+          "value": 415.701,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Adjusted After-tax ROIC reconciliation, printed p.39",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "returncheck",
+          "operation": "sum",
+          "inputs": [
+            "net",
+            "interest",
+            "rent",
+            "tax"
+          ],
+          "definition": "会社税引後収益を再計算",
+          "precision": 3,
+          "value": 3342.13
+        },
+        {
+          "id": "capitalcheck",
+          "operation": "sum",
+          "inputs": [
+            "avgdebt",
+            "avgequity",
+            "rent6",
+            "avglease"
+          ],
+          "definition": "会社投下資本を再計算",
+          "precision": 3,
+          "value": 9333.026
+        },
+        {
+          "id": "roic",
+          "operation": "ratio-percent",
+          "inputs": [
+            "return26",
+            "capital26"
+          ],
+          "definition": "会社調整ROIC",
+          "precision": 1,
+          "value": 35.8
+        },
+        {
+          "id": "returng",
+          "operation": "growth-percent",
+          "inputs": [
+            "return26",
+            "return25"
+          ],
+          "definition": "分子の前年増加率",
+          "precision": 1,
+          "value": 2.9
+        },
+        {
+          "id": "capitalg",
+          "operation": "growth-percent",
+          "inputs": [
+            "capital26",
+            "capital25"
+          ],
+          "definition": "分母の前年増加率",
+          "precision": 1,
+          "value": 18.6
+        }
+      ]
+    },
+    {
+      "id": "capital-denominator",
+      "question": "ここで注意したいのは、分母増加をすべて新店舗の不振と結び付けられないことです。平均自己資本のマイナス幅が4,253.8百万ドルから2,967.7百万ドルへ縮んだだけでも、分母は1,286.1百万ドル増えます。利益の蓄積と買戻しの配分によって、会社定義の資本効率も動きます。高水準のROICは事業の強さを示す材料ですが、その水準を別企業のROICと無調整で比べたり、低下の全額を投資失敗と断定したりはできません。",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "ここで注意したいのは、分母増加をすべて新店舗の不振と結び付けられないことです。平均自己資本のマイナス幅が4,253.8百万ドルから2,967.7百万ドルへ縮んだだけでも、分母は1,286.1百万ドル増えます。利益の蓄積と買戻しの配分によって、会社定義の資本効率も動きます。高水準のROICは事業の強さを示す材料ですが、その水準を別企業のROICと無調整で比べたり、低下の全額を投資失敗と断定したりはできません。",
+      "requiredInputs": [
+        {
+          "id": "e25",
+          "entity": "AutoZone連結",
+          "metric": "平均自己資本",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "平均自己資本"
+        },
+        {
+          "id": "e26",
+          "entity": "AutoZone連結",
+          "metric": "平均自己資本",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "平均自己資本"
+        }
+      ],
+      "observations": [
+        {
+          "id": "e25",
+          "entity": "AutoZone連結",
+          "metric": "平均自己資本",
+          "periodStart": "2024-09-01",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "平均自己資本",
+          "value": -4253.805,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Adjusted After-tax ROIC reconciliation, printed p.39",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "e26",
+          "entity": "AutoZone連結",
+          "metric": "平均自己資本",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "平均自己資本",
+          "value": -2967.742,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Adjusted After-tax ROIC reconciliation, printed p.39",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "echange",
+          "operation": "difference",
+          "inputs": [
+            "e26",
+            "e25"
+          ],
+          "definition": "負の平均自己資本が縮小することによる分母増加",
+          "precision": 1,
+          "value": 1286.1
+        }
+      ]
+    },
+    {
+      "id": "inventory-financing",
+      "question": "2026年度末の在庫は7,735.6百万ドル、買掛金は8,596.6百万ドル。買掛金／在庫比率は111.1%ですが、2022年度の129.5%から低下しています。商品を売って入金した後で仕入代金を払える部分が、資金負担を軽くします。ただし、この期末比率は在庫の回転日数や、すべての商品で先に入金されることを直接示すものではありません。[10-K、貸借対照表・Selected Operating Data、31・49頁](https://investors.autozone.com/node/29456/html)",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "2026年度末の在庫は7,735.6百万ドル、買掛金は8,596.6百万ドル。買掛金／在庫比率は111.1%ですが、2022年度の129.5%から低下しています。商品を売って入金した後で仕入代金を払える部分が、資金負担を軽くします。ただし、この期末比率は在庫の回転日数や、すべての商品で先に入金されることを直接示すものではありません。[10-K、貸借対照表・Selected Operating Data、31・49頁](https://investors.autozone.com/node/29456/html)",
+      "requiredInputs": [
+        {
+          "id": "inv",
+          "entity": "AutoZone連結",
+          "metric": "期末商品在庫",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "期末商品在庫"
+        },
+        {
+          "id": "ap",
+          "entity": "AutoZone連結",
+          "metric": "期末買掛金",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "期末買掛金"
+        },
+        {
+          "id": "ratio22",
+          "entity": "AutoZone連結",
+          "metric": "会社買掛金在庫比率",
+          "periodStart": "2022-08-27",
+          "periodEnd": "2022-08-27",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "会社買掛金在庫比率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "inv",
+          "entity": "AutoZone連結",
+          "metric": "期末商品在庫",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "期末商品在庫",
+          "value": 7735.56,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Balance Sheets, printed p.49",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ap",
+          "entity": "AutoZone連結",
+          "metric": "期末買掛金",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "期末買掛金",
+          "value": 8596.585,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Balance Sheets, printed p.49",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ratio22",
+          "entity": "AutoZone連結",
+          "metric": "会社買掛金在庫比率",
+          "periodStart": "2022-08-27",
+          "periodEnd": "2022-08-27",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "会社買掛金在庫比率",
+          "value": 129.5,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Selected Operating Data, printed p.31",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "ratio26",
+          "operation": "ratio-percent",
+          "inputs": [
+            "ap",
+            "inv"
+          ],
+          "definition": "期末買掛金÷期末商品在庫×100",
+          "precision": 1,
+          "value": 111.1
+        }
+      ]
+    },
+    {
+      "id": "supplier-finance",
+      "question": "仕入先が金融機関から早期に代金を受け取れる仕組みでは、確認済み債務の残高が2025年度末5,699.0百万ドル、2026年度末5,778.5百万ドルでした。参加は仕入先の選択で、参加によってAutoZoneの請求額や期日が変わるわけではありません。残高は買掛金などに既に含まれるため、買掛金へもう一度足すと二重計上になります。[10-K、Note F — Supplier Financing Programs、67頁](https://investors.autozone.com/node/29456/html)",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "仕入先が金融機関から早期に代金を受け取れる仕組みでは、確認済み債務の残高が2025年度末5,699.0百万ドル、2026年度末5,778.5百万ドルでした。参加は仕入先の選択で、参加によってAutoZoneの請求額や期日が変わるわけではありません。残高は買掛金などに既に含まれるため、買掛金へもう一度足すと二重計上になります。[10-K、Note F — Supplier Financing Programs、67頁](https://investors.autozone.com/node/29456/html)",
+      "requiredInputs": [
+        {
+          "id": "scf25",
+          "entity": "AutoZone連結",
+          "metric": "確認済み仕入先金融債務",
+          "periodStart": "2025-08-30",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "確認済み仕入先金融債務"
+        },
+        {
+          "id": "scf26",
+          "entity": "AutoZone連結",
+          "metric": "確認済み仕入先金融債務",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "確認済み仕入先金融債務"
+        }
+      ],
+      "observations": [
+        {
+          "id": "scf25",
+          "entity": "AutoZone連結",
+          "metric": "確認済み仕入先金融債務",
+          "periodStart": "2025-08-30",
+          "periodEnd": "2025-08-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "確認済み仕入先金融債務",
+          "value": 5698.96,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Note F Supplier Financing Programs, rollforward, printed p.67",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "scf26",
+          "entity": "AutoZone連結",
+          "metric": "確認済み仕入先金融債務",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "確認済み仕入先金融債務",
+          "value": 5778.509,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Note F Supplier Financing Programs, rollforward, printed p.67",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "debt-liquidity",
+      "question": "2026年度末の現金は326.1百万ドル、貸借対照表上の債務は9,078.3百万ドルです。会社調整債務／EBITDARは2.5倍ですが、賃料の6倍を債務側へ加え、EBITDARには株式報酬費用も戻す定義です。一般的な純有利子負債／EBITDAと同じものではありません。さらに翌2027年度の契約上の満期は1,625.0百万ドル。借換能力と意思を根拠に長期分類した債務もあるため、「流動負債に借入がないから翌年の返済もない」とは読めません。[10-K、Adjusted Debt to EBITDAR・Note I、39・69〜71頁](https://investors.autozone.com/node/29456/html)",
+      "definition": "本文の期間・単位・連結範囲・会計定義に従う。原数値は百万米ドルに換算。会社非GAAPは明記し、CF支出は計算用に負数、表示用表では正数とする。",
+      "status": "ready",
+      "claim": "2026年度末の現金は326.1百万ドル、貸借対照表上の債務は9,078.3百万ドルです。会社調整債務／EBITDARは2.5倍ですが、賃料の6倍を債務側へ加え、EBITDARには株式報酬費用も戻す定義です。一般的な純有利子負債／EBITDAと同じものではありません。さらに翌2027年度の契約上の満期は1,625.0百万ドル。借換能力と意思を根拠に長期分類した債務もあるため、「流動負債に借入がないから翌年の返済もない」とは読めません。[10-K、Adjusted Debt to EBITDAR・Note I、39・69〜71頁](https://investors.autozone.com/node/29456/html)",
+      "requiredInputs": [
+        {
+          "id": "cash",
+          "entity": "AutoZone連結",
+          "metric": "現金現金同等物",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金現金同等物"
+        },
+        {
+          "id": "debt",
+          "entity": "AutoZone連結",
+          "metric": "貸借対照表上債務",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "貸借対照表上債務"
+        },
+        {
+          "id": "adjratio",
+          "entity": "AutoZone連結",
+          "metric": "会社調整債務/EBITDAR",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "times",
+          "basis": "actual",
+          "definition": "会社調整債務/EBITDAR"
+        },
+        {
+          "id": "maturity27",
+          "entity": "AutoZone連結",
+          "metric": "期末時点の2027年度契約満期債務",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2026年8月29日時点で、次の2027年度に満期到来する契約債務額。翌年度実績ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cash",
+          "entity": "AutoZone連結",
+          "metric": "現金現金同等物",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金現金同等物",
+          "value": 326.115,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Balance Sheets, printed p.49",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "debt",
+          "entity": "AutoZone連結",
+          "metric": "貸借対照表上債務",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "貸借対照表上債務",
+          "value": 9078.32,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Consolidated Balance Sheets, printed p.49",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "adjratio",
+          "entity": "AutoZone連結",
+          "metric": "会社調整債務/EBITDAR",
+          "periodStart": "2025-08-31",
+          "periodEnd": "2026-08-29",
+          "unit": "times",
+          "basis": "actual",
+          "definition": "会社調整債務/EBITDAR",
+          "value": 2.5,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Adjusted Debt to EBITDAR, printed p.39",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "maturity27",
+          "entity": "AutoZone連結",
+          "metric": "期末時点の2027年度契約満期債務",
+          "periodStart": "2026-08-29",
+          "periodEnd": "2026-08-29",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "2026年8月29日時点で、次の2027年度に満期到来する契約債務額。翌年度実績ではない。",
+          "value": 1625,
+          "source": {
+            "url": "https://investors.autozone.com/node/29456/html",
+            "publishedOn": "2026-10-26",
+            "locator": "Note I Financing: Scheduled maturities of debt, printed p.71",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}

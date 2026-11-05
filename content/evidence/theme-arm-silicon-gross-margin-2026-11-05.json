@@ -1,0 +1,322 @@
+{
+  "version": 1,
+  "articleSlug": "theme-arm-silicon-gross-margin-2026-11-05",
+  "articleSha256": "0c72a2f7a3bdbc69bbe3e1021f762f7d1ad2e922801cdd0891f387a4d67cf6cf",
+  "checkedAt": "2026-11-05T10:19:00.955116+00:00",
+  "informationCutoff": "2026-11-05T10:14:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "全文・全表・見出しを確認。GAAP粗利率97.1%と営業利益率13.9%を独自に再計算し、PDF6ページ表を画像でも確認、10ページ損益表と照合。費用は正の費用額。20億ドルはFY27–28合計のup to見通しで、売上実績・注文額へ読み替えない。7月の粗利率説明は当時の発言としてのみ使い、具体的なレンジや最新製品利益予想は本稿に掲示しない。11月書簡・決算資料・7月経営陣発言を読み、検索要約に依存しない。公開時publishedTimeの更新後は本文を再確認しdigest再生成が必要。",
+  "comparisons": [
+    {
+      "id": "gaap-revenue-to-operating-profit",
+      "question": "粗利率は1,401÷1,443×100＝97.1%。営業利益率は201÷1,443×100＝13.9%となる。",
+      "definition": "表5行を含む全社・同一四半期の収益ブリッジ。タイトル97%は97.1%の整数表示。grossは全社、IP単独ではない。",
+      "status": "ready",
+      "claim": "粗利率は1,401÷1,443×100＝97.1%。営業利益率は201÷1,443×100＝13.9%となる。",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Arm Holdings plc",
+          "metric": "連結売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "米国会計基準GAAP・連結・3か月。費用は控除前の正の費用額、6か月累計やNon-GAAPと混ぜない。"
+        },
+        {
+          "id": "cost",
+          "entity": "Arm Holdings plc",
+          "metric": "連結売上原価（費用額）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "米国会計基準GAAP・連結・3か月。費用は控除前の正の費用額、6か月累計やNon-GAAPと混ぜない。"
+        },
+        {
+          "id": "gross",
+          "entity": "Arm Holdings plc",
+          "metric": "連結粗利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "米国会計基準GAAP・連結・3か月。費用は控除前の正の費用額、6か月累計やNon-GAAPと混ぜない。"
+        },
+        {
+          "id": "opex",
+          "entity": "Arm Holdings plc",
+          "metric": "連結営業費用（費用額）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "米国会計基準GAAP・連結・3か月。費用は控除前の正の費用額、6か月累計やNon-GAAPと混ぜない。"
+        },
+        {
+          "id": "operating",
+          "entity": "Arm Holdings plc",
+          "metric": "連結営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "米国会計基準GAAP・連結・3か月。費用は控除前の正の費用額、6か月累計やNon-GAAPと混ぜない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Arm Holdings plc",
+          "metric": "連結売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "米国会計基準GAAP・連結・3か月。費用は控除前の正の費用額、6か月累計やNon-GAAPと混ぜない。",
+          "value": 1443,
+          "source": {
+            "url": "https://investors.arm.com/static-files/0b5baa2e-fc47-4d05-b724-e49de7bd4356",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF6ページ Key Financial and Operating Metrics, Q2 FYE27 GAAP; PDF10ページ Condensed Consolidated Income Statements, Three Months Ended September 30 2026",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "cost",
+          "entity": "Arm Holdings plc",
+          "metric": "連結売上原価（費用額）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "米国会計基準GAAP・連結・3か月。費用は控除前の正の費用額、6か月累計やNon-GAAPと混ぜない。",
+          "value": 42,
+          "source": {
+            "url": "https://investors.arm.com/static-files/0b5baa2e-fc47-4d05-b724-e49de7bd4356",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF6ページ Key Financial and Operating Metrics, Q2 FYE27 GAAP; PDF10ページ Condensed Consolidated Income Statements, Three Months Ended September 30 2026",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "gross",
+          "entity": "Arm Holdings plc",
+          "metric": "連結粗利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "米国会計基準GAAP・連結・3か月。費用は控除前の正の費用額、6か月累計やNon-GAAPと混ぜない。",
+          "value": 1401,
+          "source": {
+            "url": "https://investors.arm.com/static-files/0b5baa2e-fc47-4d05-b724-e49de7bd4356",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF6ページ Key Financial and Operating Metrics, Q2 FYE27 GAAP; PDF10ページ Condensed Consolidated Income Statements, Three Months Ended September 30 2026",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "opex",
+          "entity": "Arm Holdings plc",
+          "metric": "連結営業費用（費用額）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "米国会計基準GAAP・連結・3か月。費用は控除前の正の費用額、6か月累計やNon-GAAPと混ぜない。",
+          "value": 1200,
+          "source": {
+            "url": "https://investors.arm.com/static-files/0b5baa2e-fc47-4d05-b724-e49de7bd4356",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF6ページ Key Financial and Operating Metrics, Q2 FYE27 GAAP; PDF10ページ Condensed Consolidated Income Statements, Three Months Ended September 30 2026",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "operating",
+          "entity": "Arm Holdings plc",
+          "metric": "連結営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "米国会計基準GAAP・連結・3か月。費用は控除前の正の費用額、6か月累計やNon-GAAPと混ぜない。",
+          "value": 201,
+          "source": {
+            "url": "https://investors.arm.com/static-files/0b5baa2e-fc47-4d05-b724-e49de7bd4356",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF6ページ Key Financial and Operating Metrics, Q2 FYE27 GAAP; PDF10ページ Condensed Consolidated Income Statements, Three Months Ended September 30 2026",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "grossBridge",
+          "operation": "difference",
+          "inputs": [
+            "revenue",
+            "cost"
+          ],
+          "value": 1401,
+          "precision": 0,
+          "definition": "売上高−売上原価"
+        },
+        {
+          "id": "opBridge",
+          "operation": "difference",
+          "inputs": [
+            "gross",
+            "opex"
+          ],
+          "value": 201,
+          "precision": 0,
+          "definition": "粗利益−営業費用"
+        },
+        {
+          "id": "grossMargin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "gross",
+            "revenue"
+          ],
+          "value": 97.1,
+          "precision": 1,
+          "definition": "粗利益÷売上高×100"
+        },
+        {
+          "id": "opMargin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "operating",
+            "revenue"
+          ],
+          "value": 13.9,
+          "precision": 1,
+          "definition": "営業利益÷売上高×100"
+        }
+      ]
+    },
+    {
+      "id": "silicon-revenue-outlook",
+      "question": "会社は、2027年3月期と2028年3月期を合わせて最大20億米ドルの同製品売上を実現することへの確信が高まったと説明した。",
+      "definition": "up to $2 billion across FY27–28。2年間合計の会社見通し。売上実績、単年目標、確定受注残として扱わない。",
+      "status": "ready",
+      "claim": "会社は、2027年3月期と2028年3月期を合わせて最大20億米ドルの同製品売上を実現することへの確信が高まったと説明した。",
+      "requiredInputs": [
+        {
+          "id": "outlook",
+          "entity": "Arm AGI CPU",
+          "metric": "FY27–FY28合計売上見通し上限",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2028-03-31",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "原文up to $2 billion。将来の達成への確信が向上した説明。確定受注残と同一ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "outlook",
+          "entity": "Arm AGI CPU",
+          "metric": "FY27–FY28合計売上見通し上限",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2028-03-31",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "原文up to $2 billion。将来の達成への確信が向上した説明。確定受注残と同一ではない。",
+          "value": 2,
+          "source": {
+            "url": "https://investors.arm.com/static-files/0b5baa2e-fc47-4d05-b724-e49de7bd4356",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF3ページ冒頭。期間・商業出荷計画はPDF2ページ末尾。",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "commercial-delivery-quarter",
+      "question": "最新の株主向け書簡では、複数顧客から2027暦年にわたる注文を確保し、初回の商業出荷は2027年3月期第4四半期を予定している。",
+      "definition": "FY27 Q4は2027年1〜3月。暦年2027までの注文について、注文金額やキャンセル条件は本稿では推定しない。",
+      "status": "ready",
+      "claim": "最新の株主向け書簡では、複数顧客から2027暦年にわたる注文を確保し、初回の商業出荷は2027年3月期第4四半期を予定している。",
+      "requiredInputs": [
+        {
+          "id": "deliveryQuarter",
+          "entity": "Arm AGI CPU",
+          "metric": "初回商業出荷予定四半期番号",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-03-31",
+          "unit": "fiscal quarter number",
+          "basis": "company-forecast",
+          "definition": "fiscal Q4 2027は2027年3月期の第4四半期。2026年暦年Q4と取り違えない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "deliveryQuarter",
+          "entity": "Arm AGI CPU",
+          "metric": "初回商業出荷予定四半期番号",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-03-31",
+          "unit": "fiscal quarter number",
+          "basis": "company-forecast",
+          "definition": "fiscal Q4 2027は2027年3月期の第4四半期。2026年暦年Q4と取り違えない。",
+          "value": 4,
+          "source": {
+            "url": "https://investors.arm.com/static-files/0b5baa2e-fc47-4d05-b724-e49de7bd4356",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF2ページ最終段落、first commercial deliveries on track for fiscal Q4’27",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ],
+  "qualitativeChecks": [
+    {
+      "claim": "IP/CSSモデルはライセンス料とロイヤルティー、完成チップモデルは製品売上。",
+      "source": "https://investors.arm.com/static-files/09d542eb-980d-42c8-8965-ed4f9d83aa28",
+      "publishedOn": "2026-11-04",
+      "pdfPage": 11,
+      "locator": "Arm business model: Complementary routes to monetizing compute",
+      "review": "PDF11ページ本文・図を画像確認。市場シェアや他社採用チップを直販売上と混同しない。"
+    },
+    {
+      "claim": "7月経営陣は初代CPUについて現在の全社より低い粗利率の見通しを説明。",
+      "source": "https://investors.arm.com/static-files/2ef5e3bf-f276-4a46-a4a2-2aadccd6710b",
+      "publishedOn": "2026-07-29",
+      "pdfPage": 6,
+      "locator": "Joe QuatrochiへのRene Haasの回答",
+      "review": "原文は high-30% range, maybe low-40s。本文はレンジを掲載せず過去見通しであると明示。11月の製品粗利率確定値にしていない。Q2全社GAAP97.1%と直接同条件比較できるセグメント実績ではない。"
+    },
+    {
+      "claim": "製造供給の制約はウエハーだけでなく基板・検査・メモリーなど。",
+      "source": "https://investors.arm.com/static-files/2ef5e3bf-f276-4a46-a4a2-2aadccd6710b",
+      "publishedOn": "2026-07-29",
+      "pdfPage": 6,
+      "locator": "Joe Quatrochiへの最初のRene Haas回答",
+      "review": "経営陣本人の供給工程の説明でありアナリスト質問を会社断定にしない。"
+    },
+    {
+      "claim": "粗利率低下と粗利益額増加は、既存事業を保ち追加粗利益が生じるなら両立する。",
+      "source": "https://investors.arm.com/static-files/09d542eb-980d-42c8-8965-ed4f9d83aa28",
+      "publishedOn": "2026-11-04",
+      "pdfPage": 11,
+      "locator": "モデル差を起点にした本稿の一般的算術",
+      "review": "定量的な独自予想や架空の市場予測は作らず、条件付き分析と明記。"
+    }
+  ]
+}

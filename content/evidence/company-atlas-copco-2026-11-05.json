@@ -1,0 +1,4059 @@
+{
+  "version": 1,
+  "articleSlug": "company-atlas-copco-2026-11-05",
+  "articleSha256": "e6ac86c4586a346320a6b96e99774ca5b58889432e69f4bc703c1785d31ee17c",
+  "checkedAt": "2026-11-05T10:19:24.133599+00:00",
+  "informationCutoff": "2026-11-05T19:10:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "5年PL/CF/ネット負債は年報テキストとQ4通期決算を突合。証拠は物理頁確認可能なQ4 PDFに統一。最新Q3の連結・部門・売上bridge・CF・負債・配当を網羅。独自FCFは営業活動CFからPPE/無形取得支出を控除し、営業CF内のレンタル投資を重複控除しない。年報PDF物理頁は取得制限で未確認のため数値の直接sourceには未採用。統合前に独立レビューとdigest確定が必要。",
+  "comparisons": [
+    {
+      "id": "pl-2021",
+      "question": "| 2021 | 110,912 | 23,559 | 21.2% | 18,134 |",
+      "claim": "| 2021 | 110,912 | 23,559 | 21.2% | 18,134 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益率",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率"
+        },
+        {
+          "id": "i3",
+          "entity": "Atlas Copco Group連結",
+          "metric": "純利益（非支配持分を含む）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "純利益（非支配持分を含む）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 110912,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20220125-en-q4-2021-dj.pdf.coredownload.pdf",
+            "publishedOn": "2022-01-25",
+            "locator": "PDF 1頁、売上高",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 23559,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20220125-en-q4-2021-dj.pdf.coredownload.pdf",
+            "publishedOn": "2022-01-25",
+            "locator": "PDF 1頁、営業利益",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益率",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率",
+          "value": 21.2,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20220125-en-q4-2021-dj.pdf.coredownload.pdf",
+            "publishedOn": "2022-01-25",
+            "locator": "PDF 1頁、営業利益率",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Atlas Copco Group連結",
+          "metric": "純利益（非支配持分を含む）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "純利益（非支配持分を含む）",
+          "value": 18134,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20220125-en-q4-2021-dj.pdf.coredownload.pdf",
+            "publishedOn": "2022-01-25",
+            "locator": "PDF 1頁、純利益（非支配持分を含む）",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cf-2021",
+      "question": "| 2021 | 23,152 | 1,970 | 1,389 | 19,793 | 8,151 |",
+      "claim": "| 2021 | 23,152 | 1,970 | 1,389 | 19,793 | 8,151 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー"
+        },
+        {
+          "id": "ppe",
+          "entity": "Atlas Copco Group連結",
+          "metric": "有形固定資産取得支出（負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出（負数）"
+        },
+        {
+          "id": "int",
+          "entity": "Atlas Copco Group連結",
+          "metric": "無形資産取得支出（負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "無形資産取得支出（負数）"
+        },
+        {
+          "id": "debt",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義ネット負債",
+          "periodStart": "2021-12-31",
+          "periodEnd": "2021-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "会社定義ネット負債"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー",
+          "value": 23152,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20220125-en-q4-2021-dj.pdf.coredownload.pdf",
+            "publishedOn": "2022-01-25",
+            "locator": "PDF 14頁、営業活動による純キャッシュフロー",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "ppe",
+          "entity": "Atlas Copco Group連結",
+          "metric": "有形固定資産取得支出（負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出（負数）",
+          "value": -1970,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20220125-en-q4-2021-dj.pdf.coredownload.pdf",
+            "publishedOn": "2022-01-25",
+            "locator": "PDF 14頁、有形固定資産取得支出（負数）",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "int",
+          "entity": "Atlas Copco Group連結",
+          "metric": "無形資産取得支出（負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "無形資産取得支出（負数）",
+          "value": -1389,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20220125-en-q4-2021-dj.pdf.coredownload.pdf",
+            "publishedOn": "2022-01-25",
+            "locator": "PDF 14頁、無形資産取得支出（負数）",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "debt",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義ネット負債",
+          "periodStart": "2021-12-31",
+          "periodEnd": "2021-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "会社定義ネット負債",
+          "value": 8151,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20220125-en-q4-2021-dj.pdf.coredownload.pdf",
+            "publishedOn": "2022-01-25",
+            "locator": "PDF 4頁、会社定義ネット負債",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "ppe",
+            "int"
+          ],
+          "definition": "営業活動CF＋有形固定資産支出＋無形資産支出",
+          "precision": 0,
+          "value": 19793
+        }
+      ]
+    },
+    {
+      "id": "pl-2022",
+      "question": "| 2022 | 141,325 | 30,216 | 21.4% | 23,482 |",
+      "claim": "| 2022 | 141,325 | 30,216 | 21.4% | 23,482 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益率",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率"
+        },
+        {
+          "id": "i3",
+          "entity": "Atlas Copco Group連結",
+          "metric": "純利益（非支配持分を含む）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "純利益（非支配持分を含む）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 141325,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/corporate/cision/20240125_Atlas_Copco_Group_Interim_report_on_Q4_and_full-year_summary_2023.pdf",
+            "publishedOn": "2024-01-25",
+            "locator": "PDF 1頁、売上高",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 30216,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/corporate/cision/20240125_Atlas_Copco_Group_Interim_report_on_Q4_and_full-year_summary_2023.pdf",
+            "publishedOn": "2024-01-25",
+            "locator": "PDF 1頁、営業利益",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益率",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率",
+          "value": 21.4,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/corporate/cision/20240125_Atlas_Copco_Group_Interim_report_on_Q4_and_full-year_summary_2023.pdf",
+            "publishedOn": "2024-01-25",
+            "locator": "PDF 1頁、営業利益率",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Atlas Copco Group連結",
+          "metric": "純利益（非支配持分を含む）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "純利益（非支配持分を含む）",
+          "value": 23482,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/corporate/cision/20240125_Atlas_Copco_Group_Interim_report_on_Q4_and_full-year_summary_2023.pdf",
+            "publishedOn": "2024-01-25",
+            "locator": "PDF 1頁、純利益（非支配持分を含む）",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cf-2022",
+      "question": "| 2022 | 21,377 | 3,660 | 1,371 | 16,346 | 26,570 |",
+      "claim": "| 2022 | 21,377 | 3,660 | 1,371 | 16,346 | 26,570 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー"
+        },
+        {
+          "id": "ppe",
+          "entity": "Atlas Copco Group連結",
+          "metric": "有形固定資産取得支出（負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出（負数）"
+        },
+        {
+          "id": "int",
+          "entity": "Atlas Copco Group連結",
+          "metric": "無形資産取得支出（負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "無形資産取得支出（負数）"
+        },
+        {
+          "id": "debt",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義ネット負債",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2022-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "会社定義ネット負債"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー",
+          "value": 21377,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/corporate/cision/20240125_Atlas_Copco_Group_Interim_report_on_Q4_and_full-year_summary_2023.pdf",
+            "publishedOn": "2024-01-25",
+            "locator": "PDF 14頁、営業活動による純キャッシュフロー",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "ppe",
+          "entity": "Atlas Copco Group連結",
+          "metric": "有形固定資産取得支出（負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出（負数）",
+          "value": -3660,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/corporate/cision/20240125_Atlas_Copco_Group_Interim_report_on_Q4_and_full-year_summary_2023.pdf",
+            "publishedOn": "2024-01-25",
+            "locator": "PDF 14頁、有形固定資産取得支出（負数）",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "int",
+          "entity": "Atlas Copco Group連結",
+          "metric": "無形資産取得支出（負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "無形資産取得支出（負数）",
+          "value": -1371,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/corporate/cision/20240125_Atlas_Copco_Group_Interim_report_on_Q4_and_full-year_summary_2023.pdf",
+            "publishedOn": "2024-01-25",
+            "locator": "PDF 14頁、無形資産取得支出（負数）",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "debt",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義ネット負債",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2022-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "会社定義ネット負債",
+          "value": 26570,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/corporate/cision/20240125_Atlas_Copco_Group_Interim_report_on_Q4_and_full-year_summary_2023.pdf",
+            "publishedOn": "2024-01-25",
+            "locator": "PDF 4頁、会社定義ネット負債",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "ppe",
+            "int"
+          ],
+          "definition": "営業活動CF＋有形固定資産支出＋無形資産支出",
+          "precision": 0,
+          "value": 16346
+        }
+      ]
+    },
+    {
+      "id": "pl-2023",
+      "question": "| 2023 | 172,664 | 37,091 | 21.5% | 28,052 |",
+      "claim": "| 2023 | 172,664 | 37,091 | 21.5% | 28,052 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益率",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率"
+        },
+        {
+          "id": "i3",
+          "entity": "Atlas Copco Group連結",
+          "metric": "純利益（非支配持分を含む）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "純利益（非支配持分を含む）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 172664,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/corporate/cision/20240125_Atlas_Copco_Group_Interim_report_on_Q4_and_full-year_summary_2023.pdf",
+            "publishedOn": "2024-01-25",
+            "locator": "PDF 1頁、売上高",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 37091,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/corporate/cision/20240125_Atlas_Copco_Group_Interim_report_on_Q4_and_full-year_summary_2023.pdf",
+            "publishedOn": "2024-01-25",
+            "locator": "PDF 1頁、営業利益",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益率",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率",
+          "value": 21.5,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/corporate/cision/20240125_Atlas_Copco_Group_Interim_report_on_Q4_and_full-year_summary_2023.pdf",
+            "publishedOn": "2024-01-25",
+            "locator": "PDF 1頁、営業利益率",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Atlas Copco Group連結",
+          "metric": "純利益（非支配持分を含む）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "純利益（非支配持分を含む）",
+          "value": 28052,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/corporate/cision/20240125_Atlas_Copco_Group_Interim_report_on_Q4_and_full-year_summary_2023.pdf",
+            "publishedOn": "2024-01-25",
+            "locator": "PDF 1頁、純利益（非支配持分を含む）",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cf-2023",
+      "question": "| 2023 | 28,084 | 3,987 | 1,464 | 22,633 | 23,441 |",
+      "claim": "| 2023 | 28,084 | 3,987 | 1,464 | 22,633 | 23,441 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー"
+        },
+        {
+          "id": "ppe",
+          "entity": "Atlas Copco Group連結",
+          "metric": "有形固定資産取得支出（負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出（負数）"
+        },
+        {
+          "id": "int",
+          "entity": "Atlas Copco Group連結",
+          "metric": "無形資産取得支出（負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "無形資産取得支出（負数）"
+        },
+        {
+          "id": "debt",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義ネット負債",
+          "periodStart": "2023-12-31",
+          "periodEnd": "2023-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "会社定義ネット負債"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー",
+          "value": 28084,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/corporate/cision/20240125_Atlas_Copco_Group_Interim_report_on_Q4_and_full-year_summary_2023.pdf",
+            "publishedOn": "2024-01-25",
+            "locator": "PDF 14頁、営業活動による純キャッシュフロー",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "ppe",
+          "entity": "Atlas Copco Group連結",
+          "metric": "有形固定資産取得支出（負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出（負数）",
+          "value": -3987,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/corporate/cision/20240125_Atlas_Copco_Group_Interim_report_on_Q4_and_full-year_summary_2023.pdf",
+            "publishedOn": "2024-01-25",
+            "locator": "PDF 14頁、有形固定資産取得支出（負数）",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "int",
+          "entity": "Atlas Copco Group連結",
+          "metric": "無形資産取得支出（負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "無形資産取得支出（負数）",
+          "value": -1464,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/corporate/cision/20240125_Atlas_Copco_Group_Interim_report_on_Q4_and_full-year_summary_2023.pdf",
+            "publishedOn": "2024-01-25",
+            "locator": "PDF 14頁、無形資産取得支出（負数）",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "debt",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義ネット負債",
+          "periodStart": "2023-12-31",
+          "periodEnd": "2023-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "会社定義ネット負債",
+          "value": 23441,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/corporate/cision/20240125_Atlas_Copco_Group_Interim_report_on_Q4_and_full-year_summary_2023.pdf",
+            "publishedOn": "2024-01-25",
+            "locator": "PDF 4頁、会社定義ネット負債",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "ppe",
+            "int"
+          ],
+          "definition": "営業活動CF＋有形固定資産支出＋無形資産支出",
+          "precision": 0,
+          "value": 22633
+        }
+      ]
+    },
+    {
+      "id": "pl-2024",
+      "question": "| 2024 | 176,771 | 38,166 | 21.6% | 29,794 |",
+      "claim": "| 2024 | 176,771 | 38,166 | 21.6% | 29,794 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益率",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率"
+        },
+        {
+          "id": "i3",
+          "entity": "Atlas Copco Group連結",
+          "metric": "純利益（非支配持分を含む）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "純利益（非支配持分を含む）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 176771,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 1頁、売上高",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 38166,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 1頁、営業利益",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益率",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率",
+          "value": 21.6,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 1頁、営業利益率",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Atlas Copco Group連結",
+          "metric": "純利益（非支配持分を含む）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "純利益（非支配持分を含む）",
+          "value": 29794,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 1頁、純利益（非支配持分を含む）",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cf-2024",
+      "question": "| 2024 | 36,887 | 4,236 | 1,788 | 30,863 | 18,102 |",
+      "claim": "| 2024 | 36,887 | 4,236 | 1,788 | 30,863 | 18,102 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー"
+        },
+        {
+          "id": "ppe",
+          "entity": "Atlas Copco Group連結",
+          "metric": "有形固定資産取得支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出（負数）"
+        },
+        {
+          "id": "int",
+          "entity": "Atlas Copco Group連結",
+          "metric": "無形資産取得支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "無形資産取得支出（負数）"
+        },
+        {
+          "id": "debt",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義ネット負債",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "会社定義ネット負債"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー",
+          "value": 36887,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 14頁、営業活動による純キャッシュフロー",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "ppe",
+          "entity": "Atlas Copco Group連結",
+          "metric": "有形固定資産取得支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出（負数）",
+          "value": -4236,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 14頁、有形固定資産取得支出（負数）",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "int",
+          "entity": "Atlas Copco Group連結",
+          "metric": "無形資産取得支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "無形資産取得支出（負数）",
+          "value": -1788,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 14頁、無形資産取得支出（負数）",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "debt",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義ネット負債",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "会社定義ネット負債",
+          "value": 18102,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 4頁、会社定義ネット負債",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "ppe",
+            "int"
+          ],
+          "definition": "営業活動CF＋有形固定資産支出＋無形資産支出",
+          "precision": 0,
+          "value": 30863
+        }
+      ]
+    },
+    {
+      "id": "pl-2025",
+      "question": "| 2025 | 168,343 | 34,114 | 20.3% | 26,425 |",
+      "claim": "| 2025 | 168,343 | 34,114 | 20.3% | 26,425 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i0",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "i1",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "i2",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率"
+        },
+        {
+          "id": "i3",
+          "entity": "Atlas Copco Group連結",
+          "metric": "純利益（非支配持分を含む）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "純利益（非支配持分を含む）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i0",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 168343,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 1頁、売上高",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 34114,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 1頁、営業利益",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "i2",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率",
+          "value": 20.3,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 1頁、営業利益率",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "i3",
+          "entity": "Atlas Copco Group連結",
+          "metric": "純利益（非支配持分を含む）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "純利益（非支配持分を含む）",
+          "value": 26425,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 1頁、純利益（非支配持分を含む）",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cf-2025",
+      "question": "| 2025 | 32,566 | 4,284 | 1,903 | 26,379 | 20,665 |",
+      "claim": "| 2025 | 32,566 | 4,284 | 1,903 | 26,379 | 20,665 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー"
+        },
+        {
+          "id": "ppe",
+          "entity": "Atlas Copco Group連結",
+          "metric": "有形固定資産取得支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出（負数）"
+        },
+        {
+          "id": "int",
+          "entity": "Atlas Copco Group連結",
+          "metric": "無形資産取得支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "無形資産取得支出（負数）"
+        },
+        {
+          "id": "debt",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義ネット負債",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "会社定義ネット負債"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー",
+          "value": 32566,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 14頁、営業活動による純キャッシュフロー",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "ppe",
+          "entity": "Atlas Copco Group連結",
+          "metric": "有形固定資産取得支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出（負数）",
+          "value": -4284,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 14頁、有形固定資産取得支出（負数）",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "int",
+          "entity": "Atlas Copco Group連結",
+          "metric": "無形資産取得支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "無形資産取得支出（負数）",
+          "value": -1903,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 14頁、無形資産取得支出（負数）",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "debt",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義ネット負債",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "会社定義ネット負債",
+          "value": 20665,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 4頁、会社定義ネット負債",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "ppe",
+            "int"
+          ],
+          "definition": "営業活動CF＋有形固定資産支出＋無形資産支出",
+          "precision": 0,
+          "value": 26379
+        }
+      ]
+    },
+    {
+      "id": "q3-0",
+      "question": "| 受注高 | 40,517 | 52,338 |",
+      "claim": "| 受注高 | 40,517 | 52,338 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "受注高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "受注高"
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "受注高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "受注高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "受注高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "受注高",
+          "value": 40517,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 1頁、受注高",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "受注高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "受注高",
+          "value": 52338,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 1頁、受注高",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3-1",
+      "question": "| 売上高 | 41,621 | 47,920 |",
+      "claim": "| 売上高 | 41,621 | 47,920 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 41621,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 1頁、売上高",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 47920,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 1頁、売上高",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3-2",
+      "question": "| 営業利益 | 8,546 | 9,950 |",
+      "claim": "| 営業利益 | 8,546 | 9,950 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 8546,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 1頁、営業利益",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 9950,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 1頁、営業利益",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3-3",
+      "question": "| 営業利益率（%） | 20.5 | 20.8 |",
+      "claim": "| 営業利益率（%） | 20.5 | 20.8 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益率（%）",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率（%）"
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益率（%）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率（%）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益率（%）",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率（%）",
+          "value": 20.5,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 1頁、営業利益率（%）",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益率（%）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率（%）",
+          "value": 20.8,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 1頁、営業利益率（%）",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3-4",
+      "question": "| 調整後営業利益 | 8,862 | 10,195 |",
+      "claim": "| 調整後営業利益 | 8,862 | 10,195 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 8862,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 3頁、調整後営業利益",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 10195,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 3頁、調整後営業利益",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3-5",
+      "question": "| 調整後営業利益率（%） | 21.3 | 21.3 |",
+      "claim": "| 調整後営業利益率（%） | 21.3 | 21.3 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "調整後営業利益率（%）",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後営業利益率（%）"
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "調整後営業利益率（%）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後営業利益率（%）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "調整後営業利益率（%）",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後営業利益率（%）",
+          "value": 21.3,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 3頁、調整後営業利益率（%）",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "調整後営業利益率（%）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後営業利益率（%）",
+          "value": 21.3,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 3頁、調整後営業利益率（%）",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3-6",
+      "question": "| 基本EPS（SEK） | 1.37 | 1.58 |",
+      "claim": "| 基本EPS（SEK） | 1.37 | 1.58 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "基本EPS（SEK）",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK/share",
+          "basis": "actual",
+          "definition": "基本EPS（SEK）"
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "基本EPS（SEK）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK/share",
+          "basis": "actual",
+          "definition": "基本EPS（SEK）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "基本EPS（SEK）",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK/share",
+          "basis": "actual",
+          "definition": "基本EPS（SEK）",
+          "value": 1.37,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 9頁、基本EPS（SEK）",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "基本EPS（SEK）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK/share",
+          "basis": "actual",
+          "definition": "基本EPS（SEK）",
+          "value": 1.58,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 9頁、基本EPS（SEK）",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "segment-0",
+      "question": "| Compressor Technique | 圧縮空気・ガス、処理機器 | 19,151 → 20,399 | 25.3% → 23.6% |",
+      "claim": "| Compressor Technique | 圧縮空気・ガス、処理機器 | 19,151 → 20,399 | 25.3% → 23.6% |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "salesold",
+          "entity": "Compressor Technique",
+          "metric": "部門売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "部門売上高"
+        },
+        {
+          "id": "salesnew",
+          "entity": "Compressor Technique",
+          "metric": "部門売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "部門売上高"
+        },
+        {
+          "id": "marginold",
+          "entity": "Compressor Technique",
+          "metric": "部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門営業利益率"
+        },
+        {
+          "id": "marginnew",
+          "entity": "Compressor Technique",
+          "metric": "部門営業利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "salesold",
+          "entity": "Compressor Technique",
+          "metric": "部門売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "部門売上高",
+          "value": 19151,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 4頁、部門売上高",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "salesnew",
+          "entity": "Compressor Technique",
+          "metric": "部門売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "部門売上高",
+          "value": 20399,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 4頁、部門売上高",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "marginold",
+          "entity": "Compressor Technique",
+          "metric": "部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門営業利益率",
+          "value": 25.3,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 4頁、部門営業利益率",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "marginnew",
+          "entity": "Compressor Technique",
+          "metric": "部門営業利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門営業利益率",
+          "value": 23.6,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 4頁、部門営業利益率",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "segment-1",
+      "question": "| Vacuum Technique | 真空・排ガス処理、半導体等 | 9,193 → 12,257 | 18.5% → 22.2% |",
+      "claim": "| Vacuum Technique | 真空・排ガス処理、半導体等 | 9,193 → 12,257 | 18.5% → 22.2% |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "salesold",
+          "entity": "Vacuum Technique",
+          "metric": "部門売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "部門売上高"
+        },
+        {
+          "id": "salesnew",
+          "entity": "Vacuum Technique",
+          "metric": "部門売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "部門売上高"
+        },
+        {
+          "id": "marginold",
+          "entity": "Vacuum Technique",
+          "metric": "部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門営業利益率"
+        },
+        {
+          "id": "marginnew",
+          "entity": "Vacuum Technique",
+          "metric": "部門営業利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "salesold",
+          "entity": "Vacuum Technique",
+          "metric": "部門売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "部門売上高",
+          "value": 9193,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 5頁、部門売上高",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "salesnew",
+          "entity": "Vacuum Technique",
+          "metric": "部門売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "部門売上高",
+          "value": 12257,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 5頁、部門売上高",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "marginold",
+          "entity": "Vacuum Technique",
+          "metric": "部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門営業利益率",
+          "value": 18.5,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 5頁、部門営業利益率",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "marginnew",
+          "entity": "Vacuum Technique",
+          "metric": "部門営業利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門営業利益率",
+          "value": 22.2,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 5頁、部門営業利益率",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "segment-2",
+      "question": "| Industrial Technique | 組立工具・画像検査 | 6,515 → 6,745 | 18.0% → 18.7% |",
+      "claim": "| Industrial Technique | 組立工具・画像検査 | 6,515 → 6,745 | 18.0% → 18.7% |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "salesold",
+          "entity": "Industrial Technique",
+          "metric": "部門売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "部門売上高"
+        },
+        {
+          "id": "salesnew",
+          "entity": "Industrial Technique",
+          "metric": "部門売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "部門売上高"
+        },
+        {
+          "id": "marginold",
+          "entity": "Industrial Technique",
+          "metric": "部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門営業利益率"
+        },
+        {
+          "id": "marginnew",
+          "entity": "Industrial Technique",
+          "metric": "部門営業利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "salesold",
+          "entity": "Industrial Technique",
+          "metric": "部門売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "部門売上高",
+          "value": 6515,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 6頁、部門売上高",
+            "kind": "primary",
+            "pdfPage": 6
+          }
+        },
+        {
+          "id": "salesnew",
+          "entity": "Industrial Technique",
+          "metric": "部門売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "部門売上高",
+          "value": 6745,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 6頁、部門売上高",
+            "kind": "primary",
+            "pdfPage": 6
+          }
+        },
+        {
+          "id": "marginold",
+          "entity": "Industrial Technique",
+          "metric": "部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門営業利益率",
+          "value": 18,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 6頁、部門営業利益率",
+            "kind": "primary",
+            "pdfPage": 6
+          }
+        },
+        {
+          "id": "marginnew",
+          "entity": "Industrial Technique",
+          "metric": "部門営業利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門営業利益率",
+          "value": 18.7,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 6頁、部門営業利益率",
+            "kind": "primary",
+            "pdfPage": 6
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "segment-3",
+      "question": "| Power Technique | 可搬型電源・ポンプ・レンタル | 6,979 → 8,711 | 17.0% → 18.3% |",
+      "claim": "| Power Technique | 可搬型電源・ポンプ・レンタル | 6,979 → 8,711 | 17.0% → 18.3% |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "salesold",
+          "entity": "Power Technique",
+          "metric": "部門売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "部門売上高"
+        },
+        {
+          "id": "salesnew",
+          "entity": "Power Technique",
+          "metric": "部門売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "部門売上高"
+        },
+        {
+          "id": "marginold",
+          "entity": "Power Technique",
+          "metric": "部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門営業利益率"
+        },
+        {
+          "id": "marginnew",
+          "entity": "Power Technique",
+          "metric": "部門営業利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "salesold",
+          "entity": "Power Technique",
+          "metric": "部門売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "部門売上高",
+          "value": 6979,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 7頁、部門売上高",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "salesnew",
+          "entity": "Power Technique",
+          "metric": "部門売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "部門売上高",
+          "value": 8711,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 7頁、部門売上高",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "marginold",
+          "entity": "Power Technique",
+          "metric": "部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門営業利益率",
+          "value": 17,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 7頁、部門営業利益率",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "marginnew",
+          "entity": "Power Technique",
+          "metric": "部門営業利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門営業利益率",
+          "value": 18.3,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 7頁、部門営業利益率",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "bridge",
+      "question": "会社の売上増減表では、Q3の受注増29%は既存事業25ポイント、買収等3ポイント、為替1ポイント。売上増15%は既存事業11ポイント、買収等3ポイント、為替1ポイントです。",
+      "claim": "会社の売上増減表では、Q3の受注増29%は既存事業25ポイント、買収等3ポイント、為替1ポイント。売上増15%は既存事業11ポイント、買収等3ポイント、為替1ポイントです。",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "Atlas Copco Group連結",
+          "metric": "受注増加率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "受注増加率"
+        },
+        {
+          "id": "1",
+          "entity": "Atlas Copco Group連結",
+          "metric": "受注organic寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "受注organic寄与"
+        },
+        {
+          "id": "2",
+          "entity": "Atlas Copco Group連結",
+          "metric": "受注構造変化寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "受注構造変化寄与"
+        },
+        {
+          "id": "3",
+          "entity": "Atlas Copco Group連結",
+          "metric": "受注為替寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "受注為替寄与"
+        },
+        {
+          "id": "4",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上増加率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上増加率"
+        },
+        {
+          "id": "5",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上organic寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上organic寄与"
+        },
+        {
+          "id": "6",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上構造変化寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上構造変化寄与"
+        },
+        {
+          "id": "7",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上為替寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上為替寄与"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "Atlas Copco Group連結",
+          "metric": "受注増加率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "受注増加率",
+          "value": 29,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 2頁、受注増加率",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "1",
+          "entity": "Atlas Copco Group連結",
+          "metric": "受注organic寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "受注organic寄与",
+          "value": 25,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 2頁、受注organic寄与",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "2",
+          "entity": "Atlas Copco Group連結",
+          "metric": "受注構造変化寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "受注構造変化寄与",
+          "value": 3,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 2頁、受注構造変化寄与",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "3",
+          "entity": "Atlas Copco Group連結",
+          "metric": "受注為替寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "受注為替寄与",
+          "value": 1,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 2頁、受注為替寄与",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "4",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上増加率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上増加率",
+          "value": 15,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 2頁、売上増加率",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "5",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上organic寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上organic寄与",
+          "value": 11,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 2頁、売上organic寄与",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "6",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上構造変化寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上構造変化寄与",
+          "value": 3,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 2頁、売上構造変化寄与",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "7",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上為替寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上為替寄与",
+          "value": 1,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 2頁、売上為替寄与",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "vacuum-order-contribution",
+      "question": "真空事業の受注増加額は7,743百万SEKで、連結全体の増加額11,821百万SEKの約65.5%を占めます。",
+      "claim": "真空事業の受注増加額は7,743百万SEKで、連結全体の増加額11,821百万SEKの約65.5%を占めます。",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "vnew",
+          "entity": "Vacuum Technique",
+          "metric": "真空受注高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "真空受注高"
+        },
+        {
+          "id": "vold",
+          "entity": "Vacuum Technique",
+          "metric": "真空受注高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "真空受注高"
+        },
+        {
+          "id": "gnew",
+          "entity": "Atlas Copco Group連結",
+          "metric": "連結受注高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "連結受注高"
+        },
+        {
+          "id": "gold",
+          "entity": "Atlas Copco Group連結",
+          "metric": "連結受注高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "連結受注高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "vnew",
+          "entity": "Vacuum Technique",
+          "metric": "真空受注高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "真空受注高",
+          "value": 16659,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 5頁、真空受注高",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "vold",
+          "entity": "Vacuum Technique",
+          "metric": "真空受注高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "真空受注高",
+          "value": 8916,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 5頁、真空受注高",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "gnew",
+          "entity": "Atlas Copco Group連結",
+          "metric": "連結受注高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "連結受注高",
+          "value": 52338,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 1頁、連結受注高",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "gold",
+          "entity": "Atlas Copco Group連結",
+          "metric": "連結受注高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "連結受注高",
+          "value": 40517,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 1頁、連結受注高",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "vdelta",
+          "operation": "difference",
+          "inputs": [
+            "vnew",
+            "vold"
+          ],
+          "definition": "真空受注増分",
+          "precision": 0,
+          "value": 7743
+        },
+        {
+          "id": "gdelta",
+          "operation": "difference",
+          "inputs": [
+            "gnew",
+            "gold"
+          ],
+          "definition": "連結受注増分",
+          "precision": 0,
+          "value": 11821
+        },
+        {
+          "id": "share",
+          "operation": "ratio-percent",
+          "inputs": [
+            "vdelta",
+            "gdelta"
+          ],
+          "definition": "真空増分÷連結増分",
+          "precision": 1,
+          "value": 65.5
+        }
+      ]
+    },
+    {
+      "id": "ytd-0",
+      "question": "| 営業利益 | 25,644 | 27,460 |",
+      "claim": "| 営業利益 | 25,644 | 27,460 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 25644,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 9頁、営業利益",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 27460,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 9頁、営業利益",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "ytd-1",
+      "question": "| 営業活動CF | 24,173 | 23,754 |",
+      "claim": "| 営業活動CF | 24,173 | 23,754 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業活動CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業活動CF"
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業活動CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業活動CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業活動CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業活動CF",
+          "value": 24173,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 13頁、営業活動CF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業活動CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業活動CF",
+          "value": 23754,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 13頁、営業活動CF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "ytd-2",
+      "question": "| 有形固定資産取得支出 | 3,179 | 2,491 |",
+      "claim": "| 有形固定資産取得支出 | 3,179 | 2,491 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "有形固定資産取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出"
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "有形固定資産取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "有形固定資産取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出",
+          "value": 3179,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 13頁、有形固定資産取得支出",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "有形固定資産取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出",
+          "value": 2491,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 13頁、有形固定資産取得支出",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "ytd-3",
+      "question": "| 無形資産取得支出 | 1,374 | 1,389 |",
+      "claim": "| 無形資産取得支出 | 1,374 | 1,389 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "無形資産取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "無形資産取得支出"
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "無形資産取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "無形資産取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "無形資産取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "無形資産取得支出",
+          "value": 1374,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 13頁、無形資産取得支出",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "無形資産取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "無形資産取得支出",
+          "value": 1389,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 13頁、無形資産取得支出",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "ytd-4",
+      "question": "| 会社定義Operating cash flow | 20,019 | 19,841 |",
+      "claim": "| 会社定義Operating cash flow | 20,019 | 19,841 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義Operating cash flow",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "会社定義Operating cash flow"
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義Operating cash flow",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "会社定義Operating cash flow"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義Operating cash flow",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "会社定義Operating cash flow",
+          "value": 20019,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 13頁、会社定義Operating cash flow",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義Operating cash flow",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "会社定義Operating cash flow",
+          "value": 19841,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 13頁、会社定義Operating cash flow",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "ytd-5",
+      "question": "| 買収支出 | 3,560 | 1,340 |",
+      "claim": "| 買収支出 | 3,560 | 1,340 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "買収支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "買収支出"
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "買収支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "買収支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "買収支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "買収支出",
+          "value": 3560,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 13頁、買収支出",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "買収支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "買収支出",
+          "value": 1340,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 13頁、買収支出",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "ytd-6",
+      "question": "| 親会社株主への配当支出 | 7,302 | 12,196 |",
+      "claim": "| 親会社株主への配当支出 | 7,302 | 12,196 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "親会社株主への配当支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "親会社株主への配当支出"
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "親会社株主への配当支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "親会社株主への配当支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "親会社株主への配当支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "親会社株主への配当支出",
+          "value": 7302,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 13頁、親会社株主への配当支出",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "親会社株主への配当支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "親会社株主への配当支出",
+          "value": 12196,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 13頁、親会社株主への配当支出",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "ytd-7",
+      "question": "| 運転資金変動によるCF | 969 | -2,984 |",
+      "claim": "| 運転資金変動によるCF | 969 | -2,984 |",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "運転資金変動によるCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "運転資金変動によるCF"
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "運転資金変動によるCF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "運転資金変動によるCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Atlas Copco Group連結",
+          "metric": "運転資金変動によるCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "運転資金変動によるCF",
+          "value": 969,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 13頁、運転資金変動によるCF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Atlas Copco Group連結",
+          "metric": "運転資金変動によるCF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "運転資金変動によるCF",
+          "value": -2984,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 13頁、運転資金変動によるCF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "ytd-fcf",
+      "question": "同じ独自FCF定義で計算した9か月累計は、前年19,620百万SEKに対し今年19,874百万SEKです。",
+      "claim": "同じ独自FCF定義で計算した9か月累計は、前年19,620百万SEKに対し今年19,874百万SEKです。",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "oldc",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業活動CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業活動CF"
+        },
+        {
+          "id": "oldp",
+          "entity": "Atlas Copco Group連結",
+          "metric": "有形固定資産取得支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出（負数）"
+        },
+        {
+          "id": "oldi",
+          "entity": "Atlas Copco Group連結",
+          "metric": "無形資産取得支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "無形資産取得支出（負数）"
+        },
+        {
+          "id": "newc",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業活動CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業活動CF"
+        },
+        {
+          "id": "newp",
+          "entity": "Atlas Copco Group連結",
+          "metric": "有形固定資産取得支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出（負数）"
+        },
+        {
+          "id": "newi",
+          "entity": "Atlas Copco Group連結",
+          "metric": "無形資産取得支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "無形資産取得支出（負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oldc",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業活動CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業活動CF",
+          "value": 24173,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 13頁、営業活動CF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "oldp",
+          "entity": "Atlas Copco Group連結",
+          "metric": "有形固定資産取得支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出（負数）",
+          "value": -3179,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 13頁、有形固定資産取得支出（負数）",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "oldi",
+          "entity": "Atlas Copco Group連結",
+          "metric": "無形資産取得支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "無形資産取得支出（負数）",
+          "value": -1374,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 13頁、無形資産取得支出（負数）",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "newc",
+          "entity": "Atlas Copco Group連結",
+          "metric": "営業活動CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "営業活動CF",
+          "value": 23754,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 13頁、営業活動CF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "newp",
+          "entity": "Atlas Copco Group連結",
+          "metric": "有形固定資産取得支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出（負数）",
+          "value": -2491,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 13頁、有形固定資産取得支出（負数）",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "newi",
+          "entity": "Atlas Copco Group連結",
+          "metric": "無形資産取得支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "無形資産取得支出（負数）",
+          "value": -1389,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 13頁、無形資産取得支出（負数）",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "old",
+          "operation": "sum",
+          "inputs": [
+            "oldc",
+            "oldp",
+            "oldi"
+          ],
+          "definition": "前年独自FCF",
+          "precision": 0,
+          "value": 19620
+        },
+        {
+          "id": "new",
+          "operation": "sum",
+          "inputs": [
+            "newc",
+            "newp",
+            "newi"
+          ],
+          "definition": "当年独自FCF",
+          "precision": 0,
+          "value": 19874
+        }
+      ]
+    },
+    {
+      "id": "debt",
+      "question": "9月末の会社定義ネット負債は14,244百万SEK、前年同月末は11,149百万SEK、前年末は20,665百万SEKでした。ネット負債／EBITDAは0.3倍で、前年同月末の0.2倍を上回ります。",
+      "claim": "9月末の会社定義ネット負債は14,244百万SEK、前年同月末は11,149百万SEK、前年末は20,665百万SEKでした。ネット負債／EBITDAは0.3倍で、前年同月末の0.2倍を上回ります。",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "now",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義ネット負債",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "会社定義ネット負債"
+        },
+        {
+          "id": "yoy",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義ネット負債",
+          "periodStart": "2025-09-30",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "会社定義ネット負債"
+        },
+        {
+          "id": "yearend",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義ネット負債",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "会社定義ネット負債"
+        },
+        {
+          "id": "rnow",
+          "entity": "Atlas Copco Group連結",
+          "metric": "ネット負債／EBITDA",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "times",
+          "basis": "actual",
+          "definition": "ネット負債／EBITDA"
+        },
+        {
+          "id": "rold",
+          "entity": "Atlas Copco Group連結",
+          "metric": "ネット負債／EBITDA",
+          "periodStart": "2025-09-30",
+          "periodEnd": "2025-09-30",
+          "unit": "times",
+          "basis": "actual",
+          "definition": "ネット負債／EBITDA"
+        }
+      ],
+      "observations": [
+        {
+          "id": "now",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義ネット負債",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "会社定義ネット負債",
+          "value": 14244,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 3頁、会社定義ネット負債",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "yoy",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義ネット負債",
+          "periodStart": "2025-09-30",
+          "periodEnd": "2025-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "会社定義ネット負債",
+          "value": 11149,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 3頁、会社定義ネット負債",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "yearend",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義ネット負債",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "会社定義ネット負債",
+          "value": 20665,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 4頁、会社定義ネット負債",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "rnow",
+          "entity": "Atlas Copco Group連結",
+          "metric": "ネット負債／EBITDA",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "times",
+          "basis": "actual",
+          "definition": "ネット負債／EBITDA",
+          "value": 0.3,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 3頁、ネット負債／EBITDA",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "rold",
+          "entity": "Atlas Copco Group連結",
+          "metric": "ネット負債／EBITDA",
+          "periodStart": "2025-09-30",
+          "periodEnd": "2025-09-30",
+          "unit": "times",
+          "basis": "actual",
+          "definition": "ネット負債／EBITDA",
+          "value": 0.2,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 3頁、ネット負債／EBITDA",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "adjustments",
+      "question": "Q3の調整後営業利益では、株式報酬関連引当金の変動113百万SEKとIndustrial Techniqueの再編費用132百万SEK、合計245百万SEKの費用が除かれています。",
+      "claim": "Q3の調整後営業利益では、株式報酬関連引当金の変動113百万SEKとIndustrial Techniqueの再編費用132百万SEK、合計245百万SEKの費用が除かれています。",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "lti",
+          "entity": "Atlas Copco Group連結",
+          "metric": "LTI費用（調整除外）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "LTI費用（調整除外）"
+        },
+        {
+          "id": "restruct",
+          "entity": "Atlas Copco Group連結",
+          "metric": "再編費用（調整除外）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "再編費用（調整除外）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "lti",
+          "entity": "Atlas Copco Group連結",
+          "metric": "LTI費用（調整除外）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "LTI費用（調整除外）",
+          "value": 113,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 3頁、LTI費用（調整除外）",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "restruct",
+          "entity": "Atlas Copco Group連結",
+          "metric": "再編費用（調整除外）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "SEK million",
+          "basis": "actual",
+          "definition": "再編費用（調整除外）",
+          "value": 132,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 3頁、再編費用（調整除外）",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "sum",
+          "operation": "sum",
+          "inputs": [
+            "lti",
+            "restruct"
+          ],
+          "definition": "調整除外費用合計",
+          "precision": 0,
+          "value": 245
+        }
+      ]
+    },
+    {
+      "id": "dividend",
+      "question": "株主総会で承認された2026年の分配は、普通配当3.00SEKと特別分配2.00SEKの計5.00SEK／株。2.50SEKずつの分割で、第2回の支払予定日は10月23日でした。",
+      "claim": "株主総会で承認された2026年の分配は、普通配当3.00SEKと特別分配2.00SEKの計5.00SEK／株。2.50SEKずつの分割で、第2回の支払予定日は10月23日でした。",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "ordinary",
+          "entity": "Atlas Copco AB",
+          "metric": "承認済普通配当",
+          "periodStart": "2026-04-28",
+          "periodEnd": "2026-10-23",
+          "unit": "SEK/share",
+          "basis": "actual",
+          "definition": "承認済普通配当"
+        },
+        {
+          "id": "extra",
+          "entity": "Atlas Copco AB",
+          "metric": "承認済特別分配",
+          "periodStart": "2026-04-28",
+          "periodEnd": "2026-10-23",
+          "unit": "SEK/share",
+          "basis": "actual",
+          "definition": "承認済特別分配"
+        },
+        {
+          "id": "instalment",
+          "entity": "Atlas Copco AB",
+          "metric": "1回分配額",
+          "periodStart": "2026-04-28",
+          "periodEnd": "2026-10-23",
+          "unit": "SEK/share",
+          "basis": "actual",
+          "definition": "1回分配額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ordinary",
+          "entity": "Atlas Copco AB",
+          "metric": "承認済普通配当",
+          "periodStart": "2026-04-28",
+          "periodEnd": "2026-10-23",
+          "unit": "SEK/share",
+          "basis": "actual",
+          "definition": "承認済普通配当",
+          "value": 3,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/documents/investors/20260428-report-from-annual-general-meeting-2026.pdf.coredownload.inline.pdf",
+            "publishedOn": "2026-04-28",
+            "locator": "PDF 1頁、承認済普通配当",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "extra",
+          "entity": "Atlas Copco AB",
+          "metric": "承認済特別分配",
+          "periodStart": "2026-04-28",
+          "periodEnd": "2026-10-23",
+          "unit": "SEK/share",
+          "basis": "actual",
+          "definition": "承認済特別分配",
+          "value": 2,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/documents/investors/20260428-report-from-annual-general-meeting-2026.pdf.coredownload.inline.pdf",
+            "publishedOn": "2026-04-28",
+            "locator": "PDF 1頁、承認済特別分配",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "instalment",
+          "entity": "Atlas Copco AB",
+          "metric": "1回分配額",
+          "periodStart": "2026-04-28",
+          "periodEnd": "2026-10-23",
+          "unit": "SEK/share",
+          "basis": "actual",
+          "definition": "1回分配額",
+          "value": 2.5,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/documents/investors/20260428-report-from-annual-general-meeting-2026.pdf.coredownload.inline.pdf",
+            "publishedOn": "2026-04-28",
+            "locator": "PDF 1頁、1回分配額",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "total",
+          "operation": "sum",
+          "inputs": [
+            "ordinary",
+            "extra"
+          ],
+          "definition": "年間合計配当",
+          "precision": 2,
+          "value": 5
+        }
+      ]
+    },
+    {
+      "id": "roce",
+      "question": "会社公表の連結ROCE（使用資本利益率）は、2026年9月末までの直近12か月で24%、前年同時点の直近12か月では25%でした。",
+      "claim": "会社公表の連結ROCE（使用資本利益率）は、2026年9月末までの直近12か月で24%、前年同時点の直近12か月では25%でした。",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2025",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義連結ROCE（直近12か月）",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社定義連結ROCE（直近12か月）"
+        },
+        {
+          "id": "2026",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義連結ROCE（直近12か月）",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社定義連結ROCE（直近12か月）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2025",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義連結ROCE（直近12か月）",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社定義連結ROCE（直近12か月）",
+          "value": 25,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 3頁、会社定義連結ROCE（直近12か月）",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "2026",
+          "entity": "Atlas Copco Group連結",
+          "metric": "会社定義連結ROCE（直近12か月）",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社定義連結ROCE（直近12か月）",
+          "value": 24,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 3頁、会社定義連結ROCE（直近12か月）",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fy2025-sales-bridge",
+      "question": "2025年通期の売上高は報告値で5%減でしたが、会社が示す内訳はorganicで1%減、為替が6ポイントの押し下げ、買収が2ポイントの押し上げです。",
+      "claim": "2025年通期の売上高は報告値で5%減でしたが、会社が示す内訳はorganicで1%減、為替が6ポイントの押し下げ、買収が2ポイントの押し上げです。",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "0",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上増加率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上増加率"
+        },
+        {
+          "id": "1",
+          "entity": "Atlas Copco Group連結",
+          "metric": "organic寄与",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "organic寄与"
+        },
+        {
+          "id": "2",
+          "entity": "Atlas Copco Group連結",
+          "metric": "為替寄与",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "為替寄与"
+        },
+        {
+          "id": "3",
+          "entity": "Atlas Copco Group連結",
+          "metric": "買収寄与",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "買収寄与"
+        }
+      ],
+      "observations": [
+        {
+          "id": "0",
+          "entity": "Atlas Copco Group連結",
+          "metric": "売上増加率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上増加率",
+          "value": -5,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 2頁、売上増加率",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "1",
+          "entity": "Atlas Copco Group連結",
+          "metric": "organic寄与",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "organic寄与",
+          "value": -1,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 2頁、organic寄与",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "2",
+          "entity": "Atlas Copco Group連結",
+          "metric": "為替寄与",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "為替寄与",
+          "value": -6,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 2頁、為替寄与",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "3",
+          "entity": "Atlas Copco Group連結",
+          "metric": "買収寄与",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "買収寄与",
+          "value": 2,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/atlas-copco/group/documents/investors/financial-publications/english/20260127-en-q4-2025-et.pdf",
+            "publishedOn": "2026-01-27",
+            "locator": "PDF 2頁、買収寄与",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "vacuum-prior-adjustment",
+      "question": "真空の前年Q3利益率は、調整前18.5%に対して調整後では20.1%でした。今回の22.2%への改善を読む際は、比較期の一時費用で出発点が低くなっている点も考慮します。",
+      "claim": "真空の前年Q3利益率は、調整前18.5%に対して調整後では20.1%でした。今回の22.2%への改善を読む際は、比較期の一時費用で出発点が低くなっている点も考慮します。",
+      "definition": "本文記載の期間・単位・定義。金額は百万SEK。独自FCFは営業活動CFから有形固定資産・無形資産の現金取得支出を控除。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "reportedold",
+          "entity": "Vacuum Technique",
+          "metric": "部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門営業利益率"
+        },
+        {
+          "id": "adjustedold",
+          "entity": "Vacuum Technique",
+          "metric": "部門調整後営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門調整後営業利益率"
+        },
+        {
+          "id": "reportednew",
+          "entity": "Vacuum Technique",
+          "metric": "部門営業利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "reportedold",
+          "entity": "Vacuum Technique",
+          "metric": "部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門営業利益率",
+          "value": 18.5,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 5頁、部門営業利益率",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "adjustedold",
+          "entity": "Vacuum Technique",
+          "metric": "部門調整後営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門調整後営業利益率",
+          "value": 20.1,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 5頁、部門調整後営業利益率",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "reportednew",
+          "entity": "Vacuum Technique",
+          "metric": "部門営業利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "部門営業利益率",
+          "value": 22.2,
+          "source": {
+            "url": "https://www.atlascopcogroup.com/content/dam/brands/atlas-copco-group/cision/20261022-en-Q3_2026.pdf",
+            "publishedOn": "2026-10-22",
+            "locator": "PDF 5頁、部門営業利益率",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
