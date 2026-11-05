@@ -1,0 +1,468 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-11-06",
+  "articleSha256": "21ecba00edeba18e5eb2bf69dd347ca7721030a029408d09e7bb74aa5e647b02",
+  "checkedAt": "2026-11-05T21:20:56Z",
+  "informationCutoff": "2026-11-06T06:19:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終記事の題名、要約、結論、5項目、出典と免責を通読し、掲載した重要な数値比較はQualcommの2用途の四半期実績、トヨタの上期実績、ソニーの通期会社予想、英中銀の決定値の5件と確認。Qualcommの両期の期首はSEC提出のFY26第3四半期Form 10-Q（2026-07-29、Note 1 Financial Statement Preparation、6月28日と6月29日の各期末）も照合。トヨタの為替・資材の方向は会社の要因図で確認し、別定義の増減額は掲載せず。米株の確定終値比較は保留し、株価の方向は同日Reuters終了報道で確認した。",
+  "comparisons": [
+    {
+      "id": "qct-handsets",
+      "question": "QCTの携帯端末向け売上高は同じ第4四半期でどの程度変化したか。",
+      "definition": "QCTの製品用途別に開示された携帯端末向け売上高。13週の第4四半期実績同士。QTLや連結売上と区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "Qualcomm・QCT",
+          "metric": "携帯端末向け売上高",
+          "periodStart": "2026-06-29",
+          "periodEnd": "2026-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "QCTの製品用途別に開示された携帯端末向け売上高。13週の第4四半期実績同士。QTLや連結売上と区別。"
+        },
+        {
+          "id": "prior",
+          "entity": "Qualcomm・QCT",
+          "metric": "携帯端末向け売上高",
+          "periodStart": "2025-06-30",
+          "periodEnd": "2025-09-28",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "QCTの製品用途別に開示された携帯端末向け売上高。13週の第4四半期実績同士。QTLや連結売上と区別。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "Qualcomm・QCT",
+          "metric": "携帯端末向け売上高",
+          "periodStart": "2026-06-29",
+          "periodEnd": "2026-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "QCTの製品用途別に開示された携帯端末向け売上高。13週の第4四半期実績同士。QTLや連結売上と区別。",
+          "value": 5137,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000127/qcom092726erex991.htm",
+            "publishedOn": "2026-11-04",
+            "locator": "Exhibit 99.1、QCT Revenue Streams、Fourth Quarter 2026列のHandsets行。期末はConsolidated Statements of OperationsのThree Months Ended列、期首は直前四半期末翌日。",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "Qualcomm・QCT",
+          "metric": "携帯端末向け売上高",
+          "periodStart": "2025-06-30",
+          "periodEnd": "2025-09-28",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "QCTの製品用途別に開示された携帯端末向け売上高。13週の第4四半期実績同士。QTLや連結売上と区別。",
+          "value": 6961,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000127/qcom092726erex991.htm",
+            "publishedOn": "2026-11-04",
+            "locator": "Exhibit 99.1、QCT Revenue Streams、Fourth Quarter 2025列のHandsets行。期末はConsolidated Statements of OperationsのThree Months Ended列、期首は直前四半期末翌日。",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "year-over-year",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "(当期値÷比較対象値−1)×100。単位は%。",
+          "precision": 1,
+          "value": -26.2
+        }
+      ],
+      "claim": "クアルコムの2026年9月27日終了の第4四半期、QCTの携帯端末向け売上高は5,137百万米ドルだった。2025年9月28日終了の前年同期は6,961百万米ドルで、26.2%減った。いずれも同社の用途別売上実績で、ライセンス事業や連結全体の数字とは区別する。"
+    },
+    {
+      "id": "qct-automotive",
+      "question": "QCTの車載向け売上高は同じ第4四半期でどの程度変化したか。",
+      "definition": "QCTの製品用途別に開示された車載向け売上高。13週の第4四半期実績同士。QTLや連結売上と区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "Qualcomm・QCT",
+          "metric": "車載向け売上高",
+          "periodStart": "2026-06-29",
+          "periodEnd": "2026-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "QCTの製品用途別に開示された車載向け売上高。13週の第4四半期実績同士。QTLや連結売上と区別。"
+        },
+        {
+          "id": "prior",
+          "entity": "Qualcomm・QCT",
+          "metric": "車載向け売上高",
+          "periodStart": "2025-06-30",
+          "periodEnd": "2025-09-28",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "QCTの製品用途別に開示された車載向け売上高。13週の第4四半期実績同士。QTLや連結売上と区別。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "Qualcomm・QCT",
+          "metric": "車載向け売上高",
+          "periodStart": "2026-06-29",
+          "periodEnd": "2026-09-27",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "QCTの製品用途別に開示された車載向け売上高。13週の第4四半期実績同士。QTLや連結売上と区別。",
+          "value": 1990,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000127/qcom092726erex991.htm",
+            "publishedOn": "2026-11-04",
+            "locator": "Exhibit 99.1、QCT Revenue Streams、Fourth Quarter 2026列のAutomotive行。期末はConsolidated Statements of OperationsのThree Months Ended列、期首は直前四半期末翌日。",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "Qualcomm・QCT",
+          "metric": "車載向け売上高",
+          "periodStart": "2025-06-30",
+          "periodEnd": "2025-09-28",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "QCTの製品用途別に開示された車載向け売上高。13週の第4四半期実績同士。QTLや連結売上と区別。",
+          "value": 1053,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/804328/000080432826000127/qcom092726erex991.htm",
+            "publishedOn": "2026-11-04",
+            "locator": "Exhibit 99.1、QCT Revenue Streams、Fourth Quarter 2025列のAutomotive行。期末はConsolidated Statements of OperationsのThree Months Ended列、期首は直前四半期末翌日。",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "year-over-year",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "(当期値÷比較対象値−1)×100。単位は%。",
+          "precision": 1,
+          "value": 89
+        }
+      ],
+      "claim": "同じ四半期のQCT車載向け売上高は1,990百万米ドル、前年同期は1,053百万米ドルで、89.0%増えた。携帯端末向けと車載向けでは、同じ企業でも需要を映す先が異なる。"
+    },
+    {
+      "id": "toyota-operating-income",
+      "question": "トヨタの上期連結営業利益は前年同期からどの程度変化したか。",
+      "definition": "IFRS連結・4月1日から9月30日までの6か月累計営業利益。会社が開示した報告値で、為替等を調整した値ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "トヨタ自動車",
+          "metric": "連結営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "IFRS連結・4月1日から9月30日までの6か月累計営業利益。会社が開示した報告値で、為替等を調整した値ではない。"
+        },
+        {
+          "id": "prior",
+          "entity": "トヨタ自動車",
+          "metric": "連結営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "IFRS連結・4月1日から9月30日までの6か月累計営業利益。会社が開示した報告値で、為替等を調整した値ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "トヨタ自動車",
+          "metric": "連結営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "IFRS連結・4月1日から9月30日までの6か月累計営業利益。会社が開示した報告値で、為替等を調整した値ではない。",
+          "value": 2191124,
+          "source": {
+            "url": "https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_summary_jp.pdf",
+            "publishedOn": "2026-11-05",
+            "locator": "１．（１）連結経営成績（累計）、2027年3月期中間期行、営業利益・百万円列。",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "トヨタ自動車",
+          "metric": "連結営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "IFRS連結・4月1日から9月30日までの6か月累計営業利益。会社が開示した報告値で、為替等を調整した値ではない。",
+          "value": 2005692,
+          "source": {
+            "url": "https://global.toyota/pages/global_toyota/ir/financial-results/2027_2q_summary_jp.pdf",
+            "publishedOn": "2026-11-05",
+            "locator": "１．（１）連結経営成績（累計）、2026年3月期中間期行、営業利益・百万円列。",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "year-over-year",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "(当期値÷比較対象値−1)×100。単位は%。",
+          "precision": 1,
+          "value": 9.2
+        }
+      ],
+      "claim": "トヨタ自動車が11月5日に発表した2027年3月期上期（2026年4〜9月）のIFRS連結営業利益は2,191,124百万円。前年同期（2025年4〜9月）の2,005,692百万円から9.2%増えた。どちらも日本円建ての上期実績で、通期見通しとは異なる。"
+    },
+    {
+      "id": "sony-operating-forecast",
+      "question": "ソニーは同じ年度の連結営業利益会社予想をどの程度変更したか。",
+      "definition": "IFRS連結・2026年度（2027年3月期）通期営業利益の11月時点と7月時点の会社予想。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "ソニーグループ",
+          "metric": "連結営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円（日本円）",
+          "basis": "company-forecast",
+          "definition": "IFRS連結・2026年度（2027年3月期）通期営業利益の11月時点と7月時点の会社予想。"
+        },
+        {
+          "id": "prior",
+          "entity": "ソニーグループ",
+          "metric": "連結営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円（日本円）",
+          "basis": "company-forecast",
+          "definition": "IFRS連結・2026年度（2027年3月期）通期営業利益の11月時点と7月時点の会社予想。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "ソニーグループ",
+          "metric": "連結営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円（日本円）",
+          "basis": "company-forecast",
+          "definition": "IFRS連結・2026年度（2027年3月期）通期営業利益の11月時点と7月時点の会社予想。",
+          "value": 18700,
+          "source": {
+            "url": "https://www.sony.com/ja/SonyInfo/IR/library/er/pdf/26q2_sonypre.pdf",
+            "publishedOn": "2026-11-05",
+            "locator": "2026年度 連結業績見通し、FY26見通しの11月時点列・営業利益行。",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "ソニーグループ",
+          "metric": "連結営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円（日本円）",
+          "basis": "company-forecast",
+          "definition": "IFRS連結・2026年度（2027年3月期）通期営業利益の11月時点と7月時点の会社予想。",
+          "value": 17200,
+          "source": {
+            "url": "https://www.sony.com/ja/SonyInfo/IR/library/er/pdf/26q2_sonypre.pdf",
+            "publishedOn": "2026-11-05",
+            "locator": "2026年度 連結業績見通し、FY26見通しの7月時点列・営業利益行。",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "revision",
+          "operation": "difference",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "11月会社予想−7月会社予想。単位は億円。",
+          "precision": 0,
+          "value": 1500
+        },
+        {
+          "id": "revision-percent",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "(11月会社予想÷7月会社予想−1)×100。単位は%。",
+          "precision": 1,
+          "value": 8.7
+        }
+      ],
+      "claim": "ソニーグループは11月5日、2027年3月期（2026年4月〜2027年3月）の連結営業利益の会社予想を、7月時点の1兆7,200億円から1兆8,700億円へ引き上げた。修正幅は1,500億円、従来予想比8.7%。同じ年度・同じ利益項目の会社予想同士を比べたもので、実績や市場予想との比較ではない。"
+    },
+    {
+      "id": "boe-bank-rate",
+      "question": "英国のBank Rateは直前の決定から何ポイント変化したか。",
+      "definition": "MPCの公表決定によるBank Rate。9月の決定と11月の決定を比較し、市場金利や将来の予想と区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "イングランド銀行",
+          "metric": "Bank Rate",
+          "periodStart": "2026-11-05",
+          "periodEnd": "2026-11-05",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "MPCの公表決定によるBank Rate。9月の決定と11月の決定を比較し、市場金利や将来の予想と区別。"
+        },
+        {
+          "id": "prior",
+          "entity": "イングランド銀行",
+          "metric": "Bank Rate",
+          "periodStart": "2026-09-17",
+          "periodEnd": "2026-09-17",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "MPCの公表決定によるBank Rate。9月の決定と11月の決定を比較し、市場金利や将来の予想と区別。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "イングランド銀行",
+          "metric": "Bank Rate",
+          "periodStart": "2026-11-05",
+          "periodEnd": "2026-11-05",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "MPCの公表決定によるBank Rate。9月の決定と11月の決定を比較し、市場金利や将来の予想と区別。",
+          "value": 4,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+            "publishedOn": "2026-11-05",
+            "locator": "Monetary Policy Summary, November 2026、冒頭の決定文。",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "イングランド銀行",
+          "metric": "Bank Rate",
+          "periodStart": "2026-09-17",
+          "periodEnd": "2026-09-17",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "MPCの公表決定によるBank Rate。9月の決定と11月の決定を比較し、市場金利や将来の予想と区別。",
+          "value": 3.75,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+            "publishedOn": "2026-09-17",
+            "locator": "Monetary Policy Summary, September 2026、冒頭の据え置き決定文。",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "rate-step",
+          "operation": "difference",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "11月決定値−9月決定値。単位はパーセントポイント。",
+          "precision": 2,
+          "value": 0.25
+        }
+      ],
+      "claim": "イングランド銀行は11月5日公表の決定で、政策金利Bank Rateを9月に据え置いた3.75%から4.00%へ、0.25ポイント引き上げた。これは決定済みの政策金利の比較で、国債利回りや次回会合の市場予想ではない。"
+    },
+    {
+      "id": "us-index-exact-close-to-close",
+      "question": "11月5日のNASDAQ総合とS&P 500の通常取引終値は前日終値比で正確に何%下落したか。",
+      "definition": "各指数ごとに米東部時間の通常取引終了時点の確定値同士を比べる。場中値、速報値、指数の別系列を混ぜない。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "comp-current",
+          "entity": "NASDAQ総合",
+          "metric": "通常取引の確定終値",
+          "periodStart": "2026-11-05",
+          "periodEnd": "2026-11-05",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "同一指数の米東部時間通常取引の確定終値。配当込みや場中値ではない。"
+        },
+        {
+          "id": "comp-prior",
+          "entity": "NASDAQ総合",
+          "metric": "通常取引の確定終値",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2026-11-04",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "同一指数の米東部時間通常取引の確定終値。配当込みや場中値ではない。"
+        },
+        {
+          "id": "sp-current",
+          "entity": "S&P 500",
+          "metric": "通常取引の確定終値",
+          "periodStart": "2026-11-05",
+          "periodEnd": "2026-11-05",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "同一指数の米東部時間通常取引の確定終値。配当込みや場中値ではない。"
+        },
+        {
+          "id": "sp-prior",
+          "entity": "S&P 500",
+          "metric": "通常取引の確定終値",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2026-11-04",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "同一指数の米東部時間通常取引の確定終値。配当込みや場中値ではない。"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "Reuters取引終了版は速報値と明記。Nasdaq公式のOverviewは取得経路で同日表示の値が異なり、Historyで確定行を確認できなかった。S&P DJI公式ページでも当日の確定終値を確認できず、主要報道の速報値を補完値として採用しない。本文には方向と報道された銘柄群のみ残した。",
+      "omittedClaim": "11月5日のNASDAQ総合とS&P 500の確定終値から、厳密な日次下落率を算出した。"
+    }
+  ]
+}
