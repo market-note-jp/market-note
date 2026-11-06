@@ -1,0 +1,4377 @@
+{
+  "version": 1,
+  "articleSlug": "company-keyence-2026-11-06",
+  "articleSha256": "990190d7c99572523bf91266b591a87ad3b56843862edf7be4b7a572ecb75bba",
+  "checkedAt": "2026-11-06T11:08:27Z",
+  "informationCutoff": "2026-11-06T19:55:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "本文全体の重要数値・比較を原資料で確認。日本基準連結、3月20日終了期。2023年の基準変更と2026年の連結拡大、会社表示の切捨てと四捨五入を区別。上期CF・財務5年・5%刻み業種表をPDF画像でも目視。金融運用と設備現金支出、現金同等物、分割前後配当、上期後の買収を分けた。為替影響について説明資料PDF14頁の4–9月期表記を画像で再確認し、本文・入力期間を修正。連結上期報告増益額との参考比較に限定。計算再検証。未確定の純粋成長・AI売上・完全FCFは保留し本文から排除。株価・市場予想・買収価額や回収利回りは未判定。統合担当が全route sourceを含む最終digestを計算する。",
+  "comparisons": [
+    {
+      "id": "financial-2022",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "| 2022年 | 7,551.74億円 | 4,180.45億円 | 55.36% | 2,714.76億円 | 14.85% |",
+      "requiredInputs": [
+        {
+          "id": "s2022",
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2021-03-21",
+          "periodEnd": "2022-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op2022",
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2021-03-21",
+          "periodEnd": "2022-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "cf2022",
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2021-03-21",
+          "periodEnd": "2022-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー"
+        },
+        {
+          "id": "roe2022",
+          "entity": "キーエンス連結",
+          "metric": "自己資本利益率",
+          "periodStart": "2021-03-21",
+          "periodEnd": "2022-03-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "自己資本利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s2022",
+          "value": 755174,
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2021-03-21",
+          "periodEnd": "2022-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・売上高",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "op2022",
+          "value": 418045,
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2021-03-21",
+          "periodEnd": "2022-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/EarningsRelease_202304_ja.pdf",
+            "publishedOn": "2023-04-27",
+            "locator": "PDF8頁・営業利益",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "cf2022",
+          "value": 271476,
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2021-03-21",
+          "periodEnd": "2022-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・営業活動によるキャッシュ・フロー",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "roe2022",
+          "value": 14.85,
+          "entity": "キーエンス連結",
+          "metric": "自己資本利益率",
+          "periodStart": "2021-03-21",
+          "periodEnd": "2022-03-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "自己資本利益率",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・自己資本利益率",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin2022",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op2022",
+            "s2022"
+          ],
+          "definition": "営業利益÷売上高×100",
+          "precision": 2,
+          "value": 55.36
+        }
+      ]
+    },
+    {
+      "id": "financial-2023",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "| 2023年 | 9,224.22億円 | 4,989.14億円 | 54.09% | 3,026.28億円 | 15.56% |",
+      "requiredInputs": [
+        {
+          "id": "s2023",
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2022-03-21",
+          "periodEnd": "2023-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op2023",
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2022-03-21",
+          "periodEnd": "2023-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "cf2023",
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2022-03-21",
+          "periodEnd": "2023-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー"
+        },
+        {
+          "id": "roe2023",
+          "entity": "キーエンス連結",
+          "metric": "自己資本利益率",
+          "periodStart": "2022-03-21",
+          "periodEnd": "2023-03-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "自己資本利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s2023",
+          "value": 922422,
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2022-03-21",
+          "periodEnd": "2023-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・売上高",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "op2023",
+          "value": 498914,
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2022-03-21",
+          "periodEnd": "2023-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/EarningsRelease_202304_ja.pdf",
+            "publishedOn": "2023-04-27",
+            "locator": "PDF8頁・営業利益",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "cf2023",
+          "value": 302628,
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2022-03-21",
+          "periodEnd": "2023-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・営業活動によるキャッシュ・フロー",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "roe2023",
+          "value": 15.56,
+          "entity": "キーエンス連結",
+          "metric": "自己資本利益率",
+          "periodStart": "2022-03-21",
+          "periodEnd": "2023-03-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "自己資本利益率",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・自己資本利益率",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin2023",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op2023",
+            "s2023"
+          ],
+          "definition": "営業利益÷売上高×100",
+          "precision": 2,
+          "value": 54.09
+        }
+      ]
+    },
+    {
+      "id": "financial-2024",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "| 2024年 | 9,672.88億円 | 4,950.14億円 | 51.18% | 3,879.16億円 | 13.95% |",
+      "requiredInputs": [
+        {
+          "id": "s2024",
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2023-03-21",
+          "periodEnd": "2024-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op2024",
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2023-03-21",
+          "periodEnd": "2024-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "cf2024",
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2023-03-21",
+          "periodEnd": "2024-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー"
+        },
+        {
+          "id": "roe2024",
+          "entity": "キーエンス連結",
+          "metric": "自己資本利益率",
+          "periodStart": "2023-03-21",
+          "periodEnd": "2024-03-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "自己資本利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s2024",
+          "value": 967288,
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2023-03-21",
+          "periodEnd": "2024-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・売上高",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "op2024",
+          "value": 495014,
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2023-03-21",
+          "periodEnd": "2024-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202506_ja.pdf",
+            "publishedOn": "2025-06-16",
+            "locator": "PDF37頁・営業利益",
+            "kind": "primary",
+            "pdfPage": 37
+          }
+        },
+        {
+          "id": "cf2024",
+          "value": 387916,
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2023-03-21",
+          "periodEnd": "2024-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・営業活動によるキャッシュ・フロー",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "roe2024",
+          "value": 13.95,
+          "entity": "キーエンス連結",
+          "metric": "自己資本利益率",
+          "periodStart": "2023-03-21",
+          "periodEnd": "2024-03-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "自己資本利益率",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・自己資本利益率",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin2024",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op2024",
+            "s2024"
+          ],
+          "definition": "営業利益÷売上高×100",
+          "precision": 2,
+          "value": 51.18
+        }
+      ]
+    },
+    {
+      "id": "financial-2025",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "| 2025年 | 10,591.45億円 | 5,497.75億円 | 51.91% | 4,095.22億円 | 13.48% |",
+      "requiredInputs": [
+        {
+          "id": "s2025",
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2024-03-21",
+          "periodEnd": "2025-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op2025",
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2024-03-21",
+          "periodEnd": "2025-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "cf2025",
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2024-03-21",
+          "periodEnd": "2025-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー"
+        },
+        {
+          "id": "roe2025",
+          "entity": "キーエンス連結",
+          "metric": "自己資本利益率",
+          "periodStart": "2024-03-21",
+          "periodEnd": "2025-03-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "自己資本利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s2025",
+          "value": 1059145,
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2024-03-21",
+          "periodEnd": "2025-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・売上高",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "op2025",
+          "value": 549775,
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2024-03-21",
+          "periodEnd": "2025-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF38頁・営業利益",
+            "kind": "primary",
+            "pdfPage": 38
+          }
+        },
+        {
+          "id": "cf2025",
+          "value": 409522,
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2024-03-21",
+          "periodEnd": "2025-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・営業活動によるキャッシュ・フロー",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "roe2025",
+          "value": 13.48,
+          "entity": "キーエンス連結",
+          "metric": "自己資本利益率",
+          "periodStart": "2024-03-21",
+          "periodEnd": "2025-03-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "自己資本利益率",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・自己資本利益率",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin2025",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op2025",
+            "s2025"
+          ],
+          "definition": "営業利益÷売上高×100",
+          "precision": 2,
+          "value": 51.91
+        }
+      ]
+    },
+    {
+      "id": "financial-2026",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "| 2026年 | 11,692.89億円 | 5,957.59億円 | 50.95% | 4,306.80億円 | 13.53% |",
+      "requiredInputs": [
+        {
+          "id": "s2026",
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op2026",
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "cf2026",
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー"
+        },
+        {
+          "id": "roe2026",
+          "entity": "キーエンス連結",
+          "metric": "自己資本利益率",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "自己資本利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s2026",
+          "value": 1169289,
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・売上高",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "op2026",
+          "value": 595759,
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF38頁・営業利益",
+            "kind": "primary",
+            "pdfPage": 38
+          }
+        },
+        {
+          "id": "cf2026",
+          "value": 430680,
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・営業活動によるキャッシュ・フロー",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "roe2026",
+          "value": 13.53,
+          "entity": "キーエンス連結",
+          "metric": "自己資本利益率",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "自己資本利益率",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・自己資本利益率",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin2026",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op2026",
+            "s2026"
+          ],
+          "definition": "営業利益÷売上高×100",
+          "precision": 2,
+          "value": 50.95
+        }
+      ]
+    },
+    {
+      "id": "cash-five-years",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "5年間の営業CF合計は1兆8,022.22億円で、同期間の親会社純利益合計1兆8,798.06億円の95.9%に相当する。",
+      "requiredInputs": [
+        {
+          "id": "cf2022",
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2021-03-21",
+          "periodEnd": "2022-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー"
+        },
+        {
+          "id": "cf2023",
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2022-03-21",
+          "periodEnd": "2023-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー"
+        },
+        {
+          "id": "cf2024",
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2023-03-21",
+          "periodEnd": "2024-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー"
+        },
+        {
+          "id": "cf2025",
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2024-03-21",
+          "periodEnd": "2025-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー"
+        },
+        {
+          "id": "cf2026",
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー"
+        },
+        {
+          "id": "n2022",
+          "entity": "キーエンス連結",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2021-03-21",
+          "periodEnd": "2022-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主に帰属する当期純利益"
+        },
+        {
+          "id": "n2023",
+          "entity": "キーエンス連結",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2022-03-21",
+          "periodEnd": "2023-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主に帰属する当期純利益"
+        },
+        {
+          "id": "n2024",
+          "entity": "キーエンス連結",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2023-03-21",
+          "periodEnd": "2024-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主に帰属する当期純利益"
+        },
+        {
+          "id": "n2025",
+          "entity": "キーエンス連結",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2024-03-21",
+          "periodEnd": "2025-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主に帰属する当期純利益"
+        },
+        {
+          "id": "n2026",
+          "entity": "キーエンス連結",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主に帰属する当期純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cf2022",
+          "value": 271476,
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2021-03-21",
+          "periodEnd": "2022-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・営業活動によるキャッシュ・フロー",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "cf2023",
+          "value": 302628,
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2022-03-21",
+          "periodEnd": "2023-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・営業活動によるキャッシュ・フロー",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "cf2024",
+          "value": 387916,
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2023-03-21",
+          "periodEnd": "2024-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・営業活動によるキャッシュ・フロー",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "cf2025",
+          "value": 409522,
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2024-03-21",
+          "periodEnd": "2025-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・営業活動によるキャッシュ・フロー",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "cf2026",
+          "value": 430680,
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・営業活動によるキャッシュ・フロー",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "n2022",
+          "value": 303360,
+          "entity": "キーエンス連結",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2021-03-21",
+          "periodEnd": "2022-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主に帰属する当期純利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・親会社株主に帰属する当期純利益",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "n2023",
+          "value": 362963,
+          "entity": "キーエンス連結",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2022-03-21",
+          "periodEnd": "2023-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主に帰属する当期純利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・親会社株主に帰属する当期純利益",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "n2024",
+          "value": 369642,
+          "entity": "キーエンス連結",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2023-03-21",
+          "periodEnd": "2024-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主に帰属する当期純利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・親会社株主に帰属する当期純利益",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "n2025",
+          "value": 398656,
+          "entity": "キーエンス連結",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2024-03-21",
+          "periodEnd": "2025-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主に帰属する当期純利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・親会社株主に帰属する当期純利益",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "n2026",
+          "value": 445185,
+          "entity": "キーエンス連結",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主に帰属する当期純利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・親会社株主に帰属する当期純利益",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "cf-total",
+          "operation": "sum",
+          "inputs": [
+            "cf2022",
+            "cf2023",
+            "cf2024",
+            "cf2025",
+            "cf2026"
+          ],
+          "definition": "5決算期の営業CF合計",
+          "precision": 0,
+          "value": 1802222
+        },
+        {
+          "id": "net-total",
+          "operation": "sum",
+          "inputs": [
+            "n2022",
+            "n2023",
+            "n2024",
+            "n2025",
+            "n2026"
+          ],
+          "definition": "5決算期の親会社純利益合計",
+          "precision": 0,
+          "value": 1879806
+        },
+        {
+          "id": "conversion",
+          "operation": "ratio-percent",
+          "inputs": [
+            "cf-total",
+            "net-total"
+          ],
+          "definition": "営業CF合計÷純利益合計×100。製品事業だけの回収率ではない",
+          "precision": 1,
+          "value": 95.9
+        }
+      ]
+    },
+    {
+      "id": "h1-sales",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "| 売上高 | 5,453.00億円 | 7,353.99億円 | +34.9% |",
+      "requiredInputs": [
+        {
+          "id": "new-sales",
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "old-sales",
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "new-sales",
+          "value": 735399,
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・売上高",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "old-sales",
+          "value": 545300,
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・売上高",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "sales-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "new-sales",
+            "old-sales"
+          ],
+          "definition": "同じ上期の前年同期比",
+          "precision": 1,
+          "value": 34.9
+        }
+      ]
+    },
+    {
+      "id": "h1-op",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "| 営業利益 | 2,721.79億円 | 4,082.62億円 | +50.0% |",
+      "requiredInputs": [
+        {
+          "id": "new-op",
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "old-op",
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "new-op",
+          "value": 408262,
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・営業利益",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "old-op",
+          "value": 272179,
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・営業利益",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "op-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "new-op",
+            "old-op"
+          ],
+          "definition": "同じ上期の前年同期比",
+          "precision": 1,
+          "value": 50
+        }
+      ]
+    },
+    {
+      "id": "h1-net",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "| 親会社純利益 | 1,999.59億円 | 2,986.75億円 | +49.4% |",
+      "requiredInputs": [
+        {
+          "id": "new-net",
+          "entity": "キーエンス連結",
+          "metric": "親会社株主に帰属する中間純利益",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主に帰属する中間純利益"
+        },
+        {
+          "id": "old-net",
+          "entity": "キーエンス連結",
+          "metric": "親会社株主に帰属する中間純利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主に帰属する中間純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "new-net",
+          "value": 298675,
+          "entity": "キーエンス連結",
+          "metric": "親会社株主に帰属する中間純利益",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主に帰属する中間純利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・親会社株主に帰属する中間純利益",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "old-net",
+          "value": 199959,
+          "entity": "キーエンス連結",
+          "metric": "親会社株主に帰属する中間純利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主に帰属する中間純利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・親会社株主に帰属する中間純利益",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "net-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "new-net",
+            "old-net"
+          ],
+          "definition": "同じ上期の前年同期比",
+          "precision": 1,
+          "value": 49.4
+        }
+      ]
+    },
+    {
+      "id": "h1-gp-margin",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "| 売上総利益率 | 82.68% | 85.66% | +2.98ポイント |",
+      "requiredInputs": [
+        {
+          "id": "new-gp",
+          "entity": "キーエンス連結",
+          "metric": "売上総利益",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益"
+        },
+        {
+          "id": "new-sales",
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "old-gp",
+          "entity": "キーエンス連結",
+          "metric": "売上総利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益"
+        },
+        {
+          "id": "old-sales",
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "new-gp",
+          "value": 629966,
+          "entity": "キーエンス連結",
+          "metric": "売上総利益",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・売上総利益",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "new-sales",
+          "value": 735399,
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・売上高",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "old-gp",
+          "value": 450878,
+          "entity": "キーエンス連結",
+          "metric": "売上総利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・売上総利益",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "old-sales",
+          "value": 545300,
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・売上高",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "current",
+          "operation": "ratio-percent",
+          "inputs": [
+            "new-gp",
+            "new-sales"
+          ],
+          "definition": "当上期の売上高に対する比率",
+          "precision": 2,
+          "value": 85.66
+        },
+        {
+          "id": "previous",
+          "operation": "ratio-percent",
+          "inputs": [
+            "old-gp",
+            "old-sales"
+          ],
+          "definition": "前年上期の売上高に対する比率",
+          "precision": 2,
+          "value": 82.68
+        },
+        {
+          "id": "difference",
+          "operation": "difference",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "丸め前の率の差、ポイント",
+          "precision": 2,
+          "value": 2.98
+        }
+      ]
+    },
+    {
+      "id": "h1-sga-margin",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "| 販管費率 | 32.77% | 30.15% | -2.62ポイント |",
+      "requiredInputs": [
+        {
+          "id": "new-sga",
+          "entity": "キーエンス連結",
+          "metric": "販売費及び一般管理費",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "販売費及び一般管理費"
+        },
+        {
+          "id": "new-sales",
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "old-sga",
+          "entity": "キーエンス連結",
+          "metric": "販売費及び一般管理費",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "販売費及び一般管理費"
+        },
+        {
+          "id": "old-sales",
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "new-sga",
+          "value": 221703,
+          "entity": "キーエンス連結",
+          "metric": "販売費及び一般管理費",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "販売費及び一般管理費",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・販売費及び一般管理費",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "new-sales",
+          "value": 735399,
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・売上高",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "old-sga",
+          "value": 178698,
+          "entity": "キーエンス連結",
+          "metric": "販売費及び一般管理費",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "販売費及び一般管理費",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・販売費及び一般管理費",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "old-sales",
+          "value": 545300,
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・売上高",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "current",
+          "operation": "ratio-percent",
+          "inputs": [
+            "new-sga",
+            "new-sales"
+          ],
+          "definition": "当上期の売上高に対する比率",
+          "precision": 2,
+          "value": 30.15
+        },
+        {
+          "id": "previous",
+          "operation": "ratio-percent",
+          "inputs": [
+            "old-sga",
+            "old-sales"
+          ],
+          "definition": "前年上期の売上高に対する比率",
+          "precision": 2,
+          "value": 32.77
+        },
+        {
+          "id": "difference",
+          "operation": "difference",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "丸め前の率の差、ポイント",
+          "precision": 2,
+          "value": -2.62
+        }
+      ]
+    },
+    {
+      "id": "h1-op-margin",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "| 営業利益率 | 49.91% | 55.52% | +5.60ポイント |",
+      "requiredInputs": [
+        {
+          "id": "new-op",
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "new-sales",
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "old-op",
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "old-sales",
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "new-op",
+          "value": 408262,
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・営業利益",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "new-sales",
+          "value": 735399,
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・売上高",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "old-op",
+          "value": 272179,
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・営業利益",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "old-sales",
+          "value": 545300,
+          "entity": "キーエンス連結",
+          "metric": "売上高",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・売上高",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "current",
+          "operation": "ratio-percent",
+          "inputs": [
+            "new-op",
+            "new-sales"
+          ],
+          "definition": "当上期の売上高に対する比率",
+          "precision": 2,
+          "value": 55.52
+        },
+        {
+          "id": "previous",
+          "operation": "ratio-percent",
+          "inputs": [
+            "old-op",
+            "old-sales"
+          ],
+          "definition": "前年上期の売上高に対する比率",
+          "precision": 2,
+          "value": 49.91
+        },
+        {
+          "id": "difference",
+          "operation": "difference",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "丸め前の率の差、ポイント",
+          "precision": 2,
+          "value": 5.6
+        }
+      ]
+    },
+    {
+      "id": "gross-absorption",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "売上総利益は1,790.88億円増えた。販管費も430.05億円増えたが、その増加を吸収して営業利益が拡大した。",
+      "requiredInputs": [
+        {
+          "id": "new-gp",
+          "entity": "キーエンス連結",
+          "metric": "売上総利益",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益"
+        },
+        {
+          "id": "old-gp",
+          "entity": "キーエンス連結",
+          "metric": "売上総利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益"
+        },
+        {
+          "id": "new-sga",
+          "entity": "キーエンス連結",
+          "metric": "販売費及び一般管理費",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "販売費及び一般管理費"
+        },
+        {
+          "id": "old-sga",
+          "entity": "キーエンス連結",
+          "metric": "販売費及び一般管理費",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "販売費及び一般管理費"
+        }
+      ],
+      "observations": [
+        {
+          "id": "new-gp",
+          "value": 629966,
+          "entity": "キーエンス連結",
+          "metric": "売上総利益",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・売上総利益",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "old-gp",
+          "value": 450878,
+          "entity": "キーエンス連結",
+          "metric": "売上総利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・売上総利益",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "new-sga",
+          "value": 221703,
+          "entity": "キーエンス連結",
+          "metric": "販売費及び一般管理費",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "販売費及び一般管理費",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・販売費及び一般管理費",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "old-sga",
+          "value": 178698,
+          "entity": "キーエンス連結",
+          "metric": "販売費及び一般管理費",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "販売費及び一般管理費",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・販売費及び一般管理費",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "gross-increase",
+          "operation": "difference",
+          "inputs": [
+            "new-gp",
+            "old-gp"
+          ],
+          "definition": "売上総利益の前年差",
+          "precision": 0,
+          "value": 179088
+        },
+        {
+          "id": "sga-increase",
+          "operation": "difference",
+          "inputs": [
+            "new-sga",
+            "old-sga"
+          ],
+          "definition": "販管費の前年差",
+          "precision": 0,
+          "value": 43005
+        }
+      ]
+    },
+    {
+      "id": "cost-items",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "販管費の主要項目である給料手当賞与、賞与引当金繰入額、研究開発費はいずれも前年上期を上回っている。",
+      "requiredInputs": [
+        {
+          "id": "wage-new",
+          "entity": "キーエンス連結",
+          "metric": "役員報酬及び従業員給料手当賞与",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "役員報酬及び従業員給料手当賞与"
+        },
+        {
+          "id": "wage-old",
+          "entity": "キーエンス連結",
+          "metric": "役員報酬及び従業員給料手当賞与",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "役員報酬及び従業員給料手当賞与"
+        },
+        {
+          "id": "bonus-new",
+          "entity": "キーエンス連結",
+          "metric": "賞与引当金繰入額",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "賞与引当金繰入額"
+        },
+        {
+          "id": "bonus-old",
+          "entity": "キーエンス連結",
+          "metric": "賞与引当金繰入額",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "賞与引当金繰入額"
+        },
+        {
+          "id": "rd-new",
+          "entity": "キーエンス連結",
+          "metric": "研究開発費",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "研究開発費"
+        },
+        {
+          "id": "rd-old",
+          "entity": "キーエンス連結",
+          "metric": "研究開発費",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "研究開発費"
+        }
+      ],
+      "observations": [
+        {
+          "id": "wage-new",
+          "value": 88670,
+          "entity": "キーエンス連結",
+          "metric": "役員報酬及び従業員給料手当賞与",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "役員報酬及び従業員給料手当賞与",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF17頁・役員報酬及び従業員給料手当賞与",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "wage-old",
+          "value": 71491,
+          "entity": "キーエンス連結",
+          "metric": "役員報酬及び従業員給料手当賞与",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "役員報酬及び従業員給料手当賞与",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF17頁・役員報酬及び従業員給料手当賞与",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "bonus-new",
+          "value": 25815,
+          "entity": "キーエンス連結",
+          "metric": "賞与引当金繰入額",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "賞与引当金繰入額",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF17頁・賞与引当金繰入額",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "bonus-old",
+          "value": 16916,
+          "entity": "キーエンス連結",
+          "metric": "賞与引当金繰入額",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "賞与引当金繰入額",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF17頁・賞与引当金繰入額",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "rd-new",
+          "value": 17466,
+          "entity": "キーエンス連結",
+          "metric": "研究開発費",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "研究開発費",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF17頁・研究開発費",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "rd-old",
+          "value": 16582,
+          "entity": "キーエンス連結",
+          "metric": "研究開発費",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "研究開発費",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF17頁・研究開発費",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q2-margin",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "会社説明資料では、単独第2四半期の営業利益率も前年の50.3%から56.9%へ上昇している。",
+      "requiredInputs": [
+        {
+          "id": "q2-now",
+          "entity": "キーエンス連結",
+          "metric": "会社開示単独第2四半期営業利益率",
+          "periodStart": "2026-06-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示単独第2四半期営業利益率"
+        },
+        {
+          "id": "q2-old",
+          "entity": "キーエンス連結",
+          "metric": "会社開示単独第2四半期営業利益率",
+          "periodStart": "2025-06-21",
+          "periodEnd": "2025-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示単独第2四半期営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "q2-now",
+          "value": 56.9,
+          "entity": "キーエンス連結",
+          "metric": "会社開示単独第2四半期営業利益率",
+          "periodStart": "2026-06-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示単独第2四半期営業利益率",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/FinancialResults_202610_ja.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF4頁・会社開示単独第2四半期営業利益率",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "q2-old",
+          "value": 50.3,
+          "entity": "キーエンス連結",
+          "metric": "会社開示単独第2四半期営業利益率",
+          "periodStart": "2025-06-21",
+          "periodEnd": "2025-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示単独第2四半期営業利益率",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/FinancialResults_202610_ja.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF4頁・会社開示単独第2四半期営業利益率",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "non-extraordinary",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "今回の上期は経常利益と税引前利益がともに4,243.48億円であり、表示上の特別損益が純利益を大きく押し上げた構造ではない。",
+      "requiredInputs": [
+        {
+          "id": "new-ordinary",
+          "entity": "キーエンス連結",
+          "metric": "経常利益",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "経常利益"
+        },
+        {
+          "id": "new-pretax",
+          "entity": "キーエンス連結",
+          "metric": "税金等調整前中間純利益",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税金等調整前中間純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "new-ordinary",
+          "value": 424348,
+          "entity": "キーエンス連結",
+          "metric": "経常利益",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "経常利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・経常利益",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "new-pretax",
+          "value": 424348,
+          "entity": "キーエンス連結",
+          "metric": "税金等調整前中間純利益",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税金等調整前中間純利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・税金等調整前中間純利益",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "region-growth",
+      "question": "会社開示の地域別前年同期比。現地通貨ベースと円換算を分け、合算しない。連結会計上期に対応した会社説明資料の数値。",
+      "definition": "会社開示の地域別前年同期比。現地通貨ベースと円換算を分け、合算しない。連結会計上期に対応した会社説明資料の数値。",
+      "status": "ready",
+      "claim": "上期の国内売上は21.4%増。海外売上は円換算で41.8%増、現地通貨ベースでは27.3%増だった。海外を現地通貨で分けると、北中南米21.8%増、アジア39.5%増、欧州・その他12.5%増である。",
+      "requiredInputs": [
+        {
+          "id": "domestic",
+          "entity": "キーエンス連結",
+          "metric": "国内売上高前年同期比",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "国内売上高前年同期比"
+        },
+        {
+          "id": "foreign-jpy",
+          "entity": "キーエンス連結",
+          "metric": "海外売上高前年同期比・円換算",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外売上高前年同期比・円換算"
+        },
+        {
+          "id": "foreign-local",
+          "entity": "キーエンス連結",
+          "metric": "海外売上高前年同期比・現地通貨",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外売上高前年同期比・現地通貨"
+        },
+        {
+          "id": "americas",
+          "entity": "キーエンス連結",
+          "metric": "北中南米売上高前年同期比・現地通貨",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北中南米売上高前年同期比・現地通貨"
+        },
+        {
+          "id": "asia",
+          "entity": "キーエンス連結",
+          "metric": "アジア売上高前年同期比・現地通貨",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "アジア売上高前年同期比・現地通貨"
+        },
+        {
+          "id": "europe",
+          "entity": "キーエンス連結",
+          "metric": "欧州その他売上高前年同期比・現地通貨",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "欧州その他売上高前年同期比・現地通貨"
+        }
+      ],
+      "observations": [
+        {
+          "id": "domestic",
+          "value": 21.4,
+          "entity": "キーエンス連結",
+          "metric": "国内売上高前年同期比",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "国内売上高前年同期比",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/FinancialResults_202610_ja.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF5頁・国内売上高前年同期比",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "foreign-jpy",
+          "value": 41.8,
+          "entity": "キーエンス連結",
+          "metric": "海外売上高前年同期比・円換算",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外売上高前年同期比・円換算",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/FinancialResults_202610_ja.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF5頁・海外売上高前年同期比・円換算",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "foreign-local",
+          "value": 27.3,
+          "entity": "キーエンス連結",
+          "metric": "海外売上高前年同期比・現地通貨",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外売上高前年同期比・現地通貨",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/FinancialResults_202610_ja.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF5頁・海外売上高前年同期比・現地通貨",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "americas",
+          "value": 21.8,
+          "entity": "キーエンス連結",
+          "metric": "北中南米売上高前年同期比・現地通貨",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北中南米売上高前年同期比・現地通貨",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/FinancialResults_202610_ja.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF5頁・北中南米売上高前年同期比・現地通貨",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "asia",
+          "value": 39.5,
+          "entity": "キーエンス連結",
+          "metric": "アジア売上高前年同期比・現地通貨",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "アジア売上高前年同期比・現地通貨",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/FinancialResults_202610_ja.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF5頁・アジア売上高前年同期比・現地通貨",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "europe",
+          "value": 12.5,
+          "entity": "キーエンス連結",
+          "metric": "欧州その他売上高前年同期比・現地通貨",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "欧州その他売上高前年同期比・現地通貨",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/FinancialResults_202610_ja.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF5頁・欧州その他売上高前年同期比・現地通貨",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "currency-effect",
+      "question": "説明資料が4–9月期と表記する概算為替影響と、3月21日〜9月20日の連結上期報告増益額との参考比較。為替入力の期間日は会社の月表記の範囲として格納し、日単位算定期間は未開示。連結会計期間との厳密な一致や厳密な増益寄与率は主張しない。会社の調整後利益や数量増加率ではない。",
+      "definition": "説明資料が4–9月期と表記する概算為替影響と、3月21日〜9月20日の連結上期報告増益額との参考比較。為替入力の期間日は会社の月表記の範囲として格納し、日単位算定期間は未開示。連結会計期間との厳密な一致や厳密な増益寄与率は主張しない。会社の調整後利益や数量増加率ではない。",
+      "status": "ready",
+      "claim": "会社説明資料が「4〜9月期」と表記する為替影響の概算は、売上高で約519億円、営業利益で約384億円の押し上げ。連結上期（3月21日〜9月20日）の報告営業利益増加額1,360.83億円との参考比較では、後者は約28.2%に相当する。",
+      "requiredInputs": [
+        {
+          "id": "fx-sales",
+          "entity": "キーエンス連結",
+          "metric": "売上高為替影響額・会社概算",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料が4–9月期と表記する売上高為替影響の概算。periodStart/Endは資料に示された月範囲の初日・末日を格納したもの。資料は日単位の算定対象期間を明示しておらず、連結会計上期と厳密に同一とは扱わない。"
+        },
+        {
+          "id": "fx-op",
+          "entity": "キーエンス連結",
+          "metric": "営業利益為替影響額・会社概算",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料が4–9月期と表記する営業利益為替影響の概算。periodStart/Endは資料に示された月範囲の初日・末日を格納したもの。資料は日単位の算定対象期間を明示しておらず、連結会計上期と厳密に同一とは扱わない。"
+        },
+        {
+          "id": "new-op",
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "old-op",
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fx-sales",
+          "value": 51900,
+          "entity": "キーエンス連結",
+          "metric": "売上高為替影響額・会社概算",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料が4–9月期と表記する売上高為替影響の概算。periodStart/Endは資料に示された月範囲の初日・末日を格納したもの。資料は日単位の算定対象期間を明示しておらず、連結会計上期と厳密に同一とは扱わない。",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/FinancialResults_202610_ja.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF14頁・売上高為替影響額・会社概算",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "fx-op",
+          "value": 38400,
+          "entity": "キーエンス連結",
+          "metric": "営業利益為替影響額・会社概算",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社説明資料が4–9月期と表記する営業利益為替影響の概算。periodStart/Endは資料に示された月範囲の初日・末日を格納したもの。資料は日単位の算定対象期間を明示しておらず、連結会計上期と厳密に同一とは扱わない。",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/FinancialResults_202610_ja.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF14頁・営業利益為替影響額・会社概算",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "new-op",
+          "value": 408262,
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・営業利益",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "old-op",
+          "value": 272179,
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・営業利益",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "op-increase",
+          "operation": "difference",
+          "inputs": [
+            "new-op",
+            "old-op"
+          ],
+          "definition": "報告営業利益の前年差",
+          "precision": 0,
+          "value": 136083
+        },
+        {
+          "id": "fx-share",
+          "operation": "ratio-percent",
+          "inputs": [
+            "fx-op",
+            "op-increase"
+          ],
+          "definition": "会社4–9月期表記の概算為替効果÷連結上期報告営業増益額。期間表記が異なる値の参考比較であり、厳密な寄与率や残りのオーガニック成長を主張しない",
+          "precision": 1,
+          "value": 28.2
+        }
+      ]
+    },
+    {
+      "id": "industry-growth",
+      "question": "会社開示の業種別現地通貨前年同期比。5%刻みの概数で、精密な金額やAI比率に換算しない。",
+      "definition": "会社開示の業種別現地通貨前年同期比。5%刻みの概数で、精密な金額やAI比率に換算しない。",
+      "status": "ready",
+      "claim": "業種別では、海外の半導体・液晶向けが現地通貨で約65%増、電機・精密向けが約35%増と強い。一方、海外の自動車・輸送向けも約10%増、食品・薬品向けも約25%増だった。",
+      "requiredInputs": [
+        {
+          "id": "semi",
+          "entity": "キーエンス連結",
+          "metric": "海外半導体・液晶売上高前年同期比・現地通貨",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外半導体・液晶売上高前年同期比・現地通貨。5%刻みの会社概数"
+        },
+        {
+          "id": "electric",
+          "entity": "キーエンス連結",
+          "metric": "海外電機・精密売上高前年同期比・現地通貨",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外電機・精密売上高前年同期比・現地通貨。5%刻みの会社概数"
+        },
+        {
+          "id": "auto",
+          "entity": "キーエンス連結",
+          "metric": "海外自動車・輸送売上高前年同期比・現地通貨",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外自動車・輸送売上高前年同期比・現地通貨。5%刻みの会社概数"
+        },
+        {
+          "id": "food",
+          "entity": "キーエンス連結",
+          "metric": "海外食品・薬品売上高前年同期比・現地通貨",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外食品・薬品売上高前年同期比・現地通貨。5%刻みの会社概数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "semi",
+          "value": 65,
+          "entity": "キーエンス連結",
+          "metric": "海外半導体・液晶売上高前年同期比・現地通貨",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外半導体・液晶売上高前年同期比・現地通貨。5%刻みの会社概数",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/FinancialResults_202610_ja.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF9頁・海外半導体・液晶売上高前年同期比・現地通貨",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "electric",
+          "value": 35,
+          "entity": "キーエンス連結",
+          "metric": "海外電機・精密売上高前年同期比・現地通貨",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外電機・精密売上高前年同期比・現地通貨。5%刻みの会社概数",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/FinancialResults_202610_ja.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF9頁・海外電機・精密売上高前年同期比・現地通貨",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "auto",
+          "value": 10,
+          "entity": "キーエンス連結",
+          "metric": "海外自動車・輸送売上高前年同期比・現地通貨",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外自動車・輸送売上高前年同期比・現地通貨。5%刻みの会社概数",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/FinancialResults_202610_ja.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF9頁・海外自動車・輸送売上高前年同期比・現地通貨",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "food",
+          "value": 25,
+          "entity": "キーエンス連結",
+          "metric": "海外食品・薬品売上高前年同期比・現地通貨",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外食品・薬品売上高前年同期比・現地通貨。5%刻みの会社概数",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/FinancialResults_202610_ja.pdf",
+            "publishedOn": "2026-10-30",
+            "locator": "PDF9頁・海外食品・薬品売上高前年同期比・現地通貨",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "h1-cf",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "上期営業CFは2,739.88億円で、前年の1,968.82億円から39.2%増えた。",
+      "requiredInputs": [
+        {
+          "id": "h1cf",
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー"
+        },
+        {
+          "id": "oldh1cf",
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー"
+        }
+      ],
+      "observations": [
+        {
+          "id": "h1cf",
+          "value": 273988,
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF16頁・営業活動によるキャッシュ・フロー",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        },
+        {
+          "id": "oldh1cf",
+          "value": 196882,
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF16頁・営業活動によるキャッシュ・フロー",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "h1cf",
+            "oldh1cf"
+          ],
+          "definition": "上期営業CFの前年同期比",
+          "precision": 1,
+          "value": 39.2
+        }
+      ]
+    },
+    {
+      "id": "working-capital",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "この3項目による資金負担は577.61億円増えた。",
+      "requiredInputs": [
+        {
+          "id": "ar-cf",
+          "entity": "キーエンス連結",
+          "metric": "売上債権の増減額",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上債権の増減額。プラス資金増加、マイナス資金減少"
+        },
+        {
+          "id": "ar-old-cf",
+          "entity": "キーエンス連結",
+          "metric": "売上債権の増減額",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上債権の増減額。プラス資金増加、マイナス資金減少"
+        },
+        {
+          "id": "inventory-cf",
+          "entity": "キーエンス連結",
+          "metric": "棚卸資産の増減額",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "棚卸資産の増減額。プラス資金増加、マイナス資金減少"
+        },
+        {
+          "id": "inventory-old-cf",
+          "entity": "キーエンス連結",
+          "metric": "棚卸資産の増減額",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "棚卸資産の増減額。プラス資金増加、マイナス資金減少"
+        },
+        {
+          "id": "payable-cf",
+          "entity": "キーエンス連結",
+          "metric": "仕入債務の増減額",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "仕入債務の増減額。プラス資金増加、マイナス資金減少"
+        },
+        {
+          "id": "payable-old-cf",
+          "entity": "キーエンス連結",
+          "metric": "仕入債務の増減額",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "仕入債務の増減額。プラス資金増加、マイナス資金減少"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ar-cf",
+          "value": -50935,
+          "entity": "キーエンス連結",
+          "metric": "売上債権の増減額",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上債権の増減額。プラス資金増加、マイナス資金減少",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF16頁・売上債権の増減額",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        },
+        {
+          "id": "ar-old-cf",
+          "value": 996,
+          "entity": "キーエンス連結",
+          "metric": "売上債権の増減額",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上債権の増減額。プラス資金増加、マイナス資金減少",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF16頁・売上債権の増減額",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        },
+        {
+          "id": "inventory-cf",
+          "value": -31661,
+          "entity": "キーエンス連結",
+          "metric": "棚卸資産の増減額",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "棚卸資産の増減額。プラス資金増加、マイナス資金減少",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF16頁・棚卸資産の増減額",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        },
+        {
+          "id": "inventory-old-cf",
+          "value": -5624,
+          "entity": "キーエンス連結",
+          "metric": "棚卸資産の増減額",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "棚卸資産の増減額。プラス資金増加、マイナス資金減少",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF16頁・棚卸資産の増減額",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        },
+        {
+          "id": "payable-cf",
+          "value": 20019,
+          "entity": "キーエンス連結",
+          "metric": "仕入債務の増減額",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "仕入債務の増減額。プラス資金増加、マイナス資金減少",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF16頁・仕入債務の増減額",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        },
+        {
+          "id": "payable-old-cf",
+          "value": -188,
+          "entity": "キーエンス連結",
+          "metric": "仕入債務の増減額",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2025-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "仕入債務の増減額。プラス資金増加、マイナス資金減少",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF16頁・仕入債務の増減額",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "current",
+          "operation": "sum",
+          "inputs": [
+            "ar-cf",
+            "inventory-cf",
+            "payable-cf"
+          ],
+          "definition": "当上期3項目合計。その他運転資本は含まない",
+          "precision": 0,
+          "value": -62577
+        },
+        {
+          "id": "previous",
+          "operation": "sum",
+          "inputs": [
+            "ar-old-cf",
+            "inventory-old-cf",
+            "payable-old-cf"
+          ],
+          "definition": "前年上期3項目合計",
+          "precision": 0,
+          "value": -4816
+        },
+        {
+          "id": "increased-outflow",
+          "operation": "difference",
+          "inputs": [
+            "previous",
+            "current"
+          ],
+          "definition": "資金流出負担の増加額",
+          "precision": 0,
+          "value": 57761
+        }
+      ]
+    },
+    {
+      "id": "inventory-balance",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "9月20日の在庫は1,172.87億円で、3月20日の852.73億円を37.5%上回る。その増加320.14億円のうち、原材料の増加が213.96億円を占める。",
+      "requiredInputs": [
+        {
+          "id": "stock-now",
+          "entity": "キーエンス連結",
+          "metric": "棚卸資産",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "棚卸資産"
+        },
+        {
+          "id": "stock-march",
+          "entity": "キーエンス連結",
+          "metric": "棚卸資産",
+          "periodStart": "2026-03-20",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "棚卸資産"
+        },
+        {
+          "id": "raw-now",
+          "entity": "キーエンス連結",
+          "metric": "原材料",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "原材料"
+        },
+        {
+          "id": "raw-march",
+          "entity": "キーエンス連結",
+          "metric": "原材料",
+          "periodStart": "2026-03-20",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "原材料"
+        }
+      ],
+      "observations": [
+        {
+          "id": "stock-now",
+          "value": 117287,
+          "entity": "キーエンス連結",
+          "metric": "棚卸資産",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "棚卸資産",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF13頁・棚卸資産",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "stock-march",
+          "value": 85273,
+          "entity": "キーエンス連結",
+          "metric": "棚卸資産",
+          "periodStart": "2026-03-20",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "棚卸資産",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF13頁・棚卸資産",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "raw-now",
+          "value": 52005,
+          "entity": "キーエンス連結",
+          "metric": "原材料",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "原材料",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF17頁・原材料",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "raw-march",
+          "value": 30609,
+          "entity": "キーエンス連結",
+          "metric": "原材料",
+          "periodStart": "2026-03-20",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "原材料",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF17頁・原材料",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "stock-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "stock-now",
+            "stock-march"
+          ],
+          "definition": "期首比。前年同期比較ではない",
+          "precision": 1,
+          "value": 37.5
+        },
+        {
+          "id": "stock-diff",
+          "operation": "difference",
+          "inputs": [
+            "stock-now",
+            "stock-march"
+          ],
+          "definition": "期首比在庫増加",
+          "precision": 0,
+          "value": 32014
+        },
+        {
+          "id": "raw-diff",
+          "operation": "difference",
+          "inputs": [
+            "raw-now",
+            "raw-march"
+          ],
+          "definition": "原材料増加",
+          "precision": 0,
+          "value": 21396
+        }
+      ]
+    },
+    {
+      "id": "ppe-after-cf",
+      "question": "限定的な有形固定資産取得後CF。無形固定資産、買収、リース等を全部控除したFCFではない。半期と通期を別記し増減比較には使わない。",
+      "definition": "限定的な有形固定資産取得後CF。無形固定資産、買収、リース等を全部控除したFCFではない。半期と通期を別記し増減比較には使わない。",
+      "status": "ready",
+      "claim": "今回上期の営業CFから、有形固定資産取得の現金支出99.77億円を引くと、2,640.11億円が残る。2026年3月期通期は、営業CF4,306.80億円から同支出283.71億円を引き、4,023.09億円だった。",
+      "requiredInputs": [
+        {
+          "id": "h1cf",
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー"
+        },
+        {
+          "id": "h1ppe",
+          "entity": "キーエンス連結",
+          "metric": "有形固定資産取得による支出",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形固定資産取得による支出"
+        },
+        {
+          "id": "cf2026",
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー"
+        },
+        {
+          "id": "fyppe",
+          "entity": "キーエンス連結",
+          "metric": "有形固定資産取得による支出",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形固定資産取得による支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "h1cf",
+          "value": 273988,
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF16頁・営業活動によるキャッシュ・フロー",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        },
+        {
+          "id": "h1ppe",
+          "value": -9977,
+          "entity": "キーエンス連結",
+          "metric": "有形固定資産取得による支出",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形固定資産取得による支出",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF16頁・有形固定資産取得による支出",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        },
+        {
+          "id": "cf2026",
+          "value": 430680,
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・営業活動によるキャッシュ・フロー",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "fyppe",
+          "value": -28371,
+          "entity": "キーエンス連結",
+          "metric": "有形固定資産取得による支出",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形固定資産取得による支出",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF42頁・有形固定資産取得による支出",
+            "kind": "primary",
+            "pdfPage": 42
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "h1-after",
+          "operation": "sum",
+          "inputs": [
+            "h1cf",
+            "h1ppe"
+          ],
+          "definition": "営業CFから有形固定資産取得現金支出だけを控除",
+          "precision": 0,
+          "value": 264011
+        },
+        {
+          "id": "fy-after",
+          "operation": "sum",
+          "inputs": [
+            "cf2026",
+            "fyppe"
+          ],
+          "definition": "通期営業CFから有形固定資産取得現金支出だけを控除",
+          "precision": 0,
+          "value": 402309
+        }
+      ]
+    },
+    {
+      "id": "financial-investing",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "一方、今回上期の営業CFと投資CFを単純合算すると1,419.94億円になる。投資CFには、定期預金の純増による294.01億円、有価証券の純増による910.55億円の資金流出が含まれるためだ。",
+      "requiredInputs": [
+        {
+          "id": "h1cf",
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー"
+        },
+        {
+          "id": "invest-cf",
+          "entity": "キーエンス連結",
+          "metric": "投資活動によるキャッシュ・フロー",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資活動によるキャッシュ・フロー"
+        },
+        {
+          "id": "deposit-cf",
+          "entity": "キーエンス連結",
+          "metric": "定期預金の増減額",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "定期預金の増減額"
+        },
+        {
+          "id": "securities-cf",
+          "entity": "キーエンス連結",
+          "metric": "有価証券の増減額",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有価証券の増減額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "h1cf",
+          "value": 273988,
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF16頁・営業活動によるキャッシュ・フロー",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        },
+        {
+          "id": "invest-cf",
+          "value": -131994,
+          "entity": "キーエンス連結",
+          "metric": "投資活動によるキャッシュ・フロー",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資活動によるキャッシュ・フロー",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF16頁・投資活動によるキャッシュ・フロー",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        },
+        {
+          "id": "deposit-cf",
+          "value": -29401,
+          "entity": "キーエンス連結",
+          "metric": "定期預金の増減額",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "定期預金の増減額",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF16頁・定期預金の増減額",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        },
+        {
+          "id": "securities-cf",
+          "value": -91055,
+          "entity": "キーエンス連結",
+          "metric": "有価証券の増減額",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有価証券の増減額",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF16頁・有価証券の増減額",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "simple-total",
+          "operation": "sum",
+          "inputs": [
+            "h1cf",
+            "invest-cf"
+          ],
+          "definition": "金融運用込みの営業CFと投資CF合計",
+          "precision": 0,
+          "value": 141994
+        }
+      ]
+    },
+    {
+      "id": "capital-growth",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "2022年3月期から2026年3月期に、親会社純利益は3,033.60億円から4,451.85億円へ46.8%増えた。同じ期末間で純資産は2兆1,735.83億円から3兆4,714.72億円へ59.7%増えている。",
+      "requiredInputs": [
+        {
+          "id": "n2022",
+          "entity": "キーエンス連結",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2021-03-21",
+          "periodEnd": "2022-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主に帰属する当期純利益"
+        },
+        {
+          "id": "n2026",
+          "entity": "キーエンス連結",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主に帰属する当期純利益"
+        },
+        {
+          "id": "equity22",
+          "entity": "キーエンス連結",
+          "metric": "純資産",
+          "periodStart": "2022-03-20",
+          "periodEnd": "2022-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "純資産"
+        },
+        {
+          "id": "equity26",
+          "entity": "キーエンス連結",
+          "metric": "純資産",
+          "periodStart": "2026-03-20",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "純資産"
+        },
+        {
+          "id": "roe2022",
+          "entity": "キーエンス連結",
+          "metric": "自己資本利益率",
+          "periodStart": "2021-03-21",
+          "periodEnd": "2022-03-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "自己資本利益率"
+        },
+        {
+          "id": "roe2026",
+          "entity": "キーエンス連結",
+          "metric": "自己資本利益率",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "自己資本利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "n2022",
+          "value": 303360,
+          "entity": "キーエンス連結",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2021-03-21",
+          "periodEnd": "2022-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主に帰属する当期純利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・親会社株主に帰属する当期純利益",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "n2026",
+          "value": 445185,
+          "entity": "キーエンス連結",
+          "metric": "親会社株主に帰属する当期純利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主に帰属する当期純利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・親会社株主に帰属する当期純利益",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "equity22",
+          "value": 2173583,
+          "entity": "キーエンス連結",
+          "metric": "純資産",
+          "periodStart": "2022-03-20",
+          "periodEnd": "2022-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "純資産",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・純資産",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "equity26",
+          "value": 3471472,
+          "entity": "キーエンス連結",
+          "metric": "純資産",
+          "periodStart": "2026-03-20",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "純資産",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・純資産",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "roe2022",
+          "value": 14.85,
+          "entity": "キーエンス連結",
+          "metric": "自己資本利益率",
+          "periodStart": "2021-03-21",
+          "periodEnd": "2022-03-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "自己資本利益率",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・自己資本利益率",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "roe2026",
+          "value": 13.53,
+          "entity": "キーエンス連結",
+          "metric": "自己資本利益率",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "自己資本利益率",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・自己資本利益率",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "net-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "n2026",
+            "n2022"
+          ],
+          "definition": "親会社純利益の4年間変化",
+          "precision": 1,
+          "value": 46.8
+        },
+        {
+          "id": "equity-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "equity26",
+            "equity22"
+          ],
+          "definition": "純資産の4年間変化",
+          "precision": 1,
+          "value": 59.7
+        }
+      ]
+    },
+    {
+      "id": "financial-assets",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "今回の9月20日時点では、現金及び預金、有価証券、投資有価証券、長期性預金の合計が3兆2,143.71億円となり、総資産の81.3%を占める。",
+      "requiredInputs": [
+        {
+          "id": "cash",
+          "entity": "キーエンス連結",
+          "metric": "現金及び預金",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金及び預金"
+        },
+        {
+          "id": "securities",
+          "entity": "キーエンス連結",
+          "metric": "有価証券",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有価証券"
+        },
+        {
+          "id": "invest-securities",
+          "entity": "キーエンス連結",
+          "metric": "投資有価証券",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資有価証券"
+        },
+        {
+          "id": "long-deposit",
+          "entity": "キーエンス連結",
+          "metric": "長期性預金",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期性預金"
+        },
+        {
+          "id": "assets",
+          "entity": "キーエンス連結",
+          "metric": "総資産",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "総資産"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cash",
+          "value": 698507,
+          "entity": "キーエンス連結",
+          "metric": "現金及び預金",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金及び預金",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF13頁・現金及び預金",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "securities",
+          "value": 803618,
+          "entity": "キーエンス連結",
+          "metric": "有価証券",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有価証券",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF13頁・有価証券",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "invest-securities",
+          "value": 1691841,
+          "entity": "キーエンス連結",
+          "metric": "投資有価証券",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資有価証券",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF13頁・投資有価証券",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "long-deposit",
+          "value": 20405,
+          "entity": "キーエンス連結",
+          "metric": "長期性預金",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期性預金",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF13頁・長期性預金",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "assets",
+          "value": 3955137,
+          "entity": "キーエンス連結",
+          "metric": "総資産",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "総資産",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF13頁・総資産",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "financial-total",
+          "operation": "sum",
+          "inputs": [
+            "cash",
+            "securities",
+            "invest-securities",
+            "long-deposit"
+          ],
+          "definition": "B/S4項目合計。余剰現金ではなく、事業投資も含む",
+          "precision": 0,
+          "value": 3214371
+        },
+        {
+          "id": "share",
+          "operation": "ratio-percent",
+          "inputs": [
+            "financial-total",
+            "assets"
+          ],
+          "definition": "4項目合計÷総資産×100",
+          "precision": 1,
+          "value": 81.3
+        }
+      ]
+    },
+    {
+      "id": "cash-equivalents",
+      "question": "現預金と現金同等物の定義差。開示値は百万円未満切捨てで差引に1百万円の丸め差がある。両者を二重加算しない。",
+      "definition": "現預金と現金同等物の定義差。開示値は百万円未満切捨てで差引に1百万円の丸め差がある。両者を二重加算しない。",
+      "status": "ready",
+      "claim": "現金及び預金6,985.07億円に対し、CF計算書の現金同等物は5,207.48億円。",
+      "requiredInputs": [
+        {
+          "id": "cash",
+          "entity": "キーエンス連結",
+          "metric": "現金及び預金",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金及び預金"
+        },
+        {
+          "id": "cash-eq",
+          "entity": "キーエンス連結",
+          "metric": "現金及び現金同等物",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金及び現金同等物"
+        },
+        {
+          "id": "term-excluded",
+          "entity": "キーエンス連結",
+          "metric": "預入期間が3か月を超える定期預金",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "預入期間が3か月を超える定期預金"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cash",
+          "value": 698507,
+          "entity": "キーエンス連結",
+          "metric": "現金及び預金",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金及び預金",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF13頁・現金及び預金",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "cash-eq",
+          "value": 520748,
+          "entity": "キーエンス連結",
+          "metric": "現金及び現金同等物",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金及び現金同等物",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF17頁・現金及び現金同等物",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "term-excluded",
+          "value": 177758,
+          "entity": "キーエンス連結",
+          "metric": "預入期間が3か月を超える定期預金",
+          "periodStart": "2026-09-20",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "預入期間が3か月を超える定期預金",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF17頁・預入期間が3か月を超える定期預金",
+            "kind": "primary",
+            "pdfPage": 17
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "non-operating",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "また、2026年3月期の経常利益は営業利益を399.97億円上回り、営業外には受取利息162.49億円と為替差益162.70億円があった。今回上期の営業外為替損益は逆に19.92億円の損失である。",
+      "requiredInputs": [
+        {
+          "id": "op2026",
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "ordinary26",
+          "entity": "キーエンス連結",
+          "metric": "経常利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "経常利益"
+        },
+        {
+          "id": "interest26",
+          "entity": "キーエンス連結",
+          "metric": "受取利息",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "受取利息"
+        },
+        {
+          "id": "fxgain26",
+          "entity": "キーエンス連結",
+          "metric": "営業外為替差益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業外為替差益"
+        },
+        {
+          "id": "fxloss-h1",
+          "entity": "キーエンス連結",
+          "metric": "営業外為替差損",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業外為替差損"
+        }
+      ],
+      "observations": [
+        {
+          "id": "op2026",
+          "value": 595759,
+          "entity": "キーエンス連結",
+          "metric": "営業利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF38頁・営業利益",
+            "kind": "primary",
+            "pdfPage": 38
+          }
+        },
+        {
+          "id": "ordinary26",
+          "value": 635756,
+          "entity": "キーエンス連結",
+          "metric": "経常利益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "経常利益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF38頁・経常利益",
+            "kind": "primary",
+            "pdfPage": 38
+          }
+        },
+        {
+          "id": "interest26",
+          "value": 16249,
+          "entity": "キーエンス連結",
+          "metric": "受取利息",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "受取利息",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF38頁・受取利息",
+            "kind": "primary",
+            "pdfPage": 38
+          }
+        },
+        {
+          "id": "fxgain26",
+          "value": 16270,
+          "entity": "キーエンス連結",
+          "metric": "営業外為替差益",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業外為替差益",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF38頁・営業外為替差益",
+            "kind": "primary",
+            "pdfPage": 38
+          }
+        },
+        {
+          "id": "fxloss-h1",
+          "value": 1992,
+          "entity": "キーエンス連結",
+          "metric": "営業外為替差損",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業外為替差損",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/HalfReport_202610_ja.pdf",
+            "publishedOn": "2026-11-02",
+            "locator": "PDF14頁・営業外為替差損",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "nonop-net",
+          "operation": "difference",
+          "inputs": [
+            "ordinary26",
+            "op2026"
+          ],
+          "definition": "営業外損益差額",
+          "precision": 0,
+          "value": 39997
+        }
+      ]
+    },
+    {
+      "id": "dividend-split",
+      "question": "配当予想と実績を明記し、旧1株基準で比較。中間325円と分割後期末65円を単純加算しない。分割効力は情報基準日より後。",
+      "definition": "配当予想と実績を明記し、旧1株基準で比較。中間325円と分割後期末65円を単純加算しない。分割効力は情報基準日より後。",
+      "status": "ready",
+      "claim": "株主還元では、年間配当予想は株式分割前換算650円となり、前期実績550円に対して18.2%増。",
+      "requiredInputs": [
+        {
+          "id": "dps-new",
+          "entity": "キーエンス連結",
+          "metric": "年間配当予想・株式分割前換算",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2027-03-20",
+          "unit": "円／旧1株",
+          "basis": "company-forecast",
+          "definition": "年間配当予想・株式分割前換算"
+        },
+        {
+          "id": "dps-old",
+          "entity": "キーエンス連結",
+          "metric": "年間配当実績・株式分割前換算",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "円／旧1株",
+          "basis": "actual",
+          "definition": "年間配当実績・株式分割前換算"
+        },
+        {
+          "id": "interim",
+          "entity": "キーエンス連結",
+          "metric": "中間配当実績・分割前株数基準",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "円／旧1株",
+          "basis": "actual",
+          "definition": "中間配当実績・分割前株数基準"
+        },
+        {
+          "id": "final",
+          "entity": "キーエンス連結",
+          "metric": "期末配当予想・分割後株数基準",
+          "periodStart": "2026-09-21",
+          "periodEnd": "2027-03-20",
+          "unit": "円／新1株",
+          "basis": "company-forecast",
+          "definition": "期末配当予想・分割後株数基準"
+        },
+        {
+          "id": "split",
+          "entity": "キーエンス連結",
+          "metric": "株式分割倍率",
+          "periodStart": "2026-11-21",
+          "periodEnd": "2026-11-21",
+          "unit": "新株数／旧1株",
+          "basis": "company-forecast",
+          "definition": "株式分割倍率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "dps-new",
+          "value": 650,
+          "entity": "キーエンス連結",
+          "metric": "年間配当予想・株式分割前換算",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2027-03-20",
+          "unit": "円／旧1株",
+          "basis": "company-forecast",
+          "definition": "年間配当予想・株式分割前換算",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/PressRelease_20261029_01.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF1頁・年間配当予想・株式分割前換算",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "dps-old",
+          "value": 550,
+          "entity": "キーエンス連結",
+          "metric": "年間配当実績・株式分割前換算",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "円／旧1株",
+          "basis": "actual",
+          "definition": "年間配当実績・株式分割前換算",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/PressRelease_20261029_01.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF1頁・年間配当実績・株式分割前換算",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "interim",
+          "value": 325,
+          "entity": "キーエンス連結",
+          "metric": "中間配当実績・分割前株数基準",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "円／旧1株",
+          "basis": "actual",
+          "definition": "中間配当実績・分割前株数基準",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/PressRelease_20261029_01.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF1頁・中間配当実績・分割前株数基準",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "final",
+          "value": 65,
+          "entity": "キーエンス連結",
+          "metric": "期末配当予想・分割後株数基準",
+          "periodStart": "2026-09-21",
+          "periodEnd": "2027-03-20",
+          "unit": "円／新1株",
+          "basis": "company-forecast",
+          "definition": "期末配当予想・分割後株数基準",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/PressRelease_20261029_01.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF1頁・期末配当予想・分割後株数基準",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "split",
+          "value": 5,
+          "entity": "キーエンス連結",
+          "metric": "株式分割倍率",
+          "periodStart": "2026-11-21",
+          "periodEnd": "2026-11-21",
+          "unit": "新株数／旧1株",
+          "basis": "company-forecast",
+          "definition": "株式分割倍率",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/PressRelease_20261029_01.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF1頁・株式分割倍率",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "dps-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "dps-new",
+            "dps-old"
+          ],
+          "definition": "分割前基準にそろえた会社予想と前期実績の比較",
+          "precision": 1,
+          "value": 18.2
+        }
+      ]
+    },
+    {
+      "id": "after-dividends",
+      "question": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "definition": "日本基準・キーエンス連結。金額は原資料の百万円を保持し、本文は100で割って億円表示。実績・期間・対象範囲を一致させた比較。",
+      "status": "ready",
+      "claim": "2026年3月期に実際に支払った配当は1,091.36億円。先ほどの有形固定資産取得後CF4,023.09億円から引いても2,931.73億円が残る。",
+      "requiredInputs": [
+        {
+          "id": "cf2026",
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー"
+        },
+        {
+          "id": "fyppe",
+          "entity": "キーエンス連結",
+          "metric": "有形固定資産取得による支出",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形固定資産取得による支出"
+        },
+        {
+          "id": "paid-dividend",
+          "entity": "キーエンス連結",
+          "metric": "配当金の支払額",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "配当金の支払額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cf2026",
+          "value": 430680,
+          "entity": "キーエンス連結",
+          "metric": "営業活動によるキャッシュ・フロー",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュ・フロー",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF5頁・営業活動によるキャッシュ・フロー",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "fyppe",
+          "value": -28371,
+          "entity": "キーエンス連結",
+          "metric": "有形固定資産取得による支出",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形固定資産取得による支出",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF42頁・有形固定資産取得による支出",
+            "kind": "primary",
+            "pdfPage": 42
+          }
+        },
+        {
+          "id": "paid-dividend",
+          "value": -109136,
+          "entity": "キーエンス連結",
+          "metric": "配当金の支払額",
+          "periodStart": "2025-03-21",
+          "periodEnd": "2026-03-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "配当金の支払額",
+          "source": {
+            "url": "https://www.keyence.co.jp/pdf/AnnualSecuritiesReport_202606_ja.pdf",
+            "publishedOn": "2026-06-15",
+            "locator": "PDF42頁・配当金の支払額",
+            "kind": "primary",
+            "pdfPage": 42
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "after-ppe",
+          "operation": "sum",
+          "inputs": [
+            "cf2026",
+            "fyppe"
+          ],
+          "definition": "有形固定資産取得後CF",
+          "precision": 0,
+          "value": 402309
+        },
+        {
+          "id": "after-dividend",
+          "operation": "sum",
+          "inputs": [
+            "after-ppe",
+            "paid-dividend"
+          ],
+          "definition": "同CFから現金支払配当だけを控除。現金増加額ではない",
+          "precision": 0,
+          "value": 293173
+        }
+      ]
+    },
+    {
+      "id": "organic-growth",
+      "question": "買収・為替を除く売上成長率",
+      "definition": "買収・為替を除く売上成長率",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "organic-growth-input",
+          "entity": "キーエンス連結",
+          "metric": "買収・為替を除く売上成長率",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "買収・為替を除く売上成長率"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "現地通貨成長は開示されるが、買収寄与を除く同一定義の調整データは取得資料で確定できない。",
+      "omittedClaim": "買収・為替を除く売上成長率は27.3%だった。"
+    },
+    {
+      "id": "ai-growth",
+      "question": "AI関連売上高増加率",
+      "definition": "AI関連売上高増加率",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "ai-growth-input",
+          "entity": "キーエンス連結",
+          "metric": "AI関連売上高増加率",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "AI関連売上高増加率"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "開示は半導体・液晶という業種分類、5%刻みの概数。AIと非AIは分かれない。",
+      "omittedClaim": "AI関連売上高は65%増加した。"
+    },
+    {
+      "id": "full-fcf",
+      "question": "買収・無形資産・リースを含む完全なFCF",
+      "definition": "買収・無形資産・リースを含む完全なFCF",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "full-fcf-input",
+          "entity": "キーエンス連結",
+          "metric": "買収・無形資産・リースを含む完全なFCF",
+          "periodStart": "2026-03-21",
+          "periodEnd": "2026-09-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "買収・無形資産・リースを含む完全なFCF"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "CFのその他投資内訳が分離されておらず、有形固定資産取得後CFに限定する。",
+      "omittedClaim": "完全なFCFは2,640.11億円だった。"
+    }
+  ]
+}

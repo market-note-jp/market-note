@@ -1,0 +1,4342 @@
+{
+  "version": 1,
+  "articleSlug": "company-kone-2026-11-06",
+  "articleSha256": "c1553c988f9cb7f6fe6945cd89a2a15523cb7015b37e0744c01278142afccf60",
+  "checkedAt": "2026-11-06T11:08:27Z",
+  "informationCutoff": "2026-11-06T19:55:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "KONE連結2021〜2025年のPL/税後営業CF/現金capex/独自FCF/ネット負債/ROE/ROCE、最新2026Q3と9カ月累計、再分類済み前年事業売上、会社予想、TKE予定取引条件・調整費用・ヘッジ資産・資金調達枠を本文一次資料で確認。PDFは取得済み物理頁を記録。過去PLは年報5年表の整数丸め、CFは小数1桁。最新Q3の独自FCFは現金capex分解未確認のため保留し、代わりに公表投資活動後CFを明示。取引条件・シナジーは将来計画で実績と混同せず、合算参考財務から統合後ROICを算出しない。統合時に最終本文と独立レビュー後、digestと実際のcheckedAtを確定すること。",
+  "comparisons": [
+    {
+      "id": "service-base-connectivity",
+      "question": "2025年末の保守対象は約180万台、保守基盤における接続済みエレベーターの比率は40%でした。会社は遠隔監視や保守計画の改善を進めています。これは故障情報を早く得て訪問や部品を準備する土台ですが、接続率の上昇だけで顧客単価や利益がどれだけ増えるかまでは分かりません。[2025年年報、PDF3・13頁](https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf)",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "2025年末の保守対象は約180万台、保守基盤における接続済みエレベーターの比率は40%でした。会社は遠隔監視や保守計画の改善を進めています。これは故障情報を早く得て訪問や部品を準備する土台ですが、接続率の上昇だけで顧客単価や利益がどれだけ増えるかまでは分かりません。[2025年年報、PDF3・13頁](https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf)",
+      "requiredInputs": [
+        {
+          "id": "base",
+          "entity": "KONE連結",
+          "metric": "保守対象機器台数（概数）",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "units",
+          "basis": "actual",
+          "definition": "保守対象機器台数（概数）"
+        },
+        {
+          "id": "connected",
+          "entity": "KONE連結",
+          "metric": "保守基盤における接続済みエレベーター比率",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "保守基盤における接続済みエレベーター比率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "base",
+          "entity": "KONE連結",
+          "metric": "保守対象機器台数（概数）",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "units",
+          "basis": "actual",
+          "definition": "保守対象機器台数（概数）",
+          "value": 1800000,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 3頁、保守対象機器台数（概数）",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "connected",
+          "entity": "KONE連結",
+          "metric": "保守基盤における接続済みエレベーター比率",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "保守基盤における接続済みエレベーター比率",
+          "value": 40,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 13頁、保守基盤における接続済みエレベーター比率",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "pl-2021",
+      "question": "| 2021 | 10,514 | 1,295 | 12.3% | 1,023 |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 2021 | 10,514 | 1,295 | 12.3% | 1,023 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "KONE連結",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "売上高。年報5年表の公表値。金額は百万ユーロ整数に丸められている。"
+        },
+        {
+          "id": "ebit",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "IFRS営業利益。年報5年表の公表値。金額は百万ユーロ整数に丸められている。"
+        },
+        {
+          "id": "margin",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益率",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "IFRS営業利益率。年報5年表の公表値。金額は百万ユーロ整数に丸められている。"
+        },
+        {
+          "id": "ni",
+          "entity": "KONE連結",
+          "metric": "純利益（非支配持分含む）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "純利益（非支配持分含む）。年報5年表の公表値。金額は百万ユーロ整数に丸められている。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "KONE連結",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "売上高。年報5年表の公表値。金額は百万ユーロ整数に丸められている。",
+          "value": 10514,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 30頁、売上高",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        },
+        {
+          "id": "ebit",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "IFRS営業利益。年報5年表の公表値。金額は百万ユーロ整数に丸められている。",
+          "value": 1295,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 30頁、IFRS営業利益",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        },
+        {
+          "id": "margin",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益率",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "IFRS営業利益率。年報5年表の公表値。金額は百万ユーロ整数に丸められている。",
+          "value": 12.3,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 30頁、IFRS営業利益率",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "KONE連結",
+          "metric": "純利益（非支配持分含む）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "純利益（非支配持分含む）。年報5年表の公表値。金額は百万ユーロ整数に丸められている。",
+          "value": 1023,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 30頁、純利益（非支配持分含む）",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "pl-2022",
+      "question": "| 2022 | 10,907 | 1,031 | 9.5% | 784 |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 2022 | 10,907 | 1,031 | 9.5% | 784 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "KONE連結",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "売上高。年報5年表の公表値。金額は百万ユーロ整数に丸められている。"
+        },
+        {
+          "id": "ebit",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "IFRS営業利益。年報5年表の公表値。金額は百万ユーロ整数に丸められている。"
+        },
+        {
+          "id": "margin",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益率",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "IFRS営業利益率。年報5年表の公表値。金額は百万ユーロ整数に丸められている。"
+        },
+        {
+          "id": "ni",
+          "entity": "KONE連結",
+          "metric": "純利益（非支配持分含む）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "純利益（非支配持分含む）。年報5年表の公表値。金額は百万ユーロ整数に丸められている。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "KONE連結",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "売上高。年報5年表の公表値。金額は百万ユーロ整数に丸められている。",
+          "value": 10907,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 30頁、売上高",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        },
+        {
+          "id": "ebit",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "IFRS営業利益。年報5年表の公表値。金額は百万ユーロ整数に丸められている。",
+          "value": 1031,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 30頁、IFRS営業利益",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        },
+        {
+          "id": "margin",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益率",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "IFRS営業利益率。年報5年表の公表値。金額は百万ユーロ整数に丸められている。",
+          "value": 9.5,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 30頁、IFRS営業利益率",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "KONE連結",
+          "metric": "純利益（非支配持分含む）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "純利益（非支配持分含む）。年報5年表の公表値。金額は百万ユーロ整数に丸められている。",
+          "value": 784,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 30頁、純利益（非支配持分含む）",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "pl-2023",
+      "question": "| 2023 | 10,952 | 1,200 | 11.0% | 932 |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 2023 | 10,952 | 1,200 | 11.0% | 932 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "KONE連結",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "売上高。年報5年表の公表値。金額は百万ユーロ整数に丸められている。"
+        },
+        {
+          "id": "ebit",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "IFRS営業利益。年報5年表の公表値。金額は百万ユーロ整数に丸められている。"
+        },
+        {
+          "id": "margin",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益率",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "IFRS営業利益率。年報5年表の公表値。金額は百万ユーロ整数に丸められている。"
+        },
+        {
+          "id": "ni",
+          "entity": "KONE連結",
+          "metric": "純利益（非支配持分含む）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "純利益（非支配持分含む）。年報5年表の公表値。金額は百万ユーロ整数に丸められている。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "KONE連結",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "売上高。年報5年表の公表値。金額は百万ユーロ整数に丸められている。",
+          "value": 10952,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 30頁、売上高",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        },
+        {
+          "id": "ebit",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "IFRS営業利益。年報5年表の公表値。金額は百万ユーロ整数に丸められている。",
+          "value": 1200,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 30頁、IFRS営業利益",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        },
+        {
+          "id": "margin",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益率",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "IFRS営業利益率。年報5年表の公表値。金額は百万ユーロ整数に丸められている。",
+          "value": 11,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 30頁、IFRS営業利益率",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "KONE連結",
+          "metric": "純利益（非支配持分含む）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "純利益（非支配持分含む）。年報5年表の公表値。金額は百万ユーロ整数に丸められている。",
+          "value": 932,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 30頁、純利益（非支配持分含む）",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "pl-2024",
+      "question": "| 2024 | 11,098 | 1,249 | 11.3% | 961 |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 2024 | 11,098 | 1,249 | 11.3% | 961 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "KONE連結",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "売上高。年報5年表の公表値。金額は百万ユーロ整数に丸められている。"
+        },
+        {
+          "id": "ebit",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "IFRS営業利益。年報5年表の公表値。金額は百万ユーロ整数に丸められている。"
+        },
+        {
+          "id": "margin",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益率",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "IFRS営業利益率。年報5年表の公表値。金額は百万ユーロ整数に丸められている。"
+        },
+        {
+          "id": "ni",
+          "entity": "KONE連結",
+          "metric": "純利益（非支配持分含む）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "純利益（非支配持分含む）。年報5年表の公表値。金額は百万ユーロ整数に丸められている。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "KONE連結",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "売上高。年報5年表の公表値。金額は百万ユーロ整数に丸められている。",
+          "value": 11098,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 30頁、売上高",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        },
+        {
+          "id": "ebit",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "IFRS営業利益。年報5年表の公表値。金額は百万ユーロ整数に丸められている。",
+          "value": 1249,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 30頁、IFRS営業利益",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        },
+        {
+          "id": "margin",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益率",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "IFRS営業利益率。年報5年表の公表値。金額は百万ユーロ整数に丸められている。",
+          "value": 11.3,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 30頁、IFRS営業利益率",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "KONE連結",
+          "metric": "純利益（非支配持分含む）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "純利益（非支配持分含む）。年報5年表の公表値。金額は百万ユーロ整数に丸められている。",
+          "value": 961,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 30頁、純利益（非支配持分含む）",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "pl-2025",
+      "question": "| 2025 | 11,245 | 1,336 | 11.9% | 992 |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 2025 | 11,245 | 1,336 | 11.9% | 992 |",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "KONE連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "売上高。年報5年表の公表値。金額は百万ユーロ整数に丸められている。"
+        },
+        {
+          "id": "ebit",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "IFRS営業利益。年報5年表の公表値。金額は百万ユーロ整数に丸められている。"
+        },
+        {
+          "id": "margin",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "IFRS営業利益率。年報5年表の公表値。金額は百万ユーロ整数に丸められている。"
+        },
+        {
+          "id": "ni",
+          "entity": "KONE連結",
+          "metric": "純利益（非支配持分含む）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "純利益（非支配持分含む）。年報5年表の公表値。金額は百万ユーロ整数に丸められている。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "KONE連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "売上高。年報5年表の公表値。金額は百万ユーロ整数に丸められている。",
+          "value": 11245,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 30頁、売上高",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        },
+        {
+          "id": "ebit",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "IFRS営業利益。年報5年表の公表値。金額は百万ユーロ整数に丸められている。",
+          "value": 1336,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 30頁、IFRS営業利益",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        },
+        {
+          "id": "margin",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "IFRS営業利益率。年報5年表の公表値。金額は百万ユーロ整数に丸められている。",
+          "value": 11.9,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 30頁、IFRS営業利益率",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "KONE連結",
+          "metric": "純利益（非支配持分含む）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "純利益（非支配持分含む）。年報5年表の公表値。金額は百万ユーロ整数に丸められている。",
+          "value": 992,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 30頁、純利益（非支配持分含む）",
+            "kind": "primary",
+            "pdfPage": 30
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cf-2021",
+      "question": "| 2021 | 1,584.8 | 96.5 | 1,488.3 | -2,164.1 |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 2021 | 1,584.8 | 96.5 | 1,488.3 | -2,164.1 |",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金後の営業活動CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金後の営業活動CF"
+        },
+        {
+          "id": "capex",
+          "entity": "KONE連結",
+          "metric": "CF計算書のCapital expenditure（支出は負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "CF計算書のCapital expenditure（支出は負数）"
+        },
+        {
+          "id": "net-debt",
+          "entity": "KONE連結",
+          "metric": "会社定義ネット有利子負債（負数はネットキャッシュ）",
+          "periodStart": "2021-12-31",
+          "periodEnd": "2021-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "会社定義ネット有利子負債（負数はネットキャッシュ）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金後の営業活動CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金後の営業活動CF",
+          "value": 1584.8,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:605f7722-0915-465c-bdf5-84ae586e9ca0/renditions/original/as/KONE%20Annual%20Review%202021.pdf",
+            "publishedOn": "2022-02-02",
+            "locator": "PDF 41頁、金融項目・税金後の営業活動CF",
+            "kind": "primary",
+            "pdfPage": 41
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "KONE連結",
+          "metric": "CF計算書のCapital expenditure（支出は負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "CF計算書のCapital expenditure（支出は負数）",
+          "value": -96.5,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:605f7722-0915-465c-bdf5-84ae586e9ca0/renditions/original/as/KONE%20Annual%20Review%202021.pdf",
+            "publishedOn": "2022-02-02",
+            "locator": "PDF 41頁、CF計算書のCapital expenditure（支出は負数）",
+            "kind": "primary",
+            "pdfPage": 41
+          }
+        },
+        {
+          "id": "net-debt",
+          "entity": "KONE連結",
+          "metric": "会社定義ネット有利子負債（負数はネットキャッシュ）",
+          "periodStart": "2021-12-31",
+          "periodEnd": "2021-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "会社定義ネット有利子負債（負数はネットキャッシュ）",
+          "value": -2164.1,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:605f7722-0915-465c-bdf5-84ae586e9ca0/renditions/original/as/KONE%20Annual%20Review%202021.pdf",
+            "publishedOn": "2022-02-02",
+            "locator": "PDF 41頁、会社定義ネット有利子負債（負数はネットキャッシュ）",
+            "kind": "primary",
+            "pdfPage": 41
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "value": 1488.3,
+          "definition": "独自FCF＝金融項目・税金後営業活動CF＋現金設備投資支出（負数）。リース元本返済・買収等の控除前。",
+          "precision": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-2022",
+      "question": "| 2022 | 531.5 | 101.2 | 430.3 | -1,309.0 |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 2022 | 531.5 | 101.2 | 430.3 | -1,309.0 |",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金後の営業活動CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金後の営業活動CF"
+        },
+        {
+          "id": "capex",
+          "entity": "KONE連結",
+          "metric": "CF計算書のCapital expenditure（支出は負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "CF計算書のCapital expenditure（支出は負数）"
+        },
+        {
+          "id": "net-debt",
+          "entity": "KONE連結",
+          "metric": "会社定義ネット有利子負債（負数はネットキャッシュ）",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2022-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "会社定義ネット有利子負債（負数はネットキャッシュ）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金後の営業活動CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金後の営業活動CF",
+          "value": 531.5,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:813c60c0-69c8-4b7a-9af5-2cc8f644879f/renditions/original/as/KONE%20Annual%20Review%202023.pdf",
+            "publishedOn": "2024-01-26",
+            "locator": "PDF 51頁、金融項目・税金後の営業活動CF",
+            "kind": "primary",
+            "pdfPage": 51
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "KONE連結",
+          "metric": "CF計算書のCapital expenditure（支出は負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "CF計算書のCapital expenditure（支出は負数）",
+          "value": -101.2,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:813c60c0-69c8-4b7a-9af5-2cc8f644879f/renditions/original/as/KONE%20Annual%20Review%202023.pdf",
+            "publishedOn": "2024-01-26",
+            "locator": "PDF 51頁、CF計算書のCapital expenditure（支出は負数）",
+            "kind": "primary",
+            "pdfPage": 51
+          }
+        },
+        {
+          "id": "net-debt",
+          "entity": "KONE連結",
+          "metric": "会社定義ネット有利子負債（負数はネットキャッシュ）",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2022-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "会社定義ネット有利子負債（負数はネットキャッシュ）",
+          "value": -1309,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:813c60c0-69c8-4b7a-9af5-2cc8f644879f/renditions/original/as/KONE%20Annual%20Review%202023.pdf",
+            "publishedOn": "2024-01-26",
+            "locator": "PDF 51頁、会社定義ネット有利子負債（負数はネットキャッシュ）",
+            "kind": "primary",
+            "pdfPage": 51
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "value": 430.3,
+          "definition": "独自FCF＝金融項目・税金後営業活動CF＋現金設備投資支出（負数）。リース元本返済・買収等の控除前。",
+          "precision": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-2023",
+      "question": "| 2023 | 1,127.9 | 148.2 | 979.7 | -1,013.4 |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 2023 | 1,127.9 | 148.2 | 979.7 | -1,013.4 |",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金後の営業活動CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金後の営業活動CF"
+        },
+        {
+          "id": "capex",
+          "entity": "KONE連結",
+          "metric": "CF計算書のCapital expenditure（支出は負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "CF計算書のCapital expenditure（支出は負数）"
+        },
+        {
+          "id": "net-debt",
+          "entity": "KONE連結",
+          "metric": "会社定義ネット有利子負債（負数はネットキャッシュ）",
+          "periodStart": "2023-12-31",
+          "periodEnd": "2023-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "会社定義ネット有利子負債（負数はネットキャッシュ）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金後の営業活動CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金後の営業活動CF",
+          "value": 1127.9,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:813c60c0-69c8-4b7a-9af5-2cc8f644879f/renditions/original/as/KONE%20Annual%20Review%202023.pdf",
+            "publishedOn": "2024-01-26",
+            "locator": "PDF 51頁、金融項目・税金後の営業活動CF",
+            "kind": "primary",
+            "pdfPage": 51
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "KONE連結",
+          "metric": "CF計算書のCapital expenditure（支出は負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "CF計算書のCapital expenditure（支出は負数）",
+          "value": -148.2,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:813c60c0-69c8-4b7a-9af5-2cc8f644879f/renditions/original/as/KONE%20Annual%20Review%202023.pdf",
+            "publishedOn": "2024-01-26",
+            "locator": "PDF 51頁、CF計算書のCapital expenditure（支出は負数）",
+            "kind": "primary",
+            "pdfPage": 51
+          }
+        },
+        {
+          "id": "net-debt",
+          "entity": "KONE連結",
+          "metric": "会社定義ネット有利子負債（負数はネットキャッシュ）",
+          "periodStart": "2023-12-31",
+          "periodEnd": "2023-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "会社定義ネット有利子負債（負数はネットキャッシュ）",
+          "value": -1013.4,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:813c60c0-69c8-4b7a-9af5-2cc8f644879f/renditions/original/as/KONE%20Annual%20Review%202023.pdf",
+            "publishedOn": "2024-01-26",
+            "locator": "PDF 51頁、会社定義ネット有利子負債（負数はネットキャッシュ）",
+            "kind": "primary",
+            "pdfPage": 51
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "value": 979.7,
+          "definition": "独自FCF＝金融項目・税金後営業活動CF＋現金設備投資支出（負数）。リース元本返済・買収等の控除前。",
+          "precision": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-2024",
+      "question": "| 2024 | 1,249.3 | 168.4 | 1,080.9 | -831.2 |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 2024 | 1,249.3 | 168.4 | 1,080.9 | -831.2 |",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金後の営業活動CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金後の営業活動CF"
+        },
+        {
+          "id": "capex",
+          "entity": "KONE連結",
+          "metric": "CF計算書のCapital expenditure（支出は負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "CF計算書のCapital expenditure（支出は負数）"
+        },
+        {
+          "id": "net-debt",
+          "entity": "KONE連結",
+          "metric": "会社定義ネット有利子負債（負数はネットキャッシュ）",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "会社定義ネット有利子負債（負数はネットキャッシュ）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金後の営業活動CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金後の営業活動CF",
+          "value": 1249.3,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 92頁、金融項目・税金後の営業活動CF",
+            "kind": "primary",
+            "pdfPage": 92
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "KONE連結",
+          "metric": "CF計算書のCapital expenditure（支出は負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "CF計算書のCapital expenditure（支出は負数）",
+          "value": -168.4,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 92頁、CF計算書のCapital expenditure（支出は負数）",
+            "kind": "primary",
+            "pdfPage": 92
+          }
+        },
+        {
+          "id": "net-debt",
+          "entity": "KONE連結",
+          "metric": "会社定義ネット有利子負債（負数はネットキャッシュ）",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "会社定義ネット有利子負債（負数はネットキャッシュ）",
+          "value": -831.2,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 12頁、会社定義ネット有利子負債（負数はネットキャッシュ）",
+            "kind": "primary",
+            "pdfPage": 12
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "value": 1080.9,
+          "definition": "独自FCF＝金融項目・税金後営業活動CF＋現金設備投資支出（負数）。リース元本返済・買収等の控除前。",
+          "precision": 1
+        }
+      ]
+    },
+    {
+      "id": "cf-2025",
+      "question": "| 2025 | 1,316.0 | 153.9 | 1,162.1 | -699.8 |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 2025 | 1,316.0 | 153.9 | 1,162.1 | -699.8 |",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金後の営業活動CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金後の営業活動CF"
+        },
+        {
+          "id": "capex",
+          "entity": "KONE連結",
+          "metric": "CF計算書のCapital expenditure（支出は負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "CF計算書のCapital expenditure（支出は負数）"
+        },
+        {
+          "id": "net-debt",
+          "entity": "KONE連結",
+          "metric": "会社定義ネット有利子負債（負数はネットキャッシュ）",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "会社定義ネット有利子負債（負数はネットキャッシュ）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金後の営業活動CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金後の営業活動CF",
+          "value": 1316,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 92頁、金融項目・税金後の営業活動CF",
+            "kind": "primary",
+            "pdfPage": 92
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "KONE連結",
+          "metric": "CF計算書のCapital expenditure（支出は負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "CF計算書のCapital expenditure（支出は負数）",
+          "value": -153.9,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 92頁、CF計算書のCapital expenditure（支出は負数）",
+            "kind": "primary",
+            "pdfPage": 92
+          }
+        },
+        {
+          "id": "net-debt",
+          "entity": "KONE連結",
+          "metric": "会社定義ネット有利子負債（負数はネットキャッシュ）",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "会社定義ネット有利子負債（負数はネットキャッシュ）",
+          "value": -699.8,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 12頁、会社定義ネット有利子負債（負数はネットキャッシュ）",
+            "kind": "primary",
+            "pdfPage": 12
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "value": 1162.1,
+          "definition": "独自FCF＝金融項目・税金後営業活動CF＋現金設備投資支出（負数）。リース元本返済・買収等の控除前。",
+          "precision": 1
+        }
+      ]
+    },
+    {
+      "id": "annual-cf-definitions",
+      "question": "会社が冒頭で示す「Cash flow from operations」は金融項目・税金の控除前です。2025年は1,761.3百万ユーロですが、営業活動CFは1,316.0百万ユーロでした。また、設備投資の説明欄にはリース契約による資産取得も含まれます。本稿はそれを現金設備投資として二重に引いていません。[2025年年報、PDF13・92頁](https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf)",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "会社が冒頭で示す「Cash flow from operations」は金融項目・税金の控除前です。2025年は1,761.3百万ユーロですが、営業活動CFは1,316.0百万ユーロでした。また、設備投資の説明欄にはリース契約による資産取得も含まれます。本稿はそれを現金設備投資として二重に引いていません。[2025年年報、PDF13・92頁](https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf)",
+      "requiredInputs": [
+        {
+          "id": "before",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金控除前CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金控除前CF"
+        },
+        {
+          "id": "cfo",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金後の営業活動CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金後の営業活動CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "before",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金控除前CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金控除前CF",
+          "value": 1761.3,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 92頁、金融項目・税金控除前CF",
+            "kind": "primary",
+            "pdfPage": 92
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金後の営業活動CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金後の営業活動CF",
+          "value": 1316,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 92頁、金融項目・税金後の営業活動CF",
+            "kind": "primary",
+            "pdfPage": 92
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "2022-working-capital-distribution",
+      "question": "2022年の営業活動CFの落ち込みでは、金融項目・税金控除前の運転資金変動が535.8百万ユーロの資金流出でした。同年の利益分配支出は1,087.8百万ユーロで、独自FCFを上回りました。保守収入が積み上がる企業でも、利益の現金化と還元は年ごとにずれます。[2023年年報、PDF51頁](https://assets.kone.com/adobe/assets/urn:aaid:aem:813c60c0-69c8-4b7a-9af5-2cc8f644879f/renditions/original/as/KONE%20Annual%20Review%202023.pdf)",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "2022年の営業活動CFの落ち込みでは、金融項目・税金控除前の運転資金変動が535.8百万ユーロの資金流出でした。同年の利益分配支出は1,087.8百万ユーロで、独自FCFを上回りました。保守収入が積み上がる企業でも、利益の現金化と還元は年ごとにずれます。[2023年年報、PDF51頁](https://assets.kone.com/adobe/assets/urn:aaid:aem:813c60c0-69c8-4b7a-9af5-2cc8f644879f/renditions/original/as/KONE%20Annual%20Review%202023.pdf)",
+      "requiredInputs": [
+        {
+          "id": "wc",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金控除前の運転資金変動",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金控除前の運転資金変動"
+        },
+        {
+          "id": "dist",
+          "entity": "KONE連結",
+          "metric": "利益分配CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "利益分配CF"
+        },
+        {
+          "id": "cfo",
+          "entity": "KONE連結",
+          "metric": "営業活動CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業活動CF"
+        },
+        {
+          "id": "capex",
+          "entity": "KONE連結",
+          "metric": "現金設備投資支出",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "現金設備投資支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "wc",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金控除前の運転資金変動",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金控除前の運転資金変動",
+          "value": -535.8,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:813c60c0-69c8-4b7a-9af5-2cc8f644879f/renditions/original/as/KONE%20Annual%20Review%202023.pdf",
+            "publishedOn": "2024-01-26",
+            "locator": "PDF 51頁、金融項目・税金控除前の運転資金変動",
+            "kind": "primary",
+            "pdfPage": 51
+          }
+        },
+        {
+          "id": "dist",
+          "entity": "KONE連結",
+          "metric": "利益分配CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "利益分配CF",
+          "value": -1087.8,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:813c60c0-69c8-4b7a-9af5-2cc8f644879f/renditions/original/as/KONE%20Annual%20Review%202023.pdf",
+            "publishedOn": "2024-01-26",
+            "locator": "PDF 51頁、利益分配CF",
+            "kind": "primary",
+            "pdfPage": 51
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "KONE連結",
+          "metric": "営業活動CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業活動CF",
+          "value": 531.5,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:813c60c0-69c8-4b7a-9af5-2cc8f644879f/renditions/original/as/KONE%20Annual%20Review%202023.pdf",
+            "publishedOn": "2024-01-26",
+            "locator": "PDF 51頁、営業活動CF",
+            "kind": "primary",
+            "pdfPage": 51
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "KONE連結",
+          "metric": "現金設備投資支出",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "現金設備投資支出",
+          "value": -101.2,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:813c60c0-69c8-4b7a-9af5-2cc8f644879f/renditions/original/as/KONE%20Annual%20Review%202023.pdf",
+            "publishedOn": "2024-01-26",
+            "locator": "PDF 51頁、現金設備投資支出",
+            "kind": "primary",
+            "pdfPage": 51
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "value": 430.3,
+          "definition": "2022年独自FCF。利益分配額1,087.8との規模比較。",
+          "precision": 1
+        }
+      ]
+    },
+    {
+      "id": "business-new",
+      "question": "| 新設（New Building Solutions） | 1,020.2 | 1,030.3 | -0.9% |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 新設（New Building Solutions） | 1,020.2 | 1,030.3 | -0.9% |",
+      "requiredInputs": [
+        {
+          "id": "prior",
+          "entity": "KONE連結",
+          "metric": "新設（New Building Solutions）売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "2026年Q3報告書における修正後の2025年Q3売上"
+        },
+        {
+          "id": "current",
+          "entity": "KONE連結",
+          "metric": "新設（New Building Solutions）売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "新設（New Building Solutions）売上"
+        },
+        {
+          "id": "ccgrowth",
+          "entity": "KONE連結",
+          "metric": "新設（New Building Solutions）為替一定売上増減率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社公表の前年同期比・為替一定。買収除外成長率ではなく金額から再計算しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prior",
+          "entity": "KONE連結",
+          "metric": "新設（New Building Solutions）売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "2026年Q3報告書における修正後の2025年Q3売上",
+          "value": 1020.2,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 9頁、新設（New Building Solutions）売上",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "current",
+          "entity": "KONE連結",
+          "metric": "新設（New Building Solutions）売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "新設（New Building Solutions）売上",
+          "value": 1030.3,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 9頁、新設（New Building Solutions）売上",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "ccgrowth",
+          "entity": "KONE連結",
+          "metric": "新設（New Building Solutions）為替一定売上増減率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社公表の前年同期比・為替一定。買収除外成長率ではなく金額から再計算しない。",
+          "value": -0.9,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 9頁、新設（New Building Solutions）為替一定売上増減率",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "business-service",
+      "question": "| 保守・修理（Service） | 1,241.8 | 1,328.3 | +5.9% |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 保守・修理（Service） | 1,241.8 | 1,328.3 | +5.9% |",
+      "requiredInputs": [
+        {
+          "id": "prior",
+          "entity": "KONE連結",
+          "metric": "保守・修理（Service）売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "2026年Q3報告書における修正後の2025年Q3売上"
+        },
+        {
+          "id": "current",
+          "entity": "KONE連結",
+          "metric": "保守・修理（Service）売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "保守・修理（Service）売上"
+        },
+        {
+          "id": "ccgrowth",
+          "entity": "KONE連結",
+          "metric": "保守・修理（Service）為替一定売上増減率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社公表の前年同期比・為替一定。買収除外成長率ではなく金額から再計算しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prior",
+          "entity": "KONE連結",
+          "metric": "保守・修理（Service）売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "2026年Q3報告書における修正後の2025年Q3売上",
+          "value": 1241.8,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 9頁、保守・修理（Service）売上",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "current",
+          "entity": "KONE連結",
+          "metric": "保守・修理（Service）売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "保守・修理（Service）売上",
+          "value": 1328.3,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 9頁、保守・修理（Service）売上",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "ccgrowth",
+          "entity": "KONE連結",
+          "metric": "保守・修理（Service）為替一定売上増減率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社公表の前年同期比・為替一定。買収除外成長率ではなく金額から再計算しない。",
+          "value": 5.9,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 9頁、保守・修理（Service）為替一定売上増減率",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "business-mod",
+      "question": "| 更新（Modernization） | 500.0 | 547.4 | +8.1% |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 更新（Modernization） | 500.0 | 547.4 | +8.1% |",
+      "requiredInputs": [
+        {
+          "id": "prior",
+          "entity": "KONE連結",
+          "metric": "更新（Modernization）売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "2026年Q3報告書における修正後の2025年Q3売上"
+        },
+        {
+          "id": "current",
+          "entity": "KONE連結",
+          "metric": "更新（Modernization）売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "更新（Modernization）売上"
+        },
+        {
+          "id": "ccgrowth",
+          "entity": "KONE連結",
+          "metric": "更新（Modernization）為替一定売上増減率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社公表の前年同期比・為替一定。買収除外成長率ではなく金額から再計算しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prior",
+          "entity": "KONE連結",
+          "metric": "更新（Modernization）売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "2026年Q3報告書における修正後の2025年Q3売上",
+          "value": 500,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 9頁、更新（Modernization）売上",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "current",
+          "entity": "KONE連結",
+          "metric": "更新（Modernization）売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "更新（Modernization）売上",
+          "value": 547.4,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 9頁、更新（Modernization）売上",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "ccgrowth",
+          "entity": "KONE連結",
+          "metric": "更新（Modernization）為替一定売上増減率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社公表の前年同期比・為替一定。買収除外成長率ではなく金額から再計算しない。",
+          "value": 8.1,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 9頁、更新（Modernization）為替一定売上増減率",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "business-total",
+      "question": "| 合計 | 2,762.0 | 2,906.0 | +3.8% |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 合計 | 2,762.0 | 2,906.0 | +3.8% |",
+      "requiredInputs": [
+        {
+          "id": "prior",
+          "entity": "KONE連結",
+          "metric": "合計売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "2026年Q3報告書における修正後の2025年Q3売上"
+        },
+        {
+          "id": "current",
+          "entity": "KONE連結",
+          "metric": "合計売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "合計売上"
+        },
+        {
+          "id": "ccgrowth",
+          "entity": "KONE連結",
+          "metric": "合計為替一定売上増減率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社公表の前年同期比・為替一定。買収除外成長率ではなく金額から再計算しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prior",
+          "entity": "KONE連結",
+          "metric": "合計売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "2026年Q3報告書における修正後の2025年Q3売上",
+          "value": 2762,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 9頁、合計売上",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "current",
+          "entity": "KONE連結",
+          "metric": "合計売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "合計売上",
+          "value": 2906,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 9頁、合計売上",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "ccgrowth",
+          "entity": "KONE連結",
+          "metric": "合計為替一定売上増減率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社公表の前年同期比・為替一定。買収除外成長率ではなく金額から再計算しない。",
+          "value": 3.8,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 9頁、合計為替一定売上増減率",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "profit-ebit",
+      "question": "| 営業利益 | 334.4 | 339.0 | 949.0 | 944.2 |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 営業利益 | 334.4 | 339.0 | 949.0 | 944.2 |",
+      "requiredInputs": [
+        {
+          "id": "pq",
+          "entity": "KONE連結",
+          "metric": "営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "cq",
+          "entity": "KONE連結",
+          "metric": "営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "py",
+          "entity": "KONE連結",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "cy",
+          "entity": "KONE連結",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "pq",
+          "entity": "KONE連結",
+          "metric": "営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 334.4,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 27頁、営業利益",
+            "kind": "primary",
+            "pdfPage": 27
+          }
+        },
+        {
+          "id": "cq",
+          "entity": "KONE連結",
+          "metric": "営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 339,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 27頁、営業利益",
+            "kind": "primary",
+            "pdfPage": 27
+          }
+        },
+        {
+          "id": "py",
+          "entity": "KONE連結",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 949,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 27頁、営業利益",
+            "kind": "primary",
+            "pdfPage": 27
+          }
+        },
+        {
+          "id": "cy",
+          "entity": "KONE連結",
+          "metric": "営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 944.2,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 27頁、営業利益",
+            "kind": "primary",
+            "pdfPage": 27
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "profit-adj",
+      "question": "| 調整後営業利益 | 340.7 | 369.0 | 967.4 | 1,032.5 |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 調整後営業利益 | 340.7 | 369.0 | 967.4 | 1,032.5 |",
+      "requiredInputs": [
+        {
+          "id": "pq",
+          "entity": "KONE連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        },
+        {
+          "id": "cq",
+          "entity": "KONE連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        },
+        {
+          "id": "py",
+          "entity": "KONE連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        },
+        {
+          "id": "cy",
+          "entity": "KONE連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "pq",
+          "entity": "KONE連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 340.7,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 27頁、調整後営業利益",
+            "kind": "primary",
+            "pdfPage": 27
+          }
+        },
+        {
+          "id": "cq",
+          "entity": "KONE連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 369,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 27頁、調整後営業利益",
+            "kind": "primary",
+            "pdfPage": 27
+          }
+        },
+        {
+          "id": "py",
+          "entity": "KONE連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 967.4,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 27頁、調整後営業利益",
+            "kind": "primary",
+            "pdfPage": 27
+          }
+        },
+        {
+          "id": "cy",
+          "entity": "KONE連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 1032.5,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 27頁、調整後営業利益",
+            "kind": "primary",
+            "pdfPage": 27
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "profit-items",
+      "question": "| 比較可能性に影響する調整項目 | 6.3 | 30.0 | 18.3 | 88.3 |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 比較可能性に影響する調整項目 | 6.3 | 30.0 | 18.3 | 88.3 |",
+      "requiredInputs": [
+        {
+          "id": "pq",
+          "entity": "KONE連結",
+          "metric": "比較可能性に影響する調整項目",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "比較可能性に影響する調整項目"
+        },
+        {
+          "id": "cq",
+          "entity": "KONE連結",
+          "metric": "比較可能性に影響する調整項目",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "比較可能性に影響する調整項目"
+        },
+        {
+          "id": "py",
+          "entity": "KONE連結",
+          "metric": "比較可能性に影響する調整項目",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "比較可能性に影響する調整項目"
+        },
+        {
+          "id": "cy",
+          "entity": "KONE連結",
+          "metric": "比較可能性に影響する調整項目",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "比較可能性に影響する調整項目"
+        }
+      ],
+      "observations": [
+        {
+          "id": "pq",
+          "entity": "KONE連結",
+          "metric": "比較可能性に影響する調整項目",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "比較可能性に影響する調整項目",
+          "value": 6.3,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 27頁、比較可能性に影響する調整項目",
+            "kind": "primary",
+            "pdfPage": 27
+          }
+        },
+        {
+          "id": "cq",
+          "entity": "KONE連結",
+          "metric": "比較可能性に影響する調整項目",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "比較可能性に影響する調整項目",
+          "value": 30,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 27頁、比較可能性に影響する調整項目",
+            "kind": "primary",
+            "pdfPage": 27
+          }
+        },
+        {
+          "id": "py",
+          "entity": "KONE連結",
+          "metric": "比較可能性に影響する調整項目",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "比較可能性に影響する調整項目",
+          "value": 18.3,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 27頁、比較可能性に影響する調整項目",
+            "kind": "primary",
+            "pdfPage": 27
+          }
+        },
+        {
+          "id": "cy",
+          "entity": "KONE連結",
+          "metric": "比較可能性に影響する調整項目",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "比較可能性に影響する調整項目",
+          "value": 88.3,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 27頁、比較可能性に影響する調整項目",
+            "kind": "primary",
+            "pdfPage": 27
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "tke-expense-9m",
+      "question": "会社は、事業構成と固定費の吸収改善（売上増による固定費負担率の低下）が採算改善を支えたと説明しています。他方、累計では調整後利益が増えてもIFRS営業利益は減りました。2026年1〜9月の調整項目には、TKE取引関連費用48.5百万ユーロのほか、再編や確定給付年金制度の清算関連費用が含まれます。[PDF10頁](https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf)",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "会社は、事業構成と固定費の吸収改善（売上増による固定費負担率の低下）が採算改善を支えたと説明しています。他方、累計では調整後利益が増えてもIFRS営業利益は減りました。2026年1〜9月の調整項目には、TKE取引関連費用48.5百万ユーロのほか、再編や確定給付年金制度の清算関連費用が含まれます。[PDF10頁](https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf)",
+      "requiredInputs": [
+        {
+          "id": "tke",
+          "entity": "KONE連結",
+          "metric": "TKE取引関連の営業利益調整費用",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "TKE取引関連の営業利益調整費用"
+        },
+        {
+          "id": "adjprior",
+          "entity": "KONE連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        },
+        {
+          "id": "adjcurrent",
+          "entity": "KONE連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        },
+        {
+          "id": "opprior",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        },
+        {
+          "id": "opcurrent",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "tke",
+          "entity": "KONE連結",
+          "metric": "TKE取引関連の営業利益調整費用",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "TKE取引関連の営業利益調整費用",
+          "value": 48.5,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 10頁、TKE取引関連の営業利益調整費用",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "adjprior",
+          "entity": "KONE連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 967.4,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 10頁、調整後営業利益",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "adjcurrent",
+          "entity": "KONE連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 1032.5,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 10頁、調整後営業利益",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "opprior",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 949,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 10頁、IFRS営業利益",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "opcurrent",
+          "entity": "KONE連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 944.2,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 10頁、IFRS営業利益",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "guidance-ranges",
+      "question": "会社は2026年の為替一定売上成長率見通しを3〜6%から4〜6%へ、調整後営業利益率を12.3〜13.0%から12.5〜12.9%へ絞りました。利益率は下限の引き上げと上限の引き下げを伴う範囲の縮小です。見通し全体を一律の上方修正と表現するのは正確ではありません。[通期会社予想、PDF2頁](https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf)",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "会社は2026年の為替一定売上成長率見通しを3〜6%から4〜6%へ、調整後営業利益率を12.3〜13.0%から12.5〜12.9%へ絞りました。利益率は下限の引き上げと上限の引き下げを伴う範囲の縮小です。見通し全体を一律の上方修正と表現するのは正確ではありません。[通期会社予想、PDF2頁](https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf)",
+      "requiredInputs": [
+        {
+          "id": "sgoldlo",
+          "entity": "KONE連結",
+          "metric": "従来売上成長率下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "従来売上成長率下限。2026年通期会社予想。旧予想と2026年10月28日更新予想を比較。"
+        },
+        {
+          "id": "sgoldhi",
+          "entity": "KONE連結",
+          "metric": "従来売上成長率上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "従来売上成長率上限。2026年通期会社予想。旧予想と2026年10月28日更新予想を比較。"
+        },
+        {
+          "id": "sgnewlo",
+          "entity": "KONE連結",
+          "metric": "更新後売上成長率下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "更新後売上成長率下限。2026年通期会社予想。旧予想と2026年10月28日更新予想を比較。"
+        },
+        {
+          "id": "sgnewhi",
+          "entity": "KONE連結",
+          "metric": "更新後売上成長率上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "更新後売上成長率上限。2026年通期会社予想。旧予想と2026年10月28日更新予想を比較。"
+        },
+        {
+          "id": "moldlo",
+          "entity": "KONE連結",
+          "metric": "従来調整後営業利益率下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "従来調整後営業利益率下限。2026年通期会社予想。旧予想と2026年10月28日更新予想を比較。"
+        },
+        {
+          "id": "moldhi",
+          "entity": "KONE連結",
+          "metric": "従来調整後営業利益率上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "従来調整後営業利益率上限。2026年通期会社予想。旧予想と2026年10月28日更新予想を比較。"
+        },
+        {
+          "id": "mnewlo",
+          "entity": "KONE連結",
+          "metric": "更新後調整後営業利益率下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "更新後調整後営業利益率下限。2026年通期会社予想。旧予想と2026年10月28日更新予想を比較。"
+        },
+        {
+          "id": "mnewhi",
+          "entity": "KONE連結",
+          "metric": "更新後調整後営業利益率上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "更新後調整後営業利益率上限。2026年通期会社予想。旧予想と2026年10月28日更新予想を比較。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sgoldlo",
+          "entity": "KONE連結",
+          "metric": "従来売上成長率下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "従来売上成長率下限。2026年通期会社予想。旧予想と2026年10月28日更新予想を比較。",
+          "value": 3,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 2頁、従来売上成長率下限",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "sgoldhi",
+          "entity": "KONE連結",
+          "metric": "従来売上成長率上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "従来売上成長率上限。2026年通期会社予想。旧予想と2026年10月28日更新予想を比較。",
+          "value": 6,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 2頁、従来売上成長率上限",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "sgnewlo",
+          "entity": "KONE連結",
+          "metric": "更新後売上成長率下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "更新後売上成長率下限。2026年通期会社予想。旧予想と2026年10月28日更新予想を比較。",
+          "value": 4,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 2頁、更新後売上成長率下限",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "sgnewhi",
+          "entity": "KONE連結",
+          "metric": "更新後売上成長率上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "更新後売上成長率上限。2026年通期会社予想。旧予想と2026年10月28日更新予想を比較。",
+          "value": 6,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 2頁、更新後売上成長率上限",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "moldlo",
+          "entity": "KONE連結",
+          "metric": "従来調整後営業利益率下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "従来調整後営業利益率下限。2026年通期会社予想。旧予想と2026年10月28日更新予想を比較。",
+          "value": 12.3,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 2頁、従来調整後営業利益率下限",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "moldhi",
+          "entity": "KONE連結",
+          "metric": "従来調整後営業利益率上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "従来調整後営業利益率上限。2026年通期会社予想。旧予想と2026年10月28日更新予想を比較。",
+          "value": 13,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 2頁、従来調整後営業利益率上限",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "mnewlo",
+          "entity": "KONE連結",
+          "metric": "更新後調整後営業利益率下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "更新後調整後営業利益率下限。2026年通期会社予想。旧予想と2026年10月28日更新予想を比較。",
+          "value": 12.5,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 2頁、更新後調整後営業利益率下限",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "mnewhi",
+          "entity": "KONE連結",
+          "metric": "更新後調整後営業利益率上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "更新後調整後営業利益率上限。2026年通期会社予想。旧予想と2026年10月28日更新予想を比較。",
+          "value": 12.9,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 2頁、更新後調整後営業利益率上限",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "latest-cf-before",
+      "question": "| 金融項目・税金控除前CF | 444.4 | 347.9 | 1,295.5 | 1,284.3 |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 金融項目・税金控除前CF | 444.4 | 347.9 | 1,295.5 | 1,284.3 |",
+      "requiredInputs": [
+        {
+          "id": "pq",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金控除前CF",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金控除前CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。"
+        },
+        {
+          "id": "cq",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金控除前CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金控除前CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。"
+        },
+        {
+          "id": "py",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金控除前CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金控除前CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。"
+        },
+        {
+          "id": "cy",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金控除前CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金控除前CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "pq",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金控除前CF",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金控除前CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。",
+          "value": 444.4,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、金融項目・税金控除前CF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        },
+        {
+          "id": "cq",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金控除前CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金控除前CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。",
+          "value": 347.9,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、金融項目・税金控除前CF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        },
+        {
+          "id": "py",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金控除前CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金控除前CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。",
+          "value": 1295.5,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、金融項目・税金控除前CF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        },
+        {
+          "id": "cy",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金控除前CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金控除前CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。",
+          "value": 1284.3,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、金融項目・税金控除前CF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "latest-cf-oper",
+      "question": "| 営業活動CF | 339.3 | 306.2 | 951.0 | 1,001.0 |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 営業活動CF | 339.3 | 306.2 | 951.0 | 1,001.0 |",
+      "requiredInputs": [
+        {
+          "id": "pq",
+          "entity": "KONE連結",
+          "metric": "営業活動CF",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業活動CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。"
+        },
+        {
+          "id": "cq",
+          "entity": "KONE連結",
+          "metric": "営業活動CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業活動CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。"
+        },
+        {
+          "id": "py",
+          "entity": "KONE連結",
+          "metric": "営業活動CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業活動CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。"
+        },
+        {
+          "id": "cy",
+          "entity": "KONE連結",
+          "metric": "営業活動CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業活動CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "pq",
+          "entity": "KONE連結",
+          "metric": "営業活動CF",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業活動CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。",
+          "value": 339.3,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、営業活動CF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        },
+        {
+          "id": "cq",
+          "entity": "KONE連結",
+          "metric": "営業活動CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業活動CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。",
+          "value": 306.2,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、営業活動CF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        },
+        {
+          "id": "py",
+          "entity": "KONE連結",
+          "metric": "営業活動CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業活動CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。",
+          "value": 951,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、営業活動CF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        },
+        {
+          "id": "cy",
+          "entity": "KONE連結",
+          "metric": "営業活動CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業活動CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。",
+          "value": 1001,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、営業活動CF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "latest-cf-after",
+      "question": "| 投資活動後CF | 245.2 | 269.4 | 762.9 | 889.6 |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 投資活動後CF | 245.2 | 269.4 | 762.9 | 889.6 |",
+      "requiredInputs": [
+        {
+          "id": "pq",
+          "entity": "KONE連結",
+          "metric": "投資活動後CF",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "投資活動後CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。"
+        },
+        {
+          "id": "cq",
+          "entity": "KONE連結",
+          "metric": "投資活動後CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "投資活動後CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。"
+        },
+        {
+          "id": "py",
+          "entity": "KONE連結",
+          "metric": "投資活動後CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "投資活動後CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。"
+        },
+        {
+          "id": "cy",
+          "entity": "KONE連結",
+          "metric": "投資活動後CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "投資活動後CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "pq",
+          "entity": "KONE連結",
+          "metric": "投資活動後CF",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "投資活動後CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。",
+          "value": 245.2,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、投資活動後CF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        },
+        {
+          "id": "cq",
+          "entity": "KONE連結",
+          "metric": "投資活動後CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "投資活動後CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。",
+          "value": 269.4,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、投資活動後CF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        },
+        {
+          "id": "py",
+          "entity": "KONE連結",
+          "metric": "投資活動後CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "投資活動後CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。",
+          "value": 762.9,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、投資活動後CF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        },
+        {
+          "id": "cy",
+          "entity": "KONE連結",
+          "metric": "投資活動後CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "投資活動後CF。投資活動後CFはCF計算書の営業CF＋投資CFで、独自FCFと定義が違う。",
+          "value": 889.6,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、投資活動後CF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "latest-cf-working-capital",
+      "question": "1〜9月の営業活動CFは増えましたが、金融項目・税金控除前CFは減少しています。Q3単独ではどちらも減っています。運転資金変動は前年Q3の31.1百万ユーロの資金流入から、76.4百万ユーロの流出へ変化しました。会社は、中東などでの物流制約に伴う在庫増加が影響したと説明しています。[PDF6・25頁](https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf)",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "1〜9月の営業活動CFは増えましたが、金融項目・税金控除前CFは減少しています。Q3単独ではどちらも減っています。運転資金変動は前年Q3の31.1百万ユーロの資金流入から、76.4百万ユーロの流出へ変化しました。会社は、中東などでの物流制約に伴う在庫増加が影響したと説明しています。[PDF6・25頁](https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf)",
+      "requiredInputs": [
+        {
+          "id": "pq",
+          "entity": "KONE連結",
+          "metric": "運転資金変動によるCF",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "運転資金変動によるCF"
+        },
+        {
+          "id": "cq",
+          "entity": "KONE連結",
+          "metric": "運転資金変動によるCF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "運転資金変動によるCF"
+        },
+        {
+          "id": "before-prior",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金控除前CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金控除前CF"
+        },
+        {
+          "id": "before-current",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金控除前CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金控除前CF"
+        },
+        {
+          "id": "after-prior",
+          "entity": "KONE連結",
+          "metric": "営業活動CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業活動CF"
+        },
+        {
+          "id": "after-current",
+          "entity": "KONE連結",
+          "metric": "営業活動CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業活動CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "pq",
+          "entity": "KONE連結",
+          "metric": "運転資金変動によるCF",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "運転資金変動によるCF",
+          "value": 31.1,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、運転資金変動によるCF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        },
+        {
+          "id": "cq",
+          "entity": "KONE連結",
+          "metric": "運転資金変動によるCF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "運転資金変動によるCF",
+          "value": -76.4,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、運転資金変動によるCF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        },
+        {
+          "id": "before-prior",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金控除前CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金控除前CF",
+          "value": 1295.5,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、金融項目・税金控除前CF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        },
+        {
+          "id": "before-current",
+          "entity": "KONE連結",
+          "metric": "金融項目・税金控除前CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "金融項目・税金控除前CF",
+          "value": 1284.3,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、金融項目・税金控除前CF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        },
+        {
+          "id": "after-prior",
+          "entity": "KONE連結",
+          "metric": "営業活動CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業活動CF",
+          "value": 951,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、営業活動CF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        },
+        {
+          "id": "after-current",
+          "entity": "KONE連結",
+          "metric": "営業活動CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業活動CF",
+          "value": 1001,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、営業活動CF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "inventory-receivables",
+      "question": "在庫は2025年9月末869.3百万ユーロから2026年9月末960.7百万ユーロへ、売掛金は2,305.8百万ユーロから2,516.0百万ユーロへ増えました。前受金や買掛金も増えて資金を支えており、差引きの運転資金だけでは個々の回収負担が見えにくくなります。物流の滞留が解けた後に在庫が売上と入金へ進むかが、次の検証点です。[PDF29頁](https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf)",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "在庫は2025年9月末869.3百万ユーロから2026年9月末960.7百万ユーロへ、売掛金は2,305.8百万ユーロから2,516.0百万ユーロへ増えました。前受金や買掛金も増えて資金を支えており、差引きの運転資金だけでは個々の回収負担が見えにくくなります。物流の滞留が解けた後に在庫が売上と入金へ進むかが、次の検証点です。[PDF29頁](https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf)",
+      "requiredInputs": [
+        {
+          "id": "invp",
+          "entity": "KONE連結",
+          "metric": "在庫",
+          "periodStart": "2025-09-30",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "在庫"
+        },
+        {
+          "id": "invc",
+          "entity": "KONE連結",
+          "metric": "在庫",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "在庫"
+        },
+        {
+          "id": "arp",
+          "entity": "KONE連結",
+          "metric": "売掛金",
+          "periodStart": "2025-09-30",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "売掛金"
+        },
+        {
+          "id": "arc",
+          "entity": "KONE連結",
+          "metric": "売掛金",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "売掛金"
+        }
+      ],
+      "observations": [
+        {
+          "id": "invp",
+          "entity": "KONE連結",
+          "metric": "在庫",
+          "periodStart": "2025-09-30",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "在庫",
+          "value": 869.3,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 29頁、在庫",
+            "kind": "primary",
+            "pdfPage": 29
+          }
+        },
+        {
+          "id": "invc",
+          "entity": "KONE連結",
+          "metric": "在庫",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "在庫",
+          "value": 960.7,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 29頁、在庫",
+            "kind": "primary",
+            "pdfPage": 29
+          }
+        },
+        {
+          "id": "arp",
+          "entity": "KONE連結",
+          "metric": "売掛金",
+          "periodStart": "2025-09-30",
+          "periodEnd": "2025-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "売掛金",
+          "value": 2305.8,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 29頁、売掛金",
+            "kind": "primary",
+            "pdfPage": 29
+          }
+        },
+        {
+          "id": "arc",
+          "entity": "KONE連結",
+          "metric": "売掛金",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "売掛金",
+          "value": 2516,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 29頁、売掛金",
+            "kind": "primary",
+            "pdfPage": 29
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-after-distribution-leases",
+      "question": "2026年1〜9月の投資活動後CF889.6百万ユーロから、利益分配932.7百万ユーロと、財務CFに含まれるリース元本返済119.7百万ユーロを引くと、-162.8百万ユーロです。これは上記3項目だけを差し引いた資金収支で、現金残高の増減そのものではありません。預金・貸付金の回収や借入の変動等は別にあります。[PDF25頁、筆者計算](https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf)",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "2026年1〜9月の投資活動後CF889.6百万ユーロから、利益分配932.7百万ユーロと、財務CFに含まれるリース元本返済119.7百万ユーロを引くと、-162.8百万ユーロです。これは上記3項目だけを差し引いた資金収支で、現金残高の増減そのものではありません。預金・貸付金の回収や借入の変動等は別にあります。[PDF25頁、筆者計算](https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf)",
+      "requiredInputs": [
+        {
+          "id": "after",
+          "entity": "KONE連結",
+          "metric": "投資活動後CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "投資活動後CF"
+        },
+        {
+          "id": "distribution",
+          "entity": "KONE連結",
+          "metric": "利益分配CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "利益分配CF"
+        },
+        {
+          "id": "lease",
+          "entity": "KONE連結",
+          "metric": "リース元本返済（財務CF、負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "リース元本返済（財務CF、負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "after",
+          "entity": "KONE連結",
+          "metric": "投資活動後CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "投資活動後CF",
+          "value": 889.6,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、投資活動後CF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        },
+        {
+          "id": "distribution",
+          "entity": "KONE連結",
+          "metric": "利益分配CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "利益分配CF",
+          "value": -932.7,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、利益分配CF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        },
+        {
+          "id": "lease",
+          "entity": "KONE連結",
+          "metric": "リース元本返済（財務CF、負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "リース元本返済（財務CF、負数）",
+          "value": -119.7,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、リース元本返済（財務CF、負数）",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "residual",
+          "operation": "sum",
+          "inputs": [
+            "after",
+            "distribution",
+            "lease"
+          ],
+          "value": -162.8,
+          "definition": "投資活動後CFから利益分配とリース元本返済を控除。現金残高増減・通常FCFとは異なる限定的な資金収支。",
+          "precision": 1
+        }
+      ]
+    },
+    {
+      "id": "funding-fees-paid",
+      "question": "さらに、営業活動CFにはTKE向けのコミット済み資金調達に関する手数料31.1百万ユーロの支払いが含まれます。統合完了前から現金負担は始まっています。一方で、この手数料を理由にCF全体の変化を説明したり、その全額を営業利益の調整項目と同一視したりはできません。[同頁注記](https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf)",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "さらに、営業活動CFにはTKE向けのコミット済み資金調達に関する手数料31.1百万ユーロの支払いが含まれます。統合完了前から現金負担は始まっています。一方で、この手数料を理由にCF全体の変化を説明したり、その全額を営業利益の調整項目と同一視したりはできません。[同頁注記](https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf)",
+      "requiredInputs": [
+        {
+          "id": "fees",
+          "entity": "KONE連結",
+          "metric": "TKEコミット資金調達に係る支払済手数料",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業活動CF内のfinancial itemsに含まれる現金支払。営業利益調整費用と同一視しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fees",
+          "entity": "KONE連結",
+          "metric": "TKEコミット資金調達に係る支払済手数料",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業活動CF内のfinancial itemsに含まれる現金支払。営業利益調整費用と同一視しない。",
+          "value": 31.1,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、TKEコミット資金調達に係る支払済手数料",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "returns-2021",
+      "question": "| 2021 | 32.0% | 26.8% |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 2021 | 32.0% | 26.8% |",
+      "requiredInputs": [
+        {
+          "id": "roe",
+          "entity": "KONE連結",
+          "metric": "会社定義ROE",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "純利益÷平均自己資本、百分率。定義はPDF32頁。"
+        },
+        {
+          "id": "roce",
+          "entity": "KONE連結",
+          "metric": "会社定義ROCE",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "（純利益＋金融費用）÷（平均自己資本＋平均有利子負債）、百分率。定義はPDF32頁。一般的なNOPAT/純営業資産ROICとは異なる。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "roe",
+          "entity": "KONE連結",
+          "metric": "会社定義ROE",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "純利益÷平均自己資本、百分率。定義はPDF32頁。",
+          "value": 32,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 31頁、会社定義ROE",
+            "kind": "primary",
+            "pdfPage": 31
+          }
+        },
+        {
+          "id": "roce",
+          "entity": "KONE連結",
+          "metric": "会社定義ROCE",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "（純利益＋金融費用）÷（平均自己資本＋平均有利子負債）、百分率。定義はPDF32頁。一般的なNOPAT/純営業資産ROICとは異なる。",
+          "value": 26.8,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 31頁、会社定義ROCE",
+            "kind": "primary",
+            "pdfPage": 31
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "returns-2022",
+      "question": "| 2022 | 25.9% | 22.4% |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 2022 | 25.9% | 22.4% |",
+      "requiredInputs": [
+        {
+          "id": "roe",
+          "entity": "KONE連結",
+          "metric": "会社定義ROE",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "純利益÷平均自己資本、百分率。定義はPDF32頁。"
+        },
+        {
+          "id": "roce",
+          "entity": "KONE連結",
+          "metric": "会社定義ROCE",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "（純利益＋金融費用）÷（平均自己資本＋平均有利子負債）、百分率。定義はPDF32頁。一般的なNOPAT/純営業資産ROICとは異なる。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "roe",
+          "entity": "KONE連結",
+          "metric": "会社定義ROE",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "純利益÷平均自己資本、百分率。定義はPDF32頁。",
+          "value": 25.9,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 31頁、会社定義ROE",
+            "kind": "primary",
+            "pdfPage": 31
+          }
+        },
+        {
+          "id": "roce",
+          "entity": "KONE連結",
+          "metric": "会社定義ROCE",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "（純利益＋金融費用）÷（平均自己資本＋平均有利子負債）、百分率。定義はPDF32頁。一般的なNOPAT/純営業資産ROICとは異なる。",
+          "value": 22.4,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 31頁、会社定義ROCE",
+            "kind": "primary",
+            "pdfPage": 31
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "returns-2023",
+      "question": "| 2023 | 33.0% | 27.8% |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 2023 | 33.0% | 27.8% |",
+      "requiredInputs": [
+        {
+          "id": "roe",
+          "entity": "KONE連結",
+          "metric": "会社定義ROE",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "純利益÷平均自己資本、百分率。定義はPDF32頁。"
+        },
+        {
+          "id": "roce",
+          "entity": "KONE連結",
+          "metric": "会社定義ROCE",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "（純利益＋金融費用）÷（平均自己資本＋平均有利子負債）、百分率。定義はPDF32頁。一般的なNOPAT/純営業資産ROICとは異なる。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "roe",
+          "entity": "KONE連結",
+          "metric": "会社定義ROE",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "純利益÷平均自己資本、百分率。定義はPDF32頁。",
+          "value": 33,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 31頁、会社定義ROE",
+            "kind": "primary",
+            "pdfPage": 31
+          }
+        },
+        {
+          "id": "roce",
+          "entity": "KONE連結",
+          "metric": "会社定義ROCE",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "（純利益＋金融費用）÷（平均自己資本＋平均有利子負債）、百分率。定義はPDF32頁。一般的なNOPAT/純営業資産ROICとは異なる。",
+          "value": 27.8,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 31頁、会社定義ROCE",
+            "kind": "primary",
+            "pdfPage": 31
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "returns-2024",
+      "question": "| 2024 | 33.8% | 27.2% |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 2024 | 33.8% | 27.2% |",
+      "requiredInputs": [
+        {
+          "id": "roe",
+          "entity": "KONE連結",
+          "metric": "会社定義ROE",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "純利益÷平均自己資本、百分率。定義はPDF32頁。"
+        },
+        {
+          "id": "roce",
+          "entity": "KONE連結",
+          "metric": "会社定義ROCE",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "（純利益＋金融費用）÷（平均自己資本＋平均有利子負債）、百分率。定義はPDF32頁。一般的なNOPAT/純営業資産ROICとは異なる。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "roe",
+          "entity": "KONE連結",
+          "metric": "会社定義ROE",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "純利益÷平均自己資本、百分率。定義はPDF32頁。",
+          "value": 33.8,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 31頁、会社定義ROE",
+            "kind": "primary",
+            "pdfPage": 31
+          }
+        },
+        {
+          "id": "roce",
+          "entity": "KONE連結",
+          "metric": "会社定義ROCE",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "（純利益＋金融費用）÷（平均自己資本＋平均有利子負債）、百分率。定義はPDF32頁。一般的なNOPAT/純営業資産ROICとは異なる。",
+          "value": 27.2,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 31頁、会社定義ROCE",
+            "kind": "primary",
+            "pdfPage": 31
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "returns-2025",
+      "question": "| 2025 | 34.7% | 26.9% |",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "| 2025 | 34.7% | 26.9% |",
+      "requiredInputs": [
+        {
+          "id": "roe",
+          "entity": "KONE連結",
+          "metric": "会社定義ROE",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "純利益÷平均自己資本、百分率。定義はPDF32頁。"
+        },
+        {
+          "id": "roce",
+          "entity": "KONE連結",
+          "metric": "会社定義ROCE",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "（純利益＋金融費用）÷（平均自己資本＋平均有利子負債）、百分率。定義はPDF32頁。一般的なNOPAT/純営業資産ROICとは異なる。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "roe",
+          "entity": "KONE連結",
+          "metric": "会社定義ROE",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "純利益÷平均自己資本、百分率。定義はPDF32頁。",
+          "value": 34.7,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 31頁、会社定義ROE",
+            "kind": "primary",
+            "pdfPage": 31
+          }
+        },
+        {
+          "id": "roce",
+          "entity": "KONE連結",
+          "metric": "会社定義ROCE",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "（純利益＋金融費用）÷（平均自己資本＋平均有利子負債）、百分率。定義はPDF32頁。一般的なNOPAT/純営業資産ROICとは異なる。",
+          "value": 26.9,
+          "source": {
+            "url": "https://www.kone.com/en/Images/KONE_Annual%20Review_2025_tcm17-141619.pdf",
+            "publishedOn": "2026-02-06",
+            "locator": "PDF 31頁、会社定義ROCE",
+            "kind": "primary",
+            "pdfPage": 31
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "net-debt-vs-liquid-assets",
+      "question": "2026年9月末のネット有利子負債は-716.1百万ユーロで、2025年末の-699.8百万ユーロよりネットキャッシュが厚く見えます。しかし、現金・現金同等物と流動の預金・貸付金の合計は、同期間に1,708.9百万ユーロから1,358.6百万ユーロへ減っています。[Q3報告書、PDF10頁](https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf)",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "2026年9月末のネット有利子負債は-716.1百万ユーロで、2025年末の-699.8百万ユーロよりネットキャッシュが厚く見えます。しかし、現金・現金同等物と流動の預金・貸付金の合計は、同期間に1,708.9百万ユーロから1,358.6百万ユーロへ減っています。[Q3報告書、PDF10頁](https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf)",
+      "requiredInputs": [
+        {
+          "id": "ndold",
+          "entity": "KONE連結",
+          "metric": "会社定義ネット有利子負債",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "会社定義ネット有利子負債"
+        },
+        {
+          "id": "ndnew",
+          "entity": "KONE連結",
+          "metric": "会社定義ネット有利子負債",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "会社定義ネット有利子負債"
+        },
+        {
+          "id": "liqold",
+          "entity": "KONE連結",
+          "metric": "現金同等物・現金＋流動預金・貸付金",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "現金同等物・現金＋流動預金・貸付金"
+        },
+        {
+          "id": "liqnew",
+          "entity": "KONE連結",
+          "metric": "現金同等物・現金＋流動預金・貸付金",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "現金同等物・現金＋流動預金・貸付金"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ndold",
+          "entity": "KONE連結",
+          "metric": "会社定義ネット有利子負債",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "会社定義ネット有利子負債",
+          "value": -699.8,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 10頁、会社定義ネット有利子負債",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "ndnew",
+          "entity": "KONE連結",
+          "metric": "会社定義ネット有利子負債",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "会社定義ネット有利子負債",
+          "value": -716.1,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 10頁、会社定義ネット有利子負債",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "liqold",
+          "entity": "KONE連結",
+          "metric": "現金同等物・現金＋流動預金・貸付金",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "現金同等物・現金＋流動預金・貸付金",
+          "value": 1708.9,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 10頁、現金同等物・現金＋流動預金・貸付金",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "liqnew",
+          "entity": "KONE連結",
+          "metric": "現金同等物・現金＋流動預金・貸付金",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "現金同等物・現金＋流動預金・貸付金",
+          "value": 1358.6,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 10頁、現金同等物・現金＋流動預金・貸付金",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "transaction-assets-in-net-debt",
+      "question": "最新のネット有利子負債にはTKE関連の非流動繰延資産32.5百万ユーロ、デリバティブ資産161.2百万ユーロ、デリバティブ負債6.4百万ユーロも含まれます。ネットキャッシュの数字を、そのまま自由に支払える現金と読み替えるべきではありません。買収の完了時期に依存するヘッジ評価額にも注意が必要です。[PDF29〜31頁](https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf)",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "最新のネット有利子負債にはTKE関連の非流動繰延資産32.5百万ユーロ、デリバティブ資産161.2百万ユーロ、デリバティブ負債6.4百万ユーロも含まれます。ネットキャッシュの数字を、そのまま自由に支払える現金と読み替えるべきではありません。買収の完了時期に依存するヘッジ評価額にも注意が必要です。[PDF29〜31頁](https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf)",
+      "requiredInputs": [
+        {
+          "id": "deferred",
+          "entity": "KONE連結",
+          "metric": "TKE関連非流動繰延資産",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "TKE関連非流動繰延資産"
+        },
+        {
+          "id": "derasset",
+          "entity": "KONE連結",
+          "metric": "TKE関連非流動デリバティブ資産",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "TKE関連非流動デリバティブ資産"
+        },
+        {
+          "id": "derliab",
+          "entity": "KONE連結",
+          "metric": "TKE関連非流動デリバティブ負債",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "TKE関連非流動デリバティブ負債"
+        }
+      ],
+      "observations": [
+        {
+          "id": "deferred",
+          "entity": "KONE連結",
+          "metric": "TKE関連非流動繰延資産",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "TKE関連非流動繰延資産",
+          "value": 32.5,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 29頁、TKE関連非流動繰延資産",
+            "kind": "primary",
+            "pdfPage": 29
+          }
+        },
+        {
+          "id": "derasset",
+          "entity": "KONE連結",
+          "metric": "TKE関連非流動デリバティブ資産",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "TKE関連非流動デリバティブ資産",
+          "value": 161.2,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 29頁、TKE関連非流動デリバティブ資産",
+            "kind": "primary",
+            "pdfPage": 29
+          }
+        },
+        {
+          "id": "derliab",
+          "entity": "KONE連結",
+          "metric": "TKE関連非流動デリバティブ負債",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "TKE関連非流動デリバティブ負債",
+          "value": 6.4,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 29頁、TKE関連非流動デリバティブ負債",
+            "kind": "primary",
+            "pdfPage": 29
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "transaction-consideration",
+      "question": "TKEとの統合には、地理的な補完、保守網の密度向上、調達・開発の効率化という合理性があります。一方、投資家が負担するのは買収価格と実行リスクです。4月29日の発表条件では、現金50億ユーロと最大2億7,000万株の新規B株を対価とし、TKEの既存ネット有利子負債約92億ユーロの大部分を借り換える計画です。[取引発表、Valuation and consideration／Financing節](https://tridion.kone.com/en/news-and-insights/releases/inside-information--kone-and-tke-to-combine--creating-a-world-class-company-in-the-elevator-and-escalator-industry-2026-04-29.aspx)",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "TKEとの統合には、地理的な補完、保守網の密度向上、調達・開発の効率化という合理性があります。一方、投資家が負担するのは買収価格と実行リスクです。4月29日の発表条件では、現金50億ユーロと最大2億7,000万株の新規B株を対価とし、TKEの既存ネット有利子負債約92億ユーロの大部分を借り換える計画です。[取引発表、Valuation and consideration／Financing節](https://tridion.kone.com/en/news-and-insights/releases/inside-information--kone-and-tke-to-combine--creating-a-world-class-company-in-the-elevator-and-escalator-industry-2026-04-29.aspx)",
+      "requiredInputs": [
+        {
+          "id": "cash",
+          "entity": "KONE/TKE予定取引",
+          "metric": "予定現金対価",
+          "periodStart": "2026-04-29",
+          "periodEnd": "2026-04-29",
+          "unit": "EUR million",
+          "basis": "company-forecast",
+          "definition": "予定現金対価。2026年4月29日発表時点の予定取引条件。実行日未定であり観測日をperiodに記録、実績ではない。"
+        },
+        {
+          "id": "shares",
+          "entity": "KONE/TKE予定取引",
+          "metric": "予定新規B株対価上限",
+          "periodStart": "2026-04-29",
+          "periodEnd": "2026-04-29",
+          "unit": "million shares",
+          "basis": "company-forecast",
+          "definition": "予定新規B株対価上限。2026年4月29日発表時点の予定取引条件。実行日未定であり観測日をperiodに記録、実績ではない。"
+        },
+        {
+          "id": "debt",
+          "entity": "KONE/TKE予定取引",
+          "metric": "借り換え対象TKE既存ネット有利子負債概数",
+          "periodStart": "2026-04-29",
+          "periodEnd": "2026-04-29",
+          "unit": "EUR million",
+          "basis": "company-forecast",
+          "definition": "発表時点のTKE既存ネット有利子負債概数。その大部分を借り換える計画。全額の借り換え確定額ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cash",
+          "entity": "KONE/TKE予定取引",
+          "metric": "予定現金対価",
+          "periodStart": "2026-04-29",
+          "periodEnd": "2026-04-29",
+          "unit": "EUR million",
+          "basis": "company-forecast",
+          "definition": "予定現金対価。2026年4月29日発表時点の予定取引条件。実行日未定であり観測日をperiodに記録、実績ではない。",
+          "value": 5000,
+          "source": {
+            "url": "https://tridion.kone.com/en/news-and-insights/releases/inside-information--kone-and-tke-to-combine--creating-a-world-class-company-in-the-elevator-and-escalator-industry-2026-04-29.aspx",
+            "publishedOn": "2026-04-29",
+            "locator": "Valuation and consideration",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "shares",
+          "entity": "KONE/TKE予定取引",
+          "metric": "予定新規B株対価上限",
+          "periodStart": "2026-04-29",
+          "periodEnd": "2026-04-29",
+          "unit": "million shares",
+          "basis": "company-forecast",
+          "definition": "予定新規B株対価上限。2026年4月29日発表時点の予定取引条件。実行日未定であり観測日をperiodに記録、実績ではない。",
+          "value": 270,
+          "source": {
+            "url": "https://tridion.kone.com/en/news-and-insights/releases/inside-information--kone-and-tke-to-combine--creating-a-world-class-company-in-the-elevator-and-escalator-industry-2026-04-29.aspx",
+            "publishedOn": "2026-04-29",
+            "locator": "Valuation and consideration",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "debt",
+          "entity": "KONE/TKE予定取引",
+          "metric": "借り換え対象TKE既存ネット有利子負債概数",
+          "periodStart": "2026-04-29",
+          "periodEnd": "2026-04-29",
+          "unit": "EUR million",
+          "basis": "company-forecast",
+          "definition": "発表時点のTKE既存ネット有利子負債概数。その大部分を借り換える計画。全額の借り換え確定額ではない。",
+          "value": 9200,
+          "source": {
+            "url": "https://tridion.kone.com/en/news-and-insights/releases/inside-information--kone-and-tke-to-combine--creating-a-world-class-company-in-the-elevator-and-escalator-industry-2026-04-29.aspx",
+            "publishedOn": "2026-04-29",
+            "locator": "Valuation and consideration",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "postdeal-ownership",
+      "question": "最大株数を使った発表時の試算では、売り手は統合後の発行済み株式の33.8%を保有します。これは発行済み株式に占める比率であり、利益が同じ率だけ減るという意味ではありません。TKEの利益も加わるため、既存株主の評価には新しい株式数と借入費用の両方が必要です。対価は規制対応の事業売却等によって調整される可能性があります。[取引発表、Transaction highlights／Valuation and consideration節](https://tridion.kone.com/en/news-and-insights/releases/inside-information--kone-and-tke-to-combine--creating-a-world-class-company-in-the-elevator-and-escalator-industry-2026-04-29.aspx)",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "最大株数を使った発表時の試算では、売り手は統合後の発行済み株式の33.8%を保有します。これは発行済み株式に占める比率であり、利益が同じ率だけ減るという意味ではありません。TKEの利益も加わるため、既存株主の評価には新しい株式数と借入費用の両方が必要です。対価は規制対応の事業売却等によって調整される可能性があります。[取引発表、Transaction highlights／Valuation and consideration節](https://tridion.kone.com/en/news-and-insights/releases/inside-information--kone-and-tke-to-combine--creating-a-world-class-company-in-the-elevator-and-escalator-industry-2026-04-29.aspx)",
+      "requiredInputs": [
+        {
+          "id": "ownership",
+          "entity": "KONE/TKE予定取引",
+          "metric": "売り手の統合後株式保有比率",
+          "periodStart": "2026-04-29",
+          "periodEnd": "2026-04-29",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "最大270百万株発行、自己株式を含む全発行済み株式の予定保有比率。発表時点の試算。議決権比率・利益希薄化率ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ownership",
+          "entity": "KONE/TKE予定取引",
+          "metric": "売り手の統合後株式保有比率",
+          "periodStart": "2026-04-29",
+          "periodEnd": "2026-04-29",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "最大270百万株発行、自己株式を含む全発行済み株式の予定保有比率。発表時点の試算。議決権比率・利益希薄化率ではない。",
+          "value": 33.8,
+          "source": {
+            "url": "https://tridion.kone.com/en/news-and-insights/releases/inside-information--kone-and-tke-to-combine--creating-a-world-class-company-in-the-elevator-and-escalator-industry-2026-04-29.aspx",
+            "publishedOn": "2026-04-29",
+            "locator": "Transaction highlights / Governance and Board of Directors",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "synergy-and-cost-timing",
+      "question": "会社は年間税引前コスト削減約7億ユーロを、完了後3年目末までに損益へ全面反映する計画です。関連する累計一時費用の見積もりは、その年間削減額の1〜1.2倍で、2年間に発生するとしています。削減額は実現済みの利益でも、初年度から全額入る現金でもありません。[取引発表、Financial benefits節](https://tridion.kone.com/en/news-and-insights/releases/inside-information--kone-and-tke-to-combine--creating-a-world-class-company-in-the-elevator-and-escalator-industry-2026-04-29.aspx)",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "会社は年間税引前コスト削減約7億ユーロを、完了後3年目末までに損益へ全面反映する計画です。関連する累計一時費用の見積もりは、その年間削減額の1〜1.2倍で、2年間に発生するとしています。削減額は実現済みの利益でも、初年度から全額入る現金でもありません。[取引発表、Financial benefits節](https://tridion.kone.com/en/news-and-insights/releases/inside-information--kone-and-tke-to-combine--creating-a-world-class-company-in-the-elevator-and-escalator-industry-2026-04-29.aspx)",
+      "requiredInputs": [
+        {
+          "id": "runrate",
+          "entity": "KONE/TKE予定取引",
+          "metric": "年間税引前コスト削減目標",
+          "periodStart": "2026-04-29",
+          "periodEnd": "2026-04-29",
+          "unit": "EUR million",
+          "basis": "company-forecast",
+          "definition": "完了後3年目末までの年間ランレート税前削減目標。実現済み利益や初年度CFではない。"
+        },
+        {
+          "id": "years",
+          "entity": "KONE/TKE予定取引",
+          "metric": "全面損益反映を目指す完了後年数",
+          "periodStart": "2026-04-29",
+          "periodEnd": "2026-04-29",
+          "unit": "years after closing",
+          "basis": "company-forecast",
+          "definition": "全面損益反映を目指す完了後年数。2026年4月29日発表時点の予定取引条件。実行日未定であり観測日をperiodに記録、実績ではない。"
+        },
+        {
+          "id": "costlo",
+          "entity": "KONE/TKE予定取引",
+          "metric": "累計一時費用/年間削減目標 下限",
+          "periodStart": "2026-04-29",
+          "periodEnd": "2026-04-29",
+          "unit": "times",
+          "basis": "company-forecast",
+          "definition": "累計一時費用/年間削減目標 下限。2026年4月29日発表時点の予定取引条件。実行日未定であり観測日をperiodに記録、実績ではない。"
+        },
+        {
+          "id": "costhi",
+          "entity": "KONE/TKE予定取引",
+          "metric": "累計一時費用/年間削減目標 上限",
+          "periodStart": "2026-04-29",
+          "periodEnd": "2026-04-29",
+          "unit": "times",
+          "basis": "company-forecast",
+          "definition": "累計一時費用/年間削減目標 上限。2026年4月29日発表時点の予定取引条件。実行日未定であり観測日をperiodに記録、実績ではない。"
+        },
+        {
+          "id": "costyears",
+          "entity": "KONE/TKE予定取引",
+          "metric": "関連一時費用が発生する計画年数",
+          "periodStart": "2026-04-29",
+          "periodEnd": "2026-04-29",
+          "unit": "years",
+          "basis": "company-forecast",
+          "definition": "関連一時費用が発生する計画年数。2026年4月29日発表時点の予定取引条件。実行日未定であり観測日をperiodに記録、実績ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "runrate",
+          "entity": "KONE/TKE予定取引",
+          "metric": "年間税引前コスト削減目標",
+          "periodStart": "2026-04-29",
+          "periodEnd": "2026-04-29",
+          "unit": "EUR million",
+          "basis": "company-forecast",
+          "definition": "完了後3年目末までの年間ランレート税前削減目標。実現済み利益や初年度CFではない。",
+          "value": 700,
+          "source": {
+            "url": "https://tridion.kone.com/en/news-and-insights/releases/inside-information--kone-and-tke-to-combine--creating-a-world-class-company-in-the-elevator-and-escalator-industry-2026-04-29.aspx",
+            "publishedOn": "2026-04-29",
+            "locator": "Financial benefits",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "years",
+          "entity": "KONE/TKE予定取引",
+          "metric": "全面損益反映を目指す完了後年数",
+          "periodStart": "2026-04-29",
+          "periodEnd": "2026-04-29",
+          "unit": "years after closing",
+          "basis": "company-forecast",
+          "definition": "全面損益反映を目指す完了後年数。2026年4月29日発表時点の予定取引条件。実行日未定であり観測日をperiodに記録、実績ではない。",
+          "value": 3,
+          "source": {
+            "url": "https://tridion.kone.com/en/news-and-insights/releases/inside-information--kone-and-tke-to-combine--creating-a-world-class-company-in-the-elevator-and-escalator-industry-2026-04-29.aspx",
+            "publishedOn": "2026-04-29",
+            "locator": "Financial benefits",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "costlo",
+          "entity": "KONE/TKE予定取引",
+          "metric": "累計一時費用/年間削減目標 下限",
+          "periodStart": "2026-04-29",
+          "periodEnd": "2026-04-29",
+          "unit": "times",
+          "basis": "company-forecast",
+          "definition": "累計一時費用/年間削減目標 下限。2026年4月29日発表時点の予定取引条件。実行日未定であり観測日をperiodに記録、実績ではない。",
+          "value": 1,
+          "source": {
+            "url": "https://tridion.kone.com/en/news-and-insights/releases/inside-information--kone-and-tke-to-combine--creating-a-world-class-company-in-the-elevator-and-escalator-industry-2026-04-29.aspx",
+            "publishedOn": "2026-04-29",
+            "locator": "Financial benefits",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "costhi",
+          "entity": "KONE/TKE予定取引",
+          "metric": "累計一時費用/年間削減目標 上限",
+          "periodStart": "2026-04-29",
+          "periodEnd": "2026-04-29",
+          "unit": "times",
+          "basis": "company-forecast",
+          "definition": "累計一時費用/年間削減目標 上限。2026年4月29日発表時点の予定取引条件。実行日未定であり観測日をperiodに記録、実績ではない。",
+          "value": 1.2,
+          "source": {
+            "url": "https://tridion.kone.com/en/news-and-insights/releases/inside-information--kone-and-tke-to-combine--creating-a-world-class-company-in-the-elevator-and-escalator-industry-2026-04-29.aspx",
+            "publishedOn": "2026-04-29",
+            "locator": "Financial benefits",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "costyears",
+          "entity": "KONE/TKE予定取引",
+          "metric": "関連一時費用が発生する計画年数",
+          "periodStart": "2026-04-29",
+          "periodEnd": "2026-04-29",
+          "unit": "years",
+          "basis": "company-forecast",
+          "definition": "関連一時費用が発生する計画年数。2026年4月29日発表時点の予定取引条件。実行日未定であり観測日をperiodに記録、実績ではない。",
+          "value": 2,
+          "source": {
+            "url": "https://tridion.kone.com/en/news-and-insights/releases/inside-information--kone-and-tke-to-combine--creating-a-world-class-company-in-the-elevator-and-escalator-industry-2026-04-29.aspx",
+            "publishedOn": "2026-04-29",
+            "locator": "Financial benefits",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "committed-funding",
+      "question": "Q3時点では、現金対価とTKE負債の借り換えに向けて143億ユーロの資金調達枠を確保しています。枠の確保は全額借入済みを意味しません。完了時期は規制承認を条件に早くても2027年Q2であり、会社は一部の当局承認が得られたと説明する一方、欧州委員会では事前届出段階にあるとしています。[Q3報告書、PDF16・30頁](https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf)／[会社掲載の説明会記録、PDF3頁](https://assets.kone.com/adobe/assets/urn:aaid:aem:778856df-6ba4-4252-afb0-290e27833376/renditions/original/as/KNEBV-HEL_Transcript_2026-10-28.pdf)",
+      "definition": "本文に明記した連結範囲・会計期間・単位・定義で比較。原資料の数値と表示丸めを照合。",
+      "status": "ready",
+      "claim": "Q3時点では、現金対価とTKE負債の借り換えに向けて143億ユーロの資金調達枠を確保しています。枠の確保は全額借入済みを意味しません。完了時期は規制承認を条件に早くても2027年Q2であり、会社は一部の当局承認が得られたと説明する一方、欧州委員会では事前届出段階にあるとしています。[Q3報告書、PDF16・30頁](https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf)／[会社掲載の説明会記録、PDF3頁](https://assets.kone.com/adobe/assets/urn:aaid:aem:778856df-6ba4-4252-afb0-290e27833376/renditions/original/as/KNEBV-HEL_Transcript_2026-10-28.pdf)",
+      "requiredInputs": [
+        {
+          "id": "facility",
+          "entity": "KONE連結",
+          "metric": "コミット済み資金調達枠",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "現金対価とTKE既存ネット有利子負債の大部分の借り換え向け枠。全額借入実行済みではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "facility",
+          "entity": "KONE連結",
+          "metric": "コミット済み資金調達枠",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "現金対価とTKE既存ネット有利子負債の大部分の借り換え向け枠。全額借入実行済みではない。",
+          "value": 14300,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 16頁、コミット済み資金調達枠",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "withheld-latest-fcf",
+      "question": "最新9カ月も通期表と同じ定義のFCFを計算できるか",
+      "definition": "営業活動CFから現金設備投資のみを控除した比較",
+      "status": "withheld",
+      "reason": "2026Q3要約CFは投資CFのみを開示。現金設備投資と買収支出の個別内訳を取得資料で確認できないため、異なる定義の数値で代用しない。",
+      "omittedClaim": "2026年1〜9月の独自FCFは922.0百万ユーロである。",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "KONE連結",
+          "metric": "営業活動CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業活動CF"
+        },
+        {
+          "id": "cash-capex",
+          "entity": "KONE連結",
+          "metric": "設備投資現金支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "CF計算書ベースの現金設備投資。事業説明の固定資産取得額で代用しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "KONE連結",
+          "metric": "営業活動CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "EUR million",
+          "basis": "actual",
+          "definition": "営業活動CF",
+          "value": 1001,
+          "source": {
+            "url": "https://assets.kone.com/adobe/assets/urn:aaid:aem:e509c32d-7919-47a6-a747-8beda76e726a/renditions/original/as/KONE_Q3_2026_Interim_Report.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "PDF 25頁、営業活動CF",
+            "kind": "primary",
+            "pdfPage": 25
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}

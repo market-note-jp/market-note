@@ -68,3 +68,13 @@ for (const slug of ["company-nintendo-2026-11-05", "company-autozone-2026-11-05"
     verifyResearchArticle(article, html);
   });
 }
+
+// The November 6 batch must preserve the complete source body and first paragraph.
+for (const slug of ["company-keyence-2026-11-06", "company-ametek-2026-11-06", "company-kone-2026-11-06", "theme-us-productivity-ai-margins-2026-11-06", "theme-boe-energy-margins-2026-11-06"]) {
+  test(`${slug}: explicit title, complete visible content and metadata`, () => {
+    const article = JSON.parse(readFileSync(`app/articles/${slug}/article.json`, 'utf8'));
+    assert.equal(article.markdown.trim().split(/\n\s*\n/)[0], `# ${article.title}`);
+    const html = readFileSync(`out/articles/${slug}/index.html`, 'utf8');
+    verifyResearchArticle(article, html);
+  });
+}
