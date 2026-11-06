@@ -1,0 +1,762 @@
+{
+  "version": 1,
+  "articleSlug": "theme-us-productivity-ai-margins-2026-11-06",
+  "articleSha256": "5cb900290c765f3efcf895de176bafab2861ac8d25b213731f5d9013c6825efa",
+  "checkedAt": "2026-11-06T11:08:27Z",
+  "informationCutoff": "2026-11-06T19:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "全文・見出し・要約・3表の全重要数値を一次本文と確認。Q3表A1は年率/前年比を区別、製造業との直接差引なし。Q2表B1新旧値の3差分を再計算。労働生産性のAI因果寄与とQ3企業利益は作らず。改定予定は予定扱い。原典はBLSの2026年11月5日08:30米東部標準時（同日22:30JST）公表版で基準時点前。現在digestはarticle.jsonのみ、統合時page.tsx追加とpublishedTime変更後は全文再点検してarticleDigestを再生成する。",
+  "comparisons": [
+    {
+      "id": "productivity-annualized-and-year-over-year",
+      "question": "| 労働生産性 | +3.6% | +2.1% |",
+      "definition": "同じ2026Q3の指標だが年率換算した前期比と前年同期比は異なる比較期間。両者の差を計算せず、本文と表見出しで明記。",
+      "status": "ready",
+      "claim": "| 労働生産性 | +3.6% | +2.1% |",
+      "requiredInputs": [
+        {
+          "id": "qoq",
+          "entity": "米国・非農業企業部門",
+          "metric": "労働生産性",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2026Q2の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。"
+        },
+        {
+          "id": "yoy",
+          "entity": "米国・非農業企業部門",
+          "metric": "労働生産性",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2025Q3の前年同期比。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "qoq",
+          "entity": "米国・非農業企業部門",
+          "metric": "労働生産性",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2026Q2の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。",
+          "value": 3.6,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Table A1. Labor productivity growth and related measures — preliminary third-quarter 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "yoy",
+          "entity": "米国・非農業企業部門",
+          "metric": "労働生産性",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2025Q3の前年同期比。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。",
+          "value": 2.1,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Table A1. Labor productivity growth and related measures — preliminary third-quarter 2026",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "output-annualized-and-year-over-year",
+      "question": "| 実質産出 | +3.7% | +2.3% |",
+      "definition": "同じ2026Q3の指標だが年率換算した前期比と前年同期比は異なる比較期間。両者の差を計算せず、本文と表見出しで明記。",
+      "status": "ready",
+      "claim": "| 実質産出 | +3.7% | +2.3% |",
+      "requiredInputs": [
+        {
+          "id": "qoq",
+          "entity": "米国・非農業企業部門",
+          "metric": "実質産出",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2026Q2の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。"
+        },
+        {
+          "id": "yoy",
+          "entity": "米国・非農業企業部門",
+          "metric": "実質産出",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2025Q3の前年同期比。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "qoq",
+          "entity": "米国・非農業企業部門",
+          "metric": "実質産出",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2026Q2の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。",
+          "value": 3.7,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Table A1. Labor productivity growth and related measures — preliminary third-quarter 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "yoy",
+          "entity": "米国・非農業企業部門",
+          "metric": "実質産出",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2025Q3の前年同期比。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。",
+          "value": 2.3,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Table A1. Labor productivity growth and related measures — preliminary third-quarter 2026",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "hours-annualized-and-year-over-year",
+      "question": "| 総労働時間 | +0.1% | +0.2% |",
+      "definition": "同じ2026Q3の指標だが年率換算した前期比と前年同期比は異なる比較期間。両者の差を計算せず、本文と表見出しで明記。",
+      "status": "ready",
+      "claim": "| 総労働時間 | +0.1% | +0.2% |",
+      "requiredInputs": [
+        {
+          "id": "qoq",
+          "entity": "米国・非農業企業部門",
+          "metric": "総労働時間",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2026Q2の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。"
+        },
+        {
+          "id": "yoy",
+          "entity": "米国・非農業企業部門",
+          "metric": "総労働時間",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2025Q3の前年同期比。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "qoq",
+          "entity": "米国・非農業企業部門",
+          "metric": "総労働時間",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2026Q2の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。",
+          "value": 0.1,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Table A1. Labor productivity growth and related measures — preliminary third-quarter 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "yoy",
+          "entity": "米国・非農業企業部門",
+          "metric": "総労働時間",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2025Q3の前年同期比。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。",
+          "value": 0.2,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Table A1. Labor productivity growth and related measures — preliminary third-quarter 2026",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "compensation-annualized-and-year-over-year",
+      "question": "| 時間当たり報酬 | +2.9% | +4.5% |",
+      "definition": "同じ2026Q3の指標だが年率換算した前期比と前年同期比は異なる比較期間。両者の差を計算せず、本文と表見出しで明記。",
+      "status": "ready",
+      "claim": "| 時間当たり報酬 | +2.9% | +4.5% |",
+      "requiredInputs": [
+        {
+          "id": "qoq",
+          "entity": "米国・非農業企業部門",
+          "metric": "時間当たり報酬",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2026Q2の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。"
+        },
+        {
+          "id": "yoy",
+          "entity": "米国・非農業企業部門",
+          "metric": "時間当たり報酬",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2025Q3の前年同期比。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "qoq",
+          "entity": "米国・非農業企業部門",
+          "metric": "時間当たり報酬",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2026Q2の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。",
+          "value": 2.9,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Table A1. Labor productivity growth and related measures — preliminary third-quarter 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "yoy",
+          "entity": "米国・非農業企業部門",
+          "metric": "時間当たり報酬",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2025Q3の前年同期比。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。",
+          "value": 4.5,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Table A1. Labor productivity growth and related measures — preliminary third-quarter 2026",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "ulc-annualized-and-year-over-year",
+      "question": "| 単位労働コスト | -0.7% | +2.4% |",
+      "definition": "同じ2026Q3の指標だが年率換算した前期比と前年同期比は異なる比較期間。両者の差を計算せず、本文と表見出しで明記。",
+      "status": "ready",
+      "claim": "| 単位労働コスト | -0.7% | +2.4% |",
+      "requiredInputs": [
+        {
+          "id": "qoq",
+          "entity": "米国・非農業企業部門",
+          "metric": "単位労働コスト",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2026Q2の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。"
+        },
+        {
+          "id": "yoy",
+          "entity": "米国・非農業企業部門",
+          "metric": "単位労働コスト",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2025Q3の前年同期比。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "qoq",
+          "entity": "米国・非農業企業部門",
+          "metric": "単位労働コスト",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2026Q2の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。",
+          "value": -0.7,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Table A1. Labor productivity growth and related measures — preliminary third-quarter 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "yoy",
+          "entity": "米国・非農業企業部門",
+          "metric": "単位労働コスト",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2025Q3の前年同期比。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。",
+          "value": 2.4,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Table A1. Labor productivity growth and related measures — preliminary third-quarter 2026",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "manufacturing-heterogeneity",
+      "question": "製造業の労働生産性は前期比年率0.3%増にとどまり、単位労働コストは同2.7%増、前年同期比では4.0%増だった。",
+      "definition": "製造業の方向を提示。非農業企業部門とは産出の概念・資料・作成方法が異なるため水準比較・差引・サービス業残差は作らない。",
+      "status": "ready",
+      "claim": "製造業の労働生産性は前期比年率0.3%増にとどまり、単位労働コストは同2.7%増、前年同期比では4.0%増だった。",
+      "requiredInputs": [
+        {
+          "id": "prod",
+          "entity": "米国・製造業",
+          "metric": "労働生産性",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2026Q2の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。"
+        },
+        {
+          "id": "ulcq",
+          "entity": "米国・製造業",
+          "metric": "単位労働コスト",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2026Q2の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。"
+        },
+        {
+          "id": "ulcy",
+          "entity": "米国・製造業",
+          "metric": "単位労働コスト",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2025Q3の前年同期比。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prod",
+          "entity": "米国・製造業",
+          "metric": "労働生産性",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2026Q2の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。",
+          "value": 0.3,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Table A1. Labor productivity growth and related measures — preliminary third-quarter 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ulcq",
+          "entity": "米国・製造業",
+          "metric": "単位労働コスト",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2026Q2の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。",
+          "value": 2.7,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Table A1. Labor productivity growth and related measures — preliminary third-quarter 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ulcy",
+          "entity": "米国・製造業",
+          "metric": "単位労働コスト",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2025Q3の前年同期比。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。",
+          "value": 4,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Table A1. Labor productivity growth and related measures — preliminary third-quarter 2026",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q2-revision-prod",
+      "question": "| 労働生産性 | +1.4% | +2.1% | +0.7ポイント |",
+      "definition": "新旧値を11月5日公表版表B1で照合。期差ではなく公表版の改定差。",
+      "status": "ready",
+      "claim": "| 労働生産性 | +1.4% | +2.1% | +0.7ポイント |",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "米国・非農業企業部門",
+          "metric": "労働生産性",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版に掲載されたPreviously published値。2026Q2対2026Q1の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。"
+        },
+        {
+          "id": "new",
+          "entity": "米国・非農業企業部門",
+          "metric": "労働生産性",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q2対2026Q1の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "米国・非農業企業部門",
+          "metric": "労働生産性",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版に掲載されたPreviously published値。2026Q2対2026Q1の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。",
+          "value": 1.4,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Table B1, Nonfarm business, Previously published",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "米国・非農業企業部門",
+          "metric": "労働生産性",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q2対2026Q1の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。",
+          "value": 2.1,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Table B1, Nonfarm business, Revised",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "revision",
+          "operation": "difference",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "同じ2026Q2について11月5日改定値−従来公表値。成長率の差なのでパーセントポイント。",
+          "precision": 1,
+          "value": 0.7
+        }
+      ]
+    },
+    {
+      "id": "q2-revision-pay",
+      "question": "| 時間当たり報酬 | +2.6% | +4.0% | +1.4ポイント |",
+      "definition": "新旧値を11月5日公表版表B1で照合。期差ではなく公表版の改定差。",
+      "status": "ready",
+      "claim": "| 時間当たり報酬 | +2.6% | +4.0% | +1.4ポイント |",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "米国・非農業企業部門",
+          "metric": "時間当たり報酬",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版に掲載されたPreviously published値。2026Q2対2026Q1の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。"
+        },
+        {
+          "id": "new",
+          "entity": "米国・非農業企業部門",
+          "metric": "時間当たり報酬",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q2対2026Q1の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "米国・非農業企業部門",
+          "metric": "時間当たり報酬",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版に掲載されたPreviously published値。2026Q2対2026Q1の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。",
+          "value": 2.6,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Table B1, Nonfarm business, Previously published",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "米国・非農業企業部門",
+          "metric": "時間当たり報酬",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q2対2026Q1の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。",
+          "value": 4,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Table B1, Nonfarm business, Revised",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "revision",
+          "operation": "difference",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "同じ2026Q2について11月5日改定値−従来公表値。成長率の差なのでパーセントポイント。",
+          "precision": 1,
+          "value": 1.4
+        }
+      ]
+    },
+    {
+      "id": "q2-revision-ulc",
+      "question": "| 単位労働コスト | +1.2% | +1.9% | +0.7ポイント |",
+      "definition": "新旧値を11月5日公表版表B1で照合。期差ではなく公表版の改定差。",
+      "status": "ready",
+      "claim": "| 単位労働コスト | +1.2% | +1.9% | +0.7ポイント |",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "米国・非農業企業部門",
+          "metric": "単位労働コスト",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版に掲載されたPreviously published値。2026Q2対2026Q1の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。"
+        },
+        {
+          "id": "new",
+          "entity": "米国・非農業企業部門",
+          "metric": "単位労働コスト",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q2対2026Q1の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "米国・非農業企業部門",
+          "metric": "単位労働コスト",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版に掲載されたPreviously published値。2026Q2対2026Q1の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。",
+          "value": 1.2,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Table B1, Nonfarm business, Previously published",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "米国・非農業企業部門",
+          "metric": "単位労働コスト",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q2対2026Q1の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。",
+          "value": 1.9,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Table B1, Nonfarm business, Revised",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "revision",
+          "operation": "difference",
+          "inputs": [
+            "new",
+            "old"
+          ],
+          "definition": "同じ2026Q2について11月5日改定値−従来公表値。成長率の差なのでパーセントポイント。",
+          "precision": 1,
+          "value": 0.7
+        }
+      ]
+    },
+    {
+      "id": "ai-attribution-withheld",
+      "question": "生産性の伸びのうちAIの因果寄与は何ポイントか。",
+      "definition": "労働生産性は複数要因の合成結果。AIのみの因果寄与は観測されていない。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "prod",
+          "entity": "米国・非農業企業部門",
+          "metric": "労働生産性",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2026Q2の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。"
+        },
+        {
+          "id": "aiContribution",
+          "entity": "米国・非農業企業部門",
+          "metric": "労働生産性伸びへのAI因果寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "他要因を除いたAIのみの因果寄与。一次リリースに識別結果なし。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prod",
+          "entity": "米国・非農業企業部門",
+          "metric": "労働生産性",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent change",
+          "basis": "actual",
+          "definition": "2026年11月5日公表版。2026Q3対2026Q2の前期比年率。季節調整済み。報酬は賃金・給与に雇用主福利厚生拠出等を含む。労働生産性は実質産出÷総労働時間、単位労働コストは時間当たり報酬÷労働生産性。公表率を使用し丸めた指数から再計算しない。",
+          "value": 3.6,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Table A1. Labor productivity growth and related measures — preliminary third-quarter 2026",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "reason": "BLS技術注記は技術、設備投資、産出水準、稼働率、組織などの共同効果と定義し、AI別寄与を示していない。未観測のAI寄与をゼロにも全額にも置かない。",
+      "omittedClaim": "AIの導入だけで労働生産性が3.6ポイント上昇した。"
+    }
+  ],
+  "qualitativeChecks": [
+    {
+      "claim": "BLSは労働生産性を多要因の共同効果と説明し、AI寄与を分離しない。",
+      "source": "https://www.bls.gov/news.release/prod2.tn.htm",
+      "publishedOn": "2026-11-05",
+      "locator": "Labor Productivity",
+      "review": "技術、資本投資、産出、設備利用、エネルギー・材料、組織、管理、労働力特性などの列挙を本文で確認。AI寄与なしはAI効果ゼロを意味しない。"
+    },
+    {
+      "claim": "時間当たり報酬は月次雇用統計の平均時給と同一ではない。",
+      "source": "https://www.bls.gov/news.release/prod2.tn.htm",
+      "publishedOn": "2026-11-05",
+      "locator": "Labor Compensation; Labor Hours",
+      "review": "報酬は賃金・給与・福利厚生拠出等。労働時間には自営業者・無給家族従業者も含む。"
+    },
+    {
+      "claim": "製造業産出と非農業企業部門産出は直接比較できない。",
+      "source": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+      "publishedOn": "2026-11-05",
+      "locator": "本文、Manufacturing paragraphs following unit labor costs",
+      "review": "原文concepts, sources, and methods differ; not directly comparableを確認。差からサービス成長率を作らない。"
+    },
+    {
+      "claim": "非金融法人部門の単位利益は2026Q2までで、Q3の非農業企業部門とは対象・期間が異なる。",
+      "source": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+      "publishedOn": "2026-11-05",
+      "locator": "Table 6, latest row 2026 II",
+      "review": "単位利益39.1%等の数字をQ3の利益に見せないため本文には掲載しない。"
+    },
+    {
+      "claim": "7〜9月期改定版は2026年12月8日08:30 ET公表予定。",
+      "source": "https://www.bls.gov/news.release/archives/prod2_11052026.htm",
+      "publishedOn": "2026-11-05",
+      "locator": "Next release paragraph above Table A1",
+      "review": "将来予定と明示。本文には日付のみ記載、結果や確定予定としない。"
+    },
+    {
+      "claim": "効率化が企業利益・現金に残る条件と反論。",
+      "source": "https://www.bls.gov/news.release/prod2.tn.htm",
+      "publishedOn": "2026-11-05",
+      "locator": "Labor Productivity and Unit Labor Costsを起点にした筆者分析",
+      "review": "表の導入費・数量・品質・値下げ・現金回収は企業分析の確認項目。統計が観測した結果や具体的な将来予想ではないと本文で明示。"
+    }
+  ]
+}

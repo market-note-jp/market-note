@@ -1,0 +1,460 @@
+{
+  "version": 1,
+  "articleSlug": "theme-boe-energy-margins-2026-11-06",
+  "articleSha256": "87e17676c0731e375e042ff86b838da40dec264d467b8020849d6bcbfbe7bc37",
+  "checkedAt": "2026-11-06T11:08:27Z",
+  "informationCutoff": "2026-11-06T19:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終本文全体の数値・見出し・表を確認。政策決定、CPI実績と予測、DMPの割合・伸び率を記録。表の回答割合の重複は不明、集計を合計しない。期間はDMP調査期間または平均対象期間、期待値の予測期間はdefinitionに明示。本文に計算値はなくcalculationsは空。digestは現在のarticle.jsonをarticleDigest方式で作成。統合時に最終配置のファイル集合で再計算を要する。 既存スキーマのcompany-forecast区分は、BoEの機関予測およびDMP回答企業自身の予想に使用。中央銀行の予測であることと調査の回答期間・予想対象はdefinitionと本文で区別し、コンセンサスや実績には分類しない。 親担当がDMP一次本文の数値・期間を独立照合、タイトル修正・加重集計・編集説明除去・免責の変更を全文確認。仮digestのpath keyはapp/articles/theme-boe-energy-margins-2026-11-06/article.jsonへ統一。",
+  "comparisons": [
+    {
+      "id": "rate-decision",
+      "question": "英中銀は11月5日、政策金利を0.25ポイント引き上げて4%とした。採決は8対1で、反対の1人も据え置きではなく0.5ポイントの引き上げを支持した。",
+      "definition": "公表値をそのまま記録。実績・決定・企業予想・中央銀行予測を区別。",
+      "status": "ready",
+      "claim": "英中銀は11月5日、政策金利を0.25ポイント引き上げて4%とした。採決は8対1で、反対の1人も据え置きではなく0.5ポイントの引き上げを支持した。",
+      "requiredInputs": [
+        {
+          "id": "rate",
+          "entity": "英国／Bank of England",
+          "metric": "Bank Rate",
+          "periodStart": "2026-11-05",
+          "periodEnd": "2026-11-05",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "公表した政策金利水準"
+        },
+        {
+          "id": "rise",
+          "entity": "英国／Bank of England",
+          "metric": "政策金利引上げ幅",
+          "periodStart": "2026-11-05",
+          "periodEnd": "2026-11-05",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "決定幅。25bpに相当"
+        },
+        {
+          "id": "majority",
+          "entity": "英国／Bank of England",
+          "metric": "25bp支持者",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2026-11-04",
+          "unit": "members",
+          "basis": "actual",
+          "definition": "11月4日終了会合の賛成票"
+        },
+        {
+          "id": "minority",
+          "entity": "英国／Bank of England",
+          "metric": "50bp支持者",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2026-11-04",
+          "unit": "members",
+          "basis": "actual",
+          "definition": "据え置き支持ではない"
+        },
+        {
+          "id": "alternative",
+          "entity": "英国／Bank of England",
+          "metric": "少数意見の利上げ幅",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2026-11-04",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "採用されなかった提案幅"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rate",
+          "entity": "英国／Bank of England",
+          "metric": "Bank Rate",
+          "periodStart": "2026-11-05",
+          "periodEnd": "2026-11-05",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "公表した政策金利水準",
+          "value": 4,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+            "publishedOn": "2026-11-05",
+            "locator": "Summary opening; minutes 19–22",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "rise",
+          "entity": "英国／Bank of England",
+          "metric": "政策金利引上げ幅",
+          "periodStart": "2026-11-05",
+          "periodEnd": "2026-11-05",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "決定幅。25bpに相当",
+          "value": 0.25,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+            "publishedOn": "2026-11-05",
+            "locator": "Summary opening; minutes 19–22",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "majority",
+          "entity": "英国／Bank of England",
+          "metric": "25bp支持者",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2026-11-04",
+          "unit": "members",
+          "basis": "actual",
+          "definition": "11月4日終了会合の賛成票",
+          "value": 8,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+            "publishedOn": "2026-11-05",
+            "locator": "minutes 22",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "minority",
+          "entity": "英国／Bank of England",
+          "metric": "50bp支持者",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2026-11-04",
+          "unit": "members",
+          "basis": "actual",
+          "definition": "据え置き支持ではない",
+          "value": 1,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+            "publishedOn": "2026-11-05",
+            "locator": "minutes 20,22",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "alternative",
+          "entity": "英国／Bank of England",
+          "metric": "少数意見の利上げ幅",
+          "periodStart": "2026-11-04",
+          "periodEnd": "2026-11-04",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "採用されなかった提案幅",
+          "value": 0.5,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+            "publishedOn": "2026-11-05",
+            "locator": "minutes 20,22",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cpi-actual-and-projection",
+      "question": "9月のCPI上昇率は前年比3.5%、2027年4〜6月には約5%に達するとの見通しを示した。",
+      "definition": "公表値をそのまま記録。実績・決定・企業予想・中央銀行予測を区別。",
+      "status": "ready",
+      "claim": "9月のCPI上昇率は前年比3.5%、2027年4〜6月には約5%に達するとの見通しを示した。",
+      "requiredInputs": [
+        {
+          "id": "actual",
+          "entity": "英国／Bank of England",
+          "metric": "CPI前年比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "全国CPI上昇率実績"
+        },
+        {
+          "id": "forecast",
+          "entity": "英国／Bank of England",
+          "metric": "CPI前年比予測",
+          "periodStart": "2027-04-01",
+          "periodEnd": "2027-06-30",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "約5%。11月報告の条件付き予測であり実績ではない"
+        }
+      ],
+      "observations": [
+        {
+          "id": "actual",
+          "entity": "英国／Bank of England",
+          "metric": "CPI前年比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "全国CPI上昇率実績",
+          "value": 3.5,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+            "publishedOn": "2026-11-05",
+            "locator": "minutes 4",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "forecast",
+          "entity": "英国／Bank of England",
+          "metric": "CPI前年比予測",
+          "periodStart": "2027-04-01",
+          "periodEnd": "2027-06-30",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "約5%。11月報告の条件付き予測であり実績ではない",
+          "value": 5,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+            "publishedOn": "2026-11-05",
+            "locator": "minutes 6",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "price-response",
+      "question": "| エネルギーショックで値上げを見込む企業 | 68% | 10月調査、今後12か月の対応 |",
+      "definition": "公表値をそのまま記録。実績・決定・企業予想・中央銀行予測を区別。",
+      "status": "ready",
+      "claim": "| エネルギーショックで値上げを見込む企業 | 68% | 10月調査、今後12か月の対応 |",
+      "requiredInputs": [
+        {
+          "id": "price-response",
+          "entity": "英国／Bank of England",
+          "metric": "値上げを予想する企業割合",
+          "periodStart": "2026-10-02",
+          "periodEnd": "2026-10-16",
+          "unit": "percent of firms",
+          "basis": "company-forecast",
+          "definition": "10月調査の今後12か月に対する回答。加重集計。価格や利益率の変化幅ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "price-response",
+          "entity": "英国／Bank of England",
+          "metric": "値上げを予想する企業割合",
+          "periodStart": "2026-10-02",
+          "periodEnd": "2026-10-16",
+          "unit": "percent of firms",
+          "basis": "company-forecast",
+          "definition": "10月調査の今後12か月に対する回答。加重集計。価格や利益率の変化幅ではない。",
+          "value": 68,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/decision-maker-panel/2026/october-2026",
+            "publishedOn": "2026-10-30",
+            "locator": "News release paragraph 7",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "margin-response",
+      "question": "| 同じショックで利益率低下を見込む企業 | 71% | 10月調査、今後12か月の対応 |",
+      "definition": "公表値をそのまま記録。実績・決定・企業予想・中央銀行予測を区別。",
+      "status": "ready",
+      "claim": "| 同じショックで利益率低下を見込む企業 | 71% | 10月調査、今後12か月の対応 |",
+      "requiredInputs": [
+        {
+          "id": "margin-response",
+          "entity": "英国／Bank of England",
+          "metric": "利益率低下を予想する企業割合",
+          "periodStart": "2026-10-02",
+          "periodEnd": "2026-10-16",
+          "unit": "percent of firms",
+          "basis": "company-forecast",
+          "definition": "10月調査の今後12か月に対する回答。加重集計。価格や利益率の変化幅ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "margin-response",
+          "entity": "英国／Bank of England",
+          "metric": "利益率低下を予想する企業割合",
+          "periodStart": "2026-10-02",
+          "periodEnd": "2026-10-16",
+          "unit": "percent of firms",
+          "basis": "company-forecast",
+          "definition": "10月調査の今後12か月に対する回答。加重集計。価格や利益率の変化幅ではない。",
+          "value": 71,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/decision-maker-panel/2026/october-2026",
+            "publishedOn": "2026-10-30",
+            "locator": "News release paragraph 8",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "prices",
+      "question": "| 自社販売価格の実績／先行き予想 | 3.8%／3.8% | 10月までの3か月平均。実績は前年比、予想は1年先の前年比 |",
+      "definition": "公表値をそのまま記録。実績・決定・企業予想・中央銀行予測を区別。",
+      "status": "ready",
+      "claim": "| 自社販売価格の実績／先行き予想 | 3.8%／3.8% | 10月までの3か月平均。実績は前年比、予想は1年先の前年比 |",
+      "requiredInputs": [
+        {
+          "id": "pricesActual",
+          "entity": "英国／Bank of England",
+          "metric": "自社販売価格伸び率",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-10-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "10月までの3か月の調査平均、過去1年の実現伸び率。DMP自社回答。"
+        },
+        {
+          "id": "pricesExpected",
+          "entity": "英国／Bank of England",
+          "metric": "自社販売価格伸び率",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-10-31",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "同じ3か月の調査平均。各回答時点から1年先に見込む前年比。確定実績と比較しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "pricesActual",
+          "entity": "英国／Bank of England",
+          "metric": "自社販売価格伸び率",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-10-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "10月までの3か月の調査平均、過去1年の実現伸び率。DMP自社回答。",
+          "value": 3.8,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/decision-maker-panel/2026/october-2026",
+            "publishedOn": "2026-10-30",
+            "locator": "News release paragraphs 2–3",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "pricesExpected",
+          "entity": "英国／Bank of England",
+          "metric": "自社販売価格伸び率",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-10-31",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "同じ3か月の調査平均。各回答時点から1年先に見込む前年比。確定実績と比較しない。",
+          "value": 3.8,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/decision-maker-panel/2026/october-2026",
+            "publishedOn": "2026-10-30",
+            "locator": "News release paragraphs 2–3",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "wages",
+      "question": "| 賃金の実績／先行き予想 | 3.9%／3.4% | 10月までの3か月平均。実績は前年比、予想は1年先の前年比 |",
+      "definition": "公表値をそのまま記録。実績・決定・企業予想・中央銀行予測を区別。",
+      "status": "ready",
+      "claim": "| 賃金の実績／先行き予想 | 3.9%／3.4% | 10月までの3か月平均。実績は前年比、予想は1年先の前年比 |",
+      "requiredInputs": [
+        {
+          "id": "wagesActual",
+          "entity": "英国／Bank of England",
+          "metric": "賃金伸び率",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-10-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "10月までの3か月の調査平均、過去1年の実現伸び率。DMP自社回答。"
+        },
+        {
+          "id": "wagesExpected",
+          "entity": "英国／Bank of England",
+          "metric": "賃金伸び率",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-10-31",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "同じ3か月の調査平均。各回答時点から1年先に見込む前年比。確定実績と比較しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "wagesActual",
+          "entity": "英国／Bank of England",
+          "metric": "賃金伸び率",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-10-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "10月までの3か月の調査平均、過去1年の実現伸び率。DMP自社回答。",
+          "value": 3.9,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/decision-maker-panel/2026/october-2026",
+            "publishedOn": "2026-10-30",
+            "locator": "News release paragraph 5",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "wagesExpected",
+          "entity": "英国／Bank of England",
+          "metric": "賃金伸び率",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-10-31",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "同じ3か月の調査平均。各回答時点から1年先に見込む前年比。確定実績と比較しない。",
+          "value": 3.4,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/decision-maker-panel/2026/october-2026",
+            "publishedOn": "2026-10-30",
+            "locator": "News release paragraph 5",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ],
+  "qualitativeChecks": [
+    {
+      "claim": "固定契約、ヘッジ、利益率吸収と需要悪化の可能性",
+      "source": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+      "locator": "minutes 4–5,7,17; Andrew Bailey statement",
+      "review": "足元の二次波及の限定性と将来リスクを区別"
+    },
+    {
+      "claim": "エネルギー集約度と価格予想、金融政策の予想経路",
+      "source": "https://www.bankofengland.co.uk/monetary-policy-report/2026/november-2026",
+      "locator": "Box A: current evidence for price-setting; Box E: expectations",
+      "review": "間接効果と二次波及を区別"
+    },
+    {
+      "claim": "需要悪化の別シナリオ",
+      "source": "https://www.bankofengland.co.uk/monetary-policy-report/2026/november-2026",
+      "locator": "Section 3; corroborated in minutes 16",
+      "review": "筆者の断定予測ではなく反対仮説として使用"
+    },
+    {
+      "claim": "DMPの結果は加重集計されている。",
+      "source": "https://www.bankofengland.co.uk/decision-maker-panel/2026/october-2026",
+      "locator": "News release末尾、DMPの設立と代表性を説明する段落（All results are weighted.）",
+      "review": "本文の企業割合は単純な回答件数比ではなく、調査の加重集計結果として扱う。"
+    }
+  ]
+}

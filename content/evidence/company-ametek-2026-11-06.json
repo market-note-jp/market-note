@@ -1,0 +1,5186 @@
+{
+  "version": 1,
+  "articleSlug": "company-ametek-2026-11-06",
+  "articleSha256": "26a957101513d52e9cc7dcb5e77ee2f03d80010fc946bd3c563a45230672fa5c",
+  "checkedAt": "2026-11-06T11:08:27Z",
+  "informationCutoff": "2026-11-06T19:59:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "5年PL/CF/負債/現金/株主資本はSEC提出HTML本文で確認。FCFは未丸めのCF計算書数値から独自再計算し、会社の丸め済み非GAAP表とは区別。ROEは期首期末平均株主資本。買収価格と取得原価配分・純現金支出を区別。最新Q3、会社予想、利益調整、買収、全重要数値を対象とした。資料の情報カットオフは11/6 19:59 JST。digestは統合後に計算する。",
+  "comparisons": [
+    {
+      "id": "engineering",
+      "question": "2025年の研究・開発・エンジニアリング費用は383百万ドルです。会計注記上の研究開発費236百万ドルとは範囲が異なり、両者を足し合わせてはいけません。",
+      "claim": "2025年の研究・開発・エンジニアリング費用は383百万ドルです。会計注記上の研究開発費236百万ドルとは範囲が異なり、両者を足し合わせてはいけません。",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "rde",
+          "entity": "AMETEK連結",
+          "metric": "研究・開発・エンジニアリング費用",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "研究・開発・エンジニアリング費用"
+        },
+        {
+          "id": "rd",
+          "entity": "AMETEK連結",
+          "metric": "会計注記上の研究開発費",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "会計注記上の研究開発費"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rde",
+          "entity": "AMETEK連結",
+          "metric": "研究・開発・エンジニアリング費用",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "研究・開発・エンジニアリング費用",
+          "value": 382.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Item 7 / New Product Development",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "rd",
+          "entity": "AMETEK連結",
+          "metric": "会計注記上の研究開発費",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "会計注記上の研究開発費",
+          "value": 236.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Note 1 / Research and Development",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "pl-2021",
+      "question": "| 2021 | 5,547 | 1,309 | 23.6% | 990 |",
+      "claim": "| 2021 | 5,547 | 1,309 | 23.6% | 990 |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "AMETEK連結",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "AMETEK連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "ni",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "AMETEK連結",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 5546.514,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Income / 売上高 / 2021年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "AMETEK連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 1308.67,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Income / GAAP営業利益 / 2021年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 990.053,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Income / GAAP純利益 / 2021年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op",
+            "sales"
+          ],
+          "definition": "営業利益÷売上高×100",
+          "precision": 1,
+          "value": 23.6
+        }
+      ]
+    },
+    {
+      "id": "pl-2022",
+      "question": "| 2022 | 6,151 | 1,501 | 24.4% | 1,160 |",
+      "claim": "| 2022 | 6,151 | 1,501 | 24.4% | 1,160 |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "AMETEK連結",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "AMETEK連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "ni",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "AMETEK連結",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 6150.53,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Income / 売上高 / 2022年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "AMETEK連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 1500.692,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Income / GAAP営業利益 / 2022年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 1159.542,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Income / GAAP純利益 / 2022年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op",
+            "sales"
+          ],
+          "definition": "営業利益÷売上高×100",
+          "precision": 1,
+          "value": 24.4
+        }
+      ]
+    },
+    {
+      "id": "pl-2023",
+      "question": "| 2023 | 6,597 | 1,707 | 25.9% | 1,313 |",
+      "claim": "| 2023 | 6,597 | 1,707 | 25.9% | 1,313 |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "AMETEK連結",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "AMETEK連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "ni",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "AMETEK連結",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 6596.95,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000012/ame-20241231.htm",
+            "publishedOn": "2025-02-20",
+            "locator": "Consolidated Statement of Income / 売上高 / 2023年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "AMETEK連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 1707.459,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000012/ame-20241231.htm",
+            "publishedOn": "2025-02-20",
+            "locator": "Consolidated Statement of Income / GAAP営業利益 / 2023年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 1313.188,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000012/ame-20241231.htm",
+            "publishedOn": "2025-02-20",
+            "locator": "Consolidated Statement of Income / GAAP純利益 / 2023年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op",
+            "sales"
+          ],
+          "definition": "営業利益÷売上高×100",
+          "precision": 1,
+          "value": 25.9
+        }
+      ]
+    },
+    {
+      "id": "pl-2024",
+      "question": "| 2024 | 6,941 | 1,780 | 25.6% | 1,376 |",
+      "claim": "| 2024 | 6,941 | 1,780 | 25.6% | 1,376 |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "AMETEK連結",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "AMETEK連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "ni",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "AMETEK連結",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 6941.18,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Income / 売上高 / 2024年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "AMETEK連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 1779.562,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Income / GAAP営業利益 / 2024年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 1376.124,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Income / GAAP純利益 / 2024年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op",
+            "sales"
+          ],
+          "definition": "営業利益÷売上高×100",
+          "precision": 1,
+          "value": 25.6
+        }
+      ]
+    },
+    {
+      "id": "pl-2025",
+      "question": "| 2025 | 7,401 | 1,910 | 25.8% | 1,480 |",
+      "claim": "| 2025 | 7,401 | 1,910 | 25.8% | 1,480 |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "AMETEK連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "AMETEK連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "ni",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "AMETEK連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 7401.116,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Income / 売上高 / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "AMETEK連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 1910.317,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Income / GAAP営業利益 / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 1480.142,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Income / GAAP純利益 / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "margin",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op",
+            "sales"
+          ],
+          "definition": "営業利益÷売上高×100",
+          "precision": 1,
+          "value": 25.8
+        }
+      ]
+    },
+    {
+      "id": "growth-five-years",
+      "question": "2021年から2025年に売上高は33.4%、営業利益は46.0%増加し、営業利益率は23.6%から25.8%へ上がりました。",
+      "claim": "2021年から2025年に売上高は33.4%、営業利益は46.0%増加し、営業利益率は23.6%から25.8%へ上がりました。",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "s21",
+          "entity": "AMETEK連結",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "s25",
+          "entity": "AMETEK連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "o21",
+          "entity": "AMETEK連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "o25",
+          "entity": "AMETEK連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s21",
+          "entity": "AMETEK連結",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 5546.514,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Income / 売上高 / 2021年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "s25",
+          "entity": "AMETEK連結",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 7401.116,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Income / 売上高 / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o21",
+          "entity": "AMETEK連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 1308.67,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Income / GAAP営業利益 / 2021年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o25",
+          "entity": "AMETEK連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 1910.317,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Income / GAAP営業利益 / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "salesg",
+          "operation": "growth-percent",
+          "inputs": [
+            "s25",
+            "s21"
+          ],
+          "definition": "2025年売上高の2021年比増加率",
+          "precision": 1,
+          "value": 33.4
+        },
+        {
+          "id": "opg",
+          "operation": "growth-percent",
+          "inputs": [
+            "o25",
+            "o21"
+          ],
+          "definition": "2025年営業利益の2021年比増加率",
+          "precision": 1,
+          "value": 46
+        },
+        {
+          "id": "m21",
+          "operation": "ratio-percent",
+          "inputs": [
+            "o21",
+            "s21"
+          ],
+          "definition": "2021年営業利益率",
+          "precision": 1,
+          "value": 23.6
+        },
+        {
+          "id": "m25",
+          "operation": "ratio-percent",
+          "inputs": [
+            "o25",
+            "s25"
+          ],
+          "definition": "2025年営業利益率",
+          "precision": 1,
+          "value": 25.8
+        }
+      ]
+    },
+    {
+      "id": "organic-bridge-annual",
+      "question": "2024年の連結増収は5.2%でしたが、会社の内訳では買収寄与が7%、既存事業は2%減収でした。2025年は6.6%増収で、買収寄与4%、既存事業2%、為替1%が会社の説明です。",
+      "claim": "2024年の連結増収は5.2%でしたが、会社の内訳では買収寄与が7%、既存事業は2%減収でした。2025年は6.6%増収で、買収寄与4%、既存事業2%、為替1%が会社の説明です。",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "g24",
+          "entity": "AMETEK連結",
+          "metric": "連結売上増加率",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結売上増加率"
+        },
+        {
+          "id": "a24",
+          "entity": "AMETEK連結",
+          "metric": "買収の売上増加寄与",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "買収の売上増加寄与"
+        },
+        {
+          "id": "o24",
+          "entity": "AMETEK連結",
+          "metric": "既存事業売上増加率",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "既存事業売上増加率"
+        },
+        {
+          "id": "g25",
+          "entity": "AMETEK連結",
+          "metric": "連結売上増加率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結売上増加率"
+        },
+        {
+          "id": "a25",
+          "entity": "AMETEK連結",
+          "metric": "買収の売上増加寄与",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "買収の売上増加寄与"
+        },
+        {
+          "id": "o25",
+          "entity": "AMETEK連結",
+          "metric": "既存事業売上増加率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "既存事業売上増加率"
+        },
+        {
+          "id": "fx25",
+          "entity": "AMETEK連結",
+          "metric": "為替の売上増加寄与",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "為替の売上増加寄与"
+        }
+      ],
+      "observations": [
+        {
+          "id": "g24",
+          "entity": "AMETEK連結",
+          "metric": "連結売上増加率",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結売上増加率",
+          "value": 5.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000012/ame-20241231.htm",
+            "publishedOn": "2025-02-20",
+            "locator": "Item 7 / Results of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "a24",
+          "entity": "AMETEK連結",
+          "metric": "買収の売上増加寄与",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "買収の売上増加寄与",
+          "value": 7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000012/ame-20241231.htm",
+            "publishedOn": "2025-02-20",
+            "locator": "Item 7 / Results of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o24",
+          "entity": "AMETEK連結",
+          "metric": "既存事業売上増加率",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "既存事業売上増加率",
+          "value": -2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000012/ame-20241231.htm",
+            "publishedOn": "2025-02-20",
+            "locator": "Item 7 / Results of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "g25",
+          "entity": "AMETEK連結",
+          "metric": "連結売上増加率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結売上増加率",
+          "value": 6.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Item 7 / Results of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "a25",
+          "entity": "AMETEK連結",
+          "metric": "買収の売上増加寄与",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "買収の売上増加寄与",
+          "value": 4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Item 7 / Results of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o25",
+          "entity": "AMETEK連結",
+          "metric": "既存事業売上増加率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "既存事業売上増加率",
+          "value": 2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Item 7 / Results of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fx25",
+          "entity": "AMETEK連結",
+          "metric": "為替の売上増加寄与",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "為替の売上増加寄与",
+          "value": 1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Item 7 / Results of Operations",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cf-2021",
+      "question": "| 2021 | 1,160 | 111 | 1,050 | 1,959 |",
+      "claim": "| 2021 | 1,160 | 111 | 1,050 | 1,959 |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー"
+        },
+        {
+          "id": "capex",
+          "entity": "AMETEK連結",
+          "metric": "有形固定資産取得の現金支出（負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得の現金支出（負数）"
+        },
+        {
+          "id": "acq",
+          "entity": "AMETEK連結",
+          "metric": "取得現金控除後の企業買収支出（負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金控除後の企業買収支出（負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー",
+          "value": 1160.457,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Cash Flows / 営業活動による純キャッシュフロー / 2021年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "AMETEK連結",
+          "metric": "有形固定資産取得の現金支出（負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得の現金支出（負数）",
+          "value": -110.671,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Cash Flows / 有形固定資産取得の現金支出（負数） / 2021年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "AMETEK連結",
+          "metric": "取得現金控除後の企業買収支出（負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金控除後の企業買収支出（負数）",
+          "value": -1959.218,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Cash Flows / 取得現金控除後の企業買収支出（負数） / 2021年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "definition": "営業CF＋負の設備投資支出",
+          "precision": 3,
+          "value": 1049.786
+        }
+      ]
+    },
+    {
+      "id": "cf-2022",
+      "question": "| 2022 | 1,149 | 139 | 1,010 | 430 |",
+      "claim": "| 2022 | 1,149 | 139 | 1,010 | 430 |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー"
+        },
+        {
+          "id": "capex",
+          "entity": "AMETEK連結",
+          "metric": "有形固定資産取得の現金支出（負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得の現金支出（負数）"
+        },
+        {
+          "id": "acq",
+          "entity": "AMETEK連結",
+          "metric": "取得現金控除後の企業買収支出（負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金控除後の企業買収支出（負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー",
+          "value": 1149.373,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Cash Flows / 営業活動による純キャッシュフロー / 2022年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "AMETEK連結",
+          "metric": "有形固定資産取得の現金支出（負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得の現金支出（負数）",
+          "value": -139.005,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Cash Flows / 有形固定資産取得の現金支出（負数） / 2022年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "AMETEK連結",
+          "metric": "取得現金控除後の企業買収支出（負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金控除後の企業買収支出（負数）",
+          "value": -429.714,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Cash Flows / 取得現金控除後の企業買収支出（負数） / 2022年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "definition": "営業CF＋負の設備投資支出",
+          "precision": 3,
+          "value": 1010.368
+        }
+      ]
+    },
+    {
+      "id": "cf-2023",
+      "question": "| 2023 | 1,735 | 136 | 1,599 | 2,238 |",
+      "claim": "| 2023 | 1,735 | 136 | 1,599 | 2,238 |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー"
+        },
+        {
+          "id": "capex",
+          "entity": "AMETEK連結",
+          "metric": "有形固定資産取得の現金支出（負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得の現金支出（負数）"
+        },
+        {
+          "id": "acq",
+          "entity": "AMETEK連結",
+          "metric": "取得現金控除後の企業買収支出（負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金控除後の企業買収支出（負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー",
+          "value": 1735.296,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000012/ame-20241231.htm",
+            "publishedOn": "2025-02-20",
+            "locator": "Consolidated Statement of Cash Flows / 営業活動による純キャッシュフロー / 2023年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "AMETEK連結",
+          "metric": "有形固定資産取得の現金支出（負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得の現金支出（負数）",
+          "value": -136.249,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000012/ame-20241231.htm",
+            "publishedOn": "2025-02-20",
+            "locator": "Consolidated Statement of Cash Flows / 有形固定資産取得の現金支出（負数） / 2023年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "AMETEK連結",
+          "metric": "取得現金控除後の企業買収支出（負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金控除後の企業買収支出（負数）",
+          "value": -2237.91,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000012/ame-20241231.htm",
+            "publishedOn": "2025-02-20",
+            "locator": "Consolidated Statement of Cash Flows / 取得現金控除後の企業買収支出（負数） / 2023年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "definition": "営業CF＋負の設備投資支出",
+          "precision": 3,
+          "value": 1599.047
+        }
+      ]
+    },
+    {
+      "id": "cf-2024",
+      "question": "| 2024 | 1,829 | 127 | 1,702 | 118 |",
+      "claim": "| 2024 | 1,829 | 127 | 1,702 | 118 |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー"
+        },
+        {
+          "id": "capex",
+          "entity": "AMETEK連結",
+          "metric": "有形固定資産取得の現金支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得の現金支出（負数）"
+        },
+        {
+          "id": "acq",
+          "entity": "AMETEK連結",
+          "metric": "取得現金控除後の企業買収支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金控除後の企業買収支出（負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー",
+          "value": 1828.848,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Cash Flows / 営業活動による純キャッシュフロー / 2024年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "AMETEK連結",
+          "metric": "有形固定資産取得の現金支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得の現金支出（負数）",
+          "value": -127.075,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Cash Flows / 有形固定資産取得の現金支出（負数） / 2024年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "AMETEK連結",
+          "metric": "取得現金控除後の企業買収支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金控除後の企業買収支出（負数）",
+          "value": -117.514,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Cash Flows / 取得現金控除後の企業買収支出（負数） / 2024年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "definition": "営業CF＋負の設備投資支出",
+          "precision": 3,
+          "value": 1701.773
+        }
+      ]
+    },
+    {
+      "id": "cf-2025",
+      "question": "| 2025 | 1,802 | 130 | 1,672 | 933 |",
+      "claim": "| 2025 | 1,802 | 130 | 1,672 | 933 |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー"
+        },
+        {
+          "id": "capex",
+          "entity": "AMETEK連結",
+          "metric": "有形固定資産取得の現金支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得の現金支出（負数）"
+        },
+        {
+          "id": "acq",
+          "entity": "AMETEK連結",
+          "metric": "取得現金控除後の企業買収支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金控除後の企業買収支出（負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー",
+          "value": 1801.763,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Cash Flows / 営業活動による純キャッシュフロー / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "AMETEK連結",
+          "metric": "有形固定資産取得の現金支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得の現金支出（負数）",
+          "value": -130.248,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Cash Flows / 有形固定資産取得の現金支出（負数） / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "AMETEK連結",
+          "metric": "取得現金控除後の企業買収支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金控除後の企業買収支出（負数）",
+          "value": -933.242,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Cash Flows / 取得現金控除後の企業買収支出（負数） / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "definition": "営業CF＋負の設備投資支出",
+          "precision": 3,
+          "value": 1671.515
+        }
+      ]
+    },
+    {
+      "id": "working-capital",
+      "question": "2022年は在庫・その他流動資産の増加が322百万ドルの現金を吸収しました。2025年も運転資金投資の増加が響き、純利益が増えても営業CFは前年を下回りました。",
+      "claim": "2022年は在庫・その他流動資産の増加が322百万ドルの現金を吸収しました。2025年も運転資金投資の増加が響き、純利益が増えても営業CFは前年を下回りました。",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "inv22",
+          "entity": "AMETEK連結",
+          "metric": "在庫・その他流動資産増加によるCF影響",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "在庫・その他流動資産増加によるCF影響"
+        },
+        {
+          "id": "cfo24",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー"
+        },
+        {
+          "id": "cfo25",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー"
+        },
+        {
+          "id": "ni24",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        },
+        {
+          "id": "ni25",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "inv22",
+          "entity": "AMETEK連結",
+          "metric": "在庫・その他流動資産増加によるCF影響",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "在庫・その他流動資産増加によるCF影響",
+          "value": -322.467,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Cash Flows / Increase in inventories and other current assets",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo24",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー",
+          "value": 1828.848,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Cash Flows / 営業活動による純キャッシュフロー / 2024年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo25",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー",
+          "value": 1801.763,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Cash Flows / 営業活動による純キャッシュフロー / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni24",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 1376.124,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Income / GAAP純利益 / 2024年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni25",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 1480.142,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Income / GAAP純利益 / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "capital-deployment-five-years",
+      "question": "5年間のFCF合計は7,032百万ドルですが、企業買収に5,678百万ドル、現金配当に1,161百万ドル、CF計算書上の自社株買いに1,001百万ドルを使いました。この4項目だけを差し引くと808百万ドルの資金不足です。",
+      "claim": "5年間のFCF合計は7,032百万ドルですが、企業買収に5,678百万ドル、現金配当に1,161百万ドル、CF計算書上の自社株買いに1,001百万ドルを使いました。この4項目だけを差し引くと808百万ドルの資金不足です。",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo2021",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー"
+        },
+        {
+          "id": "capex2021",
+          "entity": "AMETEK連結",
+          "metric": "有形固定資産取得の現金支出（負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得の現金支出（負数）"
+        },
+        {
+          "id": "acq2021",
+          "entity": "AMETEK連結",
+          "metric": "取得現金控除後の企業買収支出（負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金控除後の企業買収支出（負数）"
+        },
+        {
+          "id": "div2021",
+          "entity": "AMETEK連結",
+          "metric": "現金配当支出（負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金配当支出（負数）"
+        },
+        {
+          "id": "buy2021",
+          "entity": "AMETEK連結",
+          "metric": "CF計算書の自己株式取得支出（負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "CF計算書の自己株式取得支出（負数）"
+        },
+        {
+          "id": "cfo2022",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー"
+        },
+        {
+          "id": "capex2022",
+          "entity": "AMETEK連結",
+          "metric": "有形固定資産取得の現金支出（負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得の現金支出（負数）"
+        },
+        {
+          "id": "acq2022",
+          "entity": "AMETEK連結",
+          "metric": "取得現金控除後の企業買収支出（負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金控除後の企業買収支出（負数）"
+        },
+        {
+          "id": "div2022",
+          "entity": "AMETEK連結",
+          "metric": "現金配当支出（負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金配当支出（負数）"
+        },
+        {
+          "id": "buy2022",
+          "entity": "AMETEK連結",
+          "metric": "CF計算書の自己株式取得支出（負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "CF計算書の自己株式取得支出（負数）"
+        },
+        {
+          "id": "cfo2023",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー"
+        },
+        {
+          "id": "capex2023",
+          "entity": "AMETEK連結",
+          "metric": "有形固定資産取得の現金支出（負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得の現金支出（負数）"
+        },
+        {
+          "id": "acq2023",
+          "entity": "AMETEK連結",
+          "metric": "取得現金控除後の企業買収支出（負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金控除後の企業買収支出（負数）"
+        },
+        {
+          "id": "div2023",
+          "entity": "AMETEK連結",
+          "metric": "現金配当支出（負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金配当支出（負数）"
+        },
+        {
+          "id": "buy2023",
+          "entity": "AMETEK連結",
+          "metric": "CF計算書の自己株式取得支出（負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "CF計算書の自己株式取得支出（負数）"
+        },
+        {
+          "id": "cfo2024",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー"
+        },
+        {
+          "id": "capex2024",
+          "entity": "AMETEK連結",
+          "metric": "有形固定資産取得の現金支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得の現金支出（負数）"
+        },
+        {
+          "id": "acq2024",
+          "entity": "AMETEK連結",
+          "metric": "取得現金控除後の企業買収支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金控除後の企業買収支出（負数）"
+        },
+        {
+          "id": "div2024",
+          "entity": "AMETEK連結",
+          "metric": "現金配当支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金配当支出（負数）"
+        },
+        {
+          "id": "buy2024",
+          "entity": "AMETEK連結",
+          "metric": "CF計算書の自己株式取得支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "CF計算書の自己株式取得支出（負数）"
+        },
+        {
+          "id": "cfo2025",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー"
+        },
+        {
+          "id": "capex2025",
+          "entity": "AMETEK連結",
+          "metric": "有形固定資産取得の現金支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得の現金支出（負数）"
+        },
+        {
+          "id": "acq2025",
+          "entity": "AMETEK連結",
+          "metric": "取得現金控除後の企業買収支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金控除後の企業買収支出（負数）"
+        },
+        {
+          "id": "div2025",
+          "entity": "AMETEK連結",
+          "metric": "現金配当支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金配当支出（負数）"
+        },
+        {
+          "id": "buy2025",
+          "entity": "AMETEK連結",
+          "metric": "CF計算書の自己株式取得支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "CF計算書の自己株式取得支出（負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo2021",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー",
+          "value": 1160.457,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Cash Flows / 営業活動による純キャッシュフロー / 2021年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex2021",
+          "entity": "AMETEK連結",
+          "metric": "有形固定資産取得の現金支出（負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得の現金支出（負数）",
+          "value": -110.671,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Cash Flows / 有形固定資産取得の現金支出（負数） / 2021年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq2021",
+          "entity": "AMETEK連結",
+          "metric": "取得現金控除後の企業買収支出（負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金控除後の企業買収支出（負数）",
+          "value": -1959.218,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Cash Flows / 取得現金控除後の企業買収支出（負数） / 2021年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "div2021",
+          "entity": "AMETEK連結",
+          "metric": "現金配当支出（負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金配当支出（負数）",
+          "value": -184.595,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Cash Flows / 現金配当支出（負数） / 2021年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "buy2021",
+          "entity": "AMETEK連結",
+          "metric": "CF計算書の自己株式取得支出（負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "CF計算書の自己株式取得支出（負数）",
+          "value": -14.711,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Cash Flows / CF計算書の自己株式取得支出（負数） / 2021年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo2022",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー",
+          "value": 1149.373,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Cash Flows / 営業活動による純キャッシュフロー / 2022年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex2022",
+          "entity": "AMETEK連結",
+          "metric": "有形固定資産取得の現金支出（負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得の現金支出（負数）",
+          "value": -139.005,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Cash Flows / 有形固定資産取得の現金支出（負数） / 2022年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq2022",
+          "entity": "AMETEK連結",
+          "metric": "取得現金控除後の企業買収支出（負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金控除後の企業買収支出（負数）",
+          "value": -429.714,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Cash Flows / 取得現金控除後の企業買収支出（負数） / 2022年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "div2022",
+          "entity": "AMETEK連結",
+          "metric": "現金配当支出（負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金配当支出（負数）",
+          "value": -202.169,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Cash Flows / 現金配当支出（負数） / 2022年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "buy2022",
+          "entity": "AMETEK連結",
+          "metric": "CF計算書の自己株式取得支出（負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "CF計算書の自己株式取得支出（負数）",
+          "value": -332.821,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Cash Flows / CF計算書の自己株式取得支出（負数） / 2022年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo2023",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー",
+          "value": 1735.296,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000012/ame-20241231.htm",
+            "publishedOn": "2025-02-20",
+            "locator": "Consolidated Statement of Cash Flows / 営業活動による純キャッシュフロー / 2023年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex2023",
+          "entity": "AMETEK連結",
+          "metric": "有形固定資産取得の現金支出（負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得の現金支出（負数）",
+          "value": -136.249,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000012/ame-20241231.htm",
+            "publishedOn": "2025-02-20",
+            "locator": "Consolidated Statement of Cash Flows / 有形固定資産取得の現金支出（負数） / 2023年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq2023",
+          "entity": "AMETEK連結",
+          "metric": "取得現金控除後の企業買収支出（負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金控除後の企業買収支出（負数）",
+          "value": -2237.91,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000012/ame-20241231.htm",
+            "publishedOn": "2025-02-20",
+            "locator": "Consolidated Statement of Cash Flows / 取得現金控除後の企業買収支出（負数） / 2023年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "div2023",
+          "entity": "AMETEK連結",
+          "metric": "現金配当支出（負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金配当支出（負数）",
+          "value": -230.329,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000012/ame-20241231.htm",
+            "publishedOn": "2025-02-20",
+            "locator": "Consolidated Statement of Cash Flows / 現金配当支出（負数） / 2023年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "buy2023",
+          "entity": "AMETEK連結",
+          "metric": "CF計算書の自己株式取得支出（負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "CF計算書の自己株式取得支出（負数）",
+          "value": -7.772,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000012/ame-20241231.htm",
+            "publishedOn": "2025-02-20",
+            "locator": "Consolidated Statement of Cash Flows / CF計算書の自己株式取得支出（負数） / 2023年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo2024",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー",
+          "value": 1828.848,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Cash Flows / 営業活動による純キャッシュフロー / 2024年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex2024",
+          "entity": "AMETEK連結",
+          "metric": "有形固定資産取得の現金支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得の現金支出（負数）",
+          "value": -127.075,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Cash Flows / 有形固定資産取得の現金支出（負数） / 2024年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq2024",
+          "entity": "AMETEK連結",
+          "metric": "取得現金控除後の企業買収支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金控除後の企業買収支出（負数）",
+          "value": -117.514,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Cash Flows / 取得現金控除後の企業買収支出（負数） / 2024年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "div2024",
+          "entity": "AMETEK連結",
+          "metric": "現金配当支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金配当支出（負数）",
+          "value": -258.782,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Cash Flows / 現金配当支出（負数） / 2024年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "buy2024",
+          "entity": "AMETEK連結",
+          "metric": "CF計算書の自己株式取得支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "CF計算書の自己株式取得支出（負数）",
+          "value": -212.027,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Cash Flows / CF計算書の自己株式取得支出（負数） / 2024年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo2025",
+          "entity": "AMETEK連結",
+          "metric": "営業活動による純キャッシュフロー",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業活動による純キャッシュフロー",
+          "value": 1801.763,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Cash Flows / 営業活動による純キャッシュフロー / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex2025",
+          "entity": "AMETEK連結",
+          "metric": "有形固定資産取得の現金支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得の現金支出（負数）",
+          "value": -130.248,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Cash Flows / 有形固定資産取得の現金支出（負数） / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq2025",
+          "entity": "AMETEK連結",
+          "metric": "取得現金控除後の企業買収支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "取得現金控除後の企業買収支出（負数）",
+          "value": -933.242,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Cash Flows / 取得現金控除後の企業買収支出（負数） / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "div2025",
+          "entity": "AMETEK連結",
+          "metric": "現金配当支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金配当支出（負数）",
+          "value": -285.345,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Cash Flows / 現金配当支出（負数） / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "buy2025",
+          "entity": "AMETEK連結",
+          "metric": "CF計算書の自己株式取得支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "CF計算書の自己株式取得支出（負数）",
+          "value": -434.048,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Cash Flows / CF計算書の自己株式取得支出（負数） / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo2021",
+            "capex2021",
+            "cfo2022",
+            "capex2022",
+            "cfo2023",
+            "capex2023",
+            "cfo2024",
+            "capex2024",
+            "cfo2025",
+            "capex2025"
+          ],
+          "definition": "2021〜2025年合計。支出は負数。",
+          "precision": 3,
+          "value": 7032.489
+        },
+        {
+          "id": "acq",
+          "operation": "sum",
+          "inputs": [
+            "acq2021",
+            "acq2022",
+            "acq2023",
+            "acq2024",
+            "acq2025"
+          ],
+          "definition": "2021〜2025年合計。支出は負数。",
+          "precision": 3,
+          "value": -5677.598
+        },
+        {
+          "id": "div",
+          "operation": "sum",
+          "inputs": [
+            "div2021",
+            "div2022",
+            "div2023",
+            "div2024",
+            "div2025"
+          ],
+          "definition": "2021〜2025年合計。支出は負数。",
+          "precision": 3,
+          "value": -1161.22
+        },
+        {
+          "id": "buy",
+          "operation": "sum",
+          "inputs": [
+            "buy2021",
+            "buy2022",
+            "buy2023",
+            "buy2024",
+            "buy2025"
+          ],
+          "definition": "2021〜2025年合計。支出は負数。",
+          "precision": 3,
+          "value": -1001.379
+        },
+        {
+          "id": "residual",
+          "operation": "sum",
+          "inputs": [
+            "fcf",
+            "acq",
+            "div",
+            "buy"
+          ],
+          "definition": "FCFから買収・配当・自社株買い現金支出を控除",
+          "precision": 3,
+          "value": -807.708
+        }
+      ]
+    },
+    {
+      "id": "balance-2021",
+      "question": "| 2021 | 2,544 | 347 | 2,197 | 6,872 | 15.4% |",
+      "claim": "| 2021 | 2,544 | 347 | 2,197 | 6,872 | 15.4% |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "short",
+          "entity": "AMETEK連結",
+          "metric": "短期借入金および長期債務の流動部分（簿価）",
+          "periodStart": "2021-12-31",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "短期借入金および長期債務の流動部分（簿価）"
+        },
+        {
+          "id": "long",
+          "entity": "AMETEK連結",
+          "metric": "長期債務の非流動部分（簿価）",
+          "periodStart": "2021-12-31",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "長期債務の非流動部分（簿価）"
+        },
+        {
+          "id": "cash",
+          "entity": "AMETEK連結",
+          "metric": "現金および現金同等物",
+          "periodStart": "2021-12-31",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金および現金同等物"
+        },
+        {
+          "id": "equity",
+          "entity": "AMETEK連結",
+          "metric": "株主資本",
+          "periodStart": "2021-12-31",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本"
+        },
+        {
+          "id": "ni",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        },
+        {
+          "id": "prev",
+          "entity": "AMETEK連結",
+          "metric": "株主資本",
+          "periodStart": "2020-12-31",
+          "periodEnd": "2020-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本"
+        }
+      ],
+      "observations": [
+        {
+          "id": "short",
+          "entity": "AMETEK連結",
+          "metric": "短期借入金および長期債務の流動部分（簿価）",
+          "periodStart": "2021-12-31",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "短期借入金および長期債務の流動部分（簿価）",
+          "value": 315.093,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Balance Sheet / 短期借入金および長期債務の流動部分（簿価） / 2021年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "long",
+          "entity": "AMETEK連結",
+          "metric": "長期債務の非流動部分（簿価）",
+          "periodStart": "2021-12-31",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "長期債務の非流動部分（簿価）",
+          "value": 2229.148,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Balance Sheet / 長期債務の非流動部分（簿価） / 2021年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash",
+          "entity": "AMETEK連結",
+          "metric": "現金および現金同等物",
+          "periodStart": "2021-12-31",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金および現金同等物",
+          "value": 346.772,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Balance Sheet / 現金および現金同等物 / 2021年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "equity",
+          "entity": "AMETEK連結",
+          "metric": "株主資本",
+          "periodStart": "2021-12-31",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本",
+          "value": 6871.884,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Balance Sheet / 株主資本 / 2021年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 990.053,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Income / GAAP純利益 / 2021年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prev",
+          "entity": "AMETEK連結",
+          "metric": "株主資本",
+          "periodStart": "2020-12-31",
+          "periodEnd": "2020-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本",
+          "value": 5949.346,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786822000009/ame-20211231.htm",
+            "publishedOn": "2022-02-22",
+            "locator": "Consolidated Balance Sheet / Total stockholders equity / 2020",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "debt",
+          "operation": "sum",
+          "inputs": [
+            "short",
+            "long"
+          ],
+          "definition": "短期・流動部分と長期債務簿価の合計",
+          "precision": 3,
+          "value": 2544.241
+        },
+        {
+          "id": "netdebt",
+          "operation": "difference",
+          "inputs": [
+            "debt",
+            "cash"
+          ],
+          "definition": "有利子負債簿価合計−現金等",
+          "precision": 3,
+          "value": 2197.469
+        },
+        {
+          "id": "sum_equity",
+          "operation": "sum",
+          "inputs": [
+            "equity",
+            "prev"
+          ],
+          "definition": "期首・期末株主資本の合計",
+          "precision": 3,
+          "value": 12821.23
+        },
+        {
+          "id": "twice_ni",
+          "operation": "sum",
+          "inputs": [
+            "ni",
+            "ni"
+          ],
+          "definition": "平均資本による比率のため純利益を2倍",
+          "precision": 3,
+          "value": 1980.106
+        },
+        {
+          "id": "roe",
+          "operation": "ratio-percent",
+          "inputs": [
+            "twice_ni",
+            "sum_equity"
+          ],
+          "definition": "純利益÷平均株主資本×100",
+          "precision": 1,
+          "value": 15.4
+        }
+      ]
+    },
+    {
+      "id": "balance-2022",
+      "question": "| 2022 | 2,385 | 345 | 2,040 | 7,477 | 16.2% |",
+      "claim": "| 2022 | 2,385 | 345 | 2,040 | 7,477 | 16.2% |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "short",
+          "entity": "AMETEK連結",
+          "metric": "短期借入金および長期債務の流動部分（簿価）",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "短期借入金および長期債務の流動部分（簿価）"
+        },
+        {
+          "id": "long",
+          "entity": "AMETEK連結",
+          "metric": "長期債務の非流動部分（簿価）",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "長期債務の非流動部分（簿価）"
+        },
+        {
+          "id": "cash",
+          "entity": "AMETEK連結",
+          "metric": "現金および現金同等物",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金および現金同等物"
+        },
+        {
+          "id": "equity",
+          "entity": "AMETEK連結",
+          "metric": "株主資本",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本"
+        },
+        {
+          "id": "ni",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        },
+        {
+          "id": "prev",
+          "entity": "AMETEK連結",
+          "metric": "株主資本",
+          "periodStart": "2021-12-31",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本"
+        }
+      ],
+      "observations": [
+        {
+          "id": "short",
+          "entity": "AMETEK連結",
+          "metric": "短期借入金および長期債務の流動部分（簿価）",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "短期借入金および長期債務の流動部分（簿価）",
+          "value": 226.079,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Balance Sheet / 短期借入金および長期債務の流動部分（簿価） / 2022年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "long",
+          "entity": "AMETEK連結",
+          "metric": "長期債務の非流動部分（簿価）",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "長期債務の非流動部分（簿価）",
+          "value": 2158.928,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Balance Sheet / 長期債務の非流動部分（簿価） / 2022年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash",
+          "entity": "AMETEK連結",
+          "metric": "現金および現金同等物",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金および現金同等物",
+          "value": 345.386,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Balance Sheet / 現金および現金同等物 / 2022年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "equity",
+          "entity": "AMETEK連結",
+          "metric": "株主資本",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本",
+          "value": 7476.512,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Balance Sheet / 株主資本 / 2022年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 1159.542,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Statement of Income / GAAP純利益 / 2022年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prev",
+          "entity": "AMETEK連結",
+          "metric": "株主資本",
+          "periodStart": "2021-12-31",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本",
+          "value": 6871.884,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Balance Sheet / 株主資本 / 2021年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "debt",
+          "operation": "sum",
+          "inputs": [
+            "short",
+            "long"
+          ],
+          "definition": "短期・流動部分と長期債務簿価の合計",
+          "precision": 3,
+          "value": 2385.007
+        },
+        {
+          "id": "netdebt",
+          "operation": "difference",
+          "inputs": [
+            "debt",
+            "cash"
+          ],
+          "definition": "有利子負債簿価合計−現金等",
+          "precision": 3,
+          "value": 2039.621
+        },
+        {
+          "id": "sum_equity",
+          "operation": "sum",
+          "inputs": [
+            "equity",
+            "prev"
+          ],
+          "definition": "期首・期末株主資本の合計",
+          "precision": 3,
+          "value": 14348.396
+        },
+        {
+          "id": "twice_ni",
+          "operation": "sum",
+          "inputs": [
+            "ni",
+            "ni"
+          ],
+          "definition": "平均資本による比率のため純利益を2倍",
+          "precision": 3,
+          "value": 2319.084
+        },
+        {
+          "id": "roe",
+          "operation": "ratio-percent",
+          "inputs": [
+            "twice_ni",
+            "sum_equity"
+          ],
+          "definition": "純利益÷平均株主資本×100",
+          "precision": 1,
+          "value": 16.2
+        }
+      ]
+    },
+    {
+      "id": "balance-2023",
+      "question": "| 2023 | 3,313 | 410 | 2,904 | 8,730 | 16.2% |",
+      "claim": "| 2023 | 3,313 | 410 | 2,904 | 8,730 | 16.2% |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "short",
+          "entity": "AMETEK連結",
+          "metric": "短期借入金および長期債務の流動部分（簿価）",
+          "periodStart": "2023-12-31",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "短期借入金および長期債務の流動部分（簿価）"
+        },
+        {
+          "id": "long",
+          "entity": "AMETEK連結",
+          "metric": "長期債務の非流動部分（簿価）",
+          "periodStart": "2023-12-31",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "長期債務の非流動部分（簿価）"
+        },
+        {
+          "id": "cash",
+          "entity": "AMETEK連結",
+          "metric": "現金および現金同等物",
+          "periodStart": "2023-12-31",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金および現金同等物"
+        },
+        {
+          "id": "equity",
+          "entity": "AMETEK連結",
+          "metric": "株主資本",
+          "periodStart": "2023-12-31",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本"
+        },
+        {
+          "id": "ni",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        },
+        {
+          "id": "prev",
+          "entity": "AMETEK連結",
+          "metric": "株主資本",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本"
+        }
+      ],
+      "observations": [
+        {
+          "id": "short",
+          "entity": "AMETEK連結",
+          "metric": "短期借入金および長期債務の流動部分（簿価）",
+          "periodStart": "2023-12-31",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "短期借入金および長期債務の流動部分（簿価）",
+          "value": 1417.915,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000012/ame-20241231.htm",
+            "publishedOn": "2025-02-20",
+            "locator": "Consolidated Balance Sheet / 短期借入金および長期債務の流動部分（簿価） / 2023年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "long",
+          "entity": "AMETEK連結",
+          "metric": "長期債務の非流動部分（簿価）",
+          "periodStart": "2023-12-31",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "長期債務の非流動部分（簿価）",
+          "value": 1895.432,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000012/ame-20241231.htm",
+            "publishedOn": "2025-02-20",
+            "locator": "Consolidated Balance Sheet / 長期債務の非流動部分（簿価） / 2023年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash",
+          "entity": "AMETEK連結",
+          "metric": "現金および現金同等物",
+          "periodStart": "2023-12-31",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金および現金同等物",
+          "value": 409.804,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000012/ame-20241231.htm",
+            "publishedOn": "2025-02-20",
+            "locator": "Consolidated Balance Sheet / 現金および現金同等物 / 2023年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "equity",
+          "entity": "AMETEK連結",
+          "metric": "株主資本",
+          "periodStart": "2023-12-31",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本",
+          "value": 8730.191,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000012/ame-20241231.htm",
+            "publishedOn": "2025-02-20",
+            "locator": "Consolidated Balance Sheet / 株主資本 / 2023年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 1313.188,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000012/ame-20241231.htm",
+            "publishedOn": "2025-02-20",
+            "locator": "Consolidated Statement of Income / GAAP純利益 / 2023年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prev",
+          "entity": "AMETEK連結",
+          "metric": "株主資本",
+          "periodStart": "2022-12-31",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本",
+          "value": 7476.512,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786823000012/ame-20221231.htm",
+            "publishedOn": "2023-02-21",
+            "locator": "Consolidated Balance Sheet / 株主資本 / 2022年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "debt",
+          "operation": "sum",
+          "inputs": [
+            "short",
+            "long"
+          ],
+          "definition": "短期・流動部分と長期債務簿価の合計",
+          "precision": 3,
+          "value": 3313.347
+        },
+        {
+          "id": "netdebt",
+          "operation": "difference",
+          "inputs": [
+            "debt",
+            "cash"
+          ],
+          "definition": "有利子負債簿価合計−現金等",
+          "precision": 3,
+          "value": 2903.543
+        },
+        {
+          "id": "sum_equity",
+          "operation": "sum",
+          "inputs": [
+            "equity",
+            "prev"
+          ],
+          "definition": "期首・期末株主資本の合計",
+          "precision": 3,
+          "value": 16206.703
+        },
+        {
+          "id": "twice_ni",
+          "operation": "sum",
+          "inputs": [
+            "ni",
+            "ni"
+          ],
+          "definition": "平均資本による比率のため純利益を2倍",
+          "precision": 3,
+          "value": 2626.376
+        },
+        {
+          "id": "roe",
+          "operation": "ratio-percent",
+          "inputs": [
+            "twice_ni",
+            "sum_equity"
+          ],
+          "definition": "純利益÷平均株主資本×100",
+          "precision": 1,
+          "value": 16.2
+        }
+      ]
+    },
+    {
+      "id": "balance-2024",
+      "question": "| 2024 | 2,080 | 374 | 1,706 | 9,655 | 15.0% |",
+      "claim": "| 2024 | 2,080 | 374 | 1,706 | 9,655 | 15.0% |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "short",
+          "entity": "AMETEK連結",
+          "metric": "短期借入金および長期債務の流動部分（簿価）",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "短期借入金および長期債務の流動部分（簿価）"
+        },
+        {
+          "id": "long",
+          "entity": "AMETEK連結",
+          "metric": "長期債務の非流動部分（簿価）",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "長期債務の非流動部分（簿価）"
+        },
+        {
+          "id": "cash",
+          "entity": "AMETEK連結",
+          "metric": "現金および現金同等物",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金および現金同等物"
+        },
+        {
+          "id": "equity",
+          "entity": "AMETEK連結",
+          "metric": "株主資本",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本"
+        },
+        {
+          "id": "ni",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        },
+        {
+          "id": "prev",
+          "entity": "AMETEK連結",
+          "metric": "株主資本",
+          "periodStart": "2023-12-31",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本"
+        }
+      ],
+      "observations": [
+        {
+          "id": "short",
+          "entity": "AMETEK連結",
+          "metric": "短期借入金および長期債務の流動部分（簿価）",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "短期借入金および長期債務の流動部分（簿価）",
+          "value": 654.346,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Balance Sheet / 短期借入金および長期債務の流動部分（簿価） / 2024年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "long",
+          "entity": "AMETEK連結",
+          "metric": "長期債務の非流動部分（簿価）",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "長期債務の非流動部分（簿価）",
+          "value": 1425.375,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Balance Sheet / 長期債務の非流動部分（簿価） / 2024年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash",
+          "entity": "AMETEK連結",
+          "metric": "現金および現金同等物",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金および現金同等物",
+          "value": 373.999,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Balance Sheet / 現金および現金同等物 / 2024年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "equity",
+          "entity": "AMETEK連結",
+          "metric": "株主資本",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本",
+          "value": 9655.304,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Balance Sheet / 株主資本 / 2024年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 1376.124,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Income / GAAP純利益 / 2024年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prev",
+          "entity": "AMETEK連結",
+          "metric": "株主資本",
+          "periodStart": "2023-12-31",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本",
+          "value": 8730.191,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786825000012/ame-20241231.htm",
+            "publishedOn": "2025-02-20",
+            "locator": "Consolidated Balance Sheet / 株主資本 / 2023年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "debt",
+          "operation": "sum",
+          "inputs": [
+            "short",
+            "long"
+          ],
+          "definition": "短期・流動部分と長期債務簿価の合計",
+          "precision": 3,
+          "value": 2079.721
+        },
+        {
+          "id": "netdebt",
+          "operation": "difference",
+          "inputs": [
+            "debt",
+            "cash"
+          ],
+          "definition": "有利子負債簿価合計−現金等",
+          "precision": 3,
+          "value": 1705.722
+        },
+        {
+          "id": "sum_equity",
+          "operation": "sum",
+          "inputs": [
+            "equity",
+            "prev"
+          ],
+          "definition": "期首・期末株主資本の合計",
+          "precision": 3,
+          "value": 18385.495
+        },
+        {
+          "id": "twice_ni",
+          "operation": "sum",
+          "inputs": [
+            "ni",
+            "ni"
+          ],
+          "definition": "平均資本による比率のため純利益を2倍",
+          "precision": 3,
+          "value": 2752.248
+        },
+        {
+          "id": "roe",
+          "operation": "ratio-percent",
+          "inputs": [
+            "twice_ni",
+            "sum_equity"
+          ],
+          "definition": "純利益÷平均株主資本×100",
+          "precision": 1,
+          "value": 15
+        }
+      ]
+    },
+    {
+      "id": "balance-2025",
+      "question": "| 2025 | 2,283 | 458 | 1,825 | 10,629 | 14.6% |",
+      "claim": "| 2025 | 2,283 | 458 | 1,825 | 10,629 | 14.6% |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "short",
+          "entity": "AMETEK連結",
+          "metric": "短期借入金および長期債務の流動部分（簿価）",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "短期借入金および長期債務の流動部分（簿価）"
+        },
+        {
+          "id": "long",
+          "entity": "AMETEK連結",
+          "metric": "長期債務の非流動部分（簿価）",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "長期債務の非流動部分（簿価）"
+        },
+        {
+          "id": "cash",
+          "entity": "AMETEK連結",
+          "metric": "現金および現金同等物",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金および現金同等物"
+        },
+        {
+          "id": "equity",
+          "entity": "AMETEK連結",
+          "metric": "株主資本",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本"
+        },
+        {
+          "id": "ni",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        },
+        {
+          "id": "prev",
+          "entity": "AMETEK連結",
+          "metric": "株主資本",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本"
+        }
+      ],
+      "observations": [
+        {
+          "id": "short",
+          "entity": "AMETEK連結",
+          "metric": "短期借入金および長期債務の流動部分（簿価）",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "短期借入金および長期債務の流動部分（簿価）",
+          "value": 1208.975,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Balance Sheet / 短期借入金および長期債務の流動部分（簿価） / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "long",
+          "entity": "AMETEK連結",
+          "metric": "長期債務の非流動部分（簿価）",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "長期債務の非流動部分（簿価）",
+          "value": 1074.334,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Balance Sheet / 長期債務の非流動部分（簿価） / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash",
+          "entity": "AMETEK連結",
+          "metric": "現金および現金同等物",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金および現金同等物",
+          "value": 457.951,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Balance Sheet / 現金および現金同等物 / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "equity",
+          "entity": "AMETEK連結",
+          "metric": "株主資本",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本",
+          "value": 10628.786,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Balance Sheet / 株主資本 / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "AMETEK連結",
+          "metric": "GAAP純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 1480.142,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Statement of Income / GAAP純利益 / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prev",
+          "entity": "AMETEK連結",
+          "metric": "株主資本",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "株主資本",
+          "value": 9655.304,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Balance Sheet / 株主資本 / 2024年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "debt",
+          "operation": "sum",
+          "inputs": [
+            "short",
+            "long"
+          ],
+          "definition": "短期・流動部分と長期債務簿価の合計",
+          "precision": 3,
+          "value": 2283.309
+        },
+        {
+          "id": "netdebt",
+          "operation": "difference",
+          "inputs": [
+            "debt",
+            "cash"
+          ],
+          "definition": "有利子負債簿価合計−現金等",
+          "precision": 3,
+          "value": 1825.358
+        },
+        {
+          "id": "sum_equity",
+          "operation": "sum",
+          "inputs": [
+            "equity",
+            "prev"
+          ],
+          "definition": "期首・期末株主資本の合計",
+          "precision": 3,
+          "value": 20284.09
+        },
+        {
+          "id": "twice_ni",
+          "operation": "sum",
+          "inputs": [
+            "ni",
+            "ni"
+          ],
+          "definition": "平均資本による比率のため純利益を2倍",
+          "precision": 3,
+          "value": 2960.284
+        },
+        {
+          "id": "roe",
+          "operation": "ratio-percent",
+          "inputs": [
+            "twice_ni",
+            "sum_equity"
+          ],
+          "definition": "純利益÷平均株主資本×100",
+          "precision": 1,
+          "value": 14.6
+        }
+      ]
+    },
+    {
+      "id": "debt-jump",
+      "question": "2026年9月末の有利子負債は6,669百万ドル、純負債は6,003百万ドルへ増えました。2025年末の純負債1,825百万ドルと比べて大幅な増加です。",
+      "claim": "2026年9月末の有利子負債は6,669百万ドル、純負債は6,003百万ドルへ増えました。2025年末の純負債1,825百万ドルと比べて大幅な増加です。",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "short",
+          "entity": "AMETEK連結",
+          "metric": "短期借入・長期債務流動部分の簿価",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "短期借入・長期債務流動部分の簿価"
+        },
+        {
+          "id": "long",
+          "entity": "AMETEK連結",
+          "metric": "長期債務の非流動部分の簿価",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "長期債務の非流動部分の簿価"
+        },
+        {
+          "id": "cash",
+          "entity": "AMETEK連結",
+          "metric": "現金等",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金等"
+        },
+        {
+          "id": "short25",
+          "entity": "AMETEK連結",
+          "metric": "短期借入金および長期債務の流動部分（簿価）",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "短期借入金および長期債務の流動部分（簿価）"
+        },
+        {
+          "id": "long25",
+          "entity": "AMETEK連結",
+          "metric": "長期債務の非流動部分（簿価）",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "長期債務の非流動部分（簿価）"
+        },
+        {
+          "id": "cash25",
+          "entity": "AMETEK連結",
+          "metric": "現金および現金同等物",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金および現金同等物"
+        }
+      ],
+      "observations": [
+        {
+          "id": "short",
+          "entity": "AMETEK連結",
+          "metric": "短期借入・長期債務流動部分の簿価",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "短期借入・長期債務流動部分の簿価",
+          "value": 639.822,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Consolidated Balance Sheet",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "long",
+          "entity": "AMETEK連結",
+          "metric": "長期債務の非流動部分の簿価",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "長期債務の非流動部分の簿価",
+          "value": 6029.565,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Consolidated Balance Sheet",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash",
+          "entity": "AMETEK連結",
+          "metric": "現金等",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金等",
+          "value": 666.152,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Consolidated Balance Sheet",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "short25",
+          "entity": "AMETEK連結",
+          "metric": "短期借入金および長期債務の流動部分（簿価）",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "短期借入金および長期債務の流動部分（簿価）",
+          "value": 1208.975,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Balance Sheet / 短期借入金および長期債務の流動部分（簿価） / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "long25",
+          "entity": "AMETEK連結",
+          "metric": "長期債務の非流動部分（簿価）",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "長期債務の非流動部分（簿価）",
+          "value": 1074.334,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Balance Sheet / 長期債務の非流動部分（簿価） / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash25",
+          "entity": "AMETEK連結",
+          "metric": "現金および現金同等物",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金および現金同等物",
+          "value": 457.951,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000016/ame-20251231.htm",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated Balance Sheet / 現金および現金同等物 / 2025年列（原表 USD thousand を1,000で除した値）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "debt",
+          "operation": "sum",
+          "inputs": [
+            "short",
+            "long"
+          ],
+          "definition": "有利子負債簿価合計",
+          "precision": 3,
+          "value": 6669.387
+        },
+        {
+          "id": "nd",
+          "operation": "difference",
+          "inputs": [
+            "debt",
+            "cash"
+          ],
+          "definition": "現金控除後の純負債",
+          "precision": 3,
+          "value": 6003.235
+        },
+        {
+          "id": "debt25",
+          "operation": "sum",
+          "inputs": [
+            "short25",
+            "long25"
+          ],
+          "definition": "2025年末負債",
+          "precision": 3,
+          "value": 2283.309
+        },
+        {
+          "id": "nd25",
+          "operation": "difference",
+          "inputs": [
+            "debt25",
+            "cash25"
+          ],
+          "definition": "2025年末純負債",
+          "precision": 3,
+          "value": 1825.358
+        }
+      ]
+    },
+    {
+      "id": "intangible-capital",
+      "question": "9月末ののれんは10,211百万ドル、その他無形資産は6,522百万ドルで、合計は総資産の74.7%です。",
+      "claim": "9月末ののれんは10,211百万ドル、その他無形資産は6,522百万ドルで、合計は総資産の74.7%です。",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "gw",
+          "entity": "AMETEK連結",
+          "metric": "のれん",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "のれん"
+        },
+        {
+          "id": "int",
+          "entity": "AMETEK連結",
+          "metric": "その他無形資産の簿価",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "その他無形資産の簿価"
+        },
+        {
+          "id": "assets",
+          "entity": "AMETEK連結",
+          "metric": "総資産",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "総資産"
+        }
+      ],
+      "observations": [
+        {
+          "id": "gw",
+          "entity": "AMETEK連結",
+          "metric": "のれん",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "のれん",
+          "value": 10210.706,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Consolidated Balance Sheet / Goodwill",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "int",
+          "entity": "AMETEK連結",
+          "metric": "その他無形資産の簿価",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "その他無形資産の簿価",
+          "value": 6522.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Consolidated Balance Sheet / Other intangibles net",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "assets",
+          "entity": "AMETEK連結",
+          "metric": "総資産",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "総資産",
+          "value": 22388.535,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Consolidated Balance Sheet / Total assets",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "inttotal",
+          "operation": "sum",
+          "inputs": [
+            "gw",
+            "int"
+          ],
+          "definition": "のれん＋その他無形資産",
+          "precision": 3,
+          "value": 16733.006
+        },
+        {
+          "id": "share",
+          "operation": "ratio-percent",
+          "inputs": [
+            "inttotal",
+            "assets"
+          ],
+          "definition": "のれん・その他無形資産÷総資産×100",
+          "precision": 1,
+          "value": 74.7
+        }
+      ]
+    },
+    {
+      "id": "q3-sales",
+      "question": "| 連結売上高 | 1,893 | 2,220 |",
+      "claim": "| 連結売上高 | 1,893 | 2,220 |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "AMETEK連結",
+          "metric": "連結売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結売上高"
+        },
+        {
+          "id": "new",
+          "entity": "AMETEK連結",
+          "metric": "連結売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "AMETEK連結",
+          "metric": "連結売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結売上高",
+          "value": 1892.641,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Consolidated Statement of Income / Note 16 Business Segment Information",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "AMETEK連結",
+          "metric": "連結売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結売上高",
+          "value": 2220.306,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Consolidated Statement of Income / Note 16 Business Segment Information",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3-op",
+      "question": "| 連結営業利益 | 488 | 585 |",
+      "claim": "| 連結営業利益 | 488 | 585 |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "AMETEK連結",
+          "metric": "連結営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結営業利益"
+        },
+        {
+          "id": "new",
+          "entity": "AMETEK連結",
+          "metric": "連結営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "AMETEK連結",
+          "metric": "連結営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結営業利益",
+          "value": 488.38,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Consolidated Statement of Income / Note 16 Business Segment Information",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "AMETEK連結",
+          "metric": "連結営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結営業利益",
+          "value": 584.949,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Consolidated Statement of Income / Note 16 Business Segment Information",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3-ni",
+      "question": "| 連結純利益 | 371 | 426 |",
+      "claim": "| 連結純利益 | 371 | 426 |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "AMETEK連結",
+          "metric": "連結純利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結純利益"
+        },
+        {
+          "id": "new",
+          "entity": "AMETEK連結",
+          "metric": "連結純利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "AMETEK連結",
+          "metric": "連結純利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結純利益",
+          "value": 371.416,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Consolidated Statement of Income / Note 16 Business Segment Information",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "AMETEK連結",
+          "metric": "連結純利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結純利益",
+          "value": 426.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Consolidated Statement of Income / Note 16 Business Segment Information",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3-eig",
+      "question": "| EIG売上高 | 1,246 | 1,442 |",
+      "claim": "| EIG売上高 | 1,246 | 1,442 |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "AMETEK連結",
+          "metric": "EIG売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "EIG売上高"
+        },
+        {
+          "id": "new",
+          "entity": "AMETEK連結",
+          "metric": "EIG売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "EIG売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "AMETEK連結",
+          "metric": "EIG売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "EIG売上高",
+          "value": 1246.332,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Consolidated Statement of Income / Note 16 Business Segment Information",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "AMETEK連結",
+          "metric": "EIG売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "EIG売上高",
+          "value": 1442.321,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Consolidated Statement of Income / Note 16 Business Segment Information",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3-emg",
+      "question": "| EMG売上高 | 646 | 778 |",
+      "claim": "| EMG売上高 | 646 | 778 |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "AMETEK連結",
+          "metric": "EMG売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "EMG売上高"
+        },
+        {
+          "id": "new",
+          "entity": "AMETEK連結",
+          "metric": "EMG売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "EMG売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "AMETEK連結",
+          "metric": "EMG売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "EMG売上高",
+          "value": 646.309,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Consolidated Statement of Income / Note 16 Business Segment Information",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "AMETEK連結",
+          "metric": "EMG売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "EMG売上高",
+          "value": 777.985,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Consolidated Statement of Income / Note 16 Business Segment Information",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3-cm",
+      "question": "| 連結営業利益率 | 25.8% | 26.3% |",
+      "claim": "| 連結営業利益率 | 25.8% | 26.3% |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "AMETEK連結",
+          "metric": "連結営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結営業利益率"
+        },
+        {
+          "id": "new",
+          "entity": "AMETEK連結",
+          "metric": "連結営業利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "AMETEK連結",
+          "metric": "連結営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結営業利益率",
+          "value": 25.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Item 2 / Results of Operations and Segment Results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "AMETEK連結",
+          "metric": "連結営業利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結営業利益率",
+          "value": 26.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Item 2 / Results of Operations and Segment Results",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3-em",
+      "question": "| EIG営業利益率 | 28.3% | 28.2% |",
+      "claim": "| EIG営業利益率 | 28.3% | 28.2% |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "AMETEK連結",
+          "metric": "EIG営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "EIG営業利益率"
+        },
+        {
+          "id": "new",
+          "entity": "AMETEK連結",
+          "metric": "EIG営業利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "EIG営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "AMETEK連結",
+          "metric": "EIG営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "EIG営業利益率",
+          "value": 28.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Item 2 / Results of Operations and Segment Results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "AMETEK連結",
+          "metric": "EIG営業利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "EIG営業利益率",
+          "value": 28.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Item 2 / Results of Operations and Segment Results",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3-mm",
+      "question": "| EMG営業利益率 | 25.4% | 27.0% |",
+      "claim": "| EMG営業利益率 | 25.4% | 27.0% |",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "AMETEK連結",
+          "metric": "EMG営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "EMG営業利益率"
+        },
+        {
+          "id": "new",
+          "entity": "AMETEK連結",
+          "metric": "EMG営業利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "EMG営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "AMETEK連結",
+          "metric": "EMG営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "EMG営業利益率",
+          "value": 25.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Item 2 / Results of Operations and Segment Results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "AMETEK連結",
+          "metric": "EMG営業利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "EMG営業利益率",
+          "value": 27,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Item 2 / Results of Operations and Segment Results",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3-organic-orders",
+      "question": "Q3の増収率17.3%のうち、会社が示す既存事業の寄与は10%、買収は7%でした。受注は2,651百万ドルで前年同期比34.7%増、既存事業の受注も17%増です。",
+      "claim": "Q3の増収率17.3%のうち、会社が示す既存事業の寄与は10%、買収は7%でした。受注は2,651百万ドルで前年同期比34.7%増、既存事業の受注も17%増です。",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "growth",
+          "entity": "AMETEK連結",
+          "metric": "連結増収率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結増収率"
+        },
+        {
+          "id": "organic",
+          "entity": "AMETEK連結",
+          "metric": "既存事業増収率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "既存事業増収率"
+        },
+        {
+          "id": "acq",
+          "entity": "AMETEK連結",
+          "metric": "買収寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "買収寄与"
+        },
+        {
+          "id": "orders",
+          "entity": "AMETEK連結",
+          "metric": "受注高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "受注高"
+        },
+        {
+          "id": "ordersgrowth",
+          "entity": "AMETEK連結",
+          "metric": "受注増加率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "受注増加率"
+        },
+        {
+          "id": "organicorders",
+          "entity": "AMETEK連結",
+          "metric": "既存事業受注増加率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "既存事業受注増加率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "growth",
+          "entity": "AMETEK連結",
+          "metric": "連結増収率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "連結増収率",
+          "value": 17.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Item 2 / Q3 Results of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "organic",
+          "entity": "AMETEK連結",
+          "metric": "既存事業増収率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "既存事業増収率",
+          "value": 10,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Item 2 / Q3 Results of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "AMETEK連結",
+          "metric": "買収寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "買収寄与",
+          "value": 7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Item 2 / Q3 Results of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "orders",
+          "entity": "AMETEK連結",
+          "metric": "受注高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "受注高",
+          "value": 2650.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Item 2 / Orders",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ordersgrowth",
+          "entity": "AMETEK連結",
+          "metric": "受注増加率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "受注増加率",
+          "value": 34.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Item 2 / Orders",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "organicorders",
+          "entity": "AMETEK連結",
+          "metric": "既存事業受注増加率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "既存事業受注増加率",
+          "value": 17,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Item 2 / Orders",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "adjusted-eps",
+      "question": "Q3のGAAP EPSは1.85ドル、調整後EPSは2.21ドルで、差は0.36ドルです。買収関連無形資産の償却と取引・統合費用が調整に含まれます。",
+      "claim": "Q3のGAAP EPSは1.85ドル、調整後EPSは2.21ドルで、差は0.36ドルです。買収関連無形資産の償却と取引・統合費用が調整に含まれます。",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "gaap",
+          "entity": "AMETEK連結",
+          "metric": "GAAP希薄化後EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "GAAP希薄化後EPS"
+        },
+        {
+          "id": "adj",
+          "entity": "AMETEK連結",
+          "metric": "調整後希薄化後EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "調整後希薄化後EPS"
+        },
+        {
+          "id": "adjustments",
+          "entity": "AMETEK連結",
+          "metric": "EPS調整額",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "EPS調整額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "gaap",
+          "entity": "AMETEK連結",
+          "metric": "GAAP希薄化後EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "GAAP希薄化後EPS",
+          "value": 1.85,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000194/ametek8kexhibit99111032026.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "GAAP to non-GAAP reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "adj",
+          "entity": "AMETEK連結",
+          "metric": "調整後希薄化後EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "調整後希薄化後EPS",
+          "value": 2.21,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000194/ametek8kexhibit99111032026.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "GAAP to non-GAAP reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "adjustments",
+          "entity": "AMETEK連結",
+          "metric": "EPS調整額",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "EPS調整額",
+          "value": 0.36,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000194/ametek8kexhibit99111032026.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "GAAP to non-GAAP reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "interest-and-tax",
+      "question": "Q3の支払利息は前年の23百万ドルから40百万ドルへ増加しました。税率も前年の17.1%から18.3%へ上がっています。",
+      "claim": "Q3の支払利息は前年の23百万ドルから40百万ドルへ増加しました。税率も前年の17.1%から18.3%へ上がっています。",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "i25",
+          "entity": "AMETEK連結",
+          "metric": "支払利息",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "支払利息"
+        },
+        {
+          "id": "i26",
+          "entity": "AMETEK連結",
+          "metric": "支払利息",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "支払利息"
+        },
+        {
+          "id": "t25",
+          "entity": "AMETEK連結",
+          "metric": "実効税率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "実効税率"
+        },
+        {
+          "id": "t26",
+          "entity": "AMETEK連結",
+          "metric": "実効税率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "実効税率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i25",
+          "entity": "AMETEK連結",
+          "metric": "支払利息",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "支払利息",
+          "value": 22.514,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Consolidated Statement of Income / Interest expense",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i26",
+          "entity": "AMETEK連結",
+          "metric": "支払利息",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "支払利息",
+          "value": 39.822,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Consolidated Statement of Income / Interest expense",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t25",
+          "entity": "AMETEK連結",
+          "metric": "実効税率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "実効税率",
+          "value": 17.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Note 11 Income Taxes",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t26",
+          "entity": "AMETEK連結",
+          "metric": "実効税率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "実効税率",
+          "value": 18.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Note 11 Income Taxes",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "indicor-deal",
+      "question": "8月26日に完了したIndicor Instrumentationの買収は、発表上の取引価額が50億ドルの全額現金取引です。",
+      "claim": "8月26日に完了したIndicor Instrumentationの買収は、発表上の取引価額が50億ドルの全額現金取引です。",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "deal",
+          "entity": "AMETEK連結",
+          "metric": "発表上の取引価額",
+          "periodStart": "2026-08-26",
+          "periodEnd": "2026-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "発表上の取引価額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "deal",
+          "entity": "AMETEK連結",
+          "metric": "発表上の取引価額",
+          "periodStart": "2026-08-26",
+          "periodEnd": "2026-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "発表上の取引価額",
+          "value": 5000,
+          "source": {
+            "url": "https://investors.ametek.com/news-releases/news-release-details/ametek-completes-acquisition-indicor-instrumentation",
+            "publishedOn": "2026-08-26",
+            "locator": "Acquisition completion announcement",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "indicor-ppa",
+      "question": "10-Qの取得原価配分表では、Indicorの暫定取得価額は5,154百万ドル、取得現金控除後の支出は4,921百万ドルです。うちのれんは2,699百万ドル、その他無形資産は2,454百万ドルとされています。",
+      "claim": "10-Qの取得原価配分表では、Indicorの暫定取得価額は5,154百万ドル、取得現金控除後の支出は4,921百万ドルです。うちのれんは2,699百万ドル、その他無形資産は2,454百万ドルとされています。",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "purchase",
+          "entity": "AMETEK連結",
+          "metric": "Indicor暫定取得価額",
+          "periodStart": "2026-08-26",
+          "periodEnd": "2026-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Indicor暫定取得価額"
+        },
+        {
+          "id": "netcash",
+          "entity": "AMETEK連結",
+          "metric": "Indicor取得現金控除後支出",
+          "periodStart": "2026-08-26",
+          "periodEnd": "2026-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Indicor取得現金控除後支出"
+        },
+        {
+          "id": "gw",
+          "entity": "AMETEK連結",
+          "metric": "Indicor取得のれん",
+          "periodStart": "2026-08-26",
+          "periodEnd": "2026-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Indicor取得のれん"
+        },
+        {
+          "id": "int",
+          "entity": "AMETEK連結",
+          "metric": "Indicor取得その他無形資産",
+          "periodStart": "2026-08-26",
+          "periodEnd": "2026-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Indicor取得その他無形資産"
+        }
+      ],
+      "observations": [
+        {
+          "id": "purchase",
+          "entity": "AMETEK連結",
+          "metric": "Indicor暫定取得価額",
+          "periodStart": "2026-08-26",
+          "periodEnd": "2026-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Indicor暫定取得価額",
+          "value": 5154.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Note 9 Acquisitions / purchase price allocation / Indicor",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "netcash",
+          "entity": "AMETEK連結",
+          "metric": "Indicor取得現金控除後支出",
+          "periodStart": "2026-08-26",
+          "periodEnd": "2026-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Indicor取得現金控除後支出",
+          "value": 4921.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Note 9 Acquisitions / total cash paid / Indicor",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "gw",
+          "entity": "AMETEK連結",
+          "metric": "Indicor取得のれん",
+          "periodStart": "2026-08-26",
+          "periodEnd": "2026-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Indicor取得のれん",
+          "value": 2698.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Note 9 Acquisitions / goodwill / Indicor",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "int",
+          "entity": "AMETEK連結",
+          "metric": "Indicor取得その他無形資産",
+          "periodStart": "2026-08-26",
+          "periodEnd": "2026-08-26",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Indicor取得その他無形資産",
+          "value": 2454.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Note 9 Acquisitions / other intangible assets / Indicor",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "ytd-cash",
+      "question": "2026年1〜9月の営業CFは1,496百万ドル、設備投資支出は91百万ドル、独自計算FCFは1,405百万ドルでした。一方、買収支出は5,346百万ドルです。",
+      "claim": "2026年1〜9月の営業CFは1,496百万ドル、設備投資支出は91百万ドル、独自計算FCFは1,405百万ドルでした。一方、買収支出は5,346百万ドルです。",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "AMETEK連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "AMETEK連結",
+          "metric": "設備投資支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出（負数）"
+        },
+        {
+          "id": "acq",
+          "entity": "AMETEK連結",
+          "metric": "買収支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "買収支出（負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "AMETEK連結",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1495.857,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Condensed Consolidated Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "AMETEK連結",
+          "metric": "設備投資支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "設備投資支出（負数）",
+          "value": -90.722,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Condensed Consolidated Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "AMETEK連結",
+          "metric": "買収支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "買収支出（負数）",
+          "value": -5345.848,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000196/ame-20260930.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Condensed Consolidated Statement of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "definition": "営業CF＋負の設備投資支出",
+          "precision": 3,
+          "value": 1405.135
+        }
+      ]
+    },
+    {
+      "id": "guidance",
+      "question": "会社は2026年通期の調整後EPS予想を8.20〜8.30ドルから8.53〜8.57ドルへ引き上げました。",
+      "claim": "会社は2026年通期の調整後EPS予想を8.20〜8.30ドルから8.53〜8.57ドルへ引き上げました。",
+      "definition": "本文の期間・単位・実績または会社予想の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "oldlow",
+          "entity": "AMETEK連結",
+          "metric": "旧通期調整後EPS予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "旧通期調整後EPS予想下限"
+        },
+        {
+          "id": "oldhigh",
+          "entity": "AMETEK連結",
+          "metric": "旧通期調整後EPS予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "旧通期調整後EPS予想上限"
+        },
+        {
+          "id": "low",
+          "entity": "AMETEK連結",
+          "metric": "新通期調整後EPS予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "新通期調整後EPS予想下限"
+        },
+        {
+          "id": "high",
+          "entity": "AMETEK連結",
+          "metric": "新通期調整後EPS予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "新通期調整後EPS予想上限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oldlow",
+          "entity": "AMETEK連結",
+          "metric": "旧通期調整後EPS予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "旧通期調整後EPS予想下限",
+          "value": 8.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000194/ametek8kexhibit99111032026.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Full Year 2026 Outlook / prior guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldhigh",
+          "entity": "AMETEK連結",
+          "metric": "旧通期調整後EPS予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "旧通期調整後EPS予想上限",
+          "value": 8.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000194/ametek8kexhibit99111032026.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Full Year 2026 Outlook / prior guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "low",
+          "entity": "AMETEK連結",
+          "metric": "新通期調整後EPS予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "新通期調整後EPS予想下限",
+          "value": 8.53,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000194/ametek8kexhibit99111032026.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Full Year 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "high",
+          "entity": "AMETEK連結",
+          "metric": "新通期調整後EPS予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "新通期調整後EPS予想上限",
+          "value": 8.57,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1037868/000103786826000194/ametek8kexhibit99111032026.htm",
+            "publishedOn": "2026-11-03",
+            "locator": "Full Year 2026 Outlook",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
