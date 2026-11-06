@@ -1,0 +1,615 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-11-07",
+  "articleSha256": "1664b7bda526064c6ecb3f6b803a4c59a326f283ea99ea9049aaf809fed62c6d",
+  "checkedAt": "2026-11-06T21:21:45Z",
+  "informationCutoff": "2026-11-07T06:20:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "題名・要約から免責まで通読。日経平均の前日比、BLSの雇用前月差・失業率、三菱重工の上期実績・通期予想、ミシガン大学の指数・1年先インフレ期待を原資料で照合した。Googleの州内投資予定額と燃料電池の計画容量は単独値で合算・比較しない。米株は取引終了報道で方向のみ確認し、確定終値の比較は保留した。",
+  "comparisons": [
+    {
+      "id": "nikkei-close",
+      "question": "日経平均の東証大引けは前日比でいくら下げたか。",
+      "definition": "日経平均株価（Nikkei 225）の配当なし指数、東京の通常取引の終値同士。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "日本経済新聞社・日経平均株価",
+          "metric": "終値",
+          "periodStart": "2026-11-06",
+          "periodEnd": "2026-11-06",
+          "unit": "円表示の指数値",
+          "basis": "market",
+          "definition": "日経平均株価（Nikkei 225）の配当なし指数、東京の通常取引の終値同士。"
+        },
+        {
+          "id": "prior",
+          "entity": "日本経済新聞社・日経平均株価",
+          "metric": "終値",
+          "periodStart": "2026-11-05",
+          "periodEnd": "2026-11-05",
+          "unit": "円表示の指数値",
+          "basis": "market",
+          "definition": "日経平均株価（Nikkei 225）の配当なし指数、東京の通常取引の終値同士。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "日本経済新聞社・日経平均株価",
+          "metric": "終値",
+          "periodStart": "2026-11-06",
+          "periodEnd": "2026-11-06",
+          "unit": "円表示の指数値",
+          "basis": "market",
+          "definition": "日経平均株価（Nikkei 225）の配当なし指数、東京の通常取引の終値同士。",
+          "value": 57434.77,
+          "source": {
+            "url": "https://indexes.nikkei.co.jp/nkave/statistics",
+            "publishedOn": "2026-11-06",
+            "locator": "日経平均四本値・2026.11.06行・終値列（11月6日更新表）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "日本経済新聞社・日経平均株価",
+          "metric": "終値",
+          "periodStart": "2026-11-05",
+          "periodEnd": "2026-11-05",
+          "unit": "円表示の指数値",
+          "basis": "market",
+          "definition": "日経平均株価（Nikkei 225）の配当なし指数、東京の通常取引の終値同士。",
+          "value": 61077.9,
+          "source": {
+            "url": "https://indexes.nikkei.co.jp/nkave/statistics",
+            "publishedOn": "2026-11-06",
+            "locator": "日経平均四本値・2026.11.05行・終値列（11月6日更新表）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "difference",
+          "operation": "difference",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "当期値から比較対象値を引く。単位は円。",
+          "value": -3643.13,
+          "precision": 2
+        },
+        {
+          "id": "rate",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "（当期値÷比較対象値−1）×100。単位は%。",
+          "value": -5.96,
+          "precision": 2
+        }
+      ],
+      "claim": "11月6日の日経平均株価は東証大引けで57,434.77円。5日終値61,077.90円から3,643.13円、5.96%下落した。日本経済新聞社の同一指数の終値比較で、先物や配当込み指数は使っていない。"
+    },
+    {
+      "id": "bls-payrolls",
+      "question": "10月の雇用純増幅は9月の改定後よりどの程度大きいか。",
+      "definition": "事業所調査CES、政府部門を含む非農業部門の季節調整済み前月差。11月6日公表時点で比較。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "米労働統計局（BLS）",
+          "metric": "非農業部門雇用者数の前月差",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "人",
+          "basis": "actual",
+          "definition": "事業所調査CES、政府部門を含む非農業部門の季節調整済み前月差。11月6日公表時点で比較。"
+        },
+        {
+          "id": "prior",
+          "entity": "米労働統計局（BLS）",
+          "metric": "非農業部門雇用者数の前月差",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "人",
+          "basis": "actual",
+          "definition": "事業所調査CES、政府部門を含む非農業部門の季節調整済み前月差。11月6日公表時点で比較。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "米労働統計局（BLS）",
+          "metric": "非農業部門雇用者数の前月差",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "人",
+          "basis": "actual",
+          "definition": "事業所調査CES、政府部門を含む非農業部門の季節調整済み前月差。11月6日公表時点で比較。",
+          "value": 165000,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/empsit_11062026.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "冒頭、October payroll employment rose by 165,000",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "米労働統計局（BLS）",
+          "metric": "非農業部門雇用者数の前月差",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "人",
+          "basis": "actual",
+          "definition": "事業所調査CES、政府部門を含む非農業部門の季節調整済み前月差。11月6日公表時点で比較。",
+          "value": 60000,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/empsit_11062026.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Establishment Survey Data末尾、September revision to +60,000",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "difference",
+          "operation": "difference",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "当期値から比較対象値を引く。単位は人。",
+          "value": 105000,
+          "precision": 0
+        }
+      ],
+      "claim": "米労働統計局（BLS）が11月6日8:30米東部標準時間（日本時間22:30）に発表した10月の非農業部門雇用者数は、季節調整済みで前月から16万5,000人増えた。同じ発表で示された9月の改定後の増加幅は6万人で、10月の増加幅はこれを10万5,000人上回った。"
+    },
+    {
+      "id": "bls-unemployment",
+      "question": "家計調査の失業率は9月から10月にどう動いたか。",
+      "definition": "家計調査CPS、16歳以上の労働力人口に占める失業者の割合、季節調整済み。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "米労働統計局（BLS）",
+          "metric": "失業率",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "家計調査CPS、16歳以上の労働力人口に占める失業者の割合、季節調整済み。"
+        },
+        {
+          "id": "prior",
+          "entity": "米労働統計局（BLS）",
+          "metric": "失業率",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "家計調査CPS、16歳以上の労働力人口に占める失業者の割合、季節調整済み。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "米労働統計局（BLS）",
+          "metric": "失業率",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "家計調査CPS、16歳以上の労働力人口に占める失業者の割合、季節調整済み。",
+          "value": 4.1,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/empsit_11062026.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Summary table A、Unemployment rate行、Oct. 2026列",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "米労働統計局（BLS）",
+          "metric": "失業率",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "家計調査CPS、16歳以上の労働力人口に占める失業者の割合、季節調整済み。",
+          "value": 4.2,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/empsit_11062026.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Summary table A、Unemployment rate行、Sept. 2026列",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "difference",
+          "operation": "difference",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "当期値から比較対象値を引く。単位はポイント。",
+          "value": -0.1,
+          "precision": 1
+        }
+      ],
+      "claim": "別の家計調査に基づく失業率は、季節調整済みで9月の4.2%から10月の4.1%へ0.1ポイント低下した。BLSは小幅な変化と評価しており、事業所調査の雇用者数と同じ標本ではない。"
+    },
+    {
+      "id": "mhi-interim-business-profit",
+      "question": "継続事業の上期事業利益の伸びはどの程度か。",
+      "definition": "IFRS連結決算における同社の継続事業の事業利益。売上収益から売上原価・販管費・その他費用を引き、持分法投資損益・その他収益を加える。両期とも非継続事業除外。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "三菱重工業（連結）",
+          "metric": "事業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "IFRS連結決算における同社の継続事業の事業利益。売上収益から売上原価・販管費・その他費用を引き、持分法投資損益・その他収益を加える。両期とも非継続事業除外。"
+        },
+        {
+          "id": "prior",
+          "entity": "三菱重工業（連結）",
+          "metric": "事業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "IFRS連結決算における同社の継続事業の事業利益。売上収益から売上原価・販管費・その他費用を引き、持分法投資損益・その他収益を加える。両期とも非継続事業除外。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "三菱重工業（連結）",
+          "metric": "事業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "IFRS連結決算における同社の継続事業の事業利益。売上収益から売上原価・販管費・その他費用を引き、持分法投資損益・その他収益を加える。両期とも非継続事業除外。",
+          "value": 249304,
+          "source": {
+            "url": "https://www.mhi.com/jp/finance/library/result/pdf/fy20262q/kessan_tansin.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "連結経営成績（累計）、2027年3月期中間期・事業利益列、注1・2",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "三菱重工業（連結）",
+          "metric": "事業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "IFRS連結決算における同社の継続事業の事業利益。売上収益から売上原価・販管費・その他費用を引き、持分法投資損益・その他収益を加える。両期とも非継続事業除外。",
+          "value": 171572,
+          "source": {
+            "url": "https://www.mhi.com/jp/finance/library/result/pdf/fy20262q/kessan_tansin.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "連結経営成績（累計）、2026年3月期中間期・事業利益列、注1・2",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "rate",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "（当期値÷比較対象値−1）×100。単位は%。",
+          "value": 45.3,
+          "precision": 1
+        }
+      ],
+      "claim": "三菱重工業の2027年3月期上期（2026年4〜9月）の連結事業利益は249,304百万円。前年同期の171,572百万円から45.3%増えた。IFRS連結決算で同社が開示する継続事業の指標で、持分法による投資損益などを含む。"
+    },
+    {
+      "id": "mhi-forecast-revision",
+      "question": "同じ通期の会社予想同士で事業利益はどの程度上方修正されたか。",
+      "definition": "同一会計年度の連結事業利益会社予想、11月新予想と5月の従来予想。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "三菱重工業（連結）",
+          "metric": "事業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円（日本円）",
+          "basis": "company-forecast",
+          "definition": "同一会計年度の連結事業利益会社予想、11月新予想と5月の従来予想。"
+        },
+        {
+          "id": "prior",
+          "entity": "三菱重工業（連結）",
+          "metric": "事業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円（日本円）",
+          "basis": "company-forecast",
+          "definition": "同一会計年度の連結事業利益会社予想、11月新予想と5月の従来予想。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "三菱重工業（連結）",
+          "metric": "事業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円（日本円）",
+          "basis": "company-forecast",
+          "definition": "同一会計年度の連結事業利益会社予想、11月新予想と5月の従来予想。",
+          "value": 600000,
+          "source": {
+            "url": "https://www.mhi.com/jp/news/pdf/26110602.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "1. 通期連結業績予想数値の修正、今回修正予想（B）行、事業利益列",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "三菱重工業（連結）",
+          "metric": "事業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円（日本円）",
+          "basis": "company-forecast",
+          "definition": "同一会計年度の連結事業利益会社予想、11月新予想と5月の従来予想。",
+          "value": 540000,
+          "source": {
+            "url": "https://www.mhi.com/jp/news/pdf/26110602.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "1. 通期連結業績予想数値の修正、前回発表予想（A）行、事業利益列",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "difference",
+          "operation": "difference",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "当期値から比較対象値を引く。単位は百万円（600億円）。",
+          "value": 60000,
+          "precision": 0
+        },
+        {
+          "id": "rate",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "（当期値÷比較対象値−1）×100。単位は%。",
+          "value": 11.1,
+          "precision": 1
+        }
+      ],
+      "claim": "同社は2027年3月期通期（2026年4月〜2027年3月）の連結事業利益予想を5,400億円から6,000億円に引き上げた。5月時点の会社予想から600億円、11.1%の増額で、実績との比較ではない。"
+    },
+    {
+      "id": "michigan-sentiment",
+      "question": "11月速報の消費者態度指数は10月確報より何ポイント高いか。",
+      "definition": "同一月次消費者調査指数。11月は速報、10月は確報。月の表示は統計の対象月で、11月速報の実際の調査期間は10月20日〜11月2日。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "ミシガン大学 Surveys of Consumers",
+          "metric": "Index of Consumer Sentiment",
+          "periodStart": "2026-11-01",
+          "periodEnd": "2026-11-30",
+          "unit": "指数ポイント",
+          "basis": "actual",
+          "definition": "同一月次消費者調査指数。11月は速報、10月は確報。月の表示は統計の対象月で、11月速報の実際の調査期間は10月20日〜11月2日。"
+        },
+        {
+          "id": "prior",
+          "entity": "ミシガン大学 Surveys of Consumers",
+          "metric": "Index of Consumer Sentiment",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "指数ポイント",
+          "basis": "actual",
+          "definition": "同一月次消費者調査指数。11月は速報、10月は確報。月の表示は統計の対象月で、11月速報の実際の調査期間は10月20日〜11月2日。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "ミシガン大学 Surveys of Consumers",
+          "metric": "Index of Consumer Sentiment",
+          "periodStart": "2026-11-01",
+          "periodEnd": "2026-11-30",
+          "unit": "指数ポイント",
+          "basis": "actual",
+          "definition": "同一月次消費者調査指数。11月は速報、10月は確報。月の表示は統計の対象月で、11月速報の実際の調査期間は10月20日〜11月2日。",
+          "value": 51,
+          "source": {
+            "url": "https://www.sca.isr.umich.edu/",
+            "publishedOn": "2026-11-06",
+            "locator": "Preliminary Results for November 2026、Index of Consumer Sentiment行、Nov 2026列",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "ミシガン大学 Surveys of Consumers",
+          "metric": "Index of Consumer Sentiment",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "指数ポイント",
+          "basis": "actual",
+          "definition": "同一月次消費者調査指数。11月は速報、10月は確報。月の表示は統計の対象月で、11月速報の実際の調査期間は10月20日〜11月2日。",
+          "value": 48,
+          "source": {
+            "url": "https://www.sca.isr.umich.edu/",
+            "publishedOn": "2026-11-06",
+            "locator": "Preliminary Results for November 2026、Index of Consumer Sentiment行、Oct 2026列",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "difference",
+          "operation": "difference",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "当期値から比較対象値を引く。単位は指数ポイント。",
+          "value": 3,
+          "precision": 1
+        }
+      ],
+      "claim": "ミシガン大学の米消費者態度指数は11月速報が51.0、10月確報が48.0で、3.0ポイント上昇した。11月速報の聞き取りは10月20日〜11月2日で、選挙結果やその後の株価急変への反応を示す調査ではない。"
+    },
+    {
+      "id": "michigan-inflation-expectations",
+      "question": "1年先インフレ期待は10月から11月速報にかけて何ポイント変わったか。",
+      "definition": "調査で観測した1年先の期待インフレ率。10月確報と11月速報の回答結果で、CPI実績や市場織込みではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "ミシガン大学 Surveys of Consumers",
+          "metric": "1年先インフレ期待",
+          "periodStart": "2026-11-01",
+          "periodEnd": "2026-11-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調査で観測した1年先の期待インフレ率。10月確報と11月速報の回答結果で、CPI実績や市場織込みではない。"
+        },
+        {
+          "id": "prior",
+          "entity": "ミシガン大学 Surveys of Consumers",
+          "metric": "1年先インフレ期待",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調査で観測した1年先の期待インフレ率。10月確報と11月速報の回答結果で、CPI実績や市場織込みではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "ミシガン大学 Surveys of Consumers",
+          "metric": "1年先インフレ期待",
+          "periodStart": "2026-11-01",
+          "periodEnd": "2026-11-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調査で観測した1年先の期待インフレ率。10月確報と11月速報の回答結果で、CPI実績や市場織込みではない。",
+          "value": 4.3,
+          "source": {
+            "url": "https://www.sca.isr.umich.edu/",
+            "publishedOn": "2026-11-06",
+            "locator": "Director Joanne Hsu、Year-ahead inflation expectationsの段落、this monthの値",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "ミシガン大学 Surveys of Consumers",
+          "metric": "1年先インフレ期待",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調査で観測した1年先の期待インフレ率。10月確報と11月速報の回答結果で、CPI実績や市場織込みではない。",
+          "value": 4.7,
+          "source": {
+            "url": "https://www.sca.isr.umich.edu/",
+            "publishedOn": "2026-11-06",
+            "locator": "Director Joanne Hsu、Year-ahead inflation expectationsの段落、last monthの値",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "difference",
+          "operation": "difference",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "当期値から比較対象値を引く。単位はポイント。",
+          "value": -0.4,
+          "precision": 1
+        }
+      ],
+      "claim": "同調査の1年先インフレ期待は10月の4.7%から11月速報の4.3%へ0.4ポイント低下した。これは回答者の期待であり、実際に発表された消費者物価上昇率ではない。"
+    },
+    {
+      "id": "nasdaq-exact-cash-close",
+      "question": "ナスダック総合の11月6日通常取引終値の前日比を確定値で示せるか。",
+      "definition": "同一指数の11月6日と5日の米東部時間通常取引の確定値。場中値・先物と区別。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "Nasdaq・NASDAQ Composite",
+          "metric": "通常取引の確定終値",
+          "periodStart": "2026-11-06",
+          "periodEnd": "2026-11-06",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "同一指数の米東部時間16時通常取引終値。"
+        },
+        {
+          "id": "prior",
+          "entity": "Nasdaq・NASDAQ Composite",
+          "metric": "通常取引の確定終値",
+          "periodStart": "2026-11-05",
+          "periodEnd": "2026-11-05",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "同一指数の米東部時間16時通常取引終値。"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "omittedClaim": "ナスダック総合の11月6日の確定終値と厳密な日次騰落率を示した。",
+      "reason": "Nasdaq公式Historyでは当該2日分の確定終値を取得できなかった。同日主要報道には場中更新も含まれ、取引終了版で確認できる方向のみを本文に残した。"
+    }
+  ]
+}
