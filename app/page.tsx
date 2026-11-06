@@ -10,6 +10,15 @@ import BreadthHomeCard from "./market-breadth/home-card";
 
 const legacyArticles = [
 {
+  "kind": "週次レポート",
+  "theme": "日米株・AI投資",
+  "date": "2026-11-07 08:09",
+  "dateTime": "2026-11-07T08:09:56+09:00",
+  "title": "米中間選挙後にAI株が下落、雇用統計で金利に再注目｜11月2日〜6日",
+  "excerpt": "11月2日〜6日の日米4指数の週間騰落率を比較。米中間選挙後のAI関連株、トヨタとQualcommの決算、米雇用・国債・ドル円・原油と翌週の物価統計を整理する。",
+  "href": "/articles/weekly-2026-11-02"
+},
+{
   "kind": "企業レポート",
   "theme": "個別企業",
   "date": "2026-11-06 20:08",
