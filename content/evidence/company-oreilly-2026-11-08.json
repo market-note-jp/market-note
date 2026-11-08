@@ -1,0 +1,3338 @@
+{
+  "version": 1,
+  "articleSlug": "company-oreilly-2026-11-08",
+  "articleSha256": "d2c3703c8c606b61883e07f5582c3a31386552edbe0e5c3ce98fb28ed9b00d1a",
+  "checkedAt": "2026-11-08T11:10:07.315Z",
+  "informationCutoff": "2026-11-08T10:57:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "本文内の全重要数値比較を公式Q3 release、11月6日付10-Q、7月29日Q2 release、2025年10-Kおよび公式IR掲載の決算説明会本文で照合。金額は原資料の千ドル単位で保持し本文は億ドル等へ丸める。四半期/累計、実績/会社予想、FCF定義、顧客別内訳/報告セグメント、契約レバレッジ/発表資料レバレッジを区別。コンセンサスと株価反応は未検証のため比較しない。統合時に最終記事と照合してdigestを設定すること。",
+  "comparisons": [
+    {
+      "id": "quarter-sales",
+      "question": "四半期売上高の前年同期比較。",
+      "definition": "四半期売上高の前年同期比較。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "売上高。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "sales25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "売上高。米国GAAP、該当期間の連結実績。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "売上高。米国GAAP、該当期間の連結実績。",
+          "value": 5121290,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sales25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "売上高。米国GAAP、該当期間の連結実績。",
+          "value": 4705696,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "sales26",
+            "sales25"
+          ],
+          "definition": "前年同期比売上成長率",
+          "precision": 1,
+          "value": 8.8
+        }
+      ],
+      "claim": "売上高は51.21億ドル（前年同期47.06億ドル）で8.8%増だった。"
+    },
+    {
+      "id": "quarter-profit",
+      "question": "四半期利益の前年同期比較。",
+      "definition": "四半期利益の前年同期比較。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "op26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "営業利益。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "op25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "営業利益。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "ni26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "純利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "純利益。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "ni25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "純利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "純利益。米国GAAP、該当期間の連結実績。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "op26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "営業利益。米国GAAP、該当期間の連結実績。",
+          "value": 1098291,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "営業利益。米国GAAP、該当期間の連結実績。",
+          "value": 976067,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "純利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "純利益。米国GAAP、該当期間の連結実績。",
+          "value": 785621,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "純利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "純利益。米国GAAP、該当期間の連結実績。",
+          "value": 725896,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "opgrowth",
+          "operation": "growth-percent",
+          "inputs": [
+            "op26",
+            "op25"
+          ],
+          "definition": "営業利益前年同期比",
+          "precision": 1,
+          "value": 12.5
+        },
+        {
+          "id": "nigrowth",
+          "operation": "growth-percent",
+          "inputs": [
+            "ni26",
+            "ni25"
+          ],
+          "definition": "純利益前年同期比",
+          "precision": 1,
+          "value": 8.2
+        }
+      ],
+      "claim": "営業利益は10.98億ドル（同9.76億ドル）で12.5%増、純利益は7.86億ドル（同7.26億ドル）で8.2%増となった。"
+    },
+    {
+      "id": "quarter-eps-shares",
+      "question": "EPSの伸びと純利益、株数減少を区別する。",
+      "definition": "EPSの伸びと純利益、株数減少を区別する。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "eps26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "希薄化後EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "eps25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "希薄化後EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "shares26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "希薄化後加重平均株式数",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千株",
+          "basis": "actual",
+          "definition": "希薄化後加重平均株式数。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "shares25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "希薄化後加重平均株式数",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千株",
+          "basis": "actual",
+          "definition": "希薄化後加重平均株式数。米国GAAP、該当期間の連結実績。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "eps26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "希薄化後EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS。米国GAAP、該当期間の連結実績。",
+          "value": 0.97,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eps25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "希薄化後EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS。米国GAAP、該当期間の連結実績。",
+          "value": 0.85,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "shares26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "希薄化後加重平均株式数",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千株",
+          "basis": "actual",
+          "definition": "希薄化後加重平均株式数。米国GAAP、該当期間の連結実績。",
+          "value": 812201,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "shares25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "希薄化後加重平均株式数",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千株",
+          "basis": "actual",
+          "definition": "希薄化後加重平均株式数。米国GAAP、該当期間の連結実績。",
+          "value": 852704,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "epsgrowth",
+          "operation": "growth-percent",
+          "inputs": [
+            "eps26",
+            "eps25"
+          ],
+          "definition": "公表EPSの表示値から計算",
+          "precision": 1,
+          "value": 14.1
+        },
+        {
+          "id": "sharesgrowth",
+          "operation": "growth-percent",
+          "inputs": [
+            "shares26",
+            "shares25"
+          ],
+          "definition": "希薄化後加重平均株式数の前年同期比",
+          "precision": 1,
+          "value": -4.7
+        }
+      ],
+      "claim": "希薄化後EPSは0.85ドルから0.97ドルへ14.1%増加し、希薄化後平均株式数は8億5,270.4万株から8億1,220.1万株へ約4.7%減った。"
+    },
+    {
+      "id": "stock-split",
+      "question": "EPS比較は株式分割後の同じ基準か。",
+      "definition": "EPS比較は株式分割後の同じ基準か。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "split-ratio",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "旧1株当たり分割後株数",
+          "periodStart": "2025-06-10",
+          "periodEnd": "2025-06-10",
+          "unit": "株",
+          "basis": "actual",
+          "definition": "2025年6月10日完了の15-for-1 forward stock split。比較期間EPSは分割後基準。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "split-ratio",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "旧1株当たり分割後株数",
+          "periodStart": "2025-06-10",
+          "periodEnd": "2025-06-10",
+          "unit": "株",
+          "basis": "actual",
+          "definition": "2025年6月10日完了の15-for-1 forward stock split。比較期間EPSは分割後基準。",
+          "value": 15,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000009/orly-20251231x10k.htm",
+            "publishedOn": "2026-02-27",
+            "locator": "Item 1, opening business description; stock split paragraph",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "2025年6月10日に1株を15株にする株式分割を実施済みで、ここでは分割後のEPSを比較している。"
+    },
+    {
+      "id": "comparable-sales",
+      "question": "国内既存店の成長とQ2・前年の比較。",
+      "definition": "国内既存店の成長とQ2・前年の比較。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "comp26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "国内既存店売上高成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "米国内で営業開始後1年以上の店舗。対象のECを含み、specialty machinery、独立部品店向け、従業員向け売上を除く。"
+        },
+        {
+          "id": "comp25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "国内既存店売上高成長率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "米国内で営業開始後1年以上の店舗。対象のECを含み、specialty machinery、独立部品店向け、従業員向け売上を除く。"
+        },
+        {
+          "id": "compq2",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "国内既存店売上高成長率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年4-6月の米国内既存店売上高前年比。四半期ごとの伸び率の比較であり前四半期比売上ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "comp26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "国内既存店売上高成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "米国内で営業開始後1年以上の店舗。対象のECを含み、specialty machinery、独立部品店向け、従業員向け売上を除く。",
+          "value": 7.2,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "3rd Quarter Comparable Store Sales Results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "comp25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "国内既存店売上高成長率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "米国内で営業開始後1年以上の店舗。対象のECを含み、specialty machinery、独立部品店向け、従業員向け売上を除く。",
+          "value": 5.6,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "3rd Quarter Comparable Store Sales Results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "compq2",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "国内既存店売上高成長率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026年4-6月の米国内既存店売上高前年比。四半期ごとの伸び率の比較であり前四半期比売上ではない。",
+          "value": 6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000042/orly-20260729xex99d1.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "2nd Quarter Comparable Store Sales Results",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "国内既存店売上高は前年同期比7.2%増で、前年同期の5.6%増に続く成長となり、2026年Q2の6.0%増からも伸び率が上がった。"
+    },
+    {
+      "id": "customer-sales",
+      "question": "顧客別売上の成長と報告セグメントを混同しない。",
+      "definition": "顧客別売上の成長と報告セグメントを混同しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "pro26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "整備事業者向け売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "整備事業者向け売上高。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "pro25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "整備事業者向け売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "整備事業者向け売上高。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "diy26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "DIY顧客向け売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "DIY顧客向け売上高。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "diy25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "DIY顧客向け売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "DIY顧客向け売上高。米国GAAP、該当期間の連結実績。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "pro26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "整備事業者向け売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "整備事業者向け売上高。米国GAAP、該当期間の連結実績。",
+          "value": 2600841,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Note 11 Revenue, p.12",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "pro25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "整備事業者向け売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "整備事業者向け売上高。米国GAAP、該当期間の連結実績。",
+          "value": 2307782,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Note 11 Revenue, p.12",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "diy26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "DIY顧客向け売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "DIY顧客向け売上高。米国GAAP、該当期間の連結実績。",
+          "value": 2448394,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Note 11 Revenue, p.12",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "diy25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "DIY顧客向け売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "DIY顧客向け売上高。米国GAAP、該当期間の連結実績。",
+          "value": 2304804,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Note 11 Revenue, p.12",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "pro-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "pro26",
+            "pro25"
+          ],
+          "definition": "整備事業者向け連結売上の前年比。既存店成長率とは別",
+          "precision": 1,
+          "value": 12.7
+        },
+        {
+          "id": "diy-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "diy26",
+            "diy25"
+          ],
+          "definition": "DIY向け連結売上の前年比。既存店成長率とは別",
+          "precision": 1,
+          "value": 6.2
+        }
+      ],
+      "claim": "顧客別売上は、整備事業者向けが26.01億ドルで12.7%増、DIY向けが24.48億ドルで6.2%増だった。"
+    },
+    {
+      "id": "same-sku-inflation",
+      "question": "売上増の価格成分はどの程度か。",
+      "definition": "売上増の価格成分はどの程度か。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "same-sku",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "同一SKU価格上昇の会社説明における概数下限",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "原文 slightly over 4%。4%は厳密な測定値ではなく「4%強」という会社の概数表現の基準。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "same-sku",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "同一SKU価格上昇の会社説明における概数下限",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "原文 slightly over 4%。4%は厳密な測定値ではなく「4%強」という会社の概数表現の基準。",
+          "value": 4,
+          "source": {
+            "url": "https://d2ghdaxqb194v2.cloudfront.net/3012/202103.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "Brad Beckham prepared remarks, same SKU inflation",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "会社説明では、同一商品の値上がりによる押し上げは全体で4%強だった。"
+    },
+    {
+      "id": "reported-margins",
+      "question": "実績粗利率と営業利益率の変化。",
+      "definition": "実績粗利率と営業利益率の変化。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "売上高。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "sales25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "売上高。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "gp26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "粗利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "粗利益。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "gp25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "粗利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "粗利益。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "op26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "営業利益。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "op25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "営業利益。米国GAAP、該当期間の連結実績。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "売上高。米国GAAP、該当期間の連結実績。",
+          "value": 5121290,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sales25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "売上高。米国GAAP、該当期間の連結実績。",
+          "value": 4705696,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "gp26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "粗利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "粗利益。米国GAAP、該当期間の連結実績。",
+          "value": 2683041,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "gp25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "粗利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "粗利益。米国GAAP、該当期間の連結実績。",
+          "value": 2439946,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "営業利益。米国GAAP、該当期間の連結実績。",
+          "value": 1098291,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "営業利益。米国GAAP、該当期間の連結実績。",
+          "value": 976067,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "gm26",
+          "operation": "ratio-percent",
+          "inputs": [
+            "gp26",
+            "sales26"
+          ],
+          "definition": "粗利益÷売上高×100",
+          "precision": 2,
+          "value": 52.39
+        },
+        {
+          "id": "gm25",
+          "operation": "ratio-percent",
+          "inputs": [
+            "gp25",
+            "sales25"
+          ],
+          "definition": "前年粗利益率",
+          "precision": 2,
+          "value": 51.85
+        },
+        {
+          "id": "om26",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op26",
+            "sales26"
+          ],
+          "definition": "営業利益÷売上高×100",
+          "precision": 2,
+          "value": 21.45
+        },
+        {
+          "id": "om25",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op25",
+            "sales25"
+          ],
+          "definition": "前年営業利益率",
+          "precision": 2,
+          "value": 20.74
+        }
+      ],
+      "claim": "粗利益率は51.85%から52.39%へ、営業利益率は20.74%から21.45%へ上昇した。"
+    },
+    {
+      "id": "tariff-refund-sensitivity",
+      "question": "関税還付を除くと増益の見え方はどう変わるか。",
+      "definition": "関税還付を除くと増益の見え方はどう変わるか。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "売上高。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "sales25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "売上高。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "gp26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "粗利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "粗利益。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "gp25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "粗利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "粗利益。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "op26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "営業利益。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "op25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "営業利益。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "refund",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "関税還付による粗利益押し上げ",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "Q3に受け取った関税還付による粗利益への寄与。税引前。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "売上高。米国GAAP、該当期間の連結実績。",
+          "value": 5121290,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sales25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "売上高。米国GAAP、該当期間の連結実績。",
+          "value": 4705696,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "gp26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "粗利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "粗利益。米国GAAP、該当期間の連結実績。",
+          "value": 2683041,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "gp25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "粗利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "粗利益。米国GAAP、該当期間の連結実績。",
+          "value": 2439946,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "営業利益。米国GAAP、該当期間の連結実績。",
+          "value": 1098291,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "営業利益。米国GAAP、該当期間の連結実績。",
+          "value": 976067,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "refund",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "関税還付による粗利益押し上げ",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "Q3に受け取った関税還付による粗利益への寄与。税引前。",
+          "value": 39000,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "3rd Quarter Financial Results, CEO remarks",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "gp-ex",
+          "operation": "difference",
+          "inputs": [
+            "gp26",
+            "refund"
+          ],
+          "definition": "粗利益から還付寄与のみ差し引く編集部の感応度分析。会社公表の調整後利益ではない",
+          "precision": 0,
+          "value": 2644041
+        },
+        {
+          "id": "gm-ex",
+          "operation": "ratio-percent",
+          "inputs": [
+            "gp-ex",
+            "sales26"
+          ],
+          "definition": "還付除外の参考粗利益率",
+          "precision": 2,
+          "value": 51.63
+        },
+        {
+          "id": "gm25",
+          "operation": "ratio-percent",
+          "inputs": [
+            "gp25",
+            "sales25"
+          ],
+          "definition": "前年実績粗利益率",
+          "precision": 2,
+          "value": 51.85
+        },
+        {
+          "id": "gm-diff",
+          "operation": "difference",
+          "inputs": [
+            "gm-ex",
+            "gm25"
+          ],
+          "definition": "粗利益率差、単位はpercentage points",
+          "precision": 2,
+          "value": -0.22
+        },
+        {
+          "id": "op-ex",
+          "operation": "difference",
+          "inputs": [
+            "op26",
+            "refund"
+          ],
+          "definition": "営業利益から同額を差し引く単純感応度",
+          "precision": 0,
+          "value": 1059291
+        },
+        {
+          "id": "om-ex",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op-ex",
+            "sales26"
+          ],
+          "definition": "参考営業利益率",
+          "precision": 2,
+          "value": 20.68
+        },
+        {
+          "id": "om25",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op25",
+            "sales25"
+          ],
+          "definition": "前年営業利益率",
+          "precision": 2,
+          "value": 20.74
+        }
+      ],
+      "claim": "ただし、Q3の粗利益には関税還付3,900万ドルが含まれる。この額を単純に差し引いた参考値では粗利益率は51.63%、前年同期比0.22ポイント低下し、営業利益率も20.68%と前年の20.74%にほぼ並ぶ。"
+    },
+    {
+      "id": "interest-and-tax",
+      "question": "営業増益がそのまま最終増益にならない理由。",
+      "definition": "営業増益がそのまま最終増益にならない理由。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "int26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "支払利息費用",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "支払利息費用。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "int25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "支払利息費用",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "支払利息費用。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "tax26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "実効法人税率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "当該四半期税金費用÷税引前利益。会社公表の丸め値。"
+        },
+        {
+          "id": "tax25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "実効法人税率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "当該四半期税金費用÷税引前利益。会社公表の丸め値。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "int26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "支払利息費用",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "支払利息費用。米国GAAP、該当期間の連結実績。",
+          "value": 81850,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "int25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "支払利息費用",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "支払利息費用。米国GAAP、該当期間の連結実績。",
+          "value": 59566,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of income, p.2",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "tax26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "実効法人税率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "当該四半期税金費用÷税引前利益。会社公表の丸め値。",
+          "value": 23.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "MD&A Income Taxes, p.19",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "tax25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "実効法人税率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "当該四半期税金費用÷税引前利益。会社公表の丸め値。",
+          "value": 21.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "MD&A Income Taxes, p.19",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "支払利息は5,957万ドルから8,185万ドルへ増え、実効税率も21.4%から23.1%へ上昇した。"
+    },
+    {
+      "id": "nine-month-cash",
+      "question": "累計営業CF・FCFの前年比。",
+      "definition": "累計営業CF・FCFの前年比。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "ocf26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "営業活動によるキャッシュフロー",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュフロー。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "ocf25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "営業活動によるキャッシュフロー",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュフロー。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "cap26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "有形固定資産購入による現金支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "Cash purchases of property and equipment。現金支出を負号で記録。"
+        },
+        {
+          "id": "cap25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "有形固定資産購入による現金支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "Cash purchases of property and equipment。現金支出を負号で記録。"
+        },
+        {
+          "id": "taxben26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "株式報酬の超過税便益によるFCF控除",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "会社定義FCFで営業CFから除く超過税便益。負号で記録。"
+        },
+        {
+          "id": "taxben25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "株式報酬の超過税便益によるFCF控除",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "会社定義FCFで営業CFから除く超過税便益。負号で記録。"
+        },
+        {
+          "id": "ret26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "税額控除持分投資の回収",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "投資CFの回収を会社定義FCFでは加算。"
+        },
+        {
+          "id": "ret25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "税額控除持分投資の回収",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "同表でダッシュ表示。欠測代替ではなく該当取引なしの明示。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "営業活動によるキャッシュフロー",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュフロー。米国GAAP、該当期間の連結実績。",
+          "value": 2598155,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of cash flows, p.5",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "営業活動によるキャッシュフロー",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "営業活動によるキャッシュフロー。米国GAAP、該当期間の連結実績。",
+          "value": 2128501,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of cash flows, p.5",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "有形固定資産購入による現金支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "Cash purchases of property and equipment。現金支出を負号で記録。",
+          "value": -860273,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of cash flows, p.5",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "有形固定資産購入による現金支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "Cash purchases of property and equipment。現金支出を負号で記録。",
+          "value": -899783,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Condensed consolidated statements of cash flows, p.5",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "taxben26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "株式報酬の超過税便益によるFCF控除",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "会社定義FCFで営業CFから除く超過税便益。負号で記録。",
+          "value": -11507,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "MD&A Free cash flow reconciliation, p.21",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "taxben25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "株式報酬の超過税便益によるFCF控除",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "会社定義FCFで営業CFから除く超過税便益。負号で記録。",
+          "value": -27714,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "MD&A Free cash flow reconciliation, p.21",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ret26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "税額控除持分投資の回収",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "投資CFの回収を会社定義FCFでは加算。",
+          "value": 3294,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "MD&A Free cash flow reconciliation, p.21",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ret25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "税額控除持分投資の回収",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "同表でダッシュ表示。欠測代替ではなく該当取引なしの明示。",
+          "value": 0,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "MD&A Free cash flow reconciliation, p.21",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf26",
+          "operation": "sum",
+          "inputs": [
+            "ocf26",
+            "cap26",
+            "taxben26",
+            "ret26"
+          ],
+          "definition": "会社FCF=営業CF-現金設備投資-株式報酬超過税便益+税額控除持分回収",
+          "precision": 0,
+          "value": 1729669
+        },
+        {
+          "id": "fcf25",
+          "operation": "sum",
+          "inputs": [
+            "ocf25",
+            "cap25",
+            "taxben25",
+            "ret25"
+          ],
+          "definition": "前年会社FCF、同一定義",
+          "precision": 0,
+          "value": 1201004
+        },
+        {
+          "id": "ocf-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "ocf26",
+            "ocf25"
+          ],
+          "definition": "営業CF前年同期比",
+          "precision": 1,
+          "value": 22.1
+        },
+        {
+          "id": "fcf-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "fcf26",
+            "fcf25"
+          ],
+          "definition": "会社定義FCF前年同期比",
+          "precision": 1,
+          "value": 44
+        }
+      ],
+      "claim": "1〜9月の営業CFは25.98億ドルで22.1%増、会社定義FCFは17.30億ドルで44.0%増となった。"
+    },
+    {
+      "id": "quarter-cash",
+      "question": "累計増加が直近四半期の現金増加も意味するか。",
+      "definition": "累計増加が直近四半期の現金増加も意味するか。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "ocf26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "Q3営業CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "Q3営業CF。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "ocf25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "Q3営業CF",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "Q3営業CF。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "cap26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "Q3現金設備投資",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出。負号。"
+        },
+        {
+          "id": "cap25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "Q3現金設備投資",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出。負号。"
+        },
+        {
+          "id": "tax26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "Q3株式報酬超過税便益控除",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "会社FCF計算で控除、負号。"
+        },
+        {
+          "id": "tax25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "Q3株式報酬超過税便益控除",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "会社FCF計算で控除、負号。"
+        },
+        {
+          "id": "ret26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "Q3税額控除持分回収",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "Q3税額控除持分回収。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "ret25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "Q3税額控除持分回収",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "公表表でダッシュ、取引なし。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "Q3営業CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "Q3営業CF。米国GAAP、該当期間の連結実績。",
+          "value": 558743,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Selected Financial Information: Reconciliation of Free Cash Flow",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "Q3営業CF",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "Q3営業CF。米国GAAP、該当期間の連結実績。",
+          "value": 616535,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Selected Financial Information: Reconciliation of Free Cash Flow",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "Q3現金設備投資",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出。負号。",
+          "value": -308223,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Selected Financial Information: Reconciliation of Free Cash Flow",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "Q3現金設備投資",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出。負号。",
+          "value": -312098,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Selected Financial Information: Reconciliation of Free Cash Flow",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "tax26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "Q3株式報酬超過税便益控除",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "会社FCF計算で控除、負号。",
+          "value": -1961,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Selected Financial Information: Reconciliation of Free Cash Flow",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "tax25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "Q3株式報酬超過税便益控除",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "会社FCF計算で控除、負号。",
+          "value": -7441,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Selected Financial Information: Reconciliation of Free Cash Flow",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ret26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "Q3税額控除持分回収",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "Q3税額控除持分回収。米国GAAP、該当期間の連結実績。",
+          "value": 3294,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Selected Financial Information: Reconciliation of Free Cash Flow",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ret25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "Q3税額控除持分回収",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "公表表でダッシュ、取引なし。",
+          "value": 0,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Selected Financial Information: Reconciliation of Free Cash Flow",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf26",
+          "operation": "sum",
+          "inputs": [
+            "ocf26",
+            "cap26",
+            "tax26",
+            "ret26"
+          ],
+          "definition": "Q3会社定義FCF",
+          "precision": 0,
+          "value": 251853
+        },
+        {
+          "id": "fcf25",
+          "operation": "sum",
+          "inputs": [
+            "ocf25",
+            "cap25",
+            "tax25",
+            "ret25"
+          ],
+          "definition": "前年Q3会社定義FCF",
+          "precision": 0,
+          "value": 296996
+        },
+        {
+          "id": "ocf-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "ocf26",
+            "ocf25"
+          ],
+          "definition": "Q3営業CF前年同期比",
+          "precision": 1,
+          "value": -9.4
+        },
+        {
+          "id": "fcf-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "fcf26",
+            "fcf25"
+          ],
+          "definition": "Q3会社定義FCF前年同期比",
+          "precision": 1,
+          "value": -15.2
+        }
+      ],
+      "claim": "一方、Q3単独では営業CFが6.17億ドルから5.59億ドルへ9.4%減、FCFも2.97億ドルから2.52億ドルへ15.2%減少した。"
+    },
+    {
+      "id": "working-capital",
+      "question": "在庫・売掛金・買掛金のCF増減は改善要因か。",
+      "definition": "在庫・売掛金・買掛金のCF増減は改善要因か。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "ar26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "売掛金増減による営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "売掛金増減による営業CF。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "inv26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "在庫増減による営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "在庫増減による営業CF。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "ap26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "買掛金増減による営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "買掛金増減による営業CF。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "ar25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "売掛金増減による営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "売掛金増減による営業CF。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "inv25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "在庫増減による営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "在庫増減による営業CF。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "ap25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "買掛金増減による営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "買掛金増減による営業CF。米国GAAP、該当期間の連結実績。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ar26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "売掛金増減による営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "売掛金増減による営業CF。米国GAAP、該当期間の連結実績。",
+          "value": -82911,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Cash flow statement: Changes in operating assets and liabilities",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "inv26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "在庫増減による営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "在庫増減による営業CF。米国GAAP、該当期間の連結実績。",
+          "value": -437579,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Cash flow statement: Changes in operating assets and liabilities",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ap26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "買掛金増減による営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "買掛金増減による営業CF。米国GAAP、該当期間の連結実績。",
+          "value": 409638,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Cash flow statement: Changes in operating assets and liabilities",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ar25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "売掛金増減による営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "売掛金増減による営業CF。米国GAAP、該当期間の連結実績。",
+          "value": -66898,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Cash flow statement: Changes in operating assets and liabilities",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "inv25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "在庫増減による営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "在庫増減による営業CF。米国GAAP、該当期間の連結実績。",
+          "value": -486368,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Cash flow statement: Changes in operating assets and liabilities",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ap25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "買掛金増減による営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "買掛金増減による営業CF。米国GAAP、該当期間の連結実績。",
+          "value": 532599,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Cash flow statement: Changes in operating assets and liabilities",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "wc26",
+          "operation": "sum",
+          "inputs": [
+            "ar26",
+            "inv26",
+            "ap26"
+          ],
+          "definition": "営業運転資金3項目のCF効果。税金その他を含む総運転資金ではない",
+          "precision": 0,
+          "value": -110852
+        },
+        {
+          "id": "wc25",
+          "operation": "sum",
+          "inputs": [
+            "ar25",
+            "inv25",
+            "ap25"
+          ],
+          "definition": "前年同3項目のCF効果",
+          "precision": 0,
+          "value": -20667
+        }
+      ],
+      "claim": "売掛金・在庫・買掛金の増減を合計すると、1〜9月の資金流出は1.11億ドルで、前年同期の0.21億ドルより大きい。"
+    },
+    {
+      "id": "supplier-finance",
+      "question": "在庫資金と仕入金融の規模。",
+      "definition": "在庫資金と仕入金融の規模。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "inv",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "棚卸資産残高",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "棚卸資産残高。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "ap",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "買掛金残高",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "買掛金残高。米国GAAP、該当期間の連結実績。"
+        },
+        {
+          "id": "sf26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "仕入先金融プログラム確認済み債務残高",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "買掛金に含まれる確認済みinvoice残高。開示5.1bnの概数。"
+        },
+        {
+          "id": "sf25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "仕入先金融プログラム確認済み債務残高",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "買掛金に含まれる確認済みinvoice残高。開示5.1bnの概数。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "inv",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "棚卸資産残高",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "棚卸資産残高。米国GAAP、該当期間の連結実績。",
+          "value": 6165052,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Balance sheets, p.1",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ap",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "買掛金残高",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "買掛金残高。米国GAAP、該当期間の連結実績。",
+          "value": 7507497,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Balance sheets, p.1",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sf26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "仕入先金融プログラム確認済み債務残高",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "買掛金に含まれる確認済みinvoice残高。開示5.1bnの概数。",
+          "value": 5100000,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Note 6 Supplier Finance Program, p.8",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sf25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "仕入先金融プログラム確認済み債務残高",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "買掛金に含まれる確認済みinvoice残高。開示5.1bnの概数。",
+          "value": 5100000,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Note 6 Supplier Finance Program, p.8",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "9月末の在庫61.65億ドルに対し買掛金は75.07億ドル。買掛金には仕入先金融プログラムの確認済み債務約51億ドルが含まれ、この約51億ドルは2025年末と同水準だった。"
+    },
+    {
+      "id": "buyback-funding",
+      "question": "自社株買いは当期FCF内で賄われたか。",
+      "definition": "自社株買いは当期FCF内で賄われたか。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "bb",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "自己株式取得現金支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "手数料込み自己株式取得現金支出の絶対値。取得プログラム投資額とは微差あり。"
+        },
+        {
+          "id": "fcf",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "会社定義FCF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "営業CF-現金設備投資-株式報酬超過税便益+税額控除持分回収。算式はnine-month-cash比較で全要素検証。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "bb",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "自己株式取得現金支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "手数料込み自己株式取得現金支出の絶対値。取得プログラム投資額とは微差あり。",
+          "value": 3467904,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Cash flow statement, financing activities",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fcf",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "会社定義FCF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "営業CF-現金設備投資-株式報酬超過税便益+税額控除持分回収。算式はnine-month-cash比較で全要素検証。",
+          "value": 1729669,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "MD&A Free cash flow reconciliation, p.21",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "bb-to-fcf",
+          "operation": "ratio-percent",
+          "inputs": [
+            "bb",
+            "fcf"
+          ],
+          "definition": "自社株買い現金支出/会社FCF。200.5%=約2倍",
+          "precision": 1,
+          "value": 200.5
+        }
+      ],
+      "claim": "1〜9月の自己株式取得の現金支出は34.68億ドルで、同期間のFCF17.30億ドルの約2倍だった。"
+    },
+    {
+      "id": "debt-balance",
+      "question": "資本還元と負債残高・現金の関係。",
+      "definition": "資本還元と負債残高・現金の関係。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "debt26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "GAAP借入金残高",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "貸借対照表Long-term debt。リース負債は含めない。"
+        },
+        {
+          "id": "debt25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "GAAP借入金残高",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "貸借対照表Long-term debt。リース負債は含めない。"
+        },
+        {
+          "id": "cash",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "現金及び現金同等物",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "現金及び現金同等物。米国GAAP、該当期間の連結実績。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "debt26",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "GAAP借入金残高",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "貸借対照表Long-term debt。リース負債は含めない。",
+          "value": 7711498,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Balance sheets and Note 7 Financing",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "debt25",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "GAAP借入金残高",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "貸借対照表Long-term debt。リース負債は含めない。",
+          "value": 6016904,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Balance sheets and Note 7 Financing",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "現金及び現金同等物",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "現金及び現金同等物。米国GAAP、該当期間の連結実績。",
+          "value": 194445,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Balance sheets, p.1",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "9月末のGAAP借入金は77.11億ドルと2025年末の60.17億ドルから増え、現金同等物は1.94億ドルだった。"
+    },
+    {
+      "id": "subsequent-buyback",
+      "question": "10-Qで更新された期末後の取得。",
+      "definition": "10-Qで更新された期末後の取得。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "shares",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "期末後自己株式取得株数",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-11-06",
+          "unit": "千株",
+          "basis": "actual",
+          "definition": "3.0millionの開示概数。9月末後から11月6日まで。"
+        },
+        {
+          "id": "amount",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "期末後自己株式取得投資額",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-11-06",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "期末後から2026年11月6日までのプログラム取得投資額、2.628億ドル。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "shares",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "期末後自己株式取得株数",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-11-06",
+          "unit": "千株",
+          "basis": "actual",
+          "definition": "3.0millionの開示概数。9月末後から11月6日まで。",
+          "value": 3000,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Note 9 Share repurchase program, p.11",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "amount",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "期末後自己株式取得投資額",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-11-06",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "期末後から2026年11月6日までのプログラム取得投資額、2.628億ドル。",
+          "value": 262800,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Note 9 Share repurchase program, p.11",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "10-Qでは、10月初めから11月6日までにさらに約300万株、2.63億ドルを取得したことも確認できる。"
+    },
+    {
+      "id": "covenant-leverage",
+      "question": "借入負担と契約上の余裕。",
+      "definition": "借入負担と契約上の余裕。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "ratio",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "契約定義の連結レバレッジ比率",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "借入金・信用状・賃料5倍等の調整負債/EBITDAR。決算発表資料の賃料6倍の調整負債/EBITDARとは別。"
+        },
+        {
+          "id": "limit",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "契約定義の連結レバレッジ比率上限",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "同一契約定義の上限。期末現在遵守。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ratio",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "契約定義の連結レバレッジ比率",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "借入金・信用状・賃料5倍等の調整負債/EBITDAR。決算発表資料の賃料6倍の調整負債/EBITDARとは別。",
+          "value": 2.16,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "MD&A Debt Covenants, p.20",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "limit",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "契約定義の連結レバレッジ比率上限",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "同一契約定義の上限。期末現在遵守。",
+          "value": 3.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Note 7 Revolving Credit Facility covenant terms, p.9",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "契約定義の連結レバレッジ比率は2.16倍で、上限3.50倍を下回る。"
+    },
+    {
+      "id": "guidance-revisions",
+      "question": "前回会社予想と更新予想の比較。",
+      "definition": "前回会社予想と更新予想の比較。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "oldcompL",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期既存店増収率予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "2026年7月29日時点の2026年通期会社予想。"
+        },
+        {
+          "id": "oldcompH",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期既存店増収率予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "2026年7月29日時点の2026年通期会社予想。"
+        },
+        {
+          "id": "newcompL",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期既存店増収率予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "2026年10月28日時点の2026年通期会社予想。"
+        },
+        {
+          "id": "newcompH",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期既存店増収率予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "2026年10月28日時点の2026年通期会社予想。"
+        },
+        {
+          "id": "oldrevL",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期売上高予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年7月29日時点の2026年通期会社予想。"
+        },
+        {
+          "id": "oldrevH",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期売上高予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年7月29日時点の2026年通期会社予想。"
+        },
+        {
+          "id": "newrevL",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期売上高予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年10月28日時点の2026年通期会社予想。"
+        },
+        {
+          "id": "newrevH",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期売上高予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年10月28日時点の2026年通期会社予想。"
+        },
+        {
+          "id": "oldepsL",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期希薄化後EPS予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "ドル/株",
+          "basis": "company-forecast",
+          "definition": "2026年7月29日時点。分割後。"
+        },
+        {
+          "id": "oldepsH",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期希薄化後EPS予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "ドル/株",
+          "basis": "company-forecast",
+          "definition": "2026年7月29日時点。分割後。"
+        },
+        {
+          "id": "newepsL",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期希薄化後EPS予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "ドル/株",
+          "basis": "company-forecast",
+          "definition": "2026年10月28日時点。分割後。"
+        },
+        {
+          "id": "newepsH",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期希薄化後EPS予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "ドル/株",
+          "basis": "company-forecast",
+          "definition": "2026年10月28日時点。分割後。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oldcompL",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期既存店増収率予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "2026年7月29日時点の2026年通期会社予想。",
+          "value": 4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000042/orly-20260729xex99d1.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Updated Full-Year 2026 Guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldcompH",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期既存店増収率予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "2026年7月29日時点の2026年通期会社予想。",
+          "value": 6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000042/orly-20260729xex99d1.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Updated Full-Year 2026 Guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newcompL",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期既存店増収率予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "2026年10月28日時点の2026年通期会社予想。",
+          "value": 5.5,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Updated Full-Year 2026 Guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newcompH",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期既存店増収率予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "2026年10月28日時点の2026年通期会社予想。",
+          "value": 6.5,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Updated Full-Year 2026 Guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldrevL",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期売上高予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年7月29日時点の2026年通期会社予想。",
+          "value": 18900000,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000042/orly-20260729xex99d1.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Updated Full-Year 2026 Guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldrevH",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期売上高予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年7月29日時点の2026年通期会社予想。",
+          "value": 19200000,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000042/orly-20260729xex99d1.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Updated Full-Year 2026 Guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newrevL",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期売上高予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年10月28日時点の2026年通期会社予想。",
+          "value": 19000000,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Updated Full-Year 2026 Guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newrevH",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期売上高予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年10月28日時点の2026年通期会社予想。",
+          "value": 19300000,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Updated Full-Year 2026 Guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldepsL",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期希薄化後EPS予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "ドル/株",
+          "basis": "company-forecast",
+          "definition": "2026年7月29日時点。分割後。",
+          "value": 3.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000042/orly-20260729xex99d1.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Updated Full-Year 2026 Guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldepsH",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期希薄化後EPS予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "ドル/株",
+          "basis": "company-forecast",
+          "definition": "2026年7月29日時点。分割後。",
+          "value": 3.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000042/orly-20260729xex99d1.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Updated Full-Year 2026 Guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newepsL",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期希薄化後EPS予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "ドル/株",
+          "basis": "company-forecast",
+          "definition": "2026年10月28日時点。分割後。",
+          "value": 3.25,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Updated Full-Year 2026 Guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newepsH",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期希薄化後EPS予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "ドル/株",
+          "basis": "company-forecast",
+          "definition": "2026年10月28日時点。分割後。",
+          "value": 3.35,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Updated Full-Year 2026 Guidance",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "通期会社予想は、既存店増収率が4.0〜6.0%から5.5〜6.5%、売上高が189〜192億ドルから190〜193億ドル、EPSが3.20〜3.30ドルから3.25〜3.35ドルへ引き上げられた。"
+    },
+    {
+      "id": "fcf-capex-guidance",
+      "question": "通期FCF予想と設備投資の残り。",
+      "definition": "通期FCF予想と設備投資の残り。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "oldfcfL",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期会社FCF予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年7月29日時点。会社定義FCF。"
+        },
+        {
+          "id": "oldfcfH",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期会社FCF予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年7月29日時点。会社定義FCF。"
+        },
+        {
+          "id": "newfcfL",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期会社FCF予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年10月28日時点。会社定義FCF。"
+        },
+        {
+          "id": "newfcfH",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期会社FCF予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年10月28日時点。会社定義FCF。"
+        },
+        {
+          "id": "oldcapL",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期現金設備投資予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年7月29日時点。Cash capital expenditures。"
+        },
+        {
+          "id": "oldcapH",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期現金設備投資予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年7月29日時点。Cash capital expenditures。"
+        },
+        {
+          "id": "newcapL",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期現金設備投資予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年10月28日時点。Cash capital expenditures。"
+        },
+        {
+          "id": "newcapH",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期現金設備投資予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年10月28日時点。Cash capital expenditures。"
+        },
+        {
+          "id": "capytd",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "累計現金設備投資",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "実績現金支出の絶対額。通期予想から差し引きQ4残額を参考計算。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oldfcfL",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期会社FCF予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年7月29日時点。会社定義FCF。",
+          "value": 1800000,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000042/orly-20260729xex99d1.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Updated Full-Year 2026 Guidance and FCF reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldfcfH",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期会社FCF予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年7月29日時点。会社定義FCF。",
+          "value": 2100000,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000042/orly-20260729xex99d1.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Updated Full-Year 2026 Guidance and FCF reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newfcfL",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期会社FCF予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年10月28日時点。会社定義FCF。",
+          "value": 1900000,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Updated Full-Year 2026 Guidance and FCF reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newfcfH",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期会社FCF予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年10月28日時点。会社定義FCF。",
+          "value": 2200000,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Updated Full-Year 2026 Guidance and FCF reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldcapL",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期現金設備投資予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年7月29日時点。Cash capital expenditures。",
+          "value": 1300000,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000042/orly-20260729xex99d1.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Updated Full-Year 2026 Guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldcapH",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期現金設備投資予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年7月29日時点。Cash capital expenditures。",
+          "value": 1400000,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000042/orly-20260729xex99d1.htm",
+            "publishedOn": "2026-07-29",
+            "locator": "Updated Full-Year 2026 Guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newcapL",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期現金設備投資予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年10月28日時点。Cash capital expenditures。",
+          "value": 1300000,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Updated Full-Year 2026 Guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newcapH",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "通期現金設備投資予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "千ドル",
+          "basis": "company-forecast",
+          "definition": "2026年10月28日時点。Cash capital expenditures。",
+          "value": 1400000,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Updated Full-Year 2026 Guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capytd",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "累計現金設備投資",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千ドル",
+          "basis": "actual",
+          "definition": "実績現金支出の絶対額。通期予想から差し引きQ4残額を参考計算。",
+          "value": 860273,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Cash flow statement: purchases of property and equipment",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "remainL",
+          "operation": "difference",
+          "inputs": [
+            "newcapL",
+            "capytd"
+          ],
+          "definition": "通期予想下限-9カ月実績。Q4会社直接予想ではない参考値",
+          "precision": 0,
+          "value": 439727
+        },
+        {
+          "id": "remainH",
+          "operation": "difference",
+          "inputs": [
+            "newcapH",
+            "capytd"
+          ],
+          "definition": "通期予想上限-9カ月実績。Q4会社直接予想ではない参考値",
+          "precision": 0,
+          "value": 539727
+        }
+      ],
+      "claim": "FCF予想も18〜21億ドルから19〜22億ドルへ上がった一方、設備投資予想13〜14億ドルは据え置いた。1〜9月の現金設備投資8.60億ドルから逆算すると、Q4には約4.40〜5.40億ドルの支出が残る。"
+    },
+    {
+      "id": "store-expansion",
+      "question": "2026年実績と2026・2027年計画の区別。",
+      "definition": "2026年実績と2026・2027年計画の区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "stores",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "店舗数",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "店",
+          "basis": "actual",
+          "definition": "米国・プエルトリコ・メキシコ・カナダ合計。"
+        },
+        {
+          "id": "ytd",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "新規出店純増",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "店",
+          "basis": "actual",
+          "definition": "開店-閉店の北米全体純増。"
+        },
+        {
+          "id": "plan26L",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "純増店舗数予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "店",
+          "basis": "company-forecast",
+          "definition": "2026年通期会社出店計画。"
+        },
+        {
+          "id": "plan26H",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "純増店舗数予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "店",
+          "basis": "company-forecast",
+          "definition": "2026年通期会社出店計画。"
+        },
+        {
+          "id": "plan27L",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "純増店舗数予想下限",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "店",
+          "basis": "company-forecast",
+          "definition": "2027年通期会社出店計画。利益見通しを意味しない。"
+        },
+        {
+          "id": "plan27H",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "純増店舗数予想上限",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "店",
+          "basis": "company-forecast",
+          "definition": "2027年通期会社出店計画。利益見通しを意味しない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "stores",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "店舗数",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "店",
+          "basis": "actual",
+          "definition": "米国・プエルトリコ・メキシコ・カナダ合計。",
+          "value": 6758,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Selected Financial Information: Store Count, Total ending store count",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ytd",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "新規出店純増",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "店",
+          "basis": "actual",
+          "definition": "開店-閉店の北米全体純増。",
+          "value": 173,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "MD&A Sales, p.18",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "plan26L",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "純増店舗数予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "店",
+          "basis": "company-forecast",
+          "definition": "2026年通期会社出店計画。",
+          "value": 225,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Updated Full-Year 2026 Guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "plan26H",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "純増店舗数予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "店",
+          "basis": "company-forecast",
+          "definition": "2026年通期会社出店計画。",
+          "value": 235,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Updated Full-Year 2026 Guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "plan27L",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "純増店舗数予想下限",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "店",
+          "basis": "company-forecast",
+          "definition": "2027年通期会社出店計画。利益見通しを意味しない。",
+          "value": 265,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "MD&A Sales, p.18",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "plan27H",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "純増店舗数予想上限",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "店",
+          "basis": "company-forecast",
+          "definition": "2027年通期会社出店計画。利益見通しを意味しない。",
+          "value": 275,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "MD&A Sales, p.18",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "9月末は6,758店舗、年初来の純増は173店だった。2026年通期の純増計画225〜235店に対し、2027年は265〜275店を見込む。"
+    },
+    {
+      "id": "leverage-rent-definition",
+      "question": "契約上のレバレッジ比率と決算発表資料の調整負債/EBITDARで賃料倍率は同一か。",
+      "definition": "同じ2026年9月末に公表された二つの非GAAP指標の定義を比較する。5倍と6倍の違いを明示し、決算発表資料の比率を契約上限と混同しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "contract-rent-multiple",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "契約定義の調整負債に加算する賃料倍率",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "2026年9月末のCredit Agreement上の連結レバレッジ比率。調整負債は借入金、信用状、賃料5倍等を含む。賃料の対象期間は2025年10月1日〜2026年9月30日。"
+        },
+        {
+          "id": "release-rent-multiple",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "決算発表資料の調整負債に加算する賃料倍率",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "2026年Q3発表資料のAdjusted Debt to EBITDAR。調整負債は借入金、信用状、賃料6倍等を含む。賃料の対象期間は2025年10月1日〜2026年9月30日。契約指標の5倍とは異なる。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "contract-rent-multiple",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "契約定義の調整負債に加算する賃料倍率",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "2026年9月末のCredit Agreement上の連結レバレッジ比率。調整負債は借入金、信用状、賃料5倍等を含む。賃料の対象期間は2025年10月1日〜2026年9月30日。",
+          "value": 5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000053/orly-20260930x10q.htm",
+            "publishedOn": "2026-11-06",
+            "locator": "Note 7 Financing / Revolving Credit Facility, p.9; MD&A Debt Covenants, pp.20–21; Five-times rent expense row",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "release-rent-multiple",
+          "entity": "O'Reilly Automotive（連結）",
+          "metric": "決算発表資料の調整負債に加算する賃料倍率",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "2026年Q3発表資料のAdjusted Debt to EBITDAR。調整負債は借入金、信用状、賃料6倍等を含む。賃料の対象期間は2025年10月1日〜2026年9月30日。契約指標の5倍とは異なる。",
+          "value": 6,
+          "source": {
+            "url": "https://corporate.oreillyauto.com/2026/10/28/oreilly-automotive-inc-reports-third-quarter-2026-results/",
+            "publishedOn": "2026-10-28",
+            "locator": "Selected Financial Information / Adjusted Debt to EBITDAR, Twelve Months Ended September 30, 2026 / Six-times rent expense row",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "これは賃料の5倍を調整負債に加える契約上の指標で、決算発表資料の賃料6倍を使う指標とは別物だ。"
+    }
+  ]
+}
