@@ -64,7 +64,7 @@ test("announced earnings calls convert to the correct JST date", () => {
 test("holidays use exchange trading dates and a dedicated filter", () => {
   assert.deepEqual(events.filter((event) => event.category === "休場").map((event) => event.date), [
     "2026-09-07", "2026-09-21", "2026-09-22", "2026-09-23", "2026-10-12",
-    "2026-11-03", "2026-11-23", "2026-11-26",
+    "2026-11-03", "2026-11-23", "2026-11-26", "2026-12-25",
   ]);
   const html = render({ initialMonth: "2026-09" });
   assert.match(html, /<option value="休場">休場<\/option>/);
@@ -191,4 +191,37 @@ test("November review additions preserve winter JST conversions and approximate 
   const december = render({ initialMonth: "2026-12" });
   assert.match(december, /datetime="2026-12-10T04:00:00\+09:00"/i);
   assert.match(december, /datetime="2026-12-10T04:30:00\+09:00"/i);
+});
+
+
+test("November 8 additions distinguish release times, calls and winter market dates", () => {
+  const format = new Intl.DateTimeFormat("sv-SE", { timeZone: "Asia/Tokyo", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
+  for (const [id, local] of [
+    ["cisco-fy27-q1-call", "2026-11-12T13:30:00-08:00"],
+    ["home-depot-fy26-q3-call", "2026-11-17T09:00:00-05:00"],
+    ["walmart-fy27-q3-call", "2026-11-19T07:00:00-06:00"],
+    ["hpe-fy26-q4-call", "2026-11-23T17:00:00-05:00"],
+    ["adobe-fy26-q4-call", "2026-12-09T14:00:00-08:00"],
+    ["bls-productivity-revised-2026-q3", "2026-12-08T08:30:00-05:00"],
+    ["bls-ppi-2026-11", "2026-12-15T08:30:00-05:00"],
+    ["us-retail-sales-2026-11", "2026-12-16T08:30:00-05:00"],
+    ["fed-industrial-production-2026-11", "2026-12-16T09:15:00-05:00"],
+    ["us-housing-starts-2026-11", "2026-12-17T08:30:00-05:00"],
+    ["bea-gdp-third-2026-q3", "2026-12-23T08:30:00-05:00"],
+    ["bea-pce-2026-11", "2026-12-23T08:30:00-05:00"],
+    ["fomc-minutes-2026-12", "2026-12-30T14:00:00-05:00"],
+  ]) {
+    const event = events.find(e => e.id === id);
+    assert.ok(event, id);
+    assert.equal(event.date + " " + event.time, format.format(new Date(local)), id);
+    assert.match(event.sourceTime, /2026-11-08確認/);
+  }
+  assert.equal(events.find(e => e.id === "walmart-fy27-q3-release").time, "21:00ごろ");
+  assert.equal(events.find(e => e.id === "boj-mpm-2026-12").time, "未定");
+  assert.equal(events.find(e => e.id === "boj-press-conference-2026-12").time, "15:30");
+  assert.equal(events.find(e => e.id === "boj-tankan-2026-12").date, "2026-12-14");
+  const early = events.find(e => e.id === "nyse-early-close-2026-12");
+  assert.equal(early.date, "2026-12-24");
+  assert.match(early.summary, /日本時間12月25日03:00/);
+  assert.equal(early.time, "短縮取引");
 });
