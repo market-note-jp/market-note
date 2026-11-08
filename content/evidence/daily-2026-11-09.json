@@ -1,0 +1,372 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-11-09",
+  "articleSha256": "1a19761f3e0ce4af46e0dea106efe593301928661d8b43f4ba0eb10259aaf706",
+  "checkedAt": "2026-11-08T21:24:01Z",
+  "informationCutoff": "2026-11-09T06:23:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終記事の題名・要約・本文・出典・免責を通読し、バークシャーの2指標と任天堂の上期実績、中国外貨準備の月末残高を原資料で照合。Anthropicの金額・容量は未独立確認の報道値で他案件との比較なし。ソフトバンクのCDSは本文の時点値で、前日差・デフォルト確率への換算はしない。",
+  "comparisons": [
+    {
+      "id": "berkshire-operating",
+      "question": "バークシャーの税引後事業利益は同じ第3四半期でどう変わったか。",
+      "definition": "会社発表の連結・税引後事業利益。投資損益等を含むGAAP株主帰属純利益と区別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "Berkshire Hathaway",
+          "metric": "Operating earnings",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社発表の連結・税引後事業利益。投資損益等を含むGAAP株主帰属純利益と区別。"
+        },
+        {
+          "id": "prior",
+          "entity": "Berkshire Hathaway",
+          "metric": "Operating earnings",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社発表の連結・税引後事業利益。投資損益等を含むGAAP株主帰属純利益と区別。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "Berkshire Hathaway",
+          "metric": "Operating earnings",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社発表の連結・税引後事業利益。投資損益等を含むGAAP株主帰属純利益と区別。",
+          "value": 12705,
+          "source": {
+            "url": "https://www.berkshirehathaway.com/news/nov0726.pdf",
+            "publishedOn": "2026-11-07",
+            "locator": "An analysis of Berkshire’s operating earnings、Operating earnings行、Third Quarter 2026列",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "Berkshire Hathaway",
+          "metric": "Operating earnings",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社発表の連結・税引後事業利益。投資損益等を含むGAAP株主帰属純利益と区別。",
+          "value": 13485,
+          "source": {
+            "url": "https://www.berkshirehathaway.com/news/nov0726.pdf",
+            "publishedOn": "2026-11-07",
+            "locator": "An analysis of Berkshire’s operating earnings、Operating earnings行、Third Quarter 2025列",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "（当期値÷比較対象値−1）×100（%）",
+          "precision": 1,
+          "value": -5.8
+        }
+      ],
+      "claim": "バークシャー・ハサウェイが11月7日に発表した2026年7〜9月期の税引後事業利益（Operating earnings）は12,705百万米ドル。2025年7〜9月期の13,485百万米ドルから5.8%減少した。投資損益を含む米国基準の株主帰属純利益とは別の会社開示指標である。"
+    },
+    {
+      "id": "berkshire-underwriting",
+      "question": "税引後の保険引受利益は同じ第3四半期でどう変わったか。",
+      "definition": "保険引受の税引後利益。保険運用収入・有価証券評価損益を含めない会社開示区分。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "Berkshire Hathaway",
+          "metric": "Insurance – underwriting",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "保険引受の税引後利益。保険運用収入・有価証券評価損益を含めない会社開示区分。"
+        },
+        {
+          "id": "prior",
+          "entity": "Berkshire Hathaway",
+          "metric": "Insurance – underwriting",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "保険引受の税引後利益。保険運用収入・有価証券評価損益を含めない会社開示区分。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "Berkshire Hathaway",
+          "metric": "Insurance – underwriting",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "保険引受の税引後利益。保険運用収入・有価証券評価損益を含めない会社開示区分。",
+          "value": 1352,
+          "source": {
+            "url": "https://www.berkshirehathaway.com/news/nov0726.pdf",
+            "publishedOn": "2026-11-07",
+            "locator": "事業別内訳表、Insurance – underwriting行、Third Quarter 2026列",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "Berkshire Hathaway",
+          "metric": "Insurance – underwriting",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "保険引受の税引後利益。保険運用収入・有価証券評価損益を含めない会社開示区分。",
+          "value": 2369,
+          "source": {
+            "url": "https://www.berkshirehathaway.com/news/nov0726.pdf",
+            "publishedOn": "2026-11-07",
+            "locator": "事業別内訳表、Insurance – underwriting行、Third Quarter 2025列",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "（当期値÷比較対象値−1）×100（%）",
+          "precision": 1,
+          "value": -42.9
+        }
+      ],
+      "claim": "同じ四半期の税引後保険引受利益は1,352百万米ドルで、前年同期の2,369百万米ドルから42.9%減少した。この区分は、保険料から保険損失や引受費用などを差し引いた引受の成績を示す。保険の運用収益や保有証券の評価損益と区別する。"
+    },
+    {
+      "id": "nintendo-operating",
+      "question": "上期連結営業利益は前年同期に対しどれだけ増えたか。",
+      "definition": "日本基準・連結の4〜9月累計営業利益。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "任天堂（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "日本基準・連結の4〜9月累計営業利益。"
+        },
+        {
+          "id": "prior",
+          "entity": "任天堂（連結）",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "日本基準・連結の4〜9月累計営業利益。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "任天堂（連結）",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "日本基準・連結の4〜9月累計営業利益。",
+          "value": 216500,
+          "source": {
+            "url": "https://www.nintendo.co.jp/ir/pdf/2026/261105.pdf",
+            "publishedOn": "2026-11-05",
+            "locator": "１．(1)連結経営成績（累計）、2027年3月期中間期、営業利益・百万円欄",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "任天堂（連結）",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（日本円）",
+          "basis": "actual",
+          "definition": "日本基準・連結の4〜9月累計営業利益。",
+          "value": 145181,
+          "source": {
+            "url": "https://www.nintendo.co.jp/ir/pdf/2026/261105.pdf",
+            "publishedOn": "2026-11-05",
+            "locator": "１．(1)連結経営成績（累計）、2026年3月期中間期、営業利益・百万円欄",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "（当期値÷比較対象値−1）×100（%）",
+          "precision": 1,
+          "value": 49.1
+        }
+      ],
+      "claim": "任天堂の2027年3月期上期（2026年4〜9月）の連結営業利益は216,500百万円。前年同期の145,181百万円から49.1%増えた。日本基準の上期実績同士で、7〜9月単独や通期予想ではない。"
+    },
+    {
+      "id": "china-fx-reserves",
+      "question": "中国の米ドル換算外貨準備残高は9月末から10月末にどう変わったか。",
+      "definition": "米ドル換算の各月末残高、Foreign currency reserves行。金・SDR等を含む総額や取引フローとは別。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "中国国家外貨管理局",
+          "metric": "外貨準備",
+          "periodStart": "2026-10-31",
+          "periodEnd": "2026-10-31",
+          "unit": "億米ドル",
+          "basis": "actual",
+          "definition": "米ドル換算の各月末残高、Foreign currency reserves行。金・SDR等を含む総額や取引フローとは別。"
+        },
+        {
+          "id": "prior",
+          "entity": "中国国家外貨管理局",
+          "metric": "外貨準備",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "億米ドル",
+          "basis": "actual",
+          "definition": "米ドル換算の各月末残高、Foreign currency reserves行。金・SDR等を含む総額や取引フローとは別。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "中国国家外貨管理局",
+          "metric": "外貨準備",
+          "periodStart": "2026-10-31",
+          "periodEnd": "2026-10-31",
+          "unit": "億米ドル",
+          "basis": "actual",
+          "definition": "米ドル換算の各月末残高、Foreign currency reserves行。金・SDR等を含む総額や取引フローとは別。",
+          "value": 34051.78,
+          "source": {
+            "url": "https://www.safe.gov.cn/safe/2026/0206/27116.html",
+            "publishedOn": "2026-11-07",
+            "locator": "Official reserve assets・Foreign currency reserves行・2026.10の100million USD列",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "中国国家外貨管理局",
+          "metric": "外貨準備",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "億米ドル",
+          "basis": "actual",
+          "definition": "米ドル換算の各月末残高、Foreign currency reserves行。金・SDR等を含む総額や取引フローとは別。",
+          "value": 34002.51,
+          "source": {
+            "url": "https://www.safe.gov.cn/safe/2026/0206/27116.html",
+            "publishedOn": "2026-11-07",
+            "locator": "Official reserve assets・Foreign currency reserves行・2026.09の100million USD列",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "（当期値÷比較対象値−1）×100（%）",
+          "precision": 2,
+          "value": 0.14
+        },
+        {
+          "id": "amount-change",
+          "operation": "difference",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "10月末−9月末の外貨準備残高（億米ドル）。",
+          "precision": 2,
+          "value": 49.27
+        }
+      ],
+      "claim": "中国国家外貨管理局が11月7日に公表した外貨準備の米ドル換算残高は、2026年10月末が34,051.78億米ドル、9月末が34,002.51億米ドルだった。同じ公表表の外貨準備行で比べると49.27億米ドル、0.14%増加した。金やSDRを含む公式準備資産の合計とは区別する。"
+    },
+    {
+      "id": "softbank-cds-change",
+      "question": "ソフトバンクGの5年物CDSは同時点の前日比で何bp動いたか。",
+      "definition": "同一発行体、同一5年契約、同一ベンダーと観測条件の気配同士。",
+      "status": "withheld",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "ソフトバンクグループ",
+          "metric": "5年物CDSスプレッド",
+          "periodStart": "2026-11-06",
+          "periodEnd": "2026-11-06",
+          "unit": "ベーシスポイント",
+          "basis": "market",
+          "definition": "Markitの同じ条件・15:53 JSTの5年物気配。"
+        },
+        {
+          "id": "prior",
+          "entity": "ソフトバンクグループ",
+          "metric": "5年物CDSスプレッド",
+          "periodStart": "2026-11-05",
+          "periodEnd": "2026-11-05",
+          "unit": "ベーシスポイント",
+          "basis": "market",
+          "definition": "Markitの同じ条件・15:53 JSTの5年物気配。"
+        }
+      ],
+      "observations": [],
+      "calculations": [],
+      "reason": "取引終了報道の本文の15:53 JSTの気配と要約欄の水準は同一観測時点と確認できず、前日の同時点の原系列も確認できなかった。単一時点の明示された本文の値と方向だけを採用。",
+      "omittedClaim": "ソフトバンクGの5年物CDSの厳密な前日差を算出した。"
+    }
+  ]
+}
