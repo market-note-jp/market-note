@@ -10,6 +10,51 @@ import BreadthHomeCard from "./market-breadth/home-card";
 
 const legacyArticles = [
 {
+  "kind": "企業レポート",
+  "theme": "個別企業",
+  "date": "2026-11-08 20:05",
+  "dateTime": "2026-11-08T11:05:43+00:00",
+  "title": "セコム（9735）企業分析：継続課金の強さを、値上げと資本効率につなげられるか",
+  "excerpt": "セコムの5年財務と最新1Qを検証。継続契約、値上げ、機器投資、運転資金と買戻しから資本効率の改善条件を考える。",
+  "href": "/articles/company-secom-2026-11-08"
+},
+{
+  "kind": "企業レポート",
+  "theme": "個別企業",
+  "date": "2026-11-08 20:05",
+  "dateTime": "2026-11-08T11:05:43+00:00",
+  "title": "O'Reilly Automotive決算：整備需要は堅調、関税還付と買い戻しを分けて読む",
+  "excerpt": "O’Reillyの最新Q3を検証。関税還付、株数減少、四半期と累計のFCFを分け、店舗成長と買戻しの現金負担を読む。",
+  "href": "/articles/company-oreilly-2026-11-08"
+},
+{
+  "kind": "企業レポート",
+  "theme": "個別企業",
+  "date": "2026-11-08 20:05",
+  "dateTime": "2026-11-08T11:05:43+00:00",
+  "title": "Intertek決算レビュー：検査・認証の利益成長を、現金と買収条件から読み直す",
+  "excerpt": "Intertekの最新売上更新と上期決算を検証。調整前後の利益・FCF、部門構成とEQT買収条件から株主に残る価値を考える。",
+  "href": "/articles/company-intertek-2026-11-08"
+},
+{
+  "kind": "論点解説",
+  "theme": "市場テーマ",
+  "date": "2026-11-08 20:05",
+  "dateTime": "2026-11-08T11:05:43+00:00",
+  "title": "実質賃金2.2%増で、消費関連株に追い風と言えるか",
+  "excerpt": "実質賃金上昇を給与の内訳・賞与の分母・家計消費と分け、小売や外食の需要増が利益へ残る条件を考える。",
+  "href": "/articles/theme-japan-real-wages-consumption-2026-11-08"
+},
+{
+  "kind": "論点解説",
+  "theme": "市場テーマ",
+  "date": "2026-11-08 20:05",
+  "dateTime": "2026-11-08T11:05:43+00:00",
+  "title": "米国債の950億ドル買い戻しは、金融緩和なのか",
+  "excerpt": "財務省の買戻し上限950億ドルを純発行や金融緩和と区別。11月借換と現金残高の変化から、国債市場への影響を考える。",
+  "href": "/articles/theme-treasury-buybacks-not-qe-2026-11-08"
+},
+{
   "kind": "週次レポート",
   "theme": "日米株・AI投資",
   "date": "2026-11-07 08:09",
