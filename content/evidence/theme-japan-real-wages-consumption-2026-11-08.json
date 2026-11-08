@@ -1,0 +1,698 @@
+{
+  "version": 1,
+  "articleSlug": "theme-japan-real-wages-consumption-2026-11-08",
+  "articleSha256": "76ae8864cd5b23c8c51f4e1fea1f60f7d1c022f7afe285733eea84ecb55aed98",
+  "checkedAt": "2026-11-08T11:10:07.320Z",
+  "informationCutoff": "2026-11-08T11:04:59+00:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "公式本文・定義・対象期を確認。見通しと実績、母集団、買戻し上限と純発行を区別。全文の重要数値を記録し、独立レビュー後にdigestを確定。",
+  "comparisons": [
+    {
+      "id": "wage-components",
+      "question": "| 現金給与総額 | 311,409 | +4.6% |",
+      "claim": "| 現金給与総額 | 311,409 | +4.6% |",
+      "definition": "本文の期間・単位・母集団・実績または計画の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "total",
+          "entity": "日本・５人以上事業所",
+          "metric": "現金給与総額",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "JPY",
+          "basis": "actual",
+          "definition": "現金給与総額"
+        },
+        {
+          "id": "total-growth",
+          "entity": "日本・５人以上事業所",
+          "metric": "現金給与総額前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "現金給与総額前年同月比"
+        },
+        {
+          "id": "regular",
+          "entity": "日本・５人以上事業所",
+          "metric": "定期給与",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "JPY",
+          "basis": "actual",
+          "definition": "定期給与"
+        },
+        {
+          "id": "regular-growth",
+          "entity": "日本・５人以上事業所",
+          "metric": "定期給与前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "定期給与前年同月比"
+        },
+        {
+          "id": "scheduled",
+          "entity": "日本・５人以上事業所",
+          "metric": "所定内給与",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "JPY",
+          "basis": "actual",
+          "definition": "所定内給与"
+        },
+        {
+          "id": "scheduled-growth",
+          "entity": "日本・５人以上事業所",
+          "metric": "所定内給与前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "所定内給与前年同月比"
+        },
+        {
+          "id": "special",
+          "entity": "日本・５人以上事業所",
+          "metric": "特別給与",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "JPY",
+          "basis": "actual",
+          "definition": "特別給与"
+        },
+        {
+          "id": "special-growth",
+          "entity": "日本・５人以上事業所",
+          "metric": "特別給与前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "特別給与前年同月比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "total",
+          "entity": "日本・５人以上事業所",
+          "metric": "現金給与総額",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "JPY",
+          "basis": "actual",
+          "definition": "現金給与総額",
+          "value": 311409,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "調査結果の概要",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "total-growth",
+          "entity": "日本・５人以上事業所",
+          "metric": "現金給与総額前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "現金給与総額前年同月比",
+          "value": 4.6,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "調査結果の概要",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "regular",
+          "entity": "日本・５人以上事業所",
+          "metric": "定期給与",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "JPY",
+          "basis": "actual",
+          "definition": "定期給与",
+          "value": 299151,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "調査結果の概要",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "regular-growth",
+          "entity": "日本・５人以上事業所",
+          "metric": "定期給与前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "定期給与前年同月比",
+          "value": 3.6,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "調査結果の概要",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "scheduled",
+          "entity": "日本・５人以上事業所",
+          "metric": "所定内給与",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "JPY",
+          "basis": "actual",
+          "definition": "所定内給与",
+          "value": 279182,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "調査結果の概要",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "scheduled-growth",
+          "entity": "日本・５人以上事業所",
+          "metric": "所定内給与前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "所定内給与前年同月比",
+          "value": 3.7,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "調査結果の概要",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "special",
+          "entity": "日本・５人以上事業所",
+          "metric": "特別給与",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "JPY",
+          "basis": "actual",
+          "definition": "特別給与",
+          "value": 12258,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "調査結果の概要",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "special-growth",
+          "entity": "日本・５人以上事業所",
+          "metric": "特別給与前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "特別給与前年同月比",
+          "value": 32.6,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "調査結果の概要",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "real",
+      "question": "現金給与総額の実質前年比は、持家の帰属家賃を除く消費者物価で割ると+2.2%、総合物価で割ると+2.3%です。",
+      "claim": "現金給与総額の実質前年比は、持家の帰属家賃を除く消費者物価で割ると+2.2%、総合物価で割ると+2.3%です。",
+      "definition": "本文の期間・単位・母集団・実績または計画の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "real-exrent",
+          "entity": "日本・５人以上事業所",
+          "metric": "帰属家賃除く実質給与前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "帰属家賃除く実質給与前年同月比"
+        },
+        {
+          "id": "real-total",
+          "entity": "日本・５人以上事業所",
+          "metric": "総合CPI実質給与前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "総合CPI実質給与前年同月比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "real-exrent",
+          "entity": "日本・５人以上事業所",
+          "metric": "帰属家賃除く実質給与前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "帰属家賃除く実質給与前年同月比",
+          "value": 2.2,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "調査結果の概要",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "real-total",
+          "entity": "日本・５人以上事業所",
+          "metric": "総合CPI実質給与前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "総合CPI実質給与前年同月比",
+          "value": 2.3,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "調査結果の概要",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "common",
+      "question": "前年と当月の両方に回答した共通事業所では、現金給与総額は+4.4%、所定内給与は+3.3%でした。",
+      "claim": "前年と当月の両方に回答した共通事業所では、現金給与総額は+4.4%、所定内給与は+3.3%でした。",
+      "definition": "本文の期間・単位・母集団・実績または計画の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "common-total",
+          "entity": "日本・５人以上事業所",
+          "metric": "共通事業所現金給与前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "共通事業所現金給与前年同月比"
+        },
+        {
+          "id": "common-base",
+          "entity": "日本・５人以上事業所",
+          "metric": "共通事業所所定内前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "共通事業所所定内前年同月比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "common-total",
+          "entity": "日本・５人以上事業所",
+          "metric": "共通事業所現金給与前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "共通事業所現金給与前年同月比",
+          "value": 4.4,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "調査結果の概要",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "common-base",
+          "entity": "日本・５人以上事業所",
+          "metric": "共通事業所所定内前年同月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "共通事業所所定内前年同月比",
+          "value": 3.3,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "調査結果の概要",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "summer-bonus",
+      "question": "| 賞与を支給した事業所の労働者一人平均 | 426,337 | 448,765 | +5.3% |",
+      "claim": "| 賞与を支給した事業所の労働者一人平均 | 426,337 | 448,765 | +5.3% |",
+      "definition": "本文の期間・単位・母集団・実績または計画の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "2025-0",
+          "entity": "日本・５人以上事業所",
+          "metric": "支給事業所一人平均賞与",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2025-08-31",
+          "unit": "JPY",
+          "basis": "actual",
+          "definition": "支給事業所一人平均賞与"
+        },
+        {
+          "id": "2025-1",
+          "entity": "日本・５人以上事業所",
+          "metric": "全労働者一人平均賞与",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2025-08-31",
+          "unit": "JPY",
+          "basis": "actual",
+          "definition": "全労働者一人平均賞与"
+        },
+        {
+          "id": "2025-2",
+          "entity": "日本・５人以上事業所",
+          "metric": "支給事業所労働者割合",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2025-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "支給事業所労働者割合"
+        },
+        {
+          "id": "2026-3",
+          "entity": "日本・５人以上事業所",
+          "metric": "支給事業所一人平均賞与",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "JPY",
+          "basis": "actual",
+          "definition": "支給事業所一人平均賞与"
+        },
+        {
+          "id": "2026-4",
+          "entity": "日本・５人以上事業所",
+          "metric": "全労働者一人平均賞与",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "JPY",
+          "basis": "actual",
+          "definition": "全労働者一人平均賞与"
+        },
+        {
+          "id": "2026-5",
+          "entity": "日本・５人以上事業所",
+          "metric": "支給事業所労働者割合",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "支給事業所労働者割合"
+        },
+        {
+          "id": "bonus-paid-growth",
+          "entity": "日本・５人以上事業所",
+          "metric": "支給事業所賞与公式前年比",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "支給事業所賞与公式前年比"
+        },
+        {
+          "id": "bonus-all-growth",
+          "entity": "日本・５人以上事業所",
+          "metric": "全労働者賞与公式前年比",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "全労働者賞与公式前年比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "2025-0",
+          "entity": "日本・５人以上事業所",
+          "metric": "支給事業所一人平均賞与",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2025-08-31",
+          "unit": "JPY",
+          "basis": "actual",
+          "definition": "支給事業所一人平均賞与",
+          "value": 426337,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "夏季賞与表２・注記",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "2025-1",
+          "entity": "日本・５人以上事業所",
+          "metric": "全労働者一人平均賞与",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2025-08-31",
+          "unit": "JPY",
+          "basis": "actual",
+          "definition": "全労働者一人平均賞与",
+          "value": 360681,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "夏季賞与表２・注記",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "2025-2",
+          "entity": "日本・５人以上事業所",
+          "metric": "支給事業所労働者割合",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2025-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "支給事業所労働者割合",
+          "value": 84.6,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "夏季賞与表２・注記",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "2026-3",
+          "entity": "日本・５人以上事業所",
+          "metric": "支給事業所一人平均賞与",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "JPY",
+          "basis": "actual",
+          "definition": "支給事業所一人平均賞与",
+          "value": 448765,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "夏季賞与表２・注記",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "2026-4",
+          "entity": "日本・５人以上事業所",
+          "metric": "全労働者一人平均賞与",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "JPY",
+          "basis": "actual",
+          "definition": "全労働者一人平均賞与",
+          "value": 381899,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "夏季賞与表２・注記",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "2026-5",
+          "entity": "日本・５人以上事業所",
+          "metric": "支給事業所労働者割合",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "支給事業所労働者割合",
+          "value": 85.1,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "夏季賞与表２・注記",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "bonus-paid-growth",
+          "entity": "日本・５人以上事業所",
+          "metric": "支給事業所賞与公式前年比",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "支給事業所賞与公式前年比",
+          "value": 5.3,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "夏季賞与表２・注記",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "bonus-all-growth",
+          "entity": "日本・５人以上事業所",
+          "metric": "全労働者賞与公式前年比",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "全労働者賞与公式前年比",
+          "value": 5.9,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "夏季賞与表２・注記",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "survey-response",
+      "question": "９月速報の回収率は67.9%で、確報で追加回答による改訂があり得ます。",
+      "claim": "９月速報の回収率は67.9%で、確報で追加回答による改訂があり得ます。",
+      "definition": "本文の期間・単位・母集団・実績または計画の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "response",
+          "entity": "日本・５人以上事業所",
+          "metric": "回収率",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "回収率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "response",
+          "entity": "日本・５人以上事業所",
+          "metric": "回収率",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "回収率",
+          "value": 67.9,
+          "source": {
+            "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r08/2609p/dl/pdf2609p.pdf",
+            "publishedOn": "2026-11-06",
+            "locator": "調査結果の概要",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "household-spending",
+      "question": "実際、基準日時点の最新の家計調査である８月分では、二人以上の世帯の実質消費支出は前年比3.1%減でした。",
+      "claim": "実際、基準日時点の最新の家計調査である８月分では、二人以上の世帯の実質消費支出は前年比3.1%減でした。",
+      "definition": "本文の期間・単位・母集団・実績または計画の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "spend",
+          "entity": "二人以上の世帯",
+          "metric": "実質消費支出前年比",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "実質消費支出前年比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "spend",
+          "entity": "二人以上の世帯",
+          "metric": "実質消費支出前年比",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-08-31",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "実質消費支出前年比",
+          "value": -3.1,
+          "source": {
+            "url": "https://www.stat.go.jp/data/kakei/sokuhou/tsuki/index.htm",
+            "publishedOn": "2026-10-09",
+            "locator": "2026年8月分・消費支出",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
