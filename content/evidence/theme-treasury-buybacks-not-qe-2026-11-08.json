@@ -1,0 +1,419 @@
+{
+  "version": 1,
+  "articleSlug": "theme-treasury-buybacks-not-qe-2026-11-08",
+  "articleSha256": "3737767aaa93fb1078ffc9b727cf08cf93af9d1d4d43fa3f6305a7b0eff081a0",
+  "checkedAt": "2026-11-08T11:10:07.320Z",
+  "informationCutoff": "2026-11-08T11:04:59+00:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "公式本文・定義・対象期を確認。見通しと実績、母集団、買戻し上限と純発行を区別。全文の重要数値を記録し、独立レビュー後にdigestを確定。",
+  "comparisons": [
+    {
+      "id": "buyback-caps",
+      "question": "合計950億ドルは上限の合計で、実施済み額でも、毎月の金額でもありません。",
+      "claim": "合計950億ドルは上限の合計で、実施済み額でも、毎月の金額でもありません。",
+      "definition": "本文の期間・単位・母集団・実績または計画の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "liquidity",
+          "entity": "米財務省",
+          "metric": "流動性買戻し上限",
+          "periodStart": "2026-11-12",
+          "periodEnd": "2027-02-09",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "流動性買戻し上限"
+        },
+        {
+          "id": "cash",
+          "entity": "米財務省",
+          "metric": "現金管理買戻し上限",
+          "periodStart": "2026-11-12",
+          "periodEnd": "2027-02-09",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "現金管理買戻し上限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "liquidity",
+          "entity": "米財務省",
+          "metric": "流動性買戻し上限",
+          "periodStart": "2026-11-12",
+          "periodEnd": "2027-02-09",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "流動性買戻し上限",
+          "value": 70,
+          "source": {
+            "url": "https://home.treasury.gov/news/press-releases/sb0678",
+            "publishedOn": "2026-11-04",
+            "locator": "BUYBACKS",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash",
+          "entity": "米財務省",
+          "metric": "現金管理買戻し上限",
+          "periodStart": "2026-11-12",
+          "periodEnd": "2027-02-09",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "現金管理買戻し上限",
+          "value": 25,
+          "source": {
+            "url": "https://home.treasury.gov/news/press-releases/sb0678",
+            "publishedOn": "2026-11-04",
+            "locator": "BUYBACKS",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "cap-total",
+          "operation": "sum",
+          "inputs": [
+            "liquidity",
+            "cash"
+          ],
+          "definition": "買戻しの上限合計",
+          "precision": 0,
+          "value": 95
+        }
+      ]
+    },
+    {
+      "id": "refunding",
+      "question": "11月15日満期の民間保有国債約970億ドルを借り換え、新規資金は約280億ドルです。",
+      "claim": "11月15日満期の民間保有国債約970億ドルを借り換え、新規資金は約280億ドルです。",
+      "definition": "本文の期間・単位・母集団・実績または計画の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "three",
+          "entity": "米財務省",
+          "metric": "3年債発行",
+          "periodStart": "2026-11-16",
+          "periodEnd": "2026-11-16",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "3年債発行"
+        },
+        {
+          "id": "ten",
+          "entity": "米財務省",
+          "metric": "10年債発行",
+          "periodStart": "2026-11-16",
+          "periodEnd": "2026-11-16",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "10年債発行"
+        },
+        {
+          "id": "thirty",
+          "entity": "米財務省",
+          "metric": "30年債発行",
+          "periodStart": "2026-11-16",
+          "periodEnd": "2026-11-16",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "30年債発行"
+        },
+        {
+          "id": "redeem",
+          "entity": "米財務省",
+          "metric": "償還対象約",
+          "periodStart": "2026-11-15",
+          "periodEnd": "2026-11-15",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "償還対象約"
+        },
+        {
+          "id": "newcash",
+          "entity": "米財務省",
+          "metric": "新規調達約",
+          "periodStart": "2026-11-16",
+          "periodEnd": "2026-11-16",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "新規調達約"
+        }
+      ],
+      "observations": [
+        {
+          "id": "three",
+          "entity": "米財務省",
+          "metric": "3年債発行",
+          "periodStart": "2026-11-16",
+          "periodEnd": "2026-11-16",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "3年債発行",
+          "value": 58,
+          "source": {
+            "url": "https://home.treasury.gov/news/press-releases/sb0678",
+            "publishedOn": "2026-11-04",
+            "locator": "冒頭の借換発行・新規資金",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ten",
+          "entity": "米財務省",
+          "metric": "10年債発行",
+          "periodStart": "2026-11-16",
+          "periodEnd": "2026-11-16",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "10年債発行",
+          "value": 42,
+          "source": {
+            "url": "https://home.treasury.gov/news/press-releases/sb0678",
+            "publishedOn": "2026-11-04",
+            "locator": "冒頭の借換発行・新規資金",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "thirty",
+          "entity": "米財務省",
+          "metric": "30年債発行",
+          "periodStart": "2026-11-16",
+          "periodEnd": "2026-11-16",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "30年債発行",
+          "value": 25,
+          "source": {
+            "url": "https://home.treasury.gov/news/press-releases/sb0678",
+            "publishedOn": "2026-11-04",
+            "locator": "冒頭の借換発行・新規資金",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "redeem",
+          "entity": "米財務省",
+          "metric": "償還対象約",
+          "periodStart": "2026-11-15",
+          "periodEnd": "2026-11-15",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "償還対象約",
+          "value": 97,
+          "source": {
+            "url": "https://home.treasury.gov/news/press-releases/sb0678",
+            "publishedOn": "2026-11-04",
+            "locator": "冒頭の借換発行・新規資金",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newcash",
+          "entity": "米財務省",
+          "metric": "新規調達約",
+          "periodStart": "2026-11-16",
+          "periodEnd": "2026-11-16",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "新規調達約",
+          "value": 28,
+          "source": {
+            "url": "https://home.treasury.gov/news/press-releases/sb0678",
+            "publishedOn": "2026-11-04",
+            "locator": "冒頭の借換発行・新規資金",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "sumissue",
+          "operation": "sum",
+          "inputs": [
+            "three",
+            "ten",
+            "thirty"
+          ],
+          "definition": "3銘柄の発行総額",
+          "precision": 0,
+          "value": 125
+        },
+        {
+          "id": "net",
+          "operation": "difference",
+          "inputs": [
+            "sumissue",
+            "redeem"
+          ],
+          "definition": "発行総額から償還額を差引く概算",
+          "precision": 0,
+          "value": 28
+        }
+      ]
+    },
+    {
+      "id": "borrowing-revision",
+      "question": "計算は「240億ドル増 − 340億ドルの現金余力 = 100億ドル減」。",
+      "claim": "計算は「240億ドル増 − 340億ドルの現金余力 = 100億ドル減」。",
+      "definition": "本文の期間・単位・母集団・実績または計画の区分に従う。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "borrowing",
+          "entity": "米財務省",
+          "metric": "10〜12月純借入見通し",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "10〜12月純借入見通し"
+        },
+        {
+          "id": "cash-adjusted",
+          "entity": "米財務省",
+          "metric": "現金残高効果除く借入見通し改定",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "現金残高効果除く借入見通し改定"
+        },
+        {
+          "id": "opening-extra",
+          "entity": "米財務省",
+          "metric": "想定以上の期首現金",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-01",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "想定以上の期首現金"
+        },
+        {
+          "id": "opening-prior",
+          "entity": "米財務省",
+          "metric": "旧期首現金見通し",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-01",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "旧期首現金見通し"
+        },
+        {
+          "id": "opening-actual",
+          "entity": "米財務省",
+          "metric": "期首現金",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-01",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "期首現金"
+        }
+      ],
+      "observations": [
+        {
+          "id": "borrowing",
+          "entity": "米財務省",
+          "metric": "10〜12月純借入見通し",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "10〜12月純借入見通し",
+          "value": 618,
+          "source": {
+            "url": "https://home.treasury.gov/news/press-releases/sb0675/",
+            "publishedOn": "2026-11-02",
+            "locator": "October–December見通しとCash Balance表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash-adjusted",
+          "entity": "米財務省",
+          "metric": "現金残高効果除く借入見通し改定",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "現金残高効果除く借入見通し改定",
+          "value": 24,
+          "source": {
+            "url": "https://home.treasury.gov/news/press-releases/sb0675/",
+            "publishedOn": "2026-11-02",
+            "locator": "October–December見通しとCash Balance表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "opening-extra",
+          "entity": "米財務省",
+          "metric": "想定以上の期首現金",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-01",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "想定以上の期首現金",
+          "value": 34,
+          "source": {
+            "url": "https://home.treasury.gov/news/press-releases/sb0675/",
+            "publishedOn": "2026-11-02",
+            "locator": "October–December見通しとCash Balance表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "opening-prior",
+          "entity": "米財務省",
+          "metric": "旧期首現金見通し",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-01",
+          "unit": "USD billion",
+          "basis": "company-forecast",
+          "definition": "旧期首現金見通し",
+          "value": 950,
+          "source": {
+            "url": "https://home.treasury.gov/news/press-releases/sb0675/",
+            "publishedOn": "2026-11-02",
+            "locator": "October–December見通しとCash Balance表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "opening-actual",
+          "entity": "米財務省",
+          "metric": "期首現金",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-01",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "期首現金",
+          "value": 984,
+          "source": {
+            "url": "https://home.treasury.gov/news/press-releases/sb0675/",
+            "publishedOn": "2026-11-02",
+            "locator": "October–December見通しとCash Balance表",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "revision",
+          "operation": "difference",
+          "inputs": [
+            "cash-adjusted",
+            "opening-extra"
+          ],
+          "definition": "純借入予測の改定",
+          "precision": 0,
+          "value": -10
+        }
+      ]
+    }
+  ]
+}
