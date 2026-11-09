@@ -1,0 +1,331 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-11-10",
+  "articleSha256": "d603c73a4e15156154636f161aa4cb84968cfc3c7de3cefa9a3a05ea8e0d755b",
+  "checkedAt": "2026-11-10T06:24:00+09:00",
+  "informationCutoff": "2026-11-10T06:23:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "見出し・結論・本文・分析・注目点と出典を照合した。数値比較は米株指数の日次騰落、KOKUSAIの営業利益、オリックスの株主帰属純利益と継続事業営業利益の4件。持分法投資利益は同一期間の総額とその内訳を原資料で照合し、純利益との比率は計算していない。JX金属の出資条件は計画値で、比較ではない。市場予想との比較は扱わない。",
+  "comparisons": [
+    {
+      "id": "sp500-close",
+      "question": "米国株価指数の終値は比較期間に対してどの程度変動したか",
+      "definition": "米東部時間の通常取引終了時のS&P 500価格指数。11月9日は速報。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "S&P 500",
+          "metric": "米国株価指数の終値",
+          "periodStart": "2026-11-09",
+          "periodEnd": "2026-11-09",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米東部時間の通常取引終了時のS&P 500価格指数。11月9日は速報。"
+        },
+        {
+          "id": "previous",
+          "entity": "S&P 500",
+          "metric": "米国株価指数の終値",
+          "periodStart": "2026-11-06",
+          "periodEnd": "2026-11-06",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米東部時間の通常取引終了時のS&P 500価格指数。11月9日は速報。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "S&P 500",
+          "metric": "米国株価指数の終値",
+          "periodStart": "2026-11-09",
+          "periodEnd": "2026-11-09",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米東部時間の通常取引終了時のS&P 500価格指数。11月9日は速報。",
+          "value": 7549.83,
+          "source": {
+            "url": "https://www.reuters.com/business/wall-st-futures-rise-after-rough-week-nvidia-unsettles-investors-2026-11-09/",
+            "publishedOn": "2026-11-09",
+            "locator": "According to preliminary dataの主要指数終値段落",
+            "kind": "secondary",
+            "primaryUnavailableReason": "確認時のFRED配信表に当該日の終値が未掲載。引けを伝える主要通信社の公表値を使用。"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "S&P 500",
+          "metric": "米国株価指数の終値",
+          "periodStart": "2026-11-06",
+          "periodEnd": "2026-11-06",
+          "unit": "指数ポイント",
+          "basis": "market",
+          "definition": "米東部時間の通常取引終了時のS&P 500価格指数。11月9日は速報。",
+          "value": 7376.86,
+          "source": {
+            "url": "https://apnews.com/article/806f71d95105bc7efbc760b194dd8cad",
+            "publishedOn": "2026-11-06",
+            "locator": "Fridayの主要指数終値一覧のS&P 500行",
+            "kind": "secondary",
+            "primaryUnavailableReason": "確認時のFRED配信表に当該日の終値が未掲載。引けを伝える主要通信社の公表値を使用。"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "(当期値÷比較期値−1)×100",
+          "precision": 2,
+          "value": 2.34
+        }
+      ],
+      "claim": "2026年11月9日（米東部時間）のS&P 500は、ロイターの終値速報で7,549.83ポイント。前営業日6日の7,376.86ポイントから2.34%上昇した。"
+    },
+    {
+      "id": "kokusai-operating",
+      "question": "IFRS連結営業利益は比較期間に対してどの程度変動したか",
+      "definition": "会社開示のIFRS連結営業利益。調整後営業利益を含まない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "KOKUSAI ELECTRIC",
+          "metric": "IFRS連結営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "会社開示のIFRS連結営業利益。調整後営業利益を含まない。"
+        },
+        {
+          "id": "previous",
+          "entity": "KOKUSAI ELECTRIC",
+          "metric": "IFRS連結営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "会社開示のIFRS連結営業利益。調整後営業利益を含まない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "KOKUSAI ELECTRIC",
+          "metric": "IFRS連結営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "会社開示のIFRS連結営業利益。調整後営業利益を含まない。",
+          "value": 36814,
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/6525/tdnet/2907737/00.pdf",
+            "pdfPage": 1,
+            "locator": "1.（1）連結経営成績（累計）、営業利益欄の両中間期",
+            "kind": "primary",
+            "publishedOn": "2026-11-09"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "KOKUSAI ELECTRIC",
+          "metric": "IFRS連結営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "会社開示のIFRS連結営業利益。調整後営業利益を含まない。",
+          "value": 22710,
+          "source": {
+            "url": "https://ssl4.eir-parts.net/doc/6525/tdnet/2907737/00.pdf",
+            "pdfPage": 1,
+            "locator": "1.（1）連結経営成績（累計）、営業利益欄の両中間期",
+            "kind": "primary",
+            "publishedOn": "2026-11-09"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "(当期値÷比較期値−1)×100",
+          "precision": 1,
+          "value": 62.1
+        }
+      ],
+      "claim": "2026年4〜9月期のIFRS連結営業利益は36,814百万円で、前年同期の22,710百万円から62.1%増えた。"
+    },
+    {
+      "id": "orix-net-income",
+      "question": "株主帰属中間純利益は比較期間に対してどの程度変動したか",
+      "definition": "米国基準の当社株主に帰属する中間純利益。継続事業の営業利益とは異なる。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "オリックス",
+          "metric": "株主帰属中間純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "米国基準の当社株主に帰属する中間純利益。継続事業の営業利益とは異なる。"
+        },
+        {
+          "id": "previous",
+          "entity": "オリックス",
+          "metric": "株主帰属中間純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "米国基準の当社株主に帰属する中間純利益。継続事業の営業利益とは異なる。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "オリックス",
+          "metric": "株主帰属中間純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "米国基準の当社株主に帰属する中間純利益。継続事業の営業利益とは異なる。",
+          "value": 856218,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2027_2QJ.pdf",
+            "pdfPage": 1,
+            "locator": "1.（1）連結経営成績（累計）、2027年3月期中間期と2026年3月期中間期、注2",
+            "kind": "primary",
+            "publishedOn": "2026-11-09"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "オリックス",
+          "metric": "株主帰属中間純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "米国基準の当社株主に帰属する中間純利益。継続事業の営業利益とは異なる。",
+          "value": 271096,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2027_2QJ.pdf",
+            "pdfPage": 1,
+            "locator": "1.（1）連結経営成績（累計）、2027年3月期中間期と2026年3月期中間期、注2",
+            "kind": "primary",
+            "publishedOn": "2026-11-09"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "(当期値÷比較期値−1)×100",
+          "precision": 1,
+          "value": 215.8
+        }
+      ],
+      "claim": "2026年4〜9月期の米国基準の株主帰属中間純利益は856,218百万円で、前年同期の271,096百万円から215.8%増えた。"
+    },
+    {
+      "id": "orix-operating",
+      "question": "継続事業の営業利益は比較期間に対してどの程度変動したか",
+      "definition": "米国基準の連結営業利益。オリックス銀行の非継続事業を除き、比較期間は組替再表示済み。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "オリックス",
+          "metric": "継続事業の営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "米国基準の連結営業利益。オリックス銀行の非継続事業を除き、比較期間は組替再表示済み。"
+        },
+        {
+          "id": "previous",
+          "entity": "オリックス",
+          "metric": "継続事業の営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "米国基準の連結営業利益。オリックス銀行の非継続事業を除き、比較期間は組替再表示済み。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "オリックス",
+          "metric": "継続事業の営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "米国基準の連結営業利益。オリックス銀行の非継続事業を除き、比較期間は組替再表示済み。",
+          "value": 239520,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2027_2QJ.pdf",
+            "pdfPage": 1,
+            "locator": "1.（1）連結経営成績（累計）、2027年3月期中間期と2026年3月期中間期、注2",
+            "kind": "primary",
+            "publishedOn": "2026-11-09"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "オリックス",
+          "metric": "継続事業の営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "米国基準の連結営業利益。オリックス銀行の非継続事業を除き、比較期間は組替再表示済み。",
+          "value": 230424,
+          "source": {
+            "url": "https://www.orix.co.jp/grp/pdf/company/ir/library/financial_result/ORIXResults2027_2QJ.pdf",
+            "pdfPage": 1,
+            "locator": "1.（1）連結経営成績（累計）、2027年3月期中間期と2026年3月期中間期、注2",
+            "kind": "primary",
+            "publishedOn": "2026-11-09"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "(当期値÷比較期値−1)×100",
+          "precision": 1,
+          "value": 3.9
+        }
+      ],
+      "claim": "継続事業の営業利益は239,520百万円で、組み替え後の前年同期230,424百万円から3.9%増えた。"
+    }
+  ]
+}
