@@ -1,0 +1,235 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-11-11",
+  "articleSha256": "0887f7ee037bedb0ae93cded53426ab1d3f0d6cb670f71850b091097713486c1",
+  "checkedAt": "2026-11-11T06:21:00+09:00",
+  "informationCutoff": "2026-11-11T06:20:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "見出し、結論、本文、分析と注目点を原資料と照合。数値比較は総合CPIの連続する月次変化率、CoreWeaveの四半期売上高、フジクラの中間期営業利益の3件。米株と国債は引け報道に基づく方向のみ。会社予想と実績は区別し、前年比欠測や市場予想の数値比較は掲載しない。",
+  "comparisons": [
+    {
+      "id": "cpi-headline",
+      "question": "CPI-U総合の前月比の比較期間に対する変化は何か",
+      "definition": "米都市部消費者の総合CPIの季節調整済み前月比",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "米労働統計局",
+          "metric": "CPI-U総合の前月比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "米都市部消費者の総合CPIの季節調整済み前月比"
+        },
+        {
+          "id": "previous",
+          "entity": "米労働統計局",
+          "metric": "CPI-U総合の前月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "米都市部消費者の総合CPIの季節調整済み前月比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "米労働統計局",
+          "metric": "CPI-U総合の前月比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "米都市部消費者の総合CPIの季節調整済み前月比",
+          "value": 0.4,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Table A、All items、September／October 2026列",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "米労働統計局",
+          "metric": "CPI-U総合の前月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "米都市部消費者の総合CPIの季節調整済み前月比",
+          "value": 0.6,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/cpi_11102026.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Table A、All items、September／October 2026列",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "2026年10月の米総合CPI（CPI-U）は季節調整済み前月比で0.4%上昇し、9月の0.6%上昇から伸びが鈍った。"
+    },
+    {
+      "id": "coreweave-revenue",
+      "question": "米国基準連結売上高の比較期間に対する変化は何か",
+      "definition": "未監査の米国基準連結四半期売上高（ARR、受注残を除く）",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "CoreWeave",
+          "metric": "米国基準連結売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "未監査の米国基準連結四半期売上高（ARR、受注残を除く）"
+        },
+        {
+          "id": "previous",
+          "entity": "CoreWeave",
+          "metric": "米国基準連結売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "未監査の米国基準連結四半期売上高（ARR、受注残を除く）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "CoreWeave",
+          "metric": "米国基準連結売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "未監査の米国基準連結四半期売上高（ARR、受注残を除く）",
+          "value": 3661,
+          "source": {
+            "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx",
+            "publishedOn": "2026-11-10",
+            "locator": "Consolidated Statements of Operations、Three Months Ended September 30、Revenue行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "CoreWeave",
+          "metric": "米国基準連結売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "未監査の米国基準連結四半期売上高（ARR、受注残を除く）",
+          "value": 1365,
+          "source": {
+            "url": "https://investors.coreweave.com/news/news-details/2026/CoreWeave-Reports-Strong-Third-Quarter-2026-Results/default.aspx",
+            "publishedOn": "2026-11-10",
+            "locator": "Consolidated Statements of Operations、Three Months Ended September 30、Revenue行",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "(当期÷前年同期−1)×100",
+          "precision": 1,
+          "value": 168.2
+        }
+      ],
+      "claim": "2026年7〜9月期の米国基準の連結売上高は3,661百万米ドルで、2025年7〜9月期の1,365百万米ドルから168.2%増えた。"
+    },
+    {
+      "id": "fujikura-operating",
+      "question": "日本基準連結営業利益の比較期間に対する変化は何か",
+      "definition": "日本基準中間連結損益計算書の営業利益",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "フジクラ",
+          "metric": "日本基準連結営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "日本基準中間連結損益計算書の営業利益"
+        },
+        {
+          "id": "previous",
+          "entity": "フジクラ",
+          "metric": "日本基準連結営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "日本基準中間連結損益計算書の営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "フジクラ",
+          "metric": "日本基準連結営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "日本基準中間連結損益計算書の営業利益",
+          "value": 235013,
+          "source": {
+            "url": "https://tdnet-pdf.kabutan.jp/20261110/140120261109569418.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "中間連結損益計算書、当中間期と前中間期の営業利益欄",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "フジクラ",
+          "metric": "日本基準連結営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "日本基準中間連結損益計算書の営業利益",
+          "value": 90171,
+          "source": {
+            "url": "https://tdnet-pdf.kabutan.jp/20261110/140120261109569418.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "中間連結損益計算書、当中間期と前中間期の営業利益欄",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "(当期÷前年同期−1)×100",
+          "precision": 1,
+          "value": 160.6
+        }
+      ],
+      "claim": "2026年4〜9月期の日本基準の連結営業利益は235,013百万円で、前年同期の90,171百万円から160.6%増えた。"
+    }
+  ]
+}
