@@ -1,0 +1,2108 @@
+{
+  "version": 1,
+  "articleSlug": "company-aosmith-2026-11-10",
+  "articleSha256": "b1067b14d308f020b9a5ef52071ff3d1e16f8b3f2e67de6c646200b53c519d1c",
+  "checkedAt": "2026-11-10T10:25:02.576Z",
+  "informationCutoff": "2026-11-10T10:24:34.427976+00:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "Primary annual-report PDFs and Oct29 earnings PDF fully downloaded/read; tables/period and CF bridge recalculated. Chinese disposal is conditional, forecasts exclude China whereas quarterly actuals include China. No stock valuation/consensus assertion. Source archive outside repo. All material numeric comparisons covered. Independent reviewer verified primary tables and CF computations; corrected minority-interest typo.",
+  "comparisons": [
+    {
+      "id": "fy2021",
+      "question": "| 2021 | 3,538.9 | 487.1 | 3.02 | 641.1 | 75.1 | 566.0 |",
+      "definition": "会社開示。連結範囲・四半期/累計・GAAP/調整後の差は本文に記載。",
+      "status": "ready",
+      "claim": "| 2021 | 3,538.9 | 487.1 | 3.02 | 641.1 | 75.1 | 566.0 |",
+      "requiredInputs": [
+        {
+          "id": "fy2021-sales",
+          "entity": "A. O. Smith",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "fy2021-net",
+          "entity": "A. O. Smith",
+          "metric": "純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "fy2021-eps",
+          "entity": "A. O. Smith",
+          "metric": "希薄化後EPS",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS"
+        },
+        {
+          "id": "fy2021-cfo",
+          "entity": "A. O. Smith",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "fy2021-capex",
+          "entity": "A. O. Smith",
+          "metric": "現金設備投資支出（正値）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（正値）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fy2021-sales",
+          "entity": "A. O. Smith",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 3538.9,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/e6244d67-72b6-418e-8aea-bdd568c83862",
+            "publishedOn": "2024-02-13",
+            "locator": "PDF 35頁",
+            "kind": "primary",
+            "pdfPage": 35
+          }
+        },
+        {
+          "id": "fy2021-net",
+          "entity": "A. O. Smith",
+          "metric": "純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 487.1,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/e6244d67-72b6-418e-8aea-bdd568c83862",
+            "publishedOn": "2024-02-13",
+            "locator": "PDF 35頁",
+            "kind": "primary",
+            "pdfPage": 35
+          }
+        },
+        {
+          "id": "fy2021-eps",
+          "entity": "A. O. Smith",
+          "metric": "希薄化後EPS",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS",
+          "value": 3.02,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/e6244d67-72b6-418e-8aea-bdd568c83862",
+            "publishedOn": "2024-02-13",
+            "locator": "PDF 35頁",
+            "kind": "primary",
+            "pdfPage": 35
+          }
+        },
+        {
+          "id": "fy2021-cfo",
+          "entity": "A. O. Smith",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 641.1,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/e6244d67-72b6-418e-8aea-bdd568c83862",
+            "publishedOn": "2024-02-13",
+            "locator": "CF計算書 PDF 36頁",
+            "kind": "primary",
+            "pdfPage": 36
+          }
+        },
+        {
+          "id": "fy2021-capex",
+          "entity": "A. O. Smith",
+          "metric": "現金設備投資支出（正値）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（正値）",
+          "value": 75.1,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/e6244d67-72b6-418e-8aea-bdd568c83862",
+            "publishedOn": "2024-02-13",
+            "locator": "CF計算書 PDF 36頁",
+            "kind": "primary",
+            "pdfPage": 36
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fy2021-fcf",
+          "operation": "difference",
+          "inputs": [
+            "fy2021-cfo",
+            "fy2021-capex"
+          ],
+          "definition": "営業CF−現金設備投資",
+          "precision": 1,
+          "value": 566
+        }
+      ]
+    },
+    {
+      "id": "fy2022",
+      "question": "| 2022 | 3,753.9 | 235.7 | 1.51 | 391.4 | 70.3 | 321.1 |",
+      "definition": "会社開示。連結範囲・四半期/累計・GAAP/調整後の差は本文に記載。",
+      "status": "ready",
+      "claim": "| 2022 | 3,753.9 | 235.7 | 1.51 | 391.4 | 70.3 | 321.1 |",
+      "requiredInputs": [
+        {
+          "id": "fy2022-sales",
+          "entity": "A. O. Smith",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "fy2022-net",
+          "entity": "A. O. Smith",
+          "metric": "純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "fy2022-eps",
+          "entity": "A. O. Smith",
+          "metric": "希薄化後EPS",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS"
+        },
+        {
+          "id": "fy2022-cfo",
+          "entity": "A. O. Smith",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "fy2022-capex",
+          "entity": "A. O. Smith",
+          "metric": "現金設備投資支出（正値）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（正値）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fy2022-sales",
+          "entity": "A. O. Smith",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 3753.9,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/e6244d67-72b6-418e-8aea-bdd568c83862",
+            "publishedOn": "2024-02-13",
+            "locator": "PDF 35頁",
+            "kind": "primary",
+            "pdfPage": 35
+          }
+        },
+        {
+          "id": "fy2022-net",
+          "entity": "A. O. Smith",
+          "metric": "純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 235.7,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/e6244d67-72b6-418e-8aea-bdd568c83862",
+            "publishedOn": "2024-02-13",
+            "locator": "PDF 35頁",
+            "kind": "primary",
+            "pdfPage": 35
+          }
+        },
+        {
+          "id": "fy2022-eps",
+          "entity": "A. O. Smith",
+          "metric": "希薄化後EPS",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS",
+          "value": 1.51,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/e6244d67-72b6-418e-8aea-bdd568c83862",
+            "publishedOn": "2024-02-13",
+            "locator": "PDF 35頁",
+            "kind": "primary",
+            "pdfPage": 35
+          }
+        },
+        {
+          "id": "fy2022-cfo",
+          "entity": "A. O. Smith",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 391.4,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/e6244d67-72b6-418e-8aea-bdd568c83862",
+            "publishedOn": "2024-02-13",
+            "locator": "CF計算書 PDF 36頁",
+            "kind": "primary",
+            "pdfPage": 36
+          }
+        },
+        {
+          "id": "fy2022-capex",
+          "entity": "A. O. Smith",
+          "metric": "現金設備投資支出（正値）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（正値）",
+          "value": 70.3,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/e6244d67-72b6-418e-8aea-bdd568c83862",
+            "publishedOn": "2024-02-13",
+            "locator": "CF計算書 PDF 36頁",
+            "kind": "primary",
+            "pdfPage": 36
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fy2022-fcf",
+          "operation": "difference",
+          "inputs": [
+            "fy2022-cfo",
+            "fy2022-capex"
+          ],
+          "definition": "営業CF−現金設備投資",
+          "precision": 1,
+          "value": 321.1
+        }
+      ]
+    },
+    {
+      "id": "fy2023",
+      "question": "| 2023 | 3,852.8 | 556.6 | 3.69 | 670.3 | 72.6 | 597.7 |",
+      "definition": "会社開示。連結範囲・四半期/累計・GAAP/調整後の差は本文に記載。",
+      "status": "ready",
+      "claim": "| 2023 | 3,852.8 | 556.6 | 3.69 | 670.3 | 72.6 | 597.7 |",
+      "requiredInputs": [
+        {
+          "id": "fy2023-sales",
+          "entity": "A. O. Smith",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "fy2023-net",
+          "entity": "A. O. Smith",
+          "metric": "純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "fy2023-eps",
+          "entity": "A. O. Smith",
+          "metric": "希薄化後EPS",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS"
+        },
+        {
+          "id": "fy2023-cfo",
+          "entity": "A. O. Smith",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "fy2023-capex",
+          "entity": "A. O. Smith",
+          "metric": "現金設備投資支出（正値）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（正値）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fy2023-sales",
+          "entity": "A. O. Smith",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 3852.8,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/76cebc4d-7d63-4749-b77e-7d4e2649ef40",
+            "publishedOn": "2026-02-10",
+            "locator": "PDF 38頁",
+            "kind": "primary",
+            "pdfPage": 38
+          }
+        },
+        {
+          "id": "fy2023-net",
+          "entity": "A. O. Smith",
+          "metric": "純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 556.6,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/76cebc4d-7d63-4749-b77e-7d4e2649ef40",
+            "publishedOn": "2026-02-10",
+            "locator": "PDF 38頁",
+            "kind": "primary",
+            "pdfPage": 38
+          }
+        },
+        {
+          "id": "fy2023-eps",
+          "entity": "A. O. Smith",
+          "metric": "希薄化後EPS",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS",
+          "value": 3.69,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/76cebc4d-7d63-4749-b77e-7d4e2649ef40",
+            "publishedOn": "2026-02-10",
+            "locator": "PDF 38頁",
+            "kind": "primary",
+            "pdfPage": 38
+          }
+        },
+        {
+          "id": "fy2023-cfo",
+          "entity": "A. O. Smith",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 670.3,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/76cebc4d-7d63-4749-b77e-7d4e2649ef40",
+            "publishedOn": "2026-02-10",
+            "locator": "CF計算書 PDF 39頁",
+            "kind": "primary",
+            "pdfPage": 39
+          }
+        },
+        {
+          "id": "fy2023-capex",
+          "entity": "A. O. Smith",
+          "metric": "現金設備投資支出（正値）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（正値）",
+          "value": 72.6,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/76cebc4d-7d63-4749-b77e-7d4e2649ef40",
+            "publishedOn": "2026-02-10",
+            "locator": "CF計算書 PDF 39頁",
+            "kind": "primary",
+            "pdfPage": 39
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fy2023-fcf",
+          "operation": "difference",
+          "inputs": [
+            "fy2023-cfo",
+            "fy2023-capex"
+          ],
+          "definition": "営業CF−現金設備投資",
+          "precision": 1,
+          "value": 597.7
+        }
+      ]
+    },
+    {
+      "id": "fy2024",
+      "question": "| 2024 | 3,818.1 | 533.6 | 3.63 | 581.8 | 108.0 | 473.8 |",
+      "definition": "会社開示。連結範囲・四半期/累計・GAAP/調整後の差は本文に記載。",
+      "status": "ready",
+      "claim": "| 2024 | 3,818.1 | 533.6 | 3.63 | 581.8 | 108.0 | 473.8 |",
+      "requiredInputs": [
+        {
+          "id": "fy2024-sales",
+          "entity": "A. O. Smith",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "fy2024-net",
+          "entity": "A. O. Smith",
+          "metric": "純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "fy2024-eps",
+          "entity": "A. O. Smith",
+          "metric": "希薄化後EPS",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS"
+        },
+        {
+          "id": "fy2024-cfo",
+          "entity": "A. O. Smith",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "fy2024-capex",
+          "entity": "A. O. Smith",
+          "metric": "現金設備投資支出（正値）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（正値）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fy2024-sales",
+          "entity": "A. O. Smith",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 3818.1,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/76cebc4d-7d63-4749-b77e-7d4e2649ef40",
+            "publishedOn": "2026-02-10",
+            "locator": "PDF 38頁",
+            "kind": "primary",
+            "pdfPage": 38
+          }
+        },
+        {
+          "id": "fy2024-net",
+          "entity": "A. O. Smith",
+          "metric": "純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 533.6,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/76cebc4d-7d63-4749-b77e-7d4e2649ef40",
+            "publishedOn": "2026-02-10",
+            "locator": "PDF 38頁",
+            "kind": "primary",
+            "pdfPage": 38
+          }
+        },
+        {
+          "id": "fy2024-eps",
+          "entity": "A. O. Smith",
+          "metric": "希薄化後EPS",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS",
+          "value": 3.63,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/76cebc4d-7d63-4749-b77e-7d4e2649ef40",
+            "publishedOn": "2026-02-10",
+            "locator": "PDF 38頁",
+            "kind": "primary",
+            "pdfPage": 38
+          }
+        },
+        {
+          "id": "fy2024-cfo",
+          "entity": "A. O. Smith",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 581.8,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/76cebc4d-7d63-4749-b77e-7d4e2649ef40",
+            "publishedOn": "2026-02-10",
+            "locator": "CF計算書 PDF 39頁",
+            "kind": "primary",
+            "pdfPage": 39
+          }
+        },
+        {
+          "id": "fy2024-capex",
+          "entity": "A. O. Smith",
+          "metric": "現金設備投資支出（正値）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（正値）",
+          "value": 108,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/76cebc4d-7d63-4749-b77e-7d4e2649ef40",
+            "publishedOn": "2026-02-10",
+            "locator": "CF計算書 PDF 39頁",
+            "kind": "primary",
+            "pdfPage": 39
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fy2024-fcf",
+          "operation": "difference",
+          "inputs": [
+            "fy2024-cfo",
+            "fy2024-capex"
+          ],
+          "definition": "営業CF−現金設備投資",
+          "precision": 1,
+          "value": 473.8
+        }
+      ]
+    },
+    {
+      "id": "fy2025",
+      "question": "| 2025 | 3,830.2 | 546.2 | 3.85 | 616.8 | 70.8 | 546.0 |",
+      "definition": "会社開示。連結範囲・四半期/累計・GAAP/調整後の差は本文に記載。",
+      "status": "ready",
+      "claim": "| 2025 | 3,830.2 | 546.2 | 3.85 | 616.8 | 70.8 | 546.0 |",
+      "requiredInputs": [
+        {
+          "id": "fy2025-sales",
+          "entity": "A. O. Smith",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "fy2025-net",
+          "entity": "A. O. Smith",
+          "metric": "純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "fy2025-eps",
+          "entity": "A. O. Smith",
+          "metric": "希薄化後EPS",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS"
+        },
+        {
+          "id": "fy2025-cfo",
+          "entity": "A. O. Smith",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "fy2025-capex",
+          "entity": "A. O. Smith",
+          "metric": "現金設備投資支出（正値）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（正値）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fy2025-sales",
+          "entity": "A. O. Smith",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 3830.2,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/76cebc4d-7d63-4749-b77e-7d4e2649ef40",
+            "publishedOn": "2026-02-10",
+            "locator": "PDF 38頁",
+            "kind": "primary",
+            "pdfPage": 38
+          }
+        },
+        {
+          "id": "fy2025-net",
+          "entity": "A. O. Smith",
+          "metric": "純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 546.2,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/76cebc4d-7d63-4749-b77e-7d4e2649ef40",
+            "publishedOn": "2026-02-10",
+            "locator": "PDF 38頁",
+            "kind": "primary",
+            "pdfPage": 38
+          }
+        },
+        {
+          "id": "fy2025-eps",
+          "entity": "A. O. Smith",
+          "metric": "希薄化後EPS",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS",
+          "value": 3.85,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/76cebc4d-7d63-4749-b77e-7d4e2649ef40",
+            "publishedOn": "2026-02-10",
+            "locator": "PDF 38頁",
+            "kind": "primary",
+            "pdfPage": 38
+          }
+        },
+        {
+          "id": "fy2025-cfo",
+          "entity": "A. O. Smith",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 616.8,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/76cebc4d-7d63-4749-b77e-7d4e2649ef40",
+            "publishedOn": "2026-02-10",
+            "locator": "CF計算書 PDF 39頁",
+            "kind": "primary",
+            "pdfPage": 39
+          }
+        },
+        {
+          "id": "fy2025-capex",
+          "entity": "A. O. Smith",
+          "metric": "現金設備投資支出（正値）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出（正値）",
+          "value": 70.8,
+          "source": {
+            "url": "https://investor.aosmith.com/static-files/76cebc4d-7d63-4749-b77e-7d4e2649ef40",
+            "publishedOn": "2026-02-10",
+            "locator": "CF計算書 PDF 39頁",
+            "kind": "primary",
+            "pdfPage": 39
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fy2025-fcf",
+          "operation": "difference",
+          "inputs": [
+            "fy2025-cfo",
+            "fy2025-capex"
+          ],
+          "definition": "営業CF−現金設備投資",
+          "precision": 1,
+          "value": 546
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "2026年7〜9月の売上高は940.5、前年同期942.5に対してほぼ横ばい。純利益は132.0から126.3、希薄化後EPSは0.94から0.93へ低下した。",
+      "definition": "会社開示。連結範囲・四半期/累計・GAAP/調整後の差は本文に記載。",
+      "status": "ready",
+      "claim": "2026年7〜9月の売上高は940.5、前年同期942.5に対してほぼ横ばい。純利益は132.0から126.3、希薄化後EPSは0.94から0.93へ低下した。",
+      "requiredInputs": [
+        {
+          "id": "q3-0",
+          "entity": "A. O. Smith",
+          "metric": "2026Q3売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3売上"
+        },
+        {
+          "id": "q3-1",
+          "entity": "A. O. Smith",
+          "metric": "2025Q3売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3売上"
+        },
+        {
+          "id": "q3-2",
+          "entity": "A. O. Smith",
+          "metric": "2025Q3純利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3純利益"
+        },
+        {
+          "id": "q3-3",
+          "entity": "A. O. Smith",
+          "metric": "2026Q3純利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3純利益"
+        },
+        {
+          "id": "q3-4",
+          "entity": "A. O. Smith",
+          "metric": "2025Q3EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "2025Q3EPS"
+        },
+        {
+          "id": "q3-5",
+          "entity": "A. O. Smith",
+          "metric": "2026Q3EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "2026Q3EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "q3-0",
+          "entity": "A. O. Smith",
+          "metric": "2026Q3売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3売上",
+          "value": 940.5,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "q3-1",
+          "entity": "A. O. Smith",
+          "metric": "2025Q3売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3売上",
+          "value": 942.5,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "q3-2",
+          "entity": "A. O. Smith",
+          "metric": "2025Q3純利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3純利益",
+          "value": 132,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "q3-3",
+          "entity": "A. O. Smith",
+          "metric": "2026Q3純利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3純利益",
+          "value": 126.3,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "q3-4",
+          "entity": "A. O. Smith",
+          "metric": "2025Q3EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "2025Q3EPS",
+          "value": 0.94,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "q3-5",
+          "entity": "A. O. Smith",
+          "metric": "2026Q3EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "2026Q3EPS",
+          "value": 0.93,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 1頁",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "segments",
+      "question": "北米セグメント利益は179.7から179.9とほぼ横ばいで、利益率は24.2%から23.6%へ低下。",
+      "definition": "会社開示。連結範囲・四半期/累計・GAAP/調整後の差は本文に記載。",
+      "status": "ready",
+      "claim": "北米セグメント利益は179.7から179.9とほぼ横ばいで、利益率は24.2%から23.6%へ低下。",
+      "requiredInputs": [
+        {
+          "id": "segments-0",
+          "entity": "A. O. Smith",
+          "metric": "2025Q3北米売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3北米売上"
+        },
+        {
+          "id": "segments-1",
+          "entity": "A. O. Smith",
+          "metric": "2026Q3北米売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3北米売上"
+        },
+        {
+          "id": "segments-2",
+          "entity": "A. O. Smith",
+          "metric": "Leonard寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Leonard寄与"
+        },
+        {
+          "id": "segments-3",
+          "entity": "A. O. Smith",
+          "metric": "既存成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "既存成長率"
+        },
+        {
+          "id": "segments-4",
+          "entity": "A. O. Smith",
+          "metric": "2025Q3北米利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3北米利益"
+        },
+        {
+          "id": "segments-5",
+          "entity": "A. O. Smith",
+          "metric": "2026Q3北米利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3北米利益"
+        },
+        {
+          "id": "segments-6",
+          "entity": "A. O. Smith",
+          "metric": "2025Q3北米利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2025Q3北米利益率"
+        },
+        {
+          "id": "segments-7",
+          "entity": "A. O. Smith",
+          "metric": "2026Q3北米利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026Q3北米利益率"
+        },
+        {
+          "id": "segments-8",
+          "entity": "A. O. Smith",
+          "metric": "2025Q3ROW売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3ROW売上"
+        },
+        {
+          "id": "segments-9",
+          "entity": "A. O. Smith",
+          "metric": "2026Q3ROW売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3ROW売上"
+        },
+        {
+          "id": "segments-10",
+          "entity": "A. O. Smith",
+          "metric": "2025Q3ROW利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3ROW利益"
+        },
+        {
+          "id": "segments-11",
+          "entity": "A. O. Smith",
+          "metric": "2026Q3ROW利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3ROW利益"
+        },
+        {
+          "id": "segments-12",
+          "entity": "A. O. Smith",
+          "metric": "FX寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FX寄与"
+        },
+        {
+          "id": "segments-13",
+          "entity": "A. O. Smith",
+          "metric": "中国現地通貨成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "中国現地通貨成長率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "segments-0",
+          "entity": "A. O. Smith",
+          "metric": "2025Q3北米売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3北米売上",
+          "value": 742.8,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "segments-1",
+          "entity": "A. O. Smith",
+          "metric": "2026Q3北米売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3北米売上",
+          "value": 761.6,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "segments-2",
+          "entity": "A. O. Smith",
+          "metric": "Leonard寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Leonard寄与",
+          "value": 15,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "segments-3",
+          "entity": "A. O. Smith",
+          "metric": "既存成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "既存成長率",
+          "value": 1,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "segments-4",
+          "entity": "A. O. Smith",
+          "metric": "2025Q3北米利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3北米利益",
+          "value": 179.7,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "segments-5",
+          "entity": "A. O. Smith",
+          "metric": "2026Q3北米利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3北米利益",
+          "value": 179.9,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "segments-6",
+          "entity": "A. O. Smith",
+          "metric": "2025Q3北米利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2025Q3北米利益率",
+          "value": 24.2,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "segments-7",
+          "entity": "A. O. Smith",
+          "metric": "2026Q3北米利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026Q3北米利益率",
+          "value": 23.6,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "segments-8",
+          "entity": "A. O. Smith",
+          "metric": "2025Q3ROW売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3ROW売上",
+          "value": 207.9,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "segments-9",
+          "entity": "A. O. Smith",
+          "metric": "2026Q3ROW売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3ROW売上",
+          "value": 192.8,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "segments-10",
+          "entity": "A. O. Smith",
+          "metric": "2025Q3ROW利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3ROW利益",
+          "value": 15.4,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "segments-11",
+          "entity": "A. O. Smith",
+          "metric": "2026Q3ROW利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3ROW利益",
+          "value": 10.5,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "segments-12",
+          "entity": "A. O. Smith",
+          "metric": "FX寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FX寄与",
+          "value": 5,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "segments-13",
+          "entity": "A. O. Smith",
+          "metric": "中国現地通貨成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "中国現地通貨成長率",
+          "value": -17,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 2頁",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash",
+      "question": "筆者計算では、営業CFの変化は−4.3、設備投資の減少は20.0。その差し引きでFCFが15.7増えている。",
+      "definition": "会社開示。連結範囲・四半期/累計・GAAP/調整後の差は本文に記載。",
+      "status": "ready",
+      "claim": "筆者計算では、営業CFの変化は−4.3、設備投資の減少は20.0。その差し引きでFCFが15.7増えている。",
+      "requiredInputs": [
+        {
+          "id": "cash-cfo26",
+          "entity": "A. O. Smith",
+          "metric": "2026累計CFO",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026累計CFO"
+        },
+        {
+          "id": "cash-cfo25",
+          "entity": "A. O. Smith",
+          "metric": "2025累計CFO",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025累計CFO"
+        },
+        {
+          "id": "cash-cap26",
+          "entity": "A. O. Smith",
+          "metric": "2026累計Capex",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026累計Capex"
+        },
+        {
+          "id": "cash-cap25",
+          "entity": "A. O. Smith",
+          "metric": "2025累計Capex",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025累計Capex"
+        },
+        {
+          "id": "cash-fcf26",
+          "entity": "A. O. Smith",
+          "metric": "2026累計FCF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026累計FCF"
+        },
+        {
+          "id": "cash-fcf25",
+          "entity": "A. O. Smith",
+          "metric": "2025累計FCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025累計FCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cash-cfo26",
+          "entity": "A. O. Smith",
+          "metric": "2026累計CFO",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026累計CFO",
+          "value": 429.4,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "cash-cfo25",
+          "entity": "A. O. Smith",
+          "metric": "2025累計CFO",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025累計CFO",
+          "value": 433.7,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "cash-cap26",
+          "entity": "A. O. Smith",
+          "metric": "2026累計Capex",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026累計Capex",
+          "value": 33.2,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "cash-cap25",
+          "entity": "A. O. Smith",
+          "metric": "2025累計Capex",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025累計Capex",
+          "value": 53.2,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "cash-fcf26",
+          "entity": "A. O. Smith",
+          "metric": "2026累計FCF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026累計FCF",
+          "value": 396.2,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "cash-fcf25",
+          "entity": "A. O. Smith",
+          "metric": "2025累計FCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025累計FCF",
+          "value": 380.5,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 7頁",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "cash-cfodiff",
+          "operation": "difference",
+          "inputs": [
+            "cash-cfo26",
+            "cash-cfo25"
+          ],
+          "definition": "CFO前年差",
+          "precision": 1,
+          "value": -4.3
+        },
+        {
+          "id": "cash-capdiff",
+          "operation": "difference",
+          "inputs": [
+            "cash-cap25",
+            "cash-cap26"
+          ],
+          "definition": "投資支出減少",
+          "precision": 1,
+          "value": 20
+        },
+        {
+          "id": "cash-fcfdiff",
+          "operation": "difference",
+          "inputs": [
+            "cash-fcf26",
+            "cash-fcf25"
+          ],
+          "definition": "FCF前年差",
+          "precision": 1,
+          "value": 15.7
+        }
+      ]
+    },
+    {
+      "id": "allocation",
+      "question": "1〜9月の買収支出は469.5、自社株買い260.6、配当148.7。",
+      "definition": "会社開示。連結範囲・四半期/累計・GAAP/調整後の差は本文に記載。",
+      "status": "ready",
+      "claim": "1〜9月の買収支出は469.5、自社株買い260.6、配当148.7。",
+      "requiredInputs": [
+        {
+          "id": "allocation-ma",
+          "entity": "A. O. Smith",
+          "metric": "買収支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収支出"
+        },
+        {
+          "id": "allocation-buy",
+          "entity": "A. O. Smith",
+          "metric": "買戻",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買戻"
+        },
+        {
+          "id": "allocation-div",
+          "entity": "A. O. Smith",
+          "metric": "配当",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当"
+        },
+        {
+          "id": "allocation-cash",
+          "entity": "A. O. Smith",
+          "metric": "9月末現金",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "9月末現金"
+        },
+        {
+          "id": "allocation-debt",
+          "entity": "A. O. Smith",
+          "metric": "9月末負債",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "9月末負債"
+        }
+      ],
+      "observations": [
+        {
+          "id": "allocation-ma",
+          "entity": "A. O. Smith",
+          "metric": "買収支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収支出",
+          "value": 469.5,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "allocation-buy",
+          "entity": "A. O. Smith",
+          "metric": "買戻",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買戻",
+          "value": 260.6,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "allocation-div",
+          "entity": "A. O. Smith",
+          "metric": "配当",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当",
+          "value": 148.7,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "allocation-cash",
+          "entity": "A. O. Smith",
+          "metric": "9月末現金",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "9月末現金",
+          "value": 234.5,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "allocation-debt",
+          "entity": "A. O. Smith",
+          "metric": "9月末負債",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "9月末負債",
+          "value": 673.1,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 5頁",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "sale",
+      "question": "10月27日の契約では、CPEが中国事業の81%を取得し、A. O. Smithは19%を保有する。",
+      "definition": "会社開示。連結範囲・四半期/累計・GAAP/調整後の差は本文に記載。",
+      "status": "ready",
+      "claim": "10月27日の契約では、CPEが中国事業の81%を取得し、A. O. Smithは19%を保有する。",
+      "requiredInputs": [
+        {
+          "id": "sale-sold",
+          "entity": "A. O. Smith",
+          "metric": "譲渡予定持分",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-06-30",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "譲渡予定持分"
+        },
+        {
+          "id": "sale-retain",
+          "entity": "A. O. Smith",
+          "metric": "残存予定持分",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-06-30",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "残存予定持分"
+        },
+        {
+          "id": "sale-value",
+          "entity": "A. O. Smith",
+          "metric": "現金負債除外概算価値",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-06-30",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "現金負債除外概算価値"
+        },
+        {
+          "id": "sale-total",
+          "entity": "A. O. Smith",
+          "metric": "ライセンスNPV込み価値はこの額超",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-06-30",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "ライセンスNPV込み価値はこの額超"
+        },
+        {
+          "id": "sale-repat",
+          "entity": "A. O. Smith",
+          "metric": "予定送還額",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-06-30",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "予定送還額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sale-sold",
+          "entity": "A. O. Smith",
+          "metric": "譲渡予定持分",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-06-30",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "譲渡予定持分",
+          "value": 81,
+          "source": {
+            "url": "https://investor.aosmith.com/news-releases/news-release-details/o-smith-announces-majority-interest-china-business-acquired-cpe",
+            "publishedOn": "2026-10-27",
+            "locator": "Transaction Details",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sale-retain",
+          "entity": "A. O. Smith",
+          "metric": "残存予定持分",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-06-30",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "残存予定持分",
+          "value": 19,
+          "source": {
+            "url": "https://investor.aosmith.com/news-releases/news-release-details/o-smith-announces-majority-interest-china-business-acquired-cpe",
+            "publishedOn": "2026-10-27",
+            "locator": "Transaction Details",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sale-value",
+          "entity": "A. O. Smith",
+          "metric": "現金負債除外概算価値",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-06-30",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "現金負債除外概算価値",
+          "value": 400,
+          "source": {
+            "url": "https://investor.aosmith.com/news-releases/news-release-details/o-smith-announces-majority-interest-china-business-acquired-cpe",
+            "publishedOn": "2026-10-27",
+            "locator": "Transaction Details",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sale-total",
+          "entity": "A. O. Smith",
+          "metric": "ライセンスNPV込み価値はこの額超",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-06-30",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "ライセンスNPV込み価値はこの額超",
+          "value": 500,
+          "source": {
+            "url": "https://investor.aosmith.com/news-releases/news-release-details/o-smith-announces-majority-interest-china-business-acquired-cpe",
+            "publishedOn": "2026-10-27",
+            "locator": "Transaction Details",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sale-repat",
+          "entity": "A. O. Smith",
+          "metric": "予定送還額",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-06-30",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "予定送還額",
+          "value": 80,
+          "source": {
+            "url": "https://investor.aosmith.com/news-releases/news-release-details/o-smith-announces-majority-interest-china-business-acquired-cpe",
+            "publishedOn": "2026-10-27",
+            "locator": "Transaction Details",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "outlook",
+      "question": "中国除外ベースの2025年売上は3,155.3、2026年会社予想は3,270〜3,290。",
+      "definition": "会社開示。連結範囲・四半期/累計・GAAP/調整後の差は本文に記載。",
+      "status": "ready",
+      "claim": "中国除外ベースの2025年売上は3,155.3、2026年会社予想は3,270〜3,290。",
+      "requiredInputs": [
+        {
+          "id": "outlook-sales25",
+          "entity": "A. O. Smith",
+          "metric": "2025中国除外売上",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025中国除外売上"
+        },
+        {
+          "id": "outlook-lo",
+          "entity": "A. O. Smith",
+          "metric": "2026中国除外売上予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026中国除外売上予想下限"
+        },
+        {
+          "id": "outlook-hi",
+          "entity": "A. O. Smith",
+          "metric": "2026中国除外売上予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026中国除外売上予想上限"
+        },
+        {
+          "id": "outlook-eps25",
+          "entity": "A. O. Smith",
+          "metric": "2025中国除外EPS",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "2025中国除外EPS"
+        },
+        {
+          "id": "outlook-epslo",
+          "entity": "A. O. Smith",
+          "metric": "2026中国除外EPS予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "2026中国除外EPS予想下限"
+        },
+        {
+          "id": "outlook-epshi",
+          "entity": "A. O. Smith",
+          "metric": "2026中国除外EPS予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "2026中国除外EPS予想上限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "outlook-sales25",
+          "entity": "A. O. Smith",
+          "metric": "2025中国除外売上",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025中国除外売上",
+          "value": 3155.3,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 8頁",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "outlook-lo",
+          "entity": "A. O. Smith",
+          "metric": "2026中国除外売上予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026中国除外売上予想下限",
+          "value": 3270,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 8頁",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "outlook-hi",
+          "entity": "A. O. Smith",
+          "metric": "2026中国除外売上予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "2026中国除外売上予想上限",
+          "value": 3290,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 8頁",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "outlook-eps25",
+          "entity": "A. O. Smith",
+          "metric": "2025中国除外EPS",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "2025中国除外EPS",
+          "value": 3.42,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 8頁",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "outlook-epslo",
+          "entity": "A. O. Smith",
+          "metric": "2026中国除外EPS予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "2026中国除外EPS予想下限",
+          "value": 3.42,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 8頁",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "outlook-epshi",
+          "entity": "A. O. Smith",
+          "metric": "2026中国除外EPS予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "2026中国除外EPS予想上限",
+          "value": 3.52,
+          "source": {
+            "url": "https://investor.aosmith.com/node/23211/pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "PDF 8頁",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
