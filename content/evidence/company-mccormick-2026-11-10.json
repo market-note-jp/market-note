@@ -1,0 +1,1797 @@
+{
+  "version": 1,
+  "articleSlug": "company-mccormick-2026-11-10",
+  "articleSha256": "1bbbbaa6699a3108d462739d2ded5ebd792d4beca9e0e90c11c095cf722cee21",
+  "checkedAt": "2026-11-10T10:23:51.185Z",
+  "informationCutoff": "2026-11-10T10:00:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "FY2023/FY2025 10-K・Q3 2026 10-Q原表、10月1日公式決算、Unilever発表、CMA本文で確認。5期のGAAP利益と現金設備投資を統一。過去年と9カ月は別比較。株価・市場予想・統合後ROICは未確認につき記載しない。",
+  "comparisons": [
+    {
+      "id": "annual-2021",
+      "question": "| FY2021 | 6,317.9 | 1,015.1 | 828.3 | 278.0 | 550.3 |",
+      "definition": "会社開示US GAAP連結実績。調整後・有機成長率は会社独自指標と区別。",
+      "status": "ready",
+      "claim": "| FY2021 | 6,317.9 | 1,015.1 | 828.3 | 278.0 | 550.3 |",
+      "requiredInputs": [
+        {
+          "id": "s2021",
+          "entity": "McCormick連結",
+          "metric": "売上高",
+          "periodStart": "2020-12-01",
+          "periodEnd": "2021-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "o2021",
+          "entity": "McCormick連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2020-12-01",
+          "periodEnd": "2021-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "c2021",
+          "entity": "McCormick連結",
+          "metric": "営業CF",
+          "periodStart": "2020-12-01",
+          "periodEnd": "2021-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "k2021",
+          "entity": "McCormick連結",
+          "metric": "設備投資支出（ソフトウェア含む、CF符号）",
+          "periodStart": "2020-12-01",
+          "periodEnd": "2021-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資支出（ソフトウェア含む、CF符号）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s2021",
+          "entity": "McCormick連結",
+          "metric": "売上高",
+          "periodStart": "2020-12-01",
+          "periodEnd": "2021-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 6317.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375424000027/mkc-20231130.htm",
+            "publishedOn": "2024-01-25",
+            "locator": "Item 8 Consolidated Income Statements and Cash Flow Statements",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o2021",
+          "entity": "McCormick連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2020-12-01",
+          "periodEnd": "2021-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 1015.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375424000027/mkc-20231130.htm",
+            "publishedOn": "2024-01-25",
+            "locator": "Item 8 Consolidated Income Statements and Cash Flow Statements",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c2021",
+          "entity": "McCormick連結",
+          "metric": "営業CF",
+          "periodStart": "2020-12-01",
+          "periodEnd": "2021-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 828.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375424000027/mkc-20231130.htm",
+            "publishedOn": "2024-01-25",
+            "locator": "Item 8 Consolidated Income Statements and Cash Flow Statements",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "k2021",
+          "entity": "McCormick連結",
+          "metric": "設備投資支出（ソフトウェア含む、CF符号）",
+          "periodStart": "2020-12-01",
+          "periodEnd": "2021-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資支出（ソフトウェア含む、CF符号）",
+          "value": -278,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375424000027/mkc-20231130.htm",
+            "publishedOn": "2024-01-25",
+            "locator": "Item 8 Consolidated Income Statements and Cash Flow Statements",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "f2021",
+          "operation": "sum",
+          "inputs": [
+            "c2021",
+            "k2021"
+          ],
+          "definition": "営業CF＋CF計算書の設備投資支出（負値）",
+          "precision": 1,
+          "value": 550.3
+        }
+      ]
+    },
+    {
+      "id": "annual-2022",
+      "question": "| FY2022 | 6,350.5 | 863.6 | 651.5 | 262.0 | 389.5 |",
+      "definition": "会社開示US GAAP連結実績。調整後・有機成長率は会社独自指標と区別。",
+      "status": "ready",
+      "claim": "| FY2022 | 6,350.5 | 863.6 | 651.5 | 262.0 | 389.5 |",
+      "requiredInputs": [
+        {
+          "id": "s2022",
+          "entity": "McCormick連結",
+          "metric": "売上高",
+          "periodStart": "2021-12-01",
+          "periodEnd": "2022-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "o2022",
+          "entity": "McCormick連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2021-12-01",
+          "periodEnd": "2022-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "c2022",
+          "entity": "McCormick連結",
+          "metric": "営業CF",
+          "periodStart": "2021-12-01",
+          "periodEnd": "2022-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "k2022",
+          "entity": "McCormick連結",
+          "metric": "設備投資支出（ソフトウェア含む、CF符号）",
+          "periodStart": "2021-12-01",
+          "periodEnd": "2022-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資支出（ソフトウェア含む、CF符号）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s2022",
+          "entity": "McCormick連結",
+          "metric": "売上高",
+          "periodStart": "2021-12-01",
+          "periodEnd": "2022-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 6350.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375424000027/mkc-20231130.htm",
+            "publishedOn": "2024-01-25",
+            "locator": "Item 8 Consolidated Income Statements and Cash Flow Statements",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o2022",
+          "entity": "McCormick連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2021-12-01",
+          "periodEnd": "2022-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 863.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375424000027/mkc-20231130.htm",
+            "publishedOn": "2024-01-25",
+            "locator": "Item 8 Consolidated Income Statements and Cash Flow Statements",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c2022",
+          "entity": "McCormick連結",
+          "metric": "営業CF",
+          "periodStart": "2021-12-01",
+          "periodEnd": "2022-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 651.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375424000027/mkc-20231130.htm",
+            "publishedOn": "2024-01-25",
+            "locator": "Item 8 Consolidated Income Statements and Cash Flow Statements",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "k2022",
+          "entity": "McCormick連結",
+          "metric": "設備投資支出（ソフトウェア含む、CF符号）",
+          "periodStart": "2021-12-01",
+          "periodEnd": "2022-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資支出（ソフトウェア含む、CF符号）",
+          "value": -262,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375424000027/mkc-20231130.htm",
+            "publishedOn": "2024-01-25",
+            "locator": "Item 8 Consolidated Income Statements and Cash Flow Statements",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "f2022",
+          "operation": "sum",
+          "inputs": [
+            "c2022",
+            "k2022"
+          ],
+          "definition": "営業CF＋CF計算書の設備投資支出（負値）",
+          "precision": 1,
+          "value": 389.5
+        }
+      ]
+    },
+    {
+      "id": "annual-2023",
+      "question": "| FY2023 | 6,662.2 | 963.0 | 1,237.3 | 263.9 | 973.4 |",
+      "definition": "会社開示US GAAP連結実績。調整後・有機成長率は会社独自指標と区別。",
+      "status": "ready",
+      "claim": "| FY2023 | 6,662.2 | 963.0 | 1,237.3 | 263.9 | 973.4 |",
+      "requiredInputs": [
+        {
+          "id": "s2023",
+          "entity": "McCormick連結",
+          "metric": "売上高",
+          "periodStart": "2022-12-01",
+          "periodEnd": "2023-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "o2023",
+          "entity": "McCormick連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2022-12-01",
+          "periodEnd": "2023-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "c2023",
+          "entity": "McCormick連結",
+          "metric": "営業CF",
+          "periodStart": "2022-12-01",
+          "periodEnd": "2023-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "k2023",
+          "entity": "McCormick連結",
+          "metric": "設備投資支出（ソフトウェア含む、CF符号）",
+          "periodStart": "2022-12-01",
+          "periodEnd": "2023-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資支出（ソフトウェア含む、CF符号）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s2023",
+          "entity": "McCormick連結",
+          "metric": "売上高",
+          "periodStart": "2022-12-01",
+          "periodEnd": "2023-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 6662.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375424000027/mkc-20231130.htm",
+            "publishedOn": "2024-01-25",
+            "locator": "Item 8 Consolidated Income Statements and Cash Flow Statements",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o2023",
+          "entity": "McCormick連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2022-12-01",
+          "periodEnd": "2023-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 963,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375424000027/mkc-20231130.htm",
+            "publishedOn": "2024-01-25",
+            "locator": "Item 8 Consolidated Income Statements and Cash Flow Statements",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c2023",
+          "entity": "McCormick連結",
+          "metric": "営業CF",
+          "periodStart": "2022-12-01",
+          "periodEnd": "2023-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1237.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375424000027/mkc-20231130.htm",
+            "publishedOn": "2024-01-25",
+            "locator": "Item 8 Consolidated Income Statements and Cash Flow Statements",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "k2023",
+          "entity": "McCormick連結",
+          "metric": "設備投資支出（ソフトウェア含む、CF符号）",
+          "periodStart": "2022-12-01",
+          "periodEnd": "2023-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資支出（ソフトウェア含む、CF符号）",
+          "value": -263.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375424000027/mkc-20231130.htm",
+            "publishedOn": "2024-01-25",
+            "locator": "Item 8 Consolidated Income Statements and Cash Flow Statements",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "f2023",
+          "operation": "sum",
+          "inputs": [
+            "c2023",
+            "k2023"
+          ],
+          "definition": "営業CF＋CF計算書の設備投資支出（負値）",
+          "precision": 1,
+          "value": 973.4
+        }
+      ]
+    },
+    {
+      "id": "annual-2024",
+      "question": "| FY2024 | 6,723.7 | 1,060.3 | 921.9 | 274.9 | 647.0 |",
+      "definition": "会社開示US GAAP連結実績。調整後・有機成長率は会社独自指標と区別。",
+      "status": "ready",
+      "claim": "| FY2024 | 6,723.7 | 1,060.3 | 921.9 | 274.9 | 647.0 |",
+      "requiredInputs": [
+        {
+          "id": "s2024",
+          "entity": "McCormick連結",
+          "metric": "売上高",
+          "periodStart": "2023-12-01",
+          "periodEnd": "2024-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "o2024",
+          "entity": "McCormick連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2023-12-01",
+          "periodEnd": "2024-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "c2024",
+          "entity": "McCormick連結",
+          "metric": "営業CF",
+          "periodStart": "2023-12-01",
+          "periodEnd": "2024-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "k2024",
+          "entity": "McCormick連結",
+          "metric": "設備投資支出（ソフトウェア含む、CF符号）",
+          "periodStart": "2023-12-01",
+          "periodEnd": "2024-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資支出（ソフトウェア含む、CF符号）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s2024",
+          "entity": "McCormick連結",
+          "metric": "売上高",
+          "periodStart": "2023-12-01",
+          "periodEnd": "2024-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 6723.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000037/mkc-20251130.htm",
+            "publishedOn": "2026-01-22",
+            "locator": "Item 8 Consolidated Income Statements and Cash Flow Statements",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o2024",
+          "entity": "McCormick連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2023-12-01",
+          "periodEnd": "2024-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 1060.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000037/mkc-20251130.htm",
+            "publishedOn": "2026-01-22",
+            "locator": "Item 8 Consolidated Income Statements and Cash Flow Statements",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c2024",
+          "entity": "McCormick連結",
+          "metric": "営業CF",
+          "periodStart": "2023-12-01",
+          "periodEnd": "2024-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 921.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000037/mkc-20251130.htm",
+            "publishedOn": "2026-01-22",
+            "locator": "Item 8 Consolidated Income Statements and Cash Flow Statements",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "k2024",
+          "entity": "McCormick連結",
+          "metric": "設備投資支出（ソフトウェア含む、CF符号）",
+          "periodStart": "2023-12-01",
+          "periodEnd": "2024-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資支出（ソフトウェア含む、CF符号）",
+          "value": -274.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000037/mkc-20251130.htm",
+            "publishedOn": "2026-01-22",
+            "locator": "Item 8 Consolidated Income Statements and Cash Flow Statements",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "f2024",
+          "operation": "sum",
+          "inputs": [
+            "c2024",
+            "k2024"
+          ],
+          "definition": "営業CF＋CF計算書の設備投資支出（負値）",
+          "precision": 1,
+          "value": 647
+        }
+      ]
+    },
+    {
+      "id": "annual-2025",
+      "question": "| FY2025 | 6,840.3 | 1,070.8 | 962.2 | 221.8 | 740.4 |",
+      "definition": "会社開示US GAAP連結実績。調整後・有機成長率は会社独自指標と区別。",
+      "status": "ready",
+      "claim": "| FY2025 | 6,840.3 | 1,070.8 | 962.2 | 221.8 | 740.4 |",
+      "requiredInputs": [
+        {
+          "id": "s2025",
+          "entity": "McCormick連結",
+          "metric": "売上高",
+          "periodStart": "2024-12-01",
+          "periodEnd": "2025-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "o2025",
+          "entity": "McCormick連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2024-12-01",
+          "periodEnd": "2025-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "c2025",
+          "entity": "McCormick連結",
+          "metric": "営業CF",
+          "periodStart": "2024-12-01",
+          "periodEnd": "2025-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "k2025",
+          "entity": "McCormick連結",
+          "metric": "設備投資支出（ソフトウェア含む、CF符号）",
+          "periodStart": "2024-12-01",
+          "periodEnd": "2025-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資支出（ソフトウェア含む、CF符号）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s2025",
+          "entity": "McCormick連結",
+          "metric": "売上高",
+          "periodStart": "2024-12-01",
+          "periodEnd": "2025-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 6840.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000037/mkc-20251130.htm",
+            "publishedOn": "2026-01-22",
+            "locator": "Item 8 Consolidated Income Statements and Cash Flow Statements",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o2025",
+          "entity": "McCormick連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2024-12-01",
+          "periodEnd": "2025-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 1070.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000037/mkc-20251130.htm",
+            "publishedOn": "2026-01-22",
+            "locator": "Item 8 Consolidated Income Statements and Cash Flow Statements",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c2025",
+          "entity": "McCormick連結",
+          "metric": "営業CF",
+          "periodStart": "2024-12-01",
+          "periodEnd": "2025-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 962.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000037/mkc-20251130.htm",
+            "publishedOn": "2026-01-22",
+            "locator": "Item 8 Consolidated Income Statements and Cash Flow Statements",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "k2025",
+          "entity": "McCormick連結",
+          "metric": "設備投資支出（ソフトウェア含む、CF符号）",
+          "periodStart": "2024-12-01",
+          "periodEnd": "2025-11-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資支出（ソフトウェア含む、CF符号）",
+          "value": -221.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000037/mkc-20251130.htm",
+            "publishedOn": "2026-01-22",
+            "locator": "Item 8 Consolidated Income Statements and Cash Flow Statements",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "f2025",
+          "operation": "sum",
+          "inputs": [
+            "c2025",
+            "k2025"
+          ],
+          "definition": "営業CF＋CF計算書の設備投資支出（負値）",
+          "precision": 1,
+          "value": 740.4
+        }
+      ]
+    },
+    {
+      "id": "sales-bridge",
+      "question": "Q3売上増加率17.4%は、有機成長1.9%（数量・構成−0.3%、価格＋2.2%）、買収＋14.6%、為替＋0.9%に分かれる。",
+      "definition": "会社開示US GAAP連結実績。調整後・有機成長率は会社独自指標と区別。",
+      "status": "ready",
+      "claim": "Q3売上増加率17.4%は、有機成長1.9%（数量・構成−0.3%、価格＋2.2%）、買収＋14.6%、為替＋0.9%に分かれる。",
+      "requiredInputs": [
+        {
+          "id": "growth",
+          "entity": "McCormick連結",
+          "metric": "報告売上増加率",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "報告売上増加率"
+        },
+        {
+          "id": "organic",
+          "entity": "McCormick連結",
+          "metric": "有機成長率",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "有機成長率"
+        },
+        {
+          "id": "volume",
+          "entity": "McCormick連結",
+          "metric": "数量・構成寄与",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "数量・構成寄与"
+        },
+        {
+          "id": "price",
+          "entity": "McCormick連結",
+          "metric": "価格寄与",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "価格寄与"
+        },
+        {
+          "id": "acq",
+          "entity": "McCormick連結",
+          "metric": "買収寄与",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収寄与"
+        },
+        {
+          "id": "fx",
+          "entity": "McCormick連結",
+          "metric": "為替寄与",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "為替寄与"
+        }
+      ],
+      "observations": [
+        {
+          "id": "growth",
+          "entity": "McCormick連結",
+          "metric": "報告売上増加率",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "報告売上増加率",
+          "value": 17.4,
+          "source": {
+            "url": "https://ir.mccormick.com/news-releases/news-release-details/mccormick-reports-solid-third-quarter-performance-and-reaffirms",
+            "publishedOn": "2026-10-01",
+            "locator": "Sales Metrics, Third Quarter 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "organic",
+          "entity": "McCormick連結",
+          "metric": "有機成長率",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "有機成長率",
+          "value": 1.9,
+          "source": {
+            "url": "https://ir.mccormick.com/news-releases/news-release-details/mccormick-reports-solid-third-quarter-performance-and-reaffirms",
+            "publishedOn": "2026-10-01",
+            "locator": "Sales Metrics, Third Quarter 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "volume",
+          "entity": "McCormick連結",
+          "metric": "数量・構成寄与",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "数量・構成寄与",
+          "value": -0.3,
+          "source": {
+            "url": "https://ir.mccormick.com/news-releases/news-release-details/mccormick-reports-solid-third-quarter-performance-and-reaffirms",
+            "publishedOn": "2026-10-01",
+            "locator": "Sales Metrics, Third Quarter 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "price",
+          "entity": "McCormick連結",
+          "metric": "価格寄与",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "価格寄与",
+          "value": 2.2,
+          "source": {
+            "url": "https://ir.mccormick.com/news-releases/news-release-details/mccormick-reports-solid-third-quarter-performance-and-reaffirms",
+            "publishedOn": "2026-10-01",
+            "locator": "Sales Metrics, Third Quarter 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "McCormick連結",
+          "metric": "買収寄与",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "買収寄与",
+          "value": 14.6,
+          "source": {
+            "url": "https://ir.mccormick.com/news-releases/news-release-details/mccormick-reports-solid-third-quarter-performance-and-reaffirms",
+            "publishedOn": "2026-10-01",
+            "locator": "Sales Metrics, Third Quarter 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fx",
+          "entity": "McCormick連結",
+          "metric": "為替寄与",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "為替寄与",
+          "value": 0.9,
+          "source": {
+            "url": "https://ir.mccormick.com/news-releases/news-release-details/mccormick-reports-solid-third-quarter-performance-and-reaffirms",
+            "publishedOn": "2026-10-01",
+            "locator": "Sales Metrics, Third Quarter 2026",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "profit",
+      "question": "Q3のGAAP営業利益は288.7から217.0へ減少した一方、調整後営業利益は358.5となった。差額141.5は営業段階の特別費用である。",
+      "definition": "会社開示US GAAP連結実績。調整後・有機成長率は会社独自指標と区別。",
+      "status": "ready",
+      "claim": "Q3のGAAP営業利益は288.7から217.0へ減少した一方、調整後営業利益は358.5となった。差額141.5は営業段階の特別費用である。",
+      "requiredInputs": [
+        {
+          "id": "prior",
+          "entity": "McCormick連結",
+          "metric": "前年同期GAAP営業利益",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "前年同期GAAP営業利益"
+        },
+        {
+          "id": "op",
+          "entity": "McCormick連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "adj",
+          "entity": "McCormick連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後営業利益"
+        },
+        {
+          "id": "charges",
+          "entity": "McCormick連結",
+          "metric": "営業段階特別費用",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業段階特別費用"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prior",
+          "entity": "McCormick連結",
+          "metric": "前年同期GAAP営業利益",
+          "periodStart": "2025-06-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "前年同期GAAP営業利益",
+          "value": 288.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Condensed Consolidated Income Statement; Note 3 Special Charges",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "McCormick連結",
+          "metric": "GAAP営業利益",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 217,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Condensed Consolidated Income Statement; Note 3 Special Charges",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "adj",
+          "entity": "McCormick連結",
+          "metric": "調整後営業利益",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後営業利益",
+          "value": 358.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Condensed Consolidated Income Statement; Note 3 Special Charges",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "charges",
+          "entity": "McCormick連結",
+          "metric": "営業段階特別費用",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業段階特別費用",
+          "value": 141.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Condensed Consolidated Income Statement; Note 3 Special Charges",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-9m",
+      "question": "9カ月累計の営業CFは420.2から598.8、設備投資後CFは282.1から467.6へ増えた。",
+      "definition": "会社開示US GAAP連結実績。調整後・有機成長率は会社独自指標と区別。",
+      "status": "ready",
+      "claim": "9カ月累計の営業CFは420.2から598.8、設備投資後CFは282.1から467.6へ増えた。",
+      "requiredInputs": [
+        {
+          "id": "cprev",
+          "entity": "McCormick連結",
+          "metric": "前年9カ月営業CF",
+          "periodStart": "2024-12-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "前年9カ月営業CF"
+        },
+        {
+          "id": "kprev",
+          "entity": "McCormick連結",
+          "metric": "前年9カ月設備投資支出",
+          "periodStart": "2024-12-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "前年9カ月設備投資支出"
+        },
+        {
+          "id": "ccur",
+          "entity": "McCormick連結",
+          "metric": "当年9カ月営業CF",
+          "periodStart": "2025-12-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当年9カ月営業CF"
+        },
+        {
+          "id": "kcur",
+          "entity": "McCormick連結",
+          "metric": "当年9カ月設備投資支出",
+          "periodStart": "2025-12-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当年9カ月設備投資支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cprev",
+          "entity": "McCormick連結",
+          "metric": "前年9カ月営業CF",
+          "periodStart": "2024-12-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "前年9カ月営業CF",
+          "value": 420.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Condensed Consolidated Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "kprev",
+          "entity": "McCormick連結",
+          "metric": "前年9カ月設備投資支出",
+          "periodStart": "2024-12-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "前年9カ月設備投資支出",
+          "value": -138.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Condensed Consolidated Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ccur",
+          "entity": "McCormick連結",
+          "metric": "当年9カ月営業CF",
+          "periodStart": "2025-12-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当年9カ月営業CF",
+          "value": 598.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Condensed Consolidated Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "kcur",
+          "entity": "McCormick連結",
+          "metric": "当年9カ月設備投資支出",
+          "periodStart": "2025-12-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当年9カ月設備投資支出",
+          "value": -131.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Condensed Consolidated Statement of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fprev",
+          "operation": "sum",
+          "inputs": [
+            "cprev",
+            "kprev"
+          ],
+          "definition": "前年営業CF－現金設備投資",
+          "precision": 1,
+          "value": 282.1
+        },
+        {
+          "id": "fcur",
+          "operation": "sum",
+          "inputs": [
+            "ccur",
+            "kcur"
+          ],
+          "definition": "当年営業CF－現金設備投資",
+          "precision": 1,
+          "value": 467.6
+        }
+      ]
+    },
+    {
+      "id": "wc",
+      "question": "債権・在庫・仕入債務・その他資産負債の4行の合計は、前年の−321.6から当年の−99.5へ改善した。改善幅222.1は、営業CF増加178.6を上回る。",
+      "definition": "会社開示US GAAP連結実績。調整後・有機成長率は会社独自指標と区別。",
+      "status": "ready",
+      "claim": "債権・在庫・仕入債務・その他資産負債の4行の合計は、前年の−321.6から当年の−99.5へ改善した。改善幅222.1は、営業CF増加178.6を上回る。",
+      "requiredInputs": [
+        {
+          "id": "r0",
+          "entity": "McCormick連結",
+          "metric": "前年売上債権変動",
+          "periodStart": "2024-12-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "前年売上債権変動"
+        },
+        {
+          "id": "i0",
+          "entity": "McCormick連結",
+          "metric": "前年在庫変動",
+          "periodStart": "2024-12-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "前年在庫変動"
+        },
+        {
+          "id": "p0",
+          "entity": "McCormick連結",
+          "metric": "前年買掛金変動",
+          "periodStart": "2024-12-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "前年買掛金変動"
+        },
+        {
+          "id": "r1",
+          "entity": "McCormick連結",
+          "metric": "当年売上債権変動",
+          "periodStart": "2025-12-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当年売上債権変動"
+        },
+        {
+          "id": "i1",
+          "entity": "McCormick連結",
+          "metric": "当年在庫変動",
+          "periodStart": "2025-12-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当年在庫変動"
+        },
+        {
+          "id": "p1",
+          "entity": "McCormick連結",
+          "metric": "当年買掛金変動",
+          "periodStart": "2025-12-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当年買掛金変動"
+        },
+        {
+          "id": "other0",
+          "entity": "McCormick連結",
+          "metric": "その他資産負債変動",
+          "periodStart": "2024-12-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "その他資産負債変動"
+        },
+        {
+          "id": "other1",
+          "entity": "McCormick連結",
+          "metric": "その他資産負債変動",
+          "periodStart": "2025-12-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "その他資産負債変動"
+        }
+      ],
+      "observations": [
+        {
+          "id": "r0",
+          "entity": "McCormick連結",
+          "metric": "前年売上債権変動",
+          "periodStart": "2024-12-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "前年売上債権変動",
+          "value": -51.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Cash Flows: Changes in operating assets and liabilities",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i0",
+          "entity": "McCormick連結",
+          "metric": "前年在庫変動",
+          "periodStart": "2024-12-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "前年在庫変動",
+          "value": -26,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Cash Flows: Changes in operating assets and liabilities",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "p0",
+          "entity": "McCormick連結",
+          "metric": "前年買掛金変動",
+          "periodStart": "2024-12-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "前年買掛金変動",
+          "value": -62.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Cash Flows: Changes in operating assets and liabilities",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "r1",
+          "entity": "McCormick連結",
+          "metric": "当年売上債権変動",
+          "periodStart": "2025-12-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当年売上債権変動",
+          "value": 10.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Cash Flows: Changes in operating assets and liabilities",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i1",
+          "entity": "McCormick連結",
+          "metric": "当年在庫変動",
+          "periodStart": "2025-12-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当年在庫変動",
+          "value": -44.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Cash Flows: Changes in operating assets and liabilities",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "p1",
+          "entity": "McCormick連結",
+          "metric": "当年買掛金変動",
+          "periodStart": "2025-12-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当年買掛金変動",
+          "value": -9.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Cash Flows: Changes in operating assets and liabilities",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "other0",
+          "entity": "McCormick連結",
+          "metric": "その他資産負債変動",
+          "periodStart": "2024-12-01",
+          "periodEnd": "2025-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "その他資産負債変動",
+          "value": -181.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Cash Flow Statement: Other assets and liabilities",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "other1",
+          "entity": "McCormick連結",
+          "metric": "その他資産負債変動",
+          "periodStart": "2025-12-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "その他資産負債変動",
+          "value": -55.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Cash Flow Statement: Other assets and liabilities",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "wc0",
+          "operation": "sum",
+          "inputs": [
+            "r0",
+            "i0",
+            "p0",
+            "other0"
+          ],
+          "definition": "前年4行合計",
+          "precision": 1,
+          "value": -321.6
+        },
+        {
+          "id": "wc1",
+          "operation": "sum",
+          "inputs": [
+            "r1",
+            "i1",
+            "p1",
+            "other1"
+          ],
+          "definition": "当年4行合計",
+          "precision": 1,
+          "value": -99.5
+        },
+        {
+          "id": "wcd",
+          "operation": "difference",
+          "inputs": [
+            "wc1",
+            "wc0"
+          ],
+          "definition": "4行変動の前年差",
+          "precision": 1,
+          "value": 222.1
+        }
+      ]
+    },
+    {
+      "id": "mexico",
+      "question": "追加取得25%、支配持分75%、対価750百万ドル",
+      "definition": "会社開示US GAAP連結実績。調整後・有機成長率は会社独自指標と区別。",
+      "status": "ready",
+      "claim": "追加取得25%、支配持分75%、対価750百万ドル",
+      "requiredInputs": [
+        {
+          "id": "add",
+          "entity": "McCormick連結",
+          "metric": "追加取得持分",
+          "periodStart": "2026-01-02",
+          "periodEnd": "2026-01-02",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "追加取得持分"
+        },
+        {
+          "id": "own",
+          "entity": "McCormick連結",
+          "metric": "取得後所有比率",
+          "periodStart": "2026-01-02",
+          "periodEnd": "2026-01-02",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "取得後所有比率"
+        },
+        {
+          "id": "pay",
+          "entity": "McCormick連結",
+          "metric": "取得対価",
+          "periodStart": "2026-01-02",
+          "periodEnd": "2026-01-02",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "取得対価"
+        }
+      ],
+      "observations": [
+        {
+          "id": "add",
+          "entity": "McCormick連結",
+          "metric": "追加取得持分",
+          "periodStart": "2026-01-02",
+          "periodEnd": "2026-01-02",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "追加取得持分",
+          "value": 25,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Note 2 Acquisitions",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "own",
+          "entity": "McCormick連結",
+          "metric": "取得後所有比率",
+          "periodStart": "2026-01-02",
+          "periodEnd": "2026-01-02",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "取得後所有比率",
+          "value": 75,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Note 2 Acquisitions",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "pay",
+          "entity": "McCormick連結",
+          "metric": "取得対価",
+          "periodStart": "2026-01-02",
+          "periodEnd": "2026-01-02",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "取得対価",
+          "value": 750,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Note 2 Acquisitions",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "charges-detail",
+      "question": "取引・統合費用95.3、長期資産減損43.1",
+      "definition": "会社開示US GAAP連結実績。調整後・有機成長率は会社独自指標と区別。",
+      "status": "ready",
+      "claim": "取引・統合費用95.3、長期資産減損43.1",
+      "requiredInputs": [
+        {
+          "id": "transaction",
+          "entity": "McCormick連結",
+          "metric": "取引・統合費用",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "取引・統合費用"
+        },
+        {
+          "id": "impair",
+          "entity": "McCormick連結",
+          "metric": "長期資産減損",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期資産減損"
+        }
+      ],
+      "observations": [
+        {
+          "id": "transaction",
+          "entity": "McCormick連結",
+          "metric": "取引・統合費用",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "取引・統合費用",
+          "value": 95.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Note 3 Special Charges",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "impair",
+          "entity": "McCormick連結",
+          "metric": "長期資産減損",
+          "periodStart": "2026-06-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期資産減損",
+          "value": 43.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Note 3 Special Charges",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "remeasure",
+      "question": "既存持分の再評価益866.8",
+      "definition": "会社開示US GAAP連結実績。調整後・有機成長率は会社独自指標と区別。",
+      "status": "ready",
+      "claim": "既存持分の再評価益866.8",
+      "requiredInputs": [
+        {
+          "id": "gain",
+          "entity": "McCormick連結",
+          "metric": "既存持分再評価益",
+          "periodStart": "2025-12-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "既存持分再評価益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "gain",
+          "entity": "McCormick連結",
+          "metric": "既存持分再評価益",
+          "periodStart": "2025-12-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "既存持分再評価益",
+          "value": 866.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Cash Flows, Gain on remeasurement of previously held equity interest",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "uses",
+      "question": "買収純支出729.9、配当支払387.0",
+      "definition": "会社開示US GAAP連結実績。調整後・有機成長率は会社独自指標と区別。",
+      "status": "ready",
+      "claim": "買収純支出729.9、配当支払387.0",
+      "requiredInputs": [
+        {
+          "id": "buy",
+          "entity": "McCormick連結",
+          "metric": "買収純支出",
+          "periodStart": "2025-12-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収純支出"
+        },
+        {
+          "id": "div",
+          "entity": "McCormick連結",
+          "metric": "配当支払",
+          "periodStart": "2025-12-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当支払"
+        }
+      ],
+      "observations": [
+        {
+          "id": "buy",
+          "entity": "McCormick連結",
+          "metric": "買収純支出",
+          "periodStart": "2025-12-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収純支出",
+          "value": 729.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "div",
+          "entity": "McCormick連結",
+          "metric": "配当支払",
+          "periodStart": "2025-12-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当支払",
+          "value": 387,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "debt",
+      "question": "短期借入1,340.2、流動長期債務771.9、長期債務2,906.1、現金331.1",
+      "definition": "会社開示US GAAP連結実績。調整後・有機成長率は会社独自指標と区別。",
+      "status": "ready",
+      "claim": "短期借入1,340.2、流動長期債務771.9、長期債務2,906.1、現金331.1",
+      "requiredInputs": [
+        {
+          "id": "short",
+          "entity": "McCormick連結",
+          "metric": "短期借入",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期借入"
+        },
+        {
+          "id": "current",
+          "entity": "McCormick連結",
+          "metric": "流動長期債務",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "流動長期債務"
+        },
+        {
+          "id": "long",
+          "entity": "McCormick連結",
+          "metric": "長期債務",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期債務"
+        },
+        {
+          "id": "cash",
+          "entity": "McCormick連結",
+          "metric": "現金",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金"
+        }
+      ],
+      "observations": [
+        {
+          "id": "short",
+          "entity": "McCormick連結",
+          "metric": "短期借入",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期借入",
+          "value": 1340.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Balance Sheet",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "current",
+          "entity": "McCormick連結",
+          "metric": "流動長期債務",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "流動長期債務",
+          "value": 771.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Balance Sheet",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "long",
+          "entity": "McCormick連結",
+          "metric": "長期債務",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期債務",
+          "value": 2906.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Balance Sheet",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash",
+          "entity": "McCormick連結",
+          "metric": "現金",
+          "periodStart": "2026-08-31",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金",
+          "value": 331.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Balance Sheet",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "tariff",
+      "question": "関税還付の一時的現金寄与",
+      "definition": "8月末までのIEEPA関税還付入金",
+      "status": "ready",
+      "claim": "8月末までに関税還付29.2を受領している。",
+      "requiredInputs": [
+        {
+          "id": "refund",
+          "entity": "McCormick連結",
+          "metric": "関税還付受領累計",
+          "periodStart": "2025-12-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "8月末までのIEEPA関税還付入金"
+        }
+      ],
+      "observations": [
+        {
+          "id": "refund",
+          "entity": "McCormick連結",
+          "metric": "関税還付受領累計",
+          "periodStart": "2025-12-01",
+          "periodEnd": "2026-08-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "8月末までのIEEPA関税還付入金",
+          "value": 29.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000329/mkc-20260831.htm",
+            "publishedOn": "2026-10-01",
+            "locator": "Note 1 U.S. Tariffs",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
