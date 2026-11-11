@@ -1,0 +1,235 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-11-12",
+  "articleSha256": "1417d828c6ef2faf28e139e79641114f1434e49420bb1e1be480953c7743b4db",
+  "checkedAt": "2026-11-12T06:26:00+09:00",
+  "informationCutoff": "2026-11-12T06:24:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終原稿の見出し・結論・各段落・分析・注目点と出典を照合。数値比較はソフトバンクGの中間損益、リクルートの上期売上収益、米家計債務残高。米株と原油は当日の方向を報道で確認し、株価指数の騰落率は前日報道との終値基準に差があるため掲載しない。ブレント清算値、設備計画変更損失、9月末の延滞残高比率は単独値。",
+  "comparisons": [
+    {
+      "id": "sbg-net",
+      "question": "親会社の所有者に帰属する中間損益は比較期からどう変化したか",
+      "definition": "IFRS連結中間損益のうち親会社の所有者に帰属する額",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "ソフトバンクグループ",
+          "metric": "親会社の所有者に帰属する中間損益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "IFRS連結中間損益のうち親会社の所有者に帰属する額"
+        },
+        {
+          "id": "previous",
+          "entity": "ソフトバンクグループ",
+          "metric": "親会社の所有者に帰属する中間損益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "IFRS連結中間損益のうち親会社の所有者に帰属する額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "ソフトバンクグループ",
+          "metric": "親会社の所有者に帰属する中間損益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "IFRS連結中間損益のうち親会社の所有者に帰属する額",
+          "value": -768007,
+          "source": {
+            "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_ja.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "1.（1）連結経営成績（累計）、親会社の所有者に帰属する中間利益欄",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "ソフトバンクグループ",
+          "metric": "親会社の所有者に帰属する中間損益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "IFRS連結中間損益のうち親会社の所有者に帰属する額",
+          "value": 2924066,
+          "source": {
+            "url": "https://group.softbank/media/Project/sbg/sbg/pdf/ir/financials/financial_reports/financial-report_q2fy2026_01_ja.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "1.（1）連結経営成績（累計）、親会社の所有者に帰属する中間利益欄",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "2026年4〜9月期の親会社の所有者に帰属する中間損益は768,007百万円の赤字で、2025年4〜9月期の2,924,066百万円の黒字から赤字に転じた。"
+    },
+    {
+      "id": "recruit-revenue",
+      "question": "IFRS連結売上収益は比較期からどう変化したか",
+      "definition": "円建てIFRS連結中間期売上収益。HRテクノロジー単体とは異なる。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "リクルートホールディングス",
+          "metric": "IFRS連結売上収益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "円建てIFRS連結中間期売上収益。HRテクノロジー単体とは異なる。"
+        },
+        {
+          "id": "previous",
+          "entity": "リクルートホールディングス",
+          "metric": "IFRS連結売上収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "円建てIFRS連結中間期売上収益。HRテクノロジー単体とは異なる。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "リクルートホールディングス",
+          "metric": "IFRS連結売上収益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "円建てIFRS連結中間期売上収益。HRテクノロジー単体とは異なる。",
+          "value": 2139998,
+          "source": {
+            "url": "https://recruit-holdings.com/ja/ir/library/upload/Recruit_202703Q2_earnings_jp.html",
+            "publishedOn": "2026-11-11",
+            "locator": "1.（1）連結経営成績（累計）、売上収益欄",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "リクルートホールディングス",
+          "metric": "IFRS連結売上収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "円建てIFRS連結中間期売上収益。HRテクノロジー単体とは異なる。",
+          "value": 1793584,
+          "source": {
+            "url": "https://recruit-holdings.com/ja/ir/library/upload/Recruit_202703Q2_earnings_jp.html",
+            "publishedOn": "2026-11-11",
+            "locator": "1.（1）連結経営成績（累計）、売上収益欄",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "(当中間期÷前年中間期−1)×100",
+          "precision": 1,
+          "value": 19.3
+        }
+      ],
+      "claim": "2026年4〜9月期のIFRS連結売上収益は2,139,998百万円で、前年同期の1,793,584百万円から19.3%増えた。"
+    },
+    {
+      "id": "nyfed-debt",
+      "question": "米家計債務残高は比較期からどう変化したか",
+      "definition": "Consumer Credit Panelによる四半期末の家計債務の総残高",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "ニューヨーク連銀",
+          "metric": "米家計債務残高",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "十億米ドル",
+          "basis": "actual",
+          "definition": "Consumer Credit Panelによる四半期末の家計債務の総残高"
+        },
+        {
+          "id": "previous",
+          "entity": "ニューヨーク連銀",
+          "metric": "米家計債務残高",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "十億米ドル",
+          "basis": "actual",
+          "definition": "Consumer Credit Panelによる四半期末の家計債務の総残高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "ニューヨーク連銀",
+          "metric": "米家計債務残高",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "十億米ドル",
+          "basis": "actual",
+          "definition": "Consumer Credit Panelによる四半期末の家計債務の総残高",
+          "value": 19105,
+          "source": {
+            "url": "https://www.newyorkfed.org/newsevents/news/research/2026/20261110",
+            "publishedOn": "2026-11-10",
+            "locator": "Household Debt and Credit Developments as of Q3 2026、Total Debt行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "ニューヨーク連銀",
+          "metric": "米家計債務残高",
+          "periodStart": "2026-06-30",
+          "periodEnd": "2026-06-30",
+          "unit": "十億米ドル",
+          "basis": "actual",
+          "definition": "Consumer Credit Panelによる四半期末の家計債務の総残高",
+          "value": 18771,
+          "source": {
+            "url": "https://www.newyorkfed.org/newsevents/news/research/2026/20260811",
+            "publishedOn": "2026-08-11",
+            "locator": "Household Debt and Credit Developments as of Q2 2026、Total Debt行",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "change",
+          "operation": "difference",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "9月末の残高から6月末の残高を引く（十億米ドル）",
+          "precision": 0,
+          "value": 334
+        }
+      ],
+      "claim": "米家計債務の総残高は2026年9月末に19兆1,050億米ドル。6月末の18兆7,710億米ドルから3,340億米ドル増えた。"
+    }
+  ]
+}
