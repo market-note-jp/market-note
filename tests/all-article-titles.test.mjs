@@ -87,3 +87,12 @@ for (const slug of ["company-aosmith-2026-11-10", "company-mccormick-2026-11-10"
     verifyResearchArticle(article, readFileSync(`out/articles/${slug}/index.html`, "utf8"));
   });
 }
+
+// November 11: preserve complete visible source text and publication metadata.
+for (const slug of ["company-wd40-2026-11-11", "company-nordson-2026-11-11", "theme-coreweave-backlog-funding-2026-11-11"]) {
+  test(`${slug}: explicit title, complete visible content and metadata`, () => {
+    const article = JSON.parse(readFileSync(`app/articles/${slug}/article.json`, "utf8"));
+    assert.equal(article.markdown.trim().split(/\n\s*\n/)[0], `# ${article.title}`);
+    verifyResearchArticle(article, readFileSync(`out/articles/${slug}/index.html`, "utf8"));
+  });
+}

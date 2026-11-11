@@ -1,0 +1,755 @@
+{
+  "version": 1,
+  "articleSlug": "theme-coreweave-backlog-funding-2026-11-11",
+  "articleSha256": "f56c4be9e07b87b5cbf907fb91d820cfb5ae1aaae6325e5a2d92a3730608a393",
+  "checkedAt": "2026-11-11T10:54:55.965974+00:00",
+  "informationCutoff": "2026-11-11T10:54:55.965974+00:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "原SEC決算表、公式PDF説明資料16ページ、公式説明会記録を照合。Q3単独を9か月累計と分離。全重要算式を記録。受注残132.5bnは期末見込売上、9bnは発表から今後3か月の予定入金、3bn超既存インフラ分は会社説明。前受金の総入金を繰延収益調整2127と同一視しない。SEC提出一覧で9月10-Q未取得、契約注記未確認を記事に明示。 Independent second-pass review checked primary financial tables, cash-flow calculations, period/definition comparability, and stated limitations; no material correction required.",
+  "comparisons": [
+    {
+      "id": "cash-fcf",
+      "question": "単純FCFは1,975−9,441＝−7,466百万ドル。",
+      "definition": "四半期単独・連結、百万米ドル。定義を混同せず原表と算式を確認。",
+      "status": "ready",
+      "claim": "単純FCFは1,975−9,441＝−7,466百万ドル。",
+      "requiredInputs": [
+        {
+          "id": "ocf",
+          "entity": "CoreWeave",
+          "metric": "営業CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "ppe",
+          "entity": "CoreWeave",
+          "metric": "Purchases of property and equipment including capitalized internal-use software",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Purchases of property and equipment including capitalized internal-use software"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf",
+          "entity": "CoreWeave",
+          "metric": "営業CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1975,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Condensed Consolidated Statements of Cash Flows, three months ended September 30, 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ppe",
+          "entity": "CoreWeave",
+          "metric": "Purchases of property and equipment including capitalized internal-use software",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Purchases of property and equipment including capitalized internal-use software",
+          "value": -9441,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Condensed Consolidated Statements of Cash Flows, three months ended September 30, 2026",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "simple-fcf",
+          "operation": "sum",
+          "inputs": [
+            "ocf",
+            "ppe"
+          ],
+          "definition": "simple-fcf",
+          "precision": 0,
+          "value": -7466
+        }
+      ]
+    },
+    {
+      "id": "cash-bridge",
+      "question": "営業CF1,975＋投資CF（−9,836）＋財務CF7,361＝−500百万ドル",
+      "definition": "四半期単独・連結、百万米ドル。定義を混同せず原表と算式を確認。",
+      "status": "ready",
+      "claim": "営業CF1,975＋投資CF（−9,836）＋財務CF7,361＝−500百万ドル",
+      "requiredInputs": [
+        {
+          "id": "operating",
+          "entity": "CoreWeave",
+          "metric": "営業CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "investing",
+          "entity": "CoreWeave",
+          "metric": "投資CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "投資CF"
+        },
+        {
+          "id": "financing",
+          "entity": "CoreWeave",
+          "metric": "財務CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "財務CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "operating",
+          "entity": "CoreWeave",
+          "metric": "営業CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1975,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Condensed Consolidated Statements of Cash Flows, three months ended September 30, 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "investing",
+          "entity": "CoreWeave",
+          "metric": "投資CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "投資CF",
+          "value": -9836,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Condensed Consolidated Statements of Cash Flows, three months ended September 30, 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "financing",
+          "entity": "CoreWeave",
+          "metric": "財務CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "財務CF",
+          "value": 7361,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Condensed Consolidated Statements of Cash Flows, three months ended September 30, 2026",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "cash-change",
+          "operation": "sum",
+          "inputs": [
+            "operating",
+            "investing",
+            "financing"
+          ],
+          "definition": "cash-change",
+          "precision": 0,
+          "value": -500
+        }
+      ]
+    },
+    {
+      "id": "financing-bridge",
+      "question": "合計7,361百万ドル",
+      "definition": "四半期単独・連結、百万米ドル。定義を混同せず原表と算式を確認。",
+      "status": "ready",
+      "claim": "合計7,361百万ドル",
+      "requiredInputs": [
+        {
+          "id": "debt",
+          "entity": "CoreWeave",
+          "metric": "Proceeds from debt, net",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Proceeds from debt, net"
+        },
+        {
+          "id": "repay",
+          "entity": "CoreWeave",
+          "metric": "Repayment of debt",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Repayment of debt"
+        },
+        {
+          "id": "calls",
+          "entity": "CoreWeave",
+          "metric": "Purchase of capped calls",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Purchase of capped calls"
+        },
+        {
+          "id": "other",
+          "entity": "CoreWeave",
+          "metric": "Other financing activities",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Other financing activities"
+        }
+      ],
+      "observations": [
+        {
+          "id": "debt",
+          "entity": "CoreWeave",
+          "metric": "Proceeds from debt, net",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Proceeds from debt, net",
+          "value": 10301,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Condensed Consolidated Statements of Cash Flows, three months ended September 30, 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "repay",
+          "entity": "CoreWeave",
+          "metric": "Repayment of debt",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Repayment of debt",
+          "value": -2344,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Condensed Consolidated Statements of Cash Flows, three months ended September 30, 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "calls",
+          "entity": "CoreWeave",
+          "metric": "Purchase of capped calls",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Purchase of capped calls",
+          "value": -566,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Condensed Consolidated Statements of Cash Flows, three months ended September 30, 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "other",
+          "entity": "CoreWeave",
+          "metric": "Other financing activities",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Other financing activities",
+          "value": -30,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Condensed Consolidated Statements of Cash Flows, three months ended September 30, 2026",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "financing-sum",
+          "operation": "sum",
+          "inputs": [
+            "debt",
+            "repay",
+            "calls",
+            "other"
+          ],
+          "definition": "financing-sum",
+          "precision": 0,
+          "value": 7361
+        }
+      ]
+    },
+    {
+      "id": "capex-definition",
+      "question": "会社定義CapExは11,932−（−2,579）＝14,511百万ドル。",
+      "definition": "四半期単独・連結、百万米ドル。定義を混同せず原表と算式を確認。",
+      "status": "ready",
+      "claim": "会社定義CapExは11,932−（−2,579）＝14,511百万ドル。",
+      "requiredInputs": [
+        {
+          "id": "gross",
+          "entity": "CoreWeave",
+          "metric": "Increase in total gross property and equipment",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Increase in total gross property and equipment"
+        },
+        {
+          "id": "cip",
+          "entity": "CoreWeave",
+          "metric": "Change in construction in progress",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Change in construction in progress"
+        }
+      ],
+      "observations": [
+        {
+          "id": "gross",
+          "entity": "CoreWeave",
+          "metric": "Increase in total gross property and equipment",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Increase in total gross property and equipment",
+          "value": 11932,
+          "source": {
+            "url": "https://s205.q4cdn.com/133937190/files/content_files/CoreWeave-3Q26-Earnings-Presentation-Final.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "Capital Expenditures Calculation, Q3 2026; footnote defines finance-lease inclusive additions less CIP change",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        },
+        {
+          "id": "cip",
+          "entity": "CoreWeave",
+          "metric": "Change in construction in progress",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Change in construction in progress",
+          "value": -2579,
+          "source": {
+            "url": "https://s205.q4cdn.com/133937190/files/content_files/CoreWeave-3Q26-Earnings-Presentation-Final.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "Capital Expenditures Calculation, Q3 2026; footnote defines finance-lease inclusive additions less CIP change",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "defined-capex",
+          "operation": "difference",
+          "inputs": [
+            "gross",
+            "cip"
+          ],
+          "definition": "defined-capex",
+          "precision": 0,
+          "value": 14511
+        }
+      ]
+    },
+    {
+      "id": "deferred-sensitivity",
+      "question": "営業CFは1,975−2,127＝−152百万ドル",
+      "definition": "四半期単独・連結、百万米ドル。定義を混同せず原表と算式を確認。",
+      "status": "ready",
+      "claim": "営業CFは1,975−2,127＝−152百万ドル",
+      "requiredInputs": [
+        {
+          "id": "cash",
+          "entity": "CoreWeave",
+          "metric": "営業CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "deferred",
+          "entity": "CoreWeave",
+          "metric": "Deferred revenue cash-flow adjustment",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Deferred revenue cash-flow adjustment"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cash",
+          "entity": "CoreWeave",
+          "metric": "営業CF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1975,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Condensed Consolidated Statements of Cash Flows, three months ended September 30, 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "deferred",
+          "entity": "CoreWeave",
+          "metric": "Deferred revenue cash-flow adjustment",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Deferred revenue cash-flow adjustment",
+          "value": 2127,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Condensed Consolidated Statements of Cash Flows, three months ended September 30, 2026",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "sensitivity-only",
+          "operation": "difference",
+          "inputs": [
+            "cash",
+            "deferred"
+          ],
+          "definition": "sensitivity-only",
+          "precision": 0,
+          "value": -152
+        }
+      ]
+    },
+    {
+      "id": "income-interest",
+      "question": "営業利益207百万ドルに対し、純支払利息は846百万ドル",
+      "definition": "四半期単独・連結、百万米ドル。定義を混同せず原表と算式を確認。",
+      "status": "ready",
+      "claim": "営業利益207百万ドルに対し、純支払利息は846百万ドル",
+      "requiredInputs": [
+        {
+          "id": "op",
+          "entity": "CoreWeave",
+          "metric": "Income from operations GAAP",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Income from operations GAAP"
+        },
+        {
+          "id": "interest",
+          "entity": "CoreWeave",
+          "metric": "Interest expense, net",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Interest expense, net"
+        }
+      ],
+      "observations": [
+        {
+          "id": "op",
+          "entity": "CoreWeave",
+          "metric": "Income from operations GAAP",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Income from operations GAAP",
+          "value": 207,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Condensed Consolidated Statements of Operations, three months ended September 30, 2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "interest",
+          "entity": "CoreWeave",
+          "metric": "Interest expense, net",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Interest expense, net",
+          "value": 846,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Condensed Consolidated Statements of Operations, three months ended September 30, 2026",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-restricted",
+      "question": "CF計算書末尾の6,404百万ドルには制限付き現金も含まれます。",
+      "definition": "四半期単独・連結、百万米ドル。定義を混同せず原表と算式を確認。",
+      "status": "ready",
+      "claim": "CF計算書末尾の6,404百万ドルには制限付き現金も含まれます。",
+      "requiredInputs": [
+        {
+          "id": "free",
+          "entity": "CoreWeave",
+          "metric": "Cash and cash equivalents September 30 2026",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Cash and cash equivalents September 30 2026"
+        },
+        {
+          "id": "restrictedcurrent",
+          "entity": "CoreWeave",
+          "metric": "Restricted cash current September 30 2026",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Restricted cash current September 30 2026"
+        },
+        {
+          "id": "restrictednoncurrent",
+          "entity": "CoreWeave",
+          "metric": "Restricted cash noncurrent September 30 2026",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Restricted cash noncurrent September 30 2026"
+        }
+      ],
+      "observations": [
+        {
+          "id": "free",
+          "entity": "CoreWeave",
+          "metric": "Cash and cash equivalents September 30 2026",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Cash and cash equivalents September 30 2026",
+          "value": 4122,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Condensed Consolidated Balance Sheets September 30 2026; cash flow statement ending reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "restrictedcurrent",
+          "entity": "CoreWeave",
+          "metric": "Restricted cash current September 30 2026",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Restricted cash current September 30 2026",
+          "value": 1405,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Condensed Consolidated Balance Sheets September 30 2026; cash flow statement ending reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "restrictednoncurrent",
+          "entity": "CoreWeave",
+          "metric": "Restricted cash noncurrent September 30 2026",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Restricted cash noncurrent September 30 2026",
+          "value": 877,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Condensed Consolidated Balance Sheets September 30 2026; cash flow statement ending reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "cash-total",
+          "operation": "sum",
+          "inputs": [
+            "free",
+            "restrictedcurrent",
+            "restrictednoncurrent"
+          ],
+          "definition": "cash-total",
+          "precision": 0,
+          "value": 6404
+        }
+      ]
+    },
+    {
+      "id": "backlog-prepayment-bases",
+      "question": "受注残は現金ではなく入金見通しも実績ではない",
+      "definition": "期末ストックと発表時点からの見通しを区別。契約の提供条件あり。",
+      "status": "ready",
+      "claim": "入金済みという報告ではなく、将来の見通し",
+      "requiredInputs": [
+        {
+          "id": "backlog",
+          "entity": "CoreWeave",
+          "metric": "Revenue backlog September30 conditional contracted future revenue",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Revenue backlog September30 conditional contracted future revenue"
+        },
+        {
+          "id": "prepay",
+          "entity": "CoreWeave",
+          "metric": "Expected prepayments and deposits over next three months as stated November10; not collected cash",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "Expected prepayments and deposits over next three months as stated November10; not collected cash"
+        },
+        {
+          "id": "existing",
+          "entity": "CoreWeave",
+          "metric": "More than this amount of expected prepayments relates to existing infrastructure; lower bound not exact total",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "More than this amount of expected prepayments relates to existing infrastructure; lower bound not exact total"
+        }
+      ],
+      "observations": [
+        {
+          "id": "backlog",
+          "entity": "CoreWeave",
+          "metric": "Revenue backlog September30 conditional contracted future revenue",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Revenue backlog September30 conditional contracted future revenue",
+          "value": 132500,
+          "source": {
+            "url": "https://s205.q4cdn.com/133937190/files/content_files/CoreWeave-3Q26-Earnings-Presentation-Final.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "Revenue Backlog",
+            "pdfPage": 15,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prepay",
+          "entity": "CoreWeave",
+          "metric": "Expected prepayments and deposits over next three months as stated November10; not collected cash",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "Expected prepayments and deposits over next three months as stated November10; not collected cash",
+          "value": 9000,
+          "source": {
+            "url": "https://s205.q4cdn.com/133937190/files/content_files/CoreWeave-3Q26-Transcript-_1_.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "Management forecast stated at call; period fields denote forecast observation date, not receipt dates",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "existing",
+          "entity": "CoreWeave",
+          "metric": "More than this amount of expected prepayments relates to existing infrastructure; lower bound not exact total",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "More than this amount of expected prepayments relates to existing infrastructure; lower bound not exact total",
+          "value": 3000,
+          "source": {
+            "url": "https://s205.q4cdn.com/133937190/files/content_files/CoreWeave-3Q26-Transcript-_1_.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "Existing infrastructure portion; more than $3 billion",
+            "pdfPage": 6,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
