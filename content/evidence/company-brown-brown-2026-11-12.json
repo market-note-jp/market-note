@@ -1,0 +1,2332 @@
+{
+  "version": 1,
+  "articleSlug": "company-brown-brown-2026-11-12",
+  "articleSha256": "011c86d2275be866be98447e27f115415f77f20cf87942217c69a6769f3ee88a",
+  "checkedAt": "2026-11-12T10:59:59.085822+00:00",
+  "informationCutoff": "2026-11-12T10:00:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "Author check of downloaded original SEC 2025 and 2023 10-K HTML and official 2026 Q3 10-Q PDF. All table/cash/EPS inputs checked; 2023 rounding from newest filing. Independent review pending. Market valuation, competition metrics, ROIC and quantity/price decomposition withheld, not claimed. Independent review checked all 18 comparison groups, arithmetic and article claims against original tables; equity wording and source PDF page locators corrected. Independent final review completed: primary tables and arithmetic rechecked, definitions and source locators corrected where necessary; final staged article matches reviewed version.",
+  "comparisons": [
+    {
+      "id": "fy2021",
+      "question": "| 2021 | 3,051.4 | 587.1 | 808.8 | 45.0 | 763.8 |",
+      "definition": "US GAAP連結。非GAAP指標、独自FCFは各入力・計算と本文の定義による。",
+      "status": "ready",
+      "claim": "| 2021 | 3,051.4 | 587.1 | 808.8 | 45.0 | 763.8 |",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Brown & Brown",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "net",
+          "entity": "Brown & Brown",
+          "metric": "純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "cfo",
+          "entity": "Brown & Brown",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "Brown & Brown",
+          "metric": "固定資産取得支出",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Brown & Brown",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 3051.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000095017024018890/bro-20231231.htm",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Statements of Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "Brown & Brown",
+          "metric": "純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 587.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000095017024018890/bro-20231231.htm",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Statements of Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "Brown & Brown",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 808.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000095017024018890/bro-20231231.htm",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Statements of Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Brown & Brown",
+          "metric": "固定資産取得支出",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出",
+          "value": 45,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000095017024018890/bro-20231231.htm",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Statements of Income / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "value": 763.8,
+          "precision": 1,
+          "definition": "独自FCF=営業CF−固定資産取得支出"
+        }
+      ]
+    },
+    {
+      "id": "fy2022",
+      "question": "| 2022 | 3,573.4 | 671.8 | 881.4 | 52.6 | 828.8 |",
+      "definition": "US GAAP連結。非GAAP指標、独自FCFは各入力・計算と本文の定義による。",
+      "status": "ready",
+      "claim": "| 2022 | 3,573.4 | 671.8 | 881.4 | 52.6 | 828.8 |",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Brown & Brown",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "net",
+          "entity": "Brown & Brown",
+          "metric": "純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "cfo",
+          "entity": "Brown & Brown",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "Brown & Brown",
+          "metric": "固定資産取得支出",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Brown & Brown",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 3573.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000095017024018890/bro-20231231.htm",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Statements of Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "Brown & Brown",
+          "metric": "純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 671.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000095017024018890/bro-20231231.htm",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Statements of Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "Brown & Brown",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 881.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000095017024018890/bro-20231231.htm",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Statements of Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Brown & Brown",
+          "metric": "固定資産取得支出",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出",
+          "value": 52.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000095017024018890/bro-20231231.htm",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Statements of Income / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "value": 828.8,
+          "precision": 1,
+          "definition": "独自FCF=営業CF−固定資産取得支出"
+        }
+      ]
+    },
+    {
+      "id": "fy2023",
+      "question": "| 2023 | 4,257 | 871 | 1,010 | 69 | 941 |",
+      "definition": "US GAAP連結。非GAAP指標、独自FCFは各入力・計算と本文の定義による。",
+      "status": "ready",
+      "claim": "| 2023 | 4,257 | 871 | 1,010 | 69 | 941 |",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Brown & Brown",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "net",
+          "entity": "Brown & Brown",
+          "metric": "純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "cfo",
+          "entity": "Brown & Brown",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "Brown & Brown",
+          "metric": "固定資産取得支出",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Brown & Brown",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 4257,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000119312526046984/bro-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "Brown & Brown",
+          "metric": "純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 871,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000119312526046984/bro-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "Brown & Brown",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1010,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000119312526046984/bro-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Brown & Brown",
+          "metric": "固定資産取得支出",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出",
+          "value": 69,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000119312526046984/bro-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "value": 941,
+          "precision": 1,
+          "definition": "独自FCF=営業CF−固定資産取得支出"
+        }
+      ]
+    },
+    {
+      "id": "fy2024",
+      "question": "| 2024 | 4,805 | 993 | 1,174 | 82 | 1,092 |",
+      "definition": "US GAAP連結。非GAAP指標、独自FCFは各入力・計算と本文の定義による。",
+      "status": "ready",
+      "claim": "| 2024 | 4,805 | 993 | 1,174 | 82 | 1,092 |",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Brown & Brown",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "net",
+          "entity": "Brown & Brown",
+          "metric": "純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "cfo",
+          "entity": "Brown & Brown",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "Brown & Brown",
+          "metric": "固定資産取得支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Brown & Brown",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 4805,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000119312526046984/bro-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "Brown & Brown",
+          "metric": "純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 993,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000119312526046984/bro-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "Brown & Brown",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1174,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000119312526046984/bro-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Brown & Brown",
+          "metric": "固定資産取得支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出",
+          "value": 82,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000119312526046984/bro-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "value": 1092,
+          "precision": 1,
+          "definition": "独自FCF=営業CF−固定資産取得支出"
+        }
+      ]
+    },
+    {
+      "id": "fy2025",
+      "question": "| 2025 | 5,902 | 1,054 | 1,450 | 68 | 1,382 |",
+      "definition": "US GAAP連結。非GAAP指標、独自FCFは各入力・計算と本文の定義による。",
+      "status": "ready",
+      "claim": "| 2025 | 5,902 | 1,054 | 1,450 | 68 | 1,382 |",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Brown & Brown",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "net",
+          "entity": "Brown & Brown",
+          "metric": "純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "cfo",
+          "entity": "Brown & Brown",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "Brown & Brown",
+          "metric": "固定資産取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Brown & Brown",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 5902,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000119312526046984/bro-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "Brown & Brown",
+          "metric": "純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 1054,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000119312526046984/bro-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "Brown & Brown",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1450,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000119312526046984/bro-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Brown & Brown",
+          "metric": "固定資産取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出",
+          "value": 68,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000119312526046984/bro-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Income / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "value": 1382,
+          "precision": 1,
+          "definition": "独自FCF=営業CF−固定資産取得支出"
+        }
+      ]
+    },
+    {
+      "id": "acq25",
+      "question": "2025年の企業買収への現金支出は取得現金控除後で7,854、対して上のFCFは1,382だった。",
+      "definition": "US GAAP連結。非GAAP指標、独自FCFは各入力・計算と本文の定義による。",
+      "status": "ready",
+      "claim": "2025年の企業買収への現金支出は取得現金控除後で7,854、対して上のFCFは1,382だった。",
+      "requiredInputs": [
+        {
+          "id": "acq",
+          "entity": "Brown & Brown",
+          "metric": "企業買収現金支出純額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "企業買収現金支出純額"
+        },
+        {
+          "id": "cfo",
+          "entity": "Brown & Brown",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "Brown & Brown",
+          "metric": "固定資産取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "acq",
+          "entity": "Brown & Brown",
+          "metric": "企業買収現金支出純額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "企業買収現金支出純額",
+          "value": 7854,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000119312526046984/bro-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "Brown & Brown",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1450,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000119312526046984/bro-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Brown & Brown",
+          "metric": "固定資産取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出",
+          "value": 68,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/79282/000119312526046984/bro-20251231.htm",
+            "publishedOn": "2026-02-12",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "value": 1382,
+          "precision": 1,
+          "definition": "FCF"
+        }
+      ]
+    },
+    {
+      "id": "revenue",
+      "question": "2026年１〜９月売上は5,302で前年4,295を上回る。一方、会社定義のOrganic Revenue成長率は0.3%、追加手数料を含む指標は1.5%だった。",
+      "definition": "US GAAP連結。非GAAP指標、独自FCFは各入力・計算と本文の定義による。",
+      "status": "ready",
+      "claim": "2026年１〜９月売上は5,302で前年4,295を上回る。一方、会社定義のOrganic Revenue成長率は0.3%、追加手数料を含む指標は1.5%だった。",
+      "requiredInputs": [
+        {
+          "id": "rev26",
+          "entity": "Brown & Brown",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "rev25",
+          "entity": "Brown & Brown",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "org",
+          "entity": "Brown & Brown",
+          "metric": "会社定義Organic Revenue成長率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社定義Organic Revenue成長率"
+        },
+        {
+          "id": "orgc",
+          "entity": "Brown & Brown",
+          "metric": "会社定義Organic Revenue with Contingents成長率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社定義Organic Revenue with Contingents成長率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev26",
+          "entity": "Brown & Brown",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 5302,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Condensed Consolidated Statements of Income",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "rev25",
+          "entity": "Brown & Brown",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 4295,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Condensed Consolidated Statements of Income",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "org",
+          "entity": "Brown & Brown",
+          "metric": "会社定義Organic Revenue成長率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社定義Organic Revenue成長率",
+          "value": 0.3,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Income statement and Organic Revenue reconciliations",
+            "kind": "primary",
+            "pdfPage": 36
+          }
+        },
+        {
+          "id": "orgc",
+          "entity": "Brown & Brown",
+          "metric": "会社定義Organic Revenue with Contingents成長率",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社定義Organic Revenue with Contingents成長率",
+          "value": 1.5,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Income statement and Organic Revenue reconciliations",
+            "kind": "primary",
+            "pdfPage": 36
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "bridge",
+      "question": "追加手数料を除くコア手数料は4,022から4,972へ950増加。会社の分解は、新規・更新の純増10、買収985、為替19、売却−20、訴訟関連影響−44で、合計950となる。",
+      "definition": "US GAAP連結。非GAAP指標、独自FCFは各入力・計算と本文の定義による。",
+      "status": "ready",
+      "claim": "追加手数料を除くコア手数料は4,022から4,972へ950増加。会社の分解は、新規・更新の純増10、買収985、為替19、売却−20、訴訟関連影響−44で、合計950となる。",
+      "requiredInputs": [
+        {
+          "id": "prior",
+          "entity": "Brown & Brown",
+          "metric": "前年コア手数料",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "前年コア手数料"
+        },
+        {
+          "id": "now",
+          "entity": "Brown & Brown",
+          "metric": "当年コア手数料",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当年コア手数料"
+        },
+        {
+          "id": "new",
+          "entity": "Brown & Brown",
+          "metric": "新規更新",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "新規更新"
+        },
+        {
+          "id": "acq",
+          "entity": "Brown & Brown",
+          "metric": "買収",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収"
+        },
+        {
+          "id": "fx",
+          "entity": "Brown & Brown",
+          "metric": "為替",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "為替"
+        },
+        {
+          "id": "dis",
+          "entity": "Brown & Brown",
+          "metric": "売却",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売却"
+        },
+        {
+          "id": "lit",
+          "entity": "Brown & Brown",
+          "metric": "訴訟関連影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "訴訟関連影響"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prior",
+          "entity": "Brown & Brown",
+          "metric": "前年コア手数料",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "前年コア手数料",
+          "value": 4022,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Commissions and Fees",
+            "kind": "primary",
+            "pdfPage": 32
+          }
+        },
+        {
+          "id": "now",
+          "entity": "Brown & Brown",
+          "metric": "当年コア手数料",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "当年コア手数料",
+          "value": 4972,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Commissions and Fees",
+            "kind": "primary",
+            "pdfPage": 32
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Brown & Brown",
+          "metric": "新規更新",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "新規更新",
+          "value": 10,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Commissions and Fees",
+            "kind": "primary",
+            "pdfPage": 32
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "Brown & Brown",
+          "metric": "買収",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収",
+          "value": 985,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Commissions and Fees",
+            "kind": "primary",
+            "pdfPage": 32
+          }
+        },
+        {
+          "id": "fx",
+          "entity": "Brown & Brown",
+          "metric": "為替",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "為替",
+          "value": 19,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Commissions and Fees",
+            "kind": "primary",
+            "pdfPage": 32
+          }
+        },
+        {
+          "id": "dis",
+          "entity": "Brown & Brown",
+          "metric": "売却",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売却",
+          "value": -20,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Commissions and Fees",
+            "kind": "primary",
+            "pdfPage": 32
+          }
+        },
+        {
+          "id": "lit",
+          "entity": "Brown & Brown",
+          "metric": "訴訟関連影響",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "訴訟関連影響",
+          "value": -44,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Commissions and Fees",
+            "kind": "primary",
+            "pdfPage": 32
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "diff",
+          "operation": "difference",
+          "inputs": [
+            "now",
+            "prior"
+          ],
+          "value": 950,
+          "precision": 1,
+          "definition": "コア手数料増分"
+        },
+        {
+          "id": "bridge",
+          "operation": "sum",
+          "inputs": [
+            "new",
+            "acq",
+            "fx",
+            "dis",
+            "lit"
+          ],
+          "value": 950,
+          "precision": 1,
+          "definition": "会社分解合計"
+        }
+      ]
+    },
+    {
+      "id": "increase",
+      "question": "買収985を売上全体の増加1,007から単純に引くだけでは、追加手数料や投資収益の動きを落としてしまう。",
+      "definition": "US GAAP連結。非GAAP指標、独自FCFは各入力・計算と本文の定義による。",
+      "status": "ready",
+      "claim": "買収985を売上全体の増加1,007から単純に引くだけでは、追加手数料や投資収益の動きを落としてしまう。",
+      "requiredInputs": [
+        {
+          "id": "acq",
+          "entity": "Brown & Brown",
+          "metric": "買収増収寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収増収寄与"
+        },
+        {
+          "id": "rev",
+          "entity": "Brown & Brown",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "prev",
+          "entity": "Brown & Brown",
+          "metric": "前年売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "前年売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "acq",
+          "entity": "Brown & Brown",
+          "metric": "買収増収寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収増収寄与",
+          "value": 985,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Income statement and MD&A revenue bridge",
+            "kind": "primary",
+            "pdfPage": 32
+          }
+        },
+        {
+          "id": "rev",
+          "entity": "Brown & Brown",
+          "metric": "売上高",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 5302,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Income statement and MD&A revenue bridge",
+            "kind": "primary",
+            "pdfPage": 32
+          }
+        },
+        {
+          "id": "prev",
+          "entity": "Brown & Brown",
+          "metric": "前年売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "前年売上高",
+          "value": 4295,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Income statement and MD&A revenue bridge",
+            "kind": "primary",
+            "pdfPage": 32
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "increase",
+          "operation": "difference",
+          "inputs": [
+            "rev",
+            "prev"
+          ],
+          "value": 1007,
+          "precision": 1,
+          "definition": "総売上増分"
+        }
+      ]
+    },
+    {
+      "id": "segments",
+      "question": "７〜９月の部門別Organic Revenue成長率はRetailが2.6%、Specialty Distributionが−0.8%。追加手数料込みでは、それぞれ2.5%、0.3%となる。",
+      "definition": "US GAAP連結。非GAAP指標、独自FCFは各入力・計算と本文の定義による。",
+      "status": "ready",
+      "claim": "７〜９月の部門別Organic Revenue成長率はRetailが2.6%、Specialty Distributionが−0.8%。追加手数料込みでは、それぞれ2.5%、0.3%となる。",
+      "requiredInputs": [
+        {
+          "id": "r",
+          "entity": "Brown & Brown",
+          "metric": "Retail organic",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Retail organic"
+        },
+        {
+          "id": "s",
+          "entity": "Brown & Brown",
+          "metric": "Specialty organic",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Specialty organic"
+        },
+        {
+          "id": "rc",
+          "entity": "Brown & Brown",
+          "metric": "Retail organic with Contingents",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Retail organic with Contingents"
+        },
+        {
+          "id": "sc",
+          "entity": "Brown & Brown",
+          "metric": "Specialty organic with Contingents",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Specialty organic with Contingents"
+        }
+      ],
+      "observations": [
+        {
+          "id": "r",
+          "entity": "Brown & Brown",
+          "metric": "Retail organic",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Retail organic",
+          "value": 2.6,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Organic Revenue table",
+            "kind": "primary",
+            "pdfPage": 35
+          }
+        },
+        {
+          "id": "s",
+          "entity": "Brown & Brown",
+          "metric": "Specialty organic",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Specialty organic",
+          "value": -0.8,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Organic Revenue table",
+            "kind": "primary",
+            "pdfPage": 35
+          }
+        },
+        {
+          "id": "rc",
+          "entity": "Brown & Brown",
+          "metric": "Retail organic with Contingents",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Retail organic with Contingents",
+          "value": 2.5,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Organic Revenue table",
+            "kind": "primary",
+            "pdfPage": 35
+          }
+        },
+        {
+          "id": "sc",
+          "entity": "Brown & Brown",
+          "metric": "Specialty organic with Contingents",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "Specialty organic with Contingents",
+          "value": 0.3,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Organic Revenue table",
+            "kind": "primary",
+            "pdfPage": 35
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "earnings",
+      "question": "７〜９月は純利益240、前年227に対し、希薄化後EPSは0.67ドル、前年0.68ドルだった。１〜９月も純利益954、前年790に対し、希薄化後EPSは両年2.57ドルである。",
+      "definition": "US GAAP連結。非GAAP指標、独自FCFは各入力・計算と本文の定義による。",
+      "status": "ready",
+      "claim": "７〜９月は純利益240、前年227に対し、希薄化後EPSは0.67ドル、前年0.68ドルだった。１〜９月も純利益954、前年790に対し、希薄化後EPSは両年2.57ドルである。",
+      "requiredInputs": [
+        {
+          "id": "nq26",
+          "entity": "Brown & Brown",
+          "metric": "純利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "nq25",
+          "entity": "Brown & Brown",
+          "metric": "純利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "eq26",
+          "entity": "Brown & Brown",
+          "metric": "希薄化後EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS"
+        },
+        {
+          "id": "eq25",
+          "entity": "Brown & Brown",
+          "metric": "希薄化後EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS"
+        },
+        {
+          "id": "ny26",
+          "entity": "Brown & Brown",
+          "metric": "純利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "ny25",
+          "entity": "Brown & Brown",
+          "metric": "純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "ey26",
+          "entity": "Brown & Brown",
+          "metric": "希薄化後EPS",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS"
+        },
+        {
+          "id": "ey25",
+          "entity": "Brown & Brown",
+          "metric": "希薄化後EPS",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "nq26",
+          "entity": "Brown & Brown",
+          "metric": "純利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 240,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Income Statement / Note4",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        },
+        {
+          "id": "nq25",
+          "entity": "Brown & Brown",
+          "metric": "純利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 227,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Income Statement / Note4",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        },
+        {
+          "id": "eq26",
+          "entity": "Brown & Brown",
+          "metric": "希薄化後EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS",
+          "value": 0.67,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Income Statement / Note4",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        },
+        {
+          "id": "eq25",
+          "entity": "Brown & Brown",
+          "metric": "希薄化後EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS",
+          "value": 0.68,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Income Statement / Note4",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        },
+        {
+          "id": "ny26",
+          "entity": "Brown & Brown",
+          "metric": "純利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 954,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Income Statement / Note4",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        },
+        {
+          "id": "ny25",
+          "entity": "Brown & Brown",
+          "metric": "純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 790,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Income Statement / Note4",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        },
+        {
+          "id": "ey26",
+          "entity": "Brown & Brown",
+          "metric": "希薄化後EPS",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS",
+          "value": 2.57,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Income Statement / Note4",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        },
+        {
+          "id": "ey25",
+          "entity": "Brown & Brown",
+          "metric": "希薄化後EPS",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化後EPS",
+          "value": 2.57,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Income Statement / Note4",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "escrow",
+      "question": "１〜９月には、この負債の評価変動で非現金の利益83が生じた。",
+      "definition": "US GAAP連結。非GAAP指標、独自FCFは各入力・計算と本文の定義による。",
+      "status": "ready",
+      "claim": "１〜９月には、この負債の評価変動で非現金の利益83が生じた。",
+      "requiredInputs": [
+        {
+          "id": "gain",
+          "entity": "Brown & Brown",
+          "metric": "預託負債評価益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "預託負債評価益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "gain",
+          "entity": "Brown & Brown",
+          "metric": "預託負債評価益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "預託負債評価益",
+          "value": 83,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Note5",
+            "kind": "primary",
+            "pdfPage": 16
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "epscalc",
+      "question": "普通株主帰属の希薄化後利益は858、加重平均希薄化後株数は334百万株。前年は782と304百万株だった。",
+      "definition": "US GAAP連結。非GAAP指標、独自FCFは各入力・計算と本文の定義による。",
+      "status": "ready",
+      "claim": "普通株主帰属の希薄化後利益は858、加重平均希薄化後株数は334百万株。前年は782と304百万株だった。",
+      "requiredInputs": [
+        {
+          "id": "num26",
+          "entity": "Brown & Brown",
+          "metric": "希薄化後普通株帰属利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "希薄化後普通株帰属利益"
+        },
+        {
+          "id": "num25",
+          "entity": "Brown & Brown",
+          "metric": "希薄化後普通株帰属利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "希薄化後普通株帰属利益"
+        },
+        {
+          "id": "den26",
+          "entity": "Brown & Brown",
+          "metric": "希薄化後加重平均株数",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万株",
+          "basis": "actual",
+          "definition": "希薄化後加重平均株数"
+        },
+        {
+          "id": "den25",
+          "entity": "Brown & Brown",
+          "metric": "希薄化後加重平均株数",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万株",
+          "basis": "actual",
+          "definition": "希薄化後加重平均株数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "num26",
+          "entity": "Brown & Brown",
+          "metric": "希薄化後普通株帰属利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "希薄化後普通株帰属利益",
+          "value": 858,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Note4",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        },
+        {
+          "id": "num25",
+          "entity": "Brown & Brown",
+          "metric": "希薄化後普通株帰属利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "希薄化後普通株帰属利益",
+          "value": 782,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Note4",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        },
+        {
+          "id": "den26",
+          "entity": "Brown & Brown",
+          "metric": "希薄化後加重平均株数",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万株",
+          "basis": "actual",
+          "definition": "希薄化後加重平均株数",
+          "value": 334,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Note4",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        },
+        {
+          "id": "den25",
+          "entity": "Brown & Brown",
+          "metric": "希薄化後加重平均株数",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万株",
+          "basis": "actual",
+          "definition": "希薄化後加重平均株数",
+          "value": 304,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Note4",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fcf26",
+      "question": "１〜９月の営業CF1,140から固定資産取得77を引くとFCFは1,063。前年は1,006−48＝958だった。",
+      "definition": "US GAAP連結。非GAAP指標、独自FCFは各入力・計算と本文の定義による。",
+      "status": "ready",
+      "claim": "１〜９月の営業CF1,140から固定資産取得77を引くとFCFは1,063。前年は1,006−48＝958だった。",
+      "requiredInputs": [
+        {
+          "id": "cfo26",
+          "entity": "Brown & Brown",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cap26",
+          "entity": "Brown & Brown",
+          "metric": "固定資産取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出"
+        },
+        {
+          "id": "cfo25",
+          "entity": "Brown & Brown",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cap25",
+          "entity": "Brown & Brown",
+          "metric": "固定資産取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo26",
+          "entity": "Brown & Brown",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1140,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Cash flow statement",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "cap26",
+          "entity": "Brown & Brown",
+          "metric": "固定資産取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出",
+          "value": 77,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Cash flow statement",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "cfo25",
+          "entity": "Brown & Brown",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1006,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Cash flow statement",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "cap25",
+          "entity": "Brown & Brown",
+          "metric": "固定資産取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出",
+          "value": 48,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Cash flow statement",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf26",
+          "operation": "difference",
+          "inputs": [
+            "cfo26",
+            "cap26"
+          ],
+          "value": 1063,
+          "precision": 1,
+          "definition": "FCF"
+        },
+        {
+          "id": "fcf25",
+          "operation": "difference",
+          "inputs": [
+            "cfo25",
+            "cap25"
+          ],
+          "value": 958,
+          "precision": 1,
+          "definition": "FCF"
+        }
+      ]
+    },
+    {
+      "id": "tax",
+      "question": "繰延税金の調整額は18から158へ増えており、増益だけが現金増加の理由ではない。",
+      "definition": "US GAAP連結。非GAAP指標、独自FCFは各入力・計算と本文の定義による。",
+      "status": "ready",
+      "claim": "繰延税金の調整額は18から158へ増えており、増益だけが現金増加の理由ではない。",
+      "requiredInputs": [
+        {
+          "id": "tax25",
+          "entity": "Brown & Brown",
+          "metric": "繰延税金CF調整",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "繰延税金CF調整"
+        },
+        {
+          "id": "tax26",
+          "entity": "Brown & Brown",
+          "metric": "繰延税金CF調整",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "繰延税金CF調整"
+        }
+      ],
+      "observations": [
+        {
+          "id": "tax25",
+          "entity": "Brown & Brown",
+          "metric": "繰延税金CF調整",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "繰延税金CF調整",
+          "value": 18,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Cash flow statement",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "tax26",
+          "entity": "Brown & Brown",
+          "metric": "繰延税金CF調整",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "繰延税金CF調整",
+          "value": 158,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Cash flow statement",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "allocation",
+      "question": "同期間の自社株買い750と現金配当169は計919。さらに取得時に見積もられた買収追加対価の支払い199が財務CFに入る。これらを合計すると1,118で、FCF1,063を上回る。",
+      "definition": "US GAAP連結。非GAAP指標、独自FCFは各入力・計算と本文の定義による。",
+      "status": "ready",
+      "claim": "同期間の自社株買い750と現金配当169は計919。さらに取得時に見積もられた買収追加対価の支払い199が財務CFに入る。これらを合計すると1,118で、FCF1,063を上回る。",
+      "requiredInputs": [
+        {
+          "id": "rep",
+          "entity": "Brown & Brown",
+          "metric": "自己株買い",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "自己株買い"
+        },
+        {
+          "id": "div",
+          "entity": "Brown & Brown",
+          "metric": "配当",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当"
+        },
+        {
+          "id": "earn",
+          "entity": "Brown & Brown",
+          "metric": "財務CFの買収追加対価",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "財務CFの買収追加対価"
+        },
+        {
+          "id": "cfo",
+          "entity": "Brown & Brown",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Brown & Brown",
+          "metric": "固定資産取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rep",
+          "entity": "Brown & Brown",
+          "metric": "自己株買い",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "自己株買い",
+          "value": 750,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Cash flow statement",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "div",
+          "entity": "Brown & Brown",
+          "metric": "配当",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当",
+          "value": 169,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Cash flow statement",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "earn",
+          "entity": "Brown & Brown",
+          "metric": "財務CFの買収追加対価",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "財務CFの買収追加対価",
+          "value": 199,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Cash flow statement",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "Brown & Brown",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1140,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Cash flow statement",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Brown & Brown",
+          "metric": "固定資産取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出",
+          "value": 77,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Cash flow statement",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "return",
+          "operation": "sum",
+          "inputs": [
+            "rep",
+            "div"
+          ],
+          "value": 919,
+          "precision": 1,
+          "definition": "株主還元"
+        },
+        {
+          "id": "total",
+          "operation": "sum",
+          "inputs": [
+            "rep",
+            "div",
+            "earn"
+          ],
+          "value": 1118,
+          "precision": 1,
+          "definition": "還元と財務CF追加対価"
+        },
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "cfo",
+            "cap"
+          ],
+          "value": 1063,
+          "precision": 1,
+          "definition": "FCF"
+        }
+      ]
+    },
+    {
+      "id": "balance",
+      "question": "９月末の通常の現金・現金同等物は1,099、純額表示の有利子負債は7,759。別掲のFiduciary cash 2,442は、顧客や保険会社のために預かる資金である。",
+      "definition": "US GAAP連結。非GAAP指標、独自FCFは各入力・計算と本文の定義による。",
+      "status": "ready",
+      "claim": "９月末の通常の現金・現金同等物は1,099、純額表示の有利子負債は7,759。別掲のFiduciary cash 2,442は、顧客や保険会社のために預かる資金である。",
+      "requiredInputs": [
+        {
+          "id": "cash",
+          "entity": "Brown & Brown",
+          "metric": "現金同等物",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金同等物"
+        },
+        {
+          "id": "debt",
+          "entity": "Brown & Brown",
+          "metric": "未償却割引と発行費控除後債務",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "未償却割引と発行費控除後債務"
+        },
+        {
+          "id": "fid",
+          "entity": "Brown & Brown",
+          "metric": "受託現金",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "受託現金"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cash",
+          "entity": "Brown & Brown",
+          "metric": "現金同等物",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金同等物",
+          "value": 1099,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Balance sheet and Liquidity debt discussion p44",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "debt",
+          "entity": "Brown & Brown",
+          "metric": "未償却割引と発行費控除後債務",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "未償却割引と発行費控除後債務",
+          "value": 7759,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Balance sheet and Liquidity debt discussion p44",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "fid",
+          "entity": "Brown & Brown",
+          "metric": "受託現金",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "受託現金",
+          "value": 2442,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Balance sheet and Liquidity debt discussion p44",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "goodwill",
+      "question": "のれんは15,188、純資産（非支配持分を含む）は12,601。",
+      "definition": "US GAAP連結。非GAAP指標、独自FCFは各入力・計算と本文の定義による。",
+      "status": "ready",
+      "claim": "のれんは15,188、純資産（非支配持分を含む）は12,601。",
+      "requiredInputs": [
+        {
+          "id": "gw",
+          "entity": "Brown & Brown",
+          "metric": "のれん",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "のれん"
+        },
+        {
+          "id": "eq",
+          "entity": "Brown & Brown",
+          "metric": "純資産（非支配持分を含む）",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純資産（非支配持分を含む）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "gw",
+          "entity": "Brown & Brown",
+          "metric": "のれん",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "のれん",
+          "value": 15188,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Balance sheet",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "eq",
+          "entity": "Brown & Brown",
+          "metric": "純資産（非支配持分を含む）",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純資産（非支配持分を含む）",
+          "value": 12601,
+          "source": {
+            "url": "https://investor.bbrown.com/static-files/8e8f97db-a333-47c9-be15-73bfeb0242f0",
+            "publishedOn": "2026-10-26",
+            "locator": "Balance sheet",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}

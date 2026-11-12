@@ -1,0 +1,410 @@
+{
+  "version": 1,
+  "articleSlug": "theme-uk-arrears-bank-consumption-2026-11-12",
+  "articleSha256": "aa705ca359c7975b87e8f170b0a2817dd82a3898770641a4d463b3cd535e622c",
+  "checkedAt": "2026-11-12T10:57:35.678640+00:00",
+  "informationCutoff": "2026-11-12T10:57:35.678640+00:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "Author source check: full downloaded UKFinance 12 November PDF pages 1 and 3, BoE November MPR section1.3, FCA Q2 page read. All material article numeric observations declared. Table entries include BTL total and light band even though claim emphasizes homeowner direction. No calculated growth rates; no stock-minus-possession inference. FCA older quarter is qualitative cross-check only. Independent reviewer pending; route digest must be set after final review and integration. Prior article is contextual not numeric source. Published times intraday not supplied by UKF PDF. Independent final review completed: primary tables and arithmetic rechecked, definitions and source locators corrected where necessary; final staged article matches reviewed version.",
+  "comparisons": [
+    {
+      "id": "arrears",
+      "question": "自己居住用では件数も割合も減っています。",
+      "definition": "UK first-charge loans; UK Finance reporting members grossed up to whole market, arrears bands measured against outstanding loan balance; counts and published rounded ratios separate.",
+      "status": "ready",
+      "claim": "自己居住用では件数も割合も減っています。",
+      "requiredInputs": [
+        {
+          "id": "ho2",
+          "entity": "UK mortgages",
+          "metric": "homeowner arrears >=2.5%",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "loans",
+          "basis": "actual",
+          "definition": "UK first-charge loans; UK Finance reporting members grossed up to whole market, arrears bands measured against outstanding loan balance; counts and published rounded ratios separate."
+        },
+        {
+          "id": "ho3",
+          "entity": "UK mortgages",
+          "metric": "homeowner arrears >=2.5%",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "loans",
+          "basis": "actual",
+          "definition": "UK first-charge loans; UK Finance reporting members grossed up to whole market, arrears bands measured against outstanding loan balance; counts and published rounded ratios separate."
+        },
+        {
+          "id": "hop2",
+          "entity": "UK mortgages",
+          "metric": "homeowner arrears share",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "UK first-charge loans; UK Finance reporting members grossed up to whole market, arrears bands measured against outstanding loan balance; counts and published rounded ratios separate."
+        },
+        {
+          "id": "hop3",
+          "entity": "UK mortgages",
+          "metric": "homeowner arrears share",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "UK first-charge loans; UK Finance reporting members grossed up to whole market, arrears bands measured against outstanding loan balance; counts and published rounded ratios separate."
+        },
+        {
+          "id": "bt2",
+          "entity": "UK mortgages",
+          "metric": "BTL arrears >=2.5%",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "loans",
+          "basis": "actual",
+          "definition": "UK first-charge loans; UK Finance reporting members grossed up to whole market, arrears bands measured against outstanding loan balance; counts and published rounded ratios separate."
+        },
+        {
+          "id": "bt3",
+          "entity": "UK mortgages",
+          "metric": "BTL arrears >=2.5%",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "loans",
+          "basis": "actual",
+          "definition": "UK first-charge loans; UK Finance reporting members grossed up to whole market, arrears bands measured against outstanding loan balance; counts and published rounded ratios separate."
+        },
+        {
+          "id": "light2",
+          "entity": "UK mortgages",
+          "metric": "BTL arrears 2.5%-5%",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "loans",
+          "basis": "actual",
+          "definition": "UK first-charge loans; UK Finance reporting members grossed up to whole market, arrears bands measured against outstanding loan balance; counts and published rounded ratios separate."
+        },
+        {
+          "id": "light3",
+          "entity": "UK mortgages",
+          "metric": "BTL arrears 2.5%-5%",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "loans",
+          "basis": "actual",
+          "definition": "UK first-charge loans; UK Finance reporting members grossed up to whole market, arrears bands measured against outstanding loan balance; counts and published rounded ratios separate."
+        }
+      ],
+      "observations": [
+        {
+          "id": "ho2",
+          "entity": "UK mortgages",
+          "metric": "homeowner arrears >=2.5%",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "loans",
+          "basis": "actual",
+          "definition": "UK first-charge loans; UK Finance reporting members grossed up to whole market, arrears bands measured against outstanding loan balance; counts and published rounded ratios separate.",
+          "value": 77940,
+          "source": {
+            "url": "https://www.ukfinance.org.uk/system/files/2026-11/UKF%20Mortgage%20Arrears%20%26%20Possessions%20Update%20%2012%20November%202026_0.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "PDF page 3 AP2 original table, 26-Q2 and 26-Q3",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ho3",
+          "entity": "UK mortgages",
+          "metric": "homeowner arrears >=2.5%",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "loans",
+          "basis": "actual",
+          "definition": "UK first-charge loans; UK Finance reporting members grossed up to whole market, arrears bands measured against outstanding loan balance; counts and published rounded ratios separate.",
+          "value": 76080,
+          "source": {
+            "url": "https://www.ukfinance.org.uk/system/files/2026-11/UKF%20Mortgage%20Arrears%20%26%20Possessions%20Update%20%2012%20November%202026_0.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "PDF page 3 AP2 original table, 26-Q2 and 26-Q3",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "hop2",
+          "entity": "UK mortgages",
+          "metric": "homeowner arrears share",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "UK first-charge loans; UK Finance reporting members grossed up to whole market, arrears bands measured against outstanding loan balance; counts and published rounded ratios separate.",
+          "value": 0.89,
+          "source": {
+            "url": "https://www.ukfinance.org.uk/system/files/2026-11/UKF%20Mortgage%20Arrears%20%26%20Possessions%20Update%20%2012%20November%202026_0.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "PDF page 3 AP2 original table, 26-Q2 and 26-Q3",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "hop3",
+          "entity": "UK mortgages",
+          "metric": "homeowner arrears share",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "UK first-charge loans; UK Finance reporting members grossed up to whole market, arrears bands measured against outstanding loan balance; counts and published rounded ratios separate.",
+          "value": 0.87,
+          "source": {
+            "url": "https://www.ukfinance.org.uk/system/files/2026-11/UKF%20Mortgage%20Arrears%20%26%20Possessions%20Update%20%2012%20November%202026_0.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "PDF page 3 AP2 original table, 26-Q2 and 26-Q3",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "bt2",
+          "entity": "UK mortgages",
+          "metric": "BTL arrears >=2.5%",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "loans",
+          "basis": "actual",
+          "definition": "UK first-charge loans; UK Finance reporting members grossed up to whole market, arrears bands measured against outstanding loan balance; counts and published rounded ratios separate.",
+          "value": 8390,
+          "source": {
+            "url": "https://www.ukfinance.org.uk/system/files/2026-11/UKF%20Mortgage%20Arrears%20%26%20Possessions%20Update%20%2012%20November%202026_0.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "PDF page 3 AP2 original table, 26-Q2 and 26-Q3",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "bt3",
+          "entity": "UK mortgages",
+          "metric": "BTL arrears >=2.5%",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "loans",
+          "basis": "actual",
+          "definition": "UK first-charge loans; UK Finance reporting members grossed up to whole market, arrears bands measured against outstanding loan balance; counts and published rounded ratios separate.",
+          "value": 8170,
+          "source": {
+            "url": "https://www.ukfinance.org.uk/system/files/2026-11/UKF%20Mortgage%20Arrears%20%26%20Possessions%20Update%20%2012%20November%202026_0.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "PDF page 3 AP2 original table, 26-Q2 and 26-Q3",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "light2",
+          "entity": "UK mortgages",
+          "metric": "BTL arrears 2.5%-5%",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "loans",
+          "basis": "actual",
+          "definition": "UK first-charge loans; UK Finance reporting members grossed up to whole market, arrears bands measured against outstanding loan balance; counts and published rounded ratios separate.",
+          "value": 2980,
+          "source": {
+            "url": "https://www.ukfinance.org.uk/system/files/2026-11/UKF%20Mortgage%20Arrears%20%26%20Possessions%20Update%20%2012%20November%202026_0.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "PDF page 3 AP2 original table, 26-Q2 and 26-Q3",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "light3",
+          "entity": "UK mortgages",
+          "metric": "BTL arrears 2.5%-5%",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "loans",
+          "basis": "actual",
+          "definition": "UK first-charge loans; UK Finance reporting members grossed up to whole market, arrears bands measured against outstanding loan balance; counts and published rounded ratios separate.",
+          "value": 3090,
+          "source": {
+            "url": "https://www.ukfinance.org.uk/system/files/2026-11/UKF%20Mortgage%20Arrears%20%26%20Possessions%20Update%20%2012%20November%202026_0.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "PDF page 3 AP2 original table, 26-Q2 and 26-Q3",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "possessions",
+      "question": "自己居住用は両四半期とも1,150件、賃貸用は630件から690件へ増えました。",
+      "definition": "UK first-charge properties taken into possession during quarter; period flow, not arrears stock and not credit loss.",
+      "status": "ready",
+      "claim": "自己居住用は両四半期とも1,150件、賃貸用は630件から690件へ増えました。",
+      "requiredInputs": [
+        {
+          "id": "hp2",
+          "entity": "UK mortgages",
+          "metric": "homeowner possessions",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "properties",
+          "basis": "actual",
+          "definition": "UK first-charge properties taken into possession during quarter; period flow, not arrears stock and not credit loss."
+        },
+        {
+          "id": "hp3",
+          "entity": "UK mortgages",
+          "metric": "homeowner possessions",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "properties",
+          "basis": "actual",
+          "definition": "UK first-charge properties taken into possession during quarter; period flow, not arrears stock and not credit loss."
+        },
+        {
+          "id": "bp2",
+          "entity": "UK mortgages",
+          "metric": "BTL possessions",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "properties",
+          "basis": "actual",
+          "definition": "UK first-charge properties taken into possession during quarter; period flow, not arrears stock and not credit loss."
+        },
+        {
+          "id": "bp3",
+          "entity": "UK mortgages",
+          "metric": "BTL possessions",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "properties",
+          "basis": "actual",
+          "definition": "UK first-charge properties taken into possession during quarter; period flow, not arrears stock and not credit loss."
+        }
+      ],
+      "observations": [
+        {
+          "id": "hp2",
+          "entity": "UK mortgages",
+          "metric": "homeowner possessions",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "properties",
+          "basis": "actual",
+          "definition": "UK first-charge properties taken into possession during quarter; period flow, not arrears stock and not credit loss.",
+          "value": 1150,
+          "source": {
+            "url": "https://www.ukfinance.org.uk/system/files/2026-11/UKF%20Mortgage%20Arrears%20%26%20Possessions%20Update%20%2012%20November%202026_0.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "PDF page 3 AP4 possessions in period",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "hp3",
+          "entity": "UK mortgages",
+          "metric": "homeowner possessions",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "properties",
+          "basis": "actual",
+          "definition": "UK first-charge properties taken into possession during quarter; period flow, not arrears stock and not credit loss.",
+          "value": 1150,
+          "source": {
+            "url": "https://www.ukfinance.org.uk/system/files/2026-11/UKF%20Mortgage%20Arrears%20%26%20Possessions%20Update%20%2012%20November%202026_0.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "PDF page 3 AP4 possessions in period",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "bp2",
+          "entity": "UK mortgages",
+          "metric": "BTL possessions",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "properties",
+          "basis": "actual",
+          "definition": "UK first-charge properties taken into possession during quarter; period flow, not arrears stock and not credit loss.",
+          "value": 630,
+          "source": {
+            "url": "https://www.ukfinance.org.uk/system/files/2026-11/UKF%20Mortgage%20Arrears%20%26%20Possessions%20Update%20%2012%20November%202026_0.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "PDF page 3 AP4 possessions in period",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "bp3",
+          "entity": "UK mortgages",
+          "metric": "BTL possessions",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "properties",
+          "basis": "actual",
+          "definition": "UK first-charge properties taken into possession during quarter; period flow, not arrears stock and not credit loss.",
+          "value": 690,
+          "source": {
+            "url": "https://www.ukfinance.org.uk/system/files/2026-11/UKF%20Mortgage%20Arrears%20%26%20Possessions%20Update%20%2012%20November%202026_0.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "PDF page 3 AP4 possessions in period",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "boe-revision",
+      "question": "将来の返済負担見通しはどう変わったか",
+      "definition": "November 2026 forecast average annual mortgage payments at end 2029 compared with July 2026 forecast at same horizon; not change from current payments.",
+      "status": "ready",
+      "claim": "2029年末の平均年間返済額は、７月報告時点の見通しより約700ポンド高くなるとの予測です。",
+      "requiredInputs": [
+        {
+          "id": "forecast_delta",
+          "entity": "Bank of England",
+          "metric": "annual average mortgage payment forecast revision versus July Report",
+          "periodStart": "2029-12-31",
+          "periodEnd": "2029-12-31",
+          "unit": "GBP per year",
+          "basis": "company-forecast",
+          "definition": "November 2026 forecast average annual mortgage payments at end 2029 compared with July 2026 forecast at same horizon; not change from current payments."
+        }
+      ],
+      "observations": [
+        {
+          "id": "forecast_delta",
+          "entity": "Bank of England",
+          "metric": "annual average mortgage payment forecast revision versus July Report",
+          "periodStart": "2029-12-31",
+          "periodEnd": "2029-12-31",
+          "unit": "GBP per year",
+          "basis": "company-forecast",
+          "definition": "November 2026 forecast average annual mortgage payments at end 2029 compared with July 2026 forecast at same horizon; not change from current payments.",
+          "value": 700,
+          "source": {
+            "url": "https://www.bankofengland.co.uk/monetary-policy-report/2026/november-2026",
+            "publishedOn": "2026-11-05",
+            "locator": "Section 1.3 Domestic credit conditions, paragraph beginning Higher mortgage rates",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
