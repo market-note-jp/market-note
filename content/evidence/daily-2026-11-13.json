@@ -1,0 +1,227 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-11-13",
+  "articleSha256": "4aa0ddcaf1366f5a8e6f9a1798890c5eca29a81446873cb38d8ec48bbf932e5f",
+  "checkedAt": "2026-11-13T06:20:00+09:00",
+  "informationCutoff": "2026-11-13T06:20:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終本文・見出し・要約・分析を資料と照合。数値比較はNebiusの四半期売上、森永製菓の同一年度の会社予想の修正、国内企業物価の月次変化率。米株は主要報道で方向のみ、Nebiusの損失・営業CFと企業物価指数水準は当期の単独値。市場予想と独自FCFは掲載しない。",
+  "comparisons": [
+    {
+      "id": "nebius-revenues",
+      "question": "連結四半期売上高は比較対象からどう変化したか",
+      "definition": "米国基準の連結売上高。Tolokaは比較期間で非継続事業へ組替え。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "Nebius Group",
+          "metric": "連結四半期売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "米国基準の連結売上高。Tolokaは比較期間で非継続事業へ組替え。"
+        },
+        {
+          "id": "previous",
+          "entity": "Nebius Group",
+          "metric": "連結四半期売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "米国基準の連結売上高。Tolokaは比較期間で非継続事業へ組替え。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "Nebius Group",
+          "metric": "連結四半期売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "米国基準の連結売上高。Tolokaは比較期間で非継続事業へ組替え。",
+          "value": 980.8,
+          "source": {
+            "url": "https://assets.nebius.com/assets/e2ac679c-fc62-4799-ba0e-6611e59c6863/Nebius-2026-Q3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "Q3 2026 Financial Highlights、Consolidated results、Revenues行と注2",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "Nebius Group",
+          "metric": "連結四半期売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "米国基準の連結売上高。Tolokaは比較期間で非継続事業へ組替え。",
+          "value": 146.1,
+          "source": {
+            "url": "https://assets.nebius.com/assets/e2ac679c-fc62-4799-ba0e-6611e59c6863/Nebius-2026-Q3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "Q3 2026 Financial Highlights、Consolidated results、Revenues行と注2",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "(当四半期÷前年同期−1)×100",
+          "precision": 0,
+          "value": 571
+        }
+      ],
+      "claim": "2026年7〜9月期の連結売上高は980.8百万米ドルで、2025年7〜9月期の146.1百万米ドルから約571%増えた。"
+    },
+    {
+      "id": "morinaga-outlook",
+      "question": "通期連結営業利益の会社予想は比較対象からどう変化したか",
+      "definition": "日本基準の通期連結営業利益の会社予想。比較対象は5月11日公表予想。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "森永製菓",
+          "metric": "通期連結営業利益の会社予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円（JPY）",
+          "basis": "company-forecast",
+          "definition": "日本基準の通期連結営業利益の会社予想。比較対象は5月11日公表予想。"
+        },
+        {
+          "id": "previous",
+          "entity": "森永製菓",
+          "metric": "通期連結営業利益の会社予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円（JPY）",
+          "basis": "company-forecast",
+          "definition": "日本基準の通期連結営業利益の会社予想。比較対象は5月11日公表予想。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "森永製菓",
+          "metric": "通期連結営業利益の会社予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円（JPY）",
+          "basis": "company-forecast",
+          "definition": "日本基準の通期連結営業利益の会社予想。比較対象は5月11日公表予想。",
+          "value": 21000,
+          "source": {
+            "url": "https://www.morinaga.co.jp/public/newsrelease/web/fix/file6af51b9e19caf.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "1. 通期連結業績予想数値の修正、営業利益欄（B・A）",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "森永製菓",
+          "metric": "通期連結営業利益の会社予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円（JPY）",
+          "basis": "company-forecast",
+          "definition": "日本基準の通期連結営業利益の会社予想。比較対象は5月11日公表予想。",
+          "value": 22800,
+          "source": {
+            "url": "https://www.morinaga.co.jp/public/newsrelease/web/fix/file6af51b9e19caf.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "1. 通期連結業績予想数値の修正、営業利益欄（B・A）",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "2027年3月期通期の連結営業利益の会社予想を22,800百万円から21,000百万円へ引き下げた。"
+    },
+    {
+      "id": "boj-cgpi",
+      "question": "国内企業物価指数の前月比は比較対象からどう変化したか",
+      "definition": "2020年基準の国内企業物価指数の前月比、夏季電力料金調整前。10月は速報。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "日本銀行",
+          "metric": "国内企業物価指数の前月比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2020年基準の国内企業物価指数の前月比、夏季電力料金調整前。10月は速報。"
+        },
+        {
+          "id": "previous",
+          "entity": "日本銀行",
+          "metric": "国内企業物価指数の前月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2020年基準の国内企業物価指数の前月比、夏季電力料金調整前。10月は速報。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "日本銀行",
+          "metric": "国内企業物価指数の前月比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2020年基準の国内企業物価指数の前月比、夏季電力料金調整前。10月は速報。",
+          "value": 0.7,
+          "source": {
+            "url": "https://www.boj.or.jp/statistics/pi/cgpi_release/cgpi2610.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "企業物価指数の推移、国内企業物価指数前月比欄、10月速報・9月",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "日本銀行",
+          "metric": "国内企業物価指数の前月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2020年基準の国内企業物価指数の前月比、夏季電力料金調整前。10月は速報。",
+          "value": -0.2,
+          "source": {
+            "url": "https://www.boj.or.jp/statistics/pi/cgpi_release/cgpi2610.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "企業物価指数の推移、国内企業物価指数前月比欄、10月速報・9月",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "2026年10月の国内企業物価指数は速報で前月比0.7%上昇し、9月の前月比0.2%下落から上昇に転じた。"
+    }
+  ]
+}
