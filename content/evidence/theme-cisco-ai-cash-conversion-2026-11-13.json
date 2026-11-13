@@ -1,0 +1,913 @@
+{
+  "version": 1,
+  "articleSlug": "theme-cisco-ai-cash-conversion-2026-11-13",
+  "articleSha256": "f858f511c9f874551225baa887cdcabe807bfe77cf5824114e45eb8d9481e7a3",
+  "checkedAt": "2026-11-13T10:15:00Z",
+  "informationCutoff": "2026-11-13T10:00:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "全記事の重要数値比較を執筆担当の原典照合記録と独立レビューで検証。AI単独採算、買収・数量・単価寄与、株価評価は未確認のため結論に用いない。計算は百万USD基準、本文の億USD表示へ換算。末尾の感応度は18517百万USD×1%=185.17百万USD=約1.85億USDという独自条件試算で予測ではない。 FY27終了日は2026 Proxy Statementのauditor ratification本文でJuly31,2027を確認：https://www.sec.gov/Archives/edgar/data/858877/000130817926000439/csco-20261029.htm （印刷70頁）。観測日を会計期間へ代入しない。",
+  "comparisons": [
+    {
+      "id": "revenue-profit",
+      "question": "前年同四半期の連結GAAP売上・営業利益はどれだけ増えたか",
+      "definition": "前年同四半期の連結GAAP売上・営業利益はどれだけ増えたか",
+      "status": "ready",
+      "claim": "四半期売上は185.17億ドル、前年同期比24.4%増。GAAP営業利益は55.98億ドル、66.5%増でした。",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Cisco",
+          "metric": "Revenue",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-10-24",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Revenue"
+        },
+        {
+          "id": "revprev",
+          "entity": "Cisco",
+          "metric": "Revenue",
+          "periodStart": "2025-07-27",
+          "periodEnd": "2025-10-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Revenue"
+        },
+        {
+          "id": "op",
+          "entity": "Cisco",
+          "metric": "GAAP operating income",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-10-24",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP operating income"
+        },
+        {
+          "id": "opprev",
+          "entity": "Cisco",
+          "metric": "GAAP operating income",
+          "periodStart": "2025-07-27",
+          "periodEnd": "2025-10-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP operating income"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Cisco",
+          "metric": "Revenue",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-10-24",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Revenue",
+          "value": 18517,
+          "source": {
+            "url": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FIRST-QUARTER-EARNINGS/default.aspx",
+            "publishedOn": "2026-11-12",
+            "locator": "Condensed Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "revprev",
+          "entity": "Cisco",
+          "metric": "Revenue",
+          "periodStart": "2025-07-27",
+          "periodEnd": "2025-10-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Revenue",
+          "value": 14883,
+          "source": {
+            "url": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FIRST-QUARTER-EARNINGS/default.aspx",
+            "publishedOn": "2026-11-12",
+            "locator": "Condensed Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "Cisco",
+          "metric": "GAAP operating income",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-10-24",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP operating income",
+          "value": 5598,
+          "source": {
+            "url": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FIRST-QUARTER-EARNINGS/default.aspx",
+            "publishedOn": "2026-11-12",
+            "locator": "Condensed Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "opprev",
+          "entity": "Cisco",
+          "metric": "GAAP operating income",
+          "periodStart": "2025-07-27",
+          "periodEnd": "2025-10-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "GAAP operating income",
+          "value": 3363,
+          "source": {
+            "url": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FIRST-QUARTER-EARNINGS/default.aspx",
+            "publishedOn": "2026-11-12",
+            "locator": "Condensed Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growthrev",
+          "operation": "growth-percent",
+          "inputs": [
+            "rev",
+            "revprev"
+          ],
+          "value": 24.4,
+          "definition": "当期売上/前年売上−1",
+          "precision": 1
+        },
+        {
+          "id": "growthop",
+          "operation": "growth-percent",
+          "inputs": [
+            "op",
+            "opprev"
+          ],
+          "value": 66.5,
+          "definition": "当期営業利益/前年営業利益−1",
+          "precision": 1
+        }
+      ]
+    },
+    {
+      "id": "product-margin",
+      "question": "製品GAAP粗利率は低下したか",
+      "definition": "製品GAAP粗利率は低下したか",
+      "status": "ready",
+      "claim": "一方、製品粗利益率は64.5%から61.8%に低下しています。",
+      "requiredInputs": [
+        {
+          "id": "gm",
+          "entity": "Cisco",
+          "metric": "GAAP product gross margin",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-10-24",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "GAAP product gross margin"
+        },
+        {
+          "id": "gmprev",
+          "entity": "Cisco",
+          "metric": "GAAP product gross margin",
+          "periodStart": "2025-07-27",
+          "periodEnd": "2025-10-25",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "GAAP product gross margin"
+        }
+      ],
+      "observations": [
+        {
+          "id": "gm",
+          "entity": "Cisco",
+          "metric": "GAAP product gross margin",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-10-24",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "GAAP product gross margin",
+          "value": 61.8,
+          "source": {
+            "url": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FIRST-QUARTER-EARNINGS/default.aspx",
+            "publishedOn": "2026-11-12",
+            "locator": "Financial Summary",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "gmprev",
+          "entity": "Cisco",
+          "metric": "GAAP product gross margin",
+          "periodStart": "2025-07-27",
+          "periodEnd": "2025-10-25",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "GAAP product gross margin",
+          "value": 64.5,
+          "source": {
+            "url": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FIRST-QUARTER-EARNINGS/default.aspx",
+            "publishedOn": "2026-11-12",
+            "locator": "Financial Summary",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "profit-bridge",
+      "question": "営業増益を粗利益額と営業費用に分解する",
+      "definition": "営業増益を粗利益額と営業費用に分解する",
+      "status": "ready",
+      "claim": "今回の開示値を使うと、営業増益22.35億ドルは、粗利益の増加20.43億ドルと営業費用の減少1.92億ドルに分解できます。",
+      "requiredInputs": [
+        {
+          "id": "gross",
+          "entity": "Cisco",
+          "metric": "Gross profit",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-10-24",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Gross profit"
+        },
+        {
+          "id": "grossprev",
+          "entity": "Cisco",
+          "metric": "Gross profit",
+          "periodStart": "2025-07-27",
+          "periodEnd": "2025-10-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Gross profit"
+        },
+        {
+          "id": "exp",
+          "entity": "Cisco",
+          "metric": "Operating expenses",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-10-24",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Operating expenses"
+        },
+        {
+          "id": "expprev",
+          "entity": "Cisco",
+          "metric": "Operating expenses",
+          "periodStart": "2025-07-27",
+          "periodEnd": "2025-10-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Operating expenses"
+        }
+      ],
+      "observations": [
+        {
+          "id": "gross",
+          "entity": "Cisco",
+          "metric": "Gross profit",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-10-24",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Gross profit",
+          "value": 11788,
+          "source": {
+            "url": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FIRST-QUARTER-EARNINGS/default.aspx",
+            "publishedOn": "2026-11-12",
+            "locator": "Condensed Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "grossprev",
+          "entity": "Cisco",
+          "metric": "Gross profit",
+          "periodStart": "2025-07-27",
+          "periodEnd": "2025-10-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Gross profit",
+          "value": 9745,
+          "source": {
+            "url": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FIRST-QUARTER-EARNINGS/default.aspx",
+            "publishedOn": "2026-11-12",
+            "locator": "Condensed Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "exp",
+          "entity": "Cisco",
+          "metric": "Operating expenses",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-10-24",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Operating expenses",
+          "value": 6190,
+          "source": {
+            "url": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FIRST-QUARTER-EARNINGS/default.aspx",
+            "publishedOn": "2026-11-12",
+            "locator": "Condensed Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "expprev",
+          "entity": "Cisco",
+          "metric": "Operating expenses",
+          "periodStart": "2025-07-27",
+          "periodEnd": "2025-10-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Operating expenses",
+          "value": 6382,
+          "source": {
+            "url": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FIRST-QUARTER-EARNINGS/default.aspx",
+            "publishedOn": "2026-11-12",
+            "locator": "Condensed Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "deltagross",
+          "operation": "difference",
+          "inputs": [
+            "gross",
+            "grossprev"
+          ],
+          "value": 2043,
+          "definition": "粗利益増額",
+          "precision": 0
+        },
+        {
+          "id": "saving",
+          "operation": "difference",
+          "inputs": [
+            "expprev",
+            "exp"
+          ],
+          "value": 192,
+          "definition": "営業費用減額",
+          "precision": 0
+        },
+        {
+          "id": "bridge",
+          "operation": "sum",
+          "inputs": [
+            "deltagross",
+            "saving"
+          ],
+          "value": 2235,
+          "definition": "営業増益",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "guidance",
+      "question": "全社と大手クラウドAI向けの通期売上予想引上げを算術比較する",
+      "definition": "全社と大手クラウドAI向けの通期売上予想引上げを算術比較する。予想レンジ中央値は(下限+上限)/2。旧72800、新75300、増2500。AI増1500/2500=60%。これは増額要因の因果分解ではない。",
+      "status": "ready",
+      "claim": "中央値の増額は25億ドルです。AI見通しの増額15億ドルは、その60%に相当します。",
+      "requiredInputs": [
+        {
+          "id": "aicur",
+          "entity": "Cisco",
+          "metric": "FY27 hyperscaler AI infrastructure revenue outlook",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2027-07-31",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "FY27 hyperscaler AI infrastructure revenue outlook"
+        },
+        {
+          "id": "aiprev",
+          "entity": "Cisco",
+          "metric": "Prior FY27 hyperscaler AI infrastructure revenue outlook",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2027-07-31",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "Prior FY27 hyperscaler AI infrastructure revenue outlook"
+        },
+        {
+          "id": "low",
+          "entity": "Cisco",
+          "metric": "FY27 total revenue outlook lower bound",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2027-07-31",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "FY27 total revenue outlook lower bound"
+        },
+        {
+          "id": "high",
+          "entity": "Cisco",
+          "metric": "FY27 total revenue outlook upper bound",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2027-07-31",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "FY27 total revenue outlook upper bound"
+        },
+        {
+          "id": "oldlow",
+          "entity": "Cisco",
+          "metric": "Prior FY27 total revenue outlook lower bound",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2027-07-31",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "Prior FY27 total revenue outlook lower bound"
+        },
+        {
+          "id": "oldhigh",
+          "entity": "Cisco",
+          "metric": "Prior FY27 total revenue outlook upper bound",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2027-07-31",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "Prior FY27 total revenue outlook upper bound"
+        }
+      ],
+      "observations": [
+        {
+          "id": "aicur",
+          "entity": "Cisco",
+          "metric": "FY27 hyperscaler AI infrastructure revenue outlook",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2027-07-31",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "FY27 hyperscaler AI infrastructure revenue outlook",
+          "value": 9000,
+          "source": {
+            "url": "https://s21.q4cdn.com/812015656/files/doc_earnings/2027/q1/presentation/Q1-27-Earnings-Slides.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "FY27 hyperscaler AI revenue outlook",
+            "kind": "primary",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "aiprev",
+          "entity": "Cisco",
+          "metric": "Prior FY27 hyperscaler AI infrastructure revenue outlook",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2027-07-31",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "Prior FY27 hyperscaler AI infrastructure revenue outlook",
+          "value": 7500,
+          "source": {
+            "url": "https://s21.q4cdn.com/812015656/files/doc_earnings/2027/q1/presentation/Q1-27-Earnings-Slides.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "FY27 hyperscaler AI revenue outlook prior/current",
+            "kind": "primary",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "low",
+          "entity": "Cisco",
+          "metric": "FY27 total revenue outlook lower bound",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2027-07-31",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "FY27 total revenue outlook lower bound",
+          "value": 74800,
+          "source": {
+            "url": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FIRST-QUARTER-EARNINGS/default.aspx",
+            "publishedOn": "2026-11-12",
+            "locator": "FY27 guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "high",
+          "entity": "Cisco",
+          "metric": "FY27 total revenue outlook upper bound",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2027-07-31",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "FY27 total revenue outlook upper bound",
+          "value": 75800,
+          "source": {
+            "url": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FIRST-QUARTER-EARNINGS/default.aspx",
+            "publishedOn": "2026-11-12",
+            "locator": "FY27 guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldlow",
+          "entity": "Cisco",
+          "metric": "Prior FY27 total revenue outlook lower bound",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2027-07-31",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "Prior FY27 total revenue outlook lower bound",
+          "value": 72200,
+          "source": {
+            "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/cisco-reports-fourth-quarter-earnings.html",
+            "publishedOn": "2026-08-12",
+            "locator": "FY27 guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldhigh",
+          "entity": "Cisco",
+          "metric": "Prior FY27 total revenue outlook upper bound",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2027-07-31",
+          "unit": "USD million",
+          "basis": "company-forecast",
+          "definition": "Prior FY27 total revenue outlook upper bound",
+          "value": 73400,
+          "source": {
+            "url": "https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2026/m08/cisco-reports-fourth-quarter-earnings.html",
+            "publishedOn": "2026-08-12",
+            "locator": "FY27 guidance",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "aiincrease",
+          "operation": "difference",
+          "inputs": [
+            "aicur",
+            "aiprev"
+          ],
+          "value": 1500,
+          "definition": "AI見通し増額",
+          "precision": 0
+        },
+        {
+          "id": "lowincrease",
+          "operation": "difference",
+          "inputs": [
+            "low",
+            "oldlow"
+          ],
+          "value": 2600,
+          "definition": "下限増額",
+          "precision": 0
+        },
+        {
+          "id": "highincrease",
+          "operation": "difference",
+          "inputs": [
+            "high",
+            "oldhigh"
+          ],
+          "value": 2400,
+          "definition": "上限増額",
+          "precision": 0
+        },
+        {
+          "id": "totalincreasebounds",
+          "operation": "sum",
+          "inputs": [
+            "lowincrease",
+            "highincrease"
+          ],
+          "value": 5000,
+          "definition": "上下限の増額合計。中央値の増額はこの半分=2500百万USD。",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "fcf",
+      "question": "営業CFから設備取得支出を引いたFCFの前年同期比較",
+      "definition": "営業CFから設備取得支出を引いたFCFの前年同期比較",
+      "status": "ready",
+      "claim": "営業キャッシュフローは43.57億ドル、設備取得支出は5.02億ドル。両者の差として定義する本稿のFCFは38.55億ドルで、前年同期の28.89億ドルから33.4%増です。",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "Cisco",
+          "metric": "Cash from operating activities",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-10-24",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Cash from operating activities"
+        },
+        {
+          "id": "capex",
+          "entity": "Cisco",
+          "metric": "PP&E cash expenditure",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-10-24",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "PP&E cash expenditure"
+        },
+        {
+          "id": "cfoprev",
+          "entity": "Cisco",
+          "metric": "Cash from operating activities",
+          "periodStart": "2025-07-27",
+          "periodEnd": "2025-10-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Cash from operating activities"
+        },
+        {
+          "id": "capexprev",
+          "entity": "Cisco",
+          "metric": "PP&E cash expenditure",
+          "periodStart": "2025-07-27",
+          "periodEnd": "2025-10-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "PP&E cash expenditure"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "Cisco",
+          "metric": "Cash from operating activities",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-10-24",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Cash from operating activities",
+          "value": 4357,
+          "source": {
+            "url": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FIRST-QUARTER-EARNINGS/default.aspx",
+            "publishedOn": "2026-11-12",
+            "locator": "Cash flow statement",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Cisco",
+          "metric": "PP&E cash expenditure",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-10-24",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "PP&E cash expenditure",
+          "value": 502,
+          "source": {
+            "url": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FIRST-QUARTER-EARNINGS/default.aspx",
+            "publishedOn": "2026-11-12",
+            "locator": "Cash flow statement",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfoprev",
+          "entity": "Cisco",
+          "metric": "Cash from operating activities",
+          "periodStart": "2025-07-27",
+          "periodEnd": "2025-10-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Cash from operating activities",
+          "value": 3212,
+          "source": {
+            "url": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FIRST-QUARTER-EARNINGS/default.aspx",
+            "publishedOn": "2026-11-12",
+            "locator": "Cash flow statement",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capexprev",
+          "entity": "Cisco",
+          "metric": "PP&E cash expenditure",
+          "periodStart": "2025-07-27",
+          "periodEnd": "2025-10-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "PP&E cash expenditure",
+          "value": 323,
+          "source": {
+            "url": "https://investor.cisco.com/news/news-details/2026/CISCO-REPORTS-FIRST-QUARTER-EARNINGS/default.aspx",
+            "publishedOn": "2026-11-12",
+            "locator": "Cash flow statement",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcfcur",
+          "operation": "difference",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "value": 3855,
+          "definition": "CFO−PP&E",
+          "precision": 0
+        },
+        {
+          "id": "fcfprev",
+          "operation": "difference",
+          "inputs": [
+            "cfoprev",
+            "capexprev"
+          ],
+          "value": 2889,
+          "definition": "前年CFO−PP&E",
+          "precision": 0
+        },
+        {
+          "id": "fcfgrowth",
+          "operation": "growth-percent",
+          "inputs": [
+            "fcfcur",
+            "fcfprev"
+          ],
+          "value": 33.4,
+          "definition": "FCF前年同期比",
+          "precision": 1
+        }
+      ]
+    },
+    {
+      "id": "supply",
+      "question": "在庫と在庫購入約束は前年同期比で増えたか",
+      "definition": "在庫と在庫購入約束は前年同期比で増えたか",
+      "status": "ready",
+      "claim": "在庫は前年同期の33.95億ドルから63.84億ドルに増え、在庫購入コミットメントは83.21億ドルから218.83億ドルになりました。",
+      "requiredInputs": [
+        {
+          "id": "inventory",
+          "entity": "Cisco",
+          "metric": "Inventory at quarter end",
+          "periodStart": "2026-10-24",
+          "periodEnd": "2026-10-24",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Inventory at quarter end"
+        },
+        {
+          "id": "inventoryprev",
+          "entity": "Cisco",
+          "metric": "Inventory at quarter end",
+          "periodStart": "2025-10-25",
+          "periodEnd": "2025-10-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Inventory at quarter end"
+        },
+        {
+          "id": "commit",
+          "entity": "Cisco",
+          "metric": "Inventory purchase commitments at quarter end",
+          "periodStart": "2026-10-24",
+          "periodEnd": "2026-10-24",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Inventory purchase commitments at quarter end"
+        },
+        {
+          "id": "commitprev",
+          "entity": "Cisco",
+          "metric": "Inventory purchase commitments at quarter end",
+          "periodStart": "2025-10-25",
+          "periodEnd": "2025-10-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Inventory purchase commitments at quarter end"
+        }
+      ],
+      "observations": [
+        {
+          "id": "inventory",
+          "entity": "Cisco",
+          "metric": "Inventory at quarter end",
+          "periodStart": "2026-10-24",
+          "periodEnd": "2026-10-24",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Inventory at quarter end",
+          "value": 6384,
+          "source": {
+            "url": "https://s21.q4cdn.com/812015656/files/doc_earnings/2027/q1/presentation/Q1-27-Earnings-Slides.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "Inventory and purchase commitments",
+            "kind": "primary",
+            "pdfPage": 20
+          }
+        },
+        {
+          "id": "inventoryprev",
+          "entity": "Cisco",
+          "metric": "Inventory at quarter end",
+          "periodStart": "2025-10-25",
+          "periodEnd": "2025-10-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Inventory at quarter end",
+          "value": 3395,
+          "source": {
+            "url": "https://s21.q4cdn.com/812015656/files/doc_earnings/2027/q1/presentation/Q1-27-Earnings-Slides.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "Inventory and purchase commitments",
+            "kind": "primary",
+            "pdfPage": 20
+          }
+        },
+        {
+          "id": "commit",
+          "entity": "Cisco",
+          "metric": "Inventory purchase commitments at quarter end",
+          "periodStart": "2026-10-24",
+          "periodEnd": "2026-10-24",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Inventory purchase commitments at quarter end",
+          "value": 21883,
+          "source": {
+            "url": "https://s21.q4cdn.com/812015656/files/doc_earnings/2027/q1/presentation/Q1-27-Earnings-Slides.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "Inventory and purchase commitments",
+            "kind": "primary",
+            "pdfPage": 20
+          }
+        },
+        {
+          "id": "commitprev",
+          "entity": "Cisco",
+          "metric": "Inventory purchase commitments at quarter end",
+          "periodStart": "2025-10-25",
+          "periodEnd": "2025-10-25",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "Inventory purchase commitments at quarter end",
+          "value": 8321,
+          "source": {
+            "url": "https://s21.q4cdn.com/812015656/files/doc_earnings/2027/q1/presentation/Q1-27-Earnings-Slides.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "Inventory and purchase commitments",
+            "kind": "primary",
+            "pdfPage": 20
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "design-wins",
+      "question": "AI設計採用件数と売上/現金は同じか",
+      "definition": "採用件数は売上金額・入金額とは異なる単位",
+      "status": "ready",
+      "claim": "新たな設計採用は今四半期に3件ありましたが、採用件数は売上金額でも入金額でもありません。",
+      "requiredInputs": [
+        {
+          "id": "wins",
+          "entity": "Cisco",
+          "metric": "New AI design wins in FY27 Q1",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-10-24",
+          "unit": "count",
+          "basis": "actual",
+          "definition": "四半期中の新規設計採用件数。売上/入金ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "wins",
+          "entity": "Cisco",
+          "metric": "New AI design wins in FY27 Q1",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-10-24",
+          "unit": "count",
+          "basis": "actual",
+          "definition": "四半期中の新規設計採用件数。売上/入金ではない。",
+          "value": 3,
+          "source": {
+            "url": "https://s21.q4cdn.com/812015656/files/doc_earnings/2027/q1/presentation/Q1-27-Earnings-Slides.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "AI design wins",
+            "kind": "primary",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}

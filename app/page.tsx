@@ -12,6 +12,33 @@ const legacyArticles = [
 {
   "kind": "企業レポート",
   "theme": "個別企業",
+  "date": "2026-11-13 19:20",
+  "dateTime": "2026-11-13T10:20:24+00:00",
+  "title": "Donaldson：交換フィルターの強さは、大型買収後も現金につながるか",
+  "excerpt": "交換品の反復需要を強みに持つDonaldson。６年の財務、産業向けの数量減、Facet買収と現金回収から成長の条件を検証する。",
+  "href": "/articles/company-donaldson-2026-11-13"
+},
+{
+  "kind": "企業レポート",
+  "theme": "個別企業",
+  "date": "2026-11-13 19:20",
+  "dateTime": "2026-11-13T10:20:24+00:00",
+  "title": "Genuine Parts：補修部品の強い需要を、自由に使える現金へ変えられるか",
+  "excerpt": "NAPAとMotionの収益差、５年の業績、売掛債権売却が押し上げたFCF、2027年の分離条件を検証する。",
+  "href": "/articles/company-genuine-parts-2026-11-13"
+},
+{
+  "kind": "論点解説",
+  "theme": "市場テーマ",
+  "date": "2026-11-13 19:20",
+  "dateTime": "2026-11-13T10:20:24+00:00",
+  "title": "CiscoのAI売上拡大は利益・現金創出につながるか",
+  "excerpt": "売上増と粗利益率低下が同時に進むCisco。営業レバレッジ、FCF、在庫購入の約束からAI需要の現金化を検証する。",
+  "href": "/articles/theme-cisco-ai-cash-conversion-2026-11-13"
+},
+{
+  "kind": "企業レポート",
+  "theme": "個別企業",
   "date": "2026-11-12 19:59",
   "dateTime": "2026-11-12T10:59:59.084641+00:00",
   "title": "Brown & Brown：買収で大きくなる保険仲介会社を、１株と現金で見る",

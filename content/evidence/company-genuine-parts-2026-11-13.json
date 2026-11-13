@@ -1,0 +1,2636 @@
+{
+  "version": 1,
+  "articleSlug": "company-genuine-parts-2026-11-13",
+  "articleSha256": "20005802a323f61b8b1095ee412d663f209ad499d262835ea2f6e1bee98a0150",
+  "checkedAt": "2026-11-13T10:18:42Z",
+  "informationCutoff": "2026-11-13T10:00:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "一次原文・計算を著者検証、独立reviewで年金費用の税引前非現金表現、表の独立丸め、10Q期間表記を修正。FCFは有形固定資産取得支出を控除し買収配当控除前。価格/数量分解、競合利益率の順位、株価評価は主張しない。10Q/10K公表日はSEC directory indexの日時でも確認。全重要比較を記録。",
+  "comparisons": [
+    {
+      "id": "fy2021",
+      "question": "|2021|18,870.5|898.8|1,258.3|266.1|992.1|",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "|2021|18,870.5|898.8|1,258.3|266.1|992.1|",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Genuine Parts Company",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "net",
+          "entity": "Genuine Parts Company",
+          "metric": "GAAP純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        },
+        {
+          "id": "cfo",
+          "entity": "Genuine Parts Company",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Genuine Parts Company",
+          "metric": "固定資産取得支出（負）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出（負）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Genuine Parts Company",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 18870.51,
+          "source": {
+            "url": "https://www.genpt.com/2023-02-23-Genuine-Parts-Company-Reports-Results-For-the-Fourth-Quarter-and-Full-Year-2022",
+            "publishedOn": "2023-02-23",
+            "locator": "Consolidated statements of income and cash flows; FCF reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "Genuine Parts Company",
+          "metric": "GAAP純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 898.79,
+          "source": {
+            "url": "https://www.genpt.com/2023-02-23-Genuine-Parts-Company-Reports-Results-For-the-Fourth-Quarter-and-Full-Year-2022",
+            "publishedOn": "2023-02-23",
+            "locator": "Consolidated statements of income and cash flows; FCF reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "Genuine Parts Company",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1258.285,
+          "source": {
+            "url": "https://www.genpt.com/2023-02-23-Genuine-Parts-Company-Reports-Results-For-the-Fourth-Quarter-and-Full-Year-2022",
+            "publishedOn": "2023-02-23",
+            "locator": "Consolidated statements of income and cash flows; FCF reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Genuine Parts Company",
+          "metric": "固定資産取得支出（負）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出（負）",
+          "value": -266.136,
+          "source": {
+            "url": "https://www.genpt.com/2023-02-23-Genuine-Parts-Company-Reports-Results-For-the-Fourth-Quarter-and-Full-Year-2022",
+            "publishedOn": "2023-02-23",
+            "locator": "Consolidated statements of income and cash flows; FCF reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "cap"
+          ],
+          "value": 992.149,
+          "precision": 3,
+          "definition": "FCF=営業CF+負の設備投資"
+        }
+      ]
+    },
+    {
+      "id": "fy2022",
+      "question": "|2022|22,096.0|1,182.7|1,467.0|339.6|1,127.3|",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "|2022|22,096.0|1,182.7|1,467.0|339.6|1,127.3|",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Genuine Parts Company",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "net",
+          "entity": "Genuine Parts Company",
+          "metric": "GAAP純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        },
+        {
+          "id": "cfo",
+          "entity": "Genuine Parts Company",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Genuine Parts Company",
+          "metric": "固定資産取得支出（負）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出（負）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Genuine Parts Company",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 22095.973,
+          "source": {
+            "url": "https://www.genpt.com/2023-02-23-Genuine-Parts-Company-Reports-Results-For-the-Fourth-Quarter-and-Full-Year-2022",
+            "publishedOn": "2023-02-23",
+            "locator": "Consolidated statements of income and cash flows; FCF reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "Genuine Parts Company",
+          "metric": "GAAP純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 1182.701,
+          "source": {
+            "url": "https://www.genpt.com/2023-02-23-Genuine-Parts-Company-Reports-Results-For-the-Fourth-Quarter-and-Full-Year-2022",
+            "publishedOn": "2023-02-23",
+            "locator": "Consolidated statements of income and cash flows; FCF reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "Genuine Parts Company",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1466.971,
+          "source": {
+            "url": "https://www.genpt.com/2023-02-23-Genuine-Parts-Company-Reports-Results-For-the-Fourth-Quarter-and-Full-Year-2022",
+            "publishedOn": "2023-02-23",
+            "locator": "Consolidated statements of income and cash flows; FCF reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Genuine Parts Company",
+          "metric": "固定資産取得支出（負）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出（負）",
+          "value": -339.632,
+          "source": {
+            "url": "https://www.genpt.com/2023-02-23-Genuine-Parts-Company-Reports-Results-For-the-Fourth-Quarter-and-Full-Year-2022",
+            "publishedOn": "2023-02-23",
+            "locator": "Consolidated statements of income and cash flows; FCF reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "cap"
+          ],
+          "value": 1127.339,
+          "precision": 3,
+          "definition": "FCF=営業CF+負の設備投資"
+        }
+      ]
+    },
+    {
+      "id": "fy2023",
+      "question": "|2023|23,090.6|1,316.5|1,435.6|512.7|922.9|",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "|2023|23,090.6|1,316.5|1,435.6|512.7|922.9|",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Genuine Parts Company",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "net",
+          "entity": "Genuine Parts Company",
+          "metric": "GAAP純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        },
+        {
+          "id": "cfo",
+          "entity": "Genuine Parts Company",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Genuine Parts Company",
+          "metric": "固定資産取得支出（負）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出（負）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Genuine Parts Company",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 23090.61,
+          "source": {
+            "url": "https://www.genpt.com/2025-02-18-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2024-Results",
+            "publishedOn": "2025-02-18",
+            "locator": "Consolidated income/cash flows; change in net sales summary",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "Genuine Parts Company",
+          "metric": "GAAP純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 1316.524,
+          "source": {
+            "url": "https://www.genpt.com/2025-02-18-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2024-Results",
+            "publishedOn": "2025-02-18",
+            "locator": "Consolidated income/cash flows; change in net sales summary",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "Genuine Parts Company",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1435.61,
+          "source": {
+            "url": "https://www.genpt.com/2025-02-18-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2024-Results",
+            "publishedOn": "2025-02-18",
+            "locator": "Consolidated income/cash flows; change in net sales summary",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Genuine Parts Company",
+          "metric": "固定資産取得支出（負）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出（負）",
+          "value": -512.675,
+          "source": {
+            "url": "https://www.genpt.com/2025-02-18-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2024-Results",
+            "publishedOn": "2025-02-18",
+            "locator": "Consolidated income/cash flows; change in net sales summary",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "cap"
+          ],
+          "value": 922.935,
+          "precision": 3,
+          "definition": "FCF=営業CF+負の設備投資"
+        }
+      ]
+    },
+    {
+      "id": "fy2024",
+      "question": "|2024|23,486.6|904.1|1,251.3|567.3|683.9|",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "|2024|23,486.6|904.1|1,251.3|567.3|683.9|",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Genuine Parts Company",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "net",
+          "entity": "Genuine Parts Company",
+          "metric": "GAAP純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        },
+        {
+          "id": "cfo",
+          "entity": "Genuine Parts Company",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Genuine Parts Company",
+          "metric": "固定資産取得支出（負）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出（負）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Genuine Parts Company",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 23486.569,
+          "source": {
+            "url": "https://www.genpt.com/2025-02-18-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2024-Results",
+            "publishedOn": "2025-02-18",
+            "locator": "Consolidated income/cash flows; change in net sales summary",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "Genuine Parts Company",
+          "metric": "GAAP純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 904.076,
+          "source": {
+            "url": "https://www.genpt.com/2025-02-18-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2024-Results",
+            "publishedOn": "2025-02-18",
+            "locator": "Consolidated income/cash flows; change in net sales summary",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "Genuine Parts Company",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1251.251,
+          "source": {
+            "url": "https://www.genpt.com/2025-02-18-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2024-Results",
+            "publishedOn": "2025-02-18",
+            "locator": "Consolidated income/cash flows; change in net sales summary",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Genuine Parts Company",
+          "metric": "固定資産取得支出（負）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出（負）",
+          "value": -567.339,
+          "source": {
+            "url": "https://www.genpt.com/2025-02-18-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2024-Results",
+            "publishedOn": "2025-02-18",
+            "locator": "Consolidated income/cash flows; change in net sales summary",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "cap"
+          ],
+          "value": 683.912,
+          "precision": 3,
+          "definition": "FCF=営業CF+負の設備投資"
+        }
+      ]
+    },
+    {
+      "id": "fy2025",
+      "question": "|2025|24,300.1|65.9|890.8|469.8|420.9|",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "|2025|24,300.1|65.9|890.8|469.8|420.9|",
+      "requiredInputs": [
+        {
+          "id": "rev",
+          "entity": "Genuine Parts Company",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "net",
+          "entity": "Genuine Parts Company",
+          "metric": "GAAP純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益"
+        },
+        {
+          "id": "cfo",
+          "entity": "Genuine Parts Company",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Genuine Parts Company",
+          "metric": "固定資産取得支出（負）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出（負）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev",
+          "entity": "Genuine Parts Company",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 24300.141,
+          "source": {
+            "url": "https://www.genpt.com/2026-02-17-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated income/cash flows and adjusted EPS reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "Genuine Parts Company",
+          "metric": "GAAP純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益",
+          "value": 65.945,
+          "source": {
+            "url": "https://www.genpt.com/2026-02-17-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated income/cash flows and adjusted EPS reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "Genuine Parts Company",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 890.762,
+          "source": {
+            "url": "https://www.genpt.com/2026-02-17-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated income/cash flows and adjusted EPS reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Genuine Parts Company",
+          "metric": "固定資産取得支出（負）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "固定資産取得支出（負）",
+          "value": -469.838,
+          "source": {
+            "url": "https://www.genpt.com/2026-02-17-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated income/cash flows and adjusted EPS reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "cap"
+          ],
+          "value": 420.924,
+          "precision": 3,
+          "definition": "FCF=営業CF+負の設備投資"
+        }
+      ]
+    },
+    {
+      "id": "five-year",
+      "question": "売上は2021年から約29%増えた一方、FCFは約58%減った。",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "売上は2021年から約29%増えた一方、FCFは約58%減った。",
+      "requiredInputs": [
+        {
+          "id": "r21",
+          "entity": "Genuine Parts Company",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "r25",
+          "entity": "Genuine Parts Company",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "f21",
+          "entity": "Genuine Parts Company",
+          "metric": "FCF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF"
+        },
+        {
+          "id": "f25",
+          "entity": "Genuine Parts Company",
+          "metric": "FCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "r21",
+          "entity": "Genuine Parts Company",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 18870.51,
+          "source": {
+            "url": "https://www.genpt.com/2023-02-23-Genuine-Parts-Company-Reports-Results-For-the-Fourth-Quarter-and-Full-Year-2022",
+            "publishedOn": "2023-02-23",
+            "locator": "Consolidated statements of income and cash flows; FCF reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "r25",
+          "entity": "Genuine Parts Company",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 24300.141,
+          "source": {
+            "url": "https://www.genpt.com/2026-02-17-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated income/cash flows and adjusted EPS reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "f21",
+          "entity": "Genuine Parts Company",
+          "metric": "FCF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF",
+          "value": 992.149,
+          "source": {
+            "url": "https://www.genpt.com/2023-02-23-Genuine-Parts-Company-Reports-Results-For-the-Fourth-Quarter-and-Full-Year-2022",
+            "publishedOn": "2023-02-23",
+            "locator": "Consolidated statements of income and cash flows; FCF reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "f25",
+          "entity": "Genuine Parts Company",
+          "metric": "FCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF",
+          "value": 420.924,
+          "source": {
+            "url": "https://www.genpt.com/2026-02-17-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated income/cash flows and adjusted EPS reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "revGrowth",
+          "operation": "growth-percent",
+          "inputs": [
+            "r25",
+            "r21"
+          ],
+          "value": 28.773,
+          "precision": 3,
+          "definition": "売上増加率"
+        },
+        {
+          "id": "fcfGrowth",
+          "operation": "growth-percent",
+          "inputs": [
+            "f25",
+            "f21"
+          ],
+          "value": -57.575,
+          "precision": 3,
+          "definition": "FCF増減率"
+        }
+      ]
+    },
+    {
+      "id": "growth24",
+      "question": "2024年の増収率1.7%も、比較可能売上が0.8%減る中で買収の2.6ポイント寄与に支えられた。",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "2024年の増収率1.7%も、比較可能売上が0.8%減る中で買収の2.6ポイント寄与に支えられた。",
+      "requiredInputs": [
+        {
+          "id": "total",
+          "entity": "Genuine Parts Company",
+          "metric": "売上増加率",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上増加率"
+        },
+        {
+          "id": "comp",
+          "entity": "Genuine Parts Company",
+          "metric": "比較可能売上増減率",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "比較可能売上増減率"
+        },
+        {
+          "id": "acq",
+          "entity": "Genuine Parts Company",
+          "metric": "買収寄与",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "買収寄与"
+        }
+      ],
+      "observations": [
+        {
+          "id": "total",
+          "entity": "Genuine Parts Company",
+          "metric": "売上増加率",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上増加率",
+          "value": 1.7,
+          "source": {
+            "url": "https://www.genpt.com/2025-02-18-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2024-Results",
+            "publishedOn": "2025-02-18",
+            "locator": "Consolidated income/cash flows; change in net sales summary",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "comp",
+          "entity": "Genuine Parts Company",
+          "metric": "比較可能売上増減率",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "比較可能売上増減率",
+          "value": -0.8,
+          "source": {
+            "url": "https://www.genpt.com/2025-02-18-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2024-Results",
+            "publishedOn": "2025-02-18",
+            "locator": "Consolidated income/cash flows; change in net sales summary",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "Genuine Parts Company",
+          "metric": "買収寄与",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "買収寄与",
+          "value": 2.6,
+          "source": {
+            "url": "https://www.genpt.com/2025-02-18-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2024-Results",
+            "publishedOn": "2025-02-18",
+            "locator": "Consolidated income/cash flows; change in net sales summary",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "growth25",
+      "question": "2025年は増収3.5%のうち、比較可能売上0.9%、買収2.2%、為替0.3%、その他0.1%だった。",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "2025年は増収3.5%のうち、比較可能売上0.9%、買収2.2%、為替0.3%、その他0.1%だった。",
+      "requiredInputs": [
+        {
+          "id": "total",
+          "entity": "Genuine Parts Company",
+          "metric": "total",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "total"
+        },
+        {
+          "id": "comp",
+          "entity": "Genuine Parts Company",
+          "metric": "comp",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "comp"
+        },
+        {
+          "id": "acq",
+          "entity": "Genuine Parts Company",
+          "metric": "acq",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "acq"
+        },
+        {
+          "id": "fx",
+          "entity": "Genuine Parts Company",
+          "metric": "fx",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "fx"
+        },
+        {
+          "id": "other",
+          "entity": "Genuine Parts Company",
+          "metric": "other",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "other"
+        }
+      ],
+      "observations": [
+        {
+          "id": "total",
+          "entity": "Genuine Parts Company",
+          "metric": "total",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "total",
+          "value": 3.5,
+          "source": {
+            "url": "https://www.genpt.com/2026-02-17-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated income/cash flows and adjusted EPS reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "comp",
+          "entity": "Genuine Parts Company",
+          "metric": "comp",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "comp",
+          "value": 0.9,
+          "source": {
+            "url": "https://www.genpt.com/2026-02-17-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated income/cash flows and adjusted EPS reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "Genuine Parts Company",
+          "metric": "acq",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "acq",
+          "value": 2.2,
+          "source": {
+            "url": "https://www.genpt.com/2026-02-17-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated income/cash flows and adjusted EPS reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fx",
+          "entity": "Genuine Parts Company",
+          "metric": "fx",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "fx",
+          "value": 0.3,
+          "source": {
+            "url": "https://www.genpt.com/2026-02-17-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated income/cash flows and adjusted EPS reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "other",
+          "entity": "Genuine Parts Company",
+          "metric": "other",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "other",
+          "value": 0.1,
+          "source": {
+            "url": "https://www.genpt.com/2026-02-17-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated income/cash flows and adjusted EPS reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "eps25",
+      "question": "会社調整後EPSも2024年8.16ドルから2025年7.37ドルへ低下している。",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "会社調整後EPSも2024年8.16ドルから2025年7.37ドルへ低下している。",
+      "requiredInputs": [
+        {
+          "id": "old",
+          "entity": "Genuine Parts Company",
+          "metric": "会社調整後EPS",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "会社調整後EPS"
+        },
+        {
+          "id": "new",
+          "entity": "Genuine Parts Company",
+          "metric": "会社調整後EPS",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "会社調整後EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old",
+          "entity": "Genuine Parts Company",
+          "metric": "会社調整後EPS",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "会社調整後EPS",
+          "value": 8.16,
+          "source": {
+            "url": "https://www.genpt.com/2026-02-17-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated income/cash flows and adjusted EPS reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new",
+          "entity": "Genuine Parts Company",
+          "metric": "会社調整後EPS",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "会社調整後EPS",
+          "value": 7.37,
+          "source": {
+            "url": "https://www.genpt.com/2026-02-17-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated income/cash flows and adjusted EPS reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "na",
+      "question": "|北米自動車|+2.2%|+1.7%|−2.9%|7.6%（前年8.0%）|",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "|北米自動車|+2.2%|+1.7%|−2.9%|7.6%（前年8.0%）|",
+      "requiredInputs": [
+        {
+          "id": "growth",
+          "entity": "Genuine Parts Company",
+          "metric": "北米自動車:売上前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米自動車:売上前年比"
+        },
+        {
+          "id": "comp",
+          "entity": "Genuine Parts Company",
+          "metric": "北米自動車:比較可能売上前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米自動車:比較可能売上前年比"
+        },
+        {
+          "id": "ebitdaGrowth",
+          "entity": "Genuine Parts Company",
+          "metric": "北米自動車:EBITDA前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米自動車:EBITDA前年比"
+        },
+        {
+          "id": "margin",
+          "entity": "Genuine Parts Company",
+          "metric": "北米自動車:EBITDA率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米自動車:EBITDA率"
+        },
+        {
+          "id": "marginPrior",
+          "entity": "Genuine Parts Company",
+          "metric": "北米自動車:EBITDA率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米自動車:EBITDA率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "growth",
+          "entity": "Genuine Parts Company",
+          "metric": "北米自動車:売上前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米自動車:売上前年比",
+          "value": 2.2,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "comp",
+          "entity": "Genuine Parts Company",
+          "metric": "北米自動車:比較可能売上前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米自動車:比較可能売上前年比",
+          "value": 1.7,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ebitdaGrowth",
+          "entity": "Genuine Parts Company",
+          "metric": "北米自動車:EBITDA前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米自動車:EBITDA前年比",
+          "value": -2.9,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "margin",
+          "entity": "Genuine Parts Company",
+          "metric": "北米自動車:EBITDA率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米自動車:EBITDA率",
+          "value": 7.6,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "marginPrior",
+          "entity": "Genuine Parts Company",
+          "metric": "北米自動車:EBITDA率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米自動車:EBITDA率",
+          "value": 8,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "intl",
+      "question": "|海外自動車|+4.5%|+1.1%|+4.7%|9.0%（横ばい）|",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "|海外自動車|+4.5%|+1.1%|+4.7%|9.0%（横ばい）|",
+      "requiredInputs": [
+        {
+          "id": "growth",
+          "entity": "Genuine Parts Company",
+          "metric": "海外自動車:売上前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外自動車:売上前年比"
+        },
+        {
+          "id": "comp",
+          "entity": "Genuine Parts Company",
+          "metric": "海外自動車:比較可能売上前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外自動車:比較可能売上前年比"
+        },
+        {
+          "id": "ebitdaGrowth",
+          "entity": "Genuine Parts Company",
+          "metric": "海外自動車:EBITDA前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外自動車:EBITDA前年比"
+        },
+        {
+          "id": "margin",
+          "entity": "Genuine Parts Company",
+          "metric": "海外自動車:EBITDA率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外自動車:EBITDA率"
+        },
+        {
+          "id": "marginPrior",
+          "entity": "Genuine Parts Company",
+          "metric": "海外自動車:EBITDA率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外自動車:EBITDA率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "growth",
+          "entity": "Genuine Parts Company",
+          "metric": "海外自動車:売上前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外自動車:売上前年比",
+          "value": 4.5,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "comp",
+          "entity": "Genuine Parts Company",
+          "metric": "海外自動車:比較可能売上前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外自動車:比較可能売上前年比",
+          "value": 1.1,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ebitdaGrowth",
+          "entity": "Genuine Parts Company",
+          "metric": "海外自動車:EBITDA前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外自動車:EBITDA前年比",
+          "value": 4.7,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "margin",
+          "entity": "Genuine Parts Company",
+          "metric": "海外自動車:EBITDA率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外自動車:EBITDA率",
+          "value": 9,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "marginPrior",
+          "entity": "Genuine Parts Company",
+          "metric": "海外自動車:EBITDA率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外自動車:EBITDA率",
+          "value": 9,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "industrial",
+      "question": "|工業部品|+6.1%|+5.5%|+11.2%|13.2%（前年12.6%）|",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "|工業部品|+6.1%|+5.5%|+11.2%|13.2%（前年12.6%）|",
+      "requiredInputs": [
+        {
+          "id": "growth",
+          "entity": "Genuine Parts Company",
+          "metric": "工業部品:売上前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "工業部品:売上前年比"
+        },
+        {
+          "id": "comp",
+          "entity": "Genuine Parts Company",
+          "metric": "工業部品:比較可能売上前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "工業部品:比較可能売上前年比"
+        },
+        {
+          "id": "ebitdaGrowth",
+          "entity": "Genuine Parts Company",
+          "metric": "工業部品:EBITDA前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "工業部品:EBITDA前年比"
+        },
+        {
+          "id": "margin",
+          "entity": "Genuine Parts Company",
+          "metric": "工業部品:EBITDA率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "工業部品:EBITDA率"
+        },
+        {
+          "id": "marginPrior",
+          "entity": "Genuine Parts Company",
+          "metric": "工業部品:EBITDA率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "工業部品:EBITDA率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "growth",
+          "entity": "Genuine Parts Company",
+          "metric": "工業部品:売上前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "工業部品:売上前年比",
+          "value": 6.1,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "comp",
+          "entity": "Genuine Parts Company",
+          "metric": "工業部品:比較可能売上前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "工業部品:比較可能売上前年比",
+          "value": 5.5,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ebitdaGrowth",
+          "entity": "Genuine Parts Company",
+          "metric": "工業部品:EBITDA前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "工業部品:EBITDA前年比",
+          "value": 11.2,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "margin",
+          "entity": "Genuine Parts Company",
+          "metric": "工業部品:EBITDA率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "工業部品:EBITDA率",
+          "value": 13.2,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "marginPrior",
+          "entity": "Genuine Parts Company",
+          "metric": "工業部品:EBITDA率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "工業部品:EBITDA率",
+          "value": 12.6,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3total",
+      "question": "全社の四半期売上は65.21億ドル、純利益は2.24億ドルで前年の2.26億ドルを小幅に下回った。",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "全社の四半期売上は65.21億ドル、純利益は2.24億ドルで前年の2.26億ドルを小幅に下回った。",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "Genuine Parts Company",
+          "metric": "売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "net",
+          "entity": "Genuine Parts Company",
+          "metric": "GAAP純利益概数",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益概数"
+        },
+        {
+          "id": "netPrior",
+          "entity": "Genuine Parts Company",
+          "metric": "GAAP純利益概数",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益概数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "Genuine Parts Company",
+          "metric": "売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 6521.308,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "Genuine Parts Company",
+          "metric": "GAAP純利益概数",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益概数",
+          "value": 224,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "netPrior",
+          "entity": "Genuine Parts Company",
+          "metric": "GAAP純利益概数",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP純利益概数",
+          "value": 226,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3eps",
+      "question": "調整後EPSは1.98ドルから2.07ドルへ上昇したが、GAAPのEPSは1.62ドルで横ばい。",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "調整後EPSは1.98ドルから2.07ドルへ上昇したが、GAAPのEPSは1.62ドルで横ばい。",
+      "requiredInputs": [
+        {
+          "id": "adjPrior",
+          "entity": "Genuine Parts Company",
+          "metric": "調整後EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "調整後EPS"
+        },
+        {
+          "id": "adj",
+          "entity": "Genuine Parts Company",
+          "metric": "調整後EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "調整後EPS"
+        },
+        {
+          "id": "gaapPrior",
+          "entity": "Genuine Parts Company",
+          "metric": "GAAP EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "GAAP EPS"
+        },
+        {
+          "id": "gaap",
+          "entity": "Genuine Parts Company",
+          "metric": "GAAP EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "GAAP EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "adjPrior",
+          "entity": "Genuine Parts Company",
+          "metric": "調整後EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "調整後EPS",
+          "value": 1.98,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "adj",
+          "entity": "Genuine Parts Company",
+          "metric": "調整後EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "調整後EPS",
+          "value": 2.07,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "gaapPrior",
+          "entity": "Genuine Parts Company",
+          "metric": "GAAP EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "GAAP EPS",
+          "value": 1.62,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "gaap",
+          "entity": "Genuine Parts Company",
+          "metric": "GAAP EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "USD/share",
+          "basis": "actual",
+          "definition": "GAAP EPS",
+          "value": 1.62,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "outlook",
+      "question": "2026年通期の調整後EPS見通しも7.50〜8.00ドルから7.50〜7.75ドルへ上限を引き下げている。",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "2026年通期の調整後EPS見通しも7.50〜8.00ドルから7.50〜7.75ドルへ上限を引き下げている。",
+      "requiredInputs": [
+        {
+          "id": "oldLow",
+          "entity": "Genuine Parts Company",
+          "metric": "旧ガイダンス下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "旧ガイダンス下限"
+        },
+        {
+          "id": "oldHigh",
+          "entity": "Genuine Parts Company",
+          "metric": "旧ガイダンス上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "旧ガイダンス上限"
+        },
+        {
+          "id": "newLow",
+          "entity": "Genuine Parts Company",
+          "metric": "10月20日ガイダンス下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "10月20日ガイダンス下限"
+        },
+        {
+          "id": "newHigh",
+          "entity": "Genuine Parts Company",
+          "metric": "10月20日ガイダンス上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "10月20日ガイダンス上限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oldLow",
+          "entity": "Genuine Parts Company",
+          "metric": "旧ガイダンス下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "旧ガイダンス下限",
+          "value": 7.5,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldHigh",
+          "entity": "Genuine Parts Company",
+          "metric": "旧ガイダンス上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "旧ガイダンス上限",
+          "value": 8,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newLow",
+          "entity": "Genuine Parts Company",
+          "metric": "10月20日ガイダンス下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "10月20日ガイダンス下限",
+          "value": 7.5,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newHigh",
+          "entity": "Genuine Parts Company",
+          "metric": "10月20日ガイダンス上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "10月20日ガイダンス上限",
+          "value": 7.75,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "price",
+      "question": "会社は全社の７〜９月と１〜９月の比較可能売上に、いずれも約2.5%の価格上昇が寄与したと説明する。",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "会社は全社の７〜９月と１〜９月の比較可能売上に、いずれも約2.5%の価格上昇が寄与したと説明する。",
+      "requiredInputs": [
+        {
+          "id": "q3",
+          "entity": "Genuine Parts Company",
+          "metric": "価格寄与会社概算",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "価格寄与会社概算"
+        },
+        {
+          "id": "ytd",
+          "entity": "Genuine Parts Company",
+          "metric": "価格寄与会社概算",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "価格寄与会社概算"
+        },
+        {
+          "id": "comp",
+          "entity": "Genuine Parts Company",
+          "metric": "全社比較可能売上前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "全社比較可能売上前年比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "q3",
+          "entity": "Genuine Parts Company",
+          "metric": "価格寄与会社概算",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "価格寄与会社概算",
+          "value": 2.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/40987/000004098726000041/gpc-20260930.htm",
+            "publishedOn": "2026-10-20",
+            "locator": "Note 3 pp15-16; MD&A pp24 and 29",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ytd",
+          "entity": "Genuine Parts Company",
+          "metric": "価格寄与会社概算",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "価格寄与会社概算",
+          "value": 2.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/40987/000004098726000041/gpc-20260930.htm",
+            "publishedOn": "2026-10-20",
+            "locator": "Note 3 pp15-16; MD&A pp24 and 29",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "comp",
+          "entity": "Genuine Parts Company",
+          "metric": "全社比較可能売上前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "全社比較可能売上前年比",
+          "value": 2.9,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fcf-bridge",
+      "question": "筆者の検算では、２億5,000万ドルはFCF増加額の約73%。",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "筆者の検算では、２億5,000万ドルはFCF増加額の約73%。",
+      "requiredInputs": [
+        {
+          "id": "cf26",
+          "entity": "Genuine Parts Company",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cap26",
+          "entity": "Genuine Parts Company",
+          "metric": "設備投資負",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資負"
+        },
+        {
+          "id": "cf25",
+          "entity": "Genuine Parts Company",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cap25",
+          "entity": "Genuine Parts Company",
+          "metric": "設備投資負",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資負"
+        },
+        {
+          "id": "ar",
+          "entity": "Genuine Parts Company",
+          "metric": "債権売却枠増による営業CF寄与概数",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "債権売却枠増による営業CF寄与概数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cf26",
+          "entity": "Genuine Parts Company",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 816.647,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap26",
+          "entity": "Genuine Parts Company",
+          "metric": "設備投資負",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資負",
+          "value": -314.476,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cf25",
+          "entity": "Genuine Parts Company",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 510.689,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap25",
+          "entity": "Genuine Parts Company",
+          "metric": "設備投資負",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資負",
+          "value": -350.443,
+          "source": {
+            "url": "https://www.genpt.com/2026-10-20-Genuine-Parts-Company-Reports-Third-Quarter-2026-Results",
+            "publishedOn": "2026-10-20",
+            "locator": "Q3 segment highlights / income / outlook / cash flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ar",
+          "entity": "Genuine Parts Company",
+          "metric": "債権売却枠増による営業CF寄与概数",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "債権売却枠増による営業CF寄与概数",
+          "value": 250,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/40987/000004098726000041/gpc-20260930.htm",
+            "publishedOn": "2026-10-20",
+            "locator": "Note 3 pp15-16; MD&A pp24 and 29",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf26",
+          "operation": "sum",
+          "inputs": [
+            "cf26",
+            "cap26"
+          ],
+          "value": 502.171,
+          "precision": 3,
+          "definition": "2026YTD FCF"
+        },
+        {
+          "id": "fcf25",
+          "operation": "sum",
+          "inputs": [
+            "cf25",
+            "cap25"
+          ],
+          "value": 160.246,
+          "precision": 3,
+          "definition": "2025YTD FCF"
+        },
+        {
+          "id": "delta",
+          "operation": "difference",
+          "inputs": [
+            "fcf26",
+            "fcf25"
+          ],
+          "value": 341.925,
+          "precision": 3,
+          "definition": "FCF改善額"
+        },
+        {
+          "id": "share",
+          "operation": "ratio-percent",
+          "inputs": [
+            "ar",
+            "delta"
+          ],
+          "value": 73.115,
+          "precision": 3,
+          "definition": "枠拡大寄与/FCF改善"
+        },
+        {
+          "id": "capReduction",
+          "operation": "difference",
+          "inputs": [
+            "cap26",
+            "cap25"
+          ],
+          "value": 35.967,
+          "precision": 3,
+          "definition": "投資減少寄与"
+        },
+        {
+          "id": "cfDelta",
+          "operation": "difference",
+          "inputs": [
+            "cf26",
+            "cf25"
+          ],
+          "value": 305.958,
+          "precision": 3,
+          "definition": "営業CF改善"
+        },
+        {
+          "id": "residual",
+          "operation": "difference",
+          "inputs": [
+            "cfDelta",
+            "ar"
+          ],
+          "value": 55.958,
+          "precision": 3,
+          "definition": "枠拡大以外の営業CF改善"
+        },
+        {
+          "id": "referenceFcf",
+          "operation": "difference",
+          "inputs": [
+            "fcf26",
+            "ar"
+          ],
+          "value": 252.171,
+          "precision": 3,
+          "definition": "枠拡大分のみ除外した筆者参考FCF"
+        },
+        {
+          "id": "referenceImprovement",
+          "operation": "difference",
+          "inputs": [
+            "referenceFcf",
+            "fcf25"
+          ],
+          "value": 91.925,
+          "precision": 3,
+          "definition": "同参考FCF対前年増加"
+        }
+      ]
+    },
+    {
+      "id": "ar-facility",
+      "question": "１月２日に枠を10億ドルから12.5億ドルへ拡大し、第１四半期に資金を得た。",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "１月２日に枠を10億ドルから12.5億ドルへ拡大し、第１四半期に資金を得た。",
+      "requiredInputs": [
+        {
+          "id": "prior",
+          "entity": "Genuine Parts Company",
+          "metric": "売掛債権売却枠",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売掛債権売却枠"
+        },
+        {
+          "id": "current",
+          "entity": "Genuine Parts Company",
+          "metric": "売掛債権売却枠",
+          "periodStart": "2026-01-02",
+          "periodEnd": "2026-01-02",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売掛債権売却枠"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prior",
+          "entity": "Genuine Parts Company",
+          "metric": "売掛債権売却枠",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売掛債権売却枠",
+          "value": 1000,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/40987/000004098726000041/gpc-20260930.htm",
+            "publishedOn": "2026-10-20",
+            "locator": "Note 3 pp15-16; MD&A pp24 and 29",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "current",
+          "entity": "Genuine Parts Company",
+          "metric": "売掛債権売却枠",
+          "periodStart": "2026-01-02",
+          "periodEnd": "2026-01-02",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売掛債権売却枠",
+          "value": 1250,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/40987/000004098726000041/gpc-20260930.htm",
+            "publishedOn": "2026-10-20",
+            "locator": "Note 3 pp15-16; MD&A pp24 and 29",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "allocation",
+      "question": "FCFを配当だけで約1.43億ドル上回るため、その年の現金配分を営業CFと設備投資だけで説明することはできない。",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "FCFを配当だけで約1.43億ドル上回るため、その年の現金配分を営業CFと設備投資だけで説明することはできない。",
+      "requiredInputs": [
+        {
+          "id": "div",
+          "entity": "Genuine Parts Company",
+          "metric": "現金配当",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金配当"
+        },
+        {
+          "id": "fcf",
+          "entity": "Genuine Parts Company",
+          "metric": "FCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF"
+        },
+        {
+          "id": "acq25",
+          "entity": "Genuine Parts Company",
+          "metric": "買収現金支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収現金支出"
+        },
+        {
+          "id": "acq24",
+          "entity": "Genuine Parts Company",
+          "metric": "買収現金支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収現金支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "div",
+          "entity": "Genuine Parts Company",
+          "metric": "現金配当",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金配当",
+          "value": 563.842,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/40987/000004098726000003/gpc-20251231.htm",
+            "publishedOn": "2026-02-20",
+            "locator": "Consolidated balance sheet / income / cash flows pp38-42",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fcf",
+          "entity": "Genuine Parts Company",
+          "metric": "FCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF",
+          "value": 420.924,
+          "source": {
+            "url": "https://www.genpt.com/2026-02-17-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2025-Results",
+            "publishedOn": "2026-02-17",
+            "locator": "Consolidated income/cash flows and adjusted EPS reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq25",
+          "entity": "Genuine Parts Company",
+          "metric": "買収現金支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収現金支出",
+          "value": 318.291,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/40987/000004098726000003/gpc-20251231.htm",
+            "publishedOn": "2026-02-20",
+            "locator": "Consolidated balance sheet / income / cash flows pp38-42",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq24",
+          "entity": "Genuine Parts Company",
+          "metric": "買収現金支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収現金支出",
+          "value": 1080.238,
+          "source": {
+            "url": "https://www.genpt.com/2025-02-18-Genuine-Parts-Company-Reports-Fourth-Quarter-and-Full-Year-2024-Results",
+            "publishedOn": "2025-02-18",
+            "locator": "Consolidated income/cash flows; change in net sales summary",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "shortfall",
+          "operation": "difference",
+          "inputs": [
+            "div",
+            "fcf"
+          ],
+          "value": 142.918,
+          "precision": 3,
+          "definition": "配当−FCF"
+        }
+      ]
+    },
+    {
+      "id": "capital-efficiency",
+      "question": "資本効率の補助指標として、2025年の営業利益相当額を平均総資産で割ると約4.8%となる。",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "資本効率の補助指標として、2025年の営業利益相当額を平均総資産で割ると約4.8%となる。",
+      "requiredInputs": [
+        {
+          "id": "gp",
+          "entity": "Genuine Parts Company",
+          "metric": "売上総利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上総利益"
+        },
+        {
+          "id": "opex",
+          "entity": "Genuine Parts Company",
+          "metric": "営業費用",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業費用"
+        },
+        {
+          "id": "assets24",
+          "entity": "Genuine Parts Company",
+          "metric": "総資産",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "総資産"
+        },
+        {
+          "id": "assets25",
+          "entity": "Genuine Parts Company",
+          "metric": "総資産",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "総資産"
+        }
+      ],
+      "observations": [
+        {
+          "id": "gp",
+          "entity": "Genuine Parts Company",
+          "metric": "売上総利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上総利益",
+          "value": 8940.698,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/40987/000004098726000003/gpc-20251231.htm",
+            "publishedOn": "2026-02-20",
+            "locator": "Consolidated balance sheet / income / cash flows pp38-42",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "opex",
+          "entity": "Genuine Parts Company",
+          "metric": "営業費用",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業費用",
+          "value": 7980.047,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/40987/000004098726000003/gpc-20251231.htm",
+            "publishedOn": "2026-02-20",
+            "locator": "Consolidated balance sheet / income / cash flows pp38-42",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "assets24",
+          "entity": "Genuine Parts Company",
+          "metric": "総資産",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "総資産",
+          "value": 19282.705,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/40987/000004098726000003/gpc-20251231.htm",
+            "publishedOn": "2026-02-20",
+            "locator": "Consolidated balance sheet / income / cash flows pp38-42",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "assets25",
+          "entity": "Genuine Parts Company",
+          "metric": "総資産",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "総資産",
+          "value": 20795.54,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/40987/000004098726000003/gpc-20251231.htm",
+            "publishedOn": "2026-02-20",
+            "locator": "Consolidated balance sheet / income / cash flows pp38-42",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "operating",
+          "operation": "difference",
+          "inputs": [
+            "gp",
+            "opex"
+          ],
+          "value": 960.651,
+          "precision": 3,
+          "definition": "営業利益相当"
+        },
+        {
+          "id": "doubleOperating",
+          "operation": "sum",
+          "inputs": [
+            "operating",
+            "operating"
+          ],
+          "value": 1921.302,
+          "precision": 3,
+          "definition": "平均資産分母に対応する分子2倍"
+        },
+        {
+          "id": "sumAssets",
+          "operation": "sum",
+          "inputs": [
+            "assets24",
+            "assets25"
+          ],
+          "value": 40078.245,
+          "precision": 3,
+          "definition": "期首期末総資産合計"
+        },
+        {
+          "id": "return",
+          "operation": "ratio-percent",
+          "inputs": [
+            "doubleOperating",
+            "sumAssets"
+          ],
+          "value": 4.794,
+          "precision": 3,
+          "definition": "営業利益相当/平均総資産、ROICでない"
+        }
+      ]
+    },
+    {
+      "id": "pension",
+      "question": "年金清算費用約７億4,200万ドル",
+      "definition": "連結US GAAP。調整後・部門EBITDA・比較可能売上は会社定義。独自計算は明示。",
+      "status": "ready",
+      "claim": "年金清算費用約７億4,200万ドル",
+      "requiredInputs": [
+        {
+          "id": "charge",
+          "entity": "Genuine Parts Company",
+          "metric": "税引前非現金年金清算費用",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "税引前非現金年金清算費用"
+        }
+      ],
+      "observations": [
+        {
+          "id": "charge",
+          "entity": "Genuine Parts Company",
+          "metric": "税引前非現金年金清算費用",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "税引前非現金年金清算費用",
+          "value": 741.967,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/40987/000004098726000003/gpc-20251231.htm",
+            "publishedOn": "2026-02-20",
+            "locator": "Consolidated balance sheet / income / cash flows pp38-42",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
