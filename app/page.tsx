@@ -10,6 +10,15 @@ import BreadthHomeCard from "./market-breadth/home-card";
 
 const legacyArticles = [
 {
+  "kind": "週次レポート",
+  "theme": "日米株・AI投資",
+  "date": "2026-11-14 08:06",
+  "dateTime": "2026-11-14T08:06:51+09:00",
+  "title": "日米株は週間で反発、NVIDIAの経営交代でAI投資の資金に再注目｜11月9日〜13日",
+  "excerpt": "日米4指数の週間騰落率と、NVIDIAのCEO交代、CoreWeave決算、米物価・金利、翌週の決算と上場予定を整理する。",
+  "href": "/articles/weekly-2026-11-09"
+},
+{
   "kind": "企業レポート",
   "theme": "個別企業",
   "date": "2026-11-13 19:20",

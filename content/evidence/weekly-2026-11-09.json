@@ -1,0 +1,329 @@
+{
+  "version": 1,
+  "articleSlug": "weekly-2026-11-09",
+  "articleSha256": "59207059300020b34ae7a015bd8d873b3e523d2f25fc78f011682bd79be571ab",
+  "checkedAt": "2026-11-13T23:07:31.760Z",
+  "informationCutoff": "2026-11-14T08:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "全文・見出し・表・出典を確認。数値比較は定義を統一した4指数の前週末比。CPIはBLS公表の単月変化率、ドル円・原油は観測水準。企業間比較、会社予想対市場予想、原油の週間騰落率は算出していない。",
+  "comparisons": [
+    {
+      "id": "nikkei-week",
+      "question": "日経平均の前週最終取引日からの週間騰落率は何％か。",
+      "definition": "通常取引の現地最終取引日終値。配当再投資・通貨換算を含まない価格指数。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "previous",
+          "entity": "日経平均",
+          "metric": "価格指数終値",
+          "periodStart": "2026-11-06",
+          "periodEnd": "2026-11-06",
+          "unit": "円",
+          "basis": "market",
+          "definition": "通常取引の現地最終取引日終値。配当再投資・通貨換算を含まない価格指数。"
+        },
+        {
+          "id": "current",
+          "entity": "日経平均",
+          "metric": "価格指数終値",
+          "periodStart": "2026-11-13",
+          "periodEnd": "2026-11-13",
+          "unit": "円",
+          "basis": "market",
+          "definition": "通常取引の現地最終取引日終値。配当再投資・通貨換算を含まない価格指数。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "previous",
+          "entity": "日経平均",
+          "metric": "価格指数終値",
+          "periodStart": "2026-11-06",
+          "periodEnd": "2026-11-06",
+          "unit": "円",
+          "basis": "market",
+          "definition": "通常取引の現地最終取引日終値。配当再投資・通貨換算を含まない価格指数。",
+          "value": 57434.77,
+          "source": {
+            "url": "https://indexes.nikkei.co.jp/en/nkave/archives/data",
+            "publishedOn": "2026-11-13",
+            "locator": "Historical Data / 2026-11-06 / Close欄",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "current",
+          "entity": "日経平均",
+          "metric": "価格指数終値",
+          "periodStart": "2026-11-13",
+          "periodEnd": "2026-11-13",
+          "unit": "円",
+          "basis": "market",
+          "definition": "通常取引の現地最終取引日終値。配当再投資・通貨換算を含まない価格指数。",
+          "value": 61142.35,
+          "source": {
+            "url": "https://indexes.nikkei.co.jp/en/nkave/archives/data",
+            "publishedOn": "2026-11-13",
+            "locator": "Historical Data / 2026-11-13 / Close欄",
+            "kind": "primary"
+          }
+        }
+      ],
+      "claim": "日経平均は週間+6.46%",
+      "calculations": [
+        {
+          "id": "weekly-return",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "（11月13日終値÷11月6日終値−1）×100",
+          "precision": 2,
+          "value": 6.46
+        }
+      ]
+    },
+    {
+      "id": "dow-week",
+      "question": "ダウ平均の前週最終取引日からの週間騰落率は何％か。",
+      "definition": "通常取引の現地最終取引日終値。配当再投資・通貨換算を含まない価格指数。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "previous",
+          "entity": "ダウ平均",
+          "metric": "価格指数終値",
+          "periodStart": "2026-11-06",
+          "periodEnd": "2026-11-06",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "通常取引の現地最終取引日終値。配当再投資・通貨換算を含まない価格指数。"
+        },
+        {
+          "id": "current",
+          "entity": "ダウ平均",
+          "metric": "価格指数終値",
+          "periodStart": "2026-11-13",
+          "periodEnd": "2026-11-13",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "通常取引の現地最終取引日終値。配当再投資・通貨換算を含まない価格指数。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "previous",
+          "entity": "ダウ平均",
+          "metric": "価格指数終値",
+          "periodStart": "2026-11-06",
+          "periodEnd": "2026-11-06",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "通常取引の現地最終取引日終値。配当再投資・通貨換算を含まない価格指数。",
+          "value": 51285.73,
+          "source": {
+            "url": "https://apnews.com/article/806f71d95105bc7efbc760b194dd8cad",
+            "publishedOn": "2026-11-06",
+            "locator": "On Friday / ダウ平均の確定終値",
+            "kind": "secondary",
+            "primaryUnavailableReason": "算定機関の両日の確定値を同じ時点で確認できなかったため、APの両日引け後記事で統一した。"
+          }
+        },
+        {
+          "id": "current",
+          "entity": "ダウ平均",
+          "metric": "価格指数終値",
+          "periodStart": "2026-11-13",
+          "periodEnd": "2026-11-13",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "通常取引の現地最終取引日終値。配当再投資・通貨換算を含まない価格指数。",
+          "value": 52347.55,
+          "source": {
+            "url": "https://apnews.com/article/12c1e8155fb85c3c7b09e058ed6d3c74",
+            "publishedOn": "2026-11-13",
+            "locator": "On Friday / ダウ平均の確定終値",
+            "kind": "secondary",
+            "primaryUnavailableReason": "算定機関の両日の確定値を同じ時点で確認できなかったため、APの両日引け後記事で統一した。"
+          }
+        }
+      ],
+      "claim": "ダウ平均は週間+2.07%",
+      "calculations": [
+        {
+          "id": "weekly-return",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "（11月13日終値÷11月6日終値−1）×100",
+          "precision": 2,
+          "value": 2.07
+        }
+      ]
+    },
+    {
+      "id": "nasdaq-week",
+      "question": "NASDAQ総合の前週最終取引日からの週間騰落率は何％か。",
+      "definition": "通常取引の現地最終取引日終値。配当再投資・通貨換算を含まない価格指数。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "previous",
+          "entity": "NASDAQ総合",
+          "metric": "価格指数終値",
+          "periodStart": "2026-11-06",
+          "periodEnd": "2026-11-06",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "通常取引の現地最終取引日終値。配当再投資・通貨換算を含まない価格指数。"
+        },
+        {
+          "id": "current",
+          "entity": "NASDAQ総合",
+          "metric": "価格指数終値",
+          "periodStart": "2026-11-13",
+          "periodEnd": "2026-11-13",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "通常取引の現地最終取引日終値。配当再投資・通貨換算を含まない価格指数。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "previous",
+          "entity": "NASDAQ総合",
+          "metric": "価格指数終値",
+          "periodStart": "2026-11-06",
+          "periodEnd": "2026-11-06",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "通常取引の現地最終取引日終値。配当再投資・通貨換算を含まない価格指数。",
+          "value": 24579.42,
+          "source": {
+            "url": "https://apnews.com/article/806f71d95105bc7efbc760b194dd8cad",
+            "publishedOn": "2026-11-06",
+            "locator": "On Friday / NASDAQ総合の確定終値",
+            "kind": "secondary",
+            "primaryUnavailableReason": "算定機関の両日の確定値を同じ時点で確認できなかったため、APの両日引け後記事で統一した。"
+          }
+        },
+        {
+          "id": "current",
+          "entity": "NASDAQ総合",
+          "metric": "価格指数終値",
+          "periodStart": "2026-11-13",
+          "periodEnd": "2026-11-13",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "通常取引の現地最終取引日終値。配当再投資・通貨換算を含まない価格指数。",
+          "value": 25136.27,
+          "source": {
+            "url": "https://apnews.com/article/12c1e8155fb85c3c7b09e058ed6d3c74",
+            "publishedOn": "2026-11-13",
+            "locator": "On Friday / NASDAQ総合の確定終値",
+            "kind": "secondary",
+            "primaryUnavailableReason": "算定機関の両日の確定値を同じ時点で確認できなかったため、APの両日引け後記事で統一した。"
+          }
+        }
+      ],
+      "claim": "NASDAQ総合は週間+2.27%",
+      "calculations": [
+        {
+          "id": "weekly-return",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "（11月13日終値÷11月6日終値−1）×100",
+          "precision": 2,
+          "value": 2.27
+        }
+      ]
+    },
+    {
+      "id": "sox-week",
+      "question": "SOXの前週最終取引日からの週間騰落率は何％か。",
+      "definition": "通常取引の現地最終取引日終値。配当再投資・通貨換算を含まない価格指数。同じ日次履歴に掲載された小数第1位の値を使用。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "previous",
+          "entity": "SOX",
+          "metric": "価格指数終値",
+          "periodStart": "2026-11-06",
+          "periodEnd": "2026-11-06",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "通常取引の現地最終取引日終値。配当再投資・通貨換算を含まない価格指数。同じ日次履歴に掲載された小数第1位の値を使用。"
+        },
+        {
+          "id": "current",
+          "entity": "SOX",
+          "metric": "価格指数終値",
+          "periodStart": "2026-11-13",
+          "periodEnd": "2026-11-13",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "通常取引の現地最終取引日終値。配当再投資・通貨換算を含まない価格指数。同じ日次履歴に掲載された小数第1位の値を使用。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "previous",
+          "entity": "SOX",
+          "metric": "価格指数終値",
+          "periodStart": "2026-11-06",
+          "periodEnd": "2026-11-06",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "通常取引の現地最終取引日終値。配当再投資・通貨換算を含まない価格指数。同じ日次履歴に掲載された小数第1位の値を使用。",
+          "value": 9390.3,
+          "source": {
+            "url": "https://www.investing.com/indices/phlx-semiconductor-historical-data",
+            "publishedOn": "2026-11-13",
+            "locator": "Daily / 2026-11-06 / Price欄、Closed 15:59:59表示",
+            "kind": "secondary",
+            "primaryUnavailableReason": "確認時点でNasdaq提供のFREDに13日終値が未反映。Reutersの引け後の日次変動の概数と整合する、取引終了表示付き日次履歴を採用した。"
+          }
+        },
+        {
+          "id": "current",
+          "entity": "SOX",
+          "metric": "価格指数終値",
+          "periodStart": "2026-11-13",
+          "periodEnd": "2026-11-13",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "通常取引の現地最終取引日終値。配当再投資・通貨換算を含まない価格指数。同じ日次履歴に掲載された小数第1位の値を使用。",
+          "value": 10146.3,
+          "source": {
+            "url": "https://www.investing.com/indices/phlx-semiconductor-historical-data",
+            "publishedOn": "2026-11-13",
+            "locator": "Daily / 2026-11-13 / Price欄、Closed 15:59:59表示",
+            "kind": "secondary",
+            "primaryUnavailableReason": "確認時点でNasdaq提供のFREDに13日終値が未反映。Reutersの引け後の日次変動の概数と整合する、取引終了表示付き日次履歴を採用した。"
+          }
+        }
+      ],
+      "claim": "SOXは週間+8.05%",
+      "calculations": [
+        {
+          "id": "weekly-return",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "（11月13日終値÷11月6日終値−1）×100",
+          "precision": 2,
+          "value": 8.05
+        }
+      ]
+    }
+  ]
+}
