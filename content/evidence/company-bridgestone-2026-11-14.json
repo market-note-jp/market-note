@@ -1,0 +1,1914 @@
+{
+  "version": 1,
+  "articleSlug": "company-bridgestone-2026-11-14",
+  "articleSha256": "70c9f528f64fd2e57f71ab6ae58d57fa7244fd6356bdd47aa8fd696bd29f7a11",
+  "checkedAt": "2026-11-14T10:58:00+00:00",
+  "informationCutoff": "2026-11-14T10:00:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "全本文の数値比較を収録。感応度47=4700×0.01は筆者条件付き算術であり観測値ではない。CF比較は現金取得支出・リース返済を控除し、会社定義FCFとは区別。株価・市場予想未照合、競合は定性的照合のみ。原表本文取得。統合報告書公表日は公式Jun30ニュースで確認。最終digestは出版担当で確定。 統合報告書公表日は公式発表https://www.bridgestone.com/corporate/news/2026063001.html本文の2026/06/30で再確認（2026-11-14）。調整対象収益も原表PDF12ページで追認。 独立レビューで原典・算式・全重要数値の本文との対応を再確認済み。",
+  "comparisons": [
+    {
+      "id": "history2021",
+      "question": "|2021|3,246.1|394.3|281.5|413.2|9.0%|",
+      "definition": "IFRS連結。調整後指標、継続事業とCF全体、会社予想と独自試算の区別は本文参照。",
+      "status": "ready",
+      "claim": "|2021|3,246.1|394.3|281.5|413.2|9.0%|",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Bridgestone",
+          "metric": "継続事業売上収益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業売上収益"
+        },
+        {
+          "id": "aop",
+          "entity": "Bridgestone",
+          "metric": "継続事業調整後営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業調整後営業利益"
+        },
+        {
+          "id": "cfo",
+          "entity": "Bridgestone",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "fcf",
+          "entity": "Bridgestone",
+          "metric": "会社定義FCF=営業CF+投資CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "会社定義FCF=営業CF+投資CF"
+        },
+        {
+          "id": "roic",
+          "entity": "Bridgestone",
+          "metric": "会社ROIC=税引後調整後営業利益/投下資本",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社ROIC=税引後調整後営業利益/投下資本"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Bridgestone",
+          "metric": "継続事業売上収益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業売上収益",
+          "value": 3246.1,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "aop",
+          "entity": "Bridgestone",
+          "metric": "継続事業調整後営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業調整後営業利益",
+          "value": 394.3,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "Bridgestone",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 281.5,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "fcf",
+          "entity": "Bridgestone",
+          "metric": "会社定義FCF=営業CF+投資CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "会社定義FCF=営業CF+投資CF",
+          "value": 413.2,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "roic",
+          "entity": "Bridgestone",
+          "metric": "会社ROIC=税引後調整後営業利益/投下資本",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社ROIC=税引後調整後営業利益/投下資本",
+          "value": 9,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2022",
+      "question": "|2022|4,110.1|482.6|268.5|−69.5|9.4%|",
+      "definition": "IFRS連結。調整後指標、継続事業とCF全体、会社予想と独自試算の区別は本文参照。",
+      "status": "ready",
+      "claim": "|2022|4,110.1|482.6|268.5|−69.5|9.4%|",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Bridgestone",
+          "metric": "継続事業売上収益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業売上収益"
+        },
+        {
+          "id": "aop",
+          "entity": "Bridgestone",
+          "metric": "継続事業調整後営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業調整後営業利益"
+        },
+        {
+          "id": "cfo",
+          "entity": "Bridgestone",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "fcf",
+          "entity": "Bridgestone",
+          "metric": "会社定義FCF=営業CF+投資CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "会社定義FCF=営業CF+投資CF"
+        },
+        {
+          "id": "roic",
+          "entity": "Bridgestone",
+          "metric": "会社ROIC=税引後調整後営業利益/投下資本",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社ROIC=税引後調整後営業利益/投下資本"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Bridgestone",
+          "metric": "継続事業売上収益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業売上収益",
+          "value": 4110.1,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "aop",
+          "entity": "Bridgestone",
+          "metric": "継続事業調整後営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業調整後営業利益",
+          "value": 482.6,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "Bridgestone",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 268.5,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "fcf",
+          "entity": "Bridgestone",
+          "metric": "会社定義FCF=営業CF+投資CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "会社定義FCF=営業CF+投資CF",
+          "value": -69.5,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "roic",
+          "entity": "Bridgestone",
+          "metric": "会社ROIC=税引後調整後営業利益/投下資本",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社ROIC=税引後調整後営業利益/投下資本",
+          "value": 9.4,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2023",
+      "question": "|2023|4,313.8|480.6|661.4|363.7|8.7%|",
+      "definition": "IFRS連結。調整後指標、継続事業とCF全体、会社予想と独自試算の区別は本文参照。",
+      "status": "ready",
+      "claim": "|2023|4,313.8|480.6|661.4|363.7|8.7%|",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Bridgestone",
+          "metric": "継続事業売上収益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業売上収益"
+        },
+        {
+          "id": "aop",
+          "entity": "Bridgestone",
+          "metric": "継続事業調整後営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業調整後営業利益"
+        },
+        {
+          "id": "cfo",
+          "entity": "Bridgestone",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "fcf",
+          "entity": "Bridgestone",
+          "metric": "会社定義FCF=営業CF+投資CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "会社定義FCF=営業CF+投資CF"
+        },
+        {
+          "id": "roic",
+          "entity": "Bridgestone",
+          "metric": "会社ROIC=税引後調整後営業利益/投下資本",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社ROIC=税引後調整後営業利益/投下資本"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Bridgestone",
+          "metric": "継続事業売上収益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業売上収益",
+          "value": 4313.8,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "aop",
+          "entity": "Bridgestone",
+          "metric": "継続事業調整後営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業調整後営業利益",
+          "value": 480.6,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "Bridgestone",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 661.4,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "fcf",
+          "entity": "Bridgestone",
+          "metric": "会社定義FCF=営業CF+投資CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "会社定義FCF=営業CF+投資CF",
+          "value": 363.7,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "roic",
+          "entity": "Bridgestone",
+          "metric": "会社ROIC=税引後調整後営業利益/投下資本",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社ROIC=税引後調整後営業利益/投下資本",
+          "value": 8.7,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2024",
+      "question": "|2024|4,430.1|483.3|548.8|293.8|8.2%|",
+      "definition": "IFRS連結。調整後指標、継続事業とCF全体、会社予想と独自試算の区別は本文参照。",
+      "status": "ready",
+      "claim": "|2024|4,430.1|483.3|548.8|293.8|8.2%|",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Bridgestone",
+          "metric": "継続事業売上収益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業売上収益"
+        },
+        {
+          "id": "aop",
+          "entity": "Bridgestone",
+          "metric": "継続事業調整後営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業調整後営業利益"
+        },
+        {
+          "id": "cfo",
+          "entity": "Bridgestone",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "fcf",
+          "entity": "Bridgestone",
+          "metric": "会社定義FCF=営業CF+投資CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "会社定義FCF=営業CF+投資CF"
+        },
+        {
+          "id": "roic",
+          "entity": "Bridgestone",
+          "metric": "会社ROIC=税引後調整後営業利益/投下資本",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社ROIC=税引後調整後営業利益/投下資本"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Bridgestone",
+          "metric": "継続事業売上収益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業売上収益",
+          "value": 4430.1,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "aop",
+          "entity": "Bridgestone",
+          "metric": "継続事業調整後営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業調整後営業利益",
+          "value": 483.3,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "Bridgestone",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 548.8,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "fcf",
+          "entity": "Bridgestone",
+          "metric": "会社定義FCF=営業CF+投資CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "会社定義FCF=営業CF+投資CF",
+          "value": 293.8,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "roic",
+          "entity": "Bridgestone",
+          "metric": "会社ROIC=税引後調整後営業利益/投下資本",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社ROIC=税引後調整後営業利益/投下資本",
+          "value": 8.2,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2025",
+      "question": "|2025|4,429.5|493.7|660.4|435.5|8.3%|",
+      "definition": "IFRS連結。調整後指標、継続事業とCF全体、会社予想と独自試算の区別は本文参照。",
+      "status": "ready",
+      "claim": "|2025|4,429.5|493.7|660.4|435.5|8.3%|",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "Bridgestone",
+          "metric": "継続事業売上収益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業売上収益"
+        },
+        {
+          "id": "aop",
+          "entity": "Bridgestone",
+          "metric": "継続事業調整後営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業調整後営業利益"
+        },
+        {
+          "id": "cfo",
+          "entity": "Bridgestone",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "fcf",
+          "entity": "Bridgestone",
+          "metric": "会社定義FCF=営業CF+投資CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "会社定義FCF=営業CF+投資CF"
+        },
+        {
+          "id": "roic",
+          "entity": "Bridgestone",
+          "metric": "会社ROIC=税引後調整後営業利益/投下資本",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社ROIC=税引後調整後営業利益/投下資本"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "Bridgestone",
+          "metric": "継続事業売上収益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業売上収益",
+          "value": 4429.5,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "aop",
+          "entity": "Bridgestone",
+          "metric": "継続事業調整後営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業調整後営業利益",
+          "value": 493.7,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "Bridgestone",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 660.4,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "fcf",
+          "entity": "Bridgestone",
+          "metric": "会社定義FCF=営業CF+投資CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "会社定義FCF=営業CF+投資CF",
+          "value": 435.5,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "roic",
+          "entity": "Bridgestone",
+          "metric": "会社ROIC=税引後調整後営業利益/投下資本",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社ROIC=税引後調整後営業利益/投下資本",
+          "value": 8.3,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "investment2021",
+      "question": "2021年には投資CFがプラスだったため、FCFが営業CFを上回る。",
+      "definition": "IFRS連結。調整後指標、継続事業とCF全体、会社予想と独自試算の区別は本文参照。",
+      "status": "ready",
+      "claim": "2021年には投資CFがプラスだったため、FCFが営業CFを上回る。",
+      "requiredInputs": [
+        {
+          "id": "icf",
+          "entity": "Bridgestone",
+          "metric": "投資CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "投資CF"
+        },
+        {
+          "id": "cfo",
+          "entity": "Bridgestone",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "fcf",
+          "entity": "Bridgestone",
+          "metric": "会社FCF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "会社FCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "icf",
+          "entity": "Bridgestone",
+          "metric": "投資CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "投資CF",
+          "value": 131.7,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "cfo",
+          "entity": "Bridgestone",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 281.5,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "fcf",
+          "entity": "Bridgestone",
+          "metric": "会社FCF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "会社FCF",
+          "value": 413.2,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/integrated_report/pdf/2026/ir2026_82-93.pdf",
+            "publishedOn": "2026-06-30",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3earnings",
+      "question": "１〜９月の売上収益は3,234.926から3,554.288、調整後営業利益は368.367から445.291へ増加。",
+      "definition": "IFRS連結。調整後指標、継続事業とCF全体、会社予想と独自試算の区別は本文参照。",
+      "status": "ready",
+      "claim": "１〜９月の売上収益は3,234.926から3,554.288、調整後営業利益は368.367から445.291へ増加。",
+      "requiredInputs": [
+        {
+          "id": "revenue2025",
+          "entity": "Bridgestone",
+          "metric": "継続事業売上収益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業売上収益"
+        },
+        {
+          "id": "aop2025",
+          "entity": "Bridgestone",
+          "metric": "継続事業調整後営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業調整後営業利益"
+        },
+        {
+          "id": "revenue2026",
+          "entity": "Bridgestone",
+          "metric": "継続事業売上収益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業売上収益"
+        },
+        {
+          "id": "aop2026",
+          "entity": "Bridgestone",
+          "metric": "継続事業調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業調整後営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue2025",
+          "entity": "Bridgestone",
+          "metric": "継続事業売上収益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業売上収益",
+          "value": 3234.926,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "aop2025",
+          "entity": "Bridgestone",
+          "metric": "継続事業調整後営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業調整後営業利益",
+          "value": 368.367,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "revenue2026",
+          "entity": "Bridgestone",
+          "metric": "継続事業売上収益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業売上収益",
+          "value": 3554.288,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "aop2026",
+          "entity": "Bridgestone",
+          "metric": "継続事業調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業調整後営業利益",
+          "value": 445.291,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "adjustments",
+      "question": "一方、会計上の営業利益は291.723から442.562へ増えた。後者の伸びには、調整対象費用が78.802から14.885へ縮小した効果と、調整対象収益が2.158から12.156へ増えた効果もある。営業利益は調整後営業利益に調整対象収益を足し、調整対象費用を引いたものだ。",
+      "definition": "継続事業IFRS営業利益＝調整後営業利益＋調整対象収益−調整対象費用。2025年368.367+2.158−78.802=291.723、2026年445.291+12.156−14.885=442.562。",
+      "status": "ready",
+      "claim": "一方、会計上の営業利益は291.723から442.562へ増えた。後者の伸びには、調整対象費用が78.802から14.885へ縮小した効果と、調整対象収益が2.158から12.156へ増えた効果もある。営業利益は調整後営業利益に調整対象収益を足し、調整対象費用を引いたものだ。",
+      "requiredInputs": [
+        {
+          "id": "op2025",
+          "entity": "Bridgestone",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        },
+        {
+          "id": "costs2025",
+          "entity": "Bridgestone",
+          "metric": "調整対象費用",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "調整対象費用"
+        },
+        {
+          "id": "op2026",
+          "entity": "Bridgestone",
+          "metric": "IFRS営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        },
+        {
+          "id": "costs2026",
+          "entity": "Bridgestone",
+          "metric": "調整対象費用",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "調整対象費用"
+        },
+        {
+          "id": "income2025",
+          "entity": "Bridgestone",
+          "metric": "調整対象収益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "調整対象収益"
+        },
+        {
+          "id": "income2026",
+          "entity": "Bridgestone",
+          "metric": "調整対象収益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "調整対象収益"
+        },
+        {
+          "id": "aop2025",
+          "entity": "Bridgestone",
+          "metric": "継続事業調整後営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業調整後営業利益"
+        },
+        {
+          "id": "aop2026",
+          "entity": "Bridgestone",
+          "metric": "継続事業調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業調整後営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "op2025",
+          "entity": "Bridgestone",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 291.723,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "costs2025",
+          "entity": "Bridgestone",
+          "metric": "調整対象費用",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "調整対象費用",
+          "value": 78.802,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "op2026",
+          "entity": "Bridgestone",
+          "metric": "IFRS営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 442.562,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "costs2026",
+          "entity": "Bridgestone",
+          "metric": "調整対象費用",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "調整対象費用",
+          "value": 14.885,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "income2025",
+          "entity": "Bridgestone",
+          "metric": "調整対象収益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "調整対象収益",
+          "value": 2.158,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "income2026",
+          "entity": "Bridgestone",
+          "metric": "調整対象収益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "調整対象収益",
+          "value": 12.156,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "aop2025",
+          "entity": "Bridgestone",
+          "metric": "継続事業調整後営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業調整後営業利益",
+          "value": 368.367,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "aop2026",
+          "entity": "Bridgestone",
+          "metric": "継続事業調整後営業利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "継続事業調整後営業利益",
+          "value": 445.291,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "bridge",
+      "question": "会社の丸めた増減分析では、調整後営業利益の増加76.9のうち為替が44.0。残る32.9にも改善がある。主な内訳は数量＋23.0、価格＋12.0、構成＋18.0に対し、営業費用は−33.0。",
+      "definition": "IFRS連結。調整後指標、継続事業とCF全体、会社予想と独自試算の区別は本文参照。",
+      "status": "ready",
+      "claim": "会社の丸めた増減分析では、調整後営業利益の増加76.9のうち為替が44.0。残る32.9にも改善がある。主な内訳は数量＋23.0、価格＋12.0、構成＋18.0に対し、営業費用は−33.0。",
+      "requiredInputs": [
+        {
+          "id": "increase",
+          "entity": "Bridgestone",
+          "metric": "調整後営業利益前年差",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "調整後営業利益前年差"
+        },
+        {
+          "id": "fx",
+          "entity": "Bridgestone",
+          "metric": "為替寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "為替寄与"
+        },
+        {
+          "id": "exfx",
+          "entity": "Bridgestone",
+          "metric": "除為替増益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "除為替増益"
+        },
+        {
+          "id": "volume",
+          "entity": "Bridgestone",
+          "metric": "数量寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "数量寄与"
+        },
+        {
+          "id": "price",
+          "entity": "Bridgestone",
+          "metric": "価格寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "価格寄与"
+        },
+        {
+          "id": "mix",
+          "entity": "Bridgestone",
+          "metric": "構成寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "構成寄与"
+        },
+        {
+          "id": "opex",
+          "entity": "Bridgestone",
+          "metric": "営業費用寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "営業費用寄与"
+        }
+      ],
+      "observations": [
+        {
+          "id": "increase",
+          "entity": "Bridgestone",
+          "metric": "調整後営業利益前年差",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "調整後営業利益前年差",
+          "value": 76.9,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/result/pdf/e_r8_3_presentation.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "fx",
+          "entity": "Bridgestone",
+          "metric": "為替寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "為替寄与",
+          "value": 44,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/result/pdf/e_r8_3_presentation.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "exfx",
+          "entity": "Bridgestone",
+          "metric": "除為替増益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "除為替増益",
+          "value": 32.9,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/result/pdf/e_r8_3_presentation.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "volume",
+          "entity": "Bridgestone",
+          "metric": "数量寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "数量寄与",
+          "value": 23,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/result/pdf/e_r8_3_presentation.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "price",
+          "entity": "Bridgestone",
+          "metric": "価格寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "価格寄与",
+          "value": 12,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/result/pdf/e_r8_3_presentation.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "mix",
+          "entity": "Bridgestone",
+          "metric": "構成寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "構成寄与",
+          "value": 18,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/result/pdf/e_r8_3_presentation.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        },
+        {
+          "id": "opex",
+          "entity": "Bridgestone",
+          "metric": "営業費用寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "営業費用寄与",
+          "value": -33,
+          "source": {
+            "url": "https://www.bridgestone.com/ir/library/result/pdf/e_r8_3_presentation.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 7
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "residual",
+          "operation": "difference",
+          "inputs": [
+            "increase",
+            "fx"
+          ],
+          "definition": "増益額-為替寄与",
+          "precision": 1,
+          "value": 32.9
+        }
+      ]
+    },
+    {
+      "id": "cash",
+      "question": "１〜９月の営業CFは487.212。筆者定義で、有形固定資産取得189.195と無形資産取得23.102を差し引くと274.915となる。ここからさらにリース返済57.422を差し引いた残りは217.493。一方、自社株取得150.007と親会社株主への配当147.931の合計は297.938だった。",
+      "definition": "IFRS連結。調整後指標、継続事業とCF全体、会社予想と独自試算の区別は本文参照。",
+      "status": "ready",
+      "claim": "１〜９月の営業CFは487.212。筆者定義で、有形固定資産取得189.195と無形資産取得23.102を差し引くと274.915となる。ここからさらにリース返済57.422を差し引いた残りは217.493。一方、自社株取得150.007と親会社株主への配当147.931の合計は297.938だった。",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "Bridgestone",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "pp",
+          "entity": "Bridgestone",
+          "metric": "有形固定資産取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出"
+        },
+        {
+          "id": "intangible",
+          "entity": "Bridgestone",
+          "metric": "無形資産取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "無形資産取得支出"
+        },
+        {
+          "id": "lease",
+          "entity": "Bridgestone",
+          "metric": "リース返済支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "リース返済支出"
+        },
+        {
+          "id": "buyback",
+          "entity": "Bridgestone",
+          "metric": "自社株取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "自社株取得支出"
+        },
+        {
+          "id": "dividend",
+          "entity": "Bridgestone",
+          "metric": "親会社所有者配当支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "親会社所有者配当支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "Bridgestone",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 487.212,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "pp",
+          "entity": "Bridgestone",
+          "metric": "有形固定資産取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出",
+          "value": 189.195,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "intangible",
+          "entity": "Bridgestone",
+          "metric": "無形資産取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "無形資産取得支出",
+          "value": 23.102,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 9
+          }
+        },
+        {
+          "id": "lease",
+          "entity": "Bridgestone",
+          "metric": "リース返済支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "リース返済支出",
+          "value": 57.422,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "buyback",
+          "entity": "Bridgestone",
+          "metric": "自社株取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "自社株取得支出",
+          "value": 150.007,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "dividend",
+          "entity": "Bridgestone",
+          "metric": "親会社所有者配当支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "親会社所有者配当支出",
+          "value": 147.931,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "afterpp",
+          "operation": "difference",
+          "inputs": [
+            "cfo",
+            "pp"
+          ],
+          "definition": "営業CF-有形固定資産取得支出",
+          "precision": 3,
+          "value": 298.017
+        },
+        {
+          "id": "cashaftercapex",
+          "operation": "difference",
+          "inputs": [
+            "afterpp",
+            "intangible"
+          ],
+          "definition": "営業CF-有形-無形資産取得支出",
+          "precision": 3,
+          "value": 274.915
+        },
+        {
+          "id": "afterlease",
+          "operation": "difference",
+          "inputs": [
+            "cashaftercapex",
+            "lease"
+          ],
+          "definition": "さらにリース返済控除",
+          "precision": 3,
+          "value": 217.493
+        },
+        {
+          "id": "returns",
+          "operation": "sum",
+          "inputs": [
+            "buyback",
+            "dividend"
+          ],
+          "definition": "自社株取得+親会社株主配当",
+          "precision": 3,
+          "value": 297.938
+        }
+      ]
+    },
+    {
+      "id": "forecast",
+      "question": "売上予想は4,500から4,700へ引き上げたが、調整後営業利益515、純利益340は据え置き。",
+      "definition": "IFRS連結。調整後指標、継続事業とCF全体、会社予想と独自試算の区別は本文参照。",
+      "status": "ready",
+      "claim": "売上予想は4,500から4,700へ引き上げたが、調整後営業利益515、純利益340は据え置き。",
+      "requiredInputs": [
+        {
+          "id": "oldrev",
+          "entity": "Bridgestone",
+          "metric": "前回売上予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "十億円",
+          "basis": "company-forecast",
+          "definition": "前回売上予想"
+        },
+        {
+          "id": "newrev",
+          "entity": "Bridgestone",
+          "metric": "今回売上予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "十億円",
+          "basis": "company-forecast",
+          "definition": "今回売上予想"
+        },
+        {
+          "id": "oldop",
+          "entity": "Bridgestone",
+          "metric": "前回調整後営業利益予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "十億円",
+          "basis": "company-forecast",
+          "definition": "前回調整後営業利益予想"
+        },
+        {
+          "id": "newop",
+          "entity": "Bridgestone",
+          "metric": "今回調整後営業利益予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "十億円",
+          "basis": "company-forecast",
+          "definition": "今回調整後営業利益予想"
+        },
+        {
+          "id": "oldnet",
+          "entity": "Bridgestone",
+          "metric": "前回親会社所有者帰属当期利益予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "十億円",
+          "basis": "company-forecast",
+          "definition": "前回親会社所有者帰属当期利益予想"
+        },
+        {
+          "id": "newnet",
+          "entity": "Bridgestone",
+          "metric": "今回親会社所有者帰属当期利益予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "十億円",
+          "basis": "company-forecast",
+          "definition": "今回親会社所有者帰属当期利益予想"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oldrev",
+          "entity": "Bridgestone",
+          "metric": "前回売上予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "十億円",
+          "basis": "company-forecast",
+          "definition": "前回売上予想",
+          "value": 4500,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "newrev",
+          "entity": "Bridgestone",
+          "metric": "今回売上予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "十億円",
+          "basis": "company-forecast",
+          "definition": "今回売上予想",
+          "value": 4700,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "oldop",
+          "entity": "Bridgestone",
+          "metric": "前回調整後営業利益予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "十億円",
+          "basis": "company-forecast",
+          "definition": "前回調整後営業利益予想",
+          "value": 515,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "newop",
+          "entity": "Bridgestone",
+          "metric": "今回調整後営業利益予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "十億円",
+          "basis": "company-forecast",
+          "definition": "今回調整後営業利益予想",
+          "value": 515,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "oldnet",
+          "entity": "Bridgestone",
+          "metric": "前回親会社所有者帰属当期利益予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "十億円",
+          "basis": "company-forecast",
+          "definition": "前回親会社所有者帰属当期利益予想",
+          "value": 340,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "newnet",
+          "entity": "Bridgestone",
+          "metric": "今回親会社所有者帰属当期利益予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "十億円",
+          "basis": "company-forecast",
+          "definition": "今回親会社所有者帰属当期利益予想",
+          "value": 340,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "sensitivity",
+      "question": "独自の感応度として、通期売上が会社予想4,700と同じなら、調整後営業利益率が１ポイント違うと利益は47変わる。",
+      "definition": "筆者の条件付き感応度：会社予想売上4700×利益率変化0.01＝47（十億円）。0.01は予測値ではなく仮定。",
+      "status": "ready",
+      "claim": "独自の感応度として、通期売上が会社予想4,700と同じなら、調整後営業利益率が１ポイント違うと利益は47変わる。",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "Bridgestone",
+          "metric": "売上予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "十億円",
+          "basis": "company-forecast",
+          "definition": "売上予想"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "Bridgestone",
+          "metric": "売上予想",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "十億円",
+          "basis": "company-forecast",
+          "definition": "売上予想",
+          "value": 4700,
+          "source": {
+            "url": "https://www.bridgestone.co.jp/ir/library/result/pdf/r8_3.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "原表の該当指標（PDFページは1始まり）",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "unverified-market",
+      "question": "発表後株価反応と市場予想との比較",
+      "definition": "同時点の信頼できる株価・市場予想の比較",
+      "status": "withheld",
+      "reason": "未取得のため売買評価、予想超過、株価反応の断定を除外。",
+      "omittedClaim": "市場予想を上回る好決算で株価は急騰した。",
+      "requiredInputs": [
+        {
+          "id": "postprice",
+          "entity": "Bridgestone",
+          "metric": "発表後株価",
+          "periodStart": "2026-11-12",
+          "periodEnd": "2026-11-13",
+          "unit": "円/株",
+          "basis": "market",
+          "definition": "分割調整済み通常取引終値"
+        }
+      ],
+      "observations": [],
+      "calculations": []
+    }
+  ]
+}

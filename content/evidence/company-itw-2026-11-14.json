@@ -1,0 +1,1673 @@
+{
+  "version": 1,
+  "articleSlug": "company-itw-2026-11-14",
+  "articleSha256": "7f97ebea58b20e7a1ab2567967ab432cc514a3d143566a42351c792122651bd5",
+  "checkedAt": "2026-11-14T10:58:44.216072+00:00",
+  "informationCutoff": "2026-11-14T10:00:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "原典本文の全重要比較を記録。2021–23は2023 10-K、2024–25は2025 10-K。2024 LIFO変更の累積効果を利益実績から除いていないことを本文明記。FCF比率予想の表現変更を数量減額幅と断定せず、ROICの年率化を通期予測と区別。独立レビュー前。 独立レビューを受け、2023年以前は当時の報告値でFIFO組替比較ではないと追記。 独立レビューで原典・算式・全重要数値の本文との対応を再確認済み。",
+  "comparisons": [
+    {
+      "id": "history2021",
+      "question": "|2021|14,455|3,477|2,557|296|2,261|",
+      "definition": "米国会計基準・連結。本文と同じ対象期間、単位、定義で比較。",
+      "status": "ready",
+      "claim": "|2021|14,455|3,477|2,557|296|2,261|",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "ITW",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "ITW",
+          "metric": "営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "ITW",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "ITW",
+          "metric": "設備取得支出",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備取得支出"
+        },
+        {
+          "id": "fcf",
+          "entity": "ITW",
+          "metric": "FCF=営業CF−設備取得支出",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF=営業CF−設備取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "ITW",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 14455,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982624000008/itw-20231231.htm",
+            "publishedOn": "2024-02-09",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "ITW",
+          "metric": "営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 3477,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982624000008/itw-20231231.htm",
+            "publishedOn": "2024-02-09",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "ITW",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 2557,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982624000008/itw-20231231.htm",
+            "publishedOn": "2024-02-09",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "ITW",
+          "metric": "設備取得支出",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備取得支出",
+          "value": 296,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982624000008/itw-20231231.htm",
+            "publishedOn": "2024-02-09",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fcf",
+          "entity": "ITW",
+          "metric": "FCF=営業CF−設備取得支出",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF=営業CF−設備取得支出",
+          "value": 2261,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982624000008/itw-20231231.htm",
+            "publishedOn": "2024-02-09",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcfcalc",
+          "operation": "difference",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "definition": "営業CF−設備取得支出",
+          "precision": 0,
+          "value": 2261
+        }
+      ]
+    },
+    {
+      "id": "history2022",
+      "question": "|2022|15,932|3,790|2,348|412|1,936|",
+      "definition": "米国会計基準・連結。本文と同じ対象期間、単位、定義で比較。",
+      "status": "ready",
+      "claim": "|2022|15,932|3,790|2,348|412|1,936|",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "ITW",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "ITW",
+          "metric": "営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "ITW",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "ITW",
+          "metric": "設備取得支出",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備取得支出"
+        },
+        {
+          "id": "fcf",
+          "entity": "ITW",
+          "metric": "FCF=営業CF−設備取得支出",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF=営業CF−設備取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "ITW",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 15932,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982624000008/itw-20231231.htm",
+            "publishedOn": "2024-02-09",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "ITW",
+          "metric": "営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 3790,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982624000008/itw-20231231.htm",
+            "publishedOn": "2024-02-09",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "ITW",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 2348,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982624000008/itw-20231231.htm",
+            "publishedOn": "2024-02-09",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "ITW",
+          "metric": "設備取得支出",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備取得支出",
+          "value": 412,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982624000008/itw-20231231.htm",
+            "publishedOn": "2024-02-09",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fcf",
+          "entity": "ITW",
+          "metric": "FCF=営業CF−設備取得支出",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF=営業CF−設備取得支出",
+          "value": 1936,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982624000008/itw-20231231.htm",
+            "publishedOn": "2024-02-09",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcfcalc",
+          "operation": "difference",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "definition": "営業CF−設備取得支出",
+          "precision": 0,
+          "value": 1936
+        }
+      ]
+    },
+    {
+      "id": "history2023",
+      "question": "|2023|16,107|4,040|3,539|455|3,084|",
+      "definition": "米国会計基準・連結。本文と同じ対象期間、単位、定義で比較。",
+      "status": "ready",
+      "claim": "|2023|16,107|4,040|3,539|455|3,084|",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "ITW",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "ITW",
+          "metric": "営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "ITW",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "ITW",
+          "metric": "設備取得支出",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備取得支出"
+        },
+        {
+          "id": "fcf",
+          "entity": "ITW",
+          "metric": "FCF=営業CF−設備取得支出",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF=営業CF−設備取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "ITW",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 16107,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982624000008/itw-20231231.htm",
+            "publishedOn": "2024-02-09",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "ITW",
+          "metric": "営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 4040,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982624000008/itw-20231231.htm",
+            "publishedOn": "2024-02-09",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "ITW",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 3539,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982624000008/itw-20231231.htm",
+            "publishedOn": "2024-02-09",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "ITW",
+          "metric": "設備取得支出",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備取得支出",
+          "value": 455,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982624000008/itw-20231231.htm",
+            "publishedOn": "2024-02-09",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fcf",
+          "entity": "ITW",
+          "metric": "FCF=営業CF−設備取得支出",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF=営業CF−設備取得支出",
+          "value": 3084,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982624000008/itw-20231231.htm",
+            "publishedOn": "2024-02-09",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcfcalc",
+          "operation": "difference",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "definition": "営業CF−設備取得支出",
+          "precision": 0,
+          "value": 3084
+        }
+      ]
+    },
+    {
+      "id": "history2024",
+      "question": "|2024|15,898|4,264|3,281|437|2,844|",
+      "definition": "米国会計基準・連結。本文と同じ対象期間、単位、定義で比較。",
+      "status": "ready",
+      "claim": "|2024|15,898|4,264|3,281|437|2,844|",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "ITW",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "ITW",
+          "metric": "営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "ITW",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "ITW",
+          "metric": "設備取得支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備取得支出"
+        },
+        {
+          "id": "fcf",
+          "entity": "ITW",
+          "metric": "FCF=営業CF−設備取得支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF=営業CF−設備取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "ITW",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 15898,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000008/itw-20251231.htm",
+            "publishedOn": "2026-02-13",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "ITW",
+          "metric": "営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 4264,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000008/itw-20251231.htm",
+            "publishedOn": "2026-02-13",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "ITW",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 3281,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000008/itw-20251231.htm",
+            "publishedOn": "2026-02-13",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "ITW",
+          "metric": "設備取得支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備取得支出",
+          "value": 437,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000008/itw-20251231.htm",
+            "publishedOn": "2026-02-13",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fcf",
+          "entity": "ITW",
+          "metric": "FCF=営業CF−設備取得支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF=営業CF−設備取得支出",
+          "value": 2844,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000008/itw-20251231.htm",
+            "publishedOn": "2026-02-13",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcfcalc",
+          "operation": "difference",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "definition": "営業CF−設備取得支出",
+          "precision": 0,
+          "value": 2844
+        }
+      ]
+    },
+    {
+      "id": "history2025",
+      "question": "|2025|16,044|4,216|3,126|419|2,707|",
+      "definition": "米国会計基準・連結。本文と同じ対象期間、単位、定義で比較。",
+      "status": "ready",
+      "claim": "|2025|16,044|4,216|3,126|419|2,707|",
+      "requiredInputs": [
+        {
+          "id": "revenue",
+          "entity": "ITW",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op",
+          "entity": "ITW",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "ITW",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "ITW",
+          "metric": "設備取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備取得支出"
+        },
+        {
+          "id": "fcf",
+          "entity": "ITW",
+          "metric": "FCF=営業CF−設備取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF=営業CF−設備取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue",
+          "entity": "ITW",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 16044,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000008/itw-20251231.htm",
+            "publishedOn": "2026-02-13",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op",
+          "entity": "ITW",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 4216,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000008/itw-20251231.htm",
+            "publishedOn": "2026-02-13",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "ITW",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 3126,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000008/itw-20251231.htm",
+            "publishedOn": "2026-02-13",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "ITW",
+          "metric": "設備取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備取得支出",
+          "value": 419,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000008/itw-20251231.htm",
+            "publishedOn": "2026-02-13",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fcf",
+          "entity": "ITW",
+          "metric": "FCF=営業CF−設備取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF=営業CF−設備取得支出",
+          "value": 2707,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000008/itw-20251231.htm",
+            "publishedOn": "2026-02-13",
+            "locator": "Statement of Income; Cash Flow (MD&A) and Statement of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcfcalc",
+          "operation": "difference",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "definition": "営業CF−設備取得支出",
+          "precision": 0,
+          "value": 2707
+        }
+      ]
+    },
+    {
+      "id": "lifo",
+      "question": "2024年には在庫評価方法の変更による117百万ドルの営業利益押し上げがあった。",
+      "definition": "米国会計基準・連結。本文と同じ対象期間、単位、定義で比較。",
+      "status": "ready",
+      "claim": "2024年には在庫評価方法の変更による117百万ドルの営業利益押し上げがあった。",
+      "requiredInputs": [
+        {
+          "id": "lifo",
+          "entity": "ITW",
+          "metric": "在庫評価方法変更の累積税引前利益効果",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "在庫評価方法変更の累積税引前利益効果"
+        }
+      ],
+      "observations": [
+        {
+          "id": "lifo",
+          "entity": "ITW",
+          "metric": "在庫評価方法変更の累積税引前利益効果",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "在庫評価方法変更の累積税引前利益効果",
+          "value": 117,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000008/itw-20251231.htm",
+            "publishedOn": "2026-02-13",
+            "locator": "MD&A Results of Operations; Note1 Inventories",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3sales",
+      "question": "2026年７〜９月は、売上4,236百万ドル、前年同期比4.4%増。会社の分解では既存事業3.8%、為替換算0.3%、買収0.3%だった。",
+      "definition": "米国会計基準・連結。本文と同じ対象期間、単位、定義で比較。",
+      "status": "ready",
+      "claim": "2026年７〜９月は、売上4,236百万ドル、前年同期比4.4%増。会社の分解では既存事業3.8%、為替換算0.3%、買収0.3%だった。",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "ITW",
+          "metric": "売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "growth",
+          "entity": "ITW",
+          "metric": "報告増収率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "報告増収率"
+        },
+        {
+          "id": "organic",
+          "entity": "ITW",
+          "metric": "既存事業増収率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "既存事業増収率"
+        },
+        {
+          "id": "fx",
+          "entity": "ITW",
+          "metric": "為替換算寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "為替換算寄与"
+        },
+        {
+          "id": "mna",
+          "entity": "ITW",
+          "metric": "買収寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "買収寄与"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "ITW",
+          "metric": "売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 4236,
+          "source": {
+            "url": "https://investor.itw.com/news-and-events/news/news-details/2026/ITW-Reports-Third-Quarter-2026-Results/default.aspx",
+            "publishedOn": "2026-10-27",
+            "locator": "Third Quarter Results; 2026 Guidance; GAAP to Non-GAAP Reconciliations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "growth",
+          "entity": "ITW",
+          "metric": "報告増収率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "報告増収率",
+          "value": 4.4,
+          "source": {
+            "url": "https://investor.itw.com/news-and-events/news/news-details/2026/ITW-Reports-Third-Quarter-2026-Results/default.aspx",
+            "publishedOn": "2026-10-27",
+            "locator": "Third Quarter Results; 2026 Guidance; GAAP to Non-GAAP Reconciliations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "organic",
+          "entity": "ITW",
+          "metric": "既存事業増収率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "既存事業増収率",
+          "value": 3.8,
+          "source": {
+            "url": "https://investor.itw.com/news-and-events/news/news-details/2026/ITW-Reports-Third-Quarter-2026-Results/default.aspx",
+            "publishedOn": "2026-10-27",
+            "locator": "Third Quarter Results; 2026 Guidance; GAAP to Non-GAAP Reconciliations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fx",
+          "entity": "ITW",
+          "metric": "為替換算寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "為替換算寄与",
+          "value": 0.3,
+          "source": {
+            "url": "https://investor.itw.com/news-and-events/news/news-details/2026/ITW-Reports-Third-Quarter-2026-Results/default.aspx",
+            "publishedOn": "2026-10-27",
+            "locator": "Third Quarter Results; 2026 Guidance; GAAP to Non-GAAP Reconciliations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "mna",
+          "entity": "ITW",
+          "metric": "買収寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "買収寄与",
+          "value": 0.3,
+          "source": {
+            "url": "https://investor.itw.com/news-and-events/news/news-details/2026/ITW-Reports-Third-Quarter-2026-Results/default.aspx",
+            "publishedOn": "2026-10-27",
+            "locator": "Third Quarter Results; 2026 Guidance; GAAP to Non-GAAP Reconciliations",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "margin",
+      "question": "営業利益率は27.8%で前年同期から0.4ポイント改善した。",
+      "definition": "米国会計基準・連結。本文と同じ対象期間、単位、定義で比較。",
+      "status": "ready",
+      "claim": "営業利益率は27.8%で前年同期から0.4ポイント改善した。",
+      "requiredInputs": [
+        {
+          "id": "margin",
+          "entity": "ITW",
+          "metric": "営業利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率"
+        },
+        {
+          "id": "delta",
+          "entity": "ITW",
+          "metric": "営業利益率前年差",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "営業利益率前年差"
+        }
+      ],
+      "observations": [
+        {
+          "id": "margin",
+          "entity": "ITW",
+          "metric": "営業利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "営業利益率",
+          "value": 27.8,
+          "source": {
+            "url": "https://investor.itw.com/news-and-events/news/news-details/2026/ITW-Reports-Third-Quarter-2026-Results/default.aspx",
+            "publishedOn": "2026-10-27",
+            "locator": "Third Quarter Results; 2026 Guidance; GAAP to Non-GAAP Reconciliations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "delta",
+          "entity": "ITW",
+          "metric": "営業利益率前年差",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "営業利益率前年差",
+          "value": 0.4,
+          "source": {
+            "url": "https://investor.itw.com/news-and-events/news/news-details/2026/ITW-Reports-Third-Quarter-2026-Results/default.aspx",
+            "publishedOn": "2026-10-27",
+            "locator": "Third Quarter Results; 2026 Guidance; GAAP to Non-GAAP Reconciliations",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "foodequipment",
+      "question": "７〜９月の北米機器の既存事業売上は6.9%減、サービスは4.1%増だった。",
+      "definition": "米国会計基準・連結。本文と同じ対象期間、単位、定義で比較。",
+      "status": "ready",
+      "claim": "７〜９月の北米機器の既存事業売上は6.9%減、サービスは4.1%増だった。",
+      "requiredInputs": [
+        {
+          "id": "equipment",
+          "entity": "ITW",
+          "metric": "北米Food Equipment機器既存売上成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米Food Equipment機器既存売上成長率"
+        },
+        {
+          "id": "service",
+          "entity": "ITW",
+          "metric": "北米Food Equipmentサービス既存売上成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米Food Equipmentサービス既存売上成長率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "equipment",
+          "entity": "ITW",
+          "metric": "北米Food Equipment機器既存売上成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米Food Equipment機器既存売上成長率",
+          "value": -6.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000060/itw-20260930.htm",
+            "publishedOn": "2026-10-28",
+            "locator": "MD&A Cash Flow; Food Equipment",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "service",
+          "entity": "ITW",
+          "metric": "北米Food Equipmentサービス既存売上成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米Food Equipmentサービス既存売上成長率",
+          "value": 4.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000060/itw-20260930.htm",
+            "publishedOn": "2026-10-28",
+            "locator": "MD&A Cash Flow; Food Equipment",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "guidance",
+      "question": "７月28日時点の通期EPS予想は11.35〜11.55ドル、FCFの純利益に対する比率は「100%超」だった。10月27日時点ではEPSが11.45〜11.55ドルへ上方修正された一方、FCF比率は「約100%」という表現になった。",
+      "definition": "EPSの上下限とFCF比率の言葉を両原文で照合。100%超から約100%は定量的な下方修正幅を意味せず本文も原因・幅は不明とする。",
+      "status": "ready",
+      "claim": "７月28日時点の通期EPS予想は11.35〜11.55ドル、FCFの純利益に対する比率は「100%超」だった。10月27日時点ではEPSが11.45〜11.55ドルへ上方修正された一方、FCF比率は「約100%」という表現になった。",
+      "requiredInputs": [
+        {
+          "id": "oldepslow",
+          "entity": "ITW",
+          "metric": "通期EPS予想下限・7月28日基準",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "通期EPS予想下限・7月28日基準"
+        },
+        {
+          "id": "oldepshigh",
+          "entity": "ITW",
+          "metric": "通期EPS予想上限・7月28日基準",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "通期EPS予想上限・7月28日基準"
+        },
+        {
+          "id": "newepslow",
+          "entity": "ITW",
+          "metric": "通期EPS予想下限・10月27日基準",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "通期EPS予想下限・10月27日基準"
+        },
+        {
+          "id": "newepshigh",
+          "entity": "ITW",
+          "metric": "通期EPS予想上限・10月27日基準",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "通期EPS予想上限・10月27日基準"
+        },
+        {
+          "id": "fcfold",
+          "entity": "ITW",
+          "metric": "FCF転換率予想・比較基準値（100%超、点予想ではない）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "FCF/純利益。原文exceed 100 percentの閾値。100の点予想に置換しない。"
+        },
+        {
+          "id": "fcfnew",
+          "entity": "ITW",
+          "metric": "FCF転換率予想・概数約100%",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "FCF転換率予想・概数約100%"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oldepslow",
+          "entity": "ITW",
+          "metric": "通期EPS予想下限・7月28日基準",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "通期EPS予想下限・7月28日基準",
+          "value": 11.35,
+          "source": {
+            "url": "https://investor.itw.com/news-and-events/news/news-details/2026/ITW-Reports-Second-Quarter-2026-Results-and-Raises-Full-Year-2026-Guidance/default.aspx",
+            "publishedOn": "2026-07-28",
+            "locator": "2026 Guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldepshigh",
+          "entity": "ITW",
+          "metric": "通期EPS予想上限・7月28日基準",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "通期EPS予想上限・7月28日基準",
+          "value": 11.55,
+          "source": {
+            "url": "https://investor.itw.com/news-and-events/news/news-details/2026/ITW-Reports-Second-Quarter-2026-Results-and-Raises-Full-Year-2026-Guidance/default.aspx",
+            "publishedOn": "2026-07-28",
+            "locator": "2026 Guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newepslow",
+          "entity": "ITW",
+          "metric": "通期EPS予想下限・10月27日基準",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "通期EPS予想下限・10月27日基準",
+          "value": 11.45,
+          "source": {
+            "url": "https://investor.itw.com/news-and-events/news/news-details/2026/ITW-Reports-Third-Quarter-2026-Results/default.aspx",
+            "publishedOn": "2026-10-27",
+            "locator": "Third Quarter Results; 2026 Guidance; GAAP to Non-GAAP Reconciliations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newepshigh",
+          "entity": "ITW",
+          "metric": "通期EPS予想上限・10月27日基準",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "USD/share",
+          "basis": "company-forecast",
+          "definition": "通期EPS予想上限・10月27日基準",
+          "value": 11.55,
+          "source": {
+            "url": "https://investor.itw.com/news-and-events/news/news-details/2026/ITW-Reports-Third-Quarter-2026-Results/default.aspx",
+            "publishedOn": "2026-10-27",
+            "locator": "Third Quarter Results; 2026 Guidance; GAAP to Non-GAAP Reconciliations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fcfold",
+          "entity": "ITW",
+          "metric": "FCF転換率予想・比較基準値（100%超、点予想ではない）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "FCF/純利益。原文exceed 100 percentの閾値。100の点予想に置換しない。",
+          "value": 100,
+          "source": {
+            "url": "https://investor.itw.com/news-and-events/news/news-details/2026/ITW-Reports-Second-Quarter-2026-Results-and-Raises-Full-Year-2026-Guidance/default.aspx",
+            "publishedOn": "2026-07-28",
+            "locator": "2026 Guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fcfnew",
+          "entity": "ITW",
+          "metric": "FCF転換率予想・概数約100%",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "FCF転換率予想・概数約100%",
+          "value": 100,
+          "source": {
+            "url": "https://investor.itw.com/news-and-events/news/news-details/2026/ITW-Reports-Third-Quarter-2026-Results/default.aspx",
+            "publishedOn": "2026-10-27",
+            "locator": "Third Quarter Results; 2026 Guidance; GAAP to Non-GAAP Reconciliations",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "ytdfcf",
+      "question": "１〜９月の営業CFは2,299、設備取得支出は289、したがってFCFは2,010百万ドル。前年同期の1,849から増えている。",
+      "definition": "米国会計基準・連結。本文と同じ対象期間、単位、定義で比較。",
+      "status": "ready",
+      "claim": "１〜９月の営業CFは2,299、設備取得支出は289、したがってFCFは2,010百万ドル。前年同期の1,849から増えている。",
+      "requiredInputs": [
+        {
+          "id": "ocf",
+          "entity": "ITW",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "ITW",
+          "metric": "設備取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備取得支出"
+        },
+        {
+          "id": "fcf",
+          "entity": "ITW",
+          "metric": "FCF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF"
+        },
+        {
+          "id": "prev",
+          "entity": "ITW",
+          "metric": "FCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf",
+          "entity": "ITW",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 2299,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000060/itw-20260930.htm",
+            "publishedOn": "2026-10-28",
+            "locator": "MD&A Cash Flow; Food Equipment",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "ITW",
+          "metric": "設備取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備取得支出",
+          "value": 289,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000060/itw-20260930.htm",
+            "publishedOn": "2026-10-28",
+            "locator": "MD&A Cash Flow; Food Equipment",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fcf",
+          "entity": "ITW",
+          "metric": "FCF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF",
+          "value": 2010,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000060/itw-20260930.htm",
+            "publishedOn": "2026-10-28",
+            "locator": "MD&A Cash Flow; Food Equipment",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prev",
+          "entity": "ITW",
+          "metric": "FCF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF",
+          "value": 1849,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000060/itw-20260930.htm",
+            "publishedOn": "2026-10-28",
+            "locator": "MD&A Cash Flow; Food Equipment",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "calc",
+          "operation": "difference",
+          "inputs": [
+            "ocf",
+            "capex"
+          ],
+          "definition": "営業CF−設備取得支出",
+          "precision": 0,
+          "value": 2010
+        }
+      ]
+    },
+    {
+      "id": "qtrfcf",
+      "question": "７〜９月単独のFCFは前年904から851へ減った。",
+      "definition": "米国会計基準・連結。本文と同じ対象期間、単位、定義で比較。",
+      "status": "ready",
+      "claim": "７〜９月単独のFCFは前年904から851へ減った。",
+      "requiredInputs": [
+        {
+          "id": "previous",
+          "entity": "ITW",
+          "metric": "FCF",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF"
+        },
+        {
+          "id": "current",
+          "entity": "ITW",
+          "metric": "FCF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "previous",
+          "entity": "ITW",
+          "metric": "FCF",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF",
+          "value": 904,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000060/itw-20260930.htm",
+            "publishedOn": "2026-10-28",
+            "locator": "MD&A Cash Flow; Food Equipment",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "current",
+          "entity": "ITW",
+          "metric": "FCF",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF",
+          "value": 851,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000060/itw-20260930.htm",
+            "publishedOn": "2026-10-28",
+            "locator": "MD&A Cash Flow; Food Equipment",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "capitalreturn",
+      "question": "１〜９月の配当支払い1,386と自社株買い1,312の合計は2,698百万ドルで、FCFを688上回る。",
+      "definition": "米国会計基準・連結。本文と同じ対象期間、単位、定義で比較。",
+      "status": "ready",
+      "claim": "１〜９月の配当支払い1,386と自社株買い1,312の合計は2,698百万ドルで、FCFを688上回る。",
+      "requiredInputs": [
+        {
+          "id": "div",
+          "entity": "ITW",
+          "metric": "配当現金支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当現金支出"
+        },
+        {
+          "id": "buy",
+          "entity": "ITW",
+          "metric": "自社株買い現金支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "自社株買い現金支出"
+        },
+        {
+          "id": "fcf",
+          "entity": "ITW",
+          "metric": "FCF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "div",
+          "entity": "ITW",
+          "metric": "配当現金支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当現金支出",
+          "value": 1386,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000060/itw-20260930.htm",
+            "publishedOn": "2026-10-28",
+            "locator": "MD&A Cash Flow; Food Equipment",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "buy",
+          "entity": "ITW",
+          "metric": "自社株買い現金支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "自社株買い現金支出",
+          "value": 1312,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000060/itw-20260930.htm",
+            "publishedOn": "2026-10-28",
+            "locator": "MD&A Cash Flow; Food Equipment",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fcf",
+          "entity": "ITW",
+          "metric": "FCF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF",
+          "value": 2010,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/49826/000004982626000060/itw-20260930.htm",
+            "publishedOn": "2026-10-28",
+            "locator": "MD&A Cash Flow; Food Equipment",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "total",
+          "operation": "sum",
+          "inputs": [
+            "div",
+            "buy"
+          ],
+          "definition": "配当＋自社株買い",
+          "precision": 0,
+          "value": 2698
+        },
+        {
+          "id": "gap",
+          "operation": "difference",
+          "inputs": [
+            "total",
+            "fcf"
+          ],
+          "definition": "株主還元−FCF",
+          "precision": 0,
+          "value": 688
+        }
+      ]
+    },
+    {
+      "id": "roic",
+      "question": "会社公表の１〜９月の税引後ROICは年率換算29.1%。",
+      "definition": "米国会計基準・連結。本文と同じ対象期間、単位、定義で比較。",
+      "status": "ready",
+      "claim": "会社公表の１〜９月の税引後ROICは年率換算29.1%。",
+      "requiredInputs": [
+        {
+          "id": "roic",
+          "entity": "ITW",
+          "metric": "会社公表税引後ROIC",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "非GAAP・税引後営業利益/平均投下資本、9カ月値を4/3倍して年率換算。通期予想ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "roic",
+          "entity": "ITW",
+          "metric": "会社公表税引後ROIC",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "非GAAP・税引後営業利益/平均投下資本、9カ月値を4/3倍して年率換算。通期予想ではない。",
+          "value": 29.1,
+          "source": {
+            "url": "https://investor.itw.com/news-and-events/news/news-details/2026/ITW-Reports-Third-Quarter-2026-Results/default.aspx",
+            "publishedOn": "2026-10-27",
+            "locator": "Third Quarter Results; 2026 Guidance; GAAP to Non-GAAP Reconciliations",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "pricevaluation",
+      "question": "最新株価を用いる投資魅力度評価",
+      "definition": "同時点株価と対応するEPSが必要",
+      "status": "withheld",
+      "reason": "今回最新株価と市場予想をそろえた評価は未実施。記事は事業とCFの検証に限定。",
+      "omittedClaim": "ITWの最新株価は割安である。",
+      "requiredInputs": [
+        {
+          "id": "referencePrice",
+          "entity": "ITW",
+          "metric": "株価",
+          "periodStart": "2026-11-13",
+          "periodEnd": "2026-11-13",
+          "unit": "米ドル/株",
+          "basis": "market",
+          "definition": "予定比較の価格基準日。未取得のため観測値・評価結論なし"
+        }
+      ],
+      "observations": [],
+      "calculations": []
+    }
+  ]
+}

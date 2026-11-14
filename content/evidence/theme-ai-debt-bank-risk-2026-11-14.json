@@ -1,0 +1,227 @@
+{
+  "version": 1,
+  "articleSlug": "theme-ai-debt-bank-risk-2026-11-14",
+  "articleSha256": "b29242fcae11f43df9aa12a85771f22464882c77ca80028b92b3927e86462379",
+  "checkedAt": "2026-11-14T10:58:16.402314+00:00",
+  "informationCutoff": "2026-11-14T10:00:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "本文全体の重要数値を原PDF31-33頁・注記で確認。下限・概数を定義に保持、計算なし。基礎統計の正確な日次日付がない2026値では、公表日に掲載された値そのものを観測とし、基礎期間（10月まで、図Cの2026Q2、個別日付未公表）はmetric/definitionに分離。basis=actualは公表掲載値であり基礎統計が確定値という意味ではない。2023は明示的な通年。RBAは構造と緩和要因の独立照合、数値追加なし。最終digestはroute設置後に生成。 独立レビューで原典・算式・全重要数値の本文との対応を再確認済み。",
+  "comparisons": [
+    {
+      "id": "issuance-flow",
+      "question": "発行フローの拡大。期間長不一致明記、残高増加率に置換しない。",
+      "definition": "発行フローの拡大。期間長不一致明記、残高増加率に置換しない。",
+      "status": "ready",
+      "claim": "FRBによると、高度な計算インフラに関係する債務の発行額は2026年10月までに6,800億ドル超。2023年通年の1,300億ドルから大きく増えた。",
+      "requiredInputs": [
+        {
+          "id": "issue26",
+          "entity": "FRB advanced computing financing analysis",
+          "metric": "Lower threshold of issuance estimate through October 2026",
+          "periodStart": "2026-11-13",
+          "periodEnd": "2026-11-13",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "2026-11-13公表資料に実際に掲載された推計・下限の観測。periodStart/Endは掲載確認対象の公表日であり基礎統計の日次観測日ではない。基礎対象期間はmetricおよび以下に明記。本文はmore than 680。680は実績確定値ではなく公表下限。公開案件と追跡可能144Aを含み4(a)(2)除外。"
+        },
+        {
+          "id": "issue23",
+          "entity": "FRB advanced computing financing analysis",
+          "metric": "Issuance estimate full year 2023",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "同報告の2023通年推計。2026と期間長が異なるため同比率を計算せず増加のみ説明。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "issue26",
+          "entity": "FRB advanced computing financing analysis",
+          "metric": "Lower threshold of issuance estimate through October 2026",
+          "periodStart": "2026-11-13",
+          "periodEnd": "2026-11-13",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "2026-11-13公表資料に実際に掲載された推計・下限の観測。periodStart/Endは掲載確認対象の公表日であり基礎統計の日次観測日ではない。基礎対象期間はmetricおよび以下に明記。本文はmore than 680。680は実績確定値ではなく公表下限。公開案件と追跡可能144Aを含み4(a)(2)除外。",
+          "value": 680,
+          "source": {
+            "url": "https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf",
+            "publishedOn": "2026-11-13",
+            "locator": "Box 2.2; printed page 23",
+            "pdfPage": 31,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "issue23",
+          "entity": "FRB advanced computing financing analysis",
+          "metric": "Issuance estimate full year 2023",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "同報告の2023通年推計。2026と期間長が異なるため同比率を計算せず増加のみ説明。",
+          "value": 130,
+          "source": {
+            "url": "https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf",
+            "publishedOn": "2026-11-13",
+            "locator": "Box 2.2; printed page 23",
+            "pdfPage": 31,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "outstanding-stock",
+      "question": "発行と残高は異なる。足し算や差引きはしない。",
+      "definition": "発行と残高は異なる。足し算や差引きはしない。",
+      "status": "ready",
+      "claim": "一方、2026年10月時点の関連する公開市場の債務残高は1.1兆ドル超と推計されている。",
+      "requiredInputs": [
+        {
+          "id": "outstanding",
+          "entity": "FRB advanced computing financing analysis",
+          "metric": "Lower threshold of outstanding public debt",
+          "periodStart": "2026-11-13",
+          "periodEnd": "2026-11-13",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "2026-11-13公表資料に実際に掲載された推計・下限の観測。periodStart/Endは掲載確認対象の公表日であり基礎統計の日次観測日ではない。基礎対象期間はmetricおよび以下に明記。more than 1.1 trillionの公表下限。10月時点の残高であり全私募を含む総残高ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "outstanding",
+          "entity": "FRB advanced computing financing analysis",
+          "metric": "Lower threshold of outstanding public debt",
+          "periodStart": "2026-11-13",
+          "periodEnd": "2026-11-13",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "2026-11-13公表資料に実際に掲載された推計・下限の観測。periodStart/Endは掲載確認対象の公表日であり基礎統計の日次観測日ではない。基礎対象期間はmetricおよび以下に明記。more than 1.1 trillionの公表下限。10月時点の残高であり全私募を含む総残高ではない。",
+          "value": 1100,
+          "source": {
+            "url": "https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf",
+            "publishedOn": "2026-11-13",
+            "locator": "Box 2.2; printed page 23",
+            "pdfPage": 31,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "other-obligations",
+      "question": "7社対象、未割引額、条件付も含む。債務残高・当日支払額・予想損失と比率比較や合算をしない。",
+      "definition": "7社対象、未割引額、条件付も含む。債務残高・当日支払額・予想損失と比率比較や合算をしない。",
+      "status": "ready",
+      "claim": "2026年第２四半期までの図に対応する説明では、未開始リースは割引前で１兆ドル超、引取保証契約や残存価値保証などは割引前で２兆ドル超としている。",
+      "requiredInputs": [
+        {
+          "id": "leases",
+          "entity": "FRB advanced computing financing analysis",
+          "metric": "Lower threshold of uncommenced leases undiscounted",
+          "periodStart": "2026-11-13",
+          "periodEnd": "2026-11-13",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "2026-11-13公表資料に実際に掲載された推計・下限の観測。periodStart/Endは掲載確認対象の公表日であり基礎統計の日次観測日ではない。基礎対象期間はmetricおよび以下に明記。図Cの最新表示2026Q2。7社の提出書類からの推計で財務期末の完全同一性は断定しない。more than 1 trillionの下限。"
+        },
+        {
+          "id": "guarantees",
+          "entity": "FRB advanced computing financing analysis",
+          "metric": "Lower threshold of other obligations undiscounted",
+          "periodStart": "2026-11-13",
+          "periodEnd": "2026-11-13",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "2026-11-13公表資料に実際に掲載された推計・下限の観測。periodStart/Endは掲載確認対象の公表日であり基礎統計の日次観測日ではない。基礎対象期間はmetricおよび以下に明記。図Cの最新表示2026Q2。take-or-payおよびresidual guarantees等の未割引将来約束。more than 2 trillionの下限。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "leases",
+          "entity": "FRB advanced computing financing analysis",
+          "metric": "Lower threshold of uncommenced leases undiscounted",
+          "periodStart": "2026-11-13",
+          "periodEnd": "2026-11-13",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "2026-11-13公表資料に実際に掲載された推計・下限の観測。periodStart/Endは掲載確認対象の公表日であり基礎統計の日次観測日ではない。基礎対象期間はmetricおよび以下に明記。図Cの最新表示2026Q2。7社の提出書類からの推計で財務期末の完全同一性は断定しない。more than 1 trillionの下限。",
+          "value": 1000,
+          "source": {
+            "url": "https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf",
+            "publishedOn": "2026-11-13",
+            "locator": "Box 2.2; printed page 24",
+            "pdfPage": 32,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "guarantees",
+          "entity": "FRB advanced computing financing analysis",
+          "metric": "Lower threshold of other obligations undiscounted",
+          "periodStart": "2026-11-13",
+          "periodEnd": "2026-11-13",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "2026-11-13公表資料に実際に掲載された推計・下限の観測。periodStart/Endは掲載確認対象の公表日であり基礎統計の日次観測日ではない。基礎対象期間はmetricおよび以下に明記。図Cの最新表示2026Q2。take-or-payおよびresidual guarantees等の未割引将来約束。more than 2 trillionの下限。",
+          "value": 2000,
+          "source": {
+            "url": "https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf",
+            "publishedOn": "2026-11-13",
+            "locator": "Box 2.2; printed page 24",
+            "pdfPage": 32,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "bank-exposure",
+      "question": "広い対象のエクスポージャーを銀行予想損失と混同しない。",
+      "definition": "広い対象のエクスポージャーを銀行予想損失と混同しない。",
+      "status": "ready",
+      "claim": "FRBは、米国最大手の銀行持株会社が、大手テクノロジー企業、データセンター開発会社、関連する特別目的事業体・プライベートクレジット運用主体、公益企業に対して合計１兆ドル近いエクスポージャーを持つと記す。",
+      "requiredInputs": [
+        {
+          "id": "bank",
+          "entity": "FRB advanced computing financing analysis",
+          "metric": "Approximate broad exposure of largest US BHCs",
+          "periodStart": "2026-11-13",
+          "periodEnd": "2026-11-13",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "2026-11-13公表資料に実際に掲載された推計・下限の観測。periodStart/Endは掲載確認対象の公表日であり基礎統計の日次観測日ではない。基礎対象期間はmetricおよび以下に明記。close to 1 trillionの概数表現。予想損失でもAI専用不良債権でもない。個別基準日記載なし。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "bank",
+          "entity": "FRB advanced computing financing analysis",
+          "metric": "Approximate broad exposure of largest US BHCs",
+          "periodStart": "2026-11-13",
+          "periodEnd": "2026-11-13",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "2026-11-13公表資料に実際に掲載された推計・下限の観測。periodStart/Endは掲載確認対象の公表日であり基礎統計の日次観測日ではない。基礎対象期間はmetricおよび以下に明記。close to 1 trillionの概数表現。予想損失でもAI専用不良債権でもない。個別基準日記載なし。",
+          "value": 1000,
+          "source": {
+            "url": "https://www.federalreserve.gov/publications/files/financial-stability-report-20261113.pdf",
+            "publishedOn": "2026-11-13",
+            "locator": "Box 2.2; printed page 25",
+            "pdfPage": 33,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
