@@ -182,7 +182,8 @@ test("November review additions preserve winter JST conversions and approximate 
     const event = events.find(e => e.id === id);
     assert.ok(event, id);
     assert.equal(event.date + " " + event.time, format.format(new Date(local)), id);
-    assert.match(event.sourceTime, /2026-11-01確認/);
+    assert.match(event.sourceTime, /\d{4}-\d{2}-\d{2}確認/);
+    assert.ok(event.sourceTime.match(/(\d{4}-\d{2}-\d{2})確認/)[1] <= marketCalendarReviewedAt);
   }
   const release = events.find(e => e.id === "nvidia-fy27-q3-release");
   assert.equal(release.date, "2026-11-18");
@@ -214,7 +215,8 @@ test("November 8 additions distinguish release times, calls and winter market da
     const event = events.find(e => e.id === id);
     assert.ok(event, id);
     assert.equal(event.date + " " + event.time, format.format(new Date(local)), id);
-    assert.match(event.sourceTime, /2026-11-08確認/);
+    assert.match(event.sourceTime, /\d{4}-\d{2}-\d{2}確認/);
+    assert.ok(event.sourceTime.match(/(\d{4}-\d{2}-\d{2})確認/)[1] <= marketCalendarReviewedAt);
   }
   assert.equal(events.find(e => e.id === "walmart-fy27-q3-release").time, "21:00ごろ");
   assert.equal(events.find(e => e.id === "boj-mpm-2026-12").time, "未定");
@@ -224,4 +226,26 @@ test("November 8 additions distinguish release times, calls and winter market da
   assert.equal(early.date, "2026-12-24");
   assert.match(early.summary, /日本時間12月25日03:00/);
   assert.equal(early.time, "短縮取引");
+});
+
+test("November 15 additions preserve publication periods and winter JST conversions", () => {
+  const format = new Intl.DateTimeFormat("sv-SE", { timeZone: "Asia/Tokyo", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" });
+  for (const [id, local] of [
+    ["disney-fy26-q4-call", "2026-11-17T08:30:00-05:00"],
+    ["salesforce-fy27-q3-call", "2026-12-02T14:00:00-08:00"],
+    ["us-durable-goods-2026-11", "2026-12-23T08:30:00-05:00"],
+    ["us-new-home-sales-2026-11", "2026-12-23T10:00:00-05:00"],
+    ["japan-cpi-2026-11", "2026-12-18T08:30:00+09:00"],
+    ["tokyo-cpi-2026-12", "2026-12-25T08:30:00+09:00"],
+    ["japan-unemployment-2026-11", "2026-12-25T08:30:00+09:00"],
+  ]) {
+    const event = events.find(e => e.id === id);
+    assert.ok(event, id);
+    assert.equal(event.date + " " + event.time, format.format(new Date(local)), id);
+    assert.match(event.sourceTime, /2026-11-15確認/);
+  }
+  assert.match(events.find(e => e.id === "japan-unemployment-2026-11").title, /11月分.*基本集計/);
+  assert.match(events.find(e => e.id === "tokyo-cpi-2026-12").title, /12月分・中旬速報/);
+  assert.match(events.find(e => e.id === "disney-fy26-q4-call").summary, /公表時刻は未確定/);
+  assert.match(events.find(e => e.id === "salesforce-fy27-q3-call").summary, /厳密な時刻とは区別/);
 });

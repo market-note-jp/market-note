@@ -24,7 +24,7 @@ export type MarketCalendarEvent = {
   forecast?: MarketCalendarForecast;
 };
 
-export const marketCalendarReviewedAt = "2026-11-08";
+export const marketCalendarReviewedAt = "2026-11-15";
 
 export const marketCalendarEvents: MarketCalendarEvent[] = [
   {
@@ -1509,7 +1509,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "7-9月期のGDPと個人消費、設備投資、外需などの内訳を公表する1次速報。",
     sourceName: "内閣府 四半期別GDP速報 公表予定",
     sourceUrl: "https://www.esri.cao.go.jp/jp/sna/kouhyou/kouhyou_top.html",
-    sourceTime: "11月16日 08:50 JST（2026-11-01確認）",
+    sourceTime: "11月16日 08:50 JST（2026-11-15確認）",
   },
   {
     id: "us-retail-sales-2026-10",
@@ -1522,7 +1522,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "小売・飲食サービス売上の速報。個人消費の一部を確認する統計。",
     sourceName: "U.S. Census 2026 Economic Indicator Release Schedule",
     sourceUrl: "https://www.census.gov/economic-indicators/calendar-listview-2026.html",
-    sourceTime: "11月17日 08:30 EST（UTC-5）（2026-11-01確認）",
+    sourceTime: "11月17日 08:30 EST（UTC-5）（2026-11-15確認）",
   },
   {
     id: "fed-industrial-production-2026-10",
@@ -1535,7 +1535,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "鉱工業の生産と設備稼働の動向を確認する統計。",
     sourceName: "Federal Reserve November 2026 Calendar",
     sourceUrl: "https://www.federalreserve.gov/newsevents/2026-november.htm",
-    sourceTime: "11月17日 09:15 EST（UTC-5）（2026-11-01確認）",
+    sourceTime: "11月17日 09:15 EST（UTC-5）（2026-11-15確認）",
   },
   {
     id: "nvidia-fy27-q3-release",
@@ -1548,7 +1548,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "10月25日終了の四半期決算。10月28日付案内では資料公表は13:20 PTごろ。日本時間07:00の説明会とは別で、厳密な確定時刻ではない。",
     sourceName: "NVIDIA 公式IR・10月28日付決算案内",
     sourceUrl: "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx",
-    sourceTime: "11月17日 13:20ごろ PST（UTC-8）（2026-11-01確認）",
+    sourceTime: "11月17日 13:20ごろ PST（UTC-8）（2026-11-15確認）",
   },
   {
     id: "nvidia-fy27-q3-call",
@@ -1561,7 +1561,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "10月25日終了の四半期決算の説明会。資料公開予定の日本時間06:20ごろとは区別。",
     sourceName: "NVIDIA 公式IR・10月28日付決算案内",
     sourceUrl: "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx",
-    sourceTime: "11月17日 14:00 PST（UTC-8）／17:00 EST（2026-11-01確認）",
+    sourceTime: "11月17日 14:00 PST（UTC-8）／17:00 EST（2026-11-15確認）",
   },
   {
     id: "us-housing-starts-2026-10",
@@ -1574,7 +1574,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "住宅着工、建設許可、竣工件数から住宅建設の動向を確認する統計。",
     sourceName: "U.S. Census 2026 Economic Indicator Release Schedule",
     sourceUrl: "https://www.census.gov/economic-indicators/calendar-listview-2026.html",
-    sourceTime: "11月18日 08:30 EST（UTC-5）（2026-11-01確認）",
+    sourceTime: "11月18日 08:30 EST（UTC-5）（2026-11-15確認）",
   },
   {
     id: "fomc-minutes-2026-10",
@@ -1587,7 +1587,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "10月会合の議論を示す議事要旨。新たな政策決定の発表ではない。",
     sourceName: "Federal Reserve November 2026 Calendar",
     sourceUrl: "https://www.federalreserve.gov/newsevents/2026-november.htm",
-    sourceTime: "11月18日 14:00 EST（UTC-5）（2026-11-01確認）",
+    sourceTime: "11月18日 14:00 EST（UTC-5）（2026-11-15確認）",
   },
   {
     id: "japan-cpi-2026-10",
@@ -1600,7 +1600,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "全国の消費者物価指数。東京都区部の中旬速報値とは対象地域・公表日が異なる。",
     sourceName: "e-Stat 消費者物価指数 公表予定",
     sourceUrl: "https://www.e-stat.go.jp/release-calendar/statistics/00200573",
-    sourceTime: "11月20日 08:30 JST（2026-11-01確認）",
+    sourceTime: "11月20日 08:30 JST（2026-11-15確認）",
   },
   {
     id: "tse-labor-thanksgiving-2026",
@@ -1613,7 +1613,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "現物株の終日休場。先物・オプションの祝日取引日程とは異なる。",
     sourceName: "日本取引所グループ 営業時間・休業日一覧",
     sourceUrl: "https://www.jpx.co.jp/corporate/about-jpx/calendar/index.html",
-    sourceTime: "11月23日 日本市場の取引日（JST）（2026-11-01確認）",
+    sourceTime: "11月23日 日本市場の取引日（JST）（2026-11-15確認）",
   },
   {
     id: "bea-gdp-second-2026-q3",
@@ -1626,7 +1626,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "7-9月期GDPの2次推計と企業利益を公表。10月29日の1次推計とは別の公表。",
     sourceName: "BEA Release Schedule",
     sourceUrl: "https://www.bea.gov/news/schedule",
-    sourceTime: "11月25日 08:30 EST（UTC-5）（2026-11-01確認）",
+    sourceTime: "11月25日 08:30 EST（UTC-5）（2026-11-15確認）",
   },
   {
     id: "bea-pce-2026-10",
@@ -1639,7 +1639,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "個人所得、個人消費支出、PCE価格指数とコア指数を確認する統計。",
     sourceName: "BEA Release Schedule",
     sourceUrl: "https://www.bea.gov/news/schedule",
-    sourceTime: "11月25日 08:30 EST（UTC-5）（2026-11-01確認）",
+    sourceTime: "11月25日 08:30 EST（UTC-5）（2026-11-15確認）",
   },
   {
     id: "us-durable-goods-2026-10",
@@ -1652,7 +1652,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "耐久財の受注、出荷、受注残を確認する速報。",
     sourceName: "U.S. Census 2026 Economic Indicator Release Schedule",
     sourceUrl: "https://www.census.gov/economic-indicators/calendar-listview-2026.html",
-    sourceTime: "11月25日 08:30 EST（UTC-5）（2026-11-01確認）",
+    sourceTime: "11月25日 08:30 EST（UTC-5）（2026-11-15確認）",
   },
   {
     id: "us-new-home-sales-2026-10",
@@ -1665,7 +1665,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "新築一戸建て住宅の販売件数、価格、在庫を確認する統計。日本時間では翌日00:00。",
     sourceName: "U.S. Census 2026 Economic Indicator Release Schedule",
     sourceUrl: "https://www.census.gov/economic-indicators/calendar-listview-2026.html",
-    sourceTime: "11月25日 10:00 EST（UTC-5）（2026-11-01確認）",
+    sourceTime: "11月25日 10:00 EST（UTC-5）（2026-11-15確認）",
   },
   {
     id: "fed-beige-book-2026-11",
@@ -1678,7 +1678,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "地区連銀による経済報告。日本時間では11月26日04:00に公表予定。",
     sourceName: "Federal Reserve November 2026 Calendar",
     sourceUrl: "https://www.federalreserve.gov/newsevents/2026-november.htm",
-    sourceTime: "11月25日 14:00 EST（UTC-5）（2026-11-01確認）",
+    sourceTime: "11月25日 14:00 EST（UTC-5）（2026-11-15確認）",
   },
   {
     id: "nyse-thanksgiving-2026",
@@ -1691,7 +1691,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "米国市場の現地取引日11月26日の終日休場。日本時間の終日イベントを意味しない。",
     sourceName: "NYSE Holidays & Trading Hours",
     sourceUrl: "https://www.nyse.com/trade/hours-calendars",
-    sourceTime: "11月26日 米国市場の取引日（EST）（2026-11-01確認）",
+    sourceTime: "11月26日 米国市場の取引日（EST）（2026-11-15確認）",
   },
   {
     id: "tokyo-cpi-2026-11",
@@ -1704,7 +1704,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "東京都区部の消費者物価指数の中旬速報値。全国CPIとは対象地域が異なる。",
     sourceName: "e-Stat 消費者物価指数 公表予定",
     sourceUrl: "https://www.e-stat.go.jp/release-calendar/statistics/00200573",
-    sourceTime: "11月27日 08:30 JST（2026-11-01確認）",
+    sourceTime: "11月27日 08:30 JST（2026-11-15確認）",
   },
   {
     id: "nyse-early-close-2026-11",
@@ -1717,7 +1717,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "市場現地日付11月27日の短縮取引で、終日休場ではない。現物株は13:00 EST、日本時間11月28日03:00に終了。適格オプションの13:15とは区別。",
     sourceName: "NYSE Holidays & Trading Hours",
     sourceUrl: "https://www.nyse.com/trade/hours-calendars",
-    sourceTime: "11月27日 13:00 EST（UTC-5）終了（2026-11-01確認）",
+    sourceTime: "11月27日 13:00 EST（UTC-5）終了（2026-11-15確認）",
   },
   {
     id: "japan-unemployment-2026-10",
@@ -1730,7 +1730,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "10月分の完全失業率や就業者数を公表する基本集計。公表日は11月末ではなく12月1日。",
     sourceName: "総務省統計局 労働力調査 2026年公表予定",
     sourceUrl: "https://www.stat.go.jp/data/roudou/pdf/kohyo26.pdf",
-    sourceTime: "12月1日 08:30 JST（2026-11-01確認）",
+    sourceTime: "12月1日 08:30 JST（2026-11-15確認）",
   },
   {
     id: "bls-jolts-2026-10",
@@ -1743,7 +1743,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "求人件数・採用・離職の動向を公表。日本時間では翌日00:00。",
     sourceName: "BLS 2026 Release Schedule",
     sourceUrl: "https://www.bls.gov/schedule/2026/home.htm",
-    sourceTime: "12月1日 10:00 EST（UTC-5）（2026-11-01確認）",
+    sourceTime: "12月1日 10:00 EST（UTC-5）（2026-11-15確認）",
   },
   {
     id: "bls-employment-2026-11",
@@ -1756,7 +1756,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "非農業部門雇用者数、失業率、平均時給などを確認する統計。",
     sourceName: "BLS 2026 Release Schedule",
     sourceUrl: "https://www.bls.gov/schedule/2026/home.htm",
-    sourceTime: "12月4日 08:30 EST（UTC-5）（2026-11-01確認）",
+    sourceTime: "12月4日 08:30 EST（UTC-5）（2026-11-15確認）",
   },
   {
     id: "japan-gdp-second-2026-q3",
@@ -1769,7 +1769,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "7-9月期GDPの2次速報。11月16日の1次速報からの改定を確認する。",
     sourceName: "内閣府 四半期別GDP速報 公表予定",
     sourceUrl: "https://www.esri.cao.go.jp/jp/sna/kouhyou/kouhyou_top.html",
-    sourceTime: "12月8日 08:50 JST（2026-11-01確認）",
+    sourceTime: "12月8日 08:50 JST（2026-11-15確認）",
   },
   {
     id: "us-trade-2026-10",
@@ -1782,7 +1782,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "財・サービスの輸出入と貿易収支を公表。財のみの先行指標とは異なる。",
     sourceName: "BEA Release Schedule",
     sourceUrl: "https://www.bea.gov/news/schedule",
-    sourceTime: "12月8日 08:30 EST（UTC-5）（2026-11-01確認）",
+    sourceTime: "12月8日 08:30 EST（UTC-5）（2026-11-15確認）",
   },
   {
     id: "fomc-2026-12",
@@ -1795,7 +1795,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "12月8・9日会合の政策声明・政策金利発表。議長記者会見は日本時間04:30に別途予定。",
     sourceName: "Federal Reserve December 2026 Calendar",
     sourceUrl: "https://www.federalreserve.gov/newsevents/2026-december.htm",
-    sourceTime: "12月9日 14:00 EST（UTC-5）（2026-11-01確認）",
+    sourceTime: "12月9日 14:00 EST（UTC-5）（2026-11-15確認）",
   },
   {
     id: "fomc-press-conference-2026-12",
@@ -1808,7 +1808,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "12月8・9日会合後の記者会見。政策声明の公表とは別。",
     sourceName: "Federal Reserve December 2026 Calendar",
     sourceUrl: "https://www.federalreserve.gov/newsevents/2026-december.htm",
-    sourceTime: "12月9日 14:30 EST（UTC-5）（2026-11-01確認）",
+    sourceTime: "12月9日 14:30 EST（UTC-5）（2026-11-15確認）",
   },
   {
     id: "bls-cpi-2026-11",
@@ -1821,7 +1821,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     summary: "消費者物価指数の総合・コアや品目別の動向を確認する統計。",
     sourceName: "BLS 2026 Release Schedule",
     sourceUrl: "https://www.bls.gov/schedule/2026/home.htm",
-    sourceTime: "12月10日 08:30 EST（UTC-5）（2026-11-01確認）",
+    sourceTime: "12月10日 08:30 EST（UTC-5）（2026-11-15確認）",
   },
   {
     "id": "cisco-fy27-q1-call",
@@ -1847,7 +1847,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "summary": "11月3日付公式案内で確認した説明会開始日時。決算資料そのものの公開時刻とは区別。",
     "sourceName": "Home Depot 公式IR",
     "sourceUrl": "https://ir.homedepot.com/news-releases/2026/11-03-2026-130236805",
-    "sourceTime": "11月17日 09:00 EST（UTC-5）（2026-11-08確認）"
+    "sourceTime": "11月17日 09:00 EST（UTC-5）（2026-11-15確認）"
   },
   {
     "id": "walmart-fy27-q3-release",
@@ -1860,7 +1860,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "summary": "公式案内の資料公表予定は06:00 CTごろ。日本時間22:00の説明会とは別で、厳密な確定時刻ではない。",
     "sourceName": "Walmart 公式決算イベント案内",
     "sourceUrl": "https://corporate.walmart.com/news/events/fy2027-q3-earnings-release",
-    "sourceTime": "11月19日 06:00ごろ CST（UTC-6）（2026-11-08確認）"
+    "sourceTime": "11月19日 06:00ごろ CST（UTC-6）（2026-11-15確認）"
   },
   {
     "id": "walmart-fy27-q3-call",
@@ -1873,7 +1873,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "summary": "公式案内の説明会は07:00 CT。日本時間21:00ごろの資料公開予定とは区別。",
     "sourceName": "Walmart 公式決算イベント案内",
     "sourceUrl": "https://corporate.walmart.com/news/events/fy2027-q3-earnings-release",
-    "sourceTime": "11月19日 07:00 CST（UTC-6）（2026-11-08確認）"
+    "sourceTime": "11月19日 07:00 CST（UTC-6）（2026-11-15確認）"
   },
   {
     "id": "hpe-fy26-q4-call",
@@ -1885,8 +1885,8 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "importance": "高",
     "summary": "HPE公式IRからリンクされた説明会ページで開始日時を確認。資料公表時刻とは区別。",
     "sourceName": "HPE公式IR掲載の説明会ページ",
-    "sourceUrl": "https://event.choruscall.com/mediaframe/webcast.html?webcastid=fwiMPrOD",
-    "sourceTime": "11月23日 17:00 EST（UTC-5）（2026-11-08確認）"
+    "sourceUrl": "https://www.hpe.com/us/en/newsroom/press-release/2026/11/hpe-to-present-live-audio-webcast-of-fiscal-2026-fourth-quarter-earnings-conference-call.html",
+    "sourceTime": "11月23日 17:00 EST（UTC-5）（2026-11-15確認）"
   },
   {
     "id": "bls-productivity-revised-2026-q3",
@@ -1899,7 +1899,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "summary": "11月の速報からの改定。生産性と時間当たり報酬、単位労働コストを確認する。",
     "sourceName": "BLS 2026 Release Schedule",
     "sourceUrl": "https://www.bls.gov/schedule/2026/home.htm",
-    "sourceTime": "12月8日 08:30 EST（UTC-5）（2026-11-08確認）"
+    "sourceTime": "12月8日 08:30 EST（UTC-5）（2026-11-15確認）"
   },
   {
     "id": "bls-ppi-2026-11",
@@ -1912,7 +1912,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "summary": "生産者段階の財・サービス価格を確認する統計。",
     "sourceName": "BLS 2026 Release Schedule",
     "sourceUrl": "https://www.bls.gov/schedule/2026/home.htm",
-    "sourceTime": "12月15日 08:30 EST（UTC-5）（2026-11-08確認）"
+    "sourceTime": "12月15日 08:30 EST（UTC-5）（2026-11-15確認）"
   },
   {
     "id": "us-retail-sales-2026-11",
@@ -1925,7 +1925,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "summary": "小売・飲食サービス売上の速報。個人消費全体とは対象が異なる。",
     "sourceName": "U.S. Census 2026 Release Schedule",
     "sourceUrl": "https://www.census.gov/economic-indicators/calendar-listview-2026.html",
-    "sourceTime": "12月16日 08:30 EST（UTC-5）（2026-11-08確認）"
+    "sourceTime": "12月16日 08:30 EST（UTC-5）（2026-11-15確認）"
   },
   {
     "id": "us-housing-starts-2026-11",
@@ -1938,7 +1938,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "summary": "住宅着工・建設許可・竣工から住宅建設の動向を確認。",
     "sourceName": "U.S. Census 2026 Release Schedule",
     "sourceUrl": "https://www.census.gov/economic-indicators/calendar-listview-2026.html",
-    "sourceTime": "12月17日 08:30 EST（UTC-5）（2026-11-08確認）"
+    "sourceTime": "12月17日 08:30 EST（UTC-5）（2026-11-15確認）"
   },
   {
     "id": "fed-industrial-production-2026-11",
@@ -1951,7 +1951,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "summary": "鉱工業の生産と設備稼働の動向を確認する統計。",
     "sourceName": "Federal Reserve December 2026 Calendar",
     "sourceUrl": "https://www.federalreserve.gov/newsevents/2026-december.htm",
-    "sourceTime": "12月16日 09:15 EST（UTC-5）（2026-11-08確認）"
+    "sourceTime": "12月16日 09:15 EST（UTC-5）（2026-11-15確認）"
   },
   {
     "id": "bea-gdp-third-2026-q3",
@@ -1964,7 +1964,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "summary": "7-9月期GDPの3次推計と企業利益。11月25日の2次推計からの改定を確認。",
     "sourceName": "BEA Release Schedule",
     "sourceUrl": "https://www.bea.gov/news/schedule",
-    "sourceTime": "12月23日 08:30 EST（UTC-5）（2026-11-08確認）"
+    "sourceTime": "12月23日 08:30 EST（UTC-5）（2026-11-15確認）"
   },
   {
     "id": "bea-pce-2026-11",
@@ -1977,7 +1977,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "summary": "個人所得・消費支出とPCE価格指数を公表する予定。予想や結果は含めない。",
     "sourceName": "BEA Release Schedule",
     "sourceUrl": "https://www.bea.gov/news/schedule",
-    "sourceTime": "12月23日 08:30 EST（UTC-5）（2026-11-08確認）"
+    "sourceTime": "12月23日 08:30 EST（UTC-5）（2026-11-15確認）"
   },
   {
     "id": "nyse-early-close-2026-12",
@@ -1990,7 +1990,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "summary": "市場現地日付12月24日の短縮取引。現物株は13:00 EST、日本時間12月25日03:00に終了。終日休場ではない。",
     "sourceName": "NYSE Holidays & Trading Hours",
     "sourceUrl": "https://www.nyse.com/trade/hours-calendars",
-    "sourceTime": "12月24日 13:00 EST（UTC-5）終了（2026-11-08確認）"
+    "sourceTime": "12月24日 13:00 EST（UTC-5）終了（2026-11-15確認）"
   },
   {
     "id": "nyse-christmas-2026",
@@ -2003,7 +2003,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "summary": "米国市場の現地取引日12月25日の終日休場。日本時間の終日イベントを意味しない。",
     "sourceName": "NYSE Holidays & Trading Hours",
     "sourceUrl": "https://www.nyse.com/trade/hours-calendars",
-    "sourceTime": "12月25日 米国市場の取引日（EST）（2026-11-08確認）"
+    "sourceTime": "12月25日 米国市場の取引日（EST）（2026-11-15確認）"
   },
   {
     "id": "fomc-minutes-2026-12",
@@ -2016,7 +2016,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "summary": "12月会合の議事要旨。新たな政策決定ではなく、日本時間では翌日早朝の公表。",
     "sourceName": "Federal Reserve December 2026 Calendar",
     "sourceUrl": "https://www.federalreserve.gov/newsevents/2026-december.htm",
-    "sourceTime": "12月30日 14:00 EST（UTC-5）（2026-11-08確認）"
+    "sourceTime": "12月30日 14:00 EST（UTC-5）（2026-11-15確認）"
   },
   {
     "id": "boj-mpm-2026-12",
@@ -2029,7 +2029,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "summary": "2日間の会合最終日。政策決定の公表時刻は未定で、15:30の総裁記者会見とは別。",
     "sourceName": "日本銀行 公表予定",
     "sourceUrl": "https://www.boj.or.jp/about/calendar/",
-    "sourceTime": "12月17・18日 JST（政策決定の公表時刻未定）（2026-11-08確認）"
+    "sourceTime": "12月17・18日 JST（政策決定の公表時刻未定）（2026-11-15確認）"
   },
   {
     "id": "boj-press-conference-2026-12",
@@ -2042,7 +2042,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "summary": "12月会合後の総裁記者会見。政策決定そのものの公表時刻ではない。",
     "sourceName": "日本銀行 公表予定",
     "sourceUrl": "https://www.boj.or.jp/about/calendar/",
-    "sourceTime": "12月18日 15:30 JST（2026-11-08確認）"
+    "sourceTime": "12月18日 15:30 JST（2026-11-15確認）"
   },
   {
     "id": "japan-trade-preliminary-2026-10",
@@ -2055,7 +2055,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "summary": "月分の輸出入・貿易収支の速報。上中旬の速報や確報とは区別。",
     "sourceName": "財務省貿易統計 公表予定",
     "sourceUrl": "https://www.customs.go.jp/toukei/calendar/calend.htm",
-    "sourceTime": "11月18日 08:50 JST（2026-11-08確認）"
+    "sourceTime": "11月18日 08:50 JST（2026-11-15確認）"
   },
   {
     "id": "japan-trade-preliminary-2026-11",
@@ -2068,7 +2068,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "summary": "月分の輸出入・貿易収支の速報。上中旬の速報や確報とは区別。",
     "sourceName": "財務省貿易統計 公表予定",
     "sourceUrl": "https://www.customs.go.jp/toukei/calendar/calend.htm",
-    "sourceTime": "12月16日 08:50 JST（2026-11-08確認）"
+    "sourceTime": "12月16日 08:50 JST（2026-11-15確認）"
   },
   {
     "id": "boj-tankan-2026-12",
@@ -2081,7 +2081,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "summary": "企業の業況判断や設備投資計画を確認する12月調査。翌日の全容公表とは区別。",
     "sourceName": "日本銀行 統計公表予定",
     "sourceUrl": "https://www.boj.or.jp/statistics/outline/tkohyos.xlsx",
-    "sourceTime": "12月14日 08:50 JST（2026-11-08確認）"
+    "sourceTime": "12月14日 08:50 JST（2026-11-15確認）"
   },
   {
     "id": "boj-cgpi-2026-11",
@@ -2094,7 +2094,7 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "summary": "国内企業物価と輸出・輸入物価を確認する統計。",
     "sourceName": "日本銀行 統計公表予定",
     "sourceUrl": "https://www.boj.or.jp/statistics/outline/tkohyos.xlsx",
-    "sourceTime": "12月10日 08:50 JST（2026-11-08確認）"
+    "sourceTime": "12月10日 08:50 JST（2026-11-15確認）"
   },
   {
     "id": "adobe-fy26-q4-call",
@@ -2107,6 +2107,97 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "summary": "公式IR掲載の説明会開始日時。決算資料の公開時刻とは区別。",
     "sourceName": "Adobe 公式IR",
     "sourceUrl": "https://www.adobe.com/investor-relations.html",
-    "sourceTime": "12月9日 14:00 PST（UTC-8）（2026-11-08確認）"
+    "sourceTime": "12月9日 14:00 PST（UTC-8）（2026-11-15確認）"
+  },
+  {
+    "id": "japan-cpi-2026-11",
+    "date": "2026-12-18",
+    "time": "08:30",
+    "title": "全国CPI 2026年11月分",
+    "category": "経済指標",
+    "region": "日本",
+    "importance": "高",
+    "summary": "全国の消費者物価指数。東京都区部の中旬速報値とは対象地域・公表日が異なる。",
+    "sourceName": "e-Stat 消費者物価指数 公表予定",
+    "sourceUrl": "https://www.e-stat.go.jp/release-calendar/statistics/00200573",
+    "sourceTime": "12月18日 08:30 JST（2026-11-15確認）"
+  },
+  {
+    "id": "tokyo-cpi-2026-12",
+    "date": "2026-12-25",
+    "time": "08:30",
+    "title": "東京都区部CPI 2026年12月分・中旬速報",
+    "category": "経済指標",
+    "region": "日本",
+    "importance": "高",
+    "summary": "東京都区部の消費者物価指数の中旬速報値。全国CPIとは対象地域が異なる。",
+    "sourceName": "e-Stat 消費者物価指数 公表予定",
+    "sourceUrl": "https://www.e-stat.go.jp/release-calendar/statistics/00200573",
+    "sourceTime": "12月25日 08:30 JST（2026-11-15確認）"
+  },
+  {
+    "id": "japan-unemployment-2026-11",
+    "date": "2026-12-25",
+    "time": "08:30",
+    "title": "労働力調査 2026年11月分（基本集計）",
+    "category": "経済指標",
+    "region": "日本",
+    "importance": "高",
+    "summary": "11月分の完全失業率や就業者数を公表する基本集計。詳細集計とは公表日・時刻が異なる。",
+    "sourceName": "総務省統計局 労働力調査 2026年公表予定",
+    "sourceUrl": "https://www.stat.go.jp/data/roudou/pdf/kohyo26.pdf",
+    "sourceTime": "12月25日 08:30 JST（2026-11-15確認）"
+  },
+  {
+    "id": "us-durable-goods-2026-11",
+    "date": "2026-12-23",
+    "time": "22:30",
+    "title": "米耐久財受注 2026年11月分・速報",
+    "category": "経済指標",
+    "region": "米国",
+    "importance": "高",
+    "summary": "耐久財の受注、出荷、受注残を確認する速報。",
+    "sourceName": "U.S. Census 2026 Economic Indicator Release Schedule",
+    "sourceUrl": "https://www.census.gov/economic-indicators/calendar-listview-2026.html",
+    "sourceTime": "12月23日 08:30 EST（UTC-5）（2026-11-15確認）"
+  },
+  {
+    "id": "us-new-home-sales-2026-11",
+    "date": "2026-12-24",
+    "time": "00:00",
+    "title": "米新築住宅販売件数 2026年11月分",
+    "category": "経済指標",
+    "region": "米国",
+    "importance": "中",
+    "summary": "新築一戸建て住宅の販売件数、価格、在庫を確認する統計。日本時間では翌日00:00。",
+    "sourceName": "U.S. Census 2026 Economic Indicator Release Schedule",
+    "sourceUrl": "https://www.census.gov/economic-indicators/calendar-listview-2026.html",
+    "sourceTime": "12月23日 10:00 EST（UTC-5）（2026-11-15確認）"
+  },
+  {
+    "id": "disney-fy26-q4-call",
+    "date": "2026-11-17",
+    "time": "22:30",
+    "title": "Disney FY2026通期・第4四半期決算説明会",
+    "category": "決算",
+    "region": "米国",
+    "importance": "中",
+    "summary": "通期・第4四半期の決算説明会。決算資料は米国11月17日の通常取引開始前に公表予定で、資料の公表時刻は未確定。",
+    "sourceName": "Disney 公式IR（2026年10月12日発表）",
+    "sourceUrl": "https://investors.thewaltdisneycompany.com/news/news-details/2026/The-Walt-Disney-Company-Executives-to-Discuss-Fiscal-Full-Year-and-Fourth-Quarter-2026-Financial-Results-via-Webcast/default.aspx",
+    "sourceTime": "11月17日 08:30 EST（UTC-5）（2026-11-15確認）"
+  },
+  {
+    "id": "salesforce-fy27-q3-call",
+    "date": "2026-12-03",
+    "time": "07:00",
+    "title": "Salesforce FY2027第3四半期決算説明会",
+    "category": "決算",
+    "region": "米国",
+    "importance": "高",
+    "summary": "第3四半期の決算説明会。決算発表は米国12月2日の取引終了後で、資料公表の厳密な時刻とは区別する。",
+    "sourceName": "Salesforce 公式IR（2026年11月10日発表）",
+    "sourceUrl": "https://investor.salesforce.com/news/news-details/2026/Salesforce-Announces-Date-of-Third-Quarter-Fiscal-2027-Earnings-Release-and-Webcast/default.aspx",
+    "sourceTime": "12月2日 14:00 PST（UTC-8）（2026-11-15確認）"
   },
 ];
