@@ -1883,8 +1883,8 @@ export const marketCalendarEvents: MarketCalendarEvent[] = [
     "category": "決算",
     "region": "米国",
     "importance": "高",
-    "summary": "HPE公式IRからリンクされた説明会ページで開始日時を確認。資料公表時刻とは区別。",
-    "sourceName": "HPE公式IR掲載の説明会ページ",
+    "summary": "11月2日付HPE公式発表で説明会開始日時を確認。資料公表時刻とは区別。",
+    "sourceName": "HPE公式ニュースリリース（2026年11月2日）",
     "sourceUrl": "https://www.hpe.com/us/en/newsroom/press-release/2026/11/hpe-to-present-live-audio-webcast-of-fiscal-2026-fourth-quarter-earnings-conference-call.html",
     "sourceTime": "11月23日 17:00 EST（UTC-5）（2026-11-15確認）"
   },
