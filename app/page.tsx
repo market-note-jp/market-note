@@ -12,6 +12,24 @@ const legacyArticles = [
 {
   "kind": "企業レポート",
   "theme": "個別企業",
+  "date": "2026-11-15 19:11",
+  "dateTime": "2026-11-15T10:11:37+00:00",
+  "title": "Sherwin-Williams：塗料の値上げと直営店網は、利益と現金を守れるか",
+  "excerpt": "塗料大手Sherwin-Williamsの５年財務、直営販売網と値上げ、最新の利益率低下、現金創出と還元の関係を検証。",
+  "href": "/articles/company-sherwin-williams-2026-11-15"
+},
+{
+  "kind": "論点解説",
+  "theme": "市場テーマ",
+  "date": "2026-11-15 19:11",
+  "dateTime": "2026-11-15T10:11:37+00:00",
+  "title": "米国の電力成長鈍化は、AI需要失速の証拠か",
+  "excerpt": "EIAの11月見通しを用い、電力全体の成長鈍化と商工業需要増の共存を検証。天候・統計の定義・企業利益への波及を分けて読む。",
+  "href": "/articles/theme-electricity-growth-ai-demand-2026-11-15"
+},
+{
+  "kind": "企業レポート",
+  "theme": "個別企業",
   "date": "2026-11-14 19:59",
   "dateTime": "2026-11-14T10:59:25+00:00",
   "title": "ITW：高利益率の裏で、株主還元を支える現金は足りているか",

@@ -1,0 +1,1397 @@
+{
+  "version": 1,
+  "articleSlug": "company-sherwin-williams-2026-11-15",
+  "articleSha256": "742cf2d5b7f0739826297b06b824abc37bf6f259fe3e696fb1a3cf386315dd26",
+  "checkedAt": "2026-11-15T10:10:46.090922+00:00",
+  "informationCutoff": "2026-11-15T10:00:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "原典の5年全社実績、四半期利益/部門率、9カ月CFと支出/還元/負債、7月と10月会社予想を本文に対応。価格/数量/買収等は会社説明を明示し精密寄与額を推計しない。機械的感応度68.6=6860×0.01は予測ではなく入力売上はq3-profitに収録。定性的な増減方向は歴史表と各比較全体で確認。競合率/ROIC/市場予想/株価反応は未判定。独立担当が原文・定義・計算・重要比較の網羅を確認済み。 独立レビューで感応度条件の矛盾を修正し、売上固定/費用変動を利益率に集約と明記。感応度を独立台帳に記録。 2026-11-15の別担当レビューで本文、原資料値、期間、定義、計算、反証と未確認範囲を最終照合し公開阻害事項なし。",
+  "comparisons": [
+    {
+      "id": "history2021",
+      "question": "|2021|19,944.6|1,864.4|2,244.6|",
+      "definition": "連結US GAAP。本文と同じ期間・単位で比較。定性要因説明は該当原典節に照合。",
+      "status": "ready",
+      "claim": "|2021|19,944.6|1,864.4|2,244.6|",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "Sherwin-Williams",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "ni",
+          "entity": "Sherwin-Williams",
+          "metric": "純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "Sherwin-Williams",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "Sherwin-Williams",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 19944.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980024000033/shw-20231231.htm",
+            "publishedOn": "2024-02-20",
+            "locator": "Statements of Consolidated Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "Sherwin-Williams",
+          "metric": "純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 1864.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980024000033/shw-20231231.htm",
+            "publishedOn": "2024-02-20",
+            "locator": "Statements of Consolidated Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "Sherwin-Williams",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 2244.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980024000033/shw-20231231.htm",
+            "publishedOn": "2024-02-20",
+            "locator": "Statements of Consolidated Income / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2022",
+      "question": "|2022|22,148.9|2,020.1|1,919.9|",
+      "definition": "連結US GAAP。本文と同じ期間・単位で比較。定性要因説明は該当原典節に照合。",
+      "status": "ready",
+      "claim": "|2022|22,148.9|2,020.1|1,919.9|",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "Sherwin-Williams",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "ni",
+          "entity": "Sherwin-Williams",
+          "metric": "純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "Sherwin-Williams",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "Sherwin-Williams",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 22148.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980024000033/shw-20231231.htm",
+            "publishedOn": "2024-02-20",
+            "locator": "Statements of Consolidated Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "Sherwin-Williams",
+          "metric": "純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 2020.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980024000033/shw-20231231.htm",
+            "publishedOn": "2024-02-20",
+            "locator": "Statements of Consolidated Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "Sherwin-Williams",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1919.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980024000033/shw-20231231.htm",
+            "publishedOn": "2024-02-20",
+            "locator": "Statements of Consolidated Income / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2023",
+      "question": "|2023|23,051.9|2,388.8|3,521.9|",
+      "definition": "連結US GAAP。本文と同じ期間・単位で比較。定性要因説明は該当原典節に照合。",
+      "status": "ready",
+      "claim": "|2023|23,051.9|2,388.8|3,521.9|",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "Sherwin-Williams",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "ni",
+          "entity": "Sherwin-Williams",
+          "metric": "純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "Sherwin-Williams",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "Sherwin-Williams",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 23051.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000008/shw-20251231.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Statements of Consolidated Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "Sherwin-Williams",
+          "metric": "純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 2388.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000008/shw-20251231.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Statements of Consolidated Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "Sherwin-Williams",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 3521.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000008/shw-20251231.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Statements of Consolidated Income / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2024",
+      "question": "|2024|23,098.5|2,681.4|3,153.2|",
+      "definition": "連結US GAAP。本文と同じ期間・単位で比較。定性要因説明は該当原典節に照合。",
+      "status": "ready",
+      "claim": "|2024|23,098.5|2,681.4|3,153.2|",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "Sherwin-Williams",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "ni",
+          "entity": "Sherwin-Williams",
+          "metric": "純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "Sherwin-Williams",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "Sherwin-Williams",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 23098.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000008/shw-20251231.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Statements of Consolidated Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "Sherwin-Williams",
+          "metric": "純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 2681.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000008/shw-20251231.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Statements of Consolidated Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "Sherwin-Williams",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 3153.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000008/shw-20251231.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Statements of Consolidated Income / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2025",
+      "question": "|2025|23,574.3|2,568.5|3,451.6|",
+      "definition": "連結US GAAP。本文と同じ期間・単位で比較。定性要因説明は該当原典節に照合。",
+      "status": "ready",
+      "claim": "|2025|23,574.3|2,568.5|3,451.6|",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "Sherwin-Williams",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "ni",
+          "entity": "Sherwin-Williams",
+          "metric": "純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "ocf",
+          "entity": "Sherwin-Williams",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "Sherwin-Williams",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 23574.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000008/shw-20251231.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Statements of Consolidated Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni",
+          "entity": "Sherwin-Williams",
+          "metric": "純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 2568.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000008/shw-20251231.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Statements of Consolidated Income / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "Sherwin-Williams",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 3451.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000008/shw-20251231.htm",
+            "publishedOn": "2026-02-19",
+            "locator": "Statements of Consolidated Income / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3-profit",
+      "question": "７〜９月の売上は6,860.0百万ドルで前年同期の6,358.2から増加したが、純利益は833.1から821.0へ減少した。",
+      "definition": "連結US GAAP。本文と同じ期間・単位で比較。定性要因説明は該当原典節に照合。",
+      "status": "ready",
+      "claim": "７〜９月の売上は6,860.0百万ドルで前年同期の6,358.2から増加したが、純利益は833.1から821.0へ減少した。",
+      "requiredInputs": [
+        {
+          "id": "sales2025",
+          "entity": "Sherwin-Williams",
+          "metric": "売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "ni2025",
+          "entity": "Sherwin-Williams",
+          "metric": "純利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "psg2025",
+          "entity": "Sherwin-Williams",
+          "metric": "PSG部門利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "PSG部門利益率"
+        },
+        {
+          "id": "cbg2025",
+          "entity": "Sherwin-Williams",
+          "metric": "CBG部門利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "CBG部門利益率"
+        },
+        {
+          "id": "pcg2025",
+          "entity": "Sherwin-Williams",
+          "metric": "PCG部門利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "PCG部門利益率"
+        },
+        {
+          "id": "sales2026",
+          "entity": "Sherwin-Williams",
+          "metric": "売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "ni2026",
+          "entity": "Sherwin-Williams",
+          "metric": "純利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "psg2026",
+          "entity": "Sherwin-Williams",
+          "metric": "PSG部門利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "PSG部門利益率"
+        },
+        {
+          "id": "cbg2026",
+          "entity": "Sherwin-Williams",
+          "metric": "CBG部門利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "CBG部門利益率"
+        },
+        {
+          "id": "pcg2026",
+          "entity": "Sherwin-Williams",
+          "metric": "PCG部門利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "PCG部門利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales2025",
+          "entity": "Sherwin-Williams",
+          "metric": "売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 6358.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000054/shwearningsrelease3q2026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Q3 income and segment results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni2025",
+          "entity": "Sherwin-Williams",
+          "metric": "純利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 833.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000054/shwearningsrelease3q2026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Q3 income and segment results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "psg2025",
+          "entity": "Sherwin-Williams",
+          "metric": "PSG部門利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "PSG部門利益率",
+          "value": 24.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000054/shwearningsrelease3q2026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Q3 income and segment results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cbg2025",
+          "entity": "Sherwin-Williams",
+          "metric": "CBG部門利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "CBG部門利益率",
+          "value": 20.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000054/shwearningsrelease3q2026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Q3 income and segment results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "pcg2025",
+          "entity": "Sherwin-Williams",
+          "metric": "PCG部門利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "PCG部門利益率",
+          "value": 13.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000054/shwearningsrelease3q2026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Q3 income and segment results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sales2026",
+          "entity": "Sherwin-Williams",
+          "metric": "売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 6860,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000054/shwearningsrelease3q2026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Q3 income and segment results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ni2026",
+          "entity": "Sherwin-Williams",
+          "metric": "純利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 821,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000054/shwearningsrelease3q2026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Q3 income and segment results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "psg2026",
+          "entity": "Sherwin-Williams",
+          "metric": "PSG部門利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "PSG部門利益率",
+          "value": 24.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000054/shwearningsrelease3q2026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Q3 income and segment results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cbg2026",
+          "entity": "Sherwin-Williams",
+          "metric": "CBG部門利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "CBG部門利益率",
+          "value": 15.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000054/shwearningsrelease3q2026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Q3 income and segment results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "pcg2026",
+          "entity": "Sherwin-Williams",
+          "metric": "PCG部門利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "PCG部門利益率",
+          "value": 13.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000054/shwearningsrelease3q2026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Q3 income and segment results",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash",
+      "question": "増加額423.8の内訳は、営業CF増加232.0と設備支出減少191.8だ。",
+      "definition": "連結US GAAP。本文と同じ期間・単位で比較。定性要因説明は該当原典節に照合。",
+      "status": "ready",
+      "claim": "増加額423.8の内訳は、営業CF増加232.0と設備支出減少191.8だ。",
+      "requiredInputs": [
+        {
+          "id": "ocf2025",
+          "entity": "Sherwin-Williams",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex2025",
+          "entity": "Sherwin-Williams",
+          "metric": "設備現金支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備現金支出（負数）"
+        },
+        {
+          "id": "div2025",
+          "entity": "Sherwin-Williams",
+          "metric": "配当現金支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当現金支出（負数）"
+        },
+        {
+          "id": "rep2025",
+          "entity": "Sherwin-Williams",
+          "metric": "自己株取得現金支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "自己株取得現金支出（負数）"
+        },
+        {
+          "id": "ocf2026",
+          "entity": "Sherwin-Williams",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex2026",
+          "entity": "Sherwin-Williams",
+          "metric": "設備現金支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備現金支出（負数）"
+        },
+        {
+          "id": "div2026",
+          "entity": "Sherwin-Williams",
+          "metric": "配当現金支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当現金支出（負数）"
+        },
+        {
+          "id": "rep2026",
+          "entity": "Sherwin-Williams",
+          "metric": "自己株取得現金支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "自己株取得現金支出（負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf2025",
+          "entity": "Sherwin-Williams",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 2359.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000056/shw-20260930.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Statements of Condensed Consolidated Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex2025",
+          "entity": "Sherwin-Williams",
+          "metric": "設備現金支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備現金支出（負数）",
+          "value": -567.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000056/shw-20260930.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Statements of Condensed Consolidated Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "div2025",
+          "entity": "Sherwin-Williams",
+          "metric": "配当現金支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当現金支出（負数）",
+          "value": -594,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000056/shw-20260930.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Statements of Condensed Consolidated Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "rep2025",
+          "entity": "Sherwin-Williams",
+          "metric": "自己株取得現金支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "自己株取得現金支出（負数）",
+          "value": -1538.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000056/shw-20260930.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Statements of Condensed Consolidated Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf2026",
+          "entity": "Sherwin-Williams",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 2591.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000056/shw-20260930.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Statements of Condensed Consolidated Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex2026",
+          "entity": "Sherwin-Williams",
+          "metric": "設備現金支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備現金支出（負数）",
+          "value": -375.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000056/shw-20260930.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Statements of Condensed Consolidated Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "div2026",
+          "entity": "Sherwin-Williams",
+          "metric": "配当現金支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当現金支出（負数）",
+          "value": -588.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000056/shw-20260930.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Statements of Condensed Consolidated Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "rep2026",
+          "entity": "Sherwin-Williams",
+          "metric": "自己株取得現金支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "自己株取得現金支出（負数）",
+          "value": -2357.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000056/shw-20260930.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Statements of Condensed Consolidated Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf26",
+          "operation": "sum",
+          "inputs": [
+            "ocf2026",
+            "capex2026"
+          ],
+          "definition": "営業CF＋設備支出（負数）",
+          "precision": 1,
+          "value": 2215.7
+        },
+        {
+          "id": "fcf25",
+          "operation": "sum",
+          "inputs": [
+            "ocf2025",
+            "capex2025"
+          ],
+          "definition": "営業CF＋設備支出（負数）",
+          "precision": 1,
+          "value": 1791.9
+        },
+        {
+          "id": "increase",
+          "operation": "difference",
+          "inputs": [
+            "fcf26",
+            "fcf25"
+          ],
+          "definition": "FCF増加額",
+          "precision": 1,
+          "value": 423.8
+        },
+        {
+          "id": "ocfinc",
+          "operation": "difference",
+          "inputs": [
+            "ocf2026",
+            "ocf2025"
+          ],
+          "definition": "営業CF増加",
+          "precision": 1,
+          "value": 232
+        },
+        {
+          "id": "capdec",
+          "operation": "difference",
+          "inputs": [
+            "capex2026",
+            "capex2025"
+          ],
+          "definition": "設備現金支出の減少",
+          "precision": 1,
+          "value": 191.8
+        },
+        {
+          "id": "return",
+          "operation": "sum",
+          "inputs": [
+            "div2026",
+            "rep2026"
+          ],
+          "definition": "還元支出負数",
+          "precision": 1,
+          "value": -2946
+        },
+        {
+          "id": "short",
+          "operation": "sum",
+          "inputs": [
+            "fcf26",
+            "return"
+          ],
+          "definition": "FCFから還元控除",
+          "precision": 1,
+          "value": -730.3
+        }
+      ]
+    },
+    {
+      "id": "debt",
+      "question": "９月末有利子負債は11,795.1で、前年末10,871.3より増えている。",
+      "definition": "連結US GAAP。本文と同じ期間・単位で比較。定性要因説明は該当原典節に照合。",
+      "status": "ready",
+      "claim": "９月末有利子負債は11,795.1で、前年末10,871.3より増えている。",
+      "requiredInputs": [
+        {
+          "id": "d25",
+          "entity": "Sherwin-Williams",
+          "metric": "有利子負債",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "有利子負債"
+        },
+        {
+          "id": "d26",
+          "entity": "Sherwin-Williams",
+          "metric": "有利子負債",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "有利子負債"
+        }
+      ],
+      "observations": [
+        {
+          "id": "d25",
+          "entity": "Sherwin-Williams",
+          "metric": "有利子負債",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "有利子負債",
+          "value": 10871.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000056/shw-20260930.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Note 6 Debt",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "d26",
+          "entity": "Sherwin-Williams",
+          "metric": "有利子負債",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "有利子負債",
+          "value": 11795.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000056/shw-20260930.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Note 6 Debt",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "guidance",
+      "question": "調整後の中央値は同じで、これを一律の上方修正とは呼べない。",
+      "definition": "連結US GAAP。本文と同じ期間・単位で比較。定性要因説明は該当原典節に照合。",
+      "status": "ready",
+      "claim": "調整後の中央値は同じで、これを一律の上方修正とは呼べない。",
+      "requiredInputs": [
+        {
+          "id": "julgaaplo",
+          "entity": "Sherwin-Williams",
+          "metric": "GAAP EPS下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "GAAP EPS下限"
+        },
+        {
+          "id": "julgaaphi",
+          "entity": "Sherwin-Williams",
+          "metric": "GAAP EPS上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "GAAP EPS上限"
+        },
+        {
+          "id": "juladjlo",
+          "entity": "Sherwin-Williams",
+          "metric": "調整後EPS下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS下限"
+        },
+        {
+          "id": "juladjhi",
+          "entity": "Sherwin-Williams",
+          "metric": "調整後EPS上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS上限"
+        },
+        {
+          "id": "octgaaplo",
+          "entity": "Sherwin-Williams",
+          "metric": "GAAP EPS下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "GAAP EPS下限"
+        },
+        {
+          "id": "octgaaphi",
+          "entity": "Sherwin-Williams",
+          "metric": "GAAP EPS上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "GAAP EPS上限"
+        },
+        {
+          "id": "octadjlo",
+          "entity": "Sherwin-Williams",
+          "metric": "調整後EPS下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS下限"
+        },
+        {
+          "id": "octadjhi",
+          "entity": "Sherwin-Williams",
+          "metric": "調整後EPS上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS上限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "julgaaplo",
+          "entity": "Sherwin-Williams",
+          "metric": "GAAP EPS下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "GAAP EPS下限",
+          "value": 10.92,
+          "source": {
+            "url": "https://investors.sherwin-williams.com/press-releases/press-release-details/2026/The-Sherwin-Williams-Company-Reports-2026-Second-Quarter-Financial-Results/",
+            "publishedOn": "2026-07-28",
+            "locator": "Full year 2026 guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "julgaaphi",
+          "entity": "Sherwin-Williams",
+          "metric": "GAAP EPS上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "GAAP EPS上限",
+          "value": 11.32,
+          "source": {
+            "url": "https://investors.sherwin-williams.com/press-releases/press-release-details/2026/The-Sherwin-Williams-Company-Reports-2026-Second-Quarter-Financial-Results/",
+            "publishedOn": "2026-07-28",
+            "locator": "Full year 2026 guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "juladjlo",
+          "entity": "Sherwin-Williams",
+          "metric": "調整後EPS下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS下限",
+          "value": 11.8,
+          "source": {
+            "url": "https://investors.sherwin-williams.com/press-releases/press-release-details/2026/The-Sherwin-Williams-Company-Reports-2026-Second-Quarter-Financial-Results/",
+            "publishedOn": "2026-07-28",
+            "locator": "Full year 2026 guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "juladjhi",
+          "entity": "Sherwin-Williams",
+          "metric": "調整後EPS上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS上限",
+          "value": 12.2,
+          "source": {
+            "url": "https://investors.sherwin-williams.com/press-releases/press-release-details/2026/The-Sherwin-Williams-Company-Reports-2026-Second-Quarter-Financial-Results/",
+            "publishedOn": "2026-07-28",
+            "locator": "Full year 2026 guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "octgaaplo",
+          "entity": "Sherwin-Williams",
+          "metric": "GAAP EPS下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "GAAP EPS下限",
+          "value": 10.92,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000054/shwearningsrelease3q2026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Full year 2026 guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "octgaaphi",
+          "entity": "Sherwin-Williams",
+          "metric": "GAAP EPS上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "GAAP EPS上限",
+          "value": 11.22,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000054/shwearningsrelease3q2026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Full year 2026 guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "octadjlo",
+          "entity": "Sherwin-Williams",
+          "metric": "調整後EPS下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS下限",
+          "value": 11.85,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000054/shwearningsrelease3q2026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Full year 2026 guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "octadjhi",
+          "entity": "Sherwin-Williams",
+          "metric": "調整後EPS上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS上限",
+          "value": 12.15,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000054/shwearningsrelease3q2026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Full year 2026 guidance",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "sensitivity",
+      "question": "利益率1ポイントの機械的感応度",
+      "definition": "独自条件設定1ポイント=0.01。出典売上6860.0×0.01=68.6。予測ではない。証拠スキーマの演算には乗算がないため式と結果をここに保存し手計算確認。定数を公表観測値と偽らない。",
+      "status": "ready",
+      "claim": "営業段階の利益率だけが１ポイント変わると、利益は68.6百万ドル動く計算になる。",
+      "requiredInputs": [
+        {
+          "id": "sales",
+          "entity": "Sherwin-Williams",
+          "metric": "売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "US GAAP consolidated net sales"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales",
+          "entity": "Sherwin-Williams",
+          "metric": "売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "US GAAP consolidated net sales",
+          "value": 6860,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000054/shwearningsrelease3q2026.htm",
+            "publishedOn": "2026-10-27",
+            "locator": "Statements of Consolidated Income Q3 2026 net sales",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}

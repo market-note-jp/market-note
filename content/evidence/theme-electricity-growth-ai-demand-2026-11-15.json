@@ -1,0 +1,317 @@
+{
+  "version": 1,
+  "articleSlug": "theme-electricity-growth-ai-demand-2026-11-15",
+  "articleSha256": "83464e707a45bf470a239a210efbdeafc170b4aa6fc4c3c0f660e06e2831de24",
+  "checkedAt": "2026-11-15T10:09:56.601512+00:00",
+  "informationCutoff": "2026-11-15T10:00:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "全本文を点検。数値比較は電力部門発電伸び率と３部門販売量・差額。EIA本文と表7a原文で照合。販売と発電の母集団を混同せず、2026年見込みと2027年予測を明記。問いに直結しないNOAA冬季予報は削除。11月版固定PDF取得不可のため更新型URLと対象版を本文に注記。AI需要への数量帰属、前月改訂幅、個社利益の量的試算は行っていない。 2026-11-15の別担当レビューで本文、原資料値、期間、定義、計算、反証と未確認範囲を最終照合し公開阻害事項なし。",
+  "comparisons": [
+    {
+      "id": "generation-growth",
+      "question": "電力部門発電量前年比の年比較",
+      "definition": "同一版・同一分類の暦年比較。前月予測からの改訂ではない。",
+      "status": "ready",
+      "claim": "EIAは電力部門の発電量の伸びを2026年2.7%、2027年1.2%と見込む。",
+      "requiredInputs": [
+        {
+          "id": "y2026",
+          "entity": "EIA 米国 電力部門発電量前年比",
+          "metric": "電力部門発電量前年比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "EIA 2026年11月版の公的予測。schemaのcompany-forecast分類を公表主体予測として使用。実績ではない。"
+        },
+        {
+          "id": "y2027",
+          "entity": "EIA 米国 電力部門発電量前年比",
+          "metric": "電力部門発電量前年比",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "EIA 2026年11月版の公的予測。schemaのcompany-forecast分類を公表主体予測として使用。実績ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "y2026",
+          "entity": "EIA 米国 電力部門発電量前年比",
+          "metric": "電力部門発電量前年比",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "EIA 2026年11月版の公的予測。schemaのcompany-forecast分類を公表主体予測として使用。実績ではない。",
+          "value": 2.7,
+          "source": {
+            "url": "https://www.eia.gov/outlooks/steo/report/elec_coal_renew.php",
+            "publishedOn": "2026-11-10",
+            "locator": "Electricity generation、第１段落",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "y2027",
+          "entity": "EIA 米国 電力部門発電量前年比",
+          "metric": "電力部門発電量前年比",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "percent",
+          "basis": "company-forecast",
+          "definition": "EIA 2026年11月版の公的予測。schemaのcompany-forecast分類を公表主体予測として使用。実績ではない。",
+          "value": 1.2,
+          "source": {
+            "url": "https://www.eia.gov/outlooks/steo/report/elec_coal_renew.php",
+            "publishedOn": "2026-11-10",
+            "locator": "Electricity generation、第１段落",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "residential",
+      "question": "住宅向け最終需要家電力販売量の年比較",
+      "definition": "同一版・同一分類の暦年比較。前月予測からの改訂ではない。",
+      "status": "ready",
+      "claim": "|住宅|1,546|1,539|−7|",
+      "requiredInputs": [
+        {
+          "id": "y2026",
+          "entity": "EIA 米国 住宅向け最終需要家電力販売量",
+          "metric": "住宅向け最終需要家電力販売量",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "billion kWh",
+          "basis": "company-forecast",
+          "definition": "EIA 2026年11月版の公的予測。schemaのcompany-forecast分類を公表主体予測として使用。実績ではない。"
+        },
+        {
+          "id": "y2027",
+          "entity": "EIA 米国 住宅向け最終需要家電力販売量",
+          "metric": "住宅向け最終需要家電力販売量",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "billion kWh",
+          "basis": "company-forecast",
+          "definition": "EIA 2026年11月版の公的予測。schemaのcompany-forecast分類を公表主体予測として使用。実績ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "y2026",
+          "entity": "EIA 米国 住宅向け最終需要家電力販売量",
+          "metric": "住宅向け最終需要家電力販売量",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "billion kWh",
+          "basis": "company-forecast",
+          "definition": "EIA 2026年11月版の公的予測。schemaのcompany-forecast分類を公表主体予測として使用。実績ではない。",
+          "value": 1546,
+          "source": {
+            "url": "https://www.eia.gov/outlooks/steo/tables/pdf/7atab.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "Table 7a / Sales to ultimate customers / 住宅 / annual 2026–2027",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "y2027",
+          "entity": "EIA 米国 住宅向け最終需要家電力販売量",
+          "metric": "住宅向け最終需要家電力販売量",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "billion kWh",
+          "basis": "company-forecast",
+          "definition": "EIA 2026年11月版の公的予測。schemaのcompany-forecast分類を公表主体予測として使用。実績ではない。",
+          "value": 1539,
+          "source": {
+            "url": "https://www.eia.gov/outlooks/steo/tables/pdf/7atab.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "Table 7a / Sales to ultimate customers / 住宅 / annual 2026–2027",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "delta",
+          "operation": "difference",
+          "inputs": [
+            "y2027",
+            "y2026"
+          ],
+          "definition": "2027年予測−2026年見込み。丸め済み表値による差額",
+          "precision": 0,
+          "value": -7
+        }
+      ]
+    },
+    {
+      "id": "commercial",
+      "question": "商業向け最終需要家電力販売量の年比較",
+      "definition": "同一版・同一分類の暦年比較。前月予測からの改訂ではない。",
+      "status": "ready",
+      "claim": "|商業|1,557|1,600|＋43|",
+      "requiredInputs": [
+        {
+          "id": "y2026",
+          "entity": "EIA 米国 商業向け最終需要家電力販売量",
+          "metric": "商業向け最終需要家電力販売量",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "billion kWh",
+          "basis": "company-forecast",
+          "definition": "EIA 2026年11月版の公的予測。schemaのcompany-forecast分類を公表主体予測として使用。実績ではない。"
+        },
+        {
+          "id": "y2027",
+          "entity": "EIA 米国 商業向け最終需要家電力販売量",
+          "metric": "商業向け最終需要家電力販売量",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "billion kWh",
+          "basis": "company-forecast",
+          "definition": "EIA 2026年11月版の公的予測。schemaのcompany-forecast分類を公表主体予測として使用。実績ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "y2026",
+          "entity": "EIA 米国 商業向け最終需要家電力販売量",
+          "metric": "商業向け最終需要家電力販売量",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "billion kWh",
+          "basis": "company-forecast",
+          "definition": "EIA 2026年11月版の公的予測。schemaのcompany-forecast分類を公表主体予測として使用。実績ではない。",
+          "value": 1557,
+          "source": {
+            "url": "https://www.eia.gov/outlooks/steo/tables/pdf/7atab.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "Table 7a / Sales to ultimate customers / 商業 / annual 2026–2027",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "y2027",
+          "entity": "EIA 米国 商業向け最終需要家電力販売量",
+          "metric": "商業向け最終需要家電力販売量",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "billion kWh",
+          "basis": "company-forecast",
+          "definition": "EIA 2026年11月版の公的予測。schemaのcompany-forecast分類を公表主体予測として使用。実績ではない。",
+          "value": 1600,
+          "source": {
+            "url": "https://www.eia.gov/outlooks/steo/tables/pdf/7atab.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "Table 7a / Sales to ultimate customers / 商業 / annual 2026–2027",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "delta",
+          "operation": "difference",
+          "inputs": [
+            "y2027",
+            "y2026"
+          ],
+          "definition": "2027年予測−2026年見込み。丸め済み表値による差額",
+          "precision": 0,
+          "value": 43
+        }
+      ]
+    },
+    {
+      "id": "industrial",
+      "question": "産業向け最終需要家電力販売量の年比較",
+      "definition": "同一版・同一分類の暦年比較。前月予測からの改訂ではない。",
+      "status": "ready",
+      "claim": "|産業|1,061|1,086|＋25|",
+      "requiredInputs": [
+        {
+          "id": "y2026",
+          "entity": "EIA 米国 産業向け最終需要家電力販売量",
+          "metric": "産業向け最終需要家電力販売量",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "billion kWh",
+          "basis": "company-forecast",
+          "definition": "EIA 2026年11月版の公的予測。schemaのcompany-forecast分類を公表主体予測として使用。実績ではない。"
+        },
+        {
+          "id": "y2027",
+          "entity": "EIA 米国 産業向け最終需要家電力販売量",
+          "metric": "産業向け最終需要家電力販売量",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "billion kWh",
+          "basis": "company-forecast",
+          "definition": "EIA 2026年11月版の公的予測。schemaのcompany-forecast分類を公表主体予測として使用。実績ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "y2026",
+          "entity": "EIA 米国 産業向け最終需要家電力販売量",
+          "metric": "産業向け最終需要家電力販売量",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "billion kWh",
+          "basis": "company-forecast",
+          "definition": "EIA 2026年11月版の公的予測。schemaのcompany-forecast分類を公表主体予測として使用。実績ではない。",
+          "value": 1061,
+          "source": {
+            "url": "https://www.eia.gov/outlooks/steo/tables/pdf/7atab.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "Table 7a / Sales to ultimate customers / 産業 / annual 2026–2027",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "y2027",
+          "entity": "EIA 米国 産業向け最終需要家電力販売量",
+          "metric": "産業向け最終需要家電力販売量",
+          "periodStart": "2027-01-01",
+          "periodEnd": "2027-12-31",
+          "unit": "billion kWh",
+          "basis": "company-forecast",
+          "definition": "EIA 2026年11月版の公的予測。schemaのcompany-forecast分類を公表主体予測として使用。実績ではない。",
+          "value": 1086,
+          "source": {
+            "url": "https://www.eia.gov/outlooks/steo/tables/pdf/7atab.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "Table 7a / Sales to ultimate customers / 産業 / annual 2026–2027",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "delta",
+          "operation": "difference",
+          "inputs": [
+            "y2027",
+            "y2026"
+          ],
+          "definition": "2027年予測−2026年見込み。丸め済み表値による差額",
+          "precision": 0,
+          "value": 25
+        }
+      ]
+    }
+  ]
+}
