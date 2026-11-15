@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-11-16",
+  "articleSha256": "36b72627a0d25cc538615a39540b0199b462ad59356b6998160608ef46bb1f17",
+  "checkedAt": "2026-11-16T06:21:00+09:00",
+  "informationCutoff": "2026-11-16T06:19:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "全見出し、結論、本文および市場分析を資料と照合。数値比較はみずほの中間実績の前年同期比較と、同一年度の前回・今回会社予想のみ。暗号資産は報道の方向のみ、日程は予定。",
+  "comparisons": [
+    {
+      "id": "mizuho-actual",
+      "question": "日本基準の連結中間純利益（親会社株主帰属）は比較対象からどう変化したか",
+      "definition": "日本基準の連結中間純利益（親会社株主帰属）",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "みずほフィナンシャルグループ",
+          "metric": "日本基準の連結中間純利益（親会社株主帰属）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "日本基準の連結中間純利益（親会社株主帰属）"
+        },
+        {
+          "id": "previous",
+          "entity": "みずほフィナンシャルグループ",
+          "metric": "日本基準の連結中間純利益（親会社株主帰属）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "日本基準の連結中間純利益（親会社株主帰属）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "みずほフィナンシャルグループ",
+          "metric": "日本基準の連結中間純利益（親会社株主帰属）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "日本基準の連結中間純利益（親会社株主帰属）",
+          "value": 896492,
+          "source": {
+            "url": "https://library.mizuhogroup.com/asset/66a84923-61a1-432c-979f-e51583bb7fbe/fg-data26_2q.pdf",
+            "publishedOn": "2026-11-13",
+            "locator": "1.(1) Consolidated Results of Operations、Profit Attributable to Owners of Parent",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "みずほフィナンシャルグループ",
+          "metric": "日本基準の連結中間純利益（親会社株主帰属）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "日本基準の連結中間純利益（親会社株主帰属）",
+          "value": 689947,
+          "source": {
+            "url": "https://library.mizuhogroup.com/asset/66a84923-61a1-432c-979f-e51583bb7fbe/fg-data26_2q.pdf",
+            "publishedOn": "2026-11-13",
+            "locator": "1.(1) Consolidated Results of Operations、Profit Attributable to Owners of Parent",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "(当期÷前年同期−1)×100",
+          "precision": 1,
+          "value": 29.9
+        }
+      ],
+      "claim": "2026年4〜9月期の連結中間純利益（親会社株主に帰属）は896,492百万円で、前年同期の689,947百万円から29.9%増えた。"
+    },
+    {
+      "id": "mizuho-guidance",
+      "question": "同一年度の親会社株主帰属連結純利益の会社予想は比較対象からどう変化したか",
+      "definition": "同一年度の親会社株主帰属連結純利益の会社予想",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "みずほフィナンシャルグループ",
+          "metric": "同一年度の親会社株主帰属連結純利益の会社予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円（JPY）",
+          "basis": "company-forecast",
+          "definition": "同一年度の親会社株主帰属連結純利益の会社予想"
+        },
+        {
+          "id": "previous",
+          "entity": "みずほフィナンシャルグループ",
+          "metric": "同一年度の親会社株主帰属連結純利益の会社予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円（JPY）",
+          "basis": "company-forecast",
+          "definition": "同一年度の親会社株主帰属連結純利益の会社予想"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "みずほフィナンシャルグループ",
+          "metric": "同一年度の親会社株主帰属連結純利益の会社予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円（JPY）",
+          "basis": "company-forecast",
+          "definition": "同一年度の親会社株主帰属連結純利益の会社予想",
+          "value": 1600000,
+          "source": {
+            "url": "https://library.mizuhogroup.com/asset/66a84923-61a1-432c-979f-e51583bb7fbe/fg-data26_2q.pdf",
+            "publishedOn": "2026-11-13",
+            "locator": "3. Consolidated Earnings Estimates、Note 1、前回・今回予想",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "みずほフィナンシャルグループ",
+          "metric": "同一年度の親会社株主帰属連結純利益の会社予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円（JPY）",
+          "basis": "company-forecast",
+          "definition": "同一年度の親会社株主帰属連結純利益の会社予想",
+          "value": 1400000,
+          "source": {
+            "url": "https://library.mizuhogroup.com/asset/66a84923-61a1-432c-979f-e51583bb7fbe/fg-data26_2q.pdf",
+            "publishedOn": "2026-11-13",
+            "locator": "3. Consolidated Earnings Estimates、Note 1、前回・今回予想",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "2027年3月期通期の親会社株主に帰属する連結純利益の会社予想は、1,400,000百万円から1,600,000百万円へ引き上げられた。"
+    }
+  ]
+}
