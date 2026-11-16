@@ -12,6 +12,24 @@ const legacyArticles = [
 {
   "kind": "企業レポート",
   "theme": "個別企業",
+  "date": "2026-11-16 20:24",
+  "dateTime": "2026-11-16T11:24:01.587267+00:00",
+  "title": "Roper Technologies：設備投資が軽くても、買収の資本効率は別問題",
+  "excerpt": "Roperの５年財務と業務ソフトの競争力、買収を含む簡易ROIC、FCFと買収支出、EPS成長への自社株取得の寄与を検証。",
+  "href": "/articles/company-roper-technologies-2026-11-16"
+},
+{
+  "kind": "論点解説",
+  "theme": "市場テーマ",
+  "date": "2026-11-16 20:24",
+  "dateTime": "2026-11-16T11:24:01.587267+00:00",
+  "title": "Anthropicの巨額契約は、いつ現金負担になるのか",
+  "excerpt": "Anthropicの契約総額と12カ月支払い、解除条件、流動性と調達枠の重複を分離。巨額契約から資金不足を直結させないための読み方を検証する。",
+  "href": "/articles/theme-anthropic-contracts-cash-timing-2026-11-16"
+},
+{
+  "kind": "企業レポート",
+  "theme": "個別企業",
   "date": "2026-11-15 19:11",
   "dateTime": "2026-11-15T10:11:37+00:00",
   "title": "Sherwin-Williams：塗料の値上げと直営店網は、利益と現金を守れるか",
