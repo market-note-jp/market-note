@@ -1,0 +1,590 @@
+{
+  "version": 1,
+  "articleSlug": "theme-anthropic-contracts-cash-timing-2026-11-16",
+  "articleSha256": "ca3547049fb632df894779614e164e9a8b210d5ca5a5087c7aceac08026fb68b",
+  "checkedAt": "2026-11-16T11:24:14.843Z",
+  "informationCutoff": "2026-11-16T11:19:36.674554+00:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "SEC11月10日S-1/A本文144、178–179頁、Broadcom10月26日共同発表の本文を直接読み確認。長期と12カ月の条件付き比率、重複範囲、流動性各項目、IPO見込と支援枠減少、SPV構造を台帳化。流動性表示値は丸め差を維持し合計を勝手に修正しない。現金不足・資金余命・売買評価は計算せず、後半の仮説と確認枠組みは筆者分析。最新の届出全件と履行状態を網羅したとはしていない。独立レビューは別途必要。 独立レビューでSEC本文とBroadcom原文、条件区分・計算・仮定・Lambda事例を最終照合。本文公開可。公開準備日時だけを実時刻に更新。",
+  "comparisons": [
+    {
+      "id": "conditions-long",
+      "question": "|全期間の契約|900.9|186.2|20.7%|",
+      "definition": "原典の対象範囲・時点・金額を区別した比較。",
+      "status": "ready",
+      "claim": "|全期間の契約|900.9|186.2|20.7%|",
+      "requiredInputs": [
+        {
+          "id": "total",
+          "entity": "Anthropic",
+          "metric": "９月末及び以後の契約総額",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-11-10",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "９月末及び以後の契約総額。契約額・見込額または開示時点残高であり支払い実績ではない。"
+        },
+        {
+          "id": "conditional",
+          "entity": "Anthropic",
+          "metric": "開始前解除権または条件付き部分",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-11-10",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "開始前解除権または条件付き部分。契約額・見込額または開示時点残高であり支払い実績ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "total",
+          "entity": "Anthropic",
+          "metric": "９月末及び以後の契約総額",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-11-10",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "９月末及び以後の契約総額。契約額・見込額または開示時点残高であり支払い実績ではない。",
+          "value": 900.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Contractual Obligations, printed pp178–179",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "conditional",
+          "entity": "Anthropic",
+          "metric": "開始前解除権または条件付き部分",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-11-10",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "開始前解除権または条件付き部分。契約額・見込額または開示時点残高であり支払い実績ではない。",
+          "value": 186.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Contractual Obligations, printed pp178–179",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "share",
+          "operation": "ratio-percent",
+          "inputs": [
+            "conditional",
+            "total"
+          ],
+          "definition": "186.2 / 900.9 ×100",
+          "precision": 1,
+          "value": 20.7
+        }
+      ]
+    },
+    {
+      "id": "conditions-short",
+      "question": "|2026年９月末後12カ月の支払予定|70.7|4.2|5.9%|",
+      "definition": "原典の対象範囲・時点・金額を区別した比較。",
+      "status": "ready",
+      "claim": "|2026年９月末後12カ月の支払予定|70.7|4.2|5.9%|",
+      "requiredInputs": [
+        {
+          "id": "total",
+          "entity": "Anthropic",
+          "metric": "2026年９月末後12カ月予定支払い",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2027-09-30",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年９月末後12カ月予定支払い。契約額・見込額または開示時点残高であり支払い実績ではない。"
+        },
+        {
+          "id": "conditional",
+          "entity": "Anthropic",
+          "metric": "そのうち開始前解除権または条件付き部分",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2027-09-30",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "そのうち開始前解除権または条件付き部分。契約額・見込額または開示時点残高であり支払い実績ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "total",
+          "entity": "Anthropic",
+          "metric": "2026年９月末後12カ月予定支払い",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2027-09-30",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "2026年９月末後12カ月予定支払い。契約額・見込額または開示時点残高であり支払い実績ではない。",
+          "value": 70.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Contractual Obligations, printed p179 last paragraph",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "conditional",
+          "entity": "Anthropic",
+          "metric": "そのうち開始前解除権または条件付き部分",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2027-09-30",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "そのうち開始前解除権または条件付き部分。契約額・見込額または開示時点残高であり支払い実績ではない。",
+          "value": 4.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Contractual Obligations, printed p179 last paragraph",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "share",
+          "operation": "ratio-percent",
+          "inputs": [
+            "conditional",
+            "total"
+          ],
+          "definition": "4.2 / 70.7 ×100",
+          "precision": 1,
+          "value": 5.9
+        }
+      ]
+    },
+    {
+      "id": "scope",
+      "question": "別表の９月末契約319.993も総額に含まれるため加算しない。",
+      "definition": "原典の対象範囲・時点・金額を区別した比較。",
+      "status": "ready",
+      "claim": "別表の９月末契約319.993も総額に含まれるため加算しない。",
+      "requiredInputs": [
+        {
+          "id": "table",
+          "entity": "Anthropic",
+          "metric": "９月末契約表合計",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-11-10",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "９月末契約表合計。契約額・見込額または開示時点残高であり支払い実績ではない。"
+        },
+        {
+          "id": "total",
+          "entity": "Anthropic",
+          "metric": "９月末及び以後の契約総額",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-11-10",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "９月末及び以後の契約総額。契約額・見込額または開示時点残高であり支払い実績ではない。"
+        },
+        {
+          "id": "low",
+          "entity": "Anthropic",
+          "metric": "固定ドル額なし契約の支払い推計下限",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-11-10",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "固定ドル額なし契約の支払い推計下限。契約額・見込額または開示時点残高であり支払い実績ではない。"
+        },
+        {
+          "id": "high",
+          "entity": "Anthropic",
+          "metric": "固定ドル額なし契約の支払い推計上限",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-11-10",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "固定ドル額なし契約の支払い推計上限。契約額・見込額または開示時点残高であり支払い実績ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "table",
+          "entity": "Anthropic",
+          "metric": "９月末契約表合計",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-11-10",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "９月末契約表合計。契約額・見込額または開示時点残高であり支払い実績ではない。",
+          "value": 319.993,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Contractual Obligations, printed pp178–179, table and preceding paragraph",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "total",
+          "entity": "Anthropic",
+          "metric": "９月末及び以後の契約総額",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-11-10",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "９月末及び以後の契約総額。契約額・見込額または開示時点残高であり支払い実績ではない。",
+          "value": 900.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Contractual Obligations, printed pp178–179, table and preceding paragraph",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "low",
+          "entity": "Anthropic",
+          "metric": "固定ドル額なし契約の支払い推計下限",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-11-10",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "固定ドル額なし契約の支払い推計下限。契約額・見込額または開示時点残高であり支払い実績ではない。",
+          "value": 150,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Contractual Obligations, printed pp178–179, table and preceding paragraph",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "high",
+          "entity": "Anthropic",
+          "metric": "固定ドル額なし契約の支払い推計上限",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-11-10",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "固定ドル額なし契約の支払い推計上限。契約額・見込額または開示時点残高であり支払い実績ではない。",
+          "value": 175,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Contractual Obligations, printed pp178–179, table and preceding paragraph",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "liquidity",
+      "question": "９月末の流動性146.6の内訳は、現金等95.6、短期投資36.3、未使用融資枠14.8。",
+      "definition": "原典の対象範囲・時点・金額を区別した比較。",
+      "status": "ready",
+      "claim": "９月末の流動性146.6の内訳は、現金等95.6、短期投資36.3、未使用融資枠14.8。",
+      "requiredInputs": [
+        {
+          "id": "liquid",
+          "entity": "Anthropic",
+          "metric": "９月末流動性・会社表示合計",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "10億米ドル",
+          "basis": "actual",
+          "definition": "９月末流動性・会社表示合計。2026年９月末の開示時点残高。"
+        },
+        {
+          "id": "cash",
+          "entity": "Anthropic",
+          "metric": "９月末現金及び現金同等物",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "10億米ドル",
+          "basis": "actual",
+          "definition": "９月末現金及び現金同等物。2026年９月末の開示時点残高。"
+        },
+        {
+          "id": "investments",
+          "entity": "Anthropic",
+          "metric": "９月末短期投資",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "10億米ドル",
+          "basis": "actual",
+          "definition": "９月末短期投資。2026年９月末の開示時点残高。"
+        },
+        {
+          "id": "credit",
+          "entity": "Anthropic",
+          "metric": "９月末未使用A&R Credit Facility",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "10億米ドル",
+          "basis": "actual",
+          "definition": "９月末未使用A&R Credit Facility。2026年９月末の開示時点残高。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "liquid",
+          "entity": "Anthropic",
+          "metric": "９月末流動性・会社表示合計",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "10億米ドル",
+          "basis": "actual",
+          "definition": "９月末流動性・会社表示合計。2026年９月末の開示時点残高。",
+          "value": 146.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Compute Investments, printed p144",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash",
+          "entity": "Anthropic",
+          "metric": "９月末現金及び現金同等物",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "10億米ドル",
+          "basis": "actual",
+          "definition": "９月末現金及び現金同等物。2026年９月末の開示時点残高。",
+          "value": 95.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Compute Investments, printed p144",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "investments",
+          "entity": "Anthropic",
+          "metric": "９月末短期投資",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "10億米ドル",
+          "basis": "actual",
+          "definition": "９月末短期投資。2026年９月末の開示時点残高。",
+          "value": 36.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Compute Investments, printed p144",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "credit",
+          "entity": "Anthropic",
+          "metric": "９月末未使用A&R Credit Facility",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "10億米ドル",
+          "basis": "actual",
+          "definition": "９月末未使用A&R Credit Facility。2026年９月末の開示時点残高。",
+          "value": 14.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Compute Investments, printed p144",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "offering",
+      "question": "IPO・同時私募の見込手取金84.6は、１株74ドル・引受会社の追加購入なしという仮定の金額であり、完了済み入金ではなく、同時私募の完了時には既存の資金支援枠が計12.5減るため、資金枠と調達額の重複に注意が必要だ。",
+      "definition": "原典の対象範囲・時点・金額を区別した比較。",
+      "status": "ready",
+      "claim": "IPO・同時私募の見込手取金84.6は、１株74ドル・引受会社の追加購入なしという仮定の金額であり、完了済み入金ではなく、同時私募の完了時には既存の資金支援枠が計12.5減るため、資金枠と調達額の重複に注意が必要だ。",
+      "requiredInputs": [
+        {
+          "id": "proceeds",
+          "entity": "Anthropic",
+          "metric": "74ドル仮定・引受追加購入なしのIPO及び同時私募見込手取金",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "74ドル仮定・引受追加購入なしのIPO及び同時私募見込手取金。契約額・見込額または開示時点残高であり支払い実績ではない。"
+        },
+        {
+          "id": "notes",
+          "entity": "Anthropic",
+          "metric": "同時私募完了時に減少するNPA資金枠",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "同時私募完了時に減少するNPA資金枠。契約額・見込額または開示時点残高であり支払い実績ではない。"
+        },
+        {
+          "id": "equity",
+          "entity": "Anthropic",
+          "metric": "同時私募完了時に減少する株式コミットメント",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "同時私募完了時に減少する株式コミットメント。契約額・見込額または開示時点残高であり支払い実績ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "proceeds",
+          "entity": "Anthropic",
+          "metric": "74ドル仮定・引受追加購入なしのIPO及び同時私募見込手取金",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "74ドル仮定・引受追加購入なしのIPO及び同時私募見込手取金。契約額・見込額または開示時点残高であり支払い実績ではない。",
+          "value": 84.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Compute Investments, printed p144",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "notes",
+          "entity": "Anthropic",
+          "metric": "同時私募完了時に減少するNPA資金枠",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "同時私募完了時に減少するNPA資金枠。契約額・見込額または開示時点残高であり支払い実績ではない。",
+          "value": 10,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Compute Investments, printed p144",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "equity",
+          "entity": "Anthropic",
+          "metric": "同時私募完了時に減少する株式コミットメント",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "同時私募完了時に減少する株式コミットメント。契約額・見込額または開示時点残高であり支払い実績ではない。",
+          "value": 2.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Compute Investments, printed p144",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "reduction",
+          "operation": "sum",
+          "inputs": [
+            "notes",
+            "equity"
+          ],
+          "definition": "同時私募の既存枠減少10.0+2.5",
+          "precision": 1,
+          "value": 12.5
+        }
+      ]
+    },
+    {
+      "id": "spv",
+      "question": "630億ドルの資金調達構造では、特別目的会社が機器を購入してAnthropicにリースし、納入は2027年からを予定する。",
+      "definition": "原典の対象範囲・時点・金額を区別した比較。",
+      "status": "ready",
+      "claim": "630億ドルの資金調達構造では、特別目的会社が機器を購入してAnthropicにリースし、納入は2027年からを予定する。",
+      "requiredInputs": [
+        {
+          "id": "finance",
+          "entity": "Broadcom共同発表",
+          "metric": "SPV資金調達構造公表額",
+          "periodStart": "2026-10-26",
+          "periodEnd": "2026-10-26",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "SPV資金調達構造公表額。契約額・見込額または開示時点残高であり支払い実績ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "finance",
+          "entity": "Broadcom共同発表",
+          "metric": "SPV資金調達構造公表額",
+          "periodStart": "2026-10-26",
+          "periodEnd": "2026-10-26",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "SPV資金調達構造公表額。契約額・見込額または開示時点残高であり支払い実績ではない。",
+          "value": 63,
+          "source": {
+            "url": "https://investors.broadcom.com/news-releases/news-release-details/bank-america-blackstone-citi-and-morgan-stanley-announce",
+            "publishedOn": "2026-10-26",
+            "locator": "Opening transaction paragraphs 1–4",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "lambda-termination",
+      "question": "具体例がLambdaとの2026年８月契約だ。約349億ドルの契約は、施設リース確保の期限を過ぎたため双方が解除できる状態だった。しかし11月10日の目論見書時点で双方とも解除通知を出しておらず、Anthropicも解除する意向はないと記載した。解除権の存在は、支払い負担が既に消えた証拠ではない。その後の行使状況は本稿では確認していない。",
+      "definition": "８月契約約34.9。施設リース確保期限未達で双方解除可能だが、目論見書時点で通知なく会社も解除意向なし。以後の行使は未確認。",
+      "status": "ready",
+      "claim": "具体例がLambdaとの2026年８月契約だ。約349億ドルの契約は、施設リース確保の期限を過ぎたため双方が解除できる状態だった。しかし11月10日の目論見書時点で双方とも解除通知を出しておらず、Anthropicも解除する意向はないと記載した。解除権の存在は、支払い負担が既に消えた証拠ではない。その後の行使状況は本稿では確認していない。",
+      "requiredInputs": [
+        {
+          "id": "lambda",
+          "entity": "Anthropic",
+          "metric": "2026年８月Lambda契約額・解除可能だが未通知",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-11-10",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "８月契約約34.9。施設リース確保期限未達で双方解除可能だが、目論見書時点で通知なく会社も解除意向なし。以後の行使は未確認。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "lambda",
+          "entity": "Anthropic",
+          "metric": "2026年８月Lambda契約額・解除可能だが未通知",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-11-10",
+          "unit": "10億米ドル",
+          "basis": "company-forecast",
+          "definition": "８月契約約34.9。施設リース確保期限未達で双方解除可能だが、目論見書時点で通知なく会社も解除意向なし。以後の行使は未確認。",
+          "value": 34.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026072484/anthropicpbc-sx1ax2.htm",
+            "publishedOn": "2026-11-10",
+            "locator": "Infrastructure Service Arrangements, printed p181, Lambda Agreements paragraph",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}

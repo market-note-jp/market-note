@@ -1,0 +1,2874 @@
+{
+  "version": 1,
+  "articleSlug": "company-roper-technologies-2026-11-16",
+  "articleSha256": "c81c681550f2efbfbd3ac5b5092c6e87ba4710a4173ed44e51ec5ad799688e84",
+  "checkedAt": "2026-11-16T11:24:28.190Z",
+  "informationCutoff": "2026-11-16T11:21:56.090060+00:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "SECの2023/2025年10-K、2026Q3 10-Q、決算発表のHTML全文を取得して損益・CF・BS・MD&Aを照合。継続事業、非継続事業、買収、GAAP/調整後、設備支出/ソフト支出を区別。複数期間の比較はmetricへ各対象期を明記。ROICは本文の全入力から手計算で独立再計算（2235.4*(1-.206)/((18867.6+7623-188.2+19881.5+9301-297.4)/2)*100=約6.43%）。非対応の積・平均式は機械演算へ偽装せず全一次入力を保存。EPSと純利益の約成長率は会社の丸め表示で各分子分母と照合。価格・WACC・同一定義競合比較は未確認で判断しない。独立レビュアーが一次資料と本文を照合し、ROIC約6.43228%、ソフトウェア支出込みFCF、EPS・自社株買いの数値を再検証済み。ROIC入力の単位とBS時点・損益対象期間も明確化。 最終本文の公開準備日時を実時刻に更新。数値本文は独立レビュー済み内容から不変。",
+  "comparisons": [
+    {
+      "id": "history2021",
+      "question": "|2021|4,833.8|1,241.2|805.3|1,655.8|",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "|2021|4,833.8|1,241.2|805.3|1,655.8|",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "Roper Technologies",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "o",
+          "entity": "Roper Technologies",
+          "metric": "営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "n",
+          "entity": "Roper Technologies",
+          "metric": "継続事業純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業純利益"
+        },
+        {
+          "id": "c",
+          "entity": "Roper Technologies",
+          "metric": "継続事業営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "Roper Technologies",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 4833.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283524000008/rop-20231231.htm",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Statements of Earnings / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o",
+          "entity": "Roper Technologies",
+          "metric": "営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 1241.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283524000008/rop-20231231.htm",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Statements of Earnings / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n",
+          "entity": "Roper Technologies",
+          "metric": "継続事業純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業純利益",
+          "value": 805.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283524000008/rop-20231231.htm",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Statements of Earnings / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c",
+          "entity": "Roper Technologies",
+          "metric": "継続事業営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF",
+          "value": 1655.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283524000008/rop-20231231.htm",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Statements of Earnings / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2022",
+      "question": "|2022|5,371.8|1,524.5|985.6|606.6|",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "|2022|5,371.8|1,524.5|985.6|606.6|",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "Roper Technologies",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "o",
+          "entity": "Roper Technologies",
+          "metric": "営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "n",
+          "entity": "Roper Technologies",
+          "metric": "継続事業純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業純利益"
+        },
+        {
+          "id": "c",
+          "entity": "Roper Technologies",
+          "metric": "継続事業営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "Roper Technologies",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 5371.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283524000008/rop-20231231.htm",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Statements of Earnings / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o",
+          "entity": "Roper Technologies",
+          "metric": "営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 1524.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283524000008/rop-20231231.htm",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Statements of Earnings / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n",
+          "entity": "Roper Technologies",
+          "metric": "継続事業純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業純利益",
+          "value": 985.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283524000008/rop-20231231.htm",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Statements of Earnings / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c",
+          "entity": "Roper Technologies",
+          "metric": "継続事業営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF",
+          "value": 606.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283524000008/rop-20231231.htm",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Statements of Earnings / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2023",
+      "question": "|2023|6,177.8|1,745.2|1,368.4|2,037.4|",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "|2023|6,177.8|1,745.2|1,368.4|2,037.4|",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "Roper Technologies",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "o",
+          "entity": "Roper Technologies",
+          "metric": "営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "n",
+          "entity": "Roper Technologies",
+          "metric": "継続事業純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業純利益"
+        },
+        {
+          "id": "c",
+          "entity": "Roper Technologies",
+          "metric": "継続事業営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "Roper Technologies",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 6177.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Consolidated Statements of Earnings / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o",
+          "entity": "Roper Technologies",
+          "metric": "営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 1745.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Consolidated Statements of Earnings / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n",
+          "entity": "Roper Technologies",
+          "metric": "継続事業純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業純利益",
+          "value": 1368.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Consolidated Statements of Earnings / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c",
+          "entity": "Roper Technologies",
+          "metric": "継続事業営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF",
+          "value": 2037.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Consolidated Statements of Earnings / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2024",
+      "question": "|2024|7,039.2|1,996.8|1,549.3|2,393.2|",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "|2024|7,039.2|1,996.8|1,549.3|2,393.2|",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "Roper Technologies",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "o",
+          "entity": "Roper Technologies",
+          "metric": "営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "n",
+          "entity": "Roper Technologies",
+          "metric": "継続事業純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業純利益"
+        },
+        {
+          "id": "c",
+          "entity": "Roper Technologies",
+          "metric": "継続事業営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "Roper Technologies",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 7039.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Consolidated Statements of Earnings / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o",
+          "entity": "Roper Technologies",
+          "metric": "営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 1996.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Consolidated Statements of Earnings / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n",
+          "entity": "Roper Technologies",
+          "metric": "継続事業純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業純利益",
+          "value": 1549.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Consolidated Statements of Earnings / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c",
+          "entity": "Roper Technologies",
+          "metric": "継続事業営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF",
+          "value": 2393.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Consolidated Statements of Earnings / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2025",
+      "question": "|2025|7,902.5|2,235.4|1,536.3|2,540.3|",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "|2025|7,902.5|2,235.4|1,536.3|2,540.3|",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "Roper Technologies",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "o",
+          "entity": "Roper Technologies",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "n",
+          "entity": "Roper Technologies",
+          "metric": "継続事業純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業純利益"
+        },
+        {
+          "id": "c",
+          "entity": "Roper Technologies",
+          "metric": "継続事業営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "Roper Technologies",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 7902.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Consolidated Statements of Earnings / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o",
+          "entity": "Roper Technologies",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 2235.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Consolidated Statements of Earnings / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n",
+          "entity": "Roper Technologies",
+          "metric": "継続事業純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業純利益",
+          "value": 1536.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Consolidated Statements of Earnings / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c",
+          "entity": "Roper Technologies",
+          "metric": "継続事業営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF",
+          "value": 2540.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Consolidated Statements of Earnings / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "annual-other",
+      "question": "純支払利息は2024年259.2から2025年325.0へ増え、株式投資の利益は234.6から25.5へ減った。",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "純支払利息は2024年259.2から2025年325.0へ増え、株式投資の利益は234.6から25.5へ減った。",
+      "requiredInputs": [
+        {
+          "id": "i24",
+          "entity": "Roper Technologies",
+          "metric": "2024純支払利息",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2024純支払利息"
+        },
+        {
+          "id": "i25",
+          "entity": "Roper Technologies",
+          "metric": "2025純支払利息",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025純支払利息"
+        },
+        {
+          "id": "g24",
+          "entity": "Roper Technologies",
+          "metric": "2024投資利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2024投資利益"
+        },
+        {
+          "id": "g25",
+          "entity": "Roper Technologies",
+          "metric": "2025投資利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025投資利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "i24",
+          "entity": "Roper Technologies",
+          "metric": "2024純支払利息",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2024純支払利息",
+          "value": 259.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Statements of Earnings (2025/2024)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i25",
+          "entity": "Roper Technologies",
+          "metric": "2025純支払利息",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025純支払利息",
+          "value": 325,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Statements of Earnings (2025/2024)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "g24",
+          "entity": "Roper Technologies",
+          "metric": "2024投資利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2024投資利益",
+          "value": 234.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Statements of Earnings (2025/2024)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "g25",
+          "entity": "Roper Technologies",
+          "metric": "2025投資利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025投資利益",
+          "value": 25.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Statements of Earnings (2025/2024)",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "growth25",
+      "question": "2025年の売上成長率12.3%に対し、会社開示の寄与は買収6.7ポイント、為替0.2ポイント、オーガニック成長5.4%。",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "2025年の売上成長率12.3%に対し、会社開示の寄与は買収6.7ポイント、為替0.2ポイント、オーガニック成長5.4%。",
+      "requiredInputs": [
+        {
+          "id": "total",
+          "entity": "Roper Technologies",
+          "metric": "売上成長率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上成長率"
+        },
+        {
+          "id": "acq",
+          "entity": "Roper Technologies",
+          "metric": "買収寄与",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "ポイント",
+          "basis": "actual",
+          "definition": "買収寄与"
+        },
+        {
+          "id": "fx",
+          "entity": "Roper Technologies",
+          "metric": "為替寄与",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "ポイント",
+          "basis": "actual",
+          "definition": "為替寄与"
+        },
+        {
+          "id": "org",
+          "entity": "Roper Technologies",
+          "metric": "オーガニック成長",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "オーガニック成長"
+        }
+      ],
+      "observations": [
+        {
+          "id": "total",
+          "entity": "Roper Technologies",
+          "metric": "売上成長率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上成長率",
+          "value": 12.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "MD&A revenue growth components",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "Roper Technologies",
+          "metric": "買収寄与",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "ポイント",
+          "basis": "actual",
+          "definition": "買収寄与",
+          "value": 6.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "MD&A revenue growth components",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fx",
+          "entity": "Roper Technologies",
+          "metric": "為替寄与",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "ポイント",
+          "basis": "actual",
+          "definition": "為替寄与",
+          "value": 0.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "MD&A revenue growth components",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "org",
+          "entity": "Roper Technologies",
+          "metric": "オーガニック成長",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "オーガニック成長",
+          "value": 5.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "MD&A revenue growth components",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "quarter",
+      "question": "最新の2026年７〜９月は売上2,171.8、前年同期2,017.5。",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "最新の2026年７〜９月は売上2,171.8、前年同期2,017.5。",
+      "requiredInputs": [
+        {
+          "id": "s26",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3売上"
+        },
+        {
+          "id": "s25",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3売上"
+        },
+        {
+          "id": "o26",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3営業利益"
+        },
+        {
+          "id": "o25",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s26",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3売上",
+          "value": 2171.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Earnings; 3 months Sep30 2026/2025",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "s25",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3売上",
+          "value": 2017.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Earnings; 3 months Sep30 2026/2025",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o26",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3営業利益",
+          "value": 623.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Earnings; 3 months Sep30 2026/2025",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o25",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3営業利益",
+          "value": 573,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Earnings; 3 months Sep30 2026/2025",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "growthq",
+      "question": "成長率7.6%の内訳はオーガニック6.7ポイント、買収1.0ポイント、為替−0.1ポイントだった。",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "成長率7.6%の内訳はオーガニック6.7ポイント、買収1.0ポイント、為替−0.1ポイントだった。",
+      "requiredInputs": [
+        {
+          "id": "total",
+          "entity": "Roper Technologies",
+          "metric": "売上成長",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上成長"
+        },
+        {
+          "id": "org",
+          "entity": "Roper Technologies",
+          "metric": "オーガニック",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "オーガニック"
+        },
+        {
+          "id": "acq",
+          "entity": "Roper Technologies",
+          "metric": "買収",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "ポイント",
+          "basis": "actual",
+          "definition": "買収"
+        },
+        {
+          "id": "fx",
+          "entity": "Roper Technologies",
+          "metric": "為替",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "ポイント",
+          "basis": "actual",
+          "definition": "為替"
+        }
+      ],
+      "observations": [
+        {
+          "id": "total",
+          "entity": "Roper Technologies",
+          "metric": "売上成長",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上成長",
+          "value": 7.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "MD&A Q3 revenue growth",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "org",
+          "entity": "Roper Technologies",
+          "metric": "オーガニック",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "オーガニック",
+          "value": 6.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "MD&A Q3 revenue growth",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "Roper Technologies",
+          "metric": "買収",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "ポイント",
+          "basis": "actual",
+          "definition": "買収",
+          "value": 1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "MD&A Q3 revenue growth",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fx",
+          "entity": "Roper Technologies",
+          "metric": "為替",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "ポイント",
+          "basis": "actual",
+          "definition": "為替",
+          "value": -0.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "MD&A Q3 revenue growth",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "marginApplication",
+      "question": "|Application Software|27.8%|28.8%|",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "|Application Software|27.8%|28.8%|",
+      "requiredInputs": [
+        {
+          "id": "prev",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2025Q3部門営業利益率"
+        },
+        {
+          "id": "cur",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026Q3部門営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prev",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2025Q3部門営業利益率",
+          "value": 27.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "MD&A Q3 segment discussion",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cur",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026Q3部門営業利益率",
+          "value": 28.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "MD&A Q3 segment discussion",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "marginNetwork",
+      "question": "|Network Software|43.1%|42.5%|",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "|Network Software|43.1%|42.5%|",
+      "requiredInputs": [
+        {
+          "id": "prev",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2025Q3部門営業利益率"
+        },
+        {
+          "id": "cur",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026Q3部門営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prev",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2025Q3部門営業利益率",
+          "value": 43.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "MD&A Q3 segment discussion",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cur",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026Q3部門営業利益率",
+          "value": 42.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "MD&A Q3 segment discussion",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "marginTechnology",
+      "question": "|Technology Enabled Products|33.9%|33.1%|",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "|Technology Enabled Products|33.9%|33.1%|",
+      "requiredInputs": [
+        {
+          "id": "prev",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2025Q3部門営業利益率"
+        },
+        {
+          "id": "cur",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026Q3部門営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prev",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2025Q3部門営業利益率",
+          "value": 33.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "MD&A Q3 segment discussion",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cur",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3部門営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026Q3部門営業利益率",
+          "value": 33.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "MD&A Q3 segment discussion",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "gaap",
+      "question": "７〜９月のGAAP純利益は398.5から484.7へ増加したが、株式投資利益が12.9から56.2へ増え、実効税率も20.0%から15.3%へ低下した。",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "７〜９月のGAAP純利益は398.5から484.7へ増加したが、株式投資利益が12.9から56.2へ増え、実効税率も20.0%から15.3%へ低下した。",
+      "requiredInputs": [
+        {
+          "id": "n25",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3純利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3純利益"
+        },
+        {
+          "id": "n26",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3純利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3純利益"
+        },
+        {
+          "id": "g25",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3投資利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3投資利益"
+        },
+        {
+          "id": "g26",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3投資利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3投資利益"
+        },
+        {
+          "id": "t25",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3実効税率%",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2025Q3実効税率%"
+        },
+        {
+          "id": "t26",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3実効税率%",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026Q3実効税率%"
+        }
+      ],
+      "observations": [
+        {
+          "id": "n25",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3純利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3純利益",
+          "value": 398.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Earnings and MD&A tax rate",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n26",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3純利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3純利益",
+          "value": 484.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Earnings and MD&A tax rate",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "g25",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3投資利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3投資利益",
+          "value": 12.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Earnings and MD&A tax rate",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "g26",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3投資利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3投資利益",
+          "value": 56.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Earnings and MD&A tax rate",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t25",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3実効税率%",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2025Q3実効税率%",
+          "value": 20,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Earnings and MD&A tax rate",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t26",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3実効税率%",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2026Q3実効税率%",
+          "value": 15.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Earnings and MD&A tax rate",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "eps",
+      "question": "会社の調整後純利益は557から586へ約5%増、調整後希薄化EPSは5.14ドルから5.89ドルへ約15%増。",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "会社の調整後純利益は557から586へ約5%増、調整後希薄化EPSは5.14ドルから5.89ドルへ約15%増。",
+      "requiredInputs": [
+        {
+          "id": "n25",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3調整純利益百万ドル",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3調整純利益百万ドル"
+        },
+        {
+          "id": "n26",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3調整純利益百万ドル",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3調整純利益百万ドル"
+        },
+        {
+          "id": "eps25",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3調整EPSドル",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "2025Q3調整EPSドル"
+        },
+        {
+          "id": "eps26",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3調整EPSドル",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "2026Q3調整EPSドル"
+        }
+      ],
+      "observations": [
+        {
+          "id": "n25",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3調整純利益百万ドル",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3調整純利益百万ドル",
+          "value": 557,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000042/a2026q3earningsrelease.htm",
+            "publishedOn": "2026-10-22",
+            "locator": "Tables 2 and 3 non-GAAP reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n26",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3調整純利益百万ドル",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3調整純利益百万ドル",
+          "value": 586,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000042/a2026q3earningsrelease.htm",
+            "publishedOn": "2026-10-22",
+            "locator": "Tables 2 and 3 non-GAAP reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eps25",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3調整EPSドル",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "2025Q3調整EPSドル",
+          "value": 5.14,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000042/a2026q3earningsrelease.htm",
+            "publishedOn": "2026-10-22",
+            "locator": "Tables 2 and 3 non-GAAP reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "eps26",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3調整EPSドル",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "2026Q3調整EPSドル",
+          "value": 5.89,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000042/a2026q3earningsrelease.htm",
+            "publishedOn": "2026-10-22",
+            "locator": "Tables 2 and 3 non-GAAP reconciliation",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "shares",
+      "question": "希薄化後加重平均株数は108.4百万株から99.4百万株へ減少した。",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "希薄化後加重平均株数は108.4百万株から99.4百万株へ減少した。",
+      "requiredInputs": [
+        {
+          "id": "prev",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3希薄化加重平均株数",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万株",
+          "basis": "actual",
+          "definition": "2025Q3希薄化加重平均株数"
+        },
+        {
+          "id": "cur",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3希薄化加重平均株数",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万株",
+          "basis": "actual",
+          "definition": "2026Q3希薄化加重平均株数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prev",
+          "entity": "Roper Technologies",
+          "metric": "2025Q3希薄化加重平均株数",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万株",
+          "basis": "actual",
+          "definition": "2025Q3希薄化加重平均株数",
+          "value": 108.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Earnings weighted average shares",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cur",
+          "entity": "Roper Technologies",
+          "metric": "2026Q3希薄化加重平均株数",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万株",
+          "basis": "actual",
+          "definition": "2026Q3希薄化加重平均株数",
+          "value": 99.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Earnings weighted average shares",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fcf24",
+      "question": "|2024年通期|2,393.2|66.0|45.0|2,282.2|",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "|2024年通期|2,393.2|66.0|45.0|2,282.2|",
+      "requiredInputs": [
+        {
+          "id": "cf",
+          "entity": "Roper Technologies",
+          "metric": "継続事業営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Roper Technologies",
+          "metric": "設備支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備支出（負数）"
+        },
+        {
+          "id": "sw",
+          "entity": "Roper Technologies",
+          "metric": "ソフト支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ソフト支出（負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cf",
+          "entity": "Roper Technologies",
+          "metric": "継続事業営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF",
+          "value": 2393.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Roper Technologies",
+          "metric": "設備支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備支出（負数）",
+          "value": -66,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sw",
+          "entity": "Roper Technologies",
+          "metric": "ソフト支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ソフト支出（負数）",
+          "value": -45,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Statements of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cf",
+            "cap",
+            "sw"
+          ],
+          "definition": "営業CF−設備支出−資産計上ソフト支出",
+          "precision": 1,
+          "value": 2282.2
+        }
+      ]
+    },
+    {
+      "id": "fcf25",
+      "question": "|2025年通期|2,540.3|47.4|57.3|2,435.6|",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "|2025年通期|2,540.3|47.4|57.3|2,435.6|",
+      "requiredInputs": [
+        {
+          "id": "cf",
+          "entity": "Roper Technologies",
+          "metric": "継続事業営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Roper Technologies",
+          "metric": "設備支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備支出（負数）"
+        },
+        {
+          "id": "sw",
+          "entity": "Roper Technologies",
+          "metric": "ソフト支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ソフト支出（負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cf",
+          "entity": "Roper Technologies",
+          "metric": "継続事業営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF",
+          "value": 2540.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Roper Technologies",
+          "metric": "設備支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備支出（負数）",
+          "value": -47.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sw",
+          "entity": "Roper Technologies",
+          "metric": "ソフト支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ソフト支出（負数）",
+          "value": -57.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Statements of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cf",
+            "cap",
+            "sw"
+          ],
+          "definition": "営業CF−設備支出−資産計上ソフト支出",
+          "precision": 1,
+          "value": 2435.6
+        }
+      ]
+    },
+    {
+      "id": "fcf9m25",
+      "question": "|2025年１〜９月|1,802.3|37.6|42.8|1,721.9|",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "|2025年１〜９月|1,802.3|37.6|42.8|1,721.9|",
+      "requiredInputs": [
+        {
+          "id": "cf",
+          "entity": "Roper Technologies",
+          "metric": "継続事業営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Roper Technologies",
+          "metric": "設備支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備支出（負数）"
+        },
+        {
+          "id": "sw",
+          "entity": "Roper Technologies",
+          "metric": "ソフト支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ソフト支出（負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cf",
+          "entity": "Roper Technologies",
+          "metric": "継続事業営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF",
+          "value": 1802.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Roper Technologies",
+          "metric": "設備支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備支出（負数）",
+          "value": -37.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sw",
+          "entity": "Roper Technologies",
+          "metric": "ソフト支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ソフト支出（負数）",
+          "value": -42.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cf",
+            "cap",
+            "sw"
+          ],
+          "definition": "営業CF−設備支出−資産計上ソフト支出",
+          "precision": 1,
+          "value": 1721.9
+        }
+      ]
+    },
+    {
+      "id": "fcf9m26",
+      "question": "|2026年１〜９月|1,882.2|35.4|46.8|1,800.0|",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "|2026年１〜９月|1,882.2|35.4|46.8|1,800.0|",
+      "requiredInputs": [
+        {
+          "id": "cf",
+          "entity": "Roper Technologies",
+          "metric": "継続事業営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Roper Technologies",
+          "metric": "設備支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備支出（負数）"
+        },
+        {
+          "id": "sw",
+          "entity": "Roper Technologies",
+          "metric": "ソフト支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ソフト支出（負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cf",
+          "entity": "Roper Technologies",
+          "metric": "継続事業営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "継続事業営業CF",
+          "value": 1882.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Roper Technologies",
+          "metric": "設備支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備支出（負数）",
+          "value": -35.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sw",
+          "entity": "Roper Technologies",
+          "metric": "ソフト支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ソフト支出（負数）",
+          "value": -46.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cf",
+            "cap",
+            "sw"
+          ],
+          "definition": "営業CF−設備支出−資産計上ソフト支出",
+          "precision": 1,
+          "value": 1800
+        }
+      ]
+    },
+    {
+      "id": "acq25",
+      "question": "2025年の買収支出（取得現金控除後）は3,290.0で、同年のFCF2,435.6を上回る。",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "2025年の買収支出（取得現金控除後）は3,290.0で、同年のFCF2,435.6を上回る。",
+      "requiredInputs": [
+        {
+          "id": "acq",
+          "entity": "Roper Technologies",
+          "metric": "買収支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収支出"
+        },
+        {
+          "id": "cf",
+          "entity": "Roper Technologies",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Roper Technologies",
+          "metric": "設備支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備支出"
+        },
+        {
+          "id": "sw",
+          "entity": "Roper Technologies",
+          "metric": "ソフト支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ソフト支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "acq",
+          "entity": "Roper Technologies",
+          "metric": "買収支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収支出",
+          "value": 3290,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cf",
+          "entity": "Roper Technologies",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 2540.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Roper Technologies",
+          "metric": "設備支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備支出",
+          "value": 47.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sw",
+          "entity": "Roper Technologies",
+          "metric": "ソフト支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "ソフト支出",
+          "value": 57.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Statements of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "allocation",
+      "question": "2026年１〜９月は買収463.2に加え、配当281.4、自社株取得2,726.7がある。",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "2026年１〜９月は買収463.2に加え、配当281.4、自社株取得2,726.7がある。",
+      "requiredInputs": [
+        {
+          "id": "acq",
+          "entity": "Roper Technologies",
+          "metric": "買収支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収支出"
+        },
+        {
+          "id": "div",
+          "entity": "Roper Technologies",
+          "metric": "配当支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当支出"
+        },
+        {
+          "id": "bb",
+          "entity": "Roper Technologies",
+          "metric": "自社株取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "自社株取得支出"
+        },
+        {
+          "id": "pro",
+          "entity": "Roper Technologies",
+          "metric": "Indicor受取",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Indicor受取"
+        }
+      ],
+      "observations": [
+        {
+          "id": "acq",
+          "entity": "Roper Technologies",
+          "metric": "買収支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収支出",
+          "value": 463.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "div",
+          "entity": "Roper Technologies",
+          "metric": "配当支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当支出",
+          "value": 281.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "bb",
+          "entity": "Roper Technologies",
+          "metric": "自社株取得支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "自社株取得支出",
+          "value": 2726.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "pro",
+          "entity": "Roper Technologies",
+          "metric": "Indicor受取",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Indicor受取",
+          "value": 1239.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Statements of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "debt",
+      "question": "９月末の有利子負債は発行費用控除後9,719.7、現金311.0で、会社開示のネット負債は9,408.7。",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "９月末の有利子負債は発行費用控除後9,719.7、現金311.0で、会社開示のネット負債は9,408.7。",
+      "requiredInputs": [
+        {
+          "id": "debt",
+          "entity": "Roper Technologies",
+          "metric": "2026Sep発行費用控除後負債",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Sep発行費用控除後負債"
+        },
+        {
+          "id": "cash",
+          "entity": "Roper Technologies",
+          "metric": "2026Sep現金",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Sep現金"
+        },
+        {
+          "id": "net",
+          "entity": "Roper Technologies",
+          "metric": "2026Sepネット負債",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Sepネット負債"
+        },
+        {
+          "id": "prev",
+          "entity": "Roper Technologies",
+          "metric": "2025Decネット負債",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Decネット負債"
+        }
+      ],
+      "observations": [
+        {
+          "id": "debt",
+          "entity": "Roper Technologies",
+          "metric": "2026Sep発行費用控除後負債",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Sep発行費用控除後負債",
+          "value": 9719.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Liquidity leverage table Sep2026/Dec2025",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cash",
+          "entity": "Roper Technologies",
+          "metric": "2026Sep現金",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Sep現金",
+          "value": 311,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Liquidity leverage table Sep2026/Dec2025",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "net",
+          "entity": "Roper Technologies",
+          "metric": "2026Sepネット負債",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Sepネット負債",
+          "value": 9408.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Liquidity leverage table Sep2026/Dec2025",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prev",
+          "entity": "Roper Technologies",
+          "metric": "2025Decネット負債",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Decネット負債",
+          "value": 9003.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000047/rop-20260930.htm",
+            "publishedOn": "2026-11-02",
+            "locator": "Liquidity leverage table Sep2026/Dec2025",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "goodwill",
+      "question": "2025年末ののれん21,341.2とその他無形資産9,764.2は、総資産34,577.0の大きな部分を占める。",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "2025年末ののれん21,341.2とその他無形資産9,764.2は、総資産34,577.0の大きな部分を占める。",
+      "requiredInputs": [
+        {
+          "id": "gw",
+          "entity": "Roper Technologies",
+          "metric": "のれん",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "のれん"
+        },
+        {
+          "id": "ia",
+          "entity": "Roper Technologies",
+          "metric": "無形資産",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "無形資産"
+        },
+        {
+          "id": "assets",
+          "entity": "Roper Technologies",
+          "metric": "総資産",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "総資産"
+        }
+      ],
+      "observations": [
+        {
+          "id": "gw",
+          "entity": "Roper Technologies",
+          "metric": "のれん",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "のれん",
+          "value": 21341.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Balance Sheets",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ia",
+          "entity": "Roper Technologies",
+          "metric": "無形資産",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "無形資産",
+          "value": 9764.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Balance Sheets",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "assets",
+          "entity": "Roper Technologies",
+          "metric": "総資産",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "総資産",
+          "value": 34577,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Balance Sheets",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "roic",
+      "question": "本稿独自の簡易ROICは2025年で約6.4%となる。",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "本稿独自の簡易ROICは2025年で約6.4%となる。",
+      "requiredInputs": [
+        {
+          "id": "op",
+          "entity": "Roper Technologies",
+          "metric": "2025営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025営業利益"
+        },
+        {
+          "id": "tax",
+          "entity": "Roper Technologies",
+          "metric": "2025実効税率%",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2025実効税率%"
+        },
+        {
+          "id": "e24",
+          "entity": "Roper Technologies",
+          "metric": "2024末株主資本",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2024末株主資本"
+        },
+        {
+          "id": "d24",
+          "entity": "Roper Technologies",
+          "metric": "2024末負債合計",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2024末負債合計"
+        },
+        {
+          "id": "c24",
+          "entity": "Roper Technologies",
+          "metric": "2024末現金",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2024末現金"
+        },
+        {
+          "id": "e25",
+          "entity": "Roper Technologies",
+          "metric": "2025末株主資本",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025末株主資本"
+        },
+        {
+          "id": "d25",
+          "entity": "Roper Technologies",
+          "metric": "2025末負債合計",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025末負債合計"
+        },
+        {
+          "id": "c25",
+          "entity": "Roper Technologies",
+          "metric": "2025末現金",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025末現金"
+        }
+      ],
+      "observations": [
+        {
+          "id": "op",
+          "entity": "Roper Technologies",
+          "metric": "2025営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025営業利益",
+          "value": 2235.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Balance Sheets; Statements of Earnings; MD&A effective tax rate",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "tax",
+          "entity": "Roper Technologies",
+          "metric": "2025実効税率%",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2025実効税率%",
+          "value": 20.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Balance Sheets; Statements of Earnings; MD&A effective tax rate",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "e24",
+          "entity": "Roper Technologies",
+          "metric": "2024末株主資本",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2024末株主資本",
+          "value": 18867.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Balance Sheets; Statements of Earnings; MD&A effective tax rate",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "d24",
+          "entity": "Roper Technologies",
+          "metric": "2024末負債合計",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2024末負債合計",
+          "value": 7623,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Balance Sheets; Statements of Earnings; MD&A effective tax rate",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c24",
+          "entity": "Roper Technologies",
+          "metric": "2024末現金",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2024末現金",
+          "value": 188.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Balance Sheets; Statements of Earnings; MD&A effective tax rate",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "e25",
+          "entity": "Roper Technologies",
+          "metric": "2025末株主資本",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025末株主資本",
+          "value": 19881.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Balance Sheets; Statements of Earnings; MD&A effective tax rate",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "d25",
+          "entity": "Roper Technologies",
+          "metric": "2025末負債合計",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025末負債合計",
+          "value": 9301,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Balance Sheets; Statements of Earnings; MD&A effective tax rate",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c25",
+          "entity": "Roper Technologies",
+          "metric": "2025末現金",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025末現金",
+          "value": 297.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+            "publishedOn": "2026-02-24",
+            "locator": "Balance Sheets; Statements of Earnings; MD&A effective tax rate",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "forecast",
+      "question": "10月時点の通期調整後希薄化EPS予想は22.35〜22.40ドルへ引き上げられた（従来22.15〜22.30ドル）。",
+      "definition": "本文と同じ期間・単位・GAAP/会社調整後の区分。",
+      "status": "ready",
+      "claim": "10月時点の通期調整後希薄化EPS予想は22.35〜22.40ドルへ引き上げられた（従来22.15〜22.30ドル）。",
+      "requiredInputs": [
+        {
+          "id": "oldlo",
+          "entity": "Roper Technologies",
+          "metric": "旧予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "旧予想下限"
+        },
+        {
+          "id": "oldhi",
+          "entity": "Roper Technologies",
+          "metric": "旧予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "旧予想上限"
+        },
+        {
+          "id": "newlo",
+          "entity": "Roper Technologies",
+          "metric": "新予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "新予想下限"
+        },
+        {
+          "id": "newhi",
+          "entity": "Roper Technologies",
+          "metric": "新予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "新予想上限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oldlo",
+          "entity": "Roper Technologies",
+          "metric": "旧予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "旧予想下限",
+          "value": 22.15,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000042/a2026q3earningsrelease.htm",
+            "publishedOn": "2026-10-22",
+            "locator": "Increasing 2026 guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oldhi",
+          "entity": "Roper Technologies",
+          "metric": "旧予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "旧予想上限",
+          "value": 22.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000042/a2026q3earningsrelease.htm",
+            "publishedOn": "2026-10-22",
+            "locator": "Increasing 2026 guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newlo",
+          "entity": "Roper Technologies",
+          "metric": "新予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "新予想下限",
+          "value": 22.35,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000042/a2026q3earningsrelease.htm",
+            "publishedOn": "2026-10-22",
+            "locator": "Increasing 2026 guidance",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "newhi",
+          "entity": "Roper Technologies",
+          "metric": "新予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "新予想上限",
+          "value": 22.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000042/a2026q3earningsrelease.htm",
+            "publishedOn": "2026-10-22",
+            "locator": "Increasing 2026 guidance",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
