@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-11-17",
+  "articleSha256": "242447e44f2c65f5c96377aa1b6751ed54f68035b6d392aa11c0455c599bf88a",
+  "checkedAt": "2026-11-17T06:25:00+09:00",
+  "informationCutoff": "2026-11-17T06:25:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "見出し、結論、本文、分析、注目点を通読。片倉工業は会社作成の決算短信の転載版で両期の連結累計実績、GDPは内閣府の同一公表回で両四半期の実質・季節調整済み系列を確認。米株は引け後の複数報道で下落方向を確認し、指数間の順位や騰落率は掲載していない。GDP・設備投資の単独公表値は評価上の比較に拡張せず、政策案のシナリオを予測値として扱っていない。",
+  "comparisons": [
+    {
+      "id": "katakura-ordinary-profit",
+      "question": "片倉工業の連結経常利益の前年同期比は何か。",
+      "definition": "日本基準の連結第3四半期累計経常利益。毎年1〜9月の同一期間、円建ての実績。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "片倉工業（連結）",
+          "metric": "経常利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "日本基準の連結第3四半期累計経常利益。毎年1〜9月の同一期間、円建ての実績。"
+        },
+        {
+          "id": "previous",
+          "entity": "片倉工業（連結）",
+          "metric": "経常利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "日本基準の連結第3四半期累計経常利益。毎年1〜9月の同一期間、円建ての実績。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "片倉工業（連結）",
+          "metric": "経常利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "日本基準の連結第3四半期累計経常利益。毎年1〜9月の同一期間、円建ての実績。",
+          "value": 6179,
+          "source": {
+            "url": "https://nikkeiyosoku.com/stock/tanshin/data/339180/",
+            "publishedOn": "2026-11-16",
+            "locator": "1．（1）連結経営成績（累計）・経常利益・2026年12月期第3四半期",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "previous",
+          "entity": "片倉工業（連結）",
+          "metric": "経常利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "日本基準の連結第3四半期累計経常利益。毎年1〜9月の同一期間、円建ての実績。",
+          "value": 5737,
+          "source": {
+            "url": "https://nikkeiyosoku.com/stock/tanshin/data/339180/",
+            "publishedOn": "2026-11-16",
+            "locator": "1．（1）連結経営成績（累計）・経常利益・2025年12月期第3四半期",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "previous"
+          ],
+          "definition": "(当期の連結経常利益÷前年同期の連結経常利益−1)×100、小数1桁",
+          "precision": 1,
+          "value": 7.7
+        }
+      ],
+      "claim": "2026年1〜9月の連結経常利益は6,179百万円で、前年同期の5,737百万円から7.7%増えた。"
+    },
+    {
+      "id": "japan-private-consumption",
+      "question": "実質民間最終消費支出は2026年の4〜6月期と7〜9月期でどう変化したか。",
+      "definition": "四半期別GDP一次速報の同一公表回における実質民間最終消費支出の季節調整済み前期比。年率換算・寄与度ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "q2",
+          "entity": "日本",
+          "metric": "実質民間最終消費支出の季節調整済み前期比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "四半期別GDP一次速報の同一公表回における実質民間最終消費支出の季節調整済み前期比。年率換算・寄与度ではない。"
+        },
+        {
+          "id": "q3",
+          "entity": "日本",
+          "metric": "実質民間最終消費支出の季節調整済み前期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "四半期別GDP一次速報の同一公表回における実質民間最終消費支出の季節調整済み前期比。年率換算・寄与度ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "q2",
+          "entity": "日本",
+          "metric": "実質民間最終消費支出の季節調整済み前期比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "四半期別GDP一次速報の同一公表回における実質民間最終消費支出の季節調整済み前期比。年率換算・寄与度ではない。",
+          "value": -0.3,
+          "source": {
+            "url": "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/pdf/gaiyou2631_e.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "Real, Seasonally Adjusted Series・Private Consumption行・Change from the Previous Quarter・2026年4〜6月期",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "q3",
+          "entity": "日本",
+          "metric": "実質民間最終消費支出の季節調整済み前期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "四半期別GDP一次速報の同一公表回における実質民間最終消費支出の季節調整済み前期比。年率換算・寄与度ではない。",
+          "value": -0.3,
+          "source": {
+            "url": "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/pdf/gaiyou2631_e.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "Real, Seasonally Adjusted Series・Private Consumption行・Change from the Previous Quarter・2026年7〜9月期",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "実質の民間最終消費支出は、2026年4〜6月期と7〜9月期のいずれも、季節調整済み前期比で0.3%減だった。"
+    }
+  ]
+}
