@@ -1,0 +1,495 @@
+{
+  "version": 1,
+  "articleSlug": "theme-japan-gdp-inventory-final-demand-2026-11-17",
+  "articleSha256": "dfc161441e21ca7f59e94a0e38289c017d08db92c963c07fd6f2024d75aa9987",
+  "checkedAt": "2026-11-17T10:47:39.685675+00:00",
+  "informationCutoff": "2026-11-17T10:47:39.685675+00:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "11月16日公表の内閣府1次速報PDF1頁を直接取得しレイアウト保持抽出で行・列と数字を照合。ポイント解説PDF1〜2頁で原油備蓄の減少幅縮小と品目別推定を確認。最終需要の定義のみ2024年2月15日公表資料PDF8頁の備考を使用し古い数値は不使用。全数値の前期比・年率・寄与度を分けた。丸め値▲0.0は本文保持、JSON数値は-0.0。在庫の内数を再加算しない。因果仮説と次の確認事項は筆者分析で数値予測なし。市場予想・株価反応・政策予測なし。 独立レビュー完了：全10数値を内閣府速報表PDF1頁、在庫減少幅縮小と品目説明をポイント解説PDF1–2頁、最終需要定義を公式参考資料PDF8頁で別担当が照合。寄与度の内数、年率と予測の区別も確認。",
+  "comparisons": [
+    {
+      "id": "gdp-final-sales",
+      "question": "実質GDPが前期比▲0.0％、年率▲0.1％。一方、参考系列の実質最終需要は前期比▲0.5％、年率▲2.1％だった。",
+      "definition": "同じ公表時点の実質・季節調整済み系列。伸び率と寄与度、前期比と年率を分離。",
+      "status": "ready",
+      "claim": "実質GDPが前期比▲0.0％、年率▲0.1％。一方、参考系列の実質最終需要は前期比▲0.5％、年率▲2.1％だった。",
+      "requiredInputs": [
+        {
+          "id": "gdp",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "実質GDP前期比（公表値▲0.0、負符号は丸め後も本文で保持）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "実質GDP前期比（公表値▲0.0、負符号は丸め後も本文で保持）。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。"
+        },
+        {
+          "id": "gdpa",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "実質GDP前期比年率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "実質GDP前期比年率。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。"
+        },
+        {
+          "id": "final",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "実質最終需要前期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "実質最終需要前期比。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。"
+        },
+        {
+          "id": "finala",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "実質最終需要前期比年率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "実質最終需要前期比年率。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "gdp",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "実質GDP前期比（公表値▲0.0、負符号は丸め後も本文で保持）",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "実質GDP前期比（公表値▲0.0、負符号は丸め後も本文で保持）。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。",
+          "value": 0,
+          "source": {
+            "url": "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/pdf/gaiyou2631_e.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "PDF 1ページ、実質季節調整系列または当該項目解説",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "gdpa",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "実質GDP前期比年率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "実質GDP前期比年率。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。",
+          "value": -0.1,
+          "source": {
+            "url": "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/pdf/gaiyou2631_e.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "PDF 1ページ、実質季節調整系列または当該項目解説",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "final",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "実質最終需要前期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "実質最終需要前期比。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。",
+          "value": -0.5,
+          "source": {
+            "url": "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/pdf/gaiyou2631_e.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "PDF 1ページ、実質季節調整系列または当該項目解説",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "finala",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "実質最終需要前期比年率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "実質最終需要前期比年率。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。",
+          "value": -2.1,
+          "source": {
+            "url": "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/pdf/gaiyou2631_e.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "PDF 1ページ、実質季節調整系列または当該項目解説",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "contributions-0",
+      "question": "|国内需要|＋0.6ポイント|",
+      "definition": "同じ公表時点の実質・季節調整済み系列。伸び率と寄与度、前期比と年率を分離。",
+      "status": "ready",
+      "claim": "|国内需要|＋0.6ポイント|",
+      "requiredInputs": [
+        {
+          "id": "domestic",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "国内需要寄与度",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "国内需要寄与度。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "domestic",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "国内需要寄与度",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "国内需要寄与度。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。",
+          "value": 0.6,
+          "source": {
+            "url": "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/pdf/gaiyou2631_e.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "PDF 1ページ、実質季節調整系列または当該項目解説",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "contributions-1",
+      "question": "|純輸出|▲0.6ポイント|",
+      "definition": "同じ公表時点の実質・季節調整済み系列。伸び率と寄与度、前期比と年率を分離。",
+      "status": "ready",
+      "claim": "|純輸出|▲0.6ポイント|",
+      "requiredInputs": [
+        {
+          "id": "external",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "純輸出寄与度",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "純輸出寄与度。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "external",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "純輸出寄与度",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "純輸出寄与度。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。",
+          "value": -0.6,
+          "source": {
+            "url": "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/pdf/gaiyou2631_e.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "PDF 1ページ、実質季節調整系列または当該項目解説",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "contributions-2",
+      "question": "|公的在庫変動（国内需要の内数）|＋0.5ポイント|",
+      "definition": "同じ公表時点の実質・季節調整済み系列。伸び率と寄与度、前期比と年率を分離。",
+      "status": "ready",
+      "claim": "|公的在庫変動（国内需要の内数）|＋0.5ポイント|",
+      "requiredInputs": [
+        {
+          "id": "public",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "公的在庫変動寄与度",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "公的在庫変動寄与度。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "public",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "公的在庫変動寄与度",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "公的在庫変動寄与度。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。",
+          "value": 0.5,
+          "source": {
+            "url": "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/pdf/gaiyou2631_e.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "PDF 1ページ、実質季節調整系列または当該項目解説",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "contributions-3",
+      "question": "|民間在庫変動（国内需要の内数）|0.0ポイント|",
+      "definition": "同じ公表時点の実質・季節調整済み系列。伸び率と寄与度、前期比と年率を分離。",
+      "status": "ready",
+      "claim": "|民間在庫変動（国内需要の内数）|0.0ポイント|",
+      "requiredInputs": [
+        {
+          "id": "private",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "民間在庫変動寄与度",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "民間在庫変動寄与度。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "private",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "民間在庫変動寄与度",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "民間在庫変動寄与度。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。",
+          "value": 0,
+          "source": {
+            "url": "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/pdf/gaiyou2631_e.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "PDF 1ページ、実質季節調整系列または当該項目解説",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "spending-0",
+      "question": "|民間最終消費支出|▲0.3％|",
+      "definition": "同じ公表時点の実質・季節調整済み系列。伸び率と寄与度、前期比と年率を分離。",
+      "status": "ready",
+      "claim": "|民間最終消費支出|▲0.3％|",
+      "requiredInputs": [
+        {
+          "id": "cons",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "民間最終消費支出前期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "民間最終消費支出前期比。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cons",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "民間最終消費支出前期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "民間最終消費支出前期比。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。",
+          "value": -0.3,
+          "source": {
+            "url": "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/pdf/gaiyou2631_e.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "PDF 1ページ、実質季節調整系列または当該項目解説",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "spending-1",
+      "question": "|民間企業設備|＋1.6％|",
+      "definition": "同じ公表時点の実質・季節調整済み系列。伸び率と寄与度、前期比と年率を分離。",
+      "status": "ready",
+      "claim": "|民間企業設備|＋1.6％|",
+      "requiredInputs": [
+        {
+          "id": "capex",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "民間企業設備前期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "民間企業設備前期比。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "capex",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "民間企業設備前期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "民間企業設備前期比。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。",
+          "value": 1.6,
+          "source": {
+            "url": "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/pdf/gaiyou2631_e.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "PDF 1ページ、実質季節調整系列または当該項目解説",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "spending-2",
+      "question": "|財貨・サービスの輸出|▲0.2％|",
+      "definition": "同じ公表時点の実質・季節調整済み系列。伸び率と寄与度、前期比と年率を分離。",
+      "status": "ready",
+      "claim": "|財貨・サービスの輸出|▲0.2％|",
+      "requiredInputs": [
+        {
+          "id": "exp",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "輸出前期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "輸出前期比。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "exp",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "輸出前期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "輸出前期比。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。",
+          "value": -0.2,
+          "source": {
+            "url": "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/pdf/gaiyou2631_e.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "PDF 1ページ、実質季節調整系列または当該項目解説",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "spending-3",
+      "question": "|財貨・サービスの輸入|＋2.5％|",
+      "definition": "同じ公表時点の実質・季節調整済み系列。伸び率と寄与度、前期比と年率を分離。",
+      "status": "ready",
+      "claim": "|財貨・サービスの輸入|＋2.5％|",
+      "requiredInputs": [
+        {
+          "id": "imp",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "輸入前期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "輸入前期比。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "imp",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "輸入前期比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "輸入前期比。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。",
+          "value": 2.5,
+          "source": {
+            "url": "https://www.esri.cao.go.jp/en/sna/data/sokuhou/files/2026/qe263/pdf/gaiyou2631_e.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "PDF 1ページ、実質季節調整系列または当該項目解説",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "inventory-interpretation",
+      "question": "公的在庫の押し上げについて、内閣府は国家備蓄原油の減少幅が縮まったことによるとみている。「備蓄原油が増加した」という説明ではない。",
+      "definition": "同じ公表時点の実質・季節調整済み系列。伸び率と寄与度、前期比と年率を分離。",
+      "status": "ready",
+      "claim": "公的在庫の押し上げについて、内閣府は国家備蓄原油の減少幅が縮まったことによるとみている。「備蓄原油が増加した」という説明ではない。",
+      "requiredInputs": [
+        {
+          "id": "public",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "公的在庫変動寄与度・国家備蓄原油の減少幅縮小によると当局が推定",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "公的在庫変動寄与度・国家備蓄原油の減少幅縮小によると当局が推定。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "public",
+          "entity": "日本・内閣府GDP統計",
+          "metric": "公的在庫変動寄与度・国家備蓄原油の減少幅縮小によると当局が推定",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage points",
+          "basis": "actual",
+          "definition": "公的在庫変動寄与度・国家備蓄原油の減少幅縮小によると当局が推定。2026年７〜９月期１次速報。2020暦年連鎖価格、季節調整済み。前期比は2026年４〜６月期との比較。",
+          "value": 0.5,
+          "source": {
+            "url": "https://www.esri.cao.go.jp/jp/sna/data/data_list/sokuhou/files/2026/qe263/pdf/qepoint2631.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "PDF 2ページ、実質季節調整系列または当該項目解説",
+            "pdfPage": 2,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}

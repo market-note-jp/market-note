@@ -12,6 +12,24 @@ const legacyArticles = [
 {
   "kind": "企業レポート",
   "theme": "個別企業",
+  "date": "2026-11-17 19:49",
+  "dateTime": "2026-11-17T10:49:23.792870+00:00",
+  "title": "Moody’s：格付けと継続課金の強みを、EPSとROEの裏側まで読む",
+  "excerpt": "Moody’sの５年財務、格付けと分析の競争力、売却益と買戻しによるEPSへの影響、FCF・ROE・直近社債発行を一次資料で検証。",
+  "href": "/articles/company-moodys-2026-11-17"
+},
+{
+  "kind": "論点解説",
+  "theme": "市場テーマ",
+  "date": "2026-11-17 19:47",
+  "dateTime": "2026-11-17T10:47:39.685675+00:00",
+  "title": "日本GDPは横ばいでも、在庫を除く需要は弱い",
+  "excerpt": "７〜９月期GDPの１次速報を、最終需要と公的在庫の寄与から読む。備蓄原油の減少幅縮小と、消費・設備投資の強弱を区別する。",
+  "href": "/articles/theme-japan-gdp-inventory-final-demand-2026-11-17"
+},
+{
+  "kind": "企業レポート",
+  "theme": "個別企業",
   "date": "2026-11-16 20:24",
   "dateTime": "2026-11-16T11:24:01.587267+00:00",
   "title": "Roper Technologies：設備投資が軽くても、買収の資本効率は別問題",
