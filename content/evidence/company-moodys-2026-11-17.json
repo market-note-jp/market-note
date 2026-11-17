@@ -1,0 +1,2602 @@
+{
+  "version": 1,
+  "articleSlug": "company-moodys-2026-11-17",
+  "articleSha256": "7a6c137c2794d6a093a19a7ec307f34eff2b00fd33eb465cf5182a73b3a7b8a1",
+  "checkedAt": "2026-11-17T10:52:10.287Z",
+  "informationCutoff": "2026-11-17T10:49:23.792870+00:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "SECの2023/2025年10-K、2026Q3 10-Q、決算発表と11月社債発行8-Kの全文を取得。全財務表・期間・単位・GAAP/調整後・予想を区別して照合。2021〜2025年は同じ連結売上/営業利益/親会社帰属純利益/営業CF。FCFは会社定義の営業CF−現金Capital additions。自己株式の財務CFと株式報酬関連取得を区別。ROE平均自己資本3809.5、2459/3809.5*100=64.5491534322%を手計算確認。平均計算の非対応演算を機械観測値へ偽装せず原入力を保存。社債発行は11月12日完了の8-Kを確認。独立レビュアーが一次資料と本文を照合。ROEの二重丸めを訂正し、64.5491534%を小数１桁へ直接丸めた約64.5%を採用。",
+  "comparisons": [
+    {
+      "id": "history2021",
+      "question": "|2021|6,218|2,844|2,214|2,005|",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "|2021|6,218|2,844|2,214|2,005|",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "Moody’s Corporation",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "o",
+          "entity": "Moody’s Corporation",
+          "metric": "GAAP営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "n",
+          "entity": "Moody’s Corporation",
+          "metric": "Moody’s帰属純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Moody’s帰属純利益"
+        },
+        {
+          "id": "c",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "Moody’s Corporation",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 6218,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000105955624000017/mco-20231231.htm",
+            "publishedOn": "2024-02-14",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o",
+          "entity": "Moody’s Corporation",
+          "metric": "GAAP営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 2844,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000105955624000017/mco-20231231.htm",
+            "publishedOn": "2024-02-14",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n",
+          "entity": "Moody’s Corporation",
+          "metric": "Moody’s帰属純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Moody’s帰属純利益",
+          "value": 2214,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000105955624000017/mco-20231231.htm",
+            "publishedOn": "2024-02-14",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 2005,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000105955624000017/mco-20231231.htm",
+            "publishedOn": "2024-02-14",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2022",
+      "question": "|2022|5,468|1,883|1,374|1,474|",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "|2022|5,468|1,883|1,374|1,474|",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "Moody’s Corporation",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "o",
+          "entity": "Moody’s Corporation",
+          "metric": "GAAP営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "n",
+          "entity": "Moody’s Corporation",
+          "metric": "Moody’s帰属純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Moody’s帰属純利益"
+        },
+        {
+          "id": "c",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "Moody’s Corporation",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 5468,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000105955624000017/mco-20231231.htm",
+            "publishedOn": "2024-02-14",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o",
+          "entity": "Moody’s Corporation",
+          "metric": "GAAP営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 1883,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000105955624000017/mco-20231231.htm",
+            "publishedOn": "2024-02-14",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n",
+          "entity": "Moody’s Corporation",
+          "metric": "Moody’s帰属純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Moody’s帰属純利益",
+          "value": 1374,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000105955624000017/mco-20231231.htm",
+            "publishedOn": "2024-02-14",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1474,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000105955624000017/mco-20231231.htm",
+            "publishedOn": "2024-02-14",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2023",
+      "question": "|2023|5,916|2,137|1,607|2,151|",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "|2023|5,916|2,137|1,607|2,151|",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "Moody’s Corporation",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "o",
+          "entity": "Moody’s Corporation",
+          "metric": "GAAP営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "n",
+          "entity": "Moody’s Corporation",
+          "metric": "Moody’s帰属純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Moody’s帰属純利益"
+        },
+        {
+          "id": "c",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "Moody’s Corporation",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 5916,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o",
+          "entity": "Moody’s Corporation",
+          "metric": "GAAP営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 2137,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n",
+          "entity": "Moody’s Corporation",
+          "metric": "Moody’s帰属純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Moody’s帰属純利益",
+          "value": 1607,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 2151,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2024",
+      "question": "|2024|7,088|2,875|2,058|2,838|",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "|2024|7,088|2,875|2,058|2,838|",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "Moody’s Corporation",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "o",
+          "entity": "Moody’s Corporation",
+          "metric": "GAAP営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "n",
+          "entity": "Moody’s Corporation",
+          "metric": "Moody’s帰属純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Moody’s帰属純利益"
+        },
+        {
+          "id": "c",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "Moody’s Corporation",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 7088,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o",
+          "entity": "Moody’s Corporation",
+          "metric": "GAAP営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 2875,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n",
+          "entity": "Moody’s Corporation",
+          "metric": "Moody’s帰属純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Moody’s帰属純利益",
+          "value": 2058,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 2838,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2025",
+      "question": "|2025|7,718|3,351|2,459|2,901|",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "|2025|7,718|3,351|2,459|2,901|",
+      "requiredInputs": [
+        {
+          "id": "s",
+          "entity": "Moody’s Corporation",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "o",
+          "entity": "Moody’s Corporation",
+          "metric": "GAAP営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "n",
+          "entity": "Moody’s Corporation",
+          "metric": "Moody’s帰属純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Moody’s帰属純利益"
+        },
+        {
+          "id": "c",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s",
+          "entity": "Moody’s Corporation",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 7718,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o",
+          "entity": "Moody’s Corporation",
+          "metric": "GAAP営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 3351,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n",
+          "entity": "Moody’s Corporation",
+          "metric": "Moody’s帰属純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Moody’s帰属純利益",
+          "value": 2459,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 2901,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Operations / Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "quarter",
+      "question": "2026年７〜９月の売上高は2,023（前年同期2,007）、営業利益は906（同917）。帰属純利益は734（同646）だった。",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "2026年７〜９月の売上高は2,023（前年同期2,007）、営業利益は906（同917）。帰属純利益は734（同646）だった。",
+      "requiredInputs": [
+        {
+          "id": "s26",
+          "entity": "Moody’s Corporation",
+          "metric": "売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "s25",
+          "entity": "Moody’s Corporation",
+          "metric": "売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "o26",
+          "entity": "Moody’s Corporation",
+          "metric": "営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "o25",
+          "entity": "Moody’s Corporation",
+          "metric": "営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "n26",
+          "entity": "Moody’s Corporation",
+          "metric": "帰属純利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "帰属純利益"
+        },
+        {
+          "id": "n25",
+          "entity": "Moody’s Corporation",
+          "metric": "帰属純利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "帰属純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s26",
+          "entity": "Moody’s Corporation",
+          "metric": "売上高",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 2023,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "s25",
+          "entity": "Moody’s Corporation",
+          "metric": "売上高",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 2007,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o26",
+          "entity": "Moody’s Corporation",
+          "metric": "営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 906,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o25",
+          "entity": "Moody’s Corporation",
+          "metric": "営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 917,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n26",
+          "entity": "Moody’s Corporation",
+          "metric": "帰属純利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "帰属純利益",
+          "value": 734,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n25",
+          "entity": "Moody’s Corporation",
+          "metric": "帰属純利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "帰属純利益",
+          "value": 646,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "eps",
+      "question": "同四半期には営業利益より下に事業売却益115が計上され、前年同期はゼロだった。希薄化EPSは3.60ドルから4.24ドルへ増えたが、希薄化加重平均株数も179.6百万株から173.3百万株へ減っている。",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "同四半期には営業利益より下に事業売却益115が計上され、前年同期はゼロだった。希薄化EPSは3.60ドルから4.24ドルへ増えたが、希薄化加重平均株数も179.6百万株から173.3百万株へ減っている。",
+      "requiredInputs": [
+        {
+          "id": "g26",
+          "entity": "Moody’s Corporation",
+          "metric": "事業売却益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "事業売却益"
+        },
+        {
+          "id": "g25",
+          "entity": "Moody’s Corporation",
+          "metric": "事業売却益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "事業売却益"
+        },
+        {
+          "id": "e25",
+          "entity": "Moody’s Corporation",
+          "metric": "希薄化EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化EPS"
+        },
+        {
+          "id": "e26",
+          "entity": "Moody’s Corporation",
+          "metric": "希薄化EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化EPS"
+        },
+        {
+          "id": "s25",
+          "entity": "Moody’s Corporation",
+          "metric": "希薄化加重平均株数",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万株",
+          "basis": "actual",
+          "definition": "希薄化加重平均株数"
+        },
+        {
+          "id": "s26",
+          "entity": "Moody’s Corporation",
+          "metric": "希薄化加重平均株数",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万株",
+          "basis": "actual",
+          "definition": "希薄化加重平均株数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "g26",
+          "entity": "Moody’s Corporation",
+          "metric": "事業売却益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "事業売却益",
+          "value": 115,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Operations; zero is disclosed dash, not missing value",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "g25",
+          "entity": "Moody’s Corporation",
+          "metric": "事業売却益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "事業売却益",
+          "value": 0,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Operations; zero is disclosed dash, not missing value",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "e25",
+          "entity": "Moody’s Corporation",
+          "metric": "希薄化EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化EPS",
+          "value": 3.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Operations; zero is disclosed dash, not missing value",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "e26",
+          "entity": "Moody’s Corporation",
+          "metric": "希薄化EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "希薄化EPS",
+          "value": 4.24,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Operations; zero is disclosed dash, not missing value",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "s25",
+          "entity": "Moody’s Corporation",
+          "metric": "希薄化加重平均株数",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万株",
+          "basis": "actual",
+          "definition": "希薄化加重平均株数",
+          "value": 179.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Operations; zero is disclosed dash, not missing value",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "s26",
+          "entity": "Moody’s Corporation",
+          "metric": "希薄化加重平均株数",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万株",
+          "basis": "actual",
+          "definition": "希薄化加重平均株数",
+          "value": 173.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Operations; zero is disclosed dash, not missing value",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "adjusted",
+      "question": "会社の調整後希薄化EPSは3.92ドルから4.14ドル、調整後営業利益率は52.9%から52.6%だった。",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "会社の調整後希薄化EPSは3.92ドルから4.14ドル、調整後営業利益率は52.9%から52.6%だった。",
+      "requiredInputs": [
+        {
+          "id": "e25",
+          "entity": "Moody’s Corporation",
+          "metric": "調整後希薄化EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "調整後希薄化EPS"
+        },
+        {
+          "id": "e26",
+          "entity": "Moody’s Corporation",
+          "metric": "調整後希薄化EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "調整後希薄化EPS"
+        },
+        {
+          "id": "m25",
+          "entity": "Moody’s Corporation",
+          "metric": "調整後営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後営業利益率"
+        },
+        {
+          "id": "m26",
+          "entity": "Moody’s Corporation",
+          "metric": "調整後営業利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "e25",
+          "entity": "Moody’s Corporation",
+          "metric": "調整後希薄化EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "調整後希薄化EPS",
+          "value": 3.92,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Third Quarter Financial Results / Non-GAAP reconciliations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "e26",
+          "entity": "Moody’s Corporation",
+          "metric": "調整後希薄化EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "調整後希薄化EPS",
+          "value": 4.14,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Third Quarter Financial Results / Non-GAAP reconciliations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "m25",
+          "entity": "Moody’s Corporation",
+          "metric": "調整後営業利益率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後営業利益率",
+          "value": 52.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Third Quarter Financial Results / Non-GAAP reconciliations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "m26",
+          "entity": "Moody’s Corporation",
+          "metric": "調整後営業利益率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "調整後営業利益率",
+          "value": 52.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Third Quarter Financial Results / Non-GAAP reconciliations",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "ma",
+      "question": "MAの四半期売上は909から936へ増加。会社のオーガニック・為替一定ベースでは８%増だが、報告売上の増加率は３%だった。MAの継続収入は875から928となり、2026年７〜９月のMA売上の99%を占めた。",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "MAの四半期売上は909から936へ増加。会社のオーガニック・為替一定ベースでは８%増だが、報告売上の増加率は３%だった。MAの継続収入は875から928となり、2026年７〜９月のMA売上の99%を占めた。",
+      "requiredInputs": [
+        {
+          "id": "s25",
+          "entity": "Moody’s Corporation",
+          "metric": "MA報告売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "MA報告売上"
+        },
+        {
+          "id": "s26",
+          "entity": "Moody’s Corporation",
+          "metric": "MA報告売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "MA報告売上"
+        },
+        {
+          "id": "org",
+          "entity": "Moody’s Corporation",
+          "metric": "MAオーガニック為替一定売上成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "MAオーガニック為替一定売上成長率"
+        },
+        {
+          "id": "g",
+          "entity": "Moody’s Corporation",
+          "metric": "MA報告売上成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "MA報告売上成長率"
+        },
+        {
+          "id": "r25",
+          "entity": "Moody’s Corporation",
+          "metric": "MA継続収入",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "MA継続収入"
+        },
+        {
+          "id": "r26",
+          "entity": "Moody’s Corporation",
+          "metric": "MA継続収入",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "MA継続収入"
+        },
+        {
+          "id": "mix",
+          "entity": "Moody’s Corporation",
+          "metric": "MA継続収入構成比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "MA継続収入構成比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s25",
+          "entity": "Moody’s Corporation",
+          "metric": "MA報告売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "MA報告売上",
+          "value": 909,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Third Quarter Segment Results: Moody’s Analytics",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "s26",
+          "entity": "Moody’s Corporation",
+          "metric": "MA報告売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "MA報告売上",
+          "value": 936,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Third Quarter Segment Results: Moody’s Analytics",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "org",
+          "entity": "Moody’s Corporation",
+          "metric": "MAオーガニック為替一定売上成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "MAオーガニック為替一定売上成長率",
+          "value": 8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Third Quarter Segment Results: Moody’s Analytics",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "g",
+          "entity": "Moody’s Corporation",
+          "metric": "MA報告売上成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "MA報告売上成長率",
+          "value": 3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Third Quarter Segment Results: Moody’s Analytics",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "r25",
+          "entity": "Moody’s Corporation",
+          "metric": "MA継続収入",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "MA継続収入",
+          "value": 875,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Third Quarter Segment Results: Moody’s Analytics",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "r26",
+          "entity": "Moody’s Corporation",
+          "metric": "MA継続収入",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "MA継続収入",
+          "value": 928,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Third Quarter Segment Results: Moody’s Analytics",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "mix",
+          "entity": "Moody’s Corporation",
+          "metric": "MA継続収入構成比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "MA継続収入構成比",
+          "value": 99,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Third Quarter Segment Results: Moody’s Analytics",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "mis",
+      "question": "対してMISの四半期売上は1,098から1,087へ減少し、取引収入は753から714へ減った。",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "対してMISの四半期売上は1,098から1,087へ減少し、取引収入は753から714へ減った。",
+      "requiredInputs": [
+        {
+          "id": "s25",
+          "entity": "Moody’s Corporation",
+          "metric": "MIS売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "MIS売上"
+        },
+        {
+          "id": "s26",
+          "entity": "Moody’s Corporation",
+          "metric": "MIS売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "MIS売上"
+        },
+        {
+          "id": "t25",
+          "entity": "Moody’s Corporation",
+          "metric": "MIS取引収入",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "MIS取引収入"
+        },
+        {
+          "id": "t26",
+          "entity": "Moody’s Corporation",
+          "metric": "MIS取引収入",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "MIS取引収入"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s25",
+          "entity": "Moody’s Corporation",
+          "metric": "MIS売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "MIS売上",
+          "value": 1098,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Third Quarter Financial Results / MIS",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "s26",
+          "entity": "Moody’s Corporation",
+          "metric": "MIS売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "MIS売上",
+          "value": 1087,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Third Quarter Financial Results / MIS",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t25",
+          "entity": "Moody’s Corporation",
+          "metric": "MIS取引収入",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "MIS取引収入",
+          "value": 753,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Third Quarter Financial Results / MIS",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t26",
+          "entity": "Moody’s Corporation",
+          "metric": "MIS取引収入",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "MIS取引収入",
+          "value": 714,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Third Quarter Financial Results / MIS",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "f24",
+      "question": "|2024年通期|2,838|317|2,521|",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "|2024年通期|2,838|317|2,521|",
+      "requiredInputs": [
+        {
+          "id": "cf",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Moody’s Corporation",
+          "metric": "Capital additions（現金支出を負数表示）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Capital additions（現金支出を負数表示）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cf",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 2838,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Moody’s Corporation",
+          "metric": "Capital additions（現金支出を負数表示）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Capital additions（現金支出を負数表示）",
+          "value": -317,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cf",
+            "cap"
+          ],
+          "definition": "営業CF−現金支出Capital additions",
+          "precision": 0,
+          "value": 2521
+        }
+      ]
+    },
+    {
+      "id": "f25",
+      "question": "|2025年通期|2,901|326|2,575|",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "|2025年通期|2,901|326|2,575|",
+      "requiredInputs": [
+        {
+          "id": "cf",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Moody’s Corporation",
+          "metric": "Capital additions（現金支出を負数表示）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Capital additions（現金支出を負数表示）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cf",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 2901,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Moody’s Corporation",
+          "metric": "Capital additions（現金支出を負数表示）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Capital additions（現金支出を負数表示）",
+          "value": -326,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cf",
+            "cap"
+          ],
+          "definition": "営業CF−現金支出Capital additions",
+          "precision": 0,
+          "value": 2575
+        }
+      ]
+    },
+    {
+      "id": "f9p",
+      "question": "|2025年１〜９月|2,043|245|1,798|",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "|2025年１〜９月|2,043|245|1,798|",
+      "requiredInputs": [
+        {
+          "id": "cf",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Moody’s Corporation",
+          "metric": "Capital additions（現金支出を負数表示）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Capital additions（現金支出を負数表示）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cf",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 2043,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Moody’s Corporation",
+          "metric": "Capital additions（現金支出を負数表示）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Capital additions（現金支出を負数表示）",
+          "value": -245,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cf",
+            "cap"
+          ],
+          "definition": "営業CF−現金支出Capital additions",
+          "precision": 0,
+          "value": 1798
+        }
+      ]
+    },
+    {
+      "id": "f9",
+      "question": "|2026年１〜９月|2,471|271|2,200|",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "|2026年１〜９月|2,471|271|2,200|",
+      "requiredInputs": [
+        {
+          "id": "cf",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Moody’s Corporation",
+          "metric": "Capital additions（現金支出を負数表示）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Capital additions（現金支出を負数表示）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cf",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 2471,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Moody’s Corporation",
+          "metric": "Capital additions（現金支出を負数表示）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Capital additions（現金支出を負数表示）",
+          "value": -271,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cf",
+            "cap"
+          ],
+          "definition": "営業CF−現金支出Capital additions",
+          "precision": 0,
+          "value": 2200
+        }
+      ]
+    },
+    {
+      "id": "allocation25",
+      "question": "2025年はFCF2,575に対し、財務CFの自己株式取得1,607、配当701、取得現金控除後の買収支出227だった。",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "2025年はFCF2,575に対し、財務CFの自己株式取得1,607、配当701、取得現金控除後の買収支出227だった。",
+      "requiredInputs": [
+        {
+          "id": "cf",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Moody’s Corporation",
+          "metric": "Capital additions支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Capital additions支出"
+        },
+        {
+          "id": "bb",
+          "entity": "Moody’s Corporation",
+          "metric": "Treasury shares支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Treasury shares支出"
+        },
+        {
+          "id": "div",
+          "entity": "Moody’s Corporation",
+          "metric": "配当支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当支出"
+        },
+        {
+          "id": "acq",
+          "entity": "Moody’s Corporation",
+          "metric": "取得現金控除後買収支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "取得現金控除後買収支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cf",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 2901,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Moody’s Corporation",
+          "metric": "Capital additions支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Capital additions支出",
+          "value": 326,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "bb",
+          "entity": "Moody’s Corporation",
+          "metric": "Treasury shares支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Treasury shares支出",
+          "value": 1607,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "div",
+          "entity": "Moody’s Corporation",
+          "metric": "配当支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当支出",
+          "value": 701,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "acq",
+          "entity": "Moody’s Corporation",
+          "metric": "取得現金控除後買収支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "取得現金控除後買収支出",
+          "value": 227,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "allocation26",
+      "question": "2026年１〜９月の自己株式取得は2,553、配当は543で、合計3,096は同期間のFCF2,200を上回った。株式報酬に関連する取得と自社株買いの物品税支払は別に125あり、事業売却による受取は投資CFに200計上されている。",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "2026年１〜９月の自己株式取得は2,553、配当は543で、合計3,096は同期間のFCF2,200を上回った。株式報酬に関連する取得と自社株買いの物品税支払は別に125あり、事業売却による受取は投資CFに200計上されている。",
+      "requiredInputs": [
+        {
+          "id": "bb",
+          "entity": "Moody’s Corporation",
+          "metric": "Treasury shares支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Treasury shares支出"
+        },
+        {
+          "id": "div",
+          "entity": "Moody’s Corporation",
+          "metric": "配当支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当支出"
+        },
+        {
+          "id": "cf",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cap",
+          "entity": "Moody’s Corporation",
+          "metric": "Capital additions支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Capital additions支出"
+        },
+        {
+          "id": "other",
+          "entity": "Moody’s Corporation",
+          "metric": "株式報酬関連取得と物品税支払",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "株式報酬関連取得と物品税支払"
+        },
+        {
+          "id": "sale",
+          "entity": "Moody’s Corporation",
+          "metric": "事業売却現金受取",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "事業売却現金受取"
+        }
+      ],
+      "observations": [
+        {
+          "id": "bb",
+          "entity": "Moody’s Corporation",
+          "metric": "Treasury shares支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Treasury shares支出",
+          "value": 2553,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "div",
+          "entity": "Moody’s Corporation",
+          "metric": "配当支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当支出",
+          "value": 543,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cf",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 2471,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "Moody’s Corporation",
+          "metric": "Capital additions支出",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Capital additions支出",
+          "value": 271,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "other",
+          "entity": "Moody’s Corporation",
+          "metric": "株式報酬関連取得と物品税支払",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "株式報酬関連取得と物品税支払",
+          "value": 125,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sale",
+          "entity": "Moody’s Corporation",
+          "metric": "事業売却現金受取",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "事業売却現金受取",
+          "value": 200,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "payout",
+          "operation": "sum",
+          "inputs": [
+            "bb",
+            "div"
+          ],
+          "definition": "自己株式取得と配当支出の合計",
+          "precision": 0,
+          "value": 3096
+        },
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "cf",
+            "cap"
+          ],
+          "definition": "営業CF−Capital additions",
+          "precision": 0,
+          "value": 2200
+        }
+      ]
+    },
+    {
+      "id": "liquidity",
+      "question": "現金・現金同等物は2025年末2,384から2026年９月末1,513へ減少した。９月末の帳簿上の有利子負債は短期分568と長期分6,343である。",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "現金・現金同等物は2025年末2,384から2026年９月末1,513へ減少した。９月末の帳簿上の有利子負債は短期分568と長期分6,343である。",
+      "requiredInputs": [
+        {
+          "id": "c25",
+          "entity": "Moody’s Corporation",
+          "metric": "現金・現金同等物",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金・現金同等物"
+        },
+        {
+          "id": "c26",
+          "entity": "Moody’s Corporation",
+          "metric": "現金・現金同等物",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金・現金同等物"
+        },
+        {
+          "id": "dcur",
+          "entity": "Moody’s Corporation",
+          "metric": "有利子負債の流動部分",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "有利子負債の流動部分"
+        },
+        {
+          "id": "dlong",
+          "entity": "Moody’s Corporation",
+          "metric": "長期有利子負債",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期有利子負債"
+        }
+      ],
+      "observations": [
+        {
+          "id": "c25",
+          "entity": "Moody’s Corporation",
+          "metric": "現金・現金同等物",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金・現金同等物",
+          "value": 2384,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Balance Sheets",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c26",
+          "entity": "Moody’s Corporation",
+          "metric": "現金・現金同等物",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金・現金同等物",
+          "value": 1513,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Balance Sheets",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dcur",
+          "entity": "Moody’s Corporation",
+          "metric": "有利子負債の流動部分",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "有利子負債の流動部分",
+          "value": 568,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Balance Sheets",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dlong",
+          "entity": "Moody’s Corporation",
+          "metric": "長期有利子負債",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期有利子負債",
+          "value": 6343,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066731/mco-20260930.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Consolidated Balance Sheets",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "bond",
+      "question": "その後11月12日には、元本５億ユーロ、固定金利4.125%、2033年11月12日償還の社債発行を完了した。",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "その後11月12日には、元本５億ユーロ、固定金利4.125%、2033年11月12日償還の社債発行を完了した。",
+      "requiredInputs": [
+        {
+          "id": "p",
+          "entity": "Moody’s Corporation",
+          "metric": "11月12日発行社債額面",
+          "periodStart": "2026-11-12",
+          "periodEnd": "2026-11-12",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "11月12日発行社債額面"
+        },
+        {
+          "id": "r",
+          "entity": "Moody’s Corporation",
+          "metric": "社債固定年利",
+          "periodStart": "2026-11-12",
+          "periodEnd": "2026-11-12",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "社債固定年利"
+        }
+      ],
+      "observations": [
+        {
+          "id": "p",
+          "entity": "Moody’s Corporation",
+          "metric": "11月12日発行社債額面",
+          "periodStart": "2026-11-12",
+          "periodEnd": "2026-11-12",
+          "unit": "百万ユーロ",
+          "basis": "actual",
+          "definition": "11月12日発行社債額面",
+          "value": 500,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026073528/mco-20261109.htm",
+            "publishedOn": "2026-11-13",
+            "locator": "Item 8.01: offering closed November12; maturity November12,2033",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "r",
+          "entity": "Moody’s Corporation",
+          "metric": "社債固定年利",
+          "periodStart": "2026-11-12",
+          "periodEnd": "2026-11-12",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "社債固定年利",
+          "value": 4.125,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026073528/mco-20261109.htm",
+            "publishedOn": "2026-11-13",
+            "locator": "Item 8.01: offering closed November12; maturity November12,2033",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "roe",
+      "question": "2025年の簡易ROEは約64.5%。帰属純利益2,459を、2024年末3,565と2025年末4,054のMoody’s株主資本の単純平均3,809.5で割った値だ。",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "2025年の簡易ROEは約64.5%。帰属純利益2,459を、2024年末3,565と2025年末4,054のMoody’s株主資本の単純平均3,809.5で割った値だ。",
+      "requiredInputs": [
+        {
+          "id": "ni",
+          "entity": "Moody’s Corporation",
+          "metric": "Moody’s帰属純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Moody’s帰属純利益"
+        },
+        {
+          "id": "e24",
+          "entity": "Moody’s Corporation",
+          "metric": "Moody’s株主資本",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Moody’s株主資本"
+        },
+        {
+          "id": "e25",
+          "entity": "Moody’s Corporation",
+          "metric": "Moody’s株主資本",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Moody’s株主資本"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ni",
+          "entity": "Moody’s Corporation",
+          "metric": "Moody’s帰属純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Moody’s帰属純利益",
+          "value": 2459,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Operations; Consolidated Balance Sheets. Manual mean=(3565+4054)/2=3809.5; ROE=2459/3809.5*100=64.5491534%.",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "e24",
+          "entity": "Moody’s Corporation",
+          "metric": "Moody’s株主資本",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Moody’s株主資本",
+          "value": 3565,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Operations; Consolidated Balance Sheets. Manual mean=(3565+4054)/2=3809.5; ROE=2459/3809.5*100=64.5491534%.",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "e25",
+          "entity": "Moody’s Corporation",
+          "metric": "Moody’s株主資本",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Moody’s株主資本",
+          "value": 4054,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Statements of Operations; Consolidated Balance Sheets. Manual mean=(3565+4054)/2=3809.5; ROE=2459/3809.5*100=64.5491534%.",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "treasury",
+      "question": "2025年末の自己株式は取得原価ベース14,978が株主資本の控除項目となっている。",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "2025年末の自己株式は取得原価ベース14,978が株主資本の控除項目となっている。",
+      "requiredInputs": [
+        {
+          "id": "t",
+          "entity": "Moody’s Corporation",
+          "metric": "自己株式取得原価（資本控除額）",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "自己株式取得原価（資本控除額）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "t",
+          "entity": "Moody’s Corporation",
+          "metric": "自己株式取得原価（資本控除額）",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "自己株式取得原価（資本控除額）",
+          "value": 14978,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026009136/mco-20251231.htm",
+            "publishedOn": "2026-02-18",
+            "locator": "Consolidated Balance Sheets: Treasury stock, at cost",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "outlook",
+      "question": "10月21日時点で会社が据え置いた2026年通期予想は、GAAP希薄化EPS16.00〜16.50ドル、調整後希薄化EPS16.50〜17.00ドル、営業CF3,150〜3,350、FCF2,700〜2,900。",
+      "definition": "本文に表示した期間・単位・GAAP／非GAAP・予想の区分に対応。",
+      "status": "ready",
+      "claim": "10月21日時点で会社が据え置いた2026年通期予想は、GAAP希薄化EPS16.00〜16.50ドル、調整後希薄化EPS16.50〜17.00ドル、営業CF3,150〜3,350、FCF2,700〜2,900。",
+      "requiredInputs": [
+        {
+          "id": "glo",
+          "entity": "Moody’s Corporation",
+          "metric": "GAAP希薄化EPS予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "GAAP希薄化EPS予想下限"
+        },
+        {
+          "id": "ghi",
+          "entity": "Moody’s Corporation",
+          "metric": "GAAP希薄化EPS予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "GAAP希薄化EPS予想上限"
+        },
+        {
+          "id": "alo",
+          "entity": "Moody’s Corporation",
+          "metric": "調整後EPS予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS予想下限"
+        },
+        {
+          "id": "ahi",
+          "entity": "Moody’s Corporation",
+          "metric": "調整後EPS予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS予想上限"
+        },
+        {
+          "id": "clo",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "営業CF予想下限"
+        },
+        {
+          "id": "chi",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "営業CF予想上限"
+        },
+        {
+          "id": "flo",
+          "entity": "Moody’s Corporation",
+          "metric": "FCF予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "FCF予想下限"
+        },
+        {
+          "id": "fhi",
+          "entity": "Moody’s Corporation",
+          "metric": "FCF予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "FCF予想上限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "glo",
+          "entity": "Moody’s Corporation",
+          "metric": "GAAP希薄化EPS予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "GAAP希薄化EPS予想下限",
+          "value": 16,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Outlook as of October21,2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ghi",
+          "entity": "Moody’s Corporation",
+          "metric": "GAAP希薄化EPS予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "GAAP希薄化EPS予想上限",
+          "value": 16.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Outlook as of October21,2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "alo",
+          "entity": "Moody’s Corporation",
+          "metric": "調整後EPS予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS予想下限",
+          "value": 16.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Outlook as of October21,2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ahi",
+          "entity": "Moody’s Corporation",
+          "metric": "調整後EPS予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "調整後EPS予想上限",
+          "value": 17,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Outlook as of October21,2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "clo",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "営業CF予想下限",
+          "value": 3150,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Outlook as of October21,2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "chi",
+          "entity": "Moody’s Corporation",
+          "metric": "営業CF予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "営業CF予想上限",
+          "value": 3350,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Outlook as of October21,2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "flo",
+          "entity": "Moody’s Corporation",
+          "metric": "FCF予想下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "FCF予想下限",
+          "value": 2700,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Outlook as of October21,2026",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fhi",
+          "entity": "Moody’s Corporation",
+          "metric": "FCF予想上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "百万米ドル",
+          "basis": "company-forecast",
+          "definition": "FCF予想上限",
+          "value": 2900,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1059556/000162828026066594/a3q26earningsrelease.htm",
+            "publishedOn": "2026-10-21",
+            "locator": "Outlook as of October21,2026",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
