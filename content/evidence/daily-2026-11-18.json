@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-11-18",
+  "articleSha256": "30f4fdce22fa7d40f42b7322a07fb9598dbb04daf48cc6cc2a78fedc7cab9923",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "見出し・結論・全節を確認。米小売は同一回の名目・季節調整済み前月比（10月速報、9月は同じ発表に記載された比較値）、輸入物価はBLS表1の同じ総合系列。10月小売は信頼区間の注意を本文に反映した。米株は同一取引日の引けの方向のみで騰落率比較はない。太洋物産は連結初年度のため前年度非連結との成長率を扱わない。 NVIDIAは確認済みの委員会開示を扱い、四半期実績同士の比較や市場予想との差は掲載していない。",
+  "comparisons": [
+    {
+      "id": "us-retail-monthly",
+      "question": "米小売・飲食サービスの前月比の推計値は前月とどう異なるか。",
+      "definition": "名目の米小売・飲食サービス総売上高の季節・休日・営業日調整後前月比。物価調整なし。10月は速報値。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "september",
+          "entity": "米国",
+          "metric": "小売・飲食サービス総売上高の前月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "名目の米小売・飲食サービス総売上高の季節・休日・営業日調整後前月比。物価調整なし。10月は速報値。"
+        },
+        {
+          "id": "october",
+          "entity": "米国",
+          "metric": "小売・飲食サービス総売上高の前月比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "名目の米小売・飲食サービス総売上高の季節・休日・営業日調整後前月比。物価調整なし。10月は速報値。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "september",
+          "entity": "米国",
+          "metric": "小売・飲食サービス総売上高の前月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "名目の米小売・飲食サービス総売上高の季節・休日・営業日調整後前月比。物価調整なし。10月は速報値。",
+          "value": 0.8,
+          "source": {
+            "url": "https://www.census.gov/retail/marts/www/marts_current.pdf?release=20261117",
+            "publishedOn": "2026-11-17",
+            "locator": "CB26-181、ADVANCE MONTHLY SALES表・Percent Change列・september",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "october",
+          "entity": "米国",
+          "metric": "小売・飲食サービス総売上高の前月比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "名目の米小売・飲食サービス総売上高の季節・休日・営業日調整後前月比。物価調整なし。10月は速報値。",
+          "value": 0.2,
+          "source": {
+            "url": "https://www.census.gov/retail/marts/www/marts_current.pdf?release=20261117",
+            "publishedOn": "2026-11-17",
+            "locator": "CB26-181、ADVANCE MONTHLY SALES表・Percent Change列・october",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "米国の名目小売・飲食サービス売上高は、季節調整済み前月比で2026年9月の0.8%増に対し、10月の速報は0.2%増だった。"
+    },
+    {
+      "id": "us-import-prices",
+      "question": "米国総合輸入物価指数の9月と10月の前月比は何か。",
+      "definition": "BLSの全輸入品物価指数、季節調整なしの前月比。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "september",
+          "entity": "米国",
+          "metric": "総合輸入物価指数の前月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "BLSの全輸入品物価指数、季節調整なしの前月比。"
+        },
+        {
+          "id": "october",
+          "entity": "米国",
+          "metric": "総合輸入物価指数の前月比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "BLSの全輸入品物価指数、季節調整なしの前月比。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "september",
+          "entity": "米国",
+          "metric": "総合輸入物価指数の前月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "BLSの全輸入品物価指数、季節調整なしの前月比。",
+          "value": 1.1,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/ximpim_11172026.htm",
+            "publishedOn": "2026-11-17",
+            "locator": "Table 1、U.S. import and export price indexes・All Imports列・september",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "october",
+          "entity": "米国",
+          "metric": "総合輸入物価指数の前月比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "BLSの全輸入品物価指数、季節調整なしの前月比。",
+          "value": 1.1,
+          "source": {
+            "url": "https://www.bls.gov/news.release/archives/ximpim_11172026.htm",
+            "publishedOn": "2026-11-17",
+            "locator": "Table 1、U.S. import and export price indexes・All Imports列・october",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "米国の総合輸入物価指数は、2026年9月と10月にそれぞれ前月比1.1%上昇した。"
+    },
+    {
+      "id": "taiyo-same-scope-growth",
+      "question": "連結経常利益の前期比を示せるか。",
+      "definition": "日本基準の連結通期経常利益、円建て、実績同士。",
+      "status": "withheld",
+      "reason": "2025年9月期は連結財務諸表を作成していない旨を決算短信PDF1ページで確認。前期単体値は代用しない。",
+      "omittedClaim": "太洋物産の前期比の連結経常増益率",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "太洋物産（連結）",
+          "metric": "経常利益",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "日本基準、連結通期。"
+        },
+        {
+          "id": "previous",
+          "entity": "太洋物産（連結）",
+          "metric": "経常利益",
+          "periodStart": "2024-10-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "日本基準、連結通期。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "太洋物産（連結）",
+          "metric": "経常利益",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円（JPY）",
+          "basis": "actual",
+          "definition": "日本基準、連結通期。",
+          "value": 232,
+          "source": {
+            "url": "https://www.release.tdnet.info/inbs/140120261117582248.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "1.（1）連結経営成績・2026年9月期・経常利益",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ],
+  "checkedAt": "2026-11-18T06:22:00+09:00",
+  "informationCutoff": "2026-11-18T06:22:00+09:00"
+}
