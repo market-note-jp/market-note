@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-11-19",
+  "articleSha256": "50e236983665ec82a3bfb28a5c6f116db028dbf54e0ad4ec4c7485b3e2bf512a",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "見出し・結論・本文・分析・注目点を通読。NVIDIAはGAAP要約表の同じ単位の四半期実績を確認し、丸め済み金額から増収率を再計算していない。第4四半期の会社予想は期間の追加週と中国向け前提を明示し、成長率比較はしていない。米株は同一取引日の方向だけを記し、騰落率の比較を除外。貿易は公表済みの原数値の総額と収支を示し、前年同月比・順位・数量との数値比較をしていない。フィックスターズの訂正原本PDFは複数回の取得で読めず、二つの開示一覧で確認できた公表事実のみとし、金額比較を掲載しない。FOMCは過去会合の定性的議論として読む。",
+  "comparisons": [
+    {
+      "id": "nvidia-quarterly-revenue",
+      "question": "NVIDIAの単独四半期売上は前四半期から増えたか。",
+      "definition": "米国GAAP・連結の単独四半期売上高。会社公表要約表の十億米ドル単位、丸め済み実績同士。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "q2",
+          "entity": "NVIDIA（連結）",
+          "metric": "売上高",
+          "periodStart": "2026-04-27",
+          "periodEnd": "2026-07-26",
+          "unit": "十億米ドル（USD）",
+          "basis": "actual",
+          "definition": "米国GAAP・連結の単独四半期売上高。会社公表要約表の十億米ドル単位、丸め済み実績同士。"
+        },
+        {
+          "id": "q3",
+          "entity": "NVIDIA（連結）",
+          "metric": "売上高",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "十億米ドル（USD）",
+          "basis": "actual",
+          "definition": "米国GAAP・連結の単独四半期売上高。会社公表要約表の十億米ドル単位、丸め済み実績同士。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "q2",
+          "entity": "NVIDIA（連結）",
+          "metric": "売上高",
+          "periodStart": "2026-04-27",
+          "periodEnd": "2026-07-26",
+          "unit": "十億米ドル（USD）",
+          "basis": "actual",
+          "definition": "米国GAAP・連結の単独四半期売上高。会社公表要約表の十億米ドル単位、丸め済み実績同士。",
+          "value": 96.2,
+          "source": {
+            "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
+            "publishedOn": "2026-11-17",
+            "locator": "Q3 Fiscal 2027 Summary、GAAP、Revenue行、Q2 FY27列",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "q3",
+          "entity": "NVIDIA（連結）",
+          "metric": "売上高",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "十億米ドル（USD）",
+          "basis": "actual",
+          "definition": "米国GAAP・連結の単独四半期売上高。会社公表要約表の十億米ドル単位、丸め済み実績同士。",
+          "value": 115.8,
+          "source": {
+            "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2027",
+            "publishedOn": "2026-11-17",
+            "locator": "Q3 Fiscal 2027 Summary、GAAP、Revenue行、Q3 FY27列",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "NVIDIAのGAAP連結売上高は、2027年度第2四半期の962億米ドルから、第3四半期は1,158億米ドルへ増えた。"
+    }
+  ],
+  "checkedAt": "2026-11-19T06:22:00+09:00",
+  "informationCutoff": "2026-11-19T06:22:00+09:00"
+}
