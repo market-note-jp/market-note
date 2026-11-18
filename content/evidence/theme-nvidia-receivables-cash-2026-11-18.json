@@ -1,0 +1,996 @@
+{
+  "version": 1,
+  "articleSlug": "theme-nvidia-receivables-cash-2026-11-18",
+  "articleSha256": "04bda506870ab8d2a51f7650c67a17f40d15f5b7855316a9e10edb77444e682c",
+  "checkedAt": "2026-11-18T10:20:20.028847+00:00",
+  "informationCutoff": "2026-11-18T10:20:20.028847+00:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "本文全体の数値比較、単位、CF橋渡し、定義、会社説明と筆者仮説の区別を確認。Q2/Q3 CFO原文およびQ3補足財務PDFを確認。DSOを延滞としない、期末残高差をCF変動に置換しない、未提出10-Q扱いを避ける。未確認の税影響額、顧客名、DSOへの個別要因寄与は計算しない。",
+  "comparisons": [
+    {
+      "id": "revenue",
+      "question": "|四半期売上高（十億ドル）|96.2|115.8|期間中の販売規模|",
+      "definition": "NVIDIAの同一会計年度・四半期単独と期末残高を区別し、開示単位に合わせて比較。",
+      "status": "ready",
+      "claim": "|四半期売上高（十億ドル）|96.2|115.8|期間中の販売規模|",
+      "requiredInputs": [
+        {
+          "id": "r2",
+          "entity": "NVIDIA",
+          "metric": "四半期売上高",
+          "periodStart": "2026-04-27",
+          "periodEnd": "2026-07-26",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "四半期売上高"
+        },
+        {
+          "id": "r3",
+          "entity": "NVIDIA",
+          "metric": "四半期売上高",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "四半期売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "r2",
+          "entity": "NVIDIA",
+          "metric": "四半期売上高",
+          "periodStart": "2026-04-27",
+          "periodEnd": "2026-07-26",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "四半期売上高",
+          "value": 96.2,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf",
+            "publishedOn": "2026-08-26",
+            "locator": "PDF 1ページ・四半期売上高",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "r3",
+          "entity": "NVIDIA",
+          "metric": "四半期売上高",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "四半期売上高",
+          "value": 115.8,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 1ページ・四半期売上高",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "receivables",
+      "question": "|期末売掛金（十億ドル）|63.1|81.0|期末に残った未回収額|",
+      "definition": "NVIDIAの同一会計年度・四半期単独と期末残高を区別し、開示単位に合わせて比較。",
+      "status": "ready",
+      "claim": "|期末売掛金（十億ドル）|63.1|81.0|期末に残った未回収額|",
+      "requiredInputs": [
+        {
+          "id": "a2",
+          "entity": "NVIDIA",
+          "metric": "期末売掛金（丸め値）",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-07-26",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "期末売掛金（丸め値）"
+        },
+        {
+          "id": "a3",
+          "entity": "NVIDIA",
+          "metric": "期末売掛金（丸め値）",
+          "periodStart": "2026-10-25",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "期末売掛金（丸め値）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "a2",
+          "entity": "NVIDIA",
+          "metric": "期末売掛金（丸め値）",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-07-26",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "期末売掛金（丸め値）",
+          "value": 63.1,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf",
+            "publishedOn": "2026-08-26",
+            "locator": "PDF 4ページ・期末売掛金（丸め値）",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "a3",
+          "entity": "NVIDIA",
+          "metric": "期末売掛金（丸め値）",
+          "periodStart": "2026-10-25",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "期末売掛金（丸め値）",
+          "value": 81,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 4ページ・期末売掛金（丸め値）",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "growth",
+      "question": "この丸め値で計算すると、売上の前期比増加は約20.4％、売掛金は約28.4％。売掛金残高の増加は約179億ドルだった。",
+      "definition": "NVIDIAの同一会計年度・四半期単独と期末残高を区別し、開示単位に合わせて比較。",
+      "status": "ready",
+      "claim": "この丸め値で計算すると、売上の前期比増加は約20.4％、売掛金は約28.4％。売掛金残高の増加は約179億ドルだった。",
+      "requiredInputs": [
+        {
+          "id": "r2",
+          "entity": "NVIDIA",
+          "metric": "四半期売上高",
+          "periodStart": "2026-04-27",
+          "periodEnd": "2026-07-26",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "四半期売上高"
+        },
+        {
+          "id": "r3",
+          "entity": "NVIDIA",
+          "metric": "四半期売上高",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "四半期売上高"
+        },
+        {
+          "id": "a2",
+          "entity": "NVIDIA",
+          "metric": "期末売掛金（丸め値）",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-07-26",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "期末売掛金（丸め値）"
+        },
+        {
+          "id": "a3",
+          "entity": "NVIDIA",
+          "metric": "期末売掛金（丸め値）",
+          "periodStart": "2026-10-25",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "期末売掛金（丸め値）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "r2",
+          "entity": "NVIDIA",
+          "metric": "四半期売上高",
+          "periodStart": "2026-04-27",
+          "periodEnd": "2026-07-26",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "四半期売上高",
+          "value": 96.2,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf",
+            "publishedOn": "2026-08-26",
+            "locator": "PDF 1ページ・四半期売上高",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "r3",
+          "entity": "NVIDIA",
+          "metric": "四半期売上高",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "四半期売上高",
+          "value": 115.8,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 1ページ・四半期売上高",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "a2",
+          "entity": "NVIDIA",
+          "metric": "期末売掛金（丸め値）",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-07-26",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "期末売掛金（丸め値）",
+          "value": 63.1,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf",
+            "publishedOn": "2026-08-26",
+            "locator": "PDF 4ページ・期末売掛金（丸め値）",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "a3",
+          "entity": "NVIDIA",
+          "metric": "期末売掛金（丸め値）",
+          "periodStart": "2026-10-25",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "期末売掛金（丸め値）",
+          "value": 81,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 4ページ・期末売掛金（丸め値）",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "rg",
+          "operation": "growth-percent",
+          "inputs": [
+            "r3",
+            "r2"
+          ],
+          "definition": "rg",
+          "precision": 1,
+          "value": 20.4
+        },
+        {
+          "id": "ag",
+          "operation": "growth-percent",
+          "inputs": [
+            "a3",
+            "a2"
+          ],
+          "definition": "ag",
+          "precision": 1,
+          "value": 28.4
+        },
+        {
+          "id": "ad",
+          "operation": "difference",
+          "inputs": [
+            "a3",
+            "a2"
+          ],
+          "definition": "ad",
+          "precision": 1,
+          "value": 17.9
+        }
+      ]
+    },
+    {
+      "id": "dso",
+      "question": "DSOはQ1の45日からQ2の60日、Q3の64日へと推移している。",
+      "definition": "NVIDIAの同一会計年度・四半期単独と期末残高を区別し、開示単位に合わせて比較。",
+      "status": "ready",
+      "claim": "DSOはQ1の45日からQ2の60日、Q3の64日へと推移している。",
+      "requiredInputs": [
+        {
+          "id": "d1",
+          "entity": "NVIDIA",
+          "metric": "会社公表DSO",
+          "periodStart": "2026-04-26",
+          "periodEnd": "2026-04-26",
+          "unit": "days",
+          "basis": "actual",
+          "definition": "会社公表DSO"
+        },
+        {
+          "id": "d2",
+          "entity": "NVIDIA",
+          "metric": "会社公表DSO",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-07-26",
+          "unit": "days",
+          "basis": "actual",
+          "definition": "会社公表DSO"
+        },
+        {
+          "id": "d3",
+          "entity": "NVIDIA",
+          "metric": "会社公表DSO",
+          "periodStart": "2026-10-25",
+          "periodEnd": "2026-10-25",
+          "unit": "days",
+          "basis": "actual",
+          "definition": "会社公表DSO"
+        }
+      ],
+      "observations": [
+        {
+          "id": "d1",
+          "entity": "NVIDIA",
+          "metric": "会社公表DSO",
+          "periodStart": "2026-04-26",
+          "periodEnd": "2026-04-26",
+          "unit": "days",
+          "basis": "actual",
+          "definition": "会社公表DSO",
+          "value": 45,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf",
+            "publishedOn": "2026-08-26",
+            "locator": "PDF 4ページ・会社公表DSO",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "d2",
+          "entity": "NVIDIA",
+          "metric": "会社公表DSO",
+          "periodStart": "2026-07-26",
+          "periodEnd": "2026-07-26",
+          "unit": "days",
+          "basis": "actual",
+          "definition": "会社公表DSO",
+          "value": 60,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf",
+            "publishedOn": "2026-08-26",
+            "locator": "PDF 4ページ・会社公表DSO",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "d3",
+          "entity": "NVIDIA",
+          "metric": "会社公表DSO",
+          "periodStart": "2026-10-25",
+          "periodEnd": "2026-10-25",
+          "unit": "days",
+          "basis": "actual",
+          "definition": "会社公表DSO",
+          "value": 64,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 4ページ・会社公表DSO",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cfo-growth",
+      "question": "|四半期営業CF（十億ドル）|24.1|48.3|営業全体の現金収支|",
+      "definition": "NVIDIAの同一会計年度・四半期単独と期末残高を区別し、開示単位に合わせて比較。",
+      "status": "ready",
+      "claim": "|四半期営業CF（十億ドル）|24.1|48.3|営業全体の現金収支|",
+      "requiredInputs": [
+        {
+          "id": "cf2",
+          "entity": "NVIDIA",
+          "metric": "四半期営業CF（丸め値）",
+          "periodStart": "2026-04-27",
+          "periodEnd": "2026-07-26",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "四半期営業CF（丸め値）"
+        },
+        {
+          "id": "cf3",
+          "entity": "NVIDIA",
+          "metric": "四半期営業CF（丸め値）",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "四半期営業CF（丸め値）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cf2",
+          "entity": "NVIDIA",
+          "metric": "四半期営業CF（丸め値）",
+          "periodStart": "2026-04-27",
+          "periodEnd": "2026-07-26",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "四半期営業CF（丸め値）",
+          "value": 24.1,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q227/Q2FY27-CFO-Commentary.pdf",
+            "publishedOn": "2026-08-26",
+            "locator": "PDF 4ページ・四半期営業CF（丸め値）",
+            "pdfPage": 4,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cf3",
+          "entity": "NVIDIA",
+          "metric": "四半期営業CF（丸め値）",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "四半期営業CF（丸め値）",
+          "value": 48.3,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Q3FY27-CFO-Commentary.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 5ページ・四半期営業CF（丸め値）",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-bridge",
+      "question": "したがって65.287＋2.560−18.052−8.148＋6.606＝48.253となる。",
+      "definition": "NVIDIAの同一会計年度・四半期単独と期末残高を区別し、開示単位に合わせて比較。",
+      "status": "ready",
+      "claim": "したがって65.287＋2.560−18.052−8.148＋6.606＝48.253となる。",
+      "requiredInputs": [
+        {
+          "id": "ni",
+          "entity": "NVIDIA",
+          "metric": "GAAP純利益",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "GAAP純利益。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。"
+        },
+        {
+          "id": "sbc",
+          "entity": "NVIDIA",
+          "metric": "株式報酬",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "株式報酬。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。"
+        },
+        {
+          "id": "da",
+          "entity": "NVIDIA",
+          "metric": "減価償却",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "減価償却。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。"
+        },
+        {
+          "id": "dt",
+          "entity": "NVIDIA",
+          "metric": "繰延税金",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "繰延税金。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。"
+        },
+        {
+          "id": "der",
+          "entity": "NVIDIA",
+          "metric": "デリバティブ損失",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "デリバティブ損失。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。"
+        },
+        {
+          "id": "gain",
+          "entity": "NVIDIA",
+          "metric": "株式投資利益の調整",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "株式投資利益の調整。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。"
+        },
+        {
+          "id": "other",
+          "entity": "NVIDIA",
+          "metric": "その他非現金等の調整",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "その他非現金等の調整。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。"
+        },
+        {
+          "id": "ar",
+          "entity": "NVIDIA",
+          "metric": "売掛金のCF変動",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "売掛金のCF変動。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。"
+        },
+        {
+          "id": "inv",
+          "entity": "NVIDIA",
+          "metric": "在庫のCF変動",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "在庫のCF変動。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。"
+        },
+        {
+          "id": "pre",
+          "entity": "NVIDIA",
+          "metric": "前払費用・その他資産のCF変動",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "前払費用・その他資産のCF変動。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。"
+        },
+        {
+          "id": "ap",
+          "entity": "NVIDIA",
+          "metric": "買掛金のCF変動",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "買掛金のCF変動。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。"
+        },
+        {
+          "id": "ac",
+          "entity": "NVIDIA",
+          "metric": "未払その他流動負債のCF変動",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "未払その他流動負債のCF変動。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。"
+        },
+        {
+          "id": "ll",
+          "entity": "NVIDIA",
+          "metric": "その他長期負債のCF変動",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "その他長期負債のCF変動。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。"
+        },
+        {
+          "id": "ocf",
+          "entity": "NVIDIA",
+          "metric": "営業CF",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "営業CF。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ni",
+          "entity": "NVIDIA",
+          "metric": "GAAP純利益",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "GAAP純利益。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。",
+          "value": 65.287,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Supplemental-Financial-Information-NVDA-2027-Q3.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 3ページ・GAAP純利益",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sbc",
+          "entity": "NVIDIA",
+          "metric": "株式報酬",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "株式報酬。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。",
+          "value": 2.088,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Supplemental-Financial-Information-NVDA-2027-Q3.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 3ページ・株式報酬",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "da",
+          "entity": "NVIDIA",
+          "metric": "減価償却",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "減価償却。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。",
+          "value": 1.254,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Supplemental-Financial-Information-NVDA-2027-Q3.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 3ページ・減価償却",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dt",
+          "entity": "NVIDIA",
+          "metric": "繰延税金",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "繰延税金。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。",
+          "value": 0.676,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Supplemental-Financial-Information-NVDA-2027-Q3.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 3ページ・繰延税金",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "der",
+          "entity": "NVIDIA",
+          "metric": "デリバティブ損失",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "デリバティブ損失。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。",
+          "value": 0.492,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Supplemental-Financial-Information-NVDA-2027-Q3.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 3ページ・デリバティブ損失",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "gain",
+          "entity": "NVIDIA",
+          "metric": "株式投資利益の調整",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "株式投資利益の調整。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。",
+          "value": -1.767,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Supplemental-Financial-Information-NVDA-2027-Q3.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 3ページ・株式投資利益の調整",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "other",
+          "entity": "NVIDIA",
+          "metric": "その他非現金等の調整",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "その他非現金等の調整。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。",
+          "value": -0.183,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Supplemental-Financial-Information-NVDA-2027-Q3.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 3ページ・その他非現金等の調整",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ar",
+          "entity": "NVIDIA",
+          "metric": "売掛金のCF変動",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "売掛金のCF変動。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。",
+          "value": -18.052,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Supplemental-Financial-Information-NVDA-2027-Q3.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 3ページ・売掛金のCF変動",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "inv",
+          "entity": "NVIDIA",
+          "metric": "在庫のCF変動",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "在庫のCF変動。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。",
+          "value": -8.148,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Supplemental-Financial-Information-NVDA-2027-Q3.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 3ページ・在庫のCF変動",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "pre",
+          "entity": "NVIDIA",
+          "metric": "前払費用・その他資産のCF変動",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "前払費用・その他資産のCF変動。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。",
+          "value": -1.366,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Supplemental-Financial-Information-NVDA-2027-Q3.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 3ページ・前払費用・その他資産のCF変動",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ap",
+          "entity": "NVIDIA",
+          "metric": "買掛金のCF変動",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "買掛金のCF変動。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。",
+          "value": 4.424,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Supplemental-Financial-Information-NVDA-2027-Q3.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 3ページ・買掛金のCF変動",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ac",
+          "entity": "NVIDIA",
+          "metric": "未払その他流動負債のCF変動",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "未払その他流動負債のCF変動。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。",
+          "value": 1.651,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Supplemental-Financial-Information-NVDA-2027-Q3.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 3ページ・未払その他流動負債のCF変動",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ll",
+          "entity": "NVIDIA",
+          "metric": "その他長期負債のCF変動",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "その他長期負債のCF変動。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。",
+          "value": 1.897,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Supplemental-Financial-Information-NVDA-2027-Q3.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 3ページ・その他長期負債のCF変動",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf",
+          "entity": "NVIDIA",
+          "metric": "営業CF",
+          "periodStart": "2026-07-27",
+          "periodEnd": "2026-10-25",
+          "unit": "USD billion",
+          "basis": "actual",
+          "definition": "営業CF。四半期単独、原表百万ドルを1000で除算。営業資産負債変動は買収影響控除後。",
+          "value": 48.253,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Supplemental-Financial-Information-NVDA-2027-Q3.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 3ページ・営業CF",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "noncash",
+          "operation": "sum",
+          "inputs": [
+            "sbc",
+            "da",
+            "dt",
+            "der",
+            "gain",
+            "other"
+          ],
+          "definition": "noncash",
+          "precision": 3,
+          "value": 2.56
+        },
+        {
+          "id": "otherwc",
+          "operation": "sum",
+          "inputs": [
+            "pre",
+            "ap",
+            "ac",
+            "ll"
+          ],
+          "definition": "otherwc",
+          "precision": 3,
+          "value": 6.606
+        },
+        {
+          "id": "bridge",
+          "operation": "sum",
+          "inputs": [
+            "ni",
+            "noncash",
+            "ar",
+            "inv",
+            "otherwc"
+          ],
+          "definition": "bridge",
+          "precision": 3,
+          "value": 48.253
+        }
+      ]
+    },
+    {
+      "id": "concentration",
+      "question": "期末売掛金の18％と17％が、名前の開示されていない直接顧客２社に集中する。合計35％である。",
+      "definition": "NVIDIAの同一会計年度・四半期単独と期末残高を区別し、開示単位に合わせて比較。",
+      "status": "ready",
+      "claim": "期末売掛金の18％と17％が、名前の開示されていない直接顧客２社に集中する。合計35％である。",
+      "requiredInputs": [
+        {
+          "id": "c1",
+          "entity": "NVIDIA",
+          "metric": "直接顧客１社の売掛金残高比率",
+          "periodStart": "2026-10-25",
+          "periodEnd": "2026-10-25",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "直接顧客１社の売掛金残高比率"
+        },
+        {
+          "id": "c2",
+          "entity": "NVIDIA",
+          "metric": "別の直接顧客１社の売掛金残高比率",
+          "periodStart": "2026-10-25",
+          "periodEnd": "2026-10-25",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "別の直接顧客１社の売掛金残高比率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "c1",
+          "entity": "NVIDIA",
+          "metric": "直接顧客１社の売掛金残高比率",
+          "periodStart": "2026-10-25",
+          "periodEnd": "2026-10-25",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "直接顧客１社の売掛金残高比率",
+          "value": 18,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Supplemental-Financial-Information-NVDA-2027-Q3.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 7ページ・直接顧客１社の売掛金残高比率",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "c2",
+          "entity": "NVIDIA",
+          "metric": "別の直接顧客１社の売掛金残高比率",
+          "periodStart": "2026-10-25",
+          "periodEnd": "2026-10-25",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "別の直接顧客１社の売掛金残高比率",
+          "value": 17,
+          "source": {
+            "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2027/Q327/Supplemental-Financial-Information-NVDA-2027-Q3.pdf",
+            "publishedOn": "2026-11-17",
+            "locator": "PDF 7ページ・別の直接顧客１社の売掛金残高比率",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "total",
+          "operation": "sum",
+          "inputs": [
+            "c1",
+            "c2"
+          ],
+          "definition": "total",
+          "precision": 0,
+          "value": 35
+        }
+      ]
+    }
+  ]
+}

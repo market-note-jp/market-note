@@ -1,0 +1,3557 @@
+{
+  "version": 1,
+  "articleSlug": "company-idex-2026-11-18",
+  "articleSha256": "de09ad5e994863894987fa4e080624033ee6099a8203f2106bd3dd32b20e1f33",
+  "checkedAt": "2026-11-18T10:21:41.514263+00:00",
+  "informationCutoff": "2026-11-18T10:20:18.102691+00:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "原PDFを取得しテキスト原表照合。計画比較は5年財務、利益率、Q3部門/利益/EPS、還付、FCF/買収/還元、Mott取得価額、ROIC/ROE、ネット負債、会社予想。全て原観測値保存。複合平均と税調整のROIC/ROEは定義欄に手計算式、比較可能性限界を本文に記載。HTML検索snippetの全社3%は原PDF8%と不一致、原PDFを採用。独立レビュアーが一次PDFと数値、ROIC、CF、関税還付を照合。総資本の曖昧表記を純資産へ、本文PDF頁を実頁へ修正。",
+  "comparisons": [
+    {
+      "id": "history-2021",
+      "question": "history-2021",
+      "definition": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+      "status": "ready",
+      "claim": "|2021|2,764.8|637.0|449.4|565.3|72.7|577.4|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "GAAP営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "IDEX帰属純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "IDEX帰属純利益"
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "現金設備投資支出",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出"
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "買収支出（取得現金控除）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収支出（取得現金控除）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 2764.8,
+          "source": {
+            "url": "https://investors.idexcorp.com/files/doc_financials/2023/q4/ea475a45-3a82-4b50-b7d8-679c05f6c197.pdf",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 45,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "GAAP営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 637,
+          "source": {
+            "url": "https://investors.idexcorp.com/files/doc_financials/2023/q4/ea475a45-3a82-4b50-b7d8-679c05f6c197.pdf",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 45,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "IDEX帰属純利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "IDEX帰属純利益",
+          "value": 449.4,
+          "source": {
+            "url": "https://investors.idexcorp.com/files/doc_financials/2023/q4/ea475a45-3a82-4b50-b7d8-679c05f6c197.pdf",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 45,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 565.3,
+          "source": {
+            "url": "https://investors.idexcorp.com/files/doc_financials/2023/q4/ea475a45-3a82-4b50-b7d8-679c05f6c197.pdf",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 49,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "現金設備投資支出",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出",
+          "value": 72.7,
+          "source": {
+            "url": "https://investors.idexcorp.com/files/doc_financials/2023/q4/ea475a45-3a82-4b50-b7d8-679c05f6c197.pdf",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 49,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "買収支出（取得現金控除）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収支出（取得現金控除）",
+          "value": 577.4,
+          "source": {
+            "url": "https://investors.idexcorp.com/files/doc_financials/2023/q4/ea475a45-3a82-4b50-b7d8-679c05f6c197.pdf",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 49,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history-2022",
+      "question": "history-2022",
+      "definition": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+      "status": "ready",
+      "claim": "|2022|3,181.9|751.4|586.9|557.4|68.0|945.6|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "GAAP営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "IDEX帰属純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "IDEX帰属純利益"
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "現金設備投資支出",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出"
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "買収支出（取得現金控除）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収支出（取得現金控除）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 3181.9,
+          "source": {
+            "url": "https://investors.idexcorp.com/files/doc_financials/2023/q4/ea475a45-3a82-4b50-b7d8-679c05f6c197.pdf",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 45,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "GAAP営業利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 751.4,
+          "source": {
+            "url": "https://investors.idexcorp.com/files/doc_financials/2023/q4/ea475a45-3a82-4b50-b7d8-679c05f6c197.pdf",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 45,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "IDEX帰属純利益",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "IDEX帰属純利益",
+          "value": 586.9,
+          "source": {
+            "url": "https://investors.idexcorp.com/files/doc_financials/2023/q4/ea475a45-3a82-4b50-b7d8-679c05f6c197.pdf",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 45,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 557.4,
+          "source": {
+            "url": "https://investors.idexcorp.com/files/doc_financials/2023/q4/ea475a45-3a82-4b50-b7d8-679c05f6c197.pdf",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 49,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "現金設備投資支出",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出",
+          "value": 68,
+          "source": {
+            "url": "https://investors.idexcorp.com/files/doc_financials/2023/q4/ea475a45-3a82-4b50-b7d8-679c05f6c197.pdf",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 49,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "買収支出（取得現金控除）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収支出（取得現金控除）",
+          "value": 945.6,
+          "source": {
+            "url": "https://investors.idexcorp.com/files/doc_financials/2023/q4/ea475a45-3a82-4b50-b7d8-679c05f6c197.pdf",
+            "publishedOn": "2024-02-22",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 49,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history-2023",
+      "question": "history-2023",
+      "definition": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+      "status": "ready",
+      "claim": "|2023|3,273.9|732.5|596.1|716.7|89.9|311.8|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "GAAP営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "IDEX帰属純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "IDEX帰属純利益"
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "現金設備投資支出",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出"
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "買収支出（取得現金控除）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収支出（取得現金控除）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 3273.9,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 44,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "GAAP営業利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 732.5,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 44,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "IDEX帰属純利益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "IDEX帰属純利益",
+          "value": 596.1,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 44,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 716.7,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "現金設備投資支出",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出",
+          "value": 89.9,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "買収支出（取得現金控除）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収支出（取得現金控除）",
+          "value": 311.8,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history-2024",
+      "question": "history-2024",
+      "definition": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+      "status": "ready",
+      "claim": "|2024|3,268.8|677.2|505.0|668.1|65.1|984.5|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "GAAP営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "IDEX帰属純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "IDEX帰属純利益"
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "現金設備投資支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出"
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "買収支出（取得現金控除）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収支出（取得現金控除）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 3268.8,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 44,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "GAAP営業利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 677.2,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 44,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "IDEX帰属純利益",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "IDEX帰属純利益",
+          "value": 505,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 44,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 668.1,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "現金設備投資支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出",
+          "value": 65.1,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "買収支出（取得現金控除）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収支出（取得現金控除）",
+          "value": 984.5,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history-2025",
+      "question": "history-2025",
+      "definition": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+      "status": "ready",
+      "claim": "|2025|3,457.5|699.3|483.2|680.4|63.6|76.2|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "GAAP営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益"
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "IDEX帰属純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "IDEX帰属純利益"
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "現金設備投資支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出"
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "買収支出（取得現金控除）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収支出（取得現金控除）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 3457.5,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 44,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "GAAP営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "GAAP営業利益",
+          "value": 699.3,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 44,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "IDEX帰属純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "IDEX帰属純利益",
+          "value": 483.2,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 44,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 680.4,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "現金設備投資支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金設備投資支出",
+          "value": 63.6,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "買収支出（取得現金控除）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収支出（取得現金控除）",
+          "value": 76.2,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Consolidated Income Statements and Cash Flows; cash flow PDF49 (2023 report), PDF48 (2025 report)",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "margins",
+      "question": "margins",
+      "definition": "営業利益÷売上高。2021原表は2023年報告PDF45",
+      "status": "ready",
+      "claim": "営業利益率は23.0%から20.2%へ低下した",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "2021営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2021営業利益"
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "2021売上",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2021売上"
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "2025営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025営業利益"
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "2025売上",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025売上"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "2021営業利益",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2021営業利益",
+          "value": 637,
+          "source": {
+            "url": "https://investors.idexcorp.com/files/doc_financials/2023/q4/ea475a45-3a82-4b50-b7d8-679c05f6c197.pdf",
+            "publishedOn": "2024-02-22",
+            "locator": "営業利益÷売上高。2021原表は2023年報告PDF45",
+            "pdfPage": 45,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "2021売上",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2021売上",
+          "value": 2764.8,
+          "source": {
+            "url": "https://investors.idexcorp.com/files/doc_financials/2023/q4/ea475a45-3a82-4b50-b7d8-679c05f6c197.pdf",
+            "publishedOn": "2024-02-22",
+            "locator": "営業利益÷売上高。2021原表は2023年報告PDF45",
+            "pdfPage": 45,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "2025営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025営業利益",
+          "value": 699.3,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "営業利益÷売上高。2021原表は2023年報告PDF45",
+            "pdfPage": 44,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "2025売上",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025売上",
+          "value": 3457.5,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "営業利益÷売上高。2021原表は2023年報告PDF45",
+            "pdfPage": 44,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "m21",
+          "operation": "ratio-percent",
+          "inputs": [
+            "v0",
+            "v1"
+          ],
+          "definition": "2021営業利益率",
+          "precision": 1,
+          "value": 23
+        },
+        {
+          "id": "m25",
+          "operation": "ratio-percent",
+          "inputs": [
+            "v2",
+            "v3"
+          ],
+          "definition": "2025営業利益率",
+          "precision": 1,
+          "value": 20.2
+        }
+      ]
+    },
+    {
+      "id": "sale-gain",
+      "question": "sale-gain",
+      "definition": "Income Statement",
+      "status": "ready",
+      "claim": "事業売却益84.7",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "事業売却益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "事業売却益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "事業売却益",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "事業売却益",
+          "value": 84.7,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Income Statement",
+            "pdfPage": 44,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "growth2025",
+      "question": "growth2025",
+      "definition": "MD&A highlights",
+      "status": "ready",
+      "claim": "報告売上が６%増えた一方、買収・売却と為替の影響を除く会社定義のオーガニック成長は１%",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "報告売上増加率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "報告売上増加率"
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "会社定義organic growth",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社定義organic growth"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "報告売上増加率",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "報告売上増加率",
+          "value": 6,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "MD&A highlights",
+            "pdfPage": 27,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "会社定義organic growth",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社定義organic growth",
+          "value": 1,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "MD&A highlights",
+            "pdfPage": 27,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "q3",
+      "question": "q3",
+      "definition": "Income Statement; growth p2",
+      "status": "ready",
+      "claim": "売上高は951.7（前年同期878.7）、営業利益208.0（同185.8）、帰属純利益144.1（同127.8）",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "2026Q3売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3売上"
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "2025Q3売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3売上"
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "2026Q3営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3営業利益"
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "2025Q3営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3営業利益"
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "2026Q3純利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3純利益"
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "2025Q3純利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3純利益"
+        },
+        {
+          "id": "v6",
+          "entity": "IDEX Corporation",
+          "metric": "報告成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "報告成長率"
+        },
+        {
+          "id": "v7",
+          "entity": "IDEX Corporation",
+          "metric": "オーガニック成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "オーガニック成長率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "2026Q3売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3売上",
+          "value": 951.7,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Income Statement; growth p2",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "2025Q3売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3売上",
+          "value": 878.7,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Income Statement; growth p2",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "2026Q3営業利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3営業利益",
+          "value": 208,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Income Statement; growth p2",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "2025Q3営業利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3営業利益",
+          "value": 185.8,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Income Statement; growth p2",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "2026Q3純利益",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026Q3純利益",
+          "value": 144.1,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Income Statement; growth p2",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "2025Q3純利益",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025Q3純利益",
+          "value": 127.8,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Income Statement; growth p2",
+            "pdfPage": 7,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v6",
+          "entity": "IDEX Corporation",
+          "metric": "報告成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "報告成長率",
+          "value": 8,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Income Statement; growth p2",
+            "pdfPage": 2,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v7",
+          "entity": "IDEX Corporation",
+          "metric": "オーガニック成長率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "オーガニック成長率",
+          "value": 8,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Income Statement; growth p2",
+            "pdfPage": 2,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "segments",
+      "question": "segments",
+      "definition": "Segment Financial Results",
+      "status": "ready",
+      "claim": "HSTの売上は433.5、オーガニック成長13%。FMTは327.9・４%、FSDPは191.5・６%",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "HST売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "HST売上"
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "HST organic",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "HST organic"
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "FMT売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FMT売上"
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "FMT organic",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "FMT organic"
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "FSDP売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FSDP売上"
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "FSDP organic",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "FSDP organic"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "HST売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "HST売上",
+          "value": 433.5,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Segment Financial Results",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "HST organic",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "HST organic",
+          "value": 13,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Segment Financial Results",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "FMT売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FMT売上",
+          "value": 327.9,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Segment Financial Results",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "FMT organic",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "FMT organic",
+          "value": 4,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Segment Financial Results",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "FSDP売上",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FSDP売上",
+          "value": 191.5,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Segment Financial Results",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "FSDP organic",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "FSDP organic",
+          "value": 6,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Segment Financial Results",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "eps",
+      "question": "eps",
+      "definition": "Reconciliation table",
+      "status": "ready",
+      "claim": "調整後EPSは前年同期2.03ドルから2.33ドルへ増加したが、GAAPのEPSは1.70ドルから1.95ドル",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "2026調整後EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "2026調整後EPS"
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "2025調整後EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "2025調整後EPS"
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "2026GAAP EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "2026GAAP EPS"
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "2025GAAP EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "2025GAAP EPS"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "2026調整後EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "2026調整後EPS",
+          "value": 2.33,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Reconciliation table",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "2025調整後EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "2025調整後EPS",
+          "value": 2.03,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Reconciliation table",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "2026GAAP EPS",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "2026GAAP EPS",
+          "value": 1.95,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Reconciliation table",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "2025GAAP EPS",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "2025GAAP EPS",
+          "value": 1.7,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Reconciliation table",
+            "pdfPage": 13,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "refund",
+      "question": "refund",
+      "definition": "Recent Developments",
+      "status": "ready",
+      "claim": "売上原価が22.7減少し、顧客への還元見積もりで売上高が13.1減少した",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "原価減少",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "原価減少"
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "売上減少",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上減少"
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "粗利率押上げポイント",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "パーセントポイント",
+          "basis": "actual",
+          "definition": "粗利率押上げポイント"
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "累計EPS寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "累計EPS寄与"
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "四半期EPS寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "四半期EPS寄与"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "原価減少",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "原価減少",
+          "value": 22.7,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/filing/Q3-Quarterly-Filing.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Recent Developments",
+            "pdfPage": 29,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "売上減少",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "売上減少",
+          "value": 13.1,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/filing/Q3-Quarterly-Filing.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Recent Developments",
+            "pdfPage": 29,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "粗利率押上げポイント",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "パーセントポイント",
+          "basis": "actual",
+          "definition": "粗利率押上げポイント",
+          "value": 0.6,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/filing/Q3-Quarterly-Filing.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Recent Developments",
+            "pdfPage": 29,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "累計EPS寄与",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "累計EPS寄与",
+          "value": 0.1,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/filing/Q3-Quarterly-Filing.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Recent Developments",
+            "pdfPage": 29,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "四半期EPS寄与",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "米ドル/株",
+          "basis": "actual",
+          "definition": "四半期EPS寄与",
+          "value": 0.02,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/filing/Q3-Quarterly-Filing.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Recent Developments",
+            "pdfPage": 29,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fcf-2025",
+      "question": "fcf-2025",
+      "definition": "Cash Flow: CFO-capex-acquisitions",
+      "status": "ready",
+      "claim": "2025年は680.4−63.6＝616.8。ここから買収76.2を引けば540.6",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "設備投資支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資支出"
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "買収支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 680.4,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Cash Flow: CFO-capex-acquisitions",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "設備投資支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資支出",
+          "value": 63.6,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Cash Flow: CFO-capex-acquisitions",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "買収支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収支出",
+          "value": 76.2,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Cash Flow: CFO-capex-acquisitions",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "difference",
+          "inputs": [
+            "v0",
+            "v1"
+          ],
+          "definition": "CFO-capex",
+          "precision": 1,
+          "value": 616.8
+        },
+        {
+          "id": "after",
+          "operation": "difference",
+          "inputs": [
+            "fcf",
+            "v2"
+          ],
+          "definition": "FCF-acquisitions",
+          "precision": 1,
+          "value": 540.6
+        }
+      ]
+    },
+    {
+      "id": "fcf-2024",
+      "question": "fcf-2024",
+      "definition": "Cash Flow",
+      "status": "ready",
+      "claim": "2024年はFCF603.0に対して買収支出984.5",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "設備投資支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資支出"
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "買収支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 668.1,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Cash Flow",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "設備投資支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "設備投資支出",
+          "value": 65.1,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Cash Flow",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "買収支出",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収支出",
+          "value": 984.5,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Cash Flow",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fiveyear",
+      "question": "fiveyear",
+      "definition": "5年単純合計。FCFから買収引いた差額-66.9。他の投資・財務CFを含まない",
+      "status": "ready",
+      "claim": "営業CF3,187.9−設備投資359.3＝FCF2,828.6に対し、買収支出は2,895.5",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "2021 営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2021 営業CF"
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "2021 設備投資",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2021 設備投資"
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "2021 買収",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2021 買収"
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "2022 営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2022 営業CF"
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "2022 設備投資",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2022 設備投資"
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "2022 買収",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2022 買収"
+        },
+        {
+          "id": "v6",
+          "entity": "IDEX Corporation",
+          "metric": "2023 営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2023 営業CF"
+        },
+        {
+          "id": "v7",
+          "entity": "IDEX Corporation",
+          "metric": "2023 設備投資",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2023 設備投資"
+        },
+        {
+          "id": "v8",
+          "entity": "IDEX Corporation",
+          "metric": "2023 買収",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2023 買収"
+        },
+        {
+          "id": "v9",
+          "entity": "IDEX Corporation",
+          "metric": "2024 営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2024 営業CF"
+        },
+        {
+          "id": "v10",
+          "entity": "IDEX Corporation",
+          "metric": "2024 設備投資",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2024 設備投資"
+        },
+        {
+          "id": "v11",
+          "entity": "IDEX Corporation",
+          "metric": "2024 買収",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2024 買収"
+        },
+        {
+          "id": "v12",
+          "entity": "IDEX Corporation",
+          "metric": "2025 営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025 営業CF"
+        },
+        {
+          "id": "v13",
+          "entity": "IDEX Corporation",
+          "metric": "2025 設備投資",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025 設備投資"
+        },
+        {
+          "id": "v14",
+          "entity": "IDEX Corporation",
+          "metric": "2025 買収",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025 買収"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "2021 営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2021 営業CF",
+          "value": 565.3,
+          "source": {
+            "url": "https://investors.idexcorp.com/files/doc_financials/2023/q4/ea475a45-3a82-4b50-b7d8-679c05f6c197.pdf",
+            "publishedOn": "2024-02-22",
+            "locator": "5年単純合計。FCFから買収引いた差額-66.9。他の投資・財務CFを含まない",
+            "pdfPage": 49,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "2021 設備投資",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2021 設備投資",
+          "value": 72.7,
+          "source": {
+            "url": "https://investors.idexcorp.com/files/doc_financials/2023/q4/ea475a45-3a82-4b50-b7d8-679c05f6c197.pdf",
+            "publishedOn": "2024-02-22",
+            "locator": "5年単純合計。FCFから買収引いた差額-66.9。他の投資・財務CFを含まない",
+            "pdfPage": 49,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "2021 買収",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2021 買収",
+          "value": 577.4,
+          "source": {
+            "url": "https://investors.idexcorp.com/files/doc_financials/2023/q4/ea475a45-3a82-4b50-b7d8-679c05f6c197.pdf",
+            "publishedOn": "2024-02-22",
+            "locator": "5年単純合計。FCFから買収引いた差額-66.9。他の投資・財務CFを含まない",
+            "pdfPage": 49,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "2022 営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2022 営業CF",
+          "value": 557.4,
+          "source": {
+            "url": "https://investors.idexcorp.com/files/doc_financials/2023/q4/ea475a45-3a82-4b50-b7d8-679c05f6c197.pdf",
+            "publishedOn": "2024-02-22",
+            "locator": "5年単純合計。FCFから買収引いた差額-66.9。他の投資・財務CFを含まない",
+            "pdfPage": 49,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "2022 設備投資",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2022 設備投資",
+          "value": 68,
+          "source": {
+            "url": "https://investors.idexcorp.com/files/doc_financials/2023/q4/ea475a45-3a82-4b50-b7d8-679c05f6c197.pdf",
+            "publishedOn": "2024-02-22",
+            "locator": "5年単純合計。FCFから買収引いた差額-66.9。他の投資・財務CFを含まない",
+            "pdfPage": 49,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "2022 買収",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2022 買収",
+          "value": 945.6,
+          "source": {
+            "url": "https://investors.idexcorp.com/files/doc_financials/2023/q4/ea475a45-3a82-4b50-b7d8-679c05f6c197.pdf",
+            "publishedOn": "2024-02-22",
+            "locator": "5年単純合計。FCFから買収引いた差額-66.9。他の投資・財務CFを含まない",
+            "pdfPage": 49,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v6",
+          "entity": "IDEX Corporation",
+          "metric": "2023 営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2023 営業CF",
+          "value": 716.7,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "5年単純合計。FCFから買収引いた差額-66.9。他の投資・財務CFを含まない",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v7",
+          "entity": "IDEX Corporation",
+          "metric": "2023 設備投資",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2023 設備投資",
+          "value": 89.9,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "5年単純合計。FCFから買収引いた差額-66.9。他の投資・財務CFを含まない",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v8",
+          "entity": "IDEX Corporation",
+          "metric": "2023 買収",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2023 買収",
+          "value": 311.8,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "5年単純合計。FCFから買収引いた差額-66.9。他の投資・財務CFを含まない",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v9",
+          "entity": "IDEX Corporation",
+          "metric": "2024 営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2024 営業CF",
+          "value": 668.1,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "5年単純合計。FCFから買収引いた差額-66.9。他の投資・財務CFを含まない",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v10",
+          "entity": "IDEX Corporation",
+          "metric": "2024 設備投資",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2024 設備投資",
+          "value": 65.1,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "5年単純合計。FCFから買収引いた差額-66.9。他の投資・財務CFを含まない",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v11",
+          "entity": "IDEX Corporation",
+          "metric": "2024 買収",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2024 買収",
+          "value": 984.5,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "5年単純合計。FCFから買収引いた差額-66.9。他の投資・財務CFを含まない",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v12",
+          "entity": "IDEX Corporation",
+          "metric": "2025 営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025 営業CF",
+          "value": 680.4,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "5年単純合計。FCFから買収引いた差額-66.9。他の投資・財務CFを含まない",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v13",
+          "entity": "IDEX Corporation",
+          "metric": "2025 設備投資",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025 設備投資",
+          "value": 63.6,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "5年単純合計。FCFから買収引いた差額-66.9。他の投資・財務CFを含まない",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v14",
+          "entity": "IDEX Corporation",
+          "metric": "2025 買収",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025 買収",
+          "value": 76.2,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "5年単純合計。FCFから買収引いた差額-66.9。他の投資・財務CFを含まない",
+            "pdfPage": 48,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cf2026",
+      "question": "cf2026",
+      "definition": "Cash Flow CFO-capex; shareholder returns dividends+repurchases=388.7",
+      "status": "ready",
+      "claim": "2026年１〜９月の営業CFは543.2、設備投資65.9、FCF477.3。前年同期は470.9−43.9＝427.0",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "2026CFO",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026CFO"
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "2026capex",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026capex"
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "2025CFO",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025CFO"
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "2025capex",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025capex"
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "買収",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収"
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "配当",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当"
+        },
+        {
+          "id": "v6",
+          "entity": "IDEX Corporation",
+          "metric": "自社株買い",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "自社株買い"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "2026CFO",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026CFO",
+          "value": 543.2,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Cash Flow CFO-capex; shareholder returns dividends+repurchases=388.7",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "2026capex",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2026capex",
+          "value": 65.9,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Cash Flow CFO-capex; shareholder returns dividends+repurchases=388.7",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "2025CFO",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025CFO",
+          "value": 470.9,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Cash Flow CFO-capex; shareholder returns dividends+repurchases=388.7",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "2025capex",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "2025capex",
+          "value": 43.9,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Cash Flow CFO-capex; shareholder returns dividends+repurchases=388.7",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "買収",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "買収",
+          "value": 0,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Cash Flow CFO-capex; shareholder returns dividends+repurchases=388.7",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "配当",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当",
+          "value": 160.7,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Cash Flow CFO-capex; shareholder returns dividends+repurchases=388.7",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v6",
+          "entity": "IDEX Corporation",
+          "metric": "自社株買い",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "自社株買い",
+          "value": 228,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Cash Flow CFO-capex; shareholder returns dividends+repurchases=388.7",
+            "pdfPage": 9,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "mott",
+      "question": "mott",
+      "definition": "Note 2 Mott (finalized price)",
+      "status": "ready",
+      "claim": "対価は982.0、認識したのれん488.6、無形資産412.8",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "取得現金控除後対価",
+          "periodStart": "2024-09-05",
+          "periodEnd": "2024-09-05",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "取得現金控除後対価"
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "のれん",
+          "periodStart": "2024-09-05",
+          "periodEnd": "2024-09-05",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "のれん"
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "無形資産",
+          "periodStart": "2024-09-05",
+          "periodEnd": "2024-09-05",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "無形資産"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "取得現金控除後対価",
+          "periodStart": "2024-09-05",
+          "periodEnd": "2024-09-05",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "取得現金控除後対価",
+          "value": 982,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Note 2 Mott (finalized price)",
+            "pdfPage": 55,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "のれん",
+          "periodStart": "2024-09-05",
+          "periodEnd": "2024-09-05",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "のれん",
+          "value": 488.6,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Note 2 Mott (finalized price)",
+            "pdfPage": 55,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "無形資産",
+          "periodStart": "2024-09-05",
+          "periodEnd": "2024-09-05",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "無形資産",
+          "value": 412.8,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Note 2 Mott (finalized price)",
+            "pdfPage": 55,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "roic",
+      "question": "roic",
+      "definition": "Income p44 / Balance p46. Manual formula 699.3*(1-150.1/632.6)/((5133.5+5267.0)/2)*100=10.256694868463043. Lease debt not added, all cash deducted",
+      "status": "ready",
+      "claim": "本稿の2025年簡易ROICは約10.3%",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "税金",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "税金"
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "税前利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "税前利益"
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "期末純資産（非支配持分を含む）",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期末純資産（非支配持分を含む）"
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "期末短期借入",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期末短期借入"
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "期末長期借入",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期末長期借入"
+        },
+        {
+          "id": "v6",
+          "entity": "IDEX Corporation",
+          "metric": "期末現金",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期末現金"
+        },
+        {
+          "id": "v7",
+          "entity": "IDEX Corporation",
+          "metric": "期首純資産（非支配持分を含む）",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期首純資産（非支配持分を含む）"
+        },
+        {
+          "id": "v8",
+          "entity": "IDEX Corporation",
+          "metric": "期首短期借入",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期首短期借入"
+        },
+        {
+          "id": "v9",
+          "entity": "IDEX Corporation",
+          "metric": "期首長期借入",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期首長期借入"
+        },
+        {
+          "id": "v10",
+          "entity": "IDEX Corporation",
+          "metric": "期首現金",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期首現金"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "営業利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 699.3,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Income p44 / Balance p46. Manual formula 699.3*(1-150.1/632.6)/((5133.5+5267.0)/2)*100=10.256694868463043. Lease debt not added, all cash deducted",
+            "pdfPage": 44,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "税金",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "税金",
+          "value": 150.1,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Income p44 / Balance p46. Manual formula 699.3*(1-150.1/632.6)/((5133.5+5267.0)/2)*100=10.256694868463043. Lease debt not added, all cash deducted",
+            "pdfPage": 44,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "税前利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "税前利益",
+          "value": 632.6,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Income p44 / Balance p46. Manual formula 699.3*(1-150.1/632.6)/((5133.5+5267.0)/2)*100=10.256694868463043. Lease debt not added, all cash deducted",
+            "pdfPage": 44,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "期末純資産（非支配持分を含む）",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期末純資産（非支配持分を含む）",
+          "value": 4026.2,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Income p44 / Balance p46. Manual formula 699.3*(1-150.1/632.6)/((5133.5+5267.0)/2)*100=10.256694868463043. Lease debt not added, all cash deducted",
+            "pdfPage": 46,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "期末短期借入",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期末短期借入",
+          "value": 0.7,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Income p44 / Balance p46. Manual formula 699.3*(1-150.1/632.6)/((5133.5+5267.0)/2)*100=10.256694868463043. Lease debt not added, all cash deducted",
+            "pdfPage": 46,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "期末長期借入",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期末長期借入",
+          "value": 1820.1,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Income p44 / Balance p46. Manual formula 699.3*(1-150.1/632.6)/((5133.5+5267.0)/2)*100=10.256694868463043. Lease debt not added, all cash deducted",
+            "pdfPage": 46,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v6",
+          "entity": "IDEX Corporation",
+          "metric": "期末現金",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期末現金",
+          "value": 580,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Income p44 / Balance p46. Manual formula 699.3*(1-150.1/632.6)/((5133.5+5267.0)/2)*100=10.256694868463043. Lease debt not added, all cash deducted",
+            "pdfPage": 46,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v7",
+          "entity": "IDEX Corporation",
+          "metric": "期首純資産（非支配持分を含む）",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期首純資産（非支配持分を含む）",
+          "value": 3794.1,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Income p44 / Balance p46. Manual formula 699.3*(1-150.1/632.6)/((5133.5+5267.0)/2)*100=10.256694868463043. Lease debt not added, all cash deducted",
+            "pdfPage": 46,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v8",
+          "entity": "IDEX Corporation",
+          "metric": "期首短期借入",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期首短期借入",
+          "value": 100.7,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Income p44 / Balance p46. Manual formula 699.3*(1-150.1/632.6)/((5133.5+5267.0)/2)*100=10.256694868463043. Lease debt not added, all cash deducted",
+            "pdfPage": 46,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v9",
+          "entity": "IDEX Corporation",
+          "metric": "期首長期借入",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期首長期借入",
+          "value": 1859.5,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Income p44 / Balance p46. Manual formula 699.3*(1-150.1/632.6)/((5133.5+5267.0)/2)*100=10.256694868463043. Lease debt not added, all cash deducted",
+            "pdfPage": 46,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v10",
+          "entity": "IDEX Corporation",
+          "metric": "期首現金",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期首現金",
+          "value": 620.8,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Income p44 / Balance p46. Manual formula 699.3*(1-150.1/632.6)/((5133.5+5267.0)/2)*100=10.256694868463043. Lease debt not added, all cash deducted",
+            "pdfPage": 46,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "roe",
+      "question": "roe",
+      "definition": "Income p44 Balance p46. 483.2/((3794.7+4027.5)/2)*100=12.354580552785661",
+      "status": "ready",
+      "claim": "簡易ROEは約12.4%",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "IDEX帰属純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "IDEX帰属純利益"
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "期首親会社株主資本",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期首親会社株主資本"
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "期末親会社株主資本",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期末親会社株主資本"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "IDEX帰属純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "IDEX帰属純利益",
+          "value": 483.2,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Income p44 Balance p46. 483.2/((3794.7+4027.5)/2)*100=12.354580552785661",
+            "pdfPage": 44,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "期首親会社株主資本",
+          "periodStart": "2024-12-31",
+          "periodEnd": "2024-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期首親会社株主資本",
+          "value": 3794.7,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Income p44 Balance p46. 483.2/((3794.7+4027.5)/2)*100=12.354580552785661",
+            "pdfPage": 46,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "期末親会社株主資本",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "期末親会社株主資本",
+          "value": 4027.5,
+          "source": {
+            "url": "https://materials.proxyvote.com/Approved/45167R/20260312/10K_627622.PDF",
+            "publishedOn": "2026-02-19",
+            "locator": "Income p44 Balance p46. 483.2/((3794.7+4027.5)/2)*100=12.354580552785661",
+            "pdfPage": 46,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "netdebt",
+      "question": "netdebt",
+      "definition": "Balance Sheet; .4+1751.1-602.1=1149.4",
+      "status": "ready",
+      "claim": "簡易ネット負債は1,149.4",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "現金",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金"
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "短期借入",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期借入"
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "長期借入",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期借入"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "現金",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金",
+          "value": 602.1,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Balance Sheet; .4+1751.1-602.1=1149.4",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "短期借入",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期借入",
+          "value": 0.4,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Balance Sheet; .4+1751.1-602.1=1149.4",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "長期借入",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期借入",
+          "value": 1751.1,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Balance Sheet; .4+1751.1-602.1=1149.4",
+            "pdfPage": 8,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "guidance",
+      "question": "guidance",
+      "definition": "Outlook: current and previous company guidance",
+      "status": "ready",
+      "claim": "オーガニック売上成長6.5〜6.8%、調整後希薄化EPS8.91〜8.96ドル。従来予想はそれぞれ５〜６%、8.70〜8.85ドル",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "新成長下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "新成長下限"
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "新成長上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "新成長上限"
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "新EPS下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "新EPS下限"
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "新EPS上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "新EPS上限"
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "旧成長下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "旧成長下限"
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "旧成長上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "旧成長上限"
+        },
+        {
+          "id": "v6",
+          "entity": "IDEX Corporation",
+          "metric": "旧EPS下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "旧EPS下限"
+        },
+        {
+          "id": "v7",
+          "entity": "IDEX Corporation",
+          "metric": "旧EPS上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "旧EPS上限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "IDEX Corporation",
+          "metric": "新成長下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "新成長下限",
+          "value": 6.5,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Outlook: current and previous company guidance",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "IDEX Corporation",
+          "metric": "新成長上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "新成長上限",
+          "value": 6.8,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Outlook: current and previous company guidance",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "IDEX Corporation",
+          "metric": "新EPS下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "新EPS下限",
+          "value": 8.91,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Outlook: current and previous company guidance",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "IDEX Corporation",
+          "metric": "新EPS上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "新EPS上限",
+          "value": 8.96,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Outlook: current and previous company guidance",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "IDEX Corporation",
+          "metric": "旧成長下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "旧成長下限",
+          "value": 5,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Outlook: current and previous company guidance",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "IDEX Corporation",
+          "metric": "旧成長上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "旧成長上限",
+          "value": 6,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Outlook: current and previous company guidance",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v6",
+          "entity": "IDEX Corporation",
+          "metric": "旧EPS下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "旧EPS下限",
+          "value": 8.7,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Outlook: current and previous company guidance",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v7",
+          "entity": "IDEX Corporation",
+          "metric": "旧EPS上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "米ドル/株",
+          "basis": "company-forecast",
+          "definition": "旧EPS上限",
+          "value": 8.85,
+          "source": {
+            "url": "https://s21.q4cdn.com/862080382/files/doc_earnings/2026/q3/earnings-result/IDEX-Q3-2026-Earnings-Release.pdf",
+            "publishedOn": "2026-10-28",
+            "locator": "Outlook: current and previous company guidance",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
