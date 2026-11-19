@@ -1,0 +1,4484 @@
+{
+  "version": 1,
+  "articleSlug": "company-itochu-2026-11-19",
+  "articleSha256": "30b8f30b05153418d4d6d0e4c6b726e0c68b3cb4c5a7931ef16b25ff5b7eaa70",
+  "checkedAt": "2026-11-19T10:40:51.654Z",
+  "informationCutoff": "2026-11-19T10:38:56.518211+00:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "公式Excel原表・PDFをローカル保存し全比較の期間・単位・範囲を確認。年度表はIFRS17修正後。投資CF純額からgrossCAPEXを作らず、標準FCFとROICは算出保留。ファミマ資産と利益配分の不一致、親子期間差、丸めを明記。親担当が全文・10年原表・H1/CF原表を独立照合。連結/単体表現、CF計算符号、配当分割後表記の指摘を修正し最終全文再確認。 公式Excelは公開日記載なし、publishedOnには取得版確認日を使用し全locatorに明記。 2019-04-26原PDF1頁を追加取得・原文確認し、2017→2018年度収益の断絶をIFRS15総額表示適用で具体化。親・rootの独立確認とも一致。",
+  "comparisons": [
+    {
+      "id": "history-2016",
+      "question": "history-2016",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "|2016|4,838,464|1,093,462|352,221|15.3|389,693|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "売上総利益",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益"
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "会社開示ROE",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE"
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益",
+          "value": 4838464,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!H10; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "売上総利益",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益",
+          "value": 1093462,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!H11; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益",
+          "value": 352221,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!H12; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "会社開示ROE",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE",
+          "value": 15.3,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!H37; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 389693,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!H30; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history-2017",
+      "question": "history-2017",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "|2017|5,510,059|1,210,440|400,333|15.8|388,212|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "売上総利益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益"
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "会社開示ROE",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE"
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益",
+          "value": 5510059,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!I10; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "売上総利益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益",
+          "value": 1210440,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!I11; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益",
+          "value": 400333,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!I12; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "会社開示ROE",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE",
+          "value": 15.8,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!I37; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 388212,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!I30; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history-2018",
+      "question": "history-2018",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "|2018|11,600,485|1,563,772|500,523|17.9|476,551|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "売上総利益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益"
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "会社開示ROE",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE"
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益",
+          "value": 11600485,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!J10; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "売上総利益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益",
+          "value": 1563772,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!J11; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益",
+          "value": 500523,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!J12; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "会社開示ROE",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE",
+          "value": 17.9,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!J37; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 476551,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!J30; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history-2019",
+      "question": "history-2019",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "|2019|10,982,968|1,797,788|501,322|17.0|878,133|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "売上総利益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益"
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "会社開示ROE",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE"
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益",
+          "value": 10982968,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!K10; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "売上総利益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益",
+          "value": 1797788,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!K11; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益",
+          "value": 501322,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!K12; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "会社開示ROE",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE",
+          "value": 17,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!K37; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 878133,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!K30; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history-2020",
+      "question": "history-2020",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "|2020|10,362,628|1,780,747|401,433|12.7|895,900|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "売上総利益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益"
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "会社開示ROE",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE"
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益",
+          "value": 10362628,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!L10; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "売上総利益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益",
+          "value": 1780747,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!L11; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益",
+          "value": 401433,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!L12; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "会社開示ROE",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE",
+          "value": 12.7,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!L37; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 895900,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!L30; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history-2021",
+      "question": "history-2021",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "|2021|12,293,348|1,937,165|820,269|21.8|801,163|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "売上総利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益"
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "会社開示ROE",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE"
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益",
+          "value": 12293348,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!M10; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "売上総利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益",
+          "value": 1937165,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!M11; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益",
+          "value": 820269,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!M12; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "会社開示ROE",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE",
+          "value": 21.8,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!M37; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 801163,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!M30; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history-2022",
+      "question": "history-2022",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "|2022|13,945,633|2,129,903|800,519|17.7|938,058|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "売上総利益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益"
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "会社開示ROE",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE"
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益",
+          "value": 13945633,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!N10; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "売上総利益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益",
+          "value": 2129903,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!N11; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益",
+          "value": 800519,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!N12; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "会社開示ROE",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE",
+          "value": 17.7,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!N37; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 938058,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!N30; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history-2023",
+      "question": "history-2023",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "|2023|14,029,910|2,232,360|801,770|15.6|978,108|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "売上総利益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益"
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "会社開示ROE",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE"
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益",
+          "value": 14029910,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!O10; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "売上総利益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益",
+          "value": 2232360,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!O11; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益",
+          "value": 801770,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!O12; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "会社開示ROE",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE",
+          "value": 15.6,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!O37; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 978108,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!O30; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history-2024",
+      "question": "history-2024",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "|2024|14,724,234|2,376,456|880,251|15.7|997,278|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "売上総利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益"
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "会社開示ROE",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE"
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益",
+          "value": 14724234,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!P10; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "売上総利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益",
+          "value": 2376456,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!P11; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益",
+          "value": 880251,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!P12; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "会社開示ROE",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE",
+          "value": 15.7,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!P37; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 997278,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!P30; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history-2025",
+      "question": "history-2025",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "|2025|14,823,087|2,480,532|900,283|14.6|1,131,837|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "売上総利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益"
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "会社開示ROE",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE"
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益",
+          "value": 14823087,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!Q10; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "売上総利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上総利益",
+          "value": 2480532,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!Q11; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "親会社株主帰属純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社株主帰属純利益",
+          "value": 900283,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!Q12; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "会社開示ROE",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社開示ROE",
+          "value": 14.6,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!Q37; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1131837,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!Q30; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-2021",
+      "question": "cash-2021",
+      "definition": "補助残額=営業CF+投資CF+負数表示リース返済。買収・売却等を含み通常の設備投資控除後FCFと異なる",
+      "status": "ready",
+      "claim": "|2021|801,163|38,637|-266,974|572,826|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "投資CF",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "リース負債返済",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リース負債返済"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 801163,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_08.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "IFRS!J22; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "投資CF",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF",
+          "value": 38637,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_08.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "IFRS!J29; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "リース負債返済",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リース負債返済",
+          "value": -266974,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_08.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "IFRS!J32; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "remaining",
+          "operation": "sum",
+          "inputs": [
+            "v0",
+            "v1",
+            "v2"
+          ],
+          "definition": "営業CF+投資CF+リース返済（負数）",
+          "precision": 0,
+          "value": 572826
+        }
+      ]
+    },
+    {
+      "id": "cash-2022",
+      "question": "cash-2022",
+      "definition": "補助残額=営業CF+投資CF+負数表示リース返済。買収・売却等を含み通常の設備投資控除後FCFと異なる",
+      "status": "ready",
+      "claim": "|2022|938,058|-453,806|-261,271|222,981|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "投資CF",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "リース負債返済",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リース負債返済"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 938058,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_08.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "IFRS!K22; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "投資CF",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF",
+          "value": -453806,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_08.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "IFRS!K29; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "リース負債返済",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リース負債返済",
+          "value": -261271,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_08.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "IFRS!K32; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "remaining",
+          "operation": "sum",
+          "inputs": [
+            "v0",
+            "v1",
+            "v2"
+          ],
+          "definition": "営業CF+投資CF+リース返済（負数）",
+          "precision": 0,
+          "value": 222981
+        }
+      ]
+    },
+    {
+      "id": "cash-2023",
+      "question": "cash-2023",
+      "definition": "補助残額=営業CF+投資CF+負数表示リース返済。買収・売却等を含み通常の設備投資控除後FCFと異なる",
+      "status": "ready",
+      "claim": "|2023|978,108|-205,994|-252,580|519,534|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "投資CF",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "リース負債返済",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リース負債返済"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 978108,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_08.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "IFRS!L22; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "投資CF",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF",
+          "value": -205994,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_08.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "IFRS!L29; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "リース負債返済",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リース負債返済",
+          "value": -252580,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_08.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "IFRS!L32; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "remaining",
+          "operation": "sum",
+          "inputs": [
+            "v0",
+            "v1",
+            "v2"
+          ],
+          "definition": "営業CF+投資CF+リース返済（負数）",
+          "precision": 0,
+          "value": 519534
+        }
+      ]
+    },
+    {
+      "id": "cash-2024",
+      "question": "cash-2024",
+      "definition": "補助残額=営業CF+投資CF+負数表示リース返済。買収・売却等を含み通常の設備投資控除後FCFと異なる",
+      "status": "ready",
+      "claim": "|2024|997,278|-516,267|-260,320|220,691|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "投資CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "リース負債返済",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リース負債返済"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 997278,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_08.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "IFRS!M22; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "投資CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF",
+          "value": -516267,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_08.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "IFRS!M29; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "リース負債返済",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リース負債返済",
+          "value": -260320,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_08.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "IFRS!M32; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "remaining",
+          "operation": "sum",
+          "inputs": [
+            "v0",
+            "v1",
+            "v2"
+          ],
+          "definition": "営業CF+投資CF+リース返済（負数）",
+          "precision": 0,
+          "value": 220691
+        }
+      ]
+    },
+    {
+      "id": "cash-2025",
+      "question": "cash-2025",
+      "definition": "補助残額=営業CF+投資CF+負数表示リース返済。買収・売却等を含み通常の設備投資控除後FCFと異なる",
+      "status": "ready",
+      "claim": "|2025|1,131,837|-388,872|-259,227|483,738|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "投資CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "リース負債返済",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リース負債返済"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 1131837,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_08.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "IFRS!N22; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "投資CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF",
+          "value": -388872,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_08.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "IFRS!N29; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "リース負債返済",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リース負債返済",
+          "value": -259227,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_08.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "IFRS!N32; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "remaining",
+          "operation": "sum",
+          "inputs": [
+            "v0",
+            "v1",
+            "v2"
+          ],
+          "definition": "営業CF+投資CF+リース返済（負数）",
+          "precision": 0,
+          "value": 483738
+        }
+      ]
+    },
+    {
+      "id": "roe-trend",
+      "question": "roe-trend",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "2021年度のROE21.8%に対し2025年度は14.6%。この間に純利益は820,269から900,283百万円へ増えている。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "ROE",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "ROE"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "帰属純利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "帰属純利益"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "ROE",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "ROE"
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "帰属純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "帰属純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "ROE",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "ROE",
+          "value": 21.8,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!M37; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "帰属純利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "帰属純利益",
+          "value": 820269,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!M12; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "ROE",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "ROE",
+          "value": 14.6,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!Q37; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "帰属純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "帰属純利益",
+          "value": 900283,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "2011～!Q12; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "roe-denominator",
+      "question": "roe-denominator",
+      "definition": "900283/((5755072+6589966)/2)*100=14.5859%;１桁丸め14.6%",
+      "status": "ready",
+      "claim": "2025年度の帰属純利益900,283百万円を、期首株主資本5,755,072と期末6,589,966百万円の平均で割ると約14.6%となり、会社公表値と整合する。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "帰属利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "帰属利益"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "期首株主資本",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "期首株主資本"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "期末株主資本",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "期末株主資本"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "帰属利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "帰属利益",
+          "value": 900283,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "Q12; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "期首株主資本",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "期首株主資本",
+          "value": 5755072,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "P26; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "期末株主資本",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "期末株主資本",
+          "value": 6589966,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/files/fd2026j_01.xlsx",
+            "publishedOn": "2026-11-19",
+            "locator": "Q26; 公式配布Excelの2026-11-19取得版。公開日の記載なし、publishedOnは取得版の確認日（発表日を意味しない）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "h1-収益",
+      "question": "h1-収益",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "|収益|7,249,159|7,929,747|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益",
+          "value": 7249159,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 8 原表 収益",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "収益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "収益",
+          "value": 7929747,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 8 原表 収益",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "h1-営業利益",
+      "question": "h1-営業利益",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "|営業利益|354,140|413,188|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 354140,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 2 原表 営業利益",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 413188,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 2 原表 営業利益",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "h1-持分法投資損益",
+      "question": "h1-持分法投資損益",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "|持分法投資損益|160,239|230,502|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "持分法投資損益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "持分法投資損益"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "持分法投資損益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "持分法投資損益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "持分法投資損益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "持分法投資損益",
+          "value": 160239,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 8 原表 持分法投資損益",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "持分法投資損益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "持分法投資損益",
+          "value": 230502,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 8 原表 持分法投資損益",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "h1-税引前利益",
+      "question": "h1-税引前利益",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "|税引前利益|661,959|703,469|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "税引前利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税引前利益"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "税引前利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税引前利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "税引前利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税引前利益",
+          "value": 661959,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 8 原表 税引前利益",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "税引前利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税引前利益",
+          "value": 703469,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 8 原表 税引前利益",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "h1-法人所得税費用",
+      "question": "h1-法人所得税費用",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "|法人所得税費用|143,132|104,770|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "法人所得税費用",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "法人所得税費用"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "法人所得税費用",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "法人所得税費用"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "法人所得税費用",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "法人所得税費用",
+          "value": 143132,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 8 原表 法人所得税費用",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "法人所得税費用",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "法人所得税費用",
+          "value": 104770,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 8 原表 法人所得税費用",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "h1-株主帰属純利益",
+      "question": "h1-株主帰属純利益",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "|株主帰属純利益|500,280|580,472|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "株主帰属純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "株主帰属純利益"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "株主帰属純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "株主帰属純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "株主帰属純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "株主帰属純利益",
+          "value": 500280,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 8 原表 株主帰属純利益",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "株主帰属純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "株主帰属純利益",
+          "value": 580472,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 8 原表 株主帰属純利益",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "tax-bridge",
+      "question": "tax-bridge",
+      "definition": "増減は原表差額、帰属利益成長は16.029%;16.0%へ丸め",
+      "status": "ready",
+      "claim": "帰属純利益は16.0%増。しかし税引前利益の増加41,510百万円に加え、法人所得税費用の減少38,362百万円も増益に寄与した。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "帰属純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "帰属純利益"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "帰属純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "帰属純利益"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "税引前利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税引前利益"
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "税引前利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税引前利益"
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "税費用",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税費用"
+        },
+        {
+          "id": "v5",
+          "entity": "伊藤忠商事",
+          "metric": "税費用",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税費用"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "帰属純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "帰属純利益",
+          "value": 500280,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 8 原表 帰属純利益",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "帰属純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "帰属純利益",
+          "value": 580472,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 8 原表 帰属純利益",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "税引前利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税引前利益",
+          "value": 661959,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 8 原表 税引前利益",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "税引前利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税引前利益",
+          "value": 703469,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 8 原表 税引前利益",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "税費用",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税費用",
+          "value": 143132,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 8 原表 税費用",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "伊藤忠商事",
+          "metric": "税費用",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税費用",
+          "value": 104770,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 8 原表 税費用",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "underlying",
+      "question": "underlying",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "会社が一過性損益を除いて示す「基礎収益」は3,790→5,045億円、うち非資源3,280→4,270億円、資源510→775億円。一過性損益は1,215→760億円だった。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "基礎収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "基礎収益"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "基礎収益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "基礎収益"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "非資源基礎収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "非資源基礎収益"
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "非資源基礎収益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "非資源基礎収益"
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "資源基礎収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "資源基礎収益"
+        },
+        {
+          "id": "v5",
+          "entity": "伊藤忠商事",
+          "metric": "資源基礎収益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "資源基礎収益"
+        },
+        {
+          "id": "v6",
+          "entity": "伊藤忠商事",
+          "metric": "一過性",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "一過性"
+        },
+        {
+          "id": "v7",
+          "entity": "伊藤忠商事",
+          "metric": "一過性",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "一過性"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "基礎収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "基礎収益",
+          "value": 3790,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 8 原表 基礎収益",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "基礎収益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "基礎収益",
+          "value": 5045,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 8 原表 基礎収益",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "非資源基礎収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "非資源基礎収益",
+          "value": 3280,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 8 原表 非資源基礎収益",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "非資源基礎収益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "非資源基礎収益",
+          "value": 4270,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 8 原表 非資源基礎収益",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "資源基礎収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "資源基礎収益",
+          "value": 510,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 8 原表 資源基礎収益",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "伊藤忠商事",
+          "metric": "資源基礎収益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "資源基礎収益",
+          "value": 775,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 8 原表 資源基礎収益",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "v6",
+          "entity": "伊藤忠商事",
+          "metric": "一過性",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "一過性",
+          "value": 1215,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 8 原表 一過性",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "v7",
+          "entity": "伊藤忠商事",
+          "metric": "一過性",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "一過性",
+          "value": 760,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 8 原表 一過性",
+            "kind": "primary",
+            "pdfPage": 8
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-bridge",
+      "question": "cash-bridge",
+      "definition": "資産負債変動差=-299673、受取配当差=-77718、全体営業CF差=-316070。差額の大きさを本文表示",
+      "status": "ready",
+      "claim": "法定営業CFは609,245→293,175百万円。CF計算書の「資産・負債の変動他」は−15,369→−315,042百万円、受取配当金は179,538→101,820百万円だった。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "資産負債変動他",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "資産負債変動他"
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "資産負債変動他",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "資産負債変動他"
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "受取配当",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "受取配当"
+        },
+        {
+          "id": "v5",
+          "entity": "伊藤忠商事",
+          "metric": "受取配当",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "受取配当"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 609245,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 13 原表 営業CF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "営業CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 293175,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 13 原表 営業CF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "資産負債変動他",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "資産負債変動他",
+          "value": -15369,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 13 原表 資産負債変動他",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "資産負債変動他",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "資産負債変動他",
+          "value": -315042,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 13 原表 資産負債変動他",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "受取配当",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "受取配当",
+          "value": 179538,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 13 原表 受取配当",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "伊藤忠商事",
+          "metric": "受取配当",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "受取配当",
+          "value": 101820,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 13 原表 受取配当",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "adjusted-cash",
+      "question": "adjusted-cash",
+      "definition": "定義脚注。概算会社表示。関連数値全文確認",
+      "status": "ready",
+      "claim": "会社の実質営業CFは5,030→4,750億円。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "実質営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "実質営業CF"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "実質営業CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "実質営業CF"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "実質投資CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "実質投資CF"
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "実質投資CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "実質投資CF"
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "実質FCF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "実質FCF"
+        },
+        {
+          "id": "v5",
+          "entity": "伊藤忠商事",
+          "metric": "実質FCF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "実質FCF"
+        },
+        {
+          "id": "v6",
+          "entity": "伊藤忠商事",
+          "metric": "還元後実質FCF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "還元後実質FCF"
+        },
+        {
+          "id": "v7",
+          "entity": "伊藤忠商事",
+          "metric": "還元後実質FCF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "還元後実質FCF"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "実質営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "実質営業CF",
+          "value": 5030,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 13 原表 実質営業CF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "実質営業CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "実質営業CF",
+          "value": 4750,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 13 原表 実質営業CF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "実質投資CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "実質投資CF",
+          "value": -1370,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 13 原表 実質投資CF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "実質投資CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "実質投資CF",
+          "value": -3590,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 13 原表 実質投資CF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "実質FCF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "実質FCF",
+          "value": 3660,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 13 原表 実質FCF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "伊藤忠商事",
+          "metric": "実質FCF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "実質FCF",
+          "value": 1160,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 13 原表 実質FCF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "v6",
+          "entity": "伊藤忠商事",
+          "metric": "還元後実質FCF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "還元後実質FCF",
+          "value": 1270,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 13 原表 還元後実質FCF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "v7",
+          "entity": "伊藤忠商事",
+          "metric": "還元後実質FCF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "還元後実質FCF",
+          "value": -2110,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 13 原表 還元後実質FCF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "statutory-financing",
+      "question": "statutory-financing",
+      "definition": "還元支出153960+177194=331154。資金紐付け断定なし",
+      "status": "ready",
+      "claim": "同上期の社債・借入による純調達は520,781百万円、親会社株主への配当支払153,960と自己株式の増減177,194の支出合計は331,154百万円。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "借入社債純調達",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "借入社債純調達"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "配当支払",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "配当支払"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "自己株式支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "自己株式支出"
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "有形固定資産等取得売却純額",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形固定資産等取得売却純額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "借入社債純調達",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "借入社債純調達",
+          "value": 520781,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 13 原表 借入社債純調達",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "配当支払",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "配当支払",
+          "value": 153960,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 13 原表 配当支払",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "自己株式支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "自己株式支出",
+          "value": 177194,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 13 原表 自己株式支出",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "有形固定資産等取得売却純額",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形固定資産等取得売却純額",
+          "value": -118018,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 13 原表 有形固定資産等取得売却純額",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fm-allocation",
+      "question": "fm-allocation",
+      "definition": "所有比率ではなくセグメント利益配分。資産負債は食料",
+      "status": "ready",
+      "claim": "帰属純利益の７割を第８へ配分する。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "第８社内利益配分比率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "第８社内利益配分比率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "第８社内利益配分比率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "第８社内利益配分比率",
+          "value": 70,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 14 原表 第８社内利益配分比率",
+            "kind": "primary",
+            "pdfPage": 14
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fm-takein",
+      "question": "fm-takein",
+      "definition": "ポケットカード含む。表示丸め115+268=383は382と一致しない",
+      "status": "ready",
+      "claim": "説明資料のファミマ当社取込合計は373→382億円。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "FM取込合計",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "FM取込合計"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "FM取込合計",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "FM取込合計"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "食料配分",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "食料配分"
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "第８配分",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "第８配分"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "FM取込合計",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "FM取込合計",
+          "value": 373,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 23 原表 FM取込合計",
+            "kind": "primary",
+            "pdfPage": 23
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "FM取込合計",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "FM取込合計",
+          "value": 382,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 23 原表 FM取込合計",
+            "kind": "primary",
+            "pdfPage": 23
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "食料配分",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "食料配分",
+          "value": 115,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 23 原表 食料配分",
+            "kind": "primary",
+            "pdfPage": 23
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "第８配分",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "第８配分",
+          "value": 268,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 26 原表 第８配分",
+            "kind": "primary",
+            "pdfPage": 26
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "eighth",
+      "question": "eighth",
+      "definition": "資産と社内配分純利益の範囲不一致、ROIC計算禁止",
+      "status": "ready",
+      "claim": "第８の９月末資産は973億円、上期純利益は245億円。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "第８資産",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "第８資産"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "第８純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "第８純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "第８資産",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "第８資産",
+          "value": 973,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 26 原表 第８資産",
+            "kind": "primary",
+            "pdfPage": 26
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "第８純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "第８純利益",
+          "value": 245,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 26 原表 第８純利益",
+            "kind": "primary",
+            "pdfPage": 26
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fm-business",
+      "question": "fm-business",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "ファミマ自身の2026年３〜８月の事業利益は617→651億円、増加34億円のうち21億円は広告・メディア事業を含む国内外事業会社関連収入増等による。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "ファミリーマート",
+          "metric": "事業利益",
+          "periodStart": "2025-03-01",
+          "periodEnd": "2025-08-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "事業利益"
+        },
+        {
+          "id": "v1",
+          "entity": "ファミリーマート",
+          "metric": "事業利益",
+          "periodStart": "2026-03-01",
+          "periodEnd": "2026-08-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "事業利益"
+        },
+        {
+          "id": "v2",
+          "entity": "ファミリーマート",
+          "metric": "増分",
+          "periodStart": "2026-03-01",
+          "periodEnd": "2026-08-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "増分"
+        },
+        {
+          "id": "v3",
+          "entity": "ファミリーマート",
+          "metric": "関連収入増等",
+          "periodStart": "2026-03-01",
+          "periodEnd": "2026-08-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "関連収入増等"
+        },
+        {
+          "id": "v4",
+          "entity": "ファミリーマート",
+          "metric": "販促採算等",
+          "periodStart": "2026-03-01",
+          "periodEnd": "2026-08-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "販促採算等"
+        },
+        {
+          "id": "v5",
+          "entity": "ファミリーマート",
+          "metric": "経費等",
+          "periodStart": "2026-03-01",
+          "periodEnd": "2026-08-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "経費等"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "ファミリーマート",
+          "metric": "事業利益",
+          "periodStart": "2025-03-01",
+          "periodEnd": "2025-08-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "事業利益",
+          "value": 617,
+          "source": {
+            "url": "https://www.family.co.jp/content/dam/family/company/familymart/overview/261014_setumeishiryo.pdf",
+            "publishedOn": "2026-10-14",
+            "locator": "PDF 2 原表 事業利益",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "ファミリーマート",
+          "metric": "事業利益",
+          "periodStart": "2026-03-01",
+          "periodEnd": "2026-08-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "事業利益",
+          "value": 651,
+          "source": {
+            "url": "https://www.family.co.jp/content/dam/family/company/familymart/overview/261014_setumeishiryo.pdf",
+            "publishedOn": "2026-10-14",
+            "locator": "PDF 2 原表 事業利益",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "ファミリーマート",
+          "metric": "増分",
+          "periodStart": "2026-03-01",
+          "periodEnd": "2026-08-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "増分",
+          "value": 34,
+          "source": {
+            "url": "https://www.family.co.jp/content/dam/family/company/familymart/overview/261014_setumeishiryo.pdf",
+            "publishedOn": "2026-10-14",
+            "locator": "PDF 2 原表 増分",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "ファミリーマート",
+          "metric": "関連収入増等",
+          "periodStart": "2026-03-01",
+          "periodEnd": "2026-08-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "関連収入増等",
+          "value": 21,
+          "source": {
+            "url": "https://www.family.co.jp/content/dam/family/company/familymart/overview/261014_setumeishiryo.pdf",
+            "publishedOn": "2026-10-14",
+            "locator": "PDF 2 原表 関連収入増等",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "ファミリーマート",
+          "metric": "販促採算等",
+          "periodStart": "2026-03-01",
+          "periodEnd": "2026-08-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "販促採算等",
+          "value": 14,
+          "source": {
+            "url": "https://www.family.co.jp/content/dam/family/company/familymart/overview/261014_setumeishiryo.pdf",
+            "publishedOn": "2026-10-14",
+            "locator": "PDF 2 原表 販促採算等",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "ファミリーマート",
+          "metric": "経費等",
+          "periodStart": "2026-03-01",
+          "periodEnd": "2026-08-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "経費等",
+          "value": -1,
+          "source": {
+            "url": "https://www.family.co.jp/content/dam/family/company/familymart/overview/261014_setumeishiryo.pdf",
+            "publishedOn": "2026-10-14",
+            "locator": "PDF 2 原表 経費等",
+            "kind": "primary",
+            "pdfPage": 2
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "debt",
+      "question": "debt",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "NET DERは2026年３月末0.46倍から９月末0.52倍へ上昇した。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "NET DER",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "NET DER"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "NET DER",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "NET DER"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "リース短期",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リース短期"
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "リース長期",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リース長期"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "NET DER",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "NET DER",
+          "value": 0.46,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 6 原表 NET DER",
+            "kind": "primary",
+            "pdfPage": 6
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "NET DER",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "倍",
+          "basis": "actual",
+          "definition": "NET DER",
+          "value": 0.52,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 6 原表 NET DER",
+            "kind": "primary",
+            "pdfPage": 6
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "リース短期",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リース短期",
+          "value": 241644,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 11 原表 リース短期",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "リース長期",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リース長期",
+          "value": 860101,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/04/27_2nd_01.pdf",
+            "publishedOn": "2026-11-04",
+            "locator": "PDF 11 原表 リース長期",
+            "kind": "primary",
+            "pdfPage": 11
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "forecast",
+      "question": "forecast",
+      "definition": "原表実績、単位・期間を一致させて比較",
+      "status": "ready",
+      "claim": "2026年度の会社計画は純利益9,500億円、基礎収益9,000億円。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "純利益"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "基礎収益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "基礎収益"
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "実質営業CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "兆円",
+          "basis": "company-forecast",
+          "definition": "実質営業CF"
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "成長投資",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "兆円",
+          "basis": "company-forecast",
+          "definition": "成長投資"
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "EXIT",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "兆円",
+          "basis": "company-forecast",
+          "definition": "EXIT"
+        },
+        {
+          "id": "v5",
+          "entity": "伊藤忠商事",
+          "metric": "ネット投資",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "兆円",
+          "basis": "company-forecast",
+          "definition": "ネット投資"
+        },
+        {
+          "id": "v6",
+          "entity": "伊藤忠商事",
+          "metric": "配当下限",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円/株",
+          "basis": "company-forecast",
+          "definition": "配当下限"
+        },
+        {
+          "id": "v7",
+          "entity": "伊藤忠商事",
+          "metric": "自己株式取得下限",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "自己株式取得下限"
+        },
+        {
+          "id": "v8",
+          "entity": "伊藤忠商事",
+          "metric": "総還元性向",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "総還元性向"
+        },
+        {
+          "id": "v9",
+          "entity": "伊藤忠商事",
+          "metric": "NET DER目途",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "倍",
+          "basis": "company-forecast",
+          "definition": "NET DER目途"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "純利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "純利益",
+          "value": 9500,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 10 原表 純利益",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "基礎収益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "基礎収益",
+          "value": 9000,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 10 原表 基礎収益",
+            "kind": "primary",
+            "pdfPage": 10
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "伊藤忠商事",
+          "metric": "実質営業CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "兆円",
+          "basis": "company-forecast",
+          "definition": "実質営業CF",
+          "value": 1,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 13 原表 実質営業CF",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "伊藤忠商事",
+          "metric": "成長投資",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "兆円",
+          "basis": "company-forecast",
+          "definition": "成長投資",
+          "value": 1.5,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 13 原表 成長投資",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "伊藤忠商事",
+          "metric": "EXIT",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "兆円",
+          "basis": "company-forecast",
+          "definition": "EXIT",
+          "value": 0.3,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 13 原表 EXIT",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "伊藤忠商事",
+          "metric": "ネット投資",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "兆円",
+          "basis": "company-forecast",
+          "definition": "ネット投資",
+          "value": 1.2,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 13 原表 ネット投資",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "v6",
+          "entity": "伊藤忠商事",
+          "metric": "配当下限",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円/株",
+          "basis": "company-forecast",
+          "definition": "配当下限",
+          "value": 44,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 15 原表 配当下限",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        },
+        {
+          "id": "v7",
+          "entity": "伊藤忠商事",
+          "metric": "自己株式取得下限",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "自己株式取得下限",
+          "value": 3000,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 15 原表 自己株式取得下限",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        },
+        {
+          "id": "v8",
+          "entity": "伊藤忠商事",
+          "metric": "総還元性向",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "総還元性向",
+          "value": 64,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 15 原表 総還元性向",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        },
+        {
+          "id": "v9",
+          "entity": "伊藤忠商事",
+          "metric": "NET DER目途",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "倍",
+          "basis": "company-forecast",
+          "definition": "NET DER目途",
+          "value": 0.6,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/financial_statements/2027/__icsFiles/afieldfile/2026/11/10/27_2nd_02.pdf",
+            "publishedOn": "2026-11-10",
+            "locator": "PDF 13 原表 NET DER目途",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "ifrs15-revenue-discontinuity",
+      "question": "2017年度と2018年度の収益増加の表示変更要因",
+      "definition": "IFRS15適用に伴うgross表示を会社が主要因と説明。数量成長率と解釈しない",
+      "status": "ready",
+      "claim": "特に2017年度から2018年度への収益の段差は、IFRS第15号の適用で、顧客に移転する前に伊藤忠及び子会社が財・サービスの支配を獲得する取引を総額（グロス）表示したことが主要因と会社は説明している。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "IFRS収益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2018年度よりIFRS15本人取引gross表示、前年度と表示基準が異なる"
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "IFRS収益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2018年度よりIFRS15本人取引gross表示、前年度と表示基準が異なる"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "伊藤忠商事",
+          "metric": "IFRS収益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2018年度よりIFRS15本人取引gross表示、前年度と表示基準が異なる",
+          "value": 5510059,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/news/2019/__icsFiles/afieldfile/2019/04/26/ITC190426_3_J.pdf",
+            "publishedOn": "2019-04-26",
+            "locator": "前期実績との差異 表および２．差異の理由",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "伊藤忠商事",
+          "metric": "IFRS収益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "2018年度よりIFRS15本人取引gross表示、前年度と表示基準が異なる",
+          "value": 11600485,
+          "source": {
+            "url": "https://www.itochu.co.jp/ja/ir/news/2019/__icsFiles/afieldfile/2019/04/26/ITC190426_3_J.pdf",
+            "publishedOn": "2019-04-26",
+            "locator": "前期実績との差異 表および２．差異の理由",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}

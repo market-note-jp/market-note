@@ -1,0 +1,311 @@
+{
+  "version": 1,
+  "articleSlug": "theme-fed-hold-borrowing-cost-2026-11-19",
+  "articleSha256": "e4a89f86cece8948808913547cc4486e459fe2a20e39ce2fa6df0d5dd171f0e8",
+  "checkedAt": "2026-11-19T10:37:38.424776+00:00",
+  "informationCutoff": "2026-11-19T19:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "予定比較はFFレンジ・採決数・同日付のUST10年/OAS。全原表読了、親の独立転記とも一致。差分5bp/29bp（本文はポイント表記）再計算。国債とOASを合算せず、政策据え置きによる因果・議事要旨公表後反応・AI固有指標と解釈しない。固定/変動/借換えは機序説明で架空実績なし。次回利上げ予測・発行量・貸倒れ主張なし。発表は11月18日、会合は10月27–28日。比較観測終点11月17日。 親の独立レビューで主要事実・演算を照合済み。追加した借換え例は明示された仮定でありactual/marketデータではないためillustrativeCalculationsに別記し、公表値の観測として登録しない。 10月29日の先行記事と論点の差を本文で説明し、既存URLを内部リンクした。数値主張に変更なし。",
+  "comparisons": [
+    {
+      "id": "treasury",
+      "question": "10-year daily Treasury par yieldの比較",
+      "definition": "10-year daily Treasury par yieldを同一定義で比較。日付は観測日。",
+      "status": "ready",
+      "claim": "|米国債10年パー利回り|5.05％|5.10％|＋0.05ポイント|",
+      "requiredInputs": [
+        {
+          "id": "treasury0",
+          "entity": "U.S. Treasury",
+          "metric": "10-year daily Treasury par yield",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "percent",
+          "basis": "market",
+          "definition": "10-year daily Treasury par yield"
+        },
+        {
+          "id": "treasury1",
+          "entity": "U.S. Treasury",
+          "metric": "10-year daily Treasury par yield",
+          "periodStart": "2026-11-17",
+          "periodEnd": "2026-11-17",
+          "unit": "percent",
+          "basis": "market",
+          "definition": "10-year daily Treasury par yield"
+        }
+      ],
+      "observations": [
+        {
+          "id": "treasury0",
+          "entity": "U.S. Treasury",
+          "metric": "10-year daily Treasury par yield",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "percent",
+          "basis": "market",
+          "definition": "10-year daily Treasury par yield",
+          "value": 5.05,
+          "source": {
+            "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202610",
+            "publishedOn": "2026-10-28",
+            "locator": "10/28/2026 row, 10 Yr column",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "treasury1",
+          "entity": "U.S. Treasury",
+          "metric": "10-year daily Treasury par yield",
+          "periodStart": "2026-11-17",
+          "periodEnd": "2026-11-17",
+          "unit": "percent",
+          "basis": "market",
+          "definition": "10-year daily Treasury par yield",
+          "value": 5.1,
+          "source": {
+            "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value_month=202611",
+            "publishedOn": "2026-11-17",
+            "locator": "11/17/2026 row, 10 Yr column",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "treasurydelta",
+          "operation": "difference",
+          "inputs": [
+            "treasury1",
+            "treasury0"
+          ],
+          "definition": "後日値 − 前日付値。百分率の差はpercentage points。",
+          "precision": 2,
+          "value": 0.05
+        }
+      ]
+    },
+    {
+      "id": "oas",
+      "question": "ICE BofA US High Yield Index OAS daily close, not seasonally adjustedの比較",
+      "definition": "ICE BofA US High Yield Index OAS daily close, not seasonally adjustedを同一定義で比較。日付は観測日。",
+      "status": "ready",
+      "claim": "|米国ハイイールド債のOAS|3.14％|3.43％|＋0.29ポイント|",
+      "requiredInputs": [
+        {
+          "id": "oas0",
+          "entity": "ICE Data Indices, LLC",
+          "metric": "ICE BofA US High Yield Index OAS daily close, not seasonally adjusted",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "percent",
+          "basis": "market",
+          "definition": "ICE BofA US High Yield Index OAS daily close, not seasonally adjusted"
+        },
+        {
+          "id": "oas1",
+          "entity": "ICE Data Indices, LLC",
+          "metric": "ICE BofA US High Yield Index OAS daily close, not seasonally adjusted",
+          "periodStart": "2026-11-17",
+          "periodEnd": "2026-11-17",
+          "unit": "percent",
+          "basis": "market",
+          "definition": "ICE BofA US High Yield Index OAS daily close, not seasonally adjusted"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oas0",
+          "entity": "ICE Data Indices, LLC",
+          "metric": "ICE BofA US High Yield Index OAS daily close, not seasonally adjusted",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "percent",
+          "basis": "market",
+          "definition": "ICE BofA US High Yield Index OAS daily close, not seasonally adjusted",
+          "value": 3.14,
+          "source": {
+            "url": "https://fred.stlouisfed.org/data/BAMLH0A0HYM2",
+            "publishedOn": "2026-11-18",
+            "locator": "2026-10-28 observation; source ICE Data Indices",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oas1",
+          "entity": "ICE Data Indices, LLC",
+          "metric": "ICE BofA US High Yield Index OAS daily close, not seasonally adjusted",
+          "periodStart": "2026-11-17",
+          "periodEnd": "2026-11-17",
+          "unit": "percent",
+          "basis": "market",
+          "definition": "ICE BofA US High Yield Index OAS daily close, not seasonally adjusted",
+          "value": 3.43,
+          "source": {
+            "url": "https://fred.stlouisfed.org/data/BAMLH0A0HYM2",
+            "publishedOn": "2026-11-18",
+            "locator": "2026-11-17 observation; source ICE Data Indices",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "oasdelta",
+          "operation": "difference",
+          "inputs": [
+            "oas1",
+            "oas0"
+          ],
+          "definition": "後日値 − 前日付値。百分率の差はpercentage points。",
+          "precision": 2,
+          "value": 0.29
+        }
+      ]
+    },
+    {
+      "id": "range",
+      "question": "FF target range lower and upper boundの比較",
+      "definition": "FF target range lower and upper boundを同一定義で比較。日付は観測日。",
+      "status": "ready",
+      "claim": "政策金利であるFF金利の誘導目標レンジを3.75〜4.00％に維持した。",
+      "requiredInputs": [
+        {
+          "id": "range0",
+          "entity": "FOMC",
+          "metric": "FF target range lower and upper bound",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "FF target range lower and upper bound"
+        },
+        {
+          "id": "range1",
+          "entity": "FOMC",
+          "metric": "FF target range lower and upper bound",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "FF target range lower and upper bound"
+        }
+      ],
+      "observations": [
+        {
+          "id": "range0",
+          "entity": "FOMC",
+          "metric": "FF target range lower and upper bound",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "FF target range lower and upper bound",
+          "value": 3.75,
+          "source": {
+            "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+            "publishedOn": "2026-10-28",
+            "locator": "Statement: target range lower bound",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "range1",
+          "entity": "FOMC",
+          "metric": "FF target range lower and upper bound",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "percent",
+          "basis": "actual",
+          "definition": "FF target range lower and upper bound",
+          "value": 4,
+          "source": {
+            "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+            "publishedOn": "2026-10-28",
+            "locator": "Statement: target range upper bound",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "vote",
+      "question": "Voting members for and against maintaining target rangeの比較",
+      "definition": "Voting members for and against maintaining target rangeを同一定義で比較。日付は観測日。",
+      "status": "ready",
+      "claim": "採決は賛成10、反対2。",
+      "requiredInputs": [
+        {
+          "id": "vote0",
+          "entity": "FOMC",
+          "metric": "Voting members for and against maintaining target range",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "members",
+          "basis": "actual",
+          "definition": "Voting members for and against maintaining target range"
+        },
+        {
+          "id": "vote1",
+          "entity": "FOMC",
+          "metric": "Voting members for and against maintaining target range",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "members",
+          "basis": "actual",
+          "definition": "Voting members for and against maintaining target range"
+        }
+      ],
+      "observations": [
+        {
+          "id": "vote0",
+          "entity": "FOMC",
+          "metric": "Voting members for and against maintaining target range",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "members",
+          "basis": "actual",
+          "definition": "Voting members for and against maintaining target range",
+          "value": 10,
+          "source": {
+            "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+            "publishedOn": "2026-10-28",
+            "locator": "Statement: votes for",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "vote1",
+          "entity": "FOMC",
+          "metric": "Voting members for and against maintaining target range",
+          "periodStart": "2026-10-28",
+          "periodEnd": "2026-10-28",
+          "unit": "members",
+          "basis": "actual",
+          "definition": "Voting members for and against maintaining target range",
+          "value": 2,
+          "source": {
+            "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+            "publishedOn": "2026-10-28",
+            "locator": "Statement: votes against",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ],
+  "illustrativeCalculations": [
+    {
+      "definition": "同額元本の通年借換え、手数料・ヘッジ・税なし。実在企業の予測ではない。",
+      "principalUSD": 100000000,
+      "oldRateAssumption": 0.04,
+      "newRateAssumption": 0.06,
+      "oldAnnualInterestUSD": 4000000,
+      "newAnnualInterestUSD": 6000000,
+      "increaseUSD": 2000000,
+      "verification": "100000000 * (0.06 - 0.04) = 2000000; reviewed independently with parent suggestion."
+    }
+  ]
+}
