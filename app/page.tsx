@@ -10,6 +10,15 @@ import BreadthHomeCard from "./market-breadth/home-card";
 
 const legacyArticles = [
 {
+  "kind": "週次レポート",
+  "theme": "日米株・AI投資",
+  "date": "2026-11-21 07:59",
+  "dateTime": "2026-11-21T07:59:36+09:00",
+  "title": "AI株の売りが日米に波及、NVIDIA決算後も資金調達と会計に警戒｜11月16日〜20日",
+  "excerpt": "日米4指数の週間騰落率、NVIDIA決算と調査報道、Anthropic上場、日本の物価、米国債・円・原油、翌週のPCEと休場日を整理する。",
+  "href": "/articles/weekly-2026-11-16"
+},
+{
   "kind": "企業レポート",
   "theme": "個別企業",
   "date": "2026-11-20 20:05",
