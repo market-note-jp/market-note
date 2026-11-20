@@ -1,0 +1,4895 @@
+{
+  "version": 1,
+  "articleSlug": "company-calbee-2026-11-20",
+  "articleSha256": "6fc5ecbd468c48e1bf6421bda897a6ba7640015cb9357068e8037cf2087cf0a8",
+  "checkedAt": "2026-11-20T11:05:09.648Z",
+  "informationCutoff": "2026-11-20T11:01:44.386372+00:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "原PDFと公式Excelを保存し原表照合。売上リベート表示変更、海外為替/連結範囲、地域売上控除前、現金と会計設備投資の差を明記。簡易ROICは全入力・計算式保存、会社値と同一定義比較なし。財務データPDF/HTMLは公開日不詳のため取得日をpublishedOnに置いたことをlocatorに明記。親担当・独立レビュアーが原表確認。国内事業CF未開示、国内減益要因の範囲、北米既存費用、借入の１年内返済分、ROIC金額の表現を反映。5月14日決算説明PDF８頁の前通期海外最高益を追記し原表確認。 短信PDF6の営業CF減少主因（その他中の未収入金）を本文へ反映。海外利益の対計画超過・EBITDA増と率低下の両面を追記。 最終独立レビュー後、実際の公開準備日時を記事に付与。本文・定義・数値はレビュー済み最終版を維持。",
+  "comparisons": [
+    {
+      "id": "history2017",
+      "question": "history2017",
+      "definition": "原表の期間・単位・定義を照合",
+      "status": "ready",
+      "claim": "|2017/3|252,420|28,841|18,605|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上高",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "親会社帰属純利益",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上高",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 252420,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 売上高。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 28841,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 営業利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "親会社帰属純利益",
+          "periodStart": "2016-04-01",
+          "periodEnd": "2017-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属純利益",
+          "value": 18605,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 親会社帰属純利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2018",
+      "question": "history2018",
+      "definition": "原表の期間・単位・定義を照合",
+      "status": "ready",
+      "claim": "|2018/3|251,575|26,828|17,330|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上高",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "親会社帰属純利益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上高",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 251575,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 売上高。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 26828,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 営業利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "親会社帰属純利益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属純利益",
+          "value": 17330,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 親会社帰属純利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2019",
+      "question": "history2019",
+      "definition": "原表の期間・単位・定義を照合",
+      "status": "ready",
+      "claim": "|2019/3|248,655|26,964|19,429|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上高",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "親会社帰属純利益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上高",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 248655,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 売上高。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 26964,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 営業利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "親会社帰属純利益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属純利益",
+          "value": 19429,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 親会社帰属純利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2020",
+      "question": "history2020",
+      "definition": "原表の期間・単位・定義を照合",
+      "status": "ready",
+      "claim": "|2020/3|255,938|27,664|17,539|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上高",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "親会社帰属純利益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上高",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 255938,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 売上高。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 27664,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 営業利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "親会社帰属純利益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属純利益",
+          "value": 17539,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 親会社帰属純利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2021",
+      "question": "history2021",
+      "definition": "原表の期間・単位・定義を照合",
+      "status": "ready",
+      "claim": "|2021/3|266,745|27,064|17,682|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上高",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "親会社帰属純利益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上高",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 266745,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 売上高。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 27064,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 営業利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "親会社帰属純利益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属純利益",
+          "value": 17682,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 親会社帰属純利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2022",
+      "question": "history2022",
+      "definition": "原表の期間・単位・定義を照合",
+      "status": "ready",
+      "claim": "|2022/3|245,419|25,135|18,053|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上高",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "親会社帰属純利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上高",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 245419,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 売上高。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 25135,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 営業利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "親会社帰属純利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属純利益",
+          "value": 18053,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 親会社帰属純利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2023",
+      "question": "history2023",
+      "definition": "原表の期間・単位・定義を照合",
+      "status": "ready",
+      "claim": "|2023/3|279,315|22,233|14,772|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上高",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "親会社帰属純利益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上高",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 279315,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 売上高。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 22233,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 営業利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "親会社帰属純利益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属純利益",
+          "value": 14772,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 親会社帰属純利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2024",
+      "question": "history2024",
+      "definition": "原表の期間・単位・定義を照合",
+      "status": "ready",
+      "claim": "|2024/3|303,027|27,304|19,886|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上高",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "親会社帰属純利益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上高",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 303027,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 売上高。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 27304,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 営業利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "親会社帰属純利益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属純利益",
+          "value": 19886,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 親会社帰属純利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2025",
+      "question": "history2025",
+      "definition": "原表の期間・単位・定義を照合",
+      "status": "ready",
+      "claim": "|2025/3|322,564|29,066|20,874|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上高",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "親会社帰属純利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上高",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 322564,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 売上高。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 29066,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 営業利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "親会社帰属純利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属純利益",
+          "value": 20874,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 親会社帰属純利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "history2026",
+      "question": "history2026",
+      "definition": "原表の期間・単位・定義を照合",
+      "status": "ready",
+      "claim": "|2026/3|340,151|26,173|17,329|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "親会社帰属純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属純利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 340151,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 売上高。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 26173,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 営業利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "親会社帰属純利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "親会社帰属純利益",
+          "value": 17329,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結損益計算書 親会社帰属純利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cf2022",
+      "question": "cf2022",
+      "definition": "FCF=営業CF+負数の有形取得支出+負数の無形取得支出。売却・買収・配当等除外",
+      "status": "ready",
+      "claim": "|2022/3|22,327|12,491|1,024|8,812|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "営業CF",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "有形取得支出",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "無形取得支出",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "営業CF",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 22327,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結CF計算書 営業CF。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "有形取得支出",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出",
+          "value": -12491,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結CF計算書 有形取得支出。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "無形取得支出",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出",
+          "value": -1024,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結CF計算書 無形取得支出。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "v0",
+            "v1",
+            "v2"
+          ],
+          "definition": "営業CFから現金有形無形取得支出を控除",
+          "precision": 0,
+          "value": 8812
+        }
+      ]
+    },
+    {
+      "id": "cf2023",
+      "question": "cf2023",
+      "definition": "FCF=営業CF+負数の有形取得支出+負数の無形取得支出。売却・買収・配当等除外",
+      "status": "ready",
+      "claim": "|2023/3|19,310|25,750|966|-7,406|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "営業CF",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "有形取得支出",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "無形取得支出",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "営業CF",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 19310,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結CF計算書 営業CF。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "有形取得支出",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出",
+          "value": -25750,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結CF計算書 有形取得支出。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "無形取得支出",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出",
+          "value": -966,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結CF計算書 無形取得支出。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "v0",
+            "v1",
+            "v2"
+          ],
+          "definition": "営業CFから現金有形無形取得支出を控除",
+          "precision": 0,
+          "value": -7406
+        }
+      ]
+    },
+    {
+      "id": "cf2024",
+      "question": "cf2024",
+      "definition": "FCF=営業CF+負数の有形取得支出+負数の無形取得支出。売却・買収・配当等除外",
+      "status": "ready",
+      "claim": "|2024/3|24,350|30,591|595|-6,836|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "営業CF",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "有形取得支出",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "無形取得支出",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "営業CF",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 24350,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結CF計算書 営業CF。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "有形取得支出",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出",
+          "value": -30591,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結CF計算書 有形取得支出。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "無形取得支出",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出",
+          "value": -595,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結CF計算書 無形取得支出。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "v0",
+            "v1",
+            "v2"
+          ],
+          "definition": "営業CFから現金有形無形取得支出を控除",
+          "precision": 0,
+          "value": -6836
+        }
+      ]
+    },
+    {
+      "id": "cf2025",
+      "question": "cf2025",
+      "definition": "FCF=営業CF+負数の有形取得支出+負数の無形取得支出。売却・買収・配当等除外",
+      "status": "ready",
+      "claim": "|2025/3|39,100|28,106|1,407|9,587|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "営業CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "有形取得支出",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "無形取得支出",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "営業CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 39100,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結CF計算書 営業CF。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "有形取得支出",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出",
+          "value": -28106,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結CF計算書 有形取得支出。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "無形取得支出",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出",
+          "value": -1407,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結CF計算書 無形取得支出。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "v0",
+            "v1",
+            "v2"
+          ],
+          "definition": "営業CFから現金有形無形取得支出を控除",
+          "precision": 0,
+          "value": 9587
+        }
+      ]
+    },
+    {
+      "id": "cf2026",
+      "question": "cf2026",
+      "definition": "FCF=営業CF+負数の有形取得支出+負数の無形取得支出。売却・買収・配当等除外",
+      "status": "ready",
+      "claim": "|2026/3|35,596|23,395|1,577|10,624|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "有形取得支出",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "無形取得支出",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 35596,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結CF計算書 営業CF。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "有形取得支出",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出",
+          "value": -23395,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結CF計算書 有形取得支出。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "無形取得支出",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出",
+          "value": -1577,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "連結CF計算書 無形取得支出。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 5
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "v0",
+            "v1",
+            "v2"
+          ],
+          "definition": "営業CFから現金有形無形取得支出を控除",
+          "precision": 0,
+          "value": 10624
+        }
+      ]
+    },
+    {
+      "id": "roic2025",
+      "question": "roic2025",
+      "definition": "NOPAT=29066*(1-7891/29397)=21263.84991665816;平均投下資本=(190403+200602)/2;ROIC=10.876510487926323%",
+      "status": "ready",
+      "claim": "2025年３月期は約10.9%",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "純資産",
+          "periodStart": "2024-03-31",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "純資産"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "短期借入",
+          "periodStart": "2024-03-31",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "短期借入"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "長期借入流動",
+          "periodStart": "2024-03-31",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期借入流動"
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "長期借入",
+          "periodStart": "2024-03-31",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期借入"
+        },
+        {
+          "id": "v4",
+          "entity": "カルビー",
+          "metric": "流動リース",
+          "periodStart": "2024-03-31",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "流動リース"
+        },
+        {
+          "id": "v5",
+          "entity": "カルビー",
+          "metric": "固定リース",
+          "periodStart": "2024-03-31",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "固定リース"
+        },
+        {
+          "id": "v6",
+          "entity": "カルビー",
+          "metric": "現金同等物",
+          "periodStart": "2024-03-31",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金同等物"
+        },
+        {
+          "id": "v7",
+          "entity": "カルビー",
+          "metric": "純資産",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "純資産"
+        },
+        {
+          "id": "v8",
+          "entity": "カルビー",
+          "metric": "短期借入",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "短期借入"
+        },
+        {
+          "id": "v9",
+          "entity": "カルビー",
+          "metric": "長期借入流動",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期借入流動"
+        },
+        {
+          "id": "v10",
+          "entity": "カルビー",
+          "metric": "長期借入",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期借入"
+        },
+        {
+          "id": "v11",
+          "entity": "カルビー",
+          "metric": "流動リース",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "流動リース"
+        },
+        {
+          "id": "v12",
+          "entity": "カルビー",
+          "metric": "固定リース",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "固定リース"
+        },
+        {
+          "id": "v13",
+          "entity": "カルビー",
+          "metric": "現金同等物",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金同等物"
+        },
+        {
+          "id": "v14",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "v15",
+          "entity": "カルビー",
+          "metric": "税費用合計",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税費用合計"
+        },
+        {
+          "id": "v16",
+          "entity": "カルビー",
+          "metric": "税前利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税前利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "純資産",
+          "periodStart": "2024-03-31",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "純資産",
+          "value": 201086,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 純資産。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "短期借入",
+          "periodStart": "2024-03-31",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "短期借入",
+          "value": 1433,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 短期借入。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "長期借入流動",
+          "periodStart": "2024-03-31",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期借入流動",
+          "value": 0,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 長期借入流動。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "長期借入",
+          "periodStart": "2024-03-31",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期借入",
+          "value": 25000,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 長期借入。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "カルビー",
+          "metric": "流動リース",
+          "periodStart": "2024-03-31",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "流動リース",
+          "value": 169,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 流動リース。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "カルビー",
+          "metric": "固定リース",
+          "periodStart": "2024-03-31",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "固定リース",
+          "value": 433,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 固定リース。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v6",
+          "entity": "カルビー",
+          "metric": "現金同等物",
+          "periodStart": "2024-03-31",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金同等物",
+          "value": 37718,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "CF期末残高。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "v7",
+          "entity": "カルビー",
+          "metric": "純資産",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "純資産",
+          "value": 215067,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 純資産。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v8",
+          "entity": "カルビー",
+          "metric": "短期借入",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "短期借入",
+          "value": 883,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 短期借入。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v9",
+          "entity": "カルビー",
+          "metric": "長期借入流動",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期借入流動",
+          "value": 0,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 長期借入流動。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v10",
+          "entity": "カルビー",
+          "metric": "長期借入",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期借入",
+          "value": 35000,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 長期借入。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v11",
+          "entity": "カルビー",
+          "metric": "流動リース",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "流動リース",
+          "value": 203,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 流動リース。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v12",
+          "entity": "カルビー",
+          "metric": "固定リース",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "固定リース",
+          "value": 468,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 固定リース。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v13",
+          "entity": "カルビー",
+          "metric": "現金同等物",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金同等物",
+          "value": 51019,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "CF期末残高。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "v14",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 29066,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "損益計算書 営業利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v15",
+          "entity": "カルビー",
+          "metric": "税費用合計",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税費用合計",
+          "value": 7891,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "損益計算書 税費用合計。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v16",
+          "entity": "カルビー",
+          "metric": "税前利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税前利益",
+          "value": 29397,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "損益計算書 税前利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "roic2026",
+      "question": "roic2026",
+      "definition": "NOPAT=26173*(1-8613/26189)=17565.262056588643;平均投下資本=(200602+214230)/2;ROIC=8.468614791813863%",
+      "status": "ready",
+      "claim": "2026年３月期は約8.5%",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "純資産",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "純資産"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "短期借入",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "短期借入"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "長期借入流動",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期借入流動"
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "長期借入",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期借入"
+        },
+        {
+          "id": "v4",
+          "entity": "カルビー",
+          "metric": "流動リース",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "流動リース"
+        },
+        {
+          "id": "v5",
+          "entity": "カルビー",
+          "metric": "固定リース",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "固定リース"
+        },
+        {
+          "id": "v6",
+          "entity": "カルビー",
+          "metric": "現金同等物",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金同等物"
+        },
+        {
+          "id": "v7",
+          "entity": "カルビー",
+          "metric": "純資産",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "純資産"
+        },
+        {
+          "id": "v8",
+          "entity": "カルビー",
+          "metric": "短期借入",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "短期借入"
+        },
+        {
+          "id": "v9",
+          "entity": "カルビー",
+          "metric": "長期借入流動",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期借入流動"
+        },
+        {
+          "id": "v10",
+          "entity": "カルビー",
+          "metric": "長期借入",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期借入"
+        },
+        {
+          "id": "v11",
+          "entity": "カルビー",
+          "metric": "流動リース",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "流動リース"
+        },
+        {
+          "id": "v12",
+          "entity": "カルビー",
+          "metric": "固定リース",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "固定リース"
+        },
+        {
+          "id": "v13",
+          "entity": "カルビー",
+          "metric": "現金同等物",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金同等物"
+        },
+        {
+          "id": "v14",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "v15",
+          "entity": "カルビー",
+          "metric": "税費用合計",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税費用合計"
+        },
+        {
+          "id": "v16",
+          "entity": "カルビー",
+          "metric": "税前利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税前利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "純資産",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "純資産",
+          "value": 215067,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 純資産。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "短期借入",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "短期借入",
+          "value": 883,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 短期借入。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "長期借入流動",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期借入流動",
+          "value": 0,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 長期借入流動。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "長期借入",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期借入",
+          "value": 35000,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 長期借入。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "カルビー",
+          "metric": "流動リース",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "流動リース",
+          "value": 203,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 流動リース。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "カルビー",
+          "metric": "固定リース",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "固定リース",
+          "value": 468,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 固定リース。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v6",
+          "entity": "カルビー",
+          "metric": "現金同等物",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金同等物",
+          "value": 51019,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "CF期末残高。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "v7",
+          "entity": "カルビー",
+          "metric": "純資産",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "純資産",
+          "value": 221774,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 純資産。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v8",
+          "entity": "カルビー",
+          "metric": "短期借入",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "短期借入",
+          "value": 1766,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 短期借入。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v9",
+          "entity": "カルビー",
+          "metric": "長期借入流動",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期借入流動",
+          "value": 10000,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 長期借入流動。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v10",
+          "entity": "カルビー",
+          "metric": "長期借入",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期借入",
+          "value": 25000,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 長期借入。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v11",
+          "entity": "カルビー",
+          "metric": "流動リース",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "流動リース",
+          "value": 399,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 流動リース。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v12",
+          "entity": "カルビー",
+          "metric": "固定リース",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "固定リース",
+          "value": 872,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "貸借対照表 固定リース。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 2
+          }
+        },
+        {
+          "id": "v13",
+          "entity": "カルビー",
+          "metric": "現金同等物",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金同等物",
+          "value": 45581,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "CF期末残高。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 5
+          }
+        },
+        {
+          "id": "v14",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 26173,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "損益計算書 営業利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v15",
+          "entity": "カルビー",
+          "metric": "税費用合計",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税費用合計",
+          "value": 8613,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "損益計算書 税費用合計。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v16",
+          "entity": "カルビー",
+          "metric": "税前利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税前利益",
+          "value": 26189,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "損益計算書 税前利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "margin-history",
+      "question": "margin-history",
+      "definition": "25135/245419=10.2417%;26173/340151=7.6945%",
+      "status": "ready",
+      "claim": "営業利益率は10.2%→7.7%（筆者計算）。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 245419,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "原表 売上。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 340151,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "原表 売上。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 25135,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "原表 営業利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 26173,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_data.pdf",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "原表 営業利益。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "overseas-history",
+      "question": "overseas-history",
+      "definition": "比率は海外/全社。23.3764%,26.0484%",
+      "status": "ready",
+      "claim": "2022年３月期の海外売上57,370百万円は連結売上245,419百万円の23.4%。2026年３月期は88,604／340,151＝26.0%だった（筆者計算）。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "海外売上",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "海外売上"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "海外売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "海外売上"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "全社売上",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "全社売上"
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "全社売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "全社売上"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "海外売上",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "海外売上",
+          "value": 57370,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/finance/",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "原表 海外売上。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "海外売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "海外売上",
+          "value": 88604,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/finance/",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "原表 海外売上。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "全社売上",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "全社売上",
+          "value": 245419,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/finance/",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "原表 全社売上。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "全社売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "全社売上",
+          "value": 340151,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/finance/",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "原表 全社売上。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "h1-overseas",
+      "question": "h1-overseas",
+      "definition": "海外売上比率25.3774→27.5951%。利益率4.0678→3.2959%",
+      "status": "ready",
+      "claim": "2027年３月期上期（2026年４〜９月）の海外売上は42,062→48,484百万円、連結売上に占める比率は25.4%→27.6%。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "海外売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "海外売上"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "海外売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "海外売上"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "全社売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "全社売上"
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "全社売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "全社売上"
+        },
+        {
+          "id": "v4",
+          "entity": "カルビー",
+          "metric": "海外営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "海外営業利益"
+        },
+        {
+          "id": "v5",
+          "entity": "カルビー",
+          "metric": "海外営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "海外営業利益"
+        },
+        {
+          "id": "v6",
+          "entity": "カルビー",
+          "metric": "国内営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "国内営業利益"
+        },
+        {
+          "id": "v7",
+          "entity": "カルビー",
+          "metric": "国内営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "国内営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "海外売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "海外売上",
+          "value": 42062,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/hosoku_20261106.xlsx",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "row47 海外売上"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "海外売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "海外売上",
+          "value": 48484,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/hosoku_20261106.xlsx",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "row47 海外売上"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "全社売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "全社売上",
+          "value": 165746,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/hosoku_20261106.xlsx",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "row22 全社売上"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "全社売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "全社売上",
+          "value": 175698,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/hosoku_20261106.xlsx",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "row22 全社売上"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "カルビー",
+          "metric": "海外営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "海外営業利益",
+          "value": 1711,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/hosoku_20261106.xlsx",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "row90 海外営業利益"
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "カルビー",
+          "metric": "海外営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "海外営業利益",
+          "value": 1598,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/hosoku_20261106.xlsx",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "row90 海外営業利益"
+          }
+        },
+        {
+          "id": "v6",
+          "entity": "カルビー",
+          "metric": "国内営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "国内営業利益",
+          "value": 8446,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/hosoku_20261106.xlsx",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "row89 国内営業利益"
+          }
+        },
+        {
+          "id": "v7",
+          "entity": "カルビー",
+          "metric": "国内営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "国内営業利益",
+          "value": 10211,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/hosoku_20261106.xlsx",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "row89 国内営業利益"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fx-growth",
+      "question": "fx-growth",
+      "definition": "Hodoを海外/欧米に含み、北米既存は除く。為替除外≠M&A除外",
+      "status": "ready",
+      "claim": "海外売上の報告成長率15.3%に対し、会社の為替影響を除く成長率は5.8%。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "海外報告成長",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外報告成長"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "海外為替除外成長",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外為替除外成長"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "北米既存円成長",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米既存円成長"
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "北米既存USD成長",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米既存USD成長"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "海外報告成長",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外報告成長",
+          "value": 15.3,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/kessansetsumei_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 海外報告成長",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "海外為替除外成長",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外為替除外成長",
+          "value": 5.8,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/kessansetsumei_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 海外為替除外成長",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "北米既存円成長",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米既存円成長",
+          "value": 10.4,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/kessansetsumei_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 北米既存円成長",
+            "pdfPage": 17
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "北米既存USD成長",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "北米既存USD成長",
+          "value": 1.1,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/kessansetsumei_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 北米既存USD成長",
+            "pdfPage": 17
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "region91",
+      "question": "region91",
+      "definition": "原表の期間・単位・定義を照合",
+      "status": "ready",
+      "claim": "|欧米|476|−362|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "欧米営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "欧米営業利益"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "欧米営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "欧米営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "欧米営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "欧米営業利益",
+          "value": 476,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/hosoku_20261106.xlsx",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "row91 欧米営業利益"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "欧米営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "欧米営業利益",
+          "value": -362,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/hosoku_20261106.xlsx",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "row91 欧米営業利益"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "region92",
+      "question": "region92",
+      "definition": "原表の期間・単位・定義を照合",
+      "status": "ready",
+      "claim": "|うち北米既存|604|−1|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "うち北米既存営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "うち北米既存営業利益"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "うち北米既存営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "うち北米既存営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "うち北米既存営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "うち北米既存営業利益",
+          "value": 604,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/hosoku_20261106.xlsx",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "row92 うち北米既存営業利益"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "うち北米既存営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "うち北米既存営業利益",
+          "value": -1,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/hosoku_20261106.xlsx",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "row92 うち北米既存営業利益"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "region93",
+      "question": "region93",
+      "definition": "原表の期間・単位・定義を照合",
+      "status": "ready",
+      "claim": "|アジア・オセアニア|1,235|1,961|",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "アジア・オセアニア営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "アジア・オセアニア営業利益"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "アジア・オセアニア営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "アジア・オセアニア営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "アジア・オセアニア営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "アジア・オセアニア営業利益",
+          "value": 1235,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/hosoku_20261106.xlsx",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "row93 アジア・オセアニア営業利益"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "アジア・オセアニア営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "アジア・オセアニア営業利益",
+          "value": 1961,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/hosoku_20261106.xlsx",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "row93 アジア・オセアニア営業利益"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "h1-total",
+      "question": "h1-total",
+      "definition": "原表の期間・単位・定義を照合",
+      "status": "ready",
+      "claim": "連結売上は165,746→175,698百万円、営業利益10,158→11,810百万円、帰属純利益6,788→7,298百万円だった。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "v4",
+          "entity": "カルビー",
+          "metric": "帰属利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "帰属利益"
+        },
+        {
+          "id": "v5",
+          "entity": "カルビー",
+          "metric": "帰属利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "帰属利益"
+        },
+        {
+          "id": "v6",
+          "entity": "カルビー",
+          "metric": "上期営業利益計画",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "上期営業利益計画"
+        },
+        {
+          "id": "v7",
+          "entity": "カルビー",
+          "metric": "上期営業利益丸め表示",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "上期営業利益丸め表示"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 165746,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 売上",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上",
+          "value": 175698,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 売上",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 10158,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 営業利益",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 11810,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 営業利益",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "カルビー",
+          "metric": "帰属利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "帰属利益",
+          "value": 6788,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 帰属利益",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "カルビー",
+          "metric": "帰属利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "帰属利益",
+          "value": 7298,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 帰属利益",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "v6",
+          "entity": "カルビー",
+          "metric": "上期営業利益計画",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "上期営業利益計画",
+          "value": 108,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/kessansetsumei_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 上期営業利益計画",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "v7",
+          "entity": "カルビー",
+          "metric": "上期営業利益丸め表示",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "上期営業利益丸め表示",
+          "value": 118,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/kessansetsumei_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 上期営業利益丸め表示",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "domestic-bridge",
+      "question": "domestic-bridge",
+      "definition": "原表の期間・単位・定義を照合",
+      "status": "ready",
+      "claim": "国内の営業利益増減分析では、増収効果32億円の内訳は数量増１億円、単価改善31億円。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "増収効果",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "増収効果"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "数量寄与",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "数量寄与"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "単価構成寄与",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "単価構成寄与"
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "販売費時期ずれ寄与",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "販売費時期ずれ寄与"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "増収効果",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "増収効果",
+          "value": 32,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/kessansetsumei_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 増収効果",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "数量寄与",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "数量寄与",
+          "value": 1,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/kessansetsumei_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 数量寄与",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "単価構成寄与",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "単価構成寄与",
+          "value": 31,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/kessansetsumei_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 単価構成寄与",
+            "pdfPage": 14
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "販売費時期ずれ寄与",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "販売費時期ずれ寄与",
+          "value": 8,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/kessansetsumei_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 販売費時期ずれ寄与",
+            "pdfPage": 14
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "jagarico",
+      "question": "jagarico",
+      "definition": "原表の期間・単位・定義を照合",
+      "status": "ready",
+      "claim": "じゃがりこの売上は25,779→26,656百万円（リベート控除前）、会社説明の販売数量は１%増。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "じゃがりこ売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "じゃがりこ売上"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "じゃがりこ売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "じゃがりこ売上"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "数量成長",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "数量成長"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "じゃがりこ売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "じゃがりこ売上",
+          "value": 25779,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/hosoku_20261106.xlsx",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "row52 じゃがりこ売上"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "じゃがりこ売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "じゃがりこ売上",
+          "value": 26656,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/hosoku_20261106.xlsx",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "row52 じゃがりこ売上"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "数量成長",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "数量成長",
+          "value": 1,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/kessansetsumei_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 数量成長",
+            "pdfPage": 16
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "h1-cf",
+      "question": "h1-cf",
+      "definition": "FCF:19864-17223-1060=1581;16888-9395-727=6766",
+      "status": "ready",
+      "claim": "最新上期の営業CFは19,864→16,888百万円へ減った。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "有形取得支出",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出"
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "有形取得支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出"
+        },
+        {
+          "id": "v4",
+          "entity": "カルビー",
+          "metric": "無形取得支出",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出"
+        },
+        {
+          "id": "v5",
+          "entity": "カルビー",
+          "metric": "無形取得支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出"
+        },
+        {
+          "id": "v6",
+          "entity": "カルビー",
+          "metric": "その他営業CF調整",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "その他営業CF調整"
+        },
+        {
+          "id": "v7",
+          "entity": "カルビー",
+          "metric": "その他営業CF調整",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "その他営業CF調整"
+        },
+        {
+          "id": "v8",
+          "entity": "カルビー",
+          "metric": "仕入債務調整",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "仕入債務調整"
+        },
+        {
+          "id": "v9",
+          "entity": "カルビー",
+          "metric": "仕入債務調整",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "仕入債務調整"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 19864,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 営業CF",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 16888,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 営業CF",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "有形取得支出",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出",
+          "value": -17223,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 有形取得支出",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "有形取得支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出",
+          "value": -9395,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 有形取得支出",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "カルビー",
+          "metric": "無形取得支出",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出",
+          "value": -1060,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 無形取得支出",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "カルビー",
+          "metric": "無形取得支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出",
+          "value": -727,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 無形取得支出",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "v6",
+          "entity": "カルビー",
+          "metric": "その他営業CF調整",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "その他営業CF調整",
+          "value": 6710,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 その他営業CF調整",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "v7",
+          "entity": "カルビー",
+          "metric": "その他営業CF調整",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "その他営業CF調整",
+          "value": 1428,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 その他営業CF調整",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "v8",
+          "entity": "カルビー",
+          "metric": "仕入債務調整",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "仕入債務調整",
+          "value": 4484,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 仕入債務調整",
+            "pdfPage": 11
+          }
+        },
+        {
+          "id": "v9",
+          "entity": "カルビー",
+          "metric": "仕入債務調整",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "仕入債務調整",
+          "value": 5106,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 仕入債務調整",
+            "pdfPage": 11
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "returns",
+      "question": "returns",
+      "definition": "支払合計9960。FCFはh1-cf比較の入力で6766。その他CF影響も考慮",
+      "status": "ready",
+      "claim": "同上期の配当支払8,032と自己株式取得1,928百万円の合計は9,960百万円で、本稿FCF6,766百万円を上回る。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "配当支払",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "配当支払"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "買戻支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "買戻支出"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "現金同等物",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金同等物"
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "現金同等物",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金同等物"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "配当支払",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "配当支払",
+          "value": 8032,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 配当支払",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "買戻支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "買戻支出",
+          "value": 1928,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 買戻支出",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "現金同等物",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金同等物",
+          "value": 45581,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 現金同等物",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "現金同等物",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金同等物",
+          "value": 41550,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 現金同等物",
+            "pdfPage": 12
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "roe",
+      "question": "roe",
+      "definition": "原表の期間・単位・定義を照合",
+      "status": "ready",
+      "claim": "会社開示ROEは2022年３月期から順に10.3%、8.5%、10.9%、10.5%、8.3%。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "ROE",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "ROE"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "ROE",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "ROE"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "ROE",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "ROE"
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "ROE",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "ROE"
+        },
+        {
+          "id": "v4",
+          "entity": "カルビー",
+          "metric": "ROE",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "ROE"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "ROE",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "ROE",
+          "value": 10.3,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/finance/",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "業績ハイライトROE行。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "ROE",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "ROE",
+          "value": 8.5,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/finance/",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "業績ハイライトROE行。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "ROE",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "ROE",
+          "value": 10.9,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/finance/",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "業績ハイライトROE行。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "ROE",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "ROE",
+          "value": 10.5,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/finance/",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "業績ハイライトROE行。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない"
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "カルビー",
+          "metric": "ROE",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "ROE",
+          "value": 8.3,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/finance/",
+            "publishedOn": "2026-11-20",
+            "kind": "primary",
+            "locator": "業績ハイライトROE行。公開日不詳の公式更新資料。publishedOnは取得版確認日で発表日を意味しない"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "company-roic",
+      "question": "company-roic",
+      "definition": "原表の期間・単位・定義を照合",
+      "status": "ready",
+      "claim": "会社は2026年３月期ROICを8.0%と開示するが、本稿の簡易値と定義を統一した比較ではない。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "会社ROIC",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社ROIC"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "会社ROIC",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社ROIC",
+          "value": 8,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/calbee2026_all.pdf",
+            "publishedOn": "2026-09-25",
+            "kind": "primary",
+            "locator": "原表 会社ROIC",
+            "pdfPage": 28
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cash-debt",
+      "question": "cash-debt",
+      "definition": "借入合計37357;現金同等物−借入=4193。リース除外",
+      "status": "ready",
+      "claim": "９月末の借入金は短期2,357、１年内返済予定長期10,000、長期25,000百万円。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "短期借入",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "短期借入"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "長期流動",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期流動"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "長期借入",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期借入"
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "現金同等物",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金同等物"
+        },
+        {
+          "id": "v4",
+          "entity": "カルビー",
+          "metric": "現金預金",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金預金"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "短期借入",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "短期借入",
+          "value": 2357,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 短期借入",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "長期流動",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期流動",
+          "value": 10000,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 長期流動",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "長期借入",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "長期借入",
+          "value": 25000,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 長期借入",
+            "pdfPage": 8
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "現金同等物",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金同等物",
+          "value": 41550,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 現金同等物",
+            "pdfPage": 12
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "カルビー",
+          "metric": "現金預金",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "現金預金",
+          "value": 48265,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 現金預金",
+            "pdfPage": 7
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "forecast",
+      "question": "forecast",
+      "definition": "原表の期間・単位・定義を照合",
+      "status": "ready",
+      "claim": "2027年３月期の会社予想は売上370,000、営業利益26,200、帰属純利益17,400百万円で据え置き。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "売上"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "営業利益"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "帰属利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "帰属利益"
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "配当",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円/株",
+          "basis": "company-forecast",
+          "definition": "配当"
+        },
+        {
+          "id": "v4",
+          "entity": "カルビー",
+          "metric": "売上成長",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "売上成長"
+        },
+        {
+          "id": "v5",
+          "entity": "カルビー",
+          "metric": "営業利益成長",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "営業利益成長"
+        },
+        {
+          "id": "v6",
+          "entity": "カルビー",
+          "metric": "前期配当",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "円/株",
+          "basis": "actual",
+          "definition": "前期配当"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "売上",
+          "value": 370000,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 売上",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "営業利益",
+          "value": 26200,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 営業利益",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "帰属利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "帰属利益",
+          "value": 17400,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 帰属利益",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "配当",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円/株",
+          "basis": "company-forecast",
+          "definition": "配当",
+          "value": 69,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 配当",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "v4",
+          "entity": "カルビー",
+          "metric": "売上成長",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "売上成長",
+          "value": 8.8,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 売上成長",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "v5",
+          "entity": "カルビー",
+          "metric": "営業利益成長",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "営業利益成長",
+          "value": 0.1,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 営業利益成長",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "v6",
+          "entity": "カルビー",
+          "metric": "前期配当",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "円/株",
+          "basis": "actual",
+          "definition": "前期配当",
+          "value": 66,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/financial_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "kind": "primary",
+            "locator": "原表 前期配当",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "overseas-plan-ebitda",
+      "question": "海外利益の対計画とEBITDA",
+      "definition": "会社表示比率、前年同期比と会社計画比を混同しない",
+      "status": "ready",
+      "claim": "なお、海外営業利益は前年を下回っても上期会社計画に対しては108.0%で、計画を上回った。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "海外営業利益計画比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外営業利益計画比"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "海外EBITDA成長率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外EBITDA成長率"
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "海外EBITDA率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外EBITDA率"
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "海外EBITDA率変化",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage-points",
+          "basis": "actual",
+          "definition": "海外EBITDA率変化"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "海外営業利益計画比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外営業利益計画比",
+          "value": 108,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/kessansetsumei_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "pdfPage": 13,
+            "locator": "海外利益・EBITDA表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "海外EBITDA成長率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外EBITDA成長率",
+          "value": 6.4,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/kessansetsumei_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "pdfPage": 17,
+            "locator": "海外利益・EBITDA表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "カルビー",
+          "metric": "海外EBITDA率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "海外EBITDA率",
+          "value": 8.1,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/kessansetsumei_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "pdfPage": 17,
+            "locator": "海外利益・EBITDA表",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v3",
+          "entity": "カルビー",
+          "metric": "海外EBITDA率変化",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "percentage-points",
+          "basis": "actual",
+          "definition": "海外EBITDA率変化",
+          "value": -0.7,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/kessansetsumei_20261106.pdf",
+            "publishedOn": "2026-11-06",
+            "pdfPage": 17,
+            "locator": "海外利益・EBITDA表",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "overseas-fy26-profit",
+      "question": "前通期の海外営業利益の反証",
+      "definition": "当上期減益とは異なる前年通期の会社開示実績。史上最高は同資料見出しと統合報告書財務ハイライトが明記",
+      "status": "ready",
+      "claim": "一方、2026年３月期通期の海外営業利益は40.6億円で、前期比36.1%増と過去最高だった。",
+      "requiredInputs": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "海外営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社の海外事業区分、通期報告値"
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "海外営業利益前期比",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社の海外事業区分、通期報告値"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v0",
+          "entity": "カルビー",
+          "metric": "海外営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "会社の海外事業区分、通期報告値",
+          "value": 40.6,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/kessansetsumei_20260514.pdf",
+            "publishedOn": "2026-05-14",
+            "pdfPage": 8,
+            "locator": "2026年3月期通期業績 海外事業 冒頭・海外営業利益行",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v1",
+          "entity": "カルビー",
+          "metric": "海外営業利益前期比",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社の海外事業区分、通期報告値",
+          "value": 36.1,
+          "source": {
+            "url": "https://www.calbee.co.jp/ir/pdf/2026/kessansetsumei_20260514.pdf",
+            "publishedOn": "2026-05-14",
+            "pdfPage": 8,
+            "locator": "2026年3月期通期業績 海外事業 冒頭・海外営業利益行",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
