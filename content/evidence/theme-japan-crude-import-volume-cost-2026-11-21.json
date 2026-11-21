@@ -1,0 +1,1410 @@
+{
+  "version": 1,
+  "articleSlug": "theme-japan-crude-import-volume-cost-2026-11-21",
+  "articleSha256": "d97968dde656cac1ccee082a65f4c4416fc79805b998fddeee29efdf45e150a8",
+  "checkedAt": "2026-11-21T19:53:58+09:00",
+  "informationCutoff": "2026-11-21T10:52:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "原表の同一品目を各資料で照合。2025年10月は2026年11月12日公表の確定、2026年９月は輸入９桁速報、同10月は速報。備蓄は別定義、未来の日付は日程表を確認。日割りと金額寄与分解は明記した式で別算。",
+  "comparisons": [
+    {
+      "id": "official-yoy",
+      "question": "数量、金額の公式前年比は反対方向か",
+      "definition": "比較は10月速報表の原文伸率、世界。前年数値から計算した差は別項目。",
+      "status": "ready",
+      "claim": "10月に日本が通関した原油・粗油は前年比0.7％減と、ほぼ前年並みだった。一方、円建ての輸入額は60.5％増えた。",
+      "requiredInputs": [
+        {
+          "id": "vq",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量の前年比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報の公式伸率"
+        },
+        {
+          "id": "vv",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入価額の前年比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報の公式伸率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "vq",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量の前年比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報の公式伸率",
+          "value": -0.7,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026104.pdf",
+            "publishedOn": "2026-11-18",
+            "locator": "主要商品別輸入・伸率欄",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "vv",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入価額の前年比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報の公式伸率",
+          "value": 60.5,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026104.pdf",
+            "publishedOn": "2026-11-18",
+            "locator": "主要商品別輸入・伸率欄",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "calendar-adjusted",
+      "question": "月間の増加は暦日当たりでも増加か",
+      "definition": "千kLの月間比、日割りは9月30日・10月31日（暦日）、季節調整なし。",
+      "status": "ready",
+      "claim": "９月は30日、10月は31日なので、暦日で割ると日量37.22万kLから36.36万kLへ2.3％減った。",
+      "requiredInputs": [
+        {
+          "id": "sep0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、輸入９桁速報"
+        },
+        {
+          "id": "oct0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sep0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、輸入９桁速報",
+          "value": 11166,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026095.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "主要商品別輸入・世界・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "oct0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報",
+          "value": 11273,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026104.pdf",
+            "publishedOn": "2026-11-18",
+            "locator": "主要商品別輸入・世界・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "month-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "oct0",
+            "sep0"
+          ],
+          "definition": "月間通関量の伸び率",
+          "precision": 1,
+          "value": 1
+        }
+      ]
+    },
+    {
+      "id": "composition-ref",
+      "question": "産地別数量と世界総量の整合",
+      "definition": "数量、比率は数量で計算。「その他」は世界から中東・米国を控除。",
+      "status": "ready",
+      "claim": "|2025年10月・確定|1,135.5|1,074.4（94.6％）|24.2（2.1％）|36.9|",
+      "requiredInputs": [
+        {
+          "id": "ref0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2025-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、確定"
+        },
+        {
+          "id": "ref1",
+          "entity": "日本・原産地集計 中東",
+          "metric": "輸入数量",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2025-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、確定"
+        },
+        {
+          "id": "ref2",
+          "entity": "日本・原産地集計 米国",
+          "metric": "輸入数量",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2025-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、確定"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ref0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2025-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、確定",
+          "value": 11355,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2025/2025107.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "主要商品別輸入・世界・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "ref1",
+          "entity": "日本・原産地集計 中東",
+          "metric": "輸入数量",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2025-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、確定",
+          "value": 10744,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2025/2025107.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "主要商品別輸入・中東・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        },
+        {
+          "id": "ref2",
+          "entity": "日本・原産地集計 米国",
+          "metric": "輸入数量",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2025-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、確定",
+          "value": 242,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2025/2025107.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "主要商品別輸入・米国・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "mshare",
+          "operation": "ratio-percent",
+          "inputs": [
+            "ref1",
+            "ref0"
+          ],
+          "definition": "中東／世界",
+          "precision": 1,
+          "value": 94.6
+        },
+        {
+          "id": "ushare",
+          "operation": "ratio-percent",
+          "inputs": [
+            "ref2",
+            "ref0"
+          ],
+          "definition": "米国／世界",
+          "precision": 1,
+          "value": 2.1
+        },
+        {
+          "id": "major",
+          "operation": "sum",
+          "inputs": [
+            "ref1",
+            "ref2"
+          ],
+          "definition": "中東＋米国",
+          "precision": 0,
+          "value": 10986
+        },
+        {
+          "id": "other",
+          "operation": "difference",
+          "inputs": [
+            "ref0",
+            "major"
+          ],
+          "definition": "世界−中東−米国",
+          "precision": 0,
+          "value": 369
+        }
+      ]
+    },
+    {
+      "id": "composition-sep",
+      "question": "産地別数量と世界総量の整合",
+      "definition": "数量、比率は数量で計算。「その他」は世界から中東・米国を控除。",
+      "status": "ready",
+      "claim": "|2026年９月・輸入９桁速報|1,116.6|692.1（62.0％）|372.9（33.4％）|51.6|",
+      "requiredInputs": [
+        {
+          "id": "sep0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、輸入９桁速報"
+        },
+        {
+          "id": "sep1",
+          "entity": "日本・原産地集計 中東",
+          "metric": "輸入数量",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、輸入９桁速報"
+        },
+        {
+          "id": "sep2",
+          "entity": "日本・原産地集計 米国",
+          "metric": "輸入数量",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、輸入９桁速報"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sep0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、輸入９桁速報",
+          "value": 11166,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026095.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "主要商品別輸入・世界・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "sep1",
+          "entity": "日本・原産地集計 中東",
+          "metric": "輸入数量",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、輸入９桁速報",
+          "value": 6921,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026095.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "主要商品別輸入・中東・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        },
+        {
+          "id": "sep2",
+          "entity": "日本・原産地集計 米国",
+          "metric": "輸入数量",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、輸入９桁速報",
+          "value": 3729,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026095.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "主要商品別輸入・米国・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "mshare",
+          "operation": "ratio-percent",
+          "inputs": [
+            "sep1",
+            "sep0"
+          ],
+          "definition": "中東／世界",
+          "precision": 1,
+          "value": 62
+        },
+        {
+          "id": "ushare",
+          "operation": "ratio-percent",
+          "inputs": [
+            "sep2",
+            "sep0"
+          ],
+          "definition": "米国／世界",
+          "precision": 1,
+          "value": 33.4
+        },
+        {
+          "id": "major",
+          "operation": "sum",
+          "inputs": [
+            "sep1",
+            "sep2"
+          ],
+          "definition": "中東＋米国",
+          "precision": 0,
+          "value": 10650
+        },
+        {
+          "id": "other",
+          "operation": "difference",
+          "inputs": [
+            "sep0",
+            "major"
+          ],
+          "definition": "世界−中東−米国",
+          "precision": 0,
+          "value": 516
+        }
+      ]
+    },
+    {
+      "id": "composition-oct",
+      "question": "産地別数量と世界総量の整合",
+      "definition": "数量、比率は数量で計算。「その他」は世界から中東・米国を控除。",
+      "status": "ready",
+      "claim": "|2026年10月・速報|1,127.3|897.2（79.6％）|202.5（18.0％）|27.6|",
+      "requiredInputs": [
+        {
+          "id": "oct0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報"
+        },
+        {
+          "id": "oct1",
+          "entity": "日本・原産地集計 中東",
+          "metric": "輸入数量",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報"
+        },
+        {
+          "id": "oct2",
+          "entity": "日本・原産地集計 米国",
+          "metric": "輸入数量",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oct0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報",
+          "value": 11273,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026104.pdf",
+            "publishedOn": "2026-11-18",
+            "locator": "主要商品別輸入・世界・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "oct1",
+          "entity": "日本・原産地集計 中東",
+          "metric": "輸入数量",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報",
+          "value": 8972,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026104.pdf",
+            "publishedOn": "2026-11-18",
+            "locator": "主要商品別輸入・中東・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        },
+        {
+          "id": "oct2",
+          "entity": "日本・原産地集計 米国",
+          "metric": "輸入数量",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報",
+          "value": 2025,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026104.pdf",
+            "publishedOn": "2026-11-18",
+            "locator": "主要商品別輸入・米国・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "mshare",
+          "operation": "ratio-percent",
+          "inputs": [
+            "oct1",
+            "oct0"
+          ],
+          "definition": "中東／世界",
+          "precision": 1,
+          "value": 79.6
+        },
+        {
+          "id": "ushare",
+          "operation": "ratio-percent",
+          "inputs": [
+            "oct2",
+            "oct0"
+          ],
+          "definition": "米国／世界",
+          "precision": 1,
+          "value": 18
+        },
+        {
+          "id": "major",
+          "operation": "sum",
+          "inputs": [
+            "oct1",
+            "oct2"
+          ],
+          "definition": "中東＋米国",
+          "precision": 0,
+          "value": 10997
+        },
+        {
+          "id": "other",
+          "operation": "difference",
+          "inputs": [
+            "oct0",
+            "major"
+          ],
+          "definition": "世界−中東−米国",
+          "precision": 0,
+          "value": 276
+        }
+      ]
+    },
+    {
+      "id": "shift",
+      "question": "前月からの地域シフトの大きさ",
+      "definition": "９月９桁速報から10月速報への数量差。その他は差し引き。契約置換の因果ではない。",
+      "status": "ready",
+      "claim": "９月から10月にかけて増えた中東産205.1万kLの大半が、米国産170.4万kLとその他24.0万kLの減少で相殺され、全体は10.7万kL増にとどまった。",
+      "requiredInputs": [
+        {
+          "id": "sep0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、輸入９桁速報"
+        },
+        {
+          "id": "sep1",
+          "entity": "日本・原産地集計 中東",
+          "metric": "輸入数量",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、輸入９桁速報"
+        },
+        {
+          "id": "sep2",
+          "entity": "日本・原産地集計 米国",
+          "metric": "輸入数量",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、輸入９桁速報"
+        },
+        {
+          "id": "oct0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報"
+        },
+        {
+          "id": "oct1",
+          "entity": "日本・原産地集計 中東",
+          "metric": "輸入数量",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報"
+        },
+        {
+          "id": "oct2",
+          "entity": "日本・原産地集計 米国",
+          "metric": "輸入数量",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sep0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、輸入９桁速報",
+          "value": 11166,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026095.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "主要商品別輸入・世界・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "sep1",
+          "entity": "日本・原産地集計 中東",
+          "metric": "輸入数量",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、輸入９桁速報",
+          "value": 6921,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026095.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "主要商品別輸入・中東・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        },
+        {
+          "id": "sep2",
+          "entity": "日本・原産地集計 米国",
+          "metric": "輸入数量",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、輸入９桁速報",
+          "value": 3729,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026095.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "主要商品別輸入・米国・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "oct0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報",
+          "value": 11273,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026104.pdf",
+            "publishedOn": "2026-11-18",
+            "locator": "主要商品別輸入・世界・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "oct1",
+          "entity": "日本・原産地集計 中東",
+          "metric": "輸入数量",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報",
+          "value": 8972,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026104.pdf",
+            "publishedOn": "2026-11-18",
+            "locator": "主要商品別輸入・中東・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        },
+        {
+          "id": "oct2",
+          "entity": "日本・原産地集計 米国",
+          "metric": "輸入数量",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報",
+          "value": 2025,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026104.pdf",
+            "publishedOn": "2026-11-18",
+            "locator": "主要商品別輸入・米国・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "worlddiff",
+          "operation": "difference",
+          "inputs": [
+            "oct0",
+            "sep0"
+          ],
+          "definition": "世界・千kL",
+          "precision": 0,
+          "value": 107
+        },
+        {
+          "id": "mediff",
+          "operation": "difference",
+          "inputs": [
+            "oct1",
+            "sep1"
+          ],
+          "definition": "中東・千kL",
+          "precision": 0,
+          "value": 2051
+        },
+        {
+          "id": "usdiff",
+          "operation": "difference",
+          "inputs": [
+            "oct2",
+            "sep2"
+          ],
+          "definition": "米国・千kL",
+          "precision": 0,
+          "value": -1704
+        }
+      ]
+    },
+    {
+      "id": "origin-yoy",
+      "question": "前月比と異なる前年の産地比較",
+      "definition": "10月速報原文伸率。",
+      "status": "ready",
+      "claim": "10月速報で米国産は前年比738.2％増、中東産は16.5％減。",
+      "requiredInputs": [
+        {
+          "id": "us",
+          "entity": "日本・原産地集計 米国",
+          "metric": "輸入数量の前年比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報の公式伸率"
+        },
+        {
+          "id": "me",
+          "entity": "日本・原産地集計 中東",
+          "metric": "輸入数量の前年比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報の公式伸率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "us",
+          "entity": "日本・原産地集計 米国",
+          "metric": "輸入数量の前年比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報の公式伸率",
+          "value": 738.2,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026104.pdf",
+            "publishedOn": "2026-11-18",
+            "locator": "主要商品別輸入・伸率欄",
+            "kind": "primary",
+            "pdfPage": 13
+          }
+        },
+        {
+          "id": "me",
+          "entity": "日本・原産地集計 中東",
+          "metric": "輸入数量の前年比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報の公式伸率",
+          "value": -16.5,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026104.pdf",
+            "publishedOn": "2026-11-18",
+            "locator": "主要商品別輸入・伸率欄",
+            "kind": "primary",
+            "pdfPage": 19
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cif-unit",
+      "question": "円建ての平均CIF額の比較",
+      "definition": "各月の円建て輸入価額÷数量。2026年10月の前月比＋13.7079％、前年同月比＋61.6179％。",
+      "status": "ready",
+      "claim": "円建て価額をその月の数量で割った平均は、2025年10月の約７.0万円/kL、2026年９月の約９.9万円/kLに対し、10月は約11.3万円/kLだった。",
+      "requiredInputs": [
+        {
+          "id": "ref0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2025-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、確定"
+        },
+        {
+          "id": "ref3",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入価額",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2025-10-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、確定"
+        },
+        {
+          "id": "sep0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、輸入９桁速報"
+        },
+        {
+          "id": "sep3",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入価額",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、輸入９桁速報"
+        },
+        {
+          "id": "oct0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報"
+        },
+        {
+          "id": "oct3",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入価額",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ref0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2025-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、確定",
+          "value": 11355,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2025/2025107.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "主要商品別輸入・世界・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "ref3",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入価額",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2025-10-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、確定",
+          "value": 794327,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2025/2025107.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "主要商品別輸入・世界・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "sep0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、輸入９桁速報",
+          "value": 11166,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026095.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "主要商品別輸入・世界・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "sep3",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入価額",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、輸入９桁速報",
+          "value": 1110219,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026095.pdf",
+            "publishedOn": "2026-10-29",
+            "locator": "主要商品別輸入・世界・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "oct0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報",
+          "value": 11273,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026104.pdf",
+            "publishedOn": "2026-11-18",
+            "locator": "主要商品別輸入・世界・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "oct3",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入価額",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報",
+          "value": 1274504,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026104.pdf",
+            "publishedOn": "2026-11-18",
+            "locator": "主要商品別輸入・世界・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "fixed-vintage",
+      "question": "数量効果と単位価額効果",
+      "definition": "2025確定と2026速報。数量効果=(11273-11355)*(794327/11355)、単価効果=11273*(1274504/11273-794327/11355)、ともに百万円。",
+      "status": "ready",
+      "claim": "前年単価で数量差を評価すると約57.36億円の減額、当年数量で単価差を評価すると約4,859.13億円の増額になる",
+      "requiredInputs": [
+        {
+          "id": "ref0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2025-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、確定"
+        },
+        {
+          "id": "ref3",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入価額",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2025-10-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、確定"
+        },
+        {
+          "id": "oct0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報"
+        },
+        {
+          "id": "oct3",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入価額",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ref0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2025-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、確定",
+          "value": 11355,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2025/2025107.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "主要商品別輸入・世界・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "ref3",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入価額",
+          "periodStart": "2025-10-01",
+          "periodEnd": "2025-10-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、確定",
+          "value": 794327,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2025/2025107.pdf",
+            "publishedOn": "2026-11-12",
+            "locator": "主要商品別輸入・世界・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "oct0",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入数量",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "千kL",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報",
+          "value": 11273,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026104.pdf",
+            "publishedOn": "2026-11-18",
+            "locator": "主要商品別輸入・世界・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        },
+        {
+          "id": "oct3",
+          "entity": "日本・原産地集計 世界",
+          "metric": "輸入価額",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "原油及び粗油、輸入通関、速報",
+          "value": 1274504,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/shinbun/trade-st/2026/2026104.pdf",
+            "publishedOn": "2026-11-18",
+            "locator": "主要商品別輸入・世界・原油及び粗油",
+            "kind": "primary",
+            "pdfPage": 4
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "valuation",
+          "operation": "difference",
+          "inputs": [
+            "oct3",
+            "ref3"
+          ],
+          "definition": "金額差・百万円",
+          "precision": 0,
+          "value": 480177
+        },
+        {
+          "id": "valuationgrowth",
+          "operation": "growth-percent",
+          "inputs": [
+            "oct3",
+            "ref3"
+          ],
+          "definition": "公表値に整合する小数第１位",
+          "precision": 1,
+          "value": 60.5
+        }
+      ]
+    },
+    {
+      "id": "reserve",
+      "question": "石油備蓄の確認したスナップショット",
+      "definition": "備蓄法ベースで原油貿易量とは別定義。",
+      "status": "ready",
+      "claim": "11月10日時点の石油備蓄は204日分（国家101、民間99、産油国共同４日分、備蓄法ベースの推計速報）。",
+      "requiredInputs": [
+        {
+          "id": "total",
+          "entity": "日本・石油備蓄合計",
+          "metric": "石油備蓄日数",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "日",
+          "basis": "actual",
+          "definition": "備蓄法ベース実績推計速報"
+        },
+        {
+          "id": "national",
+          "entity": "日本・国家備蓄",
+          "metric": "石油備蓄日数",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "日",
+          "basis": "actual",
+          "definition": "備蓄法ベース実績推計速報"
+        },
+        {
+          "id": "private",
+          "entity": "日本・民間備蓄",
+          "metric": "石油備蓄日数",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "日",
+          "basis": "actual",
+          "definition": "備蓄法ベース実績推計速報"
+        },
+        {
+          "id": "joint",
+          "entity": "日本・産油国共同備蓄",
+          "metric": "石油備蓄日数",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "日",
+          "basis": "actual",
+          "definition": "備蓄法ベース実績推計速報"
+        }
+      ],
+      "observations": [
+        {
+          "id": "total",
+          "entity": "日本・石油備蓄合計",
+          "metric": "石油備蓄日数",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "日",
+          "basis": "actual",
+          "definition": "備蓄法ベース実績推計速報",
+          "value": 204,
+          "source": {
+            "url": "https://www.enecho.meti.go.jp/statistics/petroleum_and_lpgas/pl001/pdf-oil-res/oil_daily.pdf",
+            "publishedOn": "2026-11-13",
+            "locator": "11月13日公表、11月10日時点の区分別表",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "national",
+          "entity": "日本・国家備蓄",
+          "metric": "石油備蓄日数",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "日",
+          "basis": "actual",
+          "definition": "備蓄法ベース実績推計速報",
+          "value": 101,
+          "source": {
+            "url": "https://www.enecho.meti.go.jp/statistics/petroleum_and_lpgas/pl001/pdf-oil-res/oil_daily.pdf",
+            "publishedOn": "2026-11-13",
+            "locator": "11月13日公表、11月10日時点の区分別表",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "private",
+          "entity": "日本・民間備蓄",
+          "metric": "石油備蓄日数",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "日",
+          "basis": "actual",
+          "definition": "備蓄法ベース実績推計速報",
+          "value": 99,
+          "source": {
+            "url": "https://www.enecho.meti.go.jp/statistics/petroleum_and_lpgas/pl001/pdf-oil-res/oil_daily.pdf",
+            "publishedOn": "2026-11-13",
+            "locator": "11月13日公表、11月10日時点の区分別表",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "joint",
+          "entity": "日本・産油国共同備蓄",
+          "metric": "石油備蓄日数",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "日",
+          "basis": "actual",
+          "definition": "備蓄法ベース実績推計速報",
+          "value": 4,
+          "source": {
+            "url": "https://www.enecho.meti.go.jp/statistics/petroleum_and_lpgas/pl001/pdf-oil-res/oil_daily.pdf",
+            "publishedOn": "2026-11-13",
+            "locator": "11月13日公表、11月10日時点の区分別表",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "next-dates",
+      "question": "将来の資料公表予定",
+      "definition": "公表予定日は実績値ではなく、日程表で確認済み。日程表の公開日が原表から特定できない場合は版確認日を記録。",
+      "status": "ready",
+      "claim": "11月30日13:30予定の10月石油統計速報で、原油の受入・処理、製品の販売・在庫を別々に確認する。",
+      "requiredInputs": [
+        {
+          "id": "mofd",
+          "entity": "日本・財務省",
+          "metric": "11月の公表予定日",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "日",
+          "basis": "company-forecast",
+          "definition": "10月輸入９桁速報・９月輸入確報（予定表）"
+        },
+        {
+          "id": "ened",
+          "entity": "日本・資源エネルギー庁",
+          "metric": "11月の公表予定日",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "日",
+          "basis": "company-forecast",
+          "definition": "10月石油統計速報（予定表）"
+        },
+        {
+          "id": "enet",
+          "entity": "日本・資源エネルギー庁",
+          "metric": "公表予定時刻",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "JST・24時制HHMM",
+          "basis": "company-forecast",
+          "definition": "10月石油統計速報（予定表）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "mofd",
+          "entity": "日本・財務省",
+          "metric": "11月の公表予定日",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "日",
+          "basis": "company-forecast",
+          "definition": "10月輸入９桁速報・９月輸入確報（予定表）",
+          "value": 27,
+          "source": {
+            "url": "https://www.customs.go.jp/toukei/calendar/calend.htm",
+            "publishedOn": "2026-11-21",
+            "locator": "2026年10月分行、確報（輸入9桁速報）列。版確認日。",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ened",
+          "entity": "日本・資源エネルギー庁",
+          "metric": "11月の公表予定日",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "日",
+          "basis": "company-forecast",
+          "definition": "10月石油統計速報（予定表）",
+          "value": 30,
+          "source": {
+            "url": "https://www.enecho.meti.go.jp/statistics/petroleum_and_lpgas/pl004/pdf/2026publish.pdf",
+            "publishedOn": "2026-11-21",
+            "locator": "2026年10月分の11/30 13:30公表予定。版確認日。",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "enet",
+          "entity": "日本・資源エネルギー庁",
+          "metric": "公表予定時刻",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "JST・24時制HHMM",
+          "basis": "company-forecast",
+          "definition": "10月石油統計速報（予定表）",
+          "value": 1330,
+          "source": {
+            "url": "https://www.enecho.meti.go.jp/statistics/petroleum_and_lpgas/pl004/pdf/2026publish.pdf",
+            "publishedOn": "2026-11-21",
+            "locator": "2026年10月分の11/30 13:30公表予定。版確認日。",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}

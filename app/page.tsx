@@ -10,6 +10,24 @@ import BreadthHomeCard from "./market-breadth/home-card";
 
 const legacyArticles = [
 {
+  "kind": "企業レポート",
+  "theme": "個別企業",
+  "date": "2026-11-21 19:53",
+  "title": "日清食品HD｜米第3工場は、数量と現金を取り戻せるか",
+  "excerpt": "日清食品HDの米第3工場を、海外の数量・利益、関税還付、現金支出後FCFと簡易ROICから検証。",
+  "href": "/articles/company-nissin-foods-2026-11-21",
+  "dateTime": "2026-11-21T19:53:58+09:00"
+},
+{
+  "kind": "論点解説",
+  "theme": "市場テーマ",
+  "date": "2026-11-21 19:53",
+  "title": "原油輸入量は前年並み、それでも日本の調達が正常化したとは言えない",
+  "excerpt": "日本の10月原油輸入を数量、調達先、円建ての通関単価に分けて検証。前年並みの数量と調達の正常化は同じではない。",
+  "href": "/articles/theme-japan-crude-import-volume-cost-2026-11-21",
+  "dateTime": "2026-11-21T19:53:58+09:00"
+},
+{
   "kind": "週次レポート",
   "theme": "日米株・AI投資",
   "date": "2026-11-21 07:59",

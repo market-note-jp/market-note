@@ -1,0 +1,3164 @@
+{
+  "version": 1,
+  "articleSlug": "company-nissin-foods-2026-11-21",
+  "articleSha256": "2dd406a245f223fff9c6b9984232fd97f6e33acddc0e8cc7f7cd17fb6ddbb896",
+  "checkedAt": "2026-11-21T19:53:58+09:00",
+  "informationCutoff": "2026-11-21T19:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "統合報告書、通期・中間短信、決算補足とCFO質疑の原資料を照合。CAGR・ROICは許容演算外のため式と入力を示し別途再計算。数量の1桁帯や関税還付数億円は原開示の範囲表現で点推計しない。CFO日本語資料PDF9頁の還付規模と10頁の工場稼働、英語PDF11・13・15・17頁で稼働、供給制約、還付除外赤字、物流費見通しを確認。連結資本効率と工場別を区別。",
+  "comparisons": [
+    {
+      "id": "history2018",
+      "question": "IFRS通期財務、同期間の営業利益÷売上収益",
+      "definition": "IFRS通期財務、同期間の営業利益÷売上収益",
+      "status": "ready",
+      "claim": "| 2018 | 4,409 | 352 | 8.0% |",
+      "requiredInputs": [
+        {
+          "id": "r2018",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益"
+        },
+        {
+          "id": "o2018",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "r2018",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益",
+          "value": 440.9,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o2018",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 35.2,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "m",
+          "operation": "ratio-percent",
+          "inputs": [
+            "o2018",
+            "r2018"
+          ],
+          "definition": "IFRS営業利益率",
+          "precision": 1,
+          "value": 8
+        }
+      ]
+    },
+    {
+      "id": "history2019",
+      "question": "IFRS通期財務、同期間の営業利益÷売上収益",
+      "definition": "IFRS通期財務、同期間の営業利益÷売上収益",
+      "status": "ready",
+      "claim": "| 2019 | 4,510 | 290 | 6.4% |",
+      "requiredInputs": [
+        {
+          "id": "r2019",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益"
+        },
+        {
+          "id": "o2019",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "r2019",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益",
+          "value": 451,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o2019",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2018-04-01",
+          "periodEnd": "2019-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 29,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "m",
+          "operation": "ratio-percent",
+          "inputs": [
+            "o2019",
+            "r2019"
+          ],
+          "definition": "IFRS営業利益率",
+          "precision": 1,
+          "value": 6.4
+        }
+      ]
+    },
+    {
+      "id": "history2020",
+      "question": "IFRS通期財務、同期間の営業利益÷売上収益",
+      "definition": "IFRS通期財務、同期間の営業利益÷売上収益",
+      "status": "ready",
+      "claim": "| 2020 | 4,689 | 413 | 8.8% |",
+      "requiredInputs": [
+        {
+          "id": "r2020",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益"
+        },
+        {
+          "id": "o2020",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "r2020",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益",
+          "value": 468.9,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o2020",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2019-04-01",
+          "periodEnd": "2020-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 41.3,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "m",
+          "operation": "ratio-percent",
+          "inputs": [
+            "o2020",
+            "r2020"
+          ],
+          "definition": "IFRS営業利益率",
+          "precision": 1,
+          "value": 8.8
+        }
+      ]
+    },
+    {
+      "id": "history2021",
+      "question": "IFRS通期財務、同期間の営業利益÷売上収益",
+      "definition": "IFRS通期財務、同期間の営業利益÷売上収益",
+      "status": "ready",
+      "claim": "| 2021 | 5,061 | 555 | 11.0% |",
+      "requiredInputs": [
+        {
+          "id": "r2021",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益"
+        },
+        {
+          "id": "o2021",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "r2021",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益",
+          "value": 506.1,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o2021",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2020-04-01",
+          "periodEnd": "2021-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 55.5,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "m",
+          "operation": "ratio-percent",
+          "inputs": [
+            "o2021",
+            "r2021"
+          ],
+          "definition": "IFRS営業利益率",
+          "precision": 1,
+          "value": 11
+        }
+      ]
+    },
+    {
+      "id": "history2022",
+      "question": "IFRS通期財務、同期間の営業利益÷売上収益",
+      "definition": "IFRS通期財務、同期間の営業利益÷売上収益",
+      "status": "ready",
+      "claim": "| 2022 | 5,697 | 466 | 8.2% |",
+      "requiredInputs": [
+        {
+          "id": "r2022",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益"
+        },
+        {
+          "id": "o2022",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "r2022",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益",
+          "value": 569.7,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o2022",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 46.6,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "m",
+          "operation": "ratio-percent",
+          "inputs": [
+            "o2022",
+            "r2022"
+          ],
+          "definition": "IFRS営業利益率",
+          "precision": 1,
+          "value": 8.2
+        }
+      ]
+    },
+    {
+      "id": "history2023",
+      "question": "IFRS通期財務、同期間の営業利益÷売上収益",
+      "definition": "IFRS通期財務、同期間の営業利益÷売上収益",
+      "status": "ready",
+      "claim": "| 2023 | 6,692 | 556 | 8.3% |",
+      "requiredInputs": [
+        {
+          "id": "r2023",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益"
+        },
+        {
+          "id": "o2023",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "r2023",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益",
+          "value": 669.2,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o2023",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 55.6,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "m",
+          "operation": "ratio-percent",
+          "inputs": [
+            "o2023",
+            "r2023"
+          ],
+          "definition": "IFRS営業利益率",
+          "precision": 1,
+          "value": 8.3
+        }
+      ]
+    },
+    {
+      "id": "history2024",
+      "question": "IFRS通期財務、同期間の営業利益÷売上収益",
+      "definition": "IFRS通期財務、同期間の営業利益÷売上収益",
+      "status": "ready",
+      "claim": "| 2024 | 7,329 | 734 | 10.0% |",
+      "requiredInputs": [
+        {
+          "id": "r2024",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益"
+        },
+        {
+          "id": "o2024",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "r2024",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益",
+          "value": 732.9,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o2024",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 73.4,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "m",
+          "operation": "ratio-percent",
+          "inputs": [
+            "o2024",
+            "r2024"
+          ],
+          "definition": "IFRS営業利益率",
+          "precision": 1,
+          "value": 10
+        }
+      ]
+    },
+    {
+      "id": "history2025",
+      "question": "IFRS通期財務、同期間の営業利益÷売上収益",
+      "definition": "IFRS通期財務、同期間の営業利益÷売上収益",
+      "status": "ready",
+      "claim": "| 2025 | 7,766 | 744 | 9.6% |",
+      "requiredInputs": [
+        {
+          "id": "r2025",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益"
+        },
+        {
+          "id": "o2025",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "r2025",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益",
+          "value": 776.6,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o2025",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 74.4,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "m",
+          "operation": "ratio-percent",
+          "inputs": [
+            "o2025",
+            "r2025"
+          ],
+          "definition": "IFRS営業利益率",
+          "precision": 1,
+          "value": 9.6
+        }
+      ]
+    },
+    {
+      "id": "history2026",
+      "question": "IFRS通期財務、同期間の営業利益÷売上収益",
+      "definition": "IFRS通期財務、同期間の営業利益÷売上収益",
+      "status": "ready",
+      "claim": "| 2026 | 7,881 | 623 | 7.9% |",
+      "requiredInputs": [
+        {
+          "id": "r2026",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益"
+        },
+        {
+          "id": "o2026",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "r2026",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益",
+          "value": 788.1,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o2026",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 62.3,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "m",
+          "operation": "ratio-percent",
+          "inputs": [
+            "o2026",
+            "r2026"
+          ],
+          "definition": "IFRS営業利益率",
+          "precision": 1,
+          "value": 7.9
+        }
+      ]
+    },
+    {
+      "id": "cagr",
+      "question": "終点÷起点の8乗根−1。ゲートに累乗演算なし、手計算照合",
+      "definition": "終点÷起点の8乗根−1。ゲートに累乗演算なし、手計算照合",
+      "status": "ready",
+      "claim": "2018年から2026年までの年率は売上約7.5%、営業利益約7.4%",
+      "requiredInputs": [
+        {
+          "id": "r2018",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益"
+        },
+        {
+          "id": "o2018",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        },
+        {
+          "id": "r2026",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益"
+        },
+        {
+          "id": "o2026",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "r2018",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益",
+          "value": 440.9,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o2018",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2017-04-01",
+          "periodEnd": "2018-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 35.2,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "r2026",
+          "entity": "日清食品HD連結",
+          "metric": "売上収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "売上収益",
+          "value": 788.1,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o2026",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 62.3,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "latestannual",
+      "question": "IFRS営業利益前年比",
+      "definition": "IFRS営業利益前年比",
+      "status": "ready",
+      "claim": "営業利益は前期比16.2%減",
+      "requiredInputs": [
+        {
+          "id": "op25",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        },
+        {
+          "id": "op26",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "op25",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 74369,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2026/4q_financial_statement.pdf",
+            "publishedOn": "2026-05-13",
+            "pdfPage": 6,
+            "locator": "Consolidated Statements of Income",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op26",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 62330,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2026/4q_financial_statement.pdf",
+            "publishedOn": "2026-05-13",
+            "pdfPage": 6,
+            "locator": "Consolidated Statements of Income",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "opg",
+          "operation": "growth-percent",
+          "inputs": [
+            "op26",
+            "op25"
+          ],
+          "definition": "前年比",
+          "precision": 1,
+          "value": -16.2
+        }
+      ]
+    },
+    {
+      "id": "businessmix",
+      "question": "2026年3月期通期の会社管理区分、金額は百万円",
+      "definition": "2026年3月期通期の会社管理区分、金額は百万円",
+      "status": "ready",
+      "claim": "海外事業は約2,884億円",
+      "requiredInputs": [
+        {
+          "id": "dom",
+          "entity": "国内即席めん事業",
+          "metric": "売上収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上収益"
+        },
+        {
+          "id": "nd",
+          "entity": "国内非即席めん事業",
+          "metric": "売上収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上収益"
+        },
+        {
+          "id": "intl",
+          "entity": "海外事業計",
+          "metric": "売上収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上収益"
+        },
+        {
+          "id": "am",
+          "entity": "米州地域",
+          "metric": "売上収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上収益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "dom",
+          "entity": "国内即席めん事業",
+          "metric": "売上収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上収益",
+          "value": 290243,
+          "source": {
+            "url": "https://media.www.nissin.com/jp/company/ir/library/financialresults/pdf/ket_2703_02_hosoku.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 3,
+            "locator": "セグメント別売上収益（年度別）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "nd",
+          "entity": "国内非即席めん事業",
+          "metric": "売上収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上収益",
+          "value": 200110,
+          "source": {
+            "url": "https://media.www.nissin.com/jp/company/ir/library/financialresults/pdf/ket_2703_02_hosoku.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 3,
+            "locator": "セグメント別売上収益（年度別）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "intl",
+          "entity": "海外事業計",
+          "metric": "売上収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上収益",
+          "value": 288381,
+          "source": {
+            "url": "https://media.www.nissin.com/jp/company/ir/library/financialresults/pdf/ket_2703_02_hosoku.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 3,
+            "locator": "セグメント別売上収益（年度別）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "am",
+          "entity": "米州地域",
+          "metric": "売上収益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上収益",
+          "value": 163713,
+          "source": {
+            "url": "https://media.www.nissin.com/jp/company/ir/library/financialresults/pdf/ket_2703_02_hosoku.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 3,
+            "locator": "セグメント別売上収益（年度別）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "cf2022",
+      "question": "営業CF＋負表示の固定資産取得支出、他の投資CF等は除外",
+      "definition": "営業CF＋負表示の固定資産取得支出、他の投資CF等は除外",
+      "status": "ready",
+      "claim": "| 2022 | 529.4 | 244.8 | 284.5 |",
+      "requiredInputs": [
+        {
+          "id": "oc",
+          "entity": "日清食品HD連結",
+          "metric": "営業CF",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "t",
+          "entity": "日清食品HD連結",
+          "metric": "有形取得支出（流出を負）",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出（流出を負）"
+        },
+        {
+          "id": "i",
+          "entity": "日清食品HD連結",
+          "metric": "無形取得支出（流出を負）",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出（流出を負）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oc",
+          "entity": "日清食品HD連結",
+          "metric": "営業CF",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 52936,
+          "source": {
+            "url": "https://media.www.nissin.com/jp/company/ir/library/financialresults/pdf/ket_2303_04.pdf",
+            "publishedOn": "2023-05-10",
+            "pdfPage": 14,
+            "locator": "連結キャッシュ・フロー計算書（営業活動合計、有形・無形の現金取得支出）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t",
+          "entity": "日清食品HD連結",
+          "metric": "有形取得支出（流出を負）",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出（流出を負）",
+          "value": -23758,
+          "source": {
+            "url": "https://media.www.nissin.com/jp/company/ir/library/financialresults/pdf/ket_2303_04.pdf",
+            "publishedOn": "2023-05-10",
+            "pdfPage": 14,
+            "locator": "連結キャッシュ・フロー計算書（営業活動合計、有形・無形の現金取得支出）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i",
+          "entity": "日清食品HD連結",
+          "metric": "無形取得支出（流出を負）",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出（流出を負）",
+          "value": -726,
+          "source": {
+            "url": "https://media.www.nissin.com/jp/company/ir/library/financialresults/pdf/ket_2303_04.pdf",
+            "publishedOn": "2023-05-10",
+            "pdfPage": 14,
+            "locator": "連結キャッシュ・フロー計算書（営業活動合計、有形・無形の現金取得支出）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fixed",
+          "operation": "sum",
+          "inputs": [
+            "t",
+            "i"
+          ],
+          "definition": "固定資産取得の現金流出",
+          "precision": 0,
+          "value": -24484
+        },
+        {
+          "id": "f",
+          "operation": "sum",
+          "inputs": [
+            "oc",
+            "t",
+            "i"
+          ],
+          "definition": "本稿FCF",
+          "precision": 0,
+          "value": 28452
+        }
+      ]
+    },
+    {
+      "id": "cf2023",
+      "question": "営業CF＋負表示の固定資産取得支出、他の投資CF等は除外",
+      "definition": "営業CF＋負表示の固定資産取得支出、他の投資CF等は除外",
+      "status": "ready",
+      "claim": "| 2023 | 648.1 | 257.0 | 391.1 |",
+      "requiredInputs": [
+        {
+          "id": "oc",
+          "entity": "日清食品HD連結",
+          "metric": "営業CF",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "t",
+          "entity": "日清食品HD連結",
+          "metric": "有形取得支出（流出を負）",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出（流出を負）"
+        },
+        {
+          "id": "i",
+          "entity": "日清食品HD連結",
+          "metric": "無形取得支出（流出を負）",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出（流出を負）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oc",
+          "entity": "日清食品HD連結",
+          "metric": "営業CF",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 64809,
+          "source": {
+            "url": "https://media.www.nissin.com/jp/company/ir/library/financialresults/pdf/ket_2303_04.pdf",
+            "publishedOn": "2023-05-10",
+            "pdfPage": 14,
+            "locator": "連結キャッシュ・フロー計算書（営業活動合計、有形・無形の現金取得支出）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t",
+          "entity": "日清食品HD連結",
+          "metric": "有形取得支出（流出を負）",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出（流出を負）",
+          "value": -25279,
+          "source": {
+            "url": "https://media.www.nissin.com/jp/company/ir/library/financialresults/pdf/ket_2303_04.pdf",
+            "publishedOn": "2023-05-10",
+            "pdfPage": 14,
+            "locator": "連結キャッシュ・フロー計算書（営業活動合計、有形・無形の現金取得支出）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i",
+          "entity": "日清食品HD連結",
+          "metric": "無形取得支出（流出を負）",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出（流出を負）",
+          "value": -424,
+          "source": {
+            "url": "https://media.www.nissin.com/jp/company/ir/library/financialresults/pdf/ket_2303_04.pdf",
+            "publishedOn": "2023-05-10",
+            "pdfPage": 14,
+            "locator": "連結キャッシュ・フロー計算書（営業活動合計、有形・無形の現金取得支出）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fixed",
+          "operation": "sum",
+          "inputs": [
+            "t",
+            "i"
+          ],
+          "definition": "固定資産取得の現金流出",
+          "precision": 0,
+          "value": -25703
+        },
+        {
+          "id": "f",
+          "operation": "sum",
+          "inputs": [
+            "oc",
+            "t",
+            "i"
+          ],
+          "definition": "本稿FCF",
+          "precision": 0,
+          "value": 39106
+        }
+      ]
+    },
+    {
+      "id": "cf2024",
+      "question": "営業CF＋負表示の固定資産取得支出、他の投資CF等は除外",
+      "definition": "営業CF＋負表示の固定資産取得支出、他の投資CF等は除外",
+      "status": "ready",
+      "claim": "| 2024 | 941.2 | 625.7 | 315.6 |",
+      "requiredInputs": [
+        {
+          "id": "oc",
+          "entity": "日清食品HD連結",
+          "metric": "営業CF",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "t",
+          "entity": "日清食品HD連結",
+          "metric": "有形取得支出（流出を負）",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出（流出を負）"
+        },
+        {
+          "id": "i",
+          "entity": "日清食品HD連結",
+          "metric": "無形取得支出（流出を負）",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出（流出を負）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oc",
+          "entity": "日清食品HD連結",
+          "metric": "営業CF",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 94123,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2025/4q_financial_statement.pdf",
+            "publishedOn": "2025-05-08",
+            "pdfPage": 12,
+            "locator": "連結キャッシュ・フロー計算書（営業活動合計、有形・無形の現金取得支出）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t",
+          "entity": "日清食品HD連結",
+          "metric": "有形取得支出（流出を負）",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出（流出を負）",
+          "value": -62088,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2025/4q_financial_statement.pdf",
+            "publishedOn": "2025-05-08",
+            "pdfPage": 12,
+            "locator": "連結キャッシュ・フロー計算書（営業活動合計、有形・無形の現金取得支出）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i",
+          "entity": "日清食品HD連結",
+          "metric": "無形取得支出（流出を負）",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出（流出を負）",
+          "value": -478,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2025/4q_financial_statement.pdf",
+            "publishedOn": "2025-05-08",
+            "pdfPage": 12,
+            "locator": "連結キャッシュ・フロー計算書（営業活動合計、有形・無形の現金取得支出）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fixed",
+          "operation": "sum",
+          "inputs": [
+            "t",
+            "i"
+          ],
+          "definition": "固定資産取得の現金流出",
+          "precision": 0,
+          "value": -62566
+        },
+        {
+          "id": "f",
+          "operation": "sum",
+          "inputs": [
+            "oc",
+            "t",
+            "i"
+          ],
+          "definition": "本稿FCF",
+          "precision": 0,
+          "value": 31557
+        }
+      ]
+    },
+    {
+      "id": "cf2025",
+      "question": "営業CF＋負表示の固定資産取得支出、他の投資CF等は除外",
+      "definition": "営業CF＋負表示の固定資産取得支出、他の投資CF等は除外",
+      "status": "ready",
+      "claim": "| 2025 | 570.6 | 714.7 | −144.1 |",
+      "requiredInputs": [
+        {
+          "id": "oc",
+          "entity": "日清食品HD連結",
+          "metric": "営業CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "t",
+          "entity": "日清食品HD連結",
+          "metric": "有形取得支出（流出を負）",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出（流出を負）"
+        },
+        {
+          "id": "i",
+          "entity": "日清食品HD連結",
+          "metric": "無形取得支出（流出を負）",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出（流出を負）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oc",
+          "entity": "日清食品HD連結",
+          "metric": "営業CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 57058,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2026/4q_financial_statement.pdf",
+            "publishedOn": "2026-05-13",
+            "pdfPage": 12,
+            "locator": "連結キャッシュ・フロー計算書（営業活動合計、有形・無形の現金取得支出）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t",
+          "entity": "日清食品HD連結",
+          "metric": "有形取得支出（流出を負）",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出（流出を負）",
+          "value": -70679,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2026/4q_financial_statement.pdf",
+            "publishedOn": "2026-05-13",
+            "pdfPage": 12,
+            "locator": "連結キャッシュ・フロー計算書（営業活動合計、有形・無形の現金取得支出）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i",
+          "entity": "日清食品HD連結",
+          "metric": "無形取得支出（流出を負）",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出（流出を負）",
+          "value": -791,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2026/4q_financial_statement.pdf",
+            "publishedOn": "2026-05-13",
+            "pdfPage": 12,
+            "locator": "連結キャッシュ・フロー計算書（営業活動合計、有形・無形の現金取得支出）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fixed",
+          "operation": "sum",
+          "inputs": [
+            "t",
+            "i"
+          ],
+          "definition": "固定資産取得の現金流出",
+          "precision": 0,
+          "value": -71470
+        },
+        {
+          "id": "f",
+          "operation": "sum",
+          "inputs": [
+            "oc",
+            "t",
+            "i"
+          ],
+          "definition": "本稿FCF",
+          "precision": 0,
+          "value": -14412
+        }
+      ]
+    },
+    {
+      "id": "cf2026",
+      "question": "営業CF＋負表示の固定資産取得支出、他の投資CF等は除外",
+      "definition": "営業CF＋負表示の固定資産取得支出、他の投資CF等は除外",
+      "status": "ready",
+      "claim": "| 2026 | 804.3 | 845.8 | −41.5 |",
+      "requiredInputs": [
+        {
+          "id": "oc",
+          "entity": "日清食品HD連結",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "t",
+          "entity": "日清食品HD連結",
+          "metric": "有形取得支出（流出を負）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出（流出を負）"
+        },
+        {
+          "id": "i",
+          "entity": "日清食品HD連結",
+          "metric": "無形取得支出（流出を負）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出（流出を負）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oc",
+          "entity": "日清食品HD連結",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 80431,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2026/4q_financial_statement.pdf",
+            "publishedOn": "2026-05-13",
+            "pdfPage": 12,
+            "locator": "連結キャッシュ・フロー計算書（営業活動合計、有形・無形の現金取得支出）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t",
+          "entity": "日清食品HD連結",
+          "metric": "有形取得支出（流出を負）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出（流出を負）",
+          "value": -83337,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2026/4q_financial_statement.pdf",
+            "publishedOn": "2026-05-13",
+            "pdfPage": 12,
+            "locator": "連結キャッシュ・フロー計算書（営業活動合計、有形・無形の現金取得支出）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i",
+          "entity": "日清食品HD連結",
+          "metric": "無形取得支出（流出を負）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出（流出を負）",
+          "value": -1245,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2026/4q_financial_statement.pdf",
+            "publishedOn": "2026-05-13",
+            "pdfPage": 12,
+            "locator": "連結キャッシュ・フロー計算書（営業活動合計、有形・無形の現金取得支出）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fixed",
+          "operation": "sum",
+          "inputs": [
+            "t",
+            "i"
+          ],
+          "definition": "固定資産取得の現金流出",
+          "precision": 0,
+          "value": -84582
+        },
+        {
+          "id": "f",
+          "operation": "sum",
+          "inputs": [
+            "oc",
+            "t",
+            "i"
+          ],
+          "definition": "本稿FCF",
+          "precision": 0,
+          "value": -4151
+        }
+      ]
+    },
+    {
+      "id": "interimcf",
+      "question": "連結半期同士の有形・無形取得支出控除後FCF",
+      "definition": "連結半期同士の有形・無形取得支出控除後FCF",
+      "status": "ready",
+      "claim": "前年同期の約97億円の赤字から縮小",
+      "requiredInputs": [
+        {
+          "id": "o2025",
+          "entity": "日清食品HD連結",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "t2025",
+          "entity": "日清食品HD連結",
+          "metric": "有形取得支出（流出を負）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出（流出を負）"
+        },
+        {
+          "id": "i2025",
+          "entity": "日清食品HD連結",
+          "metric": "無形取得支出（流出を負）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出（流出を負）"
+        },
+        {
+          "id": "o2026",
+          "entity": "日清食品HD連結",
+          "metric": "営業CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "t2026",
+          "entity": "日清食品HD連結",
+          "metric": "有形取得支出（流出を負）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出（流出を負）"
+        },
+        {
+          "id": "i2026",
+          "entity": "日清食品HD連結",
+          "metric": "無形取得支出（流出を負）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出（流出を負）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "o2025",
+          "entity": "日清食品HD連結",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 34660,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_financial_statement.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 11,
+            "locator": "Consolidated Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t2025",
+          "entity": "日清食品HD連結",
+          "metric": "有形取得支出（流出を負）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出（流出を負）",
+          "value": -44215,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_financial_statement.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 11,
+            "locator": "Consolidated Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2025",
+          "entity": "日清食品HD連結",
+          "metric": "無形取得支出（流出を負）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出（流出を負）",
+          "value": -134,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_financial_statement.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 11,
+            "locator": "Consolidated Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o2026",
+          "entity": "日清食品HD連結",
+          "metric": "営業CF",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 27173,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_financial_statement.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 11,
+            "locator": "Consolidated Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t2026",
+          "entity": "日清食品HD連結",
+          "metric": "有形取得支出（流出を負）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形取得支出（流出を負）",
+          "value": -28428,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_financial_statement.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 11,
+            "locator": "Consolidated Statement of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "i2026",
+          "entity": "日清食品HD連結",
+          "metric": "無形取得支出（流出を負）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形取得支出（流出を負）",
+          "value": -271,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_financial_statement.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 11,
+            "locator": "Consolidated Statement of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "f2025",
+          "operation": "sum",
+          "inputs": [
+            "o2025",
+            "t2025",
+            "i2025"
+          ],
+          "definition": "本稿FCF",
+          "precision": 0,
+          "value": -9689
+        },
+        {
+          "id": "f2026",
+          "operation": "sum",
+          "inputs": [
+            "o2026",
+            "t2026",
+            "i2026"
+          ],
+          "definition": "本稿FCF",
+          "precision": 0,
+          "value": -1526
+        }
+      ]
+    },
+    {
+      "id": "fcfdefinitions",
+      "question": "会社定義は営業CF＋投資CF。現金取得額のみと異なる",
+      "definition": "会社定義は営業CF＋投資CF。現金取得額のみと異なる",
+      "status": "ready",
+      "claim": "会社表示は約78億円の黒字",
+      "requiredInputs": [
+        {
+          "id": "oc",
+          "entity": "日清食品HD連結",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "iv",
+          "entity": "日清食品HD連結",
+          "metric": "投資CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF"
+        },
+        {
+          "id": "sale",
+          "entity": "日清食品HD連結",
+          "metric": "投資の売却・償還による収入",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資の売却・償還による収入"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oc",
+          "entity": "日清食品HD連結",
+          "metric": "営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 80431,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2026/4q_financial_statement.pdf",
+            "publishedOn": "2026-05-13",
+            "pdfPage": 12,
+            "locator": "Consolidated Statements of Cash Flows、投資活動",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "iv",
+          "entity": "日清食品HD連結",
+          "metric": "投資CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資CF",
+          "value": -72657,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2026/4q_financial_statement.pdf",
+            "publishedOn": "2026-05-13",
+            "pdfPage": 12,
+            "locator": "Consolidated Statements of Cash Flows、投資活動",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sale",
+          "entity": "日清食品HD連結",
+          "metric": "投資の売却・償還による収入",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資の売却・償還による収入",
+          "value": 9800,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2026/4q_financial_statement.pdf",
+            "publishedOn": "2026-05-13",
+            "pdfPage": 12,
+            "locator": "Consolidated Statements of Cash Flows、投資活動",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fc",
+          "operation": "sum",
+          "inputs": [
+            "oc",
+            "iv"
+          ],
+          "definition": "会社定義",
+          "precision": 0,
+          "value": 7774
+        }
+      ]
+    },
+    {
+      "id": "returns",
+      "question": "税引後営業利益を期首末平均の資本合計＋純有利子負債で除す。複合式を独立計算で照合",
+      "definition": "税引後営業利益を期首末平均の資本合計＋純有利子負債で除す。複合式を独立計算で照合",
+      "status": "ready",
+      "claim": "簡易ROICで2025年3月期約9.2%→2026年3月期約6.7%",
+      "requiredInputs": [
+        {
+          "id": "o2025",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        },
+        {
+          "id": "t2025",
+          "entity": "日清食品HD連結",
+          "metric": "法人所得税費用",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "法人所得税費用"
+        },
+        {
+          "id": "p2025",
+          "entity": "日清食品HD連結",
+          "metric": "税引前利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税引前利益"
+        },
+        {
+          "id": "r2025",
+          "entity": "日清食品HD連結",
+          "metric": "会社ROE（親会社）",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社ROE（親会社）"
+        },
+        {
+          "id": "o2026",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "IFRS営業利益"
+        },
+        {
+          "id": "t2026",
+          "entity": "日清食品HD連結",
+          "metric": "法人所得税費用",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "法人所得税費用"
+        },
+        {
+          "id": "p2026",
+          "entity": "日清食品HD連結",
+          "metric": "税引前利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税引前利益"
+        },
+        {
+          "id": "r2026",
+          "entity": "日清食品HD連結",
+          "metric": "会社ROE（親会社）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社ROE（親会社）"
+        },
+        {
+          "id": "e2024",
+          "entity": "日清食品HD連結",
+          "metric": "資本合計",
+          "periodStart": "2024-03-31",
+          "periodEnd": "2024-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "資本合計"
+        },
+        {
+          "id": "n2024",
+          "entity": "日清食品HD連結",
+          "metric": "会社の純有利子負債",
+          "periodStart": "2024-03-31",
+          "periodEnd": "2024-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "会社の純有利子負債"
+        },
+        {
+          "id": "e2025",
+          "entity": "日清食品HD連結",
+          "metric": "資本合計",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "資本合計"
+        },
+        {
+          "id": "n2025",
+          "entity": "日清食品HD連結",
+          "metric": "会社の純有利子負債",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "会社の純有利子負債"
+        },
+        {
+          "id": "e2026",
+          "entity": "日清食品HD連結",
+          "metric": "資本合計",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "資本合計"
+        },
+        {
+          "id": "n2026",
+          "entity": "日清食品HD連結",
+          "metric": "会社の純有利子負債",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "会社の純有利子負債"
+        }
+      ],
+      "observations": [
+        {
+          "id": "o2025",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 74369,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2026/4q_financial_statement.pdf",
+            "publishedOn": "2026-05-13",
+            "pdfPage": 6,
+            "locator": "Consolidated Statements of Income",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t2025",
+          "entity": "日清食品HD連結",
+          "metric": "法人所得税費用",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "法人所得税費用",
+          "value": 17904,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2026/4q_financial_statement.pdf",
+            "publishedOn": "2026-05-13",
+            "pdfPage": 6,
+            "locator": "Consolidated Statements of Income",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "p2025",
+          "entity": "日清食品HD連結",
+          "metric": "税引前利益",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税引前利益",
+          "value": 76798,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2026/4q_financial_statement.pdf",
+            "publishedOn": "2026-05-13",
+            "pdfPage": 6,
+            "locator": "Consolidated Statements of Income",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "r2025",
+          "entity": "日清食品HD連結",
+          "metric": "会社ROE（親会社）",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社ROE（親会社）",
+          "value": 11.4,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "o2026",
+          "entity": "日清食品HD連結",
+          "metric": "IFRS営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "IFRS営業利益",
+          "value": 62330,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2026/4q_financial_statement.pdf",
+            "publishedOn": "2026-05-13",
+            "pdfPage": 6,
+            "locator": "Consolidated Statements of Income",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t2026",
+          "entity": "日清食品HD連結",
+          "metric": "法人所得税費用",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "法人所得税費用",
+          "value": 15779,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2026/4q_financial_statement.pdf",
+            "publishedOn": "2026-05-13",
+            "pdfPage": 6,
+            "locator": "Consolidated Statements of Income",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "p2026",
+          "entity": "日清食品HD連結",
+          "metric": "税引前利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "税引前利益",
+          "value": 65081,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2026/4q_financial_statement.pdf",
+            "publishedOn": "2026-05-13",
+            "pdfPage": 6,
+            "locator": "Consolidated Statements of Income",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "r2026",
+          "entity": "日清食品HD連結",
+          "metric": "会社ROE（親会社）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "会社ROE（親会社）",
+          "value": 9.1,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "e2024",
+          "entity": "日清食品HD連結",
+          "metric": "資本合計",
+          "periodStart": "2024-03-31",
+          "periodEnd": "2024-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "資本合計",
+          "value": 535,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n2024",
+          "entity": "日清食品HD連結",
+          "metric": "会社の純有利子負債",
+          "periodStart": "2024-03-31",
+          "periodEnd": "2024-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "会社の純有利子負債",
+          "value": 56.1,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "e2025",
+          "entity": "日清食品HD連結",
+          "metric": "資本合計",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "資本合計",
+          "value": 511.9,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n2025",
+          "entity": "日清食品HD連結",
+          "metric": "会社の純有利子負債",
+          "periodStart": "2025-03-31",
+          "periodEnd": "2025-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "会社の純有利子負債",
+          "value": 135.5,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "e2026",
+          "entity": "日清食品HD連結",
+          "metric": "資本合計",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "資本合計",
+          "value": 559.8,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n2026",
+          "entity": "日清食品HD連結",
+          "metric": "会社の純有利子負債",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "十億円",
+          "basis": "actual",
+          "definition": "会社の純有利子負債",
+          "value": 204,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/integrated/assets/static/pdf/2026_data_en.pdf",
+            "publishedOn": "2026-11-21",
+            "pdfPage": 1,
+            "locator": "Financial Summary（冊子69頁）。発行日不詳のため資料版の確認日",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "t25",
+          "operation": "ratio-percent",
+          "inputs": [
+            "t2025",
+            "p2025"
+          ],
+          "definition": "2025実効税率",
+          "precision": 5,
+          "value": 23.31311
+        },
+        {
+          "id": "t26",
+          "operation": "ratio-percent",
+          "inputs": [
+            "t2026",
+            "p2026"
+          ],
+          "definition": "2026実効税率",
+          "precision": 5,
+          "value": 24.24517
+        }
+      ]
+    },
+    {
+      "id": "overseasshare",
+      "question": "各半期の海外事業計÷連結売上。前年半期は1Qと2Qを合計",
+      "definition": "各半期の海外事業計÷連結売上。前年半期は1Qと2Qを合計",
+      "status": "ready",
+      "claim": "35.72%→38.60%",
+      "requiredInputs": [
+        {
+          "id": "v1",
+          "entity": "日清食品HD連結",
+          "metric": "海外事業売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "海外事業売上"
+        },
+        {
+          "id": "t1",
+          "entity": "日清食品HD連結",
+          "metric": "連結売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結売上"
+        },
+        {
+          "id": "v2",
+          "entity": "日清食品HD連結",
+          "metric": "海外事業売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "海外事業売上"
+        },
+        {
+          "id": "t2",
+          "entity": "日清食品HD連結",
+          "metric": "連結売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結売上"
+        },
+        {
+          "id": "vn",
+          "entity": "日清食品HD連結",
+          "metric": "海外事業売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "海外事業売上"
+        },
+        {
+          "id": "tn",
+          "entity": "日清食品HD連結",
+          "metric": "連結売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結売上"
+        }
+      ],
+      "observations": [
+        {
+          "id": "v1",
+          "entity": "日清食品HD連結",
+          "metric": "海外事業売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "海外事業売上",
+          "value": 60649,
+          "source": {
+            "url": "https://media.www.nissin.com/jp/company/ir/library/financialresults/pdf/ket_2703_02_hosoku.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 4,
+            "locator": "セグメント別売上収益（四半期）、海外事業計・グループ計",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t1",
+          "entity": "日清食品HD連結",
+          "metric": "連結売上",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-06-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結売上",
+          "value": 177031,
+          "source": {
+            "url": "https://media.www.nissin.com/jp/company/ir/library/financialresults/pdf/ket_2703_02_hosoku.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 4,
+            "locator": "セグメント別売上収益（四半期）、海外事業計・グループ計",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "v2",
+          "entity": "日清食品HD連結",
+          "metric": "海外事業売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "海外事業売上",
+          "value": 72662,
+          "source": {
+            "url": "https://media.www.nissin.com/jp/company/ir/library/financialresults/pdf/ket_2703_02_hosoku.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 4,
+            "locator": "セグメント別売上収益（四半期）、海外事業計・グループ計",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "t2",
+          "entity": "日清食品HD連結",
+          "metric": "連結売上",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結売上",
+          "value": 196209,
+          "source": {
+            "url": "https://media.www.nissin.com/jp/company/ir/library/financialresults/pdf/ket_2703_02_hosoku.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 4,
+            "locator": "セグメント別売上収益（四半期）、海外事業計・グループ計",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "vn",
+          "entity": "日清食品HD連結",
+          "metric": "海外事業売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "海外事業売上",
+          "value": 157787,
+          "source": {
+            "url": "https://media.www.nissin.com/jp/company/ir/library/financialresults/pdf/ket_2703_02_hosoku.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 4,
+            "locator": "セグメント別売上収益（四半期）、海外事業計・グループ計",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "tn",
+          "entity": "日清食品HD連結",
+          "metric": "連結売上",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "連結売上",
+          "value": 408739,
+          "source": {
+            "url": "https://media.www.nissin.com/jp/company/ir/library/financialresults/pdf/ket_2703_02_hosoku.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 4,
+            "locator": "セグメント別売上収益（四半期）、海外事業計・グループ計",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "vy",
+          "operation": "sum",
+          "inputs": [
+            "v1",
+            "v2"
+          ],
+          "definition": "前年半期海外",
+          "precision": 0,
+          "value": 133311
+        },
+        {
+          "id": "ty",
+          "operation": "sum",
+          "inputs": [
+            "t1",
+            "t2"
+          ],
+          "definition": "前年半期連結",
+          "precision": 0,
+          "value": 373240
+        },
+        {
+          "id": "prev",
+          "operation": "ratio-percent",
+          "inputs": [
+            "vy",
+            "ty"
+          ],
+          "definition": "前年海外比率",
+          "precision": 2,
+          "value": 35.72
+        },
+        {
+          "id": "now",
+          "operation": "ratio-percent",
+          "inputs": [
+            "vn",
+            "tn"
+          ],
+          "definition": "今期海外比率",
+          "precision": 2,
+          "value": 38.6
+        }
+      ]
+    },
+    {
+      "id": "fxprofit",
+      "question": "前年同期比：会社の円換算と為替一定比較。会社コア営業利益",
+      "definition": "前年同期比：会社の円換算と為替一定比較。会社コア営業利益",
+      "status": "ready",
+      "claim": "同じ海外でも採算の方向は逆",
+      "requiredInputs": [
+        {
+          "id": "all0",
+          "entity": "海外事業",
+          "metric": "売上円換算前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上円換算前年比"
+        },
+        {
+          "id": "all1",
+          "entity": "海外事業",
+          "metric": "売上為替一定前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上為替一定前年比"
+        },
+        {
+          "id": "all2",
+          "entity": "海外事業",
+          "metric": "コア営業利益円換算前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "コア営業利益円換算前年比"
+        },
+        {
+          "id": "all3",
+          "entity": "海外事業",
+          "metric": "コア営業利益為替一定前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "コア営業利益為替一定前年比"
+        },
+        {
+          "id": "n0",
+          "entity": "北中米",
+          "metric": "売上円換算前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上円換算前年比"
+        },
+        {
+          "id": "n1",
+          "entity": "北中米",
+          "metric": "売上為替一定前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上為替一定前年比"
+        },
+        {
+          "id": "n2",
+          "entity": "北中米",
+          "metric": "コア営業利益円換算前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "コア営業利益円換算前年比"
+        },
+        {
+          "id": "n3",
+          "entity": "北中米",
+          "metric": "コア営業利益為替一定前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "コア営業利益為替一定前年比"
+        },
+        {
+          "id": "s0",
+          "entity": "南米",
+          "metric": "売上円換算前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上円換算前年比"
+        },
+        {
+          "id": "s1",
+          "entity": "南米",
+          "metric": "売上為替一定前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上為替一定前年比"
+        },
+        {
+          "id": "s2",
+          "entity": "南米",
+          "metric": "コア営業利益円換算前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "コア営業利益円換算前年比"
+        },
+        {
+          "id": "s3",
+          "entity": "南米",
+          "metric": "コア営業利益為替一定前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "コア営業利益為替一定前年比"
+        },
+        {
+          "id": "mn",
+          "entity": "北中米",
+          "metric": "コア営業利益率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "コア営業利益率"
+        },
+        {
+          "id": "ms",
+          "entity": "南米",
+          "metric": "コア営業利益率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "コア営業利益率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "all0",
+          "entity": "海外事業",
+          "metric": "売上円換算前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上円換算前年比",
+          "value": 18.4,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_presentation_material_slide_only.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 9,
+            "locator": "セグメント別実績",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "all1",
+          "entity": "海外事業",
+          "metric": "売上為替一定前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上為替一定前年比",
+          "value": 6,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_presentation_material_slide_only.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 9,
+            "locator": "セグメント別実績",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "all2",
+          "entity": "海外事業",
+          "metric": "コア営業利益円換算前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "コア営業利益円換算前年比",
+          "value": 6,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_presentation_material_slide_only.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 10,
+            "locator": "セグメント別実績",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "all3",
+          "entity": "海外事業",
+          "metric": "コア営業利益為替一定前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "コア営業利益為替一定前年比",
+          "value": -5.4,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_presentation_material_slide_only.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 10,
+            "locator": "セグメント別実績",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n0",
+          "entity": "北中米",
+          "metric": "売上円換算前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上円換算前年比",
+          "value": 16.8,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_presentation_material_slide_only.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 9,
+            "locator": "セグメント別実績",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n1",
+          "entity": "北中米",
+          "metric": "売上為替一定前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上為替一定前年比",
+          "value": 4.9,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_presentation_material_slide_only.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 9,
+            "locator": "セグメント別実績",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n2",
+          "entity": "北中米",
+          "metric": "コア営業利益円換算前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "コア営業利益円換算前年比",
+          "value": -52.1,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_presentation_material_slide_only.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 10,
+            "locator": "セグメント別実績",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "n3",
+          "entity": "北中米",
+          "metric": "コア営業利益為替一定前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "コア営業利益為替一定前年比",
+          "value": -56.8,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_presentation_material_slide_only.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 10,
+            "locator": "セグメント別実績",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "s0",
+          "entity": "南米",
+          "metric": "売上円換算前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上円換算前年比",
+          "value": 25.5,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_presentation_material_slide_only.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 9,
+            "locator": "セグメント別実績",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "s1",
+          "entity": "南米",
+          "metric": "売上為替一定前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "売上為替一定前年比",
+          "value": 5.4,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_presentation_material_slide_only.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 9,
+            "locator": "セグメント別実績",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "s2",
+          "entity": "南米",
+          "metric": "コア営業利益円換算前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "コア営業利益円換算前年比",
+          "value": 53,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_presentation_material_slide_only.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 10,
+            "locator": "セグメント別実績",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "s3",
+          "entity": "南米",
+          "metric": "コア営業利益為替一定前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "コア営業利益為替一定前年比",
+          "value": 28.6,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_presentation_material_slide_only.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 10,
+            "locator": "セグメント別実績",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "mn",
+          "entity": "北中米",
+          "metric": "コア営業利益率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "コア営業利益率",
+          "value": 2.2,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_presentation_material_slide_only.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 38,
+            "locator": "Americas地域別利益率",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ms",
+          "entity": "南米",
+          "metric": "コア営業利益率",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "コア営業利益率",
+          "value": 8.8,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_presentation_material_slide_only.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 38,
+            "locator": "Americas地域別利益率",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "usvolume",
+      "question": "米国即席めん事業の会社管理ベース現地通貨売上。数量は定性的な桁区分のため数値化しない",
+      "definition": "米国即席めん事業の会社管理ベース現地通貨売上。数量は定性的な桁区分のため数値化しない",
+      "status": "ready",
+      "claim": "4～6月の売上前年比＋10%から7～9月は−2%",
+      "requiredInputs": [
+        {
+          "id": "q1",
+          "entity": "米国即席めん事業",
+          "metric": "現地通貨売上前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "現地通貨売上前年比"
+        },
+        {
+          "id": "q2",
+          "entity": "米国即席めん事業",
+          "metric": "現地通貨売上前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "現地通貨売上前年比"
+        }
+      ],
+      "observations": [
+        {
+          "id": "q1",
+          "entity": "米国即席めん事業",
+          "metric": "現地通貨売上前年比",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-06-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "現地通貨売上前年比",
+          "value": 10,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_presentation_material_slide_only.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 44,
+            "locator": "Revenue and Volume in the Americas and Overseas",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "q2",
+          "entity": "米国即席めん事業",
+          "metric": "現地通貨売上前年比",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "現地通貨売上前年比",
+          "value": -2,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_presentation_material_slide_only.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 44,
+            "locator": "Revenue and Volume in the Americas and Overseas",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "managementcounter",
+      "question": "既存事業コア営業利益、FY2027会社予想とFY2026実績、CFOの補足説明と区別",
+      "definition": "既存事業コア営業利益、FY2027会社予想とFY2026実績、CFOの補足説明と区別",
+      "status": "ready",
+      "claim": "通期予想を維持したが",
+      "requiredInputs": [
+        {
+          "id": "p",
+          "entity": "日清食品HD連結",
+          "metric": "既存事業コア営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "既存事業コア営業利益"
+        },
+        {
+          "id": "a",
+          "entity": "日清食品HD連結",
+          "metric": "既存事業コア営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "既存事業コア営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "p",
+          "entity": "日清食品HD連結",
+          "metric": "既存事業コア営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "既存事業コア営業利益",
+          "value": 735,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_presentation_material_slide_only.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 11,
+            "locator": "FY3/2027 Full Year、Core OP of Existing Businesses",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "a",
+          "entity": "日清食品HD連結",
+          "metric": "既存事業コア営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "既存事業コア営業利益",
+          "value": 706,
+          "source": {
+            "url": "https://media.www.nissin.com/en_jp/ir/library/file/2027/2q_presentation_material_slide_only.pdf",
+            "publishedOn": "2026-11-11",
+            "pdfPage": 11,
+            "locator": "FY3/2026 Full Year、Core OP of Existing Businesses",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
