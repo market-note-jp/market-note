@@ -115,8 +115,8 @@ try {
   assert.deepEqual(await page.locator(".upcoming-list h4").allTextContents(), decemberUpcoming.map(e => e.title));
   await page.goto(base + routes.calendar, { waitUntil: "networkidle" });
   assert.equal(await page.locator(".month-heading h2").textContent(), "2026年12月");
-  for (const month of ["2026-10", "2026-11", "2026-12"]) {
-    await page.getByRole("button", { name: "2026年" + Number(month.slice(5)) + "月", exact: true }).click();
+  for (const month of ["2026-10", "2026-11", "2026-12", "2027-01"]) {
+    await page.getByRole("button", { name: month.slice(0, 4) + "年" + Number(month.slice(5)) + "月", exact: true }).click();
     const expected = calendarEvents.filter(e => e.date.startsWith(month)).sort((a, b) => (a.date + " " + a.time).localeCompare(b.date + " " + b.time, "ja"));
     assert.deepEqual(await page.locator(".event-row h3").allTextContents(), expected.map(e => e.title));
     assert.deepEqual(await page.locator(".event-row .source-link").evaluateAll(elements => elements.map(e => e.getAttribute("href"))), expected.map(e => e.sourceUrl));

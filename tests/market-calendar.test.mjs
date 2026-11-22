@@ -65,6 +65,7 @@ test("holidays use exchange trading dates and a dedicated filter", () => {
   assert.deepEqual(events.filter((event) => event.category === "休場").map((event) => event.date), [
     "2026-09-07", "2026-09-21", "2026-09-22", "2026-09-23", "2026-10-12",
     "2026-11-03", "2026-11-23", "2026-11-26", "2026-12-25",
+    "2026-12-31", "2027-01-01", "2027-01-01",
   ]);
   const html = render({ initialMonth: "2026-09" });
   assert.match(html, /<option value="休場">休場<\/option>/);
@@ -248,4 +249,44 @@ test("November 15 additions preserve publication periods and winter JST conversi
   assert.match(events.find(e => e.id === "tokyo-cpi-2026-12").title, /12月分・中旬速報/);
   assert.match(events.find(e => e.id === "disney-fy26-q4-call").summary, /公表時刻は未確定/);
   assert.match(events.find(e => e.id === "salesforce-fy27-q3-call").summary, /厳密な時刻とは区別/);
+});
+
+
+test("November 22 additions distinguish time zones, calls, and assets", () => {
+  const format = new Intl.DateTimeFormat("sv-SE", {
+    timeZone: "Asia/Tokyo", year: "numeric", month: "2-digit", day: "2-digit",
+    hour: "2-digit", minute: "2-digit", hourCycle: "h23",
+  });
+  for (const [id, local] of [
+    ["fed-g17-annual-revision-2026", "2026-11-24T12:00:00-05:00"],
+    ["dell-fy27-q3-call", "2026-11-24T15:30:00-06:00"],
+    ["workday-fy27-q3-call", "2026-11-24T13:30:00-08:00"],
+    ["marvell-fy27-q3-call", "2026-12-01T13:30:00-08:00"],
+    ["broadcom-fy26-q4-call", "2026-12-09T14:00:00-08:00"],
+    ["costco-fy27-q1-call", "2026-12-10T14:00:00-08:00"],
+    ["micron-fy27-q1-call", "2026-12-17T14:30:00-07:00"],
+    ["nike-fy27-q2-call", "2026-12-17T14:00:00-08:00"],
+  ]) {
+    const event = events.find(e => e.id === id);
+    assert.ok(event, id);
+    assert.equal(event.date + " " + event.time, format.format(new Date(local)), id);
+    assert.match(event.sourceTime, /2026-11-22確認/);
+    if (id.endsWith("-call")) assert.match(event.title, /決算説明会$/);
+  }
+  const release = events.find(e => e.id === "nike-fy27-q2-release");
+  assert.equal(release.date + " " + release.time, format.format(new Date("2026-12-17T13:15:00-08:00")) + "ごろ");
+  for (const [id, date, time] of [
+    ["boj-tamura-yamanashi-address-2026-11", "2026-11-26", "10:00"],
+    ["boj-ueda-nagoya-address-2026-11", "2026-11-30", "10:05"],
+    ["boj-minutes-2026-10", "2026-12-23", "08:50"],
+    ["boj-summary-of-opinions-2026-12", "2026-12-28", "08:50"],
+  ]) {
+    const event = events.find(e => e.id === id);
+    assert.equal(event.category, "金融政策", id);
+    assert.deepEqual([event.date, event.time], [date, time], id);
+  }
+  for (const [id, region] of [["tse-new-year-2027", "日本"], ["nyse-new-year-2027", "米国"]]) {
+    const event = events.find(e => e.id === id);
+    assert.deepEqual([event.date, event.time, event.category, event.region], ["2027-01-01", "休場", "休場", region]);
+  }
 });
