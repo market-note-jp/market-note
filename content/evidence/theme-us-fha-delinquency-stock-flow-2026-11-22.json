@@ -1,0 +1,638 @@
+{
+  "version": 1,
+  "articleSlug": "theme-us-fha-delinquency-stock-flow-2026-11-22",
+  "articleSha256": "c2982f340da0ac9252301bea22dfa74abf9a1c8f27c39f0b3d13662485f71218",
+  "checkedAt": "2026-11-22T19:33:04+09:00",
+  "informationCutoff": "2026-11-22T10:00:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "HUD一次表A-11・A-12・A-20の原セルと計算を確認。集計時点・分母・母集団の異なるMBAとNY連銀は統合しない。同じローンの追跡、個別銀行損失、制度の純因果効果は本文から除外。",
+  "comparisons": [
+    {
+      "id": "hud-sdq-stock-first-time",
+      "question": "月末SDQ件数と初回件数の増え方は違うか",
+      "definition": "同じ９月の原表同士。最後の比率は９月初回件数を同月SDQ残数で割る。",
+      "status": "ready",
+      "claim": "| 月末の深刻延滞（件） | 371,781 | 549,813 | ＋47.9％ |",
+      "requiredInputs": [
+        {
+          "id": "s25",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "月末の深刻延滞",
+          "periodStart": "2025-09-30",
+          "periodEnd": "2025-09-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "HUDの深刻延滞（SDQ）として月末に計上された件数。初回、再延滞、継続中を個別分解していない。"
+        },
+        {
+          "id": "s26",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "月末の深刻延滞",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "HUDの深刻延滞（SDQ）として月末に計上された件数。初回、再延滞、継続中を個別分解していない。"
+        },
+        {
+          "id": "f25",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "月中の初回深刻延滞",
+          "periodStart": "2025-09-01",
+          "periodEnd": "2025-09-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "当該９月に初めて深刻延滞として計上された件数。月末の全深刻延滞と異なる。"
+        },
+        {
+          "id": "f26",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "月中の初回深刻延滞",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "当該９月に初めて深刻延滞として計上された件数。月末の全深刻延滞と異なる。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "s25",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "月末の深刻延滞",
+          "periodStart": "2025-09-30",
+          "periodEnd": "2025-09-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "HUDの深刻延滞（SDQ）として月末に計上された件数。初回、再延滞、継続中を個別分解していない。",
+          "value": 371781,
+          "source": {
+            "url": "https://www.hud.gov/sites/default/files/Housing/documents/2026FHAAnnualReportMMIFund.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "FY 2026 FHA MMI年次報告 表A-11",
+            "kind": "primary",
+            "pdfPage": 125
+          }
+        },
+        {
+          "id": "s26",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "月末の深刻延滞",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "HUDの深刻延滞（SDQ）として月末に計上された件数。初回、再延滞、継続中を個別分解していない。",
+          "value": 549813,
+          "source": {
+            "url": "https://www.hud.gov/sites/default/files/Housing/documents/2026FHAAnnualReportMMIFund.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "FY 2026 FHA MMI年次報告 表A-11",
+            "kind": "primary",
+            "pdfPage": 125
+          }
+        },
+        {
+          "id": "f25",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "月中の初回深刻延滞",
+          "periodStart": "2025-09-01",
+          "periodEnd": "2025-09-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "当該９月に初めて深刻延滞として計上された件数。月末の全深刻延滞と異なる。",
+          "value": 22129,
+          "source": {
+            "url": "https://www.hud.gov/sites/default/files/Housing/documents/2026FHAAnnualReportMMIFund.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "FY 2026 FHA MMI年次報告 表A-11",
+            "kind": "primary",
+            "pdfPage": 125
+          }
+        },
+        {
+          "id": "f26",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "月中の初回深刻延滞",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "当該９月に初めて深刻延滞として計上された件数。月末の全深刻延滞と異なる。",
+          "value": 22911,
+          "source": {
+            "url": "https://www.hud.gov/sites/default/files/Housing/documents/2026FHAAnnualReportMMIFund.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "FY 2026 FHA MMI年次報告 表A-11",
+            "kind": "primary",
+            "pdfPage": 125
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "stock",
+          "operation": "growth-percent",
+          "inputs": [
+            "s26",
+            "s25"
+          ],
+          "definition": "月末残数の伸び",
+          "precision": 1,
+          "value": 47.9
+        },
+        {
+          "id": "first",
+          "operation": "growth-percent",
+          "inputs": [
+            "f26",
+            "f25"
+          ],
+          "definition": "月中初回の伸び",
+          "precision": 1,
+          "value": 3.5
+        },
+        {
+          "id": "share25",
+          "operation": "ratio-percent",
+          "inputs": [
+            "f25",
+            "s25"
+          ],
+          "definition": "2025年９月の月末深刻延滞に対する初回の割合",
+          "precision": 2,
+          "value": 5.95
+        },
+        {
+          "id": "share26",
+          "operation": "ratio-percent",
+          "inputs": [
+            "f26",
+            "s26"
+          ],
+          "definition": "2026年９月の月末深刻延滞に対する初回の割合",
+          "precision": 2,
+          "value": 4.17
+        },
+        {
+          "id": "shareDiff",
+          "operation": "difference",
+          "inputs": [
+            "share26",
+            "share25"
+          ],
+          "definition": "割合の差（ポイント）",
+          "precision": 2,
+          "value": -1.79
+        }
+      ]
+    },
+    {
+      "id": "hud-churn-sensitivity",
+      "question": "繰り返し救済された集団を除いても両年９月の比較は悪化か",
+      "definition": "HUDが条件の異なる２つの集団を事後除外した数字、政策効果推定ではない。",
+      "status": "ready",
+      "claim": "深刻延滞率は2025年９月の**3.4％から2026年９月の5.1％へ上昇**した。",
+      "requiredInputs": [
+        {
+          "id": "c125",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "深刻延滞率（Churn 1除外）",
+          "periodStart": "2025-09-30",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2022年以降初回住宅維持支援を受け24か月条件を満たさない対象をポートフォリオから除く。"
+        },
+        {
+          "id": "c126",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "深刻延滞率（Churn 1除外）",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2022年以降初回住宅維持支援を受け24か月条件を満たさない対象をポートフォリオから除く。"
+        },
+        {
+          "id": "c225",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "深刻延滞率（Churn 2除外）",
+          "periodStart": "2025-09-30",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2024–2026年度に支援３回以上・24か月条件を少なくとも２回満たさない対象をポートフォリオから除く。"
+        },
+        {
+          "id": "c226",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "深刻延滞率（Churn 2除外）",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2024–2026年度に支援３回以上・24か月条件を少なくとも２回満たさない対象をポートフォリオから除く。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "c125",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "深刻延滞率（Churn 1除外）",
+          "periodStart": "2025-09-30",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2022年以降初回住宅維持支援を受け24か月条件を満たさない対象をポートフォリオから除く。",
+          "value": 3.4,
+          "source": {
+            "url": "https://www.hud.gov/sites/default/files/Housing/documents/2026FHAAnnualReportMMIFund.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "FY 2026 FHA MMI年次報告 表A-12",
+            "kind": "primary",
+            "pdfPage": 126
+          }
+        },
+        {
+          "id": "c126",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "深刻延滞率（Churn 1除外）",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2022年以降初回住宅維持支援を受け24か月条件を満たさない対象をポートフォリオから除く。",
+          "value": 5.1,
+          "source": {
+            "url": "https://www.hud.gov/sites/default/files/Housing/documents/2026FHAAnnualReportMMIFund.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "FY 2026 FHA MMI年次報告 表A-12",
+            "kind": "primary",
+            "pdfPage": 126
+          }
+        },
+        {
+          "id": "c225",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "深刻延滞率（Churn 2除外）",
+          "periodStart": "2025-09-30",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2024–2026年度に支援３回以上・24か月条件を少なくとも２回満たさない対象をポートフォリオから除く。",
+          "value": 4.2,
+          "source": {
+            "url": "https://www.hud.gov/sites/default/files/Housing/documents/2026FHAAnnualReportMMIFund.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "FY 2026 FHA MMI年次報告 表A-12",
+            "kind": "primary",
+            "pdfPage": 126
+          }
+        },
+        {
+          "id": "c226",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "深刻延滞率（Churn 2除外）",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "2024–2026年度に支援３回以上・24か月条件を少なくとも２回満たさない対象をポートフォリオから除く。",
+          "value": 6.2,
+          "source": {
+            "url": "https://www.hud.gov/sites/default/files/Housing/documents/2026FHAAnnualReportMMIFund.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "FY 2026 FHA MMI年次報告 表A-12",
+            "kind": "primary",
+            "pdfPage": 126
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "hud-foreclosure-actions",
+      "question": "差し押さえの法的措置と売却はそれぞれ増えたか",
+      "definition": "暦年Q3の当該措置と差し押さえ売却の公式件数。同一コホートの追跡ではない。",
+      "status": "ready",
+      "claim": "2025年の22,097件から2026年の34,454件に、実施された差し押さえ売却は4,466件から8,468件に増えた。",
+      "requiredInputs": [
+        {
+          "id": "l25",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "差し押さえに向けた最初の法的措置",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "最初の法的措置（first legal action）、暦年Q3。"
+        },
+        {
+          "id": "l26",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "差し押さえに向けた最初の法的措置",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "最初の法的措置（first legal action）、暦年Q3。"
+        },
+        {
+          "id": "x25",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "実施された差し押さえ売却",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "実施された売却（foreclosure sales held）、暦年Q3。"
+        },
+        {
+          "id": "x26",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "実施された差し押さえ売却",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "実施された売却（foreclosure sales held）、暦年Q3。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "l25",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "差し押さえに向けた最初の法的措置",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "最初の法的措置（first legal action）、暦年Q3。",
+          "value": 22097,
+          "source": {
+            "url": "https://www.hud.gov/sites/default/files/Housing/documents/2026FHAAnnualReportMMIFund.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "FY 2026 FHA MMI年次報告 表A-20",
+            "kind": "primary",
+            "pdfPage": 133
+          }
+        },
+        {
+          "id": "l26",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "差し押さえに向けた最初の法的措置",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "最初の法的措置（first legal action）、暦年Q3。",
+          "value": 34454,
+          "source": {
+            "url": "https://www.hud.gov/sites/default/files/Housing/documents/2026FHAAnnualReportMMIFund.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "FY 2026 FHA MMI年次報告 表A-20",
+            "kind": "primary",
+            "pdfPage": 133
+          }
+        },
+        {
+          "id": "x25",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "実施された差し押さえ売却",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "実施された売却（foreclosure sales held）、暦年Q3。",
+          "value": 4466,
+          "source": {
+            "url": "https://www.hud.gov/sites/default/files/Housing/documents/2026FHAAnnualReportMMIFund.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "FY 2026 FHA MMI年次報告 表A-20",
+            "kind": "primary",
+            "pdfPage": 133
+          }
+        },
+        {
+          "id": "x26",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "実施された差し押さえ売却",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "実施された売却（foreclosure sales held）、暦年Q3。",
+          "value": 8468,
+          "source": {
+            "url": "https://www.hud.gov/sites/default/files/Housing/documents/2026FHAAnnualReportMMIFund.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "FY 2026 FHA MMI年次報告 表A-20",
+            "kind": "primary",
+            "pdfPage": 133
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "hud-rule",
+      "question": "恒久的な住宅維持支援の頻度は何か月に１回か",
+      "definition": "現行支援概要の対象は恒久的住宅維持支援。公表文書に災害例外あり。",
+      "status": "ready",
+      "claim": "恒久的な返済支援を原則24か月に１回に制限している",
+      "requiredInputs": [
+        {
+          "id": "period",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "恒久的な住宅維持支援を再度受けられる原則間隔",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "か月",
+          "basis": "actual",
+          "definition": "恒久的な住宅維持支援のみ。大統領宣言の災害例外あり。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "period",
+          "entity": "米FHA・通常型住宅ローン",
+          "metric": "恒久的な住宅維持支援を再度受けられる原則間隔",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "か月",
+          "basis": "actual",
+          "definition": "恒久的な住宅維持支援のみ。大統領宣言の災害例外あり。",
+          "value": 24,
+          "source": {
+            "url": "https://www.hud.gov/sites/default/files/Housing/documents/2026FHAAnnualReportMMIFund.pdf",
+            "publishedOn": "2026-11-16",
+            "locator": "FY 2026 FHA MMI年次報告 overview Home retention Policy、printed p14、one home retention option every 24 months",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "mba-stage-distinctions",
+      "question": "MBAの前期比較と前年同期比較のどちらを見ているか",
+      "definition": "通常延滞の水準と前期差は季節調整済み、深刻延滞の前年同期差は季節未調整。",
+      "status": "ready",
+      "claim": "７〜９月期に11.74％と前期比0.05ポイント低下した一方、90日以上または差し押さえ手続き中の割合は前年同期比1.97ポイント上昇した。",
+      "requiredInputs": [
+        {
+          "id": "level",
+          "entity": "MBA調査・FHAローン",
+          "metric": "通常の延滞率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "期末に１回以上支払い遅れ、差押え手続き中を除く。季節調整済。"
+        },
+        {
+          "id": "qoq",
+          "entity": "MBA調査・FHAローン",
+          "metric": "通常の延滞率の前期差",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "ポイント",
+          "basis": "actual",
+          "definition": "期末に１回以上支払い遅れ、差押え手続き中を除く。季節調整済。"
+        },
+        {
+          "id": "yoy",
+          "entity": "MBA調査・FHAローン",
+          "metric": "深刻延滞率の前年同期差",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "ポイント",
+          "basis": "actual",
+          "definition": "90日以上の支払い遅れ又は差し押さえ手続き中。季節未調整。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "level",
+          "entity": "MBA調査・FHAローン",
+          "metric": "通常の延滞率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "期末に１回以上支払い遅れ、差押え手続き中を除く。季節調整済。",
+          "value": 11.74,
+          "source": {
+            "url": "https://www.mba.org/news-and-research/newsroom/news/2026/11/19/mortgage-delinquencies-increase-in-the-third-quarter-of-2026",
+            "publishedOn": "2026-11-19",
+            "locator": "Key findings, FHA total and seriously delinquent",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "qoq",
+          "entity": "MBA調査・FHAローン",
+          "metric": "通常の延滞率の前期差",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "ポイント",
+          "basis": "actual",
+          "definition": "期末に１回以上支払い遅れ、差押え手続き中を除く。季節調整済。",
+          "value": -0.05,
+          "source": {
+            "url": "https://www.mba.org/news-and-research/newsroom/news/2026/11/19/mortgage-delinquencies-increase-in-the-third-quarter-of-2026",
+            "publishedOn": "2026-11-19",
+            "locator": "Key findings, FHA total and seriously delinquent",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "yoy",
+          "entity": "MBA調査・FHAローン",
+          "metric": "深刻延滞率の前年同期差",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "ポイント",
+          "basis": "actual",
+          "definition": "90日以上の支払い遅れ又は差し押さえ手続き中。季節未調整。",
+          "value": 1.97,
+          "source": {
+            "url": "https://www.mba.org/news-and-research/newsroom/news/2026/11/19/mortgage-delinquencies-increase-in-the-third-quarter-of-2026",
+            "publishedOn": "2026-11-19",
+            "locator": "Key findings, FHA total and seriously delinquent",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "nyfed-mortgage-flow",
+      "question": "住宅ローン全体で新規の深刻延滞流入は前年より上昇か",
+      "definition": "正常または90日未満延滞だった直前四半期の残高を分母とする年率。FHAのみでなく、サンプルの信用情報ベースで他資料と水準比較しない。",
+      "status": "ready",
+      "claim": "90日以上の延滞に新たに移る残高の割合は前年同期の1.28％から1.60％へ上がった。",
+      "requiredInputs": [
+        {
+          "id": "ny25",
+          "entity": "NY連銀 Consumer Credit Panel・住宅ローン全体",
+          "metric": "90日以上延滞への新規流入率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "直前四半期正常又は90日未満延滞の残高を分母とする年率換算。"
+        },
+        {
+          "id": "ny26",
+          "entity": "NY連銀 Consumer Credit Panel・住宅ローン全体",
+          "metric": "90日以上延滞への新規流入率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "直前四半期正常又は90日未満延滞の残高を分母とする年率換算。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ny25",
+          "entity": "NY連銀 Consumer Credit Panel・住宅ローン全体",
+          "metric": "90日以上延滞への新規流入率",
+          "periodStart": "2025-07-01",
+          "periodEnd": "2025-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "直前四半期正常又は90日未満延滞の残高を分母とする年率換算。",
+          "value": 1.28,
+          "source": {
+            "url": "https://www.newyorkfed.org/newsevents/news/research/2026/20261110",
+            "publishedOn": "2026-11-10",
+            "locator": "Flow into Serious Delinquency, Mortgage Debt and footnote 1",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ny26",
+          "entity": "NY連銀 Consumer Credit Panel・住宅ローン全体",
+          "metric": "90日以上延滞への新規流入率",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "直前四半期正常又は90日未満延滞の残高を分母とする年率換算。",
+          "value": 1.6,
+          "source": {
+            "url": "https://www.newyorkfed.org/newsevents/news/research/2026/20261110",
+            "publishedOn": "2026-11-10",
+            "locator": "Flow into Serious Delinquency, Mortgage Debt and footnote 1",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
