@@ -1,0 +1,1296 @@
+{
+  "version": 1,
+  "articleSlug": "theme-nippon-steel-refinancing-cost-2026-11-23",
+  "articleSha256": "8081346f4bd09156c8da41db49d56d0d07bd0971148789d580ab93d139bbfffb",
+  "checkedAt": "2026-11-23T19:38:25+09:00",
+  "informationCutoff": "2026-11-23T09:00:00Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "公式発行資料2本と独立JCR2本で6月・11月の年限、額面、利率、AAを照合。スプレッドのみ起債専門紙、6月5年はBloombergでも照合。発行登録追補書類S100ZJ0Oの使途・候補旧債JCR資料を確認。額面利息は4.648＋7.476＋2.840＝14.964億円。600億円で割ると2.494％。旧債の銘柄特定と新旧の純増額は本文で留保。",
+  "comparisons": [
+    {
+      "id": "coupon-same-tenor",
+      "question": "3年と5年の各表面利率は上がったか",
+      "definition": "同一発行体・同格付・同当初年限の別銘柄。同一銘柄の時系列ではない。",
+      "status": "ready",
+      "claim": "| 3年 | 2.014％ | 2.492％ | ＋47.8bp | 42→53bp（＋11bp） |",
+      "requiredInputs": [
+        {
+          "id": "jun3",
+          "entity": "日本製鉄第13回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。"
+        },
+        {
+          "id": "jun5",
+          "entity": "日本製鉄第14回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。"
+        },
+        {
+          "id": "nov3",
+          "entity": "日本製鉄第17回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。"
+        },
+        {
+          "id": "nov5",
+          "entity": "日本製鉄第18回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "jun3",
+          "entity": "日本製鉄第13回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。",
+          "value": 2.014,
+          "source": {
+            "url": "https://www.jcr.co.jp/download/fb174877f5c5e7ece5f180c85000ebb4ab01555b46654becbb/26d0295.pdf",
+            "publishedOn": "2026-06-10",
+            "locator": "格付対象、第13〜15回、AA",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "jun5",
+          "entity": "日本製鉄第14回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。",
+          "value": 2.444,
+          "source": {
+            "url": "https://www.jcr.co.jp/download/fb174877f5c5e7ece5f180c85000ebb4ab01555b46654becbb/26d0295.pdf",
+            "publishedOn": "2026-06-10",
+            "locator": "格付対象、第13〜15回、AA",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "nov3",
+          "entity": "日本製鉄第17回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。",
+          "value": 2.492,
+          "source": {
+            "url": "https://www.jcr.co.jp/download/ec58e0416a5eeb82fc0f9a5083516e05387415e028199fe999/26d1034.pdf",
+            "publishedOn": "2026-11-20",
+            "locator": "格付対象、第16〜18回、AA",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "nov5",
+          "entity": "日本製鉄第18回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。",
+          "value": 2.84,
+          "source": {
+            "url": "https://www.jcr.co.jp/download/ec58e0416a5eeb82fc0f9a5083516e05387415e028199fe999/26d1034.pdf",
+            "publishedOn": "2026-11-20",
+            "locator": "格付対象、第16〜18回、AA",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "d3",
+          "operation": "difference",
+          "inputs": [
+            "nov3",
+            "jun3"
+          ],
+          "definition": "表面利率差（ポイント、0.478ポイント＝47.8bp）",
+          "precision": 3,
+          "value": 0.478
+        },
+        {
+          "id": "d5",
+          "operation": "difference",
+          "inputs": [
+            "nov5",
+            "jun5"
+          ],
+          "definition": "表面利率差（ポイント、0.396ポイント＝39.6bp）",
+          "precision": 3,
+          "value": 0.396
+        }
+      ]
+    },
+    {
+      "id": "issue-spread",
+      "question": "国債への上乗せも広がったか",
+      "definition": "信用と案件需給等を含む対国債上乗せ。財務省の終値や純粋な信用リスクと同一ではない。",
+      "status": "ready",
+      "claim": "| 5年 | 2.444％ | 2.840％ | ＋39.6bp | 47→63bp（＋16bp） |",
+      "requiredInputs": [
+        {
+          "id": "sn3",
+          "entity": "日本製鉄第17回無担保社債",
+          "metric": "対国債上乗せ又は前回からの変化",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "11月3年の53bpをパーセントポイント表記。"
+        },
+        {
+          "id": "sd3",
+          "entity": "日本製鉄第17回無担保社債",
+          "metric": "対国債上乗せ又は前回からの変化",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "6月からの3年債の拡大幅11bp。"
+        },
+        {
+          "id": "sn5",
+          "entity": "日本製鉄第18回無担保社債",
+          "metric": "対国債上乗せ又は前回からの変化",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "11月5年の63bpをパーセントポイント表記。"
+        },
+        {
+          "id": "sd5",
+          "entity": "日本製鉄第18回無担保社債",
+          "metric": "対国債上乗せ又は前回からの変化",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "6月からの5年債の拡大幅16bp。"
+        },
+        {
+          "id": "sj5check",
+          "entity": "日本製鉄第14回無担保社債",
+          "metric": "対国債上乗せ又は前回からの変化",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "6月5年の47bp。独立報道による逆算値の照合。"
+        },
+        {
+          "id": "jun3",
+          "entity": "日本製鉄第13回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。"
+        },
+        {
+          "id": "jun5",
+          "entity": "日本製鉄第14回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。"
+        },
+        {
+          "id": "nov3",
+          "entity": "日本製鉄第17回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。"
+        },
+        {
+          "id": "nov5",
+          "entity": "日本製鉄第18回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sn3",
+          "entity": "日本製鉄第17回無担保社債",
+          "metric": "対国債上乗せ又は前回からの変化",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "11月3年の53bpをパーセントポイント表記。",
+          "value": 0.53,
+          "source": {
+            "url": "https://c-eye.co.jp/review-dt/121538",
+            "publishedOn": "2026-11-20",
+            "locator": "対国債表、第17・18回と直下の前回比",
+            "kind": "secondary",
+            "primaryUnavailableReason": "発行体・格付機関の資料には起債時の対国債スプレッドが掲載されていない。"
+          }
+        },
+        {
+          "id": "sd3",
+          "entity": "日本製鉄第17回無担保社債",
+          "metric": "対国債上乗せ又は前回からの変化",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "6月からの3年債の拡大幅11bp。",
+          "value": 0.11,
+          "source": {
+            "url": "https://c-eye.co.jp/review-dt/121538",
+            "publishedOn": "2026-11-20",
+            "locator": "対国債表、第17・18回と直下の前回比",
+            "kind": "secondary",
+            "primaryUnavailableReason": "発行体・格付機関の資料には起債時の対国債スプレッドが掲載されていない。"
+          }
+        },
+        {
+          "id": "sn5",
+          "entity": "日本製鉄第18回無担保社債",
+          "metric": "対国債上乗せ又は前回からの変化",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "11月5年の63bpをパーセントポイント表記。",
+          "value": 0.63,
+          "source": {
+            "url": "https://c-eye.co.jp/review-dt/121538",
+            "publishedOn": "2026-11-20",
+            "locator": "対国債表、第17・18回と直下の前回比",
+            "kind": "secondary",
+            "primaryUnavailableReason": "発行体・格付機関の資料には起債時の対国債スプレッドが掲載されていない。"
+          }
+        },
+        {
+          "id": "sd5",
+          "entity": "日本製鉄第18回無担保社債",
+          "metric": "対国債上乗せ又は前回からの変化",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "6月からの5年債の拡大幅16bp。",
+          "value": 0.16,
+          "source": {
+            "url": "https://c-eye.co.jp/review-dt/121538",
+            "publishedOn": "2026-11-20",
+            "locator": "対国債表、第17・18回と直下の前回比",
+            "kind": "secondary",
+            "primaryUnavailableReason": "発行体・格付機関の資料には起債時の対国債スプレッドが掲載されていない。"
+          }
+        },
+        {
+          "id": "sj5check",
+          "entity": "日本製鉄第14回無担保社債",
+          "metric": "対国債上乗せ又は前回からの変化",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "ポイント",
+          "basis": "market",
+          "definition": "6月5年の47bp。独立報道による逆算値の照合。",
+          "value": 0.47,
+          "source": {
+            "url": "https://newsdig.tbs.co.jp/articles/withbloomberg/2722511?display=1",
+            "publishedOn": "2026-06-10",
+            "locator": "5年債のスプレッドに言及する段落",
+            "kind": "secondary",
+            "primaryUnavailableReason": "発行体・格付機関の資料には起債時の対国債スプレッドが掲載されていない。"
+          }
+        },
+        {
+          "id": "jun3",
+          "entity": "日本製鉄第13回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。",
+          "value": 2.014,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/06/10/20260610_100.pdf",
+            "publishedOn": "2026-06-10",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第13〜15回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "jun5",
+          "entity": "日本製鉄第14回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。",
+          "value": 2.444,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/06/10/20260610_100.pdf",
+            "publishedOn": "2026-06-10",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第13〜15回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "nov3",
+          "entity": "日本製鉄第17回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。",
+          "value": 2.492,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/11/20/20261120_100.pdf",
+            "publishedOn": "2026-11-20",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第16〜18回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "nov5",
+          "entity": "日本製鉄第18回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。",
+          "value": 2.84,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/11/20/20261120_100.pdf",
+            "publishedOn": "2026-11-20",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第16〜18回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "sj3",
+          "operation": "difference",
+          "inputs": [
+            "sn3",
+            "sd3"
+          ],
+          "definition": "6月の3年債の上乗せを逆算（42bp）",
+          "precision": 2,
+          "value": 0.42
+        },
+        {
+          "id": "sj5",
+          "operation": "difference",
+          "inputs": [
+            "sn5",
+            "sd5"
+          ],
+          "definition": "6月の5年債の上乗せを逆算（47bp）",
+          "precision": 2,
+          "value": 0.47
+        },
+        {
+          "id": "d3",
+          "operation": "difference",
+          "inputs": [
+            "nov3",
+            "jun3"
+          ],
+          "definition": "3年の表面利率差47.8bp",
+          "precision": 3,
+          "value": 0.478
+        },
+        {
+          "id": "d5",
+          "operation": "difference",
+          "inputs": [
+            "nov5",
+            "jun5"
+          ],
+          "definition": "5年の表面利率差39.6bp",
+          "precision": 3,
+          "value": 0.396
+        },
+        {
+          "id": "remaining3",
+          "operation": "difference",
+          "inputs": [
+            "d3",
+            "sd3"
+          ],
+          "definition": "表面利率差から上乗せ差を除いた残差36.8bp",
+          "precision": 3,
+          "value": 0.368
+        },
+        {
+          "id": "remaining5",
+          "operation": "difference",
+          "inputs": [
+            "d5",
+            "sd5"
+          ],
+          "definition": "表面利率差から上乗せ差を除いた残差23.6bp",
+          "precision": 3,
+          "value": 0.236
+        }
+      ]
+    },
+    {
+      "id": "size-tenor",
+      "question": "各回の発行総額と年限構成はどう変わったか",
+      "definition": "額面の和、2/3/5年と3/5/10年は発行日・償還期日で確認。",
+      "status": "ready",
+      "claim": "6月の900億円は3年・5年・10年の構成だった。",
+      "requiredInputs": [
+        {
+          "id": "j3",
+          "entity": "日本製鉄第13回無担保社債",
+          "metric": "額面発行額",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "条件決定時の額面発行額であり、記事基準日時点の払込実績ではない。"
+        },
+        {
+          "id": "j5",
+          "entity": "日本製鉄第14回無担保社債",
+          "metric": "額面発行額",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "条件決定時の額面発行額であり、記事基準日時点の払込実績ではない。"
+        },
+        {
+          "id": "j10",
+          "entity": "日本製鉄第15回無担保社債",
+          "metric": "額面発行額",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "条件決定時の額面発行額であり、記事基準日時点の払込実績ではない。"
+        },
+        {
+          "id": "n2",
+          "entity": "日本製鉄第16回無担保社債",
+          "metric": "額面発行額",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "条件決定時の額面発行額であり、記事基準日時点の払込実績ではない。"
+        },
+        {
+          "id": "n3",
+          "entity": "日本製鉄第17回無担保社債",
+          "metric": "額面発行額",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "条件決定時の額面発行額であり、記事基準日時点の払込実績ではない。"
+        },
+        {
+          "id": "n5",
+          "entity": "日本製鉄第18回無担保社債",
+          "metric": "額面発行額",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "条件決定時の額面発行額であり、記事基準日時点の払込実績ではない。"
+        },
+        {
+          "id": "tenor13",
+          "entity": "日本製鉄第13回無担保社債",
+          "metric": "当初年限",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "年",
+          "basis": "actual",
+          "definition": "払込予定日と償還期限から確認した当初年限。"
+        },
+        {
+          "id": "tenor14",
+          "entity": "日本製鉄第14回無担保社債",
+          "metric": "当初年限",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "年",
+          "basis": "actual",
+          "definition": "払込予定日と償還期限から確認した当初年限。"
+        },
+        {
+          "id": "tenor15",
+          "entity": "日本製鉄第15回無担保社債",
+          "metric": "当初年限",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "年",
+          "basis": "actual",
+          "definition": "払込予定日と償還期限から確認した当初年限。"
+        },
+        {
+          "id": "tenor16",
+          "entity": "日本製鉄第16回無担保社債",
+          "metric": "当初年限",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "年",
+          "basis": "actual",
+          "definition": "払込予定日と償還期限から確認した当初年限。"
+        },
+        {
+          "id": "tenor17",
+          "entity": "日本製鉄第17回無担保社債",
+          "metric": "当初年限",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "年",
+          "basis": "actual",
+          "definition": "払込予定日と償還期限から確認した当初年限。"
+        },
+        {
+          "id": "tenor18",
+          "entity": "日本製鉄第18回無担保社債",
+          "metric": "当初年限",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "年",
+          "basis": "actual",
+          "definition": "払込予定日と償還期限から確認した当初年限。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "j3",
+          "entity": "日本製鉄第13回無担保社債",
+          "metric": "額面発行額",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "条件決定時の額面発行額であり、記事基準日時点の払込実績ではない。",
+          "value": 461,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/06/10/20260610_100.pdf",
+            "publishedOn": "2026-06-10",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第13〜15回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "j5",
+          "entity": "日本製鉄第14回無担保社債",
+          "metric": "額面発行額",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "条件決定時の額面発行額であり、記事基準日時点の払込実績ではない。",
+          "value": 196,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/06/10/20260610_100.pdf",
+            "publishedOn": "2026-06-10",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第13〜15回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "j10",
+          "entity": "日本製鉄第15回無担保社債",
+          "metric": "額面発行額",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "条件決定時の額面発行額であり、記事基準日時点の払込実績ではない。",
+          "value": 243,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/06/10/20260610_100.pdf",
+            "publishedOn": "2026-06-10",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第13〜15回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "n2",
+          "entity": "日本製鉄第16回無担保社債",
+          "metric": "額面発行額",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "条件決定時の額面発行額であり、記事基準日時点の払込実績ではない。",
+          "value": 200,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/11/20/20261120_100.pdf",
+            "publishedOn": "2026-11-20",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第16〜18回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "n3",
+          "entity": "日本製鉄第17回無担保社債",
+          "metric": "額面発行額",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "条件決定時の額面発行額であり、記事基準日時点の払込実績ではない。",
+          "value": 300,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/11/20/20261120_100.pdf",
+            "publishedOn": "2026-11-20",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第16〜18回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "n5",
+          "entity": "日本製鉄第18回無担保社債",
+          "metric": "額面発行額",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "条件決定時の額面発行額であり、記事基準日時点の払込実績ではない。",
+          "value": 100,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/11/20/20261120_100.pdf",
+            "publishedOn": "2026-11-20",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第16〜18回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "tenor13",
+          "entity": "日本製鉄第13回無担保社債",
+          "metric": "当初年限",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "年",
+          "basis": "actual",
+          "definition": "払込予定日と償還期限から確認した当初年限。",
+          "value": 3,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/06/10/20260610_100.pdf",
+            "publishedOn": "2026-06-10",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第13〜15回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "tenor14",
+          "entity": "日本製鉄第14回無担保社債",
+          "metric": "当初年限",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "年",
+          "basis": "actual",
+          "definition": "払込予定日と償還期限から確認した当初年限。",
+          "value": 5,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/06/10/20260610_100.pdf",
+            "publishedOn": "2026-06-10",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第13〜15回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "tenor15",
+          "entity": "日本製鉄第15回無担保社債",
+          "metric": "当初年限",
+          "periodStart": "2026-06-10",
+          "periodEnd": "2026-06-10",
+          "unit": "年",
+          "basis": "actual",
+          "definition": "払込予定日と償還期限から確認した当初年限。",
+          "value": 10,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/06/10/20260610_100.pdf",
+            "publishedOn": "2026-06-10",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第13〜15回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "tenor16",
+          "entity": "日本製鉄第16回無担保社債",
+          "metric": "当初年限",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "年",
+          "basis": "actual",
+          "definition": "払込予定日と償還期限から確認した当初年限。",
+          "value": 2,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/11/20/20261120_100.pdf",
+            "publishedOn": "2026-11-20",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第16〜18回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "tenor17",
+          "entity": "日本製鉄第17回無担保社債",
+          "metric": "当初年限",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "年",
+          "basis": "actual",
+          "definition": "払込予定日と償還期限から確認した当初年限。",
+          "value": 3,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/11/20/20261120_100.pdf",
+            "publishedOn": "2026-11-20",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第16〜18回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "tenor18",
+          "entity": "日本製鉄第18回無担保社債",
+          "metric": "当初年限",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "年",
+          "basis": "actual",
+          "definition": "払込予定日と償還期限から確認した当初年限。",
+          "value": 5,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/11/20/20261120_100.pdf",
+            "publishedOn": "2026-11-20",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第16〜18回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "j-total",
+          "operation": "sum",
+          "inputs": [
+            "j3",
+            "j5",
+            "j10"
+          ],
+          "definition": "6月発行額",
+          "precision": 0,
+          "value": 900
+        },
+        {
+          "id": "n-total",
+          "operation": "sum",
+          "inputs": [
+            "n2",
+            "n3",
+            "n5"
+          ],
+          "definition": "11月発行予定額",
+          "precision": 0,
+          "value": 600
+        }
+      ]
+    },
+    {
+      "id": "net-use",
+      "question": "発行諸費用控除後の調達額は何に充当予定か",
+      "definition": "予定の資金使途。長期借入全体の返済額ではなく一部。",
+      "status": "ready",
+      "claim": "残り497.95億円を同年11月末までに期限が来る長期借入金の返済の一部に充てる。",
+      "requiredInputs": [
+        {
+          "id": "gross",
+          "entity": "日本製鉄",
+          "metric": "払込金額総額",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "払込金額総額"
+        },
+        {
+          "id": "expenses",
+          "entity": "日本製鉄",
+          "metric": "発行諸費用概算",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "発行諸費用概算"
+        },
+        {
+          "id": "disclosednet",
+          "entity": "日本製鉄",
+          "metric": "差引手取概算額",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "差引手取概算額"
+        },
+        {
+          "id": "redemption",
+          "entity": "日本製鉄",
+          "metric": "2027年5月末までに期限到来する社債の償還資金（充当予定）",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "2027年5月末までに期限到来する社債の償還資金（充当予定）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "gross",
+          "entity": "日本製鉄",
+          "metric": "払込金額総額",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "払込金額総額",
+          "value": 600,
+          "source": {
+            "url": "https://edinet.twentyfive.jp/api/document-file?docID=S100ZJ0O&format=pdf",
+            "publishedOn": "2026-11-20",
+            "locator": "EDINET提出原本の写し・7－関東1－2・新規発行による手取金の使途(1)(2)",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        },
+        {
+          "id": "expenses",
+          "entity": "日本製鉄",
+          "metric": "発行諸費用概算",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "発行諸費用概算",
+          "value": 2.05,
+          "source": {
+            "url": "https://edinet.twentyfive.jp/api/document-file?docID=S100ZJ0O&format=pdf",
+            "publishedOn": "2026-11-20",
+            "locator": "EDINET提出原本の写し・7－関東1－2・新規発行による手取金の使途(1)(2)",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        },
+        {
+          "id": "disclosednet",
+          "entity": "日本製鉄",
+          "metric": "差引手取概算額",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "差引手取概算額",
+          "value": 597.95,
+          "source": {
+            "url": "https://edinet.twentyfive.jp/api/document-file?docID=S100ZJ0O&format=pdf",
+            "publishedOn": "2026-11-20",
+            "locator": "EDINET提出原本の写し・7－関東1－2・新規発行による手取金の使途(1)(2)",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        },
+        {
+          "id": "redemption",
+          "entity": "日本製鉄",
+          "metric": "2027年5月末までに期限到来する社債の償還資金（充当予定）",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "億円",
+          "basis": "company-forecast",
+          "definition": "2027年5月末までに期限到来する社債の償還資金（充当予定）",
+          "value": 100,
+          "source": {
+            "url": "https://edinet.twentyfive.jp/api/document-file?docID=S100ZJ0O&format=pdf",
+            "publishedOn": "2026-11-20",
+            "locator": "EDINET提出原本の写し・7－関東1－2・新規発行による手取金の使途(1)(2)",
+            "kind": "primary",
+            "pdfPage": 15
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "net",
+          "operation": "difference",
+          "inputs": [
+            "gross",
+            "expenses"
+          ],
+          "definition": "額面発行総額－発行諸費用概算",
+          "precision": 2,
+          "value": 597.95
+        },
+        {
+          "id": "bank",
+          "operation": "difference",
+          "inputs": [
+            "net",
+            "redemption"
+          ],
+          "definition": "長期借入金の返済に充てる手取残額",
+          "precision": 2,
+          "value": 497.95
+        }
+      ]
+    },
+    {
+      "id": "coupon-annual",
+      "question": "新発債だけの通年額面利息と額面加重利率は？",
+      "definition": "2年200億、3年300億、5年100億をそれぞれ100億円単位に分けて計算。100億円×年率x％=x億円。全額が1年残り、手数料やヘッジを除く。",
+      "status": "ready",
+      "claim": "額面600億円に対して加重平均利率は2.494％になる。",
+      "requiredInputs": [
+        {
+          "id": "a2",
+          "entity": "日本製鉄第16回無担保社債",
+          "metric": "額面発行額",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "条件決定時の額面発行額であり、記事基準日時点の払込実績ではない。"
+        },
+        {
+          "id": "a3",
+          "entity": "日本製鉄第17回無担保社債",
+          "metric": "額面発行額",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "条件決定時の額面発行額であり、記事基準日時点の払込実績ではない。"
+        },
+        {
+          "id": "a5",
+          "entity": "日本製鉄第18回無担保社債",
+          "metric": "額面発行額",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "条件決定時の額面発行額であり、記事基準日時点の払込実績ではない。"
+        },
+        {
+          "id": "r2",
+          "entity": "日本製鉄第16回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。"
+        },
+        {
+          "id": "r3",
+          "entity": "日本製鉄第17回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。"
+        },
+        {
+          "id": "r5",
+          "entity": "日本製鉄第18回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "a2",
+          "entity": "日本製鉄第16回無担保社債",
+          "metric": "額面発行額",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "条件決定時の額面発行額であり、記事基準日時点の払込実績ではない。",
+          "value": 200,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/11/20/20261120_100.pdf",
+            "publishedOn": "2026-11-20",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第16〜18回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "a3",
+          "entity": "日本製鉄第17回無担保社債",
+          "metric": "額面発行額",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "条件決定時の額面発行額であり、記事基準日時点の払込実績ではない。",
+          "value": 300,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/11/20/20261120_100.pdf",
+            "publishedOn": "2026-11-20",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第16〜18回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "a5",
+          "entity": "日本製鉄第18回無担保社債",
+          "metric": "額面発行額",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "条件決定時の額面発行額であり、記事基準日時点の払込実績ではない。",
+          "value": 100,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/11/20/20261120_100.pdf",
+            "publishedOn": "2026-11-20",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第16〜18回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "r2",
+          "entity": "日本製鉄第16回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。",
+          "value": 2.324,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/11/20/20261120_100.pdf",
+            "publishedOn": "2026-11-20",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第16〜18回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "r3",
+          "entity": "日本製鉄第17回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。",
+          "value": 2.492,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/11/20/20261120_100.pdf",
+            "publishedOn": "2026-11-20",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第16〜18回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "r5",
+          "entity": "日本製鉄第18回無担保社債",
+          "metric": "表面利率",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "額面100円当たり年率、発行条件決定時。",
+          "value": 2.84,
+          "source": {
+            "url": "https://www.nipponsteel.com/newsroom/news/2026/__icsFiles/afieldfile/2026/11/20/20261120_100.pdf",
+            "publishedOn": "2026-11-20",
+            "locator": "条件表、項目2・5・7・8・9・10・16、第16〜18回",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "face",
+          "operation": "sum",
+          "inputs": [
+            "a2",
+            "a3",
+            "a5"
+          ],
+          "definition": "額面合計（億円）",
+          "precision": 0,
+          "value": 600
+        },
+        {
+          "id": "interest",
+          "operation": "sum",
+          "inputs": [
+            "r2",
+            "r2",
+            "r3",
+            "r3",
+            "r3",
+            "r5"
+          ],
+          "definition": "100億円口の通年額面利息（億円）を2年2口、3年3口、5年1口分合計",
+          "precision": 3,
+          "value": 14.964
+        },
+        {
+          "id": "weight",
+          "operation": "ratio-percent",
+          "inputs": [
+            "interest",
+            "face"
+          ],
+          "definition": "年間額面利息を額面総額で割って年率化（％）",
+          "precision": 3,
+          "value": 2.494
+        }
+      ]
+    },
+    {
+      "id": "old-candidate",
+      "question": "金額と償還時期が使途欄と合う旧債候補はあるか",
+      "definition": "EDINETには償還対象の銘柄名がなく、第4回が実際の対象とは確定しない。新発3銘柄のいずれかと紐付けない。",
+      "status": "ready",
+      "claim": "2027年5月20日満期・100億円の第4回無担保社債があり、JCR資料で確認できる表面利率は0.375％。",
+      "requiredInputs": [
+        {
+          "id": "amount",
+          "entity": "旧新日鐵住金第4回無担保社債",
+          "metric": "発行額",
+          "periodStart": "2025-10-09",
+          "periodEnd": "2025-10-09",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "発行額"
+        },
+        {
+          "id": "rate",
+          "entity": "旧新日鐵住金第4回無担保社債",
+          "metric": "表面利率、2027年5月20日償還第4回",
+          "periodStart": "2025-10-09",
+          "periodEnd": "2025-10-09",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "表面利率、2027年5月20日償還第4回"
+        }
+      ],
+      "observations": [
+        {
+          "id": "amount",
+          "entity": "旧新日鐵住金第4回無担保社債",
+          "metric": "発行額",
+          "periodStart": "2025-10-09",
+          "periodEnd": "2025-10-09",
+          "unit": "億円",
+          "basis": "actual",
+          "definition": "発行額",
+          "value": 100,
+          "source": {
+            "url": "https://www.jcr.co.jp/download/72aa9b4dd81a5556a50255a6d7836bff678c980bd81888d90b/25d0793_1.pdf",
+            "publishedOn": "2025-10-09",
+            "locator": "社債・借入金一覧、旧新日鐵住金第4回の行",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        },
+        {
+          "id": "rate",
+          "entity": "旧新日鐵住金第4回無担保社債",
+          "metric": "表面利率、2027年5月20日償還第4回",
+          "periodStart": "2025-10-09",
+          "periodEnd": "2025-10-09",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "表面利率、2027年5月20日償還第4回",
+          "value": 0.375,
+          "source": {
+            "url": "https://www.jcr.co.jp/download/72aa9b4dd81a5556a50255a6d7836bff678c980bd81888d90b/25d0793_1.pdf",
+            "publishedOn": "2025-10-09",
+            "locator": "社債・借入金一覧、旧新日鐵住金第4回の行",
+            "kind": "primary",
+            "pdfPage": 3
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
