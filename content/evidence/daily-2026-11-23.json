@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-11-23",
+  "articleSha256": "7e33a7a67658d4bb121ab0bbf97c7e93e8d04260404f65a0ffc8e9c887aa0417",
+  "checkedAt": "2026-11-25T06:28:26+09:00",
+  "informationCutoff": "2026-11-23T07:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終記事全体のタイトル・要約・結論・全5ニュース・分析・注目点・免責を照合。利益比較はIFRS親会社帰属中間利益の全2入力をPDF1ページで確認し7.9%を再計算。CPIを掲載した記事では基準年と観測月を記録。株価の騰落率・週間比較・市場予想との差・独自FCFは掲載せず、方向の報道を数値比較の代わりに拡大解釈しない。単独のADI四半期売上は米ドル・対象年度・実績を明記。補完記事は対象日07:00JST以前の発表内容に限定し後日の関連ニュース欄・動的株価を除外。表示更新日は実際の準備日。",
+  "comparisons": [
+    {
+      "id": "tokio-parent-profit-yoy",
+      "question": "東京海上の中間利益の前年同期比較",
+      "definition": "同一IFRS連結の親会社帰属中間利益。2026年4〜9月実績と2025年4〜9月実績を比較。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "東京海上ホールディングス連結",
+          "metric": "親会社の所有者に帰属する中間利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "IFRS連結・親会社帰属中間利益。修正純利益や通期予想と区別。"
+        },
+        {
+          "id": "prior",
+          "entity": "東京海上ホールディングス連結",
+          "metric": "親会社の所有者に帰属する中間利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "IFRS連結・親会社帰属中間利益。修正純利益や通期予想と区別。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "東京海上ホールディングス連結",
+          "metric": "親会社の所有者に帰属する中間利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "IFRS連結・親会社帰属中間利益。修正純利益や通期予想と区別。",
+          "value": 478401,
+          "source": {
+            "url": "https://www.tokiomarinehd.com/ir/event/presentation/2026/gi58a80000006boj-att/2Q_FY2026_Summary_Report_j.pdf",
+            "publishedOn": "2026-11-19",
+            "locator": "1(1)連結経営成績（累計）・親会社の所有者に帰属する中間利益・2027年3月期中間期",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "東京海上ホールディングス連結",
+          "metric": "親会社の所有者に帰属する中間利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "IFRS連結・親会社帰属中間利益。修正純利益や通期予想と区別。",
+          "value": 443458,
+          "source": {
+            "url": "https://www.tokiomarinehd.com/ir/event/presentation/2026/gi58a80000006boj-att/2Q_FY2026_Summary_Report_j.pdf",
+            "publishedOn": "2026-11-19",
+            "locator": "1(1)連結経営成績（累計）・親会社の所有者に帰属する中間利益・2026年3月期中間期",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "（478401÷443458−1）×100。同じ百万円・中間実績。",
+          "precision": 1,
+          "value": 7.9
+        }
+      ],
+      "claim": "東京海上HDの2026年4〜9月の親会社帰属中間利益は478,401百万円、前年同期は443,458百万円で、同じIFRS連結の実績同士では7.9％増となった。"
+    },
+    {
+      "id": "cpi-index-base",
+      "question": "掲載した物価指数の基準期間と観測月は何か",
+      "definition": "月次の物価水準と基準年平均を確認。前年比や前月比の上昇率の比較には使わない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "oct",
+          "entity": "全国消費者物価",
+          "metric": "総合指数",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "2025年平均=100の指数",
+          "basis": "actual",
+          "definition": "2025年基準・全国・総合（生鮮食品とエネルギーを含む）"
+        },
+        {
+          "id": "base",
+          "entity": "全国消費者物価",
+          "metric": "総合指数",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "2025年平均=100の指数",
+          "basis": "actual",
+          "definition": "2025年基準・全国・総合（生鮮食品とエネルギーを含む）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oct",
+          "entity": "全国消費者物価",
+          "metric": "総合指数",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "2025年平均=100の指数",
+          "basis": "actual",
+          "definition": "2025年基準・全国・総合（生鮮食品とエネルギーを含む）",
+          "value": 103.1,
+          "source": {
+            "url": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html",
+            "publishedOn": "2026-11-20",
+            "locator": "ポイント(1)・総合指数と2025年=100の基準",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "base",
+          "entity": "全国消費者物価",
+          "metric": "総合指数",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "2025年平均=100の指数",
+          "basis": "actual",
+          "definition": "2025年基準・全国・総合（生鮮食品とエネルギーを含む）",
+          "value": 100,
+          "source": {
+            "url": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html",
+            "publishedOn": "2026-11-20",
+            "locator": "ポイント(1)・総合指数と2025年=100の基準",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "統計局は20日、全国の2026年10月消費者物価指数を公表した。2025年平均を100とした総合指数は103.1。これは物価水準の指数であり、月間上昇率ではない。"
+    }
+  ],
+  "sourceChecks": [
+    {
+      "url": "https://focustaiwan.tw/business/202611210013",
+      "publishedOn": "2026-11-21",
+      "locator": "2026-11-21 17:48本文、FSC規制・Monday施行・put warrant申請停止。",
+      "result": "記事に採用した範囲を確認"
+    },
+    {
+      "url": "https://www.reuters.com/world/chinese-exchanges-ease-margin-trading-requirements-aid-stock-markets-2026-11-22/",
+      "publishedOn": "2026-11-22",
+      "locator": "冒頭2段落、REGULATORY CHANGES及び手数料・創業板案。22日の発表事実だけ使用、後日取引結果は除外。",
+      "result": "記事に採用した範囲を確認"
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-expands-commitments-with-supply-chain-partners-to-support-ai-infrastructure-buildout",
+      "publishedOn": "2026-11-17",
+      "locator": "News Summary及び各供給網の節。契約と将来能力の区分を確認。",
+      "result": "記事に採用した範囲を確認"
+    },
+    {
+      "url": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/index-z.html",
+      "publishedOn": "2026-11-20",
+      "locator": "ポイント(1)：総合指数103.1、2025年=100。",
+      "result": "記事に採用した範囲を確認"
+    },
+    {
+      "url": "https://www.tokiomarinehd.com/ir/event/presentation/2026/gi58a80000006boj-att/2Q_FY2026_Summary_Report_j.pdf",
+      "publishedOn": "2026-11-19",
+      "locator": "PDF1ページ 1(1)連結経営成績・親会社の所有者に帰属する中間利益、当期・前年同期。注記にIFRSと期間。",
+      "pdfPage": 1,
+      "result": "記事に採用した範囲を確認"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-11-25",
+  "articleSha256": "1f35b2d49415f8bb6231c1aec04f4ff90100d1acc7f9c29288aa9b802eb469d6",
+  "checkedAt": "2026-11-25T06:28:26+09:00",
+  "informationCutoff": "2026-11-25T06:25:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終記事全体のタイトル・要約・結論・全5ニュース・分析・注目点・免責を照合。利益比較はIFRS親会社帰属中間利益の全2入力をPDF1ページで確認し7.9%を再計算。CPIを掲載した記事では基準年と観測月を記録。株価の騰落率・週間比較・市場予想との差・独自FCFは掲載せず、方向の報道を数値比較の代わりに拡大解釈しない。単独のADI四半期売上は米ドル・対象年度・実績を明記。補完記事は対象日07:00JST以前の発表内容に限定し後日の関連ニュース欄・動的株価を除外。表示更新日は実際の準備日。",
+  "comparisons": [
+    {
+      "id": "tokio-parent-profit-yoy",
+      "question": "東京海上の中間利益の前年同期比較",
+      "definition": "同一IFRS連結の親会社帰属中間利益。2026年4〜9月実績と2025年4〜9月実績を比較。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "東京海上ホールディングス連結",
+          "metric": "親会社の所有者に帰属する中間利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "IFRS連結・親会社帰属中間利益。修正純利益や通期予想と区別。"
+        },
+        {
+          "id": "prior",
+          "entity": "東京海上ホールディングス連結",
+          "metric": "親会社の所有者に帰属する中間利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "IFRS連結・親会社帰属中間利益。修正純利益や通期予想と区別。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "東京海上ホールディングス連結",
+          "metric": "親会社の所有者に帰属する中間利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "IFRS連結・親会社帰属中間利益。修正純利益や通期予想と区別。",
+          "value": 478401,
+          "source": {
+            "url": "https://www.tokiomarinehd.com/ir/event/presentation/2026/gi58a80000006boj-att/2Q_FY2026_Summary_Report_j.pdf",
+            "publishedOn": "2026-11-19",
+            "locator": "1(1)連結経営成績（累計）・親会社の所有者に帰属する中間利益・2027年3月期中間期",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "東京海上ホールディングス連結",
+          "metric": "親会社の所有者に帰属する中間利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "IFRS連結・親会社帰属中間利益。修正純利益や通期予想と区別。",
+          "value": 443458,
+          "source": {
+            "url": "https://www.tokiomarinehd.com/ir/event/presentation/2026/gi58a80000006boj-att/2Q_FY2026_Summary_Report_j.pdf",
+            "publishedOn": "2026-11-19",
+            "locator": "1(1)連結経営成績（累計）・親会社の所有者に帰属する中間利益・2026年3月期中間期",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "current",
+            "prior"
+          ],
+          "definition": "（478401÷443458−1）×100。同じ百万円・中間実績。",
+          "precision": 1,
+          "value": 7.9
+        }
+      ],
+      "claim": "東京海上HDの2026年4〜9月の親会社帰属中間利益は478,401百万円、前年同期は443,458百万円で、同じIFRS連結の実績同士では7.9％増となった。"
+    }
+  ],
+  "sourceChecks": [
+    {
+      "url": "https://ca.marketscreener.com/news/nasdaq-s-p-500-end-lower-following-monday-s-nvidia-fueled-rally-ce7851dbdd81f720",
+      "publishedOn": "2026-11-24",
+      "locator": "2026-11-24 16:01 EST引け速報の冒頭2段落。日中値・動的株価欄を除外。",
+      "result": "記事に採用した範囲を確認"
+    },
+    {
+      "url": "https://www.analog.com/en/newsroom/press-releases/2026/11-24-26-adi-reports-record-4th-qtr-and-fiscal-2026-financial-results.html",
+      "publishedOn": "2026-11-24",
+      "locator": "公式発表のNews Summary第1項と対象年度終了日・CEOコメント。本文を検索結果で確認。原ページopenは取得エラー、取得できた公式サイト索引本文の範囲だけ採用。",
+      "result": "記事に採用した範囲を確認"
+    },
+    {
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "publishedOn": "2026-11-23",
+      "locator": "冒頭の復帰決定・全会一致、独立委員会調査継続の段落。",
+      "result": "記事に採用した範囲を確認"
+    },
+    {
+      "url": "https://www.kantei.go.jp/jp/105/actions/202611/24getsurei.html",
+      "publishedOn": "2026-11-24",
+      "locator": "公式サイト本文の基調判断・先行き判断。open取得エラー後、公式ドメイン検索で本文を確認。数値・前月比較は採用しない。",
+      "result": "記事に採用した範囲を確認"
+    },
+    {
+      "url": "https://www.tokiomarinehd.com/ir/event/presentation/2026/gi58a80000006boj-att/2Q_FY2026_Summary_Report_j.pdf",
+      "publishedOn": "2026-11-19",
+      "locator": "PDF1ページ 1(1)連結経営成績・親会社の所有者に帰属する中間利益、当期・前年同期。注記にIFRSと期間。",
+      "pdfPage": 1,
+      "result": "記事に採用した範囲を確認"
+    }
+  ]
+}
