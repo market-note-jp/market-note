@@ -1,0 +1,693 @@
+{
+  "version": 1,
+  "articleSlug": "theme-crowdstrike-zscaler-stock-deal-2026-11-24",
+  "articleSha256": "aa09da19749a7288be8d9cbf91358b30a4e3a0050a84c226b0c27b4996c9022d",
+  "checkedAt": "2026-11-24T19:14:45+09:00",
+  "informationCutoff": "2026-11-24T19:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "主要数値を共同発表、合併契約書、第3四半期/第1四半期決算と11/23の説明会で照合。CRWD 11/23終値208.97はKBJR MarketMinute 11/23行、ZS 11/23終値229.24はYahoo Finance通常終値とFinanceCharts、同11/20はLSEG提供の発行体掲載値と照合。両社の月曜終値は https://www.tradingjournl.io/blog/us-market-close-2026-11-23/en でも一致。換算の算術は 229.44×1.135=260.4144、208.97×1.135=237.18095、各÷194.82−1を百分率にし33.669233…％、21.743635…％、換算減少23.23345ドル、月曜の市場価格との差237.18095−229.24=7.94095ドル。株式数上限は2.02(e)、直前5日VWAPは1.01、端株は2.06。買収以外に決算同日、成立条件は8-Kおよび10-Qで確認。未成立、確率推定なし。",
+  "comparisons": [
+    {
+      "id": "regular-close-moves",
+      "question": "発表後の終値を前営業日と比較すると？",
+      "definition": "米国通常取引11月20日・23日の終値。相対変化であり、イベント単独の因果効果ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "crwd0",
+          "entity": "CrowdStrike",
+          "metric": "通常取引終値",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "USD/株",
+          "basis": "market",
+          "definition": "米東部時間通常取引の終値。時間外取引は含めない。"
+        },
+        {
+          "id": "crwd1",
+          "entity": "CrowdStrike",
+          "metric": "通常取引終値",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "USD/株",
+          "basis": "market",
+          "definition": "米東部時間通常取引の終値。時間外取引は含めない。"
+        },
+        {
+          "id": "zs0",
+          "entity": "Zscaler",
+          "metric": "通常取引終値",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "USD/株",
+          "basis": "market",
+          "definition": "米東部時間通常取引の終値。時間外取引は含めない。"
+        },
+        {
+          "id": "zs1",
+          "entity": "Zscaler",
+          "metric": "通常取引終値",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "USD/株",
+          "basis": "market",
+          "definition": "米東部時間通常取引の終値。時間外取引は含めない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "crwd0",
+          "entity": "CrowdStrike",
+          "metric": "通常取引終値",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "USD/株",
+          "basis": "market",
+          "definition": "米東部時間通常取引の終値。時間外取引は含めない。",
+          "value": 229.44,
+          "source": {
+            "url": "https://stockanalysis.com/stocks/crwd/history/",
+            "publishedOn": "2026-11-20",
+            "locator": "Historical Data > Daily > 2026-11-20, Close column",
+            "kind": "secondary",
+            "primaryUnavailableReason": "Nasdaqのhistorical頁は対象日終値を本文に表示せず、NasdaqデータAPIは取得不可。独立公表の終値と比較。"
+          }
+        },
+        {
+          "id": "crwd1",
+          "entity": "CrowdStrike",
+          "metric": "通常取引終値",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "USD/株",
+          "basis": "market",
+          "definition": "米東部時間通常取引の終値。時間外取引は含めない。",
+          "value": 208.97,
+          "source": {
+            "url": "https://stockanalysis.com/stocks/crwd/history/",
+            "publishedOn": "2026-11-23",
+            "locator": "Historical Data > Daily > 2026-11-23, Close column",
+            "kind": "secondary",
+            "primaryUnavailableReason": "Nasdaqのhistorical頁は対象日終値を本文に表示せず、NasdaqデータAPIは取得不可。独立公表の終値と比較。"
+          }
+        },
+        {
+          "id": "zs0",
+          "entity": "Zscaler",
+          "metric": "通常取引終値",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "USD/株",
+          "basis": "market",
+          "definition": "米東部時間通常取引の終値。時間外取引は含めない。",
+          "value": 194.82,
+          "source": {
+            "url": "https://ir.zscaler.com/stock-information/stock-quote-chart",
+            "publishedOn": "2026-11-20",
+            "locator": "Historic Price Lookup > Week of November 16, November 20, Closing Price (LSEG)",
+            "kind": "secondary",
+            "primaryUnavailableReason": "NASDAQ historical表示本文にデータなし。発行体IRに掲載のLSEGを使用し、Stock Analysis表でも確認。"
+          }
+        },
+        {
+          "id": "zs1",
+          "entity": "Zscaler",
+          "metric": "通常取引終値",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "USD/株",
+          "basis": "market",
+          "definition": "米東部時間通常取引の終値。時間外取引は含めない。",
+          "value": 229.24,
+          "source": {
+            "url": "https://stockanalysis.com/stocks/zs/history/",
+            "publishedOn": "2026-11-23",
+            "locator": "Historical Data > Daily > 2026-11-23, Close column",
+            "kind": "secondary",
+            "primaryUnavailableReason": "Nasdaqのhistorical頁は対象日終値を本文に表示せず、NasdaqデータAPIは取得不可。独立公表の終値と比較。"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "crwd-pct",
+          "operation": "growth-percent",
+          "inputs": [
+            "crwd1",
+            "crwd0"
+          ],
+          "definition": "買い手終値騰落率",
+          "precision": 2,
+          "value": -8.92
+        },
+        {
+          "id": "zs-pct",
+          "operation": "growth-percent",
+          "inputs": [
+            "zs1",
+            "zs0"
+          ],
+          "definition": "対象社終値騰落率",
+          "precision": 2,
+          "value": 17.67
+        }
+      ],
+      "claim": "Zscaler株は17.67％上がった"
+    },
+    {
+      "id": "deal-mark-vs-market",
+      "question": "発表時の対価換算と発表日終値ベースの換算・市場価格との差は？",
+      "definition": "対価換算は基本比率×同日CRWD通常取引終値。上乗せ率は両日ともZS 11/20終値が分母。差額は11/23の換算値−11/23のZS終値で、成立確率または確定利益ではない。掛け算はゲート非対応のため reviewNote に手計算式。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "crwd0",
+          "entity": "CrowdStrike",
+          "metric": "通常取引終値",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "USD/株",
+          "basis": "market",
+          "definition": "米東部時間通常取引の終値。時間外取引は含めない。"
+        },
+        {
+          "id": "crwd1",
+          "entity": "CrowdStrike",
+          "metric": "通常取引終値",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "USD/株",
+          "basis": "market",
+          "definition": "米東部時間通常取引の終値。時間外取引は含めない。"
+        },
+        {
+          "id": "zs0",
+          "entity": "Zscaler",
+          "metric": "通常取引終値",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "USD/株",
+          "basis": "market",
+          "definition": "米東部時間通常取引の終値。時間外取引は含めない。"
+        },
+        {
+          "id": "zs1",
+          "entity": "Zscaler",
+          "metric": "通常取引終値",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "USD/株",
+          "basis": "market",
+          "definition": "米東部時間通常取引の終値。時間外取引は含めない。"
+        },
+        {
+          "id": "r",
+          "entity": "合併契約",
+          "metric": "基本交換比率",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "CRWD株/ZS株",
+          "basis": "actual",
+          "definition": "成立時の基本比率。上限と端株等の調整前。"
+        },
+        {
+          "id": "issuer-mark",
+          "entity": "共同発表",
+          "metric": "発表時の1株当たり換算価値",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "USD/ZS株",
+          "basis": "market",
+          "definition": "11/20のCrowdStrike終値を基準とする。実際の対価や現金額ではない。"
+        },
+        {
+          "id": "ev",
+          "entity": "共同発表",
+          "metric": "発表時の概算企業価値",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "USD billion",
+          "basis": "market",
+          "definition": "11/20のCrowdStrike終値基準の企業価値。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "crwd0",
+          "entity": "CrowdStrike",
+          "metric": "通常取引終値",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "USD/株",
+          "basis": "market",
+          "definition": "米東部時間通常取引の終値。時間外取引は含めない。",
+          "value": 229.44,
+          "source": {
+            "url": "https://stockanalysis.com/stocks/crwd/history/",
+            "publishedOn": "2026-11-20",
+            "locator": "Historical Data > Daily > 2026-11-20, Close column",
+            "kind": "secondary",
+            "primaryUnavailableReason": "Nasdaqのhistorical頁は対象日終値を本文に表示せず、NasdaqデータAPIは取得不可。独立公表の終値と比較。"
+          }
+        },
+        {
+          "id": "crwd1",
+          "entity": "CrowdStrike",
+          "metric": "通常取引終値",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "USD/株",
+          "basis": "market",
+          "definition": "米東部時間通常取引の終値。時間外取引は含めない。",
+          "value": 208.97,
+          "source": {
+            "url": "https://stockanalysis.com/stocks/crwd/history/",
+            "publishedOn": "2026-11-23",
+            "locator": "Historical Data > Daily > 2026-11-23, Close column",
+            "kind": "secondary",
+            "primaryUnavailableReason": "Nasdaqのhistorical頁は対象日終値を本文に表示せず、NasdaqデータAPIは取得不可。独立公表の終値と比較。"
+          }
+        },
+        {
+          "id": "zs0",
+          "entity": "Zscaler",
+          "metric": "通常取引終値",
+          "periodStart": "2026-11-20",
+          "periodEnd": "2026-11-20",
+          "unit": "USD/株",
+          "basis": "market",
+          "definition": "米東部時間通常取引の終値。時間外取引は含めない。",
+          "value": 194.82,
+          "source": {
+            "url": "https://ir.zscaler.com/stock-information/stock-quote-chart",
+            "publishedOn": "2026-11-20",
+            "locator": "Historic Price Lookup > Week of November 16, November 20, Closing Price (LSEG)",
+            "kind": "secondary",
+            "primaryUnavailableReason": "NASDAQ historical表示本文にデータなし。発行体IRに掲載のLSEGを使用し、Stock Analysis表でも確認。"
+          }
+        },
+        {
+          "id": "zs1",
+          "entity": "Zscaler",
+          "metric": "通常取引終値",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "USD/株",
+          "basis": "market",
+          "definition": "米東部時間通常取引の終値。時間外取引は含めない。",
+          "value": 229.24,
+          "source": {
+            "url": "https://stockanalysis.com/stocks/zs/history/",
+            "publishedOn": "2026-11-23",
+            "locator": "Historical Data > Daily > 2026-11-23, Close column",
+            "kind": "secondary",
+            "primaryUnavailableReason": "Nasdaqのhistorical頁は対象日終値を本文に表示せず、NasdaqデータAPIは取得不可。独立公表の終値と比較。"
+          }
+        },
+        {
+          "id": "r",
+          "entity": "合併契約",
+          "metric": "基本交換比率",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "CRWD株/ZS株",
+          "basis": "actual",
+          "definition": "成立時の基本比率。上限と端株等の調整前。",
+          "value": 1.135,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1535527/000110465926130785/tm2630454d1_ex2-1.htm",
+            "publishedOn": "2026-11-23",
+            "locator": "§2.02(a)、行699",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "issuer-mark",
+          "entity": "共同発表",
+          "metric": "発表時の1株当たり換算価値",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "USD/ZS株",
+          "basis": "market",
+          "definition": "11/20のCrowdStrike終値を基準とする。実際の対価や現金額ではない。",
+          "value": 260.41,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1713683/000110465926130801/tm2630454d2_ex99-1.htm",
+            "publishedOn": "2026-11-23",
+            "locator": "Transaction Details, 交換比率の段落",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ev",
+          "entity": "共同発表",
+          "metric": "発表時の概算企業価値",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "USD billion",
+          "basis": "market",
+          "definition": "11/20のCrowdStrike終値基準の企業価値。",
+          "value": 43.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1713683/000110465926130801/tm2630454d2_ex99-1.htm",
+            "publishedOn": "2026-11-23",
+            "locator": "Transaction Details, 企業価値の段落",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "33.67％から21.74％"
+    },
+    {
+      "id": "share-cap",
+      "question": "株数上限調整と価格保証は同じか",
+      "definition": "契約本文では潜在発行を含む上限超過時にだけ比率を調整し、比率の減少を契約で定義するVWAPで払う。端株処理は別条項。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "r",
+          "entity": "合併契約",
+          "metric": "基本交換比率",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "CRWD株/ZS株",
+          "basis": "actual",
+          "definition": "成立時の基本比率。上限と端株等の調整前。"
+        },
+        {
+          "id": "cap",
+          "entity": "合併契約",
+          "metric": "株数上限計算の基準",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "発行直前の親会社クラスA普通株のうちナスダック規則に従う。実際の上限はこの比率から1株少ない数。"
+        },
+        {
+          "id": "cap-lookback",
+          "entity": "合併契約",
+          "metric": "現金調整参照期間",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "取引日",
+          "basis": "actual",
+          "definition": "完了日の直前取引日まで、同日を含む取引日数。終値ではなくVWAP。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "r",
+          "entity": "合併契約",
+          "metric": "基本交換比率",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "CRWD株/ZS株",
+          "basis": "actual",
+          "definition": "成立時の基本比率。上限と端株等の調整前。",
+          "value": 1.135,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1535527/000110465926130785/tm2630454d1_ex2-1.htm",
+            "publishedOn": "2026-11-23",
+            "locator": "§2.02(a)、行699",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap",
+          "entity": "合併契約",
+          "metric": "株数上限計算の基準",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "発行直前の親会社クラスA普通株のうちナスダック規則に従う。実際の上限はこの比率から1株少ない数。",
+          "value": 20,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1535527/000110465926130785/tm2630454d1_ex2-1.htm",
+            "publishedOn": "2026-11-23",
+            "locator": "§2.02(e)、行706",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cap-lookback",
+          "entity": "合併契約",
+          "metric": "現金調整参照期間",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "取引日",
+          "basis": "actual",
+          "definition": "完了日の直前取引日まで、同日を含む取引日数。終値ではなくVWAP。",
+          "value": 5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1535527/000110465926130785/tm2630454d1_ex2-1.htm",
+            "publishedOn": "2026-11-23",
+            "locator": "§1.01 Parent Share Price、行482",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "20％より1株少ない水準"
+    },
+    {
+      "id": "ownership",
+      "question": "経営陣が予想する成立後株式持分は？",
+      "definition": "共同発表による成立後の概算で、取引前株式を分母とする新規発行率ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "legacy-crwd",
+          "entity": "旧CrowdStrike株主",
+          "metric": "成立後持分",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "分母は成立後の統合会社株式。"
+        },
+        {
+          "id": "legacy-zs",
+          "entity": "旧Zscaler株主",
+          "metric": "成立後持分",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "分母は成立後の統合会社株式。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "legacy-crwd",
+          "entity": "旧CrowdStrike株主",
+          "metric": "成立後持分",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "分母は成立後の統合会社株式。",
+          "value": 84.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1713683/000110465926130801/tm2630454d2_ex99-1.htm",
+            "publishedOn": "2026-11-23",
+            "locator": "Transaction Details, ownership outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "legacy-zs",
+          "entity": "旧Zscaler株主",
+          "metric": "成立後持分",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "分母は成立後の統合会社株式。",
+          "value": 15.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1713683/000110465926130801/tm2630454d2_ex99-1.htm",
+            "publishedOn": "2026-11-23",
+            "locator": "Transaction Details, ownership outlook",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "total-share",
+          "operation": "sum",
+          "inputs": [
+            "legacy-crwd",
+            "legacy-zs"
+          ],
+          "definition": "見込み持分の合計",
+          "precision": 1,
+          "value": 100
+        }
+      ],
+      "claim": "旧CrowdStrike株主が約84.1％、旧Zscaler株主が約15.9％"
+    },
+    {
+      "id": "customers",
+      "question": "共通顧客と販売候補の人数は受注と同義か",
+      "definition": "11/23の会社説明。共通は閾値以上、未重複顧客は概数。受注件数や増収見込みの分母とはしない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "shared",
+          "entity": "両社",
+          "metric": "共通顧客の下限",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "社",
+          "basis": "actual",
+          "definition": "経営陣による説明はmore than 2,000。既存の共通顧客で、正確な合計は不明。"
+        },
+        {
+          "id": "prospect",
+          "entity": "Zscaler",
+          "metric": "CrowdStrikeの顧客ではない既存Zscaler顧客",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "社",
+          "basis": "actual",
+          "definition": "会社推計の概数。未契約の販売候補。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "shared",
+          "entity": "両社",
+          "metric": "共通顧客の下限",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "社",
+          "basis": "actual",
+          "definition": "経営陣による説明はmore than 2,000。既存の共通顧客で、正確な合計は不明。",
+          "value": 2000,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1713683/000110465926131045/tm2630454d4_425.htm",
+            "publishedOn": "2026-11-23",
+            "locator": "11/23 transcript, p.4, 行84–85",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prospect",
+          "entity": "Zscaler",
+          "metric": "CrowdStrikeの顧客ではない既存Zscaler顧客",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "社",
+          "basis": "actual",
+          "definition": "会社推計の概数。未契約の販売候補。",
+          "value": 8000,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1713683/000110465926131045/tm2630454d4_425.htm",
+            "publishedOn": "2026-11-23",
+            "locator": "11/23 transcript, 行207–211",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "2,000社超の共通顧客"
+    },
+    {
+      "id": "run-rate-cost",
+      "question": "発表時の削減目標は実現現金なのか",
+      "definition": "完了が条件の年換算費用削減ペース。累計、統合費用控除後の現金、達成済み実績ではない。1株FCF増加は会社見通し。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "run-rate",
+          "entity": "CrowdStrike",
+          "metric": "費用削減目標（年換算）",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "USD million/年",
+          "basis": "company-forecast",
+          "definition": "完了後18–24カ月で達するという会社前提。"
+        },
+        {
+          "id": "early",
+          "entity": "CrowdStrike",
+          "metric": "到達時期の下限",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "完了後月",
+          "basis": "company-forecast",
+          "definition": "会社見込みのレンジ下限。"
+        },
+        {
+          "id": "late",
+          "entity": "CrowdStrike",
+          "metric": "到達時期の上限",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "完了後月",
+          "basis": "company-forecast",
+          "definition": "会社見込みのレンジ上限。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "run-rate",
+          "entity": "CrowdStrike",
+          "metric": "費用削減目標（年換算）",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "USD million/年",
+          "basis": "company-forecast",
+          "definition": "完了後18–24カ月で達するという会社前提。",
+          "value": 500,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1713683/000110465926130801/tm2630454d2_ex99-1.htm",
+            "publishedOn": "2026-11-23",
+            "locator": "Strategic and Financial Benefits, Margin Expansion bullet",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "early",
+          "entity": "CrowdStrike",
+          "metric": "到達時期の下限",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "完了後月",
+          "basis": "company-forecast",
+          "definition": "会社見込みのレンジ下限。",
+          "value": 18,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1713683/000110465926130801/tm2630454d2_ex99-1.htm",
+            "publishedOn": "2026-11-23",
+            "locator": "Strategic and Financial Benefits, Margin Expansion bullet",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "late",
+          "entity": "CrowdStrike",
+          "metric": "到達時期の上限",
+          "periodStart": "2026-11-23",
+          "periodEnd": "2026-11-23",
+          "unit": "完了後月",
+          "basis": "company-forecast",
+          "definition": "会社見込みのレンジ上限。",
+          "value": 24,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1713683/000110465926130801/tm2630454d2_ex99-1.htm",
+            "publishedOn": "2026-11-23",
+            "locator": "Strategic and Financial Benefits, Margin Expansion bullet",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "完了後18〜24カ月以内に、データセンター運営や取引先の見直しなどで年換算5億ドルの費用削減"
+    }
+  ]
+}
