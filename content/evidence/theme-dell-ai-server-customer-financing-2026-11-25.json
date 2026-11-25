@@ -1,0 +1,956 @@
+{
+  "version": 1,
+  "articleSlug": "theme-dell-ai-server-customer-financing-2026-11-25",
+  "articleSha256": "ec20444f7363bed763577aa2d4ce981b700017a46b06e3b6dc1e47ba85696d92",
+  "checkedAt": "2026-11-25T19:47:01+09:00",
+  "informationCutoff": "2026-11-25T19:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "Dell 8-K添付の現金収支と指標調整表、貸借対照表を再照合。会社資料のAIサーバー与信説明は会社説明として帰属。SEC 10-Q・社債目論見書で資金調達の仕組みを照合。AI固有の調整額・償却率、買戻し資金の由来は未確認で記載しない。",
+  "comparisons": [
+    {
+      "id": "cash-flow",
+      "question": "調整前後のFCFと株主への支出を同じ9カ月で比べると？",
+      "definition": "米ドル名目、連結、同社FCF指標とCF計算書の支出。",
+      "status": "ready",
+      "claim": "同じ9カ月の現金還元110.70億ドルは、会社定義の調整前FCF75.78億ドルを上回り、調整後FCF156.02億ドルを下回った。",
+      "requiredInputs": [
+        {
+          "id": "nowcfo",
+          "entity": "Dell Technologies",
+          "metric": "営業CF",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金"
+        },
+        {
+          "id": "nowcap",
+          "entity": "Dell Technologies",
+          "metric": "設備・ソフトウェア純支出",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "資産売却収入込みの純支出、FCF計算に負値で使用"
+        },
+        {
+          "id": "nowrec",
+          "entity": "Dell Technologies",
+          "metric": "金融債権調整",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "金融債権増減が営業CFに与えた影響を調整後FCFで足し戻す額"
+        },
+        {
+          "id": "nowlease",
+          "entity": "Dell Technologies",
+          "metric": "リース設備調整",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "オペレーティングリース設備の投資と減価償却のネット調整"
+        },
+        {
+          "id": "nowbuy",
+          "entity": "Dell Technologies",
+          "metric": "普通株買戻し",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金支出の絶対額、従業員源泉徴収関連を除く"
+        },
+        {
+          "id": "nowdiv",
+          "entity": "Dell Technologies",
+          "metric": "配当等",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当および配当相当額の現金支出の絶対額"
+        },
+        {
+          "id": "prevcfo",
+          "entity": "Dell Technologies",
+          "metric": "営業CF",
+          "periodStart": "2025-02-01",
+          "periodEnd": "2025-10-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金"
+        },
+        {
+          "id": "prevcap",
+          "entity": "Dell Technologies",
+          "metric": "設備・ソフトウェア純支出",
+          "periodStart": "2025-02-01",
+          "periodEnd": "2025-10-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "資産売却収入込みの純支出、FCF計算に負値で使用"
+        },
+        {
+          "id": "prevrec",
+          "entity": "Dell Technologies",
+          "metric": "金融債権調整",
+          "periodStart": "2025-02-01",
+          "periodEnd": "2025-10-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "金融債権増減が営業CFに与えた影響を調整後FCFで足し戻す額"
+        },
+        {
+          "id": "prevlease",
+          "entity": "Dell Technologies",
+          "metric": "リース設備調整",
+          "periodStart": "2025-02-01",
+          "periodEnd": "2025-10-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "オペレーティングリース設備の投資と減価償却のネット調整"
+        },
+        {
+          "id": "prevbuy",
+          "entity": "Dell Technologies",
+          "metric": "普通株買戻し",
+          "periodStart": "2025-02-01",
+          "periodEnd": "2025-10-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金支出の絶対額、従業員源泉徴収関連を除く"
+        },
+        {
+          "id": "prevdiv",
+          "entity": "Dell Technologies",
+          "metric": "配当等",
+          "periodStart": "2025-02-01",
+          "periodEnd": "2025-10-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当および配当相当額の現金支出の絶対額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "nowcfo",
+          "entity": "Dell Technologies",
+          "metric": "営業CF",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.15 調整表、Cash flow from operations"
+          },
+          "value": 10765
+        },
+        {
+          "id": "nowcap",
+          "entity": "Dell Technologies",
+          "metric": "設備・ソフトウェア純支出",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "資産売却収入込みの純支出、FCF計算に負値で使用",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.15 調整表、Capital expenditures and capitalized software development costs, net"
+          },
+          "value": -3187
+        },
+        {
+          "id": "nowrec",
+          "entity": "Dell Technologies",
+          "metric": "金融債権調整",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "金融債権増減が営業CFに与えた影響を調整後FCFで足し戻す額",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.15 Financing receivables、脚注(b)"
+          },
+          "value": 7065
+        },
+        {
+          "id": "nowlease",
+          "entity": "Dell Technologies",
+          "metric": "リース設備調整",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "オペレーティングリース設備の投資と減価償却のネット調整",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.15 Equipment under operating leases、脚注(c)"
+          },
+          "value": 959
+        },
+        {
+          "id": "nowbuy",
+          "entity": "Dell Technologies",
+          "metric": "普通株買戻し",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金支出の絶対額、従業員源泉徴収関連を除く",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.8 Repurchases of common stock"
+          },
+          "value": 9803
+        },
+        {
+          "id": "nowdiv",
+          "entity": "Dell Technologies",
+          "metric": "配当等",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当および配当相当額の現金支出の絶対額",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.8 Payments of dividends and dividend equivalents"
+          },
+          "value": 1267
+        },
+        {
+          "id": "prevcfo",
+          "entity": "Dell Technologies",
+          "metric": "営業CF",
+          "periodStart": "2025-02-01",
+          "periodEnd": "2025-10-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "営業活動による純現金",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.15 調整表、Cash flow from operations"
+          },
+          "value": 6511
+        },
+        {
+          "id": "prevcap",
+          "entity": "Dell Technologies",
+          "metric": "設備・ソフトウェア純支出",
+          "periodStart": "2025-02-01",
+          "periodEnd": "2025-10-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "資産売却収入込みの純支出、FCF計算に負値で使用",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.15 調整表、Capital expenditures and capitalized software development costs, net"
+          },
+          "value": -1909
+        },
+        {
+          "id": "prevrec",
+          "entity": "Dell Technologies",
+          "metric": "金融債権調整",
+          "periodStart": "2025-02-01",
+          "periodEnd": "2025-10-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "金融債権増減が営業CFに与えた影響を調整後FCFで足し戻す額",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.15 Financing receivables、脚注(b)"
+          },
+          "value": 1704
+        },
+        {
+          "id": "prevlease",
+          "entity": "Dell Technologies",
+          "metric": "リース設備調整",
+          "periodStart": "2025-02-01",
+          "periodEnd": "2025-10-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "オペレーティングリース設備の投資と減価償却のネット調整",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.15 Equipment under operating leases、脚注(c)"
+          },
+          "value": 114
+        },
+        {
+          "id": "prevbuy",
+          "entity": "Dell Technologies",
+          "metric": "普通株買戻し",
+          "periodStart": "2025-02-01",
+          "periodEnd": "2025-10-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "現金支出の絶対額、従業員源泉徴収関連を除く",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.8 Repurchases of common stock"
+          },
+          "value": 4167
+        },
+        {
+          "id": "prevdiv",
+          "entity": "Dell Technologies",
+          "metric": "配当等",
+          "periodStart": "2025-02-01",
+          "periodEnd": "2025-10-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "配当および配当相当額の現金支出の絶対額",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.8 Payments of dividends and dividend equivalents"
+          },
+          "value": 1113
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "nowcfo",
+            "nowcap"
+          ],
+          "value": 7578,
+          "definition": "同期間・同一単位の入力値を合算",
+          "precision": 0
+        },
+        {
+          "id": "adjusted",
+          "operation": "sum",
+          "inputs": [
+            "fcf",
+            "nowrec",
+            "nowlease"
+          ],
+          "value": 15602,
+          "definition": "同期間・同一単位の入力値を合算",
+          "precision": 0
+        },
+        {
+          "id": "cashreturn",
+          "operation": "sum",
+          "inputs": [
+            "nowbuy",
+            "nowdiv"
+          ],
+          "value": 11070,
+          "definition": "同期間・同一単位の入力値を合算",
+          "precision": 0
+        },
+        {
+          "id": "pfcf",
+          "operation": "sum",
+          "inputs": [
+            "prevcfo",
+            "prevcap"
+          ],
+          "value": 4602,
+          "definition": "同期間・同一単位の入力値を合算",
+          "precision": 0
+        },
+        {
+          "id": "padjusted",
+          "operation": "sum",
+          "inputs": [
+            "pfcf",
+            "prevrec",
+            "prevlease"
+          ],
+          "value": 6420,
+          "definition": "同期間・同一単位の入力値を合算",
+          "precision": 0
+        },
+        {
+          "id": "preturn",
+          "operation": "sum",
+          "inputs": [
+            "prevbuy",
+            "prevdiv"
+          ],
+          "value": 5280,
+          "definition": "同期間・同一単位の入力値を合算",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "quarter-cash-timing",
+      "question": "金融債権の調整は第3四半期単独でも拡大したか？",
+      "definition": "会社の同じ比較列、連結、各Q3単独。",
+      "status": "ready",
+      "claim": "金融債権の足し戻しは9カ月累計では増えたが、第3四半期単独では前年の11.35億ドルから6.61億ドルへ縮んだ。",
+      "requiredInputs": [
+        {
+          "id": "q3prev",
+          "entity": "Dell Technologies",
+          "metric": "金融債権調整",
+          "periodStart": "2025-08-02",
+          "periodEnd": "2025-10-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "金融債権増減の営業CF影響を調整後FCFで足し戻す額"
+        },
+        {
+          "id": "q3now",
+          "entity": "Dell Technologies",
+          "metric": "金融債権調整",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "金融債権増減の営業CF影響を調整後FCFで足し戻す額"
+        }
+      ],
+      "observations": [
+        {
+          "id": "q3prev",
+          "entity": "Dell Technologies",
+          "metric": "金融債権調整",
+          "periodStart": "2025-08-02",
+          "periodEnd": "2025-10-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "金融債権増減の営業CF影響を調整後FCFで足し戻す額",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.15 Financing receivables、3カ月列、脚注(b)"
+          },
+          "value": 1135
+        },
+        {
+          "id": "q3now",
+          "entity": "Dell Technologies",
+          "metric": "金融債権調整",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "金融債権増減の営業CF影響を調整後FCFで足し戻す額",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.15 Financing receivables、3カ月列、脚注(b)"
+          },
+          "value": 661
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "balance",
+      "question": "純金融債権と引当の期初からの変化は？",
+      "definition": "短期・長期の同じ科目を合算、引当は実現損失ではない。",
+      "status": "ready",
+      "claim": "期初から10月末にかけて、短期・長期を合算した純金融債権は142.80億ドルから209.40億ドル、貸倒引当金は2.13億ドルから3.73億ドルに増えた。",
+      "requiredInputs": [
+        {
+          "id": "basest",
+          "entity": "Dell Technologies",
+          "metric": "短期金融債権純額",
+          "periodStart": "2026-01-30",
+          "periodEnd": "2026-01-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期金融債権純額、期末時点"
+        },
+        {
+          "id": "baselt",
+          "entity": "Dell Technologies",
+          "metric": "長期金融債権純額",
+          "periodStart": "2026-01-30",
+          "periodEnd": "2026-01-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期金融債権純額、期末時点"
+        },
+        {
+          "id": "basesta",
+          "entity": "Dell Technologies",
+          "metric": "短期金融債権引当",
+          "periodStart": "2026-01-30",
+          "periodEnd": "2026-01-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期金融債権引当、期末時点"
+        },
+        {
+          "id": "baselta",
+          "entity": "Dell Technologies",
+          "metric": "長期金融債権引当",
+          "periodStart": "2026-01-30",
+          "periodEnd": "2026-01-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期金融債権引当、期末時点"
+        },
+        {
+          "id": "endst",
+          "entity": "Dell Technologies",
+          "metric": "短期金融債権純額",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期金融債権純額、期末時点"
+        },
+        {
+          "id": "endlt",
+          "entity": "Dell Technologies",
+          "metric": "長期金融債権純額",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期金融債権純額、期末時点"
+        },
+        {
+          "id": "endsta",
+          "entity": "Dell Technologies",
+          "metric": "短期金融債権引当",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期金融債権引当、期末時点"
+        },
+        {
+          "id": "endlta",
+          "entity": "Dell Technologies",
+          "metric": "長期金融債権引当",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期金融債権引当、期末時点"
+        }
+      ],
+      "observations": [
+        {
+          "id": "basest",
+          "entity": "Dell Technologies",
+          "metric": "短期金融債権純額",
+          "periodStart": "2026-01-30",
+          "periodEnd": "2026-01-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期金融債権純額、期末時点",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.7 Condensed Consolidated Statements of Financial Position、金融債権短期・長期と引当"
+          },
+          "value": 8458
+        },
+        {
+          "id": "baselt",
+          "entity": "Dell Technologies",
+          "metric": "長期金融債権純額",
+          "periodStart": "2026-01-30",
+          "periodEnd": "2026-01-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期金融債権純額、期末時点",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.7 Condensed Consolidated Statements of Financial Position、金融債権短期・長期と引当"
+          },
+          "value": 5822
+        },
+        {
+          "id": "basesta",
+          "entity": "Dell Technologies",
+          "metric": "短期金融債権引当",
+          "periodStart": "2026-01-30",
+          "periodEnd": "2026-01-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期金融債権引当、期末時点",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.7 Condensed Consolidated Statements of Financial Position、金融債権短期・長期と引当"
+          },
+          "value": 121
+        },
+        {
+          "id": "baselta",
+          "entity": "Dell Technologies",
+          "metric": "長期金融債権引当",
+          "periodStart": "2026-01-30",
+          "periodEnd": "2026-01-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期金融債権引当、期末時点",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.7 Condensed Consolidated Statements of Financial Position、金融債権短期・長期と引当"
+          },
+          "value": 92
+        },
+        {
+          "id": "endst",
+          "entity": "Dell Technologies",
+          "metric": "短期金融債権純額",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期金融債権純額、期末時点",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.7 Condensed Consolidated Statements of Financial Position、金融債権短期・長期と引当"
+          },
+          "value": 13182
+        },
+        {
+          "id": "endlt",
+          "entity": "Dell Technologies",
+          "metric": "長期金融債権純額",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期金融債権純額、期末時点",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.7 Condensed Consolidated Statements of Financial Position、金融債権短期・長期と引当"
+          },
+          "value": 7758
+        },
+        {
+          "id": "endsta",
+          "entity": "Dell Technologies",
+          "metric": "短期金融債権引当",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "短期金融債権引当、期末時点",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.7 Condensed Consolidated Statements of Financial Position、金融債権短期・長期と引当"
+          },
+          "value": 233
+        },
+        {
+          "id": "endlta",
+          "entity": "Dell Technologies",
+          "metric": "長期金融債権引当",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "長期金融債権引当、期末時点",
+          "source": {
+            "url": "https://investors.delltechnologies.com/sec-filings/all-sec-filings/content/0001571996-26-000050/exhibit991earnings8kq3fy27.htm",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.7 Condensed Consolidated Statements of Financial Position、金融債権短期・長期と引当"
+          },
+          "value": 140
+        }
+      ],
+      "calculations": [
+        {
+          "id": "base-net",
+          "operation": "sum",
+          "inputs": [
+            "basest",
+            "baselt"
+          ],
+          "value": 14280,
+          "definition": "同期間・同一単位の入力値を合算",
+          "precision": 0
+        },
+        {
+          "id": "end-net",
+          "operation": "sum",
+          "inputs": [
+            "endst",
+            "endlt"
+          ],
+          "value": 20940,
+          "definition": "同期間・同一単位の入力値を合算",
+          "precision": 0
+        },
+        {
+          "id": "base-allow",
+          "operation": "sum",
+          "inputs": [
+            "basesta",
+            "baselta"
+          ],
+          "value": 213,
+          "definition": "同期間・同一単位の入力値を合算",
+          "precision": 0
+        },
+        {
+          "id": "end-allow",
+          "operation": "sum",
+          "inputs": [
+            "endsta",
+            "endlta"
+          ],
+          "value": 373,
+          "definition": "同期間・同一単位の入力値を合算",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "charge-offs",
+      "question": "第2四半期の全金融債権元本償却率は？",
+      "definition": "会社のポートフォリオ全体の単独四半期開示、AI固有ではない。",
+      "status": "ready",
+      "claim": "直近の詳細注記がある7月末までの資料では、金融債権ポートフォリオの第2四半期の元本償却率は前年同期の0.1%から0.5%に上がった。",
+      "requiredInputs": [
+        {
+          "id": "rate0",
+          "entity": "Dell Technologies",
+          "metric": "元本償却率",
+          "periodStart": "2025-05-03",
+          "periodEnd": "2025-08-01",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "DFSの金融債権ポートフォリオ全体、Q2単独"
+        },
+        {
+          "id": "rate1",
+          "entity": "Dell Technologies",
+          "metric": "元本償却率",
+          "periodStart": "2026-05-02",
+          "periodEnd": "2026-07-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "DFSの金融債権ポートフォリオ全体、Q2単独"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rate0",
+          "entity": "Dell Technologies",
+          "metric": "元本償却率",
+          "periodStart": "2025-05-03",
+          "periodEnd": "2025-08-01",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "DFSの金融債権ポートフォリオ全体、Q2単独",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000046/dell-20260731.htm",
+            "publishedOn": "2026-09-08",
+            "kind": "primary",
+            "locator": "MD&A Dell Financial Services、principal charge-off rate"
+          },
+          "value": 0.1
+        },
+        {
+          "id": "rate1",
+          "entity": "Dell Technologies",
+          "metric": "元本償却率",
+          "periodStart": "2026-05-02",
+          "periodEnd": "2026-07-31",
+          "unit": "%",
+          "basis": "actual",
+          "definition": "DFSの金融債権ポートフォリオ全体、Q2単独",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199626000046/dell-20260731.htm",
+            "publishedOn": "2026-09-08",
+            "kind": "primary",
+            "locator": "MD&A Dell Financial Services、principal charge-off rate"
+          },
+          "value": 0.5
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "orders-sales-backlog",
+      "question": "受注・売上・期末受注残の規模は？",
+      "definition": "AIサーバーの単独四半期フローと期末ストック。金額同士を相殺しない。",
+      "status": "ready",
+      "claim": "第3四半期のAIサーバーは受注602億ドル、売上220億ドル、期末受注残1,323億ドルだった。",
+      "requiredInputs": [
+        {
+          "id": "orders",
+          "entity": "Dell Technologies",
+          "metric": "新規受注",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Dell開示のAI最適化サーバー、受注・売上は期間、受注残は期末"
+        },
+        {
+          "id": "sales",
+          "entity": "Dell Technologies",
+          "metric": "売上",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Dell開示のAI最適化サーバー、受注・売上は期間、受注残は期末"
+        },
+        {
+          "id": "book",
+          "entity": "Dell Technologies",
+          "metric": "受注残",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Dell開示のAI最適化サーバー、受注・売上は期間、受注残は期末"
+        }
+      ],
+      "observations": [
+        {
+          "id": "orders",
+          "entity": "Dell Technologies",
+          "metric": "新規受注",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Dell開示のAI最適化サーバー、受注・売上は期間、受注残は期末",
+          "source": {
+            "url": "https://investors.delltechnologies.com/_assets/_270719a6457975cf4cdc96deae78c939/delltechnologies/db/3595/34778/prepared_remarks/Q3_FY27_Prepared_Remarks.pdf",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.12 ISG、AI servers",
+            "pdfPage": 12
+          },
+          "value": 60200
+        },
+        {
+          "id": "sales",
+          "entity": "Dell Technologies",
+          "metric": "売上",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Dell開示のAI最適化サーバー、受注・売上は期間、受注残は期末",
+          "source": {
+            "url": "https://investors.delltechnologies.com/_assets/_270719a6457975cf4cdc96deae78c939/delltechnologies/db/3595/34778/prepared_remarks/Q3_FY27_Prepared_Remarks.pdf",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.12 ISG、AI servers",
+            "pdfPage": 12
+          },
+          "value": 22000
+        },
+        {
+          "id": "book",
+          "entity": "Dell Technologies",
+          "metric": "受注残",
+          "periodStart": "2026-10-30",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "Dell開示のAI最適化サーバー、受注・売上は期間、受注残は期末",
+          "source": {
+            "url": "https://investors.delltechnologies.com/_assets/_270719a6457975cf4cdc96deae78c939/delltechnologies/db/3595/34778/prepared_remarks/Q3_FY27_Prepared_Remarks.pdf",
+            "publishedOn": "2026-11-24",
+            "kind": "primary",
+            "locator": "p.12 ISG、AI servers",
+            "pdfPage": 12
+          },
+          "value": 132300
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "dfs-funding",
+      "question": "前四半期末のDFSの調達残高は？",
+      "definition": "7月末時点のDFS全体残高、Dell全社債務・AI向けの額ではない。",
+      "status": "ready",
+      "claim": "7月末時点でDFS債務が約96億ドル。",
+      "requiredInputs": [
+        {
+          "id": "dfs",
+          "entity": "Dell Technologies",
+          "metric": "DFS債務",
+          "periodStart": "2026-07-31",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "社債目論見書記載の概数、主に証券化・仕組み金融"
+        }
+      ],
+      "observations": [
+        {
+          "id": "dfs",
+          "entity": "Dell Technologies",
+          "metric": "DFS債務",
+          "periodStart": "2026-07-31",
+          "periodEnd": "2026-07-31",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "社債目論見書記載の概数、主に証券化・仕組み金融",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/790070/000119312526389295/d207421d424b2.htm",
+            "publishedOn": "2026-09-09",
+            "kind": "primary",
+            "locator": "p. S-6、Definitions of certain terms、DFS debt"
+          },
+          "value": 9600
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}
