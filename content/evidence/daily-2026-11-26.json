@@ -1,0 +1,467 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-11-26",
+  "articleSha256": "8ef47b9b5efbd582b02902a86941e1285655f9411c54677837c571043ba03c07",
+  "checkedAt": "2026-11-26T06:26:09+09:00",
+  "informationCutoff": "2026-11-26T06:23:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終版全体のタイトル・要約・結論・全5ニュース・表全セル・分析・注目点・免責を原資料と照合。重要な比較はDellの同期間FCF/調整後FCF/定義した還元支出、PCEの公表月次伸び率2つ、GDPの同一四半期推計改定、プラネットの前年同期経常利益。全入力・単位・期間・指標定義を対応させた。DellのFCFは全構成値と式を本文表及び本レビューに明示し、調整後FCFや予想を現金回収実績に置換しない。プラネットの百万円切捨表示から減益率を再計算せず、短信PDFを会社サイトのIR埋込データから取得し全文テキストを確認。市場は06:17JSTのAP引け報道を採用し日中の急落率を掲載しない。PCE前年比・GDP市場予想差・週間騰落率は記事に含めない。Dell原稿でbridgeの文字検索が不一致だったためPDF13ページ画像を読み、短期資金・審査の説明を確認した。",
+  "comparisons": [
+    {
+      "id": "dell-fcf-and-returns",
+      "question": "同じ9か月のFCF、調整後FCF、定義した現金還元支払はどの構成値から生じるか",
+      "definition": "FY2027第3四半期までの9か月累計実績、百万米ドル。営業CFに負の純設備支出を足してFCF。金融債権・リース調整を足して調整後FCF。還元は普通株買戻し＋配当・配当相当額の現金支出規模、従業員税源泉徴収用を除外。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "Dell Technologies連結",
+          "metric": "営業キャッシュフロー",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "米国GAAP連結CF計算書の営業CF、FY2027第3四半期までの9か月実績。"
+        },
+        {
+          "id": "capex",
+          "entity": "Dell Technologies連結",
+          "metric": "設備投資・資産計上ソフトウェア費用（純額、負の支出）",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF調整表のCapital expenditures and capitalized software development costs, net。施設・土地等売却収入を含む純額、支出を負数とする。"
+        },
+        {
+          "id": "receivables",
+          "entity": "Dell Technologies連結",
+          "metric": "金融債権の営業CF影響の足し戻し",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社が調整後FCFに足すFinancing receivables。金融債権の変動の営業CF影響、回収済み現金ではない。"
+        },
+        {
+          "id": "leases",
+          "entity": "Dell Technologies連結",
+          "metric": "営業リース設備の純影響の足し戻し",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後FCFに足すEquipment under operating leases。リース設備の設備投資と減価償却等の純影響。"
+        },
+        {
+          "id": "repurchases",
+          "entity": "Dell Technologies連結",
+          "metric": "普通株式買戻しの現金支出規模",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書Repurchases of common stockの支出−9803の絶対額。従業員税源泉徴収用の買戻しを除く。"
+        },
+        {
+          "id": "dividends",
+          "entity": "Dell Technologies連結",
+          "metric": "配当・配当相当額の現金支出規模",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書Payments of dividends and dividend equivalentsの支出−1267の絶対額。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "Dell Technologies連結",
+          "metric": "営業キャッシュフロー",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "米国GAAP連結CF計算書の営業CF、FY2027第3四半期までの9か月実績。",
+          "value": 10765,
+          "source": {
+            "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results",
+            "publishedOn": "2026-11-24",
+            "locator": "Condensed Consolidated Statements of Cash Flows：Nine Months Ended October30,2026／Change in cash from operating activities",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Dell Technologies連結",
+          "metric": "設備投資・資産計上ソフトウェア費用（純額、負の支出）",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "FCF調整表のCapital expenditures and capitalized software development costs, net。施設・土地等売却収入を含む純額、支出を負数とする。",
+          "value": -3187,
+          "source": {
+            "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results",
+            "publishedOn": "2026-11-24",
+            "locator": "Reconciliation of Selected Non-GAAP Financial Measures 最終CF調整表／Nine Months Ended October30,2026／Capital expenditures and capitalized software development costs, net、脚注(a)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "receivables",
+          "entity": "Dell Technologies連結",
+          "metric": "金融債権の営業CF影響の足し戻し",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "会社が調整後FCFに足すFinancing receivables。金融債権の変動の営業CF影響、回収済み現金ではない。",
+          "value": 7065,
+          "source": {
+            "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results",
+            "publishedOn": "2026-11-24",
+            "locator": "同CF調整表／Financing receivables／同9か月列、脚注(b)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "leases",
+          "entity": "Dell Technologies連結",
+          "metric": "営業リース設備の純影響の足し戻し",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "調整後FCFに足すEquipment under operating leases。リース設備の設備投資と減価償却等の純影響。",
+          "value": 959,
+          "source": {
+            "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results",
+            "publishedOn": "2026-11-24",
+            "locator": "同CF調整表／Equipment under operating leases／同9か月列、脚注(c)",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "repurchases",
+          "entity": "Dell Technologies連結",
+          "metric": "普通株式買戻しの現金支出規模",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書Repurchases of common stockの支出−9803の絶対額。従業員税源泉徴収用の買戻しを除く。",
+          "value": 9803,
+          "source": {
+            "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results",
+            "publishedOn": "2026-11-24",
+            "locator": "Condensed Consolidated Statements of Cash Flows／同9か月列／Repurchases of common stock",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "dividends",
+          "entity": "Dell Technologies連結",
+          "metric": "配当・配当相当額の現金支出規模",
+          "periodStart": "2026-01-31",
+          "periodEnd": "2026-10-30",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "CF計算書Payments of dividends and dividend equivalentsの支出−1267の絶対額。",
+          "value": 1267,
+          "source": {
+            "url": "https://investors.delltechnologies.com/news-events/press-releases/detail/1665/dell-technologies-delivers-third-quarter-fiscal-2027-financial-results",
+            "publishedOn": "2026-11-24",
+            "locator": "Condensed Consolidated Statements of Cash Flows／同9か月列／Payments of dividends and dividend equivalents",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex"
+          ],
+          "definition": "10,765＋(−3,187)＝7,578。会社定義のFCF。",
+          "precision": 0,
+          "value": 7578
+        },
+        {
+          "id": "adjusted-fcf",
+          "operation": "sum",
+          "inputs": [
+            "fcf",
+            "receivables",
+            "leases"
+          ],
+          "definition": "7,578＋7,065＋959＝15,602。会社定義の調整後FCF。",
+          "precision": 0,
+          "value": 15602
+        },
+        {
+          "id": "cash-returns",
+          "operation": "sum",
+          "inputs": [
+            "repurchases",
+            "dividends"
+          ],
+          "definition": "9,803＋1,267＝11,070。支出規模の合計。",
+          "precision": 0,
+          "value": 11070
+        },
+        {
+          "id": "excess-returns",
+          "operation": "difference",
+          "inputs": [
+            "cash-returns",
+            "fcf"
+          ],
+          "definition": "11,070−7,578＝3,492。還元支出規模とFCFの差。",
+          "precision": 0,
+          "value": 3492
+        }
+      ],
+      "claim": "2026年1月31日〜10月30日の9か月累計では、株式買戻しと配当・配当相当額の現金支払合計11,070百万円が、会社定義のFCF7,578百万円を3,492百万円上回る。"
+    },
+    {
+      "id": "pce-monthly-rates",
+      "question": "9月と10月の総合PCE価格の月次伸び率を同じ公表版で比較できるか",
+      "definition": "総合PCE価格指数の季節調整済み前月比としてBEAが公表した伸び率2つを比較。指数から独自再計算する比較ではない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sep",
+          "entity": "米国PCE",
+          "metric": "総合PCE価格指数の季節調整済み前月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "BEA2026-11-25公表版。食品・エネルギー含む総合、季節調整済み、前月比。指数水準や前年比ではない。"
+        },
+        {
+          "id": "oct",
+          "entity": "米国PCE",
+          "metric": "総合PCE価格指数の季節調整済み前月比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "BEA2026-11-25公表版。食品・エネルギー含む総合、季節調整済み、前月比。指数水準や前年比ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sep",
+          "entity": "米国PCE",
+          "metric": "総合PCE価格指数の季節調整済み前月比",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "BEA2026-11-25公表版。食品・エネルギー含む総合、季節調整済み、前月比。指数水準や前年比ではない。",
+          "value": 0.5,
+          "source": {
+            "url": "https://bea.gov/news/2026/personal-income-and-outlays-october-2026",
+            "publishedOn": "2026-11-25",
+            "locator": "Personal Income and Related Measures表／Percent change from preceding month／PCE price index行／September列",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oct",
+          "entity": "米国PCE",
+          "metric": "総合PCE価格指数の季節調整済み前月比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "BEA2026-11-25公表版。食品・エネルギー含む総合、季節調整済み、前月比。指数水準や前年比ではない。",
+          "value": 0.3,
+          "source": {
+            "url": "https://bea.gov/news/2026/personal-income-and-outlays-october-2026",
+            "publishedOn": "2026-11-25",
+            "locator": "Personal Income and Related Measures表／Percent change from preceding month／PCE price index行／October列",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "総合PCE価格指数の季節調整済み前月比は、9月の0.5％から10月は0.3％となった。比べているのは同じ11月25日公表版の月次伸び率であり、前年比ではない。"
+    },
+    {
+      "id": "gdp-vintage-revision",
+      "question": "同一四半期の実質GDP成長率が先行推計からどれだけ改定されたか",
+      "definition": "2026Q3対Q2の季節調整済み年率を推計段階だけ変えて比較。差の単位はパーセントポイント。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "advance",
+          "entity": "米国実質GDP",
+          "metric": "2026年第3四半期前期比年率・先行推計",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "季節調整済み前期比年率(SAAR)。同じ四半期を別の推計段階で測定。BEA2026-11-25公表の比較表。会社予想・市場予想ではない。"
+        },
+        {
+          "id": "second",
+          "entity": "米国実質GDP",
+          "metric": "2026年第3四半期前期比年率・第2次推計",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "季節調整済み前期比年率(SAAR)。同じ四半期を別の推計段階で測定。BEA2026-11-25公表の比較表。会社予想・市場予想ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "advance",
+          "entity": "米国実質GDP",
+          "metric": "2026年第3四半期前期比年率・先行推計",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "季節調整済み前期比年率(SAAR)。同じ四半期を別の推計段階で測定。BEA2026-11-25公表の比較表。会社予想・市場予想ではない。",
+          "value": 3.4,
+          "source": {
+            "url": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026",
+            "publishedOn": "2026-11-25",
+            "locator": "Real GDP and Related Measures表／Real GDP行／Advance Estimate列",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "second",
+          "entity": "米国実質GDP",
+          "metric": "2026年第3四半期前期比年率・第2次推計",
+          "periodStart": "2026-07-01",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "季節調整済み前期比年率(SAAR)。同じ四半期を別の推計段階で測定。BEA2026-11-25公表の比較表。会社予想・市場予想ではない。",
+          "value": 4.3,
+          "source": {
+            "url": "https://www.bea.gov/news/2026/gdp-second-estimate-and-corporate-profits-3rd-quarter-2026",
+            "publishedOn": "2026-11-25",
+            "locator": "Real GDP and Related Measures表／Real GDP行／Second Estimate列",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "revision",
+          "operation": "difference",
+          "inputs": [
+            "second",
+            "advance"
+          ],
+          "definition": "4.3−3.4＝0.9パーセントポイント。",
+          "precision": 1,
+          "value": 0.9
+        }
+      ],
+      "claim": "2026年7〜9月の実質GDPの前期比年率は、先行推計3.4％から第2次推計4.3％へ、0.9ポイント上方改定された。同じ四半期に対する推計の更新であり、前の四半期との成長率比較ではない。"
+    },
+    {
+      "id": "planet-ordinary-profit",
+      "question": "同じ第1四半期の経常利益実績が前年同期を下回ったか",
+      "definition": "日本基準・非連結・8〜10月累計・経常利益、百万円切捨表示。切捨表示値から独自の減益率を算出しない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "current",
+          "entity": "プラネット単体",
+          "metric": "第1四半期累計経常利益",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-10-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・非連結・百万円未満切捨ての公表実績。四半期累計、通期予想ではない。"
+        },
+        {
+          "id": "prior",
+          "entity": "プラネット単体",
+          "metric": "第1四半期累計経常利益",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2025-10-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・非連結・百万円未満切捨ての公表実績。四半期累計、通期予想ではない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "current",
+          "entity": "プラネット単体",
+          "metric": "第1四半期累計経常利益",
+          "periodStart": "2026-08-01",
+          "periodEnd": "2026-10-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・非連結・百万円未満切捨ての公表実績。四半期累計、通期予想ではない。",
+          "value": 161,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS07438/71eed73c/36f0/4715/bbce/6bbd72dfb0d4/140120261124584965.pdf",
+            "publishedOn": "2026-11-25",
+            "locator": "1(1)経営成績(累計)表／経常利益／2027年7月期第1四半期行",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        },
+        {
+          "id": "prior",
+          "entity": "プラネット単体",
+          "metric": "第1四半期累計経常利益",
+          "periodStart": "2025-08-01",
+          "periodEnd": "2025-10-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・非連結・百万円未満切捨ての公表実績。四半期累計、通期予想ではない。",
+          "value": 178,
+          "source": {
+            "url": "https://contents.xj-storage.jp/xcontents/AS07438/71eed73c/36f0/4715/bbce/6bbd72dfb0d4/140120261124584965.pdf",
+            "publishedOn": "2026-11-25",
+            "locator": "1(1)経営成績(累計)表／経常利益／2026年7月期第1四半期行",
+            "kind": "primary",
+            "pdfPage": 1
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "プラネットの2026年8〜10月の経常利益実績は161百万円で、前年同期の178百万円を下回った。いずれも日本基準・非連結の第1四半期累計で、百万円未満切捨ての公表値。"
+    }
+  ],
+  "sourceChecks": [
+    {
+      "url": "https://apnews.com/article/94fdb0ecb060ec65c0b02879ce0d2d09",
+      "publishedOn": "2026-11-25",
+      "publishedAt": "2026-11-25T21:17:18Z",
+      "locator": "AP index summary／冒頭とOn Wednesday。本文は検索結果のAP配信全文で確認。日中値ではなく通常取引の引けを採用。",
+      "result": "S&P500とNasdaq下落・Dow上昇、下げ幅縮小を確認"
+    },
+    {
+      "url": "https://investors.delltechnologies.com/_assets/_270719a6457975cf4cdc96deae78c939/delltechnologies/db/3595/34778/prepared_remarks/Q3_FY27_Prepared_Remarks.pdf",
+      "publishedOn": "2026-11-24",
+      "locator": "CFO説明のISG節、AI backlog underwriting and short-term interim financingの段落",
+      "pdfPage": 13,
+      "result": "文字検索bridgeで未抽出後にページ画像で確認。注文時と生産前の審査、顧客への短期資金の説明。"
+    },
+    {
+      "url": "https://contents.xj-storage.jp/xcontents/AS07438/71eed73c/36f0/4715/bbce/6bbd72dfb0d4/140120261124584965.pdf",
+      "publishedOn": "2026-11-25",
+      "publishedAt": "2026-11-25T15:40:00+09:00",
+      "locator": "PDF1ページ経営成績表、4ページ経営成績概況、5ページ業績予想。会社IRのxjResults.jsから公開リストAS07438を取得し文書URL・公表時刻を確認。",
+      "pdfPage": 1,
+      "result": "9ページの原PDFを取得して全文抽出。経常利益、流通効率化の説明、通期予想変更なしを確認。"
+    }
+  ]
+}
