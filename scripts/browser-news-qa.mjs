@@ -94,6 +94,11 @@ try {
     await page.getByRole('button', { name: '検索', exact: true }).click();
   };
   const reset = () => page.getByRole('button', { name: '条件をリセット', exact: true }).click();
+  const nov26Articles = analysis.filter(a => a.url.endsWith('-2026-11-26') && ['企業レポート', '論点解説'].includes(a.articleKind));
+  assert.deepEqual(nov26Articles.map(a => a.url).sort(), [
+    '/articles/company-japan-elevator-service-2026-11-26',
+    '/articles/theme-boe-private-credit-liquidity-2026-11-26',
+  ], 'Both November 26 research articles are indexed once');
   const nov25Articles = analysis.filter(a => a.url.endsWith('-2026-11-25') && ['企業レポート', '論点解説'].includes(a.articleKind));
   assert.deepEqual(nov25Articles.map(a => a.url).sort(), [
     '/articles/company-lion-2026-11-25',

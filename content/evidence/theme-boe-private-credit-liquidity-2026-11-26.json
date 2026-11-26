@@ -1,0 +1,395 @@
+{
+  "version": 1,
+  "articleSlug": "theme-boe-private-credit-liquidity-2026-11-26",
+  "articleSha256": "30576ac652f4d5ced32dc2752bb459c6b72ebd3f0661da144d36ff943ead8209",
+  "checkedAt": "2026-11-26T19:59:22+09:00",
+  "informationCutoff": "2026-11-26T19:45:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "英中銀§1.4・1.5、SEC提出買戻し結果と次回募集、10-Q非計上率の公正価値列を照合。応募・受入・現金支払、発行フローと残高を区別し、OTICと個別AI融資の因果は未識別とした。",
+  "comparisons": [
+    {
+      "id": "ig-issuance",
+      "question": "大手の社債発行見通しと世界の投資適格発行に占める割合は？",
+      "definition": "本文と同一の期間・対象・単位を用い、異なる指標の合算・因果認定は行わない。",
+      "status": "ready",
+      "claim": "英中銀によると、大手クラウドなどの社債発行は2026年通年で3,050億ドルを超え、世界の投資適格債発行の約8％を占める見通しだ。",
+      "requiredInputs": [
+        {
+          "id": "value",
+          "entity": "Bank of England",
+          "metric": "大手社債発行見通し",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "億米ドル",
+          "definition": "英中銀見通しの下限、実績値ではない",
+          "basis": "actual"
+        },
+        {
+          "id": "share",
+          "entity": "Bank of England",
+          "metric": "世界の投資適格発行に占める割合",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "definition": "英中銀2026年通年見通しの概数",
+          "basis": "actual"
+        }
+      ],
+      "observations": [
+        {
+          "id": "value",
+          "entity": "Bank of England",
+          "metric": "大手社債発行見通し",
+          "value": 3050,
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "億米ドル",
+          "definition": "英中銀見通しの下限、実績値ではない",
+          "basis": "actual",
+          "source": {
+            "url": "https://www.bankofengland.co.uk/financial-stability-report/2026/november-2026",
+            "publishedOn": "2026-11-26",
+            "locator": "§1.4、hyperscaler bond issuance、脚注1",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "share",
+          "entity": "Bank of England",
+          "metric": "世界の投資適格発行に占める割合",
+          "value": 8,
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "definition": "英中銀2026年通年見通しの概数",
+          "basis": "actual",
+          "source": {
+            "url": "https://www.bankofengland.co.uk/financial-stability-report/2026/november-2026",
+            "publishedOn": "2026-11-26",
+            "locator": "§1.4、global investment-grade issuance",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "tender-result",
+      "question": "9月末締切の買戻しに何株応募し、何株受け入れたか？",
+      "definition": "本文と同一の期間・対象・単位を用い、異なる指標の合算・因果認定は行わない。",
+      "status": "ready",
+      "claim": "応募した約1億856万株のうち、買戻しに受け入れられたのは約1,393万株、応募株数の12.8％だった。",
+      "requiredInputs": [
+        {
+          "id": "tendered",
+          "entity": "Blue Owl Technology Income Corp.",
+          "metric": "有効応募株数",
+          "periodStart": "2026-08-26",
+          "periodEnd": "2026-09-30",
+          "unit": "株",
+          "definition": "締切までに有効に応募され撤回されなかった株数",
+          "basis": "actual"
+        },
+        {
+          "id": "accepted",
+          "entity": "Blue Owl Technology Income Corp.",
+          "metric": "買戻し受入株数",
+          "periodStart": "2026-08-26",
+          "periodEnd": "2026-09-30",
+          "unit": "株",
+          "definition": "同じ募集から按分で受け入れた株数",
+          "basis": "actual"
+        }
+      ],
+      "observations": [
+        {
+          "id": "tendered",
+          "entity": "Blue Owl Technology Income Corp.",
+          "metric": "有効応募株数",
+          "value": 108556457,
+          "periodStart": "2026-08-26",
+          "periodEnd": "2026-09-30",
+          "unit": "株",
+          "definition": "締切までに有効に応募され撤回されなかった株数",
+          "basis": "actual",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1869453/000162828026067330/otic-scheduletoaoctober2026.htm",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 11、最終結果、9月30日締切の株数",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "accepted",
+          "entity": "Blue Owl Technology Income Corp.",
+          "metric": "買戻し受入株数",
+          "value": 13926862,
+          "periodStart": "2026-08-26",
+          "periodEnd": "2026-09-30",
+          "unit": "株",
+          "definition": "同じ募集から按分で受け入れた株数",
+          "basis": "actual",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1869453/000162828026067330/otic-scheduletoaoctober2026.htm",
+            "publishedOn": "2026-10-26",
+            "locator": "Item 11、最終結果、accepted for purchase",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "accepted-share",
+          "operation": "ratio-percent",
+          "inputs": [
+            "accepted",
+            "tendered"
+          ],
+          "value": 12.8,
+          "precision": 1,
+          "definition": "受入株数を有効応募株数で割る、現金の支払率ではない"
+        }
+      ]
+    },
+    {
+      "id": "new-tender",
+      "question": "11月25日提示の次の買戻し枠は？",
+      "definition": "本文と同一の期間・対象・単位を用い、異なる指標の合算・因果認定は行わない。",
+      "status": "ready",
+      "claim": "11月25日公表の次回募集では、同社は開示上、9月末の対象株式数の5.00％に当たる約1,340万株を原則上限とする買戻しの募集を始めた。",
+      "requiredInputs": [
+        {
+          "id": "plan-count",
+          "entity": "Blue Owl Technology Income Corp.",
+          "metric": "募集上限株数",
+          "periodStart": "2026-11-25",
+          "periodEnd": "2026-12-31",
+          "unit": "株",
+          "definition": "米東部時間、次回募集上限、延長可能",
+          "basis": "company-forecast"
+        },
+        {
+          "id": "plan-share",
+          "entity": "Blue Owl Technology Income Corp.",
+          "metric": "9月末の対象株式数に対する募集枠",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "definition": "買戻し提示枠と募集資料記載の期末対象株数の比",
+          "basis": "company-forecast"
+        }
+      ],
+      "observations": [
+        {
+          "id": "plan-count",
+          "entity": "Blue Owl Technology Income Corp.",
+          "metric": "募集上限株数",
+          "value": 13399617,
+          "periodStart": "2026-11-25",
+          "periodEnd": "2026-12-31",
+          "unit": "株",
+          "definition": "米東部時間、次回募集上限、延長可能",
+          "basis": "company-forecast",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1869453/000162828026075988/exhibit99a1b-oticschedulet.htm",
+            "publishedOn": "2026-11-25",
+            "locator": "Summary Term Sheet、What is the Offer?",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "plan-share",
+          "entity": "Blue Owl Technology Income Corp.",
+          "metric": "9月末の対象株式数に対する募集枠",
+          "value": 5,
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "definition": "買戻し提示枠と募集資料記載の期末対象株数の比",
+          "basis": "company-forecast",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1869453/000162828026075988/exhibit99a1b-oticschedulet.htm",
+            "publishedOn": "2026-11-25",
+            "locator": "Summary Term Sheet、What is the Offer?",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "non-accrual",
+      "question": "利息を収益に計上しない投資の公正価値ベース比率は？",
+      "definition": "本文と同一の期間・対象・単位を用い、異なる指標の合算・因果認定は行わない。",
+      "status": "ready",
+      "claim": "公正価値ベースで利息を収益に計上していない投資は、2025年末の0.2％から2026年9月末の0.3％となった。ただし該当投資の公正価値そのものは、約1,552万ドルから約1,350万ドルに減っている。",
+      "requiredInputs": [
+        {
+          "id": "old-rate",
+          "entity": "Blue Owl Technology Income Corp.",
+          "metric": "非計上投資比率",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "definition": "期末投資総額に対する公正価値ベースの比率、償却原価ベースではない",
+          "basis": "actual"
+        },
+        {
+          "id": "new-rate",
+          "entity": "Blue Owl Technology Income Corp.",
+          "metric": "非計上投資比率",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "definition": "期末投資総額に対する公正価値ベースの比率、償却原価ベースではない",
+          "basis": "actual"
+        },
+        {
+          "id": "old-value",
+          "entity": "Blue Owl Technology Income Corp.",
+          "metric": "非計上投資の公正価値",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "千米ドル",
+          "definition": "期末、非計上の投資の公正価値",
+          "basis": "actual"
+        },
+        {
+          "id": "new-value",
+          "entity": "Blue Owl Technology Income Corp.",
+          "metric": "非計上投資の公正価値",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "千米ドル",
+          "definition": "期末、非計上の投資の公正価値",
+          "basis": "actual"
+        },
+        {
+          "id": "old-total",
+          "entity": "Blue Owl Technology Income Corp.",
+          "metric": "投資総額の公正価値",
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "千米ドル",
+          "definition": "期末投資総額の公正価値",
+          "basis": "actual"
+        },
+        {
+          "id": "new-total",
+          "entity": "Blue Owl Technology Income Corp.",
+          "metric": "投資総額の公正価値",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "千米ドル",
+          "definition": "期末投資総額の公正価値",
+          "basis": "actual"
+        }
+      ],
+      "observations": [
+        {
+          "id": "old-rate",
+          "entity": "Blue Owl Technology Income Corp.",
+          "metric": "非計上投資比率",
+          "value": 0.2,
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "%",
+          "definition": "期末投資総額に対する公正価値ベースの比率、償却原価ベースではない",
+          "basis": "actual",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1869453/000186945326000066/ortic-20260930.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "MD&A、Portfolio and Investment Activity、Non-accrual table",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new-rate",
+          "entity": "Blue Owl Technology Income Corp.",
+          "metric": "非計上投資比率",
+          "value": 0.3,
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "%",
+          "definition": "期末投資総額に対する公正価値ベースの比率、償却原価ベースではない",
+          "basis": "actual",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1869453/000186945326000066/ortic-20260930.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "MD&A、Portfolio and Investment Activity、Non-accrual table",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "old-value",
+          "entity": "Blue Owl Technology Income Corp.",
+          "metric": "非計上投資の公正価値",
+          "value": 15517,
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "千米ドル",
+          "definition": "期末、非計上の投資の公正価値",
+          "basis": "actual",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1869453/000186945326000066/ortic-20260930.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "MD&A、Non-accrual row、Fair Value",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new-value",
+          "entity": "Blue Owl Technology Income Corp.",
+          "metric": "非計上投資の公正価値",
+          "value": 13503,
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "千米ドル",
+          "definition": "期末、非計上の投資の公正価値",
+          "basis": "actual",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1869453/000186945326000066/ortic-20260930.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "MD&A、Non-accrual row、Fair Value",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "old-total",
+          "entity": "Blue Owl Technology Income Corp.",
+          "metric": "投資総額の公正価値",
+          "value": 6207136,
+          "periodStart": "2025-12-31",
+          "periodEnd": "2025-12-31",
+          "unit": "千米ドル",
+          "definition": "期末投資総額の公正価値",
+          "basis": "actual",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1869453/000186945326000066/ortic-20260930.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "MD&A、Non-accrual table、Total, Fair Value",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new-total",
+          "entity": "Blue Owl Technology Income Corp.",
+          "metric": "投資総額の公正価値",
+          "value": 5035098,
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "千米ドル",
+          "definition": "期末投資総額の公正価値",
+          "basis": "actual",
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/1869453/000186945326000066/ortic-20260930.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "MD&A、Non-accrual table、Total, Fair Value",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}

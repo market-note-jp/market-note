@@ -1,0 +1,1952 @@
+{
+  "version": 1,
+  "articleSlug": "company-japan-elevator-service-2026-11-26",
+  "articleSha256": "13d53ee2baee6c0c55cd374fe854c192c29e9ad8834e01a3032aef4af0c945b9",
+  "checkedAt": "2026-11-26T19:59:22+09:00",
+  "informationCutoff": "2026-11-26T19:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "短信・説明会資料・決算補足・配当予想適時開示・有報の原文を照合。百万円単位、データ期間と公表日、実績対会社予想、会社FCFと簡易FCF、試算と会社見解を区別。技術員当たりの契約台数は126840/1452=87.35537、133760/1555=86.01929。概要表に契約の継続率や部門利益率はないため推定しない。",
+  "comparisons": [
+    {
+      "id": "operations",
+      "question": "半期の増益はどの売上と費用で説明できるか",
+      "definition": "同じ4〜9月の連結実績。業務別は売上、費用は会社の営業利益増減分析。",
+      "status": "ready",
+      "claim": "連結営業利益率は19.1％から19.5％に改善した。",
+      "requiredInputs": [
+        {
+          "id": "sales25",
+          "entity": "JES連結",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "sales26",
+          "entity": "JES連結",
+          "metric": "売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高"
+        },
+        {
+          "id": "op25",
+          "entity": "JES連結",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "op26",
+          "entity": "JES連結",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益"
+        },
+        {
+          "id": "mant25",
+          "entity": "JES連結",
+          "metric": "保守・保全業務売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "保守・保全業務売上高"
+        },
+        {
+          "id": "mant26",
+          "entity": "JES連結",
+          "metric": "保守・保全業務売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "保守・保全業務売上高"
+        },
+        {
+          "id": "ren25",
+          "entity": "JES連結",
+          "metric": "リニューアル業務売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リニューアル業務売上高"
+        },
+        {
+          "id": "ren26",
+          "entity": "JES連結",
+          "metric": "リニューアル業務売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リニューアル業務売上高"
+        },
+        {
+          "id": "labor",
+          "entity": "JES連結",
+          "metric": "労務費・人件費の前年同期比増分",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "労務費・人件費の前年同期比増分"
+        },
+        {
+          "id": "outsourcing",
+          "entity": "JES連結",
+          "metric": "外注費の前年同期比増分",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "外注費の前年同期比増分"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales25",
+          "entity": "JES連結",
+          "metric": "売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 26912,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261120584108/pdfFile.pdf#page=10",
+            "pdfPage": 10,
+            "publishedOn": "2026-11-20",
+            "locator": "連結業績概要",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sales26",
+          "entity": "JES連結",
+          "metric": "売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "売上高",
+          "value": 30224,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261120584108/pdfFile.pdf#page=10",
+            "pdfPage": 10,
+            "publishedOn": "2026-11-20",
+            "locator": "連結業績概要",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op25",
+          "entity": "JES連結",
+          "metric": "営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 5131,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261120584108/pdfFile.pdf#page=10",
+            "pdfPage": 10,
+            "publishedOn": "2026-11-20",
+            "locator": "連結業績概要",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op26",
+          "entity": "JES連結",
+          "metric": "営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業利益",
+          "value": 5892,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261120584108/pdfFile.pdf#page=10",
+            "pdfPage": 10,
+            "publishedOn": "2026-11-20",
+            "locator": "連結業績概要",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "mant25",
+          "entity": "JES連結",
+          "metric": "保守・保全業務売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "保守・保全業務売上高",
+          "value": 16737,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261120584108/pdfFile.pdf#page=11",
+            "pdfPage": 11,
+            "publishedOn": "2026-11-20",
+            "locator": "業務別売上高概要",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "mant26",
+          "entity": "JES連結",
+          "metric": "保守・保全業務売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "保守・保全業務売上高",
+          "value": 18518,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261120584108/pdfFile.pdf#page=11",
+            "pdfPage": 11,
+            "publishedOn": "2026-11-20",
+            "locator": "業務別売上高概要",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ren25",
+          "entity": "JES連結",
+          "metric": "リニューアル業務売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リニューアル業務売上高",
+          "value": 9544,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261120584108/pdfFile.pdf#page=11",
+            "pdfPage": 11,
+            "publishedOn": "2026-11-20",
+            "locator": "業務別売上高概要",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ren26",
+          "entity": "JES連結",
+          "metric": "リニューアル業務売上高",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "リニューアル業務売上高",
+          "value": 11049,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261120584108/pdfFile.pdf#page=11",
+            "pdfPage": 11,
+            "publishedOn": "2026-11-20",
+            "locator": "業務別売上高概要",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "labor",
+          "entity": "JES連結",
+          "metric": "労務費・人件費の前年同期比増分",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "労務費・人件費の前年同期比増分",
+          "value": 810,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261120584108/pdfFile.pdf#page=12",
+            "pdfPage": 12,
+            "publishedOn": "2026-11-20",
+            "locator": "営業利益の増減要因",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "outsourcing",
+          "entity": "JES連結",
+          "metric": "外注費の前年同期比増分",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "外注費の前年同期比増分",
+          "value": 471,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261120584108/pdfFile.pdf#page=12",
+            "pdfPage": 12,
+            "publishedOn": "2026-11-20",
+            "locator": "営業利益の増減要因",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "op-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "op26",
+            "op25"
+          ],
+          "value": 14.8,
+          "definition": "営業利益成長率",
+          "precision": 1
+        },
+        {
+          "id": "mant-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "mant26",
+            "mant25"
+          ],
+          "value": 10.6,
+          "definition": "保守・保全売上成長率",
+          "precision": 1
+        },
+        {
+          "id": "ren-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "ren26",
+            "ren25"
+          ],
+          "value": 15.8,
+          "definition": "更新売上成長率",
+          "precision": 1
+        },
+        {
+          "id": "margin25",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op25",
+            "sales25"
+          ],
+          "value": 19.1,
+          "definition": "前年営業利益率",
+          "precision": 1
+        },
+        {
+          "id": "margin26",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op26",
+            "sales26"
+          ],
+          "value": 19.5,
+          "definition": "今期営業利益率",
+          "precision": 1
+        }
+      ]
+    },
+    {
+      "id": "retention",
+      "question": "リニューアルと保守契約の関係",
+      "definition": "会社による顧客構成の概数。過去の推移でなく直近状況の開示。",
+      "status": "ready",
+      "claim": "リニューアル受注客の約6割は既存の保守契約がない顧客で",
+      "requiredInputs": [
+        {
+          "id": "new-ren-cust",
+          "entity": "JES連結",
+          "metric": "既存保守契約なしのリニューアル顧客構成（会社説明の概数）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "既存保守契約なしのリニューアル顧客構成（会社説明の概数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "new-ren-cust",
+          "entity": "JES連結",
+          "metric": "既存保守契約なしのリニューアル顧客構成（会社説明の概数）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "既存保守契約なしのリニューアル顧客構成（会社説明の概数）",
+          "value": 60,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261120584108/pdfFile.pdf#page=7",
+            "pdfPage": 7,
+            "publishedOn": "2026-11-20",
+            "locator": "リニューアル顧客の構成",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "contract-capacity",
+      "question": "技術員の期末数は保守契約台数に対してどう増えたか",
+      "definition": "会社開示の期末値。技術員の担当範囲を限定した生産性統計ではない。",
+      "status": "ready",
+      "claim": "技術員1人あたりの契約台数は87.4台から86.0台へ低下した。",
+      "requiredInputs": [
+        {
+          "id": "contracts-mar",
+          "entity": "JES連結",
+          "metric": "保守契約台数",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "台",
+          "basis": "actual",
+          "definition": "保守契約台数"
+        },
+        {
+          "id": "contracts-sep",
+          "entity": "JES連結",
+          "metric": "保守契約台数",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "台",
+          "basis": "actual",
+          "definition": "保守契約台数"
+        },
+        {
+          "id": "staff-mar",
+          "entity": "JES連結",
+          "metric": "技術員数",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "人",
+          "basis": "actual",
+          "definition": "技術員数"
+        },
+        {
+          "id": "staff-sep",
+          "entity": "JES連結",
+          "metric": "技術員数",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "人",
+          "basis": "actual",
+          "definition": "技術員数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "contracts-mar",
+          "entity": "JES連結",
+          "metric": "保守契約台数",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "台",
+          "basis": "actual",
+          "definition": "保守契約台数",
+          "value": 126840,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112576456/pdfFile.pdf#page=4",
+            "pdfPage": 4,
+            "publishedOn": "2026-11-12",
+            "locator": "契約数・国内拠点数・従業員数の推移",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "contracts-sep",
+          "entity": "JES連結",
+          "metric": "保守契約台数",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "台",
+          "basis": "actual",
+          "definition": "保守契約台数",
+          "value": 133760,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112576456/pdfFile.pdf#page=4",
+            "pdfPage": 4,
+            "publishedOn": "2026-11-12",
+            "locator": "契約数・国内拠点数・従業員数の推移",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "staff-mar",
+          "entity": "JES連結",
+          "metric": "技術員数",
+          "periodStart": "2026-03-31",
+          "periodEnd": "2026-03-31",
+          "unit": "人",
+          "basis": "actual",
+          "definition": "技術員数",
+          "value": 1452,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112576456/pdfFile.pdf#page=4",
+            "pdfPage": 4,
+            "publishedOn": "2026-11-12",
+            "locator": "契約数・国内拠点数・従業員数の推移",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "staff-sep",
+          "entity": "JES連結",
+          "metric": "技術員数",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "人",
+          "basis": "actual",
+          "definition": "技術員数",
+          "value": 1555,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112576456/pdfFile.pdf#page=4",
+            "pdfPage": 4,
+            "publishedOn": "2026-11-12",
+            "locator": "契約数・国内拠点数・従業員数の推移",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "contract-net",
+          "operation": "difference",
+          "inputs": [
+            "contracts-sep",
+            "contracts-mar"
+          ],
+          "value": 6920,
+          "definition": "表示値の差",
+          "precision": 0
+        },
+        {
+          "id": "contract-grow",
+          "operation": "growth-percent",
+          "inputs": [
+            "contracts-sep",
+            "contracts-mar"
+          ],
+          "value": 5.46,
+          "definition": "期末台数の相対変化",
+          "precision": 2
+        },
+        {
+          "id": "staff-grow",
+          "operation": "growth-percent",
+          "inputs": [
+            "staff-sep",
+            "staff-mar"
+          ],
+          "value": 7.09,
+          "definition": "期末技術員数の相対変化",
+          "precision": 2
+        }
+      ]
+    },
+    {
+      "id": "operating-cash",
+      "question": "税金等の支払いや取得支出後も増益分は現金として残ったか",
+      "definition": "4〜9月同士。簡易FCFは営業CFから有形・無形の取得支出のみ控除。会社FCFとは投資活動の範囲が異なる。",
+      "status": "ready",
+      "claim": "合計1.53億円の取得支出減が営業CFの減少1.48億円をほぼ打ち消したためだ。",
+      "requiredInputs": [
+        {
+          "id": "ocf25",
+          "entity": "JES連結",
+          "metric": "営業キャッシュフロー",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業キャッシュフロー"
+        },
+        {
+          "id": "ocf26",
+          "entity": "JES連結",
+          "metric": "営業キャッシュフロー",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業キャッシュフロー"
+        },
+        {
+          "id": "subtotal25",
+          "entity": "JES連結",
+          "metric": "営業活動小計",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動小計"
+        },
+        {
+          "id": "subtotal26",
+          "entity": "JES連結",
+          "metric": "営業活動小計",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動小計"
+        },
+        {
+          "id": "tax25",
+          "entity": "JES連結",
+          "metric": "法人税等の現金支払（マイナス）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "法人税等の現金支払（マイナス）"
+        },
+        {
+          "id": "tax26",
+          "entity": "JES連結",
+          "metric": "法人税等の現金支払（マイナス）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "法人税等の現金支払（マイナス）"
+        },
+        {
+          "id": "inventory25",
+          "entity": "JES連結",
+          "metric": "棚卸資産増減による現金影響",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "棚卸資産増減による現金影響"
+        },
+        {
+          "id": "inventory26",
+          "entity": "JES連結",
+          "metric": "棚卸資産増減による現金影響",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "棚卸資産増減による現金影響"
+        },
+        {
+          "id": "ppe25",
+          "entity": "JES連結",
+          "metric": "有形固定資産の取得支出",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形固定資産の取得支出"
+        },
+        {
+          "id": "ppe26",
+          "entity": "JES連結",
+          "metric": "有形固定資産の取得支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形固定資産の取得支出"
+        },
+        {
+          "id": "intangible25",
+          "entity": "JES連結",
+          "metric": "無形固定資産の取得支出",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形固定資産の取得支出"
+        },
+        {
+          "id": "intangible26",
+          "entity": "JES連結",
+          "metric": "無形固定資産の取得支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形固定資産の取得支出"
+        },
+        {
+          "id": "issuerfcf25",
+          "entity": "JES連結",
+          "metric": "会社開示のFCF（営業CFと投資CF）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社開示のFCF（営業CFと投資CF）"
+        },
+        {
+          "id": "issuerfcf26",
+          "entity": "JES連結",
+          "metric": "会社開示のFCF（営業CFと投資CF）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社開示のFCF（営業CFと投資CF）"
+        },
+        {
+          "id": "sec26",
+          "entity": "JES連結",
+          "metric": "投資有価証券取得支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資有価証券取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "ocf25",
+          "entity": "JES連結",
+          "metric": "営業キャッシュフロー",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業キャッシュフロー",
+          "value": 4147,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112575364/pdfFile.pdf#page=10",
+            "pdfPage": 10,
+            "publishedOn": "2026-11-12",
+            "locator": "中間連結CF計算書（印刷頁8）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf26",
+          "entity": "JES連結",
+          "metric": "営業キャッシュフロー",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業キャッシュフロー",
+          "value": 3999,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112575364/pdfFile.pdf#page=10",
+            "pdfPage": 10,
+            "publishedOn": "2026-11-12",
+            "locator": "中間連結CF計算書（印刷頁8）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "subtotal25",
+          "entity": "JES連結",
+          "metric": "営業活動小計",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動小計",
+          "value": 5855,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112575364/pdfFile.pdf#page=10",
+            "pdfPage": 10,
+            "publishedOn": "2026-11-12",
+            "locator": "中間連結CF計算書（印刷頁8）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "subtotal26",
+          "entity": "JES連結",
+          "metric": "営業活動小計",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "営業活動小計",
+          "value": 6406,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112575364/pdfFile.pdf#page=10",
+            "pdfPage": 10,
+            "publishedOn": "2026-11-12",
+            "locator": "中間連結CF計算書（印刷頁8）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "tax25",
+          "entity": "JES連結",
+          "metric": "法人税等の現金支払（マイナス）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "法人税等の現金支払（マイナス）",
+          "value": -1691,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112575364/pdfFile.pdf#page=10",
+            "pdfPage": 10,
+            "publishedOn": "2026-11-12",
+            "locator": "中間連結CF計算書（印刷頁8）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "tax26",
+          "entity": "JES連結",
+          "metric": "法人税等の現金支払（マイナス）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "法人税等の現金支払（マイナス）",
+          "value": -2390,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112575364/pdfFile.pdf#page=10",
+            "pdfPage": 10,
+            "publishedOn": "2026-11-12",
+            "locator": "中間連結CF計算書（印刷頁8）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "inventory25",
+          "entity": "JES連結",
+          "metric": "棚卸資産増減による現金影響",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "棚卸資産増減による現金影響",
+          "value": -880,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112575364/pdfFile.pdf#page=10",
+            "pdfPage": 10,
+            "publishedOn": "2026-11-12",
+            "locator": "中間連結CF計算書（印刷頁8）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "inventory26",
+          "entity": "JES連結",
+          "metric": "棚卸資産増減による現金影響",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "棚卸資産増減による現金影響",
+          "value": -178,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112575364/pdfFile.pdf#page=10",
+            "pdfPage": 10,
+            "publishedOn": "2026-11-12",
+            "locator": "中間連結CF計算書（印刷頁8）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ppe25",
+          "entity": "JES連結",
+          "metric": "有形固定資産の取得支出",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形固定資産の取得支出",
+          "value": -576,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112575364/pdfFile.pdf#page=10",
+            "pdfPage": 10,
+            "publishedOn": "2026-11-12",
+            "locator": "中間連結CF計算書（印刷頁8）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ppe26",
+          "entity": "JES連結",
+          "metric": "有形固定資産の取得支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "有形固定資産の取得支出",
+          "value": -564,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112575364/pdfFile.pdf#page=10",
+            "pdfPage": 10,
+            "publishedOn": "2026-11-12",
+            "locator": "中間連結CF計算書（印刷頁8）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "intangible25",
+          "entity": "JES連結",
+          "metric": "無形固定資産の取得支出",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形固定資産の取得支出",
+          "value": -422,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112575364/pdfFile.pdf#page=10",
+            "pdfPage": 10,
+            "publishedOn": "2026-11-12",
+            "locator": "中間連結CF計算書（印刷頁8）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "intangible26",
+          "entity": "JES連結",
+          "metric": "無形固定資産の取得支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "無形固定資産の取得支出",
+          "value": -281,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112575364/pdfFile.pdf#page=10",
+            "pdfPage": 10,
+            "publishedOn": "2026-11-12",
+            "locator": "中間連結CF計算書（印刷頁8）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "issuerfcf25",
+          "entity": "JES連結",
+          "metric": "会社開示のFCF（営業CFと投資CF）",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社開示のFCF（営業CFと投資CF）",
+          "value": 3122,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261120584108/pdfFile.pdf#page=13",
+            "pdfPage": 13,
+            "publishedOn": "2026-11-20",
+            "locator": "連結貸借対照表・キャッシュフロー",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "issuerfcf26",
+          "entity": "JES連結",
+          "metric": "会社開示のFCF（営業CFと投資CF）",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "会社開示のFCF（営業CFと投資CF）",
+          "value": 2565,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261120584108/pdfFile.pdf#page=13",
+            "pdfPage": 13,
+            "publishedOn": "2026-11-20",
+            "locator": "連結貸借対照表・キャッシュフロー",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sec26",
+          "entity": "JES連結",
+          "metric": "投資有価証券取得支出",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "投資有価証券取得支出",
+          "value": -502,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112575364/pdfFile.pdf#page=10",
+            "pdfPage": 10,
+            "publishedOn": "2026-11-12",
+            "locator": "中間連結CF計算書（印刷頁8）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "subtotal-diff",
+          "operation": "difference",
+          "inputs": [
+            "subtotal26",
+            "subtotal25"
+          ],
+          "value": 551,
+          "definition": "小計増加",
+          "precision": 0
+        },
+        {
+          "id": "tax-diff",
+          "operation": "difference",
+          "inputs": [
+            "tax25",
+            "tax26"
+          ],
+          "value": 699,
+          "definition": "納付額増加",
+          "precision": 0
+        },
+        {
+          "id": "ocf-decrease",
+          "operation": "difference",
+          "inputs": [
+            "ocf25",
+            "ocf26"
+          ],
+          "value": 148,
+          "definition": "営業CF減少",
+          "precision": 0
+        },
+        {
+          "id": "paid25",
+          "operation": "sum",
+          "inputs": [
+            "ppe25",
+            "intangible25"
+          ],
+          "value": -998,
+          "definition": "取得支出の合計",
+          "precision": 0
+        },
+        {
+          "id": "paid26",
+          "operation": "sum",
+          "inputs": [
+            "ppe26",
+            "intangible26"
+          ],
+          "value": -845,
+          "definition": "取得支出の合計",
+          "precision": 0
+        },
+        {
+          "id": "paid-decrease",
+          "operation": "difference",
+          "inputs": [
+            "paid26",
+            "paid25"
+          ],
+          "value": 153,
+          "definition": "取得支出減少",
+          "precision": 0
+        },
+        {
+          "id": "simple25",
+          "operation": "sum",
+          "inputs": [
+            "ocf25",
+            "ppe25",
+            "intangible25"
+          ],
+          "value": 3149,
+          "definition": "前年簡易FCF",
+          "precision": 0
+        },
+        {
+          "id": "simple26",
+          "operation": "sum",
+          "inputs": [
+            "ocf26",
+            "ppe26",
+            "intangible26"
+          ],
+          "value": 3154,
+          "definition": "今期簡易FCF",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "annual-framework",
+      "question": "通期の営業CFと自己資本利益率は長期で伸びてきたか",
+      "definition": "3月期連結の5年。既存事業のみの比較ではない。",
+      "status": "ready",
+      "claim": "営業CFは2022年3月期の30.05億円から2026年3月期の88.01億円へ増えた。",
+      "requiredInputs": [
+        {
+          "id": "sales2022",
+          "entity": "JES連結",
+          "metric": "通期売上高",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期売上高"
+        },
+        {
+          "id": "ocf2022",
+          "entity": "JES連結",
+          "metric": "通期営業CF",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期営業CF"
+        },
+        {
+          "id": "roe2022",
+          "entity": "JES連結",
+          "metric": "通期ROE",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "通期ROE"
+        },
+        {
+          "id": "sales2023",
+          "entity": "JES連結",
+          "metric": "通期売上高",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期売上高"
+        },
+        {
+          "id": "ocf2023",
+          "entity": "JES連結",
+          "metric": "通期営業CF",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期営業CF"
+        },
+        {
+          "id": "roe2023",
+          "entity": "JES連結",
+          "metric": "通期ROE",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "通期ROE"
+        },
+        {
+          "id": "sales2024",
+          "entity": "JES連結",
+          "metric": "通期売上高",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期売上高"
+        },
+        {
+          "id": "ocf2024",
+          "entity": "JES連結",
+          "metric": "通期営業CF",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期営業CF"
+        },
+        {
+          "id": "roe2024",
+          "entity": "JES連結",
+          "metric": "通期ROE",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "通期ROE"
+        },
+        {
+          "id": "sales2025",
+          "entity": "JES連結",
+          "metric": "通期売上高",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期売上高"
+        },
+        {
+          "id": "ocf2025",
+          "entity": "JES連結",
+          "metric": "通期営業CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期営業CF"
+        },
+        {
+          "id": "roe2025",
+          "entity": "JES連結",
+          "metric": "通期ROE",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "通期ROE"
+        },
+        {
+          "id": "sales2026",
+          "entity": "JES連結",
+          "metric": "通期売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期売上高"
+        },
+        {
+          "id": "ocf2026",
+          "entity": "JES連結",
+          "metric": "通期営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期営業CF"
+        },
+        {
+          "id": "roe2026",
+          "entity": "JES連結",
+          "metric": "通期ROE",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "通期ROE"
+        },
+        {
+          "id": "ppe25",
+          "entity": "JES連結",
+          "metric": "通期有形固定資産取得支出",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期有形固定資産取得支出"
+        },
+        {
+          "id": "ppe26",
+          "entity": "JES連結",
+          "metric": "通期有形固定資産取得支出",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期有形固定資産取得支出"
+        },
+        {
+          "id": "intang25",
+          "entity": "JES連結",
+          "metric": "通期無形固定資産取得支出",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期無形固定資産取得支出"
+        },
+        {
+          "id": "intang26",
+          "entity": "JES連結",
+          "metric": "通期無形固定資産取得支出",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期無形固定資産取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales2022",
+          "entity": "JES連結",
+          "metric": "通期売上高",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期売上高",
+          "value": 29751,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20260619153900_S100YEZ8/pdfFile.pdf#page=2",
+            "pdfPage": 2,
+            "publishedOn": "2026-06-19",
+            "locator": "連結経営指標等",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf2022",
+          "entity": "JES連結",
+          "metric": "通期営業CF",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期営業CF",
+          "value": 3005,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20260619153900_S100YEZ8/pdfFile.pdf#page=2",
+            "pdfPage": 2,
+            "publishedOn": "2026-06-19",
+            "locator": "連結経営指標等",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe2022",
+          "entity": "JES連結",
+          "metric": "通期ROE",
+          "periodStart": "2021-04-01",
+          "periodEnd": "2022-03-31",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "通期ROE",
+          "value": 24.9,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20260619153900_S100YEZ8/pdfFile.pdf#page=2",
+            "pdfPage": 2,
+            "publishedOn": "2026-06-19",
+            "locator": "連結経営指標等",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sales2023",
+          "entity": "JES連結",
+          "metric": "通期売上高",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期売上高",
+          "value": 34907,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20260619153900_S100YEZ8/pdfFile.pdf#page=2",
+            "pdfPage": 2,
+            "publishedOn": "2026-06-19",
+            "locator": "連結経営指標等",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf2023",
+          "entity": "JES連結",
+          "metric": "通期営業CF",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期営業CF",
+          "value": 4253,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20260619153900_S100YEZ8/pdfFile.pdf#page=2",
+            "pdfPage": 2,
+            "publishedOn": "2026-06-19",
+            "locator": "連結経営指標等",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe2023",
+          "entity": "JES連結",
+          "metric": "通期ROE",
+          "periodStart": "2022-04-01",
+          "periodEnd": "2023-03-31",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "通期ROE",
+          "value": 25.1,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20260619153900_S100YEZ8/pdfFile.pdf#page=2",
+            "pdfPage": 2,
+            "publishedOn": "2026-06-19",
+            "locator": "連結経営指標等",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sales2024",
+          "entity": "JES連結",
+          "metric": "通期売上高",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期売上高",
+          "value": 42216,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20260619153900_S100YEZ8/pdfFile.pdf#page=2",
+            "pdfPage": 2,
+            "publishedOn": "2026-06-19",
+            "locator": "連結経営指標等",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf2024",
+          "entity": "JES連結",
+          "metric": "通期営業CF",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期営業CF",
+          "value": 5280,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20260619153900_S100YEZ8/pdfFile.pdf#page=2",
+            "pdfPage": 2,
+            "publishedOn": "2026-06-19",
+            "locator": "連結経営指標等",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe2024",
+          "entity": "JES連結",
+          "metric": "通期ROE",
+          "periodStart": "2023-04-01",
+          "periodEnd": "2024-03-31",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "通期ROE",
+          "value": 30.1,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20260619153900_S100YEZ8/pdfFile.pdf#page=2",
+            "pdfPage": 2,
+            "publishedOn": "2026-06-19",
+            "locator": "連結経営指標等",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sales2025",
+          "entity": "JES連結",
+          "metric": "通期売上高",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期売上高",
+          "value": 49375,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20260619153900_S100YEZ8/pdfFile.pdf#page=2",
+            "pdfPage": 2,
+            "publishedOn": "2026-06-19",
+            "locator": "連結経営指標等",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf2025",
+          "entity": "JES連結",
+          "metric": "通期営業CF",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期営業CF",
+          "value": 5643,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20260619153900_S100YEZ8/pdfFile.pdf#page=2",
+            "pdfPage": 2,
+            "publishedOn": "2026-06-19",
+            "locator": "連結経営指標等",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe2025",
+          "entity": "JES連結",
+          "metric": "通期ROE",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "通期ROE",
+          "value": 30.3,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20260619153900_S100YEZ8/pdfFile.pdf#page=2",
+            "pdfPage": 2,
+            "publishedOn": "2026-06-19",
+            "locator": "連結経営指標等",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sales2026",
+          "entity": "JES連結",
+          "metric": "通期売上高",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期売上高",
+          "value": 57601,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20260619153900_S100YEZ8/pdfFile.pdf#page=2",
+            "pdfPage": 2,
+            "publishedOn": "2026-06-19",
+            "locator": "連結経営指標等",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ocf2026",
+          "entity": "JES連結",
+          "metric": "通期営業CF",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期営業CF",
+          "value": 8801,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20260619153900_S100YEZ8/pdfFile.pdf#page=2",
+            "pdfPage": 2,
+            "publishedOn": "2026-06-19",
+            "locator": "連結経営指標等",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "roe2026",
+          "entity": "JES連結",
+          "metric": "通期ROE",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "通期ROE",
+          "value": 32.9,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20260619153900_S100YEZ8/pdfFile.pdf#page=2",
+            "pdfPage": 2,
+            "publishedOn": "2026-06-19",
+            "locator": "連結経営指標等",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ppe25",
+          "entity": "JES連結",
+          "metric": "通期有形固定資産取得支出",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期有形固定資産取得支出",
+          "value": -1015,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20260619153900_S100YEZ8/pdfFile.pdf#page=66",
+            "pdfPage": 66,
+            "publishedOn": "2026-06-19",
+            "locator": "連結キャッシュ・フロー計算書",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ppe26",
+          "entity": "JES連結",
+          "metric": "通期有形固定資産取得支出",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期有形固定資産取得支出",
+          "value": -1151,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20260619153900_S100YEZ8/pdfFile.pdf#page=66",
+            "pdfPage": 66,
+            "publishedOn": "2026-06-19",
+            "locator": "連結キャッシュ・フロー計算書",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "intang25",
+          "entity": "JES連結",
+          "metric": "通期無形固定資産取得支出",
+          "periodStart": "2024-04-01",
+          "periodEnd": "2025-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期無形固定資産取得支出",
+          "value": -571,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20260619153900_S100YEZ8/pdfFile.pdf#page=66",
+            "pdfPage": 66,
+            "publishedOn": "2026-06-19",
+            "locator": "連結キャッシュ・フロー計算書",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "intang26",
+          "entity": "JES連結",
+          "metric": "通期無形固定資産取得支出",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期無形固定資産取得支出",
+          "value": -837,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20260619153900_S100YEZ8/pdfFile.pdf#page=66",
+            "pdfPage": 66,
+            "publishedOn": "2026-06-19",
+            "locator": "連結キャッシュ・フロー計算書",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf25",
+          "operation": "sum",
+          "inputs": [
+            "ocf2025",
+            "ppe25",
+            "intang25"
+          ],
+          "value": 4057,
+          "definition": "2025年3月期簡易FCF",
+          "precision": 0
+        },
+        {
+          "id": "fcf26",
+          "operation": "sum",
+          "inputs": [
+            "ocf2026",
+            "ppe26",
+            "intang26"
+          ],
+          "value": 6813,
+          "definition": "2026年3月期簡易FCF",
+          "precision": 0
+        }
+      ]
+    },
+    {
+      "id": "guidance-payout",
+      "question": "通期営業利益目標の残りと普通配当の位置付け",
+      "definition": "実績と会社予想を区別。下期必要額は通期会社予想から上期実績を控除した独自試算。",
+      "status": "ready",
+      "claim": "これに届くには下期営業利益が71.08億円、前年下期の58.79億円から約21％増える必要がある。",
+      "requiredInputs": [
+        {
+          "id": "hiop25",
+          "entity": "JES連結",
+          "metric": "上期営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "上期営業利益"
+        },
+        {
+          "id": "hiop26",
+          "entity": "JES連結",
+          "metric": "上期営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "上期営業利益"
+        },
+        {
+          "id": "fyop26",
+          "entity": "JES連結",
+          "metric": "通期営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期営業利益"
+        },
+        {
+          "id": "fyop27f",
+          "entity": "JES連結",
+          "metric": "通期営業利益予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期営業利益予想"
+        },
+        {
+          "id": "fysales27f",
+          "entity": "JES連結",
+          "metric": "通期売上高予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期売上高予想"
+        },
+        {
+          "id": "fyEPS",
+          "entity": "JES連結",
+          "metric": "通期予想EPS",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円／株",
+          "basis": "company-forecast",
+          "definition": "通期予想EPS"
+        },
+        {
+          "id": "ordinary",
+          "entity": "JES連結",
+          "metric": "普通配当予想",
+          "periodStart": "2027-03-31",
+          "periodEnd": "2027-03-31",
+          "unit": "円／株",
+          "basis": "company-forecast",
+          "definition": "普通配当予想"
+        },
+        {
+          "id": "special",
+          "entity": "JES連結",
+          "metric": "特別配当予想",
+          "periodStart": "2027-03-31",
+          "periodEnd": "2027-03-31",
+          "unit": "円／株",
+          "basis": "company-forecast",
+          "definition": "特別配当予想"
+        }
+      ],
+      "observations": [
+        {
+          "id": "hiop25",
+          "entity": "JES連結",
+          "metric": "上期営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2025-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "上期営業利益",
+          "value": 5131,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261120584108/pdfFile.pdf#page=10",
+            "pdfPage": 10,
+            "publishedOn": "2026-11-20",
+            "locator": "連結業績概要",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "hiop26",
+          "entity": "JES連結",
+          "metric": "上期営業利益",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "上期営業利益",
+          "value": 5892,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261120584108/pdfFile.pdf#page=10",
+            "pdfPage": 10,
+            "publishedOn": "2026-11-20",
+            "locator": "連結業績概要",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fyop26",
+          "entity": "JES連結",
+          "metric": "通期営業利益",
+          "periodStart": "2025-04-01",
+          "periodEnd": "2026-03-31",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "通期営業利益",
+          "value": 11010,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20260619153900_S100YEZ8/pdfFile.pdf#page=62",
+            "pdfPage": 62,
+            "publishedOn": "2026-06-19",
+            "locator": "連結損益計算書",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fyop27f",
+          "entity": "JES連結",
+          "metric": "通期営業利益予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期営業利益予想",
+          "value": 13000,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112575364/pdfFile.pdf#page=2",
+            "pdfPage": 2,
+            "publishedOn": "2026-11-12",
+            "locator": "2027年3月期連結業績予想",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fysales27f",
+          "entity": "JES連結",
+          "metric": "通期売上高予想",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "通期売上高予想",
+          "value": 65000,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112575364/pdfFile.pdf#page=2",
+            "pdfPage": 2,
+            "publishedOn": "2026-11-12",
+            "locator": "2027年3月期連結業績予想",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fyEPS",
+          "entity": "JES連結",
+          "metric": "通期予想EPS",
+          "periodStart": "2026-04-01",
+          "periodEnd": "2027-03-31",
+          "unit": "円／株",
+          "basis": "company-forecast",
+          "definition": "通期予想EPS",
+          "value": 45.87,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112575364/pdfFile.pdf#page=2",
+            "pdfPage": 2,
+            "publishedOn": "2026-11-12",
+            "locator": "2027年3月期連結業績予想",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ordinary",
+          "entity": "JES連結",
+          "metric": "普通配当予想",
+          "periodStart": "2027-03-31",
+          "periodEnd": "2027-03-31",
+          "unit": "円／株",
+          "basis": "company-forecast",
+          "definition": "普通配当予想",
+          "value": 24,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112575303/pdfFile.pdf#page=2",
+            "pdfPage": 2,
+            "publishedOn": "2026-11-12",
+            "locator": "配当予想修正内容",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "special",
+          "entity": "JES連結",
+          "metric": "特別配当予想",
+          "periodStart": "2027-03-31",
+          "periodEnd": "2027-03-31",
+          "unit": "円／株",
+          "basis": "company-forecast",
+          "definition": "特別配当予想",
+          "value": 22,
+          "source": {
+            "url": "https://www.jes24.co.jp/ja/ir/irnews/auto_20261112575303/pdfFile.pdf#page=2",
+            "pdfPage": 2,
+            "publishedOn": "2026-11-12",
+            "locator": "配当予想修正内容",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "h2-required",
+          "operation": "difference",
+          "inputs": [
+            "fyop27f",
+            "hiop26"
+          ],
+          "value": 7108,
+          "definition": "下期必要営業利益",
+          "precision": 0
+        },
+        {
+          "id": "h2-previous",
+          "operation": "difference",
+          "inputs": [
+            "fyop26",
+            "hiop25"
+          ],
+          "value": 5879,
+          "definition": "前年下期営業利益",
+          "precision": 0
+        },
+        {
+          "id": "h2-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "h2-required",
+            "h2-previous"
+          ],
+          "value": 21,
+          "definition": "下期必要増益率",
+          "precision": 0
+        },
+        {
+          "id": "dividend",
+          "operation": "sum",
+          "inputs": [
+            "ordinary",
+            "special"
+          ],
+          "value": 46,
+          "definition": "年間配当予想",
+          "precision": 0
+        },
+        {
+          "id": "payout",
+          "operation": "ratio-percent",
+          "inputs": [
+            "dividend",
+            "fyEPS"
+          ],
+          "value": 100.3,
+          "definition": "特別込み配当性向",
+          "precision": 1
+        },
+        {
+          "id": "ord-payout",
+          "operation": "ratio-percent",
+          "inputs": [
+            "ordinary",
+            "fyEPS"
+          ],
+          "value": 52.3,
+          "definition": "普通配当のみの配当性向",
+          "precision": 1
+        }
+      ]
+    }
+  ]
+}
