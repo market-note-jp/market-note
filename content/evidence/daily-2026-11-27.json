@@ -1,0 +1,168 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-11-27",
+  "articleSha256": "4031ea8f65fade9a79c1004902e0735416d72082cb060f8fcd8a182ee1024187",
+  "checkedAt": "2026-11-27T06:26:28+09:00",
+  "informationCutoff": "2026-11-27T06:25:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終記事の見出し・結論・全段落・分析・注目点・出典・免責を実際に照合。重要な数値比較はDyDoの同一累計期間の連結売上高・営業利益のみで全4入力を会社決算概要PDF5ページから確認。会社資料の原本内容をJapan IR掲載コピーで読んだ。会社サイトの11月26日説明も確認。予想との比較、独自FCF、指数騰落率や未確認の市場数値は採用していない。金利水準・成長率・インフレ率の数値比較も掲載しない。政策発言と意思決定、ECB会合日と公表日、規則の発効日と評価報道日を区別。NYSEは2026年の休日・株式早期終了だけを確認し26日終値を作らない。米東部標準時13:00は日本時間翌日03:00であり騰落率比較ではない。",
+  "comparisons": [
+    {
+      "id": "dydo-q3",
+      "question": "当期と前年同期の連結売上高・営業利益はどう違うか",
+      "definition": "同じ会社決算概要の2025年度と2026年度の第3四半期累計（1/21〜10/20）の超インフレ会計適用後公表値。参考適用前数値や会社予想を混ぜない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "revenue-now",
+          "entity": "ダイドーグループホールディングス",
+          "metric": "売上高",
+          "periodStart": "2026-01-21",
+          "periodEnd": "2026-10-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・連結、第3四半期累計、超インフレ会計適用後。百万円未満切捨て。"
+        },
+        {
+          "id": "revenue-prior",
+          "entity": "ダイドーグループホールディングス",
+          "metric": "売上高",
+          "periodStart": "2025-01-21",
+          "periodEnd": "2025-10-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・連結、第3四半期累計、超インフレ会計適用後。百万円未満切捨て。"
+        },
+        {
+          "id": "op-now",
+          "entity": "ダイドーグループホールディングス",
+          "metric": "営業利益",
+          "periodStart": "2026-01-21",
+          "periodEnd": "2026-10-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・連結、第3四半期累計、超インフレ会計適用後。百万円未満切捨て。"
+        },
+        {
+          "id": "op-prior",
+          "entity": "ダイドーグループホールディングス",
+          "metric": "営業利益",
+          "periodStart": "2025-01-21",
+          "periodEnd": "2025-10-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・連結、第3四半期累計、超インフレ会計適用後。百万円未満切捨て。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revenue-now",
+          "entity": "ダイドーグループホールディングス",
+          "metric": "売上高",
+          "periodStart": "2026-01-21",
+          "periodEnd": "2026-10-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・連結、第3四半期累計、超インフレ会計適用後。百万円未満切捨て。",
+          "value": 182361,
+          "source": {
+            "url": "https://japanir.jp/wp-content/uploads/2026/11/2590-20261126-02.pdf",
+            "publishedOn": "2026-11-26",
+            "locator": "2026年度（2027年1月期）第3四半期決算概要、連結決算の概要、売上高・営業利益の2025年度/2026年度列。PDF印刷ページ4、1始まりPDF5ページ。発行者DyDoの原資料の掲載コピー。",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "revenue-prior",
+          "entity": "ダイドーグループホールディングス",
+          "metric": "売上高",
+          "periodStart": "2025-01-21",
+          "periodEnd": "2025-10-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・連結、第3四半期累計、超インフレ会計適用後。百万円未満切捨て。",
+          "value": 184950,
+          "source": {
+            "url": "https://japanir.jp/wp-content/uploads/2026/11/2590-20261126-02.pdf",
+            "publishedOn": "2026-11-26",
+            "locator": "2026年度（2027年1月期）第3四半期決算概要、連結決算の概要、売上高・営業利益の2025年度/2026年度列。PDF印刷ページ4、1始まりPDF5ページ。発行者DyDoの原資料の掲載コピー。",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op-now",
+          "entity": "ダイドーグループホールディングス",
+          "metric": "営業利益",
+          "periodStart": "2026-01-21",
+          "periodEnd": "2026-10-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・連結、第3四半期累計、超インフレ会計適用後。百万円未満切捨て。",
+          "value": 11207,
+          "source": {
+            "url": "https://japanir.jp/wp-content/uploads/2026/11/2590-20261126-02.pdf",
+            "publishedOn": "2026-11-26",
+            "locator": "2026年度（2027年1月期）第3四半期決算概要、連結決算の概要、売上高・営業利益の2025年度/2026年度列。PDF印刷ページ4、1始まりPDF5ページ。発行者DyDoの原資料の掲載コピー。",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op-prior",
+          "entity": "ダイドーグループホールディングス",
+          "metric": "営業利益",
+          "periodStart": "2025-01-21",
+          "periodEnd": "2025-10-20",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "日本基準・連結、第3四半期累計、超インフレ会計適用後。百万円未満切捨て。",
+          "value": 5218,
+          "source": {
+            "url": "https://japanir.jp/wp-content/uploads/2026/11/2590-20261126-02.pdf",
+            "publishedOn": "2026-11-26",
+            "locator": "2026年度（2027年1月期）第3四半期決算概要、連結決算の概要、売上高・営業利益の2025年度/2026年度列。PDF印刷ページ4、1始まりPDF5ページ。発行者DyDoの原資料の掲載コピー。",
+            "pdfPage": 5,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "DyDoが26日に公表した2027年1月期第3四半期累計の連結実績は、売上高182,361百万円、営業利益11,207百万円。前年同期は売上高184,950百万円、営業利益5,218百万円だった。対象期間は当期が2026年1月21日〜10月20日、前年が2025年1月21日〜10月20日で、いずれも日本基準・連結、百万円未満切捨ての公表値。"
+    }
+  ],
+  "sourceChecks": [
+    {
+      "topic": "日本銀行・田村委員",
+      "url": "https://www.boj.or.jp/about/press/koen_2026/data/ko261126a1.pdf",
+      "publishedOn": "2026-11-26",
+      "locator": "金融政策運営、本文印刷ページ19（PDF20ページ）と前後。利上げペース加速の条件と個人見解を確認。",
+      "pdfPage": 20
+    },
+    {
+      "topic": "BIS",
+      "url": "https://www.govinfo.gov/content/pkg/FR-2026-11-19/html/2026-23529.htm",
+      "publishedOn": "2026-11-19",
+      "locator": "SUMMARY、DATES、I. Background：海外データセンター、D:5/Macau、仕向地別許可・例外と発効日。"
+    },
+    {
+      "topic": "Fitch評価",
+      "url": "https://www.reuters.com/world/asia-pacific/us-chip-curbs-will-slow-asia-data-center-investment-fitch-says-2026-11-26/",
+      "publishedOn": "2026-11-26",
+      "locator": "11:18:53 UTC配信。冒頭の投資鈍化・選別見通しを確認。Fitch原リリースは検索で取得できずReutersに帰属させ、数値予測を掲載しない。"
+    },
+    {
+      "topic": "ECB",
+      "url": "https://www.ecb.europa.eu/press/accounts/2026/html/ecb.mg261126~ccf28c8071.en.html",
+      "publishedOn": "2026-11-26",
+      "locator": "会合28–29 October、26 November公表、末尾政策議論のenergy shock、growth risks、data-dependent/meeting-by-meeting、no pre-commitmentを確認。"
+    },
+    {
+      "topic": "NYSE",
+      "url": "https://www.nyse.com/trade/hours-calendars",
+      "accessedOn": "2026-11-27",
+      "locator": "2026年Thanksgiving Day行、早期終了脚注。公表日表示なしのため確認日として記載。"
+    }
+  ]
+}
