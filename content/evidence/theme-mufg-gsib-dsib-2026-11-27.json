@@ -1,0 +1,776 @@
+{
+  "version": 1,
+  "articleSlug": "theme-mufg-gsib-dsib-2026-11-27",
+  "articleSha256": "e4d1996c133b40a09d782b2515af4972570dabfe6249ad2898ca8c9d2f5f6247",
+  "checkedAt": "2026-11-27T10:23:53.445Z",
+  "informationCutoff": "2026-11-27T19:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "FSBの区分表・引下げ時期の脚注、金融庁現行規制一覧と指定告示1・2条、自己資本比率告示2条の2第5項、MUFG KM1・最新の経営管理指標を現物確認。掛け算は別途手計算。米ドル換算や配当換算をしていない。レバレッジ比率/TLACは別規制であり今回の試算対象外。",
+  "comparisons": [
+    {
+      "id": "fsb-reclassification",
+      "question": "前年と今年の国際区分はどう変わったか",
+      "definition": "国際枠組み上の適用区分であり国内向けと別",
+      "status": "ready",
+      "claim": "MUFGは第2区分から第1区分に下がり、国際枠組み上の上乗せ率が1.5％から1.0％になった",
+      "requiredInputs": [
+        {
+          "id": "fsb-old",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "旧G-SIB区分に対応する上乗せ率",
+          "periodStart": "2025-11-27",
+          "periodEnd": "2025-11-27",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "2026年原表注11にある前年第2区分と同表の対応するRWA対比率"
+        },
+        {
+          "id": "fsb-new",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "新G-SIB区分に対応する上乗せ率",
+          "periodStart": "2026-11-25",
+          "periodEnd": "2026-11-25",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "2026年原表の第1区分対応率、国内適用率ではない"
+        },
+        {
+          "id": "total",
+          "entity": "FSB対象G-SIB全体",
+          "metric": "2026年国際対象行数",
+          "periodStart": "2026-11-25",
+          "periodEnd": "2026-11-25",
+          "unit": "行",
+          "basis": "actual",
+          "definition": "前年と同じ顔ぶれ。合計29行"
+        },
+        {
+          "id": "old-bucket",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "前年のG-SIB区分",
+          "periodStart": "2025-11-27",
+          "periodEnd": "2025-11-27",
+          "unit": "区分",
+          "basis": "actual",
+          "definition": "前年のG-SIB区分"
+        },
+        {
+          "id": "new-bucket",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "2026年のG-SIB区分",
+          "periodStart": "2026-11-25",
+          "periodEnd": "2026-11-25",
+          "unit": "区分",
+          "basis": "actual",
+          "definition": "2026年のG-SIB区分"
+        }
+      ],
+      "observations": [
+        {
+          "id": "fsb-old",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "旧G-SIB区分に対応する上乗せ率",
+          "periodStart": "2025-11-27",
+          "periodEnd": "2025-11-27",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "2026年原表注11にある前年第2区分と同表の対応するRWA対比率",
+          "value": 1.5,
+          "source": {
+            "url": "https://www.fsb.org/uploads/P251126.pdf#page=3",
+            "pdfPage": 3,
+            "publishedOn": "2026-11-25",
+            "locator": "区分表・脚注11（MUFG 2→1）及び12（率の単位・RWA対比）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fsb-new",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "新G-SIB区分に対応する上乗せ率",
+          "periodStart": "2026-11-25",
+          "periodEnd": "2026-11-25",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "2026年原表の第1区分対応率、国内適用率ではない",
+          "value": 1,
+          "source": {
+            "url": "https://www.fsb.org/uploads/P251126.pdf#page=3",
+            "pdfPage": 3,
+            "publishedOn": "2026-11-25",
+            "locator": "区分表・脚注11（MUFG 2→1）及び12（率の単位・RWA対比）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "total",
+          "entity": "FSB対象G-SIB全体",
+          "metric": "2026年国際対象行数",
+          "periodStart": "2026-11-25",
+          "periodEnd": "2026-11-25",
+          "unit": "行",
+          "basis": "actual",
+          "definition": "前年と同じ顔ぶれ。合計29行",
+          "value": 29,
+          "source": {
+            "url": "https://www.fsb.org/uploads/P251126.pdf#page=1",
+            "pdfPage": 1,
+            "publishedOn": "2026-11-25",
+            "locator": "本文第2項：29行、注4：引下げは当局裁量を除き即時、引上げは2028年1月1日",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "old-bucket",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "前年のG-SIB区分",
+          "periodStart": "2025-11-27",
+          "periodEnd": "2025-11-27",
+          "unit": "区分",
+          "basis": "actual",
+          "definition": "前年のG-SIB区分",
+          "value": 2,
+          "source": {
+            "url": "https://www.fsb.org/uploads/P251126.pdf#page=3",
+            "pdfPage": 3,
+            "publishedOn": "2026-11-25",
+            "locator": "区分表・脚注11（MUFG 2→1）及び12（率の単位・RWA対比）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "new-bucket",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "2026年のG-SIB区分",
+          "periodStart": "2026-11-25",
+          "periodEnd": "2026-11-25",
+          "unit": "区分",
+          "basis": "actual",
+          "definition": "2026年のG-SIB区分",
+          "value": 1,
+          "source": {
+            "url": "https://www.fsb.org/uploads/P251126.pdf#page=3",
+            "pdfPage": 3,
+            "publishedOn": "2026-11-25",
+            "locator": "区分表・脚注11（MUFG 2→1）及び12（率の単位・RWA対比）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "gsib-decline",
+          "operation": "difference",
+          "inputs": [
+            "fsb-old",
+            "fsb-new"
+          ],
+          "value": 0.5,
+          "definition": "国際対象G-SIB上乗せの低下幅、ポイント",
+          "precision": 2
+        }
+      ]
+    },
+    {
+      "id": "japan-binding",
+      "question": "日本で国際向けだけ低下したときの差は？",
+      "definition": "銀行持株会社自己資本比率告示第2条の2第5項により max(G, D)。現行max(1.5,1.5)と仮定max(1.0,1.5)を手計算。RWAを固定した差額はゼロ。https://www.fsa.go.jp/policy/basel_ii/mochikabu1_3.pdf#page=28",
+      "status": "ready",
+      "claim": "国際向けだけなら差は0ポイント",
+      "requiredInputs": [
+        {
+          "id": "domestic",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "掲載告示のD-SIB上乗せ率",
+          "periodStart": "2026-11-27",
+          "periodEnd": "2026-11-27",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "11月27日確認できた金融庁掲載の指定告示第2条第1号"
+        },
+        {
+          "id": "regulated-global",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "掲載告示のG-SIB上乗せ率",
+          "periodStart": "2026-11-27",
+          "periodEnd": "2026-11-27",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "11月27日確認できた金融庁掲載の指定告示第1条第1号"
+        },
+        {
+          "id": "fsb-new",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "新G-SIB区分に対応する上乗せ率",
+          "periodStart": "2026-11-25",
+          "periodEnd": "2026-11-25",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "2026年原表の第1区分対応率、国内適用率ではない"
+        },
+        {
+          "id": "rwa",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "連結リスク・アセット",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "フロア調整最終実施ベースではない、9月末の規制報告RWA"
+        }
+      ],
+      "observations": [
+        {
+          "id": "domestic",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "掲載告示のD-SIB上乗せ率",
+          "periodStart": "2026-11-27",
+          "periodEnd": "2026-11-27",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "11月27日確認できた金融庁掲載の指定告示第2条第1号",
+          "value": 1.5,
+          "source": {
+            "url": "https://www.fsa.go.jp/policy/basel_ii/mochikabug-2.pdf#page=1",
+            "pdfPage": 1,
+            "publishedOn": "2024-10-01",
+            "locator": "平成27年金融庁告示第80号 第2条第1号（掲載版の作成日：2024年10月1日）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "regulated-global",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "掲載告示のG-SIB上乗せ率",
+          "periodStart": "2026-11-27",
+          "periodEnd": "2026-11-27",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "11月27日確認できた金融庁掲載の指定告示第1条第1号",
+          "value": 1.5,
+          "source": {
+            "url": "https://www.fsa.go.jp/policy/basel_ii/mochikabug-2.pdf#page=1",
+            "pdfPage": 1,
+            "publishedOn": "2024-10-01",
+            "locator": "平成27年金融庁告示第80号 第1条第1号（掲載版の作成日：2024年10月1日）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fsb-new",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "新G-SIB区分に対応する上乗せ率",
+          "periodStart": "2026-11-25",
+          "periodEnd": "2026-11-25",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "2026年原表の第1区分対応率、国内適用率ではない",
+          "value": 1,
+          "source": {
+            "url": "https://www.fsb.org/uploads/P251126.pdf#page=3",
+            "pdfPage": 3,
+            "publishedOn": "2026-11-25",
+            "locator": "区分表・脚注11（MUFG 2→1）及び12（率の単位・RWA対比）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "rwa",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "連結リスク・アセット",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "フロア調整最終実施ベースではない、9月末の規制報告RWA",
+          "value": 123689711,
+          "source": {
+            "url": "https://www.mufg.jp/dam/ir/report/basel3/2027-2q/pdf/mufg2609_09_ja.pdf#page=1",
+            "pdfPage": 1,
+            "publishedOn": "2026-11-24",
+            "locator": "2026年9月末列、KM1該当番号4、5、8–11。無日付PDFの配信版Last-Modified 2026-11-24を確認",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "same-binding",
+          "operation": "difference",
+          "inputs": [
+            "regulated-global",
+            "domestic"
+          ],
+          "value": 0,
+          "definition": "現行G-SIB=現行D-SIB。国内だけ1.5％が残る場合は同じなので適用率の差はゼロ",
+          "precision": 2
+        }
+      ]
+    },
+    {
+      "id": "capital-stack",
+      "question": "9月末時点の資本比率と構成",
+      "definition": "すべてグループ連結・規制開示ベース。別の管理会計目標と比較不可",
+      "status": "ready",
+      "claim": "最低連結資本バッファー4.20％の内訳は、資本保全2.50％、景気に応じた上乗せ0.20％、G-SIB・D-SIBの適用分1.50％だった",
+      "requiredInputs": [
+        {
+          "id": "rwa",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "連結リスク・アセット",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "フロア調整最終実施ベースではない、9月末の規制報告RWA"
+        },
+        {
+          "id": "actual-cet1",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "連結普通株式等Tier1比率",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "連結普通株式等Tier1比率"
+        },
+        {
+          "id": "conservation",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "資本保全バッファー比率",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "資本保全バッファー比率"
+        },
+        {
+          "id": "ccyb",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "カウンター・シクリカル・バッファー比率",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "カウンター・シクリカル・バッファー比率"
+        },
+        {
+          "id": "specified",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "G-SIB/D-SIB適用バッファー比率",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "G-SIB/D-SIB適用バッファー比率"
+        },
+        {
+          "id": "total-required",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "会社開示の最低連結資本バッファー比率",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "会社開示の最低連結資本バッファー比率"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rwa",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "連結リスク・アセット",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "フロア調整最終実施ベースではない、9月末の規制報告RWA",
+          "value": 123689711,
+          "source": {
+            "url": "https://www.mufg.jp/dam/ir/report/basel3/2027-2q/pdf/mufg2609_09_ja.pdf#page=1",
+            "pdfPage": 1,
+            "publishedOn": "2026-11-24",
+            "locator": "2026年9月末列、KM1該当番号4、5、8–11。無日付PDFの配信版Last-Modified 2026-11-24を確認",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "actual-cet1",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "連結普通株式等Tier1比率",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "連結普通株式等Tier1比率",
+          "value": 12.65,
+          "source": {
+            "url": "https://www.mufg.jp/dam/ir/report/basel3/2027-2q/pdf/mufg2609_09_ja.pdf#page=1",
+            "pdfPage": 1,
+            "publishedOn": "2026-11-24",
+            "locator": "2026年9月末列、KM1該当番号4、5、8–11。無日付PDFの配信版Last-Modified 2026-11-24を確認",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "conservation",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "資本保全バッファー比率",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "資本保全バッファー比率",
+          "value": 2.5,
+          "source": {
+            "url": "https://www.mufg.jp/dam/ir/report/basel3/2027-2q/pdf/mufg2609_09_ja.pdf#page=1",
+            "pdfPage": 1,
+            "publishedOn": "2026-11-24",
+            "locator": "2026年9月末列、KM1該当番号4、5、8–11。無日付PDFの配信版Last-Modified 2026-11-24を確認",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ccyb",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "カウンター・シクリカル・バッファー比率",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "カウンター・シクリカル・バッファー比率",
+          "value": 0.2,
+          "source": {
+            "url": "https://www.mufg.jp/dam/ir/report/basel3/2027-2q/pdf/mufg2609_09_ja.pdf#page=1",
+            "pdfPage": 1,
+            "publishedOn": "2026-11-24",
+            "locator": "2026年9月末列、KM1該当番号4、5、8–11。無日付PDFの配信版Last-Modified 2026-11-24を確認",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "specified",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "G-SIB/D-SIB適用バッファー比率",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "G-SIB/D-SIB適用バッファー比率",
+          "value": 1.5,
+          "source": {
+            "url": "https://www.mufg.jp/dam/ir/report/basel3/2027-2q/pdf/mufg2609_09_ja.pdf#page=1",
+            "pdfPage": 1,
+            "publishedOn": "2026-11-24",
+            "locator": "2026年9月末列、KM1該当番号4、5、8–11。無日付PDFの配信版Last-Modified 2026-11-24を確認",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "total-required",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "会社開示の最低連結資本バッファー比率",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "会社開示の最低連結資本バッファー比率",
+          "value": 4.2,
+          "source": {
+            "url": "https://www.mufg.jp/dam/ir/report/basel3/2027-2q/pdf/mufg2609_09_ja.pdf#page=1",
+            "pdfPage": 1,
+            "publishedOn": "2026-11-24",
+            "locator": "2026年9月末列、KM1該当番号4、5、8–11。無日付PDFの配信版Last-Modified 2026-11-24を確認",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "sum-three",
+          "operation": "sum",
+          "inputs": [
+            "conservation",
+            "ccyb",
+            "specified"
+          ],
+          "value": 4.2,
+          "definition": "最低連結資本バッファーの3構成比率を加算",
+          "precision": 2
+        }
+      ]
+    },
+    {
+      "id": "counterfactual-rwa",
+      "question": "両方が1.0％になった場合の金額は？",
+      "definition": "条件付き試算、RWA 123,689,711百万円固定。国際・国内とも1.0％と置く、他の比率は不変。0.5%×RWA=618,448.555百万円（6,184.48555億円）。単なる金額換算で利用可能現金ではない。掛け算はゲート非対応なので別途検算。",
+      "status": "ready",
+      "claim": "約6,184億円",
+      "requiredInputs": [
+        {
+          "id": "rwa",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "連結リスク・アセット",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "フロア調整最終実施ベースではない、9月末の規制報告RWA"
+        },
+        {
+          "id": "domestic",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "掲載告示のD-SIB上乗せ率",
+          "periodStart": "2026-11-27",
+          "periodEnd": "2026-11-27",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "11月27日確認できた金融庁掲載の指定告示第2条第1号"
+        },
+        {
+          "id": "regulated-global",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "掲載告示のG-SIB上乗せ率",
+          "periodStart": "2026-11-27",
+          "periodEnd": "2026-11-27",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "11月27日確認できた金融庁掲載の指定告示第1条第1号"
+        },
+        {
+          "id": "fsb-new",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "新G-SIB区分に対応する上乗せ率",
+          "periodStart": "2026-11-25",
+          "periodEnd": "2026-11-25",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "2026年原表の第1区分対応率、国内適用率ではない"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rwa",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "連結リスク・アセット",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "百万円",
+          "basis": "actual",
+          "definition": "フロア調整最終実施ベースではない、9月末の規制報告RWA",
+          "value": 123689711,
+          "source": {
+            "url": "https://www.mufg.jp/dam/ir/report/basel3/2027-2q/pdf/mufg2609_09_ja.pdf#page=1",
+            "pdfPage": 1,
+            "publishedOn": "2026-11-24",
+            "locator": "2026年9月末列、KM1該当番号4、5、8–11。無日付PDFの配信版Last-Modified 2026-11-24を確認",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "domestic",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "掲載告示のD-SIB上乗せ率",
+          "periodStart": "2026-11-27",
+          "periodEnd": "2026-11-27",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "11月27日確認できた金融庁掲載の指定告示第2条第1号",
+          "value": 1.5,
+          "source": {
+            "url": "https://www.fsa.go.jp/policy/basel_ii/mochikabug-2.pdf#page=1",
+            "pdfPage": 1,
+            "publishedOn": "2024-10-01",
+            "locator": "平成27年金融庁告示第80号 第2条第1号（掲載版の作成日：2024年10月1日）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "regulated-global",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "掲載告示のG-SIB上乗せ率",
+          "periodStart": "2026-11-27",
+          "periodEnd": "2026-11-27",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "11月27日確認できた金融庁掲載の指定告示第1条第1号",
+          "value": 1.5,
+          "source": {
+            "url": "https://www.fsa.go.jp/policy/basel_ii/mochikabug-2.pdf#page=1",
+            "pdfPage": 1,
+            "publishedOn": "2024-10-01",
+            "locator": "平成27年金融庁告示第80号 第1条第1号（掲載版の作成日：2024年10月1日）",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fsb-new",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "新G-SIB区分に対応する上乗せ率",
+          "periodStart": "2026-11-25",
+          "periodEnd": "2026-11-25",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "2026年原表の第1区分対応率、国内適用率ではない",
+          "value": 1,
+          "source": {
+            "url": "https://www.fsb.org/uploads/P251126.pdf#page=3",
+            "pdfPage": 3,
+            "publishedOn": "2026-11-25",
+            "locator": "区分表・脚注11（MUFG 2→1）及び12（率の単位・RWA対比）",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "hypothesis-decline",
+          "operation": "difference",
+          "inputs": [
+            "domestic",
+            "fsb-new"
+          ],
+          "value": 0.5,
+          "definition": "両方同率と置く反実仮想で採用される低下幅、ポイント",
+          "precision": 2
+        }
+      ]
+    },
+    {
+      "id": "management-target",
+      "question": "会社の目標と現状はどの定義か",
+      "definition": "会社の管理指標、バーゼルⅢ完全実施の2029年3月末適用規制試算で、その他有価証券評価差額金を除く。比較可能なのは同じ定義の現在と目標。",
+      "status": "ready",
+      "claim": "経営上のCET1目標は9.5〜10.5％。同じ計算基準で9月末は9.6％だった",
+      "requiredInputs": [
+        {
+          "id": "lower",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "CET1経営目標下限",
+          "periodStart": "2026-11-17",
+          "periodEnd": "2026-11-17",
+          "unit": "％",
+          "basis": "company-forecast",
+          "definition": "CET1経営目標下限"
+        },
+        {
+          "id": "upper",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "CET1経営目標上限",
+          "periodStart": "2026-11-17",
+          "periodEnd": "2026-11-17",
+          "unit": "％",
+          "basis": "company-forecast",
+          "definition": "CET1経営目標上限"
+        },
+        {
+          "id": "reported",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "2026年9月末 CET1経営指標（会社試算）",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "2026年9月末 CET1経営指標（会社試算）"
+        },
+        {
+          "id": "regulatory",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "9月末連結普通株式等Tier1比率（規制開示）",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "9月末連結普通株式等Tier1比率（規制開示）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "lower",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "CET1経営目標下限",
+          "periodStart": "2026-11-17",
+          "periodEnd": "2026-11-17",
+          "unit": "％",
+          "basis": "company-forecast",
+          "definition": "CET1経営目標下限",
+          "value": 9.5,
+          "source": {
+            "url": "https://www.mufg.jp/dam/ir/presentation/2026/pdf/slides2609_ja.pdf#page=9",
+            "pdfPage": 9,
+            "publishedOn": "2026-11-17",
+            "locator": "資本配賦の見通し：目標9.5–10.5％、実績9.6％、脚注1",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "upper",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "CET1経営目標上限",
+          "periodStart": "2026-11-17",
+          "periodEnd": "2026-11-17",
+          "unit": "％",
+          "basis": "company-forecast",
+          "definition": "CET1経営目標上限",
+          "value": 10.5,
+          "source": {
+            "url": "https://www.mufg.jp/dam/ir/presentation/2026/pdf/slides2609_ja.pdf#page=9",
+            "pdfPage": 9,
+            "publishedOn": "2026-11-17",
+            "locator": "資本配賦の見通し：目標9.5–10.5％、実績9.6％、脚注1",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "reported",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "2026年9月末 CET1経営指標（会社試算）",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "2026年9月末 CET1経営指標（会社試算）",
+          "value": 9.6,
+          "source": {
+            "url": "https://www.mufg.jp/dam/ir/presentation/2026/pdf/slides2609_ja.pdf#page=9",
+            "pdfPage": 9,
+            "publishedOn": "2026-11-17",
+            "locator": "資本配賦の見通し：目標9.5–10.5％、実績9.6％、脚注1",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "regulatory",
+          "entity": "三菱UFJフィナンシャル・グループ連結",
+          "metric": "9月末連結普通株式等Tier1比率（規制開示）",
+          "periodStart": "2026-09-30",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "9月末連結普通株式等Tier1比率（規制開示）",
+          "value": 12.65,
+          "source": {
+            "url": "https://www.mufg.jp/dam/ir/report/basel3/2027-2q/pdf/mufg2609_09_ja.pdf#page=1",
+            "pdfPage": 1,
+            "publishedOn": "2026-11-24",
+            "locator": "2026年9月末列、KM1該当番号4、5、8–11。無日付PDFの配信版Last-Modified 2026-11-24を確認",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "above-lower",
+          "operation": "difference",
+          "inputs": [
+            "reported",
+            "lower"
+          ],
+          "value": 0.1,
+          "definition": "同じ計算基準で経営目標下限を何ポイント上回るか",
+          "precision": 2
+        }
+      ]
+    }
+  ]
+}
