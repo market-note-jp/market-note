@@ -10,6 +10,15 @@ import BreadthHomeCard from "./market-breadth/home-card";
 
 const legacyArticles = [
 {
+  "kind": "週次レポート",
+  "theme": "日米株・AI投資",
+  "date": "2026-11-28 08:06",
+  "dateTime": "2026-11-28T08:06:10+09:00",
+  "title": "日米株が反発、NVIDIAの経営復帰とAI受注の回収条件を読む｜11月23日〜27日",
+  "excerpt": "日米4指数の週間騰落率と短縮取引を確認。NVIDIA経営復帰、Dellの受注審査、米消費・金利・為替・原油と、翌週の雇用統計を整理する。",
+  "href": "/articles/weekly-2026-11-23"
+},
+{
   "kind": "企業レポート",
   "theme": "個別企業",
   "date": "2026-11-27 19:24",
