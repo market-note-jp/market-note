@@ -1,0 +1,290 @@
+{
+  "version": 1,
+  "articleSlug": "daily-2026-11-28",
+  "articleSha256": "32fe1495b47e901620b18e473adecbac3f88ab4dbb871aa76ce9061ae9e9ec38",
+  "checkedAt": "2026-11-28T06:25:00+09:00",
+  "informationCutoff": "2026-11-28T06:23:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "最終記事の見出し、結論、全段落、分析、注目点、出典、免責を読み、数値比較を東京CPI・ハイレックス予想修正・ECB CESに全て列挙し、必要な全8入力を原資料で照合。ハイレックス発行原文PDFの1〜2ページを実際に読み、検索不成功を記載なしと扱っていない。売上と営業利益は別指標の同一通期会社予想同士。CPIは前年同月比、速報と全国/前月比を区別。ECBは家計期待の観測集計で実現物価やECB予測ではなく、12か月先の暦期間が調査時点で移る点も明記。米株は引け後AP原文とReuters転載本文を読み方向のみ採用し、検索速報と最終終値の差があるため未確認の数値騰落率・週間比較を採用しない。MATCH法案はReutersの27日報道に帰属させ、成立/施行済みという断定はない。企業間比較、FCF計算、実績対市場予想の比較はない。",
+  "comparisons": [
+    {
+      "id": "tokyo-cpi",
+      "question": "生鮮食品を除く総合の前年比は10月から11月にどう変化したか",
+      "definition": "2025年基準・東京都区部、生鮮食品を除く総合、対象月の前年同月比。11月27日公表表1の原数値に基づく率。11月は中旬速報、10月は同版掲載値。前月比と混ぜない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "oct",
+          "entity": "東京都区部CPI",
+          "metric": "生鮮食品を除く総合・前年同月比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "2025年基準・東京都区部、生鮮食品を除く総合、対象月の前年同月比。11月27日公表表1の原数値に基づく率。11月は中旬速報、10月は同版掲載値。前月比と混ぜない。"
+        },
+        {
+          "id": "nov",
+          "entity": "東京都区部CPI",
+          "metric": "生鮮食品を除く総合・前年同月比",
+          "periodStart": "2026-11-01",
+          "periodEnd": "2026-11-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "2025年基準・東京都区部、生鮮食品を除く総合、対象月の前年同月比。11月27日公表表1の原数値に基づく率。11月は中旬速報、10月は同版掲載値。前月比と混ぜない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "oct",
+          "entity": "東京都区部CPI",
+          "metric": "生鮮食品を除く総合・前年同月比",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "2025年基準・東京都区部、生鮮食品を除く総合、対象月の前年同月比。11月27日公表表1の原数値に基づく率。11月は中旬速報、10月は同版掲載値。前月比と混ぜない。",
+          "value": 2.6,
+          "source": {
+            "url": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/pdf/kubu.pdf",
+            "publishedOn": "2026-11-27",
+            "locator": "表1、生鮮食品を除く総合の前年同月比行、2026年10月・11月列。PDF1ページ。",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "nov",
+          "entity": "東京都区部CPI",
+          "metric": "生鮮食品を除く総合・前年同月比",
+          "periodStart": "2026-11-01",
+          "periodEnd": "2026-11-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "2025年基準・東京都区部、生鮮食品を除く総合、対象月の前年同月比。11月27日公表表1の原数値に基づく率。11月は中旬速報、10月は同版掲載値。前月比と混ぜない。",
+          "value": 2.9,
+          "source": {
+            "url": "https://www.stat.go.jp/data/cpi/sokuhou/tsuki/pdf/kubu.pdf",
+            "publishedOn": "2026-11-27",
+            "locator": "表1、生鮮食品を除く総合の前年同月比行、2026年10月・11月列。PDF1ページ。",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "総務省が27日に公表した東京都区部11月中旬速報では、生鮮食品を除く総合の前年同月比は2.9％で、同じ公表資料に載る10月の2.6％から拡大した。いずれも2025年基準の東京都区部の指数に基づく前年比であり、前月比ではない。"
+    },
+    {
+      "id": "hi-lex-guidance",
+      "question": "同じ通期の売上と営業利益の予想修正は同方向か",
+      "definition": "会社が11月27日公表した2026年10月期の連結通期会社予想の前回発表予想(A)と今回修正予想(B)。決算実績でも前期実績でもない。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sales-old",
+          "entity": "ハイレックスコーポレーション",
+          "metric": "売上高",
+          "periodStart": "2025-11-01",
+          "periodEnd": "2026-10-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "会社が11月27日公表した2026年10月期の連結通期会社予想の前回発表予想(A)と今回修正予想(B)。決算実績でも前期実績でもない。"
+        },
+        {
+          "id": "sales-new",
+          "entity": "ハイレックスコーポレーション",
+          "metric": "売上高",
+          "periodStart": "2025-11-01",
+          "periodEnd": "2026-10-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "会社が11月27日公表した2026年10月期の連結通期会社予想の前回発表予想(A)と今回修正予想(B)。決算実績でも前期実績でもない。"
+        },
+        {
+          "id": "op-old",
+          "entity": "ハイレックスコーポレーション",
+          "metric": "営業利益",
+          "periodStart": "2025-11-01",
+          "periodEnd": "2026-10-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "会社が11月27日公表した2026年10月期の連結通期会社予想の前回発表予想(A)と今回修正予想(B)。決算実績でも前期実績でもない。"
+        },
+        {
+          "id": "op-new",
+          "entity": "ハイレックスコーポレーション",
+          "metric": "営業利益",
+          "periodStart": "2025-11-01",
+          "periodEnd": "2026-10-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "会社が11月27日公表した2026年10月期の連結通期会社予想の前回発表予想(A)と今回修正予想(B)。決算実績でも前期実績でもない。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sales-old",
+          "entity": "ハイレックスコーポレーション",
+          "metric": "売上高",
+          "periodStart": "2025-11-01",
+          "periodEnd": "2026-10-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "会社が11月27日公表した2026年10月期の連結通期会社予想の前回発表予想(A)と今回修正予想(B)。決算実績でも前期実績でもない。",
+          "value": 401000,
+          "source": {
+            "url": "https://tdnet-pdf.kabutan.jp/20261127/140120261127587502.pdf",
+            "publishedOn": "2026-11-27",
+            "locator": "1.連結業績予想の修正、前回発表予想(A)・今回修正予想(B)の売上高・営業利益列。発行者原文PDF1ページ。前回発表日3月6日、今回11月27日。",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sales-new",
+          "entity": "ハイレックスコーポレーション",
+          "metric": "売上高",
+          "periodStart": "2025-11-01",
+          "periodEnd": "2026-10-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "会社が11月27日公表した2026年10月期の連結通期会社予想の前回発表予想(A)と今回修正予想(B)。決算実績でも前期実績でもない。",
+          "value": 420000,
+          "source": {
+            "url": "https://tdnet-pdf.kabutan.jp/20261127/140120261127587502.pdf",
+            "publishedOn": "2026-11-27",
+            "locator": "1.連結業績予想の修正、前回発表予想(A)・今回修正予想(B)の売上高・営業利益列。発行者原文PDF1ページ。前回発表日3月6日、今回11月27日。",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op-old",
+          "entity": "ハイレックスコーポレーション",
+          "metric": "営業利益",
+          "periodStart": "2025-11-01",
+          "periodEnd": "2026-10-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "会社が11月27日公表した2026年10月期の連結通期会社予想の前回発表予想(A)と今回修正予想(B)。決算実績でも前期実績でもない。",
+          "value": 5400,
+          "source": {
+            "url": "https://tdnet-pdf.kabutan.jp/20261127/140120261127587502.pdf",
+            "publishedOn": "2026-11-27",
+            "locator": "1.連結業績予想の修正、前回発表予想(A)・今回修正予想(B)の売上高・営業利益列。発行者原文PDF1ページ。前回発表日3月6日、今回11月27日。",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op-new",
+          "entity": "ハイレックスコーポレーション",
+          "metric": "営業利益",
+          "periodStart": "2025-11-01",
+          "periodEnd": "2026-10-31",
+          "unit": "百万円",
+          "basis": "company-forecast",
+          "definition": "会社が11月27日公表した2026年10月期の連結通期会社予想の前回発表予想(A)と今回修正予想(B)。決算実績でも前期実績でもない。",
+          "value": 2000,
+          "source": {
+            "url": "https://tdnet-pdf.kabutan.jp/20261127/140120261127587502.pdf",
+            "publishedOn": "2026-11-27",
+            "locator": "1.連結業績予想の修正、前回発表予想(A)・今回修正予想(B)の売上高・営業利益列。発行者原文PDF1ページ。前回発表日3月6日、今回11月27日。",
+            "pdfPage": 1,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "ハイレックスの2026年10月期連結会社予想は、売上高が前回401,000百万円から今回420,000百万円へ、営業利益が前回5,400百万円から今回2,000百万円へ修正された。対象は2025年11月1日〜2026年10月31日の同じ通期で、いずれも会社予想。期末を過ぎてからの修正でも、確定した決算実績とは扱わない。"
+    },
+    {
+      "id": "ecb-ces",
+      "question": "家計の今後12か月インフレ期待中央値は9月と10月でどう変化したか",
+      "definition": "ECB CESの各調査時点から今後12か月のインフレ期待回答の中央値。actualは実際の調査集計結果の意味であり実現インフレ率ではない。予測する暦期間は調査月で移る。11月27日同一公表版。",
+      "status": "ready",
+      "requiredInputs": [
+        {
+          "id": "sep",
+          "entity": "ユーロ圏ECB CES",
+          "metric": "今後12か月のインフレ期待中央値",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "ECB CESの各調査時点から今後12か月のインフレ期待回答の中央値。actualは実際の調査集計結果の意味であり実現インフレ率ではない。予測する暦期間は調査月で移る。11月27日同一公表版。"
+        },
+        {
+          "id": "oct",
+          "entity": "ユーロ圏ECB CES",
+          "metric": "今後12か月のインフレ期待中央値",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "ECB CESの各調査時点から今後12か月のインフレ期待回答の中央値。actualは実際の調査集計結果の意味であり実現インフレ率ではない。予測する暦期間は調査月で移る。11月27日同一公表版。"
+        }
+      ],
+      "observations": [
+        {
+          "id": "sep",
+          "entity": "ユーロ圏ECB CES",
+          "metric": "今後12か月のインフレ期待中央値",
+          "periodStart": "2026-09-01",
+          "periodEnd": "2026-09-30",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "ECB CESの各調査時点から今後12か月のインフレ期待回答の中央値。actualは実際の調査集計結果の意味であり実現インフレ率ではない。予測する暦期間は調査月で移る。11月27日同一公表版。",
+          "value": 3.1,
+          "source": {
+            "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261127~2e53af695e.en.html",
+            "publishedOn": "2026-11-27",
+            "locator": "Inflation第1段落 Median expectations for inflation over the next 12 months: 3.5% from 3.1%。Notesで調査と政策機関見解の相違も確認。",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "oct",
+          "entity": "ユーロ圏ECB CES",
+          "metric": "今後12か月のインフレ期待中央値",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "ECB CESの各調査時点から今後12か月のインフレ期待回答の中央値。actualは実際の調査集計結果の意味であり実現インフレ率ではない。予測する暦期間は調査月で移る。11月27日同一公表版。",
+          "value": 3.5,
+          "source": {
+            "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261127~2e53af695e.en.html",
+            "publishedOn": "2026-11-27",
+            "locator": "Inflation第1段落 Median expectations for inflation over the next 12 months: 3.5% from 3.1%。Notesで調査と政策機関見解の相違も確認。",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [],
+      "claim": "ECBが27日に公表した10月消費者期待調査では、今後12か月のインフレ期待の中央値は3.5％で、9月調査の3.1％から上昇した。各調査時点から今後12か月を尋ねた家計回答の中央値で、予測する暦の期間は調査月ごとに移る。10月の実際の物価上昇率でも、ECBの物価予測でもない。"
+    }
+  ],
+  "sourceChecks": [
+    {
+      "topic": "米株引け",
+      "url": "https://apnews.com/article/04dab6079cf7f3dfe7285a3cc1f240a2",
+      "publishedOn": "2026-11-27",
+      "locator": "How major US stock indexes fared Friday 11/27/2026、datePublished/dateModified 18:45:52 UTC、方向を原文確認。Reuters転載本文も照合。数値は掲載せず。"
+    },
+    {
+      "topic": "MATCH法案",
+      "url": "https://www.reuters.com/technology/dutch-pm-discuss-match-act-chipmaking-export-controls-with-trump-g20-2026-11-27/",
+      "publishedOn": "2026-11-27",
+      "locator": "14:07:07 UTC、首相がG20で協議する意向、審議中法案に反対との報道。法案本文の詳細や成立・発効の断定は採用せず。"
+    },
+    {
+      "topic": "ハイレックス修正理由",
+      "url": "https://tdnet-pdf.kabutan.jp/20261127/140120261127587502.pdf",
+      "publishedOn": "2026-11-27",
+      "locator": "2.業績予想修正の理由、中国・米州・日本、メキシコの取引通貨と労務費、減損精査。",
+      "pdfPage": 2
+    }
+  ]
+}
