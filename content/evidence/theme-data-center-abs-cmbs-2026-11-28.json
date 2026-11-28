@@ -1,0 +1,895 @@
+{
+  "version": 1,
+  "articleSlug": "theme-data-center-abs-cmbs-2026-11-28",
+  "articleSha256": "608df75acbb7b8cf8350097228d87d8a6e5d8d403145a250cc76f659607208ae",
+  "checkedAt": "2026-11-28T10:30:53.164Z",
+  "informationCutoff": "2026-11-28T19:00:00+09:00",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "CREFCの11月13日・20日時点原表9・10・13と両週報、Blue Owlの8-K原文・EDGAR提出日、KBRA予備格付原文を照合。百万ドルから億ドルへの換算、前年比較ベース、CMBS寄与とbpを再計算。基準金利・償還期間・組成・担保が異なるため、銀行ローン、CMBSクーポンとABS対国債スプレッドを同一価格比較に入れない。",
+  "comparisons": [
+    {
+      "id": "issuance-mix",
+      "question": "証券化発行の減少はどちらの市場が主か",
+      "definition": "同じ週までのグロス額。丸め済み内訳の減少合算を寄与分母とする。",
+      "status": "ready",
+      "claim": "発行額の減少の約92％はCMBSで説明できる。",
+      "requiredInputs": [
+        {
+          "id": "abs25",
+          "entity": "CREFC米データセンター ABS",
+          "metric": "年初来発行総額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-11-21",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "価格決定時点の募集元本（価格非公表の確認済みABS私募は報告日）。純発行・残高ではない"
+        },
+        {
+          "id": "abs26",
+          "entity": "CREFC米データセンター ABS",
+          "metric": "年初来発行総額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-11-20",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "価格決定時点の募集元本（価格非公表の確認済みABS私募は報告日）。純発行・残高ではない"
+        },
+        {
+          "id": "cmb25",
+          "entity": "CREFC米データセンター CMBS",
+          "metric": "年初来発行総額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-11-21",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "価格決定時点の募集元本（価格非公表の確認済みABS私募は報告日）。純発行・残高ではない"
+        },
+        {
+          "id": "cmb26",
+          "entity": "CREFC米データセンター CMBS",
+          "metric": "年初来発行総額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-11-20",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "価格決定時点の募集元本（価格非公表の確認済みABS私募は報告日）。純発行・残高ではない"
+        },
+        {
+          "id": "total25",
+          "entity": "CREFC米データセンター ABS+CMBS",
+          "metric": "年初来発行総額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-11-21",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "価格決定時点の募集元本（価格非公表の確認済みABS私募は報告日）。純発行・残高ではない"
+        },
+        {
+          "id": "total26",
+          "entity": "CREFC米データセンター ABS+CMBS",
+          "metric": "年初来発行総額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-11-20",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "価格決定時点の募集元本（価格非公表の確認済みABS私募は報告日）。純発行・残高ではない"
+        }
+      ],
+      "observations": [
+        {
+          "id": "abs25",
+          "entity": "CREFC米データセンター ABS",
+          "metric": "年初来発行総額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-11-21",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "価格決定時点の募集元本（価格非公表の確認済みABS私募は報告日）。純発行・残高ではない",
+          "value": 15697,
+          "source": {
+            "url": "https://www.crefc.org/common/uploaded%20files/Learn/CMBS-ACMBS/2026/CREFC_CMBS_ACMBS_Data_Center_New_Issue_Snapshot_11-20-26.pdf#page=3",
+            "publishedOn": "2026-11-23",
+            "locator": "表9 Issuance by structure の各対象区分",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "abs26",
+          "entity": "CREFC米データセンター ABS",
+          "metric": "年初来発行総額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-11-20",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "価格決定時点の募集元本（価格非公表の確認済みABS私募は報告日）。純発行・残高ではない",
+          "value": 15319,
+          "source": {
+            "url": "https://www.crefc.org/common/uploaded%20files/Learn/CMBS-ACMBS/2026/CREFC_CMBS_ACMBS_Data_Center_New_Issue_Snapshot_11-20-26.pdf#page=3",
+            "publishedOn": "2026-11-23",
+            "locator": "表9 Issuance by structure の各対象区分",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cmb25",
+          "entity": "CREFC米データセンター CMBS",
+          "metric": "年初来発行総額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-11-21",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "価格決定時点の募集元本（価格非公表の確認済みABS私募は報告日）。純発行・残高ではない",
+          "value": 11169,
+          "source": {
+            "url": "https://www.crefc.org/common/uploaded%20files/Learn/CMBS-ACMBS/2026/CREFC_CMBS_ACMBS_Data_Center_New_Issue_Snapshot_11-20-26.pdf#page=3",
+            "publishedOn": "2026-11-23",
+            "locator": "表9 Issuance by structure の各対象区分",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cmb26",
+          "entity": "CREFC米データセンター CMBS",
+          "metric": "年初来発行総額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-11-20",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "価格決定時点の募集元本（価格非公表の確認済みABS私募は報告日）。純発行・残高ではない",
+          "value": 6550,
+          "source": {
+            "url": "https://www.crefc.org/common/uploaded%20files/Learn/CMBS-ACMBS/2026/CREFC_CMBS_ACMBS_Data_Center_New_Issue_Snapshot_11-20-26.pdf#page=3",
+            "publishedOn": "2026-11-23",
+            "locator": "表9 Issuance by structure の各対象区分",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "total25",
+          "entity": "CREFC米データセンター ABS+CMBS",
+          "metric": "年初来発行総額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-11-21",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "価格決定時点の募集元本（価格非公表の確認済みABS私募は報告日）。純発行・残高ではない",
+          "value": 26865,
+          "source": {
+            "url": "https://www.crefc.org/common/uploaded%20files/Learn/CMBS-ACMBS/2026/CREFC_CMBS_ACMBS_Data_Center_New_Issue_Snapshot_11-20-26.pdf#page=3",
+            "publishedOn": "2026-11-23",
+            "locator": "表9 Issuance by structure の各対象区分",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "total26",
+          "entity": "CREFC米データセンター ABS+CMBS",
+          "metric": "年初来発行総額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-11-20",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "価格決定時点の募集元本（価格非公表の確認済みABS私募は報告日）。純発行・残高ではない",
+          "value": 21869,
+          "source": {
+            "url": "https://www.crefc.org/common/uploaded%20files/Learn/CMBS-ACMBS/2026/CREFC_CMBS_ACMBS_Data_Center_New_Issue_Snapshot_11-20-26.pdf#page=3",
+            "publishedOn": "2026-11-23",
+            "locator": "表9 Issuance by structure の各対象区分",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "abs-change",
+          "operation": "growth-percent",
+          "inputs": [
+            "abs26",
+            "abs25"
+          ],
+          "definition": "ABS前年同期比",
+          "precision": 1,
+          "value": -2.4
+        },
+        {
+          "id": "cmb-change",
+          "operation": "growth-percent",
+          "inputs": [
+            "cmb26",
+            "cmb25"
+          ],
+          "definition": "CMBS前年同期比",
+          "precision": 1,
+          "value": -41.4
+        },
+        {
+          "id": "total-change",
+          "operation": "growth-percent",
+          "inputs": [
+            "total26",
+            "total25"
+          ],
+          "definition": "原表合計の前年同期比",
+          "precision": 1,
+          "value": -18.6
+        },
+        {
+          "id": "abs-loss",
+          "operation": "difference",
+          "inputs": [
+            "abs25",
+            "abs26"
+          ],
+          "definition": "ABS減少額・百万ドル",
+          "precision": 0,
+          "value": 378
+        },
+        {
+          "id": "cmb-loss",
+          "operation": "difference",
+          "inputs": [
+            "cmb25",
+            "cmb26"
+          ],
+          "definition": "CMBS減少額・百万ドル",
+          "precision": 0,
+          "value": 4619
+        },
+        {
+          "id": "combined-loss",
+          "operation": "sum",
+          "inputs": [
+            "abs-loss",
+            "cmb-loss"
+          ],
+          "definition": "丸め済み内訳の減少合算・百万ドル",
+          "precision": 0,
+          "value": 4997
+        },
+        {
+          "id": "cmb-loss-share",
+          "operation": "ratio-percent",
+          "inputs": [
+            "cmb-loss",
+            "combined-loss"
+          ],
+          "definition": "CMBS減少額÷内訳減少合算",
+          "precision": 1,
+          "value": 92.4
+        }
+      ]
+    },
+    {
+      "id": "base-effect",
+      "question": "前年比の悪化は今年の総額減か前年側の比較変化か",
+      "definition": "両年の比較終了週を1つ進める。公開された新発価格確認の連続週数も照合。",
+      "status": "ready",
+      "claim": "今年の累計は218.69億ドルのままだが、前年の比較額に16.89億ドルが加わり、合計の前年比は13.1％減から18.6％減に広がった。",
+      "requiredInputs": [
+        {
+          "id": "prior25",
+          "entity": "CREFC米データセンター ABS+CMBS",
+          "metric": "年初来発行総額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-11-14",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "価格決定時点の募集元本（価格非公表の確認済みABS私募は報告日）。純発行・残高ではない"
+        },
+        {
+          "id": "prior26",
+          "entity": "CREFC米データセンター ABS+CMBS",
+          "metric": "年初来発行総額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-11-13",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "価格決定時点の募集元本（価格非公表の確認済みABS私募は報告日）。純発行・残高ではない"
+        },
+        {
+          "id": "total25",
+          "entity": "CREFC米データセンター ABS+CMBS",
+          "metric": "年初来発行総額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-11-21",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "価格決定時点の募集元本（価格非公表の確認済みABS私募は報告日）。純発行・残高ではない"
+        },
+        {
+          "id": "total26",
+          "entity": "CREFC米データセンター ABS+CMBS",
+          "metric": "年初来発行総額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-11-20",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "価格決定時点の募集元本（価格非公表の確認済みABS私募は報告日）。純発行・残高ではない"
+        },
+        {
+          "id": "unpriced-weeks",
+          "entity": "CREFC米データセンターABS+CMBS",
+          "metric": "価格決定の報告なしの連続週",
+          "periodStart": "2026-10-24",
+          "periodEnd": "2026-11-20",
+          "unit": "週",
+          "basis": "actual",
+          "definition": "CREFC公表の連続週。取消・全件停止とみなさない"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prior25",
+          "entity": "CREFC米データセンター ABS+CMBS",
+          "metric": "年初来発行総額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-11-14",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "価格決定時点の募集元本（価格非公表の確認済みABS私募は報告日）。純発行・残高ではない",
+          "value": 25176,
+          "source": {
+            "url": "https://www.crefc.org/common/uploaded%20files/Learn/CMBS-ACMBS/2026/CREFC_CMBS_ACMBS_Data_Center_New_Issue_Snapshot_11-13-26.pdf#page=3",
+            "publishedOn": "2026-11-16",
+            "locator": "表9 Issuance by structure の各対象区分",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "prior26",
+          "entity": "CREFC米データセンター ABS+CMBS",
+          "metric": "年初来発行総額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-11-13",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "価格決定時点の募集元本（価格非公表の確認済みABS私募は報告日）。純発行・残高ではない",
+          "value": 21869,
+          "source": {
+            "url": "https://www.crefc.org/common/uploaded%20files/Learn/CMBS-ACMBS/2026/CREFC_CMBS_ACMBS_Data_Center_New_Issue_Snapshot_11-13-26.pdf#page=3",
+            "publishedOn": "2026-11-16",
+            "locator": "表9 Issuance by structure の各対象区分",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "total25",
+          "entity": "CREFC米データセンター ABS+CMBS",
+          "metric": "年初来発行総額",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-11-21",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "価格決定時点の募集元本（価格非公表の確認済みABS私募は報告日）。純発行・残高ではない",
+          "value": 26865,
+          "source": {
+            "url": "https://www.crefc.org/common/uploaded%20files/Learn/CMBS-ACMBS/2026/CREFC_CMBS_ACMBS_Data_Center_New_Issue_Snapshot_11-20-26.pdf#page=3",
+            "publishedOn": "2026-11-23",
+            "locator": "表9 Issuance by structure の各対象区分",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "total26",
+          "entity": "CREFC米データセンター ABS+CMBS",
+          "metric": "年初来発行総額",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-11-20",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "価格決定時点の募集元本（価格非公表の確認済みABS私募は報告日）。純発行・残高ではない",
+          "value": 21869,
+          "source": {
+            "url": "https://www.crefc.org/common/uploaded%20files/Learn/CMBS-ACMBS/2026/CREFC_CMBS_ACMBS_Data_Center_New_Issue_Snapshot_11-20-26.pdf#page=3",
+            "publishedOn": "2026-11-23",
+            "locator": "表9 Issuance by structure の各対象区分",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "unpriced-weeks",
+          "entity": "CREFC米データセンターABS+CMBS",
+          "metric": "価格決定の報告なしの連続週",
+          "periodStart": "2026-10-24",
+          "periodEnd": "2026-11-20",
+          "unit": "週",
+          "basis": "actual",
+          "definition": "CREFC公表の連続週。取消・全件停止とみなさない",
+          "value": 4,
+          "source": {
+            "url": "https://www.crefc.org/cre/content/News/Items/Research_and_Data/2026/CRE_Securitized_Debt_Update_11_24_26.aspx",
+            "publishedOn": "2026-11-24",
+            "locator": "Data Center ABS and CMBS: fourth consecutive week",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "week25",
+          "operation": "difference",
+          "inputs": [
+            "total25",
+            "prior25"
+          ],
+          "definition": "前年側の新たな比較分・百万ドル",
+          "precision": 0,
+          "value": 1689
+        },
+        {
+          "id": "week26",
+          "operation": "difference",
+          "inputs": [
+            "total26",
+            "prior26"
+          ],
+          "definition": "今年側の累計の変化・百万ドル",
+          "precision": 0,
+          "value": 0
+        },
+        {
+          "id": "prior-pct",
+          "operation": "growth-percent",
+          "inputs": [
+            "prior26",
+            "prior25"
+          ],
+          "definition": "前週の比較",
+          "precision": 1,
+          "value": -13.1
+        },
+        {
+          "id": "current-pct",
+          "operation": "growth-percent",
+          "inputs": [
+            "total26",
+            "total25"
+          ],
+          "definition": "今週の比較",
+          "precision": 1,
+          "value": -18.6
+        }
+      ]
+    },
+    {
+      "id": "abs-spreads",
+      "question": "A格ABSの上乗せは拡大したか",
+      "definition": "5年近傍の固定金利ABS、成約のみ。発行体内の別案件も同条件固定ではない。",
+      "status": "ready",
+      "claim": "A格・平均償還期間約5年の固定金利ABSでは、新発時の米国債に対する上乗せが、第1四半期の平均195bpから直近13週の平均257bpに拡大した。",
+      "requiredInputs": [
+        {
+          "id": "q1",
+          "entity": "CREFC A格ABS",
+          "metric": "A格固定金利ABS新発スプレッド",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-03-31",
+          "unit": "bp",
+          "basis": "actual",
+          "definition": "平均償還期間4.5〜5.5年、新発時の米国債補間カーブへの上乗せ"
+        },
+        {
+          "id": "recent",
+          "entity": "CREFC A格ABS",
+          "metric": "A格固定金利ABS新発スプレッド",
+          "periodStart": "2026-08-22",
+          "periodEnd": "2026-11-20",
+          "unit": "bp",
+          "basis": "actual",
+          "definition": "平均償還期間4.5〜5.5年、新発時の米国債補間カーブへの上乗せ"
+        },
+        {
+          "id": "q1-n",
+          "entity": "CREFC A格ABS",
+          "metric": "第1四半期対象案件数",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-03-31",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "期間内で条件を満たす案件"
+        },
+        {
+          "id": "recent-n",
+          "entity": "CREFC A格ABS",
+          "metric": "直近13週対象案件数",
+          "periodStart": "2026-08-22",
+          "periodEnd": "2026-11-20",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "期間内で条件を満たす案件"
+        },
+        {
+          "id": "sw-mar",
+          "entity": "Switch",
+          "metric": "A格固定金利ABS新発スプレッド",
+          "periodStart": "2026-03-01",
+          "periodEnd": "2026-03-31",
+          "unit": "bp",
+          "basis": "actual",
+          "definition": "平均償還期間4.5〜5.5年、新発時の米国債補間カーブへの上乗せ"
+        },
+        {
+          "id": "sw-oct",
+          "entity": "Switch",
+          "metric": "A格固定金利ABS新発スプレッド",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "bp",
+          "basis": "actual",
+          "definition": "平均償還期間4.5〜5.5年、新発時の米国債補間カーブへの上乗せ"
+        },
+        {
+          "id": "db-jan",
+          "entity": "DataBank",
+          "metric": "A格固定金利ABS新発スプレッド",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-01-31",
+          "unit": "bp",
+          "basis": "actual",
+          "definition": "平均償還期間4.5〜5.5年、新発時の米国債補間カーブへの上乗せ"
+        },
+        {
+          "id": "db-oct",
+          "entity": "DataBank",
+          "metric": "A格固定金利ABS新発スプレッド",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "bp",
+          "basis": "actual",
+          "definition": "平均償還期間4.5〜5.5年、新発時の米国債補間カーブへの上乗せ"
+        }
+      ],
+      "observations": [
+        {
+          "id": "q1",
+          "entity": "CREFC A格ABS",
+          "metric": "A格固定金利ABS新発スプレッド",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-03-31",
+          "unit": "bp",
+          "basis": "actual",
+          "definition": "平均償還期間4.5〜5.5年、新発時の米国債補間カーブへの上乗せ",
+          "value": 195,
+          "source": {
+            "url": "https://www.crefc.org/cre/content/News/Items/Research_and_Data/2026/CRE_Securitized_Debt_Update_11_24_26.aspx",
+            "publishedOn": "2026-11-24",
+            "locator": "Data Center ABS and CMBS - five-year single-A ABS",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "recent",
+          "entity": "CREFC A格ABS",
+          "metric": "A格固定金利ABS新発スプレッド",
+          "periodStart": "2026-08-22",
+          "periodEnd": "2026-11-20",
+          "unit": "bp",
+          "basis": "actual",
+          "definition": "平均償還期間4.5〜5.5年、新発時の米国債補間カーブへの上乗せ",
+          "value": 257,
+          "source": {
+            "url": "https://www.crefc.org/cre/content/News/Items/Research_and_Data/2026/CRE_Securitized_Debt_Update_11_24_26.aspx",
+            "publishedOn": "2026-11-24",
+            "locator": "Data Center ABS and CMBS - five-year single-A ABS",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "q1-n",
+          "entity": "CREFC A格ABS",
+          "metric": "第1四半期対象案件数",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-03-31",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "期間内で条件を満たす案件",
+          "value": 8,
+          "source": {
+            "url": "https://www.crefc.org/cre/content/News/Items/Research_and_Data/2026/CRE_Securitized_Debt_Update_11_24_26.aspx",
+            "publishedOn": "2026-11-24",
+            "locator": "Data Center ABS and CMBS: first quarter 8 deals",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "recent-n",
+          "entity": "CREFC A格ABS",
+          "metric": "直近13週対象案件数",
+          "periodStart": "2026-08-22",
+          "periodEnd": "2026-11-20",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "期間内で条件を満たす案件",
+          "value": 5,
+          "source": {
+            "url": "https://www.crefc.org/cre/content/News/Items/Research_and_Data/2026/CRE_Securitized_Debt_Update_11_24_26.aspx",
+            "publishedOn": "2026-11-24",
+            "locator": "Data Center ABS and CMBS: last three months 5 deals",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sw-mar",
+          "entity": "Switch",
+          "metric": "A格固定金利ABS新発スプレッド",
+          "periodStart": "2026-03-01",
+          "periodEnd": "2026-03-31",
+          "unit": "bp",
+          "basis": "actual",
+          "definition": "平均償還期間4.5〜5.5年、新発時の米国債補間カーブへの上乗せ",
+          "value": 225,
+          "source": {
+            "url": "https://www.crefc.org/cre/content/News/Items/Research_and_Data/2026/CRE_Securitized_Debt_Update_11_17_26.aspx",
+            "publishedOn": "2026-11-17",
+            "locator": "Data Center ABS and CMBS - five-year single-A ABS",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "sw-oct",
+          "entity": "Switch",
+          "metric": "A格固定金利ABS新発スプレッド",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "bp",
+          "basis": "actual",
+          "definition": "平均償還期間4.5〜5.5年、新発時の米国債補間カーブへの上乗せ",
+          "value": 290,
+          "source": {
+            "url": "https://www.crefc.org/cre/content/News/Items/Research_and_Data/2026/CRE_Securitized_Debt_Update_11_17_26.aspx",
+            "publishedOn": "2026-11-17",
+            "locator": "Data Center ABS and CMBS - five-year single-A ABS",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "db-jan",
+          "entity": "DataBank",
+          "metric": "A格固定金利ABS新発スプレッド",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-01-31",
+          "unit": "bp",
+          "basis": "actual",
+          "definition": "平均償還期間4.5〜5.5年、新発時の米国債補間カーブへの上乗せ",
+          "value": 205,
+          "source": {
+            "url": "https://www.crefc.org/cre/content/News/Items/Research_and_Data/2026/CRE_Securitized_Debt_Update_11_17_26.aspx",
+            "publishedOn": "2026-11-17",
+            "locator": "Data Center ABS and CMBS - five-year single-A ABS",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "db-oct",
+          "entity": "DataBank",
+          "metric": "A格固定金利ABS新発スプレッド",
+          "periodStart": "2026-10-01",
+          "periodEnd": "2026-10-31",
+          "unit": "bp",
+          "basis": "actual",
+          "definition": "平均償還期間4.5〜5.5年、新発時の米国債補間カーブへの上乗せ",
+          "value": 220,
+          "source": {
+            "url": "https://www.crefc.org/cre/content/News/Items/Research_and_Data/2026/CRE_Securitized_Debt_Update_11_17_26.aspx",
+            "publishedOn": "2026-11-17",
+            "locator": "Data Center ABS and CMBS - five-year single-A ABS",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "spread-delta",
+          "operation": "difference",
+          "inputs": [
+            "recent",
+            "q1"
+          ],
+          "definition": "平均スプレッド差・bp",
+          "precision": 0,
+          "value": 62
+        }
+      ]
+    },
+    {
+      "id": "cmbs-coupon",
+      "question": "CMBSの固定ローンクーポンは上がったか",
+      "definition": "固定金利案件の金額加重平均。証券側の対国債スプレッドと比較しない。",
+      "status": "ready",
+      "claim": "一方、データセンターCMBSの担保ローンの固定金利は、案件金額で加重した平均で6.50％から6.26％に下がった。",
+      "requiredInputs": [
+        {
+          "id": "cn25",
+          "entity": "CREFC米データセンターCMBS",
+          "metric": "固定クーポン",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-11-21",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "対象の固定金利担保貸出クーポン、案件金額で加重"
+        },
+        {
+          "id": "cn26",
+          "entity": "CREFC米データセンターCMBS",
+          "metric": "固定クーポン",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-11-20",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "対象の固定金利担保貸出クーポン、案件金額で加重"
+        },
+        {
+          "id": "fixed25",
+          "entity": "CREFC米データセンターCMBS",
+          "metric": "固定金利の集計案件数",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-11-21",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "固定金利だけの件数"
+        },
+        {
+          "id": "fixed26",
+          "entity": "CREFC米データセンターCMBS",
+          "metric": "固定金利の集計案件数",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-11-20",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "固定金利だけの件数"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cn25",
+          "entity": "CREFC米データセンターCMBS",
+          "metric": "固定クーポン",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-11-21",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "対象の固定金利担保貸出クーポン、案件金額で加重",
+          "value": 6.5,
+          "source": {
+            "url": "https://www.crefc.org/common/uploaded%20files/Learn/CMBS-ACMBS/2026/CREFC_CMBS_ACMBS_Data_Center_New_Issue_Snapshot_11-20-26.pdf#page=3",
+            "publishedOn": "2026-11-23",
+            "locator": "表10 Fixed-rate loan coupon および同表注の固定金利件数",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cn26",
+          "entity": "CREFC米データセンターCMBS",
+          "metric": "固定クーポン",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-11-20",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "対象の固定金利担保貸出クーポン、案件金額で加重",
+          "value": 6.26,
+          "source": {
+            "url": "https://www.crefc.org/common/uploaded%20files/Learn/CMBS-ACMBS/2026/CREFC_CMBS_ACMBS_Data_Center_New_Issue_Snapshot_11-20-26.pdf#page=3",
+            "publishedOn": "2026-11-23",
+            "locator": "表10 Fixed-rate loan coupon および同表注の固定金利件数",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fixed25",
+          "entity": "CREFC米データセンターCMBS",
+          "metric": "固定金利の集計案件数",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-11-21",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "固定金利だけの件数",
+          "value": 1,
+          "source": {
+            "url": "https://www.crefc.org/common/uploaded%20files/Learn/CMBS-ACMBS/2026/CREFC_CMBS_ACMBS_Data_Center_New_Issue_Snapshot_11-20-26.pdf#page=3",
+            "publishedOn": "2026-11-23",
+            "locator": "表10 Fixed-rate loan coupon および同表注の固定金利件数",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fixed26",
+          "entity": "CREFC米データセンターCMBS",
+          "metric": "固定金利の集計案件数",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-11-20",
+          "unit": "件",
+          "basis": "actual",
+          "definition": "固定金利だけの件数",
+          "value": 5,
+          "source": {
+            "url": "https://www.crefc.org/common/uploaded%20files/Learn/CMBS-ACMBS/2026/CREFC_CMBS_ACMBS_Data_Center_New_Issue_Snapshot_11-20-26.pdf#page=3",
+            "publishedOn": "2026-11-23",
+            "locator": "表10 Fixed-rate loan coupon および同表注の固定金利件数",
+            "pdfPage": 3,
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    },
+    {
+      "id": "direct-loan",
+      "question": "証券化とは別に取得向け銀行融資の実行例はあるか",
+      "definition": "会社の8-Kが示す物件担保融資の実際の資金使途。公募CMBSの価格とは別。",
+      "status": "ready",
+      "claim": "Blue Owl Digital Infrastructure Trustの傘下企業は11月10日、米バージニア州のデータセンターを取得し、CitiとWells Fargoからの約5.13億ドルの物件担保融資を買収費用などに実際に使った。",
+      "requiredInputs": [
+        {
+          "id": "loan-amount",
+          "entity": "GCDC Purchaser Phase 3 LLC",
+          "metric": "新規物件担保ローン元本（約）",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "取得費・融資実行費等に使われた担保ローン"
+        },
+        {
+          "id": "leased",
+          "entity": "GCDC Purchaser Phase 3 LLC",
+          "metric": "取得施設の賃貸比率",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "取得時点の対象施設、単一ハイパースケーラーが賃借"
+        }
+      ],
+      "observations": [
+        {
+          "id": "loan-amount",
+          "entity": "GCDC Purchaser Phase 3 LLC",
+          "metric": "新規物件担保ローン元本（約）",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "百万米ドル",
+          "basis": "actual",
+          "definition": "取得費・融資実行費等に使われた担保ローン",
+          "value": 512.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/2069692/000206969226000072/osnl-20261110.htm",
+            "publishedOn": "2026-11-12",
+            "locator": "Item 2.01 acquisition and Item 2.03 Mortgage Loan",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "leased",
+          "entity": "GCDC Purchaser Phase 3 LLC",
+          "metric": "取得施設の賃貸比率",
+          "periodStart": "2026-11-10",
+          "periodEnd": "2026-11-10",
+          "unit": "％",
+          "basis": "actual",
+          "definition": "取得時点の対象施設、単一ハイパースケーラーが賃借",
+          "value": 100,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/2069692/000206969226000072/osnl-20261110.htm",
+            "publishedOn": "2026-11-12",
+            "locator": "Item 2.01 acquisition and Item 2.03 Mortgage Loan",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}

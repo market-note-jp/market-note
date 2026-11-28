@@ -1,0 +1,2146 @@
+{
+  "version": 1,
+  "articleSlug": "company-watts-water-2026-11-28",
+  "articleSha256": "56a1feeead9a39ccccee6b7d91eb8e0598fc9e8bc444fdecea5bf54a0b62c05c",
+  "checkedAt": "2026-11-28T10:30:15.071Z",
+  "informationCutoff": "2026-11-28T10:30:15.071Z",
+  "coverage": "all-material-comparisons",
+  "reviewNote": "主要比較を米SEC HTMLの原表・注記から確認。FY・単四半期・9カ月累計・期末残高を分離。還付控除は一変数の試算。データセンター単独売上高、数量と価格別々の寄与、買収先資本収益率、株価と市場予想は未確認の数値を公開しない。",
+  "comparisons": [
+    {
+      "id": "distribution",
+      "question": "卸売の売上構成は？",
+      "definition": "2025年連結、卸売チャネル売上高／連結純売上高",
+      "status": "ready",
+      "claim": "2025年の卸売経由は16.047億ドルで、連結売上高の65.8％を占めた。",
+      "requiredInputs": [
+        {
+          "id": "wholesale",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "卸売経由純売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "卸売経由純売上高"
+        },
+        {
+          "id": "total",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "連結純売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結純売上高"
+        }
+      ],
+      "observations": [
+        {
+          "id": "wholesale",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "卸売経由純売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "卸売経由純売上高",
+          "value": 1604.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926018541/wts-20251231x10k.htm",
+            "publishedOn": "2026-02-23",
+            "locator": "Note 4 Revenue Recognition — 2025 Distribution Channel",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "total",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "連結純売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結純売上高",
+          "value": 2438.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926018541/wts-20251231x10k.htm",
+            "publishedOn": "2026-02-23",
+            "locator": "Note 4 Revenue Recognition — 2025 Distribution Channel",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "share",
+          "operation": "ratio-percent",
+          "inputs": [
+            "wholesale",
+            "total"
+          ],
+          "precision": 1,
+          "definition": "卸売÷全社",
+          "value": 65.8
+        }
+      ]
+    },
+    {
+      "id": "five-year",
+      "question": "5期の売上、利益率、設備取得後の現金は？",
+      "definition": "12月決算、当時の連結範囲、米国GAAP。設備取得控除後は売却収入を含まない試算。",
+      "status": "ready",
+      "claim": "2021年から2025年までに売上高は34.8％増え、営業利益率は13.2％から18.4％に改善した。",
+      "requiredInputs": [
+        {
+          "id": "rev2021",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "連結純売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結純売上高"
+        },
+        {
+          "id": "op2021",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "報告営業利益（米国GAAP）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "報告営業利益（米国GAAP）"
+        },
+        {
+          "id": "cfo2021",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex2021",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "有形固定資産取得に伴う現金支出（負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得に伴う現金支出（負数）"
+        },
+        {
+          "id": "rev2022",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "連結純売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結純売上高"
+        },
+        {
+          "id": "op2022",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "報告営業利益（米国GAAP）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "報告営業利益（米国GAAP）"
+        },
+        {
+          "id": "cfo2022",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex2022",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "有形固定資産取得に伴う現金支出（負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得に伴う現金支出（負数）"
+        },
+        {
+          "id": "rev2023",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "連結純売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結純売上高"
+        },
+        {
+          "id": "op2023",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "報告営業利益（米国GAAP）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "報告営業利益（米国GAAP）"
+        },
+        {
+          "id": "cfo2023",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex2023",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "有形固定資産取得に伴う現金支出（負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得に伴う現金支出（負数）"
+        },
+        {
+          "id": "rev2024",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "連結純売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結純売上高"
+        },
+        {
+          "id": "op2024",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "報告営業利益（米国GAAP）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "報告営業利益（米国GAAP）"
+        },
+        {
+          "id": "cfo2024",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex2024",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "有形固定資産取得に伴う現金支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得に伴う現金支出（負数）"
+        },
+        {
+          "id": "rev2025",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "連結純売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結純売上高"
+        },
+        {
+          "id": "op2025",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "報告営業利益（米国GAAP）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "報告営業利益（米国GAAP）"
+        },
+        {
+          "id": "cfo2025",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex2025",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "有形固定資産取得に伴う現金支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得に伴う現金支出（負数）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "rev2021",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "連結純売上高",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結純売上高",
+          "value": 1809.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000155837024001444/wts-20231231x10k.htm",
+            "publishedOn": "2024-02-21",
+            "locator": "連結損益計算書　Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op2021",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "報告営業利益（米国GAAP）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "報告営業利益（米国GAAP）",
+          "value": 239.6,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000155837024001444/wts-20231231x10k.htm",
+            "publishedOn": "2024-02-21",
+            "locator": "連結損益計算書　Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo2021",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "営業CF",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 180.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000155837024001444/wts-20231231x10k.htm",
+            "publishedOn": "2024-02-21",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex2021",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "有形固定資産取得に伴う現金支出（負数）",
+          "periodStart": "2021-01-01",
+          "periodEnd": "2021-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得に伴う現金支出（負数）",
+          "value": -26.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000155837024001444/wts-20231231x10k.htm",
+            "publishedOn": "2024-02-21",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "rev2022",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "連結純売上高",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結純売上高",
+          "value": 1979.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000155837024001444/wts-20231231x10k.htm",
+            "publishedOn": "2024-02-21",
+            "locator": "連結損益計算書　Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op2022",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "報告営業利益（米国GAAP）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "報告営業利益（米国GAAP）",
+          "value": 315,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000155837024001444/wts-20231231x10k.htm",
+            "publishedOn": "2024-02-21",
+            "locator": "連結損益計算書　Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo2022",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "営業CF",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 224,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000155837024001444/wts-20231231x10k.htm",
+            "publishedOn": "2024-02-21",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex2022",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "有形固定資産取得に伴う現金支出（負数）",
+          "periodStart": "2022-01-01",
+          "periodEnd": "2022-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得に伴う現金支出（負数）",
+          "value": -28.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000155837024001444/wts-20231231x10k.htm",
+            "publishedOn": "2024-02-21",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "rev2023",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "連結純売上高",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結純売上高",
+          "value": 2056.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926018541/wts-20251231x10k.htm",
+            "publishedOn": "2026-02-23",
+            "locator": "連結損益計算書　Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op2023",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "報告営業利益（米国GAAP）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "報告営業利益（米国GAAP）",
+          "value": 350.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926018541/wts-20251231x10k.htm",
+            "publishedOn": "2026-02-23",
+            "locator": "連結損益計算書　Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo2023",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "営業CF",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 310.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926018541/wts-20251231x10k.htm",
+            "publishedOn": "2026-02-23",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex2023",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "有形固定資産取得に伴う現金支出（負数）",
+          "periodStart": "2023-01-01",
+          "periodEnd": "2023-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得に伴う現金支出（負数）",
+          "value": -29.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926018541/wts-20251231x10k.htm",
+            "publishedOn": "2026-02-23",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "rev2024",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "連結純売上高",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結純売上高",
+          "value": 2252.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926018541/wts-20251231x10k.htm",
+            "publishedOn": "2026-02-23",
+            "locator": "連結損益計算書　Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op2024",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "報告営業利益（米国GAAP）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "報告営業利益（米国GAAP）",
+          "value": 390.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926018541/wts-20251231x10k.htm",
+            "publishedOn": "2026-02-23",
+            "locator": "連結損益計算書　Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo2024",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "営業CF",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 361.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926018541/wts-20251231x10k.htm",
+            "publishedOn": "2026-02-23",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex2024",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "有形固定資産取得に伴う現金支出（負数）",
+          "periodStart": "2024-01-01",
+          "periodEnd": "2024-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得に伴う現金支出（負数）",
+          "value": -35.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926018541/wts-20251231x10k.htm",
+            "publishedOn": "2026-02-23",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "rev2025",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "連結純売上高",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "連結純売上高",
+          "value": 2438.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926018541/wts-20251231x10k.htm",
+            "publishedOn": "2026-02-23",
+            "locator": "連結損益計算書　Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "op2025",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "報告営業利益（米国GAAP）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "報告営業利益（米国GAAP）",
+          "value": 448.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926018541/wts-20251231x10k.htm",
+            "publishedOn": "2026-02-23",
+            "locator": "連結損益計算書　Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfo2025",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 402,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926018541/wts-20251231x10k.htm",
+            "publishedOn": "2026-02-23",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex2025",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "有形固定資産取得に伴う現金支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得に伴う現金支出（負数）",
+          "value": -45.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926018541/wts-20251231x10k.htm",
+            "publishedOn": "2026-02-23",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "rev2025",
+            "rev2021"
+          ],
+          "precision": 1,
+          "definition": "2021年から2025年までの累積増収率（年率ではない）",
+          "value": 34.8
+        },
+        {
+          "id": "margin2021",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op2021",
+            "rev2021"
+          ],
+          "precision": 1,
+          "definition": "同年の報告営業利益÷純売上高",
+          "value": 13.2
+        },
+        {
+          "id": "postcapex2021",
+          "operation": "sum",
+          "inputs": [
+            "cfo2021",
+            "capex2021"
+          ],
+          "precision": 1,
+          "definition": "営業CFから有形固定資産の取得を控除",
+          "value": 154.1
+        },
+        {
+          "id": "margin2022",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op2022",
+            "rev2022"
+          ],
+          "precision": 1,
+          "definition": "同年の報告営業利益÷純売上高",
+          "value": 15.9
+        },
+        {
+          "id": "postcapex2022",
+          "operation": "sum",
+          "inputs": [
+            "cfo2022",
+            "capex2022"
+          ],
+          "precision": 1,
+          "definition": "営業CFから有形固定資産の取得を控除",
+          "value": 195.9
+        },
+        {
+          "id": "margin2023",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op2023",
+            "rev2023"
+          ],
+          "precision": 1,
+          "definition": "同年の報告営業利益÷純売上高",
+          "value": 17.1
+        },
+        {
+          "id": "postcapex2023",
+          "operation": "sum",
+          "inputs": [
+            "cfo2023",
+            "capex2023"
+          ],
+          "precision": 1,
+          "definition": "営業CFから有形固定資産の取得を控除",
+          "value": 281.1
+        },
+        {
+          "id": "margin2024",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op2024",
+            "rev2024"
+          ],
+          "precision": 1,
+          "definition": "同年の報告営業利益÷純売上高",
+          "value": 17.3
+        },
+        {
+          "id": "postcapex2024",
+          "operation": "sum",
+          "inputs": [
+            "cfo2024",
+            "capex2024"
+          ],
+          "precision": 1,
+          "definition": "営業CFから有形固定資産の取得を控除",
+          "value": 325.8
+        },
+        {
+          "id": "margin2025",
+          "operation": "ratio-percent",
+          "inputs": [
+            "op2025",
+            "rev2025"
+          ],
+          "precision": 1,
+          "definition": "同年の報告営業利益÷純売上高",
+          "value": 18.4
+        },
+        {
+          "id": "postcapex2025",
+          "operation": "sum",
+          "inputs": [
+            "cfo2025",
+            "capex2025"
+          ],
+          "precision": 1,
+          "definition": "営業CFから有形固定資産の取得を控除",
+          "value": 356.3
+        }
+      ]
+    },
+    {
+      "id": "capital-allocation",
+      "question": "営業CFは設備・買収・還元を賄ったか？",
+      "definition": "2025年の実際の各CF項目を算術計算。買収支出は取得現金控除後。借入・為替等は除外。",
+      "status": "ready",
+      "claim": "2025年は営業CFから有形固定資産の取得、買収支出、配当と自社株買いを順に引くと、1,630万ドルが残った。",
+      "requiredInputs": [
+        {
+          "id": "cfo",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capex",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "有形固定資産取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出"
+        },
+        {
+          "id": "ma",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "企業取得支出（取得現金控除後）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "企業取得支出（取得現金控除後）"
+        },
+        {
+          "id": "div",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "配当支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "配当支出"
+        },
+        {
+          "id": "buyback",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "自己株式取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自己株式取得支出"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cfo",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 402,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926018541/wts-20251231x10k.htm",
+            "publishedOn": "2026-02-23",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capex",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "有形固定資産取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産取得支出",
+          "value": -45.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926018541/wts-20251231x10k.htm",
+            "publishedOn": "2026-02-23",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ma",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "企業取得支出（取得現金控除後）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "企業取得支出（取得現金控除後）",
+          "value": -257.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926018541/wts-20251231x10k.htm",
+            "publishedOn": "2026-02-23",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "div",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "配当支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "配当支出",
+          "value": -66.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926018541/wts-20251231x10k.htm",
+            "publishedOn": "2026-02-23",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "buyback",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "自己株式取得支出",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-12-31",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "自己株式取得支出",
+          "value": -16,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926018541/wts-20251231x10k.htm",
+            "publishedOn": "2026-02-23",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "remain",
+          "operation": "sum",
+          "inputs": [
+            "cfo",
+            "capex",
+            "ma",
+            "div",
+            "buyback"
+          ],
+          "precision": 1,
+          "definition": "営業CF＋各支出（負数）",
+          "value": 16.3
+        }
+      ]
+    },
+    {
+      "id": "revenue-bridge",
+      "question": "2026年第3四半期の増収はどこから？",
+      "definition": "連結7〜9月、会社のブリッジ。既存事業分は買収等の連結範囲の変動・為替換算を除く。",
+      "status": "ready",
+      "claim": "増加額1.163億ドルの内訳は、会社定義の既存事業分が7,450万ドル、買収分が4,130万ドル、為替換算分が50万ドル。",
+      "requiredInputs": [
+        {
+          "id": "revprev",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "前年同期の純売上高",
+          "periodStart": "2025-06-30",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "前年同期の純売上高"
+        },
+        {
+          "id": "revnow",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "当期の純売上高",
+          "periodStart": "2026-06-29",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "当期の純売上高"
+        },
+        {
+          "id": "org",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "既存事業の増収寄与",
+          "periodStart": "2026-06-29",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "既存事業の増収寄与"
+        },
+        {
+          "id": "ma",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "買収の増収寄与",
+          "periodStart": "2026-06-29",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "買収の増収寄与"
+        },
+        {
+          "id": "fx",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "為替換算の増収寄与",
+          "periodStart": "2026-06-29",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "為替換算の増収寄与"
+        }
+      ],
+      "observations": [
+        {
+          "id": "revprev",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "前年同期の純売上高",
+          "periodStart": "2025-06-30",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "前年同期の純売上高",
+          "value": 611.7,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "連結損益計算書　Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "revnow",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "当期の純売上高",
+          "periodStart": "2026-06-29",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "当期の純売上高",
+          "value": 728,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "連結損益計算書　Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "org",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "既存事業の増収寄与",
+          "periodStart": "2026-06-29",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "既存事業の増収寄与",
+          "value": 74.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Item 2 — Third Quarter Net Sales / The change in net sales was attributable to the following",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "ma",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "買収の増収寄与",
+          "periodStart": "2026-06-29",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "買収の増収寄与",
+          "value": 41.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Item 2 — Third Quarter Net Sales / The change in net sales was attributable to the following",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fx",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "為替換算の増収寄与",
+          "periodStart": "2026-06-29",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "為替換算の増収寄与",
+          "value": 0.5,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Item 2 — Third Quarter Net Sales / The change in net sales was attributable to the following",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "net",
+          "operation": "difference",
+          "inputs": [
+            "revnow",
+            "revprev"
+          ],
+          "precision": 1,
+          "definition": "比較期間間の売上差",
+          "value": 116.3
+        },
+        {
+          "id": "bridge",
+          "operation": "sum",
+          "inputs": [
+            "org",
+            "ma",
+            "fx"
+          ],
+          "precision": 1,
+          "definition": "会社分解の合計",
+          "value": 116.3
+        },
+        {
+          "id": "organic-percent",
+          "operation": "ratio-percent",
+          "inputs": [
+            "org",
+            "revprev"
+          ],
+          "precision": 1,
+          "definition": "既存事業増加額÷前年売上高",
+          "value": 12.2
+        }
+      ]
+    },
+    {
+      "id": "profit-refund",
+      "question": "営業増益は還付を差し引いても残るか？",
+      "definition": "連結7〜9月。還付元本のみを差し引く自社試算と会社調整後を区別。",
+      "status": "ready",
+      "claim": "還付元本だけを引いた営業利益は試算で1.515億ドル、前年の報告値に比べ36.0％増。",
+      "requiredInputs": [
+        {
+          "id": "prev",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "前年の報告営業利益",
+          "periodStart": "2025-06-30",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "前年の報告営業利益"
+        },
+        {
+          "id": "now",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "当期の報告営業利益",
+          "periodStart": "2026-06-29",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "当期の報告営業利益"
+        },
+        {
+          "id": "refund",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "受領した関税還付元本（関連利息除く）",
+          "periodStart": "2026-06-29",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "受領した関税還付元本（関連利息除く）"
+        },
+        {
+          "id": "resta",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "前年再編費用（加算側）",
+          "periodStart": "2025-06-30",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "前年再編費用（加算側）"
+        },
+        {
+          "id": "restb",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "当期再編費用（加算側）",
+          "periodStart": "2026-06-29",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "当期再編費用（加算側）"
+        },
+        {
+          "id": "adjprev",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "前年調整後営業利益",
+          "periodStart": "2025-06-30",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "前年調整後営業利益"
+        },
+        {
+          "id": "adjnow",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "当期調整後営業利益",
+          "periodStart": "2026-06-29",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "当期調整後営業利益"
+        }
+      ],
+      "observations": [
+        {
+          "id": "prev",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "前年の報告営業利益",
+          "periodStart": "2025-06-30",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "前年の報告営業利益",
+          "value": 111.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "連結損益計算書　Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "now",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "当期の報告営業利益",
+          "periodStart": "2026-06-29",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "当期の報告営業利益",
+          "value": 190.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "連結損益計算書　Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "refund",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "受領した関税還付元本（関連利息除く）",
+          "periodStart": "2026-06-29",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "受領した関税還付元本（関連利息除く）",
+          "value": 39.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Note 2 — Tariffs、Item 2 — Operating Income",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "resta",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "前年再編費用（加算側）",
+          "periodStart": "2025-06-30",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "前年再編費用（加算側）",
+          "value": 1.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "連結損益計算書　Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "restb",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "当期再編費用（加算側）",
+          "periodStart": "2026-06-29",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "当期再編費用（加算側）",
+          "value": 0.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "連結損益計算書　Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "adjprev",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "前年調整後営業利益",
+          "periodStart": "2025-06-30",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "前年調整後営業利益",
+          "value": 113.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926122745/wts-ex99d1.htm",
+            "publishedOn": "2026-11-04",
+            "locator": "Table 1 — Reconciliation of GAAP to Non-GAAP Financial Measures, Consolidated Results",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "adjnow",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "当期調整後営業利益",
+          "periodStart": "2026-06-29",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "当期調整後営業利益",
+          "value": 151.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926122745/wts-ex99d1.htm",
+            "publishedOn": "2026-11-04",
+            "locator": "Table 1 — Reconciliation of GAAP to Non-GAAP Financial Measures, Consolidated Results",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "increase",
+          "operation": "difference",
+          "inputs": [
+            "now",
+            "prev"
+          ],
+          "precision": 1,
+          "definition": "GAAP営業利益の差",
+          "value": 79.4
+        },
+        {
+          "id": "growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "now",
+            "prev"
+          ],
+          "precision": 1,
+          "definition": "GAAP営業増益率",
+          "value": 71.3
+        },
+        {
+          "id": "fraction",
+          "operation": "ratio-percent",
+          "inputs": [
+            "refund",
+            "increase"
+          ],
+          "precision": 1,
+          "definition": "還付元本÷GAAP営業利益の差",
+          "value": 49.5
+        },
+        {
+          "id": "exrefund",
+          "operation": "difference",
+          "inputs": [
+            "now",
+            "refund"
+          ],
+          "precision": 1,
+          "definition": "還付元本のみ控除",
+          "value": 151.5
+        },
+        {
+          "id": "growth-exrefund",
+          "operation": "growth-percent",
+          "inputs": [
+            "exrefund",
+            "prev"
+          ],
+          "precision": 1,
+          "definition": "元本控除値と前年報告値の差",
+          "value": 36
+        },
+        {
+          "id": "adj-underlying-prev",
+          "operation": "sum",
+          "inputs": [
+            "prev",
+            "resta"
+          ],
+          "precision": 1,
+          "definition": "前年の再編費用を足す",
+          "value": 113.3
+        },
+        {
+          "id": "adj-underlying-now",
+          "operation": "sum",
+          "inputs": [
+            "exrefund",
+            "restb"
+          ],
+          "precision": 1,
+          "definition": "元本控除後に当年再編費を足す",
+          "value": 151.8
+        },
+        {
+          "id": "adjgrowth",
+          "operation": "growth-percent",
+          "inputs": [
+            "adjnow",
+            "adjprev"
+          ],
+          "precision": 1,
+          "definition": "調整後営業増益率",
+          "value": 34
+        }
+      ]
+    },
+    {
+      "id": "cash-quality",
+      "question": "利益とFCFが違うペースで伸びたのは？",
+      "definition": "連結1〜9月。CF上の売掛金・在庫の寄与、会社開示FCF、還付元本だけの算術感応度。前年有形固定資産売却収入は原表でダッシュ表記。",
+      "status": "ready",
+      "claim": "1〜9月は純利益が41.3％増えたのに対し、会社定義のフリーキャッシュフロー（FCF）は6.6％増だった。",
+      "requiredInputs": [
+        {
+          "id": "incomea",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "incomeb",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "純利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "純利益"
+        },
+        {
+          "id": "cfoa",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "cfob",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF"
+        },
+        {
+          "id": "capexa",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "有形固定資産その他長期資産取得支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産その他長期資産取得支出（負数）"
+        },
+        {
+          "id": "capexb",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "有形固定資産その他長期資産取得支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産その他長期資産取得支出（負数）"
+        },
+        {
+          "id": "salea",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "有形固定資産売却収入",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産売却収入"
+        },
+        {
+          "id": "saleb",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "有形固定資産売却収入",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産売却収入"
+        },
+        {
+          "id": "receiva",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "売掛金の増加による営業CF変動",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売掛金の増加による営業CF変動"
+        },
+        {
+          "id": "receivb",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "売掛金の増加による営業CF変動",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売掛金の増加による営業CF変動"
+        },
+        {
+          "id": "inventa",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "棚卸資産の増加による営業CF変動",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "棚卸資産の増加による営業CF変動"
+        },
+        {
+          "id": "inventb",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "棚卸資産の増加による営業CF変動",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "棚卸資産の増加による営業CF変動"
+        },
+        {
+          "id": "fcfa",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "フリーキャッシュフロー（会社定義）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "フリーキャッシュフロー（会社定義）"
+        },
+        {
+          "id": "fcfb",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "フリーキャッシュフロー（会社定義）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "フリーキャッシュフロー（会社定義）"
+        },
+        {
+          "id": "refund",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "1〜9月中に受領した関税還付元本",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "1〜9月中に受領した関税還付元本"
+        }
+      ],
+      "observations": [
+        {
+          "id": "incomea",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "純利益",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 257.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "連結損益計算書　Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "incomeb",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "純利益",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "純利益",
+          "value": 363.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "連結損益計算書　Consolidated Statements of Operations",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfoa",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "営業CF",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 247.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "cfob",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "営業CF",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "営業CF",
+          "value": 278.9,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capexa",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "有形固定資産その他長期資産取得支出（負数）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産その他長期資産取得支出（負数）",
+          "value": -31.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "capexb",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "有形固定資産その他長期資産取得支出（負数）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産その他長期資産取得支出（負数）",
+          "value": -48.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "salea",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "有形固定資産売却収入",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産売却収入",
+          "value": 0,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "saleb",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "有形固定資産売却収入",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "有形固定資産売却収入",
+          "value": 0.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "receiva",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "売掛金の増加による営業CF変動",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売掛金の増加による営業CF変動",
+          "value": -56.1,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "receivb",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "売掛金の増加による営業CF変動",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "売掛金の増加による営業CF変動",
+          "value": -109,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "inventa",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "棚卸資産の増加による営業CF変動",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "棚卸資産の増加による営業CF変動",
+          "value": -47.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "inventb",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "棚卸資産の増加による営業CF変動",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "棚卸資産の増加による営業CF変動",
+          "value": -54.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "連結キャッシュフロー計算書　Consolidated Statements of Cash Flows",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fcfa",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "フリーキャッシュフロー（会社定義）",
+          "periodStart": "2025-01-01",
+          "periodEnd": "2025-09-28",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "フリーキャッシュフロー（会社定義）",
+          "value": 216,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Item 2 MD&A — Liquidity and Capital Resources／Free Cash Flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "fcfb",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "フリーキャッシュフロー（会社定義）",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "フリーキャッシュフロー（会社定義）",
+          "value": 230.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Item 2 MD&A — Liquidity and Capital Resources／Free Cash Flow reconciliation",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "refund",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "1〜9月中に受領した関税還付元本",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "1〜9月中に受領した関税還付元本",
+          "value": 39.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Note 2 — Tariffs",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "fcf-recheck-prev",
+          "operation": "sum",
+          "inputs": [
+            "cfoa",
+            "capexa",
+            "salea"
+          ],
+          "precision": 1,
+          "definition": "前年会社FCFの再計算",
+          "value": 216
+        },
+        {
+          "id": "fcf-recheck-now",
+          "operation": "sum",
+          "inputs": [
+            "cfob",
+            "capexb",
+            "saleb"
+          ],
+          "precision": 1,
+          "definition": "当期会社FCFの再計算",
+          "value": 230.2
+        },
+        {
+          "id": "income-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "incomeb",
+            "incomea"
+          ],
+          "precision": 1,
+          "definition": "純利益の増加率",
+          "value": 41.3
+        },
+        {
+          "id": "fcf-growth",
+          "operation": "growth-percent",
+          "inputs": [
+            "fcfb",
+            "fcfa"
+          ],
+          "precision": 1,
+          "definition": "会社FCFの増加率",
+          "value": 6.6
+        },
+        {
+          "id": "wca",
+          "operation": "sum",
+          "inputs": [
+            "receiva",
+            "inventa"
+          ],
+          "precision": 1,
+          "definition": "前年売掛金と棚卸資産の負のCF寄与",
+          "value": -103.5
+        },
+        {
+          "id": "wcb",
+          "operation": "sum",
+          "inputs": [
+            "receivb",
+            "inventb"
+          ],
+          "precision": 1,
+          "definition": "当期売掛金と棚卸資産の負のCF寄与",
+          "value": -163.2
+        },
+        {
+          "id": "cf-less-refund",
+          "operation": "difference",
+          "inputs": [
+            "fcfb",
+            "refund"
+          ],
+          "precision": 1,
+          "definition": "当期FCFから還付元本だけを控除",
+          "value": 190.9
+        }
+      ]
+    },
+    {
+      "id": "net-cash",
+      "question": "会社定義の純負債から見た資金の余裕は？",
+      "definition": "2026-09-27時点、現金及び現金同等物−長期借入（流動部分なし）。全債務控除後資金ではない。",
+      "status": "ready",
+      "claim": "その差は3.466億ドルだった。",
+      "requiredInputs": [
+        {
+          "id": "cash",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "現金及び現金同等物",
+          "periodStart": "2026-09-27",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金及び現金同等物"
+        },
+        {
+          "id": "debt",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "長期借入・流動部分控除後（流動部分なし）",
+          "periodStart": "2026-09-27",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "長期借入・流動部分控除後（流動部分なし）"
+        }
+      ],
+      "observations": [
+        {
+          "id": "cash",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "現金及び現金同等物",
+          "periodStart": "2026-09-27",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "現金及び現金同等物",
+          "value": 444.8,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Item 2 — Reconciliation of net debt",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "debt",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "長期借入・流動部分控除後（流動部分なし）",
+          "periodStart": "2026-09-27",
+          "periodEnd": "2026-09-27",
+          "unit": "USD million",
+          "basis": "actual",
+          "definition": "長期借入・流動部分控除後（流動部分なし）",
+          "value": 98.2,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926123118/wts-20260927x10q.htm",
+            "publishedOn": "2026-11-05",
+            "locator": "Item 2 — Reconciliation of net debt",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": [
+        {
+          "id": "netcash",
+          "operation": "difference",
+          "inputs": [
+            "cash",
+            "debt"
+          ],
+          "precision": 1,
+          "definition": "現金及び現金同等物−長期借入",
+          "value": 346.6
+        }
+      ]
+    },
+    {
+      "id": "guidance",
+      "question": "最新の通期会社予想は？",
+      "definition": "2026通期、11月4日時点の会社予想の範囲。実績・市場予想とは別。",
+      "status": "ready",
+      "claim": "11月4日時点の会社予想は2026年通期の増収率17〜18％、買収・為替などを除く既存事業の増収率11〜12％、調整後営業利益率20.3〜20.4％。",
+      "requiredInputs": [
+        {
+          "id": "saleslo",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "報告売上高増加率下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "報告売上高増加率の会社見通しの下限"
+        },
+        {
+          "id": "saleshi",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "報告売上高増加率上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "報告売上高増加率の会社見通しの上限"
+        },
+        {
+          "id": "orglo",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "既存事業の増収率下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "既存事業の増収率の会社見通しの下限"
+        },
+        {
+          "id": "orghi",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "既存事業の増収率上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "既存事業の増収率の会社見通しの上限"
+        },
+        {
+          "id": "adjustedlo",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "調整後営業利益率下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "調整後営業利益率の会社見通しの下限"
+        },
+        {
+          "id": "adjustedhi",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "調整後営業利益率上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "調整後営業利益率の会社見通しの上限"
+        }
+      ],
+      "observations": [
+        {
+          "id": "saleslo",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "報告売上高増加率下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "報告売上高増加率の会社見通しの下限",
+          "value": 17,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926122745/wts-ex99d1.htm",
+            "publishedOn": "2026-11-04",
+            "locator": "Full Year 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "saleshi",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "報告売上高増加率上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "報告売上高増加率の会社見通しの上限",
+          "value": 18,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926122745/wts-ex99d1.htm",
+            "publishedOn": "2026-11-04",
+            "locator": "Full Year 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "orglo",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "既存事業の増収率下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "既存事業の増収率の会社見通しの下限",
+          "value": 11,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926122745/wts-ex99d1.htm",
+            "publishedOn": "2026-11-04",
+            "locator": "Full Year 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "orghi",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "既存事業の増収率上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "既存事業の増収率の会社見通しの上限",
+          "value": 12,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926122745/wts-ex99d1.htm",
+            "publishedOn": "2026-11-04",
+            "locator": "Full Year 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "adjustedlo",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "調整後営業利益率下限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "調整後営業利益率の会社見通しの下限",
+          "value": 20.3,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926122745/wts-ex99d1.htm",
+            "publishedOn": "2026-11-04",
+            "locator": "Full Year 2026 Outlook",
+            "kind": "primary"
+          }
+        },
+        {
+          "id": "adjustedhi",
+          "entity": "Watts Water Technologies, Inc. and subsidiaries",
+          "metric": "調整後営業利益率上限",
+          "periodStart": "2026-01-01",
+          "periodEnd": "2026-12-31",
+          "unit": "%",
+          "basis": "company-forecast",
+          "definition": "調整後営業利益率の会社見通しの上限",
+          "value": 20.4,
+          "source": {
+            "url": "https://www.sec.gov/Archives/edgar/data/795403/000110465926122745/wts-ex99d1.htm",
+            "publishedOn": "2026-11-04",
+            "locator": "Full Year 2026 Outlook",
+            "kind": "primary"
+          }
+        }
+      ],
+      "calculations": []
+    }
+  ]
+}

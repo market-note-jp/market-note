@@ -10,6 +10,24 @@ import BreadthHomeCard from "./market-breadth/home-card";
 
 const legacyArticles = [
 {
+  "kind": "企業レポート",
+  "theme": "個別企業",
+  "date": "2026-11-28 19:30",
+  "title": "Watts Water：関税還付を除いても増益、現金の伸びは鈍い",
+  "excerpt": "建物の水・空調機器を供給するWatts Water。関税還付や買収を含む2026年第3四半期の増益を分け、売掛金・在庫で利益と現金の伸びに差がつく理由を読む。",
+  "href": "/articles/company-watts-water-2026-11-28",
+  "dateTime": "2026-11-28T19:30:15+09:00"
+},
+{
+  "kind": "論点解説",
+  "theme": "市場テーマ",
+  "date": "2026-11-28 19:30",
+  "title": "米データセンターの証券化は18.6％減。資金調達は一様に冷えたのか",
+  "excerpt": "米データセンター証券化の減少をABSとCMBSに分解。前年の大型案件が比較に入る影響、新発スプレッド、銀行融資の実行を分けて読む。",
+  "href": "/articles/theme-data-center-abs-cmbs-2026-11-28",
+  "dateTime": "2026-11-28T19:30:15+09:00"
+},
+{
   "kind": "週次レポート",
   "theme": "日米株・AI投資",
   "date": "2026-11-28 08:06",
